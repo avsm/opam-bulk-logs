@@ -1,0 +1,87 @@
+++ opam install ocaml-glpk -e ubuntu
++ depext=libglpk-dev
++ echo Ubuntu depexts: libglpk-dev
++ '[' libglpk-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libglpk-dev
++ sudo apt-get install -qq -y libglpk-dev
+E: Unable to locate package libglpk-dev
++ opam install ocaml-glpk
+The following actions will be performed:
+ - install ocaml-glpk.0.1.6
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocaml-glpk.0.1.6 =-=-=
+ocaml-glpk.0.1.6 Downloading http://downloads.sourceforge.net/project/ocaml-glpk/ocaml-glpk/0.1.6/ocaml-glpk-0.1.6.tar.gz
+--2013-11-19 10:59:20--  http://downloads.sourceforge.net/project/ocaml-glpk/ocaml-glpk/0.1.6/ocaml-glpk-0.1.6.tar.gz
+Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 216.34.181.59
+Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://softlayer-dal.dl.sourceforge.net/project/ocaml-glpk/ocaml-glpk/0.1.6/ocaml-glpk-0.1.6.tar.gz [following]
+--2013-11-19 10:59:20--  http://softlayer-dal.dl.sourceforge.net/project/ocaml-glpk/ocaml-glpk/0.1.6/ocaml-glpk-0.1.6.tar.gz
+Resolving softlayer-dal.dl.sourceforge.net (softlayer-dal.dl.sourceforge.net)... 67.228.157.232
+Connecting to softlayer-dal.dl.sourceforge.net (softlayer-dal.dl.sourceforge.net)|67.228.157.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 35416 (35K) [application/x-gzip]
+Saving to: `ocaml-glpk-0.1.6.tar.gz'
+
+     0K .......... .......... .......... ....                 100%  482K=0.07s
+
+2013-11-19 10:59:20 (482 KB/s) - `ocaml-glpk-0.1.6.tar.gz' saved [35416/35416]
+
+Building ocaml-glpk.0.1.6:
+  make
+  make install
+make -C src byte
+make[1]: Entering directory `/home/opam/.opam/system/build/ocaml-glpk.0.1.6/src'
+make[2]: Entering directory `/home/opam/.opam/system/build/ocaml-glpk.0.1.6/src'
+making ._bcdi/glpk.di from glpk.mli
+making ._d/glpk.d from glpk.ml
+make[2]: Leaving directory `/home/opam/.opam/system/build/ocaml-glpk.0.1.6/src'
+make[2]: Entering directory `/home/opam/.opam/system/build/ocaml-glpk.0.1.6/src'
+ocamlc -c -cc "cc" -ccopt "-fPIC -Wall -ansi -DCAML_NAME_SPACE -g \
+				-DPIC   \
+				    -o glpk_stubs.o " glpk_stubs.c 
+glpk_stubs.c:34:18: fatal error: glpk.h: No such file or directory
+compilation terminated.
+make[2]: *** [glpk_stubs.o] Error 2
+make[2]: Leaving directory `/home/opam/.opam/system/build/ocaml-glpk.0.1.6/src'
+make[1]: *** [byte-code-library] Error 2
+make[1]: Leaving directory `/home/opam/.opam/system/build/ocaml-glpk.0.1.6/src'
+make: *** [byte] Error 2
+[ERROR] The compilation of ocaml-glpk.0.1.6 failed.
+Removing ocaml-glpk.0.1.6.
+  ocamlfind remove glpk
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/glpk
+
+
+===== ERROR while installing ocaml-glpk.0.1.6 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/system/build/ocaml-glpk.0.1.6
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/opam/.opam/system/build/ocaml-glpk.0.1.6/ocaml-glpk-33-d8a4ae.env
+# stdout-file          /home/opam/.opam/system/build/ocaml-glpk.0.1.6/ocaml-glpk-33-d8a4ae.out
+# stderr-file          /home/opam/.opam/system/build/ocaml-glpk.0.1.6/ocaml-glpk-33-d8a4ae.err
+### stdout ###
+# ...[truncated]
+# make[2]: Entering directory `/home/opam/.opam/system/build/ocaml-glpk.0.1.6/src'
+# making ._bcdi/glpk.di from glpk.mli
+# making ._d/glpk.d from glpk.ml
+# make[2]: Leaving directory `/home/opam/.opam/system/build/ocaml-glpk.0.1.6/src'
+# make[2]: Entering directory `/home/opam/.opam/system/build/ocaml-glpk.0.1.6/src'
+# ocamlc -c -cc "cc" -ccopt "-fPIC -Wall -ansi -DCAML_NAME_SPACE -g \
+# 				-DPIC   \
+# 				    -o glpk_stubs.o " glpk_stubs.c 
+# make[2]: Leaving directory `/home/opam/.opam/system/build/ocaml-glpk.0.1.6/src'
+# make[1]: Leaving directory `/home/opam/.opam/system/build/ocaml-glpk.0.1.6/src'
+### stderr ###
+# glpk_stubs.c:34:18: fatal error: glpk.h: No such file or directory
+# compilation terminated.
+# make[2]: *** [glpk_stubs.o] Error 2
+# make[1]: *** [byte-code-library] Error 2
+# make: *** [byte] Error 2
+
+'opam install ocaml-glpk' failed.
