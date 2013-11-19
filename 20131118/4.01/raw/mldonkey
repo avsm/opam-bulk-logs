@@ -1,0 +1,227 @@
+++ opam install mldonkey -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install mldonkey
+Ubuntu depexts:
+The following actions will be performed:
+ - install mldonkey.3.1.3
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing mldonkey.3.1.3 =-=-=
+mldonkey.3.1.3 Downloading http://downloads.sourceforge.net/project/mldonkey/mldonkey/3.1.3/mldonkey-3.1.3.tar.bz2
+--2013-11-19 10:30:39--  http://downloads.sourceforge.net/project/mldonkey/mldonkey/3.1.3/mldonkey-3.1.3.tar.bz2
+Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 216.34.181.59
+Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://superb-dca2.dl.sourceforge.net/project/mldonkey/mldonkey/3.1.3/mldonkey-3.1.3.tar.bz2 [following]
+--2013-11-19 10:30:39--  http://superb-dca2.dl.sourceforge.net/project/mldonkey/mldonkey/3.1.3/mldonkey-3.1.3.tar.bz2
+Resolving superb-dca2.dl.sourceforge.net (superb-dca2.dl.sourceforge.net)... 209.61.193.20
+Connecting to superb-dca2.dl.sourceforge.net (superb-dca2.dl.sourceforge.net)|209.61.193.20|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2848964 (2.7M) [application/octet-stream]
+Saving to: `mldonkey-3.1.3.tar.bz2'
+
+     0K .......... .......... .......... .......... ..........  1%  382K 7s
+    50K .......... .......... .......... .......... ..........  3%  907K 5s
+   100K .......... .......... .......... .......... ..........  5% 1.40M 4s
+   150K .......... .......... .......... .......... ..........  7% 1.74M 3s
+   200K .......... .......... .......... .......... ..........  8% 1.76M 3s
+   250K .......... .......... .......... .......... .......... 10% 1.77M 3s
+   300K .......... .......... .......... .......... .......... 12% 1.77M 2s
+   350K .......... .......... .......... .......... .......... 14% 2.46M 2s
+   400K .......... .......... .......... .......... .......... 16% 5.54M 2s
+   450K .......... .......... .......... .......... .......... 17% 1.78M 2s
+   500K .......... .......... .......... .......... .......... 19% 2.52M 2s
+   550K .......... .......... .......... .......... .......... 21% 5.68M 2s
+   600K .......... .......... .......... .......... .......... 23% 4.72M 1s
+   650K .......... .......... .......... .......... .......... 25% 2.79M 1s
+   700K .......... .......... .......... .......... .......... 26% 2.54M 1s
+   750K .......... .......... .......... .......... .......... 28% 5.66M 1s
+   800K .......... .......... .......... .......... .......... 30% 2.61M 1s
+   850K .......... .......... .......... .......... .......... 32% 35.8M 1s
+   900K .......... .......... .......... .......... .......... 34% 5.73M 1s
+   950K .......... .......... .......... .......... .......... 35% 2.60M 1s
+  1000K .......... .......... .......... .......... .......... 37% 51.3M 1s
+  1050K .......... .......... .......... .......... .......... 39% 5.80M 1s
+  1100K .......... .......... .......... .......... .......... 41% 2.59M 1s
+  1150K .......... .......... .......... .......... .......... 43% 5.94M 1s
+  1200K .......... .......... .......... .......... .......... 44% 2.63M 1s
+  1250K .......... .......... .......... .......... .......... 46% 47.2M 1s
+  1300K .......... .......... .......... .......... .......... 48% 5.74M 1s
+  1350K .......... .......... .......... .......... .......... 50% 94.6M 1s
+  1400K .......... .......... .......... .......... .......... 52% 2.64M 1s
+  1450K .......... .......... .......... .......... .......... 53% 39.5M 1s
+  1500K .......... .......... .......... .......... .......... 55% 5.99M 0s
+  1550K .......... .......... .......... .......... .......... 57% 89.6M 0s
+  1600K .......... .......... .......... .......... .......... 59% 2.67M 0s
+  1650K .......... .......... .......... .......... .......... 61% 5.79M 0s
+  1700K .......... .......... .......... .......... .......... 62% 60.3M 0s
+  1750K .......... .......... .......... .......... .......... 64% 85.4M 0s
+  1800K .......... .......... .......... .......... .......... 66% 2.68M 0s
+  1850K .......... .......... .......... .......... .......... 68% 5.75M 0s
+  1900K .......... .......... .......... .......... .......... 70% 37.5M 0s
+  1950K .......... .......... .......... .......... .......... 71% 85.4M 0s
+  2000K .......... .......... .......... .......... .......... 73%  119M 0s
+  2050K .......... .......... .......... .......... .......... 75% 2.78M 0s
+  2100K .......... .......... .......... .......... .......... 77% 6.01M 0s
+  2150K .......... .......... .......... .......... .......... 79% 88.4M 0s
+  2200K .......... .......... .......... .......... .......... 80% 32.1M 0s
+  2250K .......... .......... .......... .......... .......... 82% 45.6M 0s
+  2300K .......... .......... .......... .......... .......... 84% 2.91M 0s
+  2350K .......... .......... .......... .......... .......... 86% 6.39M 0s
+  2400K .......... .......... .......... .......... .......... 88% 62.3M 0s
+  2450K .......... .......... .......... .......... .......... 89% 43.9M 0s
+  2500K .......... .......... .......... .......... .......... 91% 69.8M 0s
+  2550K .......... .......... .......... .......... .......... 93% 2.93M 0s
+  2600K .......... .......... .......... .......... .......... 95% 5.83M 0s
+  2650K .......... .......... .......... .......... .......... 97% 72.6M 0s
+  2700K .......... .......... .......... .......... .......... 98% 67.1M 0s
+  2750K .......... .......... .......... ..                   100% 98.8M=0.8s
+
+2013-11-19 10:30:40 (3.61 MB/s) - `mldonkey-3.1.3.tar.bz2' saved [2848964/2848964]
+
+Copying ~/.opam/repo/default/packages/mldonkey.3.1.3/files/mldonkey.install to ~/.opam/system/build/mldonkey.3.1.3/
+Building mldonkey.3.1.3:
+  ./configure --enable-debug --prefix /home/opam/.opam/system
+  make
+  make install
+Arguments to configure:  '--enable-option-checking=fatal' '--enable-debug' '--prefix' '/home/opam/.opam/system'
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+
+--------------------------------
+     Checking system tools.
+--------------------------------
+checking for ranlib... ranlib
+checking for gmake... no
+checking for make... make
+checking if make is GNU make ... yes
+checking for bzip2... bzip2
+checking for gzip... (cached) bzip2
+checking for perl... /usr/bin/perl
+checking for rpmbuild... no
+checking for rpm... no
+checking for wget... wget
+----------------------------------------
+     Checking system tools finished.
+----------------------------------------
+
+--------------------------------
+     Checking OCaml compiler.
+--------------------------------
+checking for ocamlc.opt... /usr/bin/ocamlc.opt
+checking for ocamlc... /usr/bin/ocamlc.opt
+checking for camlp4... /usr/bin/camlp4
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocamlopt... (cached) ocamlopt.opt
+checking for ocamldep... ocamldep
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamllex... (cached) ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for ocamldoc... ocamldoc
+checking for ocamlmktop... ocamlmktop
+checking for camlp4... /usr/bin/camlp4
+checking for camlp4of... camlp4of
+-------------------------------------------
+     Checking OCaml 4.01.0 finished.
+-------------------------------------------
+
+----------------------------------
+     Checking system headers.
+----------------------------------
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking for setrlimit... yes
+checking for getrlimit... yes
+checking for strerror_r... yes
+checking for strerror... yes
+checking for posix_fallocate... yes
+checking byteswap.h usability... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking for sys/types.h... (cached) yes
+checking for sys/time.h... yes
+checking for sys/resource.h... yes
+checking for netinet/in_systm.h... yes
+checking for netinet/in.h... yes
+checking for netinet/ip.h... yes
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking for poll... yes
+checking sys/vfs.h usability... yes
+checking sys/vfs.h presence... yes
+checking for sys/vfs.h... yes
+checking sys/statvfs.h usability... yes
+checking sys/statvfs.h presence... yes
+checking for sys/statvfs.h... yes
+checking for sys/param.h... yes
+checking for sys/mount.h... yes
+-------------------------------------------
+     Checking system headers finished.
+-------------------------------------------
+
+-----------------------------------
+     Checking system libraries.
+-----------------------------------
+----- checking zlib (required)
+checking for inflate in -lz... no
+Zlib missing, did you install zlib and zlib-developer packages?
+[ERROR] The compilation of mldonkey.3.1.3 failed.
+Removing mldonkey.3.1.3.
+
+
+===== ERROR while installing mldonkey.3.1.3 =====
+# opam-version         1.1.0
+# os                   linux
+# command              ./configure --enable-debug --prefix /home/opam/.opam/system
+# path                 /home/opam/.opam/system/build/mldonkey.3.1.3
+# compiler             system (4.01.0)
+# exit-code            1
+# env-file             /home/opam/.opam/system/build/mldonkey.3.1.3/mldonkey-25-a00279.env
+# stdout-file          /home/opam/.opam/system/build/mldonkey.3.1.3/mldonkey-25-a00279.out
+# stderr-file          /home/opam/.opam/system/build/mldonkey.3.1.3/mldonkey-25-a00279.err
+### stdout ###
+# ...[truncated]
+# -------------------------------------------
+#      Checking system headers finished.
+# -------------------------------------------
+# 
+# -----------------------------------
+#      Checking system libraries.
+# -----------------------------------
+# ----- checking zlib (required)
+# checking for inflate in -lz... no
+# Zlib missing, did you install zlib and zlib-developer packages?
+
+'opam install mldonkey' failed.
