@@ -1,0 +1,24 @@
+++ opam install zero -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install zero
+The following actions will be performed:
+ - install zero.109.28.00
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing zero.109.28.00 =-=-=
+zero.109.28.00 Downloading https://ocaml.janestreet.com/ocaml-core/109.28.00/individual/zero-109.28.00.tar.gz
+--2013-11-19 14:57:35--  https://ocaml.janestreet.com/ocaml-core/109.28.00/individual/zero-109.28.00.tar.gz
+Resolving ocaml.janestreet.com (ocaml.janestreet.com)... 208.70.147.209
+Connecting to ocaml.janestreet.com (ocaml.janestreet.com)|208.70.147.209|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 222 [application/x-gzip]
+Saving to: `zero-109.28.00.tar.gz'
+
+     0K                                                       100% 14.6M=0s
+
+2013-11-19 14:57:35 (14.6 MB/s) - `zero-109.28.00.tar.gz' saved [222/222]
+
+Installing zero.109.28.00.
