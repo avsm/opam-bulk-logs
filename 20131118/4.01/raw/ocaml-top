@@ -1,0 +1,1601 @@
+++ opam install ocaml-top -e ubuntu
++ depext='libgtk2.0-dev libgtksourceview-3.0-dev'
++ echo Ubuntu depexts: libgtk2.0-dev libgtksourceview-3.0-dev
+Ubuntu depexts: libgtk2.0-dev libgtksourceview-3.0-dev
++ '[' 'libgtk2.0-dev libgtksourceview-3.0-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libgtk2.0-dev libgtksourceview-3.0-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libpipeline1.
+(Reading database ... 20462 files and directories currently installed.)
+Unpacking libpipeline1 (from .../libpipeline1_1.2.1-1_amd64.deb) ...
+Selecting previously unselected package libxml2.
+Unpacking libxml2 (from .../libxml2_2.7.8.dfsg-5.1ubuntu4_amd64.deb) ...
+Selecting previously unselected package libatk1.0-data.
+Unpacking libatk1.0-data (from .../libatk1.0-data_2.4.0-0ubuntu1_all.deb) ...
+Selecting previously unselected package libatk1.0-0.
+Unpacking libatk1.0-0 (from .../libatk1.0-0_2.4.0-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package libavahi-common-data.
+Unpacking libavahi-common-data (from .../libavahi-common-data_0.6.30-5ubuntu2_amd64.deb) ...
+Selecting previously unselected package libavahi-common3.
+Unpacking libavahi-common3 (from .../libavahi-common3_0.6.30-5ubuntu2_amd64.deb) ...
+Selecting previously unselected package libavahi-client3.
+Unpacking libavahi-client3 (from .../libavahi-client3_0.6.30-5ubuntu2_amd64.deb) ...
+Selecting previously unselected package libpixman-1-0.
+Unpacking libpixman-1-0 (from .../libpixman-1-0_0.24.4-1_amd64.deb) ...
+Selecting previously unselected package libxcb-render0.
+Unpacking libxcb-render0 (from .../libxcb-render0_1.8.1-1_amd64.deb) ...
+Selecting previously unselected package libxcb-shm0.
+Unpacking libxcb-shm0 (from .../libxcb-shm0_1.8.1-1_amd64.deb) ...
+Selecting previously unselected package libcairo2.
+Unpacking libcairo2 (from .../libcairo2_1.10.2-6.1ubuntu2_amd64.deb) ...
+Selecting previously unselected package libcairo-gobject2.
+Unpacking libcairo-gobject2 (from .../libcairo-gobject2_1.10.2-6.1ubuntu2_amd64.deb) ...
+Selecting previously unselected package libcairo-script-interpreter2.
+Unpacking libcairo-script-interpreter2 (from .../libcairo-script-interpreter2_1.10.2-6.1ubuntu2_amd64.deb) ...
+Selecting previously unselected package libcroco3.
+Unpacking libcroco3 (from .../libcroco3_0.6.5-1_amd64.deb) ...
+Selecting previously unselected package libcups2.
+Unpacking libcups2 (from .../libcups2_1.5.2-9ubuntu1_amd64.deb) ...
+Selecting previously unselected package libdatrie1.
+Unpacking libdatrie1 (from .../libdatrie1_0.2.5-3_amd64.deb) ...
+Selecting previously unselected package libjpeg-turbo8.
+Unpacking libjpeg-turbo8 (from .../libjpeg-turbo8_1.1.90+svn733-0ubuntu4_amd64.deb) ...
+Selecting previously unselected package libjpeg8.
+Unpacking libjpeg8 (from .../libjpeg8_8c-2ubuntu7_amd64.deb) ...
+Selecting previously unselected package libjasper1.
+Unpacking libjasper1 (from .../libjasper1_1.900.1-13_amd64.deb) ...
+Selecting previously unselected package libtiff4.
+Unpacking libtiff4 (from .../libtiff4_3.9.5-2ubuntu1_amd64.deb) ...
+Selecting previously unselected package libgdk-pixbuf2.0-common.
+Unpacking libgdk-pixbuf2.0-common (from .../libgdk-pixbuf2.0-common_2.26.1-1_all.deb) ...
+Selecting previously unselected package libgdk-pixbuf2.0-0.
+Unpacking libgdk-pixbuf2.0-0 (from .../libgdk-pixbuf2.0-0_2.26.1-1_amd64.deb) ...
+Selecting previously unselected package libunistring0.
+Unpacking libunistring0 (from .../libunistring0_0.9.3-5_amd64.deb) ...
+Selecting previously unselected package libgettextpo0.
+Unpacking libgettextpo0 (from .../libgettextpo0_0.18.1.1-5ubuntu3_amd64.deb) ...
+Selecting previously unselected package libglib2.0-data.
+Unpacking libglib2.0-data (from .../libglib2.0-data_2.32.1-0ubuntu2_all.deb) ...
+Selecting previously unselected package libglib2.0-bin.
+Unpacking libglib2.0-bin (from .../libglib2.0-bin_2.32.1-0ubuntu2_amd64.deb) ...
+Selecting previously unselected package libdconf0.
+Unpacking libdconf0 (from .../libdconf0_0.12.0-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package dconf-service.
+Unpacking dconf-service (from .../dconf-service_0.12.0-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package dconf-gsettings-backend.
+Unpacking dconf-gsettings-backend (from .../dconf-gsettings-backend_0.12.0-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package libgtk-3-common.
+Unpacking libgtk-3-common (from .../libgtk-3-common_3.4.1-0ubuntu1_all.deb) ...
+Selecting previously unselected package libthai-data.
+Unpacking libthai-data (from .../libthai-data_0.1.16-3_all.deb) ...
+Selecting previously unselected package libthai0.
+Unpacking libthai0 (from .../libthai0_0.1.16-3_amd64.deb) ...
+Selecting previously unselected package fontconfig.
+Unpacking fontconfig (from .../fontconfig_2.8.0-3ubuntu9_amd64.deb) ...
+Selecting previously unselected package libpango1.0-0.
+Unpacking libpango1.0-0 (from .../libpango1.0-0_1.30.0-0ubuntu2_amd64.deb) ...
+Selecting previously unselected package libxcursor1.
+Unpacking libxcursor1 (from .../libxcursor1_1%3a1.1.12-1_amd64.deb) ...
+Selecting previously unselected package libxrandr2.
+Unpacking libxrandr2 (from .../libxrandr2_2%3a1.3.2-2_amd64.deb) ...
+Selecting previously unselected package shared-mime-info.
+Unpacking shared-mime-info (from .../shared-mime-info_1.0-0ubuntu4_amd64.deb) ...
+Selecting previously unselected package libgtk-3-0.
+Unpacking libgtk-3-0 (from .../libgtk-3-0_3.4.1-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package libgtk2.0-common.
+Unpacking libgtk2.0-common (from .../libgtk2.0-common_2.24.10-0ubuntu6_all.deb) ...
+Selecting previously unselected package libgtk2.0-0.
+Unpacking libgtk2.0-0 (from .../libgtk2.0-0_2.24.10-0ubuntu6_amd64.deb) ...
+Selecting previously unselected package libgtksourceview-3.0-common.
+Unpacking libgtksourceview-3.0-common (from .../libgtksourceview-3.0-common_3.4.1-0ubuntu1_all.deb) ...
+Selecting previously unselected package libgtksourceview-3.0-0.
+Unpacking libgtksourceview-3.0-0 (from .../libgtksourceview-3.0-0_3.4.1-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package libpcrecpp0.
+Unpacking libpcrecpp0 (from .../libpcrecpp0_8.12-4_amd64.deb) ...
+Selecting previously unselected package bsdmainutils.
+Unpacking bsdmainutils (from .../bsdmainutils_8.2.3ubuntu1_amd64.deb) ...
+Selecting previously unselected package gettext-base.
+Unpacking gettext-base (from .../gettext-base_0.18.1.1-5ubuntu3_amd64.deb) ...
+Selecting previously unselected package groff-base.
+Unpacking groff-base (from .../groff-base_1.21-7_amd64.deb) ...
+Selecting previously unselected package man-db.
+Unpacking man-db (from .../man-db_2.6.1-2_amd64.deb) ...
+Selecting previously unselected package sgml-base.
+Unpacking sgml-base (from .../sgml-base_1.26+nmu1ubuntu1_all.deb) ...
+Selecting previously unselected package xml-core.
+Unpacking xml-core (from .../archives/xml-core_0.13_all.deb) ...
+Selecting previously unselected package html2text.
+Unpacking html2text (from .../html2text_1.3.2a-15_amd64.deb) ...
+Selecting previously unselected package gettext.
+Unpacking gettext (from .../gettext_0.18.1.1-5ubuntu3_amd64.deb) ...
+Selecting previously unselected package intltool-debian.
+Unpacking intltool-debian (from .../intltool-debian_0.35.0+20060710.1_all.deb) ...
+Selecting previously unselected package po-debconf.
+Unpacking po-debconf (from .../po-debconf_1.0.16+nmu2ubuntu1_all.deb) ...
+Selecting previously unselected package dh-apparmor.
+Unpacking dh-apparmor (from .../dh-apparmor_2.7.102-0ubuntu3_all.deb) ...
+Selecting previously unselected package debhelper.
+Unpacking debhelper (from .../debhelper_9.20120115ubuntu3_all.deb) ...
+Selecting previously unselected package gir1.2-atk-1.0.
+Unpacking gir1.2-atk-1.0 (from .../gir1.2-atk-1.0_2.4.0-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package gir1.2-freedesktop.
+Unpacking gir1.2-freedesktop (from .../gir1.2-freedesktop_1.32.0-1_amd64.deb) ...
+Selecting previously unselected package gir1.2-gdkpixbuf-2.0.
+Unpacking gir1.2-gdkpixbuf-2.0 (from .../gir1.2-gdkpixbuf-2.0_2.26.1-1_amd64.deb) ...
+Selecting previously unselected package gir1.2-pango-1.0.
+Unpacking gir1.2-pango-1.0 (from .../gir1.2-pango-1.0_1.30.0-0ubuntu2_amd64.deb) ...
+Selecting previously unselected package gir1.2-gtk-2.0.
+Unpacking gir1.2-gtk-2.0 (from .../gir1.2-gtk-2.0_2.24.10-0ubuntu6_amd64.deb) ...
+Selecting previously unselected package gir1.2-gtk-3.0.
+Unpacking gir1.2-gtk-3.0 (from .../gir1.2-gtk-3.0_3.4.1-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package gir1.2-gtksource-3.0.
+Unpacking gir1.2-gtksource-3.0 (from .../gir1.2-gtksource-3.0_3.4.1-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package hicolor-icon-theme.
+Unpacking hicolor-icon-theme (from .../hicolor-icon-theme_0.12-1ubuntu2_all.deb) ...
+Selecting previously unselected package libpcre3-dev.
+Unpacking libpcre3-dev (from .../libpcre3-dev_8.12-4_amd64.deb) ...
+Selecting previously unselected package zlib1g-dev.
+Unpacking zlib1g-dev (from .../zlib1g-dev_1%3a1.2.3.4.dfsg-3ubuntu4_amd64.deb) ...
+Selecting previously unselected package libglib2.0-dev.
+Unpacking libglib2.0-dev (from .../libglib2.0-dev_2.32.1-0ubuntu2_amd64.deb) ...
+Selecting previously unselected package libatk1.0-dev.
+Unpacking libatk1.0-dev (from .../libatk1.0-dev_2.4.0-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package libexpat1-dev.
+Unpacking libexpat1-dev (from .../libexpat1-dev_2.0.1-7.2ubuntu1_amd64.deb) ...
+Selecting previously unselected package libfreetype6-dev.
+Unpacking libfreetype6-dev (from .../libfreetype6-dev_2.4.8-1ubuntu2_amd64.deb) ...
+Selecting previously unselected package libfontconfig1-dev.
+Unpacking libfontconfig1-dev (from .../libfontconfig1-dev_2.8.0-3ubuntu9_amd64.deb) ...
+Selecting previously unselected package x11proto-render-dev.
+Unpacking x11proto-render-dev (from .../x11proto-render-dev_2%3a0.11.1-2_all.deb) ...
+Selecting previously unselected package libxrender-dev.
+Unpacking libxrender-dev (from .../libxrender-dev_1%3a0.9.6-2build1_amd64.deb) ...
+Selecting previously unselected package libpng12-dev.
+Unpacking libpng12-dev (from .../libpng12-dev_1.2.46-3ubuntu4_amd64.deb) ...
+Selecting previously unselected package libice-dev.
+Unpacking libice-dev (from .../libice-dev_2%3a1.0.7-2build1_amd64.deb) ...
+Selecting previously unselected package libsm-dev.
+Unpacking libsm-dev (from .../libsm-dev_2%3a1.2.0-2build1_amd64.deb) ...
+Selecting previously unselected package libpixman-1-dev.
+Unpacking libpixman-1-dev (from .../libpixman-1-dev_0.24.4-1_amd64.deb) ...
+Selecting previously unselected package libxcb-render0-dev.
+Unpacking libxcb-render0-dev (from .../libxcb-render0-dev_1.8.1-1_amd64.deb) ...
+Selecting previously unselected package libxcb-shm0-dev.
+Unpacking libxcb-shm0-dev (from .../libxcb-shm0-dev_1.8.1-1_amd64.deb) ...
+Selecting previously unselected package libcairo2-dev.
+Unpacking libcairo2-dev (from .../libcairo2-dev_1.10.2-6.1ubuntu2_amd64.deb) ...
+Selecting previously unselected package libgdk-pixbuf2.0-dev.
+Unpacking libgdk-pixbuf2.0-dev (from .../libgdk-pixbuf2.0-dev_2.26.1-1_amd64.deb) ...
+Selecting previously unselected package libgtk-3-bin.
+Unpacking libgtk-3-bin (from .../libgtk-3-bin_3.4.1-0ubuntu1_amd64.deb) ...
+Adding 'diversion of /usr/sbin/update-icon-caches to /usr/sbin/update-icon-caches.gtk2 by libgtk-3-bin'
+Adding 'diversion of /usr/share/man/man8/update-icon-caches.8.gz to /usr/share/man/man8/update-icon-caches.gtk2.8.gz by libgtk-3-bin'
+Selecting previously unselected package libxft-dev.
+Unpacking libxft-dev (from .../libxft-dev_2.2.0-3ubuntu2_amd64.deb) ...
+Selecting previously unselected package libpango1.0-dev.
+Unpacking libpango1.0-dev (from .../libpango1.0-dev_1.30.0-0ubuntu2_amd64.deb) ...
+Selecting previously unselected package x11proto-xext-dev.
+Unpacking x11proto-xext-dev (from .../x11proto-xext-dev_7.2.0-3_all.deb) ...
+Selecting previously unselected package libxext-dev.
+Unpacking libxext-dev (from .../libxext-dev_2%3a1.3.0-3build1_amd64.deb) ...
+Selecting previously unselected package x11proto-xinerama-dev.
+Unpacking x11proto-xinerama-dev (from .../x11proto-xinerama-dev_1.2.1-2_all.deb) ...
+Selecting previously unselected package libxinerama-dev.
+Unpacking libxinerama-dev (from .../libxinerama-dev_2%3a1.1.1-3build1_amd64.deb) ...
+Selecting previously unselected package libxi-dev.
+Unpacking libxi-dev (from .../libxi-dev_2%3a1.6.0-0ubuntu2_amd64.deb) ...
+Selecting previously unselected package x11proto-randr-dev.
+Unpacking x11proto-randr-dev (from .../x11proto-randr-dev_1.4.0+git20101207.0d32bb07-0ubuntu2_all.deb) ...
+Selecting previously unselected package libxrandr-dev.
+Unpacking libxrandr-dev (from .../libxrandr-dev_2%3a1.3.2-2_amd64.deb) ...
+Selecting previously unselected package x11proto-fixes-dev.
+Unpacking x11proto-fixes-dev (from .../x11proto-fixes-dev_1%3a5.0-2ubuntu1_all.deb) ...
+Selecting previously unselected package libxfixes-dev.
+Unpacking libxfixes-dev (from .../libxfixes-dev_1%3a5.0-4ubuntu4_amd64.deb) ...
+Selecting previously unselected package libxcursor-dev.
+Unpacking libxcursor-dev (from .../libxcursor-dev_1%3a1.1.12-1_amd64.deb) ...
+Selecting previously unselected package x11proto-composite-dev.
+Unpacking x11proto-composite-dev (from .../x11proto-composite-dev_1%3a0.4.2-2_all.deb) ...
+Selecting previously unselected package libxcomposite-dev.
+Unpacking libxcomposite-dev (from .../libxcomposite-dev_1%3a0.4.3-2build1_amd64.deb) ...
+Selecting previously unselected package x11proto-damage-dev.
+Unpacking x11proto-damage-dev (from .../x11proto-damage-dev_1%3a1.2.1-2_all.deb) ...
+Selecting previously unselected package libxdamage-dev.
+Unpacking libxdamage-dev (from .../libxdamage-dev_1%3a1.1.3-2build1_amd64.deb) ...
+Selecting previously unselected package libxml2-utils.
+Unpacking libxml2-utils (from .../libxml2-utils_2.7.8.dfsg-5.1ubuntu4_amd64.deb) ...
+Selecting previously unselected package libgtk-3-dev.
+Unpacking libgtk-3-dev (from .../libgtk-3-dev_3.4.1-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package libgtk2.0-bin.
+Unpacking libgtk2.0-bin (from .../libgtk2.0-bin_2.24.10-0ubuntu6_amd64.deb) ...
+Selecting previously unselected package libgtk2.0-dev.
+Unpacking libgtk2.0-dev (from .../libgtk2.0-dev_2.24.10-0ubuntu6_amd64.deb) ...
+Selecting previously unselected package libxml2-dev.
+Unpacking libxml2-dev (from .../libxml2-dev_2.7.8.dfsg-5.1ubuntu4_amd64.deb) ...
+Selecting previously unselected package libgtksourceview-3.0-dev.
+Unpacking libgtksourceview-3.0-dev (from .../libgtksourceview-3.0-dev_3.4.1-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package libsys-hostname-long-perl.
+Unpacking libsys-hostname-long-perl (from .../libsys-hostname-long-perl_1.4-2_all.deb) ...
+Selecting previously unselected package libmail-sendmail-perl.
+Unpacking libmail-sendmail-perl (from .../libmail-sendmail-perl_0.79.16-1_all.deb) ...
+Processing triggers for libglib2.0-0 ...
+Setting up libpipeline1 (1.2.1-1) ...
+Setting up libxml2 (2.7.8.dfsg-5.1ubuntu4) ...
+Setting up libatk1.0-data (2.4.0-0ubuntu1) ...
+Setting up libatk1.0-0 (2.4.0-0ubuntu1) ...
+Setting up libavahi-common-data (0.6.30-5ubuntu2) ...
+Setting up libavahi-common3 (0.6.30-5ubuntu2) ...
+Setting up libavahi-client3 (0.6.30-5ubuntu2) ...
+Setting up libpixman-1-0 (0.24.4-1) ...
+Setting up libxcb-render0 (1.8.1-1) ...
+Setting up libxcb-shm0 (1.8.1-1) ...
+Setting up libcairo2 (1.10.2-6.1ubuntu2) ...
+Setting up libcairo-gobject2 (1.10.2-6.1ubuntu2) ...
+Setting up libcairo-script-interpreter2 (1.10.2-6.1ubuntu2) ...
+Setting up libcroco3 (0.6.5-1) ...
+Setting up libcups2 (1.5.2-9ubuntu1) ...
+Setting up libdatrie1 (0.2.5-3) ...
+Setting up libjpeg-turbo8 (1.1.90+svn733-0ubuntu4) ...
+Setting up libjpeg8 (8c-2ubuntu7) ...
+Setting up libjasper1 (1.900.1-13) ...
+Setting up libtiff4 (3.9.5-2ubuntu1) ...
+Setting up libgdk-pixbuf2.0-common (2.26.1-1) ...
+Setting up libgdk-pixbuf2.0-0 (2.26.1-1) ...
+Setting up libunistring0 (0.9.3-5) ...
+Setting up libgettextpo0 (0.18.1.1-5ubuntu3) ...
+Setting up libglib2.0-data (2.32.1-0ubuntu2) ...
+Setting up libglib2.0-bin (2.32.1-0ubuntu2) ...
+Setting up libdconf0 (0.12.0-0ubuntu1) ...
+Setting up dconf-service (0.12.0-0ubuntu1) ...
+Setting up dconf-gsettings-backend (0.12.0-0ubuntu1) ...
+Setting up libgtk-3-common (3.4.1-0ubuntu1) ...
+Setting up libthai-data (0.1.16-3) ...
+Setting up libthai0 (0.1.16-3) ...
+Setting up fontconfig (2.8.0-3ubuntu9) ...
+Cleaning up old fontconfig caches... done.
+Regenerating fonts cache... done.
+Setting up libpango1.0-0 (1.30.0-0ubuntu2) ...
+Setting up libxcursor1 (1:1.1.12-1) ...
+Setting up libxrandr2 (2:1.3.2-2) ...
+Setting up shared-mime-info (1.0-0ubuntu4) ...
+Setting up libgtk-3-0 (3.4.1-0ubuntu1) ...
+Setting up libgtk2.0-common (2.24.10-0ubuntu6) ...
+Setting up libgtk2.0-0 (2.24.10-0ubuntu6) ...
+Setting up libgtksourceview-3.0-common (3.4.1-0ubuntu1) ...
+Setting up libgtksourceview-3.0-0 (3.4.1-0ubuntu1) ...
+Setting up libpcrecpp0 (8.12-4) ...
+Setting up bsdmainutils (8.2.3ubuntu1) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode.
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode.
+Setting up gettext-base (0.18.1.1-5ubuntu3) ...
+Setting up groff-base (1.21-7) ...
+Setting up man-db (2.6.1-2) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+Building database of manual pages ...
+Setting up sgml-base (1.26+nmu1ubuntu1) ...
+Setting up xml-core (0.13) ...
+Setting up html2text (1.3.2a-15) ...
+Setting up gettext (0.18.1.1-5ubuntu3) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2ubuntu1) ...
+Setting up dh-apparmor (2.7.102-0ubuntu3) ...
+Setting up debhelper (9.20120115ubuntu3) ...
+Setting up gir1.2-atk-1.0 (2.4.0-0ubuntu1) ...
+Setting up gir1.2-freedesktop (1.32.0-1) ...
+Setting up gir1.2-gdkpixbuf-2.0 (2.26.1-1) ...
+Setting up gir1.2-pango-1.0 (1.30.0-0ubuntu2) ...
+Setting up gir1.2-gtk-2.0 (2.24.10-0ubuntu6) ...
+Setting up gir1.2-gtk-3.0 (3.4.1-0ubuntu1) ...
+Setting up gir1.2-gtksource-3.0 (3.4.1-0ubuntu1) ...
+Setting up hicolor-icon-theme (0.12-1ubuntu2) ...
+Setting up libpcre3-dev (8.12-4) ...
+Setting up zlib1g-dev (1:1.2.3.4.dfsg-3ubuntu4) ...
+Setting up libglib2.0-dev (2.32.1-0ubuntu2) ...
+Setting up libatk1.0-dev (2.4.0-0ubuntu1) ...
+Setting up libexpat1-dev (2.0.1-7.2ubuntu1) ...
+Setting up libfreetype6-dev (2.4.8-1ubuntu2) ...
+Setting up libfontconfig1-dev (2.8.0-3ubuntu9) ...
+Setting up x11proto-render-dev (2:0.11.1-2) ...
+Setting up libxrender-dev (1:0.9.6-2build1) ...
+Setting up libpng12-dev (1.2.46-3ubuntu4) ...
+Setting up libice-dev (2:1.0.7-2build1) ...
+Setting up libsm-dev (2:1.2.0-2build1) ...
+Setting up libpixman-1-dev (0.24.4-1) ...
+Setting up libxcb-render0-dev (1.8.1-1) ...
+Setting up libxcb-shm0-dev (1.8.1-1) ...
+Setting up libcairo2-dev (1.10.2-6.1ubuntu2) ...
+Setting up libgdk-pixbuf2.0-dev (2.26.1-1) ...
+Setting up libgtk-3-bin (3.4.1-0ubuntu1) ...
+Setting up libxft-dev (2.2.0-3ubuntu2) ...
+Setting up libpango1.0-dev (1.30.0-0ubuntu2) ...
+Setting up x11proto-xext-dev (7.2.0-3) ...
+Setting up libxext-dev (2:1.3.0-3build1) ...
+Setting up x11proto-xinerama-dev (1.2.1-2) ...
+Setting up libxinerama-dev (2:1.1.1-3build1) ...
+Setting up libxi-dev (2:1.6.0-0ubuntu2) ...
+Setting up x11proto-randr-dev (1.4.0+git20101207.0d32bb07-0ubuntu2) ...
+Setting up libxrandr-dev (2:1.3.2-2) ...
+Setting up x11proto-fixes-dev (1:5.0-2ubuntu1) ...
+Setting up libxfixes-dev (1:5.0-4ubuntu4) ...
+Setting up libxcursor-dev (1:1.1.12-1) ...
+Setting up x11proto-composite-dev (1:0.4.2-2) ...
+Setting up libxcomposite-dev (1:0.4.3-2build1) ...
+Setting up x11proto-damage-dev (1:1.2.1-2) ...
+Setting up libxdamage-dev (1:1.1.3-2build1) ...
+Setting up libxml2-utils (2.7.8.dfsg-5.1ubuntu4) ...
+Setting up libgtk-3-dev (3.4.1-0ubuntu1) ...
+Setting up libgtk2.0-bin (2.24.10-0ubuntu6) ...
+Setting up libgtk2.0-dev (2.24.10-0ubuntu6) ...
+Setting up libxml2-dev (2.7.8.dfsg-5.1ubuntu4) ...
+Setting up libgtksourceview-3.0-dev (3.4.1-0ubuntu1) ...
+Setting up libsys-hostname-long-perl (1.4-2) ...
+Setting up libmail-sendmail-perl (0.79.16-1) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
++ opam install ocaml-top
+The following actions will be performed:
+ - install typerex.1.99.6-beta [required by ocaml-top]
+ - install conf-gtksourceview.2 [required by ocaml-top]
+ - install cmdliner.0.9.2 [required by ocaml-top]
+ - install ocp-build.1.99.6-beta [required by ocaml-top]
+ - install lablgtk.2.16.0 [required by ocaml-top]
+ - install ocp-indent.1.3.2 [required by ocaml-top]
+ - install ocp-index.0.3.0 [required by ocaml-top]
+ - install ocaml-top.1.1.0
+8 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing conf-gtksourceview.2 =-=-=
+
+=-=-= Installing cmdliner.0.9.2 =-=-=
+cmdliner.0.9.2 Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.2.tbz
+Building conf-gtksourceview.2:
+  pkg-config gtksourceview-2.0
+[ERROR] The compilation of conf-gtksourceview.2 failed.
+Removing conf-gtksourceview.2.
+
+=-=-= Installing typerex.1.99.6-beta =-=-=
+typerex.1.99.6-beta Downloading https://github.com/OCamlPro/typerex/tarball/typerex.1.99.6-beta
+--2013-11-19 11:16:28--  http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.2.tbz
+Resolving erratique.ch (erratique.ch)... 37.58.75.241, 2a03:8180:1001:b2:36::c
+Connecting to erratique.ch (erratique.ch)|37.58.75.241|:80... connected.
+HTTP request sent, awaiting response... --2013-11-19 11:16:28--  https://github.com/OCamlPro/typerex/tarball/typerex.1.99.6-beta
+200 OK
+Length: 74952 (73K) [application/x-bzip2]
+Saving to: `cmdliner-0.9.2.tbz'
+
+     0K .......... ...Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/OCamlPro/typerex/legacy.tar.gz/typerex.1.99.6-beta [following]
+--2013-11-19 11:16:28--  https://codeload.github.com/OCamlPro/typerex/legacy.tar.gz/typerex.1.99.6-beta
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.145
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.145|:443... ....... .......... ......connected.
+HTTP request sent, awaiting response... .... .......... 68%  255K 0s
+    50K .......... .......... ...                             100% 11.6M=0.2s
+
+2013-11-19 11:16:28 (369 KB/s) - `cmdliner-0.9.2.tbz' saved [74952/74952]
+
+200 OK
+Length: 1215162 (1.2M) [application/x-gzip]
+Saving to: `OCamlPro-typerex-typerex.1.99.6-beta-0-gf6b9007.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  4% 1.44M 1s
+    50K .......... .......... .......... .......... ..........  8% 1.31M 1s
+   100K .......... .......... .......... .......... .......... 12% 2.87M 1s
+   150K .......... .......... .......... .......... .......... 16% 1.46M 1s
+   200K .......... .......... .......... .......... .......... 21% 2.87M 1s
+   250K .......... .......... .......... .......... .......... 25% 2.88M 0s
+   300K .......... .......... .......... .......... .......... 29% 2.87M 0s
+   350K .......... .......... .......... .......... .......... 33% 2.87M 0s
+   400K .......... .......... .......... .......... .......... 37% 2.85M 0s
+   450K .......... .......... .......... .......... .......... 42% 2.91M 0s
+   500K .......... .......... .......... .......... .......... 46% 2.90M 0s
+   550K .......... .......... ......Building cmdliner.0.9.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/system
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+.... .......... .......... 50% 2.31M 0s
+   600K .......... .......... .......... .......... .......... 54% 2.91M 0s
+   650K .......... .......... .......... .......... .......... 58% 95.0M 0s
+   700K .......... .......... .......... .......... .......... 63% 2.92M 0s
+   750K .......... .......... .......... .......... .......... 67% 2.97M 0s
+   800K .......... .......... .......... .......... .......... 71% 2.90M 0s
+   850K .......... .......... .......... .......... .......... 75% 2.78M 0s
+   900K .......... .......... .......... .......... .......... 80% 9.84M 0s
+   950K .......... .......... .......... .......... .......... 84% 4.00M 0s
+  1000K .......... .......... .......... .......... .......... 88% 2.37M 0s
+  1050K .......... .......... .......... .......... .......... 92% 3.09M 0s
+  1100K .......... .......... .......... .......... .......... 96% 2.86M 0s
+  1150K .......... .......... .......... ......               100% 13.2M=0.4s
+
+2013-11-19 11:16:29 (2.76 MB/s) - `OCamlPro-typerex-typerex.1.99.6-beta-0-gf6b9007.tar.gz' saved [1215162/1215162]
+
+Building typerex.1.99.6-beta:
+  ./configure --prefix /home/opam/.opam/system
+  make
+  make install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ cmdliner
+Package version: ..................................... 0.9.2
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/system
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /usr/bin/ocamldoc
+
+checking for ocamlc... ocamlc
+OCaml version is 4.01.0
+OCaml library path is /usr/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+checking for camlp4... camlp4
+checking for camlp4boot... no
+checking for camlp4o... camlp4o
+checking for camlp4of... camlp4of
+checking for camlp4oof... camlp4oof
+checking for camlp4orf... camlp4orf
+checking for camlp4prof... camlp4prof
+checking for camlp4r... camlp4r
+checking for camlp4rf... camlp4rf
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for a sed that does not truncate output... /bin/sed
+checking Major version... 4
+checking Minor version... 01
+checking Point version... 0
+checking for gawk... no
+checking for mawk... mawk
+configure: creating ./config.status
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+config.status: creating Makefile.config
+config.status: creating typerex.ocp
+config.status: WARNING:  'typerex.ocp.in' seems to ignore the --datarootdir setting
+config.status: creating packages/opam/ocp-build.opam
+Creating file ocp-build.root
+
+Executables will be installed in /home/opam/.opam/system/bin
+Libraries will be installed in /home/opam/.opam/system/lib/ocaml/typerex
+Data files will be installed in /home/opam/.opam/system/share/typerex
+Manual pages will be installed in /home/opam/.opam/system/share/man
+ocamlfind ocamldep -modules src/cmdliner.mli > src/cmdliner.mli.depends
+ocamlfind ocamlc -c -g -I src -o src/cmdliner.cmi src/cmdliner.mli
+make -C ocp-build
+ocamlfind ocamldep -modules src/cmdliner.ml > src/cmdliner.ml.depends
+make[1]: Entering directory `/home/opam/.opam/system/build/typerex.1.99.6-beta/ocp-build'
+awk '{ print "external "$1": unit -> unit = \"" $1 "\"" }' primitives > primitives.ml
+ocamlc -o ocp-build.run -custom -make-runtime win32_c.c primitives.ml unix.cma  -cclib -lunix
+ocamlfind ocamlc -c -g -I src -o src/cmdliner.cmo src/cmdliner.ml
+ocamlfind ocamlc -a src/cmdliner.cmo -o src/cmdliner.cma
+ocamlfind ocamlopt -c -g -I src -o src/cmdliner.cmx src/cmdliner.ml
+cat ocp-build.run ocp-build.boot > ocp-build
+chmod +x ocp-build
+./ocp-build -help >/dev/null 2>&1
+make[1]: Leaving directory `/home/opam/.opam/system/build/typerex.1.99.6-beta/ocp-build'
+./ocp-build/ocp-build build  -scan
+tput: No value for $TERM and no -T specified
+stty: standard input: Inappropriate ioctl for device
+Warning: file "/home/opam/.ocp/ocp-build.prefs" does not exist. Creating with default values.
+Updating ocp-build.root
+ocamlfind ocamlopt -a src/cmdliner.cmx -o src/cmdliner.cmxa
+ocamlfind ocamlopt -shared src/cmdliner.cmx -o src/cmdliner.cmxs
+ocamlfind ocamldep -modules test/revolt.ml > test/revolt.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/revolt.cmo test/revolt.ml
+[  0%] subcommands.mlmods                                    OK
+[  0%] subcommands.mlimods                                   OK
+[  0%] debugVerbosity.mlmods                                 OK
+[  1%] debugVerbosity.mlimods                                OK
+[  1%] debugTyperex.mlmods                                   OK
+[  1%] subcommands.cmi                                       OK
+[  1%] debugVerbosity.cmi                                    OK
+[  2%] debugTyperex.mlimods                                  OK
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/revolt.cmx test/revolt.ml
+[  2%] subcommands.cmo                                       OK
+[  2%] debugVerbosity.cmo                                    OK
+[  2%] ocplib-subcmd.cma                                     OK
+[  2%] debugTyperex.cmi                                      OK
+[  2%] subcommands.cmx                                       OK
+[  2%] debugVerbosity.cmx                                    OK
+ocamlfind ocamlopt -g -linkpkg src/cmdliner.cmxa test/revolt.cmx -o test/revolt.native
+[  2%] debugTyperex.cmo                                      OK
+[  3%] ocplib-debug.cma                                      OK
+[  3%] ocpPervasives.mlmods                                  OK
+[  3%] ocpPervasives.mlimods                                 OK
+[  3%] ocpPervasives.cmi                                     OK
+[  3%] debugTyperex.cmx                                      OK
+[  3%] ocplib-subcmd.cmxa                                    OK
+[  4%] ocpPervasives.cmo                                     OK
+[  4%] ocpList.mlmods                                        OK
+[  4%] ocpPervasives.cmx                                     OK
+[  4%] ocpList.mlimods                                       OK
+[  4%] ocpList.cmi                                           OK
+[  4%] ocpString.mlmods                                      OK
+[  5%] ocplib-debug.cmxa                                     OK
+[  5%] ocpString.mlimods                                     OK
+[  5%] ocpList.cmo                                           OK
+[  5%] ocpStream.mlmods                                      OK
+[  6%] ocpList.cmx                                           OK
+[  6%] ocpStream.mlimods                                     OK
+[  6%] ocpString.cmi                                         OK
+[  6%] ocpGenlex.mlmods                                      OK
+[  6%] ocpStream.cmi                                         OK
+[  6%] ocpStream.cmo                                         OK
+[  7%] ocpGenlex.mlimods                                     OK
+[  7%] ocpString.cmo                                         OK
+[  7%] ocpGenlex.cmi                                         OK
+[  7%] ocpHashtbl.mlmods                                     OK
+ocamlfind ocamldep -modules test/chorus.ml > test/chorus.ml.depends
+[  7%] ocpHashtbl.mlimods                                    OK
+[  8%] ocpString.cmx                                         OK
+[  8%] ocpGenlex.cmo                                         OK
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/chorus.cmo test/chorus.ml
+[  8%] ocpHashtbl.cmi                                        OK
+[  8%] ocpDigest.mlmods                                      OK
+[  8%] ocpHashtbl.cmo                                        OK
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/chorus.cmx test/chorus.ml
+[  8%] ocpDigest.mlimods                                     OK
+[  9%] ocpDigest.cmi                                         OK
+[  9%] ocpHashtbl.cmx                                        OK
+[  9%] ocpStream.cmx                                         OK
+[  9%] ocpDigest.cmo                                         OK
+ocamlfind ocamlopt -g -linkpkg src/cmdliner.cmxa test/chorus.cmx -o test/chorus.native
+[  9%] option.mlmods                                         OK
+[  9%] option.mlimods                                        OK
+[ 10%] ocpGenlex.cmx                                         OK
+[ 10%] ocpDigest.cmx                                         OK
+[ 10%] intMap.mlmods                                         OK
+[ 10%] intSet.mlmods                                         OK
+[ 11%] option.cmi                                            OK
+[ 11%] intMap.cmo                                            OK
+[ 11%] option.cmo                                            OK
+[ 11%] intSet.cmo                                            OK
+[ 11%] option.cmx                                            OK
+[ 11%] intSet.cmx                                            OK
+[ 11%] stringMap.mlmods                                      OK
+[ 11%] stringSet.mlmods                                      OK
+[ 12%] stringMap.cmo                                         OK
+[ 12%] stringSet.cmo                                         OK
+[ 12%] intMap.cmx                                            OK
+[ 12%] toposort.mlmods                                       OK
+[ 12%] toposort.mlimods                                      OK
+[ 13%] toposort.cmi                                          OK
+ocamlfind ocamldep -modules test/cp_ex.ml > test/cp_ex.ml.depends
+[ 13%] stringSet.cmx                                         OK
+[ 13%] toposort.cmo                                          OK
+[ 13%] stringMap.cmx                                         OK
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/cp_ex.cmo test/cp_ex.ml
+[ 13%] linearToposort.mlimods                                OK
+[ 13%] linearToposort.mlmods                                 OK
+[ 14%] linearToposort.cmi                                    OK
+[ 14%] ocamllexer.ml                                         OK
+-- stdout of ocamllex.opt --
+81 states, 1371 transitions, table size 5970 bytes
+[ 14%] linearToposort.cmo                                    OK
+[ 14%] toposort.cmx                                          OK
+[ 14%] ocamllexer.mlmods                                     OK
+[ 14%] ocamllexer.mlimods                                    OK
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/cp_ex.cmx test/cp_ex.ml
+[ 15%] trie.mlmods                                           OK
+[ 15%] trie.mlimods                                          OK
+[ 15%] ocamllexer.cmi                                        OK
+[ 15%] linearToposort.cmx                                    OK
+[ 15%] trie.cmi                                              OK
+[ 16%] ocamllexer.cmo                                        OK
+ocamlfind ocamlopt -g -linkpkg src/cmdliner.cmxa test/cp_ex.cmx -o test/cp_ex.native
+[ 16%] trie.cmo                                              OK
+[ 16%] ocpLang.mlmods                                        OK
+[ 16%] ocamllexer.cmx                                        OK
+[ 16%] ocpLang.cmo                                           OK
+[ 16%] trie.cmx                                              OK
+[ 16%] stringSubst.mlmods                                    OK
+[ 17%] stringSubst.mlimods                                   OK
+[ 17%] ocplib-lang.cma                                       OK
+[ 17%] reentrantBuffers.mlmods                               OK
+[ 17%] stringSubst.cmi                                       OK
+[ 17%] reentrantBuffers.mlimods                              OK
+[ 18%] ocpLang.cmx                                           OK
+[ 18%] stringSubst.cmo                                       OK
+[ 18%] ocplib-subst.cma                                      OK
+[ 18%] reentrantBuffers.cmi                                  OK
+[ 18%] reentrantBuffers.cmo                                  OK
+[ 18%] stringSubst.cmx                                       OK
+[ 18%] ocplib-lang.cmxa                                      OK
+[ 18%] file.mlmods                                           OK
+[ 19%] reentrantBuffers.cmx                                  OK
+[ 19%] file.mlimods                                          OK
+[ 19%] fileLines.mlmods                                      OK
+[ 20%] fileLines.mlimods                                     OK
+[ 20%] ocplib-subst.cmxa                                     OK
+ocamlfind ocamldep -modules test/tail_ex.ml > test/tail_ex.ml.depends
+[ 20%] file.cmi                                              OK
+[ 20%] fileLines.cmi                                         OK
+[ 20%] fileLabels.mlmods                                     OK
+[ 20%] fileLines.cmo                                         OK
+[ 21%] fileLabels.mlimods                                    OK
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/tail_ex.cmo test/tail_ex.ml
+[ 21%] fileLabels.cmi                                        OK
+[ 21%] file.cmo                                              OK
+[ 21%] date.mlmods                                           OK
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/tail_ex.cmx test/tail_ex.ml
+[ 21%] date.mlimods                                          OK
+[ 22%] fileLabels.cmo                                        OK
+[ 22%] ocpUnix.mlmods                                        OK
+[ 22%] ocpUnix.mlimods                                       OK
+[ 22%] date.cmi                                              OK
+[ 22%] date.cmo                                              OK
+ocamlfind ocamlopt -g -linkpkg src/cmdliner.cmxa test/tail_ex.cmx -o test/tail_ex.native
+[ 23%] ocpUnix.cmi                                           OK
+[ 23%] file.cmx                                              OK
+[ 23%] ocpUnix.cmo                                           OK
+[ 23%] date.cmx                                              OK
+[ 23%] fileLines.cmx                                         OK
+[ 23%] ocpFilename.mlmods                                    OK
+[ 23%] ocpFilename.mlimods                                   OK
+[ 24%] ocpFilename.cmi                                       OK
+[ 24%] fileLabels.cmx                                        OK
+[ 24%] ocpUnix.cmx                                           OK
+[ 24%] ocpFilename.cmo                                       OK
+[ 24%] process.mlmods                                        OK
+[ 24%] process.mlimods                                       OK
+[ 25%] debug.mlmods                                          OK
+[ 25%] ocpFilename.cmx                                       OK
+[ 25%] process.cmi                                           OK
+[ 25%] debug.mlimods                                         OK
+[ 25%] ocpSystem.mlmods                                      OK
+[ 26%] debug.cmi                                             OK
+ocamlfind ocamldep -modules test/darcs_ex.ml > test/darcs_ex.ml.depends
+[ 26%] process.cmo                                           OK
+[ 26%] debug.cmo                                             OK
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/darcs_ex.cmo test/darcs_ex.ml
+[ 26%] ocpSystem.cmo                                         OK
+[ 26%] process.cmx                                           OK
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/darcs_ex.cmx test/darcs_ex.ml
+[ 26%] configParser.mlmods                                   OK
+[ 27%] debug.cmx                                             OK
+[ 27%] configParser.mlimods                                  OK
+[ 27%] configParser.cmi                                      OK
+[ 27%] configParser.cmo                                      OK
+[ 27%] ocpSystem.cmx                                         OK
+ocamlfind ocamlopt -g -linkpkg src/cmdliner.cmxa test/darcs_ex.cmx -o test/darcs_ex.native
+[ 27%] configParser.cmx                                      OK
+[ 27%] simpleConfig.mlipp                                    OK
+[ 27%] simpleConfig.mlimods                                  OK
+[ 28%] simpleConfig.cmi                                      OK
+[ 28%] md4_c.o                                               OK
+-- stderr of ocamlc.opt --
+libs/ocplib/ocplib-digest/md4_c.c: In function 'md4_context_append_ml':
+libs/ocplib/ocplib-digest/md4_c.c:306:1: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+libs/ocplib/ocplib-digest/md4_c.c: In function 'md4_context_finish_ml':
+libs/ocplib/ocplib-digest/md4_c.c:306:1: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+libs/ocplib/ocplib-digest/md4_c.c: At top level:
+libs/ocplib/ocplib-digest/unix32_c.h:101:12: warning: 'seek_command_table' defined but not used [-Wunused-variable]
+ocamlfind ocamldep -modules test/rm_ex.ml > test/rm_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/rm_ex.cmo test/rm_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/rm_ex.cmx test/rm_ex.ml
+[ 28%] md5_c.o                                               OK
+-- stderr of ocamlc.opt --
+libs/ocplib/ocplib-digest/md5_c.c: In function 'md5_context_append_ml':
+libs/ocplib/ocplib-digest/md5_c.c:420:1: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+libs/ocplib/ocplib-digest/md5_c.c: In function 'md5_context_finish_ml':
+libs/ocplib/ocplib-digest/md5_c.c:420:1: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+libs/ocplib/ocplib-digest/md5_c.c: At top level:
+libs/ocplib/ocplib-digest/unix32_c.h:101:12: warning: 'seek_command_table' defined but not used [-Wunused-variable]
+[ 28%] checksum.mlmods                                       OK
+[ 28%] sha1_c.o                                              OK
+-- stderr of ocamlc.opt --
+libs/ocplib/ocplib-digest/sha1_c.c: In function 'sha1_context_append_ml':
+libs/ocplib/ocplib-digest/sha1_c.c:463:1: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+libs/ocplib/ocplib-digest/sha1_c.c: In function 'sha1_context_finish_ml':
+libs/ocplib/ocplib-digest/sha1_c.c:463:1: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+libs/ocplib/ocplib-digest/sha1_c.c: At top level:
+libs/ocplib/ocplib-digest/unix32_c.h:101:12: warning: 'seek_command_table' defined but not used [-Wunused-variable]
+[ 28%] checksum.cmo                                          OK
+[ 29%] base16.mlmods                                         OK
+[ 29%] base16.mlimods                                        OK
+[ 29%] base16.cmi                                            OK
+ocamlfind ocamlopt -g -linkpkg src/cmdliner.cmxa test/rm_ex.cmx -o test/rm_ex.native
+[ 29%] base16.cmo                                            OK
+[ 29%] checksum.cmx                                          OK
+[ 30%] base32.mlmods                                         OK
+[ 30%] simpleConfig.mlpp                                     OK
+[ 30%] base32.mlimods                                        OK
+[ 30%] base16.cmx                                            OK
+[ 30%] simpleConfig.mlmods                                   OK
+[ 31%] base32.cmi                                            OK
+[ 31%] base64.mlmods                                         OK
+[ 31%] base32.cmo                                            OK
+[ 31%] simpleConfig.cmo                                      OK
+[ 31%] ocplib-system.cma                                     OK
+[ 31%] base64.mlimods                                        OK
+[ 32%] base32.cmx                                            OK
+[ 32%] base64.cmi                                            OK
+[ 32%] base6427.mlmods                                       OK
+[ 32%] base64.cmo                                            OK
+[ 32%] base6427.mlimods                                      OK
+[ 33%] base64.cmx                                            OK
+[ 33%] base6427.cmi                                          OK
+[ 33%] makeDigest.mlmods                                     OK
+[ 33%] base6427.cmo                                          OK
+[ 33%] simpleConfig.cmx                                      OK
+[ 33%] makeDigest.cmo                                        OK
+[ 33%] base6427.cmx                                          OK
+[ 33%] md4.mlmods                                            OK
+[ 34%] md4.mlimods                                           OK
+[ 34%] ocplib-system.cmxa                                    OK
+[ 34%] md5.mlmods                                            OK
+[ 34%] md4.cmi                                               OK
+[ 35%] md5.mlimods                                           OK
+[ 35%] makeDigest.cmx                                        OK
+[ 35%] md4.cmo                                               OK
+[ 35%] md5.cmi                                               OK
+[ 35%] sha1.mlmods                                           OK
+[ 35%] md4.cmx                                               OK
+[ 36%] md5.cmo                                               OK
+[ 36%] sha1.mlimods                                          OK
+[ 36%] md5HMac.mlmods                                        OK
+[ 36%] sha1.cmi                                              OK
+[ 36%] md5.cmx                                               OK
+[ 36%] md5HMac.cmo                                           OK
+[ 37%] sha1.cmo                                              OK
+[ 37%] sha1HMac.mlmods                                       OK
+[ 37%] sha1HMac.mlimods                                      OK
+[ 37%] sha1HMac.cmi                                          OK
+[ 37%] md5HMac.cmx                                           OK
+[ 37%] sha1.cmx                                              OK
+[ 38%] sha1HMac.cmo                                          OK
+[ 38%] ocplib-digest.cma                                     OK
+[ 38%] libmlocplib-digest.a                                  OK
+[ 38%] substWorker.mlmods                                    OK
+[ 38%] substMain.mlmods                                      OK
+[ 38%] sha1HMac.cmx                                          OK
+[ 39%] editVersion.mlmods                                    OK
+[ 39%] substWorker.cmo                                       OK
+[ 39%] editVersion.cmo                                       OK
+[ 39%] ocplib-subst-worker.cma                               OK
+[ 39%] substMain.cmo                                         OK
+[ 39%] ocplib-digest.cmxa                                    OK
+[ 39%] substWorker.cmx                                       OK
+[ 40%] ocp-subst-config.byte                                 OK
+[ 40%] editVersion.cmx                                       OK
+[ 40%] substMain.cmx                                         OK
+[ 40%] editOptions.mlmods                                    OK
+[ 40%] opamerVersion.mlmods                                  OK
+[ 40%] ocplib-subst-worker.cmxa                              OK
+[ 41%] opamerVersion.cmo                                     OK
+[ 41%] editOptions.cmo                                       OK
+[ 41%] opamerVersion.cmx                                     OK
+[ 41%] ocplib-edit-mode.cma                                  OK
+[ 41%] editOptions.cmx                                       OK
+[ 41%] opamerMain.mlmods                                     OK
+[ 41%] opamerMain.cmo                                        OK
+[ 41%] ocplib-edit-mode.cmxa                                 OK
+[ 42%] ocp-opamer.byte                                       OK
+[ 42%] ocp-subst-config.asm                                  OK
+[ 42%] opamerMain.cmx                                        OK
+[ 42%] win32_waitpids_c.o                                    OK
+[ 42%] win32Fileinfo.mlmods                                  OK
+[ 42%] win32_fileinfo_c.o                                    OK
+[ 42%] win32.mlmods                                          OK
+[ 43%] win32Fileinfo.cmo                                     OK
+[ 43%] win32.mlimods                                         OK
+[ 43%] win32.cmi                                             OK
+[ 43%] win32.cmo                                             OK
+[ 43%] win32Fileinfo.cmx                                     OK
+[ 43%] libmlocplib-win32.a                                   OK
+[ 43%] ocplib-win32.cma                                      OK
+[ 44%] logger.mlmods                                         OK
+[ 44%] win32.cmx                                             OK
+[ 44%] logger.cmo                                            OK
+[ 44%] ocp-opamer.asm                                        OK
+Installed /home/opam/.opam/system/lib/cmdliner/cmdliner.mli
+[ 44%] buildMisc.mlmods                                      OK
+Installed /home/opam/.opam/system/lib/cmdliner/cmdliner.cma
+Installed /home/opam/.opam/system/lib/cmdliner/cmdliner.cmxa
+Installed /home/opam/.opam/system/lib/cmdliner/cmdliner.a
+Installed /home/opam/.opam/system/lib/cmdliner/cmdliner.cmxs
+Installed /home/opam/.opam/system/lib/cmdliner/cmdliner.cmi
+Installed /home/opam/.opam/system/lib/cmdliner/cmdliner.cmx
+Installed /home/opam/.opam/system/lib/cmdliner/META
+[ 44%] ocplib-win32.cmxa                                     OK
+Installing cmdliner.0.9.2.
+[ 45%] logger.cmx                                            OK
+[ 45%] buildScanner.mlmods                                   OK
+[ 45%] buildScanner.mlimods                                  OK
+[ 45%] buildMisc.cmo                                         OK
+[ 45%] buildSubst.mlmods                                     OK
+[ 46%] buildScanner.cmi                                      OK
+[ 46%] buildSubst.mlimods                                    OK
+[ 46%] buildScanner.cmo                                      OK
+[ 46%] buildSubst.cmi                                        OK
+[ 46%] buildScanner.cmx                                      OK
+[ 46%] buildMisc.cmx                                         OK
+[ 46%] buildSubst.cmo                                        OK
+[ 47%] buildFind.mlmods                                      OK
+[ 47%] buildFind.mlimods                                     OK
+[ 47%] buildSubst.cmx                                        OK
+[ 47%] buildEngineMtime.mlmods                               OK
+[ 48%] buildFind.cmi                                         OK
+[ 48%] buildEngineMtime.mlimods                              OK
+[ 48%] buildEngineTypes.mlmods                               OK
+[ 48%] buildFind.cmo                                         OK
+[ 48%] buildEngineMtime.cmi                                  OK
+[ 48%] ocp-build-misc.cma                                    OK
+[ 48%] buildFind.cmx                                         OK
+[ 48%] buildEngineMtime.cmo                                  OK
+[ 49%] buildEngineMtime.cmx                                  OK
+[ 49%] buildEngineTypes.cmo                                  OK
+[ 49%] buildEngineGlobals.mlmods                             OK
+[ 49%] ocp-build-misc.cmxa                                   OK
+[ 49%] buildEngineRules.mlmods                               OK
+[ 50%] buildEngineGlobals.mlimods                            OK
+[ 50%] buildEngineTypes.cmx                                  OK
+[ 50%] buildEngineContext.mlmods                             OK
+[ 50%] buildEngineGlobals.cmi                                OK
+[ 51%] buildEngineContext.mlimods                            OK
+[ 51%] buildEngineDisplay.mlmods                             OK
+[ 51%] buildEngineGlobals.cmo                                OK
+[ 51%] buildEngineContext.cmi                                OK
+[ 51%] buildEngineRules.cmo                                  OK
+[ 51%] buildEngineDisplay.mlimods                            OK
+[ 52%] buildEngineGlobals.cmx                                OK
+[ 52%] buildEngineContext.cmo                                OK
+[ 52%] buildEngineDisplay.cmi                                OK
+[ 52%] buildEngineRules.cmx                                  OK
+[ 52%] buildEngineDisplay.cmo                                OK
+[ 52%] buildEngine.mlmods                                    OK
+[ 53%] buildEngine.mlimods                                   OK
+[ 53%] buildEngineContext.cmx                                OK
+[ 53%] buildEngine.cmi                                       OK
+[ 53%] buildOCPTree.mlmods                                   OK
+[ 53%] buildEngineDisplay.cmx                                OK
+[ 53%] buildOCPTree.cmo                                      OK
+[ 54%] buildEngine.cmo                                       OK
+[ 54%] ocp-build-engine.cma                                  OK
+[ 54%] buildOCPTree.cmx                                      OK
+[ 54%] buildOCPParser.ml                                     OK
+-- stderr of ocamlyacc --
+2 rules never reduced
+3 shift/reduce conflicts.
+[ 54%] buildOCPParse.mlmods                                  OK
+[ 54%] buildOCPParser.mlimods                                OK
+[ 54%] buildEngine.cmx                                       OK
+[ 54%] buildOCPParser.cmi                                    OK
+[ 55%] buildOCPParser.mlmods                                 OK
+[ 55%] buildOCPParse.mlimods                                 OK
+[ 55%] ocp-build-engine.cmxa                                 OK
+[ 55%] buildOCPParser.cmo                                    OK
+[ 56%] buildOCPParse.cmi                                     OK
+[ 56%] buildOCPTypes.mlmods                                  OK
+[ 56%] buildOCPVariable.mlmods                               OK
+[ 56%] buildOCPParser.cmx                                    OK
+[ 56%] buildOCPInterp.mlmods                                 OK
+[ 57%] buildOCPVariable.cmo                                  OK
+[ 57%] buildOCPInterp.mlimods                                OK
+[ 57%] buildOCP.mlmods                                       OK
+[ 57%] buildOCPParse.cmo                                     OK
+[ 57%] buildOCPTypes.cmo                                     OK
+[ 58%] buildOCP.mlimods                                      OK
+[ 58%] buildOCPVariable.cmx                                  OK
+[ 58%] buildOCPInterp.cmi                                    OK
+[ 58%] projectMain.mlmods                                    OK
+[ 58%] buildOCPParse.cmx                                     OK
+[ 58%] buildOCP.cmi                                          OK
+[ 58%] buildOCPInterp.cmo                                    OK
+[ 59%] buildOCPTypes.cmx                                     OK
+[ 59%] projectMain.cmo                                       OK
+[ 59%] buildObjectInspector.mlmods                           OK
+[ 59%] buildOCP.cmo                                          OK
+-- stderr of ocamlc.opt --
+File "tools/ocp-build/buildOCP.ml", line 635, characters 6-10:
+Warning 26: unused variable list.
+[ 59%] ocplib-project.cma                                    OK
+[ 59%] buildObjectInspector.mlimods                          OK
+[ 60%] buildObjectInspector.cmi                              OK
+[ 60%] buildOCPInterp.cmx                                    OK
+[ 60%] buildObjectInspector.cmo                              OK
+[ 60%] buildObjectInspector.cmx                              OK
+[ 60%] ocp-build-ocaml.cma                                   OK
+[ 60%] buildOCP.cmx                                          OK
+-- stderr of ocamlopt.opt --
+File "tools/ocp-build/buildOCP.ml", line 635, characters 6-10:
+Warning 26: unused variable list.
+[ 60%] ocp-build-ocaml.cmxa                                  OK
+[ 60%] ocp-project.byte                                      OK
+[ 61%] ocplib-project.cmxa                                   OK
+[ 61%] buildVersion.mlmods                                   OK
+[ 61%] buildTypes.mlmods                                     OK
+[ 61%] projectMain.cmx                                       OK
+[ 61%] buildVersion.cmo                                      OK
+[ 61%] buildTypes.cmo                                        OK
+[ 62%] buildVersion.cmx                                      OK
+[ 62%] buildOptions.mlmods                                   OK
+[ 62%] buildTypes.cmx                                        OK
+[ 62%] buildOptions.mlimods                                  OK
+[ 62%] buildGlobals.mlmods                                   OK
+[ 63%] buildOptions.cmi                                      OK
+[ 63%] buildOptions.cmo                                      OK
+[ 63%] buildGlobals.cmo                                      OK
+[ 63%] ocp-project.asm                                       OK
+[ 63%] buildConfig.mlmods                                    OK
+[ 63%] buildConfig.mlimods                                   OK
+[ 64%] buildGlobals.cmx                                      OK
+[ 64%] buildConfig.cmi                                       OK
+[ 64%] buildOptions.cmx                                      OK
+[ 64%] buildAutogen.mlmods                                   OK
+[ 64%] buildConfig.cmo                                       OK
+[ 64%] buildAutogen.mlimods                                  OK
+[ 65%] buildActions.mlmods                                   OK
+[ 65%] buildAutogen.cmi                                      OK
+[ 65%] buildActions.mlimods                                  OK
+[ 65%] buildConfig.cmx                                       OK
+[ 65%] buildAutogen.cmo                                      OK
+[ 66%] buildActions.cmi                                      OK
+[ 66%] metaTypes.mlmods                                      OK
+[ 66%] buildAutogen.cmx                                      OK
+[ 66%] buildActions.cmo                                      OK
+[ 66%] metaTypes.cmo                                         OK
+[ 66%] ocp-build-lib.cma                                     OK
+[ 66%] metaLexer.ml                                          OK
+-- stdout of ocamllex.opt --
+22 states, 692 transitions, table size 2900 bytes
+[ 66%] buildActions.cmx                                      OK
+[ 67%] metaTypes.cmx                                         OK
+[ 67%] metaLexer.mlmods                                      OK
+[ 67%] metaLexer.mlimods                                     OK
+[ 67%] metaFile.mlmods                                       OK
+[ 68%] ocp-build-lib.cmxa                                    OK
+[ 68%] metaLexer.cmi                                         OK
+[ 68%] metaFile.mlimods                                      OK
+[ 68%] metaParser.mlmods                                     OK
+[ 68%] metaLexer.cmo                                         OK
+[ 68%] metaFile.cmi                                          OK
+[ 69%] metaParser.mlimods                                    OK
+[ 69%] metaLexer.cmx                                         OK
+[ 69%] metaFile.cmo                                          OK
+[ 69%] metaFile.cmx                                          OK
+[ 69%] metaParser.cmi                                        OK
+[ 69%] metaConfig.mlmods                                     OK
+[ 69%] metaConfig.mlimods                                    OK
+[ 70%] metaParser.cmo                                        OK
+[ 70%] metaMain.mlmods                                       OK
+[ 70%] metaConfig.cmi                                        OK
+[ 70%] metaMain.cmo                                          OK
+[ 71%] metaParser.cmx                                        OK
+[ 71%] metaConfig.cmo                                        OK
+[ 71%] ocplib-ocamlfind.cma                                  OK
+[ 71%] metaConfig.cmx                                        OK
+[ 71%] metaMain.cmx                                          OK
+[ 71%] buildOCamlEnv.mlmods                                  OK
+[ 71%] ocplib-ocamlfind.cmxa                                 OK
+[ 71%] buildOCamlEnv.cmo                                     OK
+[ 72%] test-meta.byte                                        OK
+[ 72%] buildOCamlEnv.cmx                                     OK
+[ 72%] test-meta.asm                                         OK
+[ 72%] buildOasis.mlmods                                     OK
+[ 72%] buildOasis.mlimods                                    OK
+[ 72%] buildOasis.cmi                                        OK
+[ 73%] ocp-build-infer-env.byte                              OK
+[ 73%] ocp-build-infer-env.asm                               OK
+[ 73%] buildOCamlConfig.mlmods                               OK
+[ 73%] buildOCamlConfig.mlimods                              OK
+[ 73%] buildOasis.cmo                                        OK
+-- stderr of ocamlc.opt --
+File "tools/ocp-build/buildOasis.ml", line 415, characters 6-20:
+Warning 26: unused variable local_packages.
+[ 73%] buildOCamlConfig.cmi                                  OK
+[ 74%] ocp-build-oasis.cma                                   OK
+[ 74%] buildOasis.cmx                                        OK
+-- stderr of ocamlopt.opt --
+File "tools/ocp-build/buildOasis.ml", line 415, characters 6-20:
+Warning 26: unused variable local_packages.
+[ 74%] buildOCamlConfig.cmo                                  OK
+[ 74%] ocp-build-oasis.cmxa                                  OK
+[ 74%] buildOCamlTypes.mlmods                                OK
+[ 74%] buildOCamlMisc.mlmods                                 OK
+[ 75%] buildOCamlConfig.cmx                                  OK
+[ 75%] buildOCamlTypes.cmo                                   OK
+[ 75%] buildOCamlMisc.cmo                                    OK
+[ 75%] buildOCamlVariables.mlmods                            OK
+[ 75%] buildOCamlVariables.cmo                               OK
+[ 75%] buildOCamlTypes.cmx                                   OK
+[ 75%] buildOCamlMisc.cmx                                    OK
+[ 75%] buildOCamldep.mlimods                                 OK
+[ 76%] buildOCamldep.mlmods                                  OK
+[ 76%] buildOCamlVariables.cmx                               OK
+[ 76%] buildOCamldep.cmi                                     OK
+[ 76%] buildOCamlSyntaxes.mlmods                             OK
+[ 76%] buildOCamlSyntaxes.mlimods                            OK
+[ 77%] buildOCamlSyntaxes.cmi                                OK
+[ 77%] buildOCamldep.cmo                                     OK
+[ 77%] buildOCamlSyntaxes.cmo                                OK
+[ 77%] buildOCamldep.cmx                                     OK
+[ 77%] buildOCamlRules.mlimods                               OK
+[ 78%] buildOCamlRules.cmi                                   OK
+[ 78%] buildOCamlRules.mlmods                                OK
+[ 78%] buildOCamlInstall.mlmods                              OK
+[ 78%] buildOCamlSyntaxes.cmx                                OK
+[ 78%] buildOCamlInstall.mlimods                             OK
+[ 79%] buildOCamlInstall.cmi                                 OK
+[ 79%] buildOCamlInstall.cmo                                 OK
+[ 79%] buildOCamlRules.cmo                                   OK
+[ 79%] buildOCamlMeta.mlmods                                 OK
+[ 79%] buildOCamlMeta.mlimods                                OK
+[ 80%] buildOCamlMeta.cmi                                    OK
+[ 80%] buildOCamlMeta.cmo                                    OK
+[ 80%] buildOCamlInstall.cmx                                 OK
+[ 80%] buildOCamlMeta.cmx                                    OK
+[ 80%] buildOCamlTest.mlmods                                 OK
+[ 80%] buildOCamlTest.mlimods                                OK
+[ 81%] buildOCamlRules.cmx                                   OK
+[ 81%] buildArgs.mlmods                                      OK
+[ 81%] buildOCamlTest.cmi                                    OK
+[ 81%] buildMain.mlmods                                      OK
+[ 81%] buildOCamlTest.cmo                                    OK
+[ 81%] ocp-build-ocaml-plugin.cma                            OK
+[ 82%] buildArgs.cmo                                         OK
+[ 82%] strings.mlmods                                        OK
+[ 82%] buildOCamlTest.cmx                                    OK
+[ 82%] buildMain.cmo                                         OK
+[ 82%] buildArgs.cmx                                         OK
+[ 82%] ocp-build-ocaml-plugin.cmxa                           OK
+[ 82%] strings.mlimods                                       OK
+[ 83%] strings.cmi                                           OK
+[ 83%] strings.cmo                                           OK
+[ 83%] strings.cmx                                           OK
+[ 83%] byteMisc.mlmods                                       OK
+[ 83%] buildMain.cmx                                         OK
+[ 83%] ocp-build.byte                                        OK
+[ 84%] byteMisc.cmo                                          OK
+[ 84%] byteFile.mlmods                                       OK
+[ 84%] byteFile.mlimods                                      OK
+[ 84%] byteMisc.cmx                                          OK
+[ 84%] byteFile.cmi                                          OK
+[ 84%] byteCode.mlmods                                       OK
+[ 85%] byteFile.cmo                                          OK
+[ 85%] byteCode.mlimods                                      OK
+[ 85%] byteCode.cmi                                          OK
+[ 85%] byteCode.cmo                                          OK
+[ 85%] byteFile.cmx                                          OK
+[ 85%] ocplib-bytecode.cma                                   OK
+[ 86%] byteArgs.mlmods                                       OK
+[ 86%] ocp-build.asm                                         OK
+[ 86%] byteArgs.cmo                                          OK
+[ 86%] byteActions.mlmods                                    OK
+[ 86%] byteArgs.cmx                                          OK
+[ 86%] byteActions.cmo                                       OK
+[ 87%] byteMain.mlmods                                       OK
+[ 87%] ppxPlugin.mlmods                                      OK
+[ 87%] ppxPlugin.mlimods                                     OK
+[ 87%] ppxPlugin.cmi                                         OK
+[ 88%] byteCode.cmx                                          OK
+[ 88%] byteMain.cmo                                          OK
+[ 88%] ppxPlugin.cmo                                         OK
+[ 88%] ocp-bytecode.byte                                     OK
+[ 88%] ocplib-bytecode.cmxa                                  OK
+[ 88%] ocplib-ppx.cma                                        OK
+[ 88%] byteActions.cmx                                       OK
+[ 88%] ppxPlugin.cmx                                         OK
+[ 88%] approx_common.mlimods                                 OK
+[ 89%] approx_common.cmi                                     OK
+[ 89%] approx_tokens.mlmods                                  OK
+[ 89%] ocplib-ppx.cmxa                                       OK
+[ 89%] byteMain.cmx                                          OK
+[ 89%] approx_lexer.ml                                       OK
+-- stdout of ocamllex.opt --
+154 states, 2965 transitions, table size 12784 bytes
+2138 additional bytes used for bindings
+[ 89%] approx_tokens.cmo                                     OK
+[ 90%] approx_lexer.mlmods                                   OK
+[ 90%] approx_lexer.mlimods                                  OK
+[ 90%] approx_tokens.cmx                                     OK
+[ 90%] approx_lexer.cmi                                      OK
+[ 90%] editInstall.mlmods                                    OK
+[ 90%] approx_lexer.cmo                                      OK
+[ 91%] ocaml-approx.cma                                      OK
+[ 91%] ocp-bytecode.asm                                      OK
+[ 91%] editInstall.mlimods                                   OK
+[ 91%] editInstall.cmi                                       OK
+[ 91%] editEmacs.mlmods                                      OK
+[ 91%] editInstall.cmo                                       OK
+[ 92%] editEmacs.mlimods                                     OK
+[ 92%] editInstall.cmx                                       OK
+[ 92%] approx_lexer.cmx                                      OK
+[ 92%] editEmacs.cmi                                         OK
+[ 92%] editConfig.mlmods                                     OK
+[ 92%] ocaml-approx.cmxa                                     OK
+[ 93%] editConfig.mlimods                                    OK
+[ 93%] editEmacs.cmo                                         OK
+[ 93%] editCandidates.mlmods                                 OK
+[ 93%] editConfig.cmi                                        OK
+[ 94%] editCandidates.mlimods                                OK
+[ 94%] editEmacs.cmx                                         OK
+[ 94%] editConfig.cmo                                        OK
+[ 94%] editCandidates.cmi                                    OK
+[ 94%] editConfig.cmx                                        OK
+[ 94%] editDocumentation.mlmods                              OK
+[ 95%] editDocumentation.mlimods                             OK
+[ 95%] editCandidates.cmo                                    OK
+[ 95%] editDocumentation.cmi                                 OK
+[ 95%] editMain.mlmods                                       OK
+[ 95%] editCandidates.cmx                                    OK
+[ 95%] editDocumentation.cmo                                 OK
+[ 96%] ppxMain.mlmods                                        OK
+[ 96%] editDocumentation.cmx                                 OK
+[ 96%] editMain.cmo                                          OK
+[ 96%] ppxMain.cmo                                           OK
+[ 96%] test.mlmods                                           OK
+[ 96%] editMain.cmx                                          OK
+[ 96%] ppxMain.cmx                                           OK
+[ 96%] ocp-ppx.byte                                          OK
+[ 97%] ocp-edit-mode.byte                                    OK
+[ 97%] test.mlimods                                          OK
+[ 97%] test.cmi                                              OK
+[ 97%] ocp-ppx.asm                                           OK
+[ 97%] test.cmo                                              OK
+[ 97%] test.cmx                                              OK
+[ 98%] ocplib-test.cma                                       OK
+[ 98%] ocpList_test.mlmods                                   OK
+[ 98%] ocplib-test.cmxa                                      OK
+[ 98%] ocpList_test.cmo                                      OK
+[ 98%] ocpString_test.mlmods                                 OK
+[ 98%] ocp-edit-mode.asm                                     OK
+[ 99%] ocpString_test.cmo                                    OK
+[ 99%] file_test.mlmods                                      OK
+[ 99%] ocplib-lang.test.cma                                  OK
+[ 99%] ocpString_test.cmx                                    OK
+[ 99%] file_test.cmo                                         OK
+[ 99%] ocpList_test.cmx                                      OK
+[ 99%] ocplib-system.test.cma                                OK
+[ 99%] ocplib-lang.test.cmxa                                 OK
+[ 99%] file_test.cmx                                         OK
+[100%] ocplib-system.test.cmxa                               OK
+Build Successful in 10.89s. 594 jobs (parallelism 2.8x), 829 files generated.
+./ocp-build/ocp-build -install \
+	  -install-bundle typerex \
+          -install-lib /home/opam/.opam/system/lib/ocaml/typerex \
+          -install-bin /home/opam/.opam/system/bin \
+          -install-data /home/opam/.opam/system/share/typerex
+tput: No value for $TERM and no -T specified
+stty: standard input: Inappropriate ioctl for device
+Warning: option -install-bundle is obsolete
+Updating ocp-build.root
+Build Successful in 0.61s. 0 jobs (parallelism 0.0x), 0 files generated.
+	files:  ocaml-approx.cma approx_common.cmi approx_lexer.cmi ocaml-approx.cmxa ocaml-approx.a approx_common.cmi approx_lexer.cmi approx_tokens.cmx approx_lexer.cmx
+Generated META file /home/opam/.opam/system/lib/META.ocaml-approx
+	files:  ocp-build.byte ocp-build ocaml.ocp camlp4.ocp
+Generated META file /home/opam/.opam/system/lib/META.ocp-build
+	files:  ocp-bytecode.byte ocp-bytecode
+Generated META file /home/opam/.opam/system/lib/META.ocp-bytecode
+	files:  ocp-edit-mode.byte ocp-edit-mode emacs
+Generated META file /home/opam/.opam/system/lib/META.ocp-edit-mode
+	files:  ocp-opamer.byte ocp-opamer
+Generated META file /home/opam/.opam/system/lib/META.ocp-opamer
+	files:  ocp-ppx.byte ocp-ppx
+Generated META file /home/opam/.opam/system/lib/META.ocp-ppx
+	files:  ocp-subst-config.byte ocp-subst-config
+Generated META file /home/opam/.opam/system/lib/META.ocp-subst-config
+	files:  ocplib-bytecode.cma strings.cmi byteFile.cmi byteCode.cmi ocplib-bytecode.cmxa ocplib-bytecode.a strings.cmi byteFile.cmi byteCode.cmi strings.cmx byteMisc.cmx byteFile.cmx byteCode.cmx
+Generated META file /home/opam/.opam/system/lib/META.ocplib-bytecode
+	files:  ocplib-debug.cma debugVerbosity.cmi debugTyperex.cmi ocplib-debug.cmxa ocplib-debug.a debugVerbosity.cmi debugTyperex.cmi debugVerbosity.cmx debugTyperex.cmx
+Generated META file /home/opam/.opam/system/lib/META.ocplib-debug
+	files:  ocplib-digest.cma base16.cmi base32.cmi base64.cmi base6427.cmi md4.cmi md5.cmi sha1.cmi sha1HMac.cmi libmlocplib-digest.a ocplib-digest.cmxa ocplib-digest.a base16.cmi base32.cmi base64.cmi base6427.cmi md4.cmi md5.cmi sha1.cmi sha1HMac.cmi checksum.cmx base16.cmx base32.cmx base64.cmx base6427.cmx makeDigest.cmx md4.cmx md5.cmx sha1.cmx md5HMac.cmx sha1HMac.cmx libmlocplib-digest.a
+Generated META file /home/opam/.opam/system/lib/META.ocplib-digest
+	files:  ocplib-edit-mode.cma ocplib-edit-mode.cmxa ocplib-edit-mode.a editVersion.cmx editOptions.cmx
+Generated META file /home/opam/.opam/system/lib/META.ocplib-edit-mode
+	files:  ocplib-lang.cma ocpPervasives.cmi ocpList.cmi ocpString.cmi ocpStream.cmi ocpGenlex.cmi ocpHashtbl.cmi ocpDigest.cmi option.cmi toposort.cmi linearToposort.cmi ocamllexer.cmi trie.cmi ocplib-lang.cmxa ocplib-lang.a ocpPervasives.cmi ocpList.cmi ocpString.cmi ocpStream.cmi ocpGenlex.cmi ocpHashtbl.cmi ocpDigest.cmi option.cmi toposort.cmi linearToposort.cmi ocamllexer.cmi trie.cmi ocpPervasives.cmx ocpList.cmx ocpString.cmx ocpStream.cmx ocpGenlex.cmx ocpHashtbl.cmx ocpDigest.cmx option.cmx intMap.cmx intSet.cmx stringMap.cmx stringSet.cmx toposort.cmx linearToposort.cmx ocamllexer.cmx trie.cmx ocpLang.cmx
+Generated META file /home/opam/.opam/system/lib/META.ocplib-lang
+	files:  ocplib-ppx.cma ppxPlugin.cmi ocplib-ppx.cmxa ocplib-ppx.a ppxPlugin.cmi ppxPlugin.cmx
+Generated META file /home/opam/.opam/system/lib/META.ocplib-ppx
+	files:  ocplib-subcmd.cma subcommands.cmi ocplib-subcmd.cmxa ocplib-subcmd.a subcommands.cmi subcommands.cmx
+Generated META file /home/opam/.opam/system/lib/META.ocplib-subcmd
+	files:  ocplib-subst.cma stringSubst.cmi ocplib-subst.cmxa ocplib-subst.a stringSubst.cmi stringSubst.cmx
+Generated META file /home/opam/.opam/system/lib/META.ocplib-subst
+	files:  ocplib-subst-worker.cma ocplib-subst-worker.cmxa ocplib-subst-worker.a substWorker.cmx
+Generated META file /home/opam/.opam/system/lib/META.ocplib-subst-worker
+	files:  ocplib-system.cma reentrantBuffers.cmi file.cmi fileLines.cmi fileLabels.cmi date.cmi ocpUnix.cmi ocpFilename.cmi process.cmi debug.cmi configParser.cmi simpleConfig.cmi ocplib-system.cmxa ocplib-system.a reentrantBuffers.cmi file.cmi fileLines.cmi fileLabels.cmi date.cmi ocpUnix.cmi ocpFilename.cmi process.cmi debug.cmi configParser.cmi simpleConfig.cmi reentrantBuffers.cmx file.cmx fileLines.cmx fileLabels.cmx date.cmx ocpUnix.cmx ocpFilename.cmx process.cmx debug.cmx ocpSystem.cmx configParser.cmx simpleConfig.cmx
+Generated META file /home/opam/.opam/system/lib/META.ocplib-system
+	files:  ocplib-win32.cma win32.cmi libmlocplib-win32.a ocplib-win32.cmxa ocplib-win32.a win32.cmi win32Fileinfo.cmx win32.cmx libmlocplib-win32.a
+Generated META file /home/opam/.opam/system/lib/META.ocplib-win32
+	files: 
+Generated META file /home/opam/.opam/system/lib/META.typerex
+Installing typerex.1.99.6-beta.
+
+=-=-= Installing ocp-build.1.99.6-beta =-=-=
+Installing ocp-build.1.99.6-beta.
+
+=-=-= Installing ocp-indent.1.3.2 =-=-=
+ocp-indent.1.3.2 Downloading https://github.com/OCamlPro/ocp-indent/archive/1.3.2.tar.gz
+
+=-=-= Installing ocp-index.0.3.0 =-=-=
+ocp-index.0.3.0 Downloading https://github.com/OCamlPro/ocp-index/archive/0.3.0.tar.gz
+--2013-11-19 11:16:43--  https://github.com/OCamlPro/ocp-indent/archive/1.3.2.tar.gz
+Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... --2013-11-19 11:16:43--  https://github.com/OCamlPro/ocp-index/archive/0.3.0.tar.gz
+Resolving github.com (github.com)... connected.
+192.30.252.131
+Connecting to github.com (github.com)|192.30.252.131|:443... connected.
+HTTP request sent, awaiting response... HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/OCamlPro/ocp-indent/tar.gz/1.3.2 [following]
+--2013-11-19 11:16:44--  https://codeload.github.com/OCamlPro/ocp-indent/tar.gz/1.3.2
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.144
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.144|:443... 302 Found
+Location: https://codeload.github.com/OCamlPro/ocp-index/tar.gz/0.3.0 [following]
+--2013-11-19 11:16:44--  https://codeload.github.com/OCamlPro/ocp-index/tar.gz/0.3.0
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.144
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.144|:443... connected.
+connected.
+HTTP request sent, awaiting response... HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `ocp-index-0.3.0.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 1.45M
+    50K ..........200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `ocp-indent-1.3.2.tar.gz'
+
+     0K .......... ..... .......                                     1.02M=0.05s
+
+2013-11-19 11:16:44 (1.31 MB/s) - `ocp-index-0.3.0.tar.gz' saved [69326]
+
+..... .......... .......... .......... 1.44M
+    50K .......... .......... .......... .......... .......... 1.43M
+   100K .......... .......                                     94.0M=0.07s
+
+2013-11-19 11:16:44 (1.68 MB/s) - `ocp-indent-1.3.2.tar.gz' saved [120116]
+
+Building ocp-index.0.3.0:
+  ocp-build -init
+  ocp-build ocp-index-lib ocp-index
+  ocp-build install -install-lib /home/opam/.opam/system/lib/ocp-index -install-bin /home/opam/.opam/system/bin -install-data /home/opam/.opam/system/share/typerex ocp-index-lib ocp-index
+  sh -c ./_obuild/ocp-index/ocp-index.asm --help=groff > /home/opam/.opam/system/man/man1/ocp-index.1
+Building ocp-indent.1.3.2:
+  ./configure --prefix /home/opam/.opam/system
+  make
+  make install
+tput: No value for $TERM and no -T specified
+stty: standard input: Inappropriate ioctl for device
+Updating ocp-build.root
+Warning: 8 incomplete packages (will not be built):
+   ocp-browser (program,ocp)
+     in /home/opam/.opam/system/build/ocp-index.0.3.0/src
+  Hidden: 7 incomplete packages in META files (use -print-incomplete-meta).
+Warning: 1 needed packages are missing !
+   ABSENT package "curses" missed by 1 packages
+   ocp-browser (program,ocp)
+     in /home/opam/.opam/system/build/ocp-index.0.3.0/src
+[  8%] trie.mlimods                                          OK
+[ 16%] trie.mlmods                                           OK
+[ 25%] libIndex.mlimods                                      OK
+[ 33%] libIndex.mlmods                                       OK
+[ 41%] trie.cmi                                              OK
+[ 44%] indexOptions.mlmods                                   OK
+[ 47%] trie.cmo                                              OK
+[ 55%] libIndex.cmi                                          OK
+[ 58%] indexOptions.mlimods                                  OK
+[ 66%] indexOptions.cmi                                      OK
+[ 69%] indexOptions.cmo                                      OK
+[ 72%] indexMain.mlmods                                      OK
+[ 80%] trie.cmx                                              OK
+[ 83%] indexMain.cmo                                         OK
+[ 83%] libIndex.cmo                                          OK
+[ 86%] ocp-index-lib.cma                                     OK
+[ 88%] ocp-index.byte                                        OK
+[ 88%] libIndex.cmx                                          OK
+[ 94%] ocp-index-lib.cmxa                                    OK
+[ 94%] indexOptions.cmx                                      OK
+checking for gcc... gcc
+[ 97%] indexMain.cmx                                         OK
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... [100%] ocp-index.asm                                         OK
+Build Successful in 0.75s. 22 jobs (parallelism 1.5x), 29 files generated.
+no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... tput: No value for $TERM and no -T specified
+stty: standard input: Inappropriate ioctl for device
+yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... Updating ocp-build.root
+Warning: 8 incomplete packages (will not be built):
+   ocp-browser (program,ocp)
+     in /home/opam/.opam/system/build/ocp-index.0.3.0/src
+  Hidden: 7 incomplete packages in META files (use -print-incomplete-meta).
+Warning: 1 needed packages are missing !
+   ABSENT package "curses" missed by 1 packages
+   ocp-browser (program,ocp)
+     in /home/opam/.opam/system/build/ocp-index.0.3.0/src
+Build Successful in 0.08s. 0 jobs (parallelism 0.0x), 0 files generated.
+none needed
+checking for ocamlc... ocamlc
+OCaml version is 4.01.0
+OCaml library path is /usr/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+tput: No value for $TERM and no -T specified
+stty: standard input: Inappropriate ioctl for device
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+configure: creating ./config.status
+Updating ocp-build.root
+Warning: 8 incomplete packages (will not be built):
+   ocp-browser (program,ocp)
+     in /home/opam/.opam/system/build/ocp-index.0.3.0/src
+  Hidden: 7 incomplete packages in META files (use -print-incomplete-meta).
+Warning: 1 needed packages are missing !
+   ABSENT package "curses" missed by 1 packages
+   ocp-browser (program,ocp)
+     in /home/opam/.opam/system/build/ocp-index.0.3.0/src
+Build Successful in 0.08s. 0 jobs (parallelism 0.0x), 0 files generated.
+	files:  ocp-index.byte ocp-index ocp-index.el
+Generated META file /home/opam/.opam/system/lib/META.ocp-index
+	files:  ocp-index-lib.cma trie.cmi libIndex.cmi ocp-index-lib.cmxa ocp-index-lib.a trie.cmi libIndex.cmi trie.cmx libIndex.cmx
+Generated META file /home/opam/.opam/system/lib/META.ocp-index-lib
+Installing ocp-index.0.3.0.
+config.status: creating Makefile.config
+config.status: creating version.ocp
+
+Executables will be installed in /home/opam/.opam/system/bin
+ocp-build -init -scan
+tput: No value for $TERM and no -T specified
+stty: standard input: Inappropriate ioctl for device
+Updating ocp-build.root
+Warning: 7 incomplete packages (will not be built):
+  Hidden: 7 incomplete packages in META files (use -print-incomplete-meta).
+[  3%] approx_common.mlimods                                 OK
+[  6%] approx_tokens.mlmods                                  OK
+[  9%] pos.mlmods                                            OK
+[ 12%] approx_common.cmi                                     OK
+[ 13%] pos.mlimods                                           OK
+[ 16%] approx_lexer.ml                                       OK
+-- stdout of ocamllex.opt --
+203 states, 4075 transitions, table size 17518 bytes
+2432 additional bytes used for bindings
+[ 17%] approx_tokens.cmo                                     OK
+[ 18%] pos.cmi                                               OK
+[ 19%] approx_lexer.mlmods                                   OK
+[ 22%] pos.cmo                                               OK
+[ 23%] approx_tokens.cmx                                     OK
+[ 24%] pos.cmx                                               OK
+[ 25%] util.mlmods                                           OK
+[ 28%] nstream.mlmods                                        OK
+[ 31%] approx_lexer.cmo                                      OK
+[ 32%] util.cmo                                              OK
+[ 34%] nstream.mlimods                                       OK
+[ 35%] ocp-indent-lexer.cma                                  OK
+[ 38%] nstream.cmi                                           OK
+[ 39%] util.cmx                                              OK
+[ 40%] compat.mlmods                                         OK
+[ 43%] nstream.cmo                                           OK
+[ 44%] compat.cmo                                            OK
+[ 45%] indentConfig.mlmods                                   OK
+[ 46%] ocp-indent-utils.cma                                  OK
+[ 49%] compat.cmx                                            OK
+[ 50%] indentConfig.mlimods                                  OK
+[ 53%] approx_lexer.cmx                                      OK
+[ 54%] indentConfig.cmi                                      OK
+[ 55%] indentBlock.mlmods                                    OK
+[ 56%] indentConfig.cmo                                      OK
+[ 57%] ocp-indent-lexer.cmxa                                 OK
+[ 60%] indentBlock.mlimods                                   OK
+[ 63%] nstream.cmx                                           OK
+[ 64%] indentBlock.cmi                                       OK
+[ 65%] ocp-indent-utils.cmxa                                 OK
+[ 67%] indentConfig.cmx                                      OK
+[ 68%] indentPrinter.mlmods                                  OK
+[ 71%] indentPrinter.mlimods                                 OK
+[ 74%] indentPrinter.cmi                                     OK
+[ 75%] indentPrinter.cmo                                     OK
+-- stderr of ocamlc.opt --
+File "src/indentPrinter.ml", line 15, characters 0-11:
+Warning 44: this open statement shadows the value identifier |> (which is later used)
+[ 76%] indentBlock.cmo                                       OK
+[ 77%] indentVersion.mlmods                                  OK
+[ 80%] ocp-indent-lib.cma                                    OK
+[ 81%] indentVersion.cmo                                     OK
+[ 82%] indentArgs.mlmods                                     OK
+[ 85%] indentArgs.mlimods                                    OK
+[ 88%] indentArgs.cmi                                        OK
+[ 89%] indentVersion.cmx                                     OK
+[ 90%] indentMain.mlmods                                     OK
+[ 93%] indentArgs.cmo                                        OK
+-- stderr of ocamlc.opt --
+File "src/indentArgs.ml", line 46, characters 4-96:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 51, characters 4-48:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 55, characters 4-50:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 82, characters 4-98:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 91, characters 4-46:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 95, characters 4-89:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 101, characters 4-51:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 109, characters 6-78:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 114, characters 14-66:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+[ 93%] indentMain.cmo                                        OK
+[ 94%] ocp-indent.byte                                       OK
+[ 94%] indentBlock.cmx                                       OK
+[ 95%] indentPrinter.cmx                                     OK
+-- stderr of ocamlopt.opt --
+File "src/indentPrinter.ml", line 15, characters 0-11:
+Warning 44: this open statement shadows the value identifier |> (which is later used)
+[ 97%] ocp-indent-lib.cmxa                                   OK
+[ 97%] indentArgs.cmx                                        OK
+-- stderr of ocamlopt.opt --
+File "src/indentArgs.ml", line 46, characters 4-96:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 51, characters 4-48:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 55, characters 4-50:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 82, characters 4-98:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 91, characters 4-46:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 95, characters 4-89:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 101, characters 4-51:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 109, characters 6-78:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+File "src/indentArgs.ml", line 114, characters 14-66:
+Warning 44: this open statement shadows the value identifier & (which is later used)
+[ 98%] indentMain.cmx                                        OK
+[100%] ocp-indent.asm                                        OK
+Build Successful in 1.06s. 59 jobs (parallelism 2.1x), 86 files generated.
+ocp-build
+tput: No value for $TERM and no -T specified
+stty: standard input: Inappropriate ioctl for device
+Updating ocp-build.root
+Warning: 7 incomplete packages (will not be built):
+  Hidden: 7 incomplete packages in META files (use -print-incomplete-meta).
+Build Successful in 0.09s. 0 jobs (parallelism 0.0x), 0 files generated.
+cp _obuild/ocp-indent/ocp-indent.asm ocp-indent
+ocp-build
+tput: No value for $TERM and no -T specified
+stty: standard input: Inappropriate ioctl for device
+Updating ocp-build.root
+Warning: 7 incomplete packages (will not be built):
+  Hidden: 7 incomplete packages in META files (use -print-incomplete-meta).
+Build Successful in 0.09s. 0 jobs (parallelism 0.0x), 0 files generated.
+cp _obuild/ocp-indent/ocp-indent.asm ocp-indent
+mkdir -p man/man1
+./ocp-indent --help=groff >man/man1/ocp-indent.1
+tput: No value for $TERM and no -T specified
+stty: standard input: Inappropriate ioctl for device
+ocp-build install \
+	  -install-lib /home/opam/.opam/system/lib/ocp-indent \
+	  -install-bin /home/opam/.opam/system/bin \
+	  -install-data /home/opam/.opam/system/share/typerex
+tput: No value for $TERM and no -T specified
+stty: standard input: Inappropriate ioctl for device
+Updating ocp-build.root
+Warning: 7 incomplete packages (will not be built):
+  Hidden: 7 incomplete packages in META files (use -print-incomplete-meta).
+Build Successful in 0.08s. 0 jobs (parallelism 0.0x), 0 files generated.
+	files:  ocp-indent.byte ocp-indent ocp-indent.el ocp-indent.vim
+Generated META file /home/opam/.opam/system/lib/META.ocp-indent
+	files:  ocp-indent-lexer.cma approx_common.cmi ocp-indent-lexer.cmxa ocp-indent-lexer.a approx_common.cmi approx_tokens.cmx approx_lexer.cmx
+Generated META file /home/opam/.opam/system/lib/META.ocp-indent-lexer
+	files:  ocp-indent-lib.cma indentConfig.cmi indentBlock.cmi indentPrinter.cmi ocp-indent-lib.cmxa ocp-indent-lib.a indentConfig.cmi indentBlock.cmi indentPrinter.cmi indentConfig.cmx indentBlock.cmx indentPrinter.cmx
+Generated META file /home/opam/.opam/system/lib/META.ocp-indent-lib
+	files:  ocp-indent-utils.cma pos.cmi nstream.cmi ocp-indent-utils.cmxa ocp-indent-utils.a pos.cmi nstream.cmi pos.cmx util.cmx nstream.cmx compat.cmx
+Generated META file /home/opam/.opam/system/lib/META.ocp-indent-utils
+mkdir -p /home/opam/.opam/system/man/man1
+install -m 644 man/man1/ocp-indent.1 /home/opam/.opam/system/man/man1/
+
+
+=== ocp-indent installed ===
+
+To setup tuareg-mode to use ocp-indent, please add the following
+line to your .emacs :
+
+(load-file "/home/opam/.opam/system/share/typerex/ocp-indent/ocp-indent.el")
+
+Vim users are welcome to add the following to their .vimrc :
+
+autocmd FileType ocaml source /home/opam/.opam/system/share/typerex/ocp-indent/ocp-indent.vim
+
+Installing ocp-indent.1.3.2.
+
+[ERROR] Due to some errors while processing conf-gtksourceview.2, the following actions will NOT proceed:
+ - install ocaml-top.1.1.0
+ - install lablgtk.2.16.0
+
+===== ERROR while installing conf-gtksourceview.2 =====
+# opam-version         1.1.0
+# os                   linux
+# command              pkg-config gtksourceview-2.0
+# path                 /home/opam/.opam/system/build/conf-gtksourceview.2
+# compiler             system (4.01.0)
+# exit-code            1
+# env-file             /home/opam/.opam/system/build/conf-gtksourceview.2/conf-gtksourceview-16338-9b8556.env
+# stdout-file          /home/opam/.opam/system/build/conf-gtksourceview.2/conf-gtksourceview-16338-9b8556.out
+# stderr-file          /home/opam/.opam/system/build/conf-gtksourceview.2/conf-gtksourceview-16338-9b8556.err
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/system/backup/state-20131019111624.export"
+'opam install ocaml-top' failed.
