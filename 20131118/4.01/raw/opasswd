@@ -1,0 +1,135 @@
+++ opam install opasswd -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install opasswd
+The following actions will be performed:
+ - install opasswd.0.9.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing opasswd.0.9.1 =-=-=
+opasswd.0.9.1 Downloading https://github.com/mcclurmc/ocaml-opasswd/archive/0.9.1.tar.gz
+--2013-11-19 12:22:07--  https://github.com/mcclurmc/ocaml-opasswd/archive/0.9.1.tar.gz
+Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/mcclurmc/ocaml-opasswd/tar.gz/0.9.1 [following]
+--2013-11-19 12:22:07--  https://codeload.github.com/mcclurmc/ocaml-opasswd/tar.gz/0.9.1
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.147
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 44222 (43K) [application/x-gzip]
+Saving to: `ocaml-opasswd-0.9.1.tar.gz'
+
+     0K .......... .......... .......... .......... ...       100% 1.27M=0.03s
+
+2013-11-19 12:22:08 (1.27 MB/s) - `ocaml-opasswd-0.9.1.tar.gz' saved [44222/44222]
+
+Building opasswd.0.9.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/system
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ passwd
+Package version: ..................................... 0.9.0
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/system
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_unix: ............................................ /usr/lib/ocaml
+
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlc -ccopt -Wall -ccopt -O3 -c lib/shadow_stubs.c
+mv shadow_stubs.o lib/shadow_stubs.o
+ocamlfind ocamlc -ccopt -Wall -ccopt -O3 -c lib/passwd_stubs.c
+mv passwd_stubs.o lib/passwd_stubs.o
+ocamlfind ocamlc -ccopt -Wall -ccopt -O3 -c lib/common_stubs.c
+mv common_stubs.o lib/common_stubs.o
+/usr/bin/ocamlmklib -o lib/oPasswd_stubs lib/shadow_stubs.o lib/passwd_stubs.o lib/common_stubs.o
+ocamlfind ocamldep -package unix -modules lib/passwd.mli > lib/passwd.mli.depends
+ocamlfind ocamlc -c -g -ccopt -Wall -ccopt -O3 -package unix -I lib -o lib/passwd.cmi lib/passwd.mli
+ocamlfind ocamldep -package unix -modules lib/passwd.ml > lib/passwd.ml.depends
+ocamlfind ocamldep -package unix -modules lib/shadow.mli > lib/shadow.mli.depends
+ocamlfind ocamlc -c -g -ccopt -Wall -ccopt -O3 -package unix -I lib -o lib/shadow.cmi lib/shadow.mli
+ocamlfind ocamldep -package unix -modules lib/shadow.ml > lib/shadow.ml.depends
+ocamlfind ocamldep -package unix -modules lib/common.mli > lib/common.mli.depends
+ocamlfind ocamlc -c -g -ccopt -Wall -ccopt -O3 -package unix -I lib -o lib/common.cmi lib/common.mli
+ocamlfind ocamldep -package unix -modules lib/common.ml > lib/common.ml.depends
+ocamlfind ocamlc -c -g -ccopt -Wall -ccopt -O3 -package unix -I lib -o lib/passwd.cmo lib/passwd.ml
+ocamlfind ocamlc -c -g -ccopt -Wall -ccopt -O3 -package unix -I lib -o lib/shadow.cmo lib/shadow.ml
+ocamlfind ocamlc -c -g -ccopt -Wall -ccopt -O3 -package unix -I lib -o lib/common.cmo lib/common.ml
+ocamlfind ocamlc -pack -g lib/passwd.cmo lib/shadow.cmo lib/common.cmo -o lib/oPasswd.cmo
+ocamlfind ocamlc -a -dllib -loPasswd_stubs -cclib -loPasswd_stubs lib/oPasswd.cmo -o lib/oPasswd.cma
+ocamlfind ocamlopt -c -g -ccopt -Wall -ccopt -O3 -package unix -for-pack OPasswd -I lib -o lib/passwd.cmx lib/passwd.ml
+ocamlfind ocamlopt -c -g -ccopt -Wall -ccopt -O3 -package unix -for-pack OPasswd -I lib -o lib/shadow.cmx lib/shadow.ml
+ocamlfind ocamlopt -c -g -ccopt -Wall -ccopt -O3 -package unix -for-pack OPasswd -I lib -o lib/common.cmx lib/common.ml
+touch lib/oPasswd.mli  ; if  ocamlfind ocamlopt -pack -g -I lib lib/passwd.cmx lib/shadow.cmx lib/common.cmx -o lib/oPasswd.cmx  ; then  rm -f lib/oPasswd.mli  ; else  rm -f lib/oPasswd.mli  ; exit 1; fi
+ocamlfind ocamlopt -a -cclib -loPasswd_stubs lib/oPasswd.cmx -o lib/oPasswd.cmxa
+ocamlfind ocamlopt -shared -I lib lib/oPasswd.cmx -o lib/oPasswd.cmxs
+ocamlfind ocamldep -package unix -modules test/opasswd_test.ml > test/opasswd_test.ml.depends
+ocamlfind ocamlc -c -g -I lib -package unix -I test -I lib -o test/opasswd_test.cmo test/opasswd_test.ml
+ocamlfind ocamlopt -c -g -I lib -package unix -I test -I lib -o test/opasswd_test.cmx test/opasswd_test.ml
+ocamlfind ocamlopt -g -I lib -linkpkg -package unix lib/oPasswd.cmxa lib/oPasswd.cmx test/opasswd_test.cmx -o test/opasswd_test.native
+Installed /home/opam/.opam/system/lib/oPasswd/passwd.mli
+Installed /home/opam/.opam/system/lib/oPasswd/shadow.mli
+Installed /home/opam/.opam/system/lib/oPasswd/common.mli
+Installed /home/opam/.opam/system/lib/oPasswd/liboPasswd_stubs.a
+Installed /home/opam/.opam/system/lib/oPasswd/oPasswd.cmi
+Installed /home/opam/.opam/system/lib/oPasswd/oPasswd.cma
+Installed /home/opam/.opam/system/lib/oPasswd/oPasswd.cmxa
+Installed /home/opam/.opam/system/lib/oPasswd/oPasswd.a
+Installed /home/opam/.opam/system/lib/oPasswd/oPasswd.cmxs
+Installed /home/opam/.opam/system/lib/oPasswd/META
+Installed /home/opam/.opam/system/lib/stublibs/dlloPasswd_stubs.so
+Installed /home/opam/.opam/system/lib/stublibs/dlloPasswd_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/system/lib/stublibs is not mentioned in ld.conf
+Installing opasswd.0.9.1.
