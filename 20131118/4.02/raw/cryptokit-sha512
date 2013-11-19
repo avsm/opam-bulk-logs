@@ -1,0 +1,173 @@
+++ opam install cryptokit-sha512 -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install cryptokit-sha512
+Ubuntu depexts:
+The following actions will be performed:
+ - install cryptokit-sha512.1.6.3
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing cryptokit-sha512.1.6.3 =-=-=
+cryptokit-sha512.1.6.3 Downloading https://github.com/vbmithr/cryptokit-sha512/tarball/1.6.3
+--2013-11-19 06:18:06--  https://github.com/vbmithr/cryptokit-sha512/tarball/1.6.3
+Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/vbmithr/cryptokit-sha512/legacy.tar.gz/1.6.3 [following]
+--2013-11-19 06:18:06--  https://codeload.github.com/vbmithr/cryptokit-sha512/legacy.tar.gz/1.6.3
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.145
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.145|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `vbmithr-cryptokit-sha512-1.6.3-0-gc46a3a6.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 1.42M
+    50K .......... .......... .......... .......... .......... 1.45M
+   100K .......... .......... .......... ...                   1.91M=0.09s
+
+2013-11-19 06:18:06 (1.53 MB/s) - `vbmithr-cryptokit-sha512-1.6.3-0-gc46a3a6.tar.gz' saved [136641]
+
+Building cryptokit-sha512.1.6.3:
+  make
+  make install
+ocaml setup.ml -configure 
+
+Configuration: 
+ocamlfind: ..................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: ........................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ...................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: .................................. cryptokit
+Package version: ............................... 1.6
+os_type: ....................................... Unix
+system: ........................................ linux
+architecture: .................................. amd64
+ccomp_type: .................................... cc
+ocaml_version: ................................. 4.02.0
+standard_library_default: ...................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .............................. /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .............................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ........................... gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ............................. gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ......................................... default
+ext_obj: ....................................... .o
+ext_asm: ....................................... .s
+ext_lib: ....................................... .a
+ext_dll: ....................................... .so
+default_executable_name: ....................... a.out
+systhread_supported: ........................... true
+Install architecture-independent files dir: .... /usr/local
+Install architecture-dependent files in dir: ... $prefix
+User executables: .............................. $exec_prefix/bin
+System admin executables: ...................... $exec_prefix/sbin
+Program executables: ........................... $exec_prefix/libexec
+Read-only single-machine data: ................. $prefix/etc
+Modifiable architecture-independent data: ...... $prefix/com
+Modifiable single-machine data: ................ $prefix/var
+Object code libraries: ......................... $exec_prefix/lib
+Read-only arch-independent data root: .......... $prefix/share
+Read-only architecture-independent data: ....... $datarootdir
+Info documentation: ............................ $datarootdir/info
+Locale-dependent data: ......................... $datarootdir/locale
+Man documentation: ............................. $datarootdir/man
+Documentation root: ............................ $datarootdir/doc/$pkg_name
+HTML documentation: ............................ $docdir
+DVI documentation: ............................. $docdir
+PDF documentation: ............................. $docdir
+PS documentation: .............................. $docdir
+findlib_version: ............................... 1.4
+is_native: ..................................... true
+suffix_program: ................................ 
+Remove a file.: ................................ rm -f
+Remove a directory.: ........................... rm -rf
+Turn ocaml debug flag on: ...................... true
+Turn ocaml profile flag on: .................... false
+Compiler support generation of .cmxs.: ......... true
+OCamlbuild additional flags: ................... 
+Enable ZLib: ................................... true
+Build and run benchmark: ....................... false
+ocamldoc: ...................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+pkg_unix: ...................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+pkg_num: ....................................... /home/opam/.opam/4.02.0dev+trunk/lib/num
+
+ocaml setup.ml -build -classic-display
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/arcfour.c
+mv arcfour.o src/arcfour.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-arcfour.c
+mv stubs-arcfour.o src/stubs-arcfour.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/blowfish.c
+mv blowfish.o src/blowfish.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-blowfish.c
+mv stubs-blowfish.o src/stubs-blowfish.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/d3des.c
+mv d3des.o src/d3des.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-des.c
+mv stubs-des.o src/stubs-des.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/rijndael-alg-fst.c
+mv rijndael-alg-fst.o src/rijndael-alg-fst.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/ripemd160.c
+mv ripemd160.o src/ripemd160.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-ripemd160.c
+mv stubs-ripemd160.o src/stubs-ripemd160.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/sha1.c
+mv sha1.o src/sha1.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-sha1.c
+mv stubs-sha1.o src/stubs-sha1.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/sha256.c
+mv sha256.o src/sha256.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-sha256.c
+mv stubs-sha256.o src/stubs-sha256.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/sha512.c
+mv sha512.o src/sha512.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-sha512.c
+mv stubs-sha512.o src/stubs-sha512.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-aes.c
+mv stubs-aes.o src/stubs-aes.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-md5.c
+mv stubs-md5.o src/stubs-md5.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-misc.c
+mv stubs-misc.o src/stubs-misc.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-rng.c
+mv stubs-rng.o src/stubs-rng.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
++ ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
+src/stubs-zlib.c:19:18: fatal error: zlib.h: No such file or directory
+compilation terminated.
+Command exited with code 2.
+E: Failure("Command ''/home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild' src/libcryptokit_stubs.a src/dllcryptokit_stubs.so src/cryptokit.cma src/cryptokit.cmxa src/cryptokit.a src/cryptokit.cmxs test/test.byte -tag debug -classic-display' terminated with error code 10")
+make: *** [build] Error 1
+[ERROR] The compilation of cryptokit-sha512.1.6.3 failed.
+Removing cryptokit-sha512.1.6.3.
+  ocamlfind remove cryptokit
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/cryptokit
+
+
+===== ERROR while installing cryptokit-sha512.1.6.3 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/cryptokit-sha512.1.6.3
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/cryptokit-sha512.1.6.3/cryptokit-sha512-19-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/cryptokit-sha512.1.6.3/cryptokit-sha512-19-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/cryptokit-sha512.1.6.3/cryptokit-sha512-19-d2d111.err
+### stdout ###
+# ...[truncated]
+# mv stubs-md5.o src/stubs-md5.o
+# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-misc.c
+# mv stubs-misc.o src/stubs-misc.o
+# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-rng.c
+# mv stubs-rng.o src/stubs-rng.o
+# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
+# + ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
+# src/stubs-zlib.c:19:18: fatal error: zlib.h: No such file or directory
+# compilation terminated.
+# Command exited with code 2.
+### stderr ###
+# E: Failure("Command ''/home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild' src/libcryptokit_stubs.a src/dllcryptokit_stubs.so src/cryptokit.cma src/cryptokit.cmxa src/cryptokit.a src/cryptokit.cmxs test/test.byte -tag debug -classic-display' terminated with error code 10")
+# make: *** [build] Error 1
+
+'opam install cryptokit-sha512' failed.
