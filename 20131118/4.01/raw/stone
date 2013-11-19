@@ -1,0 +1,1372 @@
+++ opam install stone -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install stone
+The following actions will be performed:
+ - install ulex.1.1 [required by stone]
+ - install config-file.1.1 [required by stone]
+ - install type_conv.109.47.00 [required by stone]
+ - install ounit.2.0.0 [required by stone]
+ - install omd.0.6.5 [required by stone]
+ - install xmlm.1.2.0 [required by stone]
+ - install re.1.2.1 [required by stone]
+ - install dyntype.0.9.0 [required by stone]
+ - install uri.1.3.11 [required by stone]
+ - install cow.0.7.0 [required by stone]
+ - install stone.0.3
+11 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing config-file.1.1 =-=-=
+config-file.1.1 Downloading https://forge.ocamlcore.org/frs/download.php/845/config-file-1.1.tar.gz
+
+=-=-= Installing omd.0.6.5 =-=-=
+omd.0.6.5  Downloading http://pw374.github.io/distrib/omd/omd-0.6.5.tar.gz
+--2013-11-19 14:17:10--  https://forge.ocamlcore.org/frs/download.php/845/config-file-1.1.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... --2013-11-19 14:17:10--  http://pw374.github.io/distrib/omd/omd-0.6.5.tar.gz
+Resolving pw374.github.io (pw374.github.io)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:443... 199.27.74.133
+Connecting to pw374.github.io (pw374.github.io)|199.27.74.133|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 77099 (75K) [application/octet-stream]
+Saving to: `omd-0.6.5.tar.gz'
+
+     0K .......... ...connected.
+....... .......... .......... .......... 66%  856K 0s
+    50K .......... .......... .....                           100%  861K=0.09s
+
+2013-11-19 14:17:10 (858 KB/s) - `omd-0.6.5.tar.gz' saved [77099/77099]
+
+WARNING: no certificate subject alternative name matches
+	requested host name `forge.ocamlcore.org'.
+HTTP request sent, awaiting response... Copying ~/.opam/repo/default/packages/omd.0.6.5/files/omd.install to ~/.opam/system/build/omd.0.6.5/
+200 OK
+Length: 49853 (49K) [application/binary]
+Saving to: `config-file-1.1.tar.gz'
+Building omd.0.6.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/system
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+     0K .......... .......... .......... .......... ........  100%  166K=0.3s
+
+2013-11-19 14:17:10 (166 KB/s) - `config-file-1.1.tar.gz' saved [49853/49853]
+
+Building config-file.1.1:
+  ./configure --prefix /home/opam/.opam/system
+  make all
+  make install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ omd
+Package version: ..................................... 0.6.5
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/system
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+
+checking for ocamlfind... /home/opam/.opam/system/bin/ocamlfind
+checking for camlp4... /usr/bin/camlp4
+configure: creating ./config.status
+config.status: creating master.Makefile
+/home/opam/.opam/system/bin/ocamlfind ocamlc   -c config_file.mli
+/home/opam/.opam/system/bin/ocamlfind ocamlc   -c config_file.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlopt   -c config_file.ml
+Installed /home/opam/.opam/system/lib/config-file/config_file.o
+Installed /home/opam/.opam/system/lib/config-file/config_file.cmx
+Installed /home/opam/.opam/system/lib/config-file/config_file.cmo
+Installed /home/opam/.opam/system/lib/config-file/config_file.cmi
+Installed /home/opam/.opam/system/lib/config-file/config_file.mli
+Installed /home/opam/.opam/system/lib/config-file/META
+Installing config-file.1.1.
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+
+=-=-= Installing ounit.2.0.0 =-=-=
+ounit.2.0.0 Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+ocamlfind ocamldep -modules src/omd_utils.mli > src/omd_utils.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -o src/omd_utils.cmi src/omd_utils.mli
+--2013-11-19 14:17:13--  http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:80... ocamlfind ocamldep -modules src/omd_utils.ml > src/omd_utils.ml.depends
+ocamlfind ocamldep -modules src/omd_representation.mli > src/omd_representation.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -o src/omd_representation.cmi src/omd_representation.mli
+ocamlfind ocamldep -modules src/omd_representation.ml > src/omd_representation.ml.depends
+connected.
+HTTP request sent, awaiting response... ocamlfind ocamldep -modules src/omd_backend.mli > src/omd_backend.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -o src/omd_backend.cmi src/omd_backend.mli
+ocamlfind ocamldep -modules src/omd_backend.ml > src/omd_backend.ml.depends
+ocamlfind ocamldep -modules src/omd_lexer.mli > src/omd_lexer.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -o src/omd_lexer.cmi src/omd_lexer.mli
+ocamlfind ocamldep -modules src/omd_lexer.ml > src/omd_lexer.ml.depends
+ocamlfind ocamldep -modules src/omd_parser.mli > src/omd_parser.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -o src/omd_parser.cmi src/omd_parser.mli
+ocamlfind ocamldep -modules src/omd_parser.ml > src/omd_parser.ml.depends
+200 OK
+Length: 103504 (101K) [application/binary]
+Saving to: `ounit-2.0.0.tar.gz'
+
+     0K ...ocamlfind ocamldep -modules src/omd.mli > src/omd.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -o src/omd.cmi src/omd.mli
+ocamlfind ocamldep -modules src/omd.ml > src/omd.ml.depends
+....... ..ocamlfind ocamlc -c -g -I src -I src -o src/omd_utils.cmo src/omd_utils.ml
+ocamlfind ocamlc -c -g -I src -I src -o src/omd_representation.cmo src/omd_representation.ml
+ocamlfind ocamlc -c -g -I src -I src -o src/omd_backend.cmo src/omd_backend.ml
+........ ...ocamlfind ocamlc -c -g -I src -I src -o src/omd_lexer.cmo src/omd_lexer.ml
+....... .......... ...ocamlfind ocamlc -c -g -I src -I src -o src/omd_parser.cmo src/omd_parser.ml
+....... 49%  134K 0s
+    50K .......... .......... .......... .......... .......... 98%  532K 0s
+   100K .                                                     100% 10.6M=0.5s
+
+2013-11-19 14:17:13 (217 KB/s) - `ounit-2.0.0.tar.gz' saved [103504/103504]
+
+ocamlfind ocamlc -c -g -I src -I src -o src/omd.cmo src/omd.ml
+ocamlfind ocamlc -a src/omd_utils.cmo src/omd_representation.cmo src/omd_backend.cmo src/omd_lexer.cmo src/omd_parser.cmo src/omd.cmo -o src/omd.cma
+ocamlfind ocamlopt -c -g -I src -I src -o src/omd_utils.cmx src/omd_utils.ml
+Building ounit.2.0.0:
+  make build
+  make install
+ocamlfind ocamlopt -c -g -I src -I src -o src/omd_representation.cmx src/omd_representation.ml
+ocamlfind ocamlopt -c -g -I src -I src -o src/omd_backend.cmx src/omd_backend.ml
+ocaml setup.ml -configure 
+ocamlfind ocamlopt -c -g -I src -I src -o src/omd_lexer.cmx src/omd_lexer.ml
+ocamlfind ocamlopt -c -g -I src -I src -o src/omd_parser.cmx src/omd_parser.ml
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ ounit
+Package version: ..................................... 2.0.0
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_unix: ............................................ /usr/lib/ocaml
+pkg_threads: ......................................... /usr/lib/ocaml
+ocamldoc: ............................................ /usr/bin/ocamldoc
+
+ocaml setup.ml -build 
+ocamlfind ocamlopt -c -g -I src -I src -o src/omd.cmx src/omd.ml
+ocamlfind ocamlopt -a src/omd_utils.cmx src/omd_representation.cmx src/omd_backend.cmx src/omd_lexer.cmx src/omd_parser.cmx src/omd.cmx -o src/omd.cmxa
+ocamlfind ocamlopt -shared src/omd.cmx -o src/omd.cmxs
+ocamlfind ocamldep -modules src/omd_main.ml > src/omd_main.ml.depends
+ocamlfind ocamldep -modules src/omd_main.mli > src/omd_main.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -o src/omd_main.cmi src/omd_main.mli
+ocamlfind ocamlopt -c -g -I src -I src -o src/omd_main.cmx src/omd_main.ml
+ocamlfind ocamlopt -g -linkpkg src/omd.cmxa src/omd_main.cmx -o src/omd_main.native
+W: Cannot find source file matching module 'OUnitLoggerHTMLData' in library oUnitAdvanced
+W: Cannot find source file matching module 'OUnitLoggerHTMLData' in library oUnitAdvanced
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitUtils.ml > src/oUnitUtils.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitPropList.ml > src/oUnitPropList.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitPlugin.ml > src/oUnitPlugin.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitConf.ml > src/oUnitConf.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPropList.cmo src/oUnitPropList.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitUtils.cmo src/oUnitUtils.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmo src/oUnitConf.ml
+Installed /home/opam/.opam/system/lib/omd/omd_utils.mli
+Installed /home/opam/.opam/system/lib/omd/omd_representation.mli
+Installed /home/opam/.opam/system/lib/omd/omd_backend.mli
+Installed /home/opam/.opam/system/lib/omd/omd_lexer.mli
+Installed /home/opam/.opam/system/lib/omd/omd_parser.mli
+Installed /home/opam/.opam/system/lib/omd/omd.mli
+Installed /home/opam/.opam/system/lib/omd/omd.cma
+Installed /home/opam/.opam/system/lib/omd/omd.cmxa
+Installed /home/opam/.opam/system/lib/omd/omd.a
+Installed /home/opam/.opam/system/lib/omd/omd.cmxs
+Installed /home/opam/.opam/system/lib/omd/omd_utils.cmi
+Installed /home/opam/.opam/system/lib/omd/omd_representation.cmi
+Installed /home/opam/.opam/system/lib/omd/omd_backend.cmi
+Installed /home/opam/.opam/system/lib/omd/omd_lexer.cmi
+Installed /home/opam/.opam/system/lib/omd/omd_parser.cmi
+Installed /home/opam/.opam/system/lib/omd/omd.cmi
+Installed /home/opam/.opam/system/lib/omd/omd_utils.cmx
+Installed /home/opam/.opam/system/lib/omd/omd_representation.cmx
+Installed /home/opam/.opam/system/lib/omd/omd_backend.cmx
+Installed /home/opam/.opam/system/lib/omd/omd_lexer.cmx
+Installed /home/opam/.opam/system/lib/omd/omd_parser.cmx
+Installed /home/opam/.opam/system/lib/omd/omd.cmx
+Installed /home/opam/.opam/system/lib/omd/META
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitChooser.ml > src/oUnitChooser.ml.depends
+Installing omd.0.6.5.
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitCache.ml > src/oUnitCache.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitTest.ml > src/oUnitTest.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLogger.ml > src/oUnitLogger.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitShared.ml > src/oUnitShared.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLogger.cmo src/oUnitLogger.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitShared.cmo src/oUnitShared.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTest.cmo src/oUnitTest.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPlugin.cmo src/oUnitPlugin.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitResultSummary.ml > src/oUnitResultSummary.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCache.cmo src/oUnitCache.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitResultSummary.cmo src/oUnitResultSummary.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerStd.ml > src/oUnitLoggerStd.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerHTML.ml > src/oUnitLoggerHTML.ml.depends
+
+=-=-= Installing re.1.2.1 =-=-=
+re.1.2.1   Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.1.tar.gz
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerHTMLData.ml > src/oUnitLoggerHTMLData.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTMLData.cmo src/oUnitLoggerHTMLData.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerJUnit.ml > src/oUnitLoggerJUnit.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTML.cmo src/oUnitLoggerHTML.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmo src/oUnitLoggerStd.ml
++ ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmo src/oUnitLoggerStd.ml
+File "src/oUnitLoggerStd.ml", line 161, characters 21-22:
+Warning 28: wildcard pattern given as argument to a constant constructor
+File "src/oUnitLoggerStd.ml", line 161, characters 30-31:
+Warning 28: wildcard pattern given as argument to a constant constructor
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitAssert.ml > src/oUnitAssert.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitBracket.ml > src/oUnitBracket.ml.depends
+--2013-11-19 14:17:17--  https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.1.tar.gz
+Resolving github.com (github.com)... 192.30.252.131
+Connecting to github.com (github.com)|192.30.252.131|:443... ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitBracket.cmo src/oUnitBracket.ml
+connected.
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitState.ml > src/oUnitState.ml.depends
+HTTP request sent, awaiting response... ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitChooser.cmo src/oUnitChooser.ml
+302 Found
+Location: https://codeload.github.com/ocaml/ocaml-re/tar.gz/ocaml-re-1.2.1 [following]
+--2013-11-19 14:17:17--  https://codeload.github.com/ocaml/ocaml-re/tar.gz/ocaml-re-1.2.1
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.147
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.147|:443... ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunner.ml > src/oUnitRunner.ml.depends
+connected.
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitCheckEnv.ml > src/oUnitCheckEnv.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmo src/oUnitAssert.ml
+HTTP request sent, awaiting response... ocamlfind ocamldep -package threads -package unix -modules src/oUnitDiff.mli > src/oUnitDiff.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmi src/oUnitDiff.mli
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitState.cmo src/oUnitState.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCheckEnv.cmo src/oUnitCheckEnv.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunnerProcesses.ml > src/oUnitRunnerProcesses.ml.depends
+200 OK
+Length: 83108 (81K) [application/x-gzip]
+Saving to: `ocaml-re-ocaml-re-1.2.1.tar.gz'
+
+     0K .......... .......... ......ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunner.cmo src/oUnitRunner.ml
+.... .......... .......... 61% 1.46M 0s
+    50K ...ocamlfind ocamldep -package threads -package unix -modules src/oUnitCore.ml > src/oUnitCore.ml.depends
+....... .......... .......... .                    100% 1.77M=0.05s
+
+2013-11-19 14:17:17 (1.56 MB/s) - `ocaml-re-ocaml-re-1.2.1.tar.gz' saved [83108/83108]
+
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerJUnit.cmo src/oUnitLoggerJUnit.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmo src/oUnitRunnerProcesses.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitTestData.ml > src/oUnitTestData.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitDiff.ml > src/oUnitDiff.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCore.cmo src/oUnitCore.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTestData.cmo src/oUnitTestData.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmo src/oUnitDiff.ml
+ocamlfind ocamlc -a src/oUnitUtils.cmo src/oUnitPropList.cmo src/oUnitConf.cmo src/oUnitPlugin.cmo src/oUnitLogger.cmo src/oUnitShared.cmo src/oUnitTest.cmo src/oUnitCache.cmo src/oUnitResultSummary.cmo src/oUnitChooser.cmo src/oUnitLoggerStd.cmo src/oUnitLoggerHTMLData.cmo src/oUnitLoggerHTML.cmo src/oUnitLoggerJUnit.cmo src/oUnitBracket.cmo src/oUnitAssert.cmo src/oUnitState.cmo src/oUnitDiff.cmo src/oUnitCheckEnv.cmo src/oUnitRunner.cmo src/oUnitRunnerProcesses.cmo src/oUnitCore.cmo src/oUnitTestData.cmo -o src/oUnitAdvanced.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPropList.cmx src/oUnitPropList.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitUtils.cmx src/oUnitUtils.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmx src/oUnitConf.ml
+Copying ~/.opam/repo/default/packages/re.1.2.1/files/re.install to ~/.opam/system/build/re.1.2.1/
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLogger.cmx src/oUnitLogger.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitShared.cmx src/oUnitShared.ml
+Copying ~/.opam/repo/default/packages/re.1.2.1/files/re.config.in to ~/.opam/system/build/re.1.2.1/
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTest.cmx src/oUnitTest.ml
+Building re.1.2.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/system
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPlugin.cmx src/oUnitPlugin.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCache.cmx src/oUnitCache.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitResultSummary.cmx src/oUnitResultSummary.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTMLData.cmx src/oUnitLoggerHTMLData.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTML.cmx src/oUnitLoggerHTML.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmx src/oUnitLoggerStd.ml
++ ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmx src/oUnitLoggerStd.ml
+File "src/oUnitLoggerStd.ml", line 161, characters 21-22:
+Warning 28: wildcard pattern given as argument to a constant constructor
+File "src/oUnitLoggerStd.ml", line 161, characters 30-31:
+Warning 28: wildcard pattern given as argument to a constant constructor
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitBracket.cmx src/oUnitBracket.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitChooser.cmx src/oUnitChooser.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmx src/oUnitAssert.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmx src/oUnitDiff.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitState.cmx src/oUnitState.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCheckEnv.cmx src/oUnitCheckEnv.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunner.cmx src/oUnitRunner.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerJUnit.cmx src/oUnitLoggerJUnit.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmx src/oUnitRunnerProcesses.ml
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ re
+Package version: ..................................... 1.2.1
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/system
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /usr/bin/ocamldoc
+
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCore.cmx src/oUnitCore.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTestData.cmx src/oUnitTestData.ml
+ocamlfind ocamlopt -a src/oUnitUtils.cmx src/oUnitPropList.cmx src/oUnitConf.cmx src/oUnitPlugin.cmx src/oUnitLogger.cmx src/oUnitShared.cmx src/oUnitTest.cmx src/oUnitCache.cmx src/oUnitResultSummary.cmx src/oUnitChooser.cmx src/oUnitLoggerStd.cmx src/oUnitLoggerHTMLData.cmx src/oUnitLoggerHTML.cmx src/oUnitLoggerJUnit.cmx src/oUnitBracket.cmx src/oUnitAssert.cmx src/oUnitState.cmx src/oUnitDiff.cmx src/oUnitCheckEnv.cmx src/oUnitRunner.cmx src/oUnitRunnerProcesses.cmx src/oUnitCore.cmx src/oUnitTestData.cmx -o src/oUnitAdvanced.cmxa
+ocamlfind ocamlopt -shared -linkall src/oUnitAdvanced.cmxa -o src/oUnitAdvanced.cmxs
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit.mli > src/oUnit.mli.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit2.mli > src/oUnit2.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmi src/oUnit2.mli
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmi src/oUnit.mli
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit.ml > src/oUnit.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit2.ml > src/oUnit2.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmo src/oUnit.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmo src/oUnit2.ml
+ocamlfind ocamlc -a src/oUnit2.cmo src/oUnit.cmo -o src/oUnit.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmx src/oUnit2.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmx src/oUnit.ml
+ocamlfind ocamlopt -a src/oUnit2.cmx src/oUnit.cmx -o src/oUnit.cmxa
+ocamlfind ocamlopt -shared src/oUnit.cmx -o src/oUnit.cmxs
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitThreads.ml > src/oUnitThreads.ml.depends
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunnerThreads.ml > src/oUnitRunnerThreads.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerThreads.cmo src/oUnitRunnerThreads.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitThreads.cmo src/oUnitThreads.ml
+ocamlfind ocamlc -a src/oUnitRunnerThreads.cmo src/oUnitThreads.cmo -o src/oUnitThreads.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerThreads.cmx src/oUnitRunnerThreads.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitThreads.cmx src/oUnitThreads.ml
+ocamlfind ocamlopt -a src/oUnitRunnerThreads.cmx src/oUnitThreads.cmx -o src/oUnitThreads.cmxa
+ocamlfind ocamlopt -shared src/oUnitThreads.cmx -o src/oUnitThreads.cmxs
+ocamlfind ocamldep -modules lib/re.mli > lib/re.mli.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re.cmi lib/re.mli
+ocamlfind ocamldep -modules lib/re.ml > lib/re.ml.depends
+ocamlfind ocamldep -modules lib/automata.mli > lib/automata.mli.depends
+ocamlfind ocamldep -modules lib/cset.mli > lib/cset.mli.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/cset.cmi lib/cset.mli
+ocaml setup.ml -install 
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/automata.cmi lib/automata.mli
+ocamlfind ocamldep -modules lib/cset.ml > lib/cset.ml.depends
+ocamlfind ocamldep -modules lib/automata.ml > lib/automata.ml.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re.cmo lib/re.ml
++ ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re.cmo lib/re.ml
+File "lib/re.ml", line 461, characters 21-30:
+Warning 12: this sub-pattern is unused.
+File "lib/re.ml", line 889, characters 16-45:
+Warning 26: unused variable m.
+File "lib/re.ml", line 903, characters 12-41:
+Warning 26: unused variable m.
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/cset.cmo lib/cset.ml
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/automata.cmo lib/automata.ml
++ ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/automata.cmo lib/automata.ml
+File "lib/automata.ml", line 95, characters 4-21:
+Warning 26: unused variable x.
+File "lib/automata.ml", line 306, characters 4-17:
+Warning 26: unused variable x.
+ocamlfind ocamlc -a lib/cset.cmo lib/automata.cmo lib/re.cmo -o lib/re.cma
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/cset.cmx lib/cset.ml
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/automata.cmx lib/automata.ml
++ ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/automata.cmx lib/automata.ml
+File "lib/automata.ml", line 95, characters 4-21:
+Warning 26: unused variable x.
+File "lib/automata.ml", line 306, characters 4-17:
+Warning 26: unused variable x.
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re.cmx lib/re.ml
++ ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re.cmx lib/re.ml
+File "lib/re.ml", line 461, characters 21-30:
+Warning 12: this sub-pattern is unused.
+File "lib/re.ml", line 889, characters 16-45:
+Warning 26: unused variable m.
+File "lib/re.ml", line 903, characters 12-41:
+Warning 26: unused variable m.
+ocamlfind ocamlopt -a lib/cset.cmx lib/automata.cmx lib/re.cmx -o lib/re.cmxa
+ocamlfind ocamlopt -shared lib/re.cmx -o lib/re.cmxs
+ocamlfind ocamldep -modules lib/re_emacs.mli > lib/re_emacs.mli.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_emacs.cmi lib/re_emacs.mli
+ocamlfind ocamldep -modules lib/re_emacs.ml > lib/re_emacs.ml.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_emacs.cmo lib/re_emacs.ml
++ ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_emacs.cmo lib/re_emacs.ml
+File "lib/re_emacs.ml", line 34, characters 6-11:
+Warning 26: unused variable unget.
+ocamlfind ocamlc -a lib/re_emacs.cmo -o lib/re_emacs.cma
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_emacs.cmx lib/re_emacs.ml
+W: Cannot find source header for module OUnitLoggerHTMLData in library oUnitAdvanced
+Installed /home/opam/.opam/system/lib/oUnit/oUnit.mli
+Installed /home/opam/.opam/system/lib/oUnit/oUnit2.mli
+Installed /home/opam/.opam/system/lib/oUnit/oUnit.cma
+Installed /home/opam/.opam/system/lib/oUnit/oUnit.cmxa
+Installed /home/opam/.opam/system/lib/oUnit/oUnit.a
+Installed /home/opam/.opam/system/lib/oUnit/oUnit.cmxs
+Installed /home/opam/.opam/system/lib/oUnit/oUnit.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnit2.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnit.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnit2.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitThreads.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitThreads.cma
+Installed /home/opam/.opam/system/lib/oUnit/oUnitThreads.cmxa
+Installed /home/opam/.opam/system/lib/oUnit/oUnitThreads.a
+Installed /home/opam/.opam/system/lib/oUnit/oUnitThreads.cmxs
+Installed /home/opam/.opam/system/lib/oUnit/oUnitThreads.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitThreads.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitRunnerThreads.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitUtils.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitPropList.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitPlugin.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitChooser.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitResultSummary.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitLoggerStd.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitLoggerHTML.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitLoggerJUnit.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitAssert.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitBracket.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitTest.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitState.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitRunner.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitRunnerProcesses.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitCore.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitLogger.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitConf.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitShared.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitCache.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitTestData.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitCheckEnv.ml
+Installed /home/opam/.opam/system/lib/oUnit/oUnitDiff.mli
+Installed /home/opam/.opam/system/lib/oUnit/oUnitAdvanced.cma
+Installed /home/opam/.opam/system/lib/oUnit/oUnitAdvanced.cmxa
+Installed /home/opam/.opam/system/lib/oUnit/oUnitAdvanced.a
+Installed /home/opam/.opam/system/lib/oUnit/oUnitAdvanced.cmxs
+Installed /home/opam/.opam/system/lib/oUnit/oUnitUtils.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitPropList.cmi
++ ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_emacs.cmx lib/re_emacs.ml
+File "lib/re_emacs.ml", line 34, characters 6-11:
+Warning 26: unused variable unget.
+ocamlfind ocamlopt -a lib/re_emacs.cmx -o lib/re_emacs.cmxa
+Installed /home/opam/.opam/system/lib/oUnit/oUnitPlugin.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitChooser.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitResultSummary.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitLoggerStd.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitLoggerHTML.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitLoggerHTMLData.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitLoggerJUnit.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitAssert.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitBracket.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitTest.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitState.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitRunner.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitRunnerProcesses.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitCore.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitLogger.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitConf.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitShared.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitCache.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitTestData.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitCheckEnv.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitDiff.cmi
+Installed /home/opam/.opam/system/lib/oUnit/oUnitUtils.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitPropList.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitPlugin.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitChooser.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitResultSummary.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitLoggerStd.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitLoggerHTML.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitLoggerHTMLData.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitLoggerJUnit.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitAssert.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitBracket.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitTest.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitState.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitRunner.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitRunnerProcesses.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitCore.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitLogger.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitConf.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitShared.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitCache.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitTestData.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitCheckEnv.cmx
+Installed /home/opam/.opam/system/lib/oUnit/oUnitDiff.cmx
+Installed /home/opam/.opam/system/lib/oUnit/META
+Installing ounit.2.0.0.
+ocamlfind ocamlopt -shared lib/re_emacs.cmx -o lib/re_emacs.cmxs
+ocamlfind ocamldep -modules lib/re_str.mli > lib/re_str.mli.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_str.cmi lib/re_str.mli
+ocamlfind ocamldep -modules lib/re_str.ml > lib/re_str.ml.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_str.cmo lib/re_str.ml
+ocamlfind ocamlc -a lib/re_str.cmo -o lib/re_str.cma
+
+=-=-= Installing type_conv.109.47.00 =-=-=
+type_conv.109.47.00 Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/type_conv-109.47.00.tar.gz
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_str.cmx lib/re_str.ml
+ocamlfind ocamlopt -a lib/re_str.cmx -o lib/re_str.cmxa
+ocamlfind ocamlopt -shared lib/re_str.cmx -o lib/re_str.cmxs
+--2013-11-19 14:17:22--  https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/type_conv-109.47.00.tar.gz
+Resolving ocaml.janestreet.com (ocaml.janestreet.com)... 208.70.147.209
+Connecting to ocaml.janestreet.com (ocaml.janestreet.com)|208.70.147.209|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 58766 (57K) [application/x-gzip]
+Saving to: `type_conv-109.47.00.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 87% 4.24M 0s
+    50K .......                                               100% 6.77M=0.01s
+
+2013-11-19 14:17:22 (4.46 MB/s) - `type_conv-109.47.00.tar.gz' saved [58766/58766]
+
+ocamlfind ocamldep -modules lib/re_posix.mli > lib/re_posix.mli.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_posix.cmi lib/re_posix.mli
+ocamlfind ocamldep -modules lib/re_posix.ml > lib/re_posix.ml.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_posix.cmo lib/re_posix.ml
+ocamlfind ocamlc -a lib/re_posix.cmo -o lib/re_posix.cma
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_posix.cmx lib/re_posix.ml
+ocamlfind ocamlopt -a lib/re_posix.cmx -o lib/re_posix.cmxa
+ocamlfind ocamlopt -shared lib/re_posix.cmx -o lib/re_posix.cmxs
+ocamlfind ocamldep -modules lib/re_glob.mli > lib/re_glob.mli.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_glob.cmi lib/re_glob.mli
+ocamlfind ocamldep -modules lib/re_glob.ml > lib/re_glob.ml.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_glob.cmo lib/re_glob.ml
++ ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_glob.cmo lib/re_glob.ml
+File "lib/re_glob.ml", line 43, characters 6-11:
+Warning 26: unused variable unget.
+File "lib/re_glob.ml", line 67, characters 10-14:
+Warning 26: unused variable mask.
+ocamlfind ocamlc -a lib/re_glob.cmo -o lib/re_glob.cma
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_glob.cmx lib/re_glob.ml
+Building type_conv.109.47.00:
+  make
+  make install
++ ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_glob.cmx lib/re_glob.ml
+File "lib/re_glob.ml", line 43, characters 6-11:
+Warning 26: unused variable unget.
+File "lib/re_glob.ml", line 67, characters 10-14:
+Warning 26: unused variable mask.
+ocamlfind ocamlopt -a lib/re_glob.cmx -o lib/re_glob.cmxa
+ocamlfind ocamlopt -shared lib/re_glob.cmx -o lib/re_glob.cmxs
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+ocamlfind ocamldep -modules lib/re_perl.mli > lib/re_perl.mli.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_perl.cmi lib/re_perl.mli
+ocamlfind ocamldep -modules lib/re_perl.ml > lib/re_perl.ml.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_perl.cmo lib/re_perl.ml
+ocamlfind ocamlc -a lib/re_perl.cmo -o lib/re_perl.cma
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_perl.cmx lib/re_perl.ml
+ocamlfind ocamlopt -a lib/re_perl.cmx -o lib/re_perl.cmxa
+ocamlfind ocamlopt -shared lib/re_perl.cmx -o lib/re_perl.cmxs
+ocamlfind ocamldep -modules lib/re_pcre.ml > lib/re_pcre.ml.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_pcre.cmo lib/re_pcre.ml
+ocamlfind ocamlc -a lib/re_pcre.cmo -o lib/re_pcre.cma
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_pcre.cmx lib/re_pcre.ml
+ocamlfind ocamlopt -a lib/re_pcre.cmx -o lib/re_pcre.cmxa
+ocamlfind ocamlopt -shared lib/re_pcre.cmx -o lib/re_pcre.cmxs
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ type_conv
+Package version: ..................................... 109.47.00
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+camlp4o: ............................................. /usr/bin/camlp4o
+pkg_camlp4_quotations: ............................... /usr/lib/ocaml/camlp4
+pkg_camlp4_extend: ................................... /usr/lib/ocaml/camlp4
+ocamldoc: ............................................ /usr/bin/ocamldoc
+
+./setup.exe -build 
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package camlp4.quotations -package camlp4.extend -modules lib/pa_type_conv.mli > lib/pa_type_conv.mli.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations -package camlp4.extend -I lib -o lib/pa_type_conv.cmi lib/pa_type_conv.mli
+ocamlfind ocamldep -package camlp4.quotations -package camlp4.extend -syntax camlp4o -modules lib/pa_type_conv.ml > lib/pa_type_conv.ml.depends
+Installed /home/opam/.opam/system/lib/re/re.mli
+Installed /home/opam/.opam/system/lib/re/re.cma
+Installed /home/opam/.opam/system/lib/re/re.cmxa
+Installed /home/opam/.opam/system/lib/re/re.a
+Installed /home/opam/.opam/system/lib/re/re.cmxs
+Installed /home/opam/.opam/system/lib/re/re.cmi
+Installed /home/opam/.opam/system/lib/re/re.cmx
+Installed /home/opam/.opam/system/lib/re/cset.cmx
+Installed /home/opam/.opam/system/lib/re/automata.cmx
+Installed /home/opam/.opam/system/lib/re/re_str.mli
+Installed /home/opam/.opam/system/lib/re/re_str.cma
+Installed /home/opam/.opam/system/lib/re/re_str.cmxa
+Installed /home/opam/.opam/system/lib/re/re_str.a
+Installed /home/opam/.opam/system/lib/re/re_str.cmxs
+Installed /home/opam/.opam/system/lib/re/re_str.cmi
+Installed /home/opam/.opam/system/lib/re/re_str.cmx
+Installed /home/opam/.opam/system/lib/re/re_posix.mli
+Installed /home/opam/.opam/system/lib/re/re_posix.cma
+Installed /home/opam/.opam/system/lib/re/re_posix.cmxa
+Installed /home/opam/.opam/system/lib/re/re_posix.a
+Installed /home/opam/.opam/system/lib/re/re_posix.cmxs
+Installed /home/opam/.opam/system/lib/re/re_posix.cmi
+Installed /home/opam/.opam/system/lib/re/re_posix.cmx
+Installed /home/opam/.opam/system/lib/re/re_perl.mli
+Installed /home/opam/.opam/system/lib/re/re_perl.cma
+Installed /home/opam/.opam/system/lib/re/re_perl.cmxa
+Installed /home/opam/.opam/system/lib/re/re_perl.a
+Installed /home/opam/.opam/system/lib/re/re_perl.cmxs
+Installed /home/opam/.opam/system/lib/re/re_perl.cmi
+Installed /home/opam/.opam/system/lib/re/re_perl.cmx
+Installed /home/opam/.opam/system/lib/re/re_pcre.ml
+Installed /home/opam/.opam/system/lib/re/re_pcre.cma
+Installed /home/opam/.opam/system/lib/re/re_pcre.cmxa
+Installed /home/opam/.opam/system/lib/re/re_pcre.a
+Installed /home/opam/.opam/system/lib/re/re_pcre.cmxs
+Installed /home/opam/.opam/system/lib/re/re_pcre.cmi
+Installed /home/opam/.opam/system/lib/re/re_pcre.cmx
+Installed /home/opam/.opam/system/lib/re/re_glob.mli
+Installed /home/opam/.opam/system/lib/re/re_glob.cma
+Installed /home/opam/.opam/system/lib/re/re_glob.cmxa
+Installed /home/opam/.opam/system/lib/re/re_glob.a
+Installed /home/opam/.opam/system/lib/re/re_glob.cmxs
+Installed /home/opam/.opam/system/lib/re/re_glob.cmi
+Installed /home/opam/.opam/system/lib/re/re_glob.cmx
+Installed /home/opam/.opam/system/lib/re/re_emacs.mli
+Installed /home/opam/.opam/system/lib/re/re_emacs.cma
+Installed /home/opam/.opam/system/lib/re/re_emacs.cmxa
+Installed /home/opam/.opam/system/lib/re/re_emacs.a
+Installed /home/opam/.opam/system/lib/re/re_emacs.cmxs
+Installed /home/opam/.opam/system/lib/re/re_emacs.cmi
+Installed /home/opam/.opam/system/lib/re/re_emacs.cmx
+Installed /home/opam/.opam/system/lib/re/META
+Installing re.1.2.1.
+ocamlfind ocamlc -c -g -package camlp4.quotations -package camlp4.extend -syntax camlp4o -I lib -o lib/pa_type_conv.cmo lib/pa_type_conv.ml
+ocamlfind ocamlc -a lib/pa_type_conv.cmo -o lib/pa_type_conv.cma
+ocamlfind ocamlopt -c -g -package camlp4.quotations -package camlp4.extend -syntax camlp4o -I lib -o lib/pa_type_conv.cmx lib/pa_type_conv.ml
+ocamlfind ocamlopt -a lib/pa_type_conv.cmx -o lib/pa_type_conv.cmxa
+ocamlfind ocamlopt -shared lib/pa_type_conv.cmx -o lib/pa_type_conv.cmxs
+./setup.exe -install 
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.mli
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cma
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmxa
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.a
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmxs
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmi
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmx
+Installed /home/opam/.opam/system/lib/type_conv/META
+Installing type_conv.109.47.00.
+
+=-=-= Installing ulex.1.1 =-=-=
+ulex.1.1   Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+--2013-11-19 14:17:27--  http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+Resolving ftp.de.debian.org (ftp.de.debian.org)... 141.76.2.4
+Connecting to ftp.de.debian.org (ftp.de.debian.org)|141.76.2.4|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20347 (20K) [application/x-gzip]
+Saving to: `ulex_1.1.orig.tar.gz'
+
+     0K .......... .........                                  100%  150K=0.1s
+
+2013-11-19 14:17:27 (150 KB/s) - `ulex_1.1.orig.tar.gz' saved [20347/20347]
+
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+
+=-=-= Installing xmlm.1.2.0 =-=-=
+xmlm.1.2.0 Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma
+/usr/bin/ocamlc.opt unix.cma -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cma myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmo -o myocamlbuild
+/usr/bin/ocamldep.opt -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
+--2013-11-19 14:17:28--  http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+Resolving erratique.ch (erratique.ch)... 37.58.75.241, 2a03:8180:1001:b2:36::c
+Connecting to erratique.ch (erratique.ch)|37.58.75.241|:80... connected.
+HTTP request sent, awaiting response... /usr/bin/ocamldep.opt -modules cset.ml > cset.ml.depends
+/usr/bin/ocamldep.opt -modules ulex.mli > ulex.mli.depends
+/usr/bin/ocamlc.opt -c -o cset.cmo cset.ml
+200 OK
+Length: 38181 (37K) [application/x-bzip2]
+Saving to: `xmlm-1.2.0.tbz'
+
+     0K .......... .../usr/bin/ocamlc.opt -c -o ulex.cmi ulex.mli
+/usr/bin/ocamlc.opt -c -I +camlp4 -pp camlp4orf -o pa_ulex.cmo pa_ulex.ml
+....... .......... .......              100%  375K=0.1s
+
+2013-11-19 14:17:28 (375 KB/s) - `xmlm-1.2.0.tbz' saved [38181/38181]
+
+/usr/bin/ocamldep.opt -modules ulex.ml > ulex.ml.depends
+/usr/bin/ocamlc.opt -c -o ulex.cmo ulex.ml
+/usr/bin/ocamlc.opt -a cset.cmo ulex.cmo pa_ulex.cmo -o pa_ulex.cma
+/usr/bin/ocamldep.opt -modules ulexing.mli > ulexing.mli.depends
+/usr/bin/ocamlc.opt -c -o ulexing.cmi ulexing.mli
+/usr/bin/ocamldep.opt -modules ulexing.ml > ulexing.ml.depends
+/usr/bin/ocamldep.opt -modules utf8.mli > utf8.mli.depends
+/usr/bin/ocamlc.opt -c -o utf8.cmi utf8.mli
+/usr/bin/ocamlc.opt -c -o ulexing.cmo ulexing.ml
+/usr/bin/ocamldep.opt -modules utf8.ml > utf8.ml.depends
+/usr/bin/ocamlc.opt -c -o utf8.cmo utf8.ml
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
++ /usr/bin/ocamlc.opt -c -o utf8.cmo utf8.ml
+File "utf8.ml", line 113, characters 20-21:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+/usr/bin/ocamlc.opt -a utf8.cmo ulexing.cmo -o ulexing.cma
+ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma pa_ulex.cmxa ulexing.cmxa
+ocamlfind ocamldep -modules src/xmlm.mli > src/xmlm.mli.depends
+/usr/bin/ocamlopt.opt -c -o cset.cmx cset.ml
+ocamlfind ocamlc -c -I src -I test -o src/xmlm.cmi src/xmlm.mli
+/usr/bin/ocamlopt.opt -c -o ulex.cmx ulex.ml
+ocamlfind ocamldep -modules src/xmlm.ml > src/xmlm.ml.depends
+ocamlfind ocamlopt -c -annot -bin-annot -I src -I test -o src/xmlm.cmx src/xmlm.ml
+/usr/bin/ocamlopt.opt -c -I +camlp4 -pp camlp4orf -o pa_ulex.cmx pa_ulex.ml
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/xmlm.cmo src/xmlm.ml
+/usr/bin/ocamlopt.opt -a cset.cmx ulex.cmx pa_ulex.cmx -o pa_ulex.cmxa
+ocamlfind ocamlc -a src/xmlm.cmo -o src/xmlm.cma
+/usr/bin/ocamlopt.opt -c -o utf8.cmx utf8.ml
+ocamlfind ocamlopt -a src/xmlm.cmx -o src/xmlm.cmxa
+ocamlfind ocamlopt -shared src/xmlm.cmx -o src/xmlm.cmxs
++ /usr/bin/ocamlopt.opt -c -o utf8.cmx utf8.ml
+File "utf8.ml", line 113, characters 20-21:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+/usr/bin/ocamlopt.opt -c -o ulexing.cmx ulexing.ml
+/usr/bin/ocamlopt.opt -a utf8.cmx ulexing.cmx -o ulexing.cmxa
+ocamlfind ocamldep -modules test/xmltrip.ml > test/xmltrip.ml.depends
+ocamlfind ocamldep -modules test/xhtml.ml > test/xhtml.ml.depends
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xhtml.cmo test/xhtml.ml
+ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xmltrip.cmo test/xmltrip.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xhtml.cmx test/xhtml.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xmltrip.cmx test/xmltrip.ml
+cd _build && make -f ../Makefile realinstall
+make[1]: Entering directory `/home/opam/.opam/system/build/ulex.1.1/_build'
+ocamlfind install ulex ../META ulexing.mli utf8.mli ulexing.cmi utf8.cmi ulexing.cmx utf8.cmx pa_ulex.cma ulexing.a ulexing.cma ulexing.cmxa
+Installed /home/opam/.opam/system/lib/ulex/ulexing.cmxa
+Installed /home/opam/.opam/system/lib/ulex/ulexing.cma
+Installed /home/opam/.opam/system/lib/ulex/ulexing.a
+Installed /home/opam/.opam/system/lib/ulex/pa_ulex.cma
+Installed /home/opam/.opam/system/lib/ulex/utf8.cmx
+Installed /home/opam/.opam/system/lib/ulex/ulexing.cmx
+Installed /home/opam/.opam/system/lib/ulex/utf8.cmi
+Installed /home/opam/.opam/system/lib/ulex/ulexing.cmi
+Installed /home/opam/.opam/system/lib/ulex/utf8.mli
+Installed /home/opam/.opam/system/lib/ulex/ulexing.mli
+Installed /home/opam/.opam/system/lib/ulex/META
+make[1]: Leaving directory `/home/opam/.opam/system/build/ulex.1.1/_build'
+Installing ulex.1.1.
+ocamlfind ocamlopt -linkpkg src/xmlm.cmx test/xhtml.cmx test/xmltrip.cmx -o test/xmltrip.native
+
+=-=-= Installing dyntype.0.9.0 =-=-=
+dyntype.0.9.0 Downloading https://github.com/mirage/dyntype/archive/dyntype-0.9.0.tar.gz
+Installing xmlm.1.2.0.
+[WARNING] unknown fields in /home/opam/.opam/system/build/xmlm.1.2.0/xmlm.install: is your OPAM up-to-date ?
+--2013-11-19 14:17:30--  https://github.com/mirage/dyntype/archive/dyntype-0.9.0.tar.gz
+Resolving github.com (github.com)... 192.30.252.130
+Connecting to github.com (github.com)|192.30.252.130|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/mirage/dyntype/tar.gz/dyntype-0.9.0 [following]
+--2013-11-19 14:17:30--  https://codeload.github.com/mirage/dyntype/tar.gz/dyntype-0.9.0
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.146
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.146|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 17854 (17K) [application/x-gzip]
+Saving to: `dyntype-dyntype-0.9.0.tar.gz'
+
+     0K .......... .......                                    100%  126M=0s
+
+2013-11-19 14:17:30 (126 MB/s) - `dyntype-dyntype-0.9.0.tar.gz' saved [17854/17854]
+
+Building dyntype.0.9.0:
+  make
+  make install
+ocamlbuild dyntype.cmxa dyntype.cma
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package type_conv -modules lib/type.mli > lib/type.mli.depends
+ocamlfind ocamlc -c -annot -package type_conv -I lib -I lib_test -I pa_lib -o lib/type.cmi lib/type.mli
+ocamlfind ocamldep -package type_conv -modules lib/type.ml > lib/type.ml.depends
+ocamlfind ocamldep -package type_conv -modules lib/value.mli > lib/value.mli.depends
+ocamlfind ocamlc -c -annot -package type_conv -I lib -I lib_test -I pa_lib -o lib/value.cmi lib/value.mli
+
+=-=-= Installing uri.1.3.11 =-=-=
+uri.1.3.11 Downloading https://github.com/mirage/ocaml-uri/archive/v1.3.11.tar.gz
+ocamlfind ocamldep -package type_conv -modules lib/value.ml > lib/value.ml.depends
+ocamlfind ocamlc -c -annot -package type_conv -I lib -I lib_test -I pa_lib -o lib/type.cmo lib/type.ml
+ocamlfind ocamlc -c -annot -package type_conv -I lib -I lib_test -I pa_lib -o lib/value.cmo lib/value.ml
+ocamlfind ocamlc -pack lib/type.cmo lib/value.cmo -o lib/dyntype.cmo
+ocamlfind ocamlopt -c -annot -package type_conv -for-pack Dyntype -I lib -I lib_test -I pa_lib -o lib/type.cmx lib/type.ml
+--2013-11-19 14:17:32--  https://github.com/mirage/ocaml-uri/archive/v1.3.11.tar.gz
+Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/mirage/ocaml-uri/tar.gz/v1.3.11 [following]
+--2013-11-19 14:17:32--  https://codeload.github.com/mirage/ocaml-uri/tar.gz/v1.3.11
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.144
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.144|:443... ocamlfind ocamlopt -c -annot -package type_conv -for-pack Dyntype -I lib -I lib_test -I pa_lib -o lib/value.cmx lib/value.ml
+connected.
+HTTP request sent, awaiting response... touch lib/dyntype.mli  ; if  ocamlfind ocamlopt -pack -I lib lib/type.cmx lib/value.cmx -o lib/dyntype.cmx  ; then  rm -f lib/dyntype.mli  ; else  rm -f lib/dyntype.mli  ; exit 1; fi
+ocamlfind ocamlopt -a -package type_conv lib/dyntype.cmx -o lib/dyntype.cmxa
+ocamlfind ocamlc -a -package type_conv lib/dyntype.cmo -o lib/dyntype.cma
+ocamlbuild pa_dyntype.cma pa_dyntype.cmxs
+200 OK
+Length: 244667 (239K) [application/x-gzip]
+Saving to: `ocaml-uri-1.3.11.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 20% 1.45M 0s
+    50K .......... .......... .......... ........ocamlfind ocamldep -package camlp4.quotations -package camlp4 -syntax camlp4o -modules pa_lib/p4_helpers.ml > pa_lib/p4_helpers.ml.depends
+.. .......... 41% 1.44M 0s
+   100K .......... .......... .......... .......... .......... 62% 1.45M 0s
+   150K .......... .......... .......... .......... .......... 83% 2.78M 0s
+   200K .......... .......... .......... ........             100% 2.20M=0.1s
+
+2013-11-19 14:17:32 (1.71 MB/s) - `ocaml-uri-1.3.11.tar.gz' saved [244667/244667]
+
+ocamlfind ocamldep -package camlp4.quotations -package camlp4 -syntax camlp4o -modules pa_lib/p4_type.ml > pa_lib/p4_type.ml.depends
+ocamlfind ocamlc -c -annot -package camlp4.quotations -package camlp4 -syntax camlp4o -I pa_lib -I lib -I lib_test -o pa_lib/p4_helpers.cmo pa_lib/p4_helpers.ml
+ocamlfind ocamldep -package camlp4.quotations -package camlp4 -syntax camlp4o -modules pa_lib/p4_value.ml > pa_lib/p4_value.ml.depends
+Building uri.1.3.11:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/system
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+ocamlfind ocamldep -package type_conv -package camlp4.quotations -package camlp4 -syntax camlp4o -modules pa_lib/pa_type.ml > pa_lib/pa_type.ml.depends
+ocamlfind ocamlc -c -annot -package camlp4.quotations -package camlp4 -syntax camlp4o -I pa_lib -I lib -I lib_test -o pa_lib/p4_type.cmo pa_lib/p4_type.ml
+ocamlfind ocamldep -package type_conv -package camlp4.quotations -package camlp4 -syntax camlp4o -modules pa_lib/pa_value.ml > pa_lib/pa_value.ml.depends
+ocamlfind ocamlc -c -annot -package camlp4.quotations -package camlp4 -syntax camlp4o -I pa_lib -I lib -I lib_test -o pa_lib/p4_value.cmo pa_lib/p4_value.ml
+ocamlfind ocamlc -c -annot -package type_conv -package camlp4.quotations -package camlp4 -syntax camlp4o -I pa_lib -I lib -I lib_test -o pa_lib/pa_type.cmo pa_lib/pa_type.ml
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ uri
+Package version: ..................................... 1.3.11
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/system
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+build the full services library: ..................... false
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_re_posix: ........................................ /home/opam/.opam/system/lib/re
+pkg_re_str: .......................................... /home/opam/.opam/system/lib/re
+ocamldoc: ............................................ /usr/bin/ocamldoc
+
+ocamlfind ocamlc -c -annot -package type_conv -package camlp4.quotations -package camlp4 -syntax camlp4o -I pa_lib -I lib -I lib_test -o pa_lib/pa_value.cmo pa_lib/pa_value.ml
+ocamlfind ocamlc -pack pa_lib/p4_helpers.cmo pa_lib/p4_type.cmo pa_lib/p4_value.cmo pa_lib/pa_type.cmo pa_lib/pa_value.cmo -o pa_lib/pa_dyntype.cmo
+ocamlfind ocamlc -a -package type_conv -package camlp4.quotations -package camlp4 lib/dyntype.cmo pa_lib/pa_dyntype.cmo -o pa_lib/pa_dyntype.cma
+ocamlfind ocamlopt -c -annot -package camlp4.quotations -package camlp4 -syntax camlp4o -for-pack Pa_dyntype -I pa_lib -I lib -I lib_test -o pa_lib/p4_helpers.cmx pa_lib/p4_helpers.ml
+ocamlfind ocamlopt -c -annot -package camlp4.quotations -package camlp4 -syntax camlp4o -for-pack Pa_dyntype -I pa_lib -I lib -I lib_test -o pa_lib/p4_type.cmx pa_lib/p4_type.ml
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlopt -c -annot -package camlp4.quotations -package camlp4 -syntax camlp4o -for-pack Pa_dyntype -I pa_lib -I lib -I lib_test -o pa_lib/p4_value.cmx pa_lib/p4_value.ml
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/uri.mli > lib/uri.mli.depends
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/uri.cmi lib/uri.mli
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/uri.ml > lib/uri.ml.depends
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/uri_re.mli > lib/uri_re.mli.depends
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/uri_re.cmi lib/uri_re.mli
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/uri_re.ml > lib/uri_re.ml.depends
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/Uri_IP.mli > lib/Uri_IP.mli.depends
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/Uri_IP.cmi lib/Uri_IP.mli
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/Uri_IP.ml > lib/Uri_IP.ml.depends
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/uri.cmo lib/uri.ml
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/uri_re.cmo lib/uri_re.ml
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/Uri_IP.cmo lib/Uri_IP.ml
+ocamlfind ocamlc -a lib/uri_re.cmo lib/uri.cmo lib/Uri_IP.cmo -o lib/uri.cma
+ocamlfind ocamlopt -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/uri_re.cmx lib/uri_re.ml
+ocamlfind ocamlopt -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/uri.cmx lib/uri.ml
+ocamlfind ocamlopt -c -annot -package type_conv -package camlp4.quotations -package camlp4 -syntax camlp4o -for-pack Pa_dyntype -I pa_lib -I lib -I lib_test -o pa_lib/pa_type.cmx pa_lib/pa_type.ml
+ocamlfind ocamlopt -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/Uri_IP.cmx lib/Uri_IP.ml
+ocamlfind ocamlopt -a lib/uri_re.cmx lib/uri.cmx lib/Uri_IP.cmx -o lib/uri.cmxa
+ocamlfind ocamlopt -shared lib/uri.cmx -o lib/uri.cmxs
+ocamlfind ocamlopt -c -annot -package type_conv -package camlp4.quotations -package camlp4 -syntax camlp4o -for-pack Pa_dyntype -I pa_lib -I lib -I lib_test -o pa_lib/pa_value.cmx pa_lib/pa_value.ml
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/Uri_services.mli > lib/Uri_services.mli.depends
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/Uri_services.cmi lib/Uri_services.mli
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/Uri_services.ml > lib/Uri_services.ml.depends
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/Uri_services.cmo lib/Uri_services.ml
+ocamlfind ocamlc -a lib/Uri_services.cmo -o lib/services.cma
+ocamlfind ocamlopt -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/Uri_services.cmx lib/Uri_services.ml
+touch pa_lib/pa_dyntype.mli  ; if  ocamlfind ocamlopt -pack -I pa_lib pa_lib/p4_helpers.cmx pa_lib/p4_type.cmx pa_lib/p4_value.cmx pa_lib/pa_type.cmx pa_lib/pa_value.cmx -o pa_lib/pa_dyntype.cmx  ; then  rm -f pa_lib/pa_dyntype.mli  ; else  rm -f pa_lib/pa_dyntype.mli  ; exit 1; fi
+ocamlfind ocamlopt -a lib/Uri_services.cmx -o lib/services.cmxa
+ocamlfind ocamlopt -shared -package type_conv -package camlp4.quotations -package camlp4 pa_lib/pa_dyntype.cmx -o pa_lib/pa_dyntype.cmxs
+ocamlfind ocamlopt -shared -linkall lib/services.cmxa -o lib/services.cmxs
+ocamlfind ocamldep -modules top/uri_top.ml > top/uri_top.ml.depends
+ocamlfind ocamlc -c -g -annot -I +compiler-libs -I top -o top/uri_top.cmo top/uri_top.ml
++ ocamlfind ocamlc -c -g -annot -I +compiler-libs -I top -o top/uri_top.cmo top/uri_top.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /usr/lib/ocaml, /usr/lib/ocaml/compiler-libs
+ocamlfind ocamlc -a top/uri_top.cmo -o top/uri_top.cma
+ocamlfind remove dyntype || true
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/dyntype
+ocamlfind install dyntype META -optional _build/pa_lib/pa_dyntype.cmi _build/lib/dyntype.cmi _build/pa_lib/pa_dyntype.cma _build/lib/dyntype.cma _build/pa_lib/pa_dyntype.cmxa _build/lib/dyntype.cmxa _build/pa_lib/pa_dyntype.a _build/lib/dyntype.a
+Installed /home/opam/.opam/system/lib/dyntype/dyntype.a
+Installed /home/opam/.opam/system/lib/dyntype/dyntype.cmxa
+Installed /home/opam/.opam/system/lib/dyntype/dyntype.cma
+Installed /home/opam/.opam/system/lib/dyntype/pa_dyntype.cma
+Installed /home/opam/.opam/system/lib/dyntype/dyntype.cmi
+Installed /home/opam/.opam/system/lib/dyntype/pa_dyntype.cmi
+Installed /home/opam/.opam/system/lib/dyntype/META
+ocamlfind ocamlopt -c -g -annot -I +compiler-libs -I top -o top/uri_top.cmx top/uri_top.ml
+Installing dyntype.0.9.0.
++ ocamlfind ocamlopt -c -g -annot -I +compiler-libs -I top -o top/uri_top.cmx top/uri_top.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /usr/lib/ocaml, /usr/lib/ocaml/compiler-libs
+ocamlfind ocamlopt -a top/uri_top.cmx -o top/uri_top.cmxa
+ocamlfind ocamlopt -shared top/uri_top.cmx -o top/uri_top.cmxs
+Installed /home/opam/.opam/system/lib/uri/uri.mli
+Installed /home/opam/.opam/system/lib/uri/uri_re.mli
+Installed /home/opam/.opam/system/lib/uri/Uri_IP.mli
+Installed /home/opam/.opam/system/lib/uri/uri.cma
+Installed /home/opam/.opam/system/lib/uri/uri.cmxa
+Installed /home/opam/.opam/system/lib/uri/uri.a
+Installed /home/opam/.opam/system/lib/uri/uri.cmxs
+Installed /home/opam/.opam/system/lib/uri/uri.cmi
+Installed /home/opam/.opam/system/lib/uri/uri_re.cmi
+Installed /home/opam/.opam/system/lib/uri/Uri_IP.cmi
+Installed /home/opam/.opam/system/lib/uri/uri.cmx
+Installed /home/opam/.opam/system/lib/uri/uri_re.cmx
+Installed /home/opam/.opam/system/lib/uri/Uri_IP.cmx
+Installed /home/opam/.opam/system/lib/uri/uri_top.ml
+Installed /home/opam/.opam/system/lib/uri/uri_top.cma
+Installed /home/opam/.opam/system/lib/uri/uri_top.cmxa
+Installed /home/opam/.opam/system/lib/uri/uri_top.a
+Installed /home/opam/.opam/system/lib/uri/uri_top.cmxs
+Installed /home/opam/.opam/system/lib/uri/uri_top.cmi
+Installed /home/opam/.opam/system/lib/uri/uri_top.cmx
+Installed /home/opam/.opam/system/lib/uri/Uri_services.mli
+Installed /home/opam/.opam/system/lib/uri/services.cma
+Installed /home/opam/.opam/system/lib/uri/services.cmxa
+Installed /home/opam/.opam/system/lib/uri/services.a
+Installed /home/opam/.opam/system/lib/uri/services.cmxs
+Installed /home/opam/.opam/system/lib/uri/Uri_services.cmi
+Installed /home/opam/.opam/system/lib/uri/Uri_services.cmx
+Installed /home/opam/.opam/system/lib/uri/META
+Installing uri.1.3.11.
+
+=-=-= Installing cow.0.7.0 =-=-=
+cow.0.7.0  Downloading https://github.com/mirage/ocaml-cow/archive/v0.7.0.tar.gz
+--2013-11-19 14:17:38--  https://github.com/mirage/ocaml-cow/archive/v0.7.0.tar.gz
+Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/mirage/ocaml-cow/tar.gz/v0.7.0 [following]
+--2013-11-19 14:17:38--  https://codeload.github.com/mirage/ocaml-cow/tar.gz/v0.7.0
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.146
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.146|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 43403 (42K) [application/x-gzip]
+Saving to: `ocaml-cow-0.7.0.tar.gz'
+
+     0K .......... .......... .......... .......... ..        100% 2.44M=0.02s
+
+2013-11-19 14:17:38 (2.44 MB/s) - `ocaml-cow-0.7.0.tar.gz' saved [43403/43403]
+
+Building cow.0.7.0:
+  make all
+  make install
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/css/options.ml > syntax/css/options.ml.depends
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/css/qast.mli > syntax/css/qast.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/qast.cmi syntax/css/qast.mli
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/css/qast.ml > syntax/css/qast.ml.depends
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/css/location.ml > syntax/css/location.ml.depends
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/css/parser.mli > syntax/css/parser.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/parser.cmi syntax/css/parser.mli
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/css/parser.ml > syntax/css/parser.ml.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/location.cmo syntax/css/location.ml
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/css/printer.mli > syntax/css/printer.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/printer.cmi syntax/css/printer.mli
+/usr/bin/ocamllex.opt -q syntax/css/qLexer.mll
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/css/qLexer.ml > syntax/css/qLexer.ml.depends
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/css/printer.ml > syntax/css/printer.ml.depends
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/css/quotations.ml > syntax/css/quotations.ml.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/options.cmo syntax/css/options.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/qLexer.cmo syntax/css/qLexer.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/qast.cmo syntax/css/qast.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/parser.cmo syntax/css/parser.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/printer.cmo syntax/css/printer.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/quotations.cmo syntax/css/quotations.ml
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/json/json.mli > syntax/json/json.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/json -I syntax -o syntax/json/json.cmi syntax/json/json.mli
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/json/json.ml > syntax/json/json.ml.depends
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/json/extension.ml > syntax/json/extension.ml.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/json -I syntax -o syntax/json/json.cmo syntax/json/json.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/json -I syntax -o syntax/json/extension.cmo syntax/json/extension.ml
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/xml/options.ml > syntax/xml/options.ml.depends
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/xml/qast.mli > syntax/xml/qast.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/qast.cmi syntax/xml/qast.mli
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/xml/qast.ml > syntax/xml/qast.ml.depends
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/xml/location.ml > syntax/xml/location.ml.depends
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/xml/parser.mli > syntax/xml/parser.mli.depends
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/xml/xml.mli > syntax/xml/xml.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/xml.cmi syntax/xml/xml.mli
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/parser.cmi syntax/xml/parser.mli
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/xml/parser.ml > syntax/xml/parser.ml.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/location.cmo syntax/xml/location.ml
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/xml/printer.mli > syntax/xml/printer.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/printer.cmi syntax/xml/printer.mli
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/xml/printer.ml > syntax/xml/printer.ml.depends
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/xml/xml.ml > syntax/xml/xml.ml.depends
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/xml/quotation.ml > syntax/xml/quotation.ml.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/options.cmo syntax/xml/options.ml
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/xml/extension.ml > syntax/xml/extension.ml.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/qast.cmo syntax/xml/qast.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/parser.cmo syntax/xml/parser.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/printer.cmo syntax/xml/printer.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/xml.cmo syntax/xml/xml.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/quotation.cmo syntax/xml/quotation.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/extension.cmo syntax/xml/extension.ml
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/html/options.ml > syntax/html/options.ml.depends
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/html/extension.ml > syntax/html/extension.ml.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/html -I syntax -o syntax/html/options.cmo syntax/html/options.ml
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/html/quotation.ml > syntax/html/quotation.ml.depends
+/usr/bin/ocamlc.opt -pack syntax/xml/options.cmo syntax/xml/qast.cmo syntax/xml/location.cmo syntax/xml/xml.cmo syntax/xml/parser.cmo syntax/xml/printer.cmo syntax/xml/quotation.cmo syntax/xml/extension.cmo -o syntax/pa_xml.cmo
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/html/xhtml.ml > syntax/html/xhtml.ml.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/html -I syntax -o syntax/html/xhtml.cmo syntax/html/xhtml.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/html -I syntax -o syntax/html/extension.cmo syntax/html/extension.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/html -I syntax -o syntax/html/quotation.cmo syntax/html/quotation.ml
+/usr/bin/ocamldep.opt -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -modules syntax/pp_cow.ml > syntax/pp_cow.ml.depends
+/usr/bin/ocamlc.opt -pack syntax/css/options.cmo syntax/css/qast.cmo syntax/css/location.cmo syntax/css/printer.cmo syntax/css/parser.cmo syntax/css/qLexer.cmo syntax/css/quotations.cmo -o syntax/pa_css.cmo
+/usr/bin/ocamlc.opt -pack syntax/json/json.cmo syntax/json/extension.cmo -o syntax/pa_json.cmo
+/usr/bin/ocamlc.opt -pack syntax/html/options.cmo syntax/html/extension.cmo syntax/html/xhtml.cmo syntax/html/quotation.cmo -o syntax/pa_html.cmo
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax -o syntax/pp_cow.cmo syntax/pp_cow.ml
+/usr/bin/ocamlc.opt -pack syntax/pa_css.cmo syntax/pa_json.cmo syntax/pa_xml.cmo syntax/pa_html.cmo syntax/pp_cow.cmo -o syntax/pa_cow.cmo
+/usr/bin/ocamlc.opt -a -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm syntax/pa_cow.cmo -o syntax/pa_cow.cma
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/xml.mli > lib/xml.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/xml.cmi lib/xml.mli
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/xml.ml > lib/xml.ml.depends
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/enum.ml > lib/enum.ml.depends
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/xhtml.ml > lib/xhtml.ml.depends
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/html.mli > lib/html.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/html.cmi lib/html.mli
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/html.ml > lib/html.ml.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/xhtml.cmo lib/xhtml.ml
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/css.mli > lib/css.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/css.cmi lib/css.mli
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/css.ml > lib/css.ml.depends
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/code.mli > lib/code.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/code.cmi lib/code.mli
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/code.ml > lib/code.ml.depends
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/atom.mli > lib/atom.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/atom.cmi lib/atom.mli
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/atom.ml > lib/atom.ml.depends
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/markdown.mli > lib/markdown.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/markdown.cmi lib/markdown.mli
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/markdown.ml > lib/markdown.ml.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/enum.cmo lib/enum.ml
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/json.mli > lib/json.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/json.cmi lib/json.mli
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/json.ml > lib/json.ml.depends
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/markdown_github.mli > lib/markdown_github.mli.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/markdown_github.cmi lib/markdown_github.mli
+/usr/bin/ocamldep.opt -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -modules lib/markdown_github.ml > lib/markdown_github.ml.depends
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/xml.cmo lib/xml.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/html.cmo lib/html.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/css.cmo lib/css.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/code.cmo lib/code.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/atom.cmo lib/atom.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/markdown.cmo lib/markdown.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/json.cmo lib/json.ml
+/usr/bin/ocamlc.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/markdown_github.cmo lib/markdown_github.ml
+/usr/bin/ocamlc.opt -pack lib/xml.cmo lib/enum.cmo lib/xhtml.cmo lib/html.cmo lib/css.cmo lib/code.cmo lib/atom.cmo lib/markdown.cmo lib/json.cmo lib/markdown_github.cmo -o lib/cow.cmo
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Cow -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/xhtml.cmx lib/xhtml.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Cow -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/xml.cmx lib/xml.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Cow -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/css.cmx lib/css.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Cow -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/html.cmx lib/html.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Cow -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/code.cmx lib/code.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Cow -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/enum.cmx lib/enum.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Cow -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/markdown.cmx lib/markdown.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Cow -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/atom.cmx lib/atom.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Cow -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/json.cmx lib/json.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Cow -pp 'camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv pa_type_conv.cma -I /home/opam/.opam/system/lib/dyntype pa_dyntype.cma -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex pa_ulex.cma -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -I /usr/lib/ocaml str.cma -I /home/opam/.opam/system/lib/xmlm xmlm.cma syntax/pa_cow.cma -cow-no-open' -I lib -I syntax -o lib/markdown_github.cmx lib/markdown_github.ml
+touch lib/cow.mli  ; if  /usr/bin/ocamlopt.opt -pack -I lib lib/xml.cmx lib/enum.cmx lib/xhtml.cmx lib/html.cmx lib/css.cmx lib/code.cmx lib/atom.cmx lib/markdown.cmx lib/json.cmx lib/markdown_github.cmx -o lib/cow.cmx  ; then  rm -f lib/cow.mli  ; else  rm -f lib/cow.mli  ; exit 1; fi
+/usr/bin/ocamlopt.opt -a -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm lib/cow.cmx -o lib/cow.cmxa
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_css -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/location.cmx syntax/css/location.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_css -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/qast.cmx syntax/css/qast.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_css -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/printer.cmx syntax/css/printer.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_css -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/parser.cmx syntax/css/parser.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_css -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/options.cmx syntax/css/options.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_css -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/qLexer.cmx syntax/css/qLexer.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_css -pp 'camlp4of -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/css -I syntax -o syntax/css/quotations.cmx syntax/css/quotations.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_json -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/json -I syntax -o syntax/json/json.cmx syntax/json/json.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_json -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/json -I syntax -o syntax/json/extension.cmx syntax/json/extension.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_xml -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/location.cmx syntax/xml/location.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_xml -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/qast.cmx syntax/xml/qast.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_xml -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/xml.cmx syntax/xml/xml.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_xml -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/options.cmx syntax/xml/options.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_xml -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/parser.cmx syntax/xml/parser.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_xml -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/printer.cmx syntax/xml/printer.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_xml -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/quotation.cmx syntax/xml/quotation.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_xml -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/xml -I syntax -o syntax/xml/extension.cmx syntax/xml/extension.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_html -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/html -I syntax -o syntax/html/options.cmx syntax/html/options.ml
+touch syntax/pa_xml.mli  ; if  /usr/bin/ocamlopt.opt -pack -for-pack Pa_cow -I syntax/xml syntax/xml/options.cmx syntax/xml/qast.cmx syntax/xml/location.cmx syntax/xml/xml.cmx syntax/xml/parser.cmx syntax/xml/printer.cmx syntax/xml/quotation.cmx syntax/xml/extension.cmx -o syntax/pa_xml.cmx  ; then  rm -f syntax/pa_xml.mli  ; else  rm -f syntax/pa_xml.mli  ; exit 1; fi
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_html -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/html -I syntax -o syntax/html/xhtml.cmx syntax/html/xhtml.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_html -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/html -I syntax -o syntax/html/extension.cmx syntax/html/extension.ml
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow.Pa_html -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax/html -I syntax -o syntax/html/quotation.cmx syntax/html/quotation.ml
+touch syntax/pa_css.mli  ; if  /usr/bin/ocamlopt.opt -pack -for-pack Pa_cow -I syntax/css syntax/css/options.cmx syntax/css/qast.cmx syntax/css/location.cmx syntax/css/printer.cmx syntax/css/parser.cmx syntax/css/qLexer.cmx syntax/css/quotations.cmx -o syntax/pa_css.cmx  ; then  rm -f syntax/pa_css.mli  ; else  rm -f syntax/pa_css.mli  ; exit 1; fi
+touch syntax/pa_json.mli  ; if  /usr/bin/ocamlopt.opt -pack -for-pack Pa_cow -I syntax/json syntax/json/json.cmx syntax/json/extension.cmx -o syntax/pa_json.cmx  ; then  rm -f syntax/pa_json.mli  ; else  rm -f syntax/pa_json.mli  ; exit 1; fi
+touch syntax/pa_html.mli  ; if  /usr/bin/ocamlopt.opt -pack -for-pack Pa_cow -I syntax/html syntax/html/options.cmx syntax/html/extension.cmx syntax/html/xhtml.cmx syntax/html/quotation.cmx -o syntax/pa_html.cmx  ; then  rm -f syntax/pa_html.mli  ; else  rm -f syntax/pa_html.mli  ; exit 1; fi
+/usr/bin/ocamlopt.opt -c -annot -bin-annot -short-paths -I +camlp4 -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm -for-pack Pa_cow -pp 'camlp4orf -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml -I /usr/lib/ocaml/camlp4 -I /usr/lib/ocaml/camlp4' -I syntax -o syntax/pp_cow.cmx syntax/pp_cow.ml
+touch syntax/pa_cow.mli  ; if  /usr/bin/ocamlopt.opt -pack -I syntax syntax/pa_css.cmx syntax/pa_json.cmx syntax/pa_xml.cmx syntax/pa_html.cmx syntax/pp_cow.cmx -o syntax/pa_cow.cmx  ; then  rm -f syntax/pa_cow.mli  ; else  rm -f syntax/pa_cow.mli  ; exit 1; fi
+/usr/bin/ocamlc.opt -a -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm lib/cow.cmo -o lib/cow.cma
+/usr/bin/ocamlopt.opt -shared -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm lib/cow.cmx -o lib/cow.cmxs
+/usr/bin/ocamlopt.opt -a -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm syntax/pa_cow.cmx -o syntax/pa_cow.cmxa
+/usr/bin/ocamlopt.opt -shared -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/dyntype -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/ulex -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/re -I /home/opam/.opam/system/lib/uri -I /home/opam/.opam/system/lib/xmlm syntax/pa_cow.cmx -o syntax/pa_cow.cmxs
+# Parallel statistics: { count(total): 12(119), max: 8, min: 2, average(total): 3.500(1.252) }
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/cow
+Installed /home/opam/.opam/system/lib/cow/xml.mli
+Installed /home/opam/.opam/system/lib/cow/markdown_github.mli
+Installed /home/opam/.opam/system/lib/cow/markdown.mli
+Installed /home/opam/.opam/system/lib/cow/json.mli
+Installed /home/opam/.opam/system/lib/cow/html.mli
+Installed /home/opam/.opam/system/lib/cow/css.mli
+Installed /home/opam/.opam/system/lib/cow/code.mli
+Installed /home/opam/.opam/system/lib/cow/atom.mli
+Installed /home/opam/.opam/system/lib/cow/pa_cow.cmxs
+Installed /home/opam/.opam/system/lib/cow/pa_cow.cmxa
+Installed /home/opam/.opam/system/lib/cow/pa_cow.cma
+Installed /home/opam/.opam/system/lib/cow/cow.a
+Installed /home/opam/.opam/system/lib/cow/cow.cmxs
+Installed /home/opam/.opam/system/lib/cow/cow.cmxa
+Installed /home/opam/.opam/system/lib/cow/cow.cma
+Installed /home/opam/.opam/system/lib/cow/cow.cmi
+Installed /home/opam/.opam/system/lib/cow/META
+Installing cow.0.7.0.
+
+=-=-= Installing stone.0.3 =-=-=
+stone.0.3  Downloading https://github.com/Armael/stone/archive/v0.3.tar.gz
+--2013-11-19 14:17:58--  https://github.com/Armael/stone/archive/v0.3.tar.gz
+Resolving github.com (github.com)... 192.30.252.130
+Connecting to github.com (github.com)|192.30.252.130|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/Armael/stone/tar.gz/v0.3 [following]
+--2013-11-19 14:17:58--  https://codeload.github.com/Armael/stone/tar.gz/v0.3
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.145
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.145|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13787 (13K) [application/x-gzip]
+Saving to: `stone-0.3.tar.gz'
+
+     0K .......... ...                                        100%  176M=0s
+
+2013-11-19 14:17:59 (176 MB/s) - `stone-0.3.tar.gz' saved [13787/13787]
+
+Building stone.0.3:
+  ./configure --bin-dir /home/opam/.opam/system/bin
+  make
+  make install
+ocamlfind ocamlc -linkpkg -I src/ -I src/packed/ -o src/utils/pack_text src/utils/pack_text.ml
+mkdir -p src/packed
+src/utils/pack_text data/config.stone src/packed/config_pak.ml
+src/utils/pack_text data/example_index.md src/packed/example_index_pak.ml
+src/utils/pack_text data/template.html src/packed/template_pak.ml
+src/utils/pack_text data/org_template.html src/packed/org_template_pak.ml
+src/utils/pack_text data/style.css src/packed/style_pak.ml
+ocamlfind ocamlc -package cow,cow.syntax,config-file,omd,unix,str -syntax camlp4o -linkpkg -I src/ -I src/packed/ -o stone src/packed/config_pak.ml src/packed/example_index_pak.ml src/packed/template_pak.ml src/packed/org_template_pak.ml src/packed/style_pak.ml src/util.ml src/params.ml src/template.ml src/conf.ml src/gen.ml src/stone.ml 
+ocamlfind ocamlc -linkpkg -I src/ -I src/packed/ -o src/utils/pack_text src/utils/pack_text.ml
+mkdir -p src/packed
+src/utils/pack_text data/config.stone src/packed/config_pak.ml
+src/utils/pack_text data/example_index.md src/packed/example_index_pak.ml
+src/utils/pack_text data/template.html src/packed/template_pak.ml
+src/utils/pack_text data/org_template.html src/packed/org_template_pak.ml
+src/utils/pack_text data/style.css src/packed/style_pak.ml
+cp stone /home/opam/.opam/system/bin/
+Installing stone.0.3.
