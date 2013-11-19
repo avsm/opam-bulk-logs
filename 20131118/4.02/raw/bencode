@@ -1,0 +1,64 @@
+++ opam install bencode -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install bencode
+The following actions will be performed:
+ - install bencode.0.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing bencode.0.1 =-=-=
+bencode.0.1 Downloading https://github.com/rgrinberg/bencode/archive/0.1.tar.gz
+--2013-11-19 04:51:32--  https://github.com/rgrinberg/bencode/archive/0.1.tar.gz
+Resolving github.com (github.com)... 192.30.252.130
+Connecting to github.com (github.com)|192.30.252.130|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/rgrinberg/bencode/tar.gz/0.1 [following]
+--2013-11-19 04:51:32--  https://codeload.github.com/rgrinberg/bencode/tar.gz/0.1
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.145
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.145|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `bencode-0.1.tar.gz'
+
+     0K .......... .......... .......... ...                   2.01M=0.02s
+
+2013-11-19 04:51:33 (2.01 MB/s) - `bencode-0.1.tar.gz' saved [34738]
+
+Building bencode.0.1:
+  make all
+  make install
+ocamlbuild -use-ocamlfind bencode.cma bencode.cmxa bencode.cmi bencode.a bencode.docdir/index.html
+ocamlfind ocamldep -modules lib/bencode.mli > lib/bencode.mli.depends
+ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmi lib/bencode.mli
+ocamlfind ocamldep -modules lib/bencode.ml > lib/bencode.ml.depends
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlyacc lib/bencode_parse.mly
+ocamlfind ocamldep -modules lib/bencode_parse.mli > lib/bencode_parse.mli.depends
+ocamlfind ocamldep -modules lib/bencode_types.ml > lib/bencode_types.ml.depends
+ocamlfind ocamlc -c -g -I lib -o lib/bencode_types.cmo lib/bencode_types.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamllex.opt -q lib/lex.mll
+ocamlfind ocamldep -modules lib/lex.ml > lib/lex.ml.depends
+ocamlfind ocamlc -c -g -I lib -o lib/bencode_parse.cmi lib/bencode_parse.mli
+ocamlfind ocamlc -c -g -I lib -o lib/lex.cmo lib/lex.ml
+ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmo lib/bencode.ml
+ocamlfind ocamldep -modules lib/bencode_parse.ml > lib/bencode_parse.ml.depends
+ocamlfind ocamlc -c -g -I lib -o lib/bencode_parse.cmo lib/bencode_parse.ml
+ocamlfind ocamlc -a lib/bencode_types.cmo lib/bencode_parse.cmo lib/lex.cmo lib/bencode.cmo -o lib/bencode.cma
+ocamlfind ocamlopt -c -g -I lib -o lib/bencode_types.cmx lib/bencode_types.ml
+ocamlfind ocamlopt -c -g -I lib -o lib/bencode_parse.cmx lib/bencode_parse.ml
+ocamlfind ocamlopt -c -g -I lib -o lib/lex.cmx lib/lex.ml
+ocamlfind ocamlopt -c -g -I lib -o lib/bencode.cmx lib/bencode.ml
+ocamlfind ocamlopt -a lib/bencode_types.cmx lib/bencode_parse.cmx lib/lex.cmx lib/bencode.cmx -o lib/bencode.cmxa
+ocamlfind ocamldoc -dump lib/bencode.odoc -I lib lib/bencode.mli
+rm -rf bencode.docdir
+mkdir -p bencode.docdir
+ocamlfind ocamldoc -load lib/bencode.odoc -html -d bencode.docdir
+ocamlbuild -use-ocamlfind bencode.cma bencode.cmxa bencode.cmi bencode.a bencode.docdir/index.html
+ocamlfind install bencode META _build/lib/bencode.cma _build/lib/bencode.cmxa _build/lib/bencode.cmi _build/lib/bencode.a 
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/META
+Installing bencode.0.1.
