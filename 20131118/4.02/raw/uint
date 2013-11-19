@@ -1,0 +1,262 @@
+++ opam install uint -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install uint
+The following actions will be performed:
+ - install ospec.0.3.2 [required by uint]
+ - install uint.1.1.0
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ospec.0.3.2 =-=-=
+ospec.0.3.2 Downloading https://forge.ocamlcore.org/frs/download.php/1220/ospec-0.3.2.tar.gz
+--2013-11-19 14:24:30--  https://forge.ocamlcore.org/frs/download.php/1220/ospec-0.3.2.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:443... connected.
+WARNING: no certificate subject alternative name matches
+	requested host name `forge.ocamlcore.org'.
+HTTP request sent, awaiting response... 200 OK
+Length: 49205 (48K) [application/binary]
+Saving to: `ospec-0.3.2.tar.gz'
+
+     0K .......... .......... .......... .......... ........  100%  170K=0.3s
+
+2013-11-19 14:24:31 (170 KB/s) - `ospec-0.3.2.tar.gz' saved [49205/49205]
+
+Copying ~/.opam/repo/default/packages/ospec.0.3.2/files/ospec.install to ~/.opam/4.02.0dev+trunk/build/ospec.0.3.2/
+Building ospec.0.3.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ ospec
+Package version: ..................................... 0.3.2
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+trunk
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -modules src/helpers.ml > src/helpers.ml.depends
+ocamlfind ocamldep -modules src/prop.mli > src/prop.mli.depends
+ocamlfind ocamldep -modules src/gen.ml > src/gen.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -o src/gen.cmo src/gen.ml
+ocamlfind ocamlc -c -g -I src -I src -o src/prop.cmi src/prop.mli
+ocamlfind ocamldep -modules src/prop.ml > src/prop.ml.depends
+ocamlfind ocamldep -modules src/spec.mli > src/spec.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -o src/spec.cmi src/spec.mli
+ocamlfind ocamldep -modules src/spec.ml > src/spec.ml.depends
+ocamlfind ocamldep -package camlp4.quotations -package camlp4.extend -syntax camlp4o -modules src/pa_spec.ml > src/pa_spec.ml.depends
+ocamlfind ocamldep -modules src/report.mli > src/report.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -o src/report.cmi src/report.mli
+ocamlfind ocamldep -modules src/report.ml > src/report.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -o src/helpers.cmo src/helpers.ml
+ocamlfind ocamlc -c -g -I src -I src -o src/prop.cmo src/prop.ml
+ocamlfind ocamlc -c -g -I src -I src -o src/spec.cmo src/spec.ml
+ocamlfind ocamlc -c -g -I src -package camlp4.quotations -package camlp4.extend -syntax camlp4o -I src -o src/pa_spec.cmo src/pa_spec.ml
+ocamlfind ocamlc -c -g -I src -I src -o src/report.cmo src/report.ml
+ocamlfind ocamlc -a src/helpers.cmo src/gen.cmo src/prop.cmo src/spec.cmo src/pa_spec.cmo src/report.cmo -o src/ospec.cma
+ocamlfind ocamldep -I +compiler-libs -package findlib -modules src/ospec.ml > src/ospec.ml.depends
+ocamlfind ocamlc -c -I +compiler-libs -g -I src -package findlib -I src -o src/ospec.cmo src/ospec.ml
++ ocamlfind ocamlc -c -I +compiler-libs -g -I src -package findlib -I src -o src/ospec.cmo src/ospec.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml, /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/compiler-libs
+ocamlfind ocamlc -I +compiler-libs -I +camlp4 dynlink.cma ocamlcommon.cma ocamlbytecomp.cma ocamltoplevel.cma camlp4o.cma -linkpkg str.cma -g -linkall -linkpkg -package findlib src/ospec.cma src/ospec.cmo -o src/ospec.byte
++ ocamlfind ocamlc -I +compiler-libs -I +camlp4 dynlink.cma ocamlcommon.cma ocamlbytecomp.cma ocamltoplevel.cma camlp4o.cma -linkpkg str.cma -g -linkall -linkpkg -package findlib src/ospec.cma src/ospec.cmo -o src/ospec.byte
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml, /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/compiler-libs
+ocamlfind install ospec src/META _build/src/pa_spec.cmo \
+		_build/src/pa_spec.cmi _build/src/spec.cmo _build/src/spec.cmi \
+		_build/src/helpers.cmo _build/src/helpers.cmi _build/src/report.cmo \
+		_build/src/report.cmi _build/src/gen.cmo _build/src/gen.cmi \
+		_build/src/prop.cmo _build/src/prop.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ospec/prop.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ospec/prop.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ospec/gen.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ospec/gen.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ospec/report.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ospec/report.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ospec/helpers.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ospec/helpers.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ospec/spec.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ospec/spec.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ospec/pa_spec.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ospec/pa_spec.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ospec/META
+install -m 755 _build/src/ospec.byte /home/opam/.opam/4.02.0dev+trunk/bin/ospec
+Installing ospec.0.3.2.
+
+=-=-= Installing uint.1.1.0 =-=-=
+uint.1.1.0 Downloading http://forge.ocamlcore.org/frs/download.php/1100/ocaml-uint-1.1.0.tar.gz
+--2013-11-19 14:24:36--  http://forge.ocamlcore.org/frs/download.php/1100/ocaml-uint-1.1.0.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 47114 (46K) [application/binary]
+Saving to: `ocaml-uint-1.1.0.tar.gz'
+
+     0K .......... .......... .......... .......... ......    100%  159K=0.3s
+
+2013-11-19 14:24:36 (159 KB/s) - `ocaml-uint-1.1.0.tar.gz' saved [47114/47114]
+
+Building uint.1.1.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ uint
+Package version: ..................................... 1.1.0
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+trunk
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlc -c lib/uint32_stubs.c
+mv uint32_stubs.o lib/uint32_stubs.o
+ocamlfind ocamlc -c lib/uint64_stubs.c
+mv uint64_stubs.o lib/uint64_stubs.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlmklib -o lib/uint_stubs lib/uint32_stubs.o lib/uint64_stubs.o
+ocamlfind ocamldep -modules lib/uint.mli > lib/uint.mli.depends
+ocamlfind ocamlc -c -g -I lib -o lib/uint.cmi lib/uint.mli
+ocamlfind ocamldep -modules lib/uint.ml > lib/uint.ml.depends
+ocamlfind ocamldep -modules lib/uint32.mli > lib/uint32.mli.depends
+ocamlfind ocamlc -c -g -I lib -o lib/uint32.cmi lib/uint32.mli
+ocamlfind ocamldep -modules lib/uint32.ml > lib/uint32.ml.depends
+ocamlfind ocamldep -modules lib/uint64.mli > lib/uint64.mli.depends
+ocamlfind ocamlc -c -g -I lib -o lib/uint64.cmi lib/uint64.mli
+ocamlfind ocamldep -modules lib/uint64.ml > lib/uint64.ml.depends
+ocamlfind ocamldep -modules lib/uint128.mli > lib/uint128.mli.depends
+ocamlfind ocamlc -c -g -I lib -o lib/uint128.cmi lib/uint128.mli
+ocamlfind ocamldep -modules lib/uint128.ml > lib/uint128.ml.depends
+ocamlfind ocamlc -c -g -I lib -o lib/uint.cmo lib/uint.ml
+ocamlfind ocamlc -c -g -I lib -o lib/uint32.cmo lib/uint32.ml
+ocamlfind ocamlc -c -g -I lib -o lib/uint64.cmo lib/uint64.ml
+ocamlfind ocamlc -c -g -I lib -o lib/uint128.cmo lib/uint128.ml
+ocamlfind ocamlc -a -dllib -luint_stubs -cclib -luint_stubs lib/uint.cmo lib/uint32.cmo lib/uint64.cmo lib/uint128.cmo -o lib/uint.cma
+ocamlfind ocamlopt -c -g -I lib -o lib/uint.cmx lib/uint.ml
+ocamlfind ocamlopt -c -g -I lib -o lib/uint64.cmx lib/uint64.ml
+ocamlfind ocamlopt -c -g -I lib -o lib/uint32.cmx lib/uint32.ml
+ocamlfind ocamlopt -c -g -I lib -o lib/uint128.cmx lib/uint128.ml
+ocamlfind ocamlopt -a -cclib -luint_stubs lib/uint.cmx lib/uint32.cmx lib/uint64.cmx lib/uint128.cmx -o lib/uint.cmxa
+ocamlfind ocamlopt -shared -I lib lib/uint.cmx -o lib/uint.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint32.h
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint64.h
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint32.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint64.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint128.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/libuint_stubs.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint32.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint64.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint128.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint32.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint64.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/uint128.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/uint/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dlluint_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dlluint_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+trunk/lib/stublibs is not mentioned in ld.conf
+Installing uint.1.1.0.
