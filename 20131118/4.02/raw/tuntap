@@ -1,0 +1,241 @@
+++ opam install tuntap -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install tuntap
+Ubuntu depexts:
+The following actions will be performed:
+ - install ipaddr.0.2.3 [required by tuntap]
+ - install tuntap.0.7.0
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ipaddr.0.2.3 =-=-=
+ipaddr.0.2.3 Downloading https://github.com/mirage/ocaml-ipaddr/archive/0.2.3.tar.gz
+--2013-11-19 14:22:50--  https://github.com/mirage/ocaml-ipaddr/archive/0.2.3.tar.gz
+Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/mirage/ocaml-ipaddr/tar.gz/0.2.3 [following]
+--2013-11-19 14:22:50--  https://codeload.github.com/mirage/ocaml-ipaddr/tar.gz/0.2.3
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.145
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.145|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `ocaml-ipaddr-0.2.3.tar.gz'
+
+     0K .......... .......... .......... .......... .....      2.62M=0.02s
+
+2013-11-19 14:22:50 (2.62 MB/s) - `ocaml-ipaddr-0.2.3.tar.gz' saved [46412]
+
+Building ipaddr.0.2.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make build
+  make install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ ipaddr
+Package version: ..................................... 0.2.3
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+trunk
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+
+ocaml setup.ml -build 
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -modules lib/ipaddr.mli > lib/ipaddr.mli.depends
+ocamlfind ocamlc -c -g -w @f@p@u -I lib -o lib/ipaddr.cmi lib/ipaddr.mli
+ocamlfind ocamldep -modules lib/ipaddr.ml > lib/ipaddr.ml.depends
+ocamlfind ocamldep -modules lib/macaddr.mli > lib/macaddr.mli.depends
+ocamlfind ocamlc -c -g -w @f@p@u -I lib -o lib/macaddr.cmi lib/macaddr.mli
+ocamlfind ocamldep -modules lib/macaddr.ml > lib/macaddr.ml.depends
+ocamlfind ocamlc -c -g -w @f@p@u -I lib -o lib/ipaddr.cmo lib/ipaddr.ml
+ocamlfind ocamlc -c -g -w @f@p@u -I lib -o lib/macaddr.cmo lib/macaddr.ml
+ocamlfind ocamlc -a -w @f@p@u lib/ipaddr.cmo lib/macaddr.cmo -o lib/ipaddr.cma
+ocamlfind ocamlopt -c -g -w @f@p@u -I lib -o lib/ipaddr.cmx lib/ipaddr.ml
+ocamlfind ocamlopt -c -g -w @f@p@u -I lib -o lib/macaddr.cmx lib/macaddr.ml
+ocamlfind ocamlopt -a -w @f@p@u lib/ipaddr.cmx lib/macaddr.cmx -o lib/ipaddr.cmxa
+ocamlfind ocamlopt -shared lib/ipaddr.cmx -o lib/ipaddr.cmxs
+ocaml setup.ml -install 
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/macaddr.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/macaddr.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/macaddr.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/META
+Installing ipaddr.0.2.3.
+
+=-=-= Installing tuntap.0.7.0 =-=-=
+tuntap.0.7.0 Downloading https://github.com/mirage/ocaml-tuntap/archive/v0.7.0.tar.gz
+--2013-11-19 14:22:54--  https://github.com/mirage/ocaml-tuntap/archive/v0.7.0.tar.gz
+Resolving github.com (github.com)... 192.30.252.130
+Connecting to github.com (github.com)|192.30.252.130|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/mirage/ocaml-tuntap/tar.gz/v0.7.0 [following]
+--2013-11-19 14:22:54--  https://codeload.github.com/mirage/ocaml-tuntap/tar.gz/v0.7.0
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.147
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `ocaml-tuntap-0.7.0.tar.gz'
+
+     0K .......... .......... .......... .......... .....      2.60M=0.02s
+
+2013-11-19 14:22:55 (2.60 MB/s) - `ocaml-tuntap-0.7.0.tar.gz' saved [46128]
+
+Building tuntap.0.7.0:
+  make PREFIX=/home/opam/.opam/4.02.0dev+trunk
+  make PREFIX=/home/opam/.opam/4.02.0dev+trunk install
+ocaml setup.ml -configure 
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ tuntap
+Package version: ..................................... 0.7.0
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_ipaddr: .......................................... /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+
+ocaml setup.ml -build 
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+File "_tags", line 26, characters 22-34:
+Warning: the tag "pkg_cmdliner" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 27, characters 17-29:
+Warning: the tag "pkg_cmdliner" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 31, characters 27-39:
+Warning: the tag "pkg_lwt.unix" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 35, characters 29-41:
+Warning: the tag "pkg_lwt.unix" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 39, characters 29-41:
+Warning: the tag "pkg_lwt.unix" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 40, characters 17-29:
+Warning: the tag "pkg_lwt.unix" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 47, characters 29-38:
+Warning: the tag "pkg_oUnit" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 50, characters 17-26:
+Warning: the tag "pkg_oUnit" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamlc -ccopt -O3 -c lib/tuntap_stubs.c
+mv tuntap_stubs.o lib/tuntap_stubs.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlmklib -o lib/tuntap_stubs lib/tuntap_stubs.o
+ocamlfind ocamldep -package ipaddr -modules lib/tuntap.mli > lib/tuntap.mli.depends
+ocamlfind ocamlc -c -g -ccopt -O3 -package ipaddr -I lib -o lib/tuntap.cmi lib/tuntap.mli
+ocamlfind ocamldep -package ipaddr -modules lib/tuntap.ml > lib/tuntap.ml.depends
+ocamlfind ocamlc -c -g -ccopt -O3 -package ipaddr -I lib -o lib/tuntap.cmo lib/tuntap.ml
+ocamlfind ocamlc -a -dllib -ltuntap_stubs -cclib -ltuntap_stubs lib/tuntap.cmo -o lib/tuntap.cma
+ocamlfind ocamlopt -c -g -ccopt -O3 -package ipaddr -I lib -o lib/tuntap.cmx lib/tuntap.ml
+ocamlfind ocamlopt -a -cclib -ltuntap_stubs lib/tuntap.cmx -o lib/tuntap.cmxa
+ocamlfind ocamlopt -shared -I lib lib/tuntap.cmx -o lib/tuntap.cmxs
+ocaml setup.ml -install 
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/tuntap/tuntap.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/tuntap/libtuntap_stubs.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/tuntap/tuntap.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/tuntap/tuntap.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/tuntap/tuntap.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/tuntap/tuntap.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/tuntap/tuntap.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/tuntap/tuntap.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/tuntap/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dlltuntap_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dlltuntap_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+trunk/lib/stublibs is not mentioned in ld.conf
+Installing tuntap.0.7.0.
