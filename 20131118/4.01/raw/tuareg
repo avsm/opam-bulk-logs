@@ -1,0 +1,55 @@
+++ opam install tuareg -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install tuareg
+The following actions will be performed:
+ - install tuareg.2.0.7
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing tuareg.2.0.7 =-=-=
+tuareg.2.0.7 Downloading https://forge.ocamlcore.org/frs/download.php/1304/tuareg-2.0.7.tar.gz
+--2013-11-19 14:30:11--  https://forge.ocamlcore.org/frs/download.php/1304/tuareg-2.0.7.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:443... connected.
+WARNING: no certificate subject alternative name matches
+	requested host name `forge.ocamlcore.org'.
+HTTP request sent, awaiting response... 200 OK
+Length: 57999 (57K) [application/binary]
+Saving to: `tuareg-2.0.7.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 88%  170K 0s
+    50K ......                                                100% 46.9M=0.3s
+
+2013-11-19 14:30:11 (193 KB/s) - `tuareg-2.0.7.tar.gz' saved [57999/57999]
+
+Building tuareg.2.0.7:
+  make install INSTALL_DIR=/home/opam/.opam/system/share/tuareg
+emacs --batch --no-init-file -f batch-byte-compile tuareg.el
+make: emacs: Command not found
+make: *** [tuareg.elc] Error 127
+[ERROR] The compilation of tuareg.2.0.7 failed.
+Removing tuareg.2.0.7.
+  make uninstall
+test -d /home/opam/.opam/system/share/tuareg && rm -f -r /home/opam/.opam/system/share/tuareg
+make: [uninstall] Error 1 (ignored)
+
+
+===== ERROR while installing tuareg.2.0.7 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make install INSTALL_DIR=/home/opam/.opam/system/share/tuareg
+# path                 /home/opam/.opam/system/build/tuareg.2.0.7
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/opam/.opam/system/build/tuareg.2.0.7/tuareg-24-d8a4ae.env
+# stdout-file          /home/opam/.opam/system/build/tuareg.2.0.7/tuareg-24-d8a4ae.out
+# stderr-file          /home/opam/.opam/system/build/tuareg.2.0.7/tuareg-24-d8a4ae.err
+### stdout ###
+# emacs --batch --no-init-file -f batch-byte-compile tuareg.el
+### stderr ###
+# make: emacs: Command not found
+# make: *** [tuareg.elc] Error 127
+
+'opam install tuareg' failed.
