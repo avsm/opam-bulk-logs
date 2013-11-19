@@ -1,0 +1,139 @@
+++ opam install vg -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install vg
+The following actions will be performed:
+ - install gg.0.8.0 [required by vg]
+ - install vg.0.8.0
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing gg.0.8.0 =-=-=
+gg.0.8.0   Downloading http://erratique.ch/software/gg/releases/gg-0.8.0.tbz
+--2013-11-19 14:41:05--  http://erratique.ch/software/gg/releases/gg-0.8.0.tbz
+Resolving erratique.ch (erratique.ch)... 37.58.75.241, 2a03:8180:1001:b2:36::c
+Connecting to erratique.ch (erratique.ch)|37.58.75.241|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 132719 (130K) [application/x-bzip2]
+Saving to: `gg-0.8.0.tbz'
+
+     0K .......... .......... .......... .......... .......... 38%  256K 0s
+    50K .......... .......... .......... .......... .......... 77%  505K 0s
+   100K .......... .......... .........                       100%  307K=0.4s
+
+2013-11-19 14:41:06 (332 KB/s) - `gg-0.8.0.tbz' saved [132719/132719]
+
+Building gg.0.8.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+fatal: Not a git repository (or any of the parent directories): .git
+fatal: Not a git repository (or any of the parent directories): .git
+ocamlfind ocamldep -modules src/gg.mli > src/gg.mli.depends
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/gg.cmi src/gg.mli
+ocamlfind ocamldep -modules src/gg.ml > src/gg.ml.depends
+ocamlfind ocamlopt -c -annot -bin-annot -I src -I test -o src/gg.cmx src/gg.ml
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/gg.cmo src/gg.ml
+ocamlfind ocamlc -a src/gg.cmo -o src/gg.cma
+ocamlfind ocamlopt -a src/gg.cmx -o src/gg.cmxa
+ocamlfind ocamlopt -shared src/gg.cmx -o src/gg.cmxs
+ocamlfind ocamldep -package compiler-libs.toplevel -modules src/gg_top.ml > src/gg_top.ml.depends
+ocamlfind ocamlc -c -annot -bin-annot -package compiler-libs.toplevel -I src -I test -o src/gg_top.cmo src/gg_top.ml
++ ocamlfind ocamlc -c -annot -bin-annot -package compiler-libs.toplevel -I src -I test -o src/gg_top.cmo src/gg_top.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /usr/lib/ocaml, /usr/lib/ocaml/compiler-libs
+ocamlfind ocamlopt -c -annot -bin-annot -package compiler-libs.toplevel -I src -I test -o src/gg_top.cmx src/gg_top.ml
++ ocamlfind ocamlopt -c -annot -bin-annot -package compiler-libs.toplevel -I src -I test -o src/gg_top.cmx src/gg_top.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /usr/lib/ocaml, /usr/lib/ocaml/compiler-libs
+ocamlfind ocamlc -a -package compiler-libs.toplevel src/gg_top.cmo -o src/gg_top.cma
++ ocamlfind ocamlc -a -package compiler-libs.toplevel src/gg_top.cmo -o src/gg_top.cma
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /usr/lib/ocaml, /usr/lib/ocaml/compiler-libs
+ocamlfind ocamlopt -a -package compiler-libs.toplevel src/gg_top.cmx -o src/gg_top.cmxa
++ ocamlfind ocamlopt -a -package compiler-libs.toplevel src/gg_top.cmx -o src/gg_top.cmxa
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /usr/lib/ocaml, /usr/lib/ocaml/compiler-libs
+ocamlfind ocamlopt -shared -package compiler-libs.toplevel src/gg_top.cmx -o src/gg_top.cmxs
++ ocamlfind ocamlopt -shared -package compiler-libs.toplevel src/gg_top.cmx -o src/gg_top.cmxs
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /usr/lib/ocaml, /usr/lib/ocaml/compiler-libs
+Installing gg.0.8.0.
+[WARNING] unknown fields in /home/opam/.opam/system/build/gg.0.8.0/gg.install: is your OPAM up-to-date ?
+
+=-=-= Installing vg.0.8.0 =-=-=
+vg.0.8.0   Downloading http://erratique.ch/software/vg/releases/vg-0.8.0.tbz
+--2013-11-19 14:41:10--  http://erratique.ch/software/vg/releases/vg-0.8.0.tbz
+Resolving erratique.ch (erratique.ch)... 37.58.75.241, 2a03:8180:1001:b2:36::c
+Connecting to erratique.ch (erratique.ch)|37.58.75.241|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 455021 (444K) [application/x-bzip2]
+Saving to: `vg-0.8.0.tbz'
+
+     0K .......... .......... .......... .......... .......... 11%  256K 2s
+    50K .......... .......... .......... .......... .......... 22%  500K 1s
+   100K .......... .......... .......... .......... .......... 33%  508K 1s
+   150K .......... .......... .......... .......... .......... 45%  516K 1s
+   200K .......... .......... .......... .......... .......... 56% 11.6M 0s
+   250K .......... .......... .......... .......... .......... 67%  548K 0s
+   300K .......... .......... .......... .......... .......... 78% 1.31M 0s
+   350K .......... .......... .......... .......... .......... 90% 1.24M 0s
+   400K .......... .......... .......... .......... ....      100% 1.72M=0.7s
+
+2013-11-19 14:41:11 (646 KB/s) - `vg-0.8.0.tbz' saved [455021/455021]
+
+[ERROR] 'uutf:installed' has type bool, but a env element of type string was expected.
+[ERROR] 'otfm:installed' has type bool, but a env element of type string was expected.
+[ERROR] 'js_of_ocaml:installed' has type bool, but a env element of type string was expected.
+Building vg.0.8.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+fatal: Not a git repository (or any of the parent directories): .git
+fatal: Not a git repository (or any of the parent directories): .git
+ocamlfind ocamldep -package gg -modules src/vg.mli > src/vg.mli.depends
+ocamlfind ocamlc -c -annot -bin-annot -package gg -I src -I test -I db -o src/vg.cmi src/vg.mli
+ocamlfind ocamldep -package gg -modules src/vg.ml > src/vg.ml.depends
+ocamlfind ocamlopt -c -annot -bin-annot -package gg -I src -I test -I db -o src/vg.cmx src/vg.ml
+ocamlfind ocamlc -c -annot -bin-annot -package gg -I src -I test -I db -o src/vg.cmo src/vg.ml
+ocamlfind ocamlc -a src/vg.cmo -o src/vg.cma
+ocamlfind ocamlopt -a src/vg.cmx -o src/vg.cmxa
+ocamlfind ocamlopt -shared src/vg.cmx -o src/vg.cmxs
+ocamlfind ocamldep -package gg -modules src/vgr_svg.mli > src/vgr_svg.mli.depends
+ocamlfind ocamlc -c -annot -bin-annot -package gg -I src -I test -I db -o src/vgr_svg.cmi src/vgr_svg.mli
+ocamlfind ocamldep -package gg -modules src/vgr_svg.ml > src/vgr_svg.ml.depends
+ocamlfind ocamlopt -c -annot -bin-annot -package gg -I src -I test -I db -o src/vgr_svg.cmx src/vgr_svg.ml
+ocamlfind ocamlc -c -annot -bin-annot -package gg -I src -I test -I db -o src/vgr_svg.cmo src/vgr_svg.ml
+ocamlfind ocamlc -a src/vg.cmo src/vgr_svg.cmo -o src/vgr_svg.cma
+ocamlfind ocamlopt -a src/vg.cmx src/vgr_svg.cmx -o src/vgr_svg.cmxa
+ocamlfind ocamlopt -shared src/vgr_svg.cmx -o src/vgr_svg.cmxs
+ocamlfind ocamldep -package gg -package uutf -package otfm -modules src/vgr_pdf.ml > src/vgr_pdf.ml.depends
++ ocamlfind ocamldep -package gg -package uutf -package otfm -modules src/vgr_pdf.ml > src/vgr_pdf.ml.depends
+ocamlfind: Package `uutf' not found
+Command exited with code 2.
+[ERROR] The compilation of vg.0.8.0 failed.
+Removing vg.0.8.0.
+
+
+===== ERROR while installing vg.0.8.0 =====
+# opam-version         1.1.0
+# os                   linux
+# command              ./pkg/build true
+# path                 /home/opam/.opam/system/build/vg.0.8.0
+# compiler             system (4.01.0)
+# exit-code            10
+# env-file             /home/opam/.opam/system/build/vg.0.8.0/vg-285-a71bb4.env
+# stdout-file          /home/opam/.opam/system/build/vg.0.8.0/vg-285-a71bb4.out
+# stderr-file          /home/opam/.opam/system/build/vg.0.8.0/vg-285-a71bb4.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamldep -package gg -modules src/vgr_svg.ml > src/vgr_svg.ml.depends
+# ocamlfind ocamlopt -c -annot -bin-annot -package gg -I src -I test -I db -o src/vgr_svg.cmx src/vgr_svg.ml
+# ocamlfind ocamlc -c -annot -bin-annot -package gg -I src -I test -I db -o src/vgr_svg.cmo src/vgr_svg.ml
+# ocamlfind ocamlc -a src/vg.cmo src/vgr_svg.cmo -o src/vgr_svg.cma
+# ocamlfind ocamlopt -a src/vg.cmx src/vgr_svg.cmx -o src/vgr_svg.cmxa
+# ocamlfind ocamlopt -shared src/vgr_svg.cmx -o src/vgr_svg.cmxs
+# ocamlfind ocamldep -package gg -package uutf -package otfm -modules src/vgr_pdf.ml > src/vgr_pdf.ml.depends
+# + ocamlfind ocamldep -package gg -package uutf -package otfm -modules src/vgr_pdf.ml > src/vgr_pdf.ml.depends
+# ocamlfind: Package `uutf' not found
+# Command exited with code 2.
+### stderr ###
+# fatal: Not a git repository (or any of the parent directories): .git
+# fatal: Not a git repository (or any of the parent directories): .git
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/system/backup/state-20131019144103.export"
+'opam install vg' failed.
