@@ -1,0 +1,30 @@
+++ opam install apalogretrieve -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install apalogretrieve
+Ubuntu depexts:
+The following actions will be performed:
+ - install apalogretrieve.0.9.6-4
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing apalogretrieve.0.9.6-4 =-=-=
+apalogretrieve.0.9.6-4 Downloading http://www.first.in-berlin.de/software/tools/apalogretrieve/apalogretrieve-0-9-6_4.tgz
+--2013-11-19 02:05:15--  http://www.first.in-berlin.de/software/tools/apalogretrieve/apalogretrieve-0-9-6_4.tgz
+Resolving www.first.in-berlin.de (www.first.in-berlin.de)... 217.197.80.132, 2001:bf0:c000:a::2:132
+Connecting to www.first.in-berlin.de (www.first.in-berlin.de)|217.197.80.132|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 57798 (56K) [application/x-gzip]
+Saving to: `apalogretrieve-0-9-6_4.tgz'
+
+     0K .......... .......... .......... .......... .......... 88%  221K 0s
+    50K ......                                                100% 67.3M=0.2s
+
+2013-11-19 02:05:16 (250 KB/s) - `apalogretrieve-0-9-6_4.tgz' saved [57798/57798]
+
+Copying ~/.opam/repo/default/packages/apalogretrieve.0.9.6-4/files/apalogretrieve.install to ~/.opam/4.02.0dev+trunk/build/apalogretrieve.0.9.6-4/
+Building apalogretrieve.0.9.6-4:
+  sh compile.native
+134 states, 9618 transitions, table size 39276 bytes
+48 states, 715 transitions, table size 3148 bytes
+Installing apalogretrieve.0.9.6-4.
