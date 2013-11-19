@@ -1,0 +1,113 @@
+++ opam install sha -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install sha
+The following actions will be performed:
+ - install sha.1.9
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing sha.1.9 =-=-=
+sha.1.9    Downloading https://github.com/vincenthz/ocaml-sha/tarball/ocaml-sha-v1.9
+--2013-11-19 13:52:05--  https://github.com/vincenthz/ocaml-sha/tarball/ocaml-sha-v1.9
+Resolving github.com (github.com)... 192.30.252.130
+Connecting to github.com (github.com)|192.30.252.130|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/vincenthz/ocaml-sha/legacy.tar.gz/ocaml-sha-v1.9 [following]
+--2013-11-19 13:52:05--  https://codeload.github.com/vincenthz/ocaml-sha/legacy.tar.gz/ocaml-sha-v1.9
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.145
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.145|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `vincenthz-ocaml-sha-ocaml-sha-v1.9-0-g73f9b84.tar.gz'
+
+     0K .......... ..                                           144M=0s
+
+2013-11-19 13:52:06 (144 MB/s) - `vincenthz-ocaml-sha-ocaml-sha-v1.9-0-g73f9b84.tar.gz' saved [12881]
+
+Building sha.1.9:
+  make
+  make install
+ocamlc -c -o sha1.cmi sha1.mli
+ocamlc -ccopt "-Wall -O3 -funroll-loops -I/usr/include" -c -o sha1.o sha1.c
+mv sha1.o sha1.lib.o
+ocamlc -ccopt "-Wall -O3 -funroll-loops -I/usr/include" -c -o sha1_stubs.o sha1_stubs.c
+sha1_stubs.c: In function 'stub_sha1_file':
+sha1_stubs.c:118:2: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+sha1_stubs.c:118:19: warning: incompatible implicit declaration of built-in function 'strcpy' [enabled by default]
+sha1_stubs.c:118:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+sha1_stubs.c:118:19: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+sha1_stubs.c:128:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+sha1_stubs.c:128:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+ocamlc -c -o sha1.cmo sha1.ml
+ocamlmklib -o sha1 sha1.lib.o sha1_stubs.o sha1.cmo
+ocamlopt  -c -o sha1.cmx sha1.ml
+ocamlmklib -o sha1 sha1.lib.o sha1_stubs.o sha1.cmx
+ocamlc -c -o sha256.cmi sha256.mli
+ocamlc -ccopt "-Wall -O3 -funroll-loops -I/usr/include" -c -o sha256.o sha256.c
+mv sha256.o sha256.lib.o
+ocamlc -ccopt "-Wall -O3 -funroll-loops -I/usr/include" -c -o sha256_stubs.o sha256_stubs.c
+sha256_stubs.c: In function 'stub_sha256_file':
+sha256_stubs.c:116:2: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+sha256_stubs.c:116:19: warning: incompatible implicit declaration of built-in function 'strcpy' [enabled by default]
+sha256_stubs.c:116:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+sha256_stubs.c:116:19: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+sha256_stubs.c:126:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+sha256_stubs.c:126:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+ocamlc -c -o sha256.cmo sha256.ml
+ocamlmklib -o sha256 sha256.lib.o sha256_stubs.o sha256.cmo
+ocamlopt  -c -o sha256.cmx sha256.ml
+ocamlmklib -o sha256 sha256.lib.o sha256_stubs.o sha256.cmx
+ocamlc -c -o sha512.cmi sha512.mli
+ocamlc -ccopt "-Wall -O3 -funroll-loops -I/usr/include" -c -o sha512.o sha512.c
+mv sha512.o sha512.lib.o
+ocamlc -ccopt "-Wall -O3 -funroll-loops -I/usr/include" -c -o sha512_stubs.o sha512_stubs.c
+sha512_stubs.c: In function 'stub_sha512_file':
+sha512_stubs.c:116:2: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+sha512_stubs.c:116:19: warning: incompatible implicit declaration of built-in function 'strcpy' [enabled by default]
+sha512_stubs.c:116:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+sha512_stubs.c:116:19: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+sha512_stubs.c:126:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+sha512_stubs.c:126:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+ocamlc -c -o sha512.cmo sha512.ml
+ocamlmklib -o sha512 sha512.lib.o sha512_stubs.o sha512.cmo
+ocamlopt  -c -o sha512.cmx sha512.ml
+ocamlmklib -o sha512 sha512.lib.o sha512_stubs.o sha512.cmx
+ocamlmklib -o sha  sha1.lib.o sha1_stubs.o sha1.cmo  sha256.lib.o sha256_stubs.o sha256.cmo  sha512.lib.o sha512_stubs.o sha512.cmo
+ocamlmklib -o sha  sha1.lib.o sha1_stubs.o sha1.cmx  sha256.lib.o sha256_stubs.o sha256.cmx  sha512.lib.o sha512_stubs.o sha512.cmx
+rm sha1.o sha256.o sha512.o
+ocamlfind install sha META *.cmx sha1.cmi sha1.cma sha1.cmxa sha256.cmi sha256.cma sha256.cmxa sha512.cmi sha512.cma sha512.cmxa sha.cma sha.cmxa *.a *.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha512.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha256.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha1.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/libsha512.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/libsha256.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/libsha1.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/libsha.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha512.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha512.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha512.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha256.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha256.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha256.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha1.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha1.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha1.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha512.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha256.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/sha1.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sha/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllsha512.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllsha512.so.owner
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllsha256.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllsha256.so.owner
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllsha1.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllsha1.so.owner
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllsha.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllsha.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+trunk/lib/stublibs is not mentioned in ld.conf
+Installing sha.1.9.
