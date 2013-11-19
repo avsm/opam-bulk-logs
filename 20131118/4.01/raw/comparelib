@@ -1,0 +1,223 @@
+++ opam install comparelib -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install comparelib
+The following actions will be performed:
+ - install type_conv.109.47.00 [required by comparelib]
+ - install comparelib.109.27.00
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing type_conv.109.47.00 =-=-=
+type_conv.109.47.00 Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/type_conv-109.47.00.tar.gz
+--2013-11-19 05:17:35--  https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/type_conv-109.47.00.tar.gz
+Resolving ocaml.janestreet.com (ocaml.janestreet.com)... 208.70.147.209
+Connecting to ocaml.janestreet.com (ocaml.janestreet.com)|208.70.147.209|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 58766 (57K) [application/x-gzip]
+Saving to: `type_conv-109.47.00.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 87% 6.29M 0s
+    50K .......                                               100% 89.5M=0.008s
+
+2013-11-19 05:17:36 (7.14 MB/s) - `type_conv-109.47.00.tar.gz' saved [58766/58766]
+
+Building type_conv.109.47.00:
+  make
+  make install
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ type_conv
+Package version: ..................................... 109.47.00
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+camlp4o: ............................................. /usr/bin/camlp4o
+pkg_camlp4_quotations: ............................... /usr/lib/ocaml/camlp4
+pkg_camlp4_extend: ................................... /usr/lib/ocaml/camlp4
+ocamldoc: ............................................ /usr/bin/ocamldoc
+
+./setup.exe -build 
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package camlp4.quotations -package camlp4.extend -modules lib/pa_type_conv.mli > lib/pa_type_conv.mli.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations -package camlp4.extend -I lib -o lib/pa_type_conv.cmi lib/pa_type_conv.mli
+ocamlfind ocamldep -package camlp4.quotations -package camlp4.extend -syntax camlp4o -modules lib/pa_type_conv.ml > lib/pa_type_conv.ml.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations -package camlp4.extend -syntax camlp4o -I lib -o lib/pa_type_conv.cmo lib/pa_type_conv.ml
+ocamlfind ocamlc -a lib/pa_type_conv.cmo -o lib/pa_type_conv.cma
+ocamlfind ocamlopt -c -g -package camlp4.quotations -package camlp4.extend -syntax camlp4o -I lib -o lib/pa_type_conv.cmx lib/pa_type_conv.ml
+ocamlfind ocamlopt -a lib/pa_type_conv.cmx -o lib/pa_type_conv.cmxa
+ocamlfind ocamlopt -shared lib/pa_type_conv.cmx -o lib/pa_type_conv.cmxs
+./setup.exe -install 
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.mli
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cma
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmxa
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.a
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmxs
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmi
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmx
+Installed /home/opam/.opam/system/lib/type_conv/META
+Installing type_conv.109.47.00.
+
+=-=-= Installing comparelib.109.27.00 =-=-=
+comparelib.109.27.00 Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/comparelib-109.27.00.tar.gz
+--2013-11-19 05:17:40--  https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/comparelib-109.27.00.tar.gz
+Resolving ocaml.janestreet.com (ocaml.janestreet.com)... 208.70.147.209
+Connecting to ocaml.janestreet.com (ocaml.janestreet.com)|208.70.147.209|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 53593 (52K) [application/x-gzip]
+Saving to: `comparelib-109.27.00.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 95% 6.60M 0s
+    50K ..                                                    100% 4457G=0.007s
+
+2013-11-19 05:17:40 (6.91 MB/s) - `comparelib-109.27.00.tar.gz' saved [53593/53593]
+
+Building comparelib.109.27.00:
+  make
+  make install
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ comparelib
+Package version: ..................................... 109.27.00
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+camlp4o: ............................................. /usr/bin/camlp4o
+pkg_camlp4_lib: ...................................... /usr/lib/ocaml/camlp4
+pkg_camlp4_quotations: ............................... /usr/lib/ocaml/camlp4
+pkg_type_conv: ....................................... /home/opam/.opam/system/lib/type_conv
+
+./setup.exe -build 
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -modules lib/comparelib_dummy.ml > lib/comparelib_dummy.ml.depends
+ocamlfind ocamlc -c -g -I lib -o lib/comparelib_dummy.cmo lib/comparelib_dummy.ml
+ocamlfind ocamlc -a lib/comparelib_dummy.cmo -o lib/comparelib.cma
+ocamlfind ocamlopt -c -g -I lib -o lib/comparelib_dummy.cmx lib/comparelib_dummy.ml
+ocamlfind ocamlopt -a lib/comparelib_dummy.cmx -o lib/comparelib.cmxa
+ocamlfind ocamlopt -shared -linkall lib/comparelib.cmxa -o lib/comparelib.cmxs
+ocamlfind ocamldep -package type_conv -package camlp4.quotations -package camlp4.lib -syntax camlp4o -modules syntax/pa_compare.ml > syntax/pa_compare.ml.depends
+ocamlfind ocamlc -c -g -package type_conv -package camlp4.quotations -package camlp4.lib -syntax camlp4o -I syntax -o syntax/pa_compare.cmo syntax/pa_compare.ml
+ocamlfind ocamlc -a syntax/pa_compare.cmo -o syntax/pa_compare.cma
+ocamlfind ocamlopt -c -g -package type_conv -package camlp4.quotations -package camlp4.lib -syntax camlp4o -I syntax -o syntax/pa_compare.cmx syntax/pa_compare.ml
+ocamlfind ocamlopt -a syntax/pa_compare.cmx -o syntax/pa_compare.cmxa
+ocamlfind ocamlopt -shared syntax/pa_compare.cmx -o syntax/pa_compare.cmxs
+./setup.exe -install 
+Installed /home/opam/.opam/system/lib/comparelib/comparelib_dummy.ml
+Installed /home/opam/.opam/system/lib/comparelib/comparelib.cma
+Installed /home/opam/.opam/system/lib/comparelib/comparelib.cmxa
+Installed /home/opam/.opam/system/lib/comparelib/comparelib.a
+Installed /home/opam/.opam/system/lib/comparelib/comparelib.cmxs
+Installed /home/opam/.opam/system/lib/comparelib/comparelib_dummy.cmi
+Installed /home/opam/.opam/system/lib/comparelib/comparelib_dummy.cmx
+Installed /home/opam/.opam/system/lib/comparelib/pa_compare.ml
+Installed /home/opam/.opam/system/lib/comparelib/pa_compare.cma
+Installed /home/opam/.opam/system/lib/comparelib/pa_compare.cmxa
+Installed /home/opam/.opam/system/lib/comparelib/pa_compare.a
+Installed /home/opam/.opam/system/lib/comparelib/pa_compare.cmxs
+Installed /home/opam/.opam/system/lib/comparelib/pa_compare.cmi
+Installed /home/opam/.opam/system/lib/comparelib/pa_compare.cmx
+Installed /home/opam/.opam/system/lib/comparelib/META
+Installing comparelib.109.27.00.
