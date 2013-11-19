@@ -1,0 +1,241 @@
+++ opam install crunch -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install crunch
+Ubuntu depexts:
+The following actions will be performed:
+ - install cmdliner.0.9.2 [required by crunch]
+ - install crunch.1.0.1
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing cmdliner.0.9.2 =-=-=
+cmdliner.0.9.2 Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.2.tbz
+--2013-11-19 06:17:14--  http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.2.tbz
+Resolving erratique.ch (erratique.ch)... 37.58.75.241, 2a03:8180:1001:b2:36::c
+Connecting to erratique.ch (erratique.ch)|37.58.75.241|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 74952 (73K) [application/x-bzip2]
+Saving to: `cmdliner-0.9.2.tbz'
+
+     0K .......... .......... .......... .......... .......... 68%  257K 0s
+    50K .......... .......... ...                             100%  586K=0.2s
+
+2013-11-19 06:17:14 (312 KB/s) - `cmdliner-0.9.2.tbz' saved [74952/74952]
+
+Building cmdliner.0.9.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ cmdliner
+Package version: ..................................... 0.9.2
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+trunk
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -modules src/cmdliner.mli > src/cmdliner.mli.depends
+ocamlfind ocamlc -c -g -I src -o src/cmdliner.cmi src/cmdliner.mli
+ocamlfind ocamldep -modules src/cmdliner.ml > src/cmdliner.ml.depends
+ocamlfind ocamlc -c -g -I src -o src/cmdliner.cmo src/cmdliner.ml
+ocamlfind ocamlc -a src/cmdliner.cmo -o src/cmdliner.cma
+ocamlfind ocamlopt -c -g -I src -o src/cmdliner.cmx src/cmdliner.ml
+ocamlfind ocamlopt -a src/cmdliner.cmx -o src/cmdliner.cmxa
+ocamlfind ocamlopt -shared src/cmdliner.cmx -o src/cmdliner.cmxs
+ocamlfind ocamldep -modules test/revolt.ml > test/revolt.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/revolt.cmo test/revolt.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/revolt.cmx test/revolt.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/revolt.cmx -o test/revolt.native
+ocamlfind ocamldep -modules test/chorus.ml > test/chorus.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/chorus.cmo test/chorus.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/chorus.cmx test/chorus.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/chorus.cmx -o test/chorus.native
+ocamlfind ocamldep -modules test/cp_ex.ml > test/cp_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/cp_ex.cmo test/cp_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/cp_ex.cmx test/cp_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/cp_ex.cmx -o test/cp_ex.native
+ocamlfind ocamldep -modules test/tail_ex.ml > test/tail_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/tail_ex.cmo test/tail_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/tail_ex.cmx test/tail_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/tail_ex.cmx -o test/tail_ex.native
+ocamlfind ocamldep -modules test/darcs_ex.ml > test/darcs_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/darcs_ex.cmo test/darcs_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/darcs_ex.cmx test/darcs_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/darcs_ex.cmx -o test/darcs_ex.native
+ocamlfind ocamldep -modules test/rm_ex.ml > test/rm_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/rm_ex.cmo test/rm_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/rm_ex.cmx test/rm_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/rm_ex.cmx -o test/rm_ex.native
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/cmdliner.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/cmdliner.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/cmdliner.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/cmdliner.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/cmdliner.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/cmdliner.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/cmdliner.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/META
+Installing cmdliner.0.9.2.
+
+=-=-= Installing crunch.1.0.1 =-=-=
+crunch.1.0.1 Downloading https://github.com/mirage/ocaml-crunch/tarball/ocaml-crunch-1.0.1
+--2013-11-19 06:17:20--  https://github.com/mirage/ocaml-crunch/tarball/ocaml-crunch-1.0.1
+Resolving github.com (github.com)... 192.30.252.131
+Connecting to github.com (github.com)|192.30.252.131|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/mirage/ocaml-crunch/legacy.tar.gz/ocaml-crunch-1.0.1 [following]
+--2013-11-19 06:17:20--  https://codeload.github.com/mirage/ocaml-crunch/legacy.tar.gz/ocaml-crunch-1.0.1
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.147
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `mirage-ocaml-crunch-ocaml-crunch-1.0.1-0-g3eac350.tar.gz'
+
+     0K .......... .......... .......... ..........            2.40M=0.02s
+
+2013-11-19 06:17:20 (2.40 MB/s) - `mirage-ocaml-crunch-ocaml-crunch-1.0.1-0-g3eac350.tar.gz' saved [41125]
+
+Building crunch.1.0.1:
+  make PREFIX=/home/opam/.opam/4.02.0dev+trunk
+  make PREFIX=/home/opam/.opam/4.02.0dev+trunk install
+ocamlopt.opt -o setup.bin setup.ml || ocamlopt -o setup.bin setup.ml || ocamlc -o setup.bin setup.ml
+rm -f setup.cmx setup.cmi setup.o setup.cmo
+./setup.bin -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ crunch
+Package version: ..................................... 1.0.1
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+trunk
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+pkg_cmdliner: ........................................ /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner
+
+./setup.bin -build -classic-display
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package unix -package cmdliner -modules crunch/crunch.ml > crunch/crunch.ml.depends
+ocamlfind ocamlc -c -g -annot -package unix -package cmdliner -I crunch -o crunch/crunch.cmo crunch/crunch.ml
+ocamlfind ocamlc -a crunch/crunch.cmo -o crunch/crunch.cma
+ocamlfind ocamlopt -c -g -annot -package unix -package cmdliner -I crunch -o crunch/crunch.cmx crunch/crunch.ml
+ocamlfind ocamlopt -a crunch/crunch.cmx -o crunch/crunch.cmxa
+ocamlfind ocamlopt -shared -I crunch crunch/crunch.cmx -o crunch/crunch.cmxs
+ocamlfind ocamlc -c crunch/custom_unix_stubs.c
+mv custom_unix_stubs.o crunch/custom_unix_stubs.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlmklib -o crunch/crunch_stubs crunch/custom_unix_stubs.o
+ocamlfind ocamlopt -linkpkg -g -linkpkg -package unix -package cmdliner crunch/crunch.cmx crunch/libcrunch_stubs.a -o crunch/crunch.native
+./setup.bin -test
+./setup.bin -doc
+ocamlfind remove crunch || true
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/crunch
+./setup.bin -install
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crunch/crunch.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crunch/crunch.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crunch/crunch.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crunch/crunch.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crunch/crunch.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crunch/crunch.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crunch/crunch.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crunch/META
+mkdir -p /home/opam/.opam/4.02.0dev+trunk/bin
+cp _build/crunch/crunch.native /home/opam/.opam/4.02.0dev+trunk/bin/ocaml-crunch
+mkdir -p /home/opam/.opam/4.02.0dev+trunk/share/man/man1
+./_build/crunch/crunch.native --help=groff > /home/opam/.opam/4.02.0dev+trunk/share/man/man1/ocaml-crunch.1 || true
+Installing crunch.1.0.1.
