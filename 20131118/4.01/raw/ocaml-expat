@@ -1,0 +1,61 @@
+++ opam install ocaml-expat -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-expat
+The following actions will be performed:
+ - install ocaml-expat.0.9.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocaml-expat.0.9.1 =-=-=
+ocaml-expat.0.9.1 Downloading http://mmzeeman.home.xs4all.nl/ocaml/ocaml-expat-0.9.1.tar.gz
+--2013-11-19 10:58:43--  http://mmzeeman.home.xs4all.nl/ocaml/ocaml-expat-0.9.1.tar.gz
+Resolving mmzeeman.home.xs4all.nl (mmzeeman.home.xs4all.nl)... 194.109.6.91, 2001:888:0:18::81
+Connecting to mmzeeman.home.xs4all.nl (mmzeeman.home.xs4all.nl)|194.109.6.91|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 25223 (25K) [application/x-gzip]
+Saving to: `ocaml-expat-0.9.1.tar.gz'
+
+     0K .......... .......... ....                            100%  261K=0.09s
+
+2013-11-19 10:58:43 (261 KB/s) - `ocaml-expat-0.9.1.tar.gz' saved [25223/25223]
+
+Building ocaml-expat.0.9.1:
+  make all
+  make allopt
+  make install
+Makefile:100: depend: No such file or directory
+gcc -MM *.c > depend	
+ocamldep *.mli *.ml >> depend
+ocamlc -c -ccopt "-DFULL_UNROLL -O2 -I/usr/local/include" expat_stubs.c
+expat_stubs.c:15:19: fatal error: expat.h: No such file or directory
+compilation terminated.
+make: *** [expat_stubs.o] Error 2
+[ERROR] The compilation of ocaml-expat.0.9.1 failed.
+Removing ocaml-expat.0.9.1.
+  ocamlfind remove ocaml-expat
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/ocaml-expat
+
+
+===== ERROR while installing ocaml-expat.0.9.1 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/system/build/ocaml-expat.0.9.1
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/opam/.opam/system/build/ocaml-expat.0.9.1/ocaml-expat-23-d8a4ae.env
+# stdout-file          /home/opam/.opam/system/build/ocaml-expat.0.9.1/ocaml-expat-23-d8a4ae.out
+# stderr-file          /home/opam/.opam/system/build/ocaml-expat.0.9.1/ocaml-expat-23-d8a4ae.err
+### stdout ###
+# gcc -MM *.c > depend	
+# ocamldep *.mli *.ml >> depend
+# ocamlc -c -ccopt "-DFULL_UNROLL -O2 -I/usr/local/include" expat_stubs.c
+### stderr ###
+# Makefile:100: depend: No such file or directory
+# expat_stubs.c:15:19: fatal error: expat.h: No such file or directory
+# compilation terminated.
+# make: *** [expat_stubs.o] Error 2
+
+'opam install ocaml-expat' failed.
