@@ -1,0 +1,87 @@
+++ opam install tstp-proof-checker -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install tstp-proof-checker
+Ubuntu depexts:
+The following actions will be performed:
+ - install tstp-proof-checker.0.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing tstp-proof-checker.0.1 =-=-=
+tstp-proof-checker.0.1 Downloading https://github.com/c-cube/tstp-proof-checker/archive/0.1.tar.gz
+--2013-11-19 14:30:04--  https://github.com/c-cube/tstp-proof-checker/archive/0.1.tar.gz
+Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/c-cube/tstp-proof-checker/tar.gz/0.1 [following]
+--2013-11-19 14:30:04--  https://codeload.github.com/c-cube/tstp-proof-checker/tar.gz/0.1
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.146
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.146|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 17536 (17K) [application/x-gzip]
+Saving to: `tstp-proof-checker-0.1.tar.gz'
+
+     0K .......... .......                                    100% 96.3M=0s
+
+2013-11-19 14:30:04 (96.3 MB/s) - `tstp-proof-checker-0.1.tar.gz' saved [17536/17536]
+
+Building tstp-proof-checker.0.1:
+  make
+  make BINDIR=/home/opam/.opam/system/bin install
+ocamlbuild -libs nums,str,unix -tag debug src/tstp_check.native src/tstp_check.docdir/index.html
+/usr/bin/ocamldep.opt -modules src/tstp_check.ml > src/tstp_check.ml.depends
+/usr/bin/ocamldep.opt -modules src/checks.ml > src/checks.ml.depends
+/usr/bin/ocamldep.opt -modules src/logic.ml > src/logic.ml.depends
+/usr/bin/ocamldep.opt -modules src/utils.ml > src/utils.ml.depends
+/usr/bin/ocamlc.opt -c -g -I src -o src/utils.cmo src/utils.ml
+/usr/bin/ocamlc.opt -c -g -I src -o src/logic.cmo src/logic.ml
+/usr/bin/ocamllex.opt -q src/lexer_tptp.mll
+/usr/bin/ocamldep.opt -modules src/lexer_tptp.ml > src/lexer_tptp.ml.depends
+/usr/bin/ocamlyacc src/parser_tptp.mly
+/usr/bin/ocamldep.opt -modules src/parser_tptp.mli > src/parser_tptp.mli.depends
+/usr/bin/ocamlc.opt -c -g -I src -o src/parser_tptp.cmi src/parser_tptp.mli
+/usr/bin/ocamlc.opt -c -g -I src -o src/checks.cmo src/checks.ml
+/usr/bin/ocamlc.opt -c -g -I src -o src/lexer_tptp.cmo src/lexer_tptp.ml
+/usr/bin/ocamlc.opt -c -g -I src -o src/tstp_check.cmo src/tstp_check.ml
+/usr/bin/ocamlopt.opt -c -g -I src -o src/utils.cmx src/utils.ml
+/usr/bin/ocamlopt.opt -c -g -I src -o src/logic.cmx src/logic.ml
+/usr/bin/ocamldep.opt -modules src/parser_tptp.ml > src/parser_tptp.ml.depends
+/usr/bin/ocamlopt.opt -c -g -I src -o src/parser_tptp.cmx src/parser_tptp.ml
+/usr/bin/ocamlopt.opt -c -g -I src -o src/checks.cmx src/checks.ml
+/usr/bin/ocamlopt.opt -c -g -I src -o src/lexer_tptp.cmx src/lexer_tptp.ml
+/usr/bin/ocamlopt.opt -c -g -I src -o src/tstp_check.cmx src/tstp_check.ml
+/usr/bin/ocamlopt.opt nums.cmxa str.cmxa unix.cmxa -g src/utils.cmx src/logic.cmx src/checks.cmx src/parser_tptp.cmx src/lexer_tptp.cmx src/tstp_check.cmx -o src/tstp_check.native
+/usr/bin/ocamldoc.opt -dump src/tstp_check.odoc -I src src/tstp_check.ml
+/usr/bin/ocamldoc.opt -dump src/checks.odoc -I src src/checks.ml
++ /usr/bin/ocamldoc.opt -dump src/checks.odoc -I src src/checks.ml
+Warning: Module or module type Set.Make not found
+Warning: Module or module type Set.Make not found
+/usr/bin/ocamldoc.opt -dump src/logic.odoc -I src src/logic.ml
++ /usr/bin/ocamldoc.opt -dump src/logic.odoc -I src src/logic.ml
+Warning: Module or module type Map.Make not found
+Warning: Module or module type Set.Make not found
+Warning: Module or module type Set.Make not found
+Warning: Module or module type Set.Make not found
+Warning: Module or module type Map.Make not found
+Warning: Module or module type Set.Make not found
+Warning: Module or module type Set.Make not found
+Warning: Module or module type Set.Make not found
+/usr/bin/ocamldoc.opt -dump src/utils.odoc -I src src/utils.ml
+rm -rf src/tstp_check.docdir
+mkdir -p src/tstp_check.docdir
+/usr/bin/ocamldoc.opt -load src/tstp_check.odoc -load src/checks.odoc -load src/logic.odoc -load src/utils.odoc -html -d src/tstp_check.docdir
++ /usr/bin/ocamldoc.opt -load src/tstp_check.odoc -load src/checks.odoc -load src/logic.odoc -load src/utils.odoc -html -d src/tstp_check.docdir
+Warning: Module or module type Map.Make not found
+Warning: Module or module type Set.Make not found
+Warning: Module or module type Set.Make not found
+Warning: Module or module type Set.Make not found
+Warning: Module or module type Set.Make not found
+Warning: Module or module type Map.Make not found
+Warning: Module or module type Set.Make not found
+Warning: Module or module type Set.Make not found
+Warning: Module or module type Set.Make not found
+Warning: Module or module type Set.Make not found
+ocamlbuild -libs nums,str,unix -tag debug src/tstp_check.native src/tstp_check.docdir/index.html
+cp _build/src/tstp_check.native /home/opam/.opam/system/bin/tstp_check
+Installing tstp-proof-checker.0.1.
