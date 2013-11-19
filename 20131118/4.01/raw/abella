@@ -1,8 +1,8 @@
 ++ opam install abella -e ubuntu
 + depext=
 + echo Ubuntu depexts:
-Ubuntu depexts:
 + '[' '' '!=' '' ']'
+Ubuntu depexts:
 + opam install abella
 The following actions will be performed:
  - install abella.2.0.1
@@ -10,19 +10,19 @@ The following actions will be performed:
 
 =-=-= Installing abella.2.0.1 =-=-=
 abella.2.0.1 Downloading http://abella-prover.org/distributions/abella-2.0.1.tar.gz
---2013-11-19 01:43:32--  http://abella-prover.org/distributions/abella-2.0.1.tar.gz
+--2013-11-19 01:54:22--  http://abella-prover.org/distributions/abella-2.0.1.tar.gz
 Resolving abella-prover.org (abella-prover.org)... 208.113.172.126
 Connecting to abella-prover.org (abella-prover.org)|208.113.172.126|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 155171 (152K) [application/x-tar]
 Saving to: `abella-2.0.1.tar.gz'
 
-     0K .......... .......... .......... .......... .......... 32%  480K 0s
-    50K .......... .......... .......... .......... .......... 65% 1.74M 0s
-   100K .......... .......... .......... .......... .......... 98% 1003K 0s
+     0K .......... .......... .......... .......... .......... 32%  442K 0s
+    50K .......... .......... .......... .......... .......... 65% 1.65M 0s
+   100K .......... .......... .......... .......... .......... 98% 1.65M 0s
    150K .                                                     100% 2926G=0.2s
 
-2013-11-19 01:43:33 (832 KB/s) - `abella-2.0.1.tar.gz' saved [155171/155171]
+2013-11-19 01:54:22 (880 KB/s) - `abella-2.0.1.tar.gz' saved [155171/155171]
 
 Copying ~/.opam/repo/default/packages/abella.2.0.1/files/abella.install to ~/.opam/system/build/abella.2.0.1/
 Building abella.2.0.1:
