@@ -1,0 +1,32 @@
+++ opam install conf-sdl2 -e ubuntu
++ depext=libsdl2-dev
++ echo Ubuntu depexts: libsdl2-dev
++ '[' libsdl2-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libsdl2-dev
++ sudo apt-get install -qq -y libsdl2-dev
+E: Unable to locate package libsdl2-dev
++ opam install conf-sdl2
+The following actions will be performed:
+ - install conf-sdl2.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing conf-sdl2.1 =-=-=
+Building conf-sdl2.1:
+  pkg-config sdl2
+[ERROR] The compilation of conf-sdl2.1 failed.
+Removing conf-sdl2.1.
+
+
+===== ERROR while installing conf-sdl2.1 =====
+# opam-version         1.1.0
+# os                   linux
+# command              pkg-config sdl2
+# path                 /home/opam/.opam/system/build/conf-sdl2.1
+# compiler             system (4.01.0)
+# exit-code            1
+# env-file             /home/opam/.opam/system/build/conf-sdl2.1/conf-sdl2-32-42bb52.env
+# stdout-file          /home/opam/.opam/system/build/conf-sdl2.1/conf-sdl2-32-42bb52.out
+# stderr-file          /home/opam/.opam/system/build/conf-sdl2.1/conf-sdl2-32-42bb52.err
+
+'opam install conf-sdl2' failed.
