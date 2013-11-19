@@ -1,0 +1,45 @@
+++ opam install ocaml-arg -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-arg
+Ubuntu depexts:
+The following actions will be performed:
+ - install ocaml-arg.0.3
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocaml-arg.0.3 =-=-=
+ocaml-arg.0.3 Downloading https://github.com/samoht/ocaml-arg/tarball/0.3
+--2013-11-19 10:51:47--  https://github.com/samoht/ocaml-arg/tarball/0.3
+Resolving github.com (github.com)... 192.30.252.128
+Connecting to github.com (github.com)|192.30.252.128|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/samoht/ocaml-arg/legacy.tar.gz/0.3 [following]
+--2013-11-19 10:51:47--  https://codeload.github.com/samoht/ocaml-arg/legacy.tar.gz/0.3
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.145
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.145|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `samoht-ocaml-arg-0.3-0-gdf3fdf3.tar.gz'
+
+     0K ...                                                     935M=0s
+
+2013-11-19 10:51:47 (935 MB/s) - `samoht-ocaml-arg-0.3-0-gdf3fdf3.tar.gz' saved [3246]
+
+Copying ~/.opam/repo/default/packages/ocaml-arg.0.3/files/ocaml-arg.install to ~/.opam/4.02.0dev+trunk/build/ocaml-arg.0.3/
+Copying ~/.opam/repo/default/packages/ocaml-arg.0.3/files/ocaml-arg.config.in to ~/.opam/4.02.0dev+trunk/build/ocaml-arg.0.3/
+Building ocaml-arg.0.3:
+  make
+ocamlbuild -I src arg.cma arg.cmxa
+ocamlfind ocamldep -modules src/argExt.ml > src/argExt.ml.depends
+ocamlfind ocamldep -modules src/formatExt.ml > src/formatExt.ml.depends
+ocamlfind ocamldep -modules src/subCommand.ml > src/subCommand.ml.depends
+ocamlfind ocamlc -c -I src -o src/formatExt.cmo src/formatExt.ml
+ocamlfind ocamlc -c -I src -o src/subCommand.cmo src/subCommand.ml
+ocamlfind ocamlc -c -I src -o src/argExt.cmo src/argExt.ml
+ocamlfind ocamlc -a src/formatExt.cmo src/subCommand.cmo src/argExt.cmo -o src/arg.cma
+ocamlfind ocamlopt -c -I src -o src/formatExt.cmx src/formatExt.ml
+ocamlfind ocamlopt -c -I src -o src/subCommand.cmx src/subCommand.ml
+ocamlfind ocamlopt -c -I src -o src/argExt.cmx src/argExt.ml
+ocamlfind ocamlopt -a src/formatExt.cmx src/subCommand.cmx src/argExt.cmx -o src/arg.cmxa
+Installing ocaml-arg.0.3.
