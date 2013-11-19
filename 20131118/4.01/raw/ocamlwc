@@ -1,0 +1,54 @@
+++ opam install ocamlwc -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocamlwc
+The following actions will be performed:
+ - install ocamlwc.0.3
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocamlwc.0.3 =-=-=
+ocamlwc.0.3 Downloading http://www.lri.fr/~filliatr/ftp/ocaml/misc/ocamlwc-0.3.tar.gz
+--2013-11-19 11:48:44--  http://www.lri.fr/~filliatr/ftp/ocaml/misc/ocamlwc-0.3.tar.gz
+Resolving www.lri.fr (www.lri.fr)... 129.175.15.11
+Connecting to www.lri.fr (www.lri.fr)|129.175.15.11|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://www.lri.fr/~filliatr/ftp/ocaml/misc/ocamlwc-0.3.tar.gz [following]
+--2013-11-19 11:48:44--  https://www.lri.fr/~filliatr/ftp/ocaml/misc/ocamlwc-0.3.tar.gz
+Connecting to www.lri.fr (www.lri.fr)|129.175.15.11|:443... connected.
+WARNING: no certificate subject alternative name matches
+	requested host name `www.lri.fr'.
+HTTP request sent, awaiting response... 200 OK
+Length: 19382 (19K) [application/x-gzip]
+Saving to: `ocamlwc-0.3.tar.gz'
+
+     0K .......... ........                                   100% 84.8K=0.2s
+
+2013-11-19 11:48:45 (84.8 KB/s) - `ocamlwc-0.3.tar.gz' saved [19382/19382]
+
+Building ocamlwc.0.3:
+  ./configure --prefix=/home/opam/.opam/system
+  make
+  make install
+creating cache ./config.cache
+checking for ocamlc... ocamlc
+ocaml version is 4.01.0
+ocaml library path is /usr/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking ocamlopt version... ok
+checking for ocamlc.opt... ocamlc.opt
+checking ocamlc.opt version... ok
+checking for ocamlopt.opt... ocamlopt.opt
+checking ocamlc.opt version... ok
+checking for ocamldep... ocamldep
+checking for ocamllex... ocamllex
+checking for ocamlyacc... ocamlyacc
+updating cache ./config.cache
+creating ./config.status
+creating Makefile
+ocamllex ocamlwc.mll
+222 states, 806 transitions, table size 4556 bytes
+ocamlopt.opt -o ocamlwc ocamlwc.ml
+cp ocamlwc /home/opam/.opam/system/bin
+Installing ocamlwc.0.3.
