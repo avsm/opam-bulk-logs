@@ -10,25 +10,25 @@ The following actions will be performed:
 
 =-=-= Installing aacplus.0.2.1 =-=-=
 aacplus.0.2.1 Downloading http://downloads.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz
---2013-11-19 01:42:54--  http://downloads.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz
+--2013-11-19 01:50:34--  http://downloads.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz
 Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 216.34.181.59
 Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:80... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: http://softlayer-dal.dl.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz [following]
---2013-11-19 01:42:54--  http://softlayer-dal.dl.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz
+--2013-11-19 01:50:34--  http://softlayer-dal.dl.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz
 Resolving softlayer-dal.dl.sourceforge.net (softlayer-dal.dl.sourceforge.net)... 67.228.157.232
 Connecting to softlayer-dal.dl.sourceforge.net (softlayer-dal.dl.sourceforge.net)|67.228.157.232|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 95575 (93K) [application/x-gzip]
 Saving to: `ocaml-aacplus-0.2.1.tar.gz'
 
-     0K .......... .......... .......... .......... .......... 53%  400K 0s
-    50K .......... .......... .......... .......... ...       100%  690K=0.2s
+     0K .......... .......... .......... .......... .......... 53%  724K 0s
+    50K .......... .......... .......... .......... ...       100% 1.79M=0.09s
 
-2013-11-19 01:42:57 (497 KB/s) - `ocaml-aacplus-0.2.1.tar.gz' saved [95575/95575]
+2013-11-19 01:50:36 (1007 KB/s) - `ocaml-aacplus-0.2.1.tar.gz' saved [95575/95575]
 
 Building aacplus.0.2.1:
-  ./configure --prefix /home/opam/.opam/system
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
   make
   make install
 configuring ocaml-aacplus 0.2.1
@@ -51,9 +51,9 @@ checking whether gcc accepts -g... (cached) yes
 checking for gcc option to accept ISO C89... (cached) none needed
 checking for ar... ar
 checking for ocamlc... ocamlc
-OCaml version is 4.01.0
+OCaml version is 4.02.0+dev2-2013-09-12
 checking if ocaml compiler supports first-class modules... yes
-OCaml library path is /usr/lib/ocaml
+OCaml library path is /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
 checking for ocamlopt... ocamlopt
 checking for ocamlc.opt... ocamlc.opt
 checking for ocamlopt.opt... ocamlopt.opt
@@ -68,7 +68,7 @@ checking for ocamllex... ocamllex
 checking for ocamllex.opt... ocamllex.opt
 checking for ocamlyacc... ocamlyacc
 checking for camlp4... camlp4
-checking for camlp4boot... no
+checking for camlp4boot... camlp4boot
 checking for camlp4o... camlp4o
 checking for camlp4of... camlp4of
 checking for camlp4oof... camlp4oof
@@ -86,19 +86,19 @@ checking whether pkg-config knows about aacplus >= 2.0.1... configure: error: aa
 [ERROR] The compilation of aacplus.0.2.1 failed.
 Removing aacplus.0.2.1.
   ocamlfind remove aacplus
-ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/aacplus
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/aacplus
 
 
 ===== ERROR while installing aacplus.0.2.1 =====
 # opam-version         1.1.0
 # os                   linux
-# command              ./configure --prefix /home/opam/.opam/system
-# path                 /home/opam/.opam/system/build/aacplus.0.2.1
-# compiler             system (4.01.0)
+# command              ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/aacplus.0.2.1
+# compiler             4.02.0dev+trunk
 # exit-code            1
-# env-file             /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-21-d8a4ae.env
-# stdout-file          /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-21-d8a4ae.out
-# stderr-file          /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-21-d8a4ae.err
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/aacplus.0.2.1/aacplus-19-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/aacplus.0.2.1/aacplus-19-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/aacplus.0.2.1/aacplus-19-d2d111.err
 ### stdout ###
 # ...[truncated]
 # checking for camlp4prof... camlp4prof
