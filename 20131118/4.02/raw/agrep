@@ -10,16 +10,16 @@ The following actions will be performed:
 
 =-=-= Installing agrep.1.0 =-=-=
 agrep.1.0  Downloading http://forge.ocamlcore.org/frs/download.php/330/ocamlagrep-1.0.tar.gz
---2013-11-19 01:48:38--  http://forge.ocamlcore.org/frs/download.php/330/ocamlagrep-1.0.tar.gz
+--2013-11-19 02:00:13--  http://forge.ocamlcore.org/frs/download.php/330/ocamlagrep-1.0.tar.gz
 Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
 Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 8651 (8.4K) [application/binary]
 Saving to: `ocamlagrep-1.0.tar.gz'
 
-     0K ........                                              100% 86.4K=0.1s
+     0K ........                                              100% 92.1K=0.09s
 
-2013-11-19 01:48:38 (86.4 KB/s) - `ocamlagrep-1.0.tar.gz' saved [8651/8651]
+2013-11-19 02:00:14 (92.1 KB/s) - `ocamlagrep-1.0.tar.gz' saved [8651/8651]
 
 Copying ~/.opam/repo/default/packages/agrep.1.0/files/find-install.patch to ~/.opam/4.02.0dev+trunk/build/agrep.1.0/
 Copying ~/.opam/repo/default/packages/agrep.1.0/files/META to ~/.opam/4.02.0dev+trunk/build/agrep.1.0/
