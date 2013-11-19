@@ -1,0 +1,64 @@
+++ opam install ocsfml -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocsfml
+Ubuntu depexts:
+The following actions will be performed:
+ - install ocsfml.2.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocsfml.2.0 =-=-=
+ocsfml.2.0 Downloading https://github.com/KyoDralliam/Ocsfml/tarball/master
+--2013-11-19 11:51:11--  https://github.com/KyoDralliam/Ocsfml/tarball/master
+Resolving github.com (github.com)... 192.30.252.131
+Connecting to github.com (github.com)|192.30.252.131|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/kyoDralliam/Ocsfml/legacy.tar.gz/master [following]
+--2013-11-19 11:51:11--  https://codeload.github.com/kyoDralliam/Ocsfml/legacy.tar.gz/master
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.144
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.144|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 506313 (494K) [application/x-gzip]
+Saving to: `kyoDralliam-Ocsfml-5a90ae9.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 10% 1.47M 0s
+    50K .......... .......... .......... .......... .......... 20% 1.43M 0s
+   100K .......... .......... .......... .......... .......... 30% 1.48M 0s
+   150K .......... .......... .......... .......... .......... 40% 1.31M 0s
+   200K .......... .......... .......... .......... .......... 50% 2.86M 0s
+   250K .......... .......... .......... .......... .......... 60% 2.87M 0s
+   300K .......... .......... .......... .......... .......... 70% 2.86M 0s
+   350K .......... .......... .......... .......... .......... 80% 2.86M 0s
+   400K .......... .......... .......... .......... .......... 91% 2.82M 0s
+   450K .......... .......... .......... .......... ....      100% 2.65M=0.2s
+
+2013-11-19 11:51:12 (2.01 MB/s) - `kyoDralliam-Ocsfml-5a90ae9.tar.gz' saved [506313/506313]
+
+Building ocsfml.2.0:
+  cmake .
+  make
+  make install
+[ERROR] The compilation of ocsfml.2.0 failed.
+Removing ocsfml.2.0.
+  make uninstall
+make: *** No rule to make target `uninstall'.  Stop.
+[WARNING] failure in package uninstall script, some files may remain:
+# opam-version         1.1.0
+# os                   linux
+# command              make uninstall
+# path                 /home/opam/.opam/system/build/ocsfml.2.0
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/opam/.opam/system/build/ocsfml.2.0/ocsfml-24-a00279.env
+# stdout-file          /home/opam/.opam/system/build/ocsfml.2.0/ocsfml-24-a00279.out
+# stderr-file          /home/opam/.opam/system/build/ocsfml.2.0/ocsfml-24-a00279.err
+### stderr ###
+# make: *** No rule to make target `uninstall'.  Stop.
+
+
+
+===== ERROR while installing ocsfml.2.0 =====
+Internal error:
+  "cmake": command not found.
+'opam install ocsfml' failed.
