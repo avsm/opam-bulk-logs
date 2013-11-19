@@ -1,0 +1,246 @@
+++ opam install ocp-index -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocp-index
+The following actions will be performed:
+ - install typerex.1.99.6-beta [required by ocp-index]
+ - install cmdliner.0.9.2 [required by ocp-index]
+ - install ocp-build.1.99.6-beta [required by ocp-index]
+ - install ocp-index.0.3.0
+4 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing cmdliner.0.9.2 =-=-=
+cmdliner.0.9.2 Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.2.tbz
+--2013-11-19 11:34:41--  http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.2.tbz
+Resolving erratique.ch (erratique.ch)... 37.58.75.241, 2a03:8180:1001:b2:36::c
+Connecting to erratique.ch (erratique.ch)|37.58.75.241|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 74952 (73K) [application/x-bzip2]
+Saving to: `cmdliner-0.9.2.tbz'
+
+     0K .......... .......... .......... .......... .......... 68%  255K 0s
+    50K .......... .......... ...                             100%  576K=0.2s
+
+2013-11-19 11:34:42 (310 KB/s) - `cmdliner-0.9.2.tbz' saved [74952/74952]
+
+Building cmdliner.0.9.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ cmdliner
+Package version: ..................................... 0.9.2
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+trunk
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -modules src/cmdliner.mli > src/cmdliner.mli.depends
+ocamlfind ocamlc -c -g -I src -o src/cmdliner.cmi src/cmdliner.mli
+ocamlfind ocamldep -modules src/cmdliner.ml > src/cmdliner.ml.depends
+ocamlfind ocamlc -c -g -I src -o src/cmdliner.cmo src/cmdliner.ml
+ocamlfind ocamlc -a src/cmdliner.cmo -o src/cmdliner.cma
+ocamlfind ocamlopt -c -g -I src -o src/cmdliner.cmx src/cmdliner.ml
+ocamlfind ocamlopt -a src/cmdliner.cmx -o src/cmdliner.cmxa
+ocamlfind ocamlopt -shared src/cmdliner.cmx -o src/cmdliner.cmxs
+ocamlfind ocamldep -modules test/revolt.ml > test/revolt.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/revolt.cmo test/revolt.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/revolt.cmx test/revolt.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/revolt.cmx -o test/revolt.native
+ocamlfind ocamldep -modules test/chorus.ml > test/chorus.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/chorus.cmo test/chorus.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/chorus.cmx test/chorus.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/chorus.cmx -o test/chorus.native
+ocamlfind ocamldep -modules test/cp_ex.ml > test/cp_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/cp_ex.cmo test/cp_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/cp_ex.cmx test/cp_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/cp_ex.cmx -o test/cp_ex.native
+ocamlfind ocamldep -modules test/tail_ex.ml > test/tail_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/tail_ex.cmo test/tail_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/tail_ex.cmx test/tail_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/tail_ex.cmx -o test/tail_ex.native
+ocamlfind ocamldep -modules test/darcs_ex.ml > test/darcs_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/darcs_ex.cmo test/darcs_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/darcs_ex.cmx test/darcs_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/darcs_ex.cmx -o test/darcs_ex.native
+ocamlfind ocamldep -modules test/rm_ex.ml > test/rm_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/rm_ex.cmo test/rm_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/rm_ex.cmx test/rm_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/rm_ex.cmx -o test/rm_ex.native
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/cmdliner.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/cmdliner.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/cmdliner.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/cmdliner.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/cmdliner.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/cmdliner.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/cmdliner.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cmdliner/META
+Installing cmdliner.0.9.2.
+
+=-=-= Installing typerex.1.99.6-beta =-=-=
+typerex.1.99.6-beta Downloading https://github.com/OCamlPro/typerex/tarball/typerex.1.99.6-beta
+--2013-11-19 11:34:48--  https://github.com/OCamlPro/typerex/tarball/typerex.1.99.6-beta
+Resolving github.com (github.com)... 192.30.252.131
+Connecting to github.com (github.com)|192.30.252.131|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/OCamlPro/typerex/legacy.tar.gz/typerex.1.99.6-beta [following]
+--2013-11-19 11:34:48--  https://codeload.github.com/OCamlPro/typerex/legacy.tar.gz/typerex.1.99.6-beta
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.146
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.146|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1215162 (1.2M) [application/x-gzip]
+Saving to: `OCamlPro-typerex-typerex.1.99.6-beta-0-gf6b9007.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  4% 1.43M 1s
+    50K .......... .......... .......... .......... ..........  8%  976K 1s
+   100K .......... .......... .......... .......... .......... 12% 1.43M 1s
+   150K .......... .......... .......... .......... .......... 16% 2.81M 1s
+   200K .......... .......... .......... .......... .......... 21% 2.82M 1s
+   250K .......... .......... .......... .......... .......... 25% 2.83M 1s
+   300K .......... .......... .......... .......... .......... 29% 2.79M 0s
+   350K .......... .......... .......... .......... .......... 33% 1.45M 0s
+   400K .......... .......... .......... .......... .......... 37% 69.1M 0s
+   450K .......... .......... .......... .......... .......... 42% 2.88M 0s
+   500K .......... .......... .......... .......... .......... 46% 2.88M 0s
+   550K .......... .......... .......... .......... .......... 50% 2.79M 0s
+   600K .......... .......... .......... .......... .......... 54% 2.78M 0s
+   650K .......... .......... .......... .......... .......... 58% 2.87M 0s
+   700K .......... .......... .......... .......... .......... 63% 2.98M 0s
+   750K .......... .......... .......... .......... .......... 67% 2.82M 0s
+   800K .......... .......... .......... .......... .......... 71% 76.6M 0s
+   850K .......... .......... .......... .......... .......... 75% 2.87M 0s
+   900K .......... .......... .......... .......... .......... 80% 2.87M 0s
+   950K .......... .......... .......... .......... .......... 84% 58.4M 0s
+  1000K .......... .......... .......... .......... .......... 88% 2.98M 0s
+  1050K .......... .......... .......... .......... .......... 92% 2.88M 0s
+  1100K .......... .......... .......... .......... .......... 96% 67.2M 0s
+  1150K .......... .......... .......... ......               100% 2.19M=0.4s
+
+2013-11-19 11:34:48 (2.70 MB/s) - `OCamlPro-typerex-typerex.1.99.6-beta-0-gf6b9007.tar.gz' saved [1215162/1215162]
+
+Building typerex.1.99.6-beta:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make
+  make install
+checking for ocamlc... ocamlc
+OCaml version is 4.02.0+dev2-2013-09-12
+OCaml library path is /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+checking for camlp4... camlp4
+checking for camlp4boot... camlp4boot
+checking for camlp4o... camlp4o
+checking for camlp4of... camlp4of
+checking for camlp4oof... camlp4oof
+checking for camlp4orf... camlp4orf
+checking for camlp4prof... camlp4prof
+checking for camlp4r... camlp4r
+checking for camlp4rf... camlp4rf
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for a sed that does not truncate output... /bin/sed
+checking Major version... 4
+checking Minor version... 02
+checking Point version... 0+dev2-2013-09-12
+checking for gawk... no
+checking for mawk... mawk
+configure: creating ./config.status
+config.status: creating Makefile.config
+config.status: creating typerex.ocp
+config.status: WARNING:  'typerex.ocp.in' seems to ignore the --datarootdir setting
+config.status: creating packages/opam/ocp-build.opam
+Creating file ocp-build.root
+
+Executables will be installed in /home/opam/.opam/4.02.0dev+trunk/bin
+Libraries will be installed in /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/typerex
+Data files will be installed in /home/opam/.opam/4.02.0dev+trunk/share/typerex
+Manual pages will be installed in /home/opam/.opam/4.02.0dev+trunk/share/man
+make -C ocp-build
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/typerex.1.99.6-beta/ocp-build'
+awk '{ print "external "$1": unit -> unit = \"" $1 "\"" }' primitives > primitives.ml
+ocamlc -o ocp-build.run -custom -make-runtime win32_c.c primitives.ml unix.cma  -cclib -lunix
+cat ocp-build.run ocp-build.boot > ocp-build
+chmod +x ocp-build
+./ocp-build -help >/dev/null 2>&1
+make[1]: *** [ocp-build] Error 2
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/typerex.1.99.6-beta/ocp-build'
+make: *** [ocp-build/ocp-build] Error 2
+[ERROR] The compilation of typerex.1.99.6-beta failed.
+Removing typerex.1.99.6-beta.
+  ocp-build -uninstall typerex
+
+[ERROR] Due to some errors while processing typerex.1.99.6-beta, the following actions will NOT proceed:
+ - install ocp-index.0.3.0
+ - install ocp-build.1.99.6-beta
+
+===== ERROR while installing typerex.1.99.6-beta =====
+Internal error:
+  "ocp-build": command not found.
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+trunk/backup/state-20131019113439.export"
+'opam install ocp-index' failed.
