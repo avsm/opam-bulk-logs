@@ -1,0 +1,10 @@
+++ opam install qrencode -e ubuntu
+[ERROR] qrencode is not a valid versioned package name
+'opam install qrencode -e ubuntu' failed.
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install qrencode
+[ERROR] qrencode is not a valid versioned package name
+'opam install qrencode' failed.
