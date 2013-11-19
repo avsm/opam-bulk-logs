@@ -1,0 +1,108 @@
+++ opam install glMLite -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install glMLite
+Ubuntu depexts:
+The following actions will be performed:
+ - install glMLite.0.03.51
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing glMLite.0.03.51 =-=-=
+glMLite.0.03.51 Downloading http://www.linux-nantes.org/~fmonnier/OCaml/GL/download/glMLite-0.03.51.tgz
+--2013-11-19 08:02:15--  http://www.linux-nantes.org/~fmonnier/OCaml/GL/download/glMLite-0.03.51.tgz
+Resolving www.linux-nantes.org (www.linux-nantes.org)... 5.135.145.59
+Connecting to www.linux-nantes.org (www.linux-nantes.org)|5.135.145.59|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1009337 (986K) [application/x-gzip]
+Saving to: `glMLite-0.03.51.tgz'
+
+     0K .......... .......... .......... .......... ..........  5%  180K 5s
+    50K .......... .......... .......... .......... .......... 10%  534K 3s
+   100K .......... .......... .......... .......... .......... 15%  273K 3s
+   150K .......... .......... .......... .......... .......... 20%  542K 3s
+   200K .......... .......... .......... .......... .......... 25% 14.6M 2s
+   250K .......... .......... .......... .......... .......... 30%  543K 2s
+   300K .......... .......... .......... .......... .......... 35%  547K 2s
+   350K .......... .......... .......... .......... .......... 40%  540K 1s
+   400K .......... .......... .......... .......... .......... 45% 19.2M 1s
+   450K .......... .......... .......... .......... .......... 50%  553K 1s
+   500K .......... .......... .......... .......... .......... 55% 6.80M 1s
+   550K .......... .......... .......... .......... .......... 60%  278K 1s
+   600K .......... .......... .......... .......... .......... 65%  139M 1s
+   650K .......... .......... .......... .......... .......... 71%  175M 0s
+   700K .......... .......... .......... .......... .......... 76%  550K 0s
+   750K .......... .......... .......... .......... .......... 81%  556K 0s
+   800K .......... .......... .......... .......... .......... 86% 6.44M 0s
+   850K .......... .......... .......... .......... .......... 91%  588K 0s
+   900K .......... .......... .......... .......... .......... 96% 5.97M 0s
+   950K .......... .......... .......... .....                100%  426K=1.6s
+
+2013-11-19 08:02:17 (627 KB/s) - `glMLite-0.03.51.tgz' saved [1009337/1009337]
+
+Building glMLite.0.03.51:
+  make
+  make install PREFIX=/home/opam/.opam/system/lib/glMLite
+(cd SRC; make)
+make[1]: Entering directory `/home/opam/.opam/system/build/glMLite.0.03.51/SRC'
+if [ ! -d enums ]; then mkdir enums ; fi
+ocamlc.opt -c -g -o xmlm.cmi xmlm.mli
+ocamlopt.opt -g -c -g -o xmlm.cmx xmlm.ml
+File "xmlm.ml", line 771, characters 22-24:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "xmlm.ml", line 574, characters 18-20:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "xmlm.ml", line 554, characters 22-24:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlopt.opt -g -a -g -o xmlm.cmxa xmlm.cmx
+ocamlopt.opt -g \
+	      -I . xmlm.cmxa  \
+	      enums_xmlm.ml  -o enums.exe
+ocamlc.opt -c configure.c
+configure.c:6:21: fatal error: GL/gl.h: No such file or directory
+compilation terminated.
+make[1]: *** [configure.o] Error 2
+make[1]: Leaving directory `/home/opam/.opam/system/build/glMLite.0.03.51/SRC'
+make: *** [all] Error 2
+[ERROR] The compilation of glMLite.0.03.51 failed.
+Removing glMLite.0.03.51.
+  ocamlfind remove glMLite
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/glMLite
+
+
+===== ERROR while installing glMLite.0.03.51 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/system/build/glMLite.0.03.51
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/opam/.opam/system/build/glMLite.0.03.51/glMLite-21-d8a4ae.env
+# stdout-file          /home/opam/.opam/system/build/glMLite.0.03.51/glMLite-21-d8a4ae.out
+# stderr-file          /home/opam/.opam/system/build/glMLite.0.03.51/glMLite-21-d8a4ae.err
+### stdout ###
+# ...[truncated]
+# make[1]: Entering directory `/home/opam/.opam/system/build/glMLite.0.03.51/SRC'
+# if [ ! -d enums ]; then mkdir enums ; fi
+# ocamlc.opt -c -g -o xmlm.cmi xmlm.mli
+# ocamlopt.opt -g -c -g -o xmlm.cmx xmlm.ml
+# ocamlopt.opt -g -a -g -o xmlm.cmxa xmlm.cmx
+# ocamlopt.opt -g \
+# 	      -I . xmlm.cmxa  \
+# 	      enums_xmlm.ml  -o enums.exe
+# ocamlc.opt -c configure.c
+# make[1]: Leaving directory `/home/opam/.opam/system/build/glMLite.0.03.51/SRC'
+### stderr ###
+# ...[truncated]
+# File "xmlm.ml", line 771, characters 22-24:
+# Warning 3: deprecated feature: operator (or); you should use (||) instead
+# File "xmlm.ml", line 574, characters 18-20:
+# Warning 3: deprecated feature: operator (or); you should use (||) instead
+# File "xmlm.ml", line 554, characters 22-24:
+# Warning 3: deprecated feature: operator (or); you should use (||) instead
+# configure.c:6:21: fatal error: GL/gl.h: No such file or directory
+# compilation terminated.
+# make[1]: *** [configure.o] Error 2
+# make: *** [all] Error 2
+
+'opam install glMLite' failed.
