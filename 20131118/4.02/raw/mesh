@@ -1,0 +1,170 @@
+++ opam install mesh -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install mesh
+Ubuntu depexts:
+The following actions will be performed:
+ - install mesh.0.7.6
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing mesh.0.7.6 =-=-=
+mesh.0.7.6 Downloading http://forge.ocamlcore.org/frs/download.php/1158/mesh-0.7.6.tar.gz
+--2013-11-19 10:03:52--  http://forge.ocamlcore.org/frs/download.php/1158/mesh-0.7.6.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 222459 (217K) [application/binary]
+Saving to: `mesh-0.7.6.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 23%  174K 1s
+    50K .......... .......... .......... .......... .......... 46%  513K 0s
+   100K .......... .......... .......... .......... .......... 69%  505K 0s
+   150K .......... .......... .......... .......... .......... 92%  516K 0s
+   200K .......... .......                                    100% 11.3M=0.6s
+
+2013-11-19 10:03:53 (373 KB/s) - `mesh-0.7.6.tar.gz' saved [222459/222459]
+
+Building mesh.0.7.6:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ mesh
+Package version: ..................................... 0.7.6
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+trunk
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Enable if you build on a system with libtriangle: .... false
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_bigarray: ........................................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+pkg_graphics: ........................................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+File "_tags", line 39, characters 39-49:
+Warning: the tag "pkg_lacaml" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 46, characters 39-49:
+Warning: the tag "pkg_lacaml" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 48, characters 18-28:
+Warning: the tag "pkg_lacaml" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamldep -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -modules src/mesh.ml > src/mesh.ml.depends
+ocamlfind ocamldep -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -modules src/easymesh.ml > src/easymesh.ml.depends
+ocamlfind ocamlc -c -g -annot -I src -ccopt -DTRILIBRARY -ccopt -DEXTERNAL_TEST -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -I src -o src/mesh.cmo src/mesh.ml
++ ocamlfind ocamlc -c -g -annot -I src -ccopt -DTRILIBRARY -ccopt -DEXTERNAL_TEST -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -I src -o src/mesh.cmo src/mesh.ml
+File "src/meshFC.ml", line 485, characters 6-7:
+Warning 26: unused variable v.
+File "src/meshFC.ml", line 485, characters 6-7:
+Warning 26: unused variable v.
+ocamlfind ocamlc -c -g -annot -I src -ccopt -DTRILIBRARY -ccopt -DEXTERNAL_TEST -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -I src -o src/easymesh.cmo src/easymesh.ml
+ocamlfind ocamlc -a src/mesh.cmo src/easymesh.cmo -o src/mesh.cma
+ocamlfind ocamlopt -c -g -annot -I src -ccopt -DTRILIBRARY -ccopt -DEXTERNAL_TEST -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -I src -o src/mesh.cmx src/mesh.ml
++ ocamlfind ocamlopt -c -g -annot -I src -ccopt -DTRILIBRARY -ccopt -DEXTERNAL_TEST -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -I src -o src/mesh.cmx src/mesh.ml
+File "src/meshFC.ml", line 485, characters 6-7:
+Warning 26: unused variable v.
+File "src/meshFC.ml", line 485, characters 6-7:
+Warning 26: unused variable v.
+ocamlfind ocamlopt -c -g -annot -I src -ccopt -DTRILIBRARY -ccopt -DEXTERNAL_TEST -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -I src -o src/easymesh.cmx src/easymesh.ml
+ocamlfind ocamlopt -a src/mesh.cmx src/easymesh.cmx -o src/mesh.cmxa
+ocamlfind ocamlopt -shared src/mesh.cmx -o src/mesh.cmxs
+ocamlfind ocamldep -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -modules src/mesh_display.ml > src/mesh_display.ml.depends
+ocamlfind ocamlc -c -g -annot -I src -ccopt -DTRILIBRARY -ccopt -DEXTERNAL_TEST -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -I src -o src/mesh_display.cmo src/mesh_display.ml
+ocamlfind ocamlc -a src/mesh_display.cmo -o src/mesh_display.cma
+ocamlfind ocamlopt -c -g -annot -I src -ccopt -DTRILIBRARY -ccopt -DEXTERNAL_TEST -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -I src -o src/mesh_display.cmx src/mesh_display.ml
+ocamlfind ocamlopt -a src/mesh_display.cmx -o src/mesh_display.cmxa
+ocamlfind ocamlopt -shared src/mesh_display.cmx -o src/mesh_display.cmxs
+ocamlfind ocamlc -ccopt -DTRILIBRARY -ccopt -DEXTERNAL_TEST -c src/triangle_stubs.c
++ ocamlfind ocamlc -ccopt -DTRILIBRARY -ccopt -DEXTERNAL_TEST -c src/triangle_stubs.c
+In file included from src/triangle_stubs.c:28:0:
+src/triangle/triangle.c: In function 'segmentintersection':
+src/triangle/triangle.c:11707:28: warning: variable 'collinear' set but not used [-Wunused-but-set-variable]
+src/triangle/triangle.c: In function 'tallyencs':
+src/triangle/triangle.c:13184:7: warning: variable 'dummy' set but not used [-Wunused-but-set-variable]
+src/triangle/triangle.c: In function 'splitencsegs':
+src/triangle/triangle.c:13257:7: warning: variable 'dummy' set but not used [-Wunused-but-set-variable]
+mv triangle_stubs.o src/triangle_stubs.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlmklib -o src/mesh_triangle_stubs src/triangle_stubs.o
+ocamlfind ocamldep -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -modules src/mesh_triangle.ml > src/mesh_triangle.ml.depends
+ocamlfind ocamlc -c -g -annot -I src -ccopt -DTRILIBRARY -ccopt -DEXTERNAL_TEST -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -I src -o src/mesh_triangle.cmo src/mesh_triangle.ml
+ocamlfind ocamlc -a -dllib -lmesh_triangle_stubs -cclib -lmesh_triangle_stubs src/mesh_triangle.cmo -o src/mesh_triangle.cma
+ocamlfind ocamlopt -c -g -annot -I src -ccopt -DTRILIBRARY -ccopt -DEXTERNAL_TEST -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -I src -o src/mesh_triangle.cmx src/mesh_triangle.ml
+ocamlfind ocamlopt -a -cclib -lmesh_triangle_stubs src/mesh_triangle.cmx -o src/mesh_triangle.cmxa
+ocamlfind ocamlopt -shared -I src/ src/mesh_triangle.cmx -o src/mesh_triangle.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/easymesh.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/easymesh.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/easymesh.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh_triangle.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/libmesh_triangle_stubs.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh_triangle.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh_triangle.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh_triangle.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh_triangle.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh_triangle.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh_triangle.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh_display.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh_display.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh_display.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh_display.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh_display.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh_display.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/mesh_display.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mesh/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllmesh_triangle_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllmesh_triangle_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+trunk/lib/stublibs is not mentioned in ld.conf
+Installing mesh.0.7.6.
