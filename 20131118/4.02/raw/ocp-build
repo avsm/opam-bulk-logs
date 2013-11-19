@@ -1,0 +1,124 @@
+++ opam install ocp-build -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocp-build
+Ubuntu depexts:
+The following actions will be performed:
+ - install typerex.1.99.6-beta [required by ocp-build]
+ - install ocp-build.1.99.6-beta
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing typerex.1.99.6-beta =-=-=
+typerex.1.99.6-beta Downloading https://github.com/OCamlPro/typerex/tarball/typerex.1.99.6-beta
+--2013-11-19 11:34:15--  https://github.com/OCamlPro/typerex/tarball/typerex.1.99.6-beta
+Resolving github.com (github.com)... 192.30.252.131
+Connecting to github.com (github.com)|192.30.252.131|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/OCamlPro/typerex/legacy.tar.gz/typerex.1.99.6-beta [following]
+--2013-11-19 11:34:15--  https://codeload.github.com/OCamlPro/typerex/legacy.tar.gz/typerex.1.99.6-beta
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.146
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.146|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `OCamlPro-typerex-typerex.1.99.6-beta-0-gf6b9007.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 1.45M
+    50K .......... .......... .......... .......... .......... 1.44M
+   100K .......... .......... .......... .......... .......... 1.43M
+   150K .......... .......... .......... .......... .......... 2.78M
+   200K .......... .......... .......... .......... .......... 2.84M
+   250K .......... .......... .......... .......... .......... 2.85M
+   300K .......... .......... .......... .......... .......... 1.29M
+   350K .......... .......... .......... .......... .......... 2.85M
+   400K .......... .......... .......... .......... .......... 2.86M
+   450K .......... .......... .......... .......... .......... 2.86M
+   500K .......... .......... .......... .......... .......... 29.9M
+   550K .......... .......... .......... .......... .......... 3.00M
+   600K .......... .......... .......... .......... .......... 2.83M
+   650K .......... .......... .......... .......... .......... 2.94M
+   700K .......... .......... .......... .......... .......... 2.81M
+   750K .......... .......... .......... .......... .......... 2.20M
+   800K .......... .......... .......... .......... .......... 80.9M
+   850K .......... .......... .......... .......... .......... 2.89M
+   900K .......... .......... .......... .......... .......... 2.85M
+   950K .......... .......... .......... .......... .......... 2.89M
+  1000K .......... .......... .......... .......... .......... 2.86M
+  1050K .......... .......... .......... .......... .......... 65.4M
+  1100K .......... .......... .......... .......... .......... 2.98M
+  1150K .......... .......... .......... ......                66.9M=0.4s
+
+2013-11-19 11:34:16 (2.75 MB/s) - `OCamlPro-typerex-typerex.1.99.6-beta-0-gf6b9007.tar.gz' saved [1215162]
+
+Building typerex.1.99.6-beta:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make
+  make install
+checking for ocamlc... ocamlc
+OCaml version is 4.02.0+dev2-2013-09-12
+OCaml library path is /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+checking for camlp4... camlp4
+checking for camlp4boot... camlp4boot
+checking for camlp4o... camlp4o
+checking for camlp4of... camlp4of
+checking for camlp4oof... camlp4oof
+checking for camlp4orf... camlp4orf
+checking for camlp4prof... camlp4prof
+checking for camlp4r... camlp4r
+checking for camlp4rf... camlp4rf
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for a sed that does not truncate output... /bin/sed
+checking Major version... 4
+checking Minor version... 02
+checking Point version... 0+dev2-2013-09-12
+checking for gawk... no
+checking for mawk... mawk
+configure: creating ./config.status
+config.status: creating Makefile.config
+config.status: creating typerex.ocp
+config.status: WARNING:  'typerex.ocp.in' seems to ignore the --datarootdir setting
+config.status: creating packages/opam/ocp-build.opam
+Creating file ocp-build.root
+
+Executables will be installed in /home/opam/.opam/4.02.0dev+trunk/bin
+Libraries will be installed in /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/typerex
+Data files will be installed in /home/opam/.opam/4.02.0dev+trunk/share/typerex
+Manual pages will be installed in /home/opam/.opam/4.02.0dev+trunk/share/man
+make -C ocp-build
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/typerex.1.99.6-beta/ocp-build'
+awk '{ print "external "$1": unit -> unit = \"" $1 "\"" }' primitives > primitives.ml
+ocamlc -o ocp-build.run -custom -make-runtime win32_c.c primitives.ml unix.cma  -cclib -lunix
+cat ocp-build.run ocp-build.boot > ocp-build
+chmod +x ocp-build
+./ocp-build -help >/dev/null 2>&1
+make[1]: *** [ocp-build] Error 2
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/typerex.1.99.6-beta/ocp-build'
+make: *** [ocp-build/ocp-build] Error 2
+[ERROR] The compilation of typerex.1.99.6-beta failed.
+Removing typerex.1.99.6-beta.
+  ocp-build -uninstall typerex
+
+[ERROR] Due to some errors while processing typerex.1.99.6-beta, the following actions will NOT proceed:
+ - install ocp-build.1.99.6-beta
+
+===== ERROR while installing typerex.1.99.6-beta =====
+Internal error:
+  "ocp-build": command not found.
+'opam install ocp-build' failed.
