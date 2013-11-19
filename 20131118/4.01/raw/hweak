@@ -1,0 +1,32 @@
+++ opam install hweak -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install hweak
+The following actions will be performed:
+ - install hweak.1.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing hweak.1.1 =-=-=
+hweak.1.1  Downloading http://aspellfr.free.fr/hweak/hweak-1.1.tar.gz
+--2013-11-19 08:16:52--  http://aspellfr.free.fr/hweak/hweak-1.1.tar.gz
+Resolving aspellfr.free.fr (aspellfr.free.fr)... 212.27.63.133
+Connecting to aspellfr.free.fr (aspellfr.free.fr)|212.27.63.133|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4936 (4.8K) [application/x-gzip]
+Saving to: `hweak-1.1.tar.gz'
+
+     0K ....                                                  100%  192M=0s
+
+2013-11-19 08:16:53 (192 MB/s) - `hweak-1.1.tar.gz' saved [4936/4936]
+
+Building hweak.1.1:
+  mkdir -p /home/opam/.opam/system/lib/hweak
+  make
+  cp hweak.cmi hweak.cmo weak_memo.cmi weak_memo.cmo /home/opam/.opam/system/lib/hweak
+ocamlc  -c hweak.mli
+ocamlc  -c hweak.ml
+ocamlc  -c weak_memo.mli
+ocamlc  -c weak_memo.ml
+Installing hweak.1.1.
