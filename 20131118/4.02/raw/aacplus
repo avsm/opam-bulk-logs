@@ -1,31 +1,31 @@
 ++ opam install aacplus -e ubuntu
 + depext=
-Ubuntu depexts:
 + echo Ubuntu depexts:
 + '[' '' '!=' '' ']'
 + opam install aacplus
+Ubuntu depexts:
 The following actions will be performed:
  - install aacplus.0.2.1
 1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
 
 =-=-= Installing aacplus.0.2.1 =-=-=
 aacplus.0.2.1 Downloading http://downloads.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz
---2013-11-19 01:35:45--  http://downloads.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz
+--2013-11-19 01:37:51--  http://downloads.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz
 Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 216.34.181.59
 Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:80... connected.
 HTTP request sent, awaiting response... 302 Found
-Location: http://softlayer-dal.dl.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz [following]
---2013-11-19 01:35:45--  http://softlayer-dal.dl.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz
-Resolving softlayer-dal.dl.sourceforge.net (softlayer-dal.dl.sourceforge.net)... 67.228.157.232
-Connecting to softlayer-dal.dl.sourceforge.net (softlayer-dal.dl.sourceforge.net)|67.228.157.232|:80... connected.
+Location: http://hivelocity.dl.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz [following]
+--2013-11-19 01:37:51--  http://hivelocity.dl.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz
+Resolving hivelocity.dl.sourceforge.net (hivelocity.dl.sourceforge.net)... 74.50.101.106
+Connecting to hivelocity.dl.sourceforge.net (hivelocity.dl.sourceforge.net)|74.50.101.106|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 95575 (93K) [application/x-gzip]
 Saving to: `ocaml-aacplus-0.2.1.tar.gz'
 
-     0K .......... .......... .......... .......... .......... 53%  487K 0s
-    50K .......... .......... .......... .......... ...       100% 1.72M=0.1s
+     0K .......... .......... .......... .......... .......... 53% 23.8K 2s
+    50K .......... .......... .......... .......... ...       100%  122K=2.5s
 
-2013-11-19 01:35:49 (733 KB/s) - `ocaml-aacplus-0.2.1.tar.gz' saved [95575/95575]
+2013-11-19 01:38:04 (38.0 KB/s) - `ocaml-aacplus-0.2.1.tar.gz' saved [95575/95575]
 
 Building aacplus.0.2.1:
   ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
@@ -96,9 +96,9 @@ ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/aac
 # path                 /home/opam/.opam/4.02.0dev+trunk/build/aacplus.0.2.1
 # compiler             4.02.0dev+trunk
 # exit-code            1
-# env-file             /home/opam/.opam/4.02.0dev+trunk/build/aacplus.0.2.1/aacplus-19-d2d111.env
-# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/aacplus.0.2.1/aacplus-19-d2d111.out
-# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/aacplus.0.2.1/aacplus-19-d2d111.err
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/aacplus.0.2.1/aacplus-18-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/aacplus.0.2.1/aacplus-18-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/aacplus.0.2.1/aacplus-18-d2d111.err
 ### stdout ###
 # ...[truncated]
 # checking for camlp4prof... camlp4prof
