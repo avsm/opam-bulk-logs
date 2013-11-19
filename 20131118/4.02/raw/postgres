@@ -1,0 +1,76 @@
+++ opam install postgres -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install postgres
+Ubuntu depexts:
+The following actions will be performed:
+ - install postgres.20040120
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing postgres.20040120 =-=-=
+postgres.20040120 Downloading http://alain.frisch.fr/info/postgres-20040120.tar.gz
+--2013-11-19 12:58:03--  http://alain.frisch.fr/info/postgres-20040120.tar.gz
+Resolving alain.frisch.fr (alain.frisch.fr)... 88.191.134.239
+Connecting to alain.frisch.fr (alain.frisch.fr)|88.191.134.239|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 21995 (21K) [application/x-gzip]
+Saving to: `postgres-20040120.tar.gz'
+
+     0K .......... .......... .                               100% 99.2K=0.2s
+
+2013-11-19 12:58:04 (99.2 KB/s) - `postgres-20040120.tar.gz' saved [21995/21995]
+
+Copying ~/.opam/repo/default/packages/postgres.20040120/files/opam.patch to ~/.opam/4.02.0dev+trunk/build/postgres.20040120/
+Applying opam.patch.
+patching file libpq_stub.c
+Building postgres.20040120:
+  make all POSTGRES_INCLUDE=-I /usr/include/postgresql
+  make install
+rm -f META
+echo 'name="postgres"' >> META
+echo 'version="20040120"' >> META
+echo 'description="Bindings for PostgreSQL"' >> META
+echo 'archive(byte)="postgres.cma"' >> META
+echo 'archive(native)="postgres.cmxa"' >> META
+ocamlc -c postgres.mli
+ocamlc -c postgres.ml
+ocamlopt -c postgres.ml
+ocamlc -c -I /usr/include/postgresql libpq_stub.c
+libpq_stub.c:13:22: fatal error: libpq-fe.h: No such file or directory
+compilation terminated.
+make: *** [libpq_stub.o] Error 2
+[ERROR] The compilation of postgres.20040120 failed.
+Removing postgres.20040120.
+  ocamlfind remove postgres
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/postgres
+
+
+===== ERROR while installing postgres.20040120 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make all POSTGRES_INCLUDE=-I /usr/include/postgresql
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/postgres.20040120
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/postgres.20040120/postgres-19-b76d46.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/postgres.20040120/postgres-19-b76d46.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/postgres.20040120/postgres-19-b76d46.err
+### stdout ###
+# ...[truncated]
+# rm -f META
+# echo 'name="postgres"' >> META
+# echo 'version="20040120"' >> META
+# echo 'description="Bindings for PostgreSQL"' >> META
+# echo 'archive(byte)="postgres.cma"' >> META
+# echo 'archive(native)="postgres.cmxa"' >> META
+# ocamlc -c postgres.mli
+# ocamlc -c postgres.ml
+# ocamlopt -c postgres.ml
+# ocamlc -c -I /usr/include/postgresql libpq_stub.c
+### stderr ###
+# libpq_stub.c:13:22: fatal error: libpq-fe.h: No such file or directory
+# compilation terminated.
+# make: *** [libpq_stub.o] Error 2
+
+'opam install postgres' failed.
