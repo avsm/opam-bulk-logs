@@ -1,0 +1,37 @@
+++ opam install ocaml+twt -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml+twt
+The following actions will be performed:
+ - install ocaml+twt.0.93.2
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocaml+twt.0.93.2 =-=-=
+ocaml+twt.0.93.2 Downloading https://github.com/mlin/twt/archive/v0.93.2.tar.gz
+--2013-11-19 10:58:08--  https://github.com/mlin/twt/archive/v0.93.2.tar.gz
+Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/mlin/twt/tar.gz/v0.93.2 [following]
+--2013-11-19 10:58:08--  https://codeload.github.com/mlin/twt/tar.gz/v0.93.2
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.145
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.145|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 61591 (60K) [application/x-gzip]
+Saving to: `twt-0.93.2.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 83% 1.45M 0s
+    50K ..........                                            100% 27.6M=0.03s
+
+2013-11-19 10:58:09 (1.73 MB/s) - `twt-0.93.2.tar.gz' saved [61591/61591]
+
+Building ocaml+twt.0.93.2:
+  make install PREFIX=/home/opam/.opam/system
+ocamlc -o ocaml+twt str.cma unix.cma ocaml+twt.ml
+File "ocaml+twt.ml", line 1:
+Warning 24: bad source file name: "Ocaml+twt" is not a valid module name.
+ocamlc -o ppcompose -pp ./ocaml+twt ppcompose.ml
+cp ocaml+twt ppcompose /home/opam/.opam/system/bin
+Installing ocaml+twt.0.93.2.
