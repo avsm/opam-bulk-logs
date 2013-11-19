@@ -1,0 +1,76 @@
+++ opam install sequence -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install sequence
+Ubuntu depexts:
+The following actions will be performed:
+ - install sequence.0.3.6.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing sequence.0.3.6.1 =-=-=
+sequence.0.3.6.1 Downloading https://github.com/c-cube/sequence/archive/0.3.6.1.tar.gz
+--2013-11-19 13:57:56--  https://github.com/c-cube/sequence/archive/0.3.6.1.tar.gz
+Resolving github.com (github.com)... 192.30.252.131
+Connecting to github.com (github.com)|192.30.252.131|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/c-cube/sequence/tar.gz/0.3.6.1 [following]
+--2013-11-19 13:57:56--  https://codeload.github.com/c-cube/sequence/tar.gz/0.3.6.1
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.147
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 18085 (18K) [application/x-gzip]
+Saving to: `sequence-0.3.6.1.tar.gz'
+
+     0K .......... .......                                    100% 25.5M=0.001s
+
+2013-11-19 13:57:56 (25.5 MB/s) - `sequence-0.3.6.1.tar.gz' saved [18085/18085]
+
+Building sequence.0.3.6.1:
+  make all doc
+  make install
+ocamlbuild sequence.cma sequence.cmxa sequence.cmxs sequence.cmi sequence.a sequence.docdir/index.html
+/usr/bin/ocamldep.opt -modules sequence.mli > sequence.mli.depends
+/usr/bin/ocamlc.opt -c -o sequence.cmi sequence.mli
+/usr/bin/ocamldep.opt -modules sequence.ml > sequence.ml.depends
+/usr/bin/ocamlc.opt -c -o sequence.cmo sequence.ml
+/usr/bin/ocamlc.opt -a sequence.cmo -o sequence.cma
+/usr/bin/ocamlopt.opt -c -o sequence.cmx sequence.ml
+/usr/bin/ocamlopt.opt -a sequence.cmx -o sequence.cmxa
+/usr/bin/ocamlopt.opt -shared sequence.cmx -o sequence.cmxs
+/usr/bin/ocamldoc.opt -dump sequence.odoc sequence.mli
++ /usr/bin/ocamldoc.opt -dump sequence.odoc sequence.mli
+Warning: Module or module type Map.S not found
+Warning: Module or module type Set.S not found
+Warning: Element Stream not found
+rm -rf sequence.docdir
+mkdir -p sequence.docdir
+/usr/bin/ocamldoc.opt -load sequence.odoc -html -d sequence.docdir
++ /usr/bin/ocamldoc.opt -load sequence.odoc -html -d sequence.docdir
+Warning: Module or module type Map.S not found
+Warning: Module or module type Set.S not found
+Warning: Module or module type Map.S not found
+Warning: Module or module type Set.S not found
+Warning: Element Stream not found
+mkdir -p man/man3/
+ocamlfind ocamldoc -I _build/ sequence.ml sequence.mli -man -d man/man3/
+Warning: Module or module type Map.S not found
+Warning: Module or module type Set.S not found
+Warning: Element Stream not found
+rm: cannot remove `sequence.install': No such file or directory
+make: `doc' is up to date.
+ocamlbuild sequence.cma sequence.cmxa sequence.cmxs sequence.cmi sequence.a sequence.docdir/index.html
+mkdir -p man/man3/
+ocamlfind ocamldoc -I _build/ sequence.ml sequence.mli -man -d man/man3/
+Warning: Module or module type Map.S not found
+Warning: Module or module type Set.S not found
+Warning: Element Stream not found
+ocamlfind install sequence META _build/sequence.cma _build/sequence.cmxa _build/sequence.cmxs _build/sequence.cmi _build/sequence.a sequence.mli
+Installed /home/opam/.opam/system/lib/sequence/sequence.mli
+Installed /home/opam/.opam/system/lib/sequence/sequence.a
+Installed /home/opam/.opam/system/lib/sequence/sequence.cmi
+Installed /home/opam/.opam/system/lib/sequence/sequence.cmxs
+Installed /home/opam/.opam/system/lib/sequence/sequence.cmxa
+Installed /home/opam/.opam/system/lib/sequence/sequence.cma
+Installed /home/opam/.opam/system/lib/sequence/META
+Installing sequence.0.3.6.1.
