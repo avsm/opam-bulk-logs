@@ -1,0 +1,70 @@
+++ opam install pareto -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install pareto
+Ubuntu depexts:
+The following actions will be performed:
+ - install gsl.1.13.0 [required by pareto]
+ - install pareto.0.2
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing gsl.1.13.0 =-=-=
+gsl.1.13.0 Downloading https://bitbucket.org/mmottl/gsl-ocaml/downloads/gsl-ocaml-1.13.0.tar.gz
+--2013-11-19 12:36:48--  https://bitbucket.org/mmottl/gsl-ocaml/downloads/gsl-ocaml-1.13.0.tar.gz
+Resolving bitbucket.org (bitbucket.org)... 131.103.20.167, 131.103.20.168
+Connecting to bitbucket.org (bitbucket.org)|131.103.20.167|:443... connected.
+HTTP request sent, awaiting response... 302 FOUND
+Location: http://cdn.bitbucket.org/mmottl/gsl-ocaml/downloads/gsl-ocaml-1.13.0.tar.gz [following]
+--2013-11-19 12:36:48--  http://cdn.bitbucket.org/mmottl/gsl-ocaml/downloads/gsl-ocaml-1.13.0.tar.gz
+Resolving cdn.bitbucket.org (cdn.bitbucket.org)... 54.230.193.62, 54.230.193.74, 54.230.194.63, ...
+Connecting to cdn.bitbucket.org (cdn.bitbucket.org)|54.230.193.62|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 161759 (158K) [application/x-tar]
+Saving to: `gsl-ocaml-1.13.0.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 31%  504K 0s
+    50K .......... .......... .......... .......... .......... 63% 1.44M 0s
+   100K .......... .......... .......... .......... .......... 94%  760K 0s
+   150K .......                                               100% 72.1M=0.2s
+
+2013-11-19 12:36:49 (794 KB/s) - `gsl-ocaml-1.13.0.tar.gz' saved [161759/161759]
+
+Building gsl.1.13.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/system
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+make: gsl-config: Command not found
+ocaml do_const.ml --mli > lib/const.mli
+/bin/sh: 1: gsl-config: not found
+Exception: End_of_file.
+make: *** [post-conf] Error 2
+E: Failure("Command 'make post-conf' terminated with error code 2")
+[ERROR] The compilation of gsl.1.13.0 failed.
+Removing gsl.1.13.0.
+  ocamlfind remove gsl
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/gsl
+
+[ERROR] Due to some errors while processing gsl.1.13.0, the following actions will NOT proceed:
+ - install pareto.0.2
+
+===== ERROR while installing gsl.1.13.0 =====
+# opam-version         1.1.0
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/opam/.opam/system
+# path                 /home/opam/.opam/system/build/gsl.1.13.0
+# compiler             system (4.01.0)
+# exit-code            1
+# env-file             /home/opam/.opam/system/build/gsl.1.13.0/gsl-22-d8a4ae.env
+# stdout-file          /home/opam/.opam/system/build/gsl.1.13.0/gsl-22-d8a4ae.out
+# stderr-file          /home/opam/.opam/system/build/gsl.1.13.0/gsl-22-d8a4ae.err
+### stdout ###
+# ocaml do_const.ml --mli > lib/const.mli
+### stderr ###
+# make: gsl-config: Command not found
+# /bin/sh: 1: gsl-config: not found
+# Exception: End_of_file.
+# make: *** [post-conf] Error 2
+# E: Failure("Command 'make post-conf' terminated with error code 2")
+
+'opam install pareto' failed.
