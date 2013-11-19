@@ -1,0 +1,44 @@
+++ opam install format -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install format
+The following actions will be performed:
+ - install format.0.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing format.0.1 =-=-=
+format.0.1 Downloading https://forge.ocamlcore.org/frs/download.php/376/format-1.0.tar.gz
+--2013-11-19 07:12:34--  https://forge.ocamlcore.org/frs/download.php/376/format-1.0.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:443... connected.
+WARNING: no certificate subject alternative name matches
+	requested host name `forge.ocamlcore.org'.
+HTTP request sent, awaiting response... 200 OK
+Length: 18478 (18K) [application/binary]
+Saving to: `format-1.0.tar.gz'
+
+     0K .......... ........                                   100%  195K=0.09s
+
+2013-11-19 07:12:35 (195 KB/s) - `format-1.0.tar.gz' saved [18478/18478]
+
+Building format.0.1:
+  make
+  make install
+ocamllex formatLexer.mll
+23 states, 271 transitions, table size 1222 bytes
+1219 additional bytes used for bindings
+ocamlyacc formatParser.mly
+rm -f formatParser.mli
+ocamlc -I +camlp4 -c formatParser.ml
+ocamlc -I +camlp4 -c formatLexer.ml
+ocamlc -I +camlp4 -pp camlp4of -c pa_format.ml
+ocamlc -I +camlp4 -pp camlp4of -c pa_format_short.ml
+ocamlfind install format META formatLexer.cmo formatParser.cmo pa_format.cmo pa_format_short.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/format/pa_format_short.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/format/pa_format.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/format/formatParser.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/format/formatLexer.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/format/META
+Installing format.0.1.
