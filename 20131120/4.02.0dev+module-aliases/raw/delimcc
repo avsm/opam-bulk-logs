@@ -1,0 +1,36 @@
+++ opam install delimcc -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install delimcc
+The following actions will be performed:
+ - install delimcc.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing delimcc.0 =-=-=
+delimcc.0  Downloading http://okmij.org/ftp/continuations/caml-shift.tar.gz
+--2013-11-20 17:45:00--  http://okmij.org/ftp/continuations/caml-shift.tar.gz
+Resolving okmij.org (okmij.org)... 216.92.24.179
+Connecting to okmij.org (okmij.org)|216.92.24.179|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 80006 (78K) [application/x-gzip]
+Saving to: `caml-shift.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 63%  540K 0s
+    50K .......... .......... ........                        100%  916K=0.1s
+
+2013-11-20 17:45:01 (634 KB/s) - `caml-shift.tar.gz' saved [80006/80006]
+
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/delimcc.0/caml-shift.tar.gz:
+  - d02450e06fb6f1b733890bf5cadc7502 [expected result]
+  - 35c6ecfaa438669aa7f30b071cffd8b7 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can  use the `--no-checksums` command-line option
+to /bypass any checksum checks.
+[ERROR] http://okmij.org/ftp/continuations/caml-shift.tar.gz is not available
+
+
+===== ERROR while installing delimcc.0 =====
+Could not get the source for delimcc.0.
+'opam install delimcc' failed.
