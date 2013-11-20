@@ -1,0 +1,81 @@
+++ opam install xstrp4 -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install xstrp4
+The following actions will be performed:
+ - install xstrp4.1.8
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing xstrp4.1.8 =-=-=
+xstrp4.1.8 Downloading http://download.camlcity.org/download/xstrp4-1.8.tar.gz
+--2013-11-20 21:16:21--  http://download.camlcity.org/download/xstrp4-1.8.tar.gz
+Resolving download.camlcity.org (download.camlcity.org)... 78.46.83.102, 2a01:4f8:120:10e8::101:6
+Connecting to download.camlcity.org (download.camlcity.org)|78.46.83.102|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7513 (7.3K) [application/x-tar]
+Saving to: `xstrp4-1.8.tar.gz'
+
+     0K .......                                               100% 63.6K=0.1s
+
+2013-11-20 21:16:21 (63.6 KB/s) - `xstrp4-1.8.tar.gz' saved [7513/7513]
+
+Building xstrp4.1.8:
+  ./configure
+  make all
+  make install
+Welcome to Xstrp4 version 1.8
+Checking for findlib... found
+Checking for camlp4... 3.10 style
+Writing Makefile.conf
+
+Please check Makefile.conf.
+
+You can now compile Xstrp4 by invoking
+   make all
+for the bytecode compiler, and optionally by invoking
+   make opt
+for the native-code compiler (if supported on your architecture).
+Finally, a
+   make install
+will install the package(s).
+ocamlfind ocamlc  -package camlp4 -syntax camlp4o -ppopt pa_extend.cmo -ppopt q_MLast.cmo -c xstrp4_here_types.ml
+File "xstrp4_here_types.ml", line 6, characters 0-11:
+Error: Unbound module Camlp4
+make: *** [xstrp4_here_types.cmo] Error 2
+[ERROR] The compilation of xstrp4.1.8 failed.
+Removing xstrp4.1.8.
+  ocamlfind remove xstrp4
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/xstrp4
+
+
+===== ERROR while installing xstrp4.1.8 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/xstrp4.1.8
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/xstrp4.1.8/xstrp4-20-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/xstrp4.1.8/xstrp4-20-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/xstrp4.1.8/xstrp4-20-d2d111.err
+### stdout ###
+# ...[truncated]
+# 
+# You can now compile Xstrp4 by invoking
+#    make all
+# for the bytecode compiler, and optionally by invoking
+#    make opt
+# for the native-code compiler (if supported on your architecture).
+# Finally, a
+#    make install
+# will install the package(s).
+# ocamlfind ocamlc  -package camlp4 -syntax camlp4o -ppopt pa_extend.cmo -ppopt q_MLast.cmo -c xstrp4_here_types.ml
+### stderr ###
+# Welcome to Xstrp4 version 1.8
+# File "xstrp4_here_types.ml", line 6, characters 0-11:
+# Error: Unbound module Camlp4
+# make: *** [xstrp4_here_types.cmo] Error 2
+
+'opam install xstrp4' failed.
