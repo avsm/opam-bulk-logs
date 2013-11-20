@@ -1,0 +1,90 @@
+++ opam install odb-server -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install odb-server
+Ubuntu depexts:
+The following actions will be performed:
+ - install odb-server.0.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing odb-server.0.1 =-=-=
+odb-server.0.1 Downloading http://forge.ocamlcore.org/frs/download.php/722/odb-server_0.1.tar.gz
+--2013-11-20 19:53:52--  http://forge.ocamlcore.org/frs/download.php/722/odb-server_0.1.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 27631 (27K) [application/binary]
+Saving to: `odb-server_0.1.tar.gz'
+
+     0K .......... .......... ......                          100%  135K=0.2s
+
+2013-11-20 19:53:53 (135 KB/s) - `odb-server_0.1.tar.gz' saved [27631/27631]
+
+Copying ~/.opam/repo/default/packages/odb-server.0.1/files/opam.patch.in to ~/.opam/4.02.0dev+module-aliases/build/odb-server.0.1/
+Applying opam.patch.
+patching file Makefile
+Building odb-server.0.1:
+  mkdir -p /home/opam/.opam/4.02.0dev+module-aliases/bin
+  make
+  make install OCAMLLIB=/home/opam/.opam/4.02.0dev+module-aliases/lib
+ocamlc -g  -I +threads -annot -thread -c odb_config.mli
+ocamlc -g  -I +threads -annot -thread -c odb_misc.mli
+ocamlc -g  -I +threads -annot -thread -c odb_file.mli
+ocamlc -g  -I +threads -annot -thread -c odb_commands.mli
+ocamlc -g  -I +threads -annot -thread -c odb_comm.mli
+if test -f `dirname odb_project_types.ml`/`basename odb_project_types.ml .ml`.mli && test ! -f `dirname odb_project_types.ml`/`basename odb_project_types.ml .ml`.cmi ; then \
+	ocamlc -g  -I +threads -annot -thread -c `dirname odb_project_types.ml`/`basename odb_project_types.ml .ml`.mli; fi
+ocamlc -g  -I +threads -annot -thread -c odb_project_types.ml
+ocamlyacc odb_project_parser.mly
+ocamlc -g  -I +threads -annot -thread -c odb_project_parser.mli
+ocamllex odb_project_lexer.mll
+28 states, 615 transitions, table size 2628 bytes
+if test -f `dirname odb_project_lexer.ml`/`basename odb_project_lexer.ml .ml`.mli && test ! -f `dirname odb_project_lexer.ml`/`basename odb_project_lexer.ml .ml`.cmi ; then \
+	ocamlc -g  -I +threads -annot -thread -c `dirname odb_project_lexer.ml`/`basename odb_project_lexer.ml .ml`.mli; fi
+ocamlc -g  -I +threads -annot -thread -c odb_project_lexer.ml
+if test -f `dirname odb_project.ml`/`basename odb_project.ml .ml`.mli && test ! -f `dirname odb_project.ml`/`basename odb_project.ml .ml`.cmi ; then \
+	ocamlc -g  -I +threads -annot -thread -c `dirname odb_project.ml`/`basename odb_project.ml .ml`.mli; fi
+ocamlc -g  -I +threads -annot -thread -c odb_project.ml
+ocamlc -g  -I +threads -annot -thread -c odb_client.mli
+ocamlc -g  -I +threads -annot -thread -c odb_doc.mli
+ocamlc -g  -I +threads -annot -thread -c odb_tools.mli
+ocamlc -g  -I +threads -annot -thread -c odb_project_tool.mli
+ocamlc -g  -I +threads -annot -thread -c odb_server.mli
+ocamlopt -g  -I +threads -annot -thread -c odb_config.ml
+ocamlopt -g  -I +threads -annot -thread -c odb_misc.ml
+ocamlopt -g  -I +threads -annot -thread -c odb_file.ml
+ocamlopt -g -I +threads -annot -thread -c -pp "camlp4o" odb_commands.ml
+Segmentation fault
+make: *** [odb_commands.cmx] Error 139
+[ERROR] The compilation of odb-server.0.1 failed.
+Removing odb-server.0.1.
+
+
+===== ERROR while installing odb-server.0.1 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/odb-server.0.1
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/odb-server.0.1/odb-server-19-b76d46.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/odb-server.0.1/odb-server-19-b76d46.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/odb-server.0.1/odb-server-19-b76d46.err
+### stdout ###
+# ...[truncated]
+# ocamlc -g  -I +threads -annot -thread -c odb_project.ml
+# ocamlc -g  -I +threads -annot -thread -c odb_client.mli
+# ocamlc -g  -I +threads -annot -thread -c odb_doc.mli
+# ocamlc -g  -I +threads -annot -thread -c odb_tools.mli
+# ocamlc -g  -I +threads -annot -thread -c odb_project_tool.mli
+# ocamlc -g  -I +threads -annot -thread -c odb_server.mli
+# ocamlopt -g  -I +threads -annot -thread -c odb_config.ml
+# ocamlopt -g  -I +threads -annot -thread -c odb_misc.ml
+# ocamlopt -g  -I +threads -annot -thread -c odb_file.ml
+# ocamlopt -g -I +threads -annot -thread -c -pp "camlp4o" odb_commands.ml
+### stderr ###
+# Segmentation fault
+# make: *** [odb_commands.cmx] Error 139
+
+'opam install odb-server' failed.
