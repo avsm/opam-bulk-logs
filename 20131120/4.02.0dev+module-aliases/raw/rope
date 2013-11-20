@@ -1,0 +1,111 @@
+++ opam install rope -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install rope
+Ubuntu depexts:
+The following actions will be performed:
+ - install rope.0.5
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing rope.0.5 =-=-=
+rope.0.5   Downloading https://forge.ocamlcore.org/frs/download.php/1156/rope-0.5.tar.gz
+--2013-11-20 20:37:04--  https://forge.ocamlcore.org/frs/download.php/1156/rope-0.5.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:443... connected.
+WARNING: no certificate subject alternative name matches
+	requested host name `forge.ocamlcore.org'.
+HTTP request sent, awaiting response... 200 OK
+Length: 74790 (73K) [application/binary]
+Saving to: `rope-0.5.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 68%  173K 0s
+    50K .......... .......... ...                             100%  290K=0.4s
+
+2013-11-20 20:37:05 (198 KB/s) - `rope-0.5.tar.gz' saved [74790/74790]
+
+Building rope.0.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ rope
+Package version: ..................................... 0.5
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+module-aliases
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+File "_tags", line 20, characters 34-47:
+Warning: the tag "pkg_benchmark" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 23, characters 32-45:
+Warning: the tag "pkg_benchmark" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 25, characters 18-31:
+Warning: the tag "pkg_benchmark" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamldep -modules src/rope.mli > src/rope.mli.depends
+ocamlfind ocamlc -c -g -I src -o src/rope.cmi src/rope.mli
+ocamlfind ocamldep -modules src/rope.ml > src/rope.ml.depends
+ocamlfind ocamlc -c -g -I src -o src/rope.cmo src/rope.ml
+ocamlfind ocamlc -a src/rope.cmo -o src/rope.cma
+ocamlfind ocamlopt -c -g -I src -o src/rope.cmx src/rope.ml
+ocamlfind ocamlopt -a src/rope.cmx -o src/rope.cmxa
+ocamlfind ocamlopt -shared src/rope.cmx -o src/rope.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/rope/rope.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/rope/rope.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/rope/rope.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/rope/rope.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/rope/rope.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/rope/rope.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/rope/rope.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/rope/META
+Installing rope.0.5.
