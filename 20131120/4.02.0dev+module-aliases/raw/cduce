@@ -1,0 +1,499 @@
+++ opam install cduce -e ubuntu
+[WARNING] unknown package "ocaml-src"
++ depext=libpcre3-dev
+Ubuntu depexts: libpcre3-dev
++ echo Ubuntu depexts: libpcre3-dev
++ '[' libpcre3-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libpcre3-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libpcrecpp0.
+(Reading database ... 20462 files and directories currently installed.)
+Unpacking libpcrecpp0 (from .../libpcrecpp0_8.12-4_amd64.deb) ...
+Selecting previously unselected package libpcre3-dev.
+Unpacking libpcre3-dev (from .../libpcre3-dev_8.12-4_amd64.deb) ...
+Setting up libpcrecpp0 (8.12-4) ...
+Setting up libpcre3-dev (8.12-4) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
++ opam install cduce
+[WARNING] unknown package "ocaml-src"
+The following actions will be performed:
+ - install ulex.1.1 [required by cduce]
+ - install conf-libpcre.1 [required by cduce]
+ - install pcre-ocaml.7.0.2 [required by cduce]
+ - install ocamlnet.3.7.3 [required by cduce]
+ - install pxp.1.2.3 [required by cduce]
+ - install cduce.0.5.5
+6 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing conf-libpcre.1 =-=-=
+Building conf-libpcre.1:
+  pkg-config libpcre
+Installing conf-libpcre.1.
+
+=-=-= Installing ulex.1.1 =-=-=
+ulex.1.1   Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+--2013-11-20 17:24:10--  http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+Resolving ftp.de.debian.org (ftp.de.debian.org)... 141.76.2.4
+Connecting to ftp.de.debian.org (ftp.de.debian.org)|141.76.2.4|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20347 (20K) [application/x-gzip]
+Saving to: `ulex_1.1.orig.tar.gz'
+
+     0K .......... .........                                  100%  150K=0.1s
+
+2013-11-20 17:24:10 (150 KB/s) - `ulex_1.1.orig.tar.gz' saved [20347/20347]
+
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma
+ocamlfind ocamlc unix.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cma -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmo -o myocamlbuild
+ocamlfind ocamldep -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
++ ocamlfind ocamldep -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
+Command exited with code 2.
+make: *** [all] Error 10
+[ERROR] The compilation of ulex.1.1 failed.
+Removing ulex.1.1.
+  ocamlfind remove ulex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/ulex
+
+=-=-= Installing pcre-ocaml.7.0.2 =-=-=
+pcre-ocaml.7.0.2 Downloading https://bitbucket.org/mmottl/pcre-ocaml/downloads/pcre-ocaml-7.0.2.tar.gz
+--2013-11-20 17:24:12--  https://bitbucket.org/mmottl/pcre-ocaml/downloads/pcre-ocaml-7.0.2.tar.gz
+Resolving bitbucket.org (bitbucket.org)... 131.103.20.168, 131.103.20.167
+Connecting to bitbucket.org (bitbucket.org)|131.103.20.168|:443... connected.
+HTTP request sent, awaiting response... 302 FOUND
+Location: http://cdn.bitbucket.org/mmottl/pcre-ocaml/downloads/pcre-ocaml-7.0.2.tar.gz [following]
+--2013-11-20 17:24:12--  http://cdn.bitbucket.org/mmottl/pcre-ocaml/downloads/pcre-ocaml-7.0.2.tar.gz
+Resolving cdn.bitbucket.org (cdn.bitbucket.org)... 216.137.33.93, 54.230.100.159, 54.230.103.80, ...
+Connecting to cdn.bitbucket.org (cdn.bitbucket.org)|216.137.33.93|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 81910 (80K) [application/x-tar]
+Saving to: `pcre-ocaml-7.0.2.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 62%  923K 0s
+    50K .......... .......... .........                       100%  554K=0.1s
+
+2013-11-20 17:24:12 (738 KB/s) - `pcre-ocaml-7.0.2.tar.gz' saved [81910/81910]
+
+Building pcre-ocaml.7.0.2:
+  make
+  make install
+ocaml setup.ml -configure 
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ pcre-ocaml
+Package version: ..................................... 7.0.2
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+with_pcre_config: .................................... pcre-config
+Strict compile-time checks: .......................... true
+Build examples: ...................................... true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocaml setup.ml -build 
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt '' -c lib/pcre_stubs.c
+mv pcre_stubs.o lib/pcre_stubs.o
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlmklib -o lib/pcre_stubs -L/usr/lib/x86_64-linux-gnu -lpcre lib/pcre_stubs.o
+ocamlfind ocamldep -modules lib/pcre.mli > lib/pcre.mli.depends
+ocamlfind ocamlc -c -g -annot -w A -w e -w r -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -strict-sequence -I lib -o lib/pcre.cmi lib/pcre.mli
+ocamlfind ocamldep -modules lib/pcre.ml > lib/pcre.ml.depends
+ocamlfind ocamlc -c -g -annot -w A -w e -w r -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -strict-sequence -I lib -o lib/pcre.cmo lib/pcre.ml
+ocamlfind ocamlc -a -dllib -lpcre_stubs -cclib -lpcre_stubs -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpcre -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpcre lib/pcre.cmo -o lib/pcre.cma
+ocamlfind ocamlopt -c -g -annot -w A -w e -w r -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -strict-sequence -I lib -o lib/pcre.cmx lib/pcre.ml
+ocamlfind ocamlopt -a -cclib -lpcre_stubs -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpcre -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpcre lib/pcre.cmx -o lib/pcre.cmxa
+ocamlfind ocamlopt -shared -I lib -cclib -L/usr/lib/x86_64-linux-gnu -cclib -lpcre lib/pcre.cmx -o lib/pcre.cmxs
+ocamlfind ocamldep -modules examples/cloc/cloc.ml > examples/cloc/cloc.ml.depends
+ocamlfind ocamlc -c -g -annot -w A -w e -w r -I lib -strict-sequence -I examples/cloc -I lib -o examples/cloc/cloc.cmo examples/cloc/cloc.ml
+ocamlfind ocamlopt -c -g -annot -w A -w e -w r -I lib -strict-sequence -I examples/cloc -I lib -o examples/cloc/cloc.cmx examples/cloc/cloc.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg lib/pcre.cmxa examples/cloc/cloc.cmx -o examples/cloc/cloc.native
+ocamlfind ocamldep -modules examples/count_hash/count_hash.ml > examples/count_hash/count_hash.ml.depends
+ocamlfind ocamlc -c -g -annot -w A -w e -w r -I lib -strict-sequence -I examples/count_hash -I lib -o examples/count_hash/count_hash.cmo examples/count_hash/count_hash.ml
+ocamlfind ocamlopt -c -g -annot -w A -w e -w r -I lib -strict-sequence -I examples/count_hash -I lib -o examples/count_hash/count_hash.cmx examples/count_hash/count_hash.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg lib/pcre.cmxa examples/count_hash/count_hash.cmx -o examples/count_hash/count_hash.native
+ocamlfind ocamldep -modules examples/pcregrep/pcregrep.ml > examples/pcregrep/pcregrep.ml.depends
+ocamlfind ocamlc -c -g -annot -w A -w e -w r -I lib -strict-sequence -I examples/pcregrep -I lib -o examples/pcregrep/pcregrep.cmo examples/pcregrep/pcregrep.ml
+ocamlfind ocamlopt -c -g -annot -w A -w e -w r -I lib -strict-sequence -I examples/pcregrep -I lib -o examples/pcregrep/pcregrep.cmx examples/pcregrep/pcregrep.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg lib/pcre.cmxa examples/pcregrep/pcregrep.cmx -o examples/pcregrep/pcregrep.native
+ocamlfind ocamldep -modules examples/subst/subst.ml > examples/subst/subst.ml.depends
+ocamlfind ocamlc -c -g -annot -w A -w e -w r -I lib -strict-sequence -I examples/subst -I lib -o examples/subst/subst.cmo examples/subst/subst.ml
+ocamlfind ocamlopt -c -g -annot -w A -w e -w r -I lib -strict-sequence -I examples/subst -I lib -o examples/subst/subst.cmx examples/subst/subst.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg lib/pcre.cmxa examples/subst/subst.cmx -o examples/subst/subst.native
+ocaml setup.ml -install 
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/pcre/pcre.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/pcre/libpcre_stubs.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/pcre/pcre.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/pcre/pcre.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/pcre/pcre.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/pcre/pcre.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/pcre/pcre.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/pcre/pcre.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/pcre/META
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs/dllpcre_stubs.so
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs/dllpcre_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs is not mentioned in ld.conf
+Installing pcre-ocaml.7.0.2.
+
+=-=-= Installing ocamlnet.3.7.3 =-=-=
+ocamlnet.3.7.3 Downloading http://download.camlcity.org/download/ocamlnet-3.7.3.tar.gz
+--2013-11-20 17:24:19--  http://download.camlcity.org/download/ocamlnet-3.7.3.tar.gz
+Resolving download.camlcity.org (download.camlcity.org)... 78.46.83.102, 2a01:4f8:120:10e8::101:6
+Connecting to download.camlcity.org (download.camlcity.org)|78.46.83.102|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3352779 (3.2M) [application/x-tar]
+Saving to: `ocamlnet-3.7.3.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  1%  108K 30s
+    50K .......... .......... .......... .......... ..........  3%  319K 20s
+   100K .......... .......... .......... .......... ..........  4%  265K 17s
+   150K .......... .......... .......... .......... ..........  6%  430K 14s
+   200K .......... .......... .......... .......... ..........  7%  581K 12s
+   250K .......... .......... .......... .......... ..........  9% 1.35M 10s
+   300K .......... .......... .......... .......... .......... 10%  458K 10s
+   350K .......... .......... .......... .......... .......... 12% 1.19M 9s
+   400K .......... .......... .......... .......... .......... 13%  680K 8s
+   450K .......... .......... .......... .......... .......... 15% 4.97M 7s
+   500K .......... .......... .......... .......... .......... 16%  482K 7s
+   550K .......... .......... .......... .......... .......... 18% 4.71M 6s
+   600K .......... .......... .......... .......... .......... 19% 1.35M 6s
+   650K .......... .......... .......... .......... .......... 21%  710K 6s
+   700K .......... .......... .......... .......... .......... 22% 2.89M 5s
+   750K .......... .......... .......... .......... .......... 24% 1.78M 5s
+   800K .......... .......... .......... .......... .......... 25%  714K 5s
+   850K .......... .......... .......... .......... .......... 27% 3.57M 4s
+   900K .......... .......... .......... .......... .......... 29% 8.42M 4s
+   950K .......... .......... .......... .......... .......... 30% 1.88M 4s
+  1000K .......... .......... .......... .......... .......... 32% 1.14M 4s
+  1050K .......... .......... .......... .......... .......... 33% 1.52M 3s
+  1100K .......... .......... .......... .......... .......... 35% 3.53M 3s
+  1150K .......... .......... .......... .......... .......... 36% 6.29M 3s
+  1200K .......... .......... .......... .......... .......... 38% 2.06M 3s
+  1250K .......... .......... .......... .......... .......... 39% 1.31M 3s
+  1300K .......... .......... .......... .......... .......... 41% 1.66M 3s
+  1350K .......... .......... .......... .......... .......... 42% 5.07M 2s
+  1400K .......... .......... .......... .......... .......... 44% 6.75M 2s
+  1450K .......... .......... .......... .......... .......... 45% 5.54M 2s
+  1500K .......... .......... .......... .......... .......... 47% 2.15M 2s
+  1550K .......... .......... .......... .......... .......... 48% 1.38M 2s
+  1600K .......... .......... .......... .......... .......... 50% 1.67M 2s
+  1650K .......... .......... .......... .......... .......... 51% 10.4M 2s
+  1700K .......... .......... .......... .......... .......... 53% 6.30M 2s
+  1750K .......... .......... .......... .......... .......... 54% 4.81M 2s
+  1800K .......... .......... .......... .......... .......... 56% 5.77M 2s
+  1850K .......... .......... .......... .......... .......... 58% 3.10M 1s
+  1900K .......... .......... .......... .......... .......... 59% 4.48M 1s
+  1950K .......... .......... .......... .......... .......... 61% 1.61M 1s
+  2000K .......... .......... .......... .......... .......... 62% 1.78M 1s
+  2050K .......... .......... .......... .......... .......... 64% 4.66M 1s
+  2100K .......... .......... .......... .......... .......... 65% 5.27M 1s
+  2150K .......... .......... .......... .......... .......... 67% 3.11M 1s
+  2200K .......... .......... .......... .......... .......... 68% 5.91M 1s
+  2250K .......... .......... .......... .......... .......... 70% 5.64M 1s
+  2300K .......... .......... .......... .......... .......... 71% 6.78M 1s
+  2350K .......... .......... .......... .......... .......... 73% 1.54M 1s
+  2400K .......... .......... .......... .......... .......... 74% 1.95M 1s
+  2450K .......... .......... .......... .......... .......... 76% 6.91M 1s
+  2500K .......... .......... .......... .......... .......... 77% 2.51M 1s
+  2550K .......... .......... .......... .......... .......... 79% 8.45M 1s
+  2600K .......... .......... .......... .......... .......... 80% 5.83M 1s
+  2650K .......... .......... .......... .......... .......... 82% 4.67M 0s
+  2700K .......... .......... .......... .......... .......... 83% 5.12M 0s
+  2750K .......... .......... .......... .......... .......... 85% 2.31M 0s
+  2800K .......... .......... .......... .......... .......... 87% 5.88M 0s
+  2850K .......... .......... .......... .......... .......... 88% 9.35M 0s
+  2900K .......... .......... .......... .......... .......... 90% 2.20M 0s
+  2950K .......... .......... .......... .......... .......... 91% 4.50M 0s
+  3000K .......... .......... .......... .......... .......... 93% 4.86M 0s
+  3050K .......... .......... .......... .......... .......... 94% 6.65M 0s
+  3100K .......... .......... .......... .......... .......... 96% 4.66M 0s
+  3150K .......... .......... .......... .......... .......... 97% 4.80M 0s
+  3200K .......... .......... .......... .......... .......... 99% 5.24M 0s
+  3250K .......... .......... ....                            100% 5.07M=2.4s
+
+2013-11-20 17:24:22 (1.35 MB/s) - `ocamlnet-3.7.3.tar.gz' saved [3352779/3352779]
+
+Copying ~/.opam/repo/default/packages/ocamlnet.3.7.3/files/ocamlnet.install to ~/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/
+Building ocamlnet.3.7.3:
+  ./configure -bindir /home/opam/.opam/4.02.0dev+module-aliases/bin -enable-pcre -disable-gtk2 -disable-ssl -disable-zip -disable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Welcome to Ocamlnet version 3.7.3
+Checking operating system... Linux
+Checking for findlib... found
+Checking multi-threading support... posix (ok)
+Checking word size... 64 bit
+Checking endianess... little
+Checking for GPROF... found
+Checking for PCRE... found
+Checking for win32... no
+Checking whether Ocaml has Printexc.register_printer... found
+Checking for POSIX pthread... found
+Checking whether Ocaml has fancy page tables... found
+Checking on new implementation of caml_modify... found
+Checking whether new caml_modify can be overridden... found
+Checking whether out-of-heap values are supported and mutable... yes
+Checking for POSIX shared memory... found
+Checking for POSIX semaphores (anonymous)... found
+Checking for POSIX semaphores (named)... found
+Checking for POSIX spawn... found
+Checking for POSIX fadvise... found
+Checking for POSIX fallocate... found
+Checking for POSIX memalign... found
+Checking for syslog... found
+Checking for POSIX functions like openat... found
+Checking for fchdir... found
+Checking for fdopendir... found
+Checking for realpath... found
+Checking for grantpt (System V style PTYs)... found
+Checking for posix_openpt (System V style PTYs)... found
+Checking for initgroups...found
+Checking for POSIX clocks...found
+Checking for POSIX timers...found
+Checking for eventfd (Linux)...found
+Checking for timerfd (Linux)...found
+Checking for epoll (Linux)...found
+Checking for compare_and_swap (GCC)...found
+Checking for GPROF... found
+Checking for O_SHARE_DELETE... yes
+Checking for O_CLOEXEC... yes
+Checking for getpeereid... not found
+Checking for getpeerucred... not found
+Checking whether netcamlbox and netmulticore are supported... yes
+Preprocessor for ocamlrpcgen: cpp
+
+Effective options:
+    -enable-pcre
+    -disable-full-pcre
+    -disable-gtk
+    -disable-gtk2
+    -disable-tcl
+    -disable-ssl
+    -disable-zip
+    -disable-crypto
+    -disable-apache
+    -with-nethttpd
+    -without-rpc-auth-dh
+    -bindir /home/opam/.opam/4.02.0dev+module-aliases/bin
+    -datadir /home/opam/.opam/4.02.0dev+module-aliases/lib/netstring
+    -cpp cpp
+
+Writing Makefile.conf
+
+Please check Makefile.conf.
+
+You can now compile Ocamlnet by invoking
+   make all
+for the bytecode compiler, and optionally by invoking
+   make opt
+for the native-code compiler (if supported on your architecture).
+Finally, a
+   make install
+will install the package(s).
+for pkg in netstring-pcre netsys netshm netstring equeue shell netgssapi rpc-generator rpc rpc-auth-local pop smtp netclient netcgi2 netplex netcgi2-plex netcamlbox netmulticore nethttpd nethttpd-for-netcgi2; do \
+		( cd src/$pkg && make -f Makefile.pre generate ) || exit; \
+		( cd src/$pkg && make -f Makefile.pre depend ) || exit; \
+		( cd src/$pkg && make all ) || exit; \
+	done
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring-pcre'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring-pcre'
+camlp4  pa_o.cmo pa_op.cmo pr_o.cmo \
+	    -parser Camlp4MacroParser -D ENABLE_STR_EXTERNALS -D HAVE_PCRE \
+	    -intf netstring_pcre.mlip > netstring_pcre.mli || \
+	      rm -f netstring_pcre.mli
+camlp4  pa_o.cmo pa_op.cmo pr_o.cmo \
+	    -parser Camlp4MacroParser -D ENABLE_STR_EXTERNALS -D HAVE_PCRE \
+	    -impl netstring_pcre.mlp > netstring_pcre.ml || \
+	      rm -f netstring_pcre.ml
+sed -e 's/@VERSION@/3.7.3/' \
+	    -e 's/@AUTHDHREQS@//' \
+	    -e 's/@PREFERRED_CGI_PKG@//' \
+	    -e 's/@REGEXP_PROVIDER@/str/' \
+	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+ 	    -e 's/@ZIP_PROVIDER@//' \
+		META.in >META
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring-pcre'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring-pcre'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring-pcre'
+ocamlfind ocamldep   *.ml *.mli >depend || { rm -f depend; exit 1; }
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring-pcre'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring-pcre'
+ocamlfind ocamlc -g   -package "unix pcre" -c  netstring_pcre.mli
+ocamlfind ocamlc -g   -package "unix pcre"  -c  netstring_pcre.ml
+if [ "X" = "X" ]; then \
+		ocamlfind ocamlc -g   -package "unix pcre"  -a -o netstring-pcre.cma  netstring_pcre.cmo; \
+	else \
+		../../tools/mkstublib -o netstring-pcre netstring_pcre.cmo  ; \
+	fi
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring-pcre'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+sed -e 's/@VERSION@/3.7.3/' \
+	    -e 's/@AUTHDHREQS@//' \
+	    -e 's/@PREFERRED_CGI_PKG@//' \
+	    -e 's/@REGEXP_PROVIDER@/str/' \
+	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+ 	    -e 's/@ZIP_PROVIDER@//' \
+		META.in >META
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+ocamlfind ocamldep -package "camlp4.macro" -syntax camlp4o  *.ml *.mli >depend || { rm -f depend; exit 1; }
+make[1]: *** [depend] Error 1
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+make: *** [all] Error 2
+[ERROR] The compilation of ocamlnet.3.7.3 failed.
+Removing ocamlnet.3.7.3.
+  ocamlfind remove equeue
+  ocamlfind remove netcamlbox
+  ocamlfind remove netcgi2
+  ocamlfind remove netcgi2-plex
+  ocamlfind remove netclient
+  ocamlfind remove netgssapi
+  ocamlfind remove nethttpd
+  ocamlfind remove nethttpd-for-netcgi2
+  ocamlfind remove netmulticore
+  ocamlfind remove netplex
+  ocamlfind remove netshm
+  ocamlfind remove netstring
+  ocamlfind remove netstring-pcre
+  ocamlfind remove netsys
+  ocamlfind remove pop
+  ocamlfind remove rpc
+  ocamlfind remove rpc-auth-local
+  ocamlfind remove rpc-generator
+  ocamlfind remove shell
+  ocamlfind remove smtp
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/equeue
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netcamlbox
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netcgi2
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netcgi2-plex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netclient
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netgssapi
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/nethttpd
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/nethttpd-for-netcgi2
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netmulticore
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netplex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netshm
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netstring
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netstring-pcre
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netsys
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/pop
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/rpc
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/rpc-auth-local
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/rpc-generator
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/shell
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/smtp
+
+[ERROR] Due to some errors while processing { ocamlnet.3.7.3, ulex.1.1 }, the following actions will NOT proceed:
+ - install cduce.0.5.5
+ - install pxp.1.2.3
+
+===== ERROR while installing ocamlnet.3.7.3 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/ocamlnet-404-d0f245.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/ocamlnet-404-d0f245.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/ocamlnet-404-d0f245.err
+### stdout ###
+# ...[truncated]
+# 	    -e 's/@PREFERRED_CGI_PKG@//' \
+# 	    -e 's/@REGEXP_PROVIDER@/str/' \
+# 	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+#  	    -e 's/@ZIP_PROVIDER@//' \
+# 		META.in >META
+# make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+# make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+# ocamlfind ocamldep -package "camlp4.macro" -syntax camlp4o  *.ml *.mli >depend || { rm -f depend; exit 1; }
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+### stderr ###
+# Welcome to Ocamlnet version 3.7.3
+# make[1]: *** [depend] Error 1
+# make: *** [all] Error 2
+
+
+===== ERROR while installing ulex.1.1 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/ulex.1.1
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/ulex.1.1/ulex-85-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/ulex.1.1/ulex-85-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/ulex.1.1/ulex-85-ad8886.err
+### stdout ###
+# ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma
+# ocamlfind ocamlc unix.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cma -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmo -o myocamlbuild
+# ocamlfind ocamldep -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
+# + ocamlfind ocamldep -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
+# Command exited with code 2.
+### stderr ###
+# make: *** [all] Error 10
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+module-aliases/backup/state-20131020172406.export"
+'opam install cduce' failed.
