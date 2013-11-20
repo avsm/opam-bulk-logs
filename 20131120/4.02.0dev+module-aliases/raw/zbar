@@ -1,0 +1,10 @@
+++ opam install zbar -e ubuntu
+[ERROR] zbar is not a valid versioned package name
+'opam install zbar -e ubuntu' failed.
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install zbar
+Ubuntu depexts:
+[ERROR] zbar is not a valid versioned package name
+'opam install zbar' failed.
