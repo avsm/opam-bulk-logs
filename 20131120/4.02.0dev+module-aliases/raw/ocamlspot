@@ -1,0 +1,10 @@
+++ opam install ocamlspot -e ubuntu
+[ERROR] "ocamlspot" is not available for your compiler or your OS.
+'opam install ocamlspot -e ubuntu' failed.
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocamlspot
+Ubuntu depexts:
+[ERROR] "ocamlspot" is not available for your compiler or your OS.
+'opam install ocamlspot' failed.
