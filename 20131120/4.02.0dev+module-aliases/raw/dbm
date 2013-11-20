@@ -1,0 +1,89 @@
+++ opam install dbm -e ubuntu
++ depext=libgdbm-dev
++ echo Ubuntu depexts: libgdbm-dev
++ '[' libgdbm-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libgdbm-dev
++ sudo apt-get install -qq -y libgdbm-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libgdbm-dev.
+(Reading database ... 20462 files and directories currently installed.)
+Unpacking libgdbm-dev (from .../libgdbm-dev_1.8.3-10_amd64.deb) ...
+Setting up libgdbm-dev (1.8.3-10) ...
++ opam install dbm
+The following actions will be performed:
+ - install dbm.1.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing dbm.1.0 =-=-=
+dbm.1.0    Downloading https://forge.ocamlcore.org/frs/download.php/728/camldbm-1.0.tgz
+--2013-11-20 17:44:52--  https://forge.ocamlcore.org/frs/download.php/728/camldbm-1.0.tgz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:443... connected.
+WARNING: no certificate subject alternative name matches
+	requested host name `forge.ocamlcore.org'.
+HTTP request sent, awaiting response... 200 OK
+Length: 14397 (14K) [application/binary]
+Saving to: `camldbm-1.0.tgz'
+
+     0K .......... ....                                       100%  147K=0.1s
+
+2013-11-20 17:44:53 (147 KB/s) - `camldbm-1.0.tgz' saved [14397/14397]
+
+Copying ~/.opam/repo/default/packages/dbm.1.0/files/include_fix.patch to ~/.opam/4.02.0dev+module-aliases/build/dbm.1.0/
+Copying ~/.opam/repo/default/packages/dbm.1.0/files/hasgotfix.patch to ~/.opam/4.02.0dev+module-aliases/build/dbm.1.0/
+Applying hasgotfix.patch.
+patching file configure
+Applying include_fix.patch.
+patching file Makefile
+Building dbm.1.0:
+  mkdir -p /home/opam/.opam/4.02.0dev+module-aliases/lib/dbm
+  ./configure
+  make all
+  make test
+  make install STUBLIBDIR=/home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs LIBDIR=/home/opam/.opam/4.02.0dev+module-aliases/lib/dbm
+  cp META /home/opam/.opam/4.02.0dev+module-aliases/lib/dbm
+Configuring for OCaml version 4.02.0+dev2-2013-09-12
+
+Configuration for the "camldbm" library:
+        headers found in ......... /usr/include
+        options for compiling .... -DDBM_USES_GDBM_NDBM
+        options for linking ...... -lgdbm_compat -lgdbm
+
+Configuration successful
+
+ocamlc -c -ccopt "" -ccopt "-DDBM_USES_GDBM_NDBM" cldbm.c
+ocamlmklib -oc camldbm cldbm.o -lgdbm_compat -lgdbm
+ocamlc -c  dbm.mli
+ocamlc -c  dbm.ml
+ocamlmklib -o dbm -oc camldbm -linkall dbm.cmo -lgdbm_compat -lgdbm
+ocamlopt -c  dbm.ml
+ocamlmklib -o dbm -oc camldbm -linkall dbm.cmx -lgdbm_compat -lgdbm
+ocamlopt -shared -o dbm.cmxs -I . dbm.cmxa
+ocamlc -o testdbm.byte dbm.cma testdbm.ml
+ocamlopt -ccopt -L. -o testdbm.opt dbm.cmxa testdbm.ml
+rm -f testdatabase.*
+ocamlrun -I . ./testdbm.byte
+key 'one' -> data 'un'
+key 'three' -> data 'trois'
+key 'two' -> data 'deux'
+rm -f testdatabase.*
+./testdbm.opt
+key 'one' -> data 'un'
+key 'three' -> data 'trois'
+key 'two' -> data 'deux'
+rm -f testdatabase.*
+if test -f dllcamldbm.so; then cp dllcamldbm.so /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs/; fi 
+cp libcamldbm.a /home/opam/.opam/4.02.0dev+module-aliases/lib/dbm/
+cd /home/opam/.opam/4.02.0dev+module-aliases/lib/dbm && ranlib libcamldbm.a
+cp dbm.cma dbm.cmxa dbm.cmi dbm.mli /home/opam/.opam/4.02.0dev+module-aliases/lib/dbm/
+cp dbm.a /home/opam/.opam/4.02.0dev+module-aliases/lib/dbm/
+cd /home/opam/.opam/4.02.0dev+module-aliases/lib/dbm && ranlib dbm.a
+if test -f dbm.cmxs; then cp dbm.cmxs /home/opam/.opam/4.02.0dev+module-aliases/lib/dbm/; fi
+Installing dbm.1.0.
