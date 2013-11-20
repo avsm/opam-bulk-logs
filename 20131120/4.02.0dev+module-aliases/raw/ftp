@@ -1,0 +1,108 @@
+++ opam install ftp -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ftp
+Ubuntu depexts:
+The following actions will be performed:
+ - install ftp.0.1.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ftp.0.1.0 =-=-=
+ftp.0.1.0  Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ftp/0.1.0/ocaml-ftp-0.1.0.tar.gz
+--2013-11-20 18:04:19--  http://downloads.sourceforge.net/project/savonet/ocaml-ftp/0.1.0/ocaml-ftp-0.1.0.tar.gz
+Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 216.34.181.59
+Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://heanet.dl.sourceforge.net/project/savonet/ocaml-ftp/0.1.0/ocaml-ftp-0.1.0.tar.gz [following]
+--2013-11-20 18:04:19--  http://heanet.dl.sourceforge.net/project/savonet/ocaml-ftp/0.1.0/ocaml-ftp-0.1.0.tar.gz
+Resolving heanet.dl.sourceforge.net (heanet.dl.sourceforge.net)... 193.1.193.66, 2001:770:18:aa40::c101:c142
+Connecting to heanet.dl.sourceforge.net (heanet.dl.sourceforge.net)|193.1.193.66|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 50094 (49K) [application/x-gzip]
+Saving to: `ocaml-ftp-0.1.0.tar.gz'
+
+     0K .......... .......... .......... .......... ........  100%  138K=0.4s
+
+2013-11-20 18:04:20 (138 KB/s) - `ocaml-ftp-0.1.0.tar.gz' saved [50094/50094]
+
+Building ftp.0.1.0:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  make
+  make install
+ configuring ocaml-ftp 0.1.0
+checking for ocamlc... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc
+ocaml version is 4.02.0+dev2-2013-09-12
+ocaml library path is /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+checking for ocamlopt... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt
+checking ocamlopt version... ok
+checking for ocamlc.opt... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+checking ocamlc.opt version... ok
+checking for ocamlopt.opt... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+checking ocamlc.opt version... ok
+checking for ocamldep... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep
+checking for ocamllex... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamllex
+checking for ocamlyacc... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlyacc
+checking for ocamldoc... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+checking for ocamlmktop... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlmktop
+checking for ocamlfind... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+checking for latex... no
+checking for dvips... no
+checking for ps2pdf... no
+configure: creating ./config.status
+config.status: creating src/Makefile
+config.status: creating src/META
+make -C src all
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+making ._bcdi/ftp.di from ftp.mli
+making ._d/ftp.d from ftp.ml
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -c ftp.mli
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -c ftp.ml
+File "ftp.ml", line 244, characters 9-10:
+Warning 26: unused variable s.
+File "ftp.ml", line 244, characters 6-7:
+Warning 26: unused variable n.
+File "ftp.ml", line 335, characters 8-11:
+Warning 26: unused variable len.
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -a             unix.cma str.cma \
+				  -o ftp.cma  ftp.cmo
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+making ._ncdi/ftp.di from ftp.mli
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -c ftp.ml
+File "ftp.ml", line 244, characters 9-10:
+Warning 26: unused variable s.
+File "ftp.ml", line 244, characters 6-7:
+Warning 26: unused variable n.
+File "ftp.ml", line 335, characters 8-11:
+Warning 26: unused variable len.
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -a                \
+				 -o ftp.cmxa ftp.cmx
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+make -C src install
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+make[2]: `ftp.cma' is up to date.
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+make[2]: `ftp.cmxa' is up to date.
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+
+Installing library with ocamlfind
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind install  ftp META ftp.mli ftp.cmi ftp.cma ftp.cmxa ftp.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ftp/ftp.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ftp/ftp.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ftp/ftp.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ftp/ftp.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ftp/ftp.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ftp/META
+
+Installation successful.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ftp.0.1.0/src'
+Installing ftp.0.1.0.
