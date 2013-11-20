@@ -1,0 +1,50 @@
+++ opam install odepack -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install odepack
+Ubuntu depexts:
+The following actions will be performed:
+ - install odepack.0.6.4
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing odepack.0.6.4 =-=-=
+odepack.0.6.4 Downloading http://oasis.ocamlcore.org/dev/dist/odepack/0.6.4/odepack-0.6.4.tar.gz
+--2013-11-20 19:53:59--  http://oasis.ocamlcore.org/dev/dist/odepack/0.6.4/odepack-0.6.4.tar.gz
+Resolving oasis.ocamlcore.org (oasis.ocamlcore.org)... 87.98.154.45
+Connecting to oasis.ocamlcore.org (oasis.ocamlcore.org)|87.98.154.45|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 50443 (49K) [application/octet-stream]
+Saving to: `odepack-0.6.4.tar.gz'
+
+     0K .......... .......... .......... .......... ......... 100%  164K=0.3s
+
+2013-11-20 19:54:00 (164 KB/s) - `odepack-0.6.4.tar.gz' saved [50443/50443]
+
+Building odepack.0.6.4:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Please install one of these fortran compilers: gfortran, g95, g77, f77.
+If you use a different compiler, send its name to the author (see _oasis file).
+[ERROR] The compilation of odepack.0.6.4 failed.
+Removing odepack.0.6.4.
+  ocamlfind remove odepack
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/odepack
+
+
+===== ERROR while installing odepack.0.6.4 =====
+# opam-version         1.1.0
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/odepack.0.6.4
+# compiler             4.02.0dev+module-aliases
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/odepack.0.6.4/odepack-18-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/odepack.0.6.4/odepack-18-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/odepack.0.6.4/odepack-18-d2d111.err
+### stdout ###
+# Please install one of these fortran compilers: gfortran, g95, g77, f77.
+# If you use a different compiler, send its name to the author (see _oasis file).
+
+'opam install odepack' failed.
