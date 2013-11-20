@@ -1,0 +1,67 @@
+++ opam install mpi -e ubuntu
++ depext=mpi-default-dev
+Ubuntu depexts: mpi-default-dev
++ echo Ubuntu depexts: mpi-default-dev
++ '[' mpi-default-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y mpi-default-dev
+E: Unable to locate package mpi-default-dev
++ opam install mpi
+The following actions will be performed:
+ - install mpi.1.01
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing mpi.1.01 =-=-=
+mpi.1.01   Downloading https://github.com/HappyCrow/ocamlmpi/archive/opam_package_v00.tar.gz
+--2013-11-20 19:24:15--  https://github.com/HappyCrow/ocamlmpi/archive/opam_package_v00.tar.gz
+Resolving github.com (github.com)... 192.30.252.131
+Connecting to github.com (github.com)|192.30.252.131|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://github.com/UnixJunkie/ocamlmpi/archive/opam_package_v00.tar.gz [following]
+--2013-11-20 19:24:15--  https://github.com/UnixJunkie/ocamlmpi/archive/opam_package_v00.tar.gz
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/UnixJunkie/ocamlmpi/tar.gz/opam_package_v00 [following]
+--2013-11-20 19:24:15--  https://codeload.github.com/UnixJunkie/ocamlmpi/tar.gz/opam_package_v00
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.145
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.145|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `ocamlmpi-opam_package_v00.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 1.45M
+    50K .......                                                44.5M=0.03s
+
+2013-11-20 19:24:15 (1.67 MB/s) - `ocamlmpi-opam_package_v00.tar.gz' saved [59244]
+
+Building mpi.1.01:
+  make all
+  make opt
+  make install
+/usr/bin/mpicc.openmpi -I`ocamlc -where` -I/usr/lib/openmpi/include -O2 -g -Wall   -c -o init.o init.c
+/bin/sh: 1: /usr/bin/mpicc.openmpi: not found
+make: *** [init.o] Error 127
+[ERROR] The compilation of mpi.1.01 failed.
+Removing mpi.1.01.
+  make uninstall
+ocamlfind remove mpi
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/mpi
+
+
+===== ERROR while installing mpi.1.01 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/mpi.1.01
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/mpi.1.01/mpi-30-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/mpi.1.01/mpi-30-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/mpi.1.01/mpi-30-d2d111.err
+### stdout ###
+# /usr/bin/mpicc.openmpi -I`ocamlc -where` -I/usr/lib/openmpi/include -O2 -g -Wall   -c -o init.o init.c
+### stderr ###
+# /bin/sh: 1: /usr/bin/mpicc.openmpi: not found
+# make: *** [init.o] Error 127
+
+'opam install mpi' failed.
