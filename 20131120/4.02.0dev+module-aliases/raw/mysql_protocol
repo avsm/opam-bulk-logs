@@ -1,0 +1,316 @@
+++ opam install mysql_protocol -e ubuntu
++ depext='time zlib1g-dev'
++ echo Ubuntu depexts: time zlib1g-dev
++ '[' 'time zlib1g-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: time zlib1g-dev
++ sudo apt-get install -qq -y time zlib1g-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package time.
+(Reading database ... 20462 files and directories currently installed.)
+Unpacking time (from .../time_1.7-23.1_amd64.deb) ...
+Selecting previously unselected package zlib1g-dev.
+Unpacking zlib1g-dev (from .../zlib1g-dev_1%3a1.2.3.4.dfsg-3ubuntu4_amd64.deb) ...
+Setting up time (1.7-23.1) ...
+install-info: warning: maintainer scripts should not call install-info anymore,
+install-info: warning: this is handled now by a dpkg trigger provided by the
+install-info: warning: install-info package; package time should be updated.
+Setting up zlib1g-dev (1:1.2.3.4.dfsg-3ubuntu4) ...
++ opam install mysql_protocol
+The following actions will be performed:
+ - install cryptokit.1.9 [required by mysql_protocol]
+ - install bitstring.2.0.4 [required by mysql_protocol]
+ - install mysql_protocol.0.9
+3 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing bitstring.2.0.4 =-=-=
+bitstring.2.0.4 Downloading http://bitstring.googlecode.com/files/ocaml-bitstring-2.0.4.tar.gz
+--2013-11-20 19:25:11--  http://bitstring.googlecode.com/files/ocaml-bitstring-2.0.4.tar.gz
+Resolving bitstring.googlecode.com (bitstring.googlecode.com)... 74.125.193.82, 2607:f8b0:4001:c05::52
+Connecting to bitstring.googlecode.com (bitstring.googlecode.com)|74.125.193.82|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 163346 (160K) [application/x-gzip]
+Saving to: `ocaml-bitstring-2.0.4.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 31% 1.91M 0s
+    50K .......... .......... .......... .......... .......... 62% 3.84M 0s
+   100K .......... .......... .......... .......... .......... 94% 3.82M 0s
+   150K .........                                             100%  123M=0.05s
+
+2013-11-20 19:25:12 (3.05 MB/s) - `ocaml-bitstring-2.0.4.tar.gz' saved [163346/163346]
+
+Building bitstring.2.0.4:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  make srcdir=./
+  make install
+checking for a sed that does not truncate output... /bin/sed
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for a BSD-compatible install... /usr/bin/install -c
+checking how to run the C preprocessor... gcc -E
+checking for function prototypes... yes
+checking whether gcc and cc understand -c and -o together... yes
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking byteswap.h usability... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking for ocamlc... ocamlc
+OCaml version is 4.02.0+dev2-2013-09-12
+OCaml library path is /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+checking for ocamlfind... ocamlfind
+checking for camlp4of.opt... camlp4of.opt
+checking for OCaml findlib package extlib... not found
+checking for OCaml findlib package cil... not found
+checking for time... /usr/bin/time
+checking for diff... /usr/bin/diff
+checking for gprof... gprof
+checking for bisect-report... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating META
+config.status: creating bitstring_config.ml
+config.status: creating cil-tools/Makefile
+config.status: creating config.h
+ocamlfind ocamlc -g  -c bitstring_types.ml
+ocamlfind ocamlc -g  -c bitstring_config.ml
+gcc -g -O2 -Wall -Werror -fPIC -I. -I/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml   -c -o bitstring_c.o bitstring_c.c
+ocamlfind ocamlc -g  -c bitstring.mli
+ocamlfind ocamlc -g  -c bitstring.ml
+ocamlfind ocamlc -g  -c bitmatch.ml
+ocamlmklib -o bitstring bitstring_types.cmo bitstring_config.cmo bitstring_c.o bitstring.cmo bitmatch.cmo
+ocamlfind ocamlc -g  \
+	  -I +camlp4 -pp camlp4of -c bitstring_persistent.mli
+ocamlc.opt got signal and exited
+make: *** [bitstring_persistent.cmi] Error 2
+[ERROR] The compilation of bitstring.2.0.4 failed.
+Removing bitstring.2.0.4.
+  ocamlfind remove bitstring
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/bitstring
+
+=-=-= Installing cryptokit.1.9 =-=-=
+cryptokit.1.9 Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+--2013-11-20 19:25:16--  https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:443... connected.
+WARNING: no certificate subject alternative name matches
+	requested host name `forge.ocamlcore.org'.
+HTTP request sent, awaiting response... 200 OK
+Length: 143494 (140K) [application/binary]
+Saving to: `cryptokit-1.9.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 35%  130K 1s
+    50K .......... .......... .......... .......... .......... 71%  518K 0s
+   100K .......... .......... .......... ..........           100% 15.9M=0.5s
+
+2013-11-20 19:25:17 (290 KB/s) - `cryptokit-1.9.tar.gz' saved [143494/143494]
+
+Building cryptokit.1.9:
+  make
+  make install
+ocaml setup.ml -configure 
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ cryptokit
+Package version: ..................................... 1.9
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Define include path for zlib.: ....................... 
+Define library path for zlib.: ....................... 
+Enable ZLib: ......................................... true
+Build and run benchmark: ............................. false
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_num: ............................................. /home/opam/.opam/4.02.0dev+module-aliases/lib/num
+
+ocaml setup.ml -build -classic-display
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/arcfour.c
+mv arcfour.o src/arcfour.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-arcfour.c
+mv stubs-arcfour.o src/stubs-arcfour.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/blowfish.c
+mv blowfish.o src/blowfish.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-blowfish.c
+mv stubs-blowfish.o src/stubs-blowfish.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/d3des.c
+mv d3des.o src/d3des.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-des.c
+mv stubs-des.o src/stubs-des.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/rijndael-alg-fst.c
+mv rijndael-alg-fst.o src/rijndael-alg-fst.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/ripemd160.c
+mv ripemd160.o src/ripemd160.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-ripemd160.c
+mv stubs-ripemd160.o src/stubs-ripemd160.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/sha1.c
+mv sha1.o src/sha1.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-sha1.c
+mv stubs-sha1.o src/stubs-sha1.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/sha256.c
+mv sha256.o src/sha256.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-sha256.c
+mv stubs-sha256.o src/stubs-sha256.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-aes.c
+mv stubs-aes.o src/stubs-aes.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-md5.c
+mv stubs-md5.o src/stubs-md5.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-misc.c
+mv stubs-misc.o src/stubs-misc.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-rng.c
+mv stubs-rng.o src/stubs-rng.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
++ ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
+src/stubs-zlib.c: In function 'caml_zlib_deflate':
+src/stubs-zlib.c:98:15: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+src/stubs-zlib.c:100:16: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+src/stubs-zlib.c: In function 'caml_zlib_inflate':
+src/stubs-zlib.c:143:15: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+src/stubs-zlib.c:145:16: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+mv stubs-zlib.o src/stubs-zlib.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/keccak.c
+mv keccak.o src/keccak.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-sha3.c
+mv stubs-sha3.o src/stubs-sha3.o
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlmklib -o src/cryptokit_stubs -lz src/arcfour.o src/stubs-arcfour.o src/blowfish.o src/stubs-blowfish.o src/d3des.o src/stubs-des.o src/rijndael-alg-fst.o src/ripemd160.o src/stubs-ripemd160.o src/sha1.o src/stubs-sha1.o src/sha256.o src/stubs-sha256.o src/stubs-aes.o src/stubs-md5.o src/stubs-misc.o src/stubs-rng.o src/stubs-zlib.o src/keccak.o src/stubs-sha3.o
+ocamlfind ocamldep -package num -package unix -modules src/cryptokit.mli > src/cryptokit.mli.depends
+ocamlfind ocamlc -c -g -ccopt -O -ccopt -DHAVE_ZLIB -package num -package unix -I src -o src/cryptokit.cmi src/cryptokit.mli
+ocamlfind ocamldep -package num -package unix -modules src/cryptokit.ml > src/cryptokit.ml.depends
+ocamlfind ocamlc -c -g -ccopt -O -ccopt -DHAVE_ZLIB -package num -package unix -I src -o src/cryptokit.cmo src/cryptokit.ml
++ ocamlfind ocamlc -c -g -ccopt -O -ccopt -DHAVE_ZLIB -package num -package unix -I src -o src/cryptokit.cmo src/cryptokit.ml
+File "src/cryptokit.ml", line 1930, characters 19-21:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlc -a -dllib -lcryptokit_stubs -cclib -lcryptokit_stubs -cclib -lz src/cryptokit.cmo -o src/cryptokit.cma
+ocamlfind ocamlopt -c -g -ccopt -O -ccopt -DHAVE_ZLIB -package num -package unix -I src -o src/cryptokit.cmx src/cryptokit.ml
++ ocamlfind ocamlopt -c -g -ccopt -O -ccopt -DHAVE_ZLIB -package num -package unix -I src -o src/cryptokit.cmx src/cryptokit.ml
+File "src/cryptokit.ml", line 1930, characters 19-21:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlopt -a -cclib -lcryptokit_stubs -cclib -lz src/cryptokit.cmx -o src/cryptokit.cmxa
+ocamlfind ocamlopt -shared -cclib -lcryptokit_stubs -I src src/cryptokit.cmx -o src/cryptokit.cmxs
+ocaml setup.ml -install 
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cryptokit/cryptokit.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cryptokit/libcryptokit_stubs.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cryptokit/cryptokit.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cryptokit/cryptokit.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cryptokit/cryptokit.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cryptokit/cryptokit.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cryptokit/cryptokit.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cryptokit/cryptokit.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cryptokit/META
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs/dllcryptokit_stubs.so
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs/dllcryptokit_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs is not mentioned in ld.conf
+Installing cryptokit.1.9.
+
+[ERROR] Due to some errors while processing bitstring.2.0.4, the following actions will NOT proceed:
+ - install mysql_protocol.0.9
+
+===== ERROR while installing bitstring.2.0.4 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make srcdir=./
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/bitstring.2.0.4
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/bitstring.2.0.4/bitstring-70-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/bitstring.2.0.4/bitstring-70-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/bitstring.2.0.4/bitstring-70-d2d111.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlc -g  -c bitstring_types.ml
+# ocamlfind ocamlc -g  -c bitstring_config.ml
+# gcc -g -O2 -Wall -Werror -fPIC -I. -I/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml   -c -o bitstring_c.o bitstring_c.c
+# ocamlfind ocamlc -g  -c bitstring.mli
+# ocamlfind ocamlc -g  -c bitstring.ml
+# ocamlfind ocamlc -g  -c bitmatch.ml
+# ocamlmklib -o bitstring bitstring_types.cmo bitstring_config.cmo bitstring_c.o bitstring.cmo bitmatch.cmo
+# ocamlfind ocamlc -g  \
+# 	  -I +camlp4 -pp camlp4of -c bitstring_persistent.mli
+# ocamlc.opt got signal and exited
+### stderr ###
+# make: *** [bitstring_persistent.cmi] Error 2
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+module-aliases/backup/state-20131020192509.export"
+'opam install mysql_protocol' failed.
