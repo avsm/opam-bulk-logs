@@ -1,0 +1,140 @@
+++ opam install biniou -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install biniou
+The following actions will be performed:
+ - install easy-format.1.0.1 [required by biniou]
+ - install biniou.1.0.6
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing easy-format.1.0.1 =-=-=
+easy-format.1.0.1 Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.1.tar.gz
+--2013-11-20 17:12:21--  http://mjambon.com/releases/easy-format/easy-format-1.0.1.tar.gz
+Resolving mjambon.com (mjambon.com)... 173.246.103.93
+Connecting to mjambon.com (mjambon.com)|173.246.103.93|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13747 (13K) [application/octet-stream]
+Saving to: `easy-format-1.0.1.tar.gz'
+
+     0K .......... ...                                        100%  313K=0.04s
+
+2013-11-20 17:12:21 (313 KB/s) - `easy-format-1.0.1.tar.gz' saved [13747/13747]
+
+Copying ~/.opam/repo/default/packages/easy-format.1.0.1/files/meta-tpl.diff to ~/.opam/4.02.0dev+module-aliases/build/easy-format.1.0.1/
+Copying ~/.opam/repo/default/packages/easy-format.1.0.1/files/easy-format-make.diff to ~/.opam/4.02.0dev+module-aliases/build/easy-format.1.0.1/
+Applying easy-format-make.diff.
+patching file Makefile
+Hunk #1 succeeded at 6 with fuzz 1.
+Applying meta-tpl.diff.
+patching file META.tpl
+Building easy-format.1.0.1:
+  make
+  make install
+ocamlc -c easy_format.mli
+ocamlc -c -dtypes easy_format.ml
+ocamlmklib -o easy_format easy_format.cmo
+touch bytecode
+ocamlc -c easy_format.mli
+ocamlopt -c -dtypes easy_format.ml
+ocamlmklib -o easy_format easy_format.cmx
+ocamlopt -I . -shared -linkall -o easy_format.cmxs easy_format.cmx
+touch nativecode
+echo "version = \"1.0.1\"" > META; cat META.tpl >> META
+INSTALL_FILES="META easy_format.cmi easy_format.mli"; \
+		if test -f bytecode; then \
+		  INSTALL_FILES="$INSTALL_FILES easy_format.cmo easy_format.cma"; \
+		fi; \
+		if test -f nativecode; then \
+		  INSTALL_FILES="$INSTALL_FILES easy_format.cmx easy_format.cmxa easy_format.cmxs easy_format.o easy_format.a"; \
+		fi; \
+		ocamlfind install easy-format $INSTALL_FILES
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/META
+Installing easy-format.1.0.1.
+
+=-=-= Installing biniou.1.0.6 =-=-=
+biniou.1.0.6 Downloading http://mjambon.com/releases/biniou/biniou-1.0.6.tar.gz
+--2013-11-20 17:12:24--  http://mjambon.com/releases/biniou/biniou-1.0.6.tar.gz
+Resolving mjambon.com (mjambon.com)... 173.246.103.93
+Connecting to mjambon.com (mjambon.com)|173.246.103.93|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 23676 (23K) [application/octet-stream]
+Saving to: `biniou-1.0.6.tar.gz'
+
+     0K .......... .......... ...                             100%  531K=0.04s
+
+2013-11-20 17:12:24 (531 KB/s) - `biniou-1.0.6.tar.gz' saved [23676/23676]
+
+Copying ~/.opam/repo/default/packages/biniou.1.0.6/files/biniou.install to ~/.opam/4.02.0dev+module-aliases/build/biniou.1.0.6/
+Building biniou.1.0.6:
+  make
+  make install
+ocamlfind ocamlc -a -dtypes -g -o biniou.cma \
+		-package "easy-format" bi_util.mli bi_util.ml bi_share.mli bi_share.ml bi_outbuf.mli bi_outbuf.ml bi_inbuf.mli bi_inbuf.ml bi_vint.mli bi_vint.ml bi_io.mli bi_io.ml bi_dump.ml bi_stream.mli bi_stream.ml
+ocamlfind ocamlopt -a -dtypes -g \
+		-o biniou.cmxa -package "easy-format" bi_util.mli bi_util.ml bi_share.mli bi_share.ml bi_outbuf.mli bi_outbuf.ml bi_inbuf.mli bi_inbuf.ml bi_vint.mli bi_vint.ml bi_io.mli bi_io.ml bi_dump.ml bi_stream.mli bi_stream.ml
+ocamlfind ocamlopt -o bdump -dtypes -g \
+		-package easy-format -linkpkg \
+		biniou.cmxa bdump.ml
+ocamlfind ocamlopt -o test_biniou -dtypes -g \
+		-package "easy-format unix" -linkpkg \
+		biniou.cmxa test_biniou.ml
+sed -e 's:@@VERSION@@:1.0.5:' META.in > META
+test ! -f bdump || cp bdump /home/opam/.opam/4.02.0dev+module-aliases/bin/
+test ! -f bdump.exe || cp bdump.exe /home/opam/.opam/4.02.0dev+module-aliases/bin/
+ocamlfind install biniou META \
+          $(ls bi_util.mli bi_share.mli bi_outbuf.mli bi_inbuf.mli bi_vint.mli bi_io.mli bi_stream.mli bi_util.cmi bi_share.cmi bi_outbuf.cmi bi_inbuf.cmi bi_vint.cmi bi_io.cmi bi_dump.cmi bi_stream.cmi bi_util.cmo bi_share.cmo bi_outbuf.cmo bi_inbuf.cmo bi_vint.cmo bi_io.cmo bi_dump.cmo bi_stream.cmo bi_util.cmx bi_share.cmx bi_outbuf.cmx bi_inbuf.cmx bi_vint.cmx bi_io.cmx bi_dump.cmx bi_stream.cmx bi_util.o bi_share.o bi_outbuf.o bi_inbuf.o bi_vint.o bi_io.o bi_dump.o bi_stream.o biniou.cma biniou.cmxa biniou.a)
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/biniou.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/biniou.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/biniou.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_vint.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_vint.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_vint.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_vint.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_vint.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_util.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_util.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_util.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_util.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_util.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_stream.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_stream.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_stream.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_stream.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_stream.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_share.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_share.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_share.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_share.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_share.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_outbuf.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_outbuf.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_outbuf.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_outbuf.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_outbuf.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_io.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_io.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_io.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_io.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_io.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_inbuf.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_inbuf.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_inbuf.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_inbuf.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_inbuf.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_dump.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_dump.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_dump.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_dump.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/META
+Installing biniou.1.0.6.
