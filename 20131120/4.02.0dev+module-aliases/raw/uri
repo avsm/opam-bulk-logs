@@ -1,0 +1,408 @@
+++ opam install uri -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install uri
+The following actions will be performed:
+ - install re.1.2.1 [required by uri]
+ - install uri.1.3.11
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing re.1.2.1 =-=-=
+re.1.2.1   Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.1.tar.gz
+--2013-11-20 21:01:31--  https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.1.tar.gz
+Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/ocaml/ocaml-re/tar.gz/ocaml-re-1.2.1 [following]
+--2013-11-20 21:01:31--  https://codeload.github.com/ocaml/ocaml-re/tar.gz/ocaml-re-1.2.1
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.147
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 83108 (81K) [application/x-gzip]
+Saving to: `ocaml-re-ocaml-re-1.2.1.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 61%  993K 0s
+    50K .......... .......... .......... .                    100% 93.7M=0.05s
+
+2013-11-20 21:01:31 (1.56 MB/s) - `ocaml-re-ocaml-re-1.2.1.tar.gz' saved [83108/83108]
+
+Copying ~/.opam/repo/default/packages/re.1.2.1/files/re.install to ~/.opam/4.02.0dev+module-aliases/build/re.1.2.1/
+Copying ~/.opam/repo/default/packages/re.1.2.1/files/re.config.in to ~/.opam/4.02.0dev+module-aliases/build/re.1.2.1/
+Building re.1.2.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ re
+Package version: ..................................... 1.2.1
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+module-aliases
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -modules lib/re.mli > lib/re.mli.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re.cmi lib/re.mli
+ocamlfind ocamldep -modules lib/re.ml > lib/re.ml.depends
+ocamlfind ocamldep -modules lib/automata.mli > lib/automata.mli.depends
+ocamlfind ocamldep -modules lib/cset.mli > lib/cset.mli.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/cset.cmi lib/cset.mli
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/automata.cmi lib/automata.mli
+ocamlfind ocamldep -modules lib/cset.ml > lib/cset.ml.depends
+ocamlfind ocamldep -modules lib/automata.ml > lib/automata.ml.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re.cmo lib/re.ml
++ ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re.cmo lib/re.ml
+File "lib/re.ml", line 461, characters 21-30:
+Warning 12: this sub-pattern is unused.
+File "lib/re.ml", line 889, characters 16-45:
+Warning 26: unused variable m.
+File "lib/re.ml", line 903, characters 12-41:
+Warning 26: unused variable m.
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/cset.cmo lib/cset.ml
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/automata.cmo lib/automata.ml
++ ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/automata.cmo lib/automata.ml
+File "lib/automata.ml", line 95, characters 4-21:
+Warning 26: unused variable x.
+File "lib/automata.ml", line 306, characters 4-17:
+Warning 26: unused variable x.
+ocamlfind ocamlc -a lib/cset.cmo lib/automata.cmo lib/re.cmo -o lib/re.cma
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/cset.cmx lib/cset.ml
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/automata.cmx lib/automata.ml
++ ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/automata.cmx lib/automata.ml
+File "lib/automata.ml", line 95, characters 4-21:
+Warning 26: unused variable x.
+File "lib/automata.ml", line 306, characters 4-17:
+Warning 26: unused variable x.
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re.cmx lib/re.ml
++ ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re.cmx lib/re.ml
+File "lib/re.ml", line 461, characters 21-30:
+Warning 12: this sub-pattern is unused.
+File "lib/re.ml", line 889, characters 16-45:
+Warning 26: unused variable m.
+File "lib/re.ml", line 903, characters 12-41:
+Warning 26: unused variable m.
+ocamlfind ocamlopt -a lib/cset.cmx lib/automata.cmx lib/re.cmx -o lib/re.cmxa
+ocamlfind ocamlopt -shared lib/re.cmx -o lib/re.cmxs
+ocamlfind ocamldep -modules lib/re_emacs.mli > lib/re_emacs.mli.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_emacs.cmi lib/re_emacs.mli
+ocamlfind ocamldep -modules lib/re_emacs.ml > lib/re_emacs.ml.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_emacs.cmo lib/re_emacs.ml
++ ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_emacs.cmo lib/re_emacs.ml
+File "lib/re_emacs.ml", line 34, characters 6-11:
+Warning 26: unused variable unget.
+ocamlfind ocamlc -a lib/re_emacs.cmo -o lib/re_emacs.cma
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_emacs.cmx lib/re_emacs.ml
++ ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_emacs.cmx lib/re_emacs.ml
+File "lib/re_emacs.ml", line 34, characters 6-11:
+Warning 26: unused variable unget.
+ocamlfind ocamlopt -a lib/re_emacs.cmx -o lib/re_emacs.cmxa
+ocamlfind ocamlopt -shared lib/re_emacs.cmx -o lib/re_emacs.cmxs
+ocamlfind ocamldep -modules lib/re_str.mli > lib/re_str.mli.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_str.cmi lib/re_str.mli
+ocamlfind ocamldep -modules lib/re_str.ml > lib/re_str.ml.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_str.cmo lib/re_str.ml
+ocamlfind ocamlc -a lib/re_str.cmo -o lib/re_str.cma
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_str.cmx lib/re_str.ml
+ocamlfind ocamlopt -a lib/re_str.cmx -o lib/re_str.cmxa
+ocamlfind ocamlopt -shared lib/re_str.cmx -o lib/re_str.cmxs
+ocamlfind ocamldep -modules lib/re_posix.mli > lib/re_posix.mli.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_posix.cmi lib/re_posix.mli
+ocamlfind ocamldep -modules lib/re_posix.ml > lib/re_posix.ml.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_posix.cmo lib/re_posix.ml
+ocamlfind ocamlc -a lib/re_posix.cmo -o lib/re_posix.cma
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_posix.cmx lib/re_posix.ml
+ocamlfind ocamlopt -a lib/re_posix.cmx -o lib/re_posix.cmxa
+ocamlfind ocamlopt -shared lib/re_posix.cmx -o lib/re_posix.cmxs
+ocamlfind ocamldep -modules lib/re_glob.mli > lib/re_glob.mli.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_glob.cmi lib/re_glob.mli
+ocamlfind ocamldep -modules lib/re_glob.ml > lib/re_glob.ml.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_glob.cmo lib/re_glob.ml
++ ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_glob.cmo lib/re_glob.ml
+File "lib/re_glob.ml", line 43, characters 6-11:
+Warning 26: unused variable unget.
+File "lib/re_glob.ml", line 67, characters 10-14:
+Warning 26: unused variable mask.
+ocamlfind ocamlc -a lib/re_glob.cmo -o lib/re_glob.cma
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_glob.cmx lib/re_glob.ml
++ ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_glob.cmx lib/re_glob.ml
+File "lib/re_glob.ml", line 43, characters 6-11:
+Warning 26: unused variable unget.
+File "lib/re_glob.ml", line 67, characters 10-14:
+Warning 26: unused variable mask.
+ocamlfind ocamlopt -a lib/re_glob.cmx -o lib/re_glob.cmxa
+ocamlfind ocamlopt -shared lib/re_glob.cmx -o lib/re_glob.cmxs
+ocamlfind ocamldep -modules lib/re_perl.mli > lib/re_perl.mli.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_perl.cmi lib/re_perl.mli
+ocamlfind ocamldep -modules lib/re_perl.ml > lib/re_perl.ml.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_perl.cmo lib/re_perl.ml
+ocamlfind ocamlc -a lib/re_perl.cmo -o lib/re_perl.cma
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_perl.cmx lib/re_perl.ml
+ocamlfind ocamlopt -a lib/re_perl.cmx -o lib/re_perl.cmxa
+ocamlfind ocamlopt -shared lib/re_perl.cmx -o lib/re_perl.cmxs
+ocamlfind ocamldep -modules lib/re_pcre.ml > lib/re_pcre.ml.depends
+ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -o lib/re_pcre.cmo lib/re_pcre.ml
+ocamlfind ocamlc -a lib/re_pcre.cmo -o lib/re_pcre.cma
+ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -o lib/re_pcre.cmx lib/re_pcre.ml
+ocamlfind ocamlopt -a lib/re_pcre.cmx -o lib/re_pcre.cmxa
+ocamlfind ocamlopt -shared lib/re_pcre.cmx -o lib/re_pcre.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/cset.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/automata.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_str.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_str.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_str.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_str.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_str.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_str.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_str.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_posix.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_posix.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_posix.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_posix.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_posix.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_posix.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_posix.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_perl.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_perl.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_perl.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_perl.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_perl.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_perl.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_perl.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_pcre.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_pcre.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_pcre.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_pcre.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_pcre.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_pcre.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_pcre.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_glob.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_glob.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_glob.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_glob.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_glob.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_glob.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_glob.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_emacs.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_emacs.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_emacs.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_emacs.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_emacs.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_emacs.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/re_emacs.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/re/META
+Installing re.1.2.1.
+
+=-=-= Installing uri.1.3.11 =-=-=
+uri.1.3.11 Downloading https://github.com/mirage/ocaml-uri/archive/v1.3.11.tar.gz
+--2013-11-20 21:01:41--  https://github.com/mirage/ocaml-uri/archive/v1.3.11.tar.gz
+Resolving github.com (github.com)... 192.30.252.131
+Connecting to github.com (github.com)|192.30.252.131|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/mirage/ocaml-uri/tar.gz/v1.3.11 [following]
+--2013-11-20 21:01:41--  https://codeload.github.com/mirage/ocaml-uri/tar.gz/v1.3.11
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.144
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.144|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 244667 (239K) [application/x-gzip]
+Saving to: `ocaml-uri-1.3.11.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 20% 1.47M 0s
+    50K .......... .......... .......... .......... .......... 41% 1.46M 0s
+   100K .......... .......... .......... .......... .......... 62% 1.48M 0s
+   150K .......... .......... .......... .......... .......... 83% 2.84M 0s
+   200K .......... .......... .......... ........             100% 2.20M=0.1s
+
+2013-11-20 21:01:41 (1.74 MB/s) - `ocaml-uri-1.3.11.tar.gz' saved [244667/244667]
+
+Building uri.1.3.11:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ uri
+Package version: ..................................... 1.3.11
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+module-aliases
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+build the full services library: ..................... false
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_re_posix: ........................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/re
+pkg_re_str: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/re
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+File "_tags", line 29, characters 38-47:
+Warning: the tag "pkg_oUnit" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 33, characters 21-30:
+Warning: the tag "pkg_oUnit" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/uri.mli > lib/uri.mli.depends
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/uri.cmi lib/uri.mli
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/uri.ml > lib/uri.ml.depends
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/uri_re.mli > lib/uri_re.mli.depends
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/uri_re.cmi lib/uri_re.mli
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/uri_re.ml > lib/uri_re.ml.depends
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/Uri_IP.mli > lib/Uri_IP.mli.depends
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/Uri_IP.cmi lib/Uri_IP.mli
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/Uri_IP.ml > lib/Uri_IP.ml.depends
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/uri.cmo lib/uri.ml
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/uri_re.cmo lib/uri_re.ml
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/Uri_IP.cmo lib/Uri_IP.ml
+ocamlfind ocamlc -a lib/uri_re.cmo lib/uri.cmo lib/Uri_IP.cmo -o lib/uri.cma
+ocamlfind ocamlopt -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/uri_re.cmx lib/uri_re.ml
+ocamlfind ocamlopt -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/uri.cmx lib/uri.ml
+ocamlfind ocamlopt -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/Uri_IP.cmx lib/Uri_IP.ml
+ocamlfind ocamlopt -a lib/uri_re.cmx lib/uri.cmx lib/Uri_IP.cmx -o lib/uri.cmxa
+ocamlfind ocamlopt -shared lib/uri.cmx -o lib/uri.cmxs
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/Uri_services.mli > lib/Uri_services.mli.depends
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/Uri_services.cmi lib/Uri_services.mli
+ocamlfind ocamldep -package re.str -package re.posix -modules lib/Uri_services.ml > lib/Uri_services.ml.depends
+ocamlfind ocamlc -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/Uri_services.cmo lib/Uri_services.ml
+ocamlfind ocamlc -a lib/Uri_services.cmo -o lib/services.cma
+ocamlfind ocamlopt -c -g -annot -I lib -package re.str -package re.posix -I lib -o lib/Uri_services.cmx lib/Uri_services.ml
+ocamlfind ocamlopt -a lib/Uri_services.cmx -o lib/services.cmxa
+ocamlfind ocamlopt -shared -linkall lib/services.cmxa -o lib/services.cmxs
+ocamlfind ocamldep -modules top/uri_top.ml > top/uri_top.ml.depends
+ocamlfind ocamlc -c -g -annot -I +compiler-libs -I top -o top/uri_top.cmo top/uri_top.ml
++ ocamlfind ocamlc -c -g -annot -I +compiler-libs -I top -o top/uri_top.cmo top/uri_top.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml, /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/compiler-libs
+ocamlfind ocamlc -a top/uri_top.cmo -o top/uri_top.cma
+ocamlfind ocamlopt -c -g -annot -I +compiler-libs -I top -o top/uri_top.cmx top/uri_top.ml
++ ocamlfind ocamlopt -c -g -annot -I +compiler-libs -I top -o top/uri_top.cmx top/uri_top.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml, /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/compiler-libs
+ocamlfind ocamlopt -a top/uri_top.cmx -o top/uri_top.cmxa
+ocamlfind ocamlopt -shared top/uri_top.cmx -o top/uri_top.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri_re.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/Uri_IP.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri_re.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/Uri_IP.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri_re.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/Uri_IP.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri_top.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri_top.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri_top.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri_top.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri_top.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri_top.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/uri_top.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/Uri_services.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/services.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/services.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/services.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/services.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/Uri_services.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/Uri_services.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/uri/META
+Installing uri.1.3.11.
