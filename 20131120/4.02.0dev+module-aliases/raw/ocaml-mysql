@@ -1,0 +1,159 @@
+++ opam install ocaml-mysql -e ubuntu
++ depext=libmysqlclient-dev
++ echo Ubuntu depexts: libmysqlclient-dev
++ '[' libmysqlclient-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libmysqlclient-dev
++ sudo apt-get install -qq -y libmysqlclient-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package mysql-common.
+(Reading database ... 20462 files and directories currently installed.)
+Unpacking mysql-common (from .../mysql-common_5.5.22-0ubuntu1_all.deb) ...
+Selecting previously unselected package libmysqlclient18.
+Unpacking libmysqlclient18 (from .../libmysqlclient18_5.5.22-0ubuntu1_amd64.deb) ...
+Selecting previously unselected package zlib1g-dev.
+Unpacking zlib1g-dev (from .../zlib1g-dev_1%3a1.2.3.4.dfsg-3ubuntu4_amd64.deb) ...
+Selecting previously unselected package libmysqlclient-dev.
+Unpacking libmysqlclient-dev (from .../libmysqlclient-dev_5.5.22-0ubuntu1_amd64.deb) ...
+Setting up mysql-common (5.5.22-0ubuntu1) ...
+Setting up libmysqlclient18 (5.5.22-0ubuntu1) ...
+Setting up zlib1g-dev (1:1.2.3.4.dfsg-3ubuntu4) ...
+Setting up libmysqlclient-dev (5.5.22-0ubuntu1) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
++ opam install ocaml-mysql
+The following actions will be performed:
+ - install mysql.1.1.1 [required by ocaml-mysql]
+ - install ocaml-mysql.1.1.1
+     This package was renamed to 'mysql' and will soon vanish.
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing mysql.1.1.1 =-=-=
+mysql.1.1.1 Downloading http://forge.ocamlcore.org/frs/download.php/870/ocaml-mysql-1.1.1.tar.gz
+--2013-11-20 19:35:25--  http://forge.ocamlcore.org/frs/download.php/870/ocaml-mysql-1.1.1.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 119676 (117K) [application/binary]
+Saving to: `ocaml-mysql-1.1.1.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 42%  167K 0s
+    50K .......... .......... .......... .......... .......... 85%  495K 0s
+   100K .......... ......                                     100%  173K=0.5s
+
+2013-11-20 19:35:25 (235 KB/s) - `ocaml-mysql-1.1.1.tar.gz' saved [119676/119676]
+
+Building mysql.1.1.1:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  make
+  make opt
+  make install
+checking for version... Configuring Version 1.1.1
+checking for platform... Ubuntu 12.04 (AMD64)
+configure: checking for ocaml compiler and tools...
+checking for ocamlc... ocamlc
+checking for ocamlopt... ocamlopt
+checking for ocamlfind... ocamlfind
+checking for a BSD-compatible install... /usr/bin/install -c
+configure: checking for C compiler...
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+configure: checking for C header files...
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+configure: checking libraries...
+configure: checking for MySQL library...
+checking for mysql_real_connect in -lmysqlclient... yes
+checking for compress in -lz... yes
+configure: checking for MySQL header files...
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking mysql/mysql.h usability... yes
+checking mysql/mysql.h presence... yes
+checking for mysql/mysql.h... yes
+configure: creating ./config.status
+config.status: creating Makefile
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/mysql.1.1.1'
+ocamldep mysql.mli > ._bcdi/mysql.di
+ocamldep -pp "camlp4o " mysql.ml > ._d/mysql.d
+Segmentation fault
+make[1]: *** Deleting file `._d/mysql.d'make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/mysql.1.1.1'
+
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/mysql.1.1.1'
+ocamldep -pp "camlp4o " mysql.ml > ._d/mysql.d
+Segmentation fault
+make[1]: *** Deleting file `._d/mysql.d'
+ocamlc -c -cc "cc" -ccopt "-fPIC -g -O2 -Wall -Wextra \
+				-DPIC   \
+				    -o mysql_stubs.o " mysql_stubs.c
+ar rcs libmysql_stubs.a  mysql_stubs.o
+ocamlc -c mysql.mli
+ocamlc -c -pp "camlp4o " mysql.ml
+Segmentation fault
+make[1]: *** [mysql.cmo] Error 139
+make[1]: *** Deleting file `mysql.cmo'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/mysql.1.1.1'
+make: *** [byte-code-library] Error 2
+[ERROR] The compilation of mysql.1.1.1 failed.
+Removing mysql.1.1.1.
+  ocamlfind remove mysql
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/mysql
+
+[ERROR] Due to some errors while processing mysql.1.1.1, the following actions will NOT proceed:
+ - install ocaml-mysql.1.1.1
+
+===== ERROR while installing mysql.1.1.1 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/mysql.1.1.1
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/mysql.1.1.1/mysql-94-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/mysql.1.1.1/mysql-94-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/mysql.1.1.1/mysql-94-d2d111.err
+### stdout ###
+# ...[truncated]
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/mysql.1.1.1'
+# make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/mysql.1.1.1'
+# ocamldep -pp "camlp4o " mysql.ml > ._d/mysql.d
+# ocamlc -c -cc "cc" -ccopt "-fPIC -g -O2 -Wall -Wextra \
+# 				-DPIC   \
+# 				    -o mysql_stubs.o " mysql_stubs.c
+# ar rcs libmysql_stubs.a  mysql_stubs.o
+# ocamlc -c mysql.mli
+# ocamlc -c -pp "camlp4o " mysql.ml
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/mysql.1.1.1'
+### stderr ###
+# Segmentation fault
+# make[1]: *** Deleting file `._d/mysql.d'
+# Segmentation fault
+# make[1]: *** Deleting file `._d/mysql.d'
+# Segmentation fault
+# make[1]: *** [mysql.cmo] Error 139
+# make[1]: *** Deleting file `mysql.cmo'
+# make: *** [byte-code-library] Error 2
+
+'opam install ocaml-mysql' failed.
