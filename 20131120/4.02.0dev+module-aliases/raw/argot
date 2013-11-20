@@ -1,0 +1,132 @@
+++ opam install argot -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install argot
+The following actions will be performed:
+ - install argot.1.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing argot.1.1 =-=-=
+argot.1.1  Downloading http://forge.ocamlcore.org/frs/download.php/960/argot-1.1.tar.gz
+--2013-11-20 16:55:25--  http://forge.ocamlcore.org/frs/download.php/960/argot-1.1.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 365423 (357K) [application/binary]
+Saving to: `argot-1.1.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 14%  170K 2s
+    50K .......... .......... .......... .......... .......... 28%  259K 1s
+   100K .......... .......... .......... .......... .......... 42% 10.9M 1s
+   150K .......... .......... .......... .......... .......... 56%  521K 0s
+   200K .......... .......... .......... .......... .......... 70%  524K 0s
+   250K .......... .......... .......... .......... .......... 84% 11.3M 0s
+   300K .......... .......... .......... .......... .......... 98% 1.38M 0s
+   350K ......                                                100% 15.3M=0.7s
+
+2013-11-20 16:55:26 (493 KB/s) - `argot-1.1.tar.gz' saved [365423/365423]
+
+Building argot.1.1:
+  sh configure
+  make all
+  make install
+Makefile.config successfully created
+echo 'argot.cmo' > argot.itarget
+(test -x /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt && test TRUE = TRUE && echo 'argot.cmxs' >> argot.itarget) || true
+(test -x /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamljava && echo 'argot.cmjs' >> argot.itarget) || true
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild -classic-display -no-links argot.otarget
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+File "_tags", line 29, characters 15-29:
+Warning: the tag "src_version_ml" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamldep -modules src/search.mli > src/search.mli.depends
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/search.cmi src/search.mli
+ocamlfind ocamldep -modules src/search.ml > src/search.ml.depends
+ocamlfind ocamldep -modules src/args.mli > src/args.mli.depends
+ocamlfind ocamldep -modules src/definitions.mli > src/definitions.mli.depends
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/definitions.cmi src/definitions.mli
+ocamlfind ocamldep -modules src/icons.mli > src/icons.mli.depends
+ocamlfind ocamldep -modules src/utils.mli > src/utils.mli.depends
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/args.cmi src/args.mli
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/icons.cmi src/icons.mli
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/utils.cmi src/utils.mli
+ocamlfind ocamldep -modules src/base64.mli > src/base64.mli.depends
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/base64.cmi src/base64.mli
+ocamlfind ocamldep -modules src/base64.ml > src/base64.ml.depends
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamllex.opt -q src/definitionLexer.mll
+ocamlfind ocamldep -modules src/definitionLexer.ml > src/definitionLexer.ml.depends
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlyacc src/definitionParser.mly
+ocamlfind ocamldep -modules src/definitionParser.mli > src/definitionParser.mli.depends
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/definitionParser.cmi src/definitionParser.mli
+ocamlfind ocamldep -modules src/args.ml > src/args.ml.depends
+ocamlfind ocamldep -modules src/version.mli > src/version.mli.depends
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/version.cmi src/version.mli
+ocamlfind ocamldep -modules src/definitions.ml > src/definitions.ml.depends
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/definitionLexer.cmo src/definitionLexer.ml
+cp /tmp/versione0345f.ml src/version.ml
+ocamlfind ocamldep -modules src/version.ml > src/version.ml.depends
+ocamlfind ocamldep -modules src/icons.ml > src/icons.ml.depends
+ocamlfind ocamldep -modules src/main.mli > src/main.mli.depends
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/main.cmi src/main.mli
+ocamlfind ocamldep -modules src/main.ml > src/main.ml.depends
+ocamlfind ocamldep -modules src/licenses.mli > src/licenses.mli.depends
+ocamlfind ocamldep -modules src/search_js.mli > src/search_js.mli.depends
+ocamlfind ocamldep -modules src/tables.mli > src/tables.mli.depends
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/licenses.cmi src/licenses.mli
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/search_js.cmi src/search_js.mli
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/tables.cmi src/tables.mli
+ocamlfind ocamldep -modules src/tables.ml > src/tables.ml.depends
+ocamlfind ocamldep -modules src/search_js.ml > src/search_js.ml.depends
+ocamlfind ocamldep -modules src/utils.ml > src/utils.ml.depends
+ocamlfind ocamldep -modules src/definitionParser.ml > src/definitionParser.ml.depends
+ocamlfind ocamldep -modules src/licenses.ml > src/licenses.ml.depends
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/search.cmo src/search.ml
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/base64.cmo src/base64.ml
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/args.cmo src/args.ml
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/definitions.cmo src/definitions.ml
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/version.cmo src/version.ml
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/icons.cmo src/icons.ml
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/main.cmo src/main.ml
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/tables.cmo src/tables.ml
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/search_js.cmo src/search_js.ml
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/utils.cmo src/utils.ml
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/definitionParser.cmo src/definitionParser.ml
+ocamlfind ocamlc -c -I +ocamldoc -w Ae -warn-error A -I src -o src/licenses.cmo src/licenses.ml
+ocamlfind ocamlc -pack src/definitionParser.cmo src/definitionLexer.cmo src/utils.cmo src/definitions.cmo src/version.cmo src/args.cmo src/icons.cmo src/search.cmo src/base64.cmo src/licenses.cmo src/search_js.cmo src/tables.cmo src/main.cmo -o argot.cmo
+ocamlfind ocamlopt -c -I +ocamldoc -w Ae -warn-error A -for-pack Argot -I src -o src/definitionParser.cmx src/definitionParser.ml
+ocamlfind ocamlopt -c -I +ocamldoc -w Ae -warn-error A -for-pack Argot -I src -o src/definitionLexer.cmx src/definitionLexer.ml
+ocamlfind ocamlopt -c -I +ocamldoc -w Ae -warn-error A -for-pack Argot -I src -o src/utils.cmx src/utils.ml
+ocamlfind ocamlopt -c -I +ocamldoc -w Ae -warn-error A -for-pack Argot -I src -o src/definitions.cmx src/definitions.ml
+ocamlfind ocamlopt -c -I +ocamldoc -w Ae -warn-error A -for-pack Argot -I src -o src/version.cmx src/version.ml
+ocamlfind ocamlopt -c -I +ocamldoc -w Ae -warn-error A -for-pack Argot -I src -o src/args.cmx src/args.ml
+ocamlfind ocamlopt -c -I +ocamldoc -w Ae -warn-error A -for-pack Argot -I src -o src/icons.cmx src/icons.ml
+ocamlfind ocamlopt -c -I +ocamldoc -w Ae -warn-error A -for-pack Argot -I src -o src/base64.cmx src/base64.ml
+ocamlfind ocamlopt -c -I +ocamldoc -w Ae -warn-error A -for-pack Argot -I src -o src/search.cmx src/search.ml
+ocamlfind ocamlopt -c -I +ocamldoc -w Ae -warn-error A -for-pack Argot -I src -o src/licenses.cmx src/licenses.ml
+ocamlfind ocamlopt -c -I +ocamldoc -w Ae -warn-error A -for-pack Argot -I src -o src/search_js.cmx src/search_js.ml
+ocamlfind ocamlopt -c -I +ocamldoc -w Ae -warn-error A -for-pack Argot -I src -o src/tables.cmx src/tables.ml
+ocamlfind ocamlopt -c -I +ocamldoc -w Ae -warn-error A -for-pack Argot -I src -o src/main.cmx src/main.ml
+touch argot.mli  ; if  ocamlfind ocamlopt -pack -I src src/definitionParser.cmx src/definitionLexer.cmx src/utils.cmx src/definitions.cmx src/version.cmx src/args.cmx src/icons.cmx src/search.cmx src/base64.cmx src/licenses.cmx src/search_js.cmx src/tables.cmx src/main.cmx -o argot.cmx  ; then  rm -f argot.mli  ; else  rm -f argot.mli  ; exit 1; fi
+ocamlfind ocamlopt -shared argot.cmx -o argot.cmxs
+echo 'argot.cmo' > argot.itarget
+(test -x /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt && test TRUE = TRUE && echo 'argot.cmxs' >> argot.itarget) || true
+(test -x /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamljava && echo 'argot.cmjs' >> argot.itarget) || true
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild -classic-display -no-links argot.otarget
+File "_tags", line 29, characters 15-29:
+Warning: the tag "src_version_ml" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+cp /tmp/versionc82750.ml src/version.ml
+if [ -x "/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind" ]; then \
+	  /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind query argot && /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind remove argot || true; \
+	  /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind install argot META `pwd`/_build/*.cmo `pwd`/_build/*.cm?s; \
+	else \
+	  mkdir -p `/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc -customdir`; \
+	  for ext in cmo cmxs cmjs; do \
+	    test -f `pwd`/_build/argot.$ext && cp `pwd`/_build/argot.$ext `/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc -customdir` || true; \
+	  done \
+	fi
+ocamlfind: Package `argot' not found
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/argot/argot.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/argot/argot.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/argot/META
+Installing argot.1.1.
