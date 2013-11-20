@@ -1,0 +1,930 @@
+++ opam install qmp -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install qmp
+The following actions will be performed:
+ - install easy-format.1.0.1 [required by qmp]
+ - install cppo.0.9.3 [required by qmp]
+ - install cmdliner.0.9.2 [required by qmp]
+ - install ounit.2.0.0 [required by qmp]
+ - install obuild.0.0.4 [required by qmp]
+ - install biniou.1.0.6 [required by qmp]
+ - install yojson.1.1.6 [required by qmp]
+ - install qmp.0.9.1
+8 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing cmdliner.0.9.2 =-=-=
+cmdliner.0.9.2 Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.2.tbz
+--2013-11-20 20:29:28--  http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.2.tbz
+Resolving erratique.ch (erratique.ch)... 37.58.75.241, 2a03:8180:1001:b2:36::c
+Connecting to erratique.ch (erratique.ch)|37.58.75.241|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 74952 (73K) [application/x-bzip2]
+Saving to: `cmdliner-0.9.2.tbz'
+
+     0K .......... .......... .......... .......... .......... 68%  257K 0s
+    50K .......... .......... ...                             100% 3.95M=0.2s
+
+2013-11-20 20:29:29 (365 KB/s) - `cmdliner-0.9.2.tbz' saved [74952/74952]
+
+Building cmdliner.0.9.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ cmdliner
+Package version: ..................................... 0.9.2
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+module-aliases
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -modules src/cmdliner.mli > src/cmdliner.mli.depends
+ocamlfind ocamlc -c -g -I src -o src/cmdliner.cmi src/cmdliner.mli
+ocamlfind ocamldep -modules src/cmdliner.ml > src/cmdliner.ml.depends
+ocamlfind ocamlc -c -g -I src -o src/cmdliner.cmo src/cmdliner.ml
+ocamlfind ocamlc -a src/cmdliner.cmo -o src/cmdliner.cma
+ocamlfind ocamlopt -c -g -I src -o src/cmdliner.cmx src/cmdliner.ml
+ocamlfind ocamlopt -a src/cmdliner.cmx -o src/cmdliner.cmxa
+ocamlfind ocamlopt -shared src/cmdliner.cmx -o src/cmdliner.cmxs
+ocamlfind ocamldep -modules test/revolt.ml > test/revolt.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/revolt.cmo test/revolt.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/revolt.cmx test/revolt.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/revolt.cmx -o test/revolt.native
+ocamlfind ocamldep -modules test/chorus.ml > test/chorus.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/chorus.cmo test/chorus.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/chorus.cmx test/chorus.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/chorus.cmx -o test/chorus.native
+ocamlfind ocamldep -modules test/cp_ex.ml > test/cp_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/cp_ex.cmo test/cp_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/cp_ex.cmx test/cp_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/cp_ex.cmx -o test/cp_ex.native
+ocamlfind ocamldep -modules test/tail_ex.ml > test/tail_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/tail_ex.cmo test/tail_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/tail_ex.cmx test/tail_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/tail_ex.cmx -o test/tail_ex.native
+ocamlfind ocamldep -modules test/darcs_ex.ml > test/darcs_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/darcs_ex.cmo test/darcs_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/darcs_ex.cmx test/darcs_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/darcs_ex.cmx -o test/darcs_ex.native
+ocamlfind ocamldep -modules test/rm_ex.ml > test/rm_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/rm_ex.cmo test/rm_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/rm_ex.cmx test/rm_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/rm_ex.cmx -o test/rm_ex.native
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/cmdliner.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/cmdliner.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/cmdliner.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/cmdliner.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/cmdliner.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/cmdliner.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/cmdliner.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/META
+Installing cmdliner.0.9.2.
+
+=-=-= Installing cppo.0.9.3 =-=-=
+cppo.0.9.3 Downloading http://mjambon.com/releases/cppo/cppo-0.9.3.tar.gz
+--2013-11-20 20:29:35--  http://mjambon.com/releases/cppo/cppo-0.9.3.tar.gz
+Resolving mjambon.com (mjambon.com)... 173.246.103.93
+Connecting to mjambon.com (mjambon.com)|173.246.103.93|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20393 (20K) [application/octet-stream]
+Saving to: `cppo-0.9.3.tar.gz'
+
+     0K .......... .........                                  100%  268K=0.07s
+
+2013-11-20 20:29:35 (268 KB/s) - `cppo-0.9.3.tar.gz' saved [20393/20393]
+
+Copying ~/.opam/repo/default/packages/cppo.0.9.3/files/cppo.install to ~/.opam/4.02.0dev+module-aliases/build/cppo.0.9.3/
+Building cppo.0.9.3:
+  make
+echo 'let cppo_version = "0.9.3"' > cppo_version.ml
+ocamlyacc cppo_parser.mly
+ocamllex cppo_lexer.mll
+354 states, 13186 transitions, table size 54868 bytes
+3462 additional bytes used for bindings
+ocamlopt -o cppo -dtypes unix.cmxa cppo_version.ml cppo_types.ml cppo_parser.mli cppo_parser.ml cppo_lexer.ml cppo_command.ml cppo_eval.ml cppo_main.ml
+Installing cppo.0.9.3.
+
+=-=-= Installing easy-format.1.0.1 =-=-=
+easy-format.1.0.1 Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.1.tar.gz
+--2013-11-20 20:29:39--  http://mjambon.com/releases/easy-format/easy-format-1.0.1.tar.gz
+Resolving mjambon.com (mjambon.com)... 173.246.103.93
+Connecting to mjambon.com (mjambon.com)|173.246.103.93|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13747 (13K) [application/octet-stream]
+Saving to: `easy-format-1.0.1.tar.gz'
+
+     0K .......... ...                                        100%  287K=0.05s
+
+2013-11-20 20:29:39 (287 KB/s) - `easy-format-1.0.1.tar.gz' saved [13747/13747]
+
+Copying ~/.opam/repo/default/packages/easy-format.1.0.1/files/meta-tpl.diff to ~/.opam/4.02.0dev+module-aliases/build/easy-format.1.0.1/
+Copying ~/.opam/repo/default/packages/easy-format.1.0.1/files/easy-format-make.diff to ~/.opam/4.02.0dev+module-aliases/build/easy-format.1.0.1/
+Applying easy-format-make.diff.
+patching file Makefile
+Hunk #1 succeeded at 6 with fuzz 1.
+Applying meta-tpl.diff.
+patching file META.tpl
+Building easy-format.1.0.1:
+  make
+  make install
+ocamlc -c easy_format.mli
+ocamlc -c -dtypes easy_format.ml
+ocamlmklib -o easy_format easy_format.cmo
+touch bytecode
+ocamlc -c easy_format.mli
+ocamlopt -c -dtypes easy_format.ml
+ocamlmklib -o easy_format easy_format.cmx
+ocamlopt -I . -shared -linkall -o easy_format.cmxs easy_format.cmx
+touch nativecode
+echo "version = \"1.0.1\"" > META; cat META.tpl >> META
+INSTALL_FILES="META easy_format.cmi easy_format.mli"; \
+		if test -f bytecode; then \
+		  INSTALL_FILES="$INSTALL_FILES easy_format.cmo easy_format.cma"; \
+		fi; \
+		if test -f nativecode; then \
+		  INSTALL_FILES="$INSTALL_FILES easy_format.cmx easy_format.cmxa easy_format.cmxs easy_format.o easy_format.a"; \
+		fi; \
+		ocamlfind install easy-format $INSTALL_FILES
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/META
+Installing easy-format.1.0.1.
+
+=-=-= Installing obuild.0.0.4 =-=-=
+obuild.0.0.4 Downloading https://github.com/vincenthz/obuild/archive/obuild-v0.0.4.tar.gz
+--2013-11-20 20:29:41--  https://github.com/vincenthz/obuild/archive/obuild-v0.0.4.tar.gz
+Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/vincenthz/obuild/tar.gz/obuild-v0.0.4 [following]
+--2013-11-20 20:29:41--  https://codeload.github.com/vincenthz/obuild/tar.gz/obuild-v0.0.4
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.146
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.146|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `obuild-obuild-v0.0.4.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  977K
+    50K .......... .......                                     38.0M=0.05s
+
+2013-11-20 20:29:42 (1.27 MB/s) - `obuild-obuild-v0.0.4.tar.gz' saved [68959]
+
+Building obuild.0.0.4:
+  ./bootstrap
+  cp dist/build/obuild/obuild dist/build/obuild-simple/obuild-simple /home/opam/.opam/4.02.0dev+module-aliases/bin
+COMPILING fugue
+COMPILING filepath
+COMPILING filesystem
+BUILDING library obuild_ext.cmxa
+COMPILING gconf
+COMPILING types
+COMPILING dag
+COMPILING taskdep
+COMPILING dagutils
+COMPILING filetype
+COMPILING modname
+COMPILING hier
+COMPILING expr
+COMPILING pp
+COMPILING utils
+COMPILING helper
+COMPILING process
+COMPILING findlibConf
+COMPILING prog
+COMPILING dependencies
+COMPILING target
+COMPILING project
+COMPILING meta
+COMPILING dist
+COMPILING analyze
+COMPILING configure
+COMPILING prepare
+COMPILING buildprogs
+COMPILING build
+COMPILING exception
+BUILDING library obuild.cmxa
+COMPILING sdist
+COMPILING doc
+COMPILING init
+COMPILING help
+COMPILING install
+COMPILING main
+LINKING obuild.bootstrap
+Configuring obuild-0.0.4...
+Building library obuild.ext
+[1 of 6] Compiling Ext.Fugue                     
+[2 of 6] Intfing Ext.Filepath                  
+[3 of 6] Compiling Ext.Filepath                  
+[4 of 6] Intfing Ext.Filesystem                
+[5 of 6] Compiling Ext.Filesystem                
+[6 of 6] Packing Ext                           
+Linking library dist/build/lib-obuild.ext/obuild_ext.cmxa
+Linking library dist/build/lib-obuild.ext/obuild_ext.cma
+Building library obuild
+[ 1 of 27] Compiling Obuild.Gconf                  
+[ 2 of 27] Compiling Obuild.Types                  
+[ 3 of 27] Compiling Obuild.Dag                    
+[ 4 of 27] Compiling Obuild.Pp                     
+[ 5 of 27] Compiling Obuild.Filetype               
+[ 6 of 27] Compiling Obuild.Expr                   
+[ 7 of 27] Compiling Obuild.Utils                  
+[ 8 of 27] Compiling Obuild.Modname                
+[ 9 of 27] Compiling Obuild.Taskdep                
+[10 of 27] Compiling Obuild.Dist                   
+[11 of 27] Compiling Obuild.Helper                 
+[12 of 27] Compiling Obuild.Hier                   
+[13 of 27] Compiling Obuild.Dagutils               
+[14 of 27] Compiling Obuild.Process                
+[15 of 27] Compiling Obuild.FindlibConf            
+[16 of 27] Compiling Obuild.Prog                   
+[17 of 27] Compiling Obuild.Dependencies           
+[18 of 27] Compiling Obuild.Meta                   
+[19 of 27] Compiling Obuild.Target                 
+[20 of 27] Compiling Obuild.Project                
+[21 of 27] Compiling Obuild.Analyze                
+[22 of 27] Compiling Obuild.Configure              
+[23 of 27] Compiling Obuild.Prepare                
+[24 of 27] Compiling Obuild.Buildprogs             
+[25 of 27] Compiling Obuild.Build                  
+[26 of 27] Compiling Obuild.Exception              
+[27 of 27] Packing Obuild                        
+Linking library dist/build/lib-obuild/obuild.cmxa
+Linking library dist/build/lib-obuild/obuild.cma
+Building executable obuild
+[1 of 6] Compiling Sdist                         
+[2 of 6] Compiling Install                       
+[3 of 6] Compiling Help                          
+[4 of 6] Compiling Doc                           
+[5 of 6] Compiling Init                          
+[6 of 6] Compiling Main                          
+Linking executable dist/build/obuild/obuild
+Building executable obuild-simple
+[1 of 1] Compiling Simple                        
+Linking executable dist/build/obuild-simple/obuild-simple
+Building executable obuild-from-oasis
+[1 of 1] Compiling Assimilate_oasis              
+Linking executable dist/build/obuild-from-oasis/obuild-from-oasis
+
+real	0m2.967s
+user	0m1.648s
+sys	0m2.111s
+Installing obuild.0.0.4.
+
+=-=-= Installing ounit.2.0.0 =-=-=
+ounit.2.0.0 Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+--2013-11-20 20:29:48--  http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 103504 (101K) [application/binary]
+Saving to: `ounit-2.0.0.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 49%  172K 0s
+    50K .......... .......... .......... .......... .......... 98%  376K 0s
+   100K .                                                     100% 2056G=0.4s
+
+2013-11-20 20:29:49 (239 KB/s) - `ounit-2.0.0.tar.gz' saved [103504/103504]
+
+Building ounit.2.0.0:
+  make build
+  make install
+ocaml setup.ml -configure 
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ ounit
+Package version: ..................................... 2.0.0
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_threads: ......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocaml setup.ml -build 
+W: Cannot find source file matching module 'OUnitLoggerHTMLData' in library oUnitAdvanced
+W: Cannot find source file matching module 'OUnitLoggerHTMLData' in library oUnitAdvanced
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitUtils.ml > src/oUnitUtils.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitPropList.ml > src/oUnitPropList.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitPlugin.ml > src/oUnitPlugin.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitConf.ml > src/oUnitConf.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPropList.cmo src/oUnitPropList.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitUtils.cmo src/oUnitUtils.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmo src/oUnitConf.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitChooser.ml > src/oUnitChooser.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitCache.ml > src/oUnitCache.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitTest.ml > src/oUnitTest.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLogger.ml > src/oUnitLogger.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitShared.ml > src/oUnitShared.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLogger.cmo src/oUnitLogger.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitShared.cmo src/oUnitShared.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTest.cmo src/oUnitTest.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPlugin.cmo src/oUnitPlugin.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitResultSummary.ml > src/oUnitResultSummary.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCache.cmo src/oUnitCache.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitResultSummary.cmo src/oUnitResultSummary.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerStd.ml > src/oUnitLoggerStd.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerHTML.ml > src/oUnitLoggerHTML.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerHTMLData.ml > src/oUnitLoggerHTMLData.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTMLData.cmo src/oUnitLoggerHTMLData.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerJUnit.ml > src/oUnitLoggerJUnit.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTML.cmo src/oUnitLoggerHTML.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmo src/oUnitLoggerStd.ml
++ ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmo src/oUnitLoggerStd.ml
+File "src/oUnitLoggerStd.ml", line 161, characters 21-22:
+Warning 28: wildcard pattern given as argument to a constant constructor
+File "src/oUnitLoggerStd.ml", line 161, characters 30-31:
+Warning 28: wildcard pattern given as argument to a constant constructor
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitAssert.ml > src/oUnitAssert.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitBracket.ml > src/oUnitBracket.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitBracket.cmo src/oUnitBracket.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitState.ml > src/oUnitState.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitChooser.cmo src/oUnitChooser.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunner.ml > src/oUnitRunner.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitCheckEnv.ml > src/oUnitCheckEnv.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmo src/oUnitAssert.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitDiff.mli > src/oUnitDiff.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmi src/oUnitDiff.mli
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitState.cmo src/oUnitState.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCheckEnv.cmo src/oUnitCheckEnv.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunnerProcesses.ml > src/oUnitRunnerProcesses.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunner.cmo src/oUnitRunner.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitCore.ml > src/oUnitCore.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerJUnit.cmo src/oUnitLoggerJUnit.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmo src/oUnitRunnerProcesses.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitTestData.ml > src/oUnitTestData.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitDiff.ml > src/oUnitDiff.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCore.cmo src/oUnitCore.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTestData.cmo src/oUnitTestData.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmo src/oUnitDiff.ml
+ocamlfind ocamlc -a src/oUnitUtils.cmo src/oUnitPropList.cmo src/oUnitConf.cmo src/oUnitPlugin.cmo src/oUnitLogger.cmo src/oUnitShared.cmo src/oUnitTest.cmo src/oUnitCache.cmo src/oUnitResultSummary.cmo src/oUnitChooser.cmo src/oUnitLoggerStd.cmo src/oUnitLoggerHTMLData.cmo src/oUnitLoggerHTML.cmo src/oUnitLoggerJUnit.cmo src/oUnitBracket.cmo src/oUnitAssert.cmo src/oUnitState.cmo src/oUnitDiff.cmo src/oUnitCheckEnv.cmo src/oUnitRunner.cmo src/oUnitRunnerProcesses.cmo src/oUnitCore.cmo src/oUnitTestData.cmo -o src/oUnitAdvanced.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPropList.cmx src/oUnitPropList.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitUtils.cmx src/oUnitUtils.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmx src/oUnitConf.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLogger.cmx src/oUnitLogger.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitShared.cmx src/oUnitShared.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTest.cmx src/oUnitTest.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPlugin.cmx src/oUnitPlugin.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCache.cmx src/oUnitCache.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitResultSummary.cmx src/oUnitResultSummary.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTMLData.cmx src/oUnitLoggerHTMLData.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTML.cmx src/oUnitLoggerHTML.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmx src/oUnitLoggerStd.ml
++ ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmx src/oUnitLoggerStd.ml
+File "src/oUnitLoggerStd.ml", line 161, characters 21-22:
+Warning 28: wildcard pattern given as argument to a constant constructor
+File "src/oUnitLoggerStd.ml", line 161, characters 30-31:
+Warning 28: wildcard pattern given as argument to a constant constructor
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitBracket.cmx src/oUnitBracket.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitChooser.cmx src/oUnitChooser.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmx src/oUnitAssert.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmx src/oUnitDiff.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitState.cmx src/oUnitState.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCheckEnv.cmx src/oUnitCheckEnv.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunner.cmx src/oUnitRunner.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerJUnit.cmx src/oUnitLoggerJUnit.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmx src/oUnitRunnerProcesses.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCore.cmx src/oUnitCore.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTestData.cmx src/oUnitTestData.ml
+ocamlfind ocamlopt -a src/oUnitUtils.cmx src/oUnitPropList.cmx src/oUnitConf.cmx src/oUnitPlugin.cmx src/oUnitLogger.cmx src/oUnitShared.cmx src/oUnitTest.cmx src/oUnitCache.cmx src/oUnitResultSummary.cmx src/oUnitChooser.cmx src/oUnitLoggerStd.cmx src/oUnitLoggerHTMLData.cmx src/oUnitLoggerHTML.cmx src/oUnitLoggerJUnit.cmx src/oUnitBracket.cmx src/oUnitAssert.cmx src/oUnitState.cmx src/oUnitDiff.cmx src/oUnitCheckEnv.cmx src/oUnitRunner.cmx src/oUnitRunnerProcesses.cmx src/oUnitCore.cmx src/oUnitTestData.cmx -o src/oUnitAdvanced.cmxa
+ocamlfind ocamlopt -shared -linkall src/oUnitAdvanced.cmxa -o src/oUnitAdvanced.cmxs
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit.mli > src/oUnit.mli.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit2.mli > src/oUnit2.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmi src/oUnit2.mli
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmi src/oUnit.mli
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit.ml > src/oUnit.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit2.ml > src/oUnit2.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmo src/oUnit.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmo src/oUnit2.ml
+ocamlfind ocamlc -a src/oUnit2.cmo src/oUnit.cmo -o src/oUnit.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmx src/oUnit2.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmx src/oUnit.ml
+ocamlfind ocamlopt -a src/oUnit2.cmx src/oUnit.cmx -o src/oUnit.cmxa
+ocamlfind ocamlopt -shared src/oUnit.cmx -o src/oUnit.cmxs
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitThreads.ml > src/oUnitThreads.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunnerThreads.ml > src/oUnitRunnerThreads.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerThreads.cmo src/oUnitRunnerThreads.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitThreads.cmo src/oUnitThreads.ml
+ocamlfind ocamlc -a src/oUnitRunnerThreads.cmo src/oUnitThreads.cmo -o src/oUnitThreads.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerThreads.cmx src/oUnitRunnerThreads.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitThreads.cmx src/oUnitThreads.ml
+ocamlfind ocamlopt -a src/oUnitRunnerThreads.cmx src/oUnitThreads.cmx -o src/oUnitThreads.cmxa
+ocamlfind ocamlopt -shared src/oUnitThreads.cmx -o src/oUnitThreads.cmxs
+ocaml setup.ml -install 
+W: Cannot find source header for module OUnitLoggerHTMLData in library oUnitAdvanced
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnit.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnit2.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnit.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnit.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnit.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnit.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnit.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnit2.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnit.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnit2.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitThreads.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitThreads.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitThreads.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitThreads.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitThreads.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitThreads.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitThreads.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitRunnerThreads.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitUtils.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitPropList.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitPlugin.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitChooser.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitResultSummary.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitLoggerStd.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitLoggerHTML.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitLoggerJUnit.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAssert.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitBracket.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitTest.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitState.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitRunner.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitRunnerProcesses.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitCore.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitLogger.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitConf.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitShared.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitCache.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitTestData.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitCheckEnv.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitDiff.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitUtils.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitPropList.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitPlugin.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitChooser.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitResultSummary.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitLoggerStd.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitLoggerHTML.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitLoggerHTMLData.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitLoggerJUnit.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAssert.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitBracket.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitTest.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitState.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitRunner.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitRunnerProcesses.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitCore.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitLogger.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitConf.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitShared.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitCache.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitTestData.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitCheckEnv.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitDiff.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitUtils.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitPropList.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitPlugin.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitChooser.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitResultSummary.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitLoggerStd.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitLoggerHTML.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitLoggerHTMLData.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitLoggerJUnit.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAssert.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitBracket.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitTest.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitState.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitRunner.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitRunnerProcesses.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitCore.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitLogger.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitConf.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitShared.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitCache.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitTestData.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitCheckEnv.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitDiff.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/META
+Installing ounit.2.0.0.
+
+=-=-= Installing biniou.1.0.6 =-=-=
+biniou.1.0.6 Downloading http://mjambon.com/releases/biniou/biniou-1.0.6.tar.gz
+--2013-11-20 20:29:57--  http://mjambon.com/releases/biniou/biniou-1.0.6.tar.gz
+Resolving mjambon.com (mjambon.com)... 173.246.103.93
+Connecting to mjambon.com (mjambon.com)|173.246.103.93|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 23676 (23K) [application/octet-stream]
+Saving to: `biniou-1.0.6.tar.gz'
+
+     0K .......... .......... ...                             100%  269K=0.09s
+
+2013-11-20 20:29:58 (269 KB/s) - `biniou-1.0.6.tar.gz' saved [23676/23676]
+
+Copying ~/.opam/repo/default/packages/biniou.1.0.6/files/biniou.install to ~/.opam/4.02.0dev+module-aliases/build/biniou.1.0.6/
+Building biniou.1.0.6:
+  make
+  make install
+ocamlfind ocamlc -a -dtypes -g -o biniou.cma \
+		-package "easy-format" bi_util.mli bi_util.ml bi_share.mli bi_share.ml bi_outbuf.mli bi_outbuf.ml bi_inbuf.mli bi_inbuf.ml bi_vint.mli bi_vint.ml bi_io.mli bi_io.ml bi_dump.ml bi_stream.mli bi_stream.ml
+ocamlfind ocamlopt -a -dtypes -g \
+		-o biniou.cmxa -package "easy-format" bi_util.mli bi_util.ml bi_share.mli bi_share.ml bi_outbuf.mli bi_outbuf.ml bi_inbuf.mli bi_inbuf.ml bi_vint.mli bi_vint.ml bi_io.mli bi_io.ml bi_dump.ml bi_stream.mli bi_stream.ml
+ocamlfind ocamlopt -o bdump -dtypes -g \
+		-package easy-format -linkpkg \
+		biniou.cmxa bdump.ml
+ocamlfind ocamlopt -o test_biniou -dtypes -g \
+		-package "easy-format unix" -linkpkg \
+		biniou.cmxa test_biniou.ml
+sed -e 's:@@VERSION@@:1.0.5:' META.in > META
+test ! -f bdump || cp bdump /home/opam/.opam/4.02.0dev+module-aliases/bin/
+test ! -f bdump.exe || cp bdump.exe /home/opam/.opam/4.02.0dev+module-aliases/bin/
+ocamlfind install biniou META \
+          $(ls bi_util.mli bi_share.mli bi_outbuf.mli bi_inbuf.mli bi_vint.mli bi_io.mli bi_stream.mli bi_util.cmi bi_share.cmi bi_outbuf.cmi bi_inbuf.cmi bi_vint.cmi bi_io.cmi bi_dump.cmi bi_stream.cmi bi_util.cmo bi_share.cmo bi_outbuf.cmo bi_inbuf.cmo bi_vint.cmo bi_io.cmo bi_dump.cmo bi_stream.cmo bi_util.cmx bi_share.cmx bi_outbuf.cmx bi_inbuf.cmx bi_vint.cmx bi_io.cmx bi_dump.cmx bi_stream.cmx bi_util.o bi_share.o bi_outbuf.o bi_inbuf.o bi_vint.o bi_io.o bi_dump.o bi_stream.o biniou.cma biniou.cmxa biniou.a)
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/biniou.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/biniou.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/biniou.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_vint.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_vint.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_vint.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_vint.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_vint.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_util.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_util.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_util.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_util.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_util.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_stream.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_stream.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_stream.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_stream.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_stream.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_share.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_share.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_share.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_share.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_share.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_outbuf.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_outbuf.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_outbuf.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_outbuf.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_outbuf.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_io.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_io.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_io.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_io.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_io.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_inbuf.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_inbuf.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_inbuf.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_inbuf.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_inbuf.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_dump.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_dump.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_dump.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/bi_dump.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou/META
+Installing biniou.1.0.6.
+
+=-=-= Installing yojson.1.1.6 =-=-=
+yojson.1.1.6 Downloading http://mjambon.com/releases/yojson/yojson-1.1.6.tar.gz
+--2013-11-20 20:30:00--  http://mjambon.com/releases/yojson/yojson-1.1.6.tar.gz
+Resolving mjambon.com (mjambon.com)... 173.246.103.93
+Connecting to mjambon.com (mjambon.com)|173.246.103.93|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 24964 (24K) [application/octet-stream]
+Saving to: `yojson-1.1.6.tar.gz'
+
+     0K .......... .......... ....                            100%  274K=0.09s
+
+2013-11-20 20:30:00 (274 KB/s) - `yojson-1.1.6.tar.gz' saved [24964/24964]
+
+Copying ~/.opam/repo/default/packages/yojson.1.1.6/files/yojson.install to ~/.opam/4.02.0dev+module-aliases/build/yojson.1.1.6/
+Building yojson.1.1.6:
+  make
+  make install
+sed -e 's:@@VERSION@@:1.1.5:' META.in > META
+cppo -n yojson.mli.cppo -o yojson.mli
+ocamlfind ocamlc -c -dtypes -g -package easy-format,biniou yojson.mli
+ocamllex read.mll
+421 states, 2020 transitions, table size 10606 bytes
+cppo -D "VERSION 1.1.5" yojson.ml.cppo -o yojson.ml
+ocamlfind ocamlc -c -dtypes -g -package easy-format,biniou yojson.ml
+ocamlfind ocamlc -c -dtypes -g -package easy-format,biniou yojson_biniou.mli
+ocamlfind ocamlc -c -dtypes -g -package easy-format,biniou yojson_biniou.ml
+ocamlfind ocamlopt -c -dtypes -g -package easy-format,biniou yojson.ml
+ocamlfind ocamlopt -c -dtypes -g -package easy-format,biniou yojson_biniou.ml
+ocamlfind ocamlopt -o ydump -dtypes -g -package easy-format,biniou -linkpkg \
+		yojson.cmx yojson_biniou.cmx ydump.ml
+test ! -f ydump || cp ydump /home/opam/.opam/4.02.0dev+module-aliases/bin/
+test ! -f ydump.exe || cp ydump.exe /home/opam/.opam/4.02.0dev+module-aliases/bin/
+ocamlfind install yojson META \
+          $(ls yojson.mli yojson_biniou.mli yojson.cmi yojson_biniou.cmi yojson.cmo yojson_biniou.cmo yojson.cmx yojson_biniou.cmx yojson.o yojson_biniou.o)
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson/yojson_biniou.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson/yojson_biniou.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson/yojson_biniou.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson/yojson_biniou.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson/yojson_biniou.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson/yojson.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson/yojson.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson/yojson.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson/yojson.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson/yojson.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson/META
+Installing yojson.1.1.6.
+
+=-=-= Installing qmp.0.9.1 =-=-=
+qmp.0.9.1  Downloading https://github.com/xen-org/ocaml-qmp/archive/0.9.1.tar.gz
+--2013-11-20 20:30:04--  https://github.com/xen-org/ocaml-qmp/archive/0.9.1.tar.gz
+Resolving github.com (github.com)... 192.30.252.128
+Connecting to github.com (github.com)|192.30.252.128|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://github.com/xapi-project/ocaml-qmp/archive/0.9.1.tar.gz [following]
+--2013-11-20 20:30:04--  https://github.com/xapi-project/ocaml-qmp/archive/0.9.1.tar.gz
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/xapi-project/ocaml-qmp/tar.gz/0.9.1 [following]
+--2013-11-20 20:30:04--  https://codeload.github.com/xapi-project/ocaml-qmp/tar.gz/0.9.1
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.146
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.146|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `ocaml-qmp-0.9.1.tar.gz'
+
+     0K .......... ......                                       102M=0s
+
+2013-11-20 20:30:05 (102 MB/s) - `ocaml-qmp-0.9.1.tar.gz' saved [16722]
+
+Building qmp.0.9.1:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.0dev+module-aliases/bin
+obuild --debug+ configure 
+  [CMD]: ocamlfind printconf conf
+Configuring qmp-0.9.1...
+  configure flag: []
+analyzing project
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -config
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -vnum
+initializing standard library : package unix
+initializing standard library : package bigarray
+initializing standard library : package dynlink
+initializing standard library : package str
+initializing standard library : package graphics
+initializing standard library : package stdlib
+initializing standard library : package nums
+  internal depends: qmp
+  internal depends: qmp
+  getting dependencies for target lib-qmp
+  fetching META yojson
+  library yojson depends on easy-format
+  fetching META easy-format
+  library yojson depends on biniou
+  fetching META biniou
+  library biniou depends on easy-format
+  getting dependencies for target exe-cli
+  library qmp depends on yojson
+  fetching META cmdliner
+  getting dependencies for target exe-messages
+  fetching META oUnit
+  library oUnit depends on unix
+  library oUnit depends on oUnit.advanced
+configuration changed, deleting dist
+Writing new setup
+auto-generating configuration files
+obuild --debug+ build
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -config
+  [CMD]: ocamlfind printconf conf
+analyzing project
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -config
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -vnum
+initializing standard library : package unix
+initializing standard library : package bigarray
+initializing standard library : package dynlink
+initializing standard library : package str
+initializing standard library : package graphics
+initializing standard library : package stdlib
+initializing standard library : package nums
+  internal depends: qmp
+  internal depends: qmp
+  getting dependencies for target lib-qmp
+  fetching META yojson
+  library yojson depends on easy-format
+  fetching META easy-format
+  library yojson depends on biniou
+  fetching META biniou
+  library biniou depends on easy-format
+  getting dependencies for target exe-cli
+  library qmp depends on yojson
+  fetching META cmdliner
+  getting dependencies for target exe-messages
+  fetching META oUnit
+  library oUnit depends on unix
+  library oUnit depends on oUnit.advanced
+building target lib-qmp
+Building library qmp
+preparing compilation for lib-qmp
+Analysing Qmp
+  Qmp has mtime 1376061979.000000
+  Qmp has interface (mtime=1376061979.000000)
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lib -I dist/build/autogen -modules lib/qmp.ml lib/qmp.mli
+  Qmp depends on List,Printf,Yojson
+  Qmp internally depends on 
+Analysing Qmp_protocol
+  Qmp_protocol has mtime 1376061979.000000
+  Qmp_protocol has interface (mtime=1376061979.000000)
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lib -I dist/build/autogen -modules lib/qmp_protocol.ml lib/qmp_protocol.mli
+  Qmp_protocol depends on Printf,Qmp,Unix
+  Qmp_protocol internally depends on Qmp
+[1 of 4] Intfing Qmp                           
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -I dist/build/lib-qmp -I dist/build/autogen -I lib -I /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format -I /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou -I /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson -bin-annot -o dist/build/lib-qmp/qmp.cmi -c lib/qmp.mli
+[2 of 4] Compiling Qmp                           
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -I dist/build/lib-qmp -I dist/build/autogen -I lib -I /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format -I /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou -I /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson -bin-annot -o dist/build/lib-qmp/qmp.cmx -c lib/qmp.ml
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -I dist/build/lib-qmp -I dist/build/autogen -I lib -I /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format -I /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou -I /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson -bin-annot -o dist/build/lib-qmp/qmp.cmo -c lib/qmp.ml
+[3 of 4] Intfing Qmp_protocol                  
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -I dist/build/lib-qmp -I dist/build/autogen -I lib -I /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format -I /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou -I /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson -bin-annot -o dist/build/lib-qmp/qmp_protocol.cmi -c lib/qmp_protocol.mli
+[4 of 4] Compiling Qmp_protocol                  
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -I dist/build/lib-qmp -I dist/build/autogen -I lib -I /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format -I /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou -I /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson -bin-annot -o dist/build/lib-qmp/qmp_protocol.cmx -c lib/qmp_protocol.ml
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -I dist/build/lib-qmp -I dist/build/autogen -I lib -I /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format -I /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou -I /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson -bin-annot -o dist/build/lib-qmp/qmp_protocol.cmo -c lib/qmp_protocol.ml
+schedule finished: #processes=6 max_concurrency=2
+  compilation order: Qmp,Qmp_protocol
+  self deps: 
+package deps: [easy-format,biniou,yojson]
+Linking library dist/build/lib-qmp/qmp.cmxa
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -a -o dist/build/lib-qmp/qmp.cmxa -I dist/build/lib-qmp -I /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format -I /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou -I /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson qmp.cmx qmp_protocol.cmx
+Linking library dist/build/lib-qmp/qmp.cma
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -a -o dist/build/lib-qmp/qmp.cma -I dist/build/lib-qmp -I /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format -I /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou -I /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson qmp.cmo qmp_protocol.cmo
+building target exe-messages
+Building executable messages
+preparing compilation for exe-messages
+Analysing Messages
+  Messages has mtime 1376061979.000000
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lib_test -I dist/build/autogen -modules lib_test/messages.ml lib_test/messages.mli
+  Messages depends on Arg,Filename,List,OUnit,Printf,Qmp,String
+  Messages internally depends on 
+[1 of 1] Compiling Messages                      
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -I dist/build/messages -I dist/build/autogen -I lib_test -I /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format -I /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou -I /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson -I dist/build/lib-qmp -I /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit -bin-annot -o dist/build/messages/messages.cmx -c lib_test/messages.ml
+schedule finished: #processes=1 max_concurrency=1
+  compilation order: Messages
+  self deps: qmp
+package deps: [easy-format,biniou,yojson,qmp,oUnit.advanced,unix,oUnit]
+Linking executable dist/build/messages/messages
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -o dist/build/messages/messages -I dist/build/messages -I /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format -I /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou -I /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson -I dist/build/lib-qmp -I /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit easy_format.cmx biniou.cmxa yojson.cmx qmp.cmxa oUnitAdvanced.cmxa unix.cmxa oUnit.cmxa -cclib -Ldist/build/lib-qmp messages.cmx
+
+File "_none_", line 1:
+Error: No implementations provided for the following modules:
+         Unix referenced from /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cmxa(OUnitUtils),
+           /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cmxa(OUnitLoggerHTML),
+           /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cmxa(OUnitBracket),
+           /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cmxa(OUnitAssert),
+           /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cmxa(OUnitCheckEnv),
+           /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cmxa(OUnitRunnerProcesses)
+
+make: *** [build] Error 7
+[ERROR] The compilation of qmp.0.9.1 failed.
+Removing qmp.0.9.1.
+  make uninstall BINDIR=/home/opam/.opam/4.02.0dev+module-aliases/bin
+ocamlfind remove qmp
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/qmp
+
+
+===== ERROR while installing qmp.0.9.1 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/qmp.0.9.1
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/qmp.0.9.1/qmp-1802-2c871f.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/qmp.0.9.1/qmp-1802-2c871f.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/qmp.0.9.1/qmp-1802-2c871f.err
+### stdout ###
+# ...[truncated]
+#   Messages depends on Arg,Filename,List,OUnit,Printf,Qmp,String
+#   Messages internally depends on 
+# [1 of 1] Compiling Messages                      
+#   [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -I dist/build/messages -I dist/build/autogen -I lib_test -I /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format -I /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou -I /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson -I dist/build/lib-qmp -I /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit -bin-annot -o dist/build/messages/messages.cmx -c lib_test/messages.ml
+# schedule finished: #processes=1 max_concurrency=1
+#   compilation order: Messages
+#   self deps: qmp
+# package deps: [easy-format,biniou,yojson,qmp,oUnit.advanced,unix,oUnit]
+# Linking executable dist/build/messages/messages
+#   [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -o dist/build/messages/messages -I dist/build/messages -I /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format -I /home/opam/.opam/4.02.0dev+module-aliases/lib/biniou -I /home/opam/.opam/4.02.0dev+module-aliases/lib/yojson -I dist/build/lib-qmp -I /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit easy_format.cmx biniou.cmxa yojson.cmx qmp.cmxa oUnitAdvanced.cmxa unix.cmxa oUnit.cmxa -cclib -Ldist/build/lib-qmp messages.cmx
+### stderr ###
+# ...[truncated]
+# File "_none_", line 1:
+# Error: No implementations provided for the following modules:
+#          Unix referenced from /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cmxa(OUnitUtils),
+#            /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cmxa(OUnitLoggerHTML),
+#            /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cmxa(OUnitBracket),
+#            /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cmxa(OUnitAssert),
+#            /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cmxa(OUnitCheckEnv),
+#            /home/opam/.opam/4.02.0dev+module-aliases/lib/oUnit/oUnitAdvanced.cmxa(OUnitRunnerProcesses)
+# 
+# make: *** [build] Error 7
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+module-aliases/backup/state-20131020202924.export"
+'opam install qmp' failed.
