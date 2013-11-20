@@ -1,0 +1,67 @@
+++ opam install uunf -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install uunf
+Ubuntu depexts:
+The following actions will be performed:
+ - install uunf.0.9.2
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing uunf.0.9.2 =-=-=
+uunf.0.9.2 Downloading http://erratique.ch/software/uunf/releases/uunf-0.9.2.tbz
+--2013-11-20 21:02:43--  http://erratique.ch/software/uunf/releases/uunf-0.9.2.tbz
+Resolving erratique.ch (erratique.ch)... 37.58.75.241, 2a03:8180:1001:b2:36::c
+Connecting to erratique.ch (erratique.ch)|37.58.75.241|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 41957 (41K) [application/x-bzip2]
+Saving to: `uunf-0.9.2.tbz'
+
+     0K .......... .......... .......... ..........           100%  411K=0.1s
+
+2013-11-20 21:02:43 (411 KB/s) - `uunf-0.9.2.tbz' saved [41957/41957]
+
+[ERROR] 'uutf:installed' has type bool, but a env element of type string was expected.
+Building uunf.0.9.2:
+  ./pkg/pkg-git
+  ./pkg/build true
+ocamlfind ocamldep -modules src/uunf.mli > src/uunf.mli.depends
+ocamlfind ocamlc -c -annot -I src -I test -o src/uunf.cmi src/uunf.mli
+ocamlfind ocamldep -modules src/uunf.ml > src/uunf.ml.depends
+ocamlfind ocamlopt -c -annot -I src -I test -o src/uunf.cmx src/uunf.ml
+ocamlfind ocamlc -c -annot -I src -I test -o src/uunf.cmo src/uunf.ml
+ocamlfind ocamlc -a src/uunf.cmo -o src/uunf.cma
+ocamlfind ocamlopt -a src/uunf.cmx -o src/uunf.cmxa
+ocamlfind ocamlopt -shared src/uunf.cmx -o src/uunf.cmxs
+ocamlfind ocamldep -package uutf -modules test/unftrip.ml > test/unftrip.ml.depends
++ ocamlfind ocamldep -package uutf -modules test/unftrip.ml > test/unftrip.ml.depends
+ocamlfind: Package `uutf' not found
+Command exited with code 2.
+[ERROR] The compilation of uunf.0.9.2 failed.
+Removing uunf.0.9.2.
+
+
+===== ERROR while installing uunf.0.9.2 =====
+# opam-version         1.1.0
+# os                   linux
+# command              ./pkg/build true
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/uunf.0.9.2
+# compiler             4.02.0dev+module-aliases
+# exit-code            10
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/uunf.0.9.2/uunf-19-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/uunf.0.9.2/uunf-19-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/uunf.0.9.2/uunf-19-d2d111.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamldep -modules src/uunf.ml > src/uunf.ml.depends
+# ocamlfind ocamlopt -c -annot -I src -I test -o src/uunf.cmx src/uunf.ml
+# ocamlfind ocamlc -c -annot -I src -I test -o src/uunf.cmo src/uunf.ml
+# ocamlfind ocamlc -a src/uunf.cmo -o src/uunf.cma
+# ocamlfind ocamlopt -a src/uunf.cmx -o src/uunf.cmxa
+# ocamlfind ocamlopt -shared src/uunf.cmx -o src/uunf.cmxs
+# ocamlfind ocamldep -package uutf -modules test/unftrip.ml > test/unftrip.ml.depends
+# + ocamlfind ocamldep -package uutf -modules test/unftrip.ml > test/unftrip.ml.depends
+# ocamlfind: Package `uutf' not found
+# Command exited with code 2.
+
+'opam install uunf' failed.
