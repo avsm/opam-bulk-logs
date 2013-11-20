@@ -1,0 +1,155 @@
+++ opam install camomile -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install camomile
+Ubuntu depexts:
+The following actions will be performed:
+ - install camomile.0.8.5
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing camomile.0.8.5 =-=-=
+camomile.0.8.5 Downloading https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
+--2013-11-20 17:22:25--  https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
+Resolving github.com (github.com)... 192.30.252.130
+Connecting to github.com (github.com)|192.30.252.130|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://s3.amazonaws.com/github-cloud/releases/1965070/3fe28ca6-1de4-11e3-9067-9ddfaf80024a.bz2?response-content-disposition=attachment%3B%20filename%3Dcamomile-0.8.5.tar.bz2&AWSAccessKeyId=AKIAISTNZFOVBIJMK3TQ&Expires=1384968208&Signature=a7cZw2GRXTzNY%2BBigvwE9Qwfp8M%3D [following]
+--2013-11-20 17:22:26--  https://s3.amazonaws.com/github-cloud/releases/1965070/3fe28ca6-1de4-11e3-9067-9ddfaf80024a.bz2?response-content-disposition=attachment%3B%20filename%3Dcamomile-0.8.5.tar.bz2&AWSAccessKeyId=AKIAISTNZFOVBIJMK3TQ&Expires=1384968208&Signature=a7cZw2GRXTzNY%2BBigvwE9Qwfp8M%3D
+Resolving s3.amazonaws.com (s3.amazonaws.com)... 72.21.211.130
+Connecting to s3.amazonaws.com (s3.amazonaws.com)|72.21.211.130|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2607084 (2.5M) [application/octet-stream]
+Saving to: `camomile-0.8.5.tar.bz2'
+
+     0K .......... .......... .......... .......... ..........  1%  324K 8s
+    50K .......... .......... .......... .......... ..........  3%  635K 6s
+   100K .......... .......... .......... .......... ..........  5%  516K 5s
+   150K .......... .......... .......... .......... ..........  7% 1.42M 4s
+   200K .......... .......... .......... .......... ..........  9% 1.56M 4s
+   250K .......... .......... .......... .......... .......... 11%  830K 3s
+   300K .......... .......... .......... .......... .......... 13% 1.59M 3s
+   350K .......... .......... .......... .......... .......... 15% 1.57M 3s
+   400K .......... .......... .......... .......... .......... 17% 4.31M 2s
+   450K .......... .......... .......... .......... .......... 19% 1.39M 2s
+   500K .......... .......... .......... .......... .......... 21% 1.59M 2s
+   550K .......... .......... .......... .......... .......... 23% 1.49M 2s
+   600K .......... .......... .......... .......... .......... 25% 11.3M 2s
+   650K .......... .......... .......... .......... .......... 27% 1.75M 2s
+   700K .......... .......... .......... .......... .......... 29% 14.8M 2s
+   750K .......... .......... .......... .......... .......... 31% 1.60M 2s
+   800K .......... .......... .......... .......... .......... 33% 9.88M 1s
+   850K .......... .......... .......... .......... .......... 35% 2.19M 1s
+   900K .......... .......... .......... .......... .......... 37% 5.57M 1s
+   950K .......... .......... .......... .......... .......... 39% 2.23M 1s
+  1000K .......... .......... .......... .......... .......... 41% 5.99M 1s
+  1050K .......... .......... .......... .......... .......... 43% 18.2M 1s
+  1100K .......... .......... .......... .......... .......... 45% 2.28M 1s
+  1150K .......... .......... .......... .......... .......... 47% 7.19M 1s
+  1200K .......... .......... .......... .......... .......... 49% 22.2M 1s
+  1250K .......... .......... .......... .......... .......... 51% 2.29M 1s
+  1300K .......... .......... .......... .......... .......... 53% 3.01M 1s
+  1350K .......... .......... .......... .......... .......... 54% 23.3M 1s
+  1400K .......... .......... .......... .......... .......... 56% 4.08M 1s
+  1450K .......... .......... .......... .......... .......... 58% 3.03M 1s
+  1500K .......... .......... .......... .......... .......... 60% 30.7M 1s
+  1550K .......... .......... .......... .......... .......... 62% 1.38M 1s
+  1600K .......... .......... .......... .......... .......... 64% 19.6M 0s
+  1650K .......... .......... .......... .......... .......... 66% 27.1M 0s
+  1700K .......... .......... .......... .......... .......... 68% 20.1M 0s
+  1750K .......... .......... .......... .......... .......... 70% 1.93M 0s
+  1800K .......... .......... .......... .......... .......... 72% 29.8M 0s
+  1850K .......... .......... .......... .......... .......... 74% 1.36M 0s
+  1900K .......... .......... .......... .......... .......... 76% 21.7M 0s
+  1950K .......... .......... .......... .......... .......... 78% 15.4M 0s
+  2000K .......... .......... .......... .......... .......... 80% 2.08M 0s
+  2050K .......... .......... .......... .......... .......... 82% 25.4M 0s
+  2100K .......... .......... .......... .......... .......... 84% 1.34M 0s
+  2150K .......... .......... .......... .......... .......... 86% 18.4M 0s
+  2200K .......... .......... .......... .......... .......... 88% 22.3M 0s
+  2250K .......... .......... .......... .......... .......... 90% 25.3M 0s
+  2300K .......... .......... .......... .......... .......... 92% 2.08M 0s
+  2350K .......... .......... .......... .......... .......... 94% 1.31M 0s
+  2400K .......... .......... .......... .......... .......... 96% 22.2M 0s
+  2450K .......... .......... .......... .......... .......... 98% 20.4M 0s
+  2500K .......... .......... .......... .......... .....     100% 19.6M=1.1s
+
+2013-11-20 17:22:27 (2.24 MB/s) - `camomile-0.8.5.tar.bz2' saved [2607084/2607084]
+
+Building camomile.0.8.5:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  make
+  make install
+checking for cppo... false
+checking for grep that handles long lines and -e... /bin/grep
+checking for fgrep... /bin/grep -F
+checking for ocamlc... ocamlc
+ocaml version is 4.02.0+dev2-2013-09-12
+ocaml library path is /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking ocamlopt version... ok
+checking for ocamlc.opt... ocamlc.opt
+checking ocamlc.opt version... ok
+checking for ocamlopt.opt... ocamlopt.opt
+checking ocamlc.opt version... ok
+checking for ocamldep... ocamldep
+checking for ocamllex... ocamllex
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for ocamlweb... true
+checking for camlp4o... camlp4o
+checking for ocamlfind... install-with-ocamlfind
+checking for ocamldoc... ocamldoc
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating META
+echo '(* This file is automatically generated *)' > camomileDefaultConfig.ml
+echo 'let datadir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "database"' >> camomileDefaultConfig.ml
+echo 'let localedir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "locales"' >> camomileDefaultConfig.ml
+echo 'let charmapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "charmaps"' >> camomileDefaultConfig.ml
+echo 'let unimapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "mappings"' >> camomileDefaultConfig.ml
+ocamldep -slash -I internal -I public -I toolslib -I . *.ml *.mli \
+	internal/*.ml internal/*.mli \
+	public/*.ml public/*.mli \
+	mappings/*.ml mappings/*.mli \
+	toolslib/*.ml toolslib/*.mli \
+	> .depend
+ocamldep -slash -pp "camlp4o -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml" -I internal -I public -I toolslib -I . \
+	tools/tools/parse_unidata.ml tools/parse_uniset.ml tools/camomilecharmap.ml tools/parse_specialcasing.ml tools/parse_casefolding.ml tools/parse_scripts.ml tools/parse_allkeys.ml mappings/gen_mappings.ml tools/parse_age.ml tools/camomilelocaledef.ml tools/camomilestringprep.ml >> .depend
+Segmentation fault
+make: *** [.depend] Error 139
+[ERROR] The compilation of camomile.0.8.5 failed.
+Removing camomile.0.8.5.
+  ocamlfind remove camomile
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/camomile
+
+
+===== ERROR while installing camomile.0.8.5 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/camomile.0.8.5
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/camomile.0.8.5/camomile-18-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/camomile.0.8.5/camomile-18-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/camomile.0.8.5/camomile-18-d2d111.err
+### stdout ###
+# ...[truncated]
+# echo 'let charmapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "charmaps"' >> camomileDefaultConfig.ml
+# echo 'let unimapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "mappings"' >> camomileDefaultConfig.ml
+# ocamldep -slash -I internal -I public -I toolslib -I . *.ml *.mli \
+# 	internal/*.ml internal/*.mli \
+# 	public/*.ml public/*.mli \
+# 	mappings/*.ml mappings/*.mli \
+# 	toolslib/*.ml toolslib/*.mli \
+# 	> .depend
+# ocamldep -slash -pp "camlp4o -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml" -I internal -I public -I toolslib -I . \
+# 	tools/tools/parse_unidata.ml tools/parse_uniset.ml tools/camomilecharmap.ml tools/parse_specialcasing.ml tools/parse_casefolding.ml tools/parse_scripts.ml tools/parse_allkeys.ml mappings/gen_mappings.ml tools/parse_age.ml tools/camomilelocaledef.ml tools/camomilestringprep.ml >> .depend
+### stderr ###
+# config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+# Segmentation fault
+# make: *** [.depend] Error 139
+
+'opam install camomile' failed.
