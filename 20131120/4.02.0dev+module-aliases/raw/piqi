@@ -1,0 +1,152 @@
+++ opam install piqi -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install piqi
+Ubuntu depexts:
+The following actions will be performed:
+ - install ulex.1.1 [required by piqi]
+ - install easy-format.1.0.1 [required by piqi]
+ - install xmlm.1.2.0 [required by piqi]
+ - install piqi.0.6.5
+4 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing easy-format.1.0.1 =-=-=
+easy-format.1.0.1 Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.1.tar.gz
+--2013-11-20 20:20:31--  http://mjambon.com/releases/easy-format/easy-format-1.0.1.tar.gz
+Resolving mjambon.com (mjambon.com)... 173.246.103.93
+Connecting to mjambon.com (mjambon.com)|173.246.103.93|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13747 (13K) [application/octet-stream]
+Saving to: `easy-format-1.0.1.tar.gz'
+
+     0K .......... ...                                        100%  219K=0.06s
+
+2013-11-20 20:20:31 (219 KB/s) - `easy-format-1.0.1.tar.gz' saved [13747/13747]
+
+Copying ~/.opam/repo/default/packages/easy-format.1.0.1/files/meta-tpl.diff to ~/.opam/4.02.0dev+module-aliases/build/easy-format.1.0.1/
+Copying ~/.opam/repo/default/packages/easy-format.1.0.1/files/easy-format-make.diff to ~/.opam/4.02.0dev+module-aliases/build/easy-format.1.0.1/
+Applying easy-format-make.diff.
+patching file Makefile
+Hunk #1 succeeded at 6 with fuzz 1.
+Applying meta-tpl.diff.
+patching file META.tpl
+Building easy-format.1.0.1:
+  make
+  make install
+ocamlc -c easy_format.mli
+ocamlc -c -dtypes easy_format.ml
+ocamlmklib -o easy_format easy_format.cmo
+touch bytecode
+ocamlc -c easy_format.mli
+ocamlopt -c -dtypes easy_format.ml
+ocamlmklib -o easy_format easy_format.cmx
+ocamlopt -I . -shared -linkall -o easy_format.cmxs easy_format.cmx
+touch nativecode
+echo "version = \"1.0.1\"" > META; cat META.tpl >> META
+INSTALL_FILES="META easy_format.cmi easy_format.mli"; \
+		if test -f bytecode; then \
+		  INSTALL_FILES="$INSTALL_FILES easy_format.cmo easy_format.cma"; \
+		fi; \
+		if test -f nativecode; then \
+		  INSTALL_FILES="$INSTALL_FILES easy_format.cmx easy_format.cmxa easy_format.cmxs easy_format.o easy_format.a"; \
+		fi; \
+		ocamlfind install easy-format $INSTALL_FILES
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/easy_format.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/easy-format/META
+Installing easy-format.1.0.1.
+
+=-=-= Installing ulex.1.1 =-=-=
+ulex.1.1   Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+--2013-11-20 20:20:33--  http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+Resolving ftp.de.debian.org (ftp.de.debian.org)... 141.76.2.4
+Connecting to ftp.de.debian.org (ftp.de.debian.org)|141.76.2.4|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20347 (20K) [application/x-gzip]
+Saving to: `ulex_1.1.orig.tar.gz'
+
+     0K .......... .........                                  100%  147K=0.1s
+
+2013-11-20 20:20:33 (147 KB/s) - `ulex_1.1.orig.tar.gz' saved [20347/20347]
+
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma
+ocamlfind ocamlc unix.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cma -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmo -o myocamlbuild
+ocamlfind ocamldep -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
++ ocamlfind ocamldep -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
+Command exited with code 2.
+make: *** [all] Error 10
+[ERROR] The compilation of ulex.1.1 failed.
+Removing ulex.1.1.
+  ocamlfind remove ulex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/ulex
+
+=-=-= Installing xmlm.1.2.0 =-=-=
+xmlm.1.2.0 Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+--2013-11-20 20:20:35--  http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+Resolving erratique.ch (erratique.ch)... 37.58.75.241, 2a03:8180:1001:b2:36::c
+Connecting to erratique.ch (erratique.ch)|37.58.75.241|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 38181 (37K) [application/x-bzip2]
+Saving to: `xmlm-1.2.0.tbz'
+
+     0K .......... .......... .......... .......              100%  376K=0.1s
+
+2013-11-20 20:20:35 (376 KB/s) - `xmlm-1.2.0.tbz' saved [38181/38181]
+
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+ocamlfind ocamldep -modules src/xmlm.mli > src/xmlm.mli.depends
+ocamlfind ocamlc -c -I src -I test -o src/xmlm.cmi src/xmlm.mli
+ocamlfind ocamldep -modules src/xmlm.ml > src/xmlm.ml.depends
+ocamlfind ocamlopt -c -annot -bin-annot -I src -I test -o src/xmlm.cmx src/xmlm.ml
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/xmlm.cmo src/xmlm.ml
+ocamlfind ocamlc -a src/xmlm.cmo -o src/xmlm.cma
+ocamlfind ocamlopt -a src/xmlm.cmx -o src/xmlm.cmxa
+ocamlfind ocamlopt -shared src/xmlm.cmx -o src/xmlm.cmxs
+ocamlfind ocamldep -modules test/xmltrip.ml > test/xmltrip.ml.depends
+ocamlfind ocamldep -modules test/xhtml.ml > test/xhtml.ml.depends
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xhtml.cmo test/xhtml.ml
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xmltrip.cmo test/xmltrip.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xhtml.cmx test/xhtml.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xmltrip.cmx test/xmltrip.ml
+ocamlfind ocamlopt -linkpkg src/xmlm.cmx test/xhtml.cmx test/xmltrip.cmx -o test/xmltrip.native
+Installing xmlm.1.2.0.
+[WARNING] unknown fields in /home/opam/.opam/4.02.0dev+module-aliases/build/xmlm.1.2.0/xmlm.install: is your OPAM up-to-date ?
+
+[ERROR] Due to some errors while processing ulex.1.1, the following actions will NOT proceed:
+ - install piqi.0.6.5
+
+===== ERROR while installing ulex.1.1 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/ulex.1.1
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/ulex.1.1/ulex-134-a71bb4.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/ulex.1.1/ulex-134-a71bb4.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/ulex.1.1/ulex-134-a71bb4.err
+### stdout ###
+# ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma
+# ocamlfind ocamlc unix.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cma -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmo -o myocamlbuild
+# ocamlfind ocamldep -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
+# + ocamlfind ocamldep -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
+# Command exited with code 2.
+### stderr ###
+# make: *** [all] Error 10
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+module-aliases/backup/state-20131020202028.export"
+'opam install piqi' failed.
