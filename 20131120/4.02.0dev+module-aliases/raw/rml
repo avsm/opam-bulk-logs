@@ -1,0 +1,547 @@
+++ opam install rml -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install rml
+The following actions will be performed:
+ - install rml.1.09.01
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing rml.1.09.01 =-=-=
+rml.1.09.01 Downloading http://reactiveml.org/distrib/rml-1.09.01-2013-09-10.tar.gz
+--2013-11-20 20:36:09--  http://reactiveml.org/distrib/rml-1.09.01-2013-09-10.tar.gz
+Resolving reactiveml.org (reactiveml.org)... 217.70.184.38
+Connecting to reactiveml.org (reactiveml.org)|217.70.184.38|:80... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: http://rml.lri.fr/distrib/rml-1.09.01-2013-09-10.tar.gz [following]
+--2013-11-20 20:36:10--  http://rml.lri.fr/distrib/rml-1.09.01-2013-09-10.tar.gz
+Resolving rml.lri.fr (rml.lri.fr)... 129.175.15.11
+Connecting to rml.lri.fr (rml.lri.fr)|129.175.15.11|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 689508 (673K) [application/x-gzip]
+Saving to: `rml-1.09.01-2013-09-10.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  7% 92.2K 7s
+    50K .......... .......... .......... .......... .......... 14%  154K 5s
+   100K .......... .......... .......... .......... .......... 22%  458K 3s
+   150K .......... .......... .......... .......... .......... 29%  458K 3s
+   200K .......... .......... .......... .......... .......... 37%  462K 2s
+   250K .......... .......... .......... .......... .......... 44%  465K 2s
+   300K .......... .......... .......... .......... .......... 51% 28.9M 1s
+   350K .......... .......... .......... .......... .......... 59%  463K 1s
+   400K .......... .......... .......... .......... .......... 66%  462K 1s
+   450K .......... .......... .......... .......... .......... 74% 65.4M 1s
+   500K .......... .......... .......... .......... .......... 81%  464K 0s
+   550K .......... .......... .......... .......... .......... 89%  461K 0s
+   600K .......... .......... .......... .......... .......... 96% 48.3M 0s
+   650K .......... .......... ...                             100%  218K=1.8s
+
+2013-11-20 20:36:12 (365 KB/s) - `rml-1.09.01-2013-09-10.tar.gz' saved [689508/689508]
+
+Building rml.1.09.01:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  make
+  make install
+creating compiler/global/rzi.ml
+checking for install... install
+checking for ocaml... ocaml
+checking for ocamlc... ocamlc
+ocaml version is 4.02.0+dev2-2013-09-12
+ocaml library path is /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+checking for ocamlopt... ocamlopt
+ocaml version is 4.02.0+dev2-2013-09-12
+ocaml library path is /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+checking for ocamldep... ocamldep
+checking for ocamllex... ocamllex
+checking for ocamlyacc... ocamlyacc
+checking for ocamlcp... ocamlcp
+
+patching file compiler/reac/annot.ml
+patching file compiler/global/asttypes.ml
+patching file compiler/main/errors.ml
+patching file compiler/global/global.ml
+patching file compiler/parsing/lexer.mll
+patching file compiler/parsing/linenum.mll
+patching file compiler/parsing/location.ml
+patching file compiler/global/modules.ml
+patching file compiler/parsing/parse_ast.ml
+patching file compiler/parsing/parse.ml
+patching file compiler/parsing/parse_printer.ml
+patching file compiler/parsing/parser.mly
+patching file compiler/reac/reac_ast.ml
+patching file compiler/parsing/syntaxerr.ml
+patching file compiler/global/warnings.ml
+patching file tools/rmlbuild/rmlbuild/Makefile
+patching file tools/rmlbuild/rmlbuild/main.ml
+patching file tools/rmlbuild/rmlbuild/ocamlbuild_pack.mlpack
+patching file tools/rmlbuild/rmlbuild/ocamlbuild_plugin.ml
+patching file tools/rmlbuild/rmlbuild/start.sh
+Patch OK
+
+** Configuration summary **
+
+Directories where ReactiveML will be installed:
+        binaries.................. /home/opam/.opam/4.02.0dev+module-aliases/bin
+        standard library.......... /home/opam/.opam/4.02.0dev+module-aliases/lib/rml
+        manual pages.............. /home/opam/.opam/4.02.0dev+module-aliases/man (with extension .1)
+
+creating config
+
+** ReactiveML configuration completed successfully **
+
+(cd compiler; touch .depend; make depend; make opt)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/compiler'
+echo "(* This file is generated *)" > global/version.ml
+echo "let version = \"1.09.01\"" >> global/version.ml
+echo "let stdlib = \"/home/opam/.opam/4.02.0dev+module-aliases/lib/rml\"" >> global/version.ml
+ocamlyacc -v parsing/parser.mly
+ocamllex parsing/lexer.mll
+167 states, 2981 transitions, table size 12926 bytes
+2216 additional bytes used for bindings
+ocamllex parsing/linenum.mll
+12 states, 323 transitions, table size 1364 bytes
+(for d in global parsing external static typing other_analysis reac lco lk caml optimization main; \
+	 do ocamldep -slash -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main $d/*.mli $d/*.ml; \
+	 done) > .depend
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/compiler'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/compiler'
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/version.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/asttypes.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/warnings.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main parsing/linenum.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main parsing/location.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/misc.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/ident.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/global_ident.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/global.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main static/def_static.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main typing/def_types.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/rzi.mli
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/version.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/warnings.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main parsing/linenum.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main parsing/location.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/misc.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/ident.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/global_ident.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/global.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main static/def_static.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/asttypes.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main typing/def_types.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/def_modules.ml
+ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/compiler/global global/def_modules.cmo /home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/compiler/../configure-tools/embedrzi.ml "/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/compiler/../"
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/rzi.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/def_modules.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main parsing/parse_ident.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/modules.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/symbol_table.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main parsing/syntaxerr.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main parsing/parse_ast.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main parsing/parse_ident.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main parsing/parse_ast.ml
+ocamlc  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main parsing/parser.mli
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main parsing/parser.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main parsing/lexer.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main main/errors.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main main/configure.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main main/options.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main parsing/parse.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main parsing/parse_printer.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main external/lucky_errors.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main external/lucky.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main external/external.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main reac/reac_ast.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main reac/binding_errors.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main typing/types_printer.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main typing/reactivity_effects.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main typing/types.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main reac/reac_misc.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main reac/reac2reac.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main typing/reactivity_check.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main reac/parse2reac.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/initialization.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main static/static_printer.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main static/static_errors.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main static/static.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main other_analysis/wf_rec.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main other_analysis/instantaneous_loop.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main reac/annot.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main typing/typing_errors.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main typing/typing.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main lco/lco_ast.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main lco/lco_misc.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main lco/reac2lco.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main lk/lk_ast.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main lk/lk_misc.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main lk/reac2lk.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main caml/caml_ast.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main caml/caml_misc.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main caml/lco2caml.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main caml/lk2caml.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main caml/caml2caml.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main caml/print_caml_src.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main optimization/reac_optimization.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main main/compiler.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main main/interactive.ml
+ocamlopt  -for-pack Rmlcompiler -c -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main main/main.ml
+ocamlopt  -for-pack Rmlcompiler -I global -I parsing -I external -I static -I typing -I other_analysis -I reac -I lco -I lk -I caml -I optimization -I main global/version.cmx global/asttypes.cmx global/warnings.cmx parsing/linenum.cmx parsing/location.cmx global/misc.cmx global/ident.cmx global/global_ident.cmx global/global.cmx static/def_static.cmx typing/def_types.cmx global/rzi.cmx global/def_modules.cmx global/modules.cmx global/symbol_table.cmx parsing/lexer.cmx parsing/syntaxerr.cmx main/errors.cmx main/configure.cmx main/options.cmx parsing/parse_ast.cmx parsing/parse_ident.cmx parsing/parser.cmx parsing/parse.cmx parsing/parse_printer.cmx external/lucky_errors.cmx external/lucky.cmx external/external.cmx reac/reac_ast.cmx reac/binding_errors.cmx typing/types_printer.cmx typing/reactivity_effects.cmx typing/types.cmx reac/reac_misc.cmx reac/reac2reac.cmx typing/reactivity_check.cmx reac/parse2reac.cmx global/initialization.cmx static/static_printer.cmx static/static_errors.cmx static/static.cmx other_analysis/wf_rec.cmx other_analysis/instantaneous_loop.cmx reac/annot.cmx typing/typing_errors.cmx typing/typing.cmx lco/lco_ast.cmx lco/lco_misc.cmx lco/reac2lco.cmx lk/lk_ast.cmx lk/lk_misc.cmx lk/reac2lk.cmx caml/caml_ast.cmx caml/caml_misc.cmx caml/lco2caml.cmx caml/lk2caml.cmx caml/caml2caml.cmx caml/print_caml_src.cmx optimization/reac_optimization.cmx main/compiler.cmx main/interactive.cmx main/main.cmx -o rmlc.opt
+ln -sf rmlc.opt rmlc
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/compiler'
+(cd stdlib; make all)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/stdlib'
+../compiler/rmlc -c pervasives.rmli
+../compiler/rmlc -c arg.rmli
+../compiler/rmlc -c array.rmli
+../compiler/rmlc -c buffer.rmli
+../compiler/rmlc -c callback.rmli
+../compiler/rmlc -c char.rmli
+../compiler/rmlc -c complex.rmli
+../compiler/rmlc -c digest.rmli
+../compiler/rmlc -c filename.rmli
+../compiler/rmlc -c format.rmli
+../compiler/rmlc -c gc.rmli
+../compiler/rmlc -c stream.rmli
+../compiler/rmlc -c genlex.rmli
+../compiler/rmlc -c graphics.rmli
+../compiler/rmlc -c hashtbl.rmli
+../compiler/rmlc -c int32.rmli
+../compiler/rmlc -c nativeint.rmli
+../compiler/rmlc -c int64.rmli
+../compiler/rmlc -c lazy.rmli
+../compiler/rmlc -c lexing.rmli
+../compiler/rmlc -c list.rmli
+../compiler/rmlc -c luc4ocaml.rmli
+../compiler/rmlc -c luc4ocaml_nolbl.rmli
+../compiler/rmlc -c marshal.rmli
+../compiler/rmlc -c obj.rmli
+../compiler/rmlc -c parsing.rmli
+../compiler/rmlc -c printexc.rmli
+../compiler/rmlc -c printf.rmli
+../compiler/rmlc -c queue.rmli
+../compiler/rmlc -c random.rmli
+../compiler/rmlc -c sort.rmli
+../compiler/rmlc -c stack.rmli
+../compiler/rmlc -c str.rmli
+../compiler/rmlc -c string.rmli
+../compiler/rmlc -c sys.rmli
+../compiler/rmlc -c unix.rmli
+../compiler/rmlc -c weak.rmli
+../compiler/rmlc -c rml_list.rmli
+../compiler/rmlc -c rml_process_manager.rmli
+../compiler/rmlc -c thread/async_body.rmli
+../compiler/rmlc -c thread/async.rmli
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/stdlib'
+(cd interpreter; touch .depend; make depend; make all)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+ocamldep -slash  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+make -f Makefile-lco all
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+ocamlc  -c  sig_env.ml
+ocamlc  -c  lco_interpreter.mli
+ocamlc  -c  lco_ctrl_tree.ml
+ocamlc  -c  rml_machine.ml
+ocamlc  -c  implem_lco_ctrl_tree_record.ml
+../compiler/rmlc -I ../stdlib -d lco -no_reactivity_warning -runtime Lco ../stdlib/rml_list.rml
+ocamlc  -c  -I lco -o lco/rml_list.cmo lco/rml_list.ml
+cp ../stdlib/thread/async_body.ml lco/async_body.ml
+ocamlc -thread -c  -I lco -o lco/async_body.cmo lco/async_body.ml
+../compiler/rmlc -I ../stdlib -I ../stdlib/thread -d lco -no_reactivity_warning -runtime Lco ../stdlib/thread/async.rml
+ocamlc  -c  -I lco -o lco/async.cmo lco/async.ml
+ocamlc  -a -o lco/rmllib.cma sig_env.cmo lco_ctrl_tree.cmo rml_machine.cmo implem_lco_ctrl_tree_record.cmo lco/rml_list.cmo lco/async_body.cmo lco/async.cmo
+ocamlopt  -c  sig_env.ml
+ocamlopt  -c  lco_ctrl_tree.ml
+ocamlopt  -c  rml_machine.ml
+ocamlopt  -c  implem_lco_ctrl_tree_record.ml
+ocamlopt  -c  -I lco -o lco/rml_list.cmx lco/rml_list.ml
+ocamlopt -thread -c  -I lco -o lco/async_body.cmx lco/async_body.ml
+ocamlopt  -c  -I lco -o lco/async.cmx lco/async.ml
+ocamlopt  -a -o lco/rmllib.cmxa sig_env.cmx lco_ctrl_tree.cmx rml_machine.cmx implem_lco_ctrl_tree_record.cmx lco/rml_list.cmx lco/async_body.cmx lco/async.cmx
+rm lco/async.ml lco/async_body.ml lco/rml_list.ml
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+make -f Makefile-lco_n all
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+ocamlc  -c  lco_ctrl_tree_n.ml
+ocamlc  -c  implem_lco_ctrl_tree_n_record.ml
+../compiler/rmlc -I ../stdlib -d lco_n -no_reactivity_warning -runtime Lco_n ../stdlib/rml_list.rml
+ocamlc  -c  -I lco_n -o lco_n/rml_list.cmo lco_n/rml_list.ml
+cp ../stdlib/thread/async_body.ml lco_n/async_body.ml
+ocamlc -thread -c  -I lco_n -o lco_n/async_body.cmo lco_n/async_body.ml
+../compiler/rmlc -I ../stdlib -I ../stdlib/thread -d lco_n -no_reactivity_warning -runtime Lco_n ../stdlib/thread/async.rml
+ocamlc  -c  -I lco_n -o lco_n/async.cmo lco_n/async.ml
+ocamlc  -a -o lco_n/rmllib.cma sig_env.cmo lco_ctrl_tree_n.cmo rml_machine.cmo implem_lco_ctrl_tree_n_record.cmo lco_n/rml_list.cmo lco_n/async_body.cmo lco_n/async.cmo
+ocamlopt  -c  lco_ctrl_tree_n.ml
+ocamlopt  -c  implem_lco_ctrl_tree_n_record.ml
+ocamlopt  -c  -I lco_n -o lco_n/rml_list.cmx lco_n/rml_list.ml
+ocamlopt -thread -c  -I lco_n -o lco_n/async_body.cmx lco_n/async_body.ml
+ocamlopt  -c  -I lco_n -o lco_n/async.cmx lco_n/async.ml
+ocamlopt  -a -o lco_n/rmllib.cmxa sig_env.cmx lco_ctrl_tree_n.cmx rml_machine.cmx implem_lco_ctrl_tree_n_record.cmx lco_n/rml_list.cmx lco_n/async_body.cmx lco_n/async.cmx
+rm lco_n/async_body.ml lco_n/rml_list.ml lco_n/async.ml
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+make -f Makefile-lco_class all
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+ocamlc  -c  implem_lco_ctrl_tree_class.ml
+../compiler/rmlc -I ../stdlib -d lco_class -no_reactivity_warning -runtime Lco_class ../stdlib/rml_list.rml
+ocamlc  -c  -I lco_class -o lco_class/rml_list.cmo lco_class/rml_list.ml
+cp ../stdlib/thread/async_body.ml lco_class/async_body.ml
+ocamlc -thread -c  -I lco_class -o lco_class/async_body.cmo lco_class/async_body.ml
+../compiler/rmlc -I ../stdlib -I ../stdlib/thread -d lco_class -no_reactivity_warning -runtime Lco_class ../stdlib/thread/async.rml
+ocamlc  -c  -I lco_class -o lco_class/async.cmo lco_class/async.ml
+ocamlc  -a -o lco_class/rmllib.cma sig_env.cmo lco_ctrl_tree.cmo rml_machine.cmo implem_lco_ctrl_tree_class.cmo lco_class/rml_list.cmo lco_class/async_body.cmo lco_class/async.cmo
+ocamlopt  -c  implem_lco_ctrl_tree_class.ml
+ocamlopt  -c  -I lco_class -o lco_class/rml_list.cmx lco_class/rml_list.ml
+ocamlopt -thread -c  -I lco_class -o lco_class/async_body.cmx lco_class/async_body.ml
+ocamlopt  -c  -I lco_class -o lco_class/async.cmx lco_class/async.ml
+ocamlopt  -a -o lco_class/rmllib.cmxa sig_env.cmx lco_ctrl_tree.cmx rml_machine.cmx implem_lco_ctrl_tree_class.cmx lco_class/rml_list.cmx lco_class/async_body.cmx lco_class/async.cmx
+rm lco_class/rml_list.ml lco_class/async_body.ml lco_class/async.ml
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+make -f Makefile-lco_rewrite all
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+ocamlc -rectypes -c  lco_rewrite.ml
+ocamlc -rectypes -c  implem_lco_rewrite_record.ml
+../compiler/rmlc -I ../stdlib -d lco_rewrite -no_reactivity_warning -runtime Lco_rewrite ../stdlib/rml_list.rml
+ocamlc -rectypes -c  -I lco_rewrite -o lco_rewrite/rml_list.cmo lco_rewrite/rml_list.ml
+cp ../stdlib/thread/async_body.ml lco_rewrite/async_body.ml
+ocamlc -rectypes -thread -c  -I lco_rewrite -o lco_rewrite/async_body.cmo lco_rewrite/async_body.ml
+../compiler/rmlc -I ../stdlib -I ../stdlib/thread -d lco_rewrite -no_reactivity_warning -runtime Lco_rewrite ../stdlib/thread/async.rml
+ocamlc -rectypes -c  -I lco_rewrite -o lco_rewrite/async.cmo lco_rewrite/async.ml
+ocamlc  -a -o lco_rewrite/rmllib.cma sig_env.cmo lco_rewrite.cmo rml_machine.cmo implem_lco_rewrite_record.cmo lco_rewrite/rml_list.cmo lco_rewrite/async_body.cmo lco_rewrite/async.cmo
+ocamlopt -rectypes -c  lco_rewrite.ml
+ocamlopt -rectypes -c  implem_lco_rewrite_record.ml
+ocamlopt -rectypes -c  -I lco_rewrite -o lco_rewrite/rml_list.cmx lco_rewrite/rml_list.ml
+ocamlopt -rectypes -thread -c  -I lco_rewrite -o lco_rewrite/async_body.cmx lco_rewrite/async_body.ml
+ocamlopt -rectypes -c  -I lco_rewrite -o lco_rewrite/async.cmx lco_rewrite/async.ml
+ocamlopt  -a -o lco_rewrite/rmllib.cmxa sig_env.cmx lco_rewrite.cmx rml_machine.cmx implem_lco_rewrite_record.cmx lco_rewrite/rml_list.cmx lco_rewrite/async_body.cmx lco_rewrite/async.cmx
+rm lco_rewrite/rml_list.ml lco_rewrite/async.ml lco_rewrite/async_body.ml
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+make -f Makefile-lk all
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+ocamlc  -c  lk_interpreter.mli
+ocamlc  -c  lk_implem.ml
+ocamlc  -c  implem_lk_record.ml
+../compiler/rmlc -I ../stdlib -d lk -no_reactivity_warning -runtime Lk ../stdlib/rml_list.rml
+ocamlc  -c  -I lk -o lk/rml_list.cmo lk/rml_list.ml
+cp ../stdlib/thread/async_body.ml lk/async_body.ml
+ocamlc -thread -c  -I lk -o lk/async_body.cmo lk/async_body.ml
+../compiler/rmlc -I ../stdlib -I ../stdlib/thread -d lk -no_reactivity_warning -runtime Lk ../stdlib/thread/async.rml
+ocamlc  -c  -I lk -o lk/async.cmo lk/async.ml
+ocamlc  -a -o lk/rmllib.cma sig_env.cmo lk_implem.cmo rml_machine.cmo implem_lk_record.cmo lk/rml_list.cmo lk/async_body.cmo lk/async.cmo
+ocamlopt  -c  lk_implem.ml
+ocamlopt  -c  implem_lk_record.ml
+ocamlopt  -c  -I lk -o lk/rml_list.cmx lk/rml_list.ml
+ocamlopt -thread -c  -I lk -o lk/async_body.cmx lk/async_body.ml
+ocamlopt  -c  -I lk -o lk/async.cmx lk/async.ml
+ocamlopt  -a -o lk/rmllib.cmxa sig_env.cmx lk_implem.cmx rml_machine.cmx implem_lk_record.cmx lk/rml_list.cmx lk/async_body.cmx lk/async.cmx
+rm lk/async.ml lk/async_body.ml lk/rml_list.ml
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+(cd toplevel; make all)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/toplevel'
+ocamllex rmltop_lexer.mll
+87 states, 656 transitions, table size 3146 bytes
+ocamlc -c -I ../stdlib -I ../interpreter -I ../interpreter/lco -thread rmltop_lexer.ml
+ocamlc -I ../stdlib -I ../interpreter -I ../interpreter/lco rmltop_global.mli
+ocamlc -c -I ../stdlib -I ../interpreter -I ../interpreter/lco -thread rmltop_global.ml
+ocamlc -c -I ../stdlib -I ../interpreter -I ../interpreter/lco -thread rmltop_directives.ml
+ocamlc -c -I ../stdlib -I ../interpreter -I ../interpreter/lco -thread rmltop.ml
+ocamlc -o rmltop -I +threads -I ../stdlib -I ../interpreter -I ../interpreter/lco unix.cma str.cma \
+		threads.cma \
+		lco/rmllib.cma \
+		rmltop_lexer.cmo \
+		rmltop_global.cmo \
+		rmltop_directives.cmo \
+		rmltop.cmo
+../compiler/rmlc -I ../stdlib -I ../interpreter -I ../interpreter/lco -runtime Lco_ctrl_tree rmltop_machine_body.rml
+ocamlc -c -I ../stdlib -I ../interpreter -I ../interpreter/lco -thread rmltop_machine_body.ml
+../compiler/rmlc -c -I ../stdlib -I ../interpreter -I ../interpreter/lco rmltop_global.rmli
+../compiler/rmlc -I ../stdlib -I ../interpreter -I ../interpreter/lco rmltop_reactive_machine.rmli
+ocamlc -I ../stdlib -I ../interpreter -I ../interpreter/lco rmltop_reactive_machine.mli
+../compiler/rmlc -I ../stdlib -I ../interpreter -I ../interpreter/lco -runtime Rmltop rmltop_controller.rml
+ocamlc -c -I ../stdlib -I ../interpreter -I ../interpreter/lco -thread rmltop_implem.ml
+ocamlc -c -I ../stdlib -I ../interpreter -I ../interpreter/lco -thread rmltop_controller.ml
+ocamlc -c -I ../stdlib -I ../interpreter -I ../interpreter/lco -thread rmltop_reactive_machine.ml
+ocamlc -c -I ../stdlib -I ../interpreter -I ../interpreter/lco -thread rmltop_main.ml
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/toplevel'
+(cd tools; make opt)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools'
+(for d in rmldep rmlbuild; \
+	 do (cd $d ; make opt) ; \
+	 done)
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools/rmldep'
+ocamlopt  -c -I ../../compiler/global -I ../../compiler/parsing depend.ml
+ocamlopt  -c -I ../../compiler/global -I ../../compiler/parsing rmldep.ml
+ocamlopt  -I ../../compiler/global -I ../../compiler/parsing ../../compiler/global/version.cmx ../../compiler/global/misc.cmx ../../compiler/global/warnings.cmx ../../compiler/global/ident.cmx ../../compiler/parsing/linenum.cmx ../../compiler/parsing/parse_ident.cmx ../../compiler/parsing/parse_ast.cmx ../../compiler/parsing/location.cmx ../../compiler/parsing/syntaxerr.cmx ../../compiler/parsing/lexer.cmx ../../compiler/parsing/parser.cmx ../../compiler/parsing/parse.cmx depend.cmx rmldep.cmx -o rmldep.opt
+ln -sf rmldep.opt rmldep
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools/rmldep'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools/rmlbuild'
+cd rmlbuild; make
+make[3]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools/rmlbuild/rmlbuild'
+INSTALL_LIB=/home/opam/.opam/4.02.0dev+module-aliases/lib/rml/rmlbuild INSTALL_BIN=/home/opam/.opam/4.02.0dev+module-aliases/bin ocamlbuild -classic-display -build-dir "_build" -no-links  ocamlbuildlib.cma ocamlbuild.byte
+ocamlfind ocamldep -modules log.mli > log.mli.depends
+ocamlfind ocamldep -modules signatures.mli > signatures.mli.depends
+ocamlfind ocamldep -modules std_signatures.mli > std_signatures.mli.depends
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o std_signatures.cmi std_signatures.mli
+ocamlfind ocamldep -modules tags.mli > tags.mli.depends
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o signatures.cmi signatures.mli
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o tags.cmi tags.mli
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o log.cmi log.mli
+ocamlfind ocamldep -modules log.ml > log.ml.depends
+ocamlfind ocamldep -modules display.mli > display.mli.depends
+ocamlfind ocamldep -modules my_std.mli > my_std.mli.depends
+ocamlfind ocamldep -modules my_unix.mli > my_unix.mli.depends
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o display.cmi display.mli
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o my_std.cmi my_std.mli
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o my_unix.cmi my_unix.mli
+ocamlfind ocamldep -modules my_unix.ml > my_unix.ml.depends
+ocamlfind ocamldep -modules my_std.ml > my_std.ml.depends
+ocamlfind ocamldep -modules shell.mli > shell.mli.depends
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o shell.cmi shell.mli
+ocamlfind ocamldep -modules shell.ml > shell.ml.depends
+ocamlfind ocamldep -modules display.ml > display.ml.depends
+ocamlfind ocamldep -modules discard_printf.mli > discard_printf.mli.depends
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o discard_printf.cmi discard_printf.mli
+ocamlfind ocamldep -modules command.mli > command.mli.depends
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o command.cmi command.mli
+ocamlfind ocamldep -modules command.ml > command.ml.depends
+ocamlfind ocamldep -modules lexers.mli > lexers.mli.depends
+ocamlfind ocamldep -modules glob.mli > glob.mli.depends
+ocamlfind ocamldep -modules bool.mli > bool.mli.depends
+ocamlfind ocamldep -modules glob_ast.mli > glob_ast.mli.depends
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o bool.cmi bool.mli
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o glob_ast.cmi glob_ast.mli
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o glob.cmi glob.mli
+ocamlfind ocamldep -modules param_tags.mli > param_tags.mli.depends
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o lexers.cmi lexers.mli
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o param_tags.cmi param_tags.mli
+ocamlfind ocamldep -modules configuration.mli > configuration.mli.depends
+ocamlfind ocamldep -modules pathname.mli > pathname.mli.depends
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o pathname.cmi pathname.mli
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o configuration.cmi configuration.mli
+ocamlfind ocamldep -modules configuration.ml > configuration.ml.depends
+ocamlfind ocamldep -modules discard_printf.ml > discard_printf.ml.depends
+ocamlfind ocamldep -modules flags.mli > flags.mli.depends
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o flags.cmi flags.mli
+ocamlfind ocamldep -modules flags.ml > flags.ml.depends
+ocamlfind ocamldep -modules hygiene.mli > hygiene.mli.depends
+ocamlfind ocamldep -modules slurp.mli > slurp.mli.depends
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o slurp.cmi slurp.mli
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o hygiene.cmi hygiene.mli
+ocamlfind ocamldep -modules hygiene.ml > hygiene.ml.depends
+ocamlfind ocamldep -modules options.mli > options.mli.depends
+ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o options.cmi options.mli
+ocamlfind ocamldep -modules options.ml > options.ml.depends
+ocamlfind ocamldep -modules ocamlbuild_Myocamlbuild_config.ml > ocamlbuild_Myocamlbuild_config.ml.depends
++ ocamlfind ocamldep -modules ocamlbuild_Myocamlbuild_config.ml > ocamlbuild_Myocamlbuild_config.ml.depends
+File "ocamlbuild_Myocamlbuild_config.ml", line 92, characters 14-15:
+Error: Syntax error
+Command exited with code 2.
+make[3]: *** [all] Error 10
+make[3]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools/rmlbuild/rmlbuild'
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools/rmlbuild'
+make[2]: *** [all] Error 2
+make[1]: *** [all] Error 2
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools'
+make: *** [all] Error 2
+[ERROR] The compilation of rml.1.09.01 failed.
+Removing rml.1.09.01.
+  make uninstall
+(cd compiler; make uninstall)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/compiler'
+rm -f /home/opam/.opam/4.02.0dev+module-aliases/bin/rmlc.opt
+rm -f /home/opam/.opam/4.02.0dev+module-aliases/bin/rmlc
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/compiler'
+(cd stdlib; make uninstall)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/stdlib'
+make[1]: Nothing to be done for `uninstall'.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/stdlib'
+(cd interpreter; make uninstall)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+make -f Makefile-lco uninstall
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+(cd /home/opam/.opam/4.02.0dev+module-aliases/lib/rml/lco; rm -f lco_interpreter.cmi sig_env.cmi lco_ctrl_tree.cmi rml_machine.cmi implem_lco_ctrl_tree_record.cmi lco/rmllib.cma lco/rmllib.cmxa lco/rmllib.a  )
+/bin/sh: 1: cd: can't cd to /home/opam/.opam/4.02.0dev+module-aliases/lib/rml/lco
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+make -f Makefile-lco_n uninstall
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+(cd /home/opam/.opam/4.02.0dev+module-aliases/lib/rml/lco_n; rm -f lco_interpreter.cmi sig_env.cmi lco_ctrl_tree_n.cmi rml_machine.cmi implem_lco_ctrl_tree_n_record.cmi lco_n/rmllib.cma lco_n/rmllib.cmxa lco_n/rmllib.a  )
+/bin/sh: 1: cd: can't cd to /home/opam/.opam/4.02.0dev+module-aliases/lib/rml/lco_n
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+make -f Makefile-lco_class uninstall
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+(cd /home/opam/.opam/4.02.0dev+module-aliases/lib/rml/lco_class; rm -f lco_interpreter.cmi sig_env.cmi lco_ctrl_tree.cmi rml_machine.cmi implem_lco_ctrl_tree_class.cmi lco_class/rmllib.cma lco_class/rmllib.cmxa lco_class/rmllib.a  )
+/bin/sh: 1: cd: can't cd to /home/opam/.opam/4.02.0dev+module-aliases/lib/rml/lco_class
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+make -f Makefile-lco_rewrite uninstall
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+(cd /home/opam/.opam/4.02.0dev+module-aliases/lib/rml/lco_rewrite; rm -f lco_interpreter.cmi sig_env.cmi lco_rewrite.cmi rml_machine.cmi implem_lco_rewrite_record.cmi lco_rewrite/rmllib.cma lco_rewrite/rmllib.cmxa lco_rewrite/rmllib.a  )
+/bin/sh: 1: cd: can't cd to /home/opam/.opam/4.02.0dev+module-aliases/lib/rml/lco_rewrite
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+make -f Makefile-lk uninstall
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+(cd /home/opam/.opam/4.02.0dev+module-aliases/lib/rml/lk; rm -f lk_interpreter.cmi sig_env.cmi lk_implem.cmi rml_machine.cmi implem_lk_record.cmi lk/rmllib.cma lk/rmllib.cmxa lk/rmllib.a  )
+/bin/sh: 1: cd: can't cd to /home/opam/.opam/4.02.0dev+module-aliases/lib/rml/lk
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/interpreter'
+(cd man; make uninstall)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/man'
+No man page to uninstall
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/man'
+(cd emacs; make uninstall)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/emacs'
+make[1]: Nothing to be done for `uninstall'.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/emacs'
+(cd toplevel; make uninstall)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/toplevel'
+rm -f /home/opam/.opam/4.02.0dev+module-aliases/bin/rmltop
+rm -rf /home/opam/.opam/4.02.0dev+module-aliases/lib/rml/toplevel
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/toplevel'
+(cd tools; make uninstall)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools'
+(for d in rmldep rmlbuild; \
+	 do (cd $d ; make uninstall) ; \
+	 done)
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools/rmldep'
+rm -f /home/opam/.opam/4.02.0dev+module-aliases/bin/rmldep.opt
+rm -f /home/opam/.opam/4.02.0dev+module-aliases/bin/rmldep
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools/rmldep'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools/rmlbuild'
+cd rmlbuild; make uninstall
+make[3]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools/rmlbuild/rmlbuild'
+rm -f /home/opam/.opam/4.02.0dev+module-aliases/bin/rmlbuild
+rm -rf /home/opam/.opam/4.02.0dev+module-aliases/lib/rml/rmlbuild
+make[3]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools/rmlbuild/rmlbuild'
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools/rmlbuild'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools'
+
+
+===== ERROR while installing rml.1.09.01 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/rml-19-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/rml-19-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/rml-19-d2d111.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlc -c -g -annot -w L -w R -w Z -o options.cmi options.mli
+# ocamlfind ocamldep -modules options.ml > options.ml.depends
+# ocamlfind ocamldep -modules ocamlbuild_Myocamlbuild_config.ml > ocamlbuild_Myocamlbuild_config.ml.depends
+# + ocamlfind ocamldep -modules ocamlbuild_Myocamlbuild_config.ml > ocamlbuild_Myocamlbuild_config.ml.depends
+# File "ocamlbuild_Myocamlbuild_config.ml", line 92, characters 14-15:
+# Error: Syntax error
+# Command exited with code 2.
+# make[3]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools/rmlbuild/rmlbuild'
+# make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools/rmlbuild'
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/rml.1.09.01/tools'
+### stderr ###
+# make[3]: *** [all] Error 10
+# make[2]: *** [all] Error 2
+# make[1]: *** [all] Error 2
+# make: *** [all] Error 2
+
+'opam install rml' failed.
