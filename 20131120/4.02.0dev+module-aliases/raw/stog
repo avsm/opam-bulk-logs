@@ -1,0 +1,369 @@
+++ opam install stog -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install stog
+Ubuntu depexts:
+The following actions will be performed:
+ - install config-file.1.1 [required by stog]
+ - install ocamlnet.3.7.3 [required by stog]
+ - install xmlm.1.2.0 [required by stog]
+ - install ocamlrss.2.2.2 [required by stog]
+ - install xtmpl.0.7 [required by stog]
+ - install stog.0.9.0
+6 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing config-file.1.1 =-=-=
+config-file.1.1 Downloading https://forge.ocamlcore.org/frs/download.php/845/config-file-1.1.tar.gz
+--2013-11-20 20:50:03--  https://forge.ocamlcore.org/frs/download.php/845/config-file-1.1.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:443... connected.
+WARNING: no certificate subject alternative name matches
+	requested host name `forge.ocamlcore.org'.
+HTTP request sent, awaiting response... 200 OK
+Length: 49853 (49K) [application/binary]
+Saving to: `config-file-1.1.tar.gz'
+
+     0K .......... .......... .......... .......... ........  100%  166K=0.3s
+
+2013-11-20 20:50:04 (166 KB/s) - `config-file-1.1.tar.gz' saved [49853/49853]
+
+Building config-file.1.1:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  make all
+  make install
+checking for ocamlfind... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+checking for camlp4... /usr/bin/camlp4
+configure: creating ./config.status
+config.status: creating master.Makefile
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind ocamlc   -c config_file.mli
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind ocamlc   -c config_file.ml
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind ocamlopt   -c config_file.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/config-file/config_file.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/config-file/config_file.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/config-file/config_file.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/config-file/config_file.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/config-file/config_file.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/config-file/META
+Installing config-file.1.1.
+
+=-=-= Installing ocamlnet.3.7.3 =-=-=
+ocamlnet.3.7.3 Downloading http://download.camlcity.org/download/ocamlnet-3.7.3.tar.gz
+--2013-11-20 20:50:06--  http://download.camlcity.org/download/ocamlnet-3.7.3.tar.gz
+Resolving download.camlcity.org (download.camlcity.org)... 78.46.83.102, 2a01:4f8:120:10e8::101:6
+Connecting to download.camlcity.org (download.camlcity.org)|78.46.83.102|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3352779 (3.2M) [application/x-tar]
+Saving to: `ocamlnet-3.7.3.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  1%  102K 32s
+    50K .......... .......... .......... .......... ..........  3%  203K 23s
+   100K .......... .......... .......... .......... ..........  4%  403K 18s
+   150K .......... .......... .......... .......... ..........  6%  409K 15s
+   200K .......... .......... .......... .......... ..........  7%  421K 13s
+   250K .......... .......... .......... .......... ..........  9% 3.54M 11s
+   300K .......... .......... .......... .......... .......... 10%  444K 10s
+   350K .......... .......... .......... .......... .......... 12% 4.03M 9s
+   400K .......... .......... .......... .......... .......... 13%  462K 8s
+   450K .......... .......... .......... .......... .......... 15% 4.04M 8s
+   500K .......... .......... .......... .......... .......... 16%  647K 7s
+   550K .......... .......... .......... .......... .......... 18% 1.37M 7s
+   600K .......... .......... .......... .......... .......... 19% 6.20M 6s
+   650K .......... .......... .......... .......... .......... 21% 1.38M 6s
+   700K .......... .......... .......... .......... .......... 22%  647K 5s
+   750K .......... .......... .......... .......... .......... 24% 9.60M 5s
+   800K .......... .......... .......... .......... .......... 25% 2.96M 5s
+   850K .......... .......... .......... .......... .......... 27% 2.11M 4s
+   900K .......... .......... .......... .......... .......... 29%  627K 4s
+   950K .......... .......... .......... .......... .......... 30% 3.92M 4s
+  1000K .......... .......... .......... .......... .......... 32% 7.59M 4s
+  1050K .......... .......... .......... .......... .......... 33% 6.05M 3s
+  1100K .......... .......... .......... .......... .......... 35% 2.64M 3s
+  1150K .......... .......... .......... .......... .......... 36% 1.14M 3s
+  1200K .......... .......... .......... .......... .......... 38% 1.27M 3s
+  1250K .......... .......... .......... .......... .......... 39% 3.76M 3s
+  1300K .......... .......... .......... .......... .......... 41% 5.11M 3s
+  1350K .......... .......... .......... .......... .......... 42% 3.05M 3s
+  1400K .......... .......... .......... .......... .......... 44% 6.37M 2s
+  1450K .......... .......... .......... .......... .......... 45% 1.29M 2s
+  1500K .......... .......... .......... .......... .......... 47% 1.38M 2s
+  1550K .......... .......... .......... .......... .......... 48% 9.11M 2s
+  1600K .......... .......... .......... .......... .......... 50% 5.78M 2s
+  1650K .......... .......... .......... .......... .......... 51% 4.48M 2s
+  1700K .......... .......... .......... .......... .......... 53% 5.96M 2s
+  1750K .......... .......... .......... .......... .......... 54% 3.93M 2s
+  1800K .......... .......... .......... .......... .......... 56% 1.45M 2s
+  1850K .......... .......... .......... .......... .......... 58% 5.29M 1s
+  1900K .......... .......... .......... .......... .......... 59% 1.79M 1s
+  1950K .......... .......... .......... .......... .......... 61% 5.61M 1s
+  2000K .......... .......... .......... .......... .......... 62% 8.22M 1s
+  2050K .......... .......... .......... .......... .......... 64% 4.71M 1s
+  2100K .......... .......... .......... .......... .......... 65% 3.18M 1s
+  2150K .......... .......... .......... .......... .......... 67% 2.93M 1s
+  2200K .......... .......... .......... .......... .......... 68% 7.04M 1s
+  2250K .......... .......... .......... .......... .......... 70% 7.85M 1s
+  2300K .......... .......... .......... .......... .......... 71% 2.23M 1s
+  2350K .......... .......... .......... .......... .......... 73% 7.22M 1s
+  2400K .......... .......... .......... .......... .......... 74% 1.99M 1s
+  2450K .......... .......... .......... .......... .......... 76% 2.24M 1s
+  2500K .......... .......... .......... .......... .......... 77% 3.85M 1s
+  2550K .......... .......... .......... .......... .......... 79% 6.38M 1s
+  2600K .......... .......... .......... .......... .......... 80% 8.55M 1s
+  2650K .......... .......... .......... .......... .......... 82% 4.48M 0s
+  2700K .......... .......... .......... .......... .......... 83% 4.16M 0s
+  2750K .......... .......... .......... .......... .......... 85% 8.28M 0s
+  2800K .......... .......... .......... .......... .......... 87% 3.65M 0s
+  2850K .......... .......... .......... .......... .......... 88% 10.5M 0s
+  2900K .......... .......... .......... .......... .......... 90% 9.90M 0s
+  2950K .......... .......... .......... .......... .......... 91% 2.21M 0s
+  3000K .......... .......... .......... .......... .......... 93% 9.08M 0s
+  3050K .......... .......... .......... .......... .......... 94% 8.77M 0s
+  3100K .......... .......... .......... .......... .......... 96% 3.82M 0s
+  3150K .......... .......... .......... .......... .......... 97% 5.61M 0s
+  3200K .......... .......... .......... .......... .......... 99% 3.96M 0s
+  3250K .......... .......... ....                            100% 3.44M=2.4s
+
+2013-11-20 20:50:09 (1.35 MB/s) - `ocamlnet-3.7.3.tar.gz' saved [3352779/3352779]
+
+Copying ~/.opam/repo/default/packages/ocamlnet.3.7.3/files/ocamlnet.install to ~/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/
+Building ocamlnet.3.7.3:
+  ./configure -bindir /home/opam/.opam/4.02.0dev+module-aliases/bin -disable-pcre -disable-gtk2 -disable-ssl -disable-zip -disable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Welcome to Ocamlnet version 3.7.3
+Checking operating system... Linux
+Checking for findlib... found
+Checking multi-threading support... posix (ok)
+Checking word size... 64 bit
+Checking endianess... little
+Checking for GPROF... found
+Checking for win32... no
+Checking whether Ocaml has Printexc.register_printer... found
+Checking for POSIX pthread... found
+Checking whether Ocaml has fancy page tables... found
+Checking on new implementation of caml_modify... found
+Checking whether new caml_modify can be overridden... found
+Checking whether out-of-heap values are supported and mutable... yes
+Checking for POSIX shared memory... found
+Checking for POSIX semaphores (anonymous)... found
+Checking for POSIX semaphores (named)... found
+Checking for POSIX spawn... found
+Checking for POSIX fadvise... found
+Checking for POSIX fallocate... found
+Checking for POSIX memalign... found
+Checking for syslog... found
+Checking for POSIX functions like openat... found
+Checking for fchdir... found
+Checking for fdopendir... found
+Checking for realpath... found
+Checking for grantpt (System V style PTYs)... found
+Checking for posix_openpt (System V style PTYs)... found
+Checking for initgroups...found
+Checking for POSIX clocks...found
+Checking for POSIX timers...found
+Checking for eventfd (Linux)...found
+Checking for timerfd (Linux)...found
+Checking for epoll (Linux)...found
+Checking for compare_and_swap (GCC)...found
+Checking for GPROF... found
+Checking for O_SHARE_DELETE... yes
+Checking for O_CLOEXEC... yes
+Checking for getpeereid... not found
+Checking for getpeerucred... not found
+Checking whether netcamlbox and netmulticore are supported... yes
+Preprocessor for ocamlrpcgen: cpp
+
+Effective options:
+    -disable-pcre
+    -disable-full-pcre
+    -disable-gtk
+    -disable-gtk2
+    -disable-tcl
+    -disable-ssl
+    -disable-zip
+    -disable-crypto
+    -disable-apache
+    -with-nethttpd
+    -without-rpc-auth-dh
+    -bindir /home/opam/.opam/4.02.0dev+module-aliases/bin
+    -datadir /home/opam/.opam/4.02.0dev+module-aliases/lib/netstring
+    -cpp cpp
+
+Writing Makefile.conf
+
+Please check Makefile.conf.
+
+You can now compile Ocamlnet by invoking
+   make all
+for the bytecode compiler, and optionally by invoking
+   make opt
+for the native-code compiler (if supported on your architecture).
+Finally, a
+   make install
+will install the package(s).
+for pkg in netsys netshm netstring equeue shell netgssapi rpc-generator rpc rpc-auth-local pop smtp netclient netcgi2 netplex netcgi2-plex netcamlbox netmulticore nethttpd nethttpd-for-netcgi2; do \
+		( cd src/$pkg && make -f Makefile.pre generate ) || exit; \
+		( cd src/$pkg && make -f Makefile.pre depend ) || exit; \
+		( cd src/$pkg && make all ) || exit; \
+	done
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+sed -e 's/@VERSION@/3.7.3/' \
+	    -e 's/@AUTHDHREQS@//' \
+	    -e 's/@PREFERRED_CGI_PKG@//' \
+	    -e 's/@REGEXP_PROVIDER@/str/' \
+	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+ 	    -e 's/@ZIP_PROVIDER@//' \
+		META.in >META
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+ocamlfind ocamldep -package "camlp4.macro" -syntax camlp4o  *.ml *.mli >depend || { rm -f depend; exit 1; }
+make[1]: *** [depend] Error 1
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+make: *** [all] Error 2
+[ERROR] The compilation of ocamlnet.3.7.3 failed.
+Removing ocamlnet.3.7.3.
+  ocamlfind remove equeue
+  ocamlfind remove netcamlbox
+  ocamlfind remove netcgi2
+  ocamlfind remove netcgi2-plex
+  ocamlfind remove netclient
+  ocamlfind remove netgssapi
+  ocamlfind remove nethttpd
+  ocamlfind remove nethttpd-for-netcgi2
+  ocamlfind remove netmulticore
+  ocamlfind remove netplex
+  ocamlfind remove netshm
+  ocamlfind remove netstring
+  ocamlfind remove netsys
+  ocamlfind remove pop
+  ocamlfind remove rpc
+  ocamlfind remove rpc-auth-local
+  ocamlfind remove rpc-generator
+  ocamlfind remove shell
+  ocamlfind remove smtp
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/equeue
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netcamlbox
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netcgi2
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netcgi2-plex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netclient
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netgssapi
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/nethttpd
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/nethttpd-for-netcgi2
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netmulticore
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netplex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netshm
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netstring
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netsys
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/pop
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/rpc
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/rpc-auth-local
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/rpc-generator
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/shell
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/smtp
+
+=-=-= Installing xmlm.1.2.0 =-=-=
+xmlm.1.2.0 Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+--2013-11-20 20:50:18--  http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+Resolving erratique.ch (erratique.ch)... 37.58.75.241, 2a03:8180:1001:b2:36::c
+Connecting to erratique.ch (erratique.ch)|37.58.75.241|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 38181 (37K) [application/x-bzip2]
+Saving to: `xmlm-1.2.0.tbz'
+
+     0K .......... .......... .......... .......              100%  381K=0.1s
+
+2013-11-20 20:50:18 (381 KB/s) - `xmlm-1.2.0.tbz' saved [38181/38181]
+
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+ocamlfind ocamldep -modules src/xmlm.mli > src/xmlm.mli.depends
+ocamlfind ocamlc -c -I src -I test -o src/xmlm.cmi src/xmlm.mli
+ocamlfind ocamldep -modules src/xmlm.ml > src/xmlm.ml.depends
+ocamlfind ocamlopt -c -annot -bin-annot -I src -I test -o src/xmlm.cmx src/xmlm.ml
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/xmlm.cmo src/xmlm.ml
+ocamlfind ocamlc -a src/xmlm.cmo -o src/xmlm.cma
+ocamlfind ocamlopt -a src/xmlm.cmx -o src/xmlm.cmxa
+ocamlfind ocamlopt -shared src/xmlm.cmx -o src/xmlm.cmxs
+ocamlfind ocamldep -modules test/xmltrip.ml > test/xmltrip.ml.depends
+ocamlfind ocamldep -modules test/xhtml.ml > test/xhtml.ml.depends
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xhtml.cmo test/xhtml.ml
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xmltrip.cmo test/xmltrip.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xhtml.cmx test/xhtml.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xmltrip.cmx test/xmltrip.ml
+ocamlfind ocamlopt -linkpkg src/xmlm.cmx test/xhtml.cmx test/xmltrip.cmx -o test/xmltrip.native
+Installing xmlm.1.2.0.
+[WARNING] unknown fields in /home/opam/.opam/4.02.0dev+module-aliases/build/xmlm.1.2.0/xmlm.install: is your OPAM up-to-date ?
+
+=-=-= Installing xtmpl.0.7 =-=-=
+xtmpl.0.7  Downloading http://zoggy.github.com/xtmpl/xtmpl-0.7.tar.gz
+--2013-11-20 20:50:22--  http://zoggy.github.com/xtmpl/xtmpl-0.7.tar.gz
+Resolving zoggy.github.com (zoggy.github.com)... 199.27.74.133
+Connecting to zoggy.github.com (zoggy.github.com)|199.27.74.133|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://zoggy.github.io/xtmpl/xtmpl-0.7.tar.gz [following]
+--2013-11-20 20:50:22--  http://zoggy.github.io/xtmpl/xtmpl-0.7.tar.gz
+Resolving zoggy.github.io (zoggy.github.io)... 199.27.73.133
+Connecting to zoggy.github.io (zoggy.github.io)|199.27.73.133|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 10488 (10K) [application/octet-stream]
+Saving to: `xtmpl-0.7.tar.gz'
+
+     0K ..........                                            100% 93.1M=0s
+
+2013-11-20 20:50:22 (93.1 MB/s) - `xtmpl-0.7.tar.gz' saved [10488/10488]
+
+Building xtmpl.0.7:
+  make all
+  make install
+ocamlc.opt -g -c `ocamlfind query -i-format xmlm` -annot -rectypes xtmpl.mli
+ocamlc.opt -g -c `ocamlfind query -i-format xmlm` -annot -rectypes xtmpl.ml
+ocamlopt.opt -g -c `ocamlfind query -i-format xmlm` -annot -rectypes xtmpl.ml
+ocamlopt.opt -g -shared -o xtmpl.cmxs `ocamlfind query -i-format xmlm` -annot -rectypes xtmpl.cmx
+ocamlfind install xtmpl META LICENSE xtmpl.cmi xtmpl.mli xtmpl.cmo xtmpl.cmx xtmpl.cmxs xtmpl.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/xtmpl/xtmpl.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/xtmpl/xtmpl.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/xtmpl/xtmpl.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/xtmpl/xtmpl.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/xtmpl/xtmpl.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/xtmpl/xtmpl.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/xtmpl/LICENSE
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/xtmpl/META
+Installing xtmpl.0.7.
+
+[ERROR] Due to some errors while processing ocamlnet.3.7.3, the following actions will NOT proceed:
+ - install stog.0.9.0
+ - install ocamlrss.2.2.2
+
+===== ERROR while installing ocamlnet.3.7.3 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/ocamlnet-335-a71bb4.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/ocamlnet-335-a71bb4.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/ocamlnet-335-a71bb4.err
+### stdout ###
+# ...[truncated]
+# 	    -e 's/@PREFERRED_CGI_PKG@//' \
+# 	    -e 's/@REGEXP_PROVIDER@/str/' \
+# 	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+#  	    -e 's/@ZIP_PROVIDER@//' \
+# 		META.in >META
+# make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+# make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+# ocamlfind ocamldep -package "camlp4.macro" -syntax camlp4o  *.ml *.mli >depend || { rm -f depend; exit 1; }
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+### stderr ###
+# Welcome to Ocamlnet version 3.7.3
+# make[1]: *** [depend] Error 1
+# make: *** [all] Error 2
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+module-aliases/backup/state-20131020204959.export"
+'opam install stog' failed.
