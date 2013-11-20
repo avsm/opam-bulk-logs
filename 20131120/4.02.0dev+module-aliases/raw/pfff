@@ -1,0 +1,534 @@
+++ opam install pfff -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install pfff
+The following actions will be performed:
+ - install pfff.0.25.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing pfff.0.25.1 =-=-=
+pfff.0.25.1 Downloading https://github.com/facebook/pfff/archive/v0.25.1.tar.gz
+--2013-11-20 20:19:05--  https://github.com/facebook/pfff/archive/v0.25.1.tar.gz
+Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/facebook/pfff/tar.gz/v0.25.1 [following]
+--2013-11-20 20:19:05--  https://codeload.github.com/facebook/pfff/tar.gz/v0.25.1
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.147
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `pfff-0.25.1.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 1.48M
+    50K .......... .......... .......... .......... .......... 1.43M
+   100K .......... .......... .......... .......... .......... 1.45M
+   150K .......... .......... .......... .......... .......... 2.82M
+   200K .......... .......... .......... .......... .......... 2.84M
+   250K .......... .......... .......... .......... .......... 2.88M
+   300K .......... .......... .......... .......... .......... 1.46M
+   350K .......... .......... .......... .......... .......... 2.77M
+   400K .......... .......... .......... .......... .......... 2.97M
+   450K .......... .......... .......... .......... .......... 2.93M
+   500K .......... .......... .......... .......... .......... 56.0M
+   550K .......... .......... .......... .......... .......... 2.90M
+   600K .......... .......... .......... .......... .......... 2.96M
+   650K .......... .......... .......... .......... .......... 2.92M
+   700K .......... .......... .......... .......... .......... 66.5M
+   750K .......... .......... .......... .......... .......... 2.86M
+   800K .......... .......... .......... .......... .......... 2.92M
+   850K .......... .......... .......... .......... .......... 2.91M
+   900K .......... .......... .......... .......... .......... 2.88M
+   950K .......... .......... .......... .......... .......... 2.83M
+  1000K .......... .......... .......... .......... .......... 52.0M
+  1050K .......... .......... .......... .......... .......... 3.02M
+  1100K .......... .......... .......... .......... .......... 44.2M
+  1150K .......... .......... .......... .......... .......... 2.98M
+  1200K .......... .......... .......... .......... .......... 2.95M
+  1250K .......... .......... .......... .......... .......... 67.6M
+  1300K .......... .......... .......... .......... .......... 64.4M
+  1350K .......... .......... .......... .......... .......... 3.01M
+  1400K .......... .......... .......... .......... .......... 2.96M
+  1450K .......... .......... .......... .......... .......... 54.1M
+  1500K .......... .......... .......... .......... .......... 79.5M
+  1550K .......... .......... .......... .......... .......... 2.95M
+  1600K .......... .......... .......... .......... .......... 40.2M
+  1650K .......... .......... .......... .......... .......... 3.27M
+  1700K .......... .......... .......... .......... .......... 77.2M
+  1750K .......... .......... .......... .......... .......... 3.07M
+  1800K .......... .......... .......... .......... .......... 50.5M
+  1850K .......... .......... .......... .......... .......... 77.0M
+  1900K .......... .......... .......... .......... .......... 3.07M
+  1950K .......... .......... .......... .......... .......... 47.5M
+  2000K .......... .......... .......... .......... .......... 74.3M
+  2050K .......... .......... .......... .......... .......... 3.14M
+  2100K .......... .......... .......... .......... .......... 48.8M
+  2150K .......... .......... .......... .......... .......... 3.18M
+  2200K .......... .......... .......... .......... .......... 46.8M
+  2250K .......... .......... .......... .......... .......... 58.9M
+  2300K .......... .......... .......... .......... .......... 3.16M
+  2350K .......... .......... .......... .......... .......... 40.4M
+  2400K .......... .......... .......... .......... .......... 3.18M
+  2450K .......... .......... .......... .......... .......... 45.2M
+  2500K .......... .......... .......... .......... .......... 77.6M
+  2550K .......... .......... .......... .......... .......... 3.16M
+  2600K .......... .......... .......... .......... .......... 42.9M
+  2650K .......... .......... .......... .......... .......... 3.20M
+  2700K .......... .......... .......... .......... .......... 35.9M
+  2750K .......... .......... .......... .......... .......... 47.3M
+  2800K .......... .......... .......... .......... .......... 3.28M
+  2850K .......... .......... .......... .......... .......... 47.8M
+  2900K .......... .......... .......... .......... .......... 87.6M
+  2950K .......... .......... .......... .......... .......... 3.24M
+  3000K .......... .......... .......... .......... .......... 37.9M
+  3050K .......... .......... .......... .......... .......... 42.5M
+  3100K .......... .......... .......... .......... .......... 42.3M
+  3150K .......... .......... .......... .......... .......... 3.60M
+  3200K .......... .......... .......... .......... .......... 39.2M
+  3250K .......... .......... .......... .......... .......... 65.9M
+  3300K .......... .......... .......... .......... .......... 88.4M
+  3350K .......... .......... .......... .......... .......... 3.46M
+  3400K .......... .......... .......... .......... .......... 29.7M
+  3450K .......... .......... .......... .......... .......... 56.0M
+  3500K .......... .......... .......... .......... .......... 61.2M
+  3550K .......... .......... .......... .......... .......... 3.52M
+  3600K .......... .......... .......... .......... .......... 27.4M
+  3650K .......... .......... .......... .......... .......... 63.3M
+  3700K .......... .......... .......... .......... .......... 3.53M
+  3750K .......... .......... .......... .......... .......... 28.2M
+  3800K .......... .......... .......... .......... .......... 70.4M
+  3850K .......... .......... .......... .......... .......... 73.9M
+  3900K .......... .......... .......... .......... .......... 3.56M
+  3950K .......... .......... .......... .......... .......... 26.2M
+  4000K .......... .......... .......... .......... .......... 84.2M
+  4050K .......... .......... .......... .......... .......... 82.1M
+  4100K .......... .......... .......... .......... ..........  107M
+  4150K .......... .......... .......... .......... .......... 3.49M
+  4200K .......... .......... .......... .......... .......... 26.8M
+  4250K .......... .......... .......... .......... .......... 39.4M
+  4300K .......... .......... .......... .......... .......... 53.9M
+  4350K .......... .......... .......... .......... .......... 65.5M
+  4400K .......... .......... .......... .......... .......... 4.10M
+  4450K .......... .......... .......... .......... .......... 20.2M
+  4500K .......... .......... .......... .......... .......... 42.9M
+  4550K .......... .......... .......... .......... .......... 76.3M
+  4600K .......... .......... .......... .......... .......... 88.0M
+  4650K .......... .......... .......... .......... .......... 4.01M
+  4700K .......... .......... .......... .......... .......... 19.9M
+  4750K .......... .......... .......... .......... .......... 41.6M
+  4800K .......... .......... .......... .......... .......... 75.0M
+  4850K .......... .......... .......... .......... .......... 84.2M
+  4900K .......... .......... .......... .......... .......... 4.10M
+  4950K .......... .......... .......... .......... .......... 14.8M
+  5000K .......... .......... .......... .......... .......... 82.4M
+  5050K .......... .......... .......... .......... .......... 86.8M
+  5100K .......... .......... .......... .......... .......... 97.7M
+  5150K .......... .......... .......... .......... .......... 4.05M
+  5200K .......... .......... .......... .......... .......... 13.4M
+  5250K .......... .......... .......... .......... .......... 38.4M
+  5300K .......... .......... .......... .......... .......... 36.1M
+  5350K .......... .......... .......... .......... .......... 43.3M
+  5400K .......... .......... .......... .......... .......... 5.18M
+  5450K .......... .......... .......... .......... .......... 13.2M
+  5500K .......... .......... .......... .......... .......... 55.0M
+  5550K .......... .......... .......... .......... .......... 71.9M
+  5600K .......... .......... .......... .......... ..........  101M
+  5650K .......... .......... .......... .......... ..........  110M
+  5700K .......... .......... .......... .......... .......... 4.64M
+  5750K .......... .......... .......... .......... .......... 76.1M
+  5800K .......... .......... .......... .......... .......... 11.2M
+  5850K .......... .......... .......... .......... .......... 48.4M
+  5900K .......... .......... .......... .......... .......... 60.0M
+  5950K .......... .......... .......... .......... .......... 41.7M
+  6000K .......... .......... .......... .......... .......... 5.51M
+  6050K .......... .......... .......... .......... .......... 57.1M
+  6100K .......... .......... .......... .......... .......... 12.7M
+  6150K .......... .......... .......... .......... .......... 55.8M
+  6200K .......... .......... .......... .......... ..........  109M
+  6250K .......... .......... .......... .......... ..........  103M
+  6300K .......... .......... .......... .......... ..........  109M
+  6350K .......... .......... .......... .......... .......... 4.32M
+  6400K .......... .......... .......... .......... .......... 14.3M
+  6450K .......... .......... .......... .......... .......... 47.5M
+  6500K .......... .......... .......... .......... .......... 38.4M
+  6550K .......... .......... .......... .......... .......... 21.8M
+  6600K .......... .......... .......... .......... .......... 28.0M
+  6650K .......... .......... .......... .......... .......... 7.58M
+  6700K .......... .......... .......... .......... .......... 11.7M
+  6750K .......... .......... .......... .......... .......... 15.3M
+  6800K .......... .......... .......... .......... .......... 30.5M
+  6850K .......... .......... .......... .......... ..........  104M
+  6900K .......... .......... .......... .......... ..........  105M
+  6950K .......... .......... .......... .......... .......... 7.34M
+  7000K .......... .......... .......... .......... .......... 21.1M
+  7050K .......... .......... .......... .......... .......... 13.5M
+  7100K .......... .......... .......... .......... .......... 32.1M
+  7150K .......... .......... .......... .......... .......... 34.1M
+  7200K .......... .......... .......... .......... .......... 35.9M
+  7250K .......... .......... .......... .......... .......... 7.53M
+  7300K .......... .......... .......... .......... .......... 36.5M
+  7350K .......... .......... .......... .......... .......... 12.8M
+  7400K .......... .......... .......... .......... .......... 24.6M
+  7450K .......... .......... .......... .......... .......... 34.4M
+  7500K .......... .......... .......... .......... .......... 36.6M
+  7550K .......... .......... .......... .......... .......... 26.1M
+  7600K .......... .......... .......... .......... .......... 26.0M
+  7650K .......... .......... .......... .......... .......... 13.1M
+  7700K .......... .......... .......... .......... .......... 12.0M
+  7750K .......... .......... .......... .......... .......... 37.7M
+  7800K .......... .......... .......... .......... .......... 33.9M
+  7850K .......... .......... .......... .......... .......... 44.6M
+  7900K .......... .......... .......... .......... .......... 52.0M
+  7950K .......... .......... .......... .......... .......... 35.3M
+  8000K .......... .......... .......... .......... .......... 7.99M
+  8050K .......... .......... .......... .......... .......... 80.7M
+  8100K .......... .......... .......... .......... .......... 10.1M
+  8150K .......... .......... .......... .......... .......... 43.8M
+  8200K .......... .......... .......... .......... .......... 29.1M
+  8250K .......... .......... .......... .......... .......... 40.6M
+  8300K .......... .......... .......... .......... .......... 40.4M
+  8350K .......... .......... .......... .......... .......... 38.5M
+  8400K .......... .......... .......... .......... .......... 7.56M
+  8450K .......... .......... .......... .......... .......... 13.3M
+  8500K .......... .......... .......... .......... .......... 37.2M
+  8550K .......... .......... .......... .......... .......... 54.1M
+  8600K .......... .......... .......... .......... .......... 66.1M
+  8650K .......... .......... .......... .......... .......... 95.0M
+  8700K .......... .......... .......... .......... .......... 85.9M
+  8750K .......... .......... .......... .......... .......... 5.54M
+  8800K .......... .......... .......... .......... .......... 92.2M
+  8850K .......... .......... .......... .......... .......... 13.8M
+  8900K .......... .......... .......... .......... .......... 25.9M
+  8950K .......... .......... .......... .......... .......... 46.3M
+  9000K .......... .......... .......... .......... .......... 56.6M
+  9050K .......... .......... .......... .......... .......... 39.9M
+  9100K .......... .......... .......... .......... .......... 35.3M
+  9150K .......... .......... .......... .......... .......... 30.4M
+  9200K .......... .......... .......... .......... .......... 9.28M
+  9250K .......... .......... .......... .......... .......... 15.2M
+  9300K .......... .......... .......... .......... .......... 17.8M
+  9350K .......... .......... .......... .......... .......... 20.9M
+  9400K .......... .......... .......... .......... .......... 27.7M
+  9450K .......... .......... .......... .......... .......... 24.2M
+  9500K .......... .......... .......... .......... .......... 24.0M
+  9550K .......... .......... .......... .......... .......... 22.9M
+  9600K .......... .......... .......... .......... .......... 26.5M
+  9650K .......... .......... .......... .......... .......... 29.3M
+  9700K .......... .......... .......... .......... .......... 39.1M
+  9750K .......... .......... .......... .......... .......... 24.2M
+  9800K .......... .......... .......... .......... .......... 36.2M
+  9850K .......... .......... .......... .......... .......... 98.3M
+  9900K .......... .......... .......... .......... ..........  110M
+  9950K .......... .......... .......... .......... .......... 89.9M
+ 10000K .......... .......... .......... .......... ..........  110M
+ 10050K .......... .......... .......... .......... ..........  111M
+ 10100K .......... .......... .......... .......... .......... 6.33M
+ 10150K .......... .......... .......... .......... .......... 13.4M
+ 10200K .......... .......... .......... .......... .......... 15.4M
+ 10250K .......... .......... .......... .......... .......... 42.5M
+ 10300K .......... .......... .......... .......... .......... 44.9M
+ 10350K .......... .......... .......... .......... .......... 33.8M
+ 10400K .......... .......... .......... .......... .......... 48.6M
+ 10450K .......... .......... .......... .......... .......... 49.0M
+ 10500K .......... .......... .......... .......... .......... 14.3M
+ 10550K .......... .......... .......... .......... .......... 38.5M
+ 10600K .......... .......... .......... .......... .......... 12.7M
+ 10650K .......... .......... .......... .......... .......... 24.1M
+ 10700K .......... .......... .......... .......... .......... 33.6M
+ 10750K .......... .......... .......... .......... .......... 38.1M
+ 10800K .......... .......... .......... .......... .......... 50.3M
+ 10850K .......... .......... .......... .......... .......... 47.5M
+ 10900K .......... .......... .......... .......... .......... 48.8M
+ 10950K .......... .......... .......... .......... .......... 41.4M
+ 11000K .......... .......... .......... .......... .......... 17.2M
+ 11050K .......... .......... .......... .......... .......... 37.2M
+ 11100K .......... .......... .......... .......... .......... 12.3M
+ 11150K .......... .......... .......... .......... .......... 22.9M
+ 11200K .......... .......... .......... .......... .......... 35.8M
+ 11250K .......... .......... .......... .......... .......... 40.5M
+ 11300K .......... .......... .......... .......... .......... 53.3M
+ 11350K .......... .......... .......... .......... .......... 55.0M
+ 11400K .......... .......... .......... .......... .......... 57.1M
+ 11450K .......... .......... .......... .......... .......... 36.6M
+ 11500K .......... .......... .......... .......... .......... 15.3M
+ 11550K .......... .......... .......... .......... .......... 11.5M
+ 11600K .......... .......... .......... .......... .......... 39.5M
+ 11650K .......... .......... .......... .......... .......... 24.4M
+ 11700K .......... .......... .......... .......... .......... 47.3M
+ 11750K .......... .......... .......... .......... .......... 42.0M
+ 11800K .......... .......... .......... .......... .......... 56.7M
+ 11850K .......... .......... .......... .......... .......... 32.2M
+ 11900K .......... .......... .......... .......... .......... 56.1M
+ 11950K .......... .......... .......... .......... .......... 51.4M
+ 12000K .......... .......... .......... .......... .......... 15.5M
+ 12050K .......... .......... .......... .......... .......... 11.8M
+ 12100K .......... .......... .......... .......... .......... 64.7M
+ 12150K .......... .......... .......... .......... .......... 21.8M
+ 12200K .......... .......... .......... .......... .......... 55.0M
+ 12250K .......... .......... .......... .......... .......... 97.8M
+ 12300K .......... .......... .......... .......... .......... 67.5M
+ 12350K .......... .......... .......... .......... .......... 66.4M
+ 12400K .......... .......... .......... .......... ..........  110M
+ 12450K .......... .......... .......... .......... ..........  109M
+ 12500K .......... .......... .......... .......... .......... 88.0M
+ 12550K .......... .......... .......... .......... .......... 68.4M
+ 12600K .......... .......... .......... .......... .......... 9.12M
+ 12650K .......... .......... .......... .......... .......... 12.5M
+ 12700K .......... .......... .......... .......... .......... 23.6M
+ 12750K .......... .......... .......... .......... .......... 44.4M
+ 12800K .......... .......... .......... .......... .......... 85.0M
+ 12850K .......... .......... .......... .......... ..........  109M
+ 12900K .......... .......... .......... .......... .......... 69.2M
+ 12950K .......... .......... .......... .......... .......... 69.2M
+ 13000K .......... .......... .......... .......... .......... 80.5M
+ 13050K .......... .......... .......... .......... ..........  109M
+ 13100K .......... .......... .......... .......... ..........  112M
+ 13150K .......... .......... .......... .......... .......... 7.94M
+ 13200K .......... .......... .......... .......... .......... 12.8M
+ 13250K .......... .......... .......... .......... .......... 26.4M
+ 13300K .......... .......... .......... .......... .......... 35.3M
+ 13350K .......... .......... .......... .......... .......... 31.9M
+ 13400K .......... .......... .......... .......... .......... 25.7M
+ 13450K .......... .......... .......... .......... .......... 27.9M
+ 13500K .......... .......... .......... .......... .......... 30.3M
+ 13550K .......... .......... .......... .......... .......... 25.8M
+ 13600K .......... .......... .......... .......... .......... 40.3M
+ 13650K .......... .......... .......... .......... .......... 43.5M
+ 13700K .......... .......... .......... .......... .......... 43.0M
+ 13750K .......... .......... .......... .......... .......... 40.6M
+ 13800K .......... .......... .......... .......... .......... 36.2M
+ 13850K .......... .......... .......... .......... .......... 36.2M
+ 13900K .......... .......... .......... .......... .......... 32.5M
+ 13950K .......... .......... .......... .......... .......... 24.9M
+ 14000K .......... .......... .......... .......... .......... 43.3M
+ 14050K .......... .......... .......... .......... .......... 42.5M
+ 14100K .......... .......... .......... .......... .......... 44.8M
+ 14150K .......... .......... .......... .......... .......... 42.7M
+ 14200K .......... .......... .......... .......... .......... 42.6M
+ 14250K .......... .......... .......... .......... .......... 40.2M
+ 14300K .......... .......... .......... .......... ..........  106K
+ 14350K .......... .......... .......... .......... .......... 24.2M
+ 14400K .......... .......... .......... .......... .......... 25.5M
+ 14450K .......... .......... .......... .......... .......... 43.7M
+ 14500K .......... .......... .......... .......... .......... 43.7M
+ 14550K .......... .......... .......... .......... .......... 37.5M
+ 14600K .......... .......... .......... .......... .......... 42.7M
+ 14650K .......... .......... .......... .......... .......... 41.1M
+ 14700K .......... .......... .......... .......... .......... 27.4M
+ 14750K .......... .......... .......... .......... .......... 23.5M
+ 14800K .......... .......... .......... .......... .......... 28.0M
+ 14850K .......... .......... .......... .......... .......... 35.4M
+ 14900K .......... .......... .......... .......... .......... 67.8M
+ 14950K .......... .......... .......... .......... .......... 84.1M
+ 15000K .......... .......... .......... .......... .......... 95.2M
+ 15050K .......... .......... .......... .......... .......... 77.8M
+ 15100K .......... .......... .......... .......... .......... 70.0M
+ 15150K .......... .......... .......... .......... .......... 69.6M
+ 15200K .......... .......... .......... .......... .......... 92.3M
+ 15250K .......... .......... .......... .......... .......... 95.9M
+ 15300K .......... .......... .......... .......... ..........  113M
+ 15350K .......... .......... .......... .......... ..........  114M
+ 15400K .......... .......... .......... .......... ..........  105M
+ 15450K .......... .......... .......... .......... ..........  115M
+ 15500K .......... .......... .......... .......... ..........  112M
+ 15550K .......... .......... .......... .......... .......... 4.98M
+ 15600K .......... .......... .......... .......... .......... 20.8M
+ 15650K .......... .......... .......... .......... .......... 41.5M
+ 15700K .......... .......... .......... .......... .......... 19.6M
+ 15750K .......... .......... .......... .......... .......... 27.0M
+ 15800K .......... .......... .......... .......... .......... 26.4M
+ 15850K .......... .......... .......... .......... .......... 26.2M
+ 15900K .......... .......... .......... .......... .......... 25.5M
+ 15950K .......... .......... .......... .......... .......... 28.4M
+ 16000K .......... .......... ........                         23.1M=1.7s
+
+2013-11-20 20:19:07 (9.08 MB/s) - `pfff-0.25.1.tar.gz' saved [16413083]
+
+Building pfff.0.25.1:
+  ./configure --novisual
+  make depend
+  make
+  make opt
+  make install-findlib
+Checking your configuration.
+
+OCaml (the wonderful language) is present.
+make (gnu version) is present.
+
+pfff target prefix: /usr/local (you can use --prefix to override it)
+Generating Makefile.config (VISUAL=0) (see also configure --help)
+Generating commons/features.ml
+Generating globals/config_pfff.ml
+All seems fine for pfff.
+
+----------------------------------------------------------------------
+To compile pfff type:
+  $ make depend
+  $ make 
+
+Then, to test pfff simply type:
+  $ ./pfff -dump_php demos/foo.php
+
+If you want to use the analysis framework and code visualization tools
+see install.txt or type ./configure --help
+----------------------------------------------------------------------
+
+ocamldep  -I commons -I external/ocamlgraph -I external/ocamlzip -I external/extlib -I external/ptrees -I external/javalib/src -I globals -I h_version-control -I h_visualization -I h_files-format -I h_program-lang -I h_program-visual -I matcher -I lang_ml/parsing -I lang_ml/analyze -I lang_nw/parsing -I lang_nw/analyze -I lang_lisp/parsing -I lang_lisp/analyze -I lang_haskell/parsing -I lang_haskell/analyze -I lang_php/parsing -I lang_php/matcher -I lang_php/pretty -I lang_sql/parsing -I lang_js/parsing -I lang_js/analyze -I lang_cpp/parsing -I lang_cpp/analyze -I lang_c/parsing -I lang_c/analyze -I lang_objc/parsing -I lang_objc/analyze -I lang_clang/parsing -I lang_clang/analyze -I lang_java/parsing -I lang_java/analyze -I lang_bytecode/parsing -I lang_bytecode/analyze -I lang_python/parsing -I lang_python/analyze -I lang_csharp/parsing -I lang_csharp/analyze -I lang_opa/parsing -I lang_opa/analyze -I lang_erlang/parsing -I lang_erlang/analyze -I lang_php/analyze -I lang_php/analyze/foundation -I lang_php/analyze/checker -I lang_php/analyze/tools -I lang_php/analyze/qa_test -I lang_html/parsing -I lang_html/analyze -I lang_css/parsing -I lang_web/parsing -I lang_text -I demos -I commons/ocamlextra -I commons/ocollection -I commons/lib-json -I commons/lib-xml -I commons/lib-sexp -I external/extlib -I external/ptrees -I external/ocamlzip -I external/javalib/src -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/compiler-libs  *.mli *.ml > .depend
+set -e; for i in commons external/ocamlgraph   external/ocamlzip external/extlib external/ptrees external/javalib/src globals h_version-control h_visualization h_files-format h_program-lang h_program-visual matcher lang_ml/parsing lang_ml/analyze lang_nw/parsing lang_nw/analyze lang_lisp/parsing lang_lisp/analyze lang_haskell/parsing lang_haskell/analyze lang_php/parsing lang_php/matcher lang_php/pretty lang_sql/parsing lang_js/parsing lang_js/analyze lang_cpp/parsing lang_cpp/analyze lang_c/parsing lang_c/analyze lang_objc/parsing lang_objc/analyze lang_clang/parsing lang_clang/analyze lang_java/parsing lang_java/analyze lang_bytecode/parsing lang_bytecode/analyze lang_python/parsing lang_python/analyze lang_csharp/parsing lang_csharp/analyze lang_opa/parsing lang_opa/analyze lang_erlang/parsing lang_erlang/analyze lang_php/analyze lang_php/analyze/foundation lang_php/analyze/checker lang_php/analyze/tools lang_php/analyze/qa_test lang_html/parsing lang_html/analyze lang_css/parsing lang_web/parsing lang_text  demos; do echo $i; make -C $i depend; done
+commons
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/commons'
+ocamldep.opt -I ocamlextra -I ocollection -I lib-json -I lib-xml  *.mli *.ml  > .depend
+for i in ocamlextra ocollection lib-json lib-xml; do ocamldep.opt -I ocamlextra -I ocollection -I lib-json -I lib-xml  $i/*.ml $i/*.mli >> .depend; done
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/commons'
+external/ocamlgraph
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/ocamlgraph'
+Makefile:593: .depend: No such file or directory
+sed -e s/VERSION/1.8.3/ -e s/CMA/ocamlgraph.cma/ -e s/CMXA/ocamlgraph.cmxa/ \
+		META.in > META
+ocamllex src/gml.mll
+26 states, 827 transitions, table size 3464 bytes
+2623 additional bytes used for bindings
+rm -f src/version.ml
+echo "let version = \""1.8.3"\"" > src/version.ml
+echo "let date = \""`date`"\"" >> src/version.ml
+ocamlyacc -v src/dot_parser.mly
+ocamllex src/dot_lexer.mll
+43 states, 478 transitions, table size 2170 bytes
+rm -f .depend
+ocamldep -slash -I src -I lib -I editor -I view_graph -I dgraph\
+		lib/*.ml lib/*.mli \
+		src/*.ml src/*.mli \
+		editor/*.mli editor/*.ml \
+		view_graph/*.mli view_graph/*.ml \
+		dgraph/*.mli dgraph/*.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/ocamlgraph'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/ocamlgraph'
+rm -f .depend
+ocamldep -slash -I src -I lib -I editor -I view_graph -I dgraph\
+		lib/*.ml lib/*.mli \
+		src/*.ml src/*.mli \
+		editor/*.mli editor/*.ml \
+		view_graph/*.mli view_graph/*.ml \
+		dgraph/*.mli dgraph/*.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/ocamlgraph'
+external/ocamlzip
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/ocamlzip'
+gcc -MM -I/usr/local/include *.c > .depend
+ocamldep *.mli *.ml >> .depend
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/ocamlzip'
+external/extlib
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/extlib'
+make[1]: Nothing to be done for `depend'.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/extlib'
+external/ptrees
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/ptrees'
+ocamldep ptmap.mli ptset.mli ptmap.ml ptset.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/ptrees'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/ptrees'
+ocamldep ptmap.mli ptset.mli ptmap.ml ptset.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/ptrees'
+external/javalib/src
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/javalib/src'
+ocamllex  jManifest.mll
+13 states, 340 transitions, table size 1438 bytes
+ocamldep -pp camlp4o -I ../../../external/extlib -I ../../../external/ptrees  *.mli *.ml > .depend
+Segmentation fault
+make[1]: *** [depend] Error 139
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/javalib/src'
+make: *** [depend] Error 2
+[ERROR] The compilation of pfff.0.25.1 failed.
+Removing pfff.0.25.1.
+  make uninstall-findlib
+ocamlfind remove pfff
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/pfff
+set -e; for i in commons h_program-lang matcher lang_ml/parsing lang_php/parsing lang_cpp/parsing lang_java/parsing lang_js/parsing lang_css/parsing lang_html/parsing ; do echo $i; make -C $i uninstall-findlib; done
+commons
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/commons'
+ocamlfind remove pfff-commons
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/pfff-commons
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/commons'
+h_program-lang
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/h_program-lang'
+ocamlfind remove pfff-h_program-lang
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/pfff-h_program-lang
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/h_program-lang'
+matcher
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/matcher'
+ocamlfind remove pfff-matcher
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/pfff-matcher
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/matcher'
+lang_ml/parsing
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/lang_ml/parsing'
+ocamlfind remove pfff-lang_ml
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/pfff-lang_ml
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/lang_ml/parsing'
+lang_php/parsing
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/lang_php/parsing'
+ocamlfind remove pfff-lang_php
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/pfff-lang_php
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/lang_php/parsing'
+lang_cpp/parsing
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/lang_cpp/parsing'
+ocamlfind remove pfff-lang_cpp
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/pfff-lang_cpp
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/lang_cpp/parsing'
+lang_java/parsing
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/lang_java/parsing'
+ocamlfind remove pfff-lang_java
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/pfff-lang_java
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/lang_java/parsing'
+lang_js/parsing
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/lang_js/parsing'
+ocamlfind remove pfff-lang_js
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/pfff-lang_js
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/lang_js/parsing'
+lang_css/parsing
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/lang_css/parsing'
+ocamlfind remove pfff-lang_css
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/pfff-lang_css
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/lang_css/parsing'
+lang_html/parsing
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/lang_html/parsing'
+ocamlfind remove pfff-lang_html
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/pfff-lang_html
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/lang_html/parsing'
+
+
+===== ERROR while installing pfff.0.25.1 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make depend
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/pfff-18-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/pfff-18-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/pfff-18-d2d111.err
+### stdout ###
+# ...[truncated]
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/ptrees'
+# make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/ptrees'
+# ocamldep ptmap.mli ptset.mli ptmap.ml ptset.ml > .depend
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/ptrees'
+# external/javalib/src
+# make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/javalib/src'
+# ocamllex  jManifest.mll
+# 13 states, 340 transitions, table size 1438 bytes
+# ocamldep -pp camlp4o -I ../../../external/extlib -I ../../../external/ptrees  *.mli *.ml > .depend
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/pfff.0.25.1/external/javalib/src'
+### stderr ###
+# ...[truncated]
+#   $ ./pfff -dump_php demos/foo.php
+# 
+# If you want to use the analysis framework and code visualization tools
+# see install.txt or type ./configure --help
+# ----------------------------------------------------------------------
+# 
+# Makefile:593: .depend: No such file or directory
+# Segmentation fault
+# make[1]: *** [depend] Error 139
+# make: *** [depend] Error 2
+
+'opam install pfff' failed.
