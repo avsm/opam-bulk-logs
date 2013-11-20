@@ -1,0 +1,129 @@
+++ opam install pa_monad_custom -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
++ opam install pa_monad_custom
+The following actions will be performed:
+ - install pa_monad_custom.v6.0.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing pa_monad_custom.v6.0.0 =-=-=
+pa_monad_custom.v6.0.0 Downloading https://bitbucket.org/camlspotter/pa_monad_custom/get/v6.0.0.tar.gz
+--2013-11-20 20:11:20--  https://bitbucket.org/camlspotter/pa_monad_custom/get/v6.0.0.tar.gz
+Resolving bitbucket.org (bitbucket.org)... 131.103.20.167, 131.103.20.168
+Connecting to bitbucket.org (bitbucket.org)|131.103.20.167|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-tar-gz]
+Saving to: `camlspotter-pa_monad_custom-4c555d5133ce.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  219K
+    50K .......... .......... ..........                       1.00M=0.3s
+
+2013-11-20 20:11:21 (312 KB/s) - `camlspotter-pa_monad_custom-4c555d5133ce.tar.gz' saved [82675]
+
+Building pa_monad_custom.v6.0.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+I: Running command '/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -config > '/tmp/oasis-b3e6af.txt''
+I: Running command '/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind query -format %v findlib > '/tmp/oasis-892a3c.txt''
+I: Running command '/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind query -format %d camlp4.lib > '/tmp/oasis-6f5959.txt''
+I: Running command '/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind query -format %d camlp4.quotations > '/tmp/oasis-f5b04d.txt''
+
+Configuration: 
+
+pkg_camlp4_quotations: ......................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_lib: ................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+make: .......................................... /usr/bin/make
+Compile with ocaml profile flag on.: ........... false
+Compile with ocaml debug flag on.: ............. true
+Remove a directory.: ........................... rm -rf
+Remove a file.: ................................ rm -f
+suffix_program: ................................ 
+is_native: ..................................... true
+findlib_version: ............................... 1.4
+PS documentation: .............................. $docdir
+PDF documentation: ............................. $docdir
+DVI documentation: ............................. $docdir
+HTML documentation: ............................ $docdir
+Documentation root: ............................ $datarootdir/doc/$pkg_name
+Man documentation: ............................. $datarootdir/man
+Locale-dependent data: ......................... $datarootdir/locale
+Info documentation: ............................ $datarootdir/info
+Read-only architecture-independent data: ....... $datarootdir
+Read-only arch-independent data root: .......... $prefix/share
+Object code libraries: ......................... $exec_prefix/lib
+Modifiable single-machine data: ................ $prefix/var
+Modifiable architecture-independent data: ...... $prefix/com
+Read-only single-machine data: ................. $prefix/etc
+Program executables: ........................... $exec_prefix/libexec
+System admin executables: ...................... $exec_prefix/sbin
+User executables: .............................. $exec_prefix/bin
+Install architecture-dependent files in dir: ... $prefix
+Install architecture-independent files dir: .... /home/opam/.opam/4.02.0dev+module-aliases
+systhread_supported: ........................... true
+default_executable_name: ....................... a.out
+ext_dll: ....................................... .so
+ext_lib: ....................................... .a
+ext_asm: ....................................... .s
+ext_obj: ....................................... .o
+model: ......................................... default
+native_c_compiler: ............................. gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+bytecomp_c_compiler: ........................... gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+standard_runtime: .............................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+standard_library: .............................. /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library_default: ...................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+ocaml_version: ................................. 4.02.0+dev2-2013-09-12
+ccomp_type: .................................... cc
+architecture: .................................. amd64
+system: ........................................ linux
+os_type: ....................................... Unix
+Package version: ............................... 6.0.0
+Package name: .................................. pa_monad_custom
+ocamlbuild: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+ocamlopt: ...................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlc: ........................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlfind: ..................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+
+I: Running command 'make all META'
+ocamlc -I +camlp4 -pp camlp4orf -c pa_monad.ml
+File "pa_monad.ml", line 304, characters 0-19:
+Error: Unbound module Camlp4
+make: *** [pa_monad.cmo] Error 2
+E: Command 'make all META' terminated with error code 2
+[ERROR] The compilation of pa_monad_custom.v6.0.0 failed.
+Removing pa_monad_custom.v6.0.0.
+  ocamlfind remove monad-custom
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/monad-custom
+
+
+===== ERROR while installing pa_monad_custom.v6.0.0 =====
+# opam-version         1.1.0
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/pa_monad_custom.v6.0.0
+# compiler             4.02.0dev+module-aliases
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/pa_monad_custom.v6.0.0/pa_monad_custom-19-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/pa_monad_custom.v6.0.0/pa_monad_custom-19-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/pa_monad_custom.v6.0.0/pa_monad_custom-19-d2d111.err
+### stdout ###
+# ...[truncated]
+# os_type: ....................................... Unix
+# Package version: ............................... 6.0.0
+# Package name: .................................. pa_monad_custom
+# ocamlbuild: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+# ocamlopt: ...................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+# ocamlc: ........................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+# ocamlfind: ..................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+# 
+# I: Running command 'make all META'
+# ocamlc -I +camlp4 -pp camlp4orf -c pa_monad.ml
+### stderr ###
+# File "pa_monad.ml", line 304, characters 0-19:
+# Error: Unbound module Camlp4
+# make: *** [pa_monad.cmo] Error 2
+# E: Command 'make all META' terminated with error code 2
+
+'opam install pa_monad_custom' failed.
