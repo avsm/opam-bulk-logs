@@ -1,0 +1,267 @@
+++ opam install zed -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install zed
+The following actions will be performed:
+ - install camomile.0.8.5 [required by zed]
+ - install react.0.9.4 [required by zed]
+ - install zed.1.2
+3 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing camomile.0.8.5 =-=-=
+camomile.0.8.5 Downloading https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
+--2013-11-20 21:18:17--  https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
+Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://s3.amazonaws.com/github-cloud/releases/1965070/3fe28ca6-1de4-11e3-9067-9ddfaf80024a.bz2?response-content-disposition=attachment%3B%20filename%3Dcamomile-0.8.5.tar.bz2&AWSAccessKeyId=AKIAISTNZFOVBIJMK3TQ&Expires=1384982360&Signature=do%2BY%2BVKA0lbxiDVA8F3np2HYN9A%3D [following]
+--2013-11-20 21:18:17--  https://s3.amazonaws.com/github-cloud/releases/1965070/3fe28ca6-1de4-11e3-9067-9ddfaf80024a.bz2?response-content-disposition=attachment%3B%20filename%3Dcamomile-0.8.5.tar.bz2&AWSAccessKeyId=AKIAISTNZFOVBIJMK3TQ&Expires=1384982360&Signature=do%2BY%2BVKA0lbxiDVA8F3np2HYN9A%3D
+Resolving s3.amazonaws.com (s3.amazonaws.com)... 205.251.242.150
+Connecting to s3.amazonaws.com (s3.amazonaws.com)|205.251.242.150|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2607084 (2.5M) [application/octet-stream]
+Saving to: `camomile-0.8.5.tar.bz2'
+
+     0K .......... .......... .......... .......... ..........  1%  394K 6s
+    50K .......... .......... .......... .......... ..........  3%  780K 5s
+   100K .......... .......... .......... .......... ..........  5%  528K 5s
+   150K .......... .......... .......... .......... ..........  7%  706K 4s
+   200K .......... .......... .......... .......... ..........  9% 1.23M 4s
+   250K .......... .......... .......... .......... .......... 11% 1.49M 3s
+   300K .......... .......... .......... .......... .......... 13% 1.26M 3s
+   350K .......... .......... .......... .......... .......... 15% 1.53M 3s
+   400K .......... .......... .......... .......... .......... 17% 1.25M 3s
+   450K .......... .......... .......... .......... .......... 19% 18.4M 2s
+   500K .......... .......... .......... .......... .......... 21% 1.58M 2s
+   550K .......... .......... .......... .......... .......... 23% 1.61M 2s
+   600K .......... .......... .......... .......... .......... 25% 4.81M 2s
+   650K .......... .......... .......... .......... .......... 27% 1.70M 2s
+   700K .......... .......... .......... .......... .......... 29% 13.1M 2s
+   750K .......... .......... .......... .......... .......... 31% 1.25M 1s
+   800K .......... .......... .......... .......... .......... 33% 23.3M 1s
+   850K .......... .......... .......... .......... .......... 35% 1.52M 1s
+   900K .......... .......... .......... .......... .......... 37% 1.35M 1s
+   950K .......... .......... .......... .......... .......... 39% 16.7M 1s
+  1000K .......... .......... .......... .......... .......... 41% 1.65M 1s
+  1050K .......... .......... .......... .......... .......... 43% 1.26M 1s
+  1100K .......... .......... .......... .......... .......... 45% 16.8M 1s
+  1150K .......... .......... .......... .......... .......... 47% 18.0M 1s
+  1200K .......... .......... .......... .......... .......... 49% 1.75M 1s
+  1250K .......... .......... .......... .......... .......... 51% 1.25M 1s
+  1300K .......... .......... .......... .......... .......... 53% 17.6M 1s
+  1350K .......... .......... .......... .......... .......... 54% 1.73M 1s
+  1400K .......... .......... .......... .......... .......... 56% 25.6M 1s
+  1450K .......... .......... .......... .......... .......... 58% 1.22M 1s
+  1500K .......... .......... .......... .......... .......... 60% 19.8M 1s
+  1550K .......... .......... .......... .......... .......... 62% 1.82M 1s
+  1600K .......... .......... .......... .......... .......... 64% 23.3M 1s
+  1650K .......... .......... .......... .......... .......... 66% 1.19M 1s
+  1700K .......... .......... .......... .......... .......... 68% 22.7M 0s
+  1750K .......... .......... .......... .......... .......... 70% 1.79M 0s
+  1800K .......... .......... .......... .......... .......... 72% 1.24M 0s
+  1850K .......... .......... .......... .......... .......... 74% 14.7M 0s
+  1900K .......... .......... .......... .......... .......... 76% 17.6M 0s
+  1950K .......... .......... .......... .......... .......... 78% 1.90M 0s
+  2000K .......... .......... .......... .......... .......... 80% 1.14M 0s
+  2050K .......... .......... .......... .......... .......... 82% 17.9M 0s
+  2100K .......... .......... .......... .......... .......... 84% 23.2M 0s
+  2150K .......... .......... .......... .......... .......... 86% 21.2M 0s
+  2200K .......... .......... .......... .......... .......... 88% 1.91M 0s
+  2250K .......... .......... .......... .......... .......... 90% 1.22M 0s
+  2300K .......... .......... .......... .......... .......... 92% 17.9M 0s
+  2350K .......... .......... .......... .......... .......... 94% 16.8M 0s
+  2400K .......... .......... .......... .......... .......... 96% 2.01M 0s
+  2450K .......... .......... .......... .......... .......... 98% 1.17M 0s
+  2500K .......... .......... .......... .......... .....     100% 10.1M=1.3s
+
+2013-11-20 21:18:19 (1.86 MB/s) - `camomile-0.8.5.tar.bz2' saved [2607084/2607084]
+
+Building camomile.0.8.5:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  make
+  make install
+checking for cppo... false
+checking for grep that handles long lines and -e... /bin/grep
+checking for fgrep... /bin/grep -F
+checking for ocamlc... ocamlc
+ocaml version is 4.02.0+dev2-2013-09-12
+ocaml library path is /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking ocamlopt version... ok
+checking for ocamlc.opt... ocamlc.opt
+checking ocamlc.opt version... ok
+checking for ocamlopt.opt... ocamlopt.opt
+checking ocamlc.opt version... ok
+checking for ocamldep... ocamldep
+checking for ocamllex... ocamllex
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for ocamlweb... true
+checking for camlp4o... camlp4o
+checking for ocamlfind... install-with-ocamlfind
+checking for ocamldoc... ocamldoc
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating META
+echo '(* This file is automatically generated *)' > camomileDefaultConfig.ml
+echo 'let datadir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "database"' >> camomileDefaultConfig.ml
+echo 'let localedir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "locales"' >> camomileDefaultConfig.ml
+echo 'let charmapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "charmaps"' >> camomileDefaultConfig.ml
+echo 'let unimapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "mappings"' >> camomileDefaultConfig.ml
+ocamldep -slash -I internal -I public -I toolslib -I . *.ml *.mli \
+	internal/*.ml internal/*.mli \
+	public/*.ml public/*.mli \
+	mappings/*.ml mappings/*.mli \
+	toolslib/*.ml toolslib/*.mli \
+	> .depend
+ocamldep -slash -pp "camlp4o -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml" -I internal -I public -I toolslib -I . \
+	tools/tools/parse_unidata.ml tools/parse_uniset.ml tools/camomilecharmap.ml tools/parse_specialcasing.ml tools/parse_casefolding.ml tools/parse_scripts.ml tools/parse_allkeys.ml mappings/gen_mappings.ml tools/parse_age.ml tools/camomilelocaledef.ml tools/camomilestringprep.ml >> .depend
+Segmentation fault
+make: *** [.depend] Error 139
+[ERROR] The compilation of camomile.0.8.5 failed.
+Removing camomile.0.8.5.
+  ocamlfind remove camomile
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/camomile
+
+=-=-= Installing react.0.9.4 =-=-=
+react.0.9.4 Downloading http://erratique.ch/software/react/releases/react-0.9.4.tbz
+--2013-11-20 21:18:22--  http://erratique.ch/software/react/releases/react-0.9.4.tbz
+Resolving erratique.ch (erratique.ch)... 37.58.75.241, 2a03:8180:1001:b2:36::c
+Connecting to erratique.ch (erratique.ch)|37.58.75.241|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 82964 (81K) [application/x-bzip2]
+Saving to: `react-0.9.4.tbz'
+
+     0K .......... .......... .......... .......... .......... 61%  255K 0s
+    50K .......... .......... .......... .                    100%  319K=0.3s
+
+2013-11-20 21:18:22 (276 KB/s) - `react-0.9.4.tbz' saved [82964/82964]
+
+Building react.0.9.4:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ react
+Package version: ..................................... 0.9.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+module-aliases
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -modules src/react.mli > src/react.mli.depends
+ocamlfind ocamlc -c -g -I src -o src/react.cmi src/react.mli
+ocamlfind ocamldep -modules src/react.ml > src/react.ml.depends
+ocamlfind ocamlc -c -g -I src -o src/react.cmo src/react.ml
+ocamlfind ocamlc -a src/react.cmo -o src/react.cma
+ocamlfind ocamlopt -c -g -I src -o src/react.cmx src/react.ml
+ocamlfind ocamlopt -a src/react.cmx -o src/react.cmxa
+ocamlfind ocamlopt -shared src/react.cmx -o src/react.cmxs
+ocamlfind ocamldep -package unix -modules test/clock.ml > test/clock.ml.depends
+ocamlfind ocamlc -c -g -I src -package unix -I test -I src -o test/clock.cmo test/clock.ml
+ocamlfind ocamlopt -c -g -I src -package unix -I test -I src -o test/clock.cmx test/clock.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg -package unix src/react.cmxa test/clock.cmx -o test/clock.native
+ocamlfind ocamldep -package unix -modules test/breakout.ml > test/breakout.ml.depends
+ocamlfind ocamlc -c -g -I src -package unix -I test -I src -o test/breakout.cmo test/breakout.ml
+ocamlfind ocamlopt -c -g -I src -package unix -I test -I src -o test/breakout.cmx test/breakout.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg -package unix src/react.cmxa test/breakout.cmx -o test/breakout.native
+ocamlfind ocamldep -package unix -modules test/test.ml > test/test.ml.depends
+ocamlfind ocamlc -c -g -I src -package unix -I test -I src -o test/test.cmo test/test.ml
+ocamlfind ocamlopt -c -g -I src -package unix -I test -I src -o test/test.cmx test/test.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/react.cmxa test/test.cmx -o test/test.native
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/react/react.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/react/react.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/react/react.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/react/react.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/react/react.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/react/react.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/react/react.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/react/META
+Installing react.0.9.4.
+
+[ERROR] Due to some errors while processing camomile.0.8.5, the following actions will NOT proceed:
+ - install zed.1.2
+
+===== ERROR while installing camomile.0.8.5 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/camomile.0.8.5
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/camomile.0.8.5/camomile-19-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/camomile.0.8.5/camomile-19-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/camomile.0.8.5/camomile-19-d2d111.err
+### stdout ###
+# ...[truncated]
+# echo 'let charmapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "charmaps"' >> camomileDefaultConfig.ml
+# echo 'let unimapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "mappings"' >> camomileDefaultConfig.ml
+# ocamldep -slash -I internal -I public -I toolslib -I . *.ml *.mli \
+# 	internal/*.ml internal/*.mli \
+# 	public/*.ml public/*.mli \
+# 	mappings/*.ml mappings/*.mli \
+# 	toolslib/*.ml toolslib/*.mli \
+# 	> .depend
+# ocamldep -slash -pp "camlp4o -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml" -I internal -I public -I toolslib -I . \
+# 	tools/tools/parse_unidata.ml tools/parse_uniset.ml tools/camomilecharmap.ml tools/parse_specialcasing.ml tools/parse_casefolding.ml tools/parse_scripts.ml tools/parse_allkeys.ml mappings/gen_mappings.ml tools/parse_age.ml tools/camomilelocaledef.ml tools/camomilestringprep.ml >> .depend
+### stderr ###
+# config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+# Segmentation fault
+# make: *** [.depend] Error 139
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+module-aliases/backup/state-20131020211814.export"
+'opam install zed' failed.
