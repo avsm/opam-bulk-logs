@@ -1,0 +1,570 @@
+++ opam install nbd -e ubuntu
++ depext=time
++ echo Ubuntu depexts: time
+Ubuntu depexts: time
++ '[' time '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y time
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package time.
+(Reading database ... 20462 files and directories currently installed.)
+Unpacking time (from .../time_1.7-23.1_amd64.deb) ...
+Setting up time (1.7-23.1) ...
+install-info: warning: maintainer scripts should not call install-info anymore,
+install-info: warning: this is handled now by a dpkg trigger provided by the
+install-info: warning: install-info package; package time should be updated.
++ opam install nbd
+The following actions will be performed:
+ - install lwt.2.4.4 [required by nbd]
+ - install bitstring.2.0.4 [required by nbd]
+ - install obuild.0.0.4 [required by nbd]
+ - install nbd.0.9.0
+4 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing bitstring.2.0.4 =-=-=
+bitstring.2.0.4 Downloading http://bitstring.googlecode.com/files/ocaml-bitstring-2.0.4.tar.gz
+--2013-11-20 19:25:32--  http://bitstring.googlecode.com/files/ocaml-bitstring-2.0.4.tar.gz
+Resolving bitstring.googlecode.com (bitstring.googlecode.com)... 74.125.193.82, 2607:f8b0:4001:c05::52
+Connecting to bitstring.googlecode.com (bitstring.googlecode.com)|74.125.193.82|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 163346 (160K) [application/x-gzip]
+Saving to: `ocaml-bitstring-2.0.4.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 31% 1.90M 0s
+    50K .......... .......... .......... .......... .......... 62% 1.88M 0s
+   100K .......... .......... .......... .......... .......... 94% 3.68M 0s
+   150K .........                                             100% 63.6M=0.07s
+
+2013-11-20 19:25:32 (2.39 MB/s) - `ocaml-bitstring-2.0.4.tar.gz' saved [163346/163346]
+
+Building bitstring.2.0.4:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  make srcdir=./
+  make install
+checking for a sed that does not truncate output... /bin/sed
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for a BSD-compatible install... /usr/bin/install -c
+checking how to run the C preprocessor... gcc -E
+checking for function prototypes... yes
+checking whether gcc and cc understand -c and -o together... yes
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking byteswap.h usability... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking for ocamlc... ocamlc
+OCaml version is 4.02.0+dev2-2013-09-12
+OCaml library path is /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+checking for ocamlfind... ocamlfind
+checking for camlp4of.opt... camlp4of.opt
+checking for OCaml findlib package extlib... not found
+checking for OCaml findlib package cil... not found
+checking for time... /usr/bin/time
+checking for diff... /usr/bin/diff
+checking for gprof... gprof
+checking for bisect-report... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating META
+config.status: creating bitstring_config.ml
+config.status: creating cil-tools/Makefile
+config.status: creating config.h
+ocamlfind ocamlc -g  -c bitstring_types.ml
+ocamlfind ocamlc -g  -c bitstring_config.ml
+gcc -g -O2 -Wall -Werror -fPIC -I. -I/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml   -c -o bitstring_c.o bitstring_c.c
+ocamlfind ocamlc -g  -c bitstring.mli
+ocamlfind ocamlc -g  -c bitstring.ml
+ocamlfind ocamlc -g  -c bitmatch.ml
+ocamlmklib -o bitstring bitstring_types.cmo bitstring_config.cmo bitstring_c.o bitstring.cmo bitmatch.cmo
+ocamlfind ocamlc -g  \
+	  -I +camlp4 -pp camlp4of -c bitstring_persistent.mli
+ocamlc.opt got signal and exited
+make: *** [bitstring_persistent.cmi] Error 2
+[ERROR] The compilation of bitstring.2.0.4 failed.
+Removing bitstring.2.0.4.
+  ocamlfind remove bitstring
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/bitstring
+
+=-=-= Installing lwt.2.4.4 =-=-=
+lwt.2.4.4  Downloading https://github.com/ocsigen/lwt/archive/2.4.4.tar.gz
+--2013-11-20 19:25:36--  https://github.com/ocsigen/lwt/archive/2.4.4.tar.gz
+Resolving github.com (github.com)... 192.30.252.131
+Connecting to github.com (github.com)|192.30.252.131|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/ocsigen/lwt/tar.gz/2.4.4 [following]
+--2013-11-20 19:25:37--  https://codeload.github.com/ocsigen/lwt/tar.gz/2.4.4
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.144
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.144|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 294161 (287K) [application/x-gzip]
+Saving to: `lwt-2.4.4.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 17% 1.46M 0s
+    50K .......... .......... .......... .......... .......... 34% 1.45M 0s
+   100K .......... .......... .......... .......... .......... 52% 1.45M 0s
+   150K .......... .......... .......... .......... .......... 69% 1.45M 0s
+   200K .......... .......... .......... .......... .......... 87% 2.88M 0s
+   250K .......... .......... .......... .......              100% 74.7M=0.2s
+
+2013-11-20 19:25:37 (1.85 MB/s) - `lwt-2.4.4.tar.gz' saved [294161/294161]
+
+Building lwt.2.4.4:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+not checking for pkg-config
+not checking for libev
+testing for pthread: ........................... available
+not checking for glib
+testing for eventfd: ........................... available
+testing for fd passing: ........................ available
+testing for sched_getcpu: ...................... available
+testing for affinity getting/setting: .......... available
+testing for credentials getting (Linux): ....... available
+testing for credentials getting (NetBSD): ...... unavailable
+testing for credentials getting (OpenBSD): ..... unavailable
+testing for credentials getting (FreeBSD): ..... unavailable
+testing for credentials getting (getpeereid): .. unavailable
+testing for fdatasync: ......................... available
+testing for netdb_reentrant: ................... available
+Generating C stubs...
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ lwt
+Package version: ..................................... 2.4.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Compiles for Android: ................................ false
+build and install everything: ........................ false
+Build the syntax extension: .......................... true
+Unix support: ........................................ true
+React helpers: ....................................... false
+Glib integration: .................................... false
+SSL support: ......................................... false
+Text mode utilities (deprecated): .................... false
+Preemptive threads support: .......................... true
+Asynchronous unix functions: ......................... true
+Enhanced toplevel: ................................... false
+Compile with libev support: .......................... false
+Use the libev backend by default: .................... true
+Use pthread: ......................................... true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_camlp4: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_quotations_o: ............................. /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_bigarray: ........................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_threads: ......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_camlp4_extend: ................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+not checking for pkg-config
+not checking for libev
+testing for pthread: ........................... available
+not checking for glib
+testing for eventfd: ........................... available
+testing for fd passing: ........................ available
+testing for sched_getcpu: ...................... available
+testing for affinity getting/setting: .......... available
+testing for credentials getting (Linux): ....... available
+testing for credentials getting (NetBSD): ...... unavailable
+testing for credentials getting (OpenBSD): ..... unavailable
+testing for credentials getting (FreeBSD): ..... unavailable
+testing for credentials getting (getpeereid): .. unavailable
+testing for fdatasync: ......................... available
+testing for netdb_reentrant: ................... available
+Generating C stubs...
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ lwt
+Package version: ..................................... 2.4.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Compiles for Android: ................................ false
+build and install everything: ........................ false
+Build the syntax extension: .......................... true
+Unix support: ........................................ true
+React helpers: ....................................... false
+Glib integration: .................................... false
+SSL support: ......................................... false
+Text mode utilities (deprecated): .................... false
+Preemptive threads support: .......................... true
+Asynchronous unix functions: ......................... true
+Enhanced toplevel: ................................... false
+Compile with libev support: .......................... false
+Use the libev backend by default: .................... true
+Use pthread: ......................................... true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_camlp4: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_quotations_o: ............................. /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_bigarray: ........................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_threads: ......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_camlp4_extend: ................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+./setup.exe -build 
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind: Package `wikidoc' not found
+File "_tags", line 13, characters 116-125:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 13, characters 84-101:
+Warning: the tag "pkg_text.bigarray" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 13, characters 74-82:
+Warning: the tag "pkg_text" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 18, characters 14-25:
+Warning: the tag "use_C_libev" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 19, characters 14-24:
+Warning: the tag "use_C_glib" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 176, characters 22-31:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 213, characters 20-27:
+Warning: the tag "pkg_ssl" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 223, characters 21-30:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 224, characters 21-29:
+Warning: the tag "pkg_text" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 225, characters 21-38:
+Warning: the tag "pkg_text.bigarray" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 232, characters 29-38:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 233, characters 29-37:
+Warning: the tag "pkg_text" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 234, characters 29-46:
+Warning: the tag "pkg_text.bigarray" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 255, characters 29-38:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 256, characters 29-37:
+Warning: the tag "pkg_text" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 258, characters 29-46:
+Warning: the tag "pkg_text.bigarray" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 267, characters 20-29:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 268, characters 20-28:
+Warning: the tag "pkg_text" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 270, characters 20-37:
+Warning: the tag "pkg_text.bigarray" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 351, characters 34-43:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 359, characters 24-33:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -modules syntax/pa_optcomp.ml > syntax/pa_optcomp.ml.depends
++ ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -modules syntax/pa_optcomp.ml > syntax/pa_optcomp.ml.depends
+Command exited with code 2.
+E: Failure("Command ''/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild' syntax/optcomp.cma syntax/optcomp.cmxa syntax/optcomp.a syntax/optcomp.cmxs src/core/lwt.cma src/core/lwt.cmxa src/core/lwt.a src/core/lwt.cmxs src/logger/lwt-log.cma src/logger/lwt-log.cmxa src/logger/lwt-log.a src/logger/lwt-log.cmxs src/unix/liblwt-unix_stubs.a src/unix/dlllwt-unix_stubs.so src/unix/lwt-unix.cma src/unix/lwt-unix.cmxa src/unix/lwt-unix.a src/unix/lwt-unix.cmxs src/simple_top/lwt-simple-top.cma src/simple_top/lwt-simple-top.cmxa src/simple_top/lwt-simple-top.a src/simple_top/lwt-simple-top.cmxs src/preemptive/lwt-preemptive.cma src/preemptive/lwt-preemptive.cmxa src/preemptive/lwt-preemptive.a src/preemptive/lwt-preemptive.cmxs src/extra/lwt-extra.cma src/extra/lwt-extra.cmxa src/extra/lwt-extra.a src/extra/lwt-extra.cmxs syntax/lwt-syntax.cma syntax/lwt-syntax.cmxa syntax/lwt-syntax.a syntax/lwt-syntax.cmxs syntax/lwt-syntax-options.cma syntax/lwt-syntax-options.cmxa syntax/lwt-syntax-options.a syntax/lwt-syntax-options.cmxs syntax/lwt-syntax-log.cma syntax/lwt-syntax-log.cmxa syntax/lwt-syntax-log.a syntax/lwt-syntax-log.cmxs examples/unix/logging.native examples/unix/relay.native examples/unix/parallelize.native -tag debug' terminated with error code 10")
+make: *** [build] Error 1
+[ERROR] The compilation of lwt.2.4.4 failed.
+Removing lwt.2.4.4.
+  ocamlfind remove lwt
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt
+
+=-=-= Installing obuild.0.0.4 =-=-=
+obuild.0.0.4 Downloading https://github.com/vincenthz/obuild/archive/obuild-v0.0.4.tar.gz
+--2013-11-20 19:25:45--  https://github.com/vincenthz/obuild/archive/obuild-v0.0.4.tar.gz
+Resolving github.com (github.com)... 192.30.252.131
+Connecting to github.com (github.com)|192.30.252.131|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/vincenthz/obuild/tar.gz/obuild-v0.0.4 [following]
+--2013-11-20 19:25:45--  https://codeload.github.com/vincenthz/obuild/tar.gz/obuild-v0.0.4
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.145
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.145|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `obuild-obuild-v0.0.4.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 1002K
+    50K .......... .......                                     21.0M=0.05s
+
+2013-11-20 19:25:45 (1.30 MB/s) - `obuild-obuild-v0.0.4.tar.gz' saved [68959]
+
+Building obuild.0.0.4:
+  ./bootstrap
+  cp dist/build/obuild/obuild dist/build/obuild-simple/obuild-simple /home/opam/.opam/4.02.0dev+module-aliases/bin
+COMPILING fugue
+COMPILING filepath
+COMPILING filesystem
+BUILDING library obuild_ext.cmxa
+COMPILING gconf
+COMPILING types
+COMPILING dag
+COMPILING taskdep
+COMPILING dagutils
+COMPILING filetype
+COMPILING modname
+COMPILING hier
+COMPILING expr
+COMPILING pp
+COMPILING utils
+COMPILING helper
+COMPILING process
+COMPILING findlibConf
+COMPILING prog
+COMPILING dependencies
+COMPILING target
+COMPILING project
+COMPILING meta
+COMPILING dist
+COMPILING analyze
+COMPILING configure
+COMPILING prepare
+COMPILING buildprogs
+COMPILING build
+COMPILING exception
+BUILDING library obuild.cmxa
+COMPILING sdist
+COMPILING doc
+COMPILING init
+COMPILING help
+COMPILING install
+COMPILING main
+LINKING obuild.bootstrap
+Configuring obuild-0.0.4...
+Building library obuild.ext
+[1 of 6] Compiling Ext.Fugue                     
+[2 of 6] Intfing Ext.Filepath                  
+[3 of 6] Compiling Ext.Filepath                  
+[4 of 6] Intfing Ext.Filesystem                
+[5 of 6] Compiling Ext.Filesystem                
+[6 of 6] Packing Ext                           
+Linking library dist/build/lib-obuild.ext/obuild_ext.cmxa
+Linking library dist/build/lib-obuild.ext/obuild_ext.cma
+Building library obuild
+[ 1 of 27] Compiling Obuild.Gconf                  
+[ 2 of 27] Compiling Obuild.Types                  
+[ 3 of 27] Compiling Obuild.Dag                    
+[ 4 of 27] Compiling Obuild.Pp                     
+[ 5 of 27] Compiling Obuild.Filetype               
+[ 6 of 27] Compiling Obuild.Expr                   
+[ 7 of 27] Compiling Obuild.Utils                  
+[ 8 of 27] Compiling Obuild.Modname                
+[ 9 of 27] Compiling Obuild.Taskdep                
+[10 of 27] Compiling Obuild.Dist                   
+[11 of 27] Compiling Obuild.Helper                 
+[12 of 27] Compiling Obuild.Hier                   
+[13 of 27] Compiling Obuild.Dagutils               
+[14 of 27] Compiling Obuild.Process                
+[15 of 27] Compiling Obuild.FindlibConf            
+[16 of 27] Compiling Obuild.Prog                   
+[17 of 27] Compiling Obuild.Dependencies           
+[18 of 27] Compiling Obuild.Meta                   
+[19 of 27] Compiling Obuild.Target                 
+[20 of 27] Compiling Obuild.Project                
+[21 of 27] Compiling Obuild.Analyze                
+[22 of 27] Compiling Obuild.Configure              
+[23 of 27] Compiling Obuild.Prepare                
+[24 of 27] Compiling Obuild.Buildprogs             
+[25 of 27] Compiling Obuild.Build                  
+[26 of 27] Compiling Obuild.Exception              
+[27 of 27] Packing Obuild                        
+Linking library dist/build/lib-obuild/obuild.cmxa
+Linking library dist/build/lib-obuild/obuild.cma
+Building executable obuild
+[1 of 6] Compiling Sdist                         
+[2 of 6] Compiling Install                       
+[3 of 6] Compiling Help                          
+[4 of 6] Compiling Doc                           
+[5 of 6] Compiling Init                          
+[6 of 6] Compiling Main                          
+Linking executable dist/build/obuild/obuild
+Building executable obuild-simple
+[1 of 1] Compiling Simple                        
+Linking executable dist/build/obuild-simple/obuild-simple
+Building executable obuild-from-oasis
+[1 of 1] Compiling Assimilate_oasis              
+Linking executable dist/build/obuild-from-oasis/obuild-from-oasis
+
+real	0m2.932s
+user	0m1.661s
+sys	0m2.061s
+Installing obuild.0.0.4.
+
+[ERROR] Due to some errors while processing { bitstring.2.0.4, lwt.2.4.4 }, the following actions will NOT proceed:
+ - install nbd.0.9.0
+
+===== ERROR while installing bitstring.2.0.4 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make srcdir=./
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/bitstring.2.0.4
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/bitstring.2.0.4/bitstring-62-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/bitstring.2.0.4/bitstring-62-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/bitstring.2.0.4/bitstring-62-d2d111.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlc -g  -c bitstring_types.ml
+# ocamlfind ocamlc -g  -c bitstring_config.ml
+# gcc -g -O2 -Wall -Werror -fPIC -I. -I/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml   -c -o bitstring_c.o bitstring_c.c
+# ocamlfind ocamlc -g  -c bitstring.mli
+# ocamlfind ocamlc -g  -c bitstring.ml
+# ocamlfind ocamlc -g  -c bitmatch.ml
+# ocamlmklib -o bitstring bitstring_types.cmo bitstring_config.cmo bitstring_c.o bitstring.cmo bitmatch.cmo
+# ocamlfind ocamlc -g  \
+# 	  -I +camlp4 -pp camlp4of -c bitstring_persistent.mli
+# ocamlc.opt got signal and exited
+### stderr ###
+# make: *** [bitstring_persistent.cmi] Error 2
+
+
+===== ERROR while installing lwt.2.4.4 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make build
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/lwt.2.4.4
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/lwt.2.4.4/lwt-841-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/lwt.2.4.4/lwt-841-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/lwt.2.4.4/lwt-841-ad8886.err
+### stdout ###
+# ...[truncated]
+# Warning: the tag "pkg_text" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 270, characters 20-37:
+# Warning: the tag "pkg_text.bigarray" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 351, characters 34-43:
+# Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 359, characters 24-33:
+# Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -modules syntax/pa_optcomp.ml > syntax/pa_optcomp.ml.depends
+# + ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -modules syntax/pa_optcomp.ml > syntax/pa_optcomp.ml.depends
+# Command exited with code 2.
+### stderr ###
+# ocamlfind: Package `wikidoc' not found
+# E: Failure("Command ''/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild' syntax/optcomp.cma syntax/optcomp.cmxa syntax/optcomp.a syntax/optcomp.cmxs src/core/lwt.cma src/core/lwt.cmxa src/core/lwt.a src/core/lwt.cmxs src/logger/lwt-log.cma src/logger/lwt-log.cmxa src/logger/lwt-log.a src/logger/lwt-log.cmxs src/unix/liblwt-unix_stubs.a src/unix/dlllwt-unix_stubs.so src/unix/lwt-unix.cma src...[truncated]
+# make: *** [build] Error 1
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+module-aliases/backup/state-20131020192530.export"
+'opam install nbd' failed.
