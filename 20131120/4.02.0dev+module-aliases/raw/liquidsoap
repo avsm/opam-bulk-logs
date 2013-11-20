@@ -1,0 +1,441 @@
+++ opam install liquidsoap -e ubuntu
++ depext='libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev'
+Ubuntu depexts: libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev
++ echo Ubuntu depexts: libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev
++ '[' 'libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev
+E: Package 'libfaad-dev' has no installation candidate
+E: Unable to locate package libgavl-dev
+E: Unable to locate package libgstreamer1.0-dev
+E: Couldn't find any package by regex 'libgstreamer1.0-dev'
+E: Unable to locate package liblo-dev
+E: Unable to locate package libmp3lame-dev
+E: Unable to locate package libsoundtouch-dev
+E: Unable to locate package libvo-aacenc-dev
++ opam install liquidsoap
+The following actions will be performed:
+ - install camomile.0.8.5 [required by liquidsoap]
+ - install dtools.0.3.0 [required by liquidsoap]
+ - install conf-libpcre.1 [required by liquidsoap]
+ - install ocaml-mad.0.4.4 [required by liquidsoap]
+ - install pcre-ocaml.7.0.2 [required by liquidsoap]
+ - install mm.0.2.1 [required by liquidsoap]
+ - install duppy.0.5.0 [required by liquidsoap]
+ - install liquidsoap.1.1.0
+8 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing camomile.0.8.5 =-=-=
+camomile.0.8.5 Downloading https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
+--2013-11-20 18:31:31--  https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
+Resolving github.com (github.com)... 192.30.252.130
+Connecting to github.com (github.com)|192.30.252.130|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://s3.amazonaws.com/github-cloud/releases/1965070/3fe28ca6-1de4-11e3-9067-9ddfaf80024a.bz2?response-content-disposition=attachment%3B%20filename%3Dcamomile-0.8.5.tar.bz2&AWSAccessKeyId=AKIAISTNZFOVBIJMK3TQ&Expires=1384972354&Signature=TiTAP9FKjO%2FyxMAjYN1Dwv77%2BwA%3D [following]
+--2013-11-20 18:31:31--  https://s3.amazonaws.com/github-cloud/releases/1965070/3fe28ca6-1de4-11e3-9067-9ddfaf80024a.bz2?response-content-disposition=attachment%3B%20filename%3Dcamomile-0.8.5.tar.bz2&AWSAccessKeyId=AKIAISTNZFOVBIJMK3TQ&Expires=1384972354&Signature=TiTAP9FKjO%2FyxMAjYN1Dwv77%2BwA%3D
+Resolving s3.amazonaws.com (s3.amazonaws.com)... 205.251.243.114
+Connecting to s3.amazonaws.com (s3.amazonaws.com)|205.251.243.114|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2607084 (2.5M) [application/octet-stream]
+Saving to: `camomile-0.8.5.tar.bz2'
+
+     0K .......... .......... .......... .......... ..........  1%  343K 7s
+    50K .......... .......... .......... .......... ..........  3%  419K 6s
+   100K .......... .......... .......... .......... ..........  5%  502K 6s
+   150K .......... .......... .......... .......... ..........  7% 1.07M 5s
+   200K .......... .......... .......... .......... ..........  9%  682K 4s
+   250K .......... .......... .......... .......... .......... 11% 1.73M 4s
+   300K .......... .......... .......... .......... .......... 13% 1.11M 3s
+   350K .......... .......... .......... .......... .......... 15% 1.72M 3s
+   400K .......... .......... .......... .......... .......... 17% 1.09M 3s
+   450K .......... .......... .......... .......... .......... 19% 18.8M 3s
+   500K .......... .......... .......... .......... .......... 21% 1.69M 2s
+   550K .......... .......... .......... .......... .......... 23% 1.13M 2s
+   600K .......... .......... .......... .......... .......... 25% 1.87M 2s
+   650K .......... .......... .......... .......... .......... 27% 21.4M 2s
+   700K .......... .......... .......... .......... .......... 29% 1.12M 2s
+   750K .......... .......... .......... .......... .......... 31% 15.9M 2s
+   800K .......... .......... .......... .......... .......... 33% 1.99M 2s
+   850K .......... .......... .......... .......... .......... 35% 17.2M 1s
+   900K .......... .......... .......... .......... .......... 37% 1.15M 1s
+   950K .......... .......... .......... .......... .......... 39% 14.0M 1s
+  1000K .......... .......... .......... .......... .......... 41% 2.14M 1s
+  1050K .......... .......... .......... .......... .......... 43% 13.2M 1s
+  1100K .......... .......... .......... .......... .......... 45% 38.4M 1s
+  1150K .......... .......... .......... .......... .......... 47%  900K 1s
+  1200K .......... .......... .......... .......... .......... 49% 12.2M 1s
+  1250K .......... .......... .......... .......... .......... 51% 2.32M 1s
+  1300K .......... .......... .......... .......... .......... 53% 17.8M 1s
+  1350K .......... .......... .......... .......... .......... 54% 16.0M 1s
+  1400K .......... .......... .......... .......... .......... 56% 1.65M 1s
+  1450K .......... .......... .......... .......... .......... 58% 16.6M 1s
+  1500K .......... .......... .......... .......... .......... 60% 12.6M 1s
+  1550K .......... .......... .......... .......... .......... 62% 2.40M 1s
+  1600K .......... .......... .......... .......... .......... 64% 37.3M 1s
+  1650K .......... .......... .......... .......... .......... 66% 15.0M 1s
+  1700K .......... .......... .......... .......... .......... 68% 1.14M 0s
+  1750K .......... .......... .......... .......... .......... 70% 18.7M 0s
+  1800K .......... .......... .......... .......... .......... 72% 14.8M 0s
+  1850K .......... .......... .......... .......... .......... 74% 2.28M 0s
+  1900K .......... .......... .......... .......... .......... 76% 30.7M 0s
+  1950K .......... .......... .......... .......... .......... 78% 1003K 0s
+  2000K .......... .......... .......... .......... .......... 80% 18.3M 0s
+  2050K .......... .......... .......... .......... .......... 82% 20.4M 0s
+  2100K .......... .......... .......... .......... .......... 84% 16.8M 0s
+  2150K .......... .......... .......... .......... .......... 86% 2.11M 0s
+  2200K .......... .......... .......... .......... .......... 88% 1.10M 0s
+  2250K .......... .......... .......... .......... .......... 90% 28.7M 0s
+  2300K .......... .......... .......... .......... .......... 92% 14.5M 0s
+  2350K .......... .......... .......... .......... .......... 94% 15.2M 0s
+  2400K .......... .......... .......... .......... .......... 96% 2.38M 0s
+  2450K .......... .......... .......... .......... .......... 98% 1.18M 0s
+  2500K .......... .......... .......... .......... .....     100% 12.4M=1.3s
+
+2013-11-20 18:31:33 (1.91 MB/s) - `camomile-0.8.5.tar.bz2' saved [2607084/2607084]
+
+Building camomile.0.8.5:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  make
+  make install
+checking for cppo... false
+checking for grep that handles long lines and -e... /bin/grep
+checking for fgrep... /bin/grep -F
+checking for ocamlc... ocamlc
+ocaml version is 4.02.0+dev2-2013-09-12
+ocaml library path is /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking ocamlopt version... ok
+checking for ocamlc.opt... ocamlc.opt
+checking ocamlc.opt version... ok
+checking for ocamlopt.opt... ocamlopt.opt
+checking ocamlc.opt version... ok
+checking for ocamldep... ocamldep
+checking for ocamllex... ocamllex
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for ocamlweb... true
+checking for camlp4o... camlp4o
+checking for ocamlfind... install-with-ocamlfind
+checking for ocamldoc... ocamldoc
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating META
+echo '(* This file is automatically generated *)' > camomileDefaultConfig.ml
+echo 'let datadir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "database"' >> camomileDefaultConfig.ml
+echo 'let localedir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "locales"' >> camomileDefaultConfig.ml
+echo 'let charmapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "charmaps"' >> camomileDefaultConfig.ml
+echo 'let unimapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "mappings"' >> camomileDefaultConfig.ml
+ocamldep -slash -I internal -I public -I toolslib -I . *.ml *.mli \
+	internal/*.ml internal/*.mli \
+	public/*.ml public/*.mli \
+	mappings/*.ml mappings/*.mli \
+	toolslib/*.ml toolslib/*.mli \
+	> .depend
+ocamldep -slash -pp "camlp4o -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml" -I internal -I public -I toolslib -I . \
+	tools/tools/parse_unidata.ml tools/parse_uniset.ml tools/camomilecharmap.ml tools/parse_specialcasing.ml tools/parse_casefolding.ml tools/parse_scripts.ml tools/parse_allkeys.ml mappings/gen_mappings.ml tools/parse_age.ml tools/camomilelocaledef.ml tools/camomilestringprep.ml >> .depend
+Segmentation fault
+make: *** [.depend] Error 139
+[ERROR] The compilation of camomile.0.8.5 failed.
+Removing camomile.0.8.5.
+  ocamlfind remove camomile
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/camomile
+
+=-=-= Installing conf-libpcre.1 =-=-=
+Building conf-libpcre.1:
+  pkg-config libpcre
+[ERROR] The compilation of conf-libpcre.1 failed.
+Removing conf-libpcre.1.
+
+=-=-= Installing dtools.0.3.0 =-=-=
+dtools.0.3.0 Downloading http://downloads.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz
+--2013-11-20 18:31:36--  http://downloads.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz
+Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 216.34.181.59
+Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://softlayer-dal.dl.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz [following]
+--2013-11-20 18:31:36--  http://softlayer-dal.dl.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz
+Resolving softlayer-dal.dl.sourceforge.net (softlayer-dal.dl.sourceforge.net)... 67.228.157.232
+Connecting to softlayer-dal.dl.sourceforge.net (softlayer-dal.dl.sourceforge.net)|67.228.157.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 110975 (108K) [application/x-gzip]
+Saving to: `ocaml-dtools-0.3.0.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 46%  375K 0s
+    50K .......... .......... .......... .......... .......... 92% 1.20M 0s
+   100K ........                                              100% 38.4M=0.2s
+
+2013-11-20 18:31:36 (622 KB/s) - `ocaml-dtools-0.3.0.tar.gz' saved [110975/110975]
+
+Building dtools.0.3.0:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  make
+  make install
+configuring ocaml-dtools 0.3.0
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking that calling user is not root... ok
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for ar... ar
+checking for ocamlc... ocamlc
+OCaml version is 4.02.0+dev2-2013-09-12
+checking if ocaml compiler supports first-class modules... yes
+OCaml library path is /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+checking for camlidl... no
+checking for ocamllex... ocamllex
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for camlp4... camlp4
+versions differs from ocamlc
+checking for camlp4boot... no
+checking for camlp4o... camlp4o
+checking for camlp4of... camlp4of
+checking for camlp4oof... camlp4oof
+checking for camlp4orf... camlp4orf
+checking for camlp4prof... camlp4prof
+checking for camlp4r... camlp4r
+checking for camlp4rf... camlp4rf
+checking for ocamlfind... ocamlfind
+checking for caml/threads.h... yes
+checking for gcc option to produce PIC... -fPIC
+checking for ocaml syslog module... Not found.
+configure: creating ./config.status
+config.status: creating src/Makefile
+config.status: creating src/META
+config.status: creating Makefile
+make -C src
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+making ._bcdi/dtools.di from dtools.mli
+making ._d/dtools.d from dtools.ml
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+ocamlc.opt -c -thread dtools.mli
+ocamlc.opt -c -thread dtools.ml
+ocamlc.opt -a     -linkall         \
+				  -o dtools.cma  dtools.cmo
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+making ._ncdi/dtools.di from dtools.mli
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+ocamlopt.opt -c -thread dtools.ml
+ocamlopt.opt -a      -linkall          \
+				 -o dtools.cmxa dtools.cmx
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+make -C src install
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+make[2]: `dtools.cma' is up to date.
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+make[2]: `dtools.cmxa' is up to date.
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+
+Installing library with ocamlfind
+ocamlfind install  dtools META dtools.cma dtools.cmxa dtools.cmx dtools.mli dtools.cmi dtools.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/dtools/dtools.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/dtools/dtools.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/dtools/dtools.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/dtools/dtools.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/dtools/dtools.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/dtools/dtools.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/dtools/META
+
+Installation successful.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/dtools.0.3.0/src'
+Installing dtools.0.3.0.
+
+=-=-= Installing ocaml-mad.0.4.4 =-=-=
+ocaml-mad.0.4.4 Downloading http://downloads.sourceforge.net/project/savonet/ocaml-mad/0.4.4/ocaml-mad-0.4.4.tar.gz
+--2013-11-20 18:31:39--  http://downloads.sourceforge.net/project/savonet/ocaml-mad/0.4.4/ocaml-mad-0.4.4.tar.gz
+Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 216.34.181.59
+Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://softlayer-dal.dl.sourceforge.net/project/savonet/ocaml-mad/0.4.4/ocaml-mad-0.4.4.tar.gz [following]
+--2013-11-20 18:31:39--  http://softlayer-dal.dl.sourceforge.net/project/savonet/ocaml-mad/0.4.4/ocaml-mad-0.4.4.tar.gz
+Resolving softlayer-dal.dl.sourceforge.net (softlayer-dal.dl.sourceforge.net)... 67.228.157.232
+Connecting to softlayer-dal.dl.sourceforge.net (softlayer-dal.dl.sourceforge.net)|67.228.157.232|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 146865 (143K) [application/x-gzip]
+Saving to: `ocaml-mad-0.4.4.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 34%  436K 0s
+    50K .......... .......... .......... .......... .......... 69% 1.31M 0s
+   100K .......... .......... .......... .......... ...       100%  447K=0.2s
+
+2013-11-20 18:31:40 (576 KB/s) - `ocaml-mad-0.4.4.tar.gz' saved [146865/146865]
+
+Building ocaml-mad.0.4.4:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  make
+  make install
+configuring ocaml-mad 0.4.4
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking that calling user is not root... ok
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for ar... ar
+checking for ocamlc... ocamlc
+OCaml version is 4.02.0+dev2-2013-09-12
+checking if ocaml compiler supports first-class modules... yes
+OCaml library path is /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+checking for camlidl... no
+checking for ocamllex... ocamllex
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for camlp4... camlp4
+versions differs from ocamlc
+checking for camlp4boot... no
+checking for camlp4o... camlp4o
+checking for camlp4of... camlp4of
+checking for camlp4oof... camlp4oof
+checking for camlp4orf... camlp4orf
+checking for camlp4prof... camlp4prof
+checking for camlp4r... camlp4r
+checking for camlp4rf... camlp4rf
+checking for ocamlfind... ocamlfind
+checking for caml/threads.h... yes
+checking for gcc option to produce PIC... -fPIC
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking mad.h usability... no
+checking mad.h presence... no
+checking for mad.h... no
+configure: error: libmad not found
+[ERROR] The compilation of ocaml-mad.0.4.4 failed.
+Removing ocaml-mad.0.4.4.
+  ocamlfind remove mad
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/mad
+
+[ERROR] Due to some errors while processing { camomile.0.8.5, conf-libpcre.1, ocaml-mad.0.4.4 }, the following actions will NOT proceed:
+ - install mm.0.2.1
+ - install liquidsoap.1.1.0
+ - install pcre-ocaml.7.0.2
+ - install duppy.0.5.0
+
+===== ERROR while installing camomile.0.8.5 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/camomile.0.8.5
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/camomile.0.8.5/camomile-29-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/camomile.0.8.5/camomile-29-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/camomile.0.8.5/camomile-29-d2d111.err
+### stdout ###
+# ...[truncated]
+# echo 'let charmapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "charmaps"' >> camomileDefaultConfig.ml
+# echo 'let unimapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+module-aliases/share" "camomile") "mappings"' >> camomileDefaultConfig.ml
+# ocamldep -slash -I internal -I public -I toolslib -I . *.ml *.mli \
+# 	internal/*.ml internal/*.mli \
+# 	public/*.ml public/*.mli \
+# 	mappings/*.ml mappings/*.mli \
+# 	toolslib/*.ml toolslib/*.mli \
+# 	> .depend
+# ocamldep -slash -pp "camlp4o -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml" -I internal -I public -I toolslib -I . \
+# 	tools/tools/parse_unidata.ml tools/parse_uniset.ml tools/camomilecharmap.ml tools/parse_specialcasing.ml tools/parse_casefolding.ml tools/parse_scripts.ml tools/parse_allkeys.ml mappings/gen_mappings.ml tools/parse_age.ml tools/camomilelocaledef.ml tools/camomilestringprep.ml >> .depend
+### stderr ###
+# config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+# Segmentation fault
+# make: *** [.depend] Error 139
+
+
+===== ERROR while installing conf-libpcre.1 =====
+# opam-version         1.1.0
+# os                   linux
+# command              pkg-config libpcre
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/conf-libpcre.1
+# compiler             4.02.0dev+module-aliases
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/conf-libpcre.1/conf-libpcre-387-ccabea.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/conf-libpcre.1/conf-libpcre-387-ccabea.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/conf-libpcre.1/conf-libpcre-387-ccabea.err
+
+
+===== ERROR while installing ocaml-mad.0.4.4 =====
+# opam-version         1.1.0
+# os                   linux
+# command              ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/ocaml-mad.0.4.4
+# compiler             4.02.0dev+module-aliases
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/ocaml-mad.0.4.4/ocaml-mad-954-a71bb4.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/ocaml-mad.0.4.4/ocaml-mad-954-a71bb4.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/ocaml-mad.0.4.4/ocaml-mad-954-a71bb4.err
+### stdout ###
+# ...[truncated]
+# checking for stdlib.h... yes
+# checking for string.h... yes
+# checking for memory.h... yes
+# checking for strings.h... yes
+# checking for inttypes.h... yes
+# checking for stdint.h... yes
+# checking for unistd.h... yes
+# checking mad.h usability... no
+# checking mad.h presence... no
+# checking for mad.h... no
+### stderr ###
+# configure: error: libmad not found
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+module-aliases/backup/state-20131020183127.export"
+'opam install liquidsoap' failed.
