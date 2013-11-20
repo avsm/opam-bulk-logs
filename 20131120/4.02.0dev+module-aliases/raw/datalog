@@ -1,0 +1,282 @@
+++ opam install datalog -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install datalog
+Ubuntu depexts:
+The following actions will be performed:
+ - install datalog.0.5
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing datalog.0.5 =-=-=
+datalog.0.5 Downloading https://github.com/c-cube/datalog/archive/0.5.tar.gz
+--2013-11-20 17:43:11--  https://github.com/c-cube/datalog/archive/0.5.tar.gz
+Resolving github.com (github.com)... 192.30.252.130
+Connecting to github.com (github.com)|192.30.252.130|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/c-cube/datalog/tar.gz/0.5 [following]
+--2013-11-20 17:43:11--  https://codeload.github.com/c-cube/datalog/tar.gz/0.5
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.147
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `datalog-0.5.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 1.45M
+    50K .......... .......... .......... .......... .......... 1.42M
+   100K .......... .......... .......... .......... .......... 1.45M
+   150K .......... .......... .......... .......... .......... 1.43M
+   200K .......... .......... .......... .......... .......... 2.88M
+   250K .......... .......... .......... .......... .......... 2.88M
+   300K .......... .......... .......... .......... .......... 2.86M
+   350K .......... .......... .......... .......... .......... 2.71M
+   400K .......... .......... .......... .......... .......... 84.2M
+   450K .......... .......... .......... .......... .......... 2.84M
+   500K .......... .......... .......... .......... .......... 2.87M
+   550K .......... .......... .......... .......... .......... 2.91M
+   600K .......... .......... .......... .......... .......... 2.89M
+   650K .......... .......... .......... .......... .......... 2.88M
+   700K .......... .......... .......... .......... .......... 72.9M
+   750K .......... .......... .......... .......... .......... 2.85M
+   800K .......... .......... .......... .......... .......... 2.97M
+   850K .......... .......... .......                          91.6M=0.3s
+
+2013-11-20 17:43:12 (2.64 MB/s) - `datalog-0.5.tar.gz' saved [898826]
+
+Building datalog.0.5:
+  ./configure --bindir /home/opam/.opam/4.02.0dev+module-aliases/bin --docdir /home/opam/.opam/4.02.0dev+module-aliases/doc
+  make all install_file
+  make install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ datalog
+Package version: ..................................... 0.5
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. /home/opam/.opam/4.02.0dev+module-aliases/doc
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_num: ............................................. /home/opam/.opam/4.02.0dev+module-aliases/lib/num
+pkg_str: ............................................. /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocaml setup.ml -all 
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ datalog
+Package version: ..................................... 0.5
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. /home/opam/.opam/4.02.0dev+module-aliases/doc
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_num: ............................................. /home/opam/.opam/4.02.0dev+module-aliases/lib/num
+pkg_str: ............................................. /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package unix -package str -package num -modules bottomUp.mli > bottomUp.mli.depends
+ocamlfind ocamlc -c -g -package unix -package str -package num -o bottomUp.cmi bottomUp.mli
+ocamlfind ocamldep -package unix -package str -package num -modules bottomUp.ml > bottomUp.ml.depends
+ocamlfind ocamldep -package unix -package str -package num -modules topDown.mli > topDown.mli.depends
+ocamlfind ocamldep -package unix -package str -package num -modules topDownAst.ml > topDownAst.ml.depends
+ocamlfind ocamlc -c -g -package unix -package str -package num -o topDownAst.cmo topDownAst.ml
+ocamlfind ocamlc -c -g -package unix -package str -package num -o topDown.cmi topDown.mli
+ocamlfind ocamldep -package unix -package str -package num -modules topDown.ml > topDown.ml.depends
+ocamlfind ocamldep -package unix -package str -package num -modules default.mli > default.mli.depends
+ocamlfind ocamldep -package unix -package str -package num -modules bottomUpAst.mli > bottomUpAst.mli.depends
+ocamlfind ocamlc -c -g -package unix -package str -package num -o bottomUpAst.cmi bottomUpAst.mli
+ocamlfind ocamlc -c -g -package unix -package str -package num -o default.cmi default.mli
+ocamlfind ocamldep -package unix -package str -package num -modules default.ml > default.ml.depends
+ocamlfind ocamldep -package unix -package str -package num -modules bottomUpAst.ml > bottomUpAst.ml.depends
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlyacc bottomUpParser.mly
+ocamlfind ocamldep -package unix -package str -package num -modules bottomUpParser.mli > bottomUpParser.mli.depends
+ocamlfind ocamlc -c -g -package unix -package str -package num -o bottomUpParser.cmi bottomUpParser.mli
+ocamlfind ocamldep -package unix -package str -package num -modules bottomUpParser.ml > bottomUpParser.ml.depends
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamllex.opt -q bottomUpLexer.mll
+ocamlfind ocamldep -package unix -package str -package num -modules bottomUpLexer.ml > bottomUpLexer.ml.depends
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlyacc topDownParser.mly
+ocamlfind ocamldep -package unix -package str -package num -modules topDownParser.mli > topDownParser.mli.depends
+ocamlfind ocamlc -c -g -package unix -package str -package num -o topDownParser.cmi topDownParser.mli
+ocamlfind ocamldep -package unix -package str -package num -modules topDownParser.ml > topDownParser.ml.depends
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamllex.opt -q topDownLexer.mll
+ocamlfind ocamldep -package unix -package str -package num -modules topDownLexer.ml > topDownLexer.ml.depends
+ocamlfind ocamldep -package unix -package str -package num -modules version.ml > version.ml.depends
+ocamlfind ocamlc -c -g -package unix -package str -package num -o bottomUp.cmo bottomUp.ml
+ocamlfind ocamlc -c -g -package unix -package str -package num -o topDown.cmo topDown.ml
+ocamlfind ocamlc -c -g -package unix -package str -package num -o default.cmo default.ml
+ocamlfind ocamlc -c -g -package unix -package str -package num -o bottomUpAst.cmo bottomUpAst.ml
+ocamlfind ocamlc -c -g -package unix -package str -package num -o bottomUpParser.cmo bottomUpParser.ml
+ocamlfind ocamlc -c -g -package unix -package str -package num -o bottomUpLexer.cmo bottomUpLexer.ml
+ocamlfind ocamlc -c -g -package unix -package str -package num -o topDownParser.cmo topDownParser.ml
+ocamlfind ocamlc -c -g -package unix -package str -package num -o topDownLexer.cmo topDownLexer.ml
+ocamlfind ocamlc -c -g -package unix -package str -package num -o version.cmo version.ml
+ocamlfind ocamlc -pack -g bottomUp.cmo topDownAst.cmo topDown.cmo bottomUpAst.cmo default.cmo bottomUpParser.cmo bottomUpLexer.cmo topDownParser.cmo topDownLexer.cmo version.cmo -o datalog.cmo
+ocamlfind ocamlc -a datalog.cmo -o datalog.cma
+ocamlfind ocamlopt -c -g -package unix -package str -package num -inline 10 -for-pack Datalog -o topDownAst.cmx topDownAst.ml
+ocamlfind ocamlopt -c -g -package unix -package str -package num -inline 10 -for-pack Datalog -o bottomUp.cmx bottomUp.ml
+ocamlfind ocamlopt -c -g -package unix -package str -package num -inline 10 -for-pack Datalog -o bottomUpAst.cmx bottomUpAst.ml
+ocamlfind ocamlopt -c -g -package unix -package str -package num -inline 10 -for-pack Datalog -o bottomUpParser.cmx bottomUpParser.ml
+ocamlfind ocamlopt -c -g -package unix -package str -package num -inline 10 -for-pack Datalog -o topDownParser.cmx topDownParser.ml
+ocamlfind ocamlopt -c -g -package unix -package str -package num -inline 10 -for-pack Datalog -o topDown.cmx topDown.ml
+ocamlfind ocamlopt -c -g -package unix -package str -package num -inline 10 -for-pack Datalog -o default.cmx default.ml
+ocamlfind ocamlopt -c -g -package unix -package str -package num -inline 10 -for-pack Datalog -o bottomUpLexer.cmx bottomUpLexer.ml
+ocamlfind ocamlopt -c -g -package unix -package str -package num -inline 10 -for-pack Datalog -o topDownLexer.cmx topDownLexer.ml
+ocamlfind ocamlopt -c -g -package unix -package str -package num -inline 10 -for-pack Datalog -o version.cmx version.ml
+touch datalog.mli  ; if  ocamlfind ocamlopt -pack -g bottomUp.cmx topDownAst.cmx topDown.cmx bottomUpAst.cmx default.cmx bottomUpParser.cmx bottomUpLexer.cmx topDownParser.cmx topDownLexer.cmx version.cmx -o datalog.cmx  ; then  rm -f datalog.mli  ; else  rm -f datalog.mli  ; exit 1; fi
+ocamlfind ocamlopt -a datalog.cmx -o datalog.cmxa
+ocamlfind ocamlopt -shared datalog.cmx -o datalog.cmxs
+ocamlfind ocamldep -package unix -package str -package num -modules datalog_cli.ml > datalog_cli.ml.depends
+ocamlfind ocamlc -c -g -package unix -package str -package num -o datalog_cli.cmo datalog_cli.ml
+ocamlfind ocamlopt -c -g -package unix -package str -package num -inline 10 -o datalog_cli.cmx datalog_cli.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg -package unix -package str -package num datalog.cmxa datalog.cmx datalog_cli.cmx -o datalog_cli.native
+ocamlfind ocamldep -package unix -package str -package num -modules topDownCli.ml > topDownCli.ml.depends
+ocamlfind ocamlc -c -g -package unix -package str -package num -o topDownCli.cmo topDownCli.ml
+ocamlfind ocamlopt -c -g -package unix -package str -package num -inline 10 -o topDownCli.cmx topDownCli.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg -package unix -package str -package num datalog.cmxa datalog.cmx topDownCli.cmx -o topDownCli.native
+ocamlfind ocamldoc -dump bottomUp.odoc -package unix -package str -package num bottomUp.mli
++ ocamlfind ocamldoc -dump bottomUp.odoc -package unix -package str -package num bottomUp.mli
+Warning: Module or module type Hashtbl.HashedType not found
+Warning: Element Datalog_cli not found
+ocamlfind ocamldoc -dump topDown.odoc -package unix -package str -package num topDown.mli
+ocamlfind ocamldoc -dump default.odoc -package unix -package str -package num default.mli
++ ocamlfind ocamldoc -dump default.odoc -package unix -package str -package num default.mli
+Warning: Module type BottomUp.SymbolType not found
+Warning: Module or module type BottomUp.S not found
+Warning: Module type BottomUp.SymbolType not found
+Warning: Element BottomUp.Make not found
+Warning: Element BottomUpBottomUpAst not found
+ocamlfind ocamldoc -dump bottomUpAst.odoc -package unix -package str -package num bottomUpAst.mli
+ocamlfind ocamldoc -dump bottomUpParser.odoc -package unix -package str -package num bottomUpParser.mli
+ocamlfind ocamldoc -dump bottomUpLexer.odoc -package unix -package str -package num bottomUpLexer.ml
+ocamlfind ocamldoc -dump topDownParser.odoc -package unix -package str -package num topDownParser.mli
+ocamlfind ocamldoc -dump topDownLexer.odoc -package unix -package str -package num topDownLexer.ml
+ocamlfind ocamldoc -dump topDownAst.odoc -package unix -package str -package num topDownAst.ml
+ocamlfind ocamldoc -dump version.odoc -package unix -package str -package num version.ml
+rm -rf datalog.docdir
+mkdir -p datalog.docdir
+ocamlfind ocamldoc -load bottomUp.odoc -load topDown.odoc -load default.odoc -load bottomUpAst.odoc -load bottomUpParser.odoc -load bottomUpLexer.odoc -load topDownParser.odoc -load topDownLexer.odoc -load topDownAst.odoc -load version.odoc -html -d datalog.docdir
++ ocamlfind ocamldoc -load bottomUp.odoc -load topDown.odoc -load default.odoc -load bottomUpAst.odoc -load bottomUpParser.odoc -load bottomUpLexer.odoc -load topDownParser.odoc -load topDownLexer.odoc -load topDownAst.odoc -load version.odoc -html -d datalog.docdir
+Warning: Module or module type Hashtbl.HashedType not found
+Warning: Element Datalog_cli not found
+Warning: Element BottomUpBottomUpAst not found
+ocaml setup.ml -build 
+ocaml setup.ml -doc 
+mkdir -p man/man3/
+ocamlfind ocamldoc -I _build/ -man -d man/man3 bottomUp.mli bottomUpAst.mli default.mli topDown.mli
+Warning: Module or module type Hashtbl.HashedType not found
+Warning: Element Datalog_cli not found
+Warning: Element BottomUpBottomUpAst not found
+rm: cannot remove `datalog.install': No such file or directory
+ocaml setup.ml -install 
+W: Cannot find source header for module BottomUpParser in library datalog
+W: Cannot find source header for module BottomUpLexer in library datalog
+W: Cannot find source header for module TopDownParser in library datalog
+W: Cannot find source header for module TopDownLexer in library datalog
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/datalog/bottomUp.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/datalog/topDown.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/datalog/default.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/datalog/bottomUpAst.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/datalog/topDownAst.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/datalog/version.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/datalog/datalog.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/datalog/datalog.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/datalog/datalog.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/datalog/datalog.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/datalog/datalog.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/datalog/META
+Installing datalog.0.5.
