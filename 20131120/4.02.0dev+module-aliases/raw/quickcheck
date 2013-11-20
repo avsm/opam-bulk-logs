@@ -1,0 +1,154 @@
+++ opam install quickcheck -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install quickcheck
+Ubuntu depexts:
+The following actions will be performed:
+ - install optcomp.1.4 [required by quickcheck]
+ - install quickcheck.1.0.0
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing optcomp.1.4 =-=-=
+optcomp.1.4 Downloading https://forge.ocamlcore.org/frs/download.php/1011/optcomp-1.4.tar.gz
+--2013-11-20 20:30:53--  https://forge.ocamlcore.org/frs/download.php/1011/optcomp-1.4.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:443... connected.
+WARNING: no certificate subject alternative name matches
+	requested host name `forge.ocamlcore.org'.
+HTTP request sent, awaiting response... 200 OK
+Length: 53682 (52K) [application/binary]
+Saving to: `optcomp-1.4.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 95%  171K 0s
+    50K ..                                                    100% 4623G=0.3s
+
+2013-11-20 20:30:54 (179 KB/s) - `optcomp-1.4.tar.gz' saved [53682/53682]
+
+Building optcomp.1.4:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  make
+  make install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ optcomp
+Package version: ..................................... 1.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+module-aliases
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_camlp4: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_quotations_o: ............................. /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_lib: ...................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocaml setup.ml -build 
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -modules src/pa_optcomp.mli > src/pa_optcomp.mli.depends
+ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/pa_optcomp.cmi src/pa_optcomp.mli
++ ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/pa_optcomp.cmi src/pa_optcomp.mli
+File "src/pa_optcomp.mli", line 12, characters 0-19:
+Error: Unbound module Camlp4
+Command exited with code 2.
+E: Failure("Command ''/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild' src/optcomp.cma src/optcomp.cmxa src/optcomp.a src/optcomp.cmxs src/optcomp_o.native src/optcomp_r.native -tag debug' terminated with error code 10")
+make: *** [build] Error 1
+[ERROR] The compilation of optcomp.1.4 failed.
+Removing optcomp.1.4.
+  ocamlfind remove optcomp
+  rm /home/opam/.opam/4.02.0dev+module-aliases/bin/optcomp-o
+  rm /home/opam/.opam/4.02.0dev+module-aliases/bin/optcomp-r
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp
+rm: cannot remove `/home/opam/.opam/4.02.0dev+module-aliases/bin/optcomp-o': No such file or directory
+rm: cannot remove `/home/opam/.opam/4.02.0dev+module-aliases/bin/optcomp-r': No such file or directory
+[WARNING] failure in package uninstall script, some files may remain:
+# opam-version         1.1.0
+# os                   linux
+# command              rm /home/opam/.opam/4.02.0dev+module-aliases/bin/optcomp-o
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/optcomp.1.4
+# compiler             4.02.0dev+module-aliases
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/optcomp.1.4/optcomp-21-a71bb4.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/optcomp.1.4/optcomp-21-a71bb4.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/optcomp.1.4/optcomp-21-a71bb4.err
+### stderr ###
+# ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp
+# rm: cannot remove `/home/opam/.opam/4.02.0dev+module-aliases/bin/optcomp-o': No such file or directory
+
+
+[ERROR] Due to some errors while processing optcomp.1.4, the following actions will NOT proceed:
+ - install quickcheck.1.0.0
+
+===== ERROR while installing optcomp.1.4 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/optcomp.1.4
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/optcomp.1.4/optcomp-21-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/optcomp.1.4/optcomp-21-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/optcomp.1.4/optcomp-21-d2d111.err
+### stdout ###
+# ...[truncated]
+# ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+# 
+# ocaml setup.ml -build 
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -modules src/pa_optcomp.mli > src/pa_optcomp.mli.depends
+# ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/pa_optcomp.cmi src/pa_optcomp.mli
+# + ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/pa_optcomp.cmi src/pa_optcomp.mli
+# File "src/pa_optcomp.mli", line 12, characters 0-19:
+# Error: Unbound module Camlp4
+# Command exited with code 2.
+### stderr ###
+# E: Failure("Command ''/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild' src/optcomp.cma src/optcomp.cmxa src/optcomp.a src/optcomp.cmxs src/optcomp_o.native src/optcomp_r.native -tag debug' terminated with error code 10")
+# make: *** [build] Error 1
+
+'opam install quickcheck' failed.
