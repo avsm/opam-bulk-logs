@@ -1,0 +1,135 @@
+++ opam install libvhd -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install libvhd
+The following actions will be performed:
+ - install libvhd.0.9.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing libvhd.0.9.0 =-=-=
+libvhd.0.9.0 Downloading https://github.com/xen-org/libvhd/archive/libvhd-0.9.0.tar.gz
+--2013-11-20 18:29:47--  https://github.com/xen-org/libvhd/archive/libvhd-0.9.0.tar.gz
+Resolving github.com (github.com)... 192.30.252.130
+Connecting to github.com (github.com)|192.30.252.130|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://github.com/xapi-project/libvhd/archive/libvhd-0.9.0.tar.gz [following]
+--2013-11-20 18:29:47--  https://github.com/xapi-project/libvhd/archive/libvhd-0.9.0.tar.gz
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/xapi-project/libvhd/tar.gz/libvhd-0.9.0 [following]
+--2013-11-20 18:29:47--  https://codeload.github.com/xapi-project/libvhd/tar.gz/libvhd-0.9.0
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.147
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: `libvhd-libvhd-0.9.0.tar.gz'
+
+     0K .......... .......... .......... .......... ..         2.53M=0.02s
+
+2013-11-20 18:29:47 (2.53 MB/s) - `libvhd-libvhd-0.9.0.tar.gz' saved [44009]
+
+Building libvhd.0.9.0:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.0dev+module-aliases/bin
+ocaml setup.ml -configure 
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ libvhd
+Package version: ..................................... 0.9.0
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+
+ocaml setup.ml -build 
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlc -c lib/vhd_stubs.c
++ ocamlfind ocamlc -c lib/vhd_stubs.c
+lib/vhd_stubs.c:11:24: fatal error: vhd/libvhd.h: No such file or directory
+compilation terminated.
+Command exited with code 2.
+E: Failure("Command ''/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild' lib/liblibvhd_stubs.a lib/dlllibvhd_stubs.so lib/libvhd.cma lib/libvhd.cmxa lib/libvhd.a lib/libvhd.cmxs lib_test/open.byte -tag debug' terminated with error code 10")
+make: *** [build] Error 1
+[ERROR] The compilation of libvhd.0.9.0 failed.
+Removing libvhd.0.9.0.
+  make uninstall BINDIR=/home/opam/.opam/4.02.0dev+module-aliases/bin
+ocamlfind remove libxcpvhd
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/libxcpvhd
+
+
+===== ERROR while installing libvhd.0.9.0 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/libvhd.0.9.0
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/libvhd.0.9.0/libvhd-19-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/libvhd.0.9.0/libvhd-19-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/libvhd.0.9.0/libvhd-19-d2d111.err
+### stdout ###
+# ...[truncated]
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... false
+# 
+# ocaml setup.ml -build 
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind ocamlc -c lib/vhd_stubs.c
+# + ocamlfind ocamlc -c lib/vhd_stubs.c
+# lib/vhd_stubs.c:11:24: fatal error: vhd/libvhd.h: No such file or directory
+# compilation terminated.
+# Command exited with code 2.
+### stderr ###
+# E: Failure("Command ''/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild' lib/liblibvhd_stubs.a lib/dlllibvhd_stubs.so lib/libvhd.cma lib/libvhd.cmxa lib/libvhd.a lib/libvhd.cmxs lib_test/open.byte -tag debug' terminated with error code 10")
+# make: *** [build] Error 1
+
+'opam install libvhd' failed.
