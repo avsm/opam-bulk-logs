@@ -1,0 +1,12 @@
+++ opam install stog-writing -e ubuntu
+'opam install stog-writing -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install stog-writing
+'opam install stog-writing' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
