@@ -1,0 +1,12 @@
+++ opam install mirage-net-direct -e ubuntu
+'opam install mirage-net-direct -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install mirage-net-direct
+Ubuntu depexts:
+'opam install mirage-net-direct' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
