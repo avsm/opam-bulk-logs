@@ -1,0 +1,12 @@
+++ opam install profound -e ubuntu
+'opam install profound -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install profound
+'opam install profound' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
