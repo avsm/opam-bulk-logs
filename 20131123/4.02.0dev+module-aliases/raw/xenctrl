@@ -1,0 +1,12 @@
+++ opam install xenctrl -e ubuntu
+'opam install xenctrl -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install xenctrl
+'opam install xenctrl' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
