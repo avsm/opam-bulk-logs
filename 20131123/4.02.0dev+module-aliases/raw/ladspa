@@ -1,0 +1,12 @@
+++ opam install ladspa -e ubuntu
+'opam install ladspa -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ladspa
+'opam install ladspa' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
