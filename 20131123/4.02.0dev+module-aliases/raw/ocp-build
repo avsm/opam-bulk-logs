@@ -1,0 +1,12 @@
+++ opam install ocp-build -e ubuntu
+'opam install ocp-build -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocp-build
+'opam install ocp-build' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
