@@ -1,0 +1,12 @@
+++ opam install mirage-xen -e ubuntu
+'opam install mirage-xen -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install mirage-xen
+'opam install mirage-xen' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
