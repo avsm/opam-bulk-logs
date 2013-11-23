@@ -1,0 +1,12 @@
+++ opam install taglib -e ubuntu
+'opam install taglib -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install taglib
+Ubuntu depexts:
+'opam install taglib' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
