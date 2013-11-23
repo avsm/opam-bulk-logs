@@ -1,0 +1,12 @@
+++ opam install pa_do -e ubuntu
+'opam install pa_do -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
+Ubuntu depexts:
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install pa_do
+'opam install pa_do' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
