@@ -1,0 +1,12 @@
+++ opam install ocaml-posix-resource -e ubuntu
+'opam install ocaml-posix-resource -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-posix-resource
+Ubuntu depexts:
+'opam install ocaml-posix-resource' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
