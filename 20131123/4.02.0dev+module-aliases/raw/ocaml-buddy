@@ -1,0 +1,12 @@
+++ opam install ocaml-buddy -e ubuntu
+'opam install ocaml-buddy -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-buddy
+Ubuntu depexts:
+'opam install ocaml-buddy' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
