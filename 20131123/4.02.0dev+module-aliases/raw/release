@@ -1,0 +1,12 @@
+++ opam install release -e ubuntu
+'opam install release -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install release
+Ubuntu depexts:
+'opam install release' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
