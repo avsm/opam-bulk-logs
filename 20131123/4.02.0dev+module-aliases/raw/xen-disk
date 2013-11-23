@@ -1,0 +1,12 @@
+++ opam install xen-disk -e ubuntu
+'opam install xen-disk -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install xen-disk
+'opam install xen-disk' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
