@@ -1,0 +1,12 @@
+++ opam install ocaml-arg -e ubuntu
+'opam install ocaml-arg -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-arg
+Ubuntu depexts:
+'opam install ocaml-arg' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
