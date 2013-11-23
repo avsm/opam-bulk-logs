@@ -1,0 +1,12 @@
+++ opam install opass -e ubuntu
+'opam install opass -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install opass
+'opam install opass' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
