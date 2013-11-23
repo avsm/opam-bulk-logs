@@ -1,0 +1,12 @@
+++ opam install ott -e ubuntu
+'opam install ott -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ott
+'opam install ott' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
