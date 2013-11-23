@@ -1,0 +1,12 @@
+++ opam install xtmpl -e ubuntu
+'opam install xtmpl -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install xtmpl
+Ubuntu depexts:
+'opam install xtmpl' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
