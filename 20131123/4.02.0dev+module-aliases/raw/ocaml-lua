@@ -1,0 +1,12 @@
+++ opam install ocaml-lua -e ubuntu
+'opam install ocaml-lua -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-lua
+'opam install ocaml-lua' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
