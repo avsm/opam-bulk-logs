@@ -1,0 +1,12 @@
+++ opam install ocaml-expat -e ubuntu
+'opam install ocaml-expat -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-expat
+'opam install ocaml-expat' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
