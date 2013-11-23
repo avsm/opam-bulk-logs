@@ -1,0 +1,12 @@
+++ opam install ocplib-endian -e ubuntu
+'opam install ocplib-endian -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocplib-endian
+Ubuntu depexts:
+'opam install ocplib-endian' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
