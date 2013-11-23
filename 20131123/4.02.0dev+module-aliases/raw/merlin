@@ -1,0 +1,12 @@
+++ opam install merlin -e ubuntu
+'opam install merlin -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install merlin
+Ubuntu depexts:
+'opam install merlin' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
