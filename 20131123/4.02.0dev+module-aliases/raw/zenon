@@ -1,0 +1,12 @@
+++ opam install zenon -e ubuntu
+'opam install zenon -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install zenon
+Ubuntu depexts:
+'opam install zenon' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
