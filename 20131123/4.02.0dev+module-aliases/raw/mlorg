@@ -1,0 +1,12 @@
+++ opam install mlorg -e ubuntu
+'opam install mlorg -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install mlorg
+Ubuntu depexts:
+'opam install mlorg' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
