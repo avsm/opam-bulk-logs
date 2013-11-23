@@ -1,0 +1,12 @@
+++ opam install ocamldbi -e ubuntu
+'opam install ocamldbi -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocamldbi
+'opam install ocamldbi' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
