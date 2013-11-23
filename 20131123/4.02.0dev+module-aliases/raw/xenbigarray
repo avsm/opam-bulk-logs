@@ -1,0 +1,12 @@
+++ opam install xenbigarray -e ubuntu
+'opam install xenbigarray -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install xenbigarray
+Ubuntu depexts:
+'opam install xenbigarray' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
