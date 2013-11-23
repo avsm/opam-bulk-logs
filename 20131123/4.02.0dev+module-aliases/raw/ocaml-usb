@@ -1,0 +1,12 @@
+++ opam install ocaml-usb -e ubuntu
+'opam install ocaml-usb -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-usb
+Ubuntu depexts:
+'opam install ocaml-usb' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
