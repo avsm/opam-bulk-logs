@@ -1,0 +1,12 @@
+++ opam install lo -e ubuntu
+'opam install lo -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install lo
+Ubuntu depexts:
+'opam install lo' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
