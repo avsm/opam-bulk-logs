@@ -1,0 +1,12 @@
+++ opam install root1d -e ubuntu
+'opam install root1d -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install root1d
+'opam install root1d' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
