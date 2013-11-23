@@ -1,0 +1,12 @@
+++ opam install lablgtk -e ubuntu
+'opam install lablgtk -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install lablgtk
+Ubuntu depexts:
+'opam install lablgtk' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
