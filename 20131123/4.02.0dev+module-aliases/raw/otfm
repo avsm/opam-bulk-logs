@@ -1,0 +1,12 @@
+++ opam install otfm -e ubuntu
+'opam install otfm -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install otfm
+'opam install otfm' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
