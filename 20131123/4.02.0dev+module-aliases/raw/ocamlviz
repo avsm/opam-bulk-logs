@@ -1,0 +1,12 @@
+++ opam install ocamlviz -e ubuntu
+'opam install ocamlviz -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocamlviz
+'opam install ocamlviz' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
