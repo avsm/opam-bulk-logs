@@ -1,0 +1,12 @@
+++ opam install pfff -e ubuntu
+'opam install pfff -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install pfff
+'opam install pfff' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
