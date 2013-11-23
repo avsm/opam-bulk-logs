@@ -1,0 +1,12 @@
+++ opam install pa_test -e ubuntu
+'opam install pa_test -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install pa_test
+'opam install pa_test' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
