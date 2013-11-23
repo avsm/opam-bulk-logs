@@ -1,0 +1,12 @@
+++ opam install uint -e ubuntu
+'opam install uint -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install uint
+Ubuntu depexts:
+'opam install uint' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
