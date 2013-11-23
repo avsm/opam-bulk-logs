@@ -1,0 +1,12 @@
+++ opam install wyrd -e ubuntu
+'opam install wyrd -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install wyrd
+'opam install wyrd' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
