@@ -1,0 +1,12 @@
+++ opam install mirage-www -e ubuntu
+'opam install mirage-www -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install mirage-www
+Ubuntu depexts:
+'opam install mirage-www' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
