@@ -1,0 +1,12 @@
+++ opam install jsonm -e ubuntu
+'opam install jsonm -e ubuntu' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install jsonm
+'opam install jsonm' failed.
+Fatal error:
+Sys_error("/home/opam/.opam/lock: No space left on device")
