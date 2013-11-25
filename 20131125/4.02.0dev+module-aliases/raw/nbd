@@ -1,0 +1,1739 @@
+++ opam install nbd -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install nbd
+Ubuntu depexts:
+The following actions will be performed:
+ - install optcomp.1.4 [required by nbd]
+ - install cmdliner.0.9.2 [required by nbd]
+ - install lwt.2.4.4 [required by nbd]
+ - install obuild.0.0.4 [required by nbd]
+ - install ocplib-endian.0.4 [required by nbd]
+ - install cstruct.0.8.1 [required by nbd]
+ - install nbd.0.9.2
+7 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing cmdliner.0.9.2 =-=-=
+default    Downloading https://opam.ocaml.org/archives/cmdliner.0.9.2+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/cmdliner.0.9.2+opam.tar.gz
+--2013-11-25 19:29:03--  https://opam.ocaml.org/archives/cmdliner.0.9.2+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 98102 (96K) [application/octet-stream]
+Saving to: `cmdliner.0.9.2+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 52% 33.8M 0s
+    50K .......... .......... .......... .......... .....     100% 43.6M=0.002s
+
+2013-11-25 19:29:03 (37.9 MB/s) - `cmdliner.0.9.2+opam.tar.gz' saved [98102/98102]
+
+Building cmdliner.0.9.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ cmdliner
+Package version: ..................................... 0.9.2
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+module-aliases
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -modules src/cmdliner.mli > src/cmdliner.mli.depends
+ocamlfind ocamlc -c -g -I src -o src/cmdliner.cmi src/cmdliner.mli
+ocamlfind ocamldep -modules src/cmdliner.ml > src/cmdliner.ml.depends
+ocamlfind ocamlc -c -g -I src -o src/cmdliner.cmo src/cmdliner.ml
+ocamlfind ocamlc -a src/cmdliner.cmo -o src/cmdliner.cma
+ocamlfind ocamlopt -c -g -I src -o src/cmdliner.cmx src/cmdliner.ml
+ocamlfind ocamlopt -a src/cmdliner.cmx -o src/cmdliner.cmxa
+ocamlfind ocamlopt -shared src/cmdliner.cmx -o src/cmdliner.cmxs
+ocamlfind ocamldep -modules test/revolt.ml > test/revolt.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/revolt.cmo test/revolt.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/revolt.cmx test/revolt.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/revolt.cmx -o test/revolt.native
+ocamlfind ocamldep -modules test/chorus.ml > test/chorus.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/chorus.cmo test/chorus.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/chorus.cmx test/chorus.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/chorus.cmx -o test/chorus.native
+ocamlfind ocamldep -modules test/cp_ex.ml > test/cp_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/cp_ex.cmo test/cp_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/cp_ex.cmx test/cp_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/cp_ex.cmx -o test/cp_ex.native
+ocamlfind ocamldep -modules test/tail_ex.ml > test/tail_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/tail_ex.cmo test/tail_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/tail_ex.cmx test/tail_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/tail_ex.cmx -o test/tail_ex.native
+ocamlfind ocamldep -modules test/darcs_ex.ml > test/darcs_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/darcs_ex.cmo test/darcs_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/darcs_ex.cmx test/darcs_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/darcs_ex.cmx -o test/darcs_ex.native
+ocamlfind ocamldep -modules test/rm_ex.ml > test/rm_ex.ml.depends
+ocamlfind ocamlc -c -g -I src -I test -I src -o test/rm_ex.cmo test/rm_ex.ml
+ocamlfind ocamlopt -c -g -I src -I test -I src -o test/rm_ex.cmx test/rm_ex.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg src/cmdliner.cmxa test/rm_ex.cmx -o test/rm_ex.native
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/cmdliner.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/cmdliner.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/cmdliner.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/cmdliner.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/cmdliner.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/cmdliner.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/cmdliner.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner/META
+Installing cmdliner.0.9.2.
+
+=-=-= Installing lwt.2.4.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/lwt.2.4.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/lwt.2.4.4+opam.tar.gz
+--2013-11-25 19:29:16--  https://opam.ocaml.org/archives/lwt.2.4.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 297857 (291K) [application/octet-stream]
+Saving to: `lwt.2.4.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 17% 23.4M 0s
+    50K .......... .......... .......... .......... .......... 34% 34.5M 0s
+   100K .......... .......... .......... .......... .......... 51% 46.7M 0s
+   150K .......... .......... .......... .......... .......... 68% 41.8M 0s
+   200K .......... .......... .......... .......... .......... 85% 34.3M 0s
+   250K .......... .......... .......... ..........           100% 44.2M=0.008s
+
+2013-11-25 19:29:16 (35.3 MB/s) - `lwt.2.4.4+opam.tar.gz' saved [297857/297857]
+
+Building lwt.2.4.4:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+not checking for pkg-config
+not checking for libev
+testing for pthread: ........................... available
+not checking for glib
+testing for eventfd: ........................... available
+testing for fd passing: ........................ available
+testing for sched_getcpu: ...................... available
+testing for affinity getting/setting: .......... available
+testing for credentials getting (Linux): ....... available
+testing for credentials getting (NetBSD): ...... unavailable
+testing for credentials getting (OpenBSD): ..... unavailable
+testing for credentials getting (FreeBSD): ..... unavailable
+testing for credentials getting (getpeereid): .. unavailable
+testing for fdatasync: ......................... available
+testing for netdb_reentrant: ................... available
+Generating C stubs...
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ lwt
+Package version: ..................................... 2.4.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Compiles for Android: ................................ false
+build and install everything: ........................ false
+Build the syntax extension: .......................... true
+Unix support: ........................................ true
+React helpers: ....................................... false
+Glib integration: .................................... false
+SSL support: ......................................... false
+Text mode utilities (deprecated): .................... false
+Preemptive threads support: .......................... true
+Asynchronous unix functions: ......................... true
+Enhanced toplevel: ................................... false
+Compile with libev support: .......................... false
+Use the libev backend by default: .................... true
+Use pthread: ......................................... true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_camlp4: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_quotations_o: ............................. /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_bigarray: ........................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_threads: ......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_camlp4_extend: ................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+not checking for pkg-config
+not checking for libev
+testing for pthread: ........................... available
+not checking for glib
+testing for eventfd: ........................... available
+testing for fd passing: ........................ available
+testing for sched_getcpu: ...................... available
+testing for affinity getting/setting: .......... available
+testing for credentials getting (Linux): ....... available
+testing for credentials getting (NetBSD): ...... unavailable
+testing for credentials getting (OpenBSD): ..... unavailable
+testing for credentials getting (FreeBSD): ..... unavailable
+testing for credentials getting (getpeereid): .. unavailable
+testing for fdatasync: ......................... available
+testing for netdb_reentrant: ................... available
+Generating C stubs...
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ lwt
+Package version: ..................................... 2.4.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Compiles for Android: ................................ false
+build and install everything: ........................ false
+Build the syntax extension: .......................... true
+Unix support: ........................................ true
+React helpers: ....................................... false
+Glib integration: .................................... false
+SSL support: ......................................... false
+Text mode utilities (deprecated): .................... false
+Preemptive threads support: .......................... true
+Asynchronous unix functions: ......................... true
+Enhanced toplevel: ................................... false
+Compile with libev support: .......................... false
+Use the libev backend by default: .................... true
+Use pthread: ......................................... true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_camlp4: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_quotations_o: ............................. /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_bigarray: ........................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_threads: ......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_camlp4_extend: ................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+./setup.exe -build 
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind: Package `wikidoc' not found
+File "_tags", line 13, characters 116-125:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 13, characters 84-101:
+Warning: the tag "pkg_text.bigarray" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 13, characters 74-82:
+Warning: the tag "pkg_text" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 18, characters 14-25:
+Warning: the tag "use_C_libev" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 19, characters 14-24:
+Warning: the tag "use_C_glib" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 176, characters 22-31:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 213, characters 20-27:
+Warning: the tag "pkg_ssl" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 223, characters 21-30:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 224, characters 21-29:
+Warning: the tag "pkg_text" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 225, characters 21-38:
+Warning: the tag "pkg_text.bigarray" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 232, characters 29-38:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 233, characters 29-37:
+Warning: the tag "pkg_text" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 234, characters 29-46:
+Warning: the tag "pkg_text.bigarray" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 255, characters 29-38:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 256, characters 29-37:
+Warning: the tag "pkg_text" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 258, characters 29-46:
+Warning: the tag "pkg_text.bigarray" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 267, characters 20-29:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 268, characters 20-28:
+Warning: the tag "pkg_text" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 270, characters 20-37:
+Warning: the tag "pkg_text.bigarray" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 351, characters 34-43:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 359, characters 24-33:
+Warning: the tag "pkg_react" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -modules syntax/pa_optcomp.ml > syntax/pa_optcomp.ml.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_optcomp.cmo syntax/pa_optcomp.ml
++ ocamlfind ocamlc -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_optcomp.cmo syntax/pa_optcomp.ml
+File "syntax/pa_optcomp.ml", line 217, characters 50-52:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlc -a syntax/pa_optcomp.cmo -o syntax/optcomp.cma
+ocamlfind ocamlopt -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_optcomp.cmx syntax/pa_optcomp.ml
++ ocamlfind ocamlopt -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_optcomp.cmx syntax/pa_optcomp.ml
+File "syntax/pa_optcomp.ml", line 217, characters 50-52:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlopt -a syntax/pa_optcomp.cmx -o syntax/optcomp.cmxa
+ocamlfind ocamlopt -shared -linkall syntax/optcomp.cmxa -o syntax/optcomp.cmxs
+ocamlfind ocamldep -modules src/core/lwt_condition.mli > src/core/lwt_condition.mli.depends
+ocamlfind ocamldep -modules src/core/lwt.mli > src/core/lwt.mli.depends
+ocamlfind ocamldep -modules src/core/lwt_sequence.mli > src/core/lwt_sequence.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_sequence.cmi src/core/lwt_sequence.mli
+ocamlfind ocamldep -modules src/core/lwt_mutex.mli > src/core/lwt_mutex.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt.cmi src/core/lwt.mli
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_mutex.cmi src/core/lwt_mutex.mli
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_condition.cmi src/core/lwt_condition.mli
+ocamlfind ocamldep -modules src/core/lwt_condition.ml > src/core/lwt_condition.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_list.mli > src/core/lwt_list.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_list.cmi src/core/lwt_list.mli
+ocamlfind ocamldep -modules src/core/lwt_list.ml > src/core/lwt_list.ml.depends
+ocamlfind ocamldep -modules src/core/lwt.ml > src/core/lwt.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_mutex.ml > src/core/lwt_mutex.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_mvar.mli > src/core/lwt_mvar.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_mvar.cmi src/core/lwt_mvar.mli
+ocamlfind ocamldep -modules src/core/lwt_mvar.ml > src/core/lwt_mvar.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_pool.mli > src/core/lwt_pool.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_pool.cmi src/core/lwt_pool.mli
+ocamlfind ocamldep -modules src/core/lwt_pool.ml > src/core/lwt_pool.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_sequence.ml > src/core/lwt_sequence.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_stream.mli > src/core/lwt_stream.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_stream.cmi src/core/lwt_stream.mli
+ocamlfind ocamldep -modules src/core/lwt_stream.ml > src/core/lwt_stream.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_switch.mli > src/core/lwt_switch.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_switch.cmi src/core/lwt_switch.mli
+ocamlfind ocamldep -modules src/core/lwt_switch.ml > src/core/lwt_switch.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_util.mli > src/core/lwt_util.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_util.cmi src/core/lwt_util.mli
+ocamlfind ocamldep -modules src/core/lwt_util.ml > src/core/lwt_util.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_pqueue.mli > src/core/lwt_pqueue.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_pqueue.cmi src/core/lwt_pqueue.mli
+ocamlfind ocamldep -modules src/core/lwt_pqueue.ml > src/core/lwt_pqueue.ml.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_condition.cmo src/core/lwt_condition.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_list.cmo src/core/lwt_list.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt.cmo src/core/lwt.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_mutex.cmo src/core/lwt_mutex.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_mvar.cmo src/core/lwt_mvar.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_pool.cmo src/core/lwt_pool.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_sequence.cmo src/core/lwt_sequence.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_stream.cmo src/core/lwt_stream.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_switch.cmo src/core/lwt_switch.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_util.cmo src/core/lwt_util.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_pqueue.cmo src/core/lwt_pqueue.ml
+ocamlfind ocamlc -a src/core/lwt_sequence.cmo src/core/lwt.cmo src/core/lwt_mutex.cmo src/core/lwt_condition.cmo src/core/lwt_list.cmo src/core/lwt_mvar.cmo src/core/lwt_pool.cmo src/core/lwt_stream.cmo src/core/lwt_switch.cmo src/core/lwt_util.cmo src/core/lwt_pqueue.cmo -o src/core/lwt.cma
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_sequence.cmx src/core/lwt_sequence.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt.cmx src/core/lwt.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_mutex.cmx src/core/lwt_mutex.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_list.cmx src/core/lwt_list.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_condition.cmx src/core/lwt_condition.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_mvar.cmx src/core/lwt_mvar.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_pool.cmx src/core/lwt_pool.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_stream.cmx src/core/lwt_stream.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_switch.cmx src/core/lwt_switch.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_util.cmx src/core/lwt_util.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_pqueue.cmx src/core/lwt_pqueue.ml
+ocamlfind ocamlopt -a src/core/lwt_sequence.cmx src/core/lwt.cmx src/core/lwt_mutex.cmx src/core/lwt_condition.cmx src/core/lwt_list.cmx src/core/lwt_mvar.cmx src/core/lwt_pool.cmx src/core/lwt_stream.cmx src/core/lwt_switch.cmx src/core/lwt_util.cmx src/core/lwt_pqueue.cmx -o src/core/lwt.cmxa
+ocamlfind ocamlopt -shared src/core/lwt.cmx -o src/core/lwt.cmxs
+ocamlfind ocamldep -modules src/logger/lwt_log_core.mli > src/logger/lwt_log_core.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/core -o src/logger/lwt_log_core.cmi src/logger/lwt_log_core.mli
+ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -modules syntax/pa_lwt_options.ml > syntax/pa_lwt_options.ml.depends
+ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -modules syntax/pa_lwt_log.mli > syntax/pa_lwt_log.mli.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -I syntax -o syntax/pa_lwt_log.cmi syntax/pa_lwt_log.mli
+ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -modules syntax/pa_lwt_log.ml > syntax/pa_lwt_log.ml.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_lwt_options.cmo syntax/pa_lwt_options.ml
+ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -modules syntax/pa_lwt.mli > syntax/pa_lwt.mli.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -I syntax -o syntax/pa_lwt.cmi syntax/pa_lwt.mli
+ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -modules syntax/pa_lwt.ml > syntax/pa_lwt.ml.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_lwt_log.cmo syntax/pa_lwt_log.ml
+ocamlfind ocamlc -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_lwt.cmo syntax/pa_lwt.ml
+ocamlfind ocamldep -package camlp4 -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/logger/lwt_log_core.ml > src/logger/lwt_log_core.ml.depends
+ocamlfind ocamldep -modules src/logger/lwt_log_rules.mli > src/logger/lwt_log_rules.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/core -o src/logger/lwt_log_rules.cmi src/logger/lwt_log_rules.mli
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamllex.opt -q src/logger/lwt_log_rules.mll
+ocamlfind ocamldep -package camlp4 -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/logger/lwt_log_rules.ml > src/logger/lwt_log_rules.ml.depends
+ocamlfind ocamlc -c -g -I src/core -package camlp4 -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/logger -I src/core -o src/logger/lwt_log_core.cmo src/logger/lwt_log_core.ml
+ocamlfind ocamlc -c -g -I src/core -package camlp4 -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/logger -I src/core -o src/logger/lwt_log_rules.cmo src/logger/lwt_log_rules.ml
+ocamlfind ocamlc -a src/logger/lwt_log_rules.cmo src/logger/lwt_log_core.cmo -o src/logger/lwt-log.cma
+ocamlfind ocamlopt -c -g -I src/core -package camlp4 -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/logger -I src/core -o src/logger/lwt_log_rules.cmx src/logger/lwt_log_rules.ml
+ocamlfind ocamlopt -c -g -I src/core -package camlp4 -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/logger -I src/core -o src/logger/lwt_log_core.cmx src/logger/lwt_log_core.ml
+ocamlfind ocamlopt -a src/logger/lwt_log_rules.cmx src/logger/lwt_log_core.cmx -o src/logger/lwt-log.cmxa
+ocamlfind ocamlopt -shared -linkall src/logger/lwt-log.cmxa -o src/logger/lwt-log.cmxs
+ocamlfind ocamlc -ccopt -I/usr/include -ccopt -Isrc/unix -c src/unix/lwt_unix_stubs.c
+mv lwt_unix_stubs.o src/unix/lwt_unix_stubs.o
+ocamlfind ocamlc -ccopt -I/usr/include -ccopt -Isrc/unix -c src/unix/lwt_libev_stubs.c
+mv lwt_libev_stubs.o src/unix/lwt_libev_stubs.o
+ocamlfind ocamlc -ccopt -I/usr/include -ccopt -Isrc/unix -c src/unix/lwt_process_stubs.c
+mv lwt_process_stubs.o src/unix/lwt_process_stubs.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_access.c
+mv lwt_unix_job_access.o src/unix/jobs-unix/lwt_unix_job_access.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_chdir.c
+mv lwt_unix_job_chdir.o src/unix/jobs-unix/lwt_unix_job_chdir.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_chmod.c
+mv lwt_unix_job_chmod.o src/unix/jobs-unix/lwt_unix_job_chmod.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_chown.c
+mv lwt_unix_job_chown.o src/unix/jobs-unix/lwt_unix_job_chown.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_chroot.c
+mv lwt_unix_job_chroot.o src/unix/jobs-unix/lwt_unix_job_chroot.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_close.c
+mv lwt_unix_job_close.o src/unix/jobs-unix/lwt_unix_job_close.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_fchmod.c
+mv lwt_unix_job_fchmod.o src/unix/jobs-unix/lwt_unix_job_fchmod.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_fchown.c
+mv lwt_unix_job_fchown.o src/unix/jobs-unix/lwt_unix_job_fchown.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_fdatasync.c
+mv lwt_unix_job_fdatasync.o src/unix/jobs-unix/lwt_unix_job_fdatasync.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_fsync.c
+mv lwt_unix_job_fsync.o src/unix/jobs-unix/lwt_unix_job_fsync.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_ftruncate.c
+mv lwt_unix_job_ftruncate.o src/unix/jobs-unix/lwt_unix_job_ftruncate.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_link.c
+mv lwt_unix_job_link.o src/unix/jobs-unix/lwt_unix_job_link.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_lseek.c
+mv lwt_unix_job_lseek.o src/unix/jobs-unix/lwt_unix_job_lseek.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_mkdir.c
+mv lwt_unix_job_mkdir.o src/unix/jobs-unix/lwt_unix_job_mkdir.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_mkfifo.c
+mv lwt_unix_job_mkfifo.o src/unix/jobs-unix/lwt_unix_job_mkfifo.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_rename.c
+mv lwt_unix_job_rename.o src/unix/jobs-unix/lwt_unix_job_rename.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_rmdir.c
+mv lwt_unix_job_rmdir.o src/unix/jobs-unix/lwt_unix_job_rmdir.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_symlink.c
+mv lwt_unix_job_symlink.o src/unix/jobs-unix/lwt_unix_job_symlink.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_tcdrain.c
+mv lwt_unix_job_tcdrain.o src/unix/jobs-unix/lwt_unix_job_tcdrain.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_tcflow.c
+mv lwt_unix_job_tcflow.o src/unix/jobs-unix/lwt_unix_job_tcflow.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_tcflush.c
+mv lwt_unix_job_tcflush.o src/unix/jobs-unix/lwt_unix_job_tcflush.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_tcsendbreak.c
+mv lwt_unix_job_tcsendbreak.o src/unix/jobs-unix/lwt_unix_job_tcsendbreak.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_truncate.c
+mv lwt_unix_job_truncate.o src/unix/jobs-unix/lwt_unix_job_truncate.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_unlink.c
+mv lwt_unix_job_unlink.o src/unix/jobs-unix/lwt_unix_job_unlink.o
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlmklib -o src/unix/lwt-unix_stubs -L/usr/lib -lpthread src/unix/lwt_unix_stubs.o src/unix/lwt_libev_stubs.o src/unix/lwt_process_stubs.o src/unix/jobs-unix/lwt_unix_job_access.o src/unix/jobs-unix/lwt_unix_job_chdir.o src/unix/jobs-unix/lwt_unix_job_chmod.o src/unix/jobs-unix/lwt_unix_job_chown.o src/unix/jobs-unix/lwt_unix_job_chroot.o src/unix/jobs-unix/lwt_unix_job_close.o src/unix/jobs-unix/lwt_unix_job_fchmod.o src/unix/jobs-unix/lwt_unix_job_fchown.o src/unix/jobs-unix/lwt_unix_job_fdatasync.o src/unix/jobs-unix/lwt_unix_job_fsync.o src/unix/jobs-unix/lwt_unix_job_ftruncate.o src/unix/jobs-unix/lwt_unix_job_link.o src/unix/jobs-unix/lwt_unix_job_lseek.o src/unix/jobs-unix/lwt_unix_job_mkdir.o src/unix/jobs-unix/lwt_unix_job_mkfifo.o src/unix/jobs-unix/lwt_unix_job_rename.o src/unix/jobs-unix/lwt_unix_job_rmdir.o src/unix/jobs-unix/lwt_unix_job_symlink.o src/unix/jobs-unix/lwt_unix_job_tcdrain.o src/unix/jobs-unix/lwt_unix_job_tcflow.o src/unix/jobs-unix/lwt_unix_job_tcflush.o src/unix/jobs-unix/lwt_unix_job_tcsendbreak.o src/unix/jobs-unix/lwt_unix_job_truncate.o src/unix/jobs-unix/lwt_unix_job_unlink.o
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_chan.mli > src/unix/lwt_chan.mli.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_io.mli > src/unix/lwt_io.mli.depends
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_bytes.mli > src/unix/lwt_bytes.mli.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_unix.mli > src/unix/lwt_unix.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_unix.cmi src/unix/lwt_unix.mli
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_sys.mli > src/unix/lwt_sys.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_bytes.cmi src/unix/lwt_bytes.mli
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_sys.cmi src/unix/lwt_sys.mli
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_io.cmi src/unix/lwt_io.mli
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_chan.cmi src/unix/lwt_chan.mli
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_chan.ml > src/unix/lwt_chan.ml.depends
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_daemon.mli > src/unix/lwt_daemon.mli.depends
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_log.mli > src/unix/lwt_log.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_log.cmi src/unix/lwt_log.mli
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_daemon.cmi src/unix/lwt_daemon.mli
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_daemon.ml > src/unix/lwt_daemon.ml.depends
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_main.mli > src/unix/lwt_main.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_main.cmi src/unix/lwt_main.mli
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_gc.mli > src/unix/lwt_gc.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_gc.cmi src/unix/lwt_gc.mli
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_gc.ml > src/unix/lwt_gc.ml.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_io.ml > src/unix/lwt_io.ml.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_log.ml > src/unix/lwt_log.ml.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_main.ml > src/unix/lwt_main.ml.depends
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_engine.mli > src/unix/lwt_engine.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_engine.cmi src/unix/lwt_engine.mli
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_process.mli > src/unix/lwt_process.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_process.cmi src/unix/lwt_process.mli
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_process.ml > src/unix/lwt_process.ml.depends
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_throttle.mli > src/unix/lwt_throttle.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_throttle.cmi src/unix/lwt_throttle.mli
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_throttle.ml > src/unix/lwt_throttle.ml.depends
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_timeout.mli > src/unix/lwt_timeout.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_timeout.cmi src/unix/lwt_timeout.mli
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_timeout.ml > src/unix/lwt_timeout.ml.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_unix.ml > src/unix/lwt_unix.ml.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_unix_jobs_generated.ml > src/unix/lwt_unix_jobs_generated.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_unix_jobs_generated.cmo src/unix/lwt_unix_jobs_generated.ml
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_sys.ml > src/unix/lwt_sys.ml.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_engine.ml > src/unix/lwt_engine.ml.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_bytes.ml > src/unix/lwt_bytes.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_chan.cmo src/unix/lwt_chan.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_daemon.cmo src/unix/lwt_daemon.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_gc.cmo src/unix/lwt_gc.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_io.cmo src/unix/lwt_io.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_log.cmo src/unix/lwt_log.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_main.cmo src/unix/lwt_main.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_process.cmo src/unix/lwt_process.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_throttle.cmo src/unix/lwt_throttle.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_timeout.cmo src/unix/lwt_timeout.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_unix.cmo src/unix/lwt_unix.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_sys.cmo src/unix/lwt_sys.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_engine.cmo src/unix/lwt_engine.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_bytes.cmo src/unix/lwt_bytes.ml
+ocamlfind ocamlc -a -dllib -llwt-unix_stubs -cclib -llwt-unix_stubs -cclib -L/usr/lib -cclib -lpthread src/unix/lwt_sys.cmo src/unix/lwt_engine.cmo src/unix/lwt_main.cmo src/unix/lwt_unix_jobs_generated.cmo src/unix/lwt_unix.cmo src/unix/lwt_bytes.cmo src/unix/lwt_io.cmo src/unix/lwt_chan.cmo src/unix/lwt_log.cmo src/unix/lwt_daemon.cmo src/unix/lwt_gc.cmo src/unix/lwt_process.cmo src/unix/lwt_throttle.cmo src/unix/lwt_timeout.cmo -o src/unix/lwt-unix.cma
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_sys.cmx src/unix/lwt_sys.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_engine.cmx src/unix/lwt_engine.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_main.cmx src/unix/lwt_main.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_unix_jobs_generated.cmx src/unix/lwt_unix_jobs_generated.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_unix.cmx src/unix/lwt_unix.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_bytes.cmx src/unix/lwt_bytes.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_io.cmx src/unix/lwt_io.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_log.cmx src/unix/lwt_log.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_chan.cmx src/unix/lwt_chan.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_daemon.cmx src/unix/lwt_daemon.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_gc.cmx src/unix/lwt_gc.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_process.cmx src/unix/lwt_process.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_throttle.cmx src/unix/lwt_throttle.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_timeout.cmx src/unix/lwt_timeout.ml
+ocamlfind ocamlopt -a -cclib -llwt-unix_stubs -cclib -L/usr/lib -cclib -lpthread src/unix/lwt_sys.cmx src/unix/lwt_engine.cmx src/unix/lwt_main.cmx src/unix/lwt_unix_jobs_generated.cmx src/unix/lwt_unix.cmx src/unix/lwt_bytes.cmx src/unix/lwt_io.cmx src/unix/lwt_chan.cmx src/unix/lwt_log.cmx src/unix/lwt_daemon.cmx src/unix/lwt_gc.cmx src/unix/lwt_process.cmx src/unix/lwt_throttle.cmx src/unix/lwt_timeout.cmx -o src/unix/lwt-unix.cmxa
+ocamlfind ocamlopt -shared -linkall -I src/unix -cclib -L/usr/lib -cclib -lpthread src/unix/lwt-unix.cmxa -o src/unix/lwt-unix.cmxs
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -package compiler-libs.toplevel -modules src/simple_top/lwt_simple_top.ml > src/simple_top/lwt_simple_top.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -package compiler-libs.toplevel -I src/simple_top -I src/core -I src/unix -o src/simple_top/lwt_simple_top.cmo src/simple_top/lwt_simple_top.ml
++ ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -package compiler-libs.toplevel -I src/simple_top -I src/core -I src/unix -o src/simple_top/lwt_simple_top.cmo src/simple_top/lwt_simple_top.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/compiler-libs, /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+ocamlfind ocamlc -a src/simple_top/lwt_simple_top.cmo -o src/simple_top/lwt-simple-top.cma
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -I src/unix -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -package compiler-libs.toplevel -I src/simple_top -I src/core -I src/unix -o src/simple_top/lwt_simple_top.cmx src/simple_top/lwt_simple_top.ml
++ ocamlfind ocamlopt -c -g -I src/core -I src/logger -I src/unix -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -package compiler-libs.toplevel -I src/simple_top -I src/core -I src/unix -o src/simple_top/lwt_simple_top.cmx src/simple_top/lwt_simple_top.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/compiler-libs, /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+ocamlfind ocamlopt -a src/simple_top/lwt_simple_top.cmx -o src/simple_top/lwt-simple-top.cmxa
+ocamlfind ocamlopt -shared -linkall src/simple_top/lwt-simple-top.cmxa -o src/simple_top/lwt-simple-top.cmxs
+ocamlfind ocamldep -package unix -package threads -package bigarray -modules src/preemptive/lwt_preemptive.mli > src/preemptive/lwt_preemptive.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -package unix -package threads -package bigarray -thread -I src/preemptive -I src/core -I src/unix -o src/preemptive/lwt_preemptive.cmi src/preemptive/lwt_preemptive.mli
+ocamlfind ocamldep -package unix -package threads -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/preemptive/lwt_preemptive.ml > src/preemptive/lwt_preemptive.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -package unix -package threads -package camlp4 -package bigarray -syntax camlp4o -thread -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/preemptive -I src/core -I src/unix -o src/preemptive/lwt_preemptive.cmo src/preemptive/lwt_preemptive.ml
+ocamlfind ocamlc -a src/preemptive/lwt_preemptive.cmo -o src/preemptive/lwt-preemptive.cma
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -I src/unix -package unix -package threads -package camlp4 -package bigarray -syntax camlp4o -thread -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/preemptive -I src/core -I src/unix -o src/preemptive/lwt_preemptive.cmx src/preemptive/lwt_preemptive.ml
+ocamlfind ocamlopt -a src/preemptive/lwt_preemptive.cmx -o src/preemptive/lwt-preemptive.cmxa
+ocamlfind ocamlopt -shared -linkall src/preemptive/lwt-preemptive.cmxa -o src/preemptive/lwt-preemptive.cmxs
+ocamlfind ocamldep -package unix -package threads -package bigarray -modules src/extra/lwt_lib.mli > src/extra/lwt_lib.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -I src/preemptive -package unix -package threads -package bigarray -thread -I src/extra -I src/core -I src/preemptive -o src/extra/lwt_lib.cmi src/extra/lwt_lib.mli
+ocamlfind ocamldep -package unix -package threads -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/extra/lwt_lib.ml > src/extra/lwt_lib.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -I src/preemptive -package unix -package threads -package camlp4 -package bigarray -syntax camlp4o -thread -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/extra -I src/core -I src/preemptive -o src/extra/lwt_lib.cmo src/extra/lwt_lib.ml
+ocamlfind ocamlc -a src/extra/lwt_lib.cmo -o src/extra/lwt-extra.cma
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -I src/unix -I src/preemptive -package unix -package threads -package camlp4 -package bigarray -syntax camlp4o -thread -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/extra -I src/core -I src/preemptive -o src/extra/lwt_lib.cmx src/extra/lwt_lib.ml
+ocamlfind ocamlopt -a src/extra/lwt_lib.cmx -o src/extra/lwt-extra.cmxa
+ocamlfind ocamlopt -shared -linkall src/extra/lwt-extra.cmxa -o src/extra/lwt-extra.cmxs
+ocamlfind ocamlc -a syntax/pa_lwt.cmo -o syntax/lwt-syntax.cma
+ocamlfind ocamlopt -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_lwt_options.cmx syntax/pa_lwt_options.ml
+ocamlfind ocamlopt -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_lwt.cmx syntax/pa_lwt.ml
+ocamlfind ocamlopt -a syntax/pa_lwt.cmx -o syntax/lwt-syntax.cmxa
+ocamlfind ocamlopt -shared -linkall syntax/lwt-syntax.cmxa -o syntax/lwt-syntax.cmxs
+ocamlfind ocamlc -a syntax/pa_lwt_options.cmo -o syntax/lwt-syntax-options.cma
+ocamlfind ocamlopt -a syntax/pa_lwt_options.cmx -o syntax/lwt-syntax-options.cmxa
+ocamlfind ocamlopt -shared -linkall syntax/lwt-syntax-options.cmxa -o syntax/lwt-syntax-options.cmxs
+ocamlfind ocamlc -a syntax/pa_lwt_log.cmo -o syntax/lwt-syntax-log.cma
+ocamlfind ocamlopt -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_lwt_log.cmx syntax/pa_lwt_log.ml
+ocamlfind ocamlopt -a syntax/pa_lwt_log.cmx -o syntax/lwt-syntax-log.cmxa
+ocamlfind ocamlopt -shared -linkall syntax/lwt-syntax-log.cmxa -o syntax/lwt-syntax-log.cmxs
+ocamlfind ocamldep -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules examples/unix/logging.ml > examples/unix/logging.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -I syntax -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I examples/unix -I src/unix -I syntax -o examples/unix/logging.cmo examples/unix/logging.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -I src/unix -I syntax -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I examples/unix -I src/unix -I syntax -o examples/unix/logging.cmx examples/unix/logging.ml
+ocamlfind ocamlopt -linkpkg -g -I src/unix -linkpkg -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray syntax/lwt-syntax.cmxa src/core/lwt.cmxa src/logger/lwt-log.cmxa src/unix/lwt-unix.cmxa examples/unix/logging.cmx -o examples/unix/logging.native
+ocamlfind ocamldep -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules examples/unix/relay.ml > examples/unix/relay.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -I syntax -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I examples/unix -I src/unix -I syntax -o examples/unix/relay.cmo examples/unix/relay.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -I src/unix -I syntax -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I examples/unix -I src/unix -I syntax -o examples/unix/relay.cmx examples/unix/relay.ml
+ocamlfind ocamlopt -linkpkg -g -I src/unix -linkpkg -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray syntax/lwt-syntax.cmxa src/core/lwt.cmxa src/logger/lwt-log.cmxa src/unix/lwt-unix.cmxa examples/unix/relay.cmx -o examples/unix/relay.native
+ocamlfind ocamldep -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules examples/unix/parallelize.ml > examples/unix/parallelize.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -I syntax -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I examples/unix -I src/unix -I syntax -o examples/unix/parallelize.cmo examples/unix/parallelize.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -I src/unix -I syntax -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I examples/unix -I src/unix -I syntax -o examples/unix/parallelize.cmx examples/unix/parallelize.ml
+ocamlfind ocamlopt -linkpkg -g -I src/unix -linkpkg -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray syntax/lwt-syntax.cmxa src/core/lwt.cmxa src/logger/lwt-log.cmxa src/unix/lwt-unix.cmxa examples/unix/parallelize.cmx -o examples/unix/parallelize.native
+./setup.exe -install 
+W: Nothing to install for findlib library 'test'
+W: Nothing to install for findlib library 'optcomp'
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_condition.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_list.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_mutex.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_mvar.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_pool.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_sequence.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_stream.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_switch.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_util.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_pqueue.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_condition.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_list.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_mutex.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_mvar.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_pool.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_sequence.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_stream.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_switch.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_util.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_pqueue.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_condition.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_list.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_mutex.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_mvar.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_pool.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_sequence.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_stream.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_switch.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_util.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_pqueue.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_config.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_config.h
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_unix.h
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_chan.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_daemon.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_gc.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_io.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_log.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_main.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_process.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_throttle.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_timeout.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_unix.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_sys.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_engine.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_bytes.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/liblwt-unix_stubs.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-unix.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-unix.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-unix.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-unix.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_chan.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_daemon.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_gc.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_io.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_log.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_main.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_process.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_throttle.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_timeout.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_unix.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_sys.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_engine.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_bytes.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_chan.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_daemon.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_gc.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_io.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_log.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_main.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_process.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_throttle.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_timeout.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_unix.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_sys.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_engine.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_bytes.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_unix_jobs_generated.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/pa_lwt.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-syntax.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-syntax.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-syntax.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-syntax.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/pa_lwt.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/pa_lwt.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-syntax-options.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-syntax-options.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-syntax-options.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-syntax-options.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/pa_lwt_options.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/pa_lwt_log.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-syntax-log.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-syntax-log.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-syntax-log.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-syntax-log.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/pa_lwt_log.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/pa_lwt_log.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-simple-top.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-simple-top.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-simple-top.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-simple-top.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_simple_top.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_preemptive.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-preemptive.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-preemptive.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-preemptive.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-preemptive.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_preemptive.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_preemptive.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_log_core.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_log_rules.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-log.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-log.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-log.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-log.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_log_core.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_log_rules.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_log_core.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_log_rules.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_lib.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-extra.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-extra.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-extra.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt-extra.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_lib.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/lwt_lib.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt/META
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs/dlllwt-unix_stubs.so
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs/dlllwt-unix_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs is not mentioned in ld.conf
+Installing lwt.2.4.4.
+
+=-=-= Installing obuild.0.0.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/obuild.0.0.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/obuild.0.0.4+opam.tar.gz
+--2013-11-25 19:29:56--  https://opam.ocaml.org/archives/obuild.0.0.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 70005 (68K) [application/octet-stream]
+Saving to: `obuild.0.0.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 73% 29.2M 0s
+    50K .......... ........                                   100% 57.7M=0.002s
+
+2013-11-25 19:29:56 (33.7 MB/s) - `obuild.0.0.4+opam.tar.gz' saved [70005/70005]
+
+Building obuild.0.0.4:
+  ./bootstrap
+  cp dist/build/obuild/obuild dist/build/obuild-simple/obuild-simple /home/opam/.opam/4.02.0dev+module-aliases/bin
+COMPILING fugue
+COMPILING filepath
+COMPILING filesystem
+BUILDING library obuild_ext.cmxa
+COMPILING gconf
+COMPILING types
+COMPILING dag
+COMPILING taskdep
+COMPILING dagutils
+COMPILING filetype
+COMPILING modname
+COMPILING hier
+COMPILING expr
+COMPILING pp
+COMPILING utils
+COMPILING helper
+COMPILING process
+COMPILING findlibConf
+COMPILING prog
+COMPILING dependencies
+COMPILING target
+COMPILING project
+COMPILING meta
+COMPILING dist
+COMPILING analyze
+COMPILING configure
+COMPILING prepare
+COMPILING buildprogs
+COMPILING build
+COMPILING exception
+BUILDING library obuild.cmxa
+COMPILING sdist
+COMPILING doc
+COMPILING init
+COMPILING help
+COMPILING install
+COMPILING main
+LINKING obuild.bootstrap
+Configuring obuild-0.0.4...
+Building library obuild.ext
+[1 of 6] Compiling Ext.Fugue                     
+[2 of 6] Intfing Ext.Filepath                  
+[3 of 6] Compiling Ext.Filepath                  
+[4 of 6] Intfing Ext.Filesystem                
+[5 of 6] Compiling Ext.Filesystem                
+[6 of 6] Packing Ext                           
+Linking library dist/build/lib-obuild.ext/obuild_ext.cmxa
+Linking library dist/build/lib-obuild.ext/obuild_ext.cma
+Building library obuild
+[ 1 of 27] Compiling Obuild.Gconf                  
+[ 2 of 27] Compiling Obuild.Types                  
+[ 3 of 27] Compiling Obuild.Dag                    
+[ 4 of 27] Compiling Obuild.Pp                     
+[ 5 of 27] Compiling Obuild.Filetype               
+[ 6 of 27] Compiling Obuild.Expr                   
+[ 7 of 27] Compiling Obuild.Utils                  
+[ 8 of 27] Compiling Obuild.Modname                
+[ 9 of 27] Compiling Obuild.Taskdep                
+[10 of 27] Compiling Obuild.Dist                   
+[11 of 27] Compiling Obuild.Helper                 
+[12 of 27] Compiling Obuild.Hier                   
+[13 of 27] Compiling Obuild.Dagutils               
+[14 of 27] Compiling Obuild.Process                
+[15 of 27] Compiling Obuild.FindlibConf            
+[16 of 27] Compiling Obuild.Prog                   
+[17 of 27] Compiling Obuild.Dependencies           
+[18 of 27] Compiling Obuild.Meta                   
+[19 of 27] Compiling Obuild.Target                 
+[20 of 27] Compiling Obuild.Project                
+[21 of 27] Compiling Obuild.Analyze                
+[22 of 27] Compiling Obuild.Configure              
+[23 of 27] Compiling Obuild.Prepare                
+[24 of 27] Compiling Obuild.Buildprogs             
+[25 of 27] Compiling Obuild.Build                  
+[26 of 27] Compiling Obuild.Exception              
+[27 of 27] Packing Obuild                        
+Linking library dist/build/lib-obuild/obuild.cmxa
+Linking library dist/build/lib-obuild/obuild.cma
+Building executable obuild
+[1 of 6] Compiling Sdist                         
+[2 of 6] Compiling Install                       
+[3 of 6] Compiling Help                          
+[4 of 6] Compiling Doc                           
+[5 of 6] Compiling Init                          
+[6 of 6] Compiling Main                          
+Linking executable dist/build/obuild/obuild
+Building executable obuild-simple
+[1 of 1] Compiling Simple                        
+Linking executable dist/build/obuild-simple/obuild-simple
+Building executable obuild-from-oasis
+[1 of 1] Compiling Assimilate_oasis              
+Linking executable dist/build/obuild-from-oasis/obuild-from-oasis
+
+real	0m3.015s
+user	0m1.710s
+sys	0m2.106s
+Installing obuild.0.0.4.
+
+=-=-= Installing optcomp.1.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/optcomp.1.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/optcomp.1.4+opam.tar.gz
+--2013-11-25 19:30:08--  https://opam.ocaml.org/archives/optcomp.1.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 54004 (53K) [application/octet-stream]
+Saving to: `optcomp.1.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 94% 41.0M 0s
+    50K ..                                                    100% 5223G=0.001s
+
+2013-11-25 19:30:08 (43.3 MB/s) - `optcomp.1.4+opam.tar.gz' saved [54004/54004]
+
+Building optcomp.1.4:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  make
+  make install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ optcomp
+Package version: ..................................... 1.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+module-aliases
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_camlp4: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_quotations_o: ............................. /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_lib: ...................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocaml setup.ml -build 
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -modules src/pa_optcomp.mli > src/pa_optcomp.mli.depends
+ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/pa_optcomp.cmi src/pa_optcomp.mli
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -modules src/pa_optcomp.ml > src/pa_optcomp.ml.depends
+ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -I src -o src/pa_optcomp.cmo src/pa_optcomp.ml
++ ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -I src -o src/pa_optcomp.cmo src/pa_optcomp.ml
+File "src/pa_optcomp.ml", line 291, characters 50-52:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlc -a src/pa_optcomp.cmo -o src/optcomp.cma
+ocamlfind ocamlopt -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -I src -o src/pa_optcomp.cmx src/pa_optcomp.ml
++ ocamlfind ocamlopt -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -I src -o src/pa_optcomp.cmx src/pa_optcomp.ml
+File "src/pa_optcomp.ml", line 291, characters 50-52:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlopt -a src/pa_optcomp.cmx -o src/optcomp.cmxa
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -modules src/optcomp.ml > src/optcomp.ml.depends
+ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp.cmo src/optcomp.ml
+ocamlfind ocamlopt -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp.cmx src/optcomp.ml
+ocamlfind ocamlopt -shared src/optcomp.cmx -o src/optcomp.cmxs
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -modules src/optcomp_o.ml > src/optcomp_o.ml.depends
+ocamlfind ocamlc -c -I +camlp4 -I +camlp4/Camlp4Parsers -I +camlp4/Camlp4Printers -I +camlp4/Camlp4Filters -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp_o.cmo src/optcomp_o.ml
+ocamlfind ocamlopt -c -I +camlp4 -I +camlp4/Camlp4Parsers -I +camlp4/Camlp4Printers -I +camlp4/Camlp4Filters -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp_o.cmx src/optcomp_o.ml
+ocamlfind ocamlopt -linkpkg -I +camlp4 camlp4fulllib.cmxa -g -linkpkg -package camlp4 -package camlp4.lib -package camlp4.quotations.o src/optcomp.cmxa src/optcomp.cmx src/optcomp_o.cmx -o src/optcomp_o.native
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -modules src/optcomp_r.ml > src/optcomp_r.ml.depends
+ocamlfind ocamlc -c -I +camlp4 -I +camlp4/Camlp4Parsers -I +camlp4/Camlp4Printers -I +camlp4/Camlp4Filters -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp_r.cmo src/optcomp_r.ml
+ocamlfind ocamlopt -c -I +camlp4 -I +camlp4/Camlp4Parsers -I +camlp4/Camlp4Printers -I +camlp4/Camlp4Filters -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp_r.cmx src/optcomp_r.ml
+ocamlfind ocamlopt -linkpkg -I +camlp4 camlp4fulllib.cmxa -g -linkpkg -package camlp4 -package camlp4.lib -package camlp4.quotations.o src/optcomp.cmxa src/optcomp.cmx src/optcomp_r.cmx -o src/optcomp_r.native
+ocaml setup.ml -install 
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/pa_optcomp.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/optcomp.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/optcomp.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/optcomp.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/optcomp.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/pa_optcomp.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/pa_optcomp.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/META
+Installing optcomp.1.4.
+
+=-=-= Installing ocplib-endian.0.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocplib-endian.0.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocplib-endian.0.4+opam.tar.gz
+--2013-11-25 19:30:23--  https://opam.ocaml.org/archives/ocplib-endian.0.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 53848 (53K) [application/octet-stream]
+Saving to: `ocplib-endian.0.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 95% 51.5M 0s
+    50K ..                                                    100% 4932G=0.001s
+
+2013-11-25 19:30:23 (54.2 MB/s) - `ocplib-endian.0.4+opam.tar.gz' saved [53848/53848]
+
+Building ocplib-endian.0.4:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ ocplib-endian
+Package version: ..................................... 0.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+module-aliases
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ false
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_optcomp: ......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp
+pkg_bigarray: ........................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+File "_tags", line 6, characters 18-32:
+Warning: the tag "include_common" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 7, characters 25-36:
+Warning: the tag "include_401" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 7, characters 12-23:
+Warning: the tag "include_400" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamldep -package optcomp -package bigarray -modules src/endianString.mli > src/endianString.mli.depends
+ocamlfind ocamlc -c -package optcomp -package bigarray -I src -o src/endianString.cmi src/endianString.mli
+ocamlfind ocamldep -package optcomp -package camlp4 -package bigarray -syntax camlp4o -modules src/endianString.ml > src/endianString.ml.depends
+ocamlfind ocamlc -c -package optcomp -package camlp4 -package bigarray -syntax camlp4o -I src -o src/endianString.cmo src/endianString.ml
+ocamlfind ocamlc -a src/endianString.cmo -o src/ocplib_endian.cma
+ocamlfind ocamlopt -c -package optcomp -package camlp4 -package bigarray -syntax camlp4o -inline 1000 -I src -o src/endianString.cmx src/endianString.ml
+ocamlfind ocamlopt -a src/endianString.cmx -o src/ocplib_endian.cmxa
+ocamlfind ocamlopt -shared -linkall src/ocplib_endian.cmxa -o src/ocplib_endian.cmxs
+ocamlfind ocamldep -package optcomp -package bigarray -modules src/endianBigstring.mli > src/endianBigstring.mli.depends
+ocamlfind ocamlc -c -package optcomp -package bigarray -I src -o src/endianBigstring.cmi src/endianBigstring.mli
+ocamlfind ocamldep -package optcomp -package camlp4 -package bigarray -syntax camlp4o -modules src/endianBigstring.ml > src/endianBigstring.ml.depends
+ocamlfind ocamlc -c -package optcomp -package camlp4 -package bigarray -syntax camlp4o -I src -o src/endianBigstring.cmo src/endianBigstring.ml
+ocamlfind ocamlc -a src/endianBigstring.cmo -o src/bigstring.cma
+ocamlfind ocamlopt -c -package optcomp -package camlp4 -package bigarray -syntax camlp4o -inline 1000 -I src -o src/endianBigstring.cmx src/endianBigstring.ml
+ocamlfind ocamlopt -a src/endianBigstring.cmx -o src/bigstring.cmxa
+ocamlfind ocamlopt -shared -linkall src/bigstring.cmxa -o src/bigstring.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/endianString.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/ocplib_endian.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/ocplib_endian.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/ocplib_endian.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/ocplib_endian.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/endianString.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/endianString.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/endianBigstring.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/bigstring.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/bigstring.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/bigstring.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/bigstring.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/endianBigstring.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/endianBigstring.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/META
+Installing ocplib-endian.0.4.
+
+=-=-= Installing cstruct.0.8.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/cstruct.0.8.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/cstruct.0.8.1+opam.tar.gz
+--2013-11-25 19:30:36--  https://opam.ocaml.org/archives/cstruct.0.8.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 229908 (225K) [application/octet-stream]
+Saving to: `cstruct.0.8.1+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 22% 39.9M 0s
+    50K .......... .......... .......... .......... .......... 44% 33.7M 0s
+   100K .......... .......... .......... .......... .......... 66% 43.0M 0s
+   150K .......... .......... .......... .......... .......... 89% 33.8M 0s
+   200K .......... .......... ....                            100% 66.0M=0.006s
+
+2013-11-25 19:30:36 (39.0 MB/s) - `cstruct.0.8.1+opam.tar.gz' saved [229908/229908]
+
+Building cstruct.0.8.1:
+  make
+  make install
+ocaml setup.ml -configure --enable-lwt --enable-unix --disable-async
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ cstruct
+Package version: ..................................... 0.8.1
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+build the Lwt library: ............................... true
+build the Async_unix library: ........................ false
+build the UNIX library: .............................. true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_bigarray: ........................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_ocplib_endian: ................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian
+pkg_ocplib_endian_bigstring: ......................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian
+pkg_lwt_unix: ........................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_camlp4_lib: ...................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_quotations_r: ............................. /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_extend: ................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocaml setup.ml -build -j 4
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+File "_tags", line 33, characters 18-27:
+Warning: the tag "pkg_async" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 59, characters 48-66:
+Warning: the tag "pkg_cstruct.syntax" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamlc -ccopt -O3 -c lib/cstruct_stubs.c
+mv cstruct_stubs.o lib/cstruct_stubs.o
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlmklib -o lib/cstruct_stubs lib/cstruct_stubs.o
+ocamlfind ocamldep -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -modules lib/cstruct.mli > lib/cstruct.mli.depends
+ocamlfind ocamlc -c -g -annot -ccopt -O3 -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -I lib -I lwt -I async -I unix -o lib/cstruct.cmi lib/cstruct.mli
+ocamlfind ocamldep -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -modules lib/cstruct.ml > lib/cstruct.ml.depends
+ocamlfind ocamlc -c -g -annot -ccopt -O3 -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -I lib -I lwt -I async -I unix -o lib/cstruct.cmo lib/cstruct.ml
+ocamlfind ocamlc -a -dllib -lcstruct_stubs -cclib -lcstruct_stubs lib/cstruct.cmo -o lib/cstruct.cma
+ocamlfind ocamlopt -c -g -annot -ccopt -O3 -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -inline 10 -I lib -I lwt -I async -I unix -o lib/cstruct.cmx lib/cstruct.ml
+ocamlfind ocamlopt -a -cclib -lcstruct_stubs lib/cstruct.cmx -o lib/cstruct.cmxa
+ocamlfind ocamlopt -shared -I lib/ lib/cstruct.cmx -o lib/cstruct.cmxs
+ocamlfind ocamldep -package ocplib-endian.bigstring -package ocplib-endian -package lwt.unix -package bigarray -modules lwt/lwt_cstruct.mli > lwt/lwt_cstruct.mli.depends
+ocamlfind ocamlc -c -g -annot -I lib -package ocplib-endian.bigstring -package ocplib-endian -package lwt.unix -package bigarray -I lwt -I lib -I async -I unix -o lwt/lwt_cstruct.cmi lwt/lwt_cstruct.mli
+ocamlfind ocamldep -package ocplib-endian.bigstring -package ocplib-endian -package lwt.unix -package bigarray -modules lwt/lwt_cstruct.ml > lwt/lwt_cstruct.ml.depends
+ocamlfind ocamlc -c -g -annot -I lib -package ocplib-endian.bigstring -package ocplib-endian -package lwt.unix -package bigarray -I lwt -I lib -I async -I unix -o lwt/lwt_cstruct.cmo lwt/lwt_cstruct.ml
+ocamlfind ocamlc -a lwt/lwt_cstruct.cmo -o lwt/lwt_cstruct.cma
+ocamlfind ocamlopt -c -g -annot -I lib -package ocplib-endian.bigstring -package ocplib-endian -package lwt.unix -package bigarray -inline 10 -I lwt -I lib -I async -I unix -o lwt/lwt_cstruct.cmx lwt/lwt_cstruct.ml
+ocamlfind ocamlopt -a lwt/lwt_cstruct.cmx -o lwt/lwt_cstruct.cmxa
+ocamlfind ocamlopt -shared lwt/lwt_cstruct.cmx -o lwt/lwt_cstruct.cmxs
+ocamlfind ocamldep -package unix -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -modules unix/unix_cstruct.mli > unix/unix_cstruct.mli.depends
+ocamlfind ocamlc -c -g -annot -I lib -package unix -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -I unix -I lib -I lwt -I async -o unix/unix_cstruct.cmi unix/unix_cstruct.mli
+ocamlfind ocamldep -package unix -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -modules unix/unix_cstruct.ml > unix/unix_cstruct.ml.depends
+ocamlfind ocamlc -c -g -annot -I lib -package unix -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -I unix -I lib -I lwt -I async -o unix/unix_cstruct.cmo unix/unix_cstruct.ml
+ocamlfind ocamlc -a unix/unix_cstruct.cmo -o unix/unix_cstruct.cma
+ocamlfind ocamlopt -c -g -annot -I lib -package unix -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -inline 10 -I unix -I lib -I lwt -I async -o unix/unix_cstruct.cmx unix/unix_cstruct.ml
+ocamlfind ocamlopt -a unix/unix_cstruct.cmx -o unix/unix_cstruct.cmxa
+ocamlfind ocamlopt -shared unix/unix_cstruct.cmx -o unix/unix_cstruct.cmxs
+ocamlfind ocamldep -package camlp4.quotations.r -package camlp4.lib -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -modules syntax/pa_cstruct.ml > syntax/pa_cstruct.ml.depends
+ocamlfind ocamlc -c -g -annot -package camlp4.quotations.r -package camlp4.lib -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -I syntax -I lib -I lwt -I async -I unix -o syntax/pa_cstruct.cmo syntax/pa_cstruct.ml
+ocamlfind ocamlc -a syntax/pa_cstruct.cmo -o syntax/cstruct-syntax.cma
+ocamlfind ocamlopt -c -g -annot -package camlp4.quotations.r -package camlp4.lib -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -inline 10 -I syntax -I lib -I lwt -I async -I unix -o syntax/pa_cstruct.cmx syntax/pa_cstruct.ml
+ocamlfind ocamlopt -a syntax/pa_cstruct.cmx -o syntax/cstruct-syntax.cmxa
+ocamlfind ocamlopt -shared -linkall syntax/cstruct-syntax.cmxa -o syntax/cstruct-syntax.cmxs
+# No parallelism done
+ocaml setup.ml -install
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/libcstruct_stubs.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/unix_cstruct.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/unix_cstruct.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/unix_cstruct.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/unix_cstruct.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/unix_cstruct.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/unix_cstruct.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/unix_cstruct.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/pa_cstruct.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct-syntax.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct-syntax.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct-syntax.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct-syntax.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/pa_cstruct.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/pa_cstruct.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/lwt_cstruct.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/lwt_cstruct.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/lwt_cstruct.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/lwt_cstruct.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/lwt_cstruct.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/lwt_cstruct.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/lwt_cstruct.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/META
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs/dllcstruct_stubs.so
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs/dllcstruct_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs is not mentioned in ld.conf
+Installing cstruct.0.8.1.
+
+=-=-= Installing nbd.0.9.2 =-=-=
+default    Downloading https://opam.ocaml.org/archives/nbd.0.9.2+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/nbd.0.9.2+opam.tar.gz
+--2013-11-25 19:30:49--  https://opam.ocaml.org/archives/nbd.0.9.2+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 21275 (21K) [application/octet-stream]
+Saving to: `nbd.0.9.2+opam.tar.gz'
+
+     0K .......... ..........                                 100% 36.9M=0.001s
+
+2013-11-25 19:30:49 (36.9 MB/s) - `nbd.0.9.2+opam.tar.gz' saved [21275/21275]
+
+Building nbd.0.9.2:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.0dev+module-aliases/bin
+obuild --debug+ configure 
+  [CMD]: ocamlfind printconf conf
+Configuring nbd-0.9.0...
+  configure flag: []
+analyzing project
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -config
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -vnum
+initializing standard library : package unix
+initializing standard library : package bigarray
+initializing standard library : package dynlink
+initializing standard library : package str
+initializing standard library : package graphics
+initializing standard library : package stdlib
+initializing standard library : package nums
+  internal depends: nbd
+  internal depends: nbd_lwt
+  internal depends: nbd_lwt
+  getting dependencies for target lib-nbd_lwt
+  library nbd depends on cstruct
+  fetching META cstruct
+  library cstruct depends on bigarray
+  library cstruct depends on ocplib-endian
+  fetching META ocplib-endian
+  library cstruct depends on ocplib-endian.bigstring
+  library ocplib-endian.bigstring depends on bigarray
+  library nbd depends on cstruct.syntax
+  library cstruct.syntax depends on camlp4
+  fetching META camlp4
+  library camlp4 depends on dynlink
+  fetching META lwt
+  library lwt.unix depends on lwt
+  library lwt.unix depends on lwt.log
+  library lwt.log depends on lwt
+  library lwt.unix depends on unix
+  library lwt.unix depends on bigarray
+  library lwt.syntax depends on camlp4
+  library lwt.syntax depends on lwt.syntax.options
+  library lwt.syntax.options depends on camlp4
+  getting dependencies for target lib-nbd
+  getting dependencies for target exe-nbd_test_lwt
+  library nbd_lwt depends on nbd
+  library nbd_lwt depends on lwt
+  library nbd_lwt depends on lwt.unix
+  library nbd_lwt depends on lwt.syntax
+  getting dependencies for target exe-nbd-tool
+  fetching META cmdliner
+configuration changed, deleting dist
+Writing new setup
+auto-generating configuration files
+obuild --debug+ build
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -config
+  [CMD]: ocamlfind printconf conf
+analyzing project
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -config
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -vnum
+initializing standard library : package unix
+initializing standard library : package bigarray
+initializing standard library : package dynlink
+initializing standard library : package str
+initializing standard library : package graphics
+initializing standard library : package stdlib
+initializing standard library : package nums
+  internal depends: nbd
+  internal depends: nbd_lwt
+  internal depends: nbd_lwt
+  getting dependencies for target lib-nbd_lwt
+  library nbd depends on cstruct
+  fetching META cstruct
+  library cstruct depends on bigarray
+  library cstruct depends on ocplib-endian
+  fetching META ocplib-endian
+  library cstruct depends on ocplib-endian.bigstring
+  library ocplib-endian.bigstring depends on bigarray
+  library nbd depends on cstruct.syntax
+  library cstruct.syntax depends on camlp4
+  fetching META camlp4
+  library camlp4 depends on dynlink
+  fetching META lwt
+  library lwt.unix depends on lwt
+  library lwt.unix depends on lwt.log
+  library lwt.log depends on lwt
+  library lwt.unix depends on unix
+  library lwt.unix depends on bigarray
+  library lwt.syntax depends on camlp4
+  library lwt.syntax depends on lwt.syntax.options
+  library lwt.syntax.options depends on camlp4
+  getting dependencies for target lib-nbd
+  getting dependencies for target exe-nbd_test_lwt
+  library nbd_lwt depends on nbd
+  library nbd_lwt depends on lwt
+  library nbd_lwt depends on lwt.unix
+  library nbd_lwt depends on lwt.syntax
+  getting dependencies for target exe-nbd-tool
+  fetching META cmdliner
+building target lib-nbd
+Building library nbd
+preparing compilation for lib-nbd
+ all packages : [dynlink,camlp4,cstruct.syntax,bigarray,ocplib-endian.bigstring,ocplib-endian,cstruct]
+Analysing Nbd
+  Nbd has mtime 1380793416.000000
+  Nbd has interface (mtime=1380793416.000000)
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lib -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules lib/nbd.ml lib/nbd.mli
+  Nbd depends on Buffer,Int32,List,Printf,String,Cstruct,Result
+  Nbd internally depends on Result
+Analysing Result
+  Result has mtime 1380793416.000000
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lib -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules lib/result.ml lib/result.mli
+  Result depends on 
+  Result internally depends on 
+[1 of 3] Compiling Result                        
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -I dist/build/lib-nbd -I dist/build/autogen -I lib -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd/result.cmx -c lib/result.ml
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -I dist/build/lib-nbd -I dist/build/autogen -I lib -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd/result.cmo -c lib/result.ml
+[2 of 3] Intfing Nbd                           
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -I dist/build/lib-nbd -I dist/build/autogen -I lib -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd/nbd.cmi -c lib/nbd.mli
+[3 of 3] Compiling Nbd                           
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -I dist/build/lib-nbd -I dist/build/autogen -I lib -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd/nbd.cmx -c lib/nbd.ml
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -I dist/build/lib-nbd -I dist/build/autogen -I lib -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd/nbd.cmo -c lib/nbd.ml
+File "lib/nbd.ml", line 84, characters 17-107:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+5l
+
+schedule finished: #processes=5 max_concurrency=2
+  compilation order: Result,Nbd
+  self deps: 
+package deps: [dynlink,camlp4,cstruct.syntax,bigarray,ocplib-endian.bigstring,ocplib-endian,cstruct]
+Linking library dist/build/lib-nbd/nbd.cmxa
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -a -o dist/build/lib-nbd/nbd.cmxa -I dist/build/lib-nbd -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct result.cmx nbd.cmx
+Linking library dist/build/lib-nbd/nbd.cma
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -a -o dist/build/lib-nbd/nbd.cma -I dist/build/lib-nbd -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct result.cmo nbd.cmo
+building target lib-nbd_lwt
+Building library nbd_lwt
+preparing compilation for lib-nbd_lwt
+ all packages : [dynlink,camlp4,lwt.syntax.options,lwt.syntax,bigarray,unix,lwt,lwt.log,lwt.unix,cstruct.syntax,ocplib-endian.bigstring,ocplib-endian,cstruct,nbd]
+Analysing Nbd_lwt_client
+  Nbd_lwt_client has mtime 1380793416.000000
+  Nbd_lwt_client has interface (mtime=1380793416.000000)
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lwt -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules lwt/nbd_lwt_client.ml lwt/nbd_lwt_client.mli
+  Nbd_lwt_client depends on Array,Command,Int32,Int64,Lwt_bytes,Lwt_mux,Lwt_unix,Nbd_lwt_common,Negotiate,Printf,Reply,Request,Result,Cstruct,Lwt,Nbd
+  Nbd_lwt_client internally depends on Lwt_mux,Nbd_lwt_common
+Analysing Lwt_mux
+  Lwt_mux has mtime 1380793416.000000
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lwt -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules lwt/lwt_mux.ml lwt/lwt_mux.mli
+  Lwt_mux depends on Hashtbl,Lwt,Lwt_mutex
+  Lwt_mux internally depends on 
+Analysing Nbd_lwt_common
+  Nbd_lwt_common has mtime 1380793416.000000
+  Nbd_lwt_common has interface (mtime=1380793416.000000)
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lwt -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules lwt/nbd_lwt_common.ml lwt/nbd_lwt_common.mli
+  Nbd_lwt_common depends on Lwt_bytes,Printf,Cstruct,Lwt,Lwt_unix
+  Nbd_lwt_common internally depends on 
+Analysing Nbd_lwt_server
+  Nbd_lwt_server has mtime 1380793416.000000
+  Nbd_lwt_server has interface (mtime=1380793416.000000)
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lwt -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules lwt/nbd_lwt_server.ml lwt/nbd_lwt_server.mli
+  Nbd_lwt_server depends on Lwt_mutex,Nbd_lwt_common,Negotiate,Reply,Request,Result,Cstruct,Lwt,Lwt_unix,Nbd
+  Nbd_lwt_server internally depends on Nbd_lwt_common
+[1 of 7] Intfing Nbd_lwt_common                
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -I dist/build/lib-nbd_lwt -I dist/build/autogen -I lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd_lwt/nbd_lwt_common.cmi -c lwt/nbd_lwt_common.mli
+[2 of 7] Compiling Lwt_mux                       
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -I dist/build/lib-nbd_lwt -I dist/build/autogen -I lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd_lwt/lwt_mux.cmx -c lwt/lwt_mux.ml
+[3 of 7] Compiling Nbd_lwt_common                
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -I dist/build/lib-nbd_lwt -I dist/build/autogen -I lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd_lwt/nbd_lwt_common.cmx -c lwt/nbd_lwt_common.ml
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -I dist/build/lib-nbd_lwt -I dist/build/autogen -I lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd_lwt/lwt_mux.cmo -c lwt/lwt_mux.ml
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -I dist/build/lib-nbd_lwt -I dist/build/autogen -I lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd_lwt/nbd_lwt_common.cmo -c lwt/nbd_lwt_common.ml
+[4 of 7] Intfing Nbd_lwt_server                
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -I dist/build/lib-nbd_lwt -I dist/build/autogen -I lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd_lwt/nbd_lwt_server.cmi -c lwt/nbd_lwt_server.mli
+[5 of 7] Intfing Nbd_lwt_client                
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -I dist/build/lib-nbd_lwt -I dist/build/autogen -I lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd_lwt/nbd_lwt_client.cmi -c lwt/nbd_lwt_client.mli
+[6 of 7] Compiling Nbd_lwt_server                
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -I dist/build/lib-nbd_lwt -I dist/build/autogen -I lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd_lwt/nbd_lwt_server.cmx -c lwt/nbd_lwt_server.ml
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -I dist/build/lib-nbd_lwt -I dist/build/autogen -I lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd_lwt/nbd_lwt_server.cmo -c lwt/nbd_lwt_server.ml
+[7 of 7] Compiling Nbd_lwt_client                
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -I dist/build/lib-nbd_lwt -I dist/build/autogen -I lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd_lwt/nbd_lwt_client.cmx -c lwt/nbd_lwt_client.ml
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -I dist/build/lib-nbd_lwt -I dist/build/autogen -I lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/lib-nbd_lwt/nbd_lwt_client.cmo -c lwt/nbd_lwt_client.ml
+File "lwt/nbd_lwt_client.ml", line 94, characters 10-18:
+Warning 26: unused variable expected.
+
+schedule finished: #processes=11 max_concurrency=2
+  compilation order: Lwt_mux,Nbd_lwt_common,Nbd_lwt_server,Nbd_lwt_client
+  self deps: nbd
+package deps: [dynlink,camlp4,lwt.syntax.options,lwt.syntax,bigarray,unix,lwt,lwt.log,lwt.unix,cstruct.syntax,ocplib-endian.bigstring,ocplib-endian,cstruct,nbd]
+Linking library dist/build/lib-nbd_lwt/nbd_lwt.cmxa
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -a -o dist/build/lib-nbd_lwt/nbd_lwt.cmxa -I dist/build/lib-nbd_lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -cclib -Ldist/build/lib-nbd lwt_mux.cmx nbd_lwt_common.cmx nbd_lwt_server.cmx nbd_lwt_client.cmx
+Linking library dist/build/lib-nbd_lwt/nbd_lwt.cma
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt -a -o dist/build/lib-nbd_lwt/nbd_lwt.cma -I dist/build/lib-nbd_lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -cclib -Ldist/build/lib-nbd lwt_mux.cmo nbd_lwt_common.cmo nbd_lwt_server.cmo nbd_lwt_client.cmo
+building target exe-nbd-tool
+Building executable nbd-tool
+preparing compilation for exe-nbd-tool
+ all packages : [dynlink,camlp4,lwt.syntax.options,lwt.syntax,bigarray,unix,lwt,lwt.log,lwt.unix,cmdliner,cstruct.syntax,ocplib-endian.bigstring,ocplib-endian,cstruct,nbd,nbd_lwt]
+Analysing Main
+  Main has mtime 1380793416.000000
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I cli -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules cli/main.ml cli/main.mli
+  Main depends on Arg,Cmdliner,Command,Common,Cstruct,Int32,Lwt,Lwt_main,Lwt_unix,Nbd,Nbd_lwt_common,Nbd_lwt_server,Printexc,Printf,Request,Term,Unix
+  Main internally depends on Common
+Analysing Common
+  Common has mtime 1380793416.000000
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I cli -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules cli/common.ml cli/common.mli
+  Common depends on 
+  Common internally depends on 
+[1 of 2] Compiling Common                        
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -I dist/build/nbd-tool -I dist/build/autogen -I cli -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -I dist/build/lib-nbd_lwt -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/nbd-tool/common.cmx -c cli/common.ml
+[2 of 2] Compiling Main                          
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -I dist/build/nbd-tool -I dist/build/autogen -I cli -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -I dist/build/lib-nbd_lwt -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/nbd-tool/main.cmx -c cli/main.ml
+File "cli/main.ml", line 53, characters 8-12:
+Warning 26: unused variable port.
+
+schedule finished: #processes=2 max_concurrency=1
+  compilation order: Common,Main
+  self deps: nbd_lwt
+package deps: [dynlink,camlp4,lwt.syntax.options,lwt.syntax,bigarray,unix,lwt,lwt.log,lwt.unix,cmdliner,cstruct.syntax,ocplib-endian.bigstring,ocplib-endian,cstruct,nbd,nbd_lwt]
+Linking executable dist/build/nbd-tool/nbd-tool
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -o dist/build/nbd-tool/nbd-tool -I dist/build/nbd-tool -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cmdliner -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -I dist/build/lib-nbd_lwt dynlink.cmxa bigarray.cmxa unix.cmxa lwt.cmxa lwt-log.cmxa lwt-unix.cmxa cmdliner.cmxa bigstring.cmxa ocplib_endian.cmxa cstruct.cmxa nbd.cmxa nbd_lwt.cmxa -cclib -Ldist/build/lib-nbd_lwt common.cmx main.cmx
+building target exe-nbd_test_lwt
+Building executable nbd_test_lwt
+preparing compilation for exe-nbd_test_lwt
+ all packages : [dynlink,camlp4,lwt.syntax.options,lwt.syntax,bigarray,unix,lwt,lwt.log,lwt.unix,cstruct.syntax,ocplib-endian.bigstring,ocplib-endian,cstruct,nbd,nbd_lwt]
+Analysing Nbd_test_lwt
+  Nbd_test_lwt has mtime 1380793416.000000
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lib_test -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules lib_test/nbd_test_lwt.ml lib_test/nbd_test_lwt.mli
+  Nbd_test_lwt depends on Array,Cstruct,Lwt,Lwt_main,Nbd_lwt_client,Printexc,Printf,Sys
+  Nbd_test_lwt internally depends on 
+[1 of 1] Compiling Nbd_test_lwt                  
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -I dist/build/nbd_test_lwt -I dist/build/autogen -I lib_test -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -I dist/build/lib-nbd_lwt -bin-annot -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -o dist/build/nbd_test_lwt/nbd_test_lwt.cmx -c lib_test/nbd_test_lwt.ml
+schedule finished: #processes=1 max_concurrency=1
+  compilation order: Nbd_test_lwt
+  self deps: nbd_lwt
+package deps: [dynlink,camlp4,lwt.syntax.options,lwt.syntax,bigarray,unix,lwt,lwt.log,lwt.unix,cstruct.syntax,ocplib-endian.bigstring,ocplib-endian,cstruct,nbd,nbd_lwt]
+Linking executable dist/build/nbd_test_lwt/nbd_test_lwt
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -o dist/build/nbd_test_lwt/nbd_test_lwt -I dist/build/nbd_test_lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct -I dist/build/lib-nbd -I dist/build/lib-nbd_lwt dynlink.cmxa bigarray.cmxa unix.cmxa lwt.cmxa lwt-log.cmxa lwt-unix.cmxa bigstring.cmxa ocplib_endian.cmxa cstruct.cmxa nbd.cmxa nbd_lwt.cmxa -cclib -Ldist/build/lib-nbd_lwt nbd_test_lwt.cmx
+obuild --debug+ build
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -config
+  [CMD]: ocamlfind printconf conf
+analyzing project
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -config
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt -vnum
+initializing standard library : package unix
+initializing standard library : package bigarray
+initializing standard library : package dynlink
+initializing standard library : package str
+initializing standard library : package graphics
+initializing standard library : package stdlib
+initializing standard library : package nums
+  internal depends: nbd
+  internal depends: nbd_lwt
+  internal depends: nbd_lwt
+  getting dependencies for target lib-nbd_lwt
+  library nbd depends on cstruct
+  fetching META cstruct
+  library cstruct depends on bigarray
+  library cstruct depends on ocplib-endian
+  fetching META ocplib-endian
+  library cstruct depends on ocplib-endian.bigstring
+  library ocplib-endian.bigstring depends on bigarray
+  library nbd depends on cstruct.syntax
+  library cstruct.syntax depends on camlp4
+  fetching META camlp4
+  library camlp4 depends on dynlink
+  fetching META lwt
+  library lwt.unix depends on lwt
+  library lwt.unix depends on lwt.log
+  library lwt.log depends on lwt
+  library lwt.unix depends on unix
+  library lwt.unix depends on bigarray
+  library lwt.syntax depends on camlp4
+  library lwt.syntax depends on lwt.syntax.options
+  library lwt.syntax.options depends on camlp4
+  getting dependencies for target lib-nbd
+  getting dependencies for target exe-nbd_test_lwt
+  library nbd_lwt depends on nbd
+  library nbd_lwt depends on lwt
+  library nbd_lwt depends on lwt.unix
+  library nbd_lwt depends on lwt.syntax
+  getting dependencies for target exe-nbd-tool
+  fetching META cmdliner
+building target lib-nbd
+Building library nbd
+preparing compilation for lib-nbd
+ all packages : [dynlink,camlp4,cstruct.syntax,bigarray,ocplib-endian.bigstring,ocplib-endian,cstruct]
+Analysing Nbd
+  Nbd has mtime 1380793416.000000
+  Nbd has interface (mtime=1380793416.000000)
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lib -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules lib/nbd.ml lib/nbd.mli
+  Nbd depends on Buffer,Int32,List,Printf,String,Cstruct,Result
+  Nbd internally depends on Result
+Analysing Result
+  Result has mtime 1380793416.000000
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lib -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules lib/result.ml lib/result.mli
+  Result depends on 
+  Result internally depends on 
+schedule finished: #processes=0 max_concurrency=0
+  compilation order: Result,Nbd
+  self deps: 
+package deps: [dynlink,camlp4,cstruct.syntax,bigarray,ocplib-endian.bigstring,ocplib-endian,cstruct]
+building target lib-nbd_lwt
+Building library nbd_lwt
+preparing compilation for lib-nbd_lwt
+ all packages : [dynlink,camlp4,lwt.syntax.options,lwt.syntax,bigarray,unix,lwt,lwt.log,lwt.unix,cstruct.syntax,ocplib-endian.bigstring,ocplib-endian,cstruct,nbd]
+Analysing Nbd_lwt_client
+  Nbd_lwt_client has mtime 1380793416.000000
+  Nbd_lwt_client has interface (mtime=1380793416.000000)
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lwt -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules lwt/nbd_lwt_client.ml lwt/nbd_lwt_client.mli
+  Nbd_lwt_client depends on Array,Command,Int32,Int64,Lwt_bytes,Lwt_mux,Lwt_unix,Nbd_lwt_common,Negotiate,Printf,Reply,Request,Result,Cstruct,Lwt,Nbd
+  Nbd_lwt_client internally depends on Lwt_mux,Nbd_lwt_common
+Analysing Lwt_mux
+  Lwt_mux has mtime 1380793416.000000
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lwt -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules lwt/lwt_mux.ml lwt/lwt_mux.mli
+  Lwt_mux depends on Hashtbl,Lwt,Lwt_mutex
+  Lwt_mux internally depends on 
+Analysing Nbd_lwt_common
+  Nbd_lwt_common has mtime 1380793416.000000
+  Nbd_lwt_common has interface (mtime=1380793416.000000)
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lwt -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules lwt/nbd_lwt_common.ml lwt/nbd_lwt_common.mli
+  Nbd_lwt_common depends on Lwt_bytes,Printf,Cstruct,Lwt,Lwt_unix
+  Nbd_lwt_common internally depends on 
+Analysing Nbd_lwt_server
+  Nbd_lwt_server has mtime 1380793416.000000
+  Nbd_lwt_server has interface (mtime=1380793416.000000)
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lwt -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules lwt/nbd_lwt_server.ml lwt/nbd_lwt_server.mli
+  Nbd_lwt_server depends on Lwt_mutex,Nbd_lwt_common,Negotiate,Reply,Request,Result,Cstruct,Lwt,Lwt_unix,Nbd
+  Nbd_lwt_server internally depends on Nbd_lwt_common
+schedule finished: #processes=0 max_concurrency=0
+  compilation order: Lwt_mux,Nbd_lwt_common,Nbd_lwt_server,Nbd_lwt_client
+  self deps: nbd
+package deps: [dynlink,camlp4,lwt.syntax.options,lwt.syntax,bigarray,unix,lwt,lwt.log,lwt.unix,cstruct.syntax,ocplib-endian.bigstring,ocplib-endian,cstruct,nbd]
+building target exe-nbd-tool
+Building executable nbd-tool
+preparing compilation for exe-nbd-tool
+ all packages : [dynlink,camlp4,lwt.syntax.options,lwt.syntax,bigarray,unix,lwt,lwt.log,lwt.unix,cmdliner,cstruct.syntax,ocplib-endian.bigstring,ocplib-endian,cstruct,nbd,nbd_lwt]
+Analysing Main
+  Main has mtime 1380793416.000000
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I cli -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules cli/main.ml cli/main.mli
+  Main depends on Arg,Cmdliner,Command,Common,Cstruct,Int32,Lwt,Lwt_main,Lwt_unix,Nbd,Nbd_lwt_common,Nbd_lwt_server,Printexc,Printf,Request,Term,Unix
+  Main internally depends on Common
+Analysing Common
+  Common has mtime 1380793416.000000
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I cli -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules cli/common.ml cli/common.mli
+  Common depends on 
+  Common internally depends on 
+schedule finished: #processes=0 max_concurrency=0
+  compilation order: Common,Main
+  self deps: nbd_lwt
+package deps: [dynlink,camlp4,lwt.syntax.options,lwt.syntax,bigarray,unix,lwt,lwt.log,lwt.unix,cmdliner,cstruct.syntax,ocplib-endian.bigstring,ocplib-endian,cstruct,nbd,nbd_lwt]
+building target exe-nbd_test_lwt
+Building executable nbd_test_lwt
+preparing compilation for exe-nbd_test_lwt
+ all packages : [dynlink,camlp4,lwt.syntax.options,lwt.syntax,bigarray,unix,lwt,lwt.log,lwt.unix,cstruct.syntax,ocplib-endian.bigstring,ocplib-endian,cstruct,nbd,nbd_lwt]
+Analysing Nbd_test_lwt
+  Nbd_test_lwt has mtime 1380793416.000000
+  [CMD]: /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldep.opt -I lib_test -I dist/build/autogen -pp "camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4 -parser o -parser op -printer p -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax-options.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/lwt lwt-syntax.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct cstruct-syntax.cma" -modules lib_test/nbd_test_lwt.ml lib_test/nbd_test_lwt.mli
+  Nbd_test_lwt depends on Array,Cstruct,Lwt,Lwt_main,Nbd_lwt_client,Printexc,Printf,Sys
+  Nbd_test_lwt internally depends on 
+schedule finished: #processes=0 max_concurrency=0
+  compilation order: Nbd_test_lwt
+  self deps: nbd_lwt
+package deps: [dynlink,camlp4,lwt.syntax.options,lwt.syntax,bigarray,unix,lwt,lwt.log,lwt.unix,cstruct.syntax,ocplib-endian.bigstring,ocplib-endian,cstruct,nbd,nbd_lwt]
+find: `dist/build/lib-nbd_unix': No such file or directory
+ocamlfind remove nbd
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd
+ocamlfind install nbd dist/build/lib-nbd/result.cmx dist/build/lib-nbd/nbd.cma dist/build/lib-nbd/nbd.cmxa dist/build/lib-nbd/nbd.o dist/build/lib-nbd/nbd.cmi dist/build/lib-nbd/result.cmt dist/build/lib-nbd/nbd.cmx dist/build/lib-nbd/nbd.cmt dist/build/lib-nbd/result.o dist/build/lib-nbd/nbd.cmti dist/build/lib-nbd/nbd.cmo dist/build/lib-nbd/result.cmo dist/build/lib-nbd/result.cmi dist/build/lib-nbd/nbd.a dist/build/lib-nbd_lwt/nbd_lwt.a dist/build/lib-nbd_lwt/lwt_mux.o dist/build/lib-nbd_lwt/lwt_mux.cmx dist/build/lib-nbd_lwt/nbd_lwt_client.cmti dist/build/lib-nbd_lwt/nbd_lwt_server.cmx dist/build/lib-nbd_lwt/nbd_lwt_common.cmt dist/build/lib-nbd_lwt/nbd_lwt_server.cmt dist/build/lib-nbd_lwt/nbd_lwt_common.cmx dist/build/lib-nbd_lwt/nbd_lwt.cmxa dist/build/lib-nbd_lwt/lwt_mux.cmt dist/build/lib-nbd_lwt/nbd_lwt.cma dist/build/lib-nbd_lwt/nbd_lwt_common.cmi dist/build/lib-nbd_lwt/nbd_lwt_client.o dist/build/lib-nbd_lwt/nbd_lwt_client.cmt dist/build/lib-nbd_lwt/nbd_lwt_common.o dist/build/lib-nbd_lwt/nbd_lwt_server.o dist/build/lib-nbd_lwt/nbd_lwt_server.cmti dist/build/lib-nbd_lwt/lwt_mux.cmo dist/build/lib-nbd_lwt/lwt_mux.cmi dist/build/lib-nbd_lwt/nbd_lwt_common.cmo dist/build/lib-nbd_lwt/nbd_lwt_server.cmi dist/build/lib-nbd_lwt/nbd_lwt_common.cmti dist/build/lib-nbd_lwt/nbd_lwt_server.cmo dist/build/lib-nbd_lwt/nbd_lwt_client.cmi dist/build/lib-nbd_lwt/nbd_lwt_client.cmo dist/build/lib-nbd_lwt/nbd_lwt_client.cmx lib/META 
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_client.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_client.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_client.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_server.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_common.cmti
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_server.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_common.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/lwt_mux.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/lwt_mux.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_server.cmti
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_server.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_common.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_client.cmt
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_client.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_common.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/lwt_mux.cmt
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_common.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_server.cmt
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_common.cmt
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_server.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt_client.cmti
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/lwt_mux.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/lwt_mux.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd_lwt.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/result.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/result.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd.cmo
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd.cmti
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/result.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd.cmt
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/result.cmt
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd.o
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/nbd.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/result.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/nbd/META
+Installing nbd.0.9.2.
