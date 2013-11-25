@@ -1,0 +1,8 @@
+++ opam install ocamlfind -e ubuntu
+[NOTE] Package ocamlfind is already installed (current version is 1.4.0).
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocamlfind
+[NOTE] Package ocamlfind is already installed (current version is 1.4.0).
