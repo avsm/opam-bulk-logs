@@ -1,0 +1,60 @@
+++ opam install ocsfml -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install ocsfml
+The following actions will be performed:
+ - install ocsfml.2.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocsfml.2.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocsfml.2.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocsfml.2.0+opam.tar.gz
+--2013-11-25 20:49:20--  https://opam.ocaml.org/archives/ocsfml.2.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 506203 (494K) [application/octet-stream]
+Saving to: `ocsfml.2.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 10% 33.9M 0s
+    50K .......... .......... .......... .......... .......... 20% 52.7M 0s
+   100K .......... .......... .......... .......... .......... 30% 38.3M 0s
+   150K .......... .......... .......... .......... .......... 40% 36.6M 0s
+   200K .......... .......... .......... .......... .......... 50% 61.6M 0s
+   250K .......... .......... .......... .......... .......... 60% 52.5M 0s
+   300K .......... .......... .......... .......... .......... 70% 70.9M 0s
+   350K .......... .......... .......... .......... .......... 80% 33.3M 0s
+   400K .......... .......... .......... .......... .......... 91% 61.4M 0s
+   450K .......... .......... .......... .......... ....      100% 47.7M=0.01s
+
+2013-11-25 20:49:20 (45.7 MB/s) - `ocsfml.2.0+opam.tar.gz' saved [506203/506203]
+
+Building ocsfml.2.0:
+  cmake .
+  make
+  make install
+[ERROR] The compilation of ocsfml.2.0 failed.
+Removing ocsfml.2.0.
+  make uninstall
+make: *** No rule to make target `uninstall'.  Stop.
+[WARNING] failure in package uninstall script, some files may remain:
+# opam-version         1.1.0
+# os                   linux
+# command              make uninstall
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/ocsfml.2.0
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/ocsfml.2.0/ocsfml-18-a00279.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/ocsfml.2.0/ocsfml-18-a00279.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/ocsfml.2.0/ocsfml-18-a00279.err
+### stderr ###
+# make: *** No rule to make target `uninstall'.  Stop.
+
+
+
+===== ERROR while installing ocsfml.2.0 =====
+Internal error:
+  "cmake": command not found.
+'opam install ocsfml' failed.
