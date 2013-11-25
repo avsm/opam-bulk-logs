@@ -1,0 +1,702 @@
+++ opam install blahcaml -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install blahcaml
+Ubuntu depexts:
+The following actions will be performed:
+ - install ulex.1.1 [required by blahcaml]
+ - install ocamlnet.3.7.3 [required by blahcaml]
+ - install xstrp4.1.8 [required by blahcaml]
+ - install pxp.1.2.3 [required by blahcaml]
+ - install blahcaml.2.1
+5 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocamlnet.3.7.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+--2013-11-25 13:13:46--  https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3424594 (3.3M) [application/octet-stream]
+Saving to: `ocamlnet.3.7.3+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  1% 39.1M 0s
+    50K .......... .......... .......... .......... ..........  2% 34.5M 0s
+   100K .......... .......... .......... .......... ..........  4% 42.8M 0s
+   150K .......... .......... .......... .......... ..........  5% 37.0M 0s
+   200K .......... .......... .......... .......... ..........  7% 42.6M 0s
+   250K .......... .......... .......... .......... ..........  8% 37.2M 0s
+   300K .......... .......... .......... .......... .......... 10% 68.6M 0s
+   350K .......... .......... .......... .......... .......... 11% 58.9M 0s
+   400K .......... .......... .......... .......... .......... 13% 64.3M 0s
+   450K .......... .......... .......... .......... .......... 14% 73.3M 0s
+   500K .......... .......... .......... .......... .......... 16% 74.5M 0s
+   550K .......... .......... .......... .......... .......... 17% 65.7M 0s
+   600K .......... .......... .......... .......... .......... 19% 78.0M 0s
+   650K .......... .......... .......... .......... .......... 20% 14.1M 0s
+   700K .......... .......... .......... .......... .......... 22% 33.6M 0s
+   750K .......... .......... .......... .......... .......... 23% 36.1M 0s
+   800K .......... .......... .......... .......... .......... 25% 6.90M 0s
+   850K .......... .......... .......... .......... .......... 26% 63.1M 0s
+   900K .......... .......... .......... .......... .......... 28% 71.4M 0s
+   950K .......... .......... .......... .......... .......... 29% 63.4M 0s
+  1000K .......... .......... .......... .......... .......... 31% 77.4M 0s
+  1050K .......... .......... .......... .......... .......... 32% 69.7M 0s
+  1100K .......... .......... .......... .......... .......... 34% 81.1M 0s
+  1150K .......... .......... .......... .......... .......... 35% 8.85M 0s
+  1200K .......... .......... .......... .......... .......... 37% 53.6M 0s
+  1250K .......... .......... .......... .......... .......... 38% 40.2M 0s
+  1300K .......... .......... .......... .......... .......... 40% 47.7M 0s
+  1350K .......... .......... .......... .......... .......... 41% 73.4M 0s
+  1400K .......... .......... .......... .......... .......... 43% 7.36M 0s
+  1450K .......... .......... .......... .......... .......... 44% 41.4M 0s
+  1500K .......... .......... .......... .......... .......... 46% 42.4M 0s
+  1550K .......... .......... .......... .......... .......... 47% 41.1M 0s
+  1600K .......... .......... .......... .......... .......... 49% 62.0M 0s
+  1650K .......... .......... .......... .......... .......... 50% 74.1M 0s
+  1700K .......... .......... .......... .......... .......... 52% 72.6M 0s
+  1750K .......... .......... .......... .......... .......... 53% 3.13M 0s
+  1800K .......... .......... .......... .......... .......... 55% 42.4M 0s
+  1850K .......... .......... .......... .......... .......... 56% 92.5M 0s
+  1900K .......... .......... .......... .......... .......... 58% 82.1M 0s
+  1950K .......... .......... .......... .......... .......... 59% 82.6M 0s
+  2000K .......... .......... .......... .......... .......... 61% 72.8M 0s
+  2050K .......... .......... .......... .......... .......... 62% 66.9M 0s
+  2100K .......... .......... .......... .......... .......... 64% 27.7M 0s
+  2150K .......... .......... .......... .......... .......... 65% 28.7M 0s
+  2200K .......... .......... .......... .......... .......... 67% 33.5M 0s
+  2250K .......... .......... .......... .......... .......... 68% 33.1M 0s
+  2300K .......... .......... .......... .......... .......... 70% 62.9M 0s
+  2350K .......... .......... .......... .......... .......... 71% 6.51M 0s
+  2400K .......... .......... .......... .......... .......... 73% 52.4M 0s
+  2450K .......... .......... .......... .......... .......... 74% 65.6M 0s
+  2500K .......... .......... .......... .......... .......... 76% 66.7M 0s
+  2550K .......... .......... .......... .......... .......... 77% 76.7M 0s
+  2600K .......... .......... .......... .......... .......... 79%  109M 0s
+  2650K .......... .......... .......... .......... .......... 80%  110M 0s
+  2700K .......... .......... .......... .......... .......... 82%  109M 0s
+  2750K .......... .......... .......... .......... .......... 83% 8.62M 0s
+  2800K .......... .......... .......... .......... .......... 85% 68.5M 0s
+  2850K .......... .......... .......... .......... .......... 86% 70.4M 0s
+  2900K .......... .......... .......... .......... .......... 88%  103M 0s
+  2950K .......... .......... .......... .......... .......... 89%  102M 0s
+  3000K .......... .......... .......... .......... .......... 91% 6.61M 0s
+  3050K .......... .......... .......... .......... .......... 92% 38.2M 0s
+  3100K .......... .......... .......... .......... .......... 94% 64.4M 0s
+  3150K .......... .......... .......... .......... .......... 95% 48.0M 0s
+  3200K .......... .......... .......... .......... .......... 97%  109M 0s
+  3250K .......... .......... .......... .......... .......... 98%  111M 0s
+  3300K .......... .......... .......... .......... ....      100% 7.59M=0.1s
+
+2013-11-25 13:13:46 (28.2 MB/s) - `ocamlnet.3.7.3+opam.tar.gz' saved [3424594/3424594]
+
+Building ocamlnet.3.7.3:
+  ./configure -bindir /home/opam/.opam/4.02.0dev+module-aliases/bin -disable-pcre -disable-gtk2 -disable-ssl -disable-zip -disable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Welcome to Ocamlnet version 3.7.3
+Checking operating system... Linux
+Checking for findlib... found
+Checking multi-threading support... posix (ok)
+Checking word size... 64 bit
+Checking endianess... little
+Checking for GPROF... found
+Checking for win32... no
+Checking whether Ocaml has Printexc.register_printer... found
+Checking for POSIX pthread... found
+Checking whether Ocaml has fancy page tables... found
+Checking on new implementation of caml_modify... found
+Checking whether new caml_modify can be overridden... found
+Checking whether out-of-heap values are supported and mutable... yes
+Checking for POSIX shared memory... found
+Checking for POSIX semaphores (anonymous)... found
+Checking for POSIX semaphores (named)... found
+Checking for POSIX spawn... found
+Checking for POSIX fadvise... found
+Checking for POSIX fallocate... found
+Checking for POSIX memalign... found
+Checking for syslog... found
+Checking for POSIX functions like openat... found
+Checking for fchdir... found
+Checking for fdopendir... found
+Checking for realpath... found
+Checking for grantpt (System V style PTYs)... found
+Checking for posix_openpt (System V style PTYs)... found
+Checking for initgroups...found
+Checking for POSIX clocks...found
+Checking for POSIX timers...found
+Checking for eventfd (Linux)...found
+Checking for timerfd (Linux)...found
+Checking for epoll (Linux)...found
+Checking for compare_and_swap (GCC)...found
+Checking for GPROF... found
+Checking for O_SHARE_DELETE... yes
+Checking for O_CLOEXEC... yes
+Checking for getpeereid... not found
+Checking for getpeerucred... not found
+Checking whether netcamlbox and netmulticore are supported... yes
+Preprocessor for ocamlrpcgen: cpp
+
+Effective options:
+    -disable-pcre
+    -disable-full-pcre
+    -disable-gtk
+    -disable-gtk2
+    -disable-tcl
+    -disable-ssl
+    -disable-zip
+    -disable-crypto
+    -disable-apache
+    -with-nethttpd
+    -without-rpc-auth-dh
+    -bindir /home/opam/.opam/4.02.0dev+module-aliases/bin
+    -datadir /home/opam/.opam/4.02.0dev+module-aliases/lib/netstring
+    -cpp cpp
+
+Writing Makefile.conf
+
+Please check Makefile.conf.
+
+You can now compile Ocamlnet by invoking
+   make all
+for the bytecode compiler, and optionally by invoking
+   make opt
+for the native-code compiler (if supported on your architecture).
+Finally, a
+   make install
+will install the package(s).
+for pkg in netsys netshm netstring equeue shell netgssapi rpc-generator rpc rpc-auth-local pop smtp netclient netcgi2 netplex netcgi2-plex netcamlbox netmulticore nethttpd nethttpd-for-netcgi2; do \
+		( cd src/$pkg && make -f Makefile.pre generate ) || exit; \
+		( cd src/$pkg && make -f Makefile.pre depend ) || exit; \
+		( cd src/$pkg && make all ) || exit; \
+	done
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+sed -e 's/@VERSION@/3.7.3/' \
+	    -e 's/@AUTHDHREQS@//' \
+	    -e 's/@PREFERRED_CGI_PKG@//' \
+	    -e 's/@REGEXP_PROVIDER@/str/' \
+	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+ 	    -e 's/@ZIP_PROVIDER@//' \
+		META.in >META
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+ocamlfind ocamldep -package "camlp4.macro" -syntax camlp4o  *.ml *.mli >depend || { rm -f depend; exit 1; }
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_conf.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_types.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_types.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netlog.mli
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_posix.mli
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_oothr.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netlog.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netexn.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netexn.ml
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_impl_util.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_signal.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_signal.ml
+ocamlfind ocamlc -g   -package "unix unix"  -c -package "camlp4.macro" -syntax camlp4o -ppopt "-D HAVE_O_SHARE_DELETE" -ppopt "-D HAVE_O_CLOEXEC" netsys_posix.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_win32.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_win32.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_rng.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_rng.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_pollset.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_pollset.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_pollset_posix.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_pollset_posix.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_pollset_win32.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_pollset_win32.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_pollset_generic.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_pollset_generic.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_mem.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_mem.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_xdr.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_xdr.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_tmp.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_tmp.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_sem.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_sem.ml
+ocamlfind ocamlc -g   -package "unix unix" -c  netsys_pmanage.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_pmanage.ml
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c.c'
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_poll.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_poll.c'
+netsys_c_poll.c: In function 'netsys_interrupt_aggreg':
+netsys_c_poll.c:394:6: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+netsys_c_poll.c: In function 'netsys_poll_event_sources':
+netsys_c_poll.c:467:10: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_fadvise.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_fadvise.c'
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_fallocate.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_fallocate.c'
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_ioprio.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_ioprio.c'
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_locale.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_locale.c'
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_multicast.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_multicast.c'
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_sem.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_sem.c'
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_shm.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_shm.c'
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_spawn.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_spawn.c'
+netsys_c_spawn.c: In function 'netsys_spawn_nat':
+netsys_c_spawn.c:89:19: warning: variable 'fd1_flags' set but not used [-Wunused-but-set-variable]
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_subprocess.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_subprocess.c'
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_syslog.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_syslog.c'
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_clock.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_clock.c'
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_event.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_event.c'
+netsys_c_event.c: In function 'netsys_not_event_signal':
+netsys_c_event.c:90:7: warning: variable 'code' set but not used [-Wunused-but-set-variable]
+netsys_c_event.c:148:7: warning: variable 'code' set but not used [-Wunused-but-set-variable]
+netsys_c_event.c:76:19: warning: unused variable 'oldset' [-Wunused-variable]
+netsys_c_event.c:76:14: warning: unused variable 'set' [-Wunused-variable]
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_win32.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_win32.c'
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_htab.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_htab.c'
+netsys_c_htab.c: In function 'netsys_htab_clear':
+netsys_c_htab.c:108:19: warning: unused variable 'k' [-Wunused-variable]
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_queue.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_queue.c'
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_mem.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_mem.c'
+netsys_c_mem.c: In function 'netsys_value_area_remove':
+netsys_c_mem.c:558:9: warning: variable 'code' set but not used [-Wunused-but-set-variable]
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_xdr.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_xdr.c'
+if [ "Xnetsys_c.o netsys_c_poll.o netsys_c_fadvise.o netsys_c_fallocate.o netsys_c_ioprio.o netsys_c_locale.o netsys_c_multicast.o netsys_c_sem.o netsys_c_shm.o netsys_c_spawn.o netsys_c_subprocess.o netsys_c_syslog.o netsys_c_clock.o netsys_c_event.o netsys_c_win32.o netsys_c_htab.o netsys_c_queue.o netsys_c_mem.o netsys_c_xdr.o" = "X" ]; then \
+		ocamlfind ocamlc -g   -package "unix unix"  -a -o netsys.cma  netsys_conf.cmo netsys_types.cmo netlog.cmo netexn.cmo netsys_impl_util.cmo netsys_signal.cmo netsys_posix.cmo netsys_win32.cmo netsys.cmo netsys_rng.cmo netsys_pollset.cmo netsys_pollset_posix.cmo netsys_pollset_win32.cmo netsys_pollset_generic.cmo netsys_mem.cmo netsys_xdr.cmo netsys_tmp.cmo netsys_sem.cmo netsys_pmanage.cmo; \
+	else \
+		../../tools/mkstublib -o netsys netsys_conf.cmo netsys_types.cmo netlog.cmo netexn.cmo netsys_impl_util.cmo netsys_signal.cmo netsys_posix.cmo netsys_win32.cmo netsys.cmo netsys_rng.cmo netsys_pollset.cmo netsys_pollset_posix.cmo netsys_pollset_win32.cmo netsys_pollset_generic.cmo netsys_mem.cmo netsys_xdr.cmo netsys_tmp.cmo netsys_sem.cmo netsys_pmanage.cmo netsys_c.o netsys_c_poll.o netsys_c_fadvise.o netsys_c_fallocate.o netsys_c_ioprio.o netsys_c_locale.o netsys_c_multicast.o netsys_c_sem.o netsys_c_shm.o netsys_c_spawn.o netsys_c_subprocess.o netsys_c_syslog.o netsys_c_clock.o netsys_c_event.o netsys_c_win32.o netsys_c_htab.o netsys_c_queue.o netsys_c_mem.o netsys_c_xdr.o -lrt -lpthread ; \
+	fi
+ocamlfind ocamlc -g   -package "unix unix"  -c  netsys_oothr.ml
+ocamlfind ocamlc -g   -package "unix unix"  -o netsys_oothr.cma -a netsys_oothr.cmo
+../../tools/stubcc -ocamlc ocamlc -ccopt -O   netsys_c_outofheap.c
++ gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC -c  -O  -I'/home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml' 'netsys_c_outofheap.c'
+ocamlfind ocamlc -g   -package "unix unix" -c -thread netsys_oothr_mt.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c -thread netsys_oothr_mt.ml
+ocamlfind ocamlc -g   -package "unix unix"  -o netsys_oothr_mt.cma -a \
+		netsys_oothr.cmo netsys_oothr_mt.cmo
+ocamlfind ocamlc -g   -package "unix unix" -c -thread netsys_oothr_mt_init.mli
+ocamlfind ocamlc -g   -package "unix unix"  -c -thread netsys_oothr_mt_init.ml
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netsys'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netshm'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netshm'
+sed -e 's/@VERSION@/3.7.3/' \
+	    -e 's/@AUTHDHREQS@//' \
+	    -e 's/@PREFERRED_CGI_PKG@//' \
+	    -e 's/@REGEXP_PROVIDER@/str/' \
+	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+ 	    -e 's/@ZIP_PROVIDER@//' \
+		META.in >META
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netshm'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netshm'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netshm'
+ocamlfind ocamldep   *.ml *.mli >depend || { rm -f depend; exit 1; }
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netshm'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netshm'
+ocamlfind ocamlc -g  -I ../../src/netsys -package "unix" -c  netshm.mli
+ocamlfind ocamlc -g  -I ../../src/netsys -package "unix"  -c  netshm.ml
+ocamlfind ocamlc -g  -I ../../src/netsys -package "unix" -c  netshm_data.mli
+ocamlfind ocamlc -g  -I ../../src/netsys -package "unix"  -c  netshm_data.ml
+ocamlfind ocamlc -g  -I ../../src/netsys -package "unix" -c  netshm_hashtbl.mli
+ocamlfind ocamlc -g  -I ../../src/netsys -package "unix"  -c  netshm_hashtbl.ml
+ocamlfind ocamlc -g  -I ../../src/netsys -package "unix" -c  netshm_array.mli
+ocamlfind ocamlc -g  -I ../../src/netsys -package "unix"  -c  netshm_array.ml
+if [ "X" = "X" ]; then \
+		ocamlfind ocamlc -g  -I ../../src/netsys -package "unix"  -a -o netshm.cma  netshm.cmo netshm_data.cmo netshm_hashtbl.cmo netshm_array.cmo; \
+	else \
+		../../tools/mkstublib -o netshm netshm.cmo netshm_data.cmo netshm_hashtbl.cmo netshm_array.cmo  ; \
+	fi
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netshm'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring'
+camlp4 pa_o.cmo pa_op.cmo pr_o.cmo -impl netdate.mlp > netdate.ml
+ocamlfind ocamlc -g  -I ../../src/netsys -I ../netstring-pcre -package "str bigarray unix" -c  netdb.mli
+sed -e 's|@NET_DB_DIR@|/home/opam/.opam/4.02.0dev+module-aliases/lib/netstring|' netdb.mlp >netdb.ml
+sed -e 's/@VERSION@/3.7.3/' netconst.mlp >netconst.ml
+ocamllex netglob_lex.mll
+69 states, 297 transitions, table size 1602 bytes
+camlp4  pa_o.cmo pa_op.cmo pr_o.cmo \
+	    -parser Camlp4MacroParser -DWORDSIZE_64 -DHOST_IS_LITTLE_ENDIAN -DUSE_NETSYS_XDR \
+	    -impl netnumber.mlp > netnumber.ml || rm -f netnumber.ml
+ocaml ../../tools/unicode_charinfo.ml unicode_charinfo.txt \
+		> netunichar.ml
+camlp4  pa_o.cmo pa_op.cmo pr_o.cmo \
+	    -parser Camlp4MacroParser -D ENABLE_STR_EXTERNALS \
+	    -impl netstring_str.mlp > netstring_str.ml || \
+	      rm -f netstring_str.ml
+cd tools && make
+make[3]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring/tools'
+cd unimap_to_ocaml && make unimap_to_ocaml
+make[4]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring/tools/unimap_to_ocaml'
+ocamlfind ocamlc -g -package str -linkpkg \
+		-o unimap_to_ocaml \
+		unimap_to_ocaml.ml
+make[4]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring/tools/unimap_to_ocaml'
+make[3]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring/tools'
+touch tools_done
+test ! -d mappings || tools/unimap_to_ocaml/unimap_to_ocaml \
+		-o netmappings_iso.pmap -pmap mappings/iso*.unimap
+test ! -d mappings || tools/unimap_to_ocaml/unimap_to_ocaml \
+		-o netmappings_other.pmap -pmap mappings/cp*.unimap mappings/adobe*.unimap mappings/koi*.unimap mappings/mac*.unimap mappings/windows*.unimap
+test ! -d mappings || tools/unimap_to_ocaml/unimap_to_ocaml \
+		-o netmappings_jp.pmap -pmap mappings/jis*.*map
+test ! -d mappings || tools/unimap_to_ocaml/unimap_to_ocaml \
+		-o netmappings_kr.pmap -pmap mappings/ks*.*map
+mkdir -p netdb
+cd netdb && \
+		../tools/unimap_to_ocaml/unimap_to_ocaml -netdb ../*.pmap
+Reading ../netmappings_iso.pmap
+Reading ../netmappings_jp.pmap
+Reading ../netmappings_kr.pmap
+Reading ../netmappings_other.pmap
+Processing iso88599
+   (Heavy conflicts: 0 of 256)
+Processing iso88598
+   (Heavy conflicts: 0 of 256)
+Processing iso88597
+   (Heavy conflicts: 0 of 256)
+Processing iso88596
+   (Heavy conflicts: 0 of 256)
+Processing iso88595
+   (Heavy conflicts: 1 of 256)
+Processing iso88594
+   (Heavy conflicts: 0 of 256)
+Processing iso88593
+   (Heavy conflicts: 0 of 256)
+Processing iso88592
+   (Heavy conflicts: 0 of 256)
+Processing iso88591
+   (Heavy conflicts: 0 of 256)
+Processing iso885916
+   (Heavy conflicts: 2 of 256)
+Processing iso885915
+   (Heavy conflicts: 0 of 256)
+Processing iso885914
+   (Heavy conflicts: 2 of 256)
+Processing iso885913
+   (Heavy conflicts: 1 of 256)
+Processing iso885911
+   (Heavy conflicts: 0 of 256)
+Processing iso885910
+   (Heavy conflicts: 0 of 256)
+Processing jis0212
+   (Heavy conflicts: 132 of 8192)
+Processing jis0208
+   (Heavy conflicts: 182 of 8192)
+Processing jis0201
+   (Heavy conflicts: 0 of 256)
+Processing ks1001
+   (Heavy conflicts: 70 of 16384)
+Processing windows1258
+   (Heavy conflicts: 2 of 256)
+Processing windows1257
+   (Heavy conflicts: 4 of 256)
+Processing windows1256
+   (Heavy conflicts: 8 of 256)
+Processing windows1255
+   (Heavy conflicts: 1 of 256)
+Processing windows1254
+   (Heavy conflicts: 3 of 256)
+Processing windows1253
+   (Heavy conflicts: 2 of 256)
+Processing windows1252
+   (Heavy conflicts: 1 of 256)
+Processing windows1251
+   (Heavy conflicts: 16 of 256)
+Processing windows1250
+   (Heavy conflicts: 6 of 256)
+Processing macroman
+   (Heavy conflicts: 1 of 256)
+Processing koi8r
+   (Heavy conflicts: 16 of 256)
+Processing adobe_zapf_dingbats_encoding
+   (Heavy conflicts: 3 of 256)
+Processing adobe_symbol_encoding
+   (Heavy conflicts: 3 of 256)
+Processing adobe_standard_encoding
+   (Heavy conflicts: 0 of 256)
+Processing cp875
+   (Heavy conflicts: 0 of 256)
+Processing cp874
+   (Heavy conflicts: 8 of 256)
+Processing cp869
+   (Heavy conflicts: 2 of 256)
+Processing cp866
+   (Heavy conflicts: 15 of 256)
+Processing cp865
+   (Heavy conflicts: 4 of 256)
+Processing cp864
+   (Heavy conflicts: 1 of 256)
+Processing cp863
+   (Heavy conflicts: 4 of 256)
+Processing cp862
+   (Heavy conflicts: 4 of 256)
+Processing cp861
+   (Heavy conflicts: 4 of 256)
+Processing cp860
+   (Heavy conflicts: 3 of 256)
+Processing cp857
+   (Heavy conflicts: 0 of 256)
+Processing cp856
+   (Heavy conflicts: 0 of 256)
+Processing cp855
+   (Heavy conflicts: 15 of 256)
+Processing cp852
+   (Heavy conflicts: 10 of 256)
+Processing cp850
+   (Heavy conflicts: 0 of 256)
+Processing cp775
+   (Heavy conflicts: 9 of 256)
+Processing cp737
+   (Heavy conflicts: 3 of 256)
+Processing cp500
+   (Heavy conflicts: 0 of 256)
+Processing cp437
+   (Heavy conflicts: 4 of 256)
+Processing cp424
+   (Heavy conflicts: 0 of 256)
+Processing cp1047
+   (Heavy conflicts: 0 of 256)
+Processing cp1026
+   (Heavy conflicts: 0 of 256)
+Processing cp1006
+   (Heavy conflicts: 2 of 256)
+Processing cp037
+   (Heavy conflicts: 0 of 256)
+touch netdb_done
+test -d netdb
+(cd netdb && ls *.netdb) | \
+	{ while read f; do echo "/home/opam/.opam/4.02.0dev+module-aliases/lib/netstring/$f"; done; } >netdb-packlist
+sed -e 's/@VERSION@/3.7.3/' \
+	    -e 's/@AUTHDHREQS@//' \
+	    -e 's/@PREFERRED_CGI_PKG@//' \
+	    -e 's/@REGEXP_PROVIDER@/str/' \
+	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+ 	    -e 's/@ZIP_PROVIDER@//' \
+		META.in >META
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring'
+ocamlfind ocamldep   *.ml *.mli >depend || { rm -f depend; exit 1; }
+File "netencoding.mli", line 117, characters 1-3:
+Error: This comment contains an unterminated string literal
+make[1]: *** [depend] Error 1
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring'
+make: *** [all] Error 2
+[ERROR] The compilation of ocamlnet.3.7.3 failed.
+Removing ocamlnet.3.7.3.
+  ocamlfind remove equeue
+  ocamlfind remove netcamlbox
+  ocamlfind remove netcgi2
+  ocamlfind remove netcgi2-plex
+  ocamlfind remove netclient
+  ocamlfind remove netgssapi
+  ocamlfind remove nethttpd
+  ocamlfind remove nethttpd-for-netcgi2
+  ocamlfind remove netmulticore
+  ocamlfind remove netplex
+  ocamlfind remove netshm
+  ocamlfind remove netstring
+  ocamlfind remove netsys
+  ocamlfind remove pop
+  ocamlfind remove rpc
+  ocamlfind remove rpc-auth-local
+  ocamlfind remove rpc-generator
+  ocamlfind remove shell
+  ocamlfind remove smtp
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/equeue
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netcamlbox
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netcgi2
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netcgi2-plex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netclient
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netgssapi
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/nethttpd
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/nethttpd-for-netcgi2
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netmulticore
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netplex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netshm
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netstring
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/netsys
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/pop
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/rpc
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/rpc-auth-local
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/rpc-generator
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/shell
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/smtp
+
+=-=-= Installing ulex.1.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ulex.1.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ulex.1.1+opam.tar.gz
+--2013-11-25 13:14:13--  https://opam.ocaml.org/archives/ulex.1.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20380 (20K) [application/octet-stream]
+Saving to: `ulex.1.1+opam.tar.gz'
+
+     0K .......... .........                                  100% 53.7M=0s
+
+2013-11-25 13:14:13 (53.7 MB/s) - `ulex.1.1+opam.tar.gz' saved [20380/20380]
+
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma
+ocamlfind ocamlc unix.cma -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cma -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmo -o myocamlbuild
+ocamlfind ocamldep -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
+ocamlfind ocamldep -modules cset.ml > cset.ml.depends
+ocamlfind ocamldep -modules ulex.mli > ulex.mli.depends
+ocamlfind ocamlc -c -o cset.cmo cset.ml
+ocamlfind ocamlc -c -o ulex.cmi ulex.mli
+ocamlfind ocamlc -c -I +camlp4 -pp camlp4orf -o pa_ulex.cmo pa_ulex.ml
+ocamlfind ocamldep -modules ulex.ml > ulex.ml.depends
+ocamlfind ocamlc -c -o ulex.cmo ulex.ml
+ocamlfind ocamlc -a cset.cmo ulex.cmo pa_ulex.cmo -o pa_ulex.cma
+ocamlfind ocamldep -modules ulexing.mli > ulexing.mli.depends
+ocamlfind ocamlc -c -o ulexing.cmi ulexing.mli
+ocamlfind ocamldep -modules ulexing.ml > ulexing.ml.depends
+ocamlfind ocamldep -modules utf8.mli > utf8.mli.depends
+ocamlfind ocamlc -c -o utf8.cmi utf8.mli
+ocamlfind ocamlc -c -o ulexing.cmo ulexing.ml
+ocamlfind ocamldep -modules utf8.ml > utf8.ml.depends
+ocamlfind ocamlc -c -o utf8.cmo utf8.ml
++ ocamlfind ocamlc -c -o utf8.cmo utf8.ml
+File "utf8.ml", line 113, characters 20-21:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+ocamlfind ocamlc -a utf8.cmo ulexing.cmo -o ulexing.cma
+ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma pa_ulex.cmxa ulexing.cmxa
+ocamlfind ocamlopt -c -o cset.cmx cset.ml
+ocamlfind ocamlopt -c -o ulex.cmx ulex.ml
+ocamlfind ocamlopt -c -I +camlp4 -pp camlp4orf -o pa_ulex.cmx pa_ulex.ml
+ocamlfind ocamlopt -a cset.cmx ulex.cmx pa_ulex.cmx -o pa_ulex.cmxa
+ocamlfind ocamlopt -c -o utf8.cmx utf8.ml
++ ocamlfind ocamlopt -c -o utf8.cmx utf8.ml
+File "utf8.ml", line 113, characters 20-21:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+ocamlfind ocamlopt -c -o ulexing.cmx ulexing.ml
+ocamlfind ocamlopt -a utf8.cmx ulexing.cmx -o ulexing.cmxa
+ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma
+cd _build && make -f ../Makefile realinstall
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ulex.1.1/_build'
+ocamlfind install ulex ../META ulexing.mli utf8.mli ulexing.cmi utf8.cmi ulexing.cmx utf8.cmx pa_ulex.cma ulexing.a ulexing.cma ulexing.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ulex/ulexing.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ulex/ulexing.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ulex/ulexing.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ulex/pa_ulex.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ulex/utf8.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ulex/ulexing.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ulex/utf8.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ulex/ulexing.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ulex/utf8.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ulex/ulexing.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ulex/META
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ulex.1.1/_build'
+Installing ulex.1.1.
+
+=-=-= Installing xstrp4.1.8 =-=-=
+default    Downloading https://opam.ocaml.org/archives/xstrp4.1.8+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/xstrp4.1.8+opam.tar.gz
+--2013-11-25 13:14:23--  https://opam.ocaml.org/archives/xstrp4.1.8+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7511 (7.3K) [application/octet-stream]
+Saving to: `xstrp4.1.8+opam.tar.gz'
+
+     0K .......                                               100% 2.19G=0s
+
+2013-11-25 13:14:23 (2.19 GB/s) - `xstrp4.1.8+opam.tar.gz' saved [7511/7511]
+
+Building xstrp4.1.8:
+  ./configure
+  make all
+  make install
+Welcome to Xstrp4 version 1.8
+Checking for findlib... found
+Checking for camlp4... 3.10 style
+Writing Makefile.conf
+
+Please check Makefile.conf.
+
+You can now compile Xstrp4 by invoking
+   make all
+for the bytecode compiler, and optionally by invoking
+   make opt
+for the native-code compiler (if supported on your architecture).
+Finally, a
+   make install
+will install the package(s).
+ocamlfind ocamlc  -package camlp4 -syntax camlp4o -ppopt pa_extend.cmo -ppopt q_MLast.cmo -c xstrp4_here_types.ml
+ocamllex xstrp4_here_lexer.mll
+33 states, 1200 transitions, table size 4998 bytes
+2016 additional bytes used for bindings
+ocamlfind ocamlc  -package camlp4 -syntax camlp4o -ppopt pa_extend.cmo -ppopt q_MLast.cmo -c xstrp4_here_lexer.ml
+ocamlfind ocamlc  -package camlp4 -syntax camlp4o -ppopt pa_extend.cmo -ppopt q_MLast.cmo -c xstrp4_here.ml
+ocamlfind ocamlc  -package camlp4 -syntax camlp4o -ppopt pa_extend.cmo -ppopt q_MLast.cmo -a -o xstrp4.cma xstrp4_here_types.cmo xstrp4_here_lexer.cmo xstrp4_here.cmo
+rm xstrp4_here_lexer.ml
+ocamlfind install xstrp4 *.cmi *.cma META
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/xstrp4/xstrp4.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/xstrp4/xstrp4_here_types.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/xstrp4/xstrp4_here_lexer.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/xstrp4/xstrp4_here.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/xstrp4/META
+Installing xstrp4.1.8.
+
+[ERROR] Due to some errors while processing ocamlnet.3.7.3, the following actions will NOT proceed:
+ - install blahcaml.2.1
+ - install pxp.1.2.3
+
+===== ERROR while installing ocamlnet.3.7.3 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3
+# compiler             4.02.0dev+module-aliases
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/ocamlnet-19-d8a4ae.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/ocamlnet-19-d8a4ae.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/ocamlnet-19-d8a4ae.err
+### stdout ###
+# ...[truncated]
+# 	    -e 's/@PREFERRED_CGI_PKG@//' \
+# 	    -e 's/@REGEXP_PROVIDER@/str/' \
+# 	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+#  	    -e 's/@ZIP_PROVIDER@//' \
+# 		META.in >META
+# make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring'
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring'
+# make[1]: Entering directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring'
+# ocamlfind ocamldep   *.ml *.mli >depend || { rm -f depend; exit 1; }
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+module-aliases/build/ocamlnet.3.7.3/src/netstring'
+### stderr ###
+# ...[truncated]
+# Processing cp1026
+#    (Heavy conflicts: 0 of 256)
+# Processing cp1006
+#    (Heavy conflicts: 2 of 256)
+# Processing cp037
+#    (Heavy conflicts: 0 of 256)
+# File "netencoding.mli", line 117, characters 1-3:
+# Error: This comment contains an unterminated string literal
+# make[1]: *** [depend] Error 1
+# make: *** [all] Error 2
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+module-aliases/backup/state-20131025131336.export"
+'opam install blahcaml' failed.
