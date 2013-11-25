@@ -1,0 +1,504 @@
+++ opam install packet -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install packet
+The following actions will be performed:
+ - install optcomp.1.4 [required by packet]
+ - install ocplib-endian.0.4 [required by packet]
+ - install cstruct.0.8.1 [required by packet]
+ - install packet.0.1.1
+4 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing optcomp.1.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/optcomp.1.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/optcomp.1.4+opam.tar.gz
+--2013-11-25 21:53:07--  https://opam.ocaml.org/archives/optcomp.1.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 54004 (53K) [application/octet-stream]
+Saving to: `optcomp.1.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 94% 31.3M 0s
+    50K ..                                                    100% 5223G=0.002s
+
+2013-11-25 21:53:08 (33.0 MB/s) - `optcomp.1.4+opam.tar.gz' saved [54004/54004]
+
+Building optcomp.1.4:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  make
+  make install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ optcomp
+Package version: ..................................... 1.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+module-aliases
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_camlp4: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_quotations_o: ............................. /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_lib: ...................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocaml setup.ml -build 
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -modules src/pa_optcomp.mli > src/pa_optcomp.mli.depends
+ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/pa_optcomp.cmi src/pa_optcomp.mli
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -modules src/pa_optcomp.ml > src/pa_optcomp.ml.depends
+ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -I src -o src/pa_optcomp.cmo src/pa_optcomp.ml
++ ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -I src -o src/pa_optcomp.cmo src/pa_optcomp.ml
+File "src/pa_optcomp.ml", line 291, characters 50-52:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlc -a src/pa_optcomp.cmo -o src/optcomp.cma
+ocamlfind ocamlopt -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -I src -o src/pa_optcomp.cmx src/pa_optcomp.ml
++ ocamlfind ocamlopt -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -I src -o src/pa_optcomp.cmx src/pa_optcomp.ml
+File "src/pa_optcomp.ml", line 291, characters 50-52:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlopt -a src/pa_optcomp.cmx -o src/optcomp.cmxa
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -modules src/optcomp.ml > src/optcomp.ml.depends
+ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp.cmo src/optcomp.ml
+ocamlfind ocamlopt -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp.cmx src/optcomp.ml
+ocamlfind ocamlopt -shared src/optcomp.cmx -o src/optcomp.cmxs
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -modules src/optcomp_o.ml > src/optcomp_o.ml.depends
+ocamlfind ocamlc -c -I +camlp4 -I +camlp4/Camlp4Parsers -I +camlp4/Camlp4Printers -I +camlp4/Camlp4Filters -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp_o.cmo src/optcomp_o.ml
+ocamlfind ocamlopt -c -I +camlp4 -I +camlp4/Camlp4Parsers -I +camlp4/Camlp4Printers -I +camlp4/Camlp4Filters -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp_o.cmx src/optcomp_o.ml
+ocamlfind ocamlopt -linkpkg -I +camlp4 camlp4fulllib.cmxa -g -linkpkg -package camlp4 -package camlp4.lib -package camlp4.quotations.o src/optcomp.cmxa src/optcomp.cmx src/optcomp_o.cmx -o src/optcomp_o.native
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -modules src/optcomp_r.ml > src/optcomp_r.ml.depends
+ocamlfind ocamlc -c -I +camlp4 -I +camlp4/Camlp4Parsers -I +camlp4/Camlp4Printers -I +camlp4/Camlp4Filters -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp_r.cmo src/optcomp_r.ml
+ocamlfind ocamlopt -c -I +camlp4 -I +camlp4/Camlp4Parsers -I +camlp4/Camlp4Printers -I +camlp4/Camlp4Filters -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp_r.cmx src/optcomp_r.ml
+ocamlfind ocamlopt -linkpkg -I +camlp4 camlp4fulllib.cmxa -g -linkpkg -package camlp4 -package camlp4.lib -package camlp4.quotations.o src/optcomp.cmxa src/optcomp.cmx src/optcomp_r.cmx -o src/optcomp_r.native
+ocaml setup.ml -install 
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/pa_optcomp.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/optcomp.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/optcomp.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/optcomp.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/optcomp.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/pa_optcomp.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/pa_optcomp.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp/META
+Installing optcomp.1.4.
+
+=-=-= Installing ocplib-endian.0.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocplib-endian.0.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocplib-endian.0.4+opam.tar.gz
+--2013-11-25 21:53:23--  https://opam.ocaml.org/archives/ocplib-endian.0.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 53848 (53K) [application/octet-stream]
+Saving to: `ocplib-endian.0.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 95% 29.0M 0s
+    50K ..                                                    100% 4932G=0.002s
+
+2013-11-25 21:53:23 (30.5 MB/s) - `ocplib-endian.0.4+opam.tar.gz' saved [53848/53848]
+
+Building ocplib-endian.0.4:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.0dev+module-aliases
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ ocplib-endian
+Package version: ..................................... 0.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+module-aliases
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ false
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_optcomp: ......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/optcomp
+pkg_bigarray: ........................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+File "_tags", line 6, characters 18-32:
+Warning: the tag "include_common" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 7, characters 25-36:
+Warning: the tag "include_401" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 7, characters 12-23:
+Warning: the tag "include_400" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamldep -package optcomp -package bigarray -modules src/endianString.mli > src/endianString.mli.depends
+ocamlfind ocamlc -c -package optcomp -package bigarray -I src -o src/endianString.cmi src/endianString.mli
+ocamlfind ocamldep -package optcomp -package camlp4 -package bigarray -syntax camlp4o -modules src/endianString.ml > src/endianString.ml.depends
+ocamlfind ocamlc -c -package optcomp -package camlp4 -package bigarray -syntax camlp4o -I src -o src/endianString.cmo src/endianString.ml
+ocamlfind ocamlc -a src/endianString.cmo -o src/ocplib_endian.cma
+ocamlfind ocamlopt -c -package optcomp -package camlp4 -package bigarray -syntax camlp4o -inline 1000 -I src -o src/endianString.cmx src/endianString.ml
+ocamlfind ocamlopt -a src/endianString.cmx -o src/ocplib_endian.cmxa
+ocamlfind ocamlopt -shared -linkall src/ocplib_endian.cmxa -o src/ocplib_endian.cmxs
+ocamlfind ocamldep -package optcomp -package bigarray -modules src/endianBigstring.mli > src/endianBigstring.mli.depends
+ocamlfind ocamlc -c -package optcomp -package bigarray -I src -o src/endianBigstring.cmi src/endianBigstring.mli
+ocamlfind ocamldep -package optcomp -package camlp4 -package bigarray -syntax camlp4o -modules src/endianBigstring.ml > src/endianBigstring.ml.depends
+ocamlfind ocamlc -c -package optcomp -package camlp4 -package bigarray -syntax camlp4o -I src -o src/endianBigstring.cmo src/endianBigstring.ml
+ocamlfind ocamlc -a src/endianBigstring.cmo -o src/bigstring.cma
+ocamlfind ocamlopt -c -package optcomp -package camlp4 -package bigarray -syntax camlp4o -inline 1000 -I src -o src/endianBigstring.cmx src/endianBigstring.ml
+ocamlfind ocamlopt -a src/endianBigstring.cmx -o src/bigstring.cmxa
+ocamlfind ocamlopt -shared -linkall src/bigstring.cmxa -o src/bigstring.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/endianString.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/ocplib_endian.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/ocplib_endian.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/ocplib_endian.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/ocplib_endian.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/endianString.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/endianString.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/endianBigstring.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/bigstring.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/bigstring.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/bigstring.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/bigstring.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/endianBigstring.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/endianBigstring.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian/META
+Installing ocplib-endian.0.4.
+
+=-=-= Installing cstruct.0.8.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/cstruct.0.8.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/cstruct.0.8.1+opam.tar.gz
+--2013-11-25 21:53:35--  https://opam.ocaml.org/archives/cstruct.0.8.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 229908 (225K) [application/octet-stream]
+Saving to: `cstruct.0.8.1+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 22% 32.1M 0s
+    50K .......... .......... .......... .......... .......... 44% 32.9M 0s
+   100K .......... .......... .......... .......... .......... 66% 28.8M 0s
+   150K .......... .......... .......... .......... .......... 89% 28.6M 0s
+   200K .......... .......... ....                            100% 52.6M=0.007s
+
+2013-11-25 21:53:35 (31.9 MB/s) - `cstruct.0.8.1+opam.tar.gz' saved [229908/229908]
+
+Building cstruct.0.8.1:
+  make
+  make install
+ocaml setup.ml -configure --disable-lwt --enable-unix --disable-async
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ cstruct
+Package version: ..................................... 0.8.1
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+build the Lwt library: ............................... false
+build the Async_unix library: ........................ false
+build the UNIX library: .............................. true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_bigarray: ........................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_ocplib_endian: ................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian
+pkg_ocplib_endian_bigstring: ......................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocplib-endian
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+pkg_camlp4_lib: ...................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_quotations_r: ............................. /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+pkg_camlp4_extend: ................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/camlp4
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+
+ocaml setup.ml -build -j 4
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+File "_tags", line 33, characters 18-27:
+Warning: the tag "pkg_async" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 41, characters 16-28:
+Warning: the tag "pkg_lwt.unix" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 59, characters 48-66:
+Warning: the tag "pkg_cstruct.syntax" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamlc -ccopt -O3 -c lib/cstruct_stubs.c
+mv cstruct_stubs.o lib/cstruct_stubs.o
+/home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlmklib -o lib/cstruct_stubs lib/cstruct_stubs.o
+ocamlfind ocamldep -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -modules lib/cstruct.mli > lib/cstruct.mli.depends
+ocamlfind ocamlc -c -g -annot -ccopt -O3 -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -I lib -I lwt -I async -I unix -o lib/cstruct.cmi lib/cstruct.mli
+ocamlfind ocamldep -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -modules lib/cstruct.ml > lib/cstruct.ml.depends
+ocamlfind ocamlc -c -g -annot -ccopt -O3 -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -I lib -I lwt -I async -I unix -o lib/cstruct.cmo lib/cstruct.ml
+ocamlfind ocamlc -a -dllib -lcstruct_stubs -cclib -lcstruct_stubs lib/cstruct.cmo -o lib/cstruct.cma
+ocamlfind ocamlopt -c -g -annot -ccopt -O3 -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -inline 10 -I lib -I lwt -I async -I unix -o lib/cstruct.cmx lib/cstruct.ml
+ocamlfind ocamlopt -a -cclib -lcstruct_stubs lib/cstruct.cmx -o lib/cstruct.cmxa
+ocamlfind ocamlopt -shared -I lib/ lib/cstruct.cmx -o lib/cstruct.cmxs
+ocamlfind ocamldep -package unix -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -modules unix/unix_cstruct.mli > unix/unix_cstruct.mli.depends
+ocamlfind ocamlc -c -g -annot -I lib -package unix -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -I unix -I lib -I lwt -I async -o unix/unix_cstruct.cmi unix/unix_cstruct.mli
+ocamlfind ocamldep -package unix -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -modules unix/unix_cstruct.ml > unix/unix_cstruct.ml.depends
+ocamlfind ocamlc -c -g -annot -I lib -package unix -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -I unix -I lib -I lwt -I async -o unix/unix_cstruct.cmo unix/unix_cstruct.ml
+ocamlfind ocamlc -a unix/unix_cstruct.cmo -o unix/unix_cstruct.cma
+ocamlfind ocamlopt -c -g -annot -I lib -package unix -package ocplib-endian.bigstring -package ocplib-endian -package bigarray -inline 10 -I unix -I lib -I lwt -I async -o unix/unix_cstruct.cmx unix/unix_cstruct.ml
+ocamlfind ocamlopt -a unix/unix_cstruct.cmx -o unix/unix_cstruct.cmxa
+ocamlfind ocamlopt -shared unix/unix_cstruct.cmx -o unix/unix_cstruct.cmxs
+ocamlfind ocamldep -package camlp4.quotations.r -package camlp4.lib -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -modules syntax/pa_cstruct.ml > syntax/pa_cstruct.ml.depends
+ocamlfind ocamlc -c -g -annot -package camlp4.quotations.r -package camlp4.lib -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -I syntax -I lib -I lwt -I async -I unix -o syntax/pa_cstruct.cmo syntax/pa_cstruct.ml
+ocamlfind ocamlc -a syntax/pa_cstruct.cmo -o syntax/cstruct-syntax.cma
+ocamlfind ocamlopt -c -g -annot -package camlp4.quotations.r -package camlp4.lib -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -inline 10 -I syntax -I lib -I lwt -I async -I unix -o syntax/pa_cstruct.cmx syntax/pa_cstruct.ml
+ocamlfind ocamlopt -a syntax/pa_cstruct.cmx -o syntax/cstruct-syntax.cmxa
+ocamlfind ocamlopt -shared -linkall syntax/cstruct-syntax.cmxa -o syntax/cstruct-syntax.cmxs
+# No parallelism done
+ocaml setup.ml -install
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/libcstruct_stubs.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/unix_cstruct.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/unix_cstruct.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/unix_cstruct.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/unix_cstruct.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/unix_cstruct.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/unix_cstruct.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/unix_cstruct.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/pa_cstruct.ml
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct-syntax.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct-syntax.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct-syntax.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/cstruct-syntax.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/pa_cstruct.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/pa_cstruct.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct/META
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs/dllcstruct_stubs.so
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs/dllcstruct_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+module-aliases/lib/stublibs is not mentioned in ld.conf
+Installing cstruct.0.8.1.
+
+=-=-= Installing packet.0.1.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/packet.0.1.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/packet.0.1.1+opam.tar.gz
+--2013-11-25 21:53:48--  https://opam.ocaml.org/archives/packet.0.1.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 46334 (45K) [application/octet-stream]
+Saving to: `packet.0.1.1+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .....     100% 68.2M=0.001s
+
+2013-11-25 21:53:48 (68.2 MB/s) - `packet.0.1.1+opam.tar.gz' saved [46334/46334]
+
+Building packet.0.1.1:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ packet
+Package version: ..................................... 0.1.1
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamldoc
+pkg_cstruct: ......................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct
+pkg_cstruct_syntax: .................................. /home/opam/.opam/4.02.0dev+module-aliases/lib/cstruct
+
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package cstruct.syntax -package cstruct -modules lib/Packet.mli > lib/Packet.mli.depends
+ocamlfind ocamlc -c -g -package cstruct.syntax -package cstruct -I lib -o lib/Packet.cmi lib/Packet.mli
+ocamlfind ocamldep -package cstruct.syntax -package cstruct -syntax camlp4o -modules lib/Packet.ml > lib/Packet.ml.depends
+ocamlfind ocamlc -c -g -package cstruct.syntax -package cstruct -syntax camlp4o -I lib -o lib/Packet.cmo lib/Packet.ml
++ ocamlfind ocamlc -c -g -package cstruct.syntax -package cstruct -syntax camlp4o -I lib -o lib/Packet.cmo lib/Packet.ml
+File "lib/Packet.ml", line 29, characters 11-13:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/Packet.ml", line 24, characters 11-13:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlc -a lib/Packet.cmo -o lib/packet.cma
+ocamlfind ocamlopt -c -g -package cstruct.syntax -package cstruct -syntax camlp4o -I lib -o lib/Packet.cmx lib/Packet.ml
++ ocamlfind ocamlopt -c -g -package cstruct.syntax -package cstruct -syntax camlp4o -I lib -o lib/Packet.cmx lib/Packet.ml
+File "lib/Packet.ml", line 24, characters 11-13:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/Packet.ml", line 29, characters 11-13:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlopt -a lib/Packet.cmx -o lib/packet.cmxa
+ocamlfind ocamlopt -shared -linkall lib/packet.cmxa -o lib/packet.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/packet/Packet.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/packet/packet.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/packet/packet.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/packet/packet.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/packet/packet.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/packet/Packet.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/packet/Packet.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/packet/META
+Installing packet.0.1.1.
