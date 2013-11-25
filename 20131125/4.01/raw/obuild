@@ -1,0 +1,125 @@
+++ opam install obuild -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install obuild
+The following actions will be performed:
+ - install obuild.0.0.4
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing obuild.0.0.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/obuild.0.0.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/obuild.0.0.4+opam.tar.gz
+--2013-11-25 22:29:57--  https://opam.ocaml.org/archives/obuild.0.0.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 70005 (68K) [application/octet-stream]
+Saving to: `obuild.0.0.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 73% 42.6M 0s
+    50K .......... ........                                   100%  118M=0.001s
+
+2013-11-25 22:29:57 (51.4 MB/s) - `obuild.0.0.4+opam.tar.gz' saved [70005/70005]
+
+Building obuild.0.0.4:
+  ./bootstrap
+  cp dist/build/obuild/obuild dist/build/obuild-simple/obuild-simple /home/opam/.opam/system/bin
+COMPILING fugue
+COMPILING filepath
+COMPILING filesystem
+BUILDING library obuild_ext.cmxa
+COMPILING gconf
+COMPILING types
+COMPILING dag
+COMPILING taskdep
+COMPILING dagutils
+COMPILING filetype
+COMPILING modname
+COMPILING hier
+COMPILING expr
+COMPILING pp
+COMPILING utils
+COMPILING helper
+COMPILING process
+COMPILING findlibConf
+COMPILING prog
+COMPILING dependencies
+COMPILING target
+COMPILING project
+COMPILING meta
+COMPILING dist
+COMPILING analyze
+COMPILING configure
+COMPILING prepare
+COMPILING buildprogs
+COMPILING build
+COMPILING exception
+BUILDING library obuild.cmxa
+COMPILING sdist
+COMPILING doc
+COMPILING init
+COMPILING help
+COMPILING install
+COMPILING main
+LINKING obuild.bootstrap
+Configuring obuild-0.0.4...
+Building library obuild.ext
+[1 of 6] Compiling Ext.Fugue                     
+[2 of 6] Intfing Ext.Filepath                  
+[3 of 6] Compiling Ext.Filepath                  
+[4 of 6] Intfing Ext.Filesystem                
+[5 of 6] Compiling Ext.Filesystem                
+[6 of 6] Packing Ext                           
+Linking library dist/build/lib-obuild.ext/obuild_ext.cmxa
+Linking library dist/build/lib-obuild.ext/obuild_ext.cma
+Building library obuild
+[ 1 of 27] Compiling Obuild.Gconf                  
+[ 2 of 27] Compiling Obuild.Types                  
+[ 3 of 27] Compiling Obuild.Dag                    
+[ 4 of 27] Compiling Obuild.Pp                     
+[ 5 of 27] Compiling Obuild.Filetype               
+[ 6 of 27] Compiling Obuild.Expr                   
+[ 7 of 27] Compiling Obuild.Modname                
+[ 8 of 27] Compiling Obuild.Utils                  
+[ 9 of 27] Compiling Obuild.Taskdep                
+[10 of 27] Compiling Obuild.Hier                   
+[11 of 27] Compiling Obuild.Dist                   
+[12 of 27] Compiling Obuild.Helper                 
+[13 of 27] Compiling Obuild.Dagutils               
+[14 of 27] Compiling Obuild.Process                
+[15 of 27] Compiling Obuild.FindlibConf            
+[16 of 27] Compiling Obuild.Prog                   
+[17 of 27] Compiling Obuild.Dependencies           
+[18 of 27] Compiling Obuild.Meta                   
+[19 of 27] Compiling Obuild.Target                 
+[20 of 27] Compiling Obuild.Project                
+[21 of 27] Compiling Obuild.Analyze                
+[22 of 27] Compiling Obuild.Configure              
+[23 of 27] Compiling Obuild.Prepare                
+[24 of 27] Compiling Obuild.Buildprogs             
+[25 of 27] Compiling Obuild.Build                  
+[26 of 27] Compiling Obuild.Exception              
+[27 of 27] Packing Obuild                        
+Linking library dist/build/lib-obuild/obuild.cmxa
+Linking library dist/build/lib-obuild/obuild.cma
+Building executable obuild
+[1 of 6] Compiling Sdist                         
+[2 of 6] Compiling Install                       
+[3 of 6] Compiling Help                          
+[4 of 6] Compiling Doc                           
+[5 of 6] Compiling Init                          
+[6 of 6] Compiling Main                          
+Linking executable dist/build/obuild/obuild
+Building executable obuild-simple
+[1 of 1] Compiling Simple                        
+Linking executable dist/build/obuild-simple/obuild-simple
+Building executable obuild-from-oasis
+[1 of 1] Compiling Assimilate_oasis              
+Linking executable dist/build/obuild-from-oasis/obuild-from-oasis
+
+real	0m2.864s
+user	0m1.509s
+sys	0m2.135s
+Installing obuild.0.0.4.
