@@ -1,0 +1,63 @@
+++ opam install gsl -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
++ opam install gsl
+The following actions will be performed:
+ - install gsl.1.13.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing gsl.1.13.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/gsl.1.13.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/gsl.1.13.0+opam.tar.gz
+--2013-11-25 18:46:37--  https://opam.ocaml.org/archives/gsl.1.13.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 187406 (183K) [application/octet-stream]
+Saving to: `gsl.1.13.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 27% 42.8M 0s
+    50K .......... .......... .......... .......... .......... 54% 34.7M 0s
+   100K .......... .......... .......... .......... .......... 81% 59.4M 0s
+   150K .......... .......... .......... ...                  100% 48.8M=0.004s
+
+2013-11-25 18:46:37 (44.3 MB/s) - `gsl.1.13.0+opam.tar.gz' saved [187406/187406]
+
+Building gsl.1.13.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/system
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+make: gsl-config: Command not found
+ocaml do_const.ml --mli > lib/const.mli
+/bin/sh: 1: gsl-config: not found
+Exception: End_of_file.
+make: *** [post-conf] Error 2
+E: Failure("Command 'make post-conf' terminated with error code 2")
+[ERROR] The compilation of gsl.1.13.0 failed.
+Removing gsl.1.13.0.
+  ocamlfind remove gsl
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/gsl
+
+
+===== ERROR while installing gsl.1.13.0 =====
+# opam-version         1.1.0
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/opam/.opam/system
+# path                 /home/opam/.opam/system/build/gsl.1.13.0
+# compiler             system (4.01.0)
+# exit-code            1
+# env-file             /home/opam/.opam/system/build/gsl.1.13.0/gsl-22-a00279.env
+# stdout-file          /home/opam/.opam/system/build/gsl.1.13.0/gsl-22-a00279.out
+# stderr-file          /home/opam/.opam/system/build/gsl.1.13.0/gsl-22-a00279.err
+### stdout ###
+# ocaml do_const.ml --mli > lib/const.mli
+### stderr ###
+# make: gsl-config: Command not found
+# /bin/sh: 1: gsl-config: not found
+# Exception: End_of_file.
+# make: *** [post-conf] Error 2
+# E: Failure("Command 'make post-conf' terminated with error code 2")
+
+'opam install gsl' failed.
