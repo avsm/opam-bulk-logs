@@ -1,0 +1,60 @@
+++ opam install cairo2 -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install cairo2
+Ubuntu depexts:
+The following actions will be performed:
+ - install cairo2.0.4.6
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing cairo2.0.4.6 =-=-=
+default    Downloading https://opam.ocaml.org/archives/cairo2.0.4.6+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/cairo2.0.4.6+opam.tar.gz
+--2013-11-25 13:16:45--  https://opam.ocaml.org/archives/cairo2.0.4.6+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 130634 (128K) [application/octet-stream]
+Saving to: `cairo2.0.4.6+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 39% 34.8M 0s
+    50K .......... .......... .......... .......... .......... 78% 30.0M 0s
+   100K .......... .......... .......                         100% 96.3M=0.003s
+
+2013-11-25 13:16:45 (37.6 MB/s) - `cairo2.0.4.6+opam.tar.gz' saved [130634/130634]
+
+Building cairo2.0.4.6:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+module-aliases --disable-lablgtk2
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Package cairo was not found in the pkg-config search path.
+Perhaps you should add the directory containing `cairo.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'cairo' found
+Please install "pkg-config" and the development files for the C library "cairo".
+[ERROR] The compilation of cairo2.0.4.6 failed.
+Removing cairo2.0.4.6.
+  ocamlfind remove cairo2
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/cairo2
+
+
+===== ERROR while installing cairo2.0.4.6 =====
+# opam-version         1.1.0
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+module-aliases --disable-lablgtk2
+# path                 /home/opam/.opam/4.02.0dev+module-aliases/build/cairo2.0.4.6
+# compiler             4.02.0dev+module-aliases
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+module-aliases/build/cairo2.0.4.6/cairo2-17-d8a4ae.env
+# stdout-file          /home/opam/.opam/4.02.0dev+module-aliases/build/cairo2.0.4.6/cairo2-17-d8a4ae.out
+# stderr-file          /home/opam/.opam/4.02.0dev+module-aliases/build/cairo2.0.4.6/cairo2-17-d8a4ae.err
+### stdout ###
+# Please install "pkg-config" and the development files for the C library "cairo".
+### stderr ###
+# Package cairo was not found in the pkg-config search path.
+# Perhaps you should add the directory containing `cairo.pc'
+# to the PKG_CONFIG_PATH environment variable
+# No package 'cairo' found
+
+'opam install cairo2' failed.

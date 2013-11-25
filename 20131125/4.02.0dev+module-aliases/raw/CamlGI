@@ -1,0 +1,66 @@
+++ opam install CamlGI -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install CamlGI
+Ubuntu depexts:
+The following actions will be performed:
+ - install CamlGI.0.6
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing CamlGI.0.6 =-=-=
+default    Downloading https://opam.ocaml.org/archives/CamlGI.0.6+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/CamlGI.0.6+opam.tar.gz
+--2013-11-25 13:17:57--  https://opam.ocaml.org/archives/CamlGI.0.6+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 45409 (44K) [application/octet-stream]
+Saving to: `CamlGI.0.6+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ....      100% 47.9M=0.001s
+
+2013-11-25 13:17:57 (47.9 MB/s) - `CamlGI.0.6+opam.tar.gz' saved [45409/45409]
+
+Building CamlGI.0.6:
+  make
+  make install
+Makefile:134: .depend: No such file or directory
+ocamldep -pp "camlp4o pa_macro.cmo pr_o.cmo" camlGI.ml cgi.ml cgi_common.ml cgi_fast.ml cgi_std.ml cgi_types.ml cookie.ml dbiPool.ml expires.ml sendmail.ml template.ml camlGI.mli cgi_common.mli > .depend
+ocamlc -dtypes -I +threads -c camlGI.mli
+ocamlc -pp "camlp4o pa_macro.cmo pr_o.cmo" -a -o camlGI.cma -dtypes -I +threads camlGI.ml
+File "/tmp/ocamlpp3dd6ae", line 1787, characters 39-45:
+Warning 43: the label cookie is not optional.
+File "/tmp/ocamlpp3dd6ae", line 1787, characters 47-54:
+Warning 43: the label cookies is not optional.
+File "/tmp/ocamlpp3dd6ae", line 1810, characters 36-42:
+Warning 43: the label cookie is not optional.
+File "/tmp/ocamlpp3dd6ae", line 1810, characters 44-51:
+Warning 43: the label cookies is not optional.
+File "/tmp/ocamlpp3dd6ae", line 2190, characters 37-45:
+Warning 43: the label filename is not optional.
+File "/tmp/ocamlpp3dd6ae", line 730, characters 16-24:
+Warning 26: unused variable encoding.
+ocamlopt -pp "camlp4o pa_macro.cmo pr_o.cmo" -a -o camlGI.cmxa -p -inline 2 -I +threads camlGI.ml
+File "/tmp/ocamlpp647b78", line 1787, characters 39-45:
+Warning 43: the label cookie is not optional.
+File "/tmp/ocamlpp647b78", line 1787, characters 47-54:
+Warning 43: the label cookies is not optional.
+File "/tmp/ocamlpp647b78", line 1810, characters 36-42:
+Warning 43: the label cookie is not optional.
+File "/tmp/ocamlpp647b78", line 1810, characters 44-51:
+Warning 43: the label cookies is not optional.
+File "/tmp/ocamlpp647b78", line 2190, characters 37-45:
+Warning 43: the label filename is not optional.
+File "/tmp/ocamlpp647b78", line 730, characters 16-24:
+Warning 26: unused variable encoding.
+ocamlfind remove  CamlGI || true
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+module-aliases/lib/CamlGI
+ocamlfind install  CamlGI META \
+	  camlGI.cma camlGI.cmxa camlGI.cmi camlGI.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/CamlGI/camlGI.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/CamlGI/camlGI.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/CamlGI/camlGI.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/CamlGI/camlGI.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/CamlGI/META
+Installing CamlGI.0.6.
