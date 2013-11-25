@@ -1,0 +1,86 @@
+++ opam install fftw3 -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install fftw3
+The following actions will be performed:
+ - install fftw3.0.7
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing fftw3.0.7 =-=-=
+default    Downloading https://opam.ocaml.org/archives/fftw3.0.7+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/fftw3.0.7+opam.tar.gz
+--2013-11-25 17:41:47--  https://opam.ocaml.org/archives/fftw3.0.7+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 104741 (102K) [application/octet-stream]
+Saving to: `fftw3.0.7+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 48% 32.6M 0s
+    50K .......... .......... .......... .......... .......... 97% 44.8M 0s
+   100K ..                                                    100% 4360G=0.003s
+
+2013-11-25 17:41:47 (38.6 MB/s) - `fftw3.0.7+opam.tar.gz' saved [104741/104741]
+
+Building fftw3.0.7:
+  ./configure --prefix /home/opam/.opam/system --sbindir=/home/opam/.opam/system/lib/fftw3/sbin --libexecdir=/home/opam/.opam/system/lib/fftw3/libexec --sysconfdir=/home/opam/.opam/system/lib/fftw3/etc --sharedstatedir=/home/opam/.opam/system/lib/fftw3/com --localstatedir=/home/opam/.opam/system/lib/fftw3/var --libdir=/home/opam/.opam/system/lib/fftw3/lib --includedir=/home/opam/.opam/system/lib/fftw3/include --datarootdir=/home/opam/.opam/system/lib/fftw3/share
+  make
+  make install
+configuring fftw3-ocaml 0.7
+checking for ocaml... /usr/bin/ocaml
+checking for ocamlc... /usr/bin/ocamlc
+ocaml version is 4.01.0
+ocaml library path is /usr/lib/ocaml
+checking for ocamlopt... /usr/bin/ocamlopt
+checking ocamlopt version... ok
+checking for ocamlc.opt... /usr/bin/ocamlc.opt
+checking ocamlc.opt version... ok
+checking for ocamlopt.opt... /usr/bin/ocamlopt.opt
+checking ocamlc.opt version... ok
+checking for ocamldep... /usr/bin/ocamldep
+checking for ocamldoc... /usr/bin/ocamldoc
+checking for ocamlfind... /home/opam/.opam/system/bin/ocamlfind
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for libfftw3 (double precision)... configure: error: Check for fftw3 (double precision) failed.
+[ERROR] The compilation of fftw3.0.7 failed.
+Removing fftw3.0.7.
+  ocamlfind remove fftw3
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/fftw3
+
+
+===== ERROR while installing fftw3.0.7 =====
+# opam-version         1.1.0
+# os                   linux
+# command              ./configure --prefix /home/opam/.opam/system --sbindir=/home/opam/.opam/system/lib/fftw3/sbin --libexecdir=/home/opam/.opam/system/lib/fftw3/libexec --sysconfdir=/home/opam/.opam/system/lib/fftw3/etc --sharedstatedir=/home/opam/.opam/system/lib/fftw3/com --localstatedir=/home/opam/.opam/system/lib/fftw3/var --libdir=/home/opam/.opam/system/lib/fftw3/lib --includedir=/home/opam/.opam/system/lib/fftw3/include --datarootdir=/home/opam/.opam/system/lib/fftw3/share
+# path                 /home/opam/.opam/system/build/fftw3.0.7
+# compiler             system (4.01.0)
+# exit-code            1
+# env-file             /home/opam/.opam/system/build/fftw3.0.7/fftw3-21-a00279.env
+# stdout-file          /home/opam/.opam/system/build/fftw3.0.7/fftw3-21-a00279.out
+# stderr-file          /home/opam/.opam/system/build/fftw3.0.7/fftw3-21-a00279.err
+### stdout ###
+# ...[truncated]
+# checking for gcc... gcc
+# checking whether the C compiler works... yes
+# checking for C compiler default output file name... a.out
+# checking for suffix of executables... 
+# checking whether we are cross compiling... no
+# checking for suffix of object files... o
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# checking for libfftw3 (double precision)... 
+### stderr ###
+# configure: error: Check for fftw3 (double precision) failed.
+
+'opam install fftw3' failed.
