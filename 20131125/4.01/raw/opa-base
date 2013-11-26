@@ -1,0 +1,983 @@
+++ opam install opa-base -e ubuntu
++ depext=zlib1g-dev
++ echo Ubuntu depexts: zlib1g-dev
+Ubuntu depexts: zlib1g-dev
++ '[' zlib1g-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y zlib1g-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package zlib1g-dev.
+(Reading database ... 20462 files and directories currently installed.)
+Unpacking zlib1g-dev (from .../zlib1g-dev_1%3a1.2.3.4.dfsg-3ubuntu4_amd64.deb) ...
+Setting up zlib1g-dev (1:1.2.3.4.dfsg-3ubuntu4) ...
++ opam install opa-base
+The following actions will be performed:
+ - install ulex.1.1 [required by opa-base]
+ - install ocamlgraph.1.8.3 [required by opa-base]
+ - install camlzip.1.05 [required by opa-base]
+ - install opa-base.1.1.0+4263
+4 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing camlzip.1.05 =-=-=
+default    Downloading https://opam.ocaml.org/archives/camlzip.1.05+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/camlzip.1.05+opam.tar.gz
+--2013-11-26 00:00:38--  https://opam.ocaml.org/archives/camlzip.1.05+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 26504 (26K) [application/octet-stream]
+Saving to: `camlzip.1.05+opam.tar.gz'
+
+     0K .......... .......... .....                           100% 46.7M=0.001s
+
+2013-11-26 00:00:38 (46.7 MB/s) - `camlzip.1.05+opam.tar.gz' saved [26504/26504]
+
+Applying fix-install.patch.
+patching file Makefile
+Building camlzip.1.05:
+  make all
+  make allopt
+  make install-findlib
+ocamlc -g -c -ccopt -g -ccopt -I/usr/local/include zlibstubs.c
+ocamlmklib -oc camlzip zlibstubs.o \
+            -L/usr/local/lib -lz
+ocamlc -g -c zlib.mli
+ocamlc -g -c zlib.ml
+ocamlc -g -c zip.mli
+ocamlc -g -c zip.ml
+ocamlc -g -c gzip.mli
+ocamlc -g -c gzip.ml
+ocamlmklib -o zip -oc camlzip zlib.cmo zip.cmo gzip.cmo \
+            -L/usr/local/lib -lz
+ocamlopt -c zlib.ml
+ocamlopt -c zip.ml
+ocamlopt -c gzip.ml
+ocamlmklib -o zip -oc camlzip zlib.cmx zip.cmx gzip.cmx \
+            -L/usr/local/lib -lz
+ocamlfind install zip META *.mli *.a *.cmi *.cma zip.cmxa dllcamlzip.so
+Installed /home/opam/.opam/system/lib/zip/zip.cmxa
+Installed /home/opam/.opam/system/lib/zip/zip.cma
+Installed /home/opam/.opam/system/lib/zip/zlib.cmi
+Installed /home/opam/.opam/system/lib/zip/zip.cmi
+Installed /home/opam/.opam/system/lib/zip/gzip.cmi
+Installed /home/opam/.opam/system/lib/zip/zip.a
+Installed /home/opam/.opam/system/lib/zip/libcamlzip.a
+Installed /home/opam/.opam/system/lib/zip/zlib.mli
+Installed /home/opam/.opam/system/lib/zip/zip.mli
+Installed /home/opam/.opam/system/lib/zip/gzip.mli
+Installed /home/opam/.opam/system/lib/zip/META
+Installed /home/opam/.opam/system/lib/stublibs/dllcamlzip.so
+Installed /home/opam/.opam/system/lib/stublibs/dllcamlzip.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/system/lib/stublibs is not mentioned in ld.conf
+echo 'directory="../zip"' > META && ocamlfind install camlzip META
+Installed /home/opam/.opam/system/lib/camlzip/META
+Installing camlzip.1.05.
+
+=-=-= Installing ocamlgraph.1.8.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocamlgraph.1.8.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocamlgraph.1.8.3+opam.tar.gz
+--2013-11-26 00:00:46--  https://opam.ocaml.org/archives/ocamlgraph.1.8.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 279961 (273K) [application/octet-stream]
+Saving to: `ocamlgraph.1.8.3+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 18% 30.3M 0s
+    50K .......... .......... .......... .......... .......... 36% 37.5M 0s
+   100K .......... .......... .......... .......... .......... 54% 44.3M 0s
+   150K .......... .......... .......... .......... .......... 73% 40.4M 0s
+   200K .......... .......... .......... .......... .......... 91% 46.4M 0s
+   250K .......... .......... ...                             100% 68.8M=0.007s
+
+2013-11-26 00:00:46 (40.4 MB/s) - `ocamlgraph.1.8.3+opam.tar.gz' saved [279961/279961]
+
+Applying install-findlib-dgraph.patch.
+patching file Makefile.in
+Building ocamlgraph.1.8.3:
+  ./configure
+  make
+  make install-findlib
+checking for ocamlc... ocamlc
+ocaml version is 4.01.0
+ocaml library path is /usr/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking ocamlopt version... ok
+checking for ocamlc.opt... ocamlc.opt
+checking ocamlc.opt version... ok
+checking for ocamlopt.opt... ocamlopt.opt
+checking ocamlc.opt version... ok
+checking for ocamldep... ocamldep
+checking for ocamllex... ocamllex
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for ocamldoc... ocamldoc
+checking for ocamldoc.opt... ocamldoc.opt
+checking for ocamlweb... true
+checking for ocamlfind... ocamlfind
+OCamlfind detected and enabled
+ocamlfind: Package `lablgtk2' not found
+checking for /usr/lib/ocaml/lablgtk2/lablgtk.cmxa... no
+checking Win32 platform... no
+configure: WARNING: lablgnomecanvas not found: the graph editor and view_graph will not be compiled
+configure: creating ./config.status
+config.status: creating Makefile
+sed -e s/VERSION/1.8.3/ -e s/CMA/graph.cma/ -e s/CMXA/graph.cmxa/ \
+		META.in > META
+rm -f src/version.ml
+echo "let version = \""1.8.3"\"" > src/version.ml
+echo "let date = \""`date`"\"" >> src/version.ml
+rm -f .depend
+ocamldep -slash -I src -I lib -I editor -I view_graph -I dgraph\
+		lib/*.ml lib/*.mli \
+		src/*.ml src/*.mli \
+		editor/*.mli editor/*.ml \
+		view_graph/*.mli view_graph/*.ml \
+		dgraph/*.mli dgraph/*.ml > .depend
+ocamlc.opt -c -I src -I lib -g -dtypes src/sig.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/sig_pack.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/dot_ast.mli
+ocamlc.opt -c -I src -I lib -g -dtypes lib/unionfind.mli
+ocamlc.opt -c -I src -I lib -g -dtypes lib/unionfind.ml
+ocamlc.opt -c -I src -I lib -g -dtypes lib/heap.mli
+ocamlc.opt -c -I src -I lib -g -dtypes lib/heap.ml
+ocamlc.opt -c -I src -I lib -g -dtypes lib/bitv.mli
+ocamlc.opt -c -I src -I lib -g -dtypes lib/bitv.ml
+File "lib/bitv.ml", line 289, characters 24-26:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 289, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 214, characters 24-26:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 214, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 206, characters 25-27:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 206, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 205, characters 25-27:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 205, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 118, characters 11-13:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 113, characters 11-13:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlc.opt -c -I src -I lib -g -dtypes src/version.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/util.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/util.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/blocks.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/persistent.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/persistent.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/imperative.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/imperative.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/delaunay.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/delaunay.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/builder.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/builder.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/classic.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/classic.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/rand.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/rand.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/oper.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/oper.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/components.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/components.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/path.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/path.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/nonnegative.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/nonnegative.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/traverse.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/traverse.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/coloring.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/coloring.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/topological.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/topological.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/kruskal.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/kruskal.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/flow.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/flow.ml
+File "src/flow.ml", line 141, characters 40-42:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 136, characters 44-46:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 137, characters 47-49:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 137, characters 6-8:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 53, characters 54-56:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlc.opt -c -I src -I lib -g -dtypes src/dominator.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/dominator.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/graphviz.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/graphviz.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/gml.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/gml.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/dot_parser.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/dot_parser.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/dot_lexer.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/dot.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/dot.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/pack.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/pack.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/gmap.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/gmap.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/minsep.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/minsep.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/cliquetree.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/cliquetree.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/mcs_m.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/mcs_m.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/md.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/md.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/strat.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/strat.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/fixpoint.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/fixpoint.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/leaderlist.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/leaderlist.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/contraction.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/contraction.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/graphml.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/graphml.ml
+ocamlc.opt -c -I src -I lib -g -dtypes src/merge.mli
+ocamlc.opt -c -I src -I lib -g -dtypes src/merge.ml
+ocamlc.opt -I src -I lib -pack -g -o graph.cmo src/sig.cmi src/sig_pack.cmi src/dot_ast.cmi lib/unionfind.cmo lib/heap.cmo lib/bitv.cmo src/version.cmo src/util.cmo src/blocks.cmo src/persistent.cmo src/imperative.cmo src/delaunay.cmo src/builder.cmo src/classic.cmo src/rand.cmo src/oper.cmo src/components.cmo src/path.cmo src/nonnegative.cmo src/traverse.cmo src/coloring.cmo src/topological.cmo src/kruskal.cmo src/flow.cmo src/dominator.cmo src/graphviz.cmo src/gml.cmo src/dot_parser.cmo src/dot_lexer.cmo src/dot.cmo src/pack.cmo src/gmap.cmo src/minsep.cmo src/cliquetree.cmo src/mcs_m.cmo src/md.cmo src/strat.cmo src/fixpoint.cmo src/leaderlist.cmo src/contraction.cmo src/graphml.cmo src/merge.cmo
+ocamlc.opt -I src -I lib -a -g -o graph.cma graph.cmo
+ocamlopt.opt -c -I src -I lib -for-pack Graph lib/unionfind.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph lib/heap.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph lib/bitv.ml
+File "lib/bitv.ml", line 113, characters 11-13:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 118, characters 11-13:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 206, characters 25-27:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 206, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 205, characters 25-27:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 205, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 214, characters 24-26:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 214, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 289, characters 24-26:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 289, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/version.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/util.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/blocks.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/persistent.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/imperative.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/delaunay.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/builder.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/classic.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/rand.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/oper.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/components.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/path.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/nonnegative.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/traverse.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/coloring.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/topological.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/kruskal.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/flow.ml
+File "src/flow.ml", line 141, characters 40-42:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 136, characters 44-46:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 137, characters 47-49:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 137, characters 6-8:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 53, characters 54-56:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/dominator.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/graphviz.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/gml.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/dot_parser.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/dot_lexer.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/dot.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/pack.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/gmap.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/minsep.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/cliquetree.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/mcs_m.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/md.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/strat.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/fixpoint.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/leaderlist.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/contraction.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/graphml.ml
+ocamlopt.opt -c -I src -I lib -for-pack Graph src/merge.ml
+ocamlopt.opt -I src -I lib -pack -o graph.cmx src/sig.cmi src/sig_pack.cmi src/dot_ast.cmi lib/unionfind.cmx lib/heap.cmx lib/bitv.cmx src/version.cmx src/util.cmx src/blocks.cmx src/persistent.cmx src/imperative.cmx src/delaunay.cmx src/builder.cmx src/classic.cmx src/rand.cmx src/oper.cmx src/components.cmx src/path.cmx src/nonnegative.cmx src/traverse.cmx src/coloring.cmx src/topological.cmx src/kruskal.cmx src/flow.cmx src/dominator.cmx src/graphviz.cmx src/gml.cmx src/dot_parser.cmx src/dot_lexer.cmx src/dot.cmx src/pack.cmx src/gmap.cmx src/minsep.cmx src/cliquetree.cmx src/mcs_m.cmx src/md.cmx src/strat.cmx src/fixpoint.cmx src/leaderlist.cmx src/contraction.cmx src/graphml.cmx src/merge.cmx
+ocamlopt.opt -I src -I lib -a -o graph.cmxa graph.cmx
+ocamlfind install ocamlgraph META \
+		src/*.mli view_graph/*.mli dgraph/*.mli \
+		graph.a graph.cmx graph.cmo graph.cmi graph.cma graph.cmxa
+Installed /home/opam/.opam/system/lib/ocamlgraph/graph.cmxa
+Installed /home/opam/.opam/system/lib/ocamlgraph/graph.cma
+Installed /home/opam/.opam/system/lib/ocamlgraph/graph.cmi
+Installed /home/opam/.opam/system/lib/ocamlgraph/graph.cmo
+Installed /home/opam/.opam/system/lib/ocamlgraph/graph.cmx
+Installed /home/opam/.opam/system/lib/ocamlgraph/graph.a
+Installed /home/opam/.opam/system/lib/ocamlgraph/xDotDraw.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/xDot.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/dGraphViewItem.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/dGraphView.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/dGraphTreeModel.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/dGraphTreeLayout.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/dGraphSubTree.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/dGraphRandModel.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/dGraphModel.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/dGraphContainer.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/viewGraph_utils.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/viewGraph_select.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/viewGraph_core.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/util.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/traverse.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/topological.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/strat.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/sig_pack.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/sig.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/rand.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/persistent.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/path.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/pack.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/oper.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/nonnegative.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/minsep.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/merge.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/md.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/mcs_m.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/leaderlist.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/kruskal.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/imperative.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/graphviz.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/graphml.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/gml.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/gmap.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/flow.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/fixpoint.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/dot_parser.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/dot_ast.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/dot.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/dominator.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/delaunay.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/contraction.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/components.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/coloring.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/cliquetree.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/classic.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/builder.mli
+Installed /home/opam/.opam/system/lib/ocamlgraph/META
+Installing ocamlgraph.1.8.3.
+
+=-=-= Installing ulex.1.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ulex.1.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ulex.1.1+opam.tar.gz
+--2013-11-26 00:01:00--  https://opam.ocaml.org/archives/ulex.1.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20380 (20K) [application/octet-stream]
+Saving to: `ulex.1.1+opam.tar.gz'
+
+     0K .......... .........                                  100%  107M=0s
+
+2013-11-26 00:01:00 (107 MB/s) - `ulex.1.1+opam.tar.gz' saved [20380/20380]
+
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma
+/usr/bin/ocamlc.opt unix.cma -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cma myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmo -o myocamlbuild
+/usr/bin/ocamldep.opt -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
+/usr/bin/ocamldep.opt -modules cset.ml > cset.ml.depends
+/usr/bin/ocamldep.opt -modules ulex.mli > ulex.mli.depends
+/usr/bin/ocamlc.opt -c -o cset.cmo cset.ml
+/usr/bin/ocamlc.opt -c -o ulex.cmi ulex.mli
+/usr/bin/ocamlc.opt -c -I +camlp4 -pp camlp4orf -o pa_ulex.cmo pa_ulex.ml
+/usr/bin/ocamldep.opt -modules ulex.ml > ulex.ml.depends
+/usr/bin/ocamlc.opt -c -o ulex.cmo ulex.ml
+/usr/bin/ocamlc.opt -a cset.cmo ulex.cmo pa_ulex.cmo -o pa_ulex.cma
+/usr/bin/ocamldep.opt -modules ulexing.mli > ulexing.mli.depends
+/usr/bin/ocamlc.opt -c -o ulexing.cmi ulexing.mli
+/usr/bin/ocamldep.opt -modules ulexing.ml > ulexing.ml.depends
+/usr/bin/ocamldep.opt -modules utf8.mli > utf8.mli.depends
+/usr/bin/ocamlc.opt -c -o utf8.cmi utf8.mli
+/usr/bin/ocamlc.opt -c -o ulexing.cmo ulexing.ml
+/usr/bin/ocamldep.opt -modules utf8.ml > utf8.ml.depends
+/usr/bin/ocamlc.opt -c -o utf8.cmo utf8.ml
++ /usr/bin/ocamlc.opt -c -o utf8.cmo utf8.ml
+File "utf8.ml", line 113, characters 20-21:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+/usr/bin/ocamlc.opt -a utf8.cmo ulexing.cmo -o ulexing.cma
+ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma pa_ulex.cmxa ulexing.cmxa
+/usr/bin/ocamlopt.opt -c -o cset.cmx cset.ml
+/usr/bin/ocamlopt.opt -c -o ulex.cmx ulex.ml
+/usr/bin/ocamlopt.opt -c -I +camlp4 -pp camlp4orf -o pa_ulex.cmx pa_ulex.ml
+/usr/bin/ocamlopt.opt -a cset.cmx ulex.cmx pa_ulex.cmx -o pa_ulex.cmxa
+/usr/bin/ocamlopt.opt -c -o utf8.cmx utf8.ml
++ /usr/bin/ocamlopt.opt -c -o utf8.cmx utf8.ml
+File "utf8.ml", line 113, characters 20-21:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+/usr/bin/ocamlopt.opt -c -o ulexing.cmx ulexing.ml
+/usr/bin/ocamlopt.opt -a utf8.cmx ulexing.cmx -o ulexing.cmxa
+ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma
+cd _build && make -f ../Makefile realinstall
+make[1]: Entering directory `/home/opam/.opam/system/build/ulex.1.1/_build'
+ocamlfind install ulex ../META ulexing.mli utf8.mli ulexing.cmi utf8.cmi ulexing.cmx utf8.cmx pa_ulex.cma ulexing.a ulexing.cma ulexing.cmxa
+Installed /home/opam/.opam/system/lib/ulex/ulexing.cmxa
+Installed /home/opam/.opam/system/lib/ulex/ulexing.cma
+Installed /home/opam/.opam/system/lib/ulex/ulexing.a
+Installed /home/opam/.opam/system/lib/ulex/pa_ulex.cma
+Installed /home/opam/.opam/system/lib/ulex/utf8.cmx
+Installed /home/opam/.opam/system/lib/ulex/ulexing.cmx
+Installed /home/opam/.opam/system/lib/ulex/utf8.cmi
+Installed /home/opam/.opam/system/lib/ulex/ulexing.cmi
+Installed /home/opam/.opam/system/lib/ulex/utf8.mli
+Installed /home/opam/.opam/system/lib/ulex/ulexing.mli
+Installed /home/opam/.opam/system/lib/ulex/META
+make[1]: Leaving directory `/home/opam/.opam/system/build/ulex.1.1/_build'
+Installing ulex.1.1.
+
+=-=-= Installing opa-base.1.1.0+4263 =-=-=
+default    Downloading https://opam.ocaml.org/archives/opa-base.1.1.0+4263+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/opa-base.1.1.0+4263+opam.tar.gz
+--2013-11-26 00:01:09--  https://opam.ocaml.org/archives/opa-base.1.1.0+4263+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9458633 (9.0M) [application/octet-stream]
+Saving to: `opa-base.1.1.0+4263+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  0% 41.7M 0s
+    50K .......... .......... .......... .......... ..........  1% 43.4M 0s
+   100K .......... .......... .......... .......... ..........  1% 41.2M 0s
+   150K .......... .......... .......... .......... ..........  2% 39.0M 0s
+   200K .......... .......... .......... .......... ..........  2% 47.9M 0s
+   250K .......... .......... .......... .......... ..........  3% 74.5M 0s
+   300K .......... .......... .......... .......... ..........  3% 38.7M 0s
+   350K .......... .......... .......... .......... ..........  4% 35.6M 0s
+   400K .......... .......... .......... .......... ..........  4% 43.0M 0s
+   450K .......... .......... .......... .......... ..........  5% 42.1M 0s
+   500K .......... .......... .......... .......... ..........  5% 92.0M 0s
+   550K .......... .......... .......... .......... ..........  6% 41.3M 0s
+   600K .......... .......... .......... .......... ..........  7% 78.2M 0s
+   650K .......... .......... .......... .......... ..........  7% 76.9M 0s
+   700K .......... .......... .......... .......... ..........  8% 81.8M 0s
+   750K .......... .......... .......... .......... ..........  8% 10.5M 0s
+   800K .......... .......... .......... .......... ..........  9% 38.1M 0s
+   850K .......... .......... .......... .......... ..........  9%  107M 0s
+   900K .......... .......... .......... .......... .......... 10% 6.58M 0s
+   950K .......... .......... .......... .......... .......... 10% 45.0M 0s
+  1000K .......... .......... .......... .......... .......... 11% 73.6M 0s
+  1050K .......... .......... .......... .......... .......... 11% 48.1M 0s
+  1100K .......... .......... .......... .......... .......... 12% 69.5M 0s
+  1150K .......... .......... .......... .......... .......... 12% 72.5M 0s
+  1200K .......... .......... .......... .......... .......... 13%  109M 0s
+  1250K .......... .......... .......... .......... .......... 14% 8.79M 0s
+  1300K .......... .......... .......... .......... .......... 14% 32.3M 0s
+  1350K .......... .......... .......... .......... .......... 15% 41.0M 0s
+  1400K .......... .......... .......... .......... .......... 15% 60.5M 0s
+  1450K .......... .......... .......... .......... .......... 16% 78.4M 0s
+  1500K .......... .......... .......... .......... .......... 16% 68.0M 0s
+  1550K .......... .......... .......... .......... .......... 17% 9.08M 0s
+  1600K .......... .......... .......... .......... .......... 17% 74.6M 0s
+  1650K .......... .......... .......... .......... .......... 18% 69.2M 0s
+  1700K .......... .......... .......... .......... .......... 18% 92.1M 0s
+  1750K .......... .......... .......... .......... .......... 19% 83.7M 0s
+  1800K .......... .......... .......... .......... .......... 20% 6.62M 0s
+  1850K .......... .......... .......... .......... .......... 20% 36.0M 0s
+  1900K .......... .......... .......... .......... .......... 21% 34.0M 0s
+  1950K .......... .......... .......... .......... .......... 21% 45.4M 0s
+  2000K .......... .......... .......... .......... .......... 22% 61.8M 0s
+  2050K .......... .......... .......... .......... .......... 22% 50.6M 0s
+  2100K .......... .......... .......... .......... .......... 23% 11.3M 0s
+  2150K .......... .......... .......... .......... .......... 23% 34.6M 0s
+  2200K .......... .......... .......... .......... .......... 24% 51.3M 0s
+  2250K .......... .......... .......... .......... .......... 24% 54.2M 0s
+  2300K .......... .......... .......... .......... .......... 25% 63.4M 0s
+  2350K .......... .......... .......... .......... .......... 25% 8.73M 0s
+  2400K .......... .......... .......... .......... .......... 26% 59.5M 0s
+  2450K .......... .......... .......... .......... .......... 27% 69.7M 0s
+  2500K .......... .......... .......... .......... .......... 27% 68.3M 0s
+  2550K .......... .......... .......... .......... .......... 28% 89.0M 0s
+  2600K .......... .......... .......... .......... .......... 28%  109M 0s
+  2650K .......... .......... .......... .......... .......... 29% 7.47M 0s
+  2700K .......... .......... .......... .......... .......... 29% 42.3M 0s
+  2750K .......... .......... .......... .......... .......... 30% 27.2M 0s
+  2800K .......... .......... .......... .......... .......... 30% 48.0M 0s
+  2850K .......... .......... .......... .......... .......... 31% 64.6M 0s
+  2900K .......... .......... .......... .......... .......... 31% 46.0M 0s
+  2950K .......... .......... .......... .......... .......... 32% 45.7M 0s
+  3000K .......... .......... .......... .......... .......... 33% 12.7M 0s
+  3050K .......... .......... .......... .......... .......... 33% 41.7M 0s
+  3100K .......... .......... .......... .......... .......... 34% 47.3M 0s
+  3150K .......... .......... .......... .......... .......... 34% 48.9M 0s
+  3200K .......... .......... .......... .......... .......... 35% 63.5M 0s
+  3250K .......... .......... .......... .......... .......... 35% 8.52M 0s
+  3300K .......... .......... .......... .......... .......... 36% 69.8M 0s
+  3350K .......... .......... .......... .......... .......... 36% 67.1M 0s
+  3400K .......... .......... .......... .......... .......... 37% 78.9M 0s
+  3450K .......... .......... .......... .......... .......... 37% 74.5M 0s
+  3500K .......... .......... .......... .......... .......... 38%  112M 0s
+  3550K .......... .......... .......... .......... .......... 38% 7.48M 0s
+  3600K .......... .......... .......... .......... .......... 39% 56.5M 0s
+  3650K .......... .......... .......... .......... .......... 40% 45.0M 0s
+  3700K .......... .......... .......... .......... .......... 40% 59.1M 0s
+  3750K .......... .......... .......... .......... .......... 41% 76.9M 0s
+  3800K .......... .......... .......... .......... .......... 41% 7.36M 0s
+  3850K .......... .......... .......... .......... .......... 42% 41.6M 0s
+  3900K .......... .......... .......... .......... .......... 42% 49.2M 0s
+  3950K .......... .......... .......... .......... .......... 43% 31.8M 0s
+  4000K .......... .......... .......... .......... .......... 43%  105M 0s
+  4050K .......... .......... .......... .......... .......... 44%  108M 0s
+  4100K .......... .......... .......... .......... .......... 44%  108M 0s
+  4150K .......... .......... .......... .......... .......... 45% 8.59M 0s
+  4200K .......... .......... .......... .......... .......... 46% 72.7M 0s
+  4250K .......... .......... .......... .......... .......... 46% 65.0M 0s
+  4300K .......... .......... .......... .......... .......... 47% 92.6M 0s
+  4350K .......... .......... .......... .......... .......... 47% 63.1M 0s
+  4400K .......... .......... .......... .......... .......... 48%  107M 0s
+  4450K .......... .......... .......... .......... .......... 48% 7.63M 0s
+  4500K .......... .......... .......... .......... .......... 49% 67.2M 0s
+  4550K .......... .......... .......... .......... .......... 49% 69.0M 0s
+  4600K .......... .......... .......... .......... .......... 50% 73.1M 0s
+  4650K .......... .......... .......... .......... .......... 50%  110M 0s
+  4700K .......... .......... .......... .......... .......... 51% 20.1M 0s
+  4750K .......... .......... .......... .......... .......... 51% 24.7M 0s
+  4800K .......... .......... .......... .......... .......... 52% 28.2M 0s
+  4850K .......... .......... .......... .......... .......... 53% 54.8M 0s
+  4900K .......... .......... .......... .......... .......... 53% 4.70M 0s
+  4950K .......... .......... .......... .......... .......... 54% 35.3M 0s
+  5000K .......... .......... .......... .......... .......... 54% 40.7M 0s
+  5050K .......... .......... .......... .......... .......... 55% 28.1M 0s
+  5100K .......... .......... .......... .......... .......... 55% 34.2M 0s
+  5150K .......... .......... .......... .......... .......... 56% 28.5M 0s
+  5200K .......... .......... .......... .......... .......... 56% 42.6M 0s
+  5250K .......... .......... .......... .......... .......... 57% 24.2M 0s
+  5300K .......... .......... .......... .......... .......... 57% 32.5M 0s
+  5350K .......... .......... .......... .......... .......... 58% 32.5M 0s
+  5400K .......... .......... .......... .......... .......... 59% 34.0M 0s
+  5450K .......... .......... .......... .......... .......... 59% 42.6M 0s
+  5500K .......... .......... .......... .......... .......... 60% 32.9M 0s
+  5550K .......... .......... .......... .......... .......... 60% 27.9M 0s
+  5600K .......... .......... .......... .......... .......... 61% 29.5M 0s
+  5650K .......... .......... .......... .......... .......... 61% 31.4M 0s
+  5700K .......... .......... .......... .......... .......... 62% 42.0M 0s
+  5750K .......... .......... .......... .......... .......... 62% 41.4M 0s
+  5800K .......... .......... .......... .......... .......... 63% 26.5M 0s
+  5850K .......... .......... .......... .......... .......... 63% 47.2M 0s
+  5900K .......... .......... .......... .......... .......... 64% 33.4M 0s
+  5950K .......... .......... .......... .......... .......... 64% 24.5M 0s
+  6000K .......... .......... .......... .......... .......... 65% 37.0M 0s
+  6050K .......... .......... .......... .......... .......... 66% 41.8M 0s
+  6100K .......... .......... .......... .......... .......... 66% 40.1M 0s
+  6150K .......... .......... .......... .......... .......... 67% 9.68M 0s
+  6200K .......... .......... .......... .......... .......... 67% 20.8M 0s
+  6250K .......... .......... .......... .......... .......... 68% 22.6M 0s
+  6300K .......... .......... .......... .......... .......... 68% 22.9M 0s
+  6350K .......... .......... .......... .......... .......... 69% 57.0M 0s
+  6400K .......... .......... .......... .......... .......... 69% 82.4M 0s
+  6450K .......... .......... .......... .......... .......... 70%  110M 0s
+  6500K .......... .......... .......... .......... .......... 70% 22.9M 0s
+  6550K .......... .......... .......... .......... .......... 71% 28.0M 0s
+  6600K .......... .......... .......... .......... .......... 71% 36.9M 0s
+  6650K .......... .......... .......... .......... .......... 72% 31.7M 0s
+  6700K .......... .......... .......... .......... .......... 73% 40.9M 0s
+  6750K .......... .......... .......... .......... .......... 73% 12.1M 0s
+  6800K .......... .......... .......... .......... .......... 74% 30.5M 0s
+  6850K .......... .......... .......... .......... .......... 74% 28.7M 0s
+  6900K .......... .......... .......... .......... .......... 75% 66.8M 0s
+  6950K .......... .......... .......... .......... .......... 75% 98.6M 0s
+  7000K .......... .......... .......... .......... .......... 76%  110M 0s
+  7050K .......... .......... .......... .......... .......... 76%  111M 0s
+  7100K .......... .......... .......... .......... .......... 77%  105M 0s
+  7150K .......... .......... .......... .......... .......... 77% 10.5M 0s
+  7200K .......... .......... .......... .......... .......... 78% 40.9M 0s
+  7250K .......... .......... .......... .......... .......... 79% 38.4M 0s
+  7300K .......... .......... .......... .......... .......... 79% 41.5M 0s
+  7350K .......... .......... .......... .......... .......... 80% 46.4M 0s
+  7400K .......... .......... .......... .......... .......... 80% 10.2M 0s
+  7450K .......... .......... .......... .......... .......... 81% 32.6M 0s
+  7500K .......... .......... .......... .......... .......... 81% 32.1M 0s
+  7550K .......... .......... .......... .......... .......... 82% 27.6M 0s
+  7600K .......... .......... .......... .......... .......... 82% 43.9M 0s
+  7650K .......... .......... .......... .......... .......... 83% 11.3M 0s
+  7700K .......... .......... .......... .......... .......... 83% 45.0M 0s
+  7750K .......... .......... .......... .......... .......... 84% 29.1M 0s
+  7800K .......... .......... .......... .......... .......... 84% 22.4M 0s
+  7850K .......... .......... .......... .......... .......... 85% 48.5M 0s
+  7900K .......... .......... .......... .......... .......... 86%  110M 0s
+  7950K .......... .......... .......... .......... .......... 86% 14.9M 0s
+  8000K .......... .......... .......... .......... .......... 87% 37.3M 0s
+  8050K .......... .......... .......... .......... .......... 87% 20.8M 0s
+  8100K .......... .......... .......... .......... .......... 88% 22.3M 0s
+  8150K .......... .......... .......... .......... .......... 88% 31.8M 0s
+  8200K .......... .......... .......... .......... .......... 89%  108M 0s
+  8250K .......... .......... .......... .......... .......... 89% 31.2M 0s
+  8300K .......... .......... .......... .......... .......... 90% 38.6M 0s
+  8350K .......... .......... .......... .......... .......... 90% 39.4M 0s
+  8400K .......... .......... .......... .......... .......... 91% 23.4M 0s
+  8450K .......... .......... .......... .......... .......... 92% 30.2M 0s
+  8500K .......... .......... .......... .......... .......... 92% 13.1M 0s
+  8550K .......... .......... .......... .......... .......... 93% 27.3M 0s
+  8600K .......... .......... .......... .......... .......... 93% 46.6M 0s
+  8650K .......... .......... .......... .......... .......... 94% 33.8M 0s
+  8700K .......... .......... .......... .......... .......... 94% 37.8M 0s
+  8750K .......... .......... .......... .......... .......... 95% 35.8M 0s
+  8800K .......... .......... .......... .......... .......... 95% 16.4M 0s
+  8850K .......... .......... .......... .......... .......... 96% 36.1M 0s
+  8900K .......... .......... .......... .......... .......... 96% 33.0M 0s
+  8950K .......... .......... .......... .......... .......... 97% 39.2M 0s
+  9000K .......... .......... .......... .......... .......... 97% 50.9M 0s
+  9050K .......... .......... .......... .......... .......... 98% 45.4M 0s
+  9100K .......... .......... .......... .......... .......... 99% 10.3M 0s
+  9150K .......... .......... .......... .......... .......... 99% 40.0M 0s
+  9200K .......... .......... .......... ......               100% 46.2M=0.3s
+
+2013-11-26 00:01:09 (29.0 MB/s) - `opa-base.1.1.0+4263+opam.tar.gz' saved [9458633/9458633]
+
+Applying configure_notty.patch.
+patching file configure
+Hunk #2 succeeded at 680 (offset -8 lines).
+Applying rm_deps.patch.
+patching file configure
+Applying ocamlfind.patch.
+patching file configure
+Building opa-base.1.1.0+4263:
+  ./configure -prefix /home/opam/.opam/system
+  make _build/myocamlbuild.exe
+  _build/myocamlbuild.exe ocamllib/libbase.cma ocamllib/libbase.cmxa
+Checking your OS... Linux
+Checking your architecture... x86_64
+Checking ocamlopt... /usr/bin/ocamlopt.opt
+Checking ocamlbuild... /usr/bin/ocamlbuild
+Checking ocamldir... /usr/lib/ocaml
+Checking ocaml version... 4.01.0
+Checking your ocaml setup... 4.01.0, Unix 64bit
+Checking for camlp4... /usr/bin/camlp4o
+Checking for perl 5... found
+Checking for ocamlfind... /home/opam/.opam/system/bin/ocamlfind
+Checking for ulex... ocamlfind:/home/opam/.opam/system/lib/ulex, OK
+Checking for camlzip... ocamlfind:/home/opam/.opam/system/lib/camlzip/../zip, OK
+Checking for ocamlgraph... ocamlfind:/home/opam/.opam/system/lib/ocamlgraph, OK
+
+Congrats, you're all set. Installation will be done in:
+	/home/opam/.opam/system
+
+Ocamlbuild generation
+perl -n -e 'if (/^ *(#include) +"(\.\.\/)*([^"]+)".*/) { print "$3\n"; }' ocamllib/libbase/cmap.c > ocamllib/libbase/cmap.c.depends
+perl -n -e 'if (/^ *(#include) +"(\.\.\/)*([^"]+)".*/) { print "$3\n"; }' ocamllib/libbase/memory.c > ocamllib/libbase/memory.c.depends
+/usr/bin/ocamlc.opt -I /home/opam/.opam/system/build/opa-base.1.1.0+4263/_build -c ocamllib/libbase/cmap.c
+mv cmap.o ocamllib/libbase/cmap.o
+/usr/bin/ocamlc.opt -I /home/opam/.opam/system/build/opa-base.1.1.0+4263/_build -c ocamllib/libbase/memory.c
+mv memory.o ocamllib/libbase/memory.o
+/usr/bin/ocamlmklib -o ocamllib/libbase/stubs ocamllib/libbase/cmap.o ocamllib/libbase/memory.o
+/usr/bin/ocamldep.opt -modules tools/build/config.mli > tools/build/config.mli.depends
+/usr/bin/ocamlc.opt -c -I tools/build -I ocamllib -I lib -I compiler -I tools -o tools/build/config.cmi tools/build/config.mli
+/usr/bin/ocamldep.opt -modules tools/build/config.ml > tools/build/config.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/mlstate_platform.ml > ocamllib/libbase/mlstate_platform.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/pathTransform.ml > ocamllib/libbase/pathTransform.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/option.mli > ocamllib/libbase/option.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/option.cmi ocamllib/libbase/option.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/option.ml > ocamllib/libbase/option.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/consoleParser.mli > ocamllib/libbase/consoleParser.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/consoleParser.cmi ocamllib/libbase/consoleParser.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/consoleParser.ml > ocamllib/libbase/consoleParser.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/base.mli > ocamllib/libbase/base.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseArg.mli > ocamllib/libbase/baseArg.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseArray.mli > ocamllib/libbase/baseArray.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseChar.mli > ocamllib/libbase/baseChar.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseFilename.ml > ocamllib/libbase/baseFilename.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseFormat.mli > ocamllib/libbase/baseFormat.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseHashtbl.mli > ocamllib/libbase/baseHashtbl.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseInt64.mli > ocamllib/libbase/baseInt64.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseLazy.mli > ocamllib/libbase/baseLazy.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseList.mli > ocamllib/libbase/baseList.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseMap.mli > ocamllib/libbase/baseMap.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseMapSig.ml > ocamllib/libbase/baseMapSig.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/iterSig.ml > ocamllib/libbase/iterSig.ml.depends
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/iterSig.cmo ocamllib/libbase/iterSig.ml
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/orderedTypeSig.ml > ocamllib/libbase/orderedTypeSig.ml.depends
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseMapSig.cmo ocamllib/libbase/baseMapSig.ml
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/orderedTypeSig.cmo ocamllib/libbase/orderedTypeSig.ml
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseMarshal.mli > ocamllib/libbase/baseMarshal.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseObj.mli > ocamllib/libbase/baseObj.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseRandom.mli > ocamllib/libbase/baseRandom.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseSet.mli > ocamllib/libbase/baseSet.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseSetSig.ml > ocamllib/libbase/baseSetSig.ml.depends
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseSetSig.cmo ocamllib/libbase/baseSetSig.ml
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseString.mli > ocamllib/libbase/baseString.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseUtf8.mli > ocamllib/libbase/baseUtf8.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseArg.cmi ocamllib/libbase/baseArg.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseArray.cmi ocamllib/libbase/baseArray.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseChar.cmi ocamllib/libbase/baseChar.mli
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseFilename.cmo ocamllib/libbase/baseFilename.ml
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseFormat.cmi ocamllib/libbase/baseFormat.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseHashtbl.cmi ocamllib/libbase/baseHashtbl.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseInt64.cmi ocamllib/libbase/baseInt64.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseLazy.cmi ocamllib/libbase/baseLazy.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseList.cmi ocamllib/libbase/baseList.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseMap.cmi ocamllib/libbase/baseMap.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseMarshal.cmi ocamllib/libbase/baseMarshal.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseObj.cmi ocamllib/libbase/baseObj.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseRandom.cmi ocamllib/libbase/baseRandom.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseSet.cmi ocamllib/libbase/baseSet.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseString.cmi ocamllib/libbase/baseString.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseUtf8.cmi ocamllib/libbase/baseUtf8.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/base.cmi ocamllib/libbase/base.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/consoleAnim.mli > ocamllib/libbase/consoleAnim.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/consoleAnim.cmi ocamllib/libbase/consoleAnim.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/consoleAnim.ml > ocamllib/libbase/consoleAnim.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/base.ml > ocamllib/libbase/base.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/topologicSort.mli > ocamllib/libbase/topologicSort.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/topologicSort.cmi ocamllib/libbase/topologicSort.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/topologicSort.ml > ocamllib/libbase/topologicSort.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/stringMap.mli > ocamllib/libbase/stringMap.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/stringSet.mli > ocamllib/libbase/stringSet.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/stringMap.cmi ocamllib/libbase/stringMap.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/stringSet.cmi ocamllib/libbase/stringSet.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/filePos.mli > ocamllib/libbase/filePos.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/ansi.ml > ocamllib/libbase/ansi.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/hdList.mli > ocamllib/libbase/hdList.mli.depends
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/ansi.cmo ocamllib/libbase/ansi.ml
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/hdList.cmi ocamllib/libbase/hdList.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/filePos.cmi ocamllib/libbase/filePos.mli
+/usr/bin/ocamldep.opt -pp 'perl /home/opam/.opam/system/build/opa-base.1.1.0+4263/tools/utils/ppdebug.pl' -modules ocamllib/libbase/filePos.ml > ocamllib/libbase/filePos.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/debugVariables.mli > ocamllib/libbase/debugVariables.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/intMap.mli > ocamllib/libbase/intMap.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/listHashtbl.mli > ocamllib/libbase/listHashtbl.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/debugVariables.cmi ocamllib/libbase/debugVariables.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/intMap.cmi ocamllib/libbase/intMap.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/listHashtbl.cmi ocamllib/libbase/listHashtbl.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseObj.ml > ocamllib/libbase/baseObj.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseMarshal.ml > ocamllib/libbase/baseMarshal.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseArg.ml > ocamllib/libbase/baseArg.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/date.mli > ocamllib/libbase/date.mli.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/time.mli > ocamllib/libbase/time.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/time.cmi ocamllib/libbase/time.mli
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/date.cmi ocamllib/libbase/date.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseArray.ml > ocamllib/libbase/baseArray.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseChar.ml > ocamllib/libbase/baseChar.ml.depends
+/usr/bin/ocamldep.opt -pp 'perl /home/opam/.opam/system/build/opa-base.1.1.0+4263/tools/utils/ppdebug.pl' -modules ocamllib/libbase/baseHashtbl.ml > ocamllib/libbase/baseHashtbl.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseFormat.ml > ocamllib/libbase/baseFormat.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/fBuffer.mli > ocamllib/libbase/fBuffer.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/fBuffer.cmi ocamllib/libbase/fBuffer.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseLazy.ml > ocamllib/libbase/baseLazy.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseList.ml > ocamllib/libbase/baseList.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseRandom.ml > ocamllib/libbase/baseRandom.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseString.ml > ocamllib/libbase/baseString.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/charMap.mli > ocamllib/libbase/charMap.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/charMap.cmi ocamllib/libbase/charMap.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseSys.mli > ocamllib/libbase/baseSys.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseSys.cmi ocamllib/libbase/baseSys.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseSys.ml > ocamllib/libbase/baseSys.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/date.ml > ocamllib/libbase/date.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseUnix.ml > ocamllib/libbase/baseUnix.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseUtf8.ml > ocamllib/libbase/baseUtf8.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/cactutf.mli > ocamllib/libbase/cactutf.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/cactutf.cmi ocamllib/libbase/cactutf.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseInt64.ml > ocamllib/libbase/baseInt64.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/resArray.mli > ocamllib/libbase/resArray.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/resArray.cmi ocamllib/libbase/resArray.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/resArray.ml > ocamllib/libbase/resArray.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/reader.ml > ocamllib/libbase/reader.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/stringReader.mli > ocamllib/libbase/stringReader.mli.depends
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/reader.cmo ocamllib/libbase/reader.ml
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/stringReader.cmi ocamllib/libbase/stringReader.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/stringReader.ml > ocamllib/libbase/stringReader.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/fileReader.mli > ocamllib/libbase/fileReader.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/fileReader.cmi ocamllib/libbase/fileReader.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/fileReader.ml > ocamllib/libbase/fileReader.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/file.mli > ocamllib/libbase/file.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/file.cmi ocamllib/libbase/file.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/file.ml > ocamllib/libbase/file.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/file_mimetype.mli > ocamllib/libbase/file_mimetype.mli.depends
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/pathTransform.cmo ocamllib/libbase/pathTransform.ml
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/file_mimetype.cmi ocamllib/libbase/file_mimetype.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/orderedTypeDebugableSig.ml > ocamllib/libbase/orderedTypeDebugableSig.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/listMapSig.ml > ocamllib/libbase/listMapSig.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/setMapSig.ml > ocamllib/libbase/setMapSig.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseSet.ml > ocamllib/libbase/baseSet.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseMap.ml > ocamllib/libbase/baseMap.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/intSet.mli > ocamllib/libbase/intSet.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/intSet.cmi ocamllib/libbase/intSet.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/intSet.ml > ocamllib/libbase/intSet.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/infixOperator.mli > ocamllib/libbase/infixOperator.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/infixOperator.cmi ocamllib/libbase/infixOperator.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/intMap.ml > ocamllib/libbase/intMap.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/charMap.ml > ocamllib/libbase/charMap.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/order.mli > ocamllib/libbase/order.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/order.cmi ocamllib/libbase/order.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/stringListMap.mli > ocamllib/libbase/stringListMap.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/stringListMap.cmi ocamllib/libbase/stringListMap.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/stringListMap.ml > ocamllib/libbase/stringListMap.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/stringMap.ml > ocamllib/libbase/stringMap.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/stringSet.ml > ocamllib/libbase/stringSet.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/infixOperator.ml > ocamllib/libbase/infixOperator.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/order.ml > ocamllib/libbase/order.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/listMap.mli > ocamllib/libbase/listMap.mli.depends
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/listMapSig.cmo ocamllib/libbase/listMapSig.ml
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/listMap.cmi ocamllib/libbase/listMap.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/listMap.ml > ocamllib/libbase/listMap.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/setMap.mli > ocamllib/libbase/setMap.mli.depends
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/setMapSig.cmo ocamllib/libbase/setMapSig.ml
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/setMap.cmi ocamllib/libbase/setMap.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/setMap.ml > ocamllib/libbase/setMap.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/debugMap.mli > ocamllib/libbase/debugMap.mli.depends
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/orderedTypeDebugableSig.cmo ocamllib/libbase/orderedTypeDebugableSig.ml
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/debugMap.cmi ocamllib/libbase/debugMap.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/debugMap.ml > ocamllib/libbase/debugMap.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/chrono.mli > ocamllib/libbase/chrono.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/chrono.cmi ocamllib/libbase/chrono.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/chrono.ml > ocamllib/libbase/chrono.ml.depends
+/usr/bin/ocamldep.opt -pp 'perl /home/opam/.opam/system/build/opa-base.1.1.0+4263/tools/utils/ppdebug.pl' -modules ocamllib/libbase/listHashtbl.ml > ocamllib/libbase/listHashtbl.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/loop.mli > ocamllib/libbase/loop.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/loop.cmi ocamllib/libbase/loop.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/loop.ml > ocamllib/libbase/loop.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/mutableList.mli > ocamllib/libbase/mutableList.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/mutableList.cmi ocamllib/libbase/mutableList.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/mutableList.ml > ocamllib/libbase/mutableList.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/sortHashtbl.mli > ocamllib/libbase/sortHashtbl.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/sortHashtbl.cmi ocamllib/libbase/sortHashtbl.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/sortHashtbl.ml > ocamllib/libbase/sortHashtbl.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/fresh.ml > ocamllib/libbase/fresh.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/dependenciesOrdering.ml > ocamllib/libbase/dependenciesOrdering.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/debugPrint.mli > ocamllib/libbase/debugPrint.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/debugPrint.cmi ocamllib/libbase/debugPrint.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/debugPrint.ml > ocamllib/libbase/debugPrint.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/return.mli > ocamllib/libbase/return.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/return.cmi ocamllib/libbase/return.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/return.ml > ocamllib/libbase/return.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseStringSlice.mli > ocamllib/libbase/baseStringSlice.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/baseStringSlice.cmi ocamllib/libbase/baseStringSlice.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/baseStringSlice.ml > ocamllib/libbase/baseStringSlice.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/uchar.ml > ocamllib/libbase/uchar.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/heap.ml > ocamllib/libbase/heap.ml.depends
+/usr/bin/ocamldep.opt -pp 'perl /home/opam/.opam/system/build/opa-base.1.1.0+4263/tools/utils/ppdebug.pl' -modules ocamllib/libbase/xml.ml > ocamllib/libbase/xml.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/abstr.ml > ocamllib/libbase/abstr.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/fBuffer.ml > ocamllib/libbase/fBuffer.ml.depends
+/usr/bin/ocamldep.opt -pp 'perl /home/opam/.opam/system/build/opa-base.1.1.0+4263/tools/utils/ppdebug.pl' -modules ocamllib/libbase/debugTracer.mli > ocamllib/libbase/debugTracer.mli.depends
+/usr/bin/ocamlc.opt -c -pp 'perl /home/opam/.opam/system/build/opa-base.1.1.0+4263/tools/utils/ppdebug.pl' -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/debugTracer.cmi ocamllib/libbase/debugTracer.mli
+/usr/bin/ocamldep.opt -pp 'perl /home/opam/.opam/system/build/opa-base.1.1.0+4263/tools/utils/ppdebug.pl' -modules ocamllib/libbase/debugTracer.ml > ocamllib/libbase/debugTracer.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/sed.ml > ocamllib/libbase/sed.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/traverseInterface.ml > ocamllib/libbase/traverseInterface.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/traverse.mli > ocamllib/libbase/traverse.mli.depends
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/traverseInterface.cmo ocamllib/libbase/traverseInterface.ml
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/traverse.cmi ocamllib/libbase/traverse.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/traverse.ml > ocamllib/libbase/traverse.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/tree.ml > ocamllib/libbase/tree.ml.depends
+/usr/bin/ocamldep.opt -pp '/usr/bin/camlp4o -I /home/opam/.opam/system/lib/ulex pa_ulex.cma pr_o.cmo' -modules ocamllib/libbase/indexer.ml > ocamllib/libbase/indexer.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/cactutf.ml > ocamllib/libbase/cactutf.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/jsonTypes.ml > ocamllib/libbase/jsonTypes.ml.depends
+/usr/bin/ocamldep.opt -pp '/usr/bin/camlp4o -I /home/opam/.opam/system/lib/ulex pa_ulex.cma pr_o.cmo' -modules ocamllib/libbase/jsonLex.ml > ocamllib/libbase/jsonLex.ml.depends
+/usr/bin/ocamlyacc ocamllib/libbase/jsonParse.mly
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/jsonParse.mli > ocamllib/libbase/jsonParse.mli.depends
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/jsonTypes.cmo ocamllib/libbase/jsonTypes.ml
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/jsonParse.cmi ocamllib/libbase/jsonParse.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/jsonParse.ml > ocamllib/libbase/jsonParse.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/json_utils.ml > ocamllib/libbase/json_utils.ml.depends
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -w z -I /home/opam/.opam/system/lib/ulex -pp '/usr/bin/camlp4o -I /home/opam/.opam/system/lib/ulex pa_ulex.cma pr_o.cmo' -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/jsonLex.cmo ocamllib/libbase/jsonLex.ml
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/jsonPrint.mli > ocamllib/libbase/jsonPrint.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/jsonPrint.cmi ocamllib/libbase/jsonPrint.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/jsonPrint.ml > ocamllib/libbase/jsonPrint.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/bslServerLib.ml > ocamllib/libbase/bslServerLib.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/debugVariables.ml > ocamllib/libbase/debugVariables.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/unionFind.mli > ocamllib/libbase/unionFind.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/unionFind.cmi ocamllib/libbase/unionFind.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/unionFind.ml > ocamllib/libbase/unionFind.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/sRope.mli > ocamllib/libbase/sRope.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/sRope.cmi ocamllib/libbase/sRope.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/sRope.ml > ocamllib/libbase/sRope.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/hdList.ml > ocamllib/libbase/hdList.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/RAList.mli > ocamllib/libbase/RAList.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/RAList.cmi ocamllib/libbase/RAList.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/RAList.ml > ocamllib/libbase/RAList.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/identGenerator.mli > ocamllib/libbase/identGenerator.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/identGenerator.cmi ocamllib/libbase/identGenerator.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/identGenerator.ml > ocamllib/libbase/identGenerator.ml.depends
+/usr/bin/ocamldep.opt -pp 'perl /home/opam/.opam/system/build/opa-base.1.1.0+4263/tools/utils/ppdebug.pl' -modules ocamllib/libbase/file_mimetype.ml > ocamllib/libbase/file_mimetype.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/xmlm.mli > ocamllib/libbase/xmlm.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/xmlm.cmi ocamllib/libbase/xmlm.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/sgzip.ml > ocamllib/libbase/sgzip.ml.depends
+/usr/bin/ocamldep.opt -pp 'perl /home/opam/.opam/system/build/opa-base.1.1.0+4263/tools/utils/ppdebug.pl' -modules ocamllib/libbase/time.ml > ocamllib/libbase/time.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/imperativeScope.mli > ocamllib/libbase/imperativeScope.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/imperativeScope.cmi ocamllib/libbase/imperativeScope.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/imperativeScope.ml > ocamllib/libbase/imperativeScope.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/cps.mli > ocamllib/libbase/cps.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/cps.cmi ocamllib/libbase/cps.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/cps.ml > ocamllib/libbase/cps.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/weakHashtbl.mli > ocamllib/libbase/weakHashtbl.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/weakHashtbl.cmi ocamllib/libbase/weakHashtbl.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/weakHashtbl.ml > ocamllib/libbase/weakHashtbl.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/xmlm.ml > ocamllib/libbase/xmlm.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/counter.mli > ocamllib/libbase/counter.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/counter.cmi ocamllib/libbase/counter.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/counter.ml > ocamllib/libbase/counter.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/weakResArray.mli > ocamllib/libbase/weakResArray.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/weakResArray.cmi ocamllib/libbase/weakResArray.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/weakResArray.ml > ocamllib/libbase/weakResArray.ml.depends
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/charf.mli > ocamllib/libbase/charf.mli.depends
+/usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/charf.cmi ocamllib/libbase/charf.mli
+/usr/bin/ocamldep.opt -modules ocamllib/libbase/charf.ml > ocamllib/libbase/charf.ml.depends
+/usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/uchar.cmo ocamllib/libbase/uchar.ml
++ /usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/uchar.cmo ocamllib/libbase/uchar.ml
+File "ocamllib/libbase/uchar.ml", line 45, characters 38-40:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "ocamllib/libbase/uchar.ml", line 1:
+Error: Some fatal warnings were triggered (1 occurrences)
+Command exited with code 2.
+[ERROR] The compilation of opa-base.1.1.0+4263 failed.
+Removing opa-base.1.1.0+4263.
+
+
+===== ERROR while installing opa-base.1.1.0+4263 =====
+# opam-version         1.1.0
+# os                   linux
+# command              _build/myocamlbuild.exe ocamllib/libbase.cma ocamllib/libbase.cmxa
+# path                 /home/opam/.opam/system/build/opa-base.1.1.0+4263
+# compiler             system (4.01.0)
+# exit-code            10
+# env-file             /home/opam/.opam/system/build/opa-base.1.1.0+4263/opa-base-956-d6d332.env
+# stdout-file          /home/opam/.opam/system/build/opa-base.1.1.0+4263/opa-base-956-d6d332.out
+# stderr-file          /home/opam/.opam/system/build/opa-base.1.1.0+4263/opa-base-956-d6d332.err
+### stdout ###
+# ...[truncated]
+# /usr/bin/ocamldep.opt -modules ocamllib/libbase/charf.mli > ocamllib/libbase/charf.mli.depends
+# /usr/bin/ocamlc.opt -c -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/charf.cmi ocamllib/libbase/charf.mli
+# /usr/bin/ocamldep.opt -modules ocamllib/libbase/charf.ml > ocamllib/libbase/charf.ml.depends
+# /usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/uchar.cmo ocamllib/libbase/uchar.ml
+# + /usr/bin/ocamlc.opt -c -warn-error A -w L -w Z -I ocamllib/libbase -I ocamllib -I lib -I compiler -I tools -I tools/build -o ocamllib/libbase/uchar.cmo ocamllib/libbase/uchar.ml
+# File "ocamllib/libbase/uchar.ml", line 45, characters 38-40:
+# Warning 3: deprecated feature: operator (or); you should use (||) instead
+# File "ocamllib/libbase/uchar.ml", line 1:
+# Error: Some fatal warnings were triggered (1 occurrences)
+# Command exited with code 2.
+### stderr ###
+# ...[truncated]
+# Checking for camlp4... /usr/bin/camlp4o
+# Checking for perl 5... found
+# Checking for ocamlfind... /home/opam/.opam/system/bin/ocamlfind
+# Checking for ulex... ocamlfind:/home/opam/.opam/system/lib/ulex, OK
+# Checking for camlzip... ocamlfind:/home/opam/.opam/system/lib/camlzip/../zip, OK
+# Checking for ocamlgraph... ocamlfind:/home/opam/.opam/system/lib/ocamlgraph, OK
+# 
+# Congrats, you're all set. Installation will be done in:
+# 	/home/opam/.opam/system
+# 
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/system/backup/state-20131026000029.export"
+'opam install opa-base' failed.
