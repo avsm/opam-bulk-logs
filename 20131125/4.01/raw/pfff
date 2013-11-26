@@ -1,0 +1,1208 @@
+++ opam install pfff -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install pfff
+Ubuntu depexts:
+The following actions will be performed:
+ - install pfff.0.25.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing pfff.0.25.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/pfff.0.25.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/pfff.0.25.1+opam.tar.gz
+--2013-11-26 01:12:58--  https://opam.ocaml.org/archives/pfff.0.25.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 16595936 (16M) [application/octet-stream]
+Saving to: `pfff.0.25.1+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  0% 40.6M 0s
+    50K .......... .......... .......... .......... ..........  0% 37.5M 0s
+   100K .......... .......... .......... .......... ..........  0% 35.3M 0s
+   150K .......... .......... .......... .......... ..........  1% 25.3M 0s
+   200K .......... .......... .......... .......... ..........  1% 29.4M 0s
+   250K .......... .......... .......... .......... ..........  1% 35.9M 0s
+   300K .......... .......... .......... .......... ..........  2% 28.4M 0s
+   350K .......... .......... .......... .......... ..........  2% 24.9M 0s
+   400K .......... .......... .......... .......... ..........  2% 34.5M 0s
+   450K .......... .......... .......... .......... ..........  3% 27.5M 0s
+   500K .......... .......... .......... .......... ..........  3% 47.4M 0s
+   550K .......... .......... .......... .......... ..........  3% 37.2M 0s
+   600K .......... .......... .......... .......... ..........  4% 36.9M 0s
+   650K .......... .......... .......... .......... ..........  4% 45.9M 0s
+   700K .......... .......... .......... .......... ..........  4% 44.8M 0s
+   750K .......... .......... .......... .......... ..........  4% 36.5M 0s
+   800K .......... .......... .......... .......... ..........  5% 66.8M 0s
+   850K .......... .......... .......... .......... ..........  5% 9.21M 0s
+   900K .......... .......... .......... .......... ..........  5% 32.9M 0s
+   950K .......... .......... .......... .......... ..........  6% 31.5M 0s
+  1000K .......... .......... .......... .......... ..........  6% 30.9M 0s
+  1050K .......... .......... .......... .......... ..........  6% 61.7M 0s
+  1100K .......... .......... .......... .......... ..........  7%  110M 0s
+  1150K .......... .......... .......... .......... ..........  7% 84.7M 0s
+  1200K .......... .......... .......... .......... ..........  7%  109M 0s
+  1250K .......... .......... .......... .......... ..........  8%  107M 0s
+  1300K .......... .......... .......... .......... ..........  8% 24.9M 0s
+  1350K .......... .......... .......... .......... ..........  8% 56.8M 0s
+  1400K .......... .......... .......... .......... ..........  8% 83.0M 0s
+  1450K .......... .......... .......... .......... ..........  9% 5.75M 0s
+  1500K .......... .......... .......... .......... ..........  9% 41.3M 0s
+  1550K .......... .......... .......... .......... ..........  9% 32.3M 0s
+  1600K .......... .......... .......... .......... .......... 10% 60.0M 0s
+  1650K .......... .......... .......... .......... .......... 10% 78.4M 0s
+  1700K .......... .......... .......... .......... .......... 10% 73.7M 0s
+  1750K .......... .......... .......... .......... .......... 11% 75.1M 0s
+  1800K .......... .......... .......... .......... .......... 11% 10.2M 0s
+  1850K .......... .......... .......... .......... .......... 11% 47.1M 0s
+  1900K .......... .......... .......... .......... .......... 12% 52.9M 0s
+  1950K .......... .......... .......... .......... .......... 12% 63.3M 0s
+  2000K .......... .......... .......... .......... .......... 12% 79.9M 0s
+  2050K .......... .......... .......... .......... .......... 12% 7.51M 0s
+  2100K .......... .......... .......... .......... .......... 13% 47.6M 0s
+  2150K .......... .......... .......... .......... .......... 13% 38.7M 0s
+  2200K .......... .......... .......... .......... .......... 13% 78.8M 0s
+  2250K .......... .......... .......... .......... .......... 14%  108M 0s
+  2300K .......... .......... .......... .......... .......... 14%  104M 0s
+  2350K .......... .......... .......... .......... .......... 14% 86.1M 0s
+  2400K .......... .......... .......... .......... .......... 15% 8.11M 0s
+  2450K .......... .......... .......... .......... .......... 15% 65.7M 0s
+  2500K .......... .......... .......... .......... .......... 15% 86.1M 0s
+  2550K .......... .......... .......... .......... .......... 16% 99.8M 0s
+  2600K .......... .......... .......... .......... .......... 16%  111M 0s
+  2650K .......... .......... .......... .......... .......... 16% 6.24M 0s
+  2700K .......... .......... .......... .......... .......... 16% 34.7M 0s
+  2750K .......... .......... .......... .......... .......... 17% 68.8M 0s
+  2800K .......... .......... .......... .......... .......... 17%  111M 0s
+  2850K .......... .......... .......... .......... .......... 17%  111M 0s
+  2900K .......... .......... .......... .......... .......... 18%  108M 0s
+  2950K .......... .......... .......... .......... .......... 18% 8.74M 0s
+  3000K .......... .......... .......... .......... .......... 18% 53.6M 0s
+  3050K .......... .......... .......... .......... .......... 19% 66.5M 0s
+  3100K .......... .......... .......... .......... .......... 19% 44.8M 0s
+  3150K .......... .......... .......... .......... .......... 19% 80.0M 0s
+  3200K .......... .......... .......... .......... .......... 20% 7.43M 0s
+  3250K .......... .......... .......... .......... .......... 20% 29.5M 0s
+  3300K .......... .......... .......... .......... .......... 20% 20.1M 0s
+  3350K .......... .......... .......... .......... .......... 20% 41.5M 0s
+  3400K .......... .......... .......... .......... .......... 21% 25.2M 0s
+  3450K .......... .......... .......... .......... .......... 21% 28.6M 0s
+  3500K .......... .......... .......... .......... .......... 21% 28.1M 0s
+  3550K .......... .......... .......... .......... .......... 22% 41.3M 0s
+  3600K .......... .......... .......... .......... .......... 22% 64.4M 0s
+  3650K .......... .......... .......... .......... .......... 22% 75.1M 0s
+  3700K .......... .......... .......... .......... .......... 23% 42.8M 0s
+  3750K .......... .......... .......... .......... .......... 23% 98.5M 0s
+  3800K .......... .......... .......... .......... .......... 23%  107M 0s
+  3850K .......... .......... .......... .......... .......... 24% 9.50M 0s
+  3900K .......... .......... .......... .......... .......... 24% 30.8M 0s
+  3950K .......... .......... .......... .......... .......... 24% 34.8M 0s
+  4000K .......... .......... .......... .......... .......... 24% 42.5M 0s
+  4050K .......... .......... .......... .......... .......... 25% 41.1M 0s
+  4100K .......... .......... .......... .......... .......... 25% 10.4M 0s
+  4150K .......... .......... .......... .......... .......... 25% 28.2M 0s
+  4200K .......... .......... .......... .......... .......... 26% 41.0M 0s
+  4250K .......... .......... .......... .......... .......... 26%  101M 0s
+  4300K .......... .......... .......... .......... .......... 26%  105M 0s
+  4350K .......... .......... .......... .......... .......... 27% 86.7M 0s
+  4400K .......... .......... .......... .......... .......... 27% 9.33M 0s
+  4450K .......... .......... .......... .......... .......... 27% 50.5M 0s
+  4500K .......... .......... .......... .......... .......... 28% 65.3M 0s
+  4550K .......... .......... .......... .......... .......... 28% 74.7M 0s
+  4600K .......... .......... .......... .......... .......... 28%  111M 0s
+  4650K .......... .......... .......... .......... .......... 28%  105M 0s
+  4700K .......... .......... .......... .......... .......... 29% 6.62M 0s
+  4750K .......... .......... .......... .......... .......... 29% 54.3M 0s
+  4800K .......... .......... .......... .......... .......... 29% 66.2M 0s
+  4850K .......... .......... .......... .......... .......... 30% 96.7M 0s
+  4900K .......... .......... .......... .......... .......... 30%  110M 0s
+  4950K .......... .......... .......... .......... .......... 30% 96.7M 0s
+  5000K .......... .......... .......... .......... .......... 31% 7.58M 0s
+  5050K .......... .......... .......... .......... .......... 31% 51.9M 0s
+  5100K .......... .......... .......... .......... .......... 31% 50.1M 0s
+  5150K .......... .......... .......... .......... .......... 32% 48.9M 0s
+  5200K .......... .......... .......... .......... .......... 32% 78.6M 0s
+  5250K .......... .......... .......... .......... .......... 32% 78.2M 0s
+  5300K .......... .......... .......... .......... .......... 33% 8.95M 0s
+  5350K .......... .......... .......... .......... .......... 33% 45.9M 0s
+  5400K .......... .......... .......... .......... .......... 33% 50.9M 0s
+  5450K .......... .......... .......... .......... .......... 33% 72.1M 0s
+  5500K .......... .......... .......... .......... .......... 34% 81.9M 0s
+  5550K .......... .......... .......... .......... .......... 34% 7.08M 0s
+  5600K .......... .......... .......... .......... .......... 34% 51.8M 0s
+  5650K .......... .......... .......... .......... .......... 35% 53.7M 0s
+  5700K .......... .......... .......... .......... .......... 35% 62.7M 0s
+  5750K .......... .......... .......... .......... .......... 35% 99.4M 0s
+  5800K .......... .......... .......... .......... .......... 36%  111M 0s
+  5850K .......... .......... .......... .......... .......... 36%  107M 0s
+  5900K .......... .......... .......... .......... .......... 36% 6.82M 0s
+  5950K .......... .......... .......... .......... .......... 37% 31.1M 0s
+  6000K .......... .......... .......... .......... .......... 37%  106M 0s
+  6050K .......... .......... .......... .......... .......... 37% 93.3M 0s
+  6100K .......... .......... .......... .......... .......... 37% 58.4M 0s
+  6150K .......... .......... .......... .......... .......... 38% 7.00M 0s
+  6200K .......... .......... .......... .......... .......... 38% 31.8M 0s
+  6250K .......... .......... .......... .......... .......... 38% 45.9M 0s
+  6300K .......... .......... .......... .......... .......... 39% 39.3M 0s
+  6350K .......... .......... .......... .......... .......... 39% 35.1M 0s
+  6400K .......... .......... .......... .......... .......... 39%  106M 0s
+  6450K .......... .......... .......... .......... .......... 40% 15.9M 0s
+  6500K .......... .......... .......... .......... .......... 40% 30.7M 0s
+  6550K .......... .......... .......... .......... .......... 40% 32.4M 0s
+  6600K .......... .......... .......... .......... .......... 41% 40.5M 0s
+  6650K .......... .......... .......... .......... .......... 41% 57.6M 0s
+  6700K .......... .......... .......... .......... .......... 41%  109M 0s
+  6750K .......... .......... .......... .......... .......... 41% 12.4M 0s
+  6800K .......... .......... .......... .......... .......... 42% 32.1M 0s
+  6850K .......... .......... .......... .......... .......... 42% 69.7M 0s
+  6900K .......... .......... .......... .......... .......... 42%  109M 0s
+  6950K .......... .......... .......... .......... .......... 43%  100M 0s
+  7000K .......... .......... .......... .......... .......... 43%  110M 0s
+  7050K .......... .......... .......... .......... .......... 43% 6.39M 0s
+  7100K .......... .......... .......... .......... .......... 44% 35.9M 0s
+  7150K .......... .......... .......... .......... .......... 44% 37.7M 0s
+  7200K .......... .......... .......... .......... .......... 44% 49.2M 0s
+  7250K .......... .......... .......... .......... .......... 45% 51.7M 0s
+  7300K .......... .......... .......... .......... .......... 45% 53.3M 0s
+  7350K .......... .......... .......... .......... .......... 45% 11.7M 0s
+  7400K .......... .......... .......... .......... .......... 45% 43.9M 0s
+  7450K .......... .......... .......... .......... .......... 46% 42.7M 0s
+  7500K .......... .......... .......... .......... .......... 46% 48.6M 0s
+  7550K .......... .......... .......... .......... .......... 46% 88.9M 0s
+  7600K .......... .......... .......... .......... .......... 47% 1.02M 0s
+  7650K .......... .......... .......... .......... .......... 47% 32.3M 0s
+  7700K .......... .......... .......... .......... .......... 47% 41.6M 0s
+  7750K .......... .......... .......... .......... .......... 48% 43.8M 0s
+  7800K .......... .......... .......... .......... .......... 48% 72.5M 0s
+  7850K .......... .......... .......... .......... .......... 48% 82.6M 0s
+  7900K .......... .......... .......... .......... .......... 49% 82.1M 0s
+  7950K .......... .......... .......... .......... .......... 49% 63.0M 0s
+  8000K .......... .......... .......... .......... .......... 49% 67.6M 0s
+  8050K .......... .......... .......... .......... .......... 49% 41.9M 0s
+  8100K .......... .......... .......... .......... .......... 50% 46.5M 0s
+  8150K .......... .......... .......... .......... .......... 50% 64.8M 0s
+  8200K .......... .......... .......... .......... .......... 50% 69.0M 0s
+  8250K .......... .......... .......... .......... .......... 51% 69.1M 0s
+  8300K .......... .......... .......... .......... .......... 51% 47.0M 0s
+  8350K .......... .......... .......... .......... .......... 51% 40.9M 0s
+  8400K .......... .......... .......... .......... .......... 52% 12.9M 0s
+  8450K .......... .......... .......... .......... .......... 52% 51.5M 0s
+  8500K .......... .......... .......... .......... .......... 52% 55.2M 0s
+  8550K .......... .......... .......... .......... .......... 53% 54.0M 0s
+  8600K .......... .......... .......... .......... .......... 53% 30.7M 0s
+  8650K .......... .......... .......... .......... .......... 53%  110M 0s
+  8700K .......... .......... .......... .......... .......... 53%  108M 0s
+  8750K .......... .......... .......... .......... .......... 54% 89.7M 0s
+  8800K .......... .......... .......... .......... .......... 54% 10.5M 0s
+  8850K .......... .......... .......... .......... .......... 54% 24.1M 0s
+  8900K .......... .......... .......... .......... .......... 55% 39.2M 0s
+  8950K .......... .......... .......... .......... .......... 55% 31.2M 0s
+  9000K .......... .......... .......... .......... .......... 55% 43.1M 0s
+  9050K .......... .......... .......... .......... .......... 56% 13.3M 0s
+  9100K .......... .......... .......... .......... .......... 56% 43.6M 0s
+  9150K .......... .......... .......... .......... .......... 56% 34.6M 0s
+  9200K .......... .......... .......... .......... .......... 57% 27.3M 0s
+  9250K .......... .......... .......... .......... .......... 57% 61.2M 0s
+  9300K .......... .......... .......... .......... .......... 57% 71.6M 0s
+  9350K .......... .......... .......... .......... .......... 57% 66.3M 0s
+  9400K .......... .......... .......... .......... .......... 58% 72.6M 0s
+  9450K .......... .......... .......... .......... .......... 58% 3.56M 0s
+  9500K .......... .......... .......... .......... .......... 58% 35.7M 0s
+  9550K .......... .......... .......... .......... .......... 59% 54.6M 0s
+  9600K .......... .......... .......... .......... .......... 59% 73.2M 0s
+  9650K .......... .......... .......... .......... .......... 59%  107M 0s
+  9700K .......... .......... .......... .......... .......... 60%  104M 0s
+  9750K .......... .......... .......... .......... .......... 60% 97.5M 0s
+  9800K .......... .......... .......... .......... .......... 60%  106M 0s
+  9850K .......... .......... .......... .......... .......... 61%  105M 0s
+  9900K .......... .......... .......... .......... .......... 61% 10.8M 0s
+  9950K .......... .......... .......... .......... .......... 61% 57.2M 0s
+ 10000K .......... .......... .......... .......... .......... 62% 77.1M 0s
+ 10050K .......... .......... .......... .......... .......... 62%  106M 0s
+ 10100K .......... .......... .......... .......... .......... 62%  107M 0s
+ 10150K .......... .......... .......... .......... .......... 62% 6.50M 0s
+ 10200K .......... .......... .......... .......... .......... 63% 49.6M 0s
+ 10250K .......... .......... .......... .......... .......... 63% 59.9M 0s
+ 10300K .......... .......... .......... .......... .......... 63% 66.1M 0s
+ 10350K .......... .......... .......... .......... .......... 64% 68.5M 0s
+ 10400K .......... .......... .......... .......... .......... 64% 86.3M 0s
+ 10450K .......... .......... .......... .......... .......... 64% 8.48M 0s
+ 10500K .......... .......... .......... .......... .......... 65% 47.2M 0s
+ 10550K .......... .......... .......... .......... .......... 65% 52.5M 0s
+ 10600K .......... .......... .......... .......... .......... 65% 88.1M 0s
+ 10650K .......... .......... .......... .......... .......... 66% 88.6M 0s
+ 10700K .......... .......... .......... .......... .......... 66% 7.22M 0s
+ 10750K .......... .......... .......... .......... .......... 66% 25.0M 0s
+ 10800K .......... .......... .......... .......... .......... 66% 49.5M 0s
+ 10850K .......... .......... .......... .......... .......... 67% 80.5M 0s
+ 10900K .......... .......... .......... .......... .......... 67% 68.1M 0s
+ 10950K .......... .......... .......... .......... .......... 67% 49.7M 0s
+ 11000K .......... .......... .......... .......... .......... 68% 10.2M 0s
+ 11050K .......... .......... .......... .......... .......... 68% 26.8M 0s
+ 11100K .......... .......... .......... .......... .......... 68% 50.5M 0s
+ 11150K .......... .......... .......... .......... .......... 69% 43.9M 0s
+ 11200K .......... .......... .......... .......... .......... 69% 57.6M 0s
+ 11250K .......... .......... .......... .......... .......... 69% 9.47M 0s
+ 11300K .......... .......... .......... .......... .......... 70% 29.7M 0s
+ 11350K .......... .......... .......... .......... .......... 70% 36.6M 0s
+ 11400K .......... .......... .......... .......... .......... 70% 58.1M 0s
+ 11450K .......... .......... .......... .......... .......... 70% 60.3M 0s
+ 11500K .......... .......... .......... .......... .......... 71% 57.3M 0s
+ 11550K .......... .......... .......... .......... .......... 71% 45.9M 0s
+ 11600K .......... .......... .......... .......... .......... 71% 6.74M 0s
+ 11650K .......... .......... .......... .......... .......... 72% 55.9M 0s
+ 11700K .......... .......... .......... .......... .......... 72% 64.3M 0s
+ 11750K .......... .......... .......... .......... .......... 72% 49.5M 0s
+ 11800K .......... .......... .......... .......... .......... 73% 55.7M 0s
+ 11850K .......... .......... .......... .......... .......... 73% 54.4M 0s
+ 11900K .......... .......... .......... .......... .......... 73% 20.3M 0s
+ 11950K .......... .......... .......... .......... .......... 74% 39.7M 0s
+ 12000K .......... .......... .......... .......... .......... 74% 54.6M 0s
+ 12050K .......... .......... .......... .......... .......... 74% 63.0M 0s
+ 12100K .......... .......... .......... .......... .......... 74% 85.8M 0s
+ 12150K .......... .......... .......... .......... .......... 75% 73.3M 0s
+ 12200K .......... .......... .......... .......... .......... 75% 95.8M 0s
+ 12250K .......... .......... .......... .......... .......... 75% 9.09M 0s
+ 12300K .......... .......... .......... .......... .......... 76% 54.8M 0s
+ 12350K .......... .......... .......... .......... .......... 76% 50.7M 0s
+ 12400K .......... .......... .......... .......... .......... 76% 91.4M 0s
+ 12450K .......... .......... .......... .......... .......... 77% 84.8M 0s
+ 12500K .......... .......... .......... .......... .......... 77% 6.94M 0s
+ 12550K .......... .......... .......... .......... .......... 77% 46.4M 0s
+ 12600K .......... .......... .......... .......... .......... 78% 68.0M 0s
+ 12650K .......... .......... .......... .......... .......... 78% 95.1M 0s
+ 12700K .......... .......... .......... .......... .......... 78% 91.9M 0s
+ 12750K .......... .......... .......... .......... .......... 78% 6.10M 0s
+ 12800K .......... .......... .......... .......... .......... 79% 42.9M 0s
+ 12850K .......... .......... .......... .......... .......... 79% 70.9M 0s
+ 12900K .......... .......... .......... .......... .......... 79%  108M 0s
+ 12950K .......... .......... .......... .......... .......... 80% 96.1M 0s
+ 13000K .......... .......... .......... .......... .......... 80%  109M 0s
+ 13050K .......... .......... .......... .......... .......... 80% 8.79M 0s
+ 13100K .......... .......... .......... .......... .......... 81% 31.1M 0s
+ 13150K .......... .......... .......... .......... .......... 81% 27.7M 0s
+ 13200K .......... .......... .......... .......... .......... 81% 47.3M 0s
+ 13250K .......... .......... .......... .......... .......... 82%  110M 0s
+ 13300K .......... .......... .......... .......... .......... 82%  110M 0s
+ 13350K .......... .......... .......... .......... .......... 82% 10.8M 0s
+ 13400K .......... .......... .......... .......... .......... 82% 24.4M 0s
+ 13450K .......... .......... .......... .......... .......... 83% 34.0M 0s
+ 13500K .......... .......... .......... .......... .......... 83% 50.2M 0s
+ 13550K .......... .......... .......... .......... .......... 83% 22.7M 0s
+ 13600K .......... .......... .......... .......... .......... 84% 14.4M 0s
+ 13650K .......... .......... .......... .......... .......... 84% 21.3M 0s
+ 13700K .......... .......... .......... .......... .......... 84% 43.6M 0s
+ 13750K .......... .......... .......... .......... .......... 85% 30.8M 0s
+ 13800K .......... .......... .......... .......... .......... 85% 31.4M 0s
+ 13850K .......... .......... .......... .......... .......... 85% 24.6M 0s
+ 13900K .......... .......... .......... .......... .......... 86% 20.0M 0s
+ 13950K .......... .......... .......... .......... .......... 86% 15.7M 0s
+ 14000K .......... .......... .......... .......... .......... 86% 33.1M 0s
+ 14050K .......... .......... .......... .......... .......... 86% 40.1M 0s
+ 14100K .......... .......... .......... .......... .......... 87% 31.4M 0s
+ 14150K .......... .......... .......... .......... .......... 87% 96.0M 0s
+ 14200K .......... .......... .......... .......... .......... 87%  108M 0s
+ 14250K .......... .......... .......... .......... .......... 88% 53.2M 0s
+ 14300K .......... .......... .......... .......... .......... 88% 18.5M 0s
+ 14350K .......... .......... .......... .......... .......... 88% 19.3M 0s
+ 14400K .......... .......... .......... .......... .......... 89% 25.1M 0s
+ 14450K .......... .......... .......... .......... .......... 89% 37.0M 0s
+ 14500K .......... .......... .......... .......... .......... 89% 15.6M 0s
+ 14550K .......... .......... .......... .......... .......... 90% 24.6M 0s
+ 14600K .......... .......... .......... .......... .......... 90% 21.8M 0s
+ 14650K .......... .......... .......... .......... .......... 90% 24.2M 0s
+ 14700K .......... .......... .......... .......... .......... 91% 29.9M 0s
+ 14750K .......... .......... .......... .......... .......... 91% 56.1M 0s
+ 14800K .......... .......... .......... .......... .......... 91% 72.7M 0s
+ 14850K .......... .......... .......... .......... .......... 91% 66.9M 0s
+ 14900K .......... .......... .......... .......... .......... 92% 97.0M 0s
+ 14950K .......... .......... .......... .......... .......... 92%  100M 0s
+ 15000K .......... .......... .......... .......... .......... 92%  110M 0s
+ 15050K .......... .......... .......... .......... .......... 93% 94.1M 0s
+ 15100K .......... .......... .......... .......... .......... 93% 6.60M 0s
+ 15150K .......... .......... .......... .......... .......... 93% 42.3M 0s
+ 15200K .......... .......... .......... .......... .......... 94% 89.7M 0s
+ 15250K .......... .......... .......... .......... .......... 94%  111M 0s
+ 15300K .......... .......... .......... .......... .......... 94%  110M 0s
+ 15350K .......... .......... .......... .......... .......... 95% 98.4M 0s
+ 15400K .......... .......... .......... .......... .......... 95% 7.42M 0s
+ 15450K .......... .......... .......... .......... .......... 95% 22.4M 0s
+ 15500K .......... .......... .......... .......... .......... 95% 29.7M 0s
+ 15550K .......... .......... .......... .......... .......... 96% 26.3M 0s
+ 15600K .......... .......... .......... .......... .......... 96% 40.9M 0s
+ 15650K .......... .......... .......... .......... .......... 96% 40.0M 0s
+ 15700K .......... .......... .......... .......... .......... 97% 31.9M 0s
+ 15750K .......... .......... .......... .......... .......... 97% 37.5M 0s
+ 15800K .......... .......... .......... .......... .......... 97% 37.3M 0s
+ 15850K .......... .......... .......... .......... .......... 98% 26.2M 0s
+ 15900K .......... .......... .......... .......... .......... 98% 9.74M 0s
+ 15950K .......... .......... .......... .......... .......... 98% 18.0M 0s
+ 16000K .......... .......... .......... .......... .......... 99% 44.2M 0s
+ 16050K .......... .......... .......... .......... .......... 99% 24.5M 0s
+ 16100K .......... .......... .......... .......... .......... 99% 41.0M 0s
+ 16150K .......... .......... .......... .......... .......... 99% 43.9M 0s
+ 16200K ......                                                100% 13292G=0.6s
+
+2013-11-26 01:12:59 (27.0 MB/s) - `pfff.0.25.1+opam.tar.gz' saved [16595936/16595936]
+
+Building pfff.0.25.1:
+  ./configure --novisual
+  make depend
+  make
+  make opt
+  make install-findlib
+Checking your configuration.
+
+OCaml (the wonderful language) is present.
+make (gnu version) is present.
+
+pfff target prefix: /usr/local (you can use --prefix to override it)
+Generating Makefile.config (VISUAL=0) (see also configure --help)
+Generating commons/features.ml
+Generating globals/config_pfff.ml
+All seems fine for pfff.
+
+----------------------------------------------------------------------
+To compile pfff type:
+  $ make depend
+  $ make 
+
+Then, to test pfff simply type:
+  $ ./pfff -dump_php demos/foo.php
+
+If you want to use the analysis framework and code visualization tools
+see install.txt or type ./configure --help
+----------------------------------------------------------------------
+
+ocamldep  -I commons -I external/ocamlgraph -I external/ocamlzip -I external/extlib -I external/ptrees -I external/javalib/src -I globals -I h_version-control -I h_visualization -I h_files-format -I h_program-lang -I h_program-visual -I matcher -I lang_ml/parsing -I lang_ml/analyze -I lang_nw/parsing -I lang_nw/analyze -I lang_lisp/parsing -I lang_lisp/analyze -I lang_haskell/parsing -I lang_haskell/analyze -I lang_php/parsing -I lang_php/matcher -I lang_php/pretty -I lang_sql/parsing -I lang_js/parsing -I lang_js/analyze -I lang_cpp/parsing -I lang_cpp/analyze -I lang_c/parsing -I lang_c/analyze -I lang_objc/parsing -I lang_objc/analyze -I lang_clang/parsing -I lang_clang/analyze -I lang_java/parsing -I lang_java/analyze -I lang_bytecode/parsing -I lang_bytecode/analyze -I lang_python/parsing -I lang_python/analyze -I lang_csharp/parsing -I lang_csharp/analyze -I lang_opa/parsing -I lang_opa/analyze -I lang_erlang/parsing -I lang_erlang/analyze -I lang_php/analyze -I lang_php/analyze/foundation -I lang_php/analyze/checker -I lang_php/analyze/tools -I lang_php/analyze/qa_test -I lang_html/parsing -I lang_html/analyze -I lang_css/parsing -I lang_web/parsing -I lang_text -I demos -I commons/ocamlextra -I commons/ocollection -I commons/lib-json -I commons/lib-xml -I commons/lib-sexp -I external/extlib -I external/ptrees -I external/ocamlzip -I external/javalib/src -I /usr/lib/ocaml/compiler-libs  *.mli *.ml > .depend
+set -e; for i in commons external/ocamlgraph   external/ocamlzip external/extlib external/ptrees external/javalib/src globals h_version-control h_visualization h_files-format h_program-lang h_program-visual matcher lang_ml/parsing lang_ml/analyze lang_nw/parsing lang_nw/analyze lang_lisp/parsing lang_lisp/analyze lang_haskell/parsing lang_haskell/analyze lang_php/parsing lang_php/matcher lang_php/pretty lang_sql/parsing lang_js/parsing lang_js/analyze lang_cpp/parsing lang_cpp/analyze lang_c/parsing lang_c/analyze lang_objc/parsing lang_objc/analyze lang_clang/parsing lang_clang/analyze lang_java/parsing lang_java/analyze lang_bytecode/parsing lang_bytecode/analyze lang_python/parsing lang_python/analyze lang_csharp/parsing lang_csharp/analyze lang_opa/parsing lang_opa/analyze lang_erlang/parsing lang_erlang/analyze lang_php/analyze lang_php/analyze/foundation lang_php/analyze/checker lang_php/analyze/tools lang_php/analyze/qa_test lang_html/parsing lang_html/analyze lang_css/parsing lang_web/parsing lang_text  demos; do echo $i; make -C $i depend; done
+commons
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+ocamldep.opt -I ocamlextra -I ocollection -I lib-json -I lib-xml  *.mli *.ml  > .depend
+for i in ocamlextra ocollection lib-json lib-xml; do ocamldep.opt -I ocamlextra -I ocollection -I lib-json -I lib-xml  $i/*.ml $i/*.mli >> .depend; done
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+external/ocamlgraph
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlgraph'
+Makefile:593: .depend: No such file or directory
+sed -e s/VERSION/1.8.3/ -e s/CMA/ocamlgraph.cma/ -e s/CMXA/ocamlgraph.cmxa/ \
+		META.in > META
+ocamllex src/gml.mll
+26 states, 827 transitions, table size 3464 bytes
+2623 additional bytes used for bindings
+rm -f src/version.ml
+echo "let version = \""1.8.3"\"" > src/version.ml
+echo "let date = \""`date`"\"" >> src/version.ml
+ocamlyacc -v src/dot_parser.mly
+ocamllex src/dot_lexer.mll
+43 states, 478 transitions, table size 2170 bytes
+rm -f .depend
+ocamldep -slash -I src -I lib -I editor -I view_graph -I dgraph\
+		lib/*.ml lib/*.mli \
+		src/*.ml src/*.mli \
+		editor/*.mli editor/*.ml \
+		view_graph/*.mli view_graph/*.ml \
+		dgraph/*.mli dgraph/*.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlgraph'
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlgraph'
+rm -f .depend
+ocamldep -slash -I src -I lib -I editor -I view_graph -I dgraph\
+		lib/*.ml lib/*.mli \
+		src/*.ml src/*.mli \
+		editor/*.mli editor/*.ml \
+		view_graph/*.mli view_graph/*.ml \
+		dgraph/*.mli dgraph/*.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlgraph'
+external/ocamlzip
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlzip'
+gcc -MM -I/usr/local/include *.c > .depend
+ocamldep *.mli *.ml >> .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlzip'
+external/extlib
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/external/extlib'
+make[1]: Nothing to be done for `depend'.
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/external/extlib'
+external/ptrees
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ptrees'
+ocamldep ptmap.mli ptset.mli ptmap.ml ptset.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ptrees'
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ptrees'
+ocamldep ptmap.mli ptset.mli ptmap.ml ptset.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ptrees'
+external/javalib/src
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/external/javalib/src'
+ocamllex  jManifest.mll
+13 states, 340 transitions, table size 1438 bytes
+ocamldep -pp camlp4o -I ../../../external/extlib -I ../../../external/ptrees  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/external/javalib/src'
+globals
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/globals'
+ocamldep  -I ../commons  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/globals'
+h_version-control
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/h_version-control'
+ocamldep  -I ../commons -I ../commons/lib-sexp -I ../commons/ocamlextra -I ../globals  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/h_version-control'
+h_visualization
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/h_visualization'
+ocamldep  -I ../commons -I ../commons/lib-json -I ../commons/lib-xml  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/h_visualization'
+h_files-format
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/h_files-format'
+ocamldep  -I ../commons  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/h_files-format'
+h_program-lang
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/h_program-lang'
+ocamllex  archi_code_lexer.mll
+1088 states, 1604 transitions, table size 12944 bytes
+ocamldep  -I ../commons -I ../commons/lib-json -I ../commons/ocamlextra -I ../external/ocamlgraph -I ../external/ocamlgraph/src -I ../h_files-format  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/h_program-lang'
+h_program-visual
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/h_program-visual'
+ocamldep  -I ../commons -I ../h_visualization -I ../h_version-control -I ../h_program-lang  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/h_program-visual'
+matcher
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/matcher'
+ocamldep  -I ../commons -I ../commons/ocollection -I ../commons/ocamlextra -I ../h_program-lang -I ../h_version-control -I ../globals -I ../external/  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/matcher'
+lang_ml/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_ml/parsing'
+ocamllex  lexer_ml.mll
+137 states, 1993 transitions, table size 8794 bytes
+ocamlyacc -v parser_ml.mly
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang -I ../../matcher  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_ml/parsing'
+lang_ml/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_ml/analyze'
+ocamldep -pp "cpp -DOCAML_VERSION=4010" -I ../../commons -I /usr/lib/ocaml/compiler-libs -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../globals -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../h_visualization -I ../../globals -I ../parsing -I visual  *.mli *.ml > .depend
+database_light_ml.ml:37:33: warning: missing terminating ' character [enabled by default]
+database_light_ml.ml:42:30: warning: missing terminating ' character [enabled by default]
+database_light_ml.ml:44:44: warning: missing terminating ' character [enabled by default]
+database_light_ml.ml:125:9: warning: missing terminating ' character [enabled by default]
+database_light_ml.ml:198:44: warning: missing terminating ' character [enabled by default]
+database_light_ml.ml:241:20: warning: missing terminating ' character [enabled by default]
+database_light_ml.ml:253:54: warning: missing terminating ' character [enabled by default]
+database_light_ml.ml:267:15: warning: missing terminating ' character [enabled by default]
+graph_code_cmt.ml:77:9: warning: missing terminating ' character [enabled by default]
+graph_code_cmt.ml:265:10: warning: missing terminating ' character [enabled by default]
+graph_code_cmt.ml:293:10: warning: missing terminating ' character [enabled by default]
+graph_code_cmt.ml:452:14: warning: missing terminating ' character [enabled by default]
+graph_code_cmt.ml:489:30: warning: missing terminating ' character [enabled by default]
+graph_code_ml.ml:101:60: warning: missing terminating ' character [enabled by default]
+meta_ast_cmt.ml:1511:43: warning: missing terminating ' character [enabled by default]
+tags_ml.ml:102:23: warning: missing terminating ' character [enabled by default]
+tags_ml.ml:113:62: warning: missing terminating ' character [enabled by default]
+unit_analyze_ml.ml:80:18: warning: missing terminating " character [enabled by default]
+unit_analyze_ml.ml:82:32: warning: missing terminating " character [enabled by default]
+unit_analyze_ml.ml:83:1: warning: missing terminating " character [enabled by default]
+unit_analyze_ml.ml:84:11: warning: missing terminating " character [enabled by default]
+unit_analyze_ml.ml:87:1: warning: missing terminating " character [enabled by default]
+unit_analyze_ml.ml:96:11: warning: missing terminating " character [enabled by default]
+unit_analyze_ml.ml:99:1: warning: missing terminating " character [enabled by default]
+unit_analyze_ml.ml:122:17: warning: missing terminating ' character [enabled by default]
+unit_analyze_ml.ml:131:15: warning: missing terminating ' character [enabled by default]
+set -e; for i in visual; do make -C $i depend; done 
+make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_ml/analyze/visual'
+ocamldep  -I ../../../commons -I ../../../commons/ocollection -I ../../../commons/ocamlextra -I ../../../commons/lib-json -I ../../../commons/lib-xml -I ../../../h_program-lang -I ../../../h_version-control -I ../../../globals -I ../../../lang_ml/parsing  *.mli *.ml > .depend
+make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_ml/analyze/visual'
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_ml/analyze'
+lang_nw/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_nw/parsing'
+ocamllex  lexer_nw.mll
+65 states, 1089 transitions, table size 4746 bytes
+ocamlyacc -v parser_nw.mly
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_nw/parsing'
+lang_nw/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_nw/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../parsing  *.mli *.ml > .depend
+set -e; for i in ; do make -C $i depend; done 
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_nw/analyze'
+lang_lisp/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_lisp/parsing'
+ocamllex  lexer_lisp.mll
+27 states, 677 transitions, table size 2870 bytes
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_lisp/parsing'
+lang_lisp/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_lisp/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../parsing  *.mli *.ml > .depend
+set -e; for i in ; do make -C $i depend; done 
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_lisp/analyze'
+lang_haskell/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_haskell/parsing'
+ocamllex  lexer_hs.mll
+43 states, 878 transitions, table size 3770 bytes
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_haskell/parsing'
+lang_haskell/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_haskell/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../parsing  *.mli *.ml > .depend
+set -e; for i in ; do make -C $i depend; done 
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_haskell/analyze'
+lang_php/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/parsing'
+ocamllex  lexer_php.mll
+408 states, 7291 transitions, table size 31612 bytes
+5459 additional bytes used for bindings
+ocamlyacc -v parser_php.mly
+1 shift/reduce conflict.
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang -I ../../matcher  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/parsing'
+lang_php/matcher
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/matcher'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../../external/ -I ../../matcher -I ../parsing  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/matcher'
+lang_php/pretty
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/pretty'
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../globals -I ../../h_program-lang -I ../../lang_php/parsing  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/pretty'
+lang_sql/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_sql/parsing'
+ocamllex  lexer_sql.mll
+37 states, 568 transitions, table size 2494 bytes
+ocamlyacc -v parser_sql.mly
+1 reduce/reduce conflict.
+ocamldep  -I ../../commons -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../h_program-lang  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_sql/parsing'
+lang_js/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_js/parsing'
+ocamllex  lexer_js.mll
+135 states, 1291 transitions, table size 5974 bytes
+ocamlyacc -v parser_js.mly
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang -I ../../matcher  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_js/parsing'
+lang_js/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_js/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../parsing  *.mli *.ml > .depend
+set -e; for i in ; do make -C $i depend; done
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_js/analyze'
+lang_cpp/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_cpp/parsing'
+ocamllex  lexer_cpp.mll
+393 states, 12913 transitions, table size 54010 bytes
+3423 additional bytes used for bindings
+ocamlyacc -v parser_cpp.mly
+2 shift/reduce conflicts, 1 reduce/reduce conflict.
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang -I ../../matcher  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_cpp/parsing'
+lang_cpp/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_cpp/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../parsing  *.mli *.ml > .depend
+set -e; for i in ; do make -C $i depend; done 
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_cpp/analyze'
+lang_c/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_c/parsing'
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang -I ../../lang_cpp/parsing  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_c/parsing'
+lang_c/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_c/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../../lang_cpp/parsing -I ../parsing  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_c/analyze'
+lang_objc/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_objc/parsing'
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang -I ../../lang_cpp/parsing  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_objc/parsing'
+lang_objc/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_objc/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../../lang_cpp/parsing -I ../parsing  *.mli *.ml > .depend
+set -e; for i in ; do make -C $i depend; done 
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_objc/analyze'
+lang_clang/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_clang/parsing'
+ocamllex  lexer_clang.mll
+154 states, 4850 transitions, table size 20324 bytes
+ocamlyacc -v parser_clang.mly
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../h_program-lang  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_clang/parsing'
+lang_clang/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_clang/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../../lang_cpp/parsing -I ../parsing  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_clang/analyze'
+lang_java/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_java/parsing'
+ocamllex  lexer_java.mll
+102 states, 2053 transitions, table size 8824 bytes
+ocamlyacc -v parser_java.mly
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../h_program-lang -I ../../matcher -I ../../globals  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_java/parsing'
+lang_java/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_java/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../parsing  *.mli *.ml > .depend
+set -e; for i in ; do make -C $i depend; done 
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_java/analyze'
+lang_bytecode/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_bytecode/parsing'
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../h_program-lang -I ../../globals -I ../../external/extlib -I ../../external/javalib/src  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_bytecode/parsing'
+lang_bytecode/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_bytecode/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../external/extlib -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../../external/javalib/src -I ../../lang_java/parsing -I ../../lang_java/analyze -I ../parsing  *.mli *.ml > .depend
+set -e; for i in ; do make -C $i depend; done 
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_bytecode/analyze'
+lang_python/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_python/parsing'
+ocamllex  lexer_python.mll
+102 states, 909 transitions, table size 4248 bytes
+ocamlyacc -v parser_python.mly
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_python/parsing'
+lang_python/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_python/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../parsing  *.mli *.ml > .depend
+set -e; for i in ; do make -C $i depend; done 
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_python/analyze'
+lang_csharp/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_csharp/parsing'
+ocamllex  lexer_csharp.mll
+122 states, 835 transitions, table size 4072 bytes
+ocamlyacc -v parser_csharp.mly
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_csharp/parsing'
+lang_csharp/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_csharp/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../parsing  *.mli *.ml > .depend
+set -e; for i in ; do make -C $i depend; done 
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_csharp/analyze'
+lang_opa/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_opa/parsing'
+ocamllex  lexer_opa.mll
+138 states, 2629 transitions, table size 11344 bytes
+2176 additional bytes used for bindings
+ocamlyacc -v parser_opa.mly
+4 shift/reduce conflicts.
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_opa/parsing'
+lang_opa/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_opa/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../parsing  *.mli *.ml > .depend
+set -e; for i in ; do make -C $i depend; done 
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_opa/analyze'
+lang_erlang/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_erlang/parsing'
+ocamllex  lexer_erlang.mll
+60 states, 769 transitions, table size 3436 bytes
+ocamlyacc -v parser_erlang.mly
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_erlang/parsing'
+lang_erlang/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_erlang/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../parsing  *.mli *.ml > .depend
+set -e; for i in ; do make -C $i depend; done 
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_erlang/analyze'
+lang_php/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../commons/lib-xml -I ../../external/ -I ../../h_program-lang -I ../../h_version-control -I ../../globals -I ../../matcher -I ../parsing -I foundation -I checker -I tools -I qa_test  *.mli *.ml > .depend
+set -e; for i in foundation tools checker qa_test visual ; do make -C $i depend; done 
+make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/foundation'
+ocamldep  -I ../../../commons -I ../../../commons/ocollection -I ../../../commons/ocamlextra -I ../../../commons/lib-json -I ../../../commons/lib-xml -I ../../../external/ -I ../../../h_program-lang -I ../../../h_version-control -I ../../../globals -I ../../../matcher -I ../../../lang_php/parsing -I ../../../lang_ml/parsing  *.mli *.ml > .depend
+make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/foundation'
+make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/tools'
+ocamldep -pp camlp4o -I ../../../commons -I ../../../commons/ocollection -I ../../../commons/ocamlextra -I ../../../commons/lib-json -I ../../../commons/lib-xml -I ../../../external/ -I ../../../h_program-lang -I ../../../h_version-control -I ../../parsing -I ../foundation  *.mli *.ml > .depend
+make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/tools'
+make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/checker'
+ocamldep  -I ../../../commons -I ../../../commons/ocollection -I ../../../commons/ocamlextra -I ../../../commons/lib-json -I ../../../external/ -I ../../../h_program-lang -I ../../../h_version-control -I ../../../globals -I ../../parsing -I .. -I ../foundation  *.mli *.ml > .depend
+make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/checker'
+make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/qa_test'
+ocamldep  -I ../../../commons -I ../../../commons/ocollection -I ../../../commons/ocamlextra -I ../../../commons/lib-json -I ../../../external/ -I ../../../h_program-lang -I ../../../h_version-control -I ../../parsing -I .. -I ../foundation -I ../tools -I ../../../globals  *.mli *.ml > .depend
+make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/qa_test'
+make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/visual'
+ocamldep  -I ../../../commons -I ../../../commons/ocollection -I ../../../commons/ocamlextra -I ../../../commons/lib-json -I ../../../commons/lib-xml -I ../../../h_program-lang -I ../../../h_version-control -I ../../../globals -I ../../../lang_php/parsing -I ../foundation  *.mli *.ml > .depend
+make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/visual'
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze'
+lang_php/analyze/foundation
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/foundation'
+ocamldep  -I ../../../commons -I ../../../commons/ocollection -I ../../../commons/ocamlextra -I ../../../commons/lib-json -I ../../../commons/lib-xml -I ../../../external/ -I ../../../h_program-lang -I ../../../h_version-control -I ../../../globals -I ../../../matcher -I ../../../lang_php/parsing -I ../../../lang_ml/parsing  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/foundation'
+lang_php/analyze/checker
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/checker'
+ocamldep  -I ../../../commons -I ../../../commons/ocollection -I ../../../commons/ocamlextra -I ../../../commons/lib-json -I ../../../external/ -I ../../../h_program-lang -I ../../../h_version-control -I ../../../globals -I ../../parsing -I .. -I ../foundation  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/checker'
+lang_php/analyze/tools
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/tools'
+ocamldep -pp camlp4o -I ../../../commons -I ../../../commons/ocollection -I ../../../commons/ocamlextra -I ../../../commons/lib-json -I ../../../commons/lib-xml -I ../../../external/ -I ../../../h_program-lang -I ../../../h_version-control -I ../../parsing -I ../foundation  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/tools'
+lang_php/analyze/qa_test
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/qa_test'
+ocamldep  -I ../../../commons -I ../../../commons/ocollection -I ../../../commons/ocamlextra -I ../../../commons/lib-json -I ../../../external/ -I ../../../h_program-lang -I ../../../h_version-control -I ../../parsing -I .. -I ../foundation -I ../tools -I ../../../globals  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/analyze/qa_test'
+lang_html/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_html/parsing'
+ocamllex  lexer_html.mll
+57 states, 1087 transitions, table size 4690 bytes
+ocamlyacc -v parser_html.mly
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_html/parsing'
+lang_html/analyze
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_html/analyze'
+ocamldep  -I ../../commons -I ../../commons/ocollection -I ../../commons/ocamlextra -I ../../commons/lib-json -I ../../external/ -I ../../h_program-lang -I ../../globals -I ../parsing  *.mli *.ml > .depend
+set -e; for i in ; do make -C $i depend; done 
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_html/analyze'
+lang_css/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_css/parsing'
+ocamllex  lexer_css.mll
+130 states, 1823 transitions, table size 8072 bytes
+ocamlyacc -v parser_css.mly
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_css/parsing'
+lang_web/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_web/parsing'
+ocamldep  -I ../../commons -I ../../commons/ocamlextra -I ../../commons/lib-sexp -I ../../commons/lib-json -I ../../globals -I ../../h_program-lang -I ../../lang_html/parsing -I ../../lang_js/parsing -I ../../lang_css/parsing  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_web/parsing'
+lang_text
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_text'
+ocamldep  -I ../commons -I ../commons/ocamlextra -I ../commons/lib-sexp -I ../commons/lib-json -I ../globals -I ../h_program-lang  *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_text'
+demos
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/demos'
+ocamldep -I ../commons -I ../commons/lib-sexp -I ../commons/lib-json -I ../h_program-lang -I ../lang_php/parsing -I ../h_version-control *.mli *.ml > .depend
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/demos'
+make rec 
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1'
+make -C commons 
+make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/dumper.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/dumper.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/ANSITerminal.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/ANSITerminal.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/set_poly.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/set_poly.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/map_poly.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/map_poly.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/setPt.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c common.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c common.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c common2.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c common2.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c common_extra.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c common_extra.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c interfaces.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c objet.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c objet.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c int.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c seti.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c oset.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c oset.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c oassoc.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c oassoc.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c osequence.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c osequence.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ograph.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ograph.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection/oseti.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection/oseth.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection/osetb.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection/osetpt.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection/oassocb.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection/oassoch.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection/oassoc_buffer.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection/oassoc_buffer.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection/oassoc_cache.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection/oassoc_cache.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection/oassocid.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c oarray.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c oarray.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection/ograph2way.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocollection/ograph2way.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ograph_extended.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ograph_extended.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ograph_simple.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ograph_simple.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ofullcommon.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c math.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c math.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c unicode.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c unicode.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c simple_color.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c simple_color.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c file_type.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c file_type.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c file_format.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c file_format.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c glimpse.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c glimpse.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c parser_combinators.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c parser_combinators.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c concurrency.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c parallel.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c parallel.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/enum.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/enum.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/dynArray.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/dynArray.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/suffix_tree.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/suffix_tree.ml
+File "/home/opam/.opam/system/build/pfff.0.25.1/commons/ocamlextra/suffix_tree.ml", line 255, characters 24-25:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "/home/opam/.opam/system/build/pfff.0.25.1/commons/ocamlextra/suffix_tree.ml", line 255, characters 15-16:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "/home/opam/.opam/system/build/pfff.0.25.1/commons/ocamlextra/suffix_tree.ml", line 182, characters 30-32:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "/home/opam/.opam/system/build/pfff.0.25.1/commons/ocamlextra/suffix_tree.ml", line 83, characters 19-20:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "/home/opam/.opam/system/build/pfff.0.25.1/commons/ocamlextra/suffix_tree.ml", line 52, characters 13-14:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/suffix_tree_ext.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/suffix_tree_ext.ml
+File "/home/opam/.opam/system/build/pfff.0.25.1/commons/ocamlextra/suffix_tree_ext.ml", line 272, characters 24-25:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "/home/opam/.opam/system/build/pfff.0.25.1/commons/ocamlextra/suffix_tree_ext.ml", line 272, characters 15-16:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "/home/opam/.opam/system/build/pfff.0.25.1/commons/ocamlextra/suffix_tree_ext.ml", line 182, characters 30-32:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "/home/opam/.opam/system/build/pfff.0.25.1/commons/ocamlextra/suffix_tree_ext.ml", line 83, characters 19-20:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "/home/opam/.opam/system/build/pfff.0.25.1/commons/ocamlextra/suffix_tree_ext.ml", line 52, characters 13-14:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/graph_ocamldot.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/graph_ocamldot.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/pretty_printer_indent.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/pretty_printer_indent.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/oUnit.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/oUnit.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/xML2.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/xML2.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/xHTML2.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocamlextra/xHTML2.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-json/json_type.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-json/json_type.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-json/json_out.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-json/netconversion2.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-json/json_parser.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-json/json_parser.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-json/json_lexer.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-json/json_in.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-json/json_io.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-json/json_io.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c logger.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c logger.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/xml_types.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/xml_types.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/dtd_types.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/dtd_types.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/xml_parser.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/xml_parser.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/xml_lexer.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/xml_lexer.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/xmlParser.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/xmlParser.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/dtd.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/dtd.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/xml_parse.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/xml_parse.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/xml_utils.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c lib-xml/xml_utils.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocaml.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c ocaml.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml  -c ocamlextra/realpath.c -o realpath.o
+ocamlmklib -o lib  ocamlextra/dumper.cmo ocamlextra/ANSITerminal.cmo ocamlextra/set_poly.cmo ocamlextra/map_poly.cmo ocamlextra/setPt.cmo common.cmo common2.cmo common_extra.cmo interfaces.cmo objet.cmo int.cmo ocollection.cmo seti.cmo oset.cmo oassoc.cmo osequence.cmo ograph.cmo ocollection/oseti.cmo ocollection/oseth.cmo ocollection/osetb.cmo ocollection/osetpt.cmo ocollection/oassocb.cmo ocollection/oassoch.cmo ocollection/oassoc_buffer.cmo ocollection/oassoc_cache.cmo ocollection/oassocid.cmo oarray.cmo ocollection/ograph2way.cmo ograph_extended.cmo ograph_simple.cmo ofullcommon.cmo math.cmo unicode.cmo simple_color.cmo file_type.cmo file_format.cmo glimpse.cmo parser_combinators.cmo concurrency.cmo parallel.cmo ocamlextra/enum.cmo ocamlextra/dynArray.cmo ocamlextra/suffix_tree.cmo ocamlextra/suffix_tree_ext.cmo ocamlextra/graph_ocamldot.cmo ocamlextra/pretty_printer_indent.cmo ocamlextra/oUnit.cmo ocamlextra/xML2.cmo ocamlextra/xHTML2.cmo lib-json/json_type.cmo lib-json/json_out.cmo lib-json/netconversion2.cmo lib-json/json_parser.cmo lib-json/json_lexer.cmo lib-json/json_in.cmo lib-json/json_io.cmo logger.cmo lib-xml/xml_types.cmo lib-xml/dtd_types.cmo lib-xml/xml_parser.cmo lib-xml/xml_lexer.cmo lib-xml/xmlParser.cmo lib-xml/dtd.cmo lib-xml/xml_parse.cmo lib-xml/xml_utils.cmo ocaml.cmo realpath.o
+make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+make all -C external/ocamlgraph && make graph -C commons
+make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlgraph'
+ocamlc -c -I src -I lib -g -dtypes src/sig.mli
+ocamlc -c -I src -I lib -g -dtypes src/sig_pack.mli
+ocamlc -c -I src -I lib -g -dtypes src/dot_ast.mli
+ocamlc -c -I src -I lib -g -dtypes lib/unionfind.mli
+ocamlc -c -I src -I lib -g -dtypes lib/unionfind.ml
+ocamlc -c -I src -I lib -g -dtypes lib/heap.mli
+ocamlc -c -I src -I lib -g -dtypes lib/heap.ml
+ocamlc -c -I src -I lib -g -dtypes lib/bitv.mli
+ocamlc -c -I src -I lib -g -dtypes lib/bitv.ml
+File "lib/bitv.ml", line 289, characters 24-26:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 289, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 214, characters 24-26:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 214, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 206, characters 25-27:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 206, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 205, characters 25-27:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 205, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 118, characters 11-13:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 113, characters 11-13:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlc -c -I src -I lib -g -dtypes src/version.ml
+ocamlc -c -I src -I lib -g -dtypes src/util.mli
+ocamlc -c -I src -I lib -g -dtypes src/util.ml
+ocamlc -c -I src -I lib -g -dtypes src/blocks.ml
+ocamlc -c -I src -I lib -g -dtypes src/persistent.mli
+ocamlc -c -I src -I lib -g -dtypes src/persistent.ml
+ocamlc -c -I src -I lib -g -dtypes src/imperative.mli
+ocamlc -c -I src -I lib -g -dtypes src/imperative.ml
+ocamlc -c -I src -I lib -g -dtypes src/delaunay.mli
+ocamlc -c -I src -I lib -g -dtypes src/delaunay.ml
+ocamlc -c -I src -I lib -g -dtypes src/builder.mli
+ocamlc -c -I src -I lib -g -dtypes src/builder.ml
+ocamlc -c -I src -I lib -g -dtypes src/classic.mli
+ocamlc -c -I src -I lib -g -dtypes src/classic.ml
+ocamlc -c -I src -I lib -g -dtypes src/rand.mli
+ocamlc -c -I src -I lib -g -dtypes src/rand.ml
+ocamlc -c -I src -I lib -g -dtypes src/oper.mli
+ocamlc -c -I src -I lib -g -dtypes src/oper.ml
+ocamlc -c -I src -I lib -g -dtypes src/components.mli
+ocamlc -c -I src -I lib -g -dtypes src/components.ml
+ocamlc -c -I src -I lib -g -dtypes src/path.mli
+ocamlc -c -I src -I lib -g -dtypes src/path.ml
+ocamlc -c -I src -I lib -g -dtypes src/nonnegative.mli
+ocamlc -c -I src -I lib -g -dtypes src/nonnegative.ml
+ocamlc -c -I src -I lib -g -dtypes src/traverse.mli
+ocamlc -c -I src -I lib -g -dtypes src/traverse.ml
+ocamlc -c -I src -I lib -g -dtypes src/coloring.mli
+ocamlc -c -I src -I lib -g -dtypes src/coloring.ml
+ocamlc -c -I src -I lib -g -dtypes src/topological.mli
+ocamlc -c -I src -I lib -g -dtypes src/topological.ml
+ocamlc -c -I src -I lib -g -dtypes src/kruskal.mli
+ocamlc -c -I src -I lib -g -dtypes src/kruskal.ml
+ocamlc -c -I src -I lib -g -dtypes src/flow.mli
+ocamlc -c -I src -I lib -g -dtypes src/flow.ml
+File "src/flow.ml", line 141, characters 40-42:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 136, characters 44-46:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 137, characters 47-49:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 137, characters 6-8:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 53, characters 54-56:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlc -c -I src -I lib -g -dtypes src/dominator.mli
+ocamlc -c -I src -I lib -g -dtypes src/dominator.ml
+ocamlc -c -I src -I lib -g -dtypes src/graphviz.mli
+ocamlc -c -I src -I lib -g -dtypes src/graphviz.ml
+ocamlc -c -I src -I lib -g -dtypes src/gml.mli
+ocamlc -c -I src -I lib -g -dtypes src/gml.ml
+ocamlc -c -I src -I lib -g -dtypes src/dot_parser.mli
+ocamlc -c -I src -I lib -g -dtypes src/dot_parser.ml
+ocamlc -c -I src -I lib -g -dtypes src/dot_lexer.ml
+ocamlc -c -I src -I lib -g -dtypes src/dot.mli
+ocamlc -c -I src -I lib -g -dtypes src/dot.ml
+ocamlc -c -I src -I lib -g -dtypes src/pack.mli
+ocamlc -c -I src -I lib -g -dtypes src/pack.ml
+ocamlc -c -I src -I lib -g -dtypes src/gmap.mli
+ocamlc -c -I src -I lib -g -dtypes src/gmap.ml
+ocamlc -c -I src -I lib -g -dtypes src/minsep.mli
+ocamlc -c -I src -I lib -g -dtypes src/minsep.ml
+ocamlc -c -I src -I lib -g -dtypes src/cliquetree.mli
+ocamlc -c -I src -I lib -g -dtypes src/cliquetree.ml
+ocamlc -c -I src -I lib -g -dtypes src/mcs_m.mli
+ocamlc -c -I src -I lib -g -dtypes src/mcs_m.ml
+ocamlc -c -I src -I lib -g -dtypes src/md.mli
+ocamlc -c -I src -I lib -g -dtypes src/md.ml
+ocamlc -c -I src -I lib -g -dtypes src/strat.mli
+ocamlc -c -I src -I lib -g -dtypes src/strat.ml
+ocamlc -c -I src -I lib -g -dtypes src/fixpoint.mli
+ocamlc -c -I src -I lib -g -dtypes src/fixpoint.ml
+ocamlc -c -I src -I lib -g -dtypes src/leaderlist.mli
+ocamlc -c -I src -I lib -g -dtypes src/leaderlist.ml
+ocamlc -c -I src -I lib -g -dtypes src/contraction.mli
+ocamlc -c -I src -I lib -g -dtypes src/contraction.ml
+ocamlc -c -I src -I lib -g -dtypes src/graphml.mli
+ocamlc -c -I src -I lib -g -dtypes src/graphml.ml
+ocamlc -c -I src -I lib -g -dtypes src/merge.mli
+ocamlc -c -I src -I lib -g -dtypes src/merge.ml
+ocamlc -I src -I lib -pack -o ocamlgraph.cmo src/sig.cmi src/sig_pack.cmi src/dot_ast.cmi lib/unionfind.cmo lib/heap.cmo lib/bitv.cmo src/version.cmo src/util.cmo src/blocks.cmo src/persistent.cmo src/imperative.cmo src/delaunay.cmo src/builder.cmo src/classic.cmo src/rand.cmo src/oper.cmo src/components.cmo src/path.cmo src/nonnegative.cmo src/traverse.cmo src/coloring.cmo src/topological.cmo src/kruskal.cmo src/flow.cmo src/dominator.cmo src/graphviz.cmo src/gml.cmo src/dot_parser.cmo src/dot_lexer.cmo src/dot.cmo src/pack.cmo src/gmap.cmo src/minsep.cmo src/cliquetree.cmo src/mcs_m.cmo src/md.cmo src/strat.cmo src/fixpoint.cmo src/leaderlist.cmo src/contraction.cmo src/graphml.cmo src/merge.cmo
+ocamlc -I src -I lib -a -g -o ocamlgraph.cma ocamlgraph.cmo
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  lib/unionfind.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  lib/heap.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  lib/bitv.ml
+File "lib/bitv.ml", line 113, characters 11-13:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 118, characters 11-13:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 206, characters 25-27:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 206, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 205, characters 25-27:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 205, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 214, characters 24-26:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 214, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 289, characters 24-26:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "lib/bitv.ml", line 289, characters 13-15:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/version.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/util.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/blocks.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/persistent.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/imperative.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/delaunay.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/builder.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/classic.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/rand.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/oper.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/components.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/path.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/nonnegative.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/traverse.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/coloring.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/topological.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/kruskal.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/flow.ml
+File "src/flow.ml", line 141, characters 40-42:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 136, characters 44-46:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 137, characters 47-49:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 137, characters 6-8:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+File "src/flow.ml", line 53, characters 54-56:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/dominator.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/graphviz.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/gml.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/dot_parser.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/dot_lexer.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/dot.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/pack.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/gmap.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/minsep.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/cliquetree.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/mcs_m.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/md.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/strat.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/fixpoint.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/leaderlist.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/contraction.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/graphml.ml
+ocamlopt -c -I src -I lib -for-pack Ocamlgraph  src/merge.ml
+ocamlopt -I src -I lib -pack -o ocamlgraph.cmx src/sig.cmi src/sig_pack.cmi src/dot_ast.cmi lib/unionfind.cmx lib/heap.cmx lib/bitv.cmx src/version.cmx src/util.cmx src/blocks.cmx src/persistent.cmx src/imperative.cmx src/delaunay.cmx src/builder.cmx src/classic.cmx src/rand.cmx src/oper.cmx src/components.cmx src/path.cmx src/nonnegative.cmx src/traverse.cmx src/coloring.cmx src/topological.cmx src/kruskal.cmx src/flow.cmx src/dominator.cmx src/graphviz.cmx src/gml.cmx src/dot_parser.cmx src/dot_lexer.cmx src/dot.cmx src/pack.cmx src/gmap.cmx src/minsep.cmx src/cliquetree.cmx src/mcs_m.cmx src/md.cmx src/strat.cmx src/fixpoint.cmx src/leaderlist.cmx src/contraction.cmx src/graphml.cmx src/merge.cmx
+ocamlopt -I src -I lib -a -g -o ocamlgraph.cmxa ocamlgraph.cmx
+make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlgraph'
+make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+make INCLUDESEXTRA="-I ../external/ocamlgraph" commons_graph.cma
+make[3]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml -I ../external/ocamlgraph  -c graph.mli
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml -I ../external/ocamlgraph  -c graph.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml -I ../external/ocamlgraph -a -o commons_graph.cma graph.cmo
+make[3]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+make features -C commons 
+make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml   -c features.ml
+ocamlc.opt -g -dtypes -bin-annot -absname -thread -w +9 -I ocamlextra -I ocollection -I lib-json -I lib-xml  -a -o commons_features.cma features.cmo
+make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+set -e; for i in commons external/ocamlgraph   external/ocamlzip external/extlib external/ptrees external/javalib/src globals h_version-control h_visualization h_files-format h_program-lang h_program-visual matcher lang_ml/parsing lang_ml/analyze lang_nw/parsing lang_nw/analyze lang_lisp/parsing lang_lisp/analyze lang_haskell/parsing lang_haskell/analyze lang_php/parsing lang_php/matcher lang_php/pretty lang_sql/parsing lang_js/parsing lang_js/analyze lang_cpp/parsing lang_cpp/analyze lang_c/parsing lang_c/analyze lang_objc/parsing lang_objc/analyze lang_clang/parsing lang_clang/analyze lang_java/parsing lang_java/analyze lang_bytecode/parsing lang_bytecode/analyze lang_python/parsing lang_python/analyze lang_csharp/parsing lang_csharp/analyze lang_opa/parsing lang_opa/analyze lang_erlang/parsing lang_erlang/analyze lang_php/analyze lang_php/analyze/foundation lang_php/analyze/checker lang_php/analyze/tools lang_php/analyze/qa_test lang_html/parsing lang_html/analyze lang_css/parsing lang_web/parsing lang_text  demos; do make -C $i all || exit 1; done 
+make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlgraph'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlgraph'
+make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlzip'
+ocamlc -g -c -ccopt -g -ccopt -I/usr/local/include zlibstubs.c
+zlibstubs.c:18:18: fatal error: zlib.h: No such file or directory
+compilation terminated.
+make[2]: *** [zlibstubs.o] Error 2
+make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlzip'
+make[1]: *** [rec] Error 1
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1'
+make: *** [all] Error 2
+[ERROR] The compilation of pfff.0.25.1 failed.
+Removing pfff.0.25.1.
+  make uninstall-findlib
+ocamlfind remove pfff
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/pfff
+set -e; for i in commons h_program-lang matcher lang_ml/parsing lang_php/parsing lang_cpp/parsing lang_java/parsing lang_js/parsing lang_css/parsing lang_html/parsing ; do echo $i; make -C $i uninstall-findlib; done
+commons
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+ocamlfind remove pfff-commons
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/pfff-commons
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+h_program-lang
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/h_program-lang'
+ocamlfind remove pfff-h_program-lang
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/pfff-h_program-lang
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/h_program-lang'
+matcher
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/matcher'
+ocamlfind remove pfff-matcher
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/pfff-matcher
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/matcher'
+lang_ml/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_ml/parsing'
+ocamlfind remove pfff-lang_ml
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/pfff-lang_ml
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_ml/parsing'
+lang_php/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/parsing'
+ocamlfind remove pfff-lang_php
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/pfff-lang_php
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_php/parsing'
+lang_cpp/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_cpp/parsing'
+ocamlfind remove pfff-lang_cpp
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/pfff-lang_cpp
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_cpp/parsing'
+lang_java/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_java/parsing'
+ocamlfind remove pfff-lang_java
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/pfff-lang_java
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_java/parsing'
+lang_js/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_js/parsing'
+ocamlfind remove pfff-lang_js
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/pfff-lang_js
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_js/parsing'
+lang_css/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_css/parsing'
+ocamlfind remove pfff-lang_css
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/pfff-lang_css
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_css/parsing'
+lang_html/parsing
+make[1]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_html/parsing'
+ocamlfind remove pfff-lang_html
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/pfff-lang_html
+make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/lang_html/parsing'
+
+
+===== ERROR while installing pfff.0.25.1 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/system/build/pfff.0.25.1
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/opam/.opam/system/build/pfff.0.25.1/pfff-23-a00279.env
+# stdout-file          /home/opam/.opam/system/build/pfff.0.25.1/pfff-23-a00279.out
+# stderr-file          /home/opam/.opam/system/build/pfff.0.25.1/pfff-23-a00279.err
+### stdout ###
+# ...[truncated]
+# make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+# make[2]: Nothing to be done for `all'.
+# make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/commons'
+# make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlgraph'
+# make[2]: Nothing to be done for `all'.
+# make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlgraph'
+# make[2]: Entering directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlzip'
+# ocamlc -g -c -ccopt -g -ccopt -I/usr/local/include zlibstubs.c
+# make[2]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1/external/ocamlzip'
+# make[1]: Leaving directory `/home/opam/.opam/system/build/pfff.0.25.1'
+### stderr ###
+# ...[truncated]
+# Warning 3: deprecated feature: operator (or); you should use (||) instead
+# File "src/flow.ml", line 137, characters 6-8:
+# Warning 3: deprecated feature: operator (or); you should use (||) instead
+# File "src/flow.ml", line 53, characters 54-56:
+# Warning 3: deprecated feature: operator (or); you should use (||) instead
+# zlibstubs.c:18:18: fatal error: zlib.h: No such file or directory
+# compilation terminated.
+# make[2]: *** [zlibstubs.o] Error 2
+# make[1]: *** [rec] Error 1
+# make: *** [all] Error 2
+
+'opam install pfff' failed.
