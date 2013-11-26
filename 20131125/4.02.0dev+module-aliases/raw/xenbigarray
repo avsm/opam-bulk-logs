@@ -1,0 +1,114 @@
+++ opam install xenbigarray -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install xenbigarray
+The following actions will be performed:
+ - install xenbigarray.1.0.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing xenbigarray.1.0.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/xenbigarray.1.0.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/xenbigarray.1.0.0+opam.tar.gz
+--2013-11-26 00:51:50--  https://opam.ocaml.org/archives/xenbigarray.1.0.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 45954 (45K) [application/octet-stream]
+Saving to: `xenbigarray.1.0.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ....      100% 62.5M=0.001s
+
+2013-11-26 00:51:50 (62.5 MB/s) - `xenbigarray.1.0.0+opam.tar.gz' saved [45954/45954]
+
+Building xenbigarray.1.0.0:
+  make
+  make install
+ocaml setup.ml -configure
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlbuild
+Package name: ........................................ bigarray
+Package version: ..................................... 1.0
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+module-aliases/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+
+ocaml setup.ml -build -j 4
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+File "_tags", line 20, characters 48-66:
+Warning: the tag "pkg_cstruct.syntax" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamldep -modules lib/bigarray.mli > lib/bigarray.mli.depends
+ocamlfind ocamlc -c -g -annot -I lib -o lib/bigarray.cmi lib/bigarray.mli
+ocamlfind ocamldep -modules lib/bigarray.ml > lib/bigarray.ml.depends
+ocamlfind ocamlc -c -g -annot -I lib -o lib/bigarray.cmo lib/bigarray.ml
++ ocamlfind ocamlc -c -g -annot -I lib -o lib/bigarray.cmo lib/bigarray.ml
+findlib: [WARNING] Interface bigarray.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml, lib
+ocamlfind ocamlc -a lib/bigarray.cmo -o lib/xenbigarray.cma
+ocamlfind ocamlopt -c -g -annot -I lib -o lib/bigarray.cmx lib/bigarray.ml
++ ocamlfind ocamlopt -c -g -annot -I lib -o lib/bigarray.cmx lib/bigarray.ml
+findlib: [WARNING] Interface bigarray.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml, lib
+ocamlfind ocamlopt -a lib/bigarray.cmx -o lib/xenbigarray.cmxa
+ocamlfind ocamlopt -shared -linkall lib/xenbigarray.cmxa -o lib/xenbigarray.cmxs
+# No parallelism done
+ocamlfind remove bigarray || true
+ocamlfind: [WARNING] You are removing the package from /home/opam/.opam/4.02.0dev+module-aliases/lib/bigarray but the currently visible package is at /home/opam/.opam/4.02.0dev+module-aliases/lib/ocaml; you may want to specify the -destdir option
+Removed /home/opam/.opam/4.02.0dev+module-aliases/lib/bigarray
+ocaml setup.ml -install
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/bigarray/bigarray.mli
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/bigarray/xenbigarray.cma
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/bigarray/xenbigarray.cmxa
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/bigarray/xenbigarray.a
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/bigarray/xenbigarray.cmxs
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/bigarray/bigarray.cmi
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/bigarray/bigarray.cmx
+Installed /home/opam/.opam/4.02.0dev+module-aliases/lib/bigarray/META
+Installing xenbigarray.1.0.0.
