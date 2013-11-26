@@ -1,0 +1,1572 @@
+++ opam install rpc -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install rpc
+Ubuntu depexts:
+The following actions will be performed:
+ - install type_conv.109.47.00 [required by rpc]
+ - install optcomp.1.4 [required by rpc]
+ - install lwt.2.4.4 [required by rpc]
+ - install xmlm.1.2.0 [required by rpc]
+ - install deriving-ocsigen.0.5 [required by rpc]
+ - install js_of_ocaml.1.2 [required by rpc]
+ - install rpc.1.5.0
+7 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing lwt.2.4.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/lwt.2.4.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/lwt.2.4.4+opam.tar.gz
+--2013-11-26 02:27:45--  https://opam.ocaml.org/archives/lwt.2.4.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 297857 (291K) [application/octet-stream]
+Saving to: `lwt.2.4.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 17% 39.9M 0s
+    50K .......... .......... .......... .......... .......... 34% 45.0M 0s
+   100K .......... .......... .......... .......... .......... 51% 34.8M 0s
+   150K .......... .......... .......... .......... .......... 68% 30.9M 0s
+   200K .......... .......... .......... .......... .......... 85% 34.4M 0s
+   250K .......... .......... .......... ..........           100% 51.1M=0.007s
+
+2013-11-26 02:27:45 (37.9 MB/s) - `lwt.2.4.4+opam.tar.gz' saved [297857/297857]
+
+Building lwt.2.4.4:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+not checking for pkg-config
+not checking for libev
+testing for pthread: ........................... available
+not checking for glib
+testing for eventfd: ........................... available
+testing for fd passing: ........................ available
+testing for sched_getcpu: ...................... available
+testing for affinity getting/setting: .......... available
+testing for credentials getting (Linux): ....... available
+testing for credentials getting (NetBSD): ...... unavailable
+testing for credentials getting (OpenBSD): ..... unavailable
+testing for credentials getting (FreeBSD): ..... unavailable
+testing for credentials getting (getpeereid): .. unavailable
+testing for fdatasync: ......................... available
+testing for netdb_reentrant: ................... available
+Generating C stubs...
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ lwt
+Package version: ..................................... 2.4.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Compiles for Android: ................................ false
+build and install everything: ........................ false
+Build the syntax extension: .......................... true
+Unix support: ........................................ true
+React helpers: ....................................... false
+Glib integration: .................................... false
+SSL support: ......................................... false
+Text mode utilities (deprecated): .................... false
+Preemptive threads support: .......................... true
+Asynchronous unix functions: ......................... true
+Enhanced toplevel: ................................... false
+Compile with libev support: .......................... false
+Use the libev backend by default: .................... true
+Use pthread: ......................................... true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_camlp4: .......................................... /usr/lib/ocaml/camlp4
+pkg_camlp4_quotations_o: ............................. /usr/lib/ocaml/camlp4
+pkg_unix: ............................................ /usr/lib/ocaml
+pkg_bigarray: ........................................ /usr/lib/ocaml
+pkg_threads: ......................................... /usr/lib/ocaml
+pkg_camlp4_extend: ................................... /usr/lib/ocaml/camlp4
+ocamldoc: ............................................ /usr/bin/ocamldoc
+
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+not checking for pkg-config
+not checking for libev
+testing for pthread: ........................... available
+not checking for glib
+testing for eventfd: ........................... available
+testing for fd passing: ........................ available
+testing for sched_getcpu: ...................... available
+testing for affinity getting/setting: .......... available
+testing for credentials getting (Linux): ....... available
+testing for credentials getting (NetBSD): ...... unavailable
+testing for credentials getting (OpenBSD): ..... unavailable
+testing for credentials getting (FreeBSD): ..... unavailable
+testing for credentials getting (getpeereid): .. unavailable
+testing for fdatasync: ......................... available
+testing for netdb_reentrant: ................... available
+Generating C stubs...
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ lwt
+Package version: ..................................... 2.4.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Compiles for Android: ................................ false
+build and install everything: ........................ false
+Build the syntax extension: .......................... true
+Unix support: ........................................ true
+React helpers: ....................................... false
+Glib integration: .................................... false
+SSL support: ......................................... false
+Text mode utilities (deprecated): .................... false
+Preemptive threads support: .......................... true
+Asynchronous unix functions: ......................... true
+Enhanced toplevel: ................................... false
+Compile with libev support: .......................... false
+Use the libev backend by default: .................... true
+Use pthread: ......................................... true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_camlp4: .......................................... /usr/lib/ocaml/camlp4
+pkg_camlp4_quotations_o: ............................. /usr/lib/ocaml/camlp4
+pkg_unix: ............................................ /usr/lib/ocaml
+pkg_bigarray: ........................................ /usr/lib/ocaml
+pkg_threads: ......................................... /usr/lib/ocaml
+pkg_camlp4_extend: ................................... /usr/lib/ocaml/camlp4
+ocamldoc: ............................................ /usr/bin/ocamldoc
+
+./setup.exe -build 
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind: Package `wikidoc' not found
+ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -modules syntax/pa_optcomp.ml > syntax/pa_optcomp.ml.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_optcomp.cmo syntax/pa_optcomp.ml
++ ocamlfind ocamlc -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_optcomp.cmo syntax/pa_optcomp.ml
+File "syntax/pa_optcomp.ml", line 217, characters 50-52:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlc -a syntax/pa_optcomp.cmo -o syntax/optcomp.cma
+ocamlfind ocamlopt -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_optcomp.cmx syntax/pa_optcomp.ml
++ ocamlfind ocamlopt -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_optcomp.cmx syntax/pa_optcomp.ml
+File "syntax/pa_optcomp.ml", line 217, characters 50-52:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlopt -a syntax/pa_optcomp.cmx -o syntax/optcomp.cmxa
+ocamlfind ocamlopt -shared -linkall syntax/optcomp.cmxa -o syntax/optcomp.cmxs
+ocamlfind ocamldep -modules src/core/lwt_condition.mli > src/core/lwt_condition.mli.depends
+ocamlfind ocamldep -modules src/core/lwt.mli > src/core/lwt.mli.depends
+ocamlfind ocamldep -modules src/core/lwt_sequence.mli > src/core/lwt_sequence.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_sequence.cmi src/core/lwt_sequence.mli
+ocamlfind ocamldep -modules src/core/lwt_mutex.mli > src/core/lwt_mutex.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt.cmi src/core/lwt.mli
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_mutex.cmi src/core/lwt_mutex.mli
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_condition.cmi src/core/lwt_condition.mli
+ocamlfind ocamldep -modules src/core/lwt_condition.ml > src/core/lwt_condition.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_list.mli > src/core/lwt_list.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_list.cmi src/core/lwt_list.mli
+ocamlfind ocamldep -modules src/core/lwt_list.ml > src/core/lwt_list.ml.depends
+ocamlfind ocamldep -modules src/core/lwt.ml > src/core/lwt.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_mutex.ml > src/core/lwt_mutex.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_mvar.mli > src/core/lwt_mvar.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_mvar.cmi src/core/lwt_mvar.mli
+ocamlfind ocamldep -modules src/core/lwt_mvar.ml > src/core/lwt_mvar.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_pool.mli > src/core/lwt_pool.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_pool.cmi src/core/lwt_pool.mli
+ocamlfind ocamldep -modules src/core/lwt_pool.ml > src/core/lwt_pool.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_sequence.ml > src/core/lwt_sequence.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_stream.mli > src/core/lwt_stream.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_stream.cmi src/core/lwt_stream.mli
+ocamlfind ocamldep -modules src/core/lwt_stream.ml > src/core/lwt_stream.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_switch.mli > src/core/lwt_switch.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_switch.cmi src/core/lwt_switch.mli
+ocamlfind ocamldep -modules src/core/lwt_switch.ml > src/core/lwt_switch.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_util.mli > src/core/lwt_util.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_util.cmi src/core/lwt_util.mli
+ocamlfind ocamldep -modules src/core/lwt_util.ml > src/core/lwt_util.ml.depends
+ocamlfind ocamldep -modules src/core/lwt_pqueue.mli > src/core/lwt_pqueue.mli.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_pqueue.cmi src/core/lwt_pqueue.mli
+ocamlfind ocamldep -modules src/core/lwt_pqueue.ml > src/core/lwt_pqueue.ml.depends
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_condition.cmo src/core/lwt_condition.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_list.cmo src/core/lwt_list.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt.cmo src/core/lwt.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_mutex.cmo src/core/lwt_mutex.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_mvar.cmo src/core/lwt_mvar.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_pool.cmo src/core/lwt_pool.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_sequence.cmo src/core/lwt_sequence.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_stream.cmo src/core/lwt_stream.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_switch.cmo src/core/lwt_switch.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_util.cmo src/core/lwt_util.ml
+ocamlfind ocamlc -c -g -I src/core -o src/core/lwt_pqueue.cmo src/core/lwt_pqueue.ml
+ocamlfind ocamlc -a src/core/lwt_sequence.cmo src/core/lwt.cmo src/core/lwt_mutex.cmo src/core/lwt_condition.cmo src/core/lwt_list.cmo src/core/lwt_mvar.cmo src/core/lwt_pool.cmo src/core/lwt_stream.cmo src/core/lwt_switch.cmo src/core/lwt_util.cmo src/core/lwt_pqueue.cmo -o src/core/lwt.cma
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_sequence.cmx src/core/lwt_sequence.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt.cmx src/core/lwt.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_mutex.cmx src/core/lwt_mutex.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_list.cmx src/core/lwt_list.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_condition.cmx src/core/lwt_condition.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_mvar.cmx src/core/lwt_mvar.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_pool.cmx src/core/lwt_pool.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_stream.cmx src/core/lwt_stream.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_switch.cmx src/core/lwt_switch.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_util.cmx src/core/lwt_util.ml
+ocamlfind ocamlopt -c -g -I src/core -o src/core/lwt_pqueue.cmx src/core/lwt_pqueue.ml
+ocamlfind ocamlopt -a src/core/lwt_sequence.cmx src/core/lwt.cmx src/core/lwt_mutex.cmx src/core/lwt_condition.cmx src/core/lwt_list.cmx src/core/lwt_mvar.cmx src/core/lwt_pool.cmx src/core/lwt_stream.cmx src/core/lwt_switch.cmx src/core/lwt_util.cmx src/core/lwt_pqueue.cmx -o src/core/lwt.cmxa
+ocamlfind ocamlopt -shared src/core/lwt.cmx -o src/core/lwt.cmxs
+ocamlfind ocamldep -modules src/logger/lwt_log_core.mli > src/logger/lwt_log_core.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/core -o src/logger/lwt_log_core.cmi src/logger/lwt_log_core.mli
+ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -modules syntax/pa_lwt_options.ml > syntax/pa_lwt_options.ml.depends
+ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -modules syntax/pa_lwt_log.mli > syntax/pa_lwt_log.mli.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -I syntax -o syntax/pa_lwt_log.cmi syntax/pa_lwt_log.mli
+ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -modules syntax/pa_lwt_log.ml > syntax/pa_lwt_log.ml.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_lwt_options.cmo syntax/pa_lwt_options.ml
+ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -modules syntax/pa_lwt.mli > syntax/pa_lwt.mli.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -I syntax -o syntax/pa_lwt.cmi syntax/pa_lwt.mli
+ocamlfind ocamldep -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -modules syntax/pa_lwt.ml > syntax/pa_lwt.ml.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_lwt_log.cmo syntax/pa_lwt_log.ml
+ocamlfind ocamlc -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_lwt.cmo syntax/pa_lwt.ml
+ocamlfind ocamldep -package camlp4 -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/logger/lwt_log_core.ml > src/logger/lwt_log_core.ml.depends
+ocamlfind ocamldep -modules src/logger/lwt_log_rules.mli > src/logger/lwt_log_rules.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/core -o src/logger/lwt_log_rules.cmi src/logger/lwt_log_rules.mli
+/usr/bin/ocamllex.opt -q src/logger/lwt_log_rules.mll
+ocamlfind ocamldep -package camlp4 -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/logger/lwt_log_rules.ml > src/logger/lwt_log_rules.ml.depends
+ocamlfind ocamlc -c -g -I src/core -package camlp4 -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/logger -I src/core -o src/logger/lwt_log_core.cmo src/logger/lwt_log_core.ml
+ocamlfind ocamlc -c -g -I src/core -package camlp4 -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/logger -I src/core -o src/logger/lwt_log_rules.cmo src/logger/lwt_log_rules.ml
+ocamlfind ocamlc -a src/logger/lwt_log_rules.cmo src/logger/lwt_log_core.cmo -o src/logger/lwt-log.cma
+ocamlfind ocamlopt -c -g -I src/core -package camlp4 -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/logger -I src/core -o src/logger/lwt_log_rules.cmx src/logger/lwt_log_rules.ml
+ocamlfind ocamlopt -c -g -I src/core -package camlp4 -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/logger -I src/core -o src/logger/lwt_log_core.cmx src/logger/lwt_log_core.ml
+ocamlfind ocamlopt -a src/logger/lwt_log_rules.cmx src/logger/lwt_log_core.cmx -o src/logger/lwt-log.cmxa
+ocamlfind ocamlopt -shared -linkall src/logger/lwt-log.cmxa -o src/logger/lwt-log.cmxs
+ocamlfind ocamlc -ccopt -I/usr/include -ccopt -Isrc/unix -c src/unix/lwt_unix_stubs.c
+mv lwt_unix_stubs.o src/unix/lwt_unix_stubs.o
+ocamlfind ocamlc -ccopt -I/usr/include -ccopt -Isrc/unix -c src/unix/lwt_libev_stubs.c
+mv lwt_libev_stubs.o src/unix/lwt_libev_stubs.o
+ocamlfind ocamlc -ccopt -I/usr/include -ccopt -Isrc/unix -c src/unix/lwt_process_stubs.c
+mv lwt_process_stubs.o src/unix/lwt_process_stubs.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_access.c
+mv lwt_unix_job_access.o src/unix/jobs-unix/lwt_unix_job_access.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_chdir.c
+mv lwt_unix_job_chdir.o src/unix/jobs-unix/lwt_unix_job_chdir.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_chmod.c
+mv lwt_unix_job_chmod.o src/unix/jobs-unix/lwt_unix_job_chmod.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_chown.c
+mv lwt_unix_job_chown.o src/unix/jobs-unix/lwt_unix_job_chown.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_chroot.c
+mv lwt_unix_job_chroot.o src/unix/jobs-unix/lwt_unix_job_chroot.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_close.c
+mv lwt_unix_job_close.o src/unix/jobs-unix/lwt_unix_job_close.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_fchmod.c
+mv lwt_unix_job_fchmod.o src/unix/jobs-unix/lwt_unix_job_fchmod.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_fchown.c
+mv lwt_unix_job_fchown.o src/unix/jobs-unix/lwt_unix_job_fchown.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_fdatasync.c
+mv lwt_unix_job_fdatasync.o src/unix/jobs-unix/lwt_unix_job_fdatasync.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_fsync.c
+mv lwt_unix_job_fsync.o src/unix/jobs-unix/lwt_unix_job_fsync.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_ftruncate.c
+mv lwt_unix_job_ftruncate.o src/unix/jobs-unix/lwt_unix_job_ftruncate.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_link.c
+mv lwt_unix_job_link.o src/unix/jobs-unix/lwt_unix_job_link.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_lseek.c
+mv lwt_unix_job_lseek.o src/unix/jobs-unix/lwt_unix_job_lseek.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_mkdir.c
+mv lwt_unix_job_mkdir.o src/unix/jobs-unix/lwt_unix_job_mkdir.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_mkfifo.c
+mv lwt_unix_job_mkfifo.o src/unix/jobs-unix/lwt_unix_job_mkfifo.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_rename.c
+mv lwt_unix_job_rename.o src/unix/jobs-unix/lwt_unix_job_rename.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_rmdir.c
+mv lwt_unix_job_rmdir.o src/unix/jobs-unix/lwt_unix_job_rmdir.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_symlink.c
+mv lwt_unix_job_symlink.o src/unix/jobs-unix/lwt_unix_job_symlink.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_tcdrain.c
+mv lwt_unix_job_tcdrain.o src/unix/jobs-unix/lwt_unix_job_tcdrain.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_tcflow.c
+mv lwt_unix_job_tcflow.o src/unix/jobs-unix/lwt_unix_job_tcflow.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_tcflush.c
+mv lwt_unix_job_tcflush.o src/unix/jobs-unix/lwt_unix_job_tcflush.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_tcsendbreak.c
+mv lwt_unix_job_tcsendbreak.o src/unix/jobs-unix/lwt_unix_job_tcsendbreak.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_truncate.c
+mv lwt_unix_job_truncate.o src/unix/jobs-unix/lwt_unix_job_truncate.o
+ocamlfind ocamlc -ccopt -Isrc/unix -c src/unix/jobs-unix/lwt_unix_job_unlink.c
+mv lwt_unix_job_unlink.o src/unix/jobs-unix/lwt_unix_job_unlink.o
+/usr/bin/ocamlmklib -o src/unix/lwt-unix_stubs -L/usr/lib -lpthread src/unix/lwt_unix_stubs.o src/unix/lwt_libev_stubs.o src/unix/lwt_process_stubs.o src/unix/jobs-unix/lwt_unix_job_access.o src/unix/jobs-unix/lwt_unix_job_chdir.o src/unix/jobs-unix/lwt_unix_job_chmod.o src/unix/jobs-unix/lwt_unix_job_chown.o src/unix/jobs-unix/lwt_unix_job_chroot.o src/unix/jobs-unix/lwt_unix_job_close.o src/unix/jobs-unix/lwt_unix_job_fchmod.o src/unix/jobs-unix/lwt_unix_job_fchown.o src/unix/jobs-unix/lwt_unix_job_fdatasync.o src/unix/jobs-unix/lwt_unix_job_fsync.o src/unix/jobs-unix/lwt_unix_job_ftruncate.o src/unix/jobs-unix/lwt_unix_job_link.o src/unix/jobs-unix/lwt_unix_job_lseek.o src/unix/jobs-unix/lwt_unix_job_mkdir.o src/unix/jobs-unix/lwt_unix_job_mkfifo.o src/unix/jobs-unix/lwt_unix_job_rename.o src/unix/jobs-unix/lwt_unix_job_rmdir.o src/unix/jobs-unix/lwt_unix_job_symlink.o src/unix/jobs-unix/lwt_unix_job_tcdrain.o src/unix/jobs-unix/lwt_unix_job_tcflow.o src/unix/jobs-unix/lwt_unix_job_tcflush.o src/unix/jobs-unix/lwt_unix_job_tcsendbreak.o src/unix/jobs-unix/lwt_unix_job_truncate.o src/unix/jobs-unix/lwt_unix_job_unlink.o
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_chan.mli > src/unix/lwt_chan.mli.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_io.mli > src/unix/lwt_io.mli.depends
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_bytes.mli > src/unix/lwt_bytes.mli.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_unix.mli > src/unix/lwt_unix.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_unix.cmi src/unix/lwt_unix.mli
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_sys.mli > src/unix/lwt_sys.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_bytes.cmi src/unix/lwt_bytes.mli
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_sys.cmi src/unix/lwt_sys.mli
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_io.cmi src/unix/lwt_io.mli
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_chan.cmi src/unix/lwt_chan.mli
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_chan.ml > src/unix/lwt_chan.ml.depends
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_daemon.mli > src/unix/lwt_daemon.mli.depends
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_log.mli > src/unix/lwt_log.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_log.cmi src/unix/lwt_log.mli
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_daemon.cmi src/unix/lwt_daemon.mli
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_daemon.ml > src/unix/lwt_daemon.ml.depends
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_main.mli > src/unix/lwt_main.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_main.cmi src/unix/lwt_main.mli
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_gc.mli > src/unix/lwt_gc.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_gc.cmi src/unix/lwt_gc.mli
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_gc.ml > src/unix/lwt_gc.ml.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_io.ml > src/unix/lwt_io.ml.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_log.ml > src/unix/lwt_log.ml.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_main.ml > src/unix/lwt_main.ml.depends
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_engine.mli > src/unix/lwt_engine.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_engine.cmi src/unix/lwt_engine.mli
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_process.mli > src/unix/lwt_process.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_process.cmi src/unix/lwt_process.mli
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_process.ml > src/unix/lwt_process.ml.depends
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_throttle.mli > src/unix/lwt_throttle.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_throttle.cmi src/unix/lwt_throttle.mli
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_throttle.ml > src/unix/lwt_throttle.ml.depends
+ocamlfind ocamldep -package unix -package bigarray -modules src/unix/lwt_timeout.mli > src/unix/lwt_timeout.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package bigarray -I src/unix -I src/core -I src/logger -o src/unix/lwt_timeout.cmi src/unix/lwt_timeout.mli
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_timeout.ml > src/unix/lwt_timeout.ml.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_unix.ml > src/unix/lwt_unix.ml.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_unix_jobs_generated.ml > src/unix/lwt_unix_jobs_generated.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_unix_jobs_generated.cmo src/unix/lwt_unix_jobs_generated.ml
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_sys.ml > src/unix/lwt_sys.ml.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_engine.ml > src/unix/lwt_engine.ml.depends
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/unix/lwt_bytes.ml > src/unix/lwt_bytes.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_chan.cmo src/unix/lwt_chan.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_daemon.cmo src/unix/lwt_daemon.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_gc.cmo src/unix/lwt_gc.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_io.cmo src/unix/lwt_io.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_log.cmo src/unix/lwt_log.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_main.cmo src/unix/lwt_main.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_process.cmo src/unix/lwt_process.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_throttle.cmo src/unix/lwt_throttle.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_timeout.cmo src/unix/lwt_timeout.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_unix.cmo src/unix/lwt_unix.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_sys.cmo src/unix/lwt_sys.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_engine.cmo src/unix/lwt_engine.ml
+ocamlfind ocamlc -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_bytes.cmo src/unix/lwt_bytes.ml
+ocamlfind ocamlc -a -dllib -llwt-unix_stubs -cclib -llwt-unix_stubs -cclib -L/usr/lib -cclib -lpthread src/unix/lwt_sys.cmo src/unix/lwt_engine.cmo src/unix/lwt_main.cmo src/unix/lwt_unix_jobs_generated.cmo src/unix/lwt_unix.cmo src/unix/lwt_bytes.cmo src/unix/lwt_io.cmo src/unix/lwt_chan.cmo src/unix/lwt_log.cmo src/unix/lwt_daemon.cmo src/unix/lwt_gc.cmo src/unix/lwt_process.cmo src/unix/lwt_throttle.cmo src/unix/lwt_timeout.cmo -o src/unix/lwt-unix.cma
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_sys.cmx src/unix/lwt_sys.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_engine.cmx src/unix/lwt_engine.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_main.cmx src/unix/lwt_main.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_unix_jobs_generated.cmx src/unix/lwt_unix_jobs_generated.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_unix.cmx src/unix/lwt_unix.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_bytes.cmx src/unix/lwt_bytes.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_io.cmx src/unix/lwt_io.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_log.cmx src/unix/lwt_log.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_chan.cmx src/unix/lwt_chan.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_daemon.cmx src/unix/lwt_daemon.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_gc.cmx src/unix/lwt_gc.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_process.cmx src/unix/lwt_process.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_throttle.cmx src/unix/lwt_throttle.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/unix -I src/core -I src/logger -o src/unix/lwt_timeout.cmx src/unix/lwt_timeout.ml
+ocamlfind ocamlopt -a -cclib -llwt-unix_stubs -cclib -L/usr/lib -cclib -lpthread src/unix/lwt_sys.cmx src/unix/lwt_engine.cmx src/unix/lwt_main.cmx src/unix/lwt_unix_jobs_generated.cmx src/unix/lwt_unix.cmx src/unix/lwt_bytes.cmx src/unix/lwt_io.cmx src/unix/lwt_chan.cmx src/unix/lwt_log.cmx src/unix/lwt_daemon.cmx src/unix/lwt_gc.cmx src/unix/lwt_process.cmx src/unix/lwt_throttle.cmx src/unix/lwt_timeout.cmx -o src/unix/lwt-unix.cmxa
+ocamlfind ocamlopt -shared -linkall -I src/unix -cclib -L/usr/lib -cclib -lpthread src/unix/lwt-unix.cmxa -o src/unix/lwt-unix.cmxs
+ocamlfind ocamldep -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -package compiler-libs.toplevel -modules src/simple_top/lwt_simple_top.ml > src/simple_top/lwt_simple_top.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -package compiler-libs.toplevel -I src/simple_top -I src/core -I src/unix -o src/simple_top/lwt_simple_top.cmo src/simple_top/lwt_simple_top.ml
++ ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -package compiler-libs.toplevel -I src/simple_top -I src/core -I src/unix -o src/simple_top/lwt_simple_top.cmo src/simple_top/lwt_simple_top.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /usr/lib/ocaml/compiler-libs, /usr/lib/ocaml
+ocamlfind ocamlc -a src/simple_top/lwt_simple_top.cmo -o src/simple_top/lwt-simple-top.cma
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -I src/unix -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -package compiler-libs.toplevel -I src/simple_top -I src/core -I src/unix -o src/simple_top/lwt_simple_top.cmx src/simple_top/lwt_simple_top.ml
++ ocamlfind ocamlopt -c -g -I src/core -I src/logger -I src/unix -package unix -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -package compiler-libs.toplevel -I src/simple_top -I src/core -I src/unix -o src/simple_top/lwt_simple_top.cmx src/simple_top/lwt_simple_top.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /usr/lib/ocaml/compiler-libs, /usr/lib/ocaml
+ocamlfind ocamlopt -a src/simple_top/lwt_simple_top.cmx -o src/simple_top/lwt-simple-top.cmxa
+ocamlfind ocamlopt -shared -linkall src/simple_top/lwt-simple-top.cmxa -o src/simple_top/lwt-simple-top.cmxs
+ocamlfind ocamldep -package unix -package threads -package bigarray -modules src/preemptive/lwt_preemptive.mli > src/preemptive/lwt_preemptive.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -package unix -package threads -package bigarray -thread -I src/preemptive -I src/core -I src/unix -o src/preemptive/lwt_preemptive.cmi src/preemptive/lwt_preemptive.mli
+ocamlfind ocamldep -package unix -package threads -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/preemptive/lwt_preemptive.ml > src/preemptive/lwt_preemptive.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -package unix -package threads -package camlp4 -package bigarray -syntax camlp4o -thread -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/preemptive -I src/core -I src/unix -o src/preemptive/lwt_preemptive.cmo src/preemptive/lwt_preemptive.ml
+ocamlfind ocamlc -a src/preemptive/lwt_preemptive.cmo -o src/preemptive/lwt-preemptive.cma
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -I src/unix -package unix -package threads -package camlp4 -package bigarray -syntax camlp4o -thread -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/preemptive -I src/core -I src/unix -o src/preemptive/lwt_preemptive.cmx src/preemptive/lwt_preemptive.ml
+ocamlfind ocamlopt -a src/preemptive/lwt_preemptive.cmx -o src/preemptive/lwt-preemptive.cmxa
+ocamlfind ocamlopt -shared -linkall src/preemptive/lwt-preemptive.cmxa -o src/preemptive/lwt-preemptive.cmxs
+ocamlfind ocamldep -package unix -package threads -package bigarray -modules src/extra/lwt_lib.mli > src/extra/lwt_lib.mli.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -I src/preemptive -package unix -package threads -package bigarray -thread -I src/extra -I src/core -I src/preemptive -o src/extra/lwt_lib.cmi src/extra/lwt_lib.mli
+ocamlfind ocamldep -package unix -package threads -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules src/extra/lwt_lib.ml > src/extra/lwt_lib.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -I src/preemptive -package unix -package threads -package camlp4 -package bigarray -syntax camlp4o -thread -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/extra -I src/core -I src/preemptive -o src/extra/lwt_lib.cmo src/extra/lwt_lib.ml
+ocamlfind ocamlc -a src/extra/lwt_lib.cmo -o src/extra/lwt-extra.cma
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -I src/unix -I src/preemptive -package unix -package threads -package camlp4 -package bigarray -syntax camlp4o -thread -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I src/extra -I src/core -I src/preemptive -o src/extra/lwt_lib.cmx src/extra/lwt_lib.ml
+ocamlfind ocamlopt -a src/extra/lwt_lib.cmx -o src/extra/lwt-extra.cmxa
+ocamlfind ocamlopt -shared -linkall src/extra/lwt-extra.cmxa -o src/extra/lwt-extra.cmxs
+ocamlfind ocamlc -a syntax/pa_lwt.cmo -o syntax/lwt-syntax.cma
+ocamlfind ocamlopt -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_lwt_options.cmx syntax/pa_lwt_options.ml
+ocamlfind ocamlopt -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_lwt.cmx syntax/pa_lwt.ml
+ocamlfind ocamlopt -a syntax/pa_lwt.cmx -o syntax/lwt-syntax.cmxa
+ocamlfind ocamlopt -shared -linkall syntax/lwt-syntax.cmxa -o syntax/lwt-syntax.cmxs
+ocamlfind ocamlc -a syntax/pa_lwt_options.cmo -o syntax/lwt-syntax-options.cma
+ocamlfind ocamlopt -a syntax/pa_lwt_options.cmx -o syntax/lwt-syntax-options.cmxa
+ocamlfind ocamlopt -shared -linkall syntax/lwt-syntax-options.cmxa -o syntax/lwt-syntax-options.cmxs
+ocamlfind ocamlc -a syntax/pa_lwt_log.cmo -o syntax/lwt-syntax-log.cma
+ocamlfind ocamlopt -c -g -package camlp4.quotations.o -package camlp4.extend -package camlp4 -syntax camlp4o -I syntax -o syntax/pa_lwt_log.cmx syntax/pa_lwt_log.ml
+ocamlfind ocamlopt -a syntax/pa_lwt_log.cmx -o syntax/lwt-syntax-log.cmxa
+ocamlfind ocamlopt -shared -linkall syntax/lwt-syntax-log.cmxa -o syntax/lwt-syntax-log.cmxs
+ocamlfind ocamldep -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules examples/unix/logging.ml > examples/unix/logging.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -I syntax -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I examples/unix -I src/unix -I syntax -o examples/unix/logging.cmo examples/unix/logging.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -I src/unix -I syntax -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I examples/unix -I src/unix -I syntax -o examples/unix/logging.cmx examples/unix/logging.ml
+ocamlfind ocamlopt -g -I src/unix -linkpkg -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray syntax/lwt-syntax.cmxa src/core/lwt.cmxa src/logger/lwt-log.cmxa src/unix/lwt-unix.cmxa examples/unix/logging.cmx -o examples/unix/logging.native
+ocamlfind ocamldep -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules examples/unix/relay.ml > examples/unix/relay.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -I syntax -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I examples/unix -I src/unix -I syntax -o examples/unix/relay.cmo examples/unix/relay.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -I src/unix -I syntax -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I examples/unix -I src/unix -I syntax -o examples/unix/relay.cmx examples/unix/relay.ml
+ocamlfind ocamlopt -g -I src/unix -linkpkg -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray syntax/lwt-syntax.cmxa src/core/lwt.cmxa src/logger/lwt-log.cmxa src/unix/lwt-unix.cmxa examples/unix/relay.cmx -o examples/unix/relay.native
+ocamlfind ocamldep -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -modules examples/unix/parallelize.ml > examples/unix/parallelize.ml.depends
+ocamlfind ocamlc -c -g -I src/core -I src/logger -I src/unix -I syntax -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I examples/unix -I src/unix -I syntax -o examples/unix/parallelize.cmo examples/unix/parallelize.ml
+ocamlfind ocamlopt -c -g -I src/core -I src/logger -I src/unix -I syntax -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray -syntax camlp4o -ppopt syntax/pa_lwt_options.cmo -ppopt syntax/pa_lwt.cmo -ppopt syntax/pa_lwt_log.cmo -ppopt syntax/pa_optcomp.cmo -I examples/unix -I src/unix -I syntax -o examples/unix/parallelize.cmx examples/unix/parallelize.ml
+ocamlfind ocamlopt -g -I src/unix -linkpkg -package unix -package camlp4.quotations.o -package camlp4.extend -package camlp4 -package bigarray syntax/lwt-syntax.cmxa src/core/lwt.cmxa src/logger/lwt-log.cmxa src/unix/lwt-unix.cmxa examples/unix/parallelize.cmx -o examples/unix/parallelize.native
+./setup.exe -install 
+W: Nothing to install for findlib library 'test'
+W: Nothing to install for findlib library 'optcomp'
+Installed /home/opam/.opam/system/lib/lwt/lwt_condition.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_list.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_mutex.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_mvar.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_pool.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_sequence.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_stream.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_switch.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_util.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_pqueue.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt.cma
+Installed /home/opam/.opam/system/lib/lwt/lwt.cmxa
+Installed /home/opam/.opam/system/lib/lwt/lwt.a
+Installed /home/opam/.opam/system/lib/lwt/lwt.cmxs
+Installed /home/opam/.opam/system/lib/lwt/lwt_condition.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_list.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_mutex.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_mvar.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_pool.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_sequence.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_stream.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_switch.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_util.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_pqueue.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_condition.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_list.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_mutex.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_mvar.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_pool.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_sequence.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_stream.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_switch.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_util.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_pqueue.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_config.ml
+Installed /home/opam/.opam/system/lib/lwt/lwt_config.h
+Installed /home/opam/.opam/system/lib/lwt/lwt_unix.h
+Installed /home/opam/.opam/system/lib/lwt/lwt_chan.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_daemon.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_gc.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_io.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_log.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_main.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_process.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_throttle.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_timeout.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_unix.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_sys.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_engine.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_bytes.mli
+Installed /home/opam/.opam/system/lib/lwt/liblwt-unix_stubs.a
+Installed /home/opam/.opam/system/lib/lwt/lwt-unix.cma
+Installed /home/opam/.opam/system/lib/lwt/lwt-unix.cmxa
+Installed /home/opam/.opam/system/lib/lwt/lwt-unix.a
+Installed /home/opam/.opam/system/lib/lwt/lwt-unix.cmxs
+Installed /home/opam/.opam/system/lib/lwt/lwt_chan.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_daemon.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_gc.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_io.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_log.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_main.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_process.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_throttle.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_timeout.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_unix.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_sys.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_engine.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_bytes.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_chan.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_daemon.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_gc.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_io.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_log.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_main.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_process.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_throttle.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_timeout.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_unix.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_sys.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_engine.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_bytes.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_unix_jobs_generated.cmx
+Installed /home/opam/.opam/system/lib/lwt/pa_lwt.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt-syntax.cma
+Installed /home/opam/.opam/system/lib/lwt/lwt-syntax.cmxa
+Installed /home/opam/.opam/system/lib/lwt/lwt-syntax.a
+Installed /home/opam/.opam/system/lib/lwt/lwt-syntax.cmxs
+Installed /home/opam/.opam/system/lib/lwt/pa_lwt.cmi
+Installed /home/opam/.opam/system/lib/lwt/pa_lwt.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt-syntax-options.cma
+Installed /home/opam/.opam/system/lib/lwt/lwt-syntax-options.cmxa
+Installed /home/opam/.opam/system/lib/lwt/lwt-syntax-options.a
+Installed /home/opam/.opam/system/lib/lwt/lwt-syntax-options.cmxs
+Installed /home/opam/.opam/system/lib/lwt/pa_lwt_options.cmx
+Installed /home/opam/.opam/system/lib/lwt/pa_lwt_log.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt-syntax-log.cma
+Installed /home/opam/.opam/system/lib/lwt/lwt-syntax-log.cmxa
+Installed /home/opam/.opam/system/lib/lwt/lwt-syntax-log.a
+Installed /home/opam/.opam/system/lib/lwt/lwt-syntax-log.cmxs
+Installed /home/opam/.opam/system/lib/lwt/pa_lwt_log.cmi
+Installed /home/opam/.opam/system/lib/lwt/pa_lwt_log.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt-simple-top.cma
+Installed /home/opam/.opam/system/lib/lwt/lwt-simple-top.cmxa
+Installed /home/opam/.opam/system/lib/lwt/lwt-simple-top.a
+Installed /home/opam/.opam/system/lib/lwt/lwt-simple-top.cmxs
+Installed /home/opam/.opam/system/lib/lwt/lwt_simple_top.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_preemptive.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt-preemptive.cma
+Installed /home/opam/.opam/system/lib/lwt/lwt-preemptive.cmxa
+Installed /home/opam/.opam/system/lib/lwt/lwt-preemptive.a
+Installed /home/opam/.opam/system/lib/lwt/lwt-preemptive.cmxs
+Installed /home/opam/.opam/system/lib/lwt/lwt_preemptive.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_preemptive.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_log_core.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt_log_rules.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt-log.cma
+Installed /home/opam/.opam/system/lib/lwt/lwt-log.cmxa
+Installed /home/opam/.opam/system/lib/lwt/lwt-log.a
+Installed /home/opam/.opam/system/lib/lwt/lwt-log.cmxs
+Installed /home/opam/.opam/system/lib/lwt/lwt_log_core.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_log_rules.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_log_core.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_log_rules.cmx
+Installed /home/opam/.opam/system/lib/lwt/lwt_lib.mli
+Installed /home/opam/.opam/system/lib/lwt/lwt-extra.cma
+Installed /home/opam/.opam/system/lib/lwt/lwt-extra.cmxa
+Installed /home/opam/.opam/system/lib/lwt/lwt-extra.a
+Installed /home/opam/.opam/system/lib/lwt/lwt-extra.cmxs
+Installed /home/opam/.opam/system/lib/lwt/lwt_lib.cmi
+Installed /home/opam/.opam/system/lib/lwt/lwt_lib.cmx
+Installed /home/opam/.opam/system/lib/lwt/META
+Installed /home/opam/.opam/system/lib/stublibs/dlllwt-unix_stubs.so
+Installed /home/opam/.opam/system/lib/stublibs/dlllwt-unix_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/system/lib/stublibs is not mentioned in ld.conf
+Installing lwt.2.4.4.
+
+=-=-= Installing optcomp.1.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/optcomp.1.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/optcomp.1.4+opam.tar.gz
+--2013-11-26 02:28:22--  https://opam.ocaml.org/archives/optcomp.1.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 54004 (53K) [application/octet-stream]
+Saving to: `optcomp.1.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 94% 48.7M 0s
+    50K ..                                                    100% 5223G=0.001s
+
+2013-11-26 02:28:22 (51.4 MB/s) - `optcomp.1.4+opam.tar.gz' saved [54004/54004]
+
+Building optcomp.1.4:
+  ./configure --prefix /home/opam/.opam/system
+  make
+  make install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ optcomp
+Package version: ..................................... 1.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/system
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_camlp4: .......................................... /usr/lib/ocaml/camlp4
+pkg_camlp4_quotations_o: ............................. /usr/lib/ocaml/camlp4
+pkg_camlp4_lib: ...................................... /usr/lib/ocaml/camlp4
+ocamldoc: ............................................ /usr/bin/ocamldoc
+
+ocaml setup.ml -build 
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -modules src/pa_optcomp.mli > src/pa_optcomp.mli.depends
+ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/pa_optcomp.cmi src/pa_optcomp.mli
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -modules src/pa_optcomp.ml > src/pa_optcomp.ml.depends
+ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -I src -o src/pa_optcomp.cmo src/pa_optcomp.ml
++ ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -I src -o src/pa_optcomp.cmo src/pa_optcomp.ml
+File "src/pa_optcomp.ml", line 291, characters 50-52:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlc -a src/pa_optcomp.cmo -o src/optcomp.cma
+ocamlfind ocamlopt -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -I src -o src/pa_optcomp.cmx src/pa_optcomp.ml
++ ocamlfind ocamlopt -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -syntax camlp4o -I src -o src/pa_optcomp.cmx src/pa_optcomp.ml
+File "src/pa_optcomp.ml", line 291, characters 50-52:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlopt -a src/pa_optcomp.cmx -o src/optcomp.cmxa
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -modules src/optcomp.ml > src/optcomp.ml.depends
+ocamlfind ocamlc -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp.cmo src/optcomp.ml
+ocamlfind ocamlopt -c -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp.cmx src/optcomp.ml
+ocamlfind ocamlopt -shared src/optcomp.cmx -o src/optcomp.cmxs
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -modules src/optcomp_o.ml > src/optcomp_o.ml.depends
+ocamlfind ocamlc -c -I +camlp4 -I +camlp4/Camlp4Parsers -I +camlp4/Camlp4Printers -I +camlp4/Camlp4Filters -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp_o.cmo src/optcomp_o.ml
+ocamlfind ocamlopt -c -I +camlp4 -I +camlp4/Camlp4Parsers -I +camlp4/Camlp4Printers -I +camlp4/Camlp4Filters -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp_o.cmx src/optcomp_o.ml
+ocamlfind ocamlopt -I +camlp4 camlp4fulllib.cmxa -g -linkpkg -package camlp4 -package camlp4.lib -package camlp4.quotations.o src/optcomp.cmxa src/optcomp.cmx src/optcomp_o.cmx -o src/optcomp_o.native
+ocamlfind ocamldep -package camlp4 -package camlp4.lib -package camlp4.quotations.o -modules src/optcomp_r.ml > src/optcomp_r.ml.depends
+ocamlfind ocamlc -c -I +camlp4 -I +camlp4/Camlp4Parsers -I +camlp4/Camlp4Printers -I +camlp4/Camlp4Filters -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp_r.cmo src/optcomp_r.ml
+ocamlfind ocamlopt -c -I +camlp4 -I +camlp4/Camlp4Parsers -I +camlp4/Camlp4Printers -I +camlp4/Camlp4Filters -g -I src -package camlp4 -package camlp4.lib -package camlp4.quotations.o -I src -o src/optcomp_r.cmx src/optcomp_r.ml
+ocamlfind ocamlopt -I +camlp4 camlp4fulllib.cmxa -g -linkpkg -package camlp4 -package camlp4.lib -package camlp4.quotations.o src/optcomp.cmxa src/optcomp.cmx src/optcomp_r.cmx -o src/optcomp_r.native
+ocaml setup.ml -install 
+Installed /home/opam/.opam/system/lib/optcomp/pa_optcomp.mli
+Installed /home/opam/.opam/system/lib/optcomp/optcomp.cma
+Installed /home/opam/.opam/system/lib/optcomp/optcomp.cmxa
+Installed /home/opam/.opam/system/lib/optcomp/optcomp.a
+Installed /home/opam/.opam/system/lib/optcomp/optcomp.cmxs
+Installed /home/opam/.opam/system/lib/optcomp/pa_optcomp.cmi
+Installed /home/opam/.opam/system/lib/optcomp/pa_optcomp.cmx
+Installed /home/opam/.opam/system/lib/optcomp/META
+Installing optcomp.1.4.
+
+=-=-= Installing type_conv.109.47.00 =-=-=
+default    Downloading https://opam.ocaml.org/archives/type_conv.109.47.00+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/type_conv.109.47.00+opam.tar.gz
+--2013-11-26 02:28:36--  https://opam.ocaml.org/archives/type_conv.109.47.00+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 59197 (58K) [application/octet-stream]
+Saving to: `type_conv.109.47.00+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 86% 39.3M 0s
+    50K .......                                               100% 15.9M=0.002s
+
+2013-11-26 02:28:36 (32.8 MB/s) - `type_conv.109.47.00+opam.tar.gz' saved [59197/59197]
+
+Building type_conv.109.47.00:
+  make
+  make install
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ type_conv
+Package version: ..................................... 109.47.00
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+camlp4o: ............................................. /usr/bin/camlp4o
+pkg_camlp4_quotations: ............................... /usr/lib/ocaml/camlp4
+pkg_camlp4_extend: ................................... /usr/lib/ocaml/camlp4
+ocamldoc: ............................................ /usr/bin/ocamldoc
+
+./setup.exe -build 
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package camlp4.quotations -package camlp4.extend -modules lib/pa_type_conv.mli > lib/pa_type_conv.mli.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations -package camlp4.extend -I lib -o lib/pa_type_conv.cmi lib/pa_type_conv.mli
+ocamlfind ocamldep -package camlp4.quotations -package camlp4.extend -syntax camlp4o -modules lib/pa_type_conv.ml > lib/pa_type_conv.ml.depends
+ocamlfind ocamlc -c -g -package camlp4.quotations -package camlp4.extend -syntax camlp4o -I lib -o lib/pa_type_conv.cmo lib/pa_type_conv.ml
+ocamlfind ocamlc -a lib/pa_type_conv.cmo -o lib/pa_type_conv.cma
+ocamlfind ocamlopt -c -g -package camlp4.quotations -package camlp4.extend -syntax camlp4o -I lib -o lib/pa_type_conv.cmx lib/pa_type_conv.ml
+ocamlfind ocamlopt -a lib/pa_type_conv.cmx -o lib/pa_type_conv.cmxa
+ocamlfind ocamlopt -shared lib/pa_type_conv.cmx -o lib/pa_type_conv.cmxs
+./setup.exe -install 
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.mli
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cma
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmxa
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.a
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmxs
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmi
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmx
+Installed /home/opam/.opam/system/lib/type_conv/META
+Installing type_conv.109.47.00.
+
+=-=-= Installing xmlm.1.2.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+--2013-11-26 02:28:46--  https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 51637 (50K) [application/octet-stream]
+Saving to: `xmlm.1.2.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 99% 40.2M 0s
+    50K                                                       100%  814G=0.001s
+
+2013-11-26 02:28:46 (40.5 MB/s) - `xmlm.1.2.0+opam.tar.gz' saved [51637/51637]
+
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+ocamlfind ocamldep -modules src/xmlm.mli > src/xmlm.mli.depends
+ocamlfind ocamlc -c -I src -I test -o src/xmlm.cmi src/xmlm.mli
+ocamlfind ocamldep -modules src/xmlm.ml > src/xmlm.ml.depends
+ocamlfind ocamlopt -c -annot -bin-annot -I src -I test -o src/xmlm.cmx src/xmlm.ml
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/xmlm.cmo src/xmlm.ml
+ocamlfind ocamlc -a src/xmlm.cmo -o src/xmlm.cma
+ocamlfind ocamlopt -a src/xmlm.cmx -o src/xmlm.cmxa
+ocamlfind ocamlopt -shared src/xmlm.cmx -o src/xmlm.cmxs
+ocamlfind ocamldep -modules test/xmltrip.ml > test/xmltrip.ml.depends
+ocamlfind ocamldep -modules test/xhtml.ml > test/xhtml.ml.depends
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xhtml.cmo test/xhtml.ml
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xmltrip.cmo test/xmltrip.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xhtml.cmx test/xhtml.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xmltrip.cmx test/xmltrip.ml
+ocamlfind ocamlopt -linkpkg src/xmlm.cmx test/xhtml.cmx test/xmltrip.cmx -o test/xmltrip.native
+Installing xmlm.1.2.0.
+[WARNING] unknown fields in /home/opam/.opam/system/build/xmlm.1.2.0/xmlm.install: is your OPAM up-to-date ?
+
+=-=-= Installing deriving-ocsigen.0.5 =-=-=
+default    Downloading https://opam.ocaml.org/archives/deriving-ocsigen.0.5+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/deriving-ocsigen.0.5+opam.tar.gz
+--2013-11-26 02:28:55--  https://opam.ocaml.org/archives/deriving-ocsigen.0.5+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 63976 (62K) [application/octet-stream]
+Saving to: `deriving-ocsigen.0.5+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 80% 39.4M 0s
+    50K .......... ..                                         100%  166M=0.001s
+
+2013-11-26 02:28:55 (46.4 MB/s) - `deriving-ocsigen.0.5+opam.tar.gz' saved [63976/63976]
+
+Building deriving-ocsigen.0.5:
+  make
+  make install
+sed -e "s%__NAME__%deriving-ocsigen%" \
+            -e "s%__LIBDIR__%%" \
+            -e "s%__SYNTAXDIR__%%" \
+            -e "s%__TCNAME__%type_conv%" \
+	  files/META.in > files/META
+sed -e "s%__NAME__%deriving-ocsigen%" \
+            -e "s%__LIBDIR__%directory = \"../lib\"%" \
+            -e "s%__SYNTAXDIR__%directory = \"../syntax\"%" \
+            -e "s%__TCNAME__%type_conv%" \
+	  files/META.in > files/META.deriving-ocsigen
+make -C syntax
+make[1]: Entering directory `/home/opam/.opam/system/build/deriving-ocsigen.0.5/syntax'
+ln -s defs.mli defs.ml
+[ ! -f id.ml ] || chmod u+w id.ml
+sed -e s/%%NAME%%/deriving-ocsigen/ -e s/%%VERSION%%/0.5-ocsigen/ id.mlp > id.ml
+chmod -w id.ml
+ocamlfind ocamlc -package camlp4 -c id.ml
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package optcomp -c utils.mli
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package optcomp -c utils.ml
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.quotations.r,optcomp -c type.mli
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.quotations.r,optcomp -c type.ml
+ocamlfind ocamlc -package camlp4 -c defs.mli
+ocamlfind ocamlc -package camlp4 -c defs.ml
+ocamlfind ocamlc -package camlp4 -c clusters.mli
+ocamlfind ocamlc -package camlp4 -c clusters.ml
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.quotations.o,optcomp -c base.mli
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.quotations.o,optcomp -c base.ml
+File "base.ml", line 145, characters 10-12:
+Warning 26: unused variable ty.
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.extend,camlp4.quotations.o -c extend.mli
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.extend,camlp4.quotations.o -c extend.ml
+ocamlfind ocamlc -o pa_deriving_common.cmo -pack id.cmo utils.cmo type.cmo defs.cmo clusters.cmo base.cmo extend.cmo
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.extend,camlp4.quotations.o -c pa_deriving.ml
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes -c classes/show_class.ml
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes -c classes/dump_class.ml
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes -c classes/enum_class.ml
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes -c classes/bounded_class.ml
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes -c classes/eq_class.ml
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes -c classes/typeable_class.ml
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes -c classes/pickle_class.ml
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes -c classes/functor_class.ml
+ocamlfind ocamlc -o pa_deriving.cma -a pa_deriving_common.cmo pa_deriving.cmo classes/show_class.cmo classes/dump_class.cmo classes/enum_class.cmo classes/bounded_class.cmo classes/eq_class.cmo classes/typeable_class.cmo classes/pickle_class.cmo classes/functor_class.cmo
+ocamlfind ocamlc -package camlp4 -syntax camlp4o -package camlp4.extend,camlp4.quotations.o,type_conv -c pa_deriving_tc.ml
+ocamlfind ocamlc -o pa_deriving_tc.cma -a pa_deriving_common.cmo pa_deriving_tc.cmo classes/show_class.cmo classes/dump_class.cmo classes/enum_class.cmo classes/bounded_class.cmo classes/eq_class.cmo classes/typeable_class.cmo classes/pickle_class.cmo classes/functor_class.cmo
+ocamlfind ocamlopt -package camlp4 -for-pack Pa_deriving_common -c id.ml
+ocamlfind ocamlopt -package camlp4 -syntax camlp4o -package optcomp -for-pack Pa_deriving_common -c utils.ml
+ocamlfind ocamlopt -package camlp4 -syntax camlp4o -package camlp4.quotations.r,optcomp -for-pack Pa_deriving_common -c type.ml
+ocamlfind ocamlopt -package camlp4 -for-pack Pa_deriving_common -c defs.ml
+ocamlfind ocamlopt -package camlp4 -for-pack Pa_deriving_common -c clusters.ml
+ocamlfind ocamlopt -package camlp4 -syntax camlp4o -package camlp4.quotations.o,optcomp -for-pack Pa_deriving_common -c base.ml
+File "base.ml", line 145, characters 10-12:
+Warning 26: unused variable ty.
+ocamlfind ocamlopt -package camlp4 -syntax camlp4o -package camlp4.extend,camlp4.quotations.o -for-pack Pa_deriving_common -c extend.ml
+ocamlfind ocamlopt -o pa_deriving_common.cmx -pack id.cmx utils.cmx type.cmx defs.cmx clusters.cmx base.cmx extend.cmx
+ocamlfind ocamlopt -package camlp4 -syntax camlp4o -package camlp4.extend,camlp4.quotations.o  -c pa_deriving.ml
+ocamlfind ocamlopt -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes  -c classes/show_class.ml
+ocamlfind ocamlopt -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes  -c classes/dump_class.ml
+ocamlfind ocamlopt -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes  -c classes/enum_class.ml
+ocamlfind ocamlopt -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes  -c classes/bounded_class.ml
+ocamlfind ocamlopt -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes  -c classes/eq_class.ml
+ocamlfind ocamlopt -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes  -c classes/typeable_class.ml
+ocamlfind ocamlopt -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes  -c classes/pickle_class.ml
+ocamlfind ocamlopt -package camlp4 -syntax camlp4o -package camlp4.quotations.o -I classes  -c classes/functor_class.ml
+ocamlfind ocamlopt -o pa_deriving.cmxa -a pa_deriving_common.cmx pa_deriving.cmx classes/show_class.cmx classes/dump_class.cmx classes/enum_class.cmx classes/bounded_class.cmx classes/eq_class.cmx classes/typeable_class.cmx classes/pickle_class.cmx classes/functor_class.cmx
+ocamlfind ocamlopt -shared -linkall -o pa_deriving.cmxs pa_deriving.cmxa
+ocamlfind ocamlopt -package camlp4 -syntax camlp4o -package camlp4.extend,camlp4.quotations.o,type_conv  -c pa_deriving_tc.ml
+ocamlfind ocamlopt -o pa_deriving_tc.cmxa -a pa_deriving_common.cmx pa_deriving_tc.cmx classes/show_class.cmx classes/dump_class.cmx classes/enum_class.cmx classes/bounded_class.cmx classes/eq_class.cmx classes/typeable_class.cmx classes/pickle_class.cmx classes/functor_class.cmx
+ocamlfind ocamlopt -shared -linkall -o pa_deriving_tc.cmxs pa_deriving_tc.cmxa
+make[1]: Leaving directory `/home/opam/.opam/system/build/deriving-ocsigen.0.5/syntax'
+make -C lib
+make[1]: Entering directory `/home/opam/.opam/system/build/deriving-ocsigen.0.5/lib'
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Show.mli
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Show.ml
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_interned.mli
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_interned.ml
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Eq.mli
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Eq.ml
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Bounded.mli
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Bounded.ml
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Enum.mli
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Enum.ml
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_monad.mli
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_monad.ml
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Dump.mli
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Dump.ml
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Typeable.mli
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Typeable.ml
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_dynmap.mli
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_dynmap.ml
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Pickle.mli
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Pickle.ml
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Functor.mli
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Functor.ml
+ocamlfind ocamlc -a -o deriving.cma deriving_Show.cmo deriving_interned.cmo deriving_Eq.cmo deriving_Bounded.cmo deriving_Enum.cmo deriving_monad.cmo deriving_Dump.cmo deriving_Typeable.cmo deriving_dynmap.cmo deriving_Pickle.cmo deriving_Functor.cmo
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_num.mli
+ocamlfind ocamlc -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_num.ml
+ocamlfind ocamlc -a -o deriving_num.cma deriving_num.cmo
+ocamlfind ocamlopt -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Show.ml
+ocamlfind ocamlopt -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_interned.ml
+ocamlfind ocamlopt -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Eq.ml
+ocamlfind ocamlopt -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Bounded.ml
+ocamlfind ocamlopt -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Enum.ml
+ocamlfind ocamlopt -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_monad.ml
+ocamlfind ocamlopt -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Dump.ml
+ocamlfind ocamlopt -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Typeable.ml
+ocamlfind ocamlopt -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_dynmap.ml
+ocamlfind ocamlopt -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Pickle.ml
+ocamlfind ocamlopt -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_Functor.ml
+ocamlfind ocamlopt -a -o deriving.cmxa deriving_Show.cmx deriving_interned.cmx deriving_Eq.cmx deriving_Bounded.cmx deriving_Enum.cmx deriving_monad.cmx deriving_Dump.cmx deriving_Typeable.cmx deriving_dynmap.cmx deriving_Pickle.cmx deriving_Functor.cmx
+ocamlfind ocamlopt -w ae -package camlp4 -ppopt ../syntax/pa_deriving.cma -syntax camlp4o -c deriving_num.ml
+ocamlfind ocamlopt -a -o deriving_num.cmxa deriving_num.cmx
+ocamlfind ocamlopt -shared -linkall -o deriving.cmxs deriving.cmxa
+ocamlfind ocamlopt -shared -linkall -o deriving_num.cmxs deriving_num.cmxa
+make[1]: Leaving directory `/home/opam/.opam/system/build/deriving-ocsigen.0.5/lib'
+ocamlfind install deriving-ocsigen \
+	  -patch-version 0.5-ocsigen \
+	  files/META  syntax/pa_deriving_common.cmi lib/deriving_Dump.cmi lib/deriving_monad.cmi lib/deriving_dynmap.cmi lib/deriving_Show.cmi lib/deriving_Functor.cmi lib/deriving_Bounded.cmi lib/deriving_Typeable.cmi lib/deriving_Enum.cmi lib/deriving_interned.cmi lib/deriving_Eq.cmi lib/deriving_Pickle.cmi lib/deriving_num.cmi  syntax/pa_deriving_tc.cmi syntax/pa_deriving.cma lib/deriving.cma lib/deriving_num.cma  syntax/pa_deriving_tc.cma  syntax/pa_deriving.cmxa syntax/pa_deriving.a lib/deriving.cmxa lib/deriving.a lib/deriving_num.cmxa lib/deriving_num.a  syntax/pa_deriving_common.cmx lib/deriving_Dump.cmx lib/deriving_monad.cmx lib/deriving_dynmap.cmx lib/deriving_Show.cmx lib/deriving_Functor.cmx lib/deriving_Bounded.cmx lib/deriving_Typeable.cmx lib/deriving_Enum.cmx lib/deriving_interned.cmx lib/deriving_Eq.cmx lib/deriving_Pickle.cmx lib/deriving_num.cmx syntax/pa_deriving.cmxs lib/deriving.cmxs lib/deriving_num.cmxs syntax/pa_deriving_tc.cmxa syntax/pa_deriving_tc.a  syntax/pa_deriving_tc.cmxs lib/deriving_Dump.mli lib/deriving_monad.mli lib/deriving_dynmap.mli lib/deriving_Show.mli lib/deriving_Functor.mli lib/deriving_Bounded.mli lib/deriving_Typeable.mli lib/deriving_Enum.mli lib/deriving_interned.mli lib/deriving_Eq.mli lib/deriving_Pickle.mli lib/deriving_num.mli
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_num.mli
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Pickle.mli
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Eq.mli
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_interned.mli
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Enum.mli
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Typeable.mli
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Bounded.mli
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Functor.mli
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Show.mli
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_dynmap.mli
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_monad.mli
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Dump.mli
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/pa_deriving_tc.cmxs
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/pa_deriving_tc.a
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/pa_deriving_tc.cmxa
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_num.cmxs
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving.cmxs
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/pa_deriving.cmxs
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_num.cmx
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Pickle.cmx
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Eq.cmx
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_interned.cmx
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Enum.cmx
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Typeable.cmx
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Bounded.cmx
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Functor.cmx
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Show.cmx
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_dynmap.cmx
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_monad.cmx
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Dump.cmx
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/pa_deriving_common.cmx
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_num.a
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_num.cmxa
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving.a
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving.cmxa
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/pa_deriving.a
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/pa_deriving.cmxa
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/pa_deriving_tc.cma
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_num.cma
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving.cma
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/pa_deriving.cma
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/pa_deriving_tc.cmi
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_num.cmi
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Pickle.cmi
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Eq.cmi
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_interned.cmi
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Enum.cmi
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Typeable.cmi
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Bounded.cmi
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Functor.cmi
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Show.cmi
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_dynmap.cmi
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_monad.cmi
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/deriving_Dump.cmi
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/pa_deriving_common.cmi
+Installed /home/opam/.opam/system/lib/deriving-ocsigen/META
+Installing deriving-ocsigen.0.5.
+
+=-=-= Installing js_of_ocaml.1.2 =-=-=
+default    Downloading https://opam.ocaml.org/archives/js_of_ocaml.1.2+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/js_of_ocaml.1.2+opam.tar.gz
+--2013-11-26 02:29:17--  https://opam.ocaml.org/archives/js_of_ocaml.1.2+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1899428 (1.8M) [application/octet-stream]
+Saving to: `js_of_ocaml.1.2+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  2% 36.1M 0s
+    50K .......... .......... .......... .......... ..........  5% 42.2M 0s
+   100K .......... .......... .......... .......... ..........  8% 48.8M 0s
+   150K .......... .......... .......... .......... .......... 10% 39.0M 0s
+   200K .......... .......... .......... .......... .......... 13% 38.8M 0s
+   250K .......... .......... .......... .......... .......... 16% 60.8M 0s
+   300K .......... .......... .......... .......... .......... 18% 40.2M 0s
+   350K .......... .......... .......... .......... .......... 21% 56.0M 0s
+   400K .......... .......... .......... .......... .......... 24% 59.9M 0s
+   450K .......... .......... .......... .......... .......... 26% 44.7M 0s
+   500K .......... .......... .......... .......... .......... 29% 79.1M 0s
+   550K .......... .......... .......... .......... .......... 32% 62.8M 0s
+   600K .......... .......... .......... .......... .......... 35% 49.1M 0s
+   650K .......... .......... .......... .......... .......... 37% 39.8M 0s
+   700K .......... .......... .......... .......... .......... 40% 50.2M 0s
+   750K .......... .......... .......... .......... .......... 43% 4.86M 0s
+   800K .......... .......... .......... .......... .......... 45% 70.6M 0s
+   850K .......... .......... .......... .......... .......... 48% 68.3M 0s
+   900K .......... .......... .......... .......... .......... 51% 72.1M 0s
+   950K .......... .......... .......... .......... .......... 53% 63.9M 0s
+  1000K .......... .......... .......... .......... .......... 56% 63.1M 0s
+  1050K .......... .......... .......... .......... .......... 59% 58.7M 0s
+  1100K .......... .......... .......... .......... .......... 61% 87.3M 0s
+  1150K .......... .......... .......... .......... .......... 64% 6.61M 0s
+  1200K .......... .......... .......... .......... .......... 67% 39.6M 0s
+  1250K .......... .......... .......... .......... .......... 70% 61.1M 0s
+  1300K .......... .......... .......... .......... .......... 72% 66.7M 0s
+  1350K .......... .......... .......... .......... .......... 75% 63.2M 0s
+  1400K .......... .......... .......... .......... .......... 78% 92.3M 0s
+  1450K .......... .......... .......... .......... .......... 80%  109M 0s
+  1500K .......... .......... .......... .......... .......... 83% 12.7M 0s
+  1550K .......... .......... .......... .......... .......... 86% 51.3M 0s
+  1600K .......... .......... .......... .......... .......... 88% 75.8M 0s
+  1650K .......... .......... .......... .......... .......... 91%  108M 0s
+  1700K .......... .......... .......... .......... .......... 94% 25.9M 0s
+  1750K .......... .......... .......... .......... .......... 97% 6.78M 0s
+  1800K .......... .......... .......... .......... .......... 99%  101M 0s
+  1850K ....                                                  100% 9365G=0.06s
+
+2013-11-26 02:29:17 (31.3 MB/s) - `js_of_ocaml.1.2+opam.tar.gz' saved [1899428/1899428]
+
+Building js_of_ocaml.1.2:
+  make
+  make install BINDIR=/home/opam/.opam/system/bin
+make -C compiler
+make[1]: Entering directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/compiler'
+ocamlfind ocamlc -package findlib,str -c pretty_print.mli
+ocamlfind ocamlopt -package findlib,str -c pretty_print.ml
+ocamlfind ocamlc -package findlib,str -c util.mli
+ocamlfind ocamlopt -package findlib,str -c util.ml
+ocamlfind ocamlc -package findlib,str -c dgraph.mli
+ocamlfind ocamlopt -package findlib,str -c dgraph.ml
+ocamlfind ocamlc -package findlib,str -c javascript.mli
+ocamlfind ocamlopt -package findlib,str -c javascript.ml
+ocamlfind ocamlc -package findlib,str -c js_output.mli
+ocamlfind ocamlopt -package findlib,str -c js_output.ml
+ocamlfind ocamlc -package findlib,str -c js_simpl.mli
+ocamlfind ocamlopt -package findlib,str -c js_simpl.ml
+ocamlfind ocamlc -package findlib,str -c instr.mli
+ocamlfind ocamlopt -package findlib,str -c instr.ml
+ocamlfind ocamlc -package findlib,str -c code.mli
+ocamlfind ocamlopt -package findlib,str -c code.ml
+ocamlfind ocamlc -package findlib,str -c primitive.mli
+ocamlfind ocamlopt -package findlib,str -c primitive.ml
+ocamlfind ocamlc -package findlib,str -c subst.mli
+ocamlfind ocamlopt -package findlib,str -c subst.ml
+ocamlfind ocamlc -package findlib,str -c pure_fun.mli
+ocamlfind ocamlopt -package findlib,str -c pure_fun.ml
+ocamlfind ocamlc -package findlib,str -c deadcode.mli
+ocamlfind ocamlopt -package findlib,str -c deadcode.ml
+ocamlfind ocamlc -package findlib,str -c flow.mli
+ocamlfind ocamlopt -package findlib,str -c flow.ml
+ocamlfind ocamlc -package findlib,str -c inline.mli
+ocamlfind ocamlopt -package findlib,str -c inline.ml
+ocamlfind ocamlc -package findlib,str -c tailcall.mli
+ocamlfind ocamlopt -package findlib,str -c tailcall.ml
+ocamlfind ocamlc -package findlib,str -c freevars.mli
+ocamlfind ocamlopt -package findlib,str -c freevars.ml
+ocamlfind ocamlc -package findlib,str -c phisimpl.mli
+ocamlfind ocamlopt -package findlib,str -c phisimpl.ml
+ocamlfind ocamlc -package findlib,str -c linker.mli
+ocamlfind ocamlopt -package findlib,str -c linker.ml
+ocamlfind ocamlc -package findlib,str -c generate.mli
+ocamlfind ocamlopt -package findlib,str -c generate.ml
+ocamlfind ocamlc -package findlib,str -c parse.mli
+ocamlfind ocamlopt -package findlib,str -c parse.ml
+ocamlfind ocamlc -package findlib,str -c driver.mli
+ocamlfind ocamlopt -package findlib,str -c driver.ml
+ocamlfind ocamlopt -package findlib,str -c main.ml
+ocamlfind ocamlopt -package findlib,str,unix -linkpkg -o compile.opt pretty_print.cmx util.cmx dgraph.cmx javascript.cmx js_output.cmx js_simpl.cmx instr.cmx code.cmx primitive.cmx subst.cmx pure_fun.cmx deadcode.cmx flow.cmx inline.cmx tailcall.cmx freevars.cmx phisimpl.cmx linker.cmx generate.cmx parse.cmx driver.cmx main.cmx
+mv -f compile.opt js_of_ocaml
+make[1]: Leaving directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/compiler'
+make -C lib
+make[1]: Entering directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/lib'
+ocamlfind ocamlc -package camlp4.extend,camlp4.quotations -syntax camlp4o -c syntax/pa_js.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c js.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g js.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c dom.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g dom.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c typed_array.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g typed_array.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c file.mli
+ocamlfind ocamlc -package lwt -I deriving_json -c dom_html.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g dom_html.ml
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g file.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c dom_events.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g dom_events.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c lwt_js.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g lwt_js.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c firebug.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g firebug.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c regexp.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g regexp.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c CSS.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g CSS.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c url.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g url.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c form.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g form.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c xmlHttpRequest.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g xmlHttpRequest.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c event_arrows.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g event_arrows.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c lwt_js_events.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g lwt_js_events.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c json.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g json.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c webGL.mli
+ocamlfind ocamlc -pp "camlp4o syntax/pa_js.cmo" -package lwt -c -g webGL.ml
+(echo "#include <stdlib.h>"; \
+	 echo "#include <stdio.h>"; \
+	 echo "#define D(f) void f () { fprintf(stderr, \"Unimplemented Javascript primitive %s!\\\\n\", #f); exit(1); }"; \
+	 (sed -n -e 's/.*external.*"\([^"%]*\)".*/D(\1)/p' js.ml dom.ml typed_array.ml dom_html.ml file.ml dom_events.ml lwt_js.ml firebug.ml regexp.ml CSS.ml url.ml form.ml xmlHttpRequest.ml event_arrows.ml lwt_js_events.ml json.ml webGL.ml | \
+	  sort | uniq)) \
+        > stubs.c
+ocamlfind ocamlc -package lwt -c stubs.c
+ocamlmklib -o js_of_ocaml js.cmo dom.cmo typed_array.cmo dom_html.cmo file.cmo dom_events.cmo lwt_js.cmo firebug.cmo regexp.cmo CSS.cmo url.cmo form.cmo xmlHttpRequest.cmo event_arrows.cmo lwt_js_events.cmo json.cmo webGL.cmo stubs.o
+ocamlfind ocamlc -package deriving-ocsigen.syntax,camlp4.quotations.o -syntax camlp4o -c syntax/pa_deriving_Json.ml
+ocamllex deriving_json/deriving_Json_lexer.mll
+147 states, 749 transitions, table size 3878 bytes
+ocamlfind ocamlc -package lwt -I deriving_json -c deriving_json/deriving_Json_lexer.mli
+ocamlfind ocamlc -package deriving-ocsigen.syntax -syntax camlp4o -ppopt syntax/pa_deriving_Json.cmo -I deriving_json -c deriving_json/deriving_Json_lexer.ml
+ocamlfind ocamlc -package lwt -I deriving_json -c deriving_json/deriving_Json.mli
+ocamlfind ocamlc -package deriving-ocsigen.syntax -syntax camlp4o -ppopt syntax/pa_deriving_Json.cmo -I deriving_json -c deriving_json/deriving_Json.ml
+ocamlfind ocamlc -a -o deriving_json.cma deriving_json/deriving_Json_lexer.cmo deriving_json/deriving_Json.cmo
+ocamlfind ocamlopt -package deriving-ocsigen.syntax -syntax camlp4o -ppopt syntax/pa_deriving_Json.cmo -I deriving_json -c deriving_json/deriving_Json_lexer.ml
+ocamlfind ocamlopt -package deriving-ocsigen.syntax -syntax camlp4o -ppopt syntax/pa_deriving_Json.cmo -I deriving_json -c deriving_json/deriving_Json.ml
+ocamlfind ocamlopt -a -o deriving_json.cmxa deriving_json/deriving_Json_lexer.cmx deriving_json/deriving_Json.cmx
+ocamlfind ocamlopt -shared -linkall -o deriving_json.cmxs deriving_json.cmxa
+make[1]: Leaving directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/lib'
+make -C doc
+make[1]: Entering directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/doc'
+mkdir -p api-html
+ocamlfind ocamldoc -package lwt -intro api-index -html \
+	   -d api-html -I ../lib -I ../lib/deriving_json ../lib/*.mli ../lib/deriving_json/deriving_Json.mli ../lib/deriving_json/deriving_Json_lexer.mli
+Warning: Class or class type event not found
+Warning: Element Lwt.cancel not found
+Warning: Element Lwt.cancel not found
+make[1]: Leaving directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/doc'
+make -C runtime
+make[1]: Entering directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/runtime'
+cat mlString.js ieee_754.js int64.js md5.js marshall.js lexing.js parsing.js json.js stdlib.js jslib.js jslib_js_of_ocaml.js > runtime.js
+make[1]: Leaving directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/runtime'
+make -C examples
+make[1]: Entering directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples'
+make -C boulderdash/
+make[2]: Entering directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/boulderdash'
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c boulderdash.ml
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -linkpkg -o boulderdash.byte js_of_ocaml.cma boulderdash.cmo
+../../compiler/js_of_ocaml -noruntime ../../runtime/runtime.js boulderdash.byte 
+Missing primitives:
+  caml_convert_raw_backtrace
+  caml_get_exception_raw_backtrace
+  caml_ml_output_char
+  caml_sys_const_big_endian
+  caml_sys_const_ostype_cygwin
+  caml_sys_const_ostype_unix
+  caml_sys_const_ostype_win32
+  caml_sys_const_word_size
+  caml_sys_exit
+make[2]: Leaving directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/boulderdash'
+make -C cubes/
+make[2]: Entering directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/cubes'
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c cubes.ml
+File "cubes.ml", line 50, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -linkpkg -o cubes.byte js_of_ocaml.cma cubes.cmo
+../../compiler/js_of_ocaml -noruntime ../../runtime/runtime.js cubes.byte 
+Missing primitives:
+  caml_convert_raw_backtrace
+  caml_get_exception_raw_backtrace
+  caml_ml_output_char
+  caml_sys_const_big_endian
+  caml_sys_const_ostype_cygwin
+  caml_sys_const_ostype_unix
+  caml_sys_const_ostype_win32
+  caml_sys_const_word_size
+  caml_sys_exit
+make[2]: Leaving directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/cubes'
+make -C graph_viewer/
+make[2]: Entering directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/graph_viewer'
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c scene.mli
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c scene.ml
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c viewer_common.mli
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c viewer_common.ml
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c viewer_js.ml
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -linkpkg -o jsviewer.byte js_of_ocaml.cma scene.cmo viewer_common.cmo viewer_js.cmo
+../../compiler/js_of_ocaml -noruntime ../../runtime/runtime.js jsviewer.byte 
+Missing primitives:
+  caml_array_blit
+  caml_convert_raw_backtrace
+  caml_get_exception_raw_backtrace
+  caml_ml_output_char
+  caml_sys_const_big_endian
+  caml_sys_const_ostype_cygwin
+  caml_sys_const_ostype_unix
+  caml_sys_const_ostype_win32
+  caml_sys_const_word_size
+  caml_sys_exit
+make[2]: Leaving directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/graph_viewer'
+make -C hyperbolic/
+make[2]: Entering directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/hyperbolic'
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c hypertree.ml
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -linkpkg -o hypertree.byte js_of_ocaml.cma hypertree.cmo
+../../compiler/js_of_ocaml -noruntime ../../runtime/runtime.js hypertree.byte -pretty
+Missing primitives:
+  caml_array_concat
+  caml_array_sub
+  caml_convert_raw_backtrace
+  caml_get_exception_raw_backtrace
+  caml_hash
+  caml_ml_output_char
+  caml_sys_const_big_endian
+  caml_sys_const_ostype_cygwin
+  caml_sys_const_ostype_unix
+  caml_sys_const_ostype_win32
+  caml_sys_const_word_size
+  caml_sys_exit
+  caml_sys_getenv
+make[2]: Leaving directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/hyperbolic'
+make -C minesweeper/
+make[2]: Entering directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/minesweeper'
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c minesweeper.ml
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c main.ml
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -linkpkg -o minesweeper.byte js_of_ocaml.cma minesweeper.cmo main.cmo
+../../compiler/js_of_ocaml -noruntime ../../runtime/runtime.js minesweeper.byte 
+Missing primitives:
+  caml_sys_const_big_endian
+  caml_sys_const_ostype_cygwin
+  caml_sys_const_ostype_unix
+  caml_sys_const_ostype_win32
+  caml_sys_const_word_size
+make[2]: Leaving directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/minesweeper'
+make -C planet/
+make[2]: Entering directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/planet'
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c planet.ml
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -linkpkg -o planet.byte js_of_ocaml.cma planet.cmo
+../../compiler/js_of_ocaml -noruntime ../../runtime/runtime.js planet.byte -pretty
+Missing primitives:
+  caml_convert_raw_backtrace
+  caml_get_exception_raw_backtrace
+  caml_ml_output_char
+  caml_sys_const_big_endian
+  caml_sys_const_ostype_cygwin
+  caml_sys_const_ostype_unix
+  caml_sys_const_ostype_win32
+  caml_sys_const_word_size
+  caml_sys_exit
+  caml_sys_getenv
+make[2]: Leaving directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/planet'
+make -C webgl/
+make[2]: Entering directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/webgl'
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c webgl.ml
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -linkpkg -o webgl.byte js_of_ocaml.cma webgl.cmo
+../../compiler/js_of_ocaml -noruntime ../../runtime/runtime.js webgl.byte -pretty
+Missing primitives:
+  caml_convert_raw_backtrace
+  caml_get_exception_raw_backtrace
+  caml_ml_output_char
+  caml_sys_const_big_endian
+  caml_sys_const_ostype_cygwin
+  caml_sys_const_ostype_unix
+  caml_sys_const_ostype_win32
+  caml_sys_const_word_size
+  caml_sys_exit
+make[2]: Leaving directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/webgl'
+make -C wiki/
+make[2]: Entering directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/wiki'
+ocamllex wikicreole.mll
+92 states, 916 transitions, table size 4216 bytes
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c wikicreole.ml
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c wiki_syntax.ml
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c main.ml
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -linkpkg -o wiki.byte js_of_ocaml.cma wikicreole.cmo wiki_syntax.cmo main.cmo
+../../compiler/js_of_ocaml -noruntime ../../runtime/runtime.js wiki.byte -pretty
+Missing primitives:
+  caml_convert_raw_backtrace
+  caml_get_exception_raw_backtrace
+  caml_ml_output_char
+  caml_sys_const_big_endian
+  caml_sys_const_ostype_cygwin
+  caml_sys_const_ostype_unix
+  caml_sys_const_ostype_win32
+  caml_sys_const_word_size
+  caml_sys_exit
+make[2]: Leaving directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/wiki'
+make -C wysiwyg/
+make[2]: Entering directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/wysiwyg'
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -c main.ml
+ocamlfind ocamlc -package lwt -pp "camlp4o ../../lib/syntax/pa_js.cmo" -I ../../lib -g -linkpkg -o wiki.byte js_of_ocaml.cma main.cmo
+../../compiler/js_of_ocaml -noruntime ../../runtime/runtime.js wiki.byte -pretty
+Missing primitives:
+  caml_convert_raw_backtrace
+  caml_get_exception_raw_backtrace
+  caml_ml_output_char
+  caml_sys_const_big_endian
+  caml_sys_const_ostype_cygwin
+make[2]: Leaving directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples/wysiwyg'
+  caml_sys_const_ostype_unix
+  caml_sys_const_ostype_win32
+  caml_sys_const_word_size
+  caml_sys_exit
+make[1]: Leaving directory `/home/opam/.opam/system/build/js_of_ocaml.1.2/examples'
+ocamlfind install -patch-version 1.2 js_of_ocaml lib/META lib/*.cmi lib/deriving_json/deriving_Json.cmi lib/deriving_json/deriving_Json_lexer.cmi  lib/js_of_ocaml.cma lib/syntax/pa_js.cmo lib/dlljs_of_ocaml.so lib/libjs_of_ocaml.a lib/syntax/pa_deriving_Json.cmo lib/deriving_json.cma  lib/deriving_json.cmxa lib/deriving_json.cmxs lib/deriving_json.a  lib/deriving_json/deriving_Json.cmx lib/deriving_json/deriving_Json_lexer.cmx runtime/runtime.js lib/*.mli lib/deriving_json/deriving_Json.mli lib/deriving_json/deriving_Json_lexer.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/deriving_Json_lexer.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/deriving_Json.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/xmlHttpRequest.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/webGL.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/url.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/typed_array.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/regexp.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/lwt_js_events.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/lwt_js.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/json.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/js.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/form.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/firebug.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/file.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/event_arrows.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/dom_html.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/dom_events.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/dom.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/CSS.mli
+Installed /home/opam/.opam/system/lib/js_of_ocaml/runtime.js
+Installed /home/opam/.opam/system/lib/js_of_ocaml/deriving_Json_lexer.cmx
+Installed /home/opam/.opam/system/lib/js_of_ocaml/deriving_Json.cmx
+Installed /home/opam/.opam/system/lib/js_of_ocaml/deriving_json.a
+Installed /home/opam/.opam/system/lib/js_of_ocaml/deriving_json.cmxs
+Installed /home/opam/.opam/system/lib/js_of_ocaml/deriving_json.cmxa
+Installed /home/opam/.opam/system/lib/js_of_ocaml/deriving_json.cma
+Installed /home/opam/.opam/system/lib/js_of_ocaml/pa_deriving_Json.cmo
+Installed /home/opam/.opam/system/lib/js_of_ocaml/libjs_of_ocaml.a
+Installed /home/opam/.opam/system/lib/js_of_ocaml/pa_js.cmo
+Installed /home/opam/.opam/system/lib/js_of_ocaml/js_of_ocaml.cma
+Installed /home/opam/.opam/system/lib/js_of_ocaml/deriving_Json_lexer.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/deriving_Json.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/xmlHttpRequest.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/webGL.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/url.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/typed_array.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/regexp.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/lwt_js_events.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/lwt_js.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/json.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/js.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/form.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/firebug.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/file.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/event_arrows.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/dom_html.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/dom_events.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/dom.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/CSS.cmi
+Installed /home/opam/.opam/system/lib/js_of_ocaml/META
+Installed /home/opam/.opam/system/lib/stublibs/dlljs_of_ocaml.so
+Installed /home/opam/.opam/system/lib/stublibs/dlljs_of_ocaml.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/system/lib/stublibs is not mentioned in ld.conf
+install -d -m 755 /home/opam/.opam/system/bin
+install compiler/js_of_ocaml /home/opam/.opam/system/bin
+Installing js_of_ocaml.1.2.
+
+=-=-= Installing rpc.1.5.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/rpc.1.5.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/rpc.1.5.0+opam.tar.gz
+--2013-11-26 02:30:00--  https://opam.ocaml.org/archives/rpc.1.5.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 31773 (31K) [application/octet-stream]
+Saving to: `rpc.1.5.0+opam.tar.gz'
+
+     0K .......... .......... .......... .                    100% 57.0M=0.001s
+
+2013-11-26 02:30:00 (57.0 MB/s) - `rpc.1.5.0+opam.tar.gz' saved [31773/31773]
+
+Building rpc.1.5.0:
+  make
+  make install
+cd lib && make all
+make[1]: Entering directory `/home/opam/.opam/system/build/rpc.1.5.0/lib'
+ocamlfind ocamlopt -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -c -o rpc.cmi rpc.mli
+ocamlfind ocamlc -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -c -o rpc.cmo rpc.ml
+ocamlfind ocamlopt -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -c -o rpc.o rpc.ml
+ocamlfind ocamlc -annot -g -c -package camlp4 -pp "camlp4orf" -I /usr/lib/ocaml/camlp4 -o pa_module_conv.cmo pa_module_conv.ml
+ocamlfind ocamlc -annot -g -c -package camlp4,type_conv -pp "camlp4orf" -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/js_of_ocaml -I /home/opam/.opam/system/lib/lwt p4_rpc.cmo p4_rpc.ml
+File "p4_rpc.ml", line 558, characters 6-14:
+Warning 26: unused variable arg_path.
+ocamlfind ocamlc -annot -g -c -package camlp4,type_conv -pp "camlp4orf" -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/js_of_ocaml -I /home/opam/.opam/system/lib/lwt pa_rpc.cmo pa_rpc.ml
+ocamlfind ocamlc -a -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/js_of_ocaml -I /home/opam/.opam/system/lib/lwt -o pa_rpc.cma pa_module_conv.cmo rpc.cmo p4_rpc.cmo pa_rpc.cmo
+ocamlfind ocamlc -annot -g -c -package camlp4,type_conv -pp "camlp4orf" -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/js_of_ocaml -I /home/opam/.opam/system/lib/lwt p4_idl.cmo p4_idl.ml
+File "p4_idl.ml", line 112, characters 5-143:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+(TyNil _|TyAli (_, _, _)|TyAny _|TyApp (_, _, _)|TyArr (_, _, _)|
+TyCls (_, _)|TyLab (_, _, _)|TyMan (_, _, _)|TyDcl (_, _, _, _, _)|
+TyObj (_, _, _)|TyOlb (_, _, _)|TyPol (_, _, _)|TyTypePol (_, _, _)|
+TyQuo (_, _)|TyQuP (_, _)|TyQuM (_, _)|TyAnP _|TyAnM _|TyVrn (_, _)|
+TyRec (_, _)|TyCol (_, _, _)|TySem (_, _, _)|TyCom (_, _, _)|TySum (_, _)|
+TyAnd (_, _, _)|TyOr (_, _, _)|TyPrv (_, _)|TyMut (_, _)|TyTup (_, _)|
+TySta (_, _, _)|TyVrnEq (_, _)|TyVrnSup (_, _)|TyVrnInf (_, _)|
+TyVrnInfSup (_, _, _)|TyAmp (_, _, _)|TyOfAmp (_, _, _)|TyPkg (_, _)|
+TyAnt (_, _))
+ocamlfind ocamlc -a -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/js_of_ocaml -I /home/opam/.opam/system/lib/lwt -o idl.cma p4_rpc.cmo p4_idl.cmo
+ocamlfind ocamlopt -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -c -o xmlrpc.cmi xmlrpc.mli
+ocamlfind ocamlc -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -c -o xmlrpc.cmo xmlrpc.ml
+ocamlfind ocamlopt -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -c -o xmlrpc.o xmlrpc.ml
+ocamlfind ocamlopt -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -c -o jsonrpc.cmi jsonrpc.mli
+ocamlfind ocamlc -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -c -o jsonrpc.cmo jsonrpc.ml
+ocamlfind ocamlopt -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -c -o jsonrpc.o jsonrpc.ml
+ocamlfind ocamlopt -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -c -o rpc_client.cmi rpc_client.mli
+ocamlfind ocamlc -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -c -o rpc_client.cmo rpc_client.ml
+ocamlfind ocamlopt -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -c -o rpc_client.o rpc_client.ml
+ocamlfind ocamlopt -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -c -o rpc_client_js.cmi rpc_client_js.mli
+ocamlfind ocamlc -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -syntax camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/js_of_ocaml -I /home/opam/.opam/system/lib/lwt -c rpc_client_js_helper.cmo rpc_client_js_helper.ml
+File "rpc_client_js_helper.ml", line 99, characters 23-95:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+(Int32 _|Bool _|Float _|DateTime _|Enum _|Dict _|Null)
+ocamlfind ocamlc -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -syntax camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/js_of_ocaml -I /home/opam/.opam/system/lib/lwt -c rpc_client_js.cmo rpc_client_js.ml
+ocamlfind ocamlc -annot -g -package xmlm,lwt,js_of_ocaml,js_of_ocaml.syntax -syntax camlp4o -I /usr/lib/ocaml/camlp4 -I /home/opam/.opam/system/lib/type_conv -I /home/opam/.opam/system/lib/js_of_ocaml -I /home/opam/.opam/system/lib/lwt -a -o rpc_client_js.cma rpc_client_js_helper.cmo rpc_client_js.cmo
+make[1]: Leaving directory `/home/opam/.opam/system/build/rpc.1.5.0/lib'
+cd lib && make install
+make[1]: Entering directory `/home/opam/.opam/system/build/rpc.1.5.0/lib'
+ocamlfind install -destdir "/home/opam/.opam/system/lib" rpclib META rpc.cmi rpc.cmo rpc.o rpc.cmx pa_rpc.cma idl.cma xmlrpc.cmi xmlrpc.cmo xmlrpc.o xmlrpc.cmx jsonrpc.cmi jsonrpc.cmo jsonrpc.o jsonrpc.cmx rpc_client.cmi rpc_client.cmo rpc_client.o rpc_client.cmx rpc_client_js.cmi rpc_client_js.cmo rpc_client_js_helper.cmo rpc_client.cmo rpc_client_js.cma
+Installed /home/opam/.opam/system/lib/rpclib/rpc_client_js.cma
+Installed /home/opam/.opam/system/lib/rpclib/rpc_client.cmo
+Installed /home/opam/.opam/system/lib/rpclib/rpc_client_js_helper.cmo
+Installed /home/opam/.opam/system/lib/rpclib/rpc_client_js.cmo
+Installed /home/opam/.opam/system/lib/rpclib/rpc_client_js.cmi
+Installed /home/opam/.opam/system/lib/rpclib/rpc_client.cmx
+Installed /home/opam/.opam/system/lib/rpclib/rpc_client.o
+ocamlfind: [WARNING] Overwriting file /home/opam/.opam/system/lib/rpclib/rpc_client.cmo
+Installed /home/opam/.opam/system/lib/rpclib/rpc_client.cmo
+Installed /home/opam/.opam/system/lib/rpclib/rpc_client.cmi
+Installed /home/opam/.opam/system/lib/rpclib/jsonrpc.cmx
+Installed /home/opam/.opam/system/lib/rpclib/jsonrpc.o
+Installed /home/opam/.opam/system/lib/rpclib/jsonrpc.cmo
+Installed /home/opam/.opam/system/lib/rpclib/jsonrpc.cmi
+Installed /home/opam/.opam/system/lib/rpclib/xmlrpc.cmx
+Installed /home/opam/.opam/system/lib/rpclib/xmlrpc.o
+Installed /home/opam/.opam/system/lib/rpclib/xmlrpc.cmo
+Installed /home/opam/.opam/system/lib/rpclib/xmlrpc.cmi
+Installed /home/opam/.opam/system/lib/rpclib/idl.cma
+Installed /home/opam/.opam/system/lib/rpclib/pa_rpc.cma
+Installed /home/opam/.opam/system/lib/rpclib/rpc.cmx
+Installed /home/opam/.opam/system/lib/rpclib/rpc.o
+Installed /home/opam/.opam/system/lib/rpclib/rpc.cmo
+Installed /home/opam/.opam/system/lib/rpclib/rpc.cmi
+Installed /home/opam/.opam/system/lib/rpclib/META
+make[1]: Leaving directory `/home/opam/.opam/system/build/rpc.1.5.0/lib'
+Installing rpc.1.5.0.
