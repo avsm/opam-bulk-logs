@@ -1,0 +1,186 @@
+++ opam install postgresql-ocaml -e ubuntu
++ depext=libpq-dev
++ echo Ubuntu depexts: libpq-dev
+Ubuntu depexts: libpq-dev
++ '[' libpq-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libpq-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libgssrpc4.
+(Reading database ... 20462 files and directories currently installed.)
+Unpacking libgssrpc4 (from .../libgssrpc4_1.10+dfsg~beta1-2_amd64.deb) ...
+Selecting previously unselected package libkadm5clnt-mit8.
+Unpacking libkadm5clnt-mit8 (from .../libkadm5clnt-mit8_1.10+dfsg~beta1-2_amd64.deb) ...
+Selecting previously unselected package libkdb5-6.
+Unpacking libkdb5-6 (from .../libkdb5-6_1.10+dfsg~beta1-2_amd64.deb) ...
+Selecting previously unselected package libkadm5srv-mit8.
+Unpacking libkadm5srv-mit8 (from .../libkadm5srv-mit8_1.10+dfsg~beta1-2_amd64.deb) ...
+Selecting previously unselected package comerr-dev.
+Unpacking comerr-dev (from .../comerr-dev_2.1-1.42-1ubuntu2_amd64.deb) ...
+Selecting previously unselected package krb5-multidev.
+Unpacking krb5-multidev (from .../krb5-multidev_1.10+dfsg~beta1-2_amd64.deb) ...
+Selecting previously unselected package libpq5.
+Unpacking libpq5 (from .../libpq5_9.1.3-2_amd64.deb) ...
+Selecting previously unselected package zlib1g-dev.
+Unpacking zlib1g-dev (from .../zlib1g-dev_1%3a1.2.3.4.dfsg-3ubuntu4_amd64.deb) ...
+Selecting previously unselected package libssl-dev.
+Unpacking libssl-dev (from .../libssl-dev_1.0.1-4ubuntu3_amd64.deb) ...
+Selecting previously unselected package libkrb5-dev.
+Unpacking libkrb5-dev (from .../libkrb5-dev_1.10+dfsg~beta1-2_amd64.deb) ...
+Selecting previously unselected package libpq-dev.
+Unpacking libpq-dev (from .../libpq-dev_9.1.3-2_amd64.deb) ...
+Selecting previously unselected package libssl-doc.
+Unpacking libssl-doc (from .../libssl-doc_1.0.1-4ubuntu3_all.deb) ...
+Setting up libgssrpc4 (1.10+dfsg~beta1-2) ...
+Setting up libkadm5clnt-mit8 (1.10+dfsg~beta1-2) ...
+Setting up libkdb5-6 (1.10+dfsg~beta1-2) ...
+Setting up libkadm5srv-mit8 (1.10+dfsg~beta1-2) ...
+Setting up comerr-dev (2.1-1.42-1ubuntu2) ...
+Setting up krb5-multidev (1.10+dfsg~beta1-2) ...
+Setting up libpq5 (9.1.3-2) ...
+Setting up zlib1g-dev (1:1.2.3.4.dfsg-3ubuntu4) ...
+Setting up libssl-dev (1.0.1-4ubuntu3) ...
+Setting up libkrb5-dev (1.10+dfsg~beta1-2) ...
+Setting up libpq-dev (9.1.3-2) ...
+Setting up libssl-doc (1.0.1-4ubuntu3) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
++ opam install postgresql-ocaml
+The following actions will be performed:
+ - install postgresql-ocaml.2.0.5
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing postgresql-ocaml.2.0.5 =-=-=
+default    Downloading https://opam.ocaml.org/archives/postgresql-ocaml.2.0.5+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/postgresql-ocaml.2.0.5+opam.tar.gz
+--2013-12-20 21:04:06--  https://opam.ocaml.org/archives/postgresql-ocaml.2.0.5+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 81747 (80K) [application/octet-stream]
+Saving to: `postgresql-ocaml.2.0.5+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 62% 42.0M 0s
+    50K .......... .......... .........                       100% 36.0M=0.002s
+
+2013-12-20 21:04:06 (39.5 MB/s) - `postgresql-ocaml.2.0.5+opam.tar.gz' saved [81747/81747]
+
+Building postgresql-ocaml.2.0.5:
+  ./configure --prefix /home/opam/.opam/system
+  make
+  make install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ postgresql-ocaml
+Package version: ..................................... 2.0.5
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/system
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Strict compile-time checks: .......................... true
+Build examples: ...................................... true
+Build applications depending on lablgtk2: ............ false
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /usr/bin/ocamldoc
+pkg_threads: ......................................... /usr/lib/ocaml
+pkg_bigarray: ........................................ /usr/lib/ocaml
+
+ocaml setup.ml -build 
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+/home/opam/.opam/system/bin/ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include/postgresql -ccopt '-DPG_OCAML_MAJOR_VERSION=9' -ccopt '-DPG_OCAML_MINOR_VERSION=1' -c lib/postgresql_stubs.c
+mv postgresql_stubs.o lib/postgresql_stubs.o
+/home/opam/.opam/system/bin/ocamlfind ocamlmklib -o lib/postgresql_stubs -lpq -L/usr/lib -lpq lib/postgresql_stubs.o
+/home/opam/.opam/system/bin/ocamlfind ocamldep -package bigarray -package threads -modules lib/postgresql.mli > lib/postgresql.mli.depends
+/home/opam/.opam/system/bin/ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -package threads -thread -w Aer-44 -I lib -o lib/postgresql.cmi lib/postgresql.mli
+/home/opam/.opam/system/bin/ocamlfind ocamldep -package bigarray -package threads -modules lib/postgresql.ml > lib/postgresql.ml.depends
+/home/opam/.opam/system/bin/ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -package threads -thread -w Aer-44 -I lib -o lib/postgresql.cmo lib/postgresql.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlc -a -dllib -lpostgresql_stubs -cclib -lpostgresql_stubs -cclib -lpq -cclib -L/usr/lib -cclib -lpq -cclib -L/usr/lib -cclib -lpq lib/postgresql.cmo -o lib/postgresql.cma
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -package threads -thread -w Aer-44 -I lib -o lib/postgresql.cmx lib/postgresql.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -a -cclib -lpostgresql_stubs -cclib -lpq -cclib -L/usr/lib -cclib -lpq -cclib -L/usr/lib -cclib -lpq lib/postgresql.cmx -o lib/postgresql.cmxa
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -shared -cclib -lpostgresql_stubs -I lib -cclib -L/usr/lib -cclib -lpq lib/postgresql.cmxa lib/postgresql.cmx -o lib/postgresql.cmxs
+/home/opam/.opam/system/bin/ocamlfind ocamldep -package bigarray -package threads -modules examples/cursor.ml > examples/cursor.ml.depends
+/home/opam/.opam/system/bin/ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -package threads -thread -w Aer-44 -I examples -I lib -o examples/cursor.cmo examples/cursor.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -package threads -thread -w Aer-44 -I examples -I lib -o examples/cursor.cmx examples/cursor.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package threads -thread lib/postgresql.cmxa examples/cursor.cmx -o examples/cursor.native
+/home/opam/.opam/system/bin/ocamlfind ocamldep -package bigarray -package threads -modules examples/dump.ml > examples/dump.ml.depends
+/home/opam/.opam/system/bin/ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -package threads -thread -w Aer-44 -I examples -I lib -o examples/dump.cmo examples/dump.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -package threads -thread -w Aer-44 -I examples -I lib -o examples/dump.cmx examples/dump.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package threads -thread lib/postgresql.cmxa examples/dump.cmx -o examples/dump.native
+/home/opam/.opam/system/bin/ocamlfind ocamldep -package bigarray -package threads -modules examples/populate.ml > examples/populate.ml.depends
+/home/opam/.opam/system/bin/ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -package threads -thread -w Aer-44 -I examples -I lib -o examples/populate.cmo examples/populate.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -package threads -thread -w Aer-44 -I examples -I lib -o examples/populate.cmx examples/populate.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package threads -thread lib/postgresql.cmxa examples/populate.cmx -o examples/populate.native
+/home/opam/.opam/system/bin/ocamlfind ocamldep -package bigarray -package threads -modules examples/prompt.ml > examples/prompt.ml.depends
+/home/opam/.opam/system/bin/ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -package threads -thread -w Aer-44 -I examples -I lib -o examples/prompt.cmo examples/prompt.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -package threads -thread -w Aer-44 -I examples -I lib -o examples/prompt.cmx examples/prompt.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package threads -thread lib/postgresql.cmxa examples/prompt.cmx -o examples/prompt.native
+/home/opam/.opam/system/bin/ocamlfind ocamldep -package bigarray -package threads -modules examples/test_lo.ml > examples/test_lo.ml.depends
+/home/opam/.opam/system/bin/ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -package threads -thread -w Aer-44 -I examples -I lib -o examples/test_lo.cmo examples/test_lo.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -package threads -thread -w Aer-44 -I examples -I lib -o examples/test_lo.cmx examples/test_lo.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package bigarray -package threads -thread lib/postgresql.cmxa examples/test_lo.cmx -o examples/test_lo.native
+ocaml setup.ml -install 
+Installed /home/opam/.opam/system/lib/postgresql/postgresql.mli
+Installed /home/opam/.opam/system/lib/postgresql/libpostgresql_stubs.a
+Installed /home/opam/.opam/system/lib/postgresql/postgresql.cma
+Installed /home/opam/.opam/system/lib/postgresql/postgresql.cmxa
+Installed /home/opam/.opam/system/lib/postgresql/postgresql.a
+Installed /home/opam/.opam/system/lib/postgresql/postgresql.cmxs
+Installed /home/opam/.opam/system/lib/postgresql/postgresql.cmi
+Installed /home/opam/.opam/system/lib/postgresql/postgresql.cmx
+Installed /home/opam/.opam/system/lib/postgresql/META
+Installed /home/opam/.opam/system/lib/stublibs/dllpostgresql_stubs.so
+Installed /home/opam/.opam/system/lib/stublibs/dllpostgresql_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/system/lib/stublibs is not mentioned in ld.conf
+Installing postgresql-ocaml.2.0.5.
