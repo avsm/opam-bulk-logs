@@ -1,0 +1,87 @@
+++ opam install ocamlgsl -e ubuntu
++ depext=gawk
++ echo Ubuntu depexts: gawk
++ '[' gawk '!=' '' ']'
+Ubuntu depexts: gawk
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y gawk
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libsigsegv2.
+(Reading database ... 20462 files and directories currently installed.)
+Unpacking libsigsegv2 (from .../libsigsegv2_2.9-4ubuntu2_amd64.deb) ...
+Setting up libsigsegv2 (2.9-4ubuntu2) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+Selecting previously unselected package gawk.
+(Reading database ... 20470 files and directories currently installed.)
+Unpacking gawk (from .../gawk_1%3a3.1.8+dfsg-0.1ubuntu1_amd64.deb) ...
+Setting up gawk (1:3.1.8+dfsg-0.1ubuntu1) ...
++ opam install ocamlgsl
+The following actions will be performed:
+ - install ocamlgsl.0.6.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocamlgsl.0.6.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocamlgsl.0.6.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocamlgsl.0.6.0+opam.tar.gz
+--2013-12-20 18:37:54--  https://opam.ocaml.org/archives/ocamlgsl.0.6.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 296579 (290K) [application/octet-stream]
+Saving to: `ocamlgsl.0.6.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 17% 29.5M 0s
+    50K .......... .......... .......... .......... .......... 34% 32.3M 0s
+   100K .......... .......... .......... .......... .......... 51% 25.2M 0s
+   150K .......... .......... .......... .......... .......... 69% 31.7M 0s
+   200K .......... .......... .......... .......... .......... 86% 58.7M 0s
+   250K .......... .......... .......... .........            100% 67.4M=0.008s
+
+2013-12-20 18:37:54 (35.1 MB/s) - `ocamlgsl.0.6.0+opam.tar.gz' saved [296579/296579]
+
+Building ocamlgsl.0.6.0:
+  make
+  make install-findlib
+make: gsl-config: Command not found
+make: gsl-config: Command not found
+make: gsl-config: Command not found
+make: gsl-config: Command not found
+ocamlc -ccopt ' -DHAVE_INLINE -DHAVE_FENV -g -O2 ' -c mlgsl_error.c
+mlgsl_error.c:5:27: fatal error: gsl/gsl_errno.h: No such file or directory
+compilation terminated.
+make: *** [mlgsl_error.o] Error 2
+[ERROR] The compilation of ocamlgsl.0.6.0 failed.
+Removing ocamlgsl.0.6.0.
+  ocamlfind remove gsl
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/gsl
+
+
+===== ERROR while installing ocamlgsl.0.6.0 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/system/build/ocamlgsl.0.6.0
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/opam/.opam/system/build/ocamlgsl.0.6.0/ocamlgsl-83-a00279.env
+# stdout-file          /home/opam/.opam/system/build/ocamlgsl.0.6.0/ocamlgsl-83-a00279.out
+# stderr-file          /home/opam/.opam/system/build/ocamlgsl.0.6.0/ocamlgsl-83-a00279.err
+### stdout ###
+# ocamlc -ccopt ' -DHAVE_INLINE -DHAVE_FENV -g -O2 ' -c mlgsl_error.c
+### stderr ###
+# make: gsl-config: Command not found
+# make: gsl-config: Command not found
+# make: gsl-config: Command not found
+# make: gsl-config: Command not found
+# mlgsl_error.c:5:27: fatal error: gsl/gsl_errno.h: No such file or directory
+# compilation terminated.
+# make: *** [mlgsl_error.o] Error 2
+
+'opam install ocamlgsl' failed.
