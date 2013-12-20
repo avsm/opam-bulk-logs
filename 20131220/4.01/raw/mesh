@@ -1,0 +1,136 @@
+++ opam install mesh -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install mesh
+Ubuntu depexts:
+The following actions will be performed:
+ - install mesh.0.7.6
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing mesh.0.7.6 =-=-=
+default    Downloading https://opam.ocaml.org/archives/mesh.0.7.6+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/mesh.0.7.6+opam.tar.gz
+--2013-12-20 16:15:03--  https://opam.ocaml.org/archives/mesh.0.7.6+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 220815 (216K) [application/octet-stream]
+Saving to: `mesh.0.7.6+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 23% 29.3M 0s
+    50K .......... .......... .......... .......... .......... 46% 32.0M 0s
+   100K .......... .......... .......... .......... .......... 69% 30.8M 0s
+   150K .......... .......... .......... .......... .......... 92% 48.1M 0s
+   200K .......... .....                                      100% 57.0M=0.006s
+
+2013-12-20 16:15:03 (34.8 MB/s) - `mesh.0.7.6+opam.tar.gz' saved [220815/220815]
+
+Building mesh.0.7.6:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/system
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ mesh
+Package version: ..................................... 0.7.6
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/system
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Enable if you build on a system with libtriangle: .... false
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_bigarray: ........................................ /usr/lib/ocaml
+pkg_graphics: ........................................ /usr/lib/ocaml
+ocamldoc: ............................................ /usr/bin/ocamldoc
+
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -modules src/mesh.ml > src/mesh.ml.depends
++ ocamlfind ocamldep -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -modules src/mesh.ml > src/mesh.ml.depends
+File "src/mesh_level_curvesFC.ml", line 317, characters 6-11:
+Camlp4: Uncaught exception: Delete.Rule_not_found (("$UIDENT x; SELF", "expr: [ \";\" LEFTA\n  [ seq_expr ]\n| \"top\" RIGHTA\n  [ \"IFDEF\"; uident; \"THEN\"; SELF; else_expr\n  | \"IFNDEF\"; uident; \"THEN\"; SELF; else_expr\n  | \"DEFINE\"; LIDENT _; \"=\"; SELF; \"IN\"; SELF\n  | \"parser\"; OPT parser_ipatt; parser_case_list\n  | \"parser\"; OPT parser_ipatt; parser_case_list\n  | \"let\"; \"module\"; a_UIDENT; module_binding0; \"in\"; expr LEVEL \";\"\n  | \"let\"; \"open\"; module_longident; \"in\"; expr LEVEL \";\"\n  | \"let\"; opt_rec; binding; \"in\"; expr LEVEL \";\"\n  | \"function\"; match_case\n  | \"if\"; SELF; \"then\"; expr LEVEL \"top\"; \"else\"; expr LEVEL \"top\"\n  | \"if\"; SELF; \"then\"; expr LEVEL \"top\"\n  | \"fun\"; fun_def\n  | \"match\"; sequence; \"with\"; \"parser\"; OPT parser_ipatt; parser_case_list\n  | \"match\"; sequence; \"with\"; \"parser\"; OPT parser_ipatt; parser_case_list\n  | \"match\"; sequence; \"with\"; match_case\n  | \"try\"; sequence; \"with\"; match_case\n  | \"for\"; a_LIDENT; \"=\"; sequence; direction_flag; sequence; \"do\";\n    do_sequence\n  | \"while\"; sequence; \"do\"; do_sequence\n  | \"object\"; opt_class_self_patt; class_structure; \"end\" ]\n| \",\" LEFTA\n  [ SELF; \",\"; comma_expr ]\n| \":=\" NONA\n  [ SELF; \":=\"; expr LEVEL \"top\"\n  | SELF; \"<-\"; expr LEVEL \"top\" ]\n| \"||\" RIGHTA\n  [ SELF; infixop6; SELF ]\n| \"&&\" RIGHTA\n  [ SELF; infixop5; SELF ]\n| \"<\" LEFTA\n  [ SELF; infix operator (level 0) (comparison operators, and some others);\n    SELF ]\n| \"^\" RIGHTA\n  [ SELF; infix operator (level 1) (start with '^', '@'); SELF ]\n| \"::\" RIGHTA\n  [ SELF; \"::\"; SELF ]\n| \"+\" LEFTA\n  [ SELF; infix operator (level 2) (start with '+', '-'); SELF ]\n| \"*\" LEFTA\n  [ SELF; \"land\"; SELF\n  | SELF; \"lor\"; SELF\n  | SELF; \"lxor\"; SELF\n  | SELF; \"mod\"; SELF\n  | SELF; infix operator (level 3) (start with '*', '/', '%'); SELF ]\n| \"**\" RIGHTA\n  [ SELF; \"asr\"; SELF\n  | SELF; \"lsl\"; SELF\n  | SELF; \"lsr\"; SELF\n  | SELF; infix operator (level 4) (start with \"**\") (right assoc); SELF ]\n| \"unary minus\" NONA\n  [ \"-\"; SELF\n  | \"-.\"; SELF ]\n| \"apply\" LEFTA\n  [ SELF; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | \"assert\"; SELF\n  | \"lazy\"; SELF ]\n| \"label\" NONA\n  [ \"~\"; a_LIDENT\n  | LABEL _; SELF\n  | OPTLABEL _; SELF\n  | \"?\"; a_LIDENT ]\n| \".\" LEFTA\n  [ SELF; \".\"; \"(\"; SELF; \")\"\n  | SELF; \".\"; \"[\"; SELF; \"]\"\n  | SELF; \".\"; \"{\"; comma_expr; \"}\"\n  | SELF; \".\"; SELF\n  | SELF; \"#\"; label ]\n| \"~-\" NONA\n  [ \"!\"; SELF\n  | prefix operator (start with '!', '?', '~'); SELF ]\n| LEFTA\n  [ \"`\";\n    [ \"IFDEF\" | \"IFNDEF\" | \"THEN\" | \"ELSE\" | \"END\" | \"ENDIF\" | \"DEFINE\"\n    | \"IN\" ]\n  | \"`\"; a_ident ]\n| \"simple\" LEFTA\n  [ $UIDENT x\n  | $UIDENT x\n  | $UIDENT x\n  | $UIDENT x\n  | \"false\"\n  | \"true\"\n  | \"{\"; TRY [ label_expr_list; \"}\" ]\n  | \"{\"; TRY [ expr LEVEL \".\"; \"with\" ]; label_expr_list; \"}\"\n  | \"new\"; class_longident\n  | QUOTATION _\n  | ANTIQUOT ((\"exp\" | \"\" | \"anti\"), _)\n  | ANTIQUOT (\"`bool\", _)\n  | ANTIQUOT (\"tup\", _)\n  | ANTIQUOT (\"seq\", _)\n  | \"`\"; a_ident\n  | \"[\"; \"]\"\n  | \"[\"; sem_expr_for_list; \"]\"\n  | \"[|\"; \"|]\"\n  | \"[|\"; sem_expr; \"|]\"\n  | \"{<\"; \">}\"\n  | \"{<\"; field_expr_list; \">}\"\n  | \"begin\"; \"end\"\n  | \"begin\"; sequence; \"end\"\n  | \"(\"; \")\"\n  | \"(\"; \"module\"; module_expr; \")\"\n  | \"(\"; \"module\"; module_expr; \":\"; package_type; \")\"\n  | \"(\"; SELF; \";\"; \")\"\n  | \"(\"; SELF; \";\"; sequence; \")\"\n  | \"(\"; SELF; \":\"; ctyp; \")\"\n  | \"(\"; SELF; \":\"; ctyp; \":>\"; ctyp; \")\"\n  | \"(\"; SELF; \":>\"; ctyp; \")\"\n  | \"(\"; SELF; \")\"\n  | stream_begin; stream_end\n  | stream_begin; stream_expr_comp_list; stream_end\n  | stream_begin; stream_end\n  | stream_begin; stream_expr_comp_list; stream_end\n  | a_INT\n  | a_INT32\n  | a_INT64\n  | a_NATIVEINT\n  | a_FLOAT\n  | a_STRING\n  | a_CHAR\n  | TRY module_longident_dot_lparen; sequence; \")\"\n  | TRY val_longident ] ]"))
+
+Preprocessing error on file src/mesh.ml
+Error while running external preprocessor
+Command line: camlp4 '-I' '/usr/lib/ocaml/camlp4' '-I' '/usr/lib/ocaml/camlp4' '-parser' 'o' '-parser' 'op' '-printer' 'p' '-parser' 'Camlp4MacroParser' '-Isrc' 'src/mesh.ml' > /tmp/ocamlppde6ca0
+
+Command exited with code 2.
+E: Failure("Command ''/usr/bin/ocamlbuild' src/mesh.cma src/mesh.cmxa src/mesh.a src/mesh.cmxs src/mesh_display.cma src/mesh_display.cmxa src/mesh_display.a src/mesh_display.cmxs src/libmesh_triangle_stubs.a src/dllmesh_triangle_stubs.so src/mesh_triangle.cma src/mesh_triangle.cmxa src/mesh_triangle.a src/mesh_triangle.cmxs -tag debug' terminated with error code 10")
+[ERROR] The compilation of mesh.0.7.6 failed.
+Removing mesh.0.7.6.
+  ocamlfind remove mesh
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/mesh
+
+
+===== ERROR while installing mesh.0.7.6 =====
+# opam-version         1.1.0
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/opam/.opam/system/build/mesh.0.7.6
+# compiler             system (4.01.0)
+# exit-code            1
+# env-file             /home/opam/.opam/system/build/mesh.0.7.6/mesh-22-a00279.env
+# stdout-file          /home/opam/.opam/system/build/mesh.0.7.6/mesh-22-a00279.out
+# stderr-file          /home/opam/.opam/system/build/mesh.0.7.6/mesh-22-a00279.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamldep -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -modules src/mesh.ml > src/mesh.ml.depends
+# + ocamlfind ocamldep -package graphics -package camlp4.macro -package bigarray -syntax camlp4o -ppopt -Isrc -modules src/mesh.ml > src/mesh.ml.depends
+# File "src/mesh_level_curvesFC.ml", line 317, characters 6-11:
+# Camlp4: Uncaught exception: Delete.Rule_not_found (("$UIDENT x; SELF", "expr: [ \";\" LEFTA\n  [ seq_expr ]\n| \"top\" RIGHTA\n  [ \"IFDEF\"; uident; \"THEN\"; SELF; else_expr\n  | \"IFNDEF\"; uident; \"THEN\"; SELF; else_expr\n  | \"DEFINE\"; LIDENT _; \"=\"; SELF; \"IN\"; SELF\n  | \"parser\"; OPT parser_ipatt; parser_case_list\n  | \"parser\"; OPT parser_ipatt; parser_case_list\n  | \"let\"; \"module\"; a_UIDENT; module_binding0; \"in\"; expr LEVEL \";\"\n  | \"let\"; \"open\"; module_longident; \"in\"; expr LEVEL \";\"\n  | \"let\"; opt_rec; binding; \"in\"; expr LEVEL \";\"\n  | \"function\"; match_case\n  | \"if\"; SELF; \"then\"; expr LEVEL \"top\"; \"else\"; expr LEVEL \"top\"\n  | \"if\"; SELF; \"then\"; expr LEVEL \"top\"\n  | \"fun\"; fun_def\n  | \"match\"; sequence; \"with\"; \"parser\"; OPT parser_ipatt; parser_case_list\n  | \"match\"; sequence; \"with\"; \"parser\"; OPT parser_ipatt; parser_case_list\n  | \"match\"; sequence; \"with\"; match_case\n  | \"try\"; sequence; \"with\"; match_case\n  | \"for\"; a_LIDENT; \"=\"; sequence; direction_flag; sequence; \"do\";\n    do_sequence\n  | \"while\"; sequence; \"do\"; do_sequence\n  | \"object\"; opt_class_self_patt; class_structure; \"end\" ]\n| \",\" LEFTA\n  [ SELF; \",\"; comma_expr ]\n| \":=\" NONA\n  [ SELF; \":=\"; expr LEVEL \"top\"\n  | SELF; \"<-\"; expr LEVEL \"top\" ]\n| \"||\" RIGHTA\n  [ SELF; infixop6; SELF ]\n| \"&&\" RIGHTA\n  [ SELF; infixop5; SELF ]\n| \"<\" LEFTA\n  [ SELF; infix operator (level 0) (comparison operators, and some others);\n    SELF ]\n| \"^\" RIGHTA\n  [ SELF; infix operator (level 1) (start with '^', '@'); SELF ]\n| \"::\" RIGHTA\n  [ SELF; \"::\"; SELF ]\n| \"+\" LEFTA\n  [ SELF; infix operator (level 2) (start with '+', '-'); SELF ]\n| \"*\" LEFTA\n  [ SELF; \"land\"; SELF\n  | SELF; \"lor\"; SELF\n  | SELF; \"lxor\"; SELF\n  | SELF; \"mod\"; SELF\n  | SELF; infix operator (level 3) (start with '*', '/', '%'); SELF ]\n| \"**\" RIGHTA\n  [ SELF; \"asr\"; SELF\n  | SELF; \"lsl\"; SELF\n  | SELF; \"lsr\"; SELF\n  | SELF; infix operator (level 4) (start with \"**\") (right assoc); SELF ]\n| \"unary minus\" NONA\n  [ \"-\"; SELF\n  | \"-.\"; SELF ]\n| \"apply\" LEFTA\n  [ SELF; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | $UIDENT x; SELF\n  | \"assert\"; SELF\n  | \"lazy\"; SELF ]\n| \"label\" NONA\n  [ \"~\"; a_LIDENT\n  | LABEL _; SELF\n  | OPTLABEL _; SELF\n  | \"?\"; a_LIDENT ]\n| \".\" LEFTA\n  [ SELF; \".\"; \"(\"; SELF; \")\"\n  | SELF; \".\"; \"[\"; SELF; \"]\"\n  | SELF; \".\"; \"{\"; comma_expr; \"}\"\n  | SELF; \".\"; SELF\n  | SELF; \"#\"; label ]\n| \"~-\" NONA\n  [ \"!\"; SELF\n  | prefix operator (start with '!', '?', '~'); SELF ]\n| LEFTA\n  [ \"`\";\n    [ \"IFDEF\" | \"IFNDEF\" | \"THEN\" | \"ELSE\" | \"END\" | \"ENDIF\" | \"DEFINE\"\n    | \"IN\" ]\n  | \"`\"; a_ident ]\n| \"simple\" LEFTA\n  [ $UIDENT x\n  | $UIDENT x\n  | $UIDENT x\n  | $UIDENT x\n  | \"false\"\n  | \"true\"\n  | \"{\"; TRY [ label_expr_list; \"}\" ]\n  | \"{\"; TRY [ expr LEVEL \".\"; \"with\" ]; label_expr_list; \"}\"\n  | \"new\"; class_longident\n  | QUOTATION _\n  | ANTIQUOT ((\"exp\" | \"\" | \"anti\"), _)\n  | ANTIQUOT (\"`bool\", _)\n  | ANTIQUOT (\"tup\", _)\n  | ANTIQUOT (\"seq\", _)\n  | \"`\"; a_ident\n  | \"[\"; \"]\"\n  | \"[\"; sem_expr_for_list; \"]\"\n  | \"[|\"; \"|]\"\n  | \"[|\"; sem_expr; \"|]\"\n  | \"{<\"; \">}\"\n  | \"{<\"; field_expr_list; \">}\"\n  | \"begin\"; \"end\"\n  | \"begin\"; sequence; \"end\"\n  | \"(\"; \")\"\n  | \"(\"; \"module\"; module_expr; \")\"\n  | \"(\"; \"module\"; module_expr; \":\"; package_type; \")\"\n  | \"(\"; SELF; \";\"; \")\"\n  | \"(\"; SELF; \";\"; sequence; \")\"\n  | \"(\"; SELF; \":\"; ctyp; \")\"\n  | \"(\"; SELF; \":\"; ctyp; \":>\"; ctyp; \")\"\n  | \"(\"; SELF; \":>\"; ctyp; \")\"\n  | \"(\"; SELF; \")\"\n  | stream_begin; stream_end\n  | stream_begin; stream_expr_comp_list; stream_end\n  | stream_begin; stream_end\n  | stream_begin; stream_expr_comp_list; stream_end\n  | a_INT\n  | a_INT32\n  | a_INT64\n  | a_NATIVEINT\n  | a_FLOAT\n  | a_STRING\n  | a_CHAR\n  | TRY module_longident_dot_lparen; sequence; \")\"\n  | TRY val_longident ] ]"))
+# 
+# Preprocessing error on file src/mesh.ml
+# Error while running external preprocessor
+# Command line: camlp4 '-I' '/usr/lib/ocaml/camlp4' '-I' '/usr/lib/ocaml/camlp4' '-parser' 'o' '-parser' 'op' '-printer' 'p' '-parser' 'Camlp4MacroParser' '-Isrc' 'src/mesh.ml' > /tmp/ocamlppde6ca0
+# 
+# Command exited with code 2.
+### stderr ###
+# E: Failure("Command ''/usr/bin/ocamlbuild' src/mesh.cma src/mesh.cmxa src/mesh.a src/mesh.cmxs src/mesh_display.cma src/mesh_display.cmxa src/mesh_display.a src/mesh_display.cmxs src/libmesh_triangle_stubs.a src/dllmesh_triangle_stubs.so src/mesh_triangle.cma src/mesh_triangle.cmxa src/mesh_triangle.a src/mesh_triangle.cmxs -tag debug' terminated with error code 10")
+
+'opam install mesh' failed.
