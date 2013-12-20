@@ -1,0 +1,22 @@
+++ opam install syslog -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install syslog
+The following actions will be performed:
+ - install syslog.1.4
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing syslog.1.4 =-=-=
+syslog.1.4 Downloading http://godi-backup2.camlcity.org/godi-backup/syslog-1.4.tar.gz
+--2013-12-20 22:56:46--  http://godi-backup2.camlcity.org/godi-backup/syslog-1.4.tar.gz
+Resolving godi-backup2.camlcity.org (godi-backup2.camlcity.org)... 88.198.178.4, 2a01:4f8:d16:4740::2
+Connecting to godi-backup2.camlcity.org (godi-backup2.camlcity.org)|88.198.178.4|:80... failed: Connection refused.
+Connecting to godi-backup2.camlcity.org (godi-backup2.camlcity.org)|2a01:4f8:d16:4740::2|:80... failed: Network is unreachable.
+[ERROR] http://godi-backup2.camlcity.org/godi-backup/syslog-1.4.tar.gz is not available
+
+
+===== ERROR while installing syslog.1.4 =====
+Could not get the source for syslog.1.4.
+'opam install syslog' failed.
