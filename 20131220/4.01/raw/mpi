@@ -1,0 +1,59 @@
+++ opam install mpi -e ubuntu
++ depext=mpi-default-dev
++ echo Ubuntu depexts: mpi-default-dev
++ '[' mpi-default-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: mpi-default-dev
++ sudo apt-get install -qq -y mpi-default-dev
+E: Unable to locate package mpi-default-dev
++ opam install mpi
+The following actions will be performed:
+ - install mpi.1.01
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing mpi.1.01 =-=-=
+default    Downloading https://opam.ocaml.org/archives/mpi.1.01+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/mpi.1.01+opam.tar.gz
+--2013-12-20 16:53:38--  https://opam.ocaml.org/archives/mpi.1.01+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 59973 (59K) [application/octet-stream]
+Saving to: `mpi.1.01+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 85% 34.8M 0s
+    50K ........                                              100% 37.9M=0.002s
+
+2013-12-20 16:53:38 (35.2 MB/s) - `mpi.1.01+opam.tar.gz' saved [59973/59973]
+
+Building mpi.1.01:
+  make all
+  make opt
+  make install
+/usr/bin/mpicc.openmpi -I`ocamlc -where` -I/usr/lib/openmpi/include -O2 -g -Wall   -c -o init.o init.c
+/bin/sh: 1: /usr/bin/mpicc.openmpi: not found
+make: *** [init.o] Error 127
+[ERROR] The compilation of mpi.1.01 failed.
+Removing mpi.1.01.
+  make uninstall
+ocamlfind remove mpi
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/mpi
+
+
+===== ERROR while installing mpi.1.01 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/system/build/mpi.1.01
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/opam/.opam/system/build/mpi.1.01/mpi-31-a00279.env
+# stdout-file          /home/opam/.opam/system/build/mpi.1.01/mpi-31-a00279.out
+# stderr-file          /home/opam/.opam/system/build/mpi.1.01/mpi-31-a00279.err
+### stdout ###
+# /usr/bin/mpicc.openmpi -I`ocamlc -where` -I/usr/lib/openmpi/include -O2 -g -Wall   -c -o init.o init.c
+### stderr ###
+# /bin/sh: 1: /usr/bin/mpicc.openmpi: not found
+# make: *** [init.o] Error 127
+
+'opam install mpi' failed.
