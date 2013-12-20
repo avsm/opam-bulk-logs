@@ -2,8 +2,8 @@
 + depext=
 + echo Ubuntu depexts:
 + '[' '' '!=' '' ']'
-Ubuntu depexts:
 + opam install aacplus
+Ubuntu depexts:
 The following actions will be performed:
  - install aacplus.0.2.1
 1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
@@ -11,17 +11,17 @@ The following actions will be performed:
 =-=-= Installing aacplus.0.2.1 =-=-=
 default    Downloading https://opam.ocaml.org/archives/aacplus.0.2.1+opam.tar.gz
 Downloading https://opam.ocaml.org/archives/aacplus.0.2.1+opam.tar.gz
---2013-12-20 03:02:29--  https://opam.ocaml.org/archives/aacplus.0.2.1+opam.tar.gz
+--2013-12-20 03:03:18--  https://opam.ocaml.org/archives/aacplus.0.2.1+opam.tar.gz
 Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
 Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 95750 (94K) [application/octet-stream]
 Saving to: `aacplus.0.2.1+opam.tar.gz'
 
-     0K .......... .......... .......... .......... .......... 53% 28.5M 0s
-    50K .......... .......... .......... .......... ...       100% 34.8M=0.003s
+     0K .......... .......... .......... .......... .......... 53% 31.8M 0s
+    50K .......... .......... .......... .......... ...       100% 70.1M=0.002s
 
-2013-12-20 03:02:29 (31.1 MB/s) - `aacplus.0.2.1+opam.tar.gz' saved [95750/95750]
+2013-12-20 03:03:18 (42.7 MB/s) - `aacplus.0.2.1+opam.tar.gz' saved [95750/95750]
 
 Building aacplus.0.2.1:
   ./configure --prefix /home/opam/.opam/system
@@ -92,9 +92,9 @@ ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/aacplus
 # path                 /home/opam/.opam/system/build/aacplus.0.2.1
 # compiler             system (4.01.0)
 # exit-code            1
-# env-file             /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-22-a00279.env
-# stdout-file          /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-22-a00279.out
-# stderr-file          /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-22-a00279.err
+# env-file             /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-24-a00279.env
+# stdout-file          /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-24-a00279.out
+# stderr-file          /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-24-a00279.err
 ### stdout ###
 # ...[truncated]
 # checking for camlp4prof... camlp4prof
