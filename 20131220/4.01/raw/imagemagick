@@ -1,0 +1,69 @@
+++ opam install imagemagick -e ubuntu
++ depext='libgraphicsmagick1-dev libmagickcore-dev'
++ echo Ubuntu depexts: libgraphicsmagick1-dev libmagickcore-dev
++ '[' 'libgraphicsmagick1-dev libmagickcore-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libgraphicsmagick1-dev libmagickcore-dev
++ sudo apt-get install -qq -y libgraphicsmagick1-dev libmagickcore-dev
+E: Unable to locate package libgraphicsmagick1-dev
++ opam install imagemagick
+The following actions will be performed:
+ - install imagemagick.0.34
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing imagemagick.0.34 =-=-=
+default    Downloading https://opam.ocaml.org/archives/imagemagick.0.34+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/imagemagick.0.34+opam.tar.gz
+--2013-12-20 13:36:03--  https://opam.ocaml.org/archives/imagemagick.0.34+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 65712 (64K) [application/octet-stream]
+Saving to: `imagemagick.0.34+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 77% 41.4M 0s
+    50K .......... ....                                       100% 99.2M=0.001s
+
+2013-12-20 13:36:03 (47.5 MB/s) - `imagemagick.0.34+opam.tar.gz' saved [65712/65712]
+
+Building imagemagick.0.34:
+  make
+  make find_install
+make: --prefix: Command not found
+make: --libs: Command not found
+make: --cflags: Command not found
+ocamlc -c magick.mli
+ocamlc -c magick.ml
+gcc -fPIC -c -I"/usr/lib/ocaml"  imagemagick_wrap.c
+imagemagick_wrap.c:60:32: fatal error: magick/ImageMagick.h: No such file or directory
+compilation terminated.
+make: *** [imagemagick_wrap.o] Error 1
+[ERROR] The compilation of imagemagick.0.34 failed.
+Removing imagemagick.0.34.
+  ocamlfind remove magick
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/magick
+
+
+===== ERROR while installing imagemagick.0.34 =====
+# opam-version         1.1.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/system/build/imagemagick.0.34
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/opam/.opam/system/build/imagemagick.0.34/imagemagick-35-a00279.env
+# stdout-file          /home/opam/.opam/system/build/imagemagick.0.34/imagemagick-35-a00279.out
+# stderr-file          /home/opam/.opam/system/build/imagemagick.0.34/imagemagick-35-a00279.err
+### stdout ###
+# ocamlc -c magick.mli
+# ocamlc -c magick.ml
+# gcc -fPIC -c -I"/usr/lib/ocaml"  imagemagick_wrap.c
+### stderr ###
+# make: --prefix: Command not found
+# make: --libs: Command not found
+# make: --cflags: Command not found
+# imagemagick_wrap.c:60:32: fatal error: magick/ImageMagick.h: No such file or directory
+# compilation terminated.
+# make: *** [imagemagick_wrap.o] Error 1
+
+'opam install imagemagick' failed.
