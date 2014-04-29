@@ -1,0 +1,46 @@
+++ opam install mirage-types -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install mirage-types
+The following actions will be performed:
+ - install mirage-types.1.1.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing mirage-types.1.1.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/mirage-types.1.1.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/mirage-types.1.1.1+opam.tar.gz
+--2014-04-29 11:11:14--  https://opam.ocaml.org/archives/mirage-types.1.1.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 79226 (77K) [application/octet-stream]
+Saving to: 'mirage-types.1.1.1+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 64%  249K 0s
+    50K .......... .......... .......                         100%  711K=0.2s
+
+2014-04-29 11:11:15 (323 KB/s) - 'mirage-types.1.1.1+opam.tar.gz' saved [79226/79226]
+
+Building mirage-types.1.1.1:
+  make install-types
+./build true
++ ocamlfind query lwt cstruct ipaddr
++ echo 
++ WITH_LWT=
++ ocamlbuild -tag bin_annot types/V1.cmi
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -modules types/V1.mli > types/V1.mli.depends
+ocamlfind ocamlc -c -g -annot -bin-annot -principal -I types -o types/V1.cmi types/V1.mli
+W: Cannot get variable ext_objW: Cannot get variable ext_libW: Cannot get variable ext_dllW: Cannot get variable ocamlfindW: Cannot get variable ocamlfindW: Cannot get variable ocamlfindW: Cannot get variable ocamlfindW: Cannot get variable ocamlfindW: Cannot get variable ocamlfind+ FILES=types/META _build/types/V1.mli _build/types/V1.cmi -optional _build/types/V1.cmti
++ [  !=  ]
++ [ true = true ]
++ ocamlfind remove mirage-types
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/mirage-types
++ ocamlfind install mirage-types types/META _build/types/V1.mli _build/types/V1.cmi -optional _build/types/V1.cmti
+Installed /home/opam/.opam/system/lib/mirage-types/V1.cmti
+Installed /home/opam/.opam/system/lib/mirage-types/V1.cmi
+Installed /home/opam/.opam/system/lib/mirage-types/V1.mli
+Installed /home/opam/.opam/system/lib/mirage-types/META
+Installing mirage-types.1.1.1.
