@@ -1,0 +1,131 @@
+++ opam install freetds -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install freetds
+The following actions will be performed:
+ - install freetds.0.5.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing freetds.0.5.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/freetds.0.5.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/freetds.0.5.1+opam.tar.gz
+--2014-04-29 04:26:14--  https://opam.ocaml.org/archives/freetds.0.5.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 66897 (65K) [application/octet-stream]
+Saving to: 'freetds.0.5.1+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 76%  355K 0s
+    50K .......... .....                                      100% 63.2M=0.1s
+
+2014-04-29 04:26:15 (463 KB/s) - 'freetds.0.5.1+opam.tar.gz' saved [66897/66897]
+
+Building freetds.0.5.1:
+  ./configure --prefix /home/opam/.opam/system --sbindir=/home/opam/.opam/system/lib/freetds/sbin --libexecdir=/home/opam/.opam/system/lib/freetds/libexec --sysconfdir=/home/opam/.opam/system/lib/freetds/etc --sharedstatedir=/home/opam/.opam/system/lib/freetds/com --localstatedir=/home/opam/.opam/system/lib/freetds/var --libdir=/home/opam/.opam/system/lib/freetds/lib --includedir=/home/opam/.opam/system/lib/freetds/include --datarootdir=/home/opam/.opam/system/lib/freetds/share
+  make
+  make install
+configuring freetds 0.5.1
+checking for ocamlc... ocamlc
+OCaml version is 4.01.0
+OCaml library path is /usr/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+checking for ocamlfind... ocamlfind
+checking for OCaml compiler word size... 64
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for dbopen in -lsybdb... no
+checking for ct_init in -lct... no
+configure: creating ./config.status
+config.status: creating Makefile.ocaml
+config.status: creating src/META
+config.status: creating Makefile
+config.status: creating src/Makefile
+make -C src byte
+make[1]: Entering directory `/home/opam/.opam/system/build/freetds.0.5.1/src'
+../Makefile.ocaml:52: .depend.ocaml: No such file or directory
+Building .depend.ocaml ... 
+make[1]: Leaving directory `/home/opam/.opam/system/build/freetds.0.5.1/src'
+make[1]: Entering directory `/home/opam/.opam/system/build/freetds.0.5.1/src'
+ocamlc.opt  -dtypes -g   -c ct.mli
+ocamlc.opt  -dtypes -g   -c ct.ml
+ocamlc.opt  -dtypes -g   -c dblib.mli
+ocamlc.opt  -dtypes -g   -c dblib.ml
+File "dblib.ml", line 61, characters 10-14:
+Warning 43: the label user is not optional.
+File "dblib.ml", line 61, characters 16-24:
+Warning 43: the label password is not optional.
+File "dblib.ml", line 61, characters 26-33:
+Warning 43: the label charset is not optional.
+File "dblib.ml", line 61, characters 35-43:
+Warning 43: the label language is not optional.
+File "dblib.ml", line 61, characters 45-56:
+Warning 43: the label application is not optional.
+ocamlc.opt -pack -o freetds.cmo ct.cmo dblib.cmo
+cc -Wall -fPIC -DOCAML_WORD_SIZE=64 -I'/usr/lib/ocaml'   -c -o ct_c.o ct_c.c
+ct_c.c:20:22: fatal error: ctpublic.h: No such file or directory
+ #include <ctpublic.h>
+                      ^
+compilation terminated.
+make[1]: *** [ct_c.o] Error 1
+make[1]: Leaving directory `/home/opam/.opam/system/build/freetds.0.5.1/src'
+make: *** [byte] Error 2
+[ERROR] The compilation of freetds.0.5.1 failed.
+Removing freetds.0.5.1.
+  ocamlfind remove freetds
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/freetds
+
+
+===== ERROR while installing freetds.0.5.1 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/system/build/freetds.0.5.1
+# compiler             system (4.01.0)
+# exit-code            2
+# env-file             /home/opam/.opam/system/build/freetds.0.5.1/freetds-20-a71bb4.env
+# stdout-file          /home/opam/.opam/system/build/freetds.0.5.1/freetds-20-a71bb4.out
+# stderr-file          /home/opam/.opam/system/build/freetds.0.5.1/freetds-20-a71bb4.err
+### stdout ###
+# ...[truncated]
+# Building .depend.ocaml ... 
+# make[1]: Leaving directory `/home/opam/.opam/system/build/freetds.0.5.1/src'
+# make[1]: Entering directory `/home/opam/.opam/system/build/freetds.0.5.1/src'
+# ocamlc.opt  -dtypes -g   -c ct.mli
+# ocamlc.opt  -dtypes -g   -c ct.ml
+# ocamlc.opt  -dtypes -g   -c dblib.mli
+# ocamlc.opt  -dtypes -g   -c dblib.ml
+# ocamlc.opt -pack -o freetds.cmo ct.cmo dblib.cmo
+# cc -Wall -fPIC -DOCAML_WORD_SIZE=64 -I'/usr/lib/ocaml'   -c -o ct_c.o ct_c.c
+# make[1]: Leaving directory `/home/opam/.opam/system/build/freetds.0.5.1/src'
+### stderr ###
+# ...[truncated]
+# File "dblib.ml", line 61, characters 35-43:
+# Warning 43: the label language is not optional.
+# File "dblib.ml", line 61, characters 45-56:
+# Warning 43: the label application is not optional.
+# ct_c.c:20:22: fatal error: ctpublic.h: No such file or directory
+#  #include <ctpublic.h>
+#                       ^
+# compilation terminated.
+# make[1]: *** [ct_c.o] Error 1
+# make: *** [byte] Error 2
+
+'opam install freetds' failed.
