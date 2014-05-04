@@ -1,0 +1,10 @@
+++ opam install opam installext abella -e ubuntu
+[ERROR] installext is not a valid versioned package name
+'opam install opam installext abella -e ubuntu' failed.
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
++ opam install opam installext abella
+Ubuntu depexts:
+[ERROR] installext is not a valid versioned package name
+'opam install opam installext abella' failed.
