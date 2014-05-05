@@ -1,0 +1,143 @@
+++ opam install xen-evtchn -e ubuntu
++ depext=libxen-dev
++ echo Ubuntu depexts: libxen-dev
++ '[' libxen-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libxen-dev
++ sudo apt-get install -qq -y libxen-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libyajl2:amd64.
+(Reading database ... 22248 files and directories currently installed.)
+Preparing to unpack .../libyajl2_2.0.4-4_amd64.deb ...
+Unpacking libyajl2:amd64 (2.0.4-4) ...
+Selecting previously unselected package libxenstore3.0.
+Preparing to unpack .../libxenstore3.0_4.4.0-0ubuntu5_amd64.deb ...
+Unpacking libxenstore3.0 (4.4.0-0ubuntu5) ...
+Selecting previously unselected package libxen-4.4.
+Preparing to unpack .../libxen-4.4_4.4.0-0ubuntu5_amd64.deb ...
+Unpacking libxen-4.4 (4.4.0-0ubuntu5) ...
+Selecting previously unselected package libxen-dev.
+Preparing to unpack .../libxen-dev_4.4.0-0ubuntu5_amd64.deb ...
+Unpacking libxen-dev (4.4.0-0ubuntu5) ...
+Setting up libyajl2:amd64 (2.0.4-4) ...
+Setting up libxenstore3.0 (4.4.0-0ubuntu5) ...
+Setting up libxen-4.4 (4.4.0-0ubuntu5) ...
+Setting up libxen-dev (4.4.0-0ubuntu5) ...
+Processing triggers for libc-bin (2.19-0ubuntu6) ...
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install xen-evtchn
+Ubuntu srcexts:
+The following actions will be performed:
+ - install cmdliner.0.9.4 [required by xen-evtchn]
+ - install lwt.2.4.5 [required by xen-evtchn]
+ - install xen-evtchn.1.0.1
+3 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing cmdliner.0.9.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/cmdliner.0.9.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/cmdliner.0.9.4+opam.tar.gz
+--2014-05-05 09:36:48--  https://opam.ocaml.org/archives/cmdliner.0.9.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 58059 (57K) [application/octet-stream]
+Saving to: 'cmdliner.0.9.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 88%  242K 0s
+    50K ......                                                100% 46.0M=0.2s
+
+2014-05-05 09:36:48 (274 KB/s) - 'cmdliner.0.9.4+opam.tar.gz' saved [58059/58059]
+
+Building cmdliner.0.9.4:
+  ./pkg/pkg-git
+  ./pkg/build true
+ocamlfind ocamldep -modules src/cmdliner.mli > src/cmdliner.mli.depends
+ocamlfind ocamlc -c -I src -I test -o src/cmdliner.cmi src/cmdliner.mli
+ocamlfind ocamldep -modules src/cmdliner.ml > src/cmdliner.ml.depends
+ocamlfind ocamlopt -c -annot -bin-annot -I src -I test -o src/cmdliner.cmx src/cmdliner.ml
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/cmdliner.cmo src/cmdliner.ml
+ocamlfind ocamlc -a src/cmdliner.cmo -o src/cmdliner.cma
+ocamlfind ocamlopt -a src/cmdliner.cmx -o src/cmdliner.cmxa
+ocamlfind ocamlopt -shared src/cmdliner.cmx -o src/cmdliner.cmxs
+Installing cmdliner.0.9.4.
+
+=-=-= Installing lwt.2.4.5 =-=-=
+default    Downloading https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
+--2014-05-05 09:36:57--  https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 302608 (296K) [application/octet-stream]
+Saving to: 'lwt.2.4.5+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 16%  245K 1s
+    50K .......... .......... .......... .......... .......... 33%  491K 1s
+   100K .......... .......... .......... .......... .......... 50% 1.33M 0s
+   150K .......... .......... .......... .......... .......... 67%  756K 0s
+   200K .......... .......... .......... .......... .......... 84% 11.7M 0s
+   250K .......... .......... .......... .......... .....     100% 1.38M=0.4s
+
+2014-05-05 09:36:58 (663 KB/s) - 'lwt.2.4.5+opam.tar.gz' saved [302608/302608]
+
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+File "setup.ml", line 254, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Field 'pkg_camlp4' is not set: When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_quotations_o' is not set: When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+E: Cannot find findlib package camlp4
+E: Cannot find findlib package camlp4.extend
+E: Cannot find findlib package camlp4.quotations.o
+E: Failure("3 configuration errors")
+[ERROR] The compilation of lwt.2.4.5 failed.
+Removing lwt.2.4.5.
+  ocamlfind remove lwt
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/lwt
+
+[ERROR] Due to some errors while processing lwt.2.4.5, the following actions will NOT proceed:
+ - install xen-evtchn.1.0.1
+
+===== ERROR while installing lwt.2.4.5 =====
+# opam-version         1.1.1
+# os                   linux
+# command              ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5
+# compiler             4.02.0dev+trunk
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-327-d8a4ae.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-327-d8a4ae.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-327-d8a4ae.err
+### stderr ###
+# ...[truncated]
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# E: Cannot find findlib package camlp4
+# E: Cannot find findlib package camlp4.extend
+# E: Cannot find findlib package camlp4.quotations.o
+# E: Failure("3 configuration errors")
+
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+trunk/backup/state-20140405093637.export"
+'opam install xen-evtchn' failed.
