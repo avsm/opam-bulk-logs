@@ -1,0 +1,75 @@
+++ opam install pa_where -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install pa_where
+The following actions will be performed:
+ - install pa_where.0.4
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing pa_where.0.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/pa_where.0.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/pa_where.0.4+opam.tar.gz
+--2014-05-05 07:29:15--  https://opam.ocaml.org/archives/pa_where.0.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 50581 (49K) [application/octet-stream]
+Saving to: 'pa_where.0.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ......... 100%  239K=0.2s
+
+2014-05-05 07:29:16 (239 KB/s) - 'pa_where.0.4+opam.tar.gz' saved [50581/50581]
+
+Building pa_where.0.4:
+  make build
+  make install
+ocaml setup.ml -configure 
+File "setup.ml", line 213, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_quotations' is not set: When looking for findlib package camlp4.quotations, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+E: Cannot find findlib package camlp4.extend
+E: Cannot find findlib package camlp4.lib
+E: Cannot find findlib package camlp4.quotations
+E: Failure("3 configuration errors")
+make: *** [setup.data] Error 1
+[ERROR] The compilation of pa_where.0.4 failed.
+Removing pa_where.0.4.
+  ocamlfind remove pa_where
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/pa_where
+
+
+===== ERROR while installing pa_where.0.4 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make build
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/pa_where.0.4
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/pa_where.0.4/pa_where-24-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/pa_where.0.4/pa_where-24-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/pa_where.0.4/pa_where-24-ad8886.err
+### stdout ###
+# ocaml setup.ml -configure 
+### stderr ###
+# ...[truncated]
+# File "setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated feature: String.set
+# W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_quotations' is not set: When looking for findlib package camlp4.quotations, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# E: Cannot find findlib package camlp4.extend
+# E: Cannot find findlib package camlp4.lib
+# E: Cannot find findlib package camlp4.quotations
+# E: Failure("3 configuration errors")
+# make: *** [setup.data] Error 1
+
+'opam install pa_where' failed.
