@@ -1,0 +1,52 @@
+++ opam install ocsfml -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocsfml
+Ubuntu srcexts:
+The following actions will be performed:
+ - install ocsfml.2.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocsfml.2.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocsfml.2.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocsfml.2.0+opam.tar.gz
+--2014-05-05 06:44:32--  https://opam.ocaml.org/archives/ocsfml.2.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 506203 (494K) [application/octet-stream]
+Saving to: 'ocsfml.2.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 10%  250K 2s
+    50K .......... .......... .......... .......... .......... 20%  500K 1s
+   100K .......... .......... .......... .......... .......... 30% 1.25M 1s
+   150K .......... .......... .......... .......... .......... 40%  806K 1s
+   200K .......... .......... .......... .......... .......... 50% 1.29M 0s
+   250K .......... .......... .......... .......... .......... 60% 11.7M 0s
+   300K .......... .......... .......... .......... .......... 70%  811K 0s
+   350K .......... .......... .......... .......... .......... 80% 1.29M 0s
+   400K .......... .......... .......... .......... .......... 91%  836K 0s
+   450K .......... .......... .......... .......... ....      100% 1.17M=0.6s
+
+2014-05-05 06:44:33 (773 KB/s) - 'ocsfml.2.0+opam.tar.gz' saved [506203/506203]
+
+Building ocsfml.2.0:
+  cmake .
+  make
+  make install
+[ERROR] The compilation of ocsfml.2.0 failed.
+Removing ocsfml.2.0.
+  make uninstall
+make: *** No rule to make target `uninstall'.  Stop.
+
+
+===== ERROR while installing ocsfml.2.0 =====
+Internal error:
+  "cmake": command not found.
+'opam install ocsfml' failed.
