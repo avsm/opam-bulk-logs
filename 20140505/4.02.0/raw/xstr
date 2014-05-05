@@ -1,0 +1,91 @@
+++ opam install xstr -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install xstr
+The following actions will be performed:
+ - install xstr.0.2.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing xstr.0.2.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/xstr.0.2.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/xstr.0.2.1+opam.tar.gz
+--2014-05-05 09:42:45--  https://opam.ocaml.org/archives/xstr.0.2.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14797 (14K) [application/octet-stream]
+Saving to: 'xstr.0.2.1+opam.tar.gz'
+
+     0K .......... ....                                       100%  109M=0s
+
+2014-05-05 09:42:45 (109 MB/s) - 'xstr.0.2.1+opam.tar.gz' saved [14797/14797]
+
+Building xstr.0.2.1:
+  make all
+  make opt
+  make install
+Makefile:95: depend: No such file or directory
+ocamldep  *.ml *.mli >depend
+ocamlc -g    -c xstr_split.mli
+ocamlc -g    -c xstr_split.ml
+File "xstr_split.ml", line 88, characters 29-30:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "xstr_split.ml", line 126, characters 28-29:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+ocamlc -g    -c xstr_search.mli
+ocamlc -g    -c xstr_search.ml
+File "xstr_search.ml", line 104, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "xstr_search.ml", line 30, characters 6-7:
+Warning 26: unused variable l.
+File "xstr_search.ml", line 171, characters 18-19:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+ocamlc -g    -c xstr_match.mli
+ocamlc -g    -c xstr_match.ml
+File "xstr_match.ml", line 142, characters 4-45:
+Warning 3: deprecated feature: String.set
+File "xstr_match.ml", line 143, characters 4-41:
+Warning 3: deprecated feature: String.set
+File "xstr_match.ml", line 593, characters 15-28:
+Warning 3: deprecated feature: String.create
+ocamlc -g    -a -o xstr.cma xstr_split.cmo xstr_search.cmo xstr_match.cmo
+ocamlopt    -c xstr_split.ml
+File "xstr_split.ml", line 88, characters 29-30:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "xstr_split.ml", line 126, characters 28-29:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+ocamlopt    -c xstr_search.ml
+File "xstr_search.ml", line 104, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "xstr_search.ml", line 30, characters 6-7:
+Warning 26: unused variable l.
+File "xstr_search.ml", line 171, characters 18-19:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+ocamlopt    -c xstr_match.ml
+File "xstr_match.ml", line 142, characters 4-45:
+Warning 3: deprecated feature: String.set
+File "xstr_match.ml", line 143, characters 4-41:
+Warning 3: deprecated feature: String.set
+File "xstr_match.ml", line 593, characters 15-28:
+Warning 3: deprecated feature: String.create
+ocamlopt    -a -o xstr.cmxa xstr_split.cmx xstr_search.cmx xstr_match.cmx
+{ test ! -f xstr.cmxa || extra="*.cmxa *.a"; }; \
+	ocamlfind install xstr *.mli *.cmi *.cma META $extra
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xstr/xstr.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xstr/xstr.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xstr/xstr.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xstr/xstr_split.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xstr/xstr_search.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xstr/xstr_match.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xstr/xstr_split.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xstr/xstr_search.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xstr/xstr_match.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xstr/META
+Installing xstr.0.2.1.
