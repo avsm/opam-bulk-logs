@@ -1,0 +1,150 @@
+++ opam install lwt-binio -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install lwt-binio
+Ubuntu srcexts:
+The following actions will be performed:
+ - install optcomp.1.5 [required by lwt-binio]
+ - install lwt.2.4.5 [required by lwt-binio]
+ - install ocplib-endian.0.4 [required by lwt-binio]
+ - install lwt-binio.0.1.0
+4 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing lwt.2.4.5 =-=-=
+default    Downloading https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
+--2014-05-05 04:46:42--  https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 302608 (296K) [application/octet-stream]
+Saving to: 'lwt.2.4.5+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 16%  249K 1s
+    50K .......... .......... .......... .......... .......... 33%  498K 1s
+   100K .......... .......... .......... .......... .......... 50% 1.22M 0s
+   150K .......... .......... .......... .......... .......... 67%  816K 0s
+   200K .......... .......... .......... .......... .......... 84% 1.26M 0s
+   250K .......... .......... .......... .......... .....     100% 14.2M=0.4s
+
+2014-05-05 04:46:43 (664 KB/s) - 'lwt.2.4.5+opam.tar.gz' saved [302608/302608]
+
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+File "setup.ml", line 254, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Field 'pkg_camlp4' is not set: When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_quotations_o' is not set: When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+E: Cannot find findlib package camlp4
+E: Cannot find findlib package camlp4.extend
+E: Cannot find findlib package camlp4.quotations.o
+E: Failure("3 configuration errors")
+[ERROR] The compilation of lwt.2.4.5 failed.
+Removing lwt.2.4.5.
+  ocamlfind remove lwt
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/lwt
+
+=-=-= Installing optcomp.1.5 =-=-=
+default    Downloading https://opam.ocaml.org/archives/optcomp.1.5+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/optcomp.1.5+opam.tar.gz
+--2014-05-05 04:46:50--  https://opam.ocaml.org/archives/optcomp.1.5+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 52254 (51K) [application/octet-stream]
+Saving to: 'optcomp.1.5+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 97%  246K 0s
+    50K .                                                     100% 1963G=0.2s
+
+2014-05-05 04:46:51 (251 KB/s) - 'optcomp.1.5+opam.tar.gz' saved [52254/52254]
+
+Building optcomp.1.5:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make
+  make install
+File "setup.ml", line 218, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Field 'pkg_camlp4' is not set: When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_quotations_o' is not set: When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Failure("When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+E: Cannot find findlib package camlp4
+E: Cannot find findlib package camlp4.lib
+E: Cannot find findlib package camlp4.quotations.o
+E: Failure("3 configuration errors")
+[ERROR] The compilation of optcomp.1.5 failed.
+Removing optcomp.1.5.
+  ocamlfind remove optcomp
+  rm /home/opam/.opam/4.02.0dev+trunk/bin/optcomp-o
+  rm /home/opam/.opam/4.02.0dev+trunk/bin/optcomp-r
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/optcomp
+rm: cannot remove '/home/opam/.opam/4.02.0dev+trunk/bin/optcomp-o': No such file or directory
+rm: cannot remove '/home/opam/.opam/4.02.0dev+trunk/bin/optcomp-r': No such file or directory
+
+[ERROR] Due to some errors while processing { lwt.2.4.5, optcomp.1.5 }, the following actions will NOT proceed:
+ - install ocplib-endian.0.4
+ - install lwt-binio.0.1.0
+
+===== ERROR while installing lwt.2.4.5 =====
+# opam-version         1.1.1
+# os                   linux
+# command              ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5
+# compiler             4.02.0dev+trunk
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-25-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-25-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-25-ad8886.err
+### stderr ###
+# ...[truncated]
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# E: Cannot find findlib package camlp4
+# E: Cannot find findlib package camlp4.extend
+# E: Cannot find findlib package camlp4.quotations.o
+# E: Failure("3 configuration errors")
+
+
+===== ERROR while installing optcomp.1.5 =====
+# opam-version         1.1.1
+# os                   linux
+# command              ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/optcomp.1.5
+# compiler             4.02.0dev+trunk
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/optcomp.1.5/optcomp-114-d8a4ae.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/optcomp.1.5/optcomp-114-d8a4ae.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/optcomp.1.5/optcomp-114-d8a4ae.err
+### stderr ###
+# ...[truncated]
+# File "setup.ml", line 218, characters 8-26:
+# Warning 3: deprecated feature: String.set
+# W: Field 'pkg_camlp4' is not set: When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_quotations_o' is not set: When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Failure("When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# E: Cannot find findlib package camlp4
+# E: Cannot find findlib package camlp4.lib
+# E: Cannot find findlib package camlp4.quotations.o
+# E: Failure("3 configuration errors")
+
+'opam install lwt-binio' failed.
