@@ -1,0 +1,106 @@
+++ opam install gxl-light -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install gxl-light
+The following actions will be performed:
+ - install xml-light.2.4 [required by gxl-light]
+ - install gxl-light.1.0
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing xml-light.2.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/xml-light.2.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/xml-light.2.4+opam.tar.gz
+--2014-05-05 03:39:38--  https://opam.ocaml.org/archives/xml-light.2.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 17180 (17K) [application/octet-stream]
+Saving to: 'xml-light.2.4+opam.tar.gz'
+
+     0K .......... ......                                     100%  167K=0.1s
+
+2014-05-05 03:39:38 (167 KB/s) - 'xml-light.2.4+opam.tar.gz' saved [17180/17180]
+
+Building xml-light.2.4:
+  make install_ocamlfind
+ocamlyacc xml_parser.mly
+ocamlc  xml.mli
+ocamlc  dtd.mli
+ocamlc  xml_parser.mli
+ocamlc  -c xml_parser.ml
+ocamllex xml_lexer.mll
+248 states, 1238 transitions, table size 6440 bytes
+ocamlc  xml_lexer.mli
+ocamlc  -c xml_lexer.ml
+ocamlc  -c dtd.ml
+ocamlc  xmlParser.mli
+ocamlc  -c xmlParser.ml
+ocamlc  -c xml.ml
+ocamlc -o xml-light.cma -a  xml_parser.cmo xml_lexer.cmo dtd.cmo xmlParser.cmo xml.cmo
+ocamlc xml-light.cma test.ml -o test.exe
+mkdir doc
+ocamldoc -sort -html -d doc xml.mli dtd.mli xmlParser.mli
+ocamlopt  -c xml_parser.ml
+ocamlopt  -c xml_lexer.ml
+ocamlopt  -c dtd.ml
+ocamlopt  -c xmlParser.ml
+ocamlopt  -c xml.ml
+ocamlopt -o xml-light.cmxa -a  xml_parser.cmx xml_lexer.cmx dtd.cmx xmlParser.cmx xml.cmx
+ocamlopt -shared -linkall -I . -o xml-light.cmxs xml-light.cmxa
+ocamlopt xml-light.cmxa test.ml -o test_opt.exe
+cp META.in META
+sed -itmp "s|@VERSION@|2.4|g" META
+rm -rf METAtmp
+ocamlfind install xml-light META xml-light.a xml-light.cma xml-light.cmxa xml-light.cmxs xml.cmx dtd.cmx xmlParser.cmx xml.mli xmlParser.mli dtd.mli xml.cmi xmlParser.cmi dtd.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xml-light/dtd.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xml-light/xmlParser.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xml-light/xml.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xml-light/dtd.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xml-light/xmlParser.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xml-light/xml.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xml-light/xmlParser.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xml-light/dtd.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xml-light/xml.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xml-light/xml-light.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xml-light/xml-light.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xml-light/xml-light.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xml-light/xml-light.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xml-light/META
+Installing xml-light.2.4.
+
+=-=-= Installing gxl-light.1.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/gxl-light.1.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/gxl-light.1.0+opam.tar.gz
+--2014-05-05 03:39:46--  https://opam.ocaml.org/archives/gxl-light.1.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13372 (13K) [application/octet-stream]
+Saving to: 'gxl-light.1.0+opam.tar.gz'
+
+     0K .......... ...                                        100% 97.0M=0s
+
+2014-05-05 03:39:47 (97.0 MB/s) - 'gxl-light.1.0+opam.tar.gz' saved [13372/13372]
+
+Building gxl-light.1.0:
+  make build
+  make install
+ocamlopt -I `ocamlfind query xml-light` -c GXL.ml gxlDocument.ml
+ocamlopt -I `ocamlfind query xml-light` -a GXL.cmx gxlDocument.cmx -o gxl-light.cmxa
+ocamlc -I `ocamlfind query xml-light` -c GXL.ml gxlDocument.ml
+ocamlc -I `ocamlfind query xml-light` -a GXL.cmo gxlDocument.cmo -o gxl-light.cma
+ocamlfind install gxl-light gxl-light.cmxa gxl-light.cma META gxlDocument.cmi GXL.cmi gxl-light.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/gxl-light/gxl-light.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/gxl-light/GXL.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/gxl-light/gxlDocument.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/gxl-light/gxl-light.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/gxl-light/gxl-light.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/gxl-light/META
+Installing gxl-light.1.0.
