@@ -1,0 +1,283 @@
+++ opam install lambda-term -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install lambda-term
+Ubuntu srcexts:
+The following actions will be performed:
+ - install camomile.0.8.5 [required by lambda-term]
+ - install react.1.1.0 [required by lambda-term]
+ - install zed.1.3 [required by lambda-term]
+ - install lwt.2.4.5 [required by lambda-term]
+ - install lambda-term.1.6
+5 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing camomile.0.8.5 =-=-=
+default    Downloading https://opam.ocaml.org/archives/camomile.0.8.5+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/camomile.0.8.5+opam.tar.gz
+--2014-05-05 04:24:42--  https://opam.ocaml.org/archives/camomile.0.8.5+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3709706 (3.5M) [application/octet-stream]
+Saving to: 'camomile.0.8.5+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  1%  246K 15s
+    50K .......... .......... .......... .......... ..........  2%  493K 11s
+   100K .......... .......... .......... .......... ..........  4% 1.33M 8s
+   150K .......... .......... .......... .......... ..........  5%  761K 7s
+   200K .......... .......... .......... .......... ..........  6% 11.6M 6s
+   250K .......... .......... .......... .......... ..........  8% 1.47M 5s
+   300K .......... .......... .......... .......... ..........  9%  765K 5s
+   350K .......... .......... .......... .......... .......... 11% 8.98M 4s
+   400K .......... .......... .......... .......... .......... 12% 1.64M 4s
+   450K .......... .......... .......... .......... .......... 13% 1.19M 4s
+   500K .......... .......... .......... .......... .......... 15% 2.11M 3s
+   550K .......... .......... .......... .......... .......... 16% 6.11M 3s
+   600K .......... .......... .......... .......... .......... 17% 11.7M 3s
+   650K .......... .......... .......... .......... .......... 19% 1.67M 3s
+   700K .......... .......... .......... .......... .......... 20% 11.7M 3s
+   750K .......... .......... .......... .......... .......... 22%  832K 3s
+   800K .......... .......... .......... .......... .......... 23% 7.07M 2s
+   850K .......... .......... .......... .......... .......... 24% 9.47M 2s
+   900K .......... .......... .......... .......... .......... 26% 1.99M 2s
+   950K .......... .......... .......... .......... .......... 27% 7.25M 2s
+  1000K .......... .......... .......... .......... .......... 28%  858K 2s
+  1050K .......... .......... .......... .......... .......... 30% 6.04M 2s
+  1100K .......... .......... .......... .......... .......... 31% 8.82M 2s
+  1150K .......... .......... .......... .......... .......... 33% 8.86M 2s
+  1200K .......... .......... .......... .......... .......... 34% 2.17M 2s
+  1250K .......... .......... .......... .......... .......... 35%  850K 2s
+  1300K .......... .......... .......... .......... .......... 37% 5.34M 2s
+  1350K .......... .......... .......... .......... .......... 38% 8.69M 1s
+  1400K .......... .......... .......... .......... .......... 40% 11.4M 1s
+  1450K .......... .......... .......... .......... .......... 41% 2.84M 1s
+  1500K .......... .......... .......... .......... .......... 42%  798K 1s
+  1550K .......... .......... .......... .......... .......... 44% 4.16M 1s
+  1600K .......... .......... .......... .......... .......... 45% 7.86M 1s
+  1650K .......... .......... .......... .......... .......... 46% 2.87M 1s
+  1700K .......... .......... .......... .......... .......... 48% 11.7M 1s
+  1750K .......... .......... .......... .......... .......... 49% 7.83M 1s
+  1800K .......... .......... .......... .......... .......... 51%  766K 1s
+  1850K .......... .......... .......... .......... .......... 52% 9.21M 1s
+  1900K .......... .......... .......... .......... .......... 53% 11.7M 1s
+  1950K .......... .......... .......... .......... .......... 55% 7.62M 1s
+  2000K .......... .......... .......... .......... .......... 56% 2.81M 1s
+  2050K .......... .......... .......... .......... .......... 57% 11.7M 1s
+  2100K .......... .......... .......... .......... .......... 59% 1.29M 1s
+  2150K .......... .......... .......... .......... .......... 60% 1.57M 1s
+  2200K .......... .......... .......... .......... .......... 62% 6.62M 1s
+  2250K .......... .......... .......... .......... .......... 63% 11.7M 1s
+  2300K .......... .......... .......... .......... .......... 64% 4.93M 1s
+  2350K .......... .......... .......... .......... .......... 66% 3.97M 1s
+  2400K .......... .......... .......... .......... .......... 67% 11.7M 1s
+  2450K .......... .......... .......... .......... .......... 69%  802K 1s
+  2500K .......... .......... .......... .......... .......... 70% 6.71M 1s
+  2550K .......... .......... .......... .......... .......... 71% 7.73M 1s
+  2600K .......... .......... .......... .......... .......... 73% 11.6M 0s
+  2650K .......... .......... .......... .......... .......... 74% 3.81M 0s
+  2700K .......... .......... .......... .......... .......... 75% 6.52M 0s
+  2750K .......... .......... .......... .......... .......... 77% 1.38M 0s
+  2800K .......... .......... .......... .......... .......... 78% 1.32M 0s
+  2850K .......... .......... .......... .......... .......... 80% 11.7M 0s
+  2900K .......... .......... .......... .......... .......... 81% 8.50M 0s
+  2950K .......... .......... .......... .......... .......... 82% 7.10M 0s
+  3000K .......... .......... .......... .......... .......... 84% 7.32M 0s
+  3050K .......... .......... .......... .......... .......... 85% 5.89M 0s
+  3100K .......... .......... .......... .......... .......... 86%  857K 0s
+  3150K .......... .......... .......... .......... .......... 88% 3.40M 0s
+  3200K .......... .......... .......... .......... .......... 89% 6.71M 0s
+  3250K .......... .......... .......... .......... .......... 91% 9.43M 0s
+  3300K .......... .......... .......... .......... .......... 92% 11.4M 0s
+  3350K .......... .......... .......... .......... .......... 93% 6.96M 0s
+  3400K .......... .......... .......... .......... .......... 95% 1.32M 0s
+  3450K .......... .......... .......... .......... .......... 96% 1.81M 0s
+  3500K .......... .......... .......... .......... .......... 97% 3.65M 0s
+  3550K .......... .......... .......... .......... .......... 99% 4.52M 0s
+  3600K .......... .......... ..                              100% 17.2M=1.7s
+
+2014-05-05 04:24:44 (2.13 MB/s) - 'camomile.0.8.5+opam.tar.gz' saved [3709706/3709706]
+
+Building camomile.0.8.5:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make
+  make install
+checking for cppo... false
+checking for grep that handles long lines and -e... /bin/grep
+checking for fgrep... /bin/grep -F
+checking for ocamlc... ocamlc
+ocaml version is 4.02.0+dev5-2014-04-29
+ocaml library path is /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking ocamlopt version... ok
+checking for ocamlc.opt... ocamlc.opt
+checking ocamlc.opt version... ok
+checking for ocamlopt.opt... ocamlopt.opt
+checking ocamlc.opt version... ok
+checking for ocamldep... ocamldep
+checking for ocamllex... ocamllex
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for ocamlweb... true
+checking for camlp4o... camlp4o
+checking for ocamlfind... install-with-ocamlfind
+checking for ocamldoc... ocamldoc
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating META
+echo '(* This file is automatically generated *)' > camomileDefaultConfig.ml
+echo 'let datadir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+trunk/share" "camomile") "database"' >> camomileDefaultConfig.ml
+echo 'let localedir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+trunk/share" "camomile") "locales"' >> camomileDefaultConfig.ml
+echo 'let charmapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+trunk/share" "camomile") "charmaps"' >> camomileDefaultConfig.ml
+echo 'let unimapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+trunk/share" "camomile") "mappings"' >> camomileDefaultConfig.ml
+ocamldep -slash -I internal -I public -I toolslib -I . *.ml *.mli \
+	internal/*.ml internal/*.mli \
+	public/*.ml public/*.mli \
+	mappings/*.ml mappings/*.mli \
+	toolslib/*.ml toolslib/*.mli \
+	> .depend
+ocamldep -slash -pp "camlp4o -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml" -I internal -I public -I toolslib -I . \
+	tools/tools/parse_unidata.ml tools/parse_uniset.ml tools/camomilecharmap.ml tools/parse_specialcasing.ml tools/parse_casefolding.ml tools/parse_scripts.ml tools/parse_allkeys.ml mappings/gen_mappings.ml tools/parse_age.ml tools/camomilelocaledef.ml tools/camomilestringprep.ml >> .depend
+Segmentation fault
+make: *** [.depend] Error 139
+[ERROR] The compilation of camomile.0.8.5 failed.
+Removing camomile.0.8.5.
+  ocamlfind remove camomile
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/camomile
+
+=-=-= Installing react.1.1.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/react.1.1.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/react.1.1.0+opam.tar.gz
+--2014-05-05 04:24:53--  https://opam.ocaml.org/archives/react.1.1.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 91011 (89K) [application/octet-stream]
+Saving to: 'react.1.1.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 56%  246K 0s
+    50K .......... .......... .......... ........             100% 1014K=0.2s
+
+2014-05-05 04:24:53 (368 KB/s) - 'react.1.1.0+opam.tar.gz' saved [91011/91011]
+
+Building react.1.1.0:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+File "pkg/topkg-ext.ml", line 42, characters 12-25:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamldep -modules src/react.ml > src/react.ml.depends
+ocamlfind ocamldep -modules src/react.mli > src/react.mli.depends
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/react.cmi src/react.mli
+ocamlfind ocamlopt -c -annot -bin-annot -I src -I test -o src/react.cmx src/react.ml
+ocamlfind ocamlopt -a src/react.cmx -o src/react.cmxa
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/react.cmo src/react.ml
+ocamlfind ocamlc -a src/react.cmo -o src/react.cma
+ocamlfind ocamlopt -shared src/react.cmx -o src/react.cmxs
+Installing react.1.1.0.
+
+=-=-= Installing lwt.2.4.5 =-=-=
+default    Downloading https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
+--2014-05-05 04:25:02--  https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 302608 (296K) [application/octet-stream]
+Saving to: 'lwt.2.4.5+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 16%  246K 1s
+    50K .......... .......... .......... .......... .......... 33%  494K 1s
+   100K .......... .......... .......... .......... .......... 50% 1.28M 0s
+   150K .......... .......... .......... .......... .......... 67%  775K 0s
+   200K .......... .......... .......... .......... .......... 84% 1.33M 0s
+   250K .......... .......... .......... .......... .....     100% 13.9M=0.4s
+
+2014-05-05 04:25:03 (661 KB/s) - 'lwt.2.4.5+opam.tar.gz' saved [302608/302608]
+
+Building lwt.2.4.5:
+  ./configure --disable-libev --enable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-text
+  make build
+  make install
+File "setup.ml", line 254, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Field 'pkg_camlp4' is not set: When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_quotations_o' is not set: When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+E: Cannot find findlib package camlp4
+E: Cannot find findlib package camlp4.extend
+E: Cannot find findlib package camlp4.quotations.o
+E: Failure("3 configuration errors")
+[ERROR] The compilation of lwt.2.4.5 failed.
+Removing lwt.2.4.5.
+  ocamlfind remove lwt
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/lwt
+
+[ERROR] Due to some errors while processing { camomile.0.8.5, lwt.2.4.5 }, the following actions will NOT proceed:
+ - install lambda-term.1.6
+ - install zed.1.3
+
+===== ERROR while installing camomile.0.8.5 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/camomile.0.8.5
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/camomile.0.8.5/camomile-24-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/camomile.0.8.5/camomile-24-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/camomile.0.8.5/camomile-24-ad8886.err
+### stdout ###
+# ...[truncated]
+# echo 'let charmapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+trunk/share" "camomile") "charmaps"' >> camomileDefaultConfig.ml
+# echo 'let unimapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+trunk/share" "camomile") "mappings"' >> camomileDefaultConfig.ml
+# ocamldep -slash -I internal -I public -I toolslib -I . *.ml *.mli \
+# 	internal/*.ml internal/*.mli \
+# 	public/*.ml public/*.mli \
+# 	mappings/*.ml mappings/*.mli \
+# 	toolslib/*.ml toolslib/*.mli \
+# 	> .depend
+# ocamldep -slash -pp "camlp4o -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml" -I internal -I public -I toolslib -I . \
+# 	tools/tools/parse_unidata.ml tools/parse_uniset.ml tools/camomilecharmap.ml tools/parse_specialcasing.ml tools/parse_casefolding.ml tools/parse_scripts.ml tools/parse_allkeys.ml mappings/gen_mappings.ml tools/parse_age.ml tools/camomilelocaledef.ml tools/camomilestringprep.ml >> .depend
+### stderr ###
+# config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+# Segmentation fault
+# make: *** [.depend] Error 139
+
+
+===== ERROR while installing lwt.2.4.5 =====
+# opam-version         1.1.1
+# os                   linux
+# command              ./configure --disable-libev --enable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-text
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5
+# compiler             4.02.0dev+trunk
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-570-a71bb4.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-570-a71bb4.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-570-a71bb4.err
+### stderr ###
+# ...[truncated]
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# E: Cannot find findlib package camlp4
+# E: Cannot find findlib package camlp4.extend
+# E: Cannot find findlib package camlp4.quotations.o
+# E: Failure("3 configuration errors")
+
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+trunk/backup/state-20140405042430.export"
+'opam install lambda-term' failed.
