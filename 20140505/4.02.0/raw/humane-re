@@ -1,0 +1,15 @@
+++ opam install humane-re -e ubuntu
+[ERROR] humane-re is not a valid versioned package name
+'opam install humane-re -e ubuntu' failed.
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install humane-re
+Ubuntu srcexts:
+[ERROR] humane-re is not a valid versioned package name
+'opam install humane-re' failed.
