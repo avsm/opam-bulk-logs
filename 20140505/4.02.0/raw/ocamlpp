@@ -1,0 +1,92 @@
+++ opam install ocamlpp -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocamlpp
+Ubuntu srcexts:
+The following actions will be performed:
+ - install ocamlpp.1.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocamlpp.1.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocamlpp.1.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocamlpp.1.0+opam.tar.gz
+--2014-05-05 06:33:39--  https://opam.ocaml.org/archives/ocamlpp.1.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 28389 (28K) [application/octet-stream]
+Saving to: 'ocamlpp.1.0+opam.tar.gz'
+
+     0K .......... .......... .......                         100%  275K=0.1s
+
+2014-05-05 06:33:39 (275 KB/s) - 'ocamlpp.1.0+opam.tar.gz' saved [28389/28389]
+
+Building ocamlpp.1.0:
+  ./configure -prefix /home/opam/.opam/4.02.0dev+trunk
+  make all
+  make install
+** OCamlPP configuration completed successfully **
+cp ../etc/config.ml config.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild -cflags -w,Ae,-warn-error,A -lflags -w,Ae,-warn-error,A -no-links -classic-display -cflag -g -lflag -g ocamlpp.native
+ocamlfind ocamldep -modules ocamlpp.ml > ocamlpp.ml.depends
+ocamlfind ocamldep -modules cmoparser.ml > cmoparser.ml.depends
+ocamlfind ocamldep -modules cmo.mli > cmo.mli.depends
+ocamlfind ocamldep -modules code.ml > code.ml.depends
+ocamlfind ocamldep -modules index.ml > index.ml.depends
+ocamlfind ocamldep -modules instr.ml > instr.ml.depends
+ocamlfind ocamldep -modules globals.ml > globals.ml.depends
+ocamlfind ocamlc -c -w Ae -warn-error A -g -o cmo.cmi cmo.mli
+ocamlfind ocamldep -modules data.ml > data.ml.depends
+ocamlfind ocamlc -c -w Ae -warn-error A -g -o index.cmo index.ml
++ ocamlfind ocamlc -c -w Ae -warn-error A -g -o index.cmo index.ml
+File "index.ml", line 22, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "index.ml", line 23, characters 13-26:
+Warning 3: deprecated feature: String.create
+File "index.ml", line 1:
+Error: Some fatal warnings were triggered (2 occurrences)
+Command exited with code 2.
+make[1]: *** [../bin/ocamlpp] Error 10
+make: *** [all] Error 2
+[ERROR] The compilation of ocamlpp.1.0 failed.
+Removing ocamlpp.1.0.
+  ./configure -prefix /home/opam/.opam/4.02.0dev+trunk
+  make uninstall
+** OCamlPP configuration completed successfully **
+rm -f "/home/opam/.opam/4.02.0dev+trunk/bin/ocamlpp"
+rm -f "/home/opam/.opam/4.02.0dev+trunk/man/man1/ocamlpp.1.gz"
+
+
+===== ERROR while installing ocamlpp.1.0 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/ocamlpp.1.0
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/ocamlpp.1.0/ocamlpp-24-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/ocamlpp.1.0/ocamlpp-24-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/ocamlpp.1.0/ocamlpp-24-ad8886.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamldep -modules data.ml > data.ml.depends
+# ocamlfind ocamlc -c -w Ae -warn-error A -g -o index.cmo index.ml
+# + ocamlfind ocamlc -c -w Ae -warn-error A -g -o index.cmo index.ml
+# File "index.ml", line 22, characters 18-31:
+# Warning 3: deprecated feature: String.create
+# File "index.ml", line 23, characters 13-26:
+# Warning 3: deprecated feature: String.create
+# File "index.ml", line 1:
+# Error: Some fatal warnings were triggered (2 occurrences)
+# Command exited with code 2.
+### stderr ###
+# make[1]: *** [../bin/ocamlpp] Error 10
+# make: *** [all] Error 2
+
+'opam install ocamlpp' failed.
