@@ -1,0 +1,96 @@
+++ opam install ocapic -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocapic
+Ubuntu srcexts:
+The following actions will be performed:
+ - install ocamlclean.2.0 [required by ocapic]
+ - install ocapic.3.0
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocamlclean.2.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocamlclean.2.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocamlclean.2.0+opam.tar.gz
+--2014-05-05 06:42:32--  https://opam.ocaml.org/archives/ocamlclean.2.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 33720 (33K) [application/octet-stream]
+Saving to: 'ocamlclean.2.0+opam.tar.gz'
+
+     0K .......... .......... .......... ..                   100%  323K=0.1s
+
+2014-05-05 06:42:33 (323 KB/s) - 'ocamlclean.2.0+opam.tar.gz' saved [33720/33720]
+
+Building ocamlclean.2.0:
+  ./configure -prefix /home/opam/.opam/4.02.0dev+trunk
+  make all
+  make install
+** OCamlClean configuration completed successfully **
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlclean.2.0/src'
+cp /home/opam/.opam/4.02.0dev+trunk/build/ocamlclean.2.0/etc/config.ml config.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild -cflags -w,Ae,-warn-error,A -lflags -w,Ae,-warn-error,A -no-links -classic-display -cflag -g main.native
+ocamlfind ocamldep -modules main.ml > main.ml.depends
+ocamlfind ocamldep -modules cleanbra.ml > cleanbra.ml.depends
+ocamlfind ocamldep -modules instr.ml > instr.ml.depends
+ocamlfind ocamlc -c -w Ae -warn-error A -g -o instr.cmo instr.ml
+ocamlfind ocamldep -modules cleanenvs.ml > cleanenvs.ml.depends
+ocamlfind ocamldep -modules step1.ml > step1.ml.depends
+ocamlfind ocamldep -modules code.ml > code.ml.depends
+ocamlfind ocamldep -modules index.ml > index.ml.depends
+ocamlfind ocamlc -c -w Ae -warn-error A -g -o index.cmo index.ml
++ ocamlfind ocamlc -c -w Ae -warn-error A -g -o index.cmo index.ml
+File "index.ml", line 23, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "index.ml", line 24, characters 13-26:
+Warning 3: deprecated feature: String.create
+File "index.ml", line 1:
+Error: Some fatal warnings were triggered (2 occurrences)
+Command exited with code 2.
+make[1]: *** [_build/main.native] Error 10
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlclean.2.0/src'
+make: *** [all] Error 2
+[ERROR] The compilation of ocamlclean.2.0 failed.
+Removing ocamlclean.2.0.
+  ./configure -prefix /home/opam/.opam/4.02.0dev+trunk
+  make uninstall
+** OCamlClean configuration completed successfully **
+rm -f "/home/opam/.opam/4.02.0dev+trunk/bin/ocamlclean"
+rm -f "/home/opam/.opam/4.02.0dev+trunk/man/man1/man1/ocamlclean.1.gz"
+
+[ERROR] Due to some errors while processing ocamlclean.2.0, the following actions will NOT proceed:
+ - install ocapic.3.0
+
+===== ERROR while installing ocamlclean.2.0 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/ocamlclean.2.0
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/ocamlclean.2.0/ocamlclean-24-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/ocamlclean.2.0/ocamlclean-24-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/ocamlclean.2.0/ocamlclean-24-ad8886.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlc -c -w Ae -warn-error A -g -o index.cmo index.ml
+# + ocamlfind ocamlc -c -w Ae -warn-error A -g -o index.cmo index.ml
+# File "index.ml", line 23, characters 18-31:
+# Warning 3: deprecated feature: String.create
+# File "index.ml", line 24, characters 13-26:
+# Warning 3: deprecated feature: String.create
+# File "index.ml", line 1:
+# Error: Some fatal warnings were triggered (2 occurrences)
+# Command exited with code 2.
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlclean.2.0/src'
+### stderr ###
+# make[1]: *** [_build/main.native] Error 10
+# make: *** [all] Error 2
+
+'opam install ocapic' failed.
