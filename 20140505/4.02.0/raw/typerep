@@ -1,0 +1,39 @@
+++ opam install typerep -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install typerep
+Ubuntu srcexts:
+The following actions will be performed:
+ - install type_conv.109.60.01 [required by typerep]
+ - install sexplib.111.11.00 [required by typerep]
+ - install bin_prot.111.03.00 [required by typerep]
+ - install typerep.111.06.00
+4 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing type_conv.109.60.01 =-=-=
+default    Downloading https://opam.ocaml.org/archives/type_conv.109.60.01+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/type_conv.109.60.01+opam.tar.gz
+--2014-05-05 09:06:55--  https://opam.ocaml.org/archives/type_conv.109.60.01+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2014-05-05 09:06:55 ERROR 404: Not Found.
+
+
+[ERROR] Due to some errors while processing type_conv.109.60.01, the following actions will NOT proceed:
+ - install bin_prot.111.03.00
+ - install sexplib.111.11.00
+ - install typerep.111.06.00
+
+===== ERROR while installing type_conv.109.60.01 =====
+Could not get the source for type_conv.109.60.01:
+# opam-version    1.1.1
+# os              linux
+Cannot download https://opam.ocaml.org/archives/type_conv.109.60.01+opam.tar.gz, please check your connection settings.
+'opam install typerep' failed.
