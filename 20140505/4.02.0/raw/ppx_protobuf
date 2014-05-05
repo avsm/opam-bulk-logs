@@ -1,0 +1,15 @@
+++ opam install ppx_protobuf -e ubuntu
+[ERROR] ppx_protobuf is not a valid versioned package name
+'opam install ppx_protobuf -e ubuntu' failed.
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ppx_protobuf
+Ubuntu srcexts:
+[ERROR] ppx_protobuf is not a valid versioned package name
+'opam install ppx_protobuf' failed.
