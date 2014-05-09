@@ -1,0 +1,68 @@
+++ opam install format -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install format
+The following actions will be performed:
+ - install format.0.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing format.0.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/format.0.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/format.0.1+opam.tar.gz
+--2014-05-09 13:32:09--  https://opam.ocaml.org/archives/format.0.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 19012 (19K) [application/octet-stream]
+Saving to: 'format.0.1+opam.tar.gz'
+
+     0K .......... ........                                   100%  185K=0.1s
+
+2014-05-09 13:32:09 (185 KB/s) - 'format.0.1+opam.tar.gz' saved [19012/19012]
+
+Building format.0.1:
+  make
+  make install
+ocamllex formatLexer.mll
+23 states, 271 transitions, table size 1222 bytes
+1219 additional bytes used for bindings
+ocamlyacc formatParser.mly
+rm -f formatParser.mli
+ocamlc -I +camlp4 -c formatParser.ml
+File "formatParser.ml", line 3, characters 22-45:
+Error: Unbound module Camlp4
+make: *** [formatParser.cmi] Error 2
+[ERROR] The compilation of format.0.1 failed.
+Removing format.0.1.
+
+
+===== ERROR while installing format.0.1 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/format.0.1
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/format.0.1/format-24-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/format.0.1/format-24-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/format.0.1/format-24-ad8886.err
+### stdout ###
+# ocamllex formatLexer.mll
+# 23 states, 271 transitions, table size 1222 bytes
+# 1219 additional bytes used for bindings
+# ocamlyacc formatParser.mly
+# rm -f formatParser.mli
+# ocamlc -I +camlp4 -c formatParser.ml
+### stderr ###
+# File "formatParser.ml", line 3, characters 22-45:
+# Error: Unbound module Camlp4
+# make: *** [formatParser.cmi] Error 2
+
+'opam install format' failed.
