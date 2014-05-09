@@ -1,0 +1,34 @@
+++ opam install ocaml-top -e ubuntu
+'opam install ocaml-top -e ubuntu' failed.
++ depext='
+The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS.'
++ echo Ubuntu depexts: The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS.
++ '[' '
+The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS.' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS.
++ sudo apt-get install -qq -y The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS.
+E: Unable to locate package dependency
+E: Unable to locate package typerex.1.99.6-beta
+E: Couldn't find any package by regex 'typerex.1.99.6-beta'
+E: Unable to locate package of
+E: Unable to locate package package
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package is
+E: Unable to locate package not
+E: Unable to locate package available
+E: Unable to locate package for
+E: Unable to locate package your
+E: Unable to locate package compiler
+E: Unable to locate package or
+E: Unable to locate package your
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-top
+
+The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS.
+'opam install ocaml-top' failed.
