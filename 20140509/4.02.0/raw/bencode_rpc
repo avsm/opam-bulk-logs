@@ -1,0 +1,202 @@
+++ opam install bencode_rpc -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install bencode_rpc
+Ubuntu srcexts:
+The following actions will be performed:
+ - install bencode.0.2 [required by bencode_rpc]
+ - install lwt.2.4.5 [required by bencode_rpc]
+ - install bencode_rpc.0.2.1
+3 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing bencode.0.2 =-=-=
+default    Downloading https://opam.ocaml.org/archives/bencode.0.2+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/bencode.0.2+opam.tar.gz
+--2014-05-09 10:52:05--  https://opam.ocaml.org/archives/bencode.0.2+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 40022 (39K) [application/octet-stream]
+Saving to: 'bencode.0.2+opam.tar.gz'
+
+     0K .......... .......... .......... .........            100%  196K=0.2s
+
+2014-05-09 10:52:06 (196 KB/s) - 'bencode.0.2+opam.tar.gz' saved [40022/40022]
+
+Building bencode.0.2:
+  make all
+  make install
+ocamlbuild -use-ocamlfind bencode.cma bencode.cmxa bencode.a bencode.docdir/index.html
+ocamlfind ocamldep -modules lib/bencode.mli > lib/bencode.mli.depends
+ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmi lib/bencode.mli
+ocamlfind ocamldep -modules lib/bencode.ml > lib/bencode.ml.depends
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamllex.opt -q lib/bencode_lex.mll
+ocamlfind ocamldep -modules lib/bencode_lex.ml > lib/bencode_lex.ml.depends
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlyacc lib/bencode_parse.mly
+ocamlfind ocamldep -modules lib/bencode_parse.mli > lib/bencode_parse.mli.depends
+ocamlfind ocamldep -modules lib/bencode_types.ml > lib/bencode_types.ml.depends
+ocamlfind ocamlc -c -g -I lib -o lib/bencode_types.cmo lib/bencode_types.ml
+ocamlfind ocamlc -c -g -I lib -o lib/bencode_parse.cmi lib/bencode_parse.mli
+ocamlfind ocamlc -c -g -I lib -o lib/bencode_lex.cmo lib/bencode_lex.ml
+ocamlfind ocamldep -modules lib/bencode_parse.ml > lib/bencode_parse.ml.depends
+ocamlfind ocamldep -modules lib/bencode_streaming.mli > lib/bencode_streaming.mli.depends
+ocamlfind ocamlc -c -g -I lib -o lib/bencode_streaming.cmi lib/bencode_streaming.mli
+ocamlfind ocamldep -modules lib/bencode_streaming.ml > lib/bencode_streaming.ml.depends
+ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmo lib/bencode.ml
++ ocamlfind ocamlc -c -g -I lib -o lib/bencode.cmo lib/bencode.ml
+File "lib/bencode.ml", line 43, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "lib/bencode.ml", line 45, characters 4-16:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlc -c -g -I lib -o lib/bencode_parse.cmo lib/bencode_parse.ml
+ocamlfind ocamlc -c -g -I lib -o lib/bencode_streaming.cmo lib/bencode_streaming.ml
++ ocamlfind ocamlc -c -g -I lib -o lib/bencode_streaming.cmo lib/bencode_streaming.ml
+File "lib/bencode_streaming.ml", line 47, characters 4-19:
+Warning 3: deprecated feature: String.set
+File "lib/bencode_streaming.ml", line 54, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "lib/bencode_streaming.ml", line 185, characters 37-50:
+Warning 3: deprecated feature: String.create
+File "lib/bencode_streaming.ml", line 187, characters 8-19:
+Warning 3: deprecated feature: String.set
+File "lib/bencode_streaming.ml", line 248, characters 17-30:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlc -a lib/bencode_types.cmo lib/bencode_parse.cmo lib/bencode_lex.cmo lib/bencode.cmo lib/bencode_streaming.cmo -o bencode.cma
+ocamlfind ocamlopt -c -g -I lib -o lib/bencode_types.cmx lib/bencode_types.ml
+ocamlfind ocamlopt -c -g -I lib -o lib/bencode_parse.cmx lib/bencode_parse.ml
+ocamlfind ocamlopt -c -g -I lib -o lib/bencode_lex.cmx lib/bencode_lex.ml
+ocamlfind ocamlopt -c -g -I lib -o lib/bencode.cmx lib/bencode.ml
++ ocamlfind ocamlopt -c -g -I lib -o lib/bencode.cmx lib/bencode.ml
+File "lib/bencode.ml", line 43, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "lib/bencode.ml", line 45, characters 4-16:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt -c -g -I lib -o lib/bencode_streaming.cmx lib/bencode_streaming.ml
++ ocamlfind ocamlopt -c -g -I lib -o lib/bencode_streaming.cmx lib/bencode_streaming.ml
+File "lib/bencode_streaming.ml", line 47, characters 4-19:
+Warning 3: deprecated feature: String.set
+File "lib/bencode_streaming.ml", line 54, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "lib/bencode_streaming.ml", line 185, characters 37-50:
+Warning 3: deprecated feature: String.create
+File "lib/bencode_streaming.ml", line 187, characters 8-19:
+Warning 3: deprecated feature: String.set
+File "lib/bencode_streaming.ml", line 248, characters 17-30:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -a lib/bencode_types.cmx lib/bencode_parse.cmx lib/bencode_lex.cmx lib/bencode.cmx lib/bencode_streaming.cmx -o bencode.cmxa
+ocamlfind ocamldoc -dump lib/bencode.odoc -I lib lib/bencode.mli
+rm -rf bencode.docdir
+mkdir -p bencode.docdir
+ocamlfind ocamldoc -load lib/bencode.odoc -html -d bencode.docdir
+ocamlbuild -use-ocamlfind bencode.cma bencode.cmxa bencode.a bencode.docdir/index.html
+ocamlfind install bencode META _build/bencode.cma _build/bencode.cmxa _build/bencode.a _build/lib/*.cmi _build/lib/*.cmo _build/lib/*.o _build/lib/*.mli _build/lib/*.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_types.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_streaming.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_parse.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_lex.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_streaming.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_parse.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_types.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_streaming.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_parse.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_lex.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_types.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_streaming.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_parse.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_lex.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_types.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_streaming.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_parse.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode_lex.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/bencode.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bencode/META
+Installing bencode.0.2.
+
+=-=-= Installing lwt.2.4.5 =-=-=
+lwt.2.4.5  Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+--2014-05-09 10:52:13--  https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+Resolving github.com (github.com)... 192.30.252.131
+Connecting to github.com (github.com)|192.30.252.131|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/ocsigen/lwt/tar.gz/2.4.5 [following]
+--2014-05-09 10:52:14--  https://codeload.github.com/ocsigen/lwt/tar.gz/2.4.5
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.147
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 298612 (292K) [application/x-gzip]
+Saving to: 'lwt-2.4.5.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 17%  284K 1s
+    50K .......... .......... .......... .......... .......... 34%  389K 1s
+   100K .......... .......... .......... .......... .......... 51% 1008K 0s
+   150K .......... .......... .......... .......... .......... 68%  577K 0s
+   200K .......... .......... .......... .......... .......... 85% 1.24M 0s
+   250K .......... .......... .......... .......... .         100%  997K=0.5s
+
+2014-05-09 10:52:15 (559 KB/s) - 'lwt-2.4.5.tar.gz' saved [298612/298612]
+
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+File "setup.ml", line 254, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Field 'pkg_camlp4' is not set: When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_quotations_o' is not set: When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+E: Cannot find findlib package camlp4
+E: Cannot find findlib package camlp4.extend
+E: Cannot find findlib package camlp4.quotations.o
+E: Failure("3 configuration errors")
+[ERROR] The compilation of lwt.2.4.5 failed.
+Removing lwt.2.4.5.
+  ocamlfind remove lwt
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/lwt
+
+[ERROR] Due to some errors while processing lwt.2.4.5, the following actions will NOT proceed:
+ - install bencode_rpc.0.2.1
+
+===== ERROR while installing lwt.2.4.5 =====
+# opam-version         1.1.1
+# os                   linux
+# command              ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5
+# compiler             4.02.0dev+trunk
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-198-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-198-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-198-d2d111.err
+### stderr ###
+# ...[truncated]
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# E: Cannot find findlib package camlp4
+# E: Cannot find findlib package camlp4.extend
+# E: Cannot find findlib package camlp4.quotations.o
+# E: Failure("3 configuration errors")
+
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+trunk/backup/state-20140409105155.export"
+'opam install bencode_rpc' failed.
