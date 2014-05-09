@@ -1,0 +1,2226 @@
+++ opam install libres3 -e ubuntu
++ depext='libpcre3-dev libsqlite3-dev libssl-dev zlib1g-dev'
++ echo Ubuntu depexts: libpcre3-dev libsqlite3-dev libssl-dev zlib1g-dev
++ '[' 'libpcre3-dev libsqlite3-dev libssl-dev zlib1g-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libpcre3-dev libsqlite3-dev libssl-dev zlib1g-dev
++ sudo apt-get install -qq -y libpcre3-dev libsqlite3-dev libssl-dev zlib1g-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 22248 files and directories currently installed.)
+Preparing to unpack .../libpcrecpp0_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package libsqlite3-dev:amd64.
+Preparing to unpack .../libsqlite3-dev_3.8.2-1ubuntu2_amd64.deb ...
+Unpacking libsqlite3-dev:amd64 (3.8.2-1ubuntu2) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../libssl-dev_1.0.1f-1ubuntu2_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.0.1f-1ubuntu2) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../libssl-doc_1.0.1f-1ubuntu2_all.deb ...
+Unpacking libssl-doc (1.0.1f-1ubuntu2) ...
+Setting up libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Setting up libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Setting up libsqlite3-dev:amd64 (3.8.2-1ubuntu2) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up libssl-dev:amd64 (1.0.1f-1ubuntu2) ...
+Setting up libssl-doc (1.0.1f-1ubuntu2) ...
+Processing triggers for libc-bin (2.19-0ubuntu6) ...
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install libres3
+The following actions will be performed:
+ - install sqlite3-ocaml.2.0.5 [required by libres3]
+ - install uutf.0.9.3 [required by libres3]
+ - install tyxml.3.0.0 [required by libres3]
+ - install ssl.0.4.7 [required by libres3]
+ - install conf-libpcre.1 [required by libres3]
+ - install cryptokit.1.9 [required by libres3]
+ - install ounit.2.0.0 [required by libres3]
+ - install xmlm.1.2.0 [required by libres3]
+ - install ipaddr.2.4.0 [required by libres3]
+ - install react.1.1.0 [required by libres3]
+ - install jsonm.0.9.1 [required by libres3]
+ - install pcre-ocaml.7.0.4 [required by libres3]
+ - install lwt.2.4.5 [required by libres3]
+ - install ocamlnet.3.7.3 [required by libres3]
+ - install ocsigenserver.2.4.0 [required by libres3]
+ - install libres3.0.1
+16 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing conf-libpcre.1 =-=-=
+Building conf-libpcre.1:
+  pkg-config libpcre
+Installing conf-libpcre.1.
+
+=-=-= Installing cryptokit.1.9 =-=-=
+default    Downloading https://opam.ocaml.org/archives/cryptokit.1.9+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/cryptokit.1.9+opam.tar.gz
+--2014-05-09 15:47:48--  https://opam.ocaml.org/archives/cryptokit.1.9+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 143275 (140K) [application/octet-stream]
+Saving to: 'cryptokit.1.9+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 35%  243K 0s
+    50K .......... .......... .......... .......... .......... 71%  482K 0s
+   100K .......... .......... .......... .........            100%  396K=0.4s
+
+2014-05-09 15:47:49 (341 KB/s) - 'cryptokit.1.9+opam.tar.gz' saved [143275/143275]
+
+Building cryptokit.1.9:
+  make
+  make install
+ocaml setup.ml -configure 
+File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ cryptokit
+Package version: ..................................... 1.9
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Define include path for zlib.: ....................... 
+Define library path for zlib.: ....................... 
+Enable ZLib: ......................................... true
+Build and run benchmark: ............................. false
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+pkg_num: ............................................. /home/opam/.opam/4.02.0dev+trunk/lib/num
+
+ocaml setup.ml -build -classic-display
+File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/arcfour.c
+mv arcfour.o src/arcfour.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-arcfour.c
+mv stubs-arcfour.o src/stubs-arcfour.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/blowfish.c
+mv blowfish.o src/blowfish.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-blowfish.c
+mv stubs-blowfish.o src/stubs-blowfish.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/d3des.c
+mv d3des.o src/d3des.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-des.c
+mv stubs-des.o src/stubs-des.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/rijndael-alg-fst.c
+mv rijndael-alg-fst.o src/rijndael-alg-fst.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/ripemd160.c
+mv ripemd160.o src/ripemd160.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-ripemd160.c
+mv stubs-ripemd160.o src/stubs-ripemd160.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/sha1.c
+mv sha1.o src/sha1.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-sha1.c
+mv stubs-sha1.o src/stubs-sha1.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/sha256.c
+mv sha256.o src/sha256.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-sha256.c
+mv stubs-sha256.o src/stubs-sha256.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-aes.c
+mv stubs-aes.o src/stubs-aes.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-md5.c
+mv stubs-md5.o src/stubs-md5.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-misc.c
+mv stubs-misc.o src/stubs-misc.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-rng.c
+mv stubs-rng.o src/stubs-rng.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
++ ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
+src/stubs-zlib.c: In function 'caml_zlib_deflate':
+src/stubs-zlib.c:98:15: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+   zs->next_in = &Byte(srcbuf, Long_val(srcpos));
+               ^
+src/stubs-zlib.c:100:16: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+   zs->next_out = &Byte(dstbuf, Long_val(dstpos));
+                ^
+src/stubs-zlib.c: In function 'caml_zlib_inflate':
+src/stubs-zlib.c:143:15: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+   zs->next_in = &Byte(srcbuf, Long_val(srcpos));
+               ^
+src/stubs-zlib.c:145:16: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+   zs->next_out = &Byte(dstbuf, Long_val(dstpos));
+                ^
+mv stubs-zlib.o src/stubs-zlib.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/keccak.c
+mv keccak.o src/keccak.o
+ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-sha3.c
+mv stubs-sha3.o src/stubs-sha3.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlmklib -o src/cryptokit_stubs -lz src/arcfour.o src/stubs-arcfour.o src/blowfish.o src/stubs-blowfish.o src/d3des.o src/stubs-des.o src/rijndael-alg-fst.o src/ripemd160.o src/stubs-ripemd160.o src/sha1.o src/stubs-sha1.o src/sha256.o src/stubs-sha256.o src/stubs-aes.o src/stubs-md5.o src/stubs-misc.o src/stubs-rng.o src/stubs-zlib.o src/keccak.o src/stubs-sha3.o
+ocamlfind ocamldep -package num -package unix -modules src/cryptokit.mli > src/cryptokit.mli.depends
+ocamlfind ocamlc -c -g -ccopt -O -ccopt -DHAVE_ZLIB -package num -package unix -I src -o src/cryptokit.cmi src/cryptokit.mli
+ocamlfind ocamldep -package num -package unix -modules src/cryptokit.ml > src/cryptokit.ml.depends
+ocamlfind ocamlc -c -g -ccopt -O -ccopt -DHAVE_ZLIB -package num -package unix -I src -o src/cryptokit.cmo src/cryptokit.ml
++ ocamlfind ocamlc -c -g -ccopt -O -ccopt -DHAVE_ZLIB -package num -package unix -I src -o src/cryptokit.cmo src/cryptokit.ml
+File "src/cryptokit.ml", line 18, characters 20-31:
+Warning 3: deprecated feature: String.fill
+File "src/cryptokit.ml", line 108, characters 13-26:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 186, characters 13-26:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 224, characters 6-17:
+Warning 3: deprecated feature: String.fill
+File "src/cryptokit.ml", line 241, characters 6-29:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 243, characters 8-28:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 263, characters 23-36:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 285, characters 23-36:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 340, characters 6-45:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 358, characters 6-45:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 495, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 513, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 532, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 566, characters 15-28:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 597, characters 8-24:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 603, characters 8-21:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 673, characters 17-30:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 702, characters 8-26:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 707, characters 8-23:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 785, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 800, characters 6-22:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1077, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 1130, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 1131, characters 8-25:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1132, characters 8-32:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1189, characters 15-28:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 1197, characters 12-130:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1447, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 1454, characters 4-53:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1531, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 1846, characters 15-28:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 1875, characters 15-28:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 1880, characters 6-22:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1887, characters 8-53:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1888, characters 8-75:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1889, characters 8-76:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1890, characters 8-55:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1896, characters 10-29:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1917, characters 10-55:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1918, characters 10-64:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1924, characters 10-55:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1925, characters 10-77:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1926, characters 10-65:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1934, characters 8-19:
+Warning 3: deprecated feature: String.fill
+File "src/cryptokit.ml", line 1939, characters 8-27:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1982, characters 12-70:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1983, characters 12-80:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1984, characters 12-73:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 2007, characters 10-68:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 2011, characters 10-68:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 2012, characters 10-78:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 2039, characters 6-45:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 2040, characters 6-52:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 2084, characters 10-64:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1930, characters 19-21:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlc -a -dllib -lcryptokit_stubs -cclib -lcryptokit_stubs -cclib -lz src/cryptokit.cmo -o src/cryptokit.cma
+ocamlfind ocamlopt -c -g -ccopt -O -ccopt -DHAVE_ZLIB -package num -package unix -I src -o src/cryptokit.cmx src/cryptokit.ml
++ ocamlfind ocamlopt -c -g -ccopt -O -ccopt -DHAVE_ZLIB -package num -package unix -I src -o src/cryptokit.cmx src/cryptokit.ml
+File "src/cryptokit.ml", line 18, characters 20-31:
+Warning 3: deprecated feature: String.fill
+File "src/cryptokit.ml", line 108, characters 13-26:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 186, characters 13-26:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 224, characters 6-17:
+Warning 3: deprecated feature: String.fill
+File "src/cryptokit.ml", line 241, characters 6-29:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 243, characters 8-28:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 263, characters 23-36:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 285, characters 23-36:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 340, characters 6-45:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 358, characters 6-45:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 495, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 513, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 532, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 566, characters 15-28:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 597, characters 8-24:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 603, characters 8-21:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 673, characters 17-30:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 702, characters 8-26:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 707, characters 8-23:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 785, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 800, characters 6-22:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1077, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 1130, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 1131, characters 8-25:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1132, characters 8-32:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1189, characters 15-28:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 1197, characters 12-130:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1447, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 1454, characters 4-53:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1531, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 1846, characters 15-28:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 1875, characters 15-28:
+Warning 3: deprecated feature: String.create
+File "src/cryptokit.ml", line 1880, characters 6-22:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1887, characters 8-53:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1888, characters 8-75:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1889, characters 8-76:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1890, characters 8-55:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1896, characters 10-29:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1917, characters 10-55:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1918, characters 10-64:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1924, characters 10-55:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1925, characters 10-77:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1926, characters 10-65:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1934, characters 8-19:
+Warning 3: deprecated feature: String.fill
+File "src/cryptokit.ml", line 1939, characters 8-27:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1982, characters 12-70:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1983, characters 12-80:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1984, characters 12-73:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 2007, characters 10-68:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 2011, characters 10-68:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 2012, characters 10-78:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 2039, characters 6-45:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 2040, characters 6-52:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 2084, characters 10-64:
+Warning 3: deprecated feature: String.set
+File "src/cryptokit.ml", line 1930, characters 19-21:
+Warning 3: deprecated feature: operator (or); you should use (||) instead
+ocamlfind ocamlopt -a -cclib -lcryptokit_stubs -cclib -lz src/cryptokit.cmx -o src/cryptokit.cmxa
+ocamlfind ocamlopt -shared -cclib -lcryptokit_stubs -I src src/cryptokit.cmx -o src/cryptokit.cmxs
+ocaml setup.ml -install 
+File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cryptokit/cryptokit.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cryptokit/libcryptokit_stubs.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cryptokit/cryptokit.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cryptokit/cryptokit.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cryptokit/cryptokit.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cryptokit/cryptokit.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cryptokit/cryptokit.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cryptokit/cryptokit.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/cryptokit/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllcryptokit_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllcryptokit_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+trunk/lib/stublibs is not mentioned in ld.conf
+Installing cryptokit.1.9.
+
+=-=-= Installing ipaddr.2.4.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ipaddr.2.4.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ipaddr.2.4.0+opam.tar.gz
+--2014-05-09 15:48:02--  https://opam.ocaml.org/archives/ipaddr.2.4.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 60910 (59K) [application/octet-stream]
+Saving to: 'ipaddr.2.4.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 84%  245K 0s
+    50K .........                                             100% 53.4M=0.2s
+
+2014-05-09 15:48:02 (291 KB/s) - 'ipaddr.2.4.0+opam.tar.gz' saved [60910/60910]
+
+Building ipaddr.2.4.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make build
+  make install
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ ipaddr
+Package version: ..................................... 2.4.0
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+trunk
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+build the unix library: .............................. true
+build the toplevel printers: ......................... true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+
+ocaml setup.ml -build 
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package unix -modules lib/ipaddr.mli > lib/ipaddr.mli.depends
+ocamlfind ocamlc -c -g -annot -bin-annot -principal -I lib -w @f@p@u@s@40 -package unix -I lib -o lib/ipaddr.cmi lib/ipaddr.mli
+ocamlfind ocamldep -package unix -modules lib/ipaddr.ml > lib/ipaddr.ml.depends
+ocamlfind ocamldep -package unix -modules lib/macaddr.mli > lib/macaddr.mli.depends
+ocamlfind ocamlc -c -g -annot -bin-annot -principal -I lib -w @f@p@u@s@40 -package unix -I lib -o lib/macaddr.cmi lib/macaddr.mli
+ocamlfind ocamldep -package unix -modules lib/macaddr.ml > lib/macaddr.ml.depends
+ocamlfind ocamlc -c -g -annot -bin-annot -principal -I lib -w @f@p@u@s@40 -package unix -I lib -o lib/ipaddr.cmo lib/ipaddr.ml
++ ocamlfind ocamlc -c -g -annot -bin-annot -principal -I lib -w @f@p@u@s@40 -package unix -I lib -o lib/ipaddr.cmo lib/ipaddr.ml
+File "lib/ipaddr.ml", line 158, characters 4-42:
+Warning 3: deprecated feature: String.set
+File "lib/ipaddr.ml", line 159, characters 4-42:
+Warning 3: deprecated feature: String.set
+File "lib/ipaddr.ml", line 160, characters 4-42:
+Warning 3: deprecated feature: String.set
+File "lib/ipaddr.ml", line 161, characters 4-42:
+Warning 3: deprecated feature: String.set
+File "lib/ipaddr.ml", line 164, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "lib/ipaddr.ml", line 562, characters 13-26:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlc -c -g -annot -bin-annot -principal -I lib -w @f@p@u@s@40 -package unix -I lib -o lib/macaddr.cmo lib/macaddr.ml
++ ocamlfind ocamlc -c -g -annot -bin-annot -principal -I lib -w @f@p@u@s@40 -package unix -I lib -o lib/macaddr.cmo lib/macaddr.ml
+File "lib/macaddr.ml", line 69, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "lib/macaddr.ml", line 72, characters 4-51:
+Warning 3: deprecated feature: String.set
+File "lib/macaddr.ml", line 81, characters 8-49:
+Warning 3: deprecated feature: String.set
+File "lib/macaddr.ml", line 86, characters 6-46:
+Warning 3: deprecated feature: String.set
+File "lib/macaddr.ml", line 113, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "lib/macaddr.ml", line 115, characters 2-56:
+Warning 3: deprecated feature: String.set
+File "lib/macaddr.ml", line 116, characters 20-50:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlc -a -w @f@p@u@s@40 lib/ipaddr.cmo lib/macaddr.cmo -o lib/ipaddr.cma
+ocamlfind ocamlopt -c -g -annot -bin-annot -principal -I lib -w @f@p@u@s@40 -package unix -I lib -o lib/ipaddr.cmx lib/ipaddr.ml
++ ocamlfind ocamlopt -c -g -annot -bin-annot -principal -I lib -w @f@p@u@s@40 -package unix -I lib -o lib/ipaddr.cmx lib/ipaddr.ml
+File "lib/ipaddr.ml", line 158, characters 4-42:
+Warning 3: deprecated feature: String.set
+File "lib/ipaddr.ml", line 159, characters 4-42:
+Warning 3: deprecated feature: String.set
+File "lib/ipaddr.ml", line 160, characters 4-42:
+Warning 3: deprecated feature: String.set
+File "lib/ipaddr.ml", line 161, characters 4-42:
+Warning 3: deprecated feature: String.set
+File "lib/ipaddr.ml", line 164, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "lib/ipaddr.ml", line 562, characters 13-26:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -c -g -annot -bin-annot -principal -I lib -w @f@p@u@s@40 -package unix -I lib -o lib/macaddr.cmx lib/macaddr.ml
++ ocamlfind ocamlopt -c -g -annot -bin-annot -principal -I lib -w @f@p@u@s@40 -package unix -I lib -o lib/macaddr.cmx lib/macaddr.ml
+File "lib/macaddr.ml", line 69, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "lib/macaddr.ml", line 72, characters 4-51:
+Warning 3: deprecated feature: String.set
+File "lib/macaddr.ml", line 81, characters 8-49:
+Warning 3: deprecated feature: String.set
+File "lib/macaddr.ml", line 86, characters 6-46:
+Warning 3: deprecated feature: String.set
+File "lib/macaddr.ml", line 113, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "lib/macaddr.ml", line 115, characters 2-56:
+Warning 3: deprecated feature: String.set
+File "lib/macaddr.ml", line 116, characters 20-50:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt -a -w @f@p@u@s@40 lib/ipaddr.cmx lib/macaddr.cmx -o lib/ipaddr.cmxa
+ocamlfind ocamlopt -shared lib/ipaddr.cmx -o lib/ipaddr.cmxs
+ocamlfind ocamldep -package unix -modules lib/ipaddr_unix.mli > lib/ipaddr_unix.mli.depends
+ocamlfind ocamlc -c -g -annot -bin-annot -principal -I lib -w @f@p@u@s@40 -package unix -I lib -o lib/ipaddr_unix.cmi lib/ipaddr_unix.mli
+ocamlfind ocamldep -package unix -modules lib/ipaddr_unix.ml > lib/ipaddr_unix.ml.depends
+ocamlfind ocamlc -c -g -annot -bin-annot -principal -I lib -w @f@p@u@s@40 -package unix -I lib -o lib/ipaddr_unix.cmo lib/ipaddr_unix.ml
+ocamlfind ocamlc -a lib/ipaddr_unix.cmo -o lib/ipaddr_unix.cma
+ocamlfind ocamlopt -c -g -annot -bin-annot -principal -I lib -w @f@p@u@s@40 -package unix -I lib -o lib/ipaddr_unix.cmx lib/ipaddr_unix.ml
+ocamlfind ocamlopt -a lib/ipaddr_unix.cmx -o lib/ipaddr_unix.cmxa
+ocamlfind ocamlopt -shared lib/ipaddr_unix.cmx -o lib/ipaddr_unix.cmxs
+ocamlfind ocamldep -modules top/ipaddr_top.ml > top/ipaddr_top.ml.depends
+ocamlfind ocamlc -c -g -annot -bin-annot -principal -I +compiler-libs -I top -o top/ipaddr_top.cmo top/ipaddr_top.ml
++ ocamlfind ocamlc -c -g -annot -bin-annot -principal -I +compiler-libs -I top -o top/ipaddr_top.cmo top/ipaddr_top.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml, /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/compiler-libs
+ocamlfind ocamlc -a top/ipaddr_top.cmo -o top/ipaddr_top.cma
+ocamlfind ocamlopt -c -g -annot -bin-annot -principal -I +compiler-libs -I top -o top/ipaddr_top.cmx top/ipaddr_top.ml
++ ocamlfind ocamlopt -c -g -annot -bin-annot -principal -I +compiler-libs -I top -o top/ipaddr_top.cmx top/ipaddr_top.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml, /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/compiler-libs
+ocamlfind ocamlopt -a top/ipaddr_top.cmx -o top/ipaddr_top.cmxa
+ocamlfind ocamlopt -shared top/ipaddr_top.cmx -o top/ipaddr_top.cmxs
+ocaml setup.ml -install 
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/macaddr.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/macaddr.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/macaddr.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr_unix.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr_unix.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr_unix.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr_unix.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr_unix.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr_unix.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr_unix.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr_top.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr_top.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr_top.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr_top.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr_top.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr_top.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/ipaddr_top.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ipaddr/META
+Installing ipaddr.2.4.0.
+
+=-=-= Installing ounit.2.0.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ounit.2.0.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ounit.2.0.0+opam.tar.gz
+--2014-05-09 15:48:13--  https://opam.ocaml.org/archives/ounit.2.0.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 105698 (103K) [application/octet-stream]
+Saving to: 'ounit.2.0.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 48%  241K 0s
+    50K .......... .......... .......... .......... .......... 96%  481K 0s
+   100K ...                                                   100% 6143G=0.3s
+
+2014-05-09 15:48:14 (332 KB/s) - 'ounit.2.0.0+opam.tar.gz' saved [105698/105698]
+
+Building ounit.2.0.0:
+  make build
+  make install
+ocaml setup.ml -configure 
+File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ ounit
+Package version: ..................................... 2.0.0
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+pkg_threads: ......................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+
+ocaml setup.ml -build 
+File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Cannot find source file matching module 'OUnitLoggerHTMLData' in library oUnitAdvanced
+W: Cannot find source file matching module 'OUnitLoggerHTMLData' in library oUnitAdvanced
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitUtils.ml > src/oUnitUtils.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitPropList.ml > src/oUnitPropList.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitPlugin.ml > src/oUnitPlugin.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitConf.ml > src/oUnitConf.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPropList.cmo src/oUnitPropList.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitUtils.cmo src/oUnitUtils.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmo src/oUnitConf.ml
++ ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmo src/oUnitConf.ml
+File "src/oUnitConf.ml", line 77, characters 16-35:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitChooser.ml > src/oUnitChooser.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitCache.ml > src/oUnitCache.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitTest.ml > src/oUnitTest.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLogger.ml > src/oUnitLogger.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitShared.ml > src/oUnitShared.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLogger.cmo src/oUnitLogger.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitShared.cmo src/oUnitShared.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTest.cmo src/oUnitTest.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPlugin.cmo src/oUnitPlugin.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitResultSummary.ml > src/oUnitResultSummary.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCache.cmo src/oUnitCache.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitResultSummary.cmo src/oUnitResultSummary.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerStd.ml > src/oUnitLoggerStd.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerHTML.ml > src/oUnitLoggerHTML.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerHTMLData.ml > src/oUnitLoggerHTMLData.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTMLData.cmo src/oUnitLoggerHTMLData.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerJUnit.ml > src/oUnitLoggerJUnit.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTML.cmo src/oUnitLoggerHTML.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmo src/oUnitLoggerStd.ml
++ ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmo src/oUnitLoggerStd.ml
+File "src/oUnitLoggerStd.ml", line 161, characters 21-22:
+Warning 28: wildcard pattern given as argument to a constant constructor
+File "src/oUnitLoggerStd.ml", line 161, characters 30-31:
+Warning 28: wildcard pattern given as argument to a constant constructor
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitAssert.ml > src/oUnitAssert.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitBracket.ml > src/oUnitBracket.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitBracket.cmo src/oUnitBracket.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitState.ml > src/oUnitState.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitChooser.cmo src/oUnitChooser.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunner.ml > src/oUnitRunner.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitCheckEnv.ml > src/oUnitCheckEnv.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmo src/oUnitAssert.ml
++ ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmo src/oUnitAssert.ml
+File "src/oUnitAssert.ml", line 243, characters 20-33:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitDiff.mli > src/oUnitDiff.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmi src/oUnitDiff.mli
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitState.cmo src/oUnitState.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCheckEnv.cmo src/oUnitCheckEnv.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunnerProcesses.ml > src/oUnitRunnerProcesses.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunner.cmo src/oUnitRunner.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitCore.ml > src/oUnitCore.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerJUnit.cmo src/oUnitLoggerJUnit.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmo src/oUnitRunnerProcesses.ml
++ ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmo src/oUnitRunnerProcesses.ml
+File "src/oUnitRunnerProcesses.ml", line 80, characters 19-32:
+Warning 3: deprecated feature: String.create
+File "src/oUnitRunnerProcesses.ml", line 90, characters 42-55:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitTestData.ml > src/oUnitTestData.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitDiff.ml > src/oUnitDiff.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCore.cmo src/oUnitCore.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTestData.cmo src/oUnitTestData.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmo src/oUnitDiff.ml
+ocamlfind ocamlc -a src/oUnitUtils.cmo src/oUnitPropList.cmo src/oUnitConf.cmo src/oUnitPlugin.cmo src/oUnitLogger.cmo src/oUnitShared.cmo src/oUnitTest.cmo src/oUnitCache.cmo src/oUnitResultSummary.cmo src/oUnitChooser.cmo src/oUnitLoggerStd.cmo src/oUnitLoggerHTMLData.cmo src/oUnitLoggerHTML.cmo src/oUnitLoggerJUnit.cmo src/oUnitBracket.cmo src/oUnitAssert.cmo src/oUnitState.cmo src/oUnitDiff.cmo src/oUnitCheckEnv.cmo src/oUnitRunner.cmo src/oUnitRunnerProcesses.cmo src/oUnitCore.cmo src/oUnitTestData.cmo -o src/oUnitAdvanced.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPropList.cmx src/oUnitPropList.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitUtils.cmx src/oUnitUtils.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmx src/oUnitConf.ml
++ ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmx src/oUnitConf.ml
+File "src/oUnitConf.ml", line 77, characters 16-35:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLogger.cmx src/oUnitLogger.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitShared.cmx src/oUnitShared.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTest.cmx src/oUnitTest.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPlugin.cmx src/oUnitPlugin.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCache.cmx src/oUnitCache.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitResultSummary.cmx src/oUnitResultSummary.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTMLData.cmx src/oUnitLoggerHTMLData.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTML.cmx src/oUnitLoggerHTML.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmx src/oUnitLoggerStd.ml
++ ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmx src/oUnitLoggerStd.ml
+File "src/oUnitLoggerStd.ml", line 161, characters 21-22:
+Warning 28: wildcard pattern given as argument to a constant constructor
+File "src/oUnitLoggerStd.ml", line 161, characters 30-31:
+Warning 28: wildcard pattern given as argument to a constant constructor
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitBracket.cmx src/oUnitBracket.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitChooser.cmx src/oUnitChooser.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmx src/oUnitAssert.ml
++ ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmx src/oUnitAssert.ml
+File "src/oUnitAssert.ml", line 243, characters 20-33:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmx src/oUnitDiff.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitState.cmx src/oUnitState.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCheckEnv.cmx src/oUnitCheckEnv.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunner.cmx src/oUnitRunner.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerJUnit.cmx src/oUnitLoggerJUnit.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmx src/oUnitRunnerProcesses.ml
++ ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmx src/oUnitRunnerProcesses.ml
+File "src/oUnitRunnerProcesses.ml", line 80, characters 19-32:
+Warning 3: deprecated feature: String.create
+File "src/oUnitRunnerProcesses.ml", line 90, characters 42-55:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCore.cmx src/oUnitCore.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTestData.cmx src/oUnitTestData.ml
+ocamlfind ocamlopt -a src/oUnitUtils.cmx src/oUnitPropList.cmx src/oUnitConf.cmx src/oUnitPlugin.cmx src/oUnitLogger.cmx src/oUnitShared.cmx src/oUnitTest.cmx src/oUnitCache.cmx src/oUnitResultSummary.cmx src/oUnitChooser.cmx src/oUnitLoggerStd.cmx src/oUnitLoggerHTMLData.cmx src/oUnitLoggerHTML.cmx src/oUnitLoggerJUnit.cmx src/oUnitBracket.cmx src/oUnitAssert.cmx src/oUnitState.cmx src/oUnitDiff.cmx src/oUnitCheckEnv.cmx src/oUnitRunner.cmx src/oUnitRunnerProcesses.cmx src/oUnitCore.cmx src/oUnitTestData.cmx -o src/oUnitAdvanced.cmxa
+ocamlfind ocamlopt -shared -linkall src/oUnitAdvanced.cmxa -o src/oUnitAdvanced.cmxs
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit.mli > src/oUnit.mli.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit2.mli > src/oUnit2.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmi src/oUnit2.mli
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmi src/oUnit.mli
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit.ml > src/oUnit.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit2.ml > src/oUnit2.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmo src/oUnit.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmo src/oUnit2.ml
+ocamlfind ocamlc -a src/oUnit2.cmo src/oUnit.cmo -o src/oUnit.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmx src/oUnit2.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmx src/oUnit.ml
+ocamlfind ocamlopt -a src/oUnit2.cmx src/oUnit.cmx -o src/oUnit.cmxa
+ocamlfind ocamlopt -shared src/oUnit.cmx -o src/oUnit.cmxs
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitThreads.ml > src/oUnitThreads.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunnerThreads.ml > src/oUnitRunnerThreads.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerThreads.cmo src/oUnitRunnerThreads.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitThreads.cmo src/oUnitThreads.ml
+ocamlfind ocamlc -a src/oUnitRunnerThreads.cmo src/oUnitThreads.cmo -o src/oUnitThreads.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerThreads.cmx src/oUnitRunnerThreads.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitThreads.cmx src/oUnitThreads.ml
+ocamlfind ocamlopt -a src/oUnitRunnerThreads.cmx src/oUnitThreads.cmx -o src/oUnitThreads.cmxa
+ocamlfind ocamlopt -shared src/oUnitThreads.cmx -o src/oUnitThreads.cmxs
+ocaml setup.ml -install 
+File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Cannot find source header for module OUnitLoggerHTMLData in library oUnitAdvanced
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit2.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit2.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit2.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunnerThreads.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitUtils.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPropList.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPlugin.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitChooser.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitResultSummary.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerStd.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTML.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerJUnit.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAssert.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitBracket.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTest.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitState.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunner.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunnerProcesses.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCore.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLogger.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitConf.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitShared.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCache.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTestData.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCheckEnv.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitDiff.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAdvanced.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAdvanced.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAdvanced.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAdvanced.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitUtils.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPropList.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPlugin.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitChooser.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitResultSummary.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerStd.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTML.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTMLData.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerJUnit.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAssert.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitBracket.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTest.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitState.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunner.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunnerProcesses.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCore.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLogger.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitConf.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitShared.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCache.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTestData.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCheckEnv.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitDiff.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitUtils.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPropList.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPlugin.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitChooser.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitResultSummary.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerStd.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTML.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTMLData.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerJUnit.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAssert.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitBracket.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTest.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitState.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunner.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunnerProcesses.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCore.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLogger.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitConf.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitShared.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCache.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTestData.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCheckEnv.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitDiff.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/META
+Installing ounit.2.0.0.
+
+=-=-= Installing react.1.1.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/react.1.1.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/react.1.1.0+opam.tar.gz
+--2014-05-09 15:48:28--  https://opam.ocaml.org/archives/react.1.1.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 91011 (89K) [application/octet-stream]
+Saving to: 'react.1.1.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 56%  241K 0s
+    50K .......... .......... .......... ........             100%  378K=0.3s
+
+2014-05-09 15:48:28 (286 KB/s) - 'react.1.1.0+opam.tar.gz' saved [91011/91011]
+
+Building react.1.1.0:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+File "pkg/topkg-ext.ml", line 42, characters 12-25:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamldep -modules src/react.ml > src/react.ml.depends
+ocamlfind ocamldep -modules src/react.mli > src/react.mli.depends
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/react.cmi src/react.mli
+ocamlfind ocamlopt -c -annot -bin-annot -I src -I test -o src/react.cmx src/react.ml
+ocamlfind ocamlopt -a src/react.cmx -o src/react.cmxa
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/react.cmo src/react.ml
+ocamlfind ocamlc -a src/react.cmo -o src/react.cma
+ocamlfind ocamlopt -shared src/react.cmx -o src/react.cmxs
+Installing react.1.1.0.
+
+=-=-= Installing sqlite3-ocaml.2.0.5 =-=-=
+default    Downloading https://opam.ocaml.org/archives/sqlite3-ocaml.2.0.5+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/sqlite3-ocaml.2.0.5+opam.tar.gz
+--2014-05-09 15:48:38--  https://opam.ocaml.org/archives/sqlite3-ocaml.2.0.5+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 67009 (65K) [application/octet-stream]
+Saving to: 'sqlite3-ocaml.2.0.5+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 76%  241K 0s
+    50K .......... .....                                      100% 58.0M=0.2s
+
+2014-05-09 15:48:38 (315 KB/s) - 'sqlite3-ocaml.2.0.5+opam.tar.gz' saved [67009/67009]
+
+Building sqlite3-ocaml.2.0.5:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ sqlite3-ocaml
+Package version: ..................................... 2.0.5
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Strict compile-time checks: .......................... true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/sqlite3_stubs.c
+mv sqlite3_stubs.o lib/sqlite3_stubs.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlmklib -o lib/sqlite3_stubs -lsqlite3 -lsqlite3 lib/sqlite3_stubs.o
+ocamlfind ocamldep -modules lib/sqlite3.mli > lib/sqlite3.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -w Aer-44 -I lib -o lib/sqlite3.cmi lib/sqlite3.mli
+ocamlfind ocamldep -modules lib/sqlite3.ml > lib/sqlite3.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -w Aer-44 -I lib -o lib/sqlite3.cmo lib/sqlite3.ml
+ocamlfind ocamlc -a -dllib -lsqlite3_stubs -cclib -lsqlite3_stubs -cclib -lsqlite3 -cclib -lsqlite3 -cclib -lsqlite3 lib/sqlite3.cmo -o lib/sqlite3.cma
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -w Aer-44 -I lib -o lib/sqlite3.cmx lib/sqlite3.ml
+ocamlfind ocamlopt -a -cclib -lsqlite3_stubs -cclib -lsqlite3 -cclib -lsqlite3 -cclib -lsqlite3 lib/sqlite3.cmx -o lib/sqlite3.cmxa
+ocamlfind ocamlopt -shared -cclib -lsqlite3_stubs -I lib -cclib -lsqlite3 lib/sqlite3.cmxa lib/sqlite3.cmx -o lib/sqlite3.cmxs
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sqlite3/sqlite3.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sqlite3/libsqlite3_stubs.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sqlite3/sqlite3.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sqlite3/sqlite3.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sqlite3/sqlite3.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sqlite3/sqlite3.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sqlite3/sqlite3.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sqlite3/sqlite3.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sqlite3/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllsqlite3_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllsqlite3_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+trunk/lib/stublibs is not mentioned in ld.conf
+Installing sqlite3-ocaml.2.0.5.
+
+=-=-= Installing ssl.0.4.7 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ssl.0.4.7+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ssl.0.4.7+opam.tar.gz
+--2014-05-09 15:48:49--  https://opam.ocaml.org/archives/ssl.0.4.7+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 118058 (115K) [application/octet-stream]
+Saving to: 'ssl.0.4.7+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 43%  245K 0s
+    50K .......... .......... .......... .......... .......... 86%  486K 0s
+   100K .......... .....                                      100% 54.7M=0.3s
+
+2014-05-09 15:48:50 (375 KB/s) - 'ssl.0.4.7+opam.tar.gz' saved [118058/118058]
+
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make
+  make install
+configuring ocaml-ssl 0.4.7
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for pthread_create in -lpthread... yes
+checking for ocamlc... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc
+ocaml version is 4.02.0+dev5-2014-04-29
+ocaml library path is /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+checking for ocamlopt... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt
+checking ocamlopt version... ok
+checking for ocamlc.opt... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+checking ocamlc.opt version... ok
+checking for ocamlopt.opt... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+checking ocamlc.opt version... ok
+checking for ocamldep... /home/opam/.opam/4.02.0dev+trunk/bin/ocamldep
+checking for ocamllex... /home/opam/.opam/4.02.0dev+trunk/bin/ocamllex
+checking for ocamlyacc... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlyacc
+checking for ocamldoc... /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+checking for ocamlmktop... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlmktop
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for SSL_new in -lssl... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking openssl/ssl.h usability... yes
+checking openssl/ssl.h presence... yes
+checking for openssl/ssl.h... yes
+checking for TLSv1_1_method in -lssl... yes
+checking for TLSv1_2_method in -lssl... yes
+checking for ocamlfind... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+checking for ocamlcp... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlcp
+checking for latex... no
+checking for dvips... no
+checking for ps2pdf... no
+configure: creating ./config.status
+config.status: creating src/Makefile
+config.status: creating src/META
+make -C src all
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[3]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[4]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+making ._bcdi/ssl.di from ssl.mli
+making ._d/ssl.d from ssl.ml
+make[4]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[4]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+ocamlc -c -cc "gcc" -ccopt "-fPIC -g -O2 -DHAVE_TLS11 -DHAVE_TLS12 -ansi -DCAML_NAME_SPACE -Wall \
+				-DPIC   \
+				    -o ssl_stubs.o " ssl_stubs.c 
+ar rcs libssl_stubs.a  ssl_stubs.o
+ocamlc -c -thread ssl.mli
+ocamlc -c -thread ssl.ml
+File "ssl.ml", line 233, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "ssl.ml", line 234, characters 4-16:
+Warning 3: deprecated feature: String.set
+File "ssl.ml", line 238, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "ssl.ml", line 239, characters 4-37:
+Warning 3: deprecated feature: String.set
+File "ssl.ml", line 240, characters 4-49:
+Warning 3: deprecated feature: String.set
+File "ssl.ml", line 241, characters 4-48:
+Warning 3: deprecated feature: String.set
+File "ssl.ml", line 242, characters 4-40:
+Warning 3: deprecated feature: String.set
+File "ssl.ml", line 247, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "ssl.ml", line 258, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "ssl.ml", line 266, characters 12-25:
+Warning 3: deprecated feature: String.create
+ocamlmklib                     \
+				-o ssl_stubs  ssl_stubs.o -lcrypto -lssl \
+				
+ocamlc -a -thread -dllib dllssl_stubs.so              \
+				-cclib -lssl_stubs -cclib -lcrypto -cclib -lssl  -o ssl.cma  ssl.cmo
+make[4]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[3]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[3]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[4]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+making ._d/ssl_threads.d from ssl_threads.ml
+make[4]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[4]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+ar rcs libssl_threads_stubs.a  ssl_stubs.o
+ocamlc -c -thread ssl_threads.mli
+ocamlc -c -thread ssl_threads.ml
+ocamlmklib                     \
+				-o ssl_threads_stubs  ssl_stubs.o -lcrypto -lssl \
+				
+ocamlc -a -thread -dllib dllssl_threads_stubs.so              \
+				-cclib -lssl_threads_stubs -cclib -lcrypto -cclib -lssl  -o ssl_threads.cma  ssl.cmo ssl_threads.cmo
+make[4]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[3]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[3]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[4]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+making ._ncdi/ssl.di from ssl.mli
+make[4]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[4]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[4]: `libssl_stubs.a' is up to date.
+ocamlopt -c -thread ssl.ml
+File "ssl.ml", line 233, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "ssl.ml", line 234, characters 4-16:
+Warning 3: deprecated feature: String.set
+File "ssl.ml", line 238, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "ssl.ml", line 239, characters 4-37:
+Warning 3: deprecated feature: String.set
+File "ssl.ml", line 240, characters 4-49:
+Warning 3: deprecated feature: String.set
+File "ssl.ml", line 241, characters 4-48:
+Warning 3: deprecated feature: String.set
+File "ssl.ml", line 242, characters 4-40:
+Warning 3: deprecated feature: String.set
+File "ssl.ml", line 247, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "ssl.ml", line 258, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "ssl.ml", line 266, characters 12-25:
+Warning 3: deprecated feature: String.create
+ocamlopt -a -thread              -cclib -lssl_stubs -cclib -lcrypto -cclib -lssl  \
+				 -o ssl.cmxa ssl.cmx
+make[4]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[3]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[3]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[4]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[4]: `libssl_threads_stubs.a' is up to date.
+ocamlopt -c -thread ssl_threads.ml
+ocamlopt -a -thread              -cclib -lssl_threads_stubs -cclib -lcrypto -cclib -lssl  \
+				 -o ssl_threads.cmxa ssl.cmx ssl_threads.cmx
+make[4]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[3]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+make -C src install
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind install  ssl META ssl.mli ssl_threads.mli ssl.cmi ssl_threads.cmi ssl.cma ssl_threads.cma ssl.cmxa ssl_threads.cmxa ssl.cmx ssl_threads.cmx libssl_stubs.a libssl_threads_stubs.a ssl.a ssl_threads.a dllssl_stubs.so dllssl_threads_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/ssl_threads.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/ssl.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/libssl_threads_stubs.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/libssl_stubs.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/ssl_threads.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/ssl.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/ssl_threads.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/ssl.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/ssl_threads.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/ssl.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/ssl_threads.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/ssl.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/ssl_threads.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/ssl.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ssl/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllssl_threads_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllssl_threads_stubs.so.owner
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllssl_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllssl_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+trunk/lib/stublibs is not mentioned in ld.conf
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ssl.0.4.7/src'
+Installing ssl.0.4.7.
+
+=-=-= Installing tyxml.3.0.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/tyxml.3.0.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/tyxml.3.0.0+opam.tar.gz
+--2014-05-09 15:49:02--  https://opam.ocaml.org/archives/tyxml.3.0.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 148315 (145K) [application/octet-stream]
+Saving to: 'tyxml.3.0.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 34%  249K 0s
+    50K .......... .......... .......... .......... .......... 69%  493K 0s
+   100K .......... .......... .......... .......... ....      100%  455K=0.4s
+
+2014-05-09 15:49:02 (361 KB/s) - 'tyxml.3.0.0+opam.tar.gz' saved [148315/148315]
+
+Building tyxml.3.0.0:
+  make
+  make install
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+File "setup.ml", line 247, characters 8-26:
+Warning 3: deprecated feature: String.set
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+W: Field 'pkg_camlp4' is not set: When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+E: Cannot find findlib package camlp4
+E: Cannot find findlib package camlp4.lib
+E: Failure("2 configuration errors")
+make: *** [setup.data] Error 1
+[ERROR] The compilation of tyxml.3.0.0 failed.
+Removing tyxml.3.0.0.
+  ocamlfind remove tyxml
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/tyxml
+
+=-=-= Installing uutf.0.9.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/uutf.0.9.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/uutf.0.9.3+opam.tar.gz
+--2014-05-09 15:49:10--  https://opam.ocaml.org/archives/uutf.0.9.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 38966 (38K) [application/octet-stream]
+Saving to: 'uutf.0.9.3+opam.tar.gz'
+
+     0K .......... .......... .......... ........             100%  374K=0.1s
+
+2014-05-09 15:49:10 (374 KB/s) - 'uutf.0.9.3+opam.tar.gz' saved [38966/38966]
+
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+ocamlfind ocamldep -modules src/uutf.mli > src/uutf.mli.depends
+ocamlfind ocamlc -c -bin-annot -I src -I test -o src/uutf.cmi src/uutf.mli
+ocamlfind ocamldep -modules src/uutf.ml > src/uutf.ml.depends
+ocamlfind ocamlopt -c -bin-annot -I src -I test -o src/uutf.cmx src/uutf.ml
++ ocamlfind ocamlopt -c -bin-annot -I src -I test -o src/uutf.cmx src/uutf.ml
+File "src/uutf.ml", line 22, characters 31-48:
+Warning 3: deprecated feature: String.unsafe_set
+File "src/uutf.ml", line 68, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "src/uutf.ml", line 483, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "src/uutf.ml", line 487, characters 25-38:
+Warning 3: deprecated feature: String.create
+File "src/uutf.ml", line 665, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "src/uutf.ml", line 668, characters 8-21:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlc -c -bin-annot -I src -I test -o src/uutf.cmo src/uutf.ml
++ ocamlfind ocamlc -c -bin-annot -I src -I test -o src/uutf.cmo src/uutf.ml
+File "src/uutf.ml", line 22, characters 31-48:
+Warning 3: deprecated feature: String.unsafe_set
+File "src/uutf.ml", line 68, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "src/uutf.ml", line 483, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "src/uutf.ml", line 487, characters 25-38:
+Warning 3: deprecated feature: String.create
+File "src/uutf.ml", line 665, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "src/uutf.ml", line 668, characters 8-21:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlc -a src/uutf.cmo -o src/uutf.cma
+ocamlfind ocamlopt -a src/uutf.cmx -o src/uutf.cmxa
+ocamlfind ocamlopt -shared src/uutf.cmx -o src/uutf.cmxs
+ocamlfind ocamldep -modules test/utftrip.ml > test/utftrip.ml.depends
+ocamlfind ocamlc -c -bin-annot -I test -I src -o test/utftrip.cmo test/utftrip.ml
++ ocamlfind ocamlc -c -bin-annot -I test -I src -o test/utftrip.cmo test/utftrip.ml
+File "test/utftrip.ml", line 36, characters 50-63:
+Warning 3: deprecated feature: String.create
+File "test/utftrip.ml", line 37, characters 19-32:
+Warning 3: deprecated feature: String.create
+File "test/utftrip.ml", line 90, characters 11-24:
+Warning 3: deprecated feature: String.create
+File "test/utftrip.ml", line 124, characters 11-24:
+Warning 3: deprecated feature: String.create
+File "test/utftrip.ml", line 149, characters 44-57:
+Warning 3: deprecated feature: String.create
+File "test/utftrip.ml", line 199, characters 54-67:
+Warning 3: deprecated feature: String.create
+File "test/utftrip.ml", line 201, characters 42-55:
+Warning 3: deprecated feature: String.create
+File "test/utftrip.ml", line 213, characters 32-45:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -c -bin-annot -I test -I src -o test/utftrip.cmx test/utftrip.ml
++ ocamlfind ocamlopt -c -bin-annot -I test -I src -o test/utftrip.cmx test/utftrip.ml
+File "test/utftrip.ml", line 36, characters 50-63:
+Warning 3: deprecated feature: String.create
+File "test/utftrip.ml", line 37, characters 19-32:
+Warning 3: deprecated feature: String.create
+File "test/utftrip.ml", line 90, characters 11-24:
+Warning 3: deprecated feature: String.create
+File "test/utftrip.ml", line 124, characters 11-24:
+Warning 3: deprecated feature: String.create
+File "test/utftrip.ml", line 149, characters 44-57:
+Warning 3: deprecated feature: String.create
+File "test/utftrip.ml", line 199, characters 54-67:
+Warning 3: deprecated feature: String.create
+File "test/utftrip.ml", line 201, characters 42-55:
+Warning 3: deprecated feature: String.create
+File "test/utftrip.ml", line 213, characters 32-45:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -linkpkg unix.cmxa src/uutf.cmx test/utftrip.cmx -o test/utftrip.native
+Installing uutf.0.9.3.
+[WARNING] opam-version is an unknown field in /home/opam/.opam/4.02.0dev+trunk/build/uutf.0.9.3/uutf.install: is your OPAM up-to-date ?
+
+=-=-= Installing xmlm.1.2.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+--2014-05-09 15:49:19--  https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 51637 (50K) [application/octet-stream]
+Saving to: 'xmlm.1.2.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 99%  246K 0s
+    50K                                                       100%  814G=0.2s
+
+2014-05-09 15:49:20 (248 KB/s) - 'xmlm.1.2.0+opam.tar.gz' saved [51637/51637]
+
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+ocamlfind ocamldep -modules src/xmlm.mli > src/xmlm.mli.depends
+ocamlfind ocamlc -c -I src -I test -o src/xmlm.cmi src/xmlm.mli
+ocamlfind ocamldep -modules src/xmlm.ml > src/xmlm.ml.depends
+ocamlfind ocamlopt -c -annot -bin-annot -I src -I test -o src/xmlm.cmx src/xmlm.ml
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/xmlm.cmo src/xmlm.ml
+ocamlfind ocamlc -a src/xmlm.cmo -o src/xmlm.cma
+ocamlfind ocamlopt -a src/xmlm.cmx -o src/xmlm.cmxa
+ocamlfind ocamlopt -shared src/xmlm.cmx -o src/xmlm.cmxs
+ocamlfind ocamldep -modules test/xmltrip.ml > test/xmltrip.ml.depends
+ocamlfind ocamldep -modules test/xhtml.ml > test/xhtml.ml.depends
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xhtml.cmo test/xhtml.ml
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xmltrip.cmo test/xmltrip.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xhtml.cmx test/xhtml.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xmltrip.cmx test/xmltrip.ml
+ocamlfind ocamlopt -linkpkg src/xmlm.cmx test/xhtml.cmx test/xmltrip.cmx -o test/xmltrip.native
+Installing xmlm.1.2.0.
+[WARNING] opam-version is an unknown field in /home/opam/.opam/4.02.0dev+trunk/build/xmlm.1.2.0/xmlm.install: is your OPAM up-to-date ?
+
+=-=-= Installing jsonm.0.9.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/jsonm.0.9.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/jsonm.0.9.1+opam.tar.gz
+--2014-05-09 15:49:29--  https://opam.ocaml.org/archives/jsonm.0.9.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 78846 (77K) [application/octet-stream]
+Saving to: 'jsonm.0.9.1+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 64%  242K 0s
+    50K .......... .......... ......                          100% 23.9M=0.2s
+
+2014-05-09 15:49:30 (370 KB/s) - 'jsonm.0.9.1+opam.tar.gz' saved [78846/78846]
+
+Building jsonm.0.9.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+File "/Users/dbuenzli/.odb/install-oasis/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ jsonm
+Package version: ..................................... 0.9.1
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+trunk
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_uutf: ............................................ /home/opam/.opam/4.02.0dev+trunk/lib/uutf
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+
+File "/Users/dbuenzli/.odb/install-oasis/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package uutf -modules src/jsonm.mli > src/jsonm.mli.depends
+ocamlfind ocamlc -c -g -package uutf -I src -o src/jsonm.cmi src/jsonm.mli
+ocamlfind ocamldep -package uutf -modules src/jsonm.ml > src/jsonm.ml.depends
+ocamlfind ocamlc -c -g -package uutf -I src -o src/jsonm.cmo src/jsonm.ml
++ ocamlfind ocamlc -c -g -package uutf -I src -o src/jsonm.cmo src/jsonm.ml
+File "src/jsonm.ml", line 17, characters 31-48:
+Warning 3: deprecated feature: String.unsafe_set
+File "src/jsonm.ml", line 589, characters 18-31:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlc -a src/jsonm.cmo -o src/jsonm.cma
+ocamlfind ocamlopt -c -g -package uutf -I src -o src/jsonm.cmx src/jsonm.ml
++ ocamlfind ocamlopt -c -g -package uutf -I src -o src/jsonm.cmx src/jsonm.ml
+File "src/jsonm.ml", line 17, characters 31-48:
+Warning 3: deprecated feature: String.unsafe_set
+File "src/jsonm.ml", line 589, characters 18-31:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -a src/jsonm.cmx -o src/jsonm.cmxa
+ocamlfind ocamlopt -shared src/jsonm.cmx -o src/jsonm.cmxs
+ocamlfind ocamldep -package uutf -package unix -modules test/jsontrip.ml > test/jsontrip.ml.depends
+ocamlfind ocamlc -c -g -I src -package uutf -package unix -I test -I src -o test/jsontrip.cmo test/jsontrip.ml
++ ocamlfind ocamlc -c -g -I src -package uutf -package unix -I test -I src -o test/jsontrip.cmo test/jsontrip.ml
+File "test/jsontrip.ml", line 36, characters 50-63:
+Warning 3: deprecated feature: String.create
+File "test/jsontrip.ml", line 37, characters 19-32:
+Warning 3: deprecated feature: String.create
+File "test/jsontrip.ml", line 95, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "test/jsontrip.ml", line 133, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "test/jsontrip.ml", line 234, characters 44-57:
+Warning 3: deprecated feature: String.create
+File "test/jsontrip.ml", line 282, characters 47-60:
+Warning 3: deprecated feature: String.create
+File "test/jsontrip.ml", line 283, characters 45-58:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -c -g -I src -package uutf -package unix -I test -I src -o test/jsontrip.cmx test/jsontrip.ml
++ ocamlfind ocamlopt -c -g -I src -package uutf -package unix -I test -I src -o test/jsontrip.cmx test/jsontrip.ml
+File "test/jsontrip.ml", line 36, characters 50-63:
+Warning 3: deprecated feature: String.create
+File "test/jsontrip.ml", line 37, characters 19-32:
+Warning 3: deprecated feature: String.create
+File "test/jsontrip.ml", line 95, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "test/jsontrip.ml", line 133, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "test/jsontrip.ml", line 234, characters 44-57:
+Warning 3: deprecated feature: String.create
+File "test/jsontrip.ml", line 282, characters 47-60:
+Warning 3: deprecated feature: String.create
+File "test/jsontrip.ml", line 283, characters 45-58:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -linkpkg -g -linkpkg -package uutf -package unix src/jsonm.cmxa test/jsontrip.cmx -o test/jsontrip.native
+ocamlfind ocamldep -package uutf -package unix -modules test/ocamltweets.ml > test/ocamltweets.ml.depends
+ocamlfind ocamlc -c -g -I src -package uutf -package unix -I test -I src -o test/ocamltweets.cmo test/ocamltweets.ml
+ocamlfind ocamlopt -c -g -I src -package uutf -package unix -I test -I src -o test/ocamltweets.cmx test/ocamltweets.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg -package uutf -package unix src/jsonm.cmxa test/ocamltweets.cmx -o test/ocamltweets.native
+ocamlfind ocamldep -package uutf -package unix -modules test/test.ml > test/test.ml.depends
+ocamlfind ocamlc -c -g -I src -package uutf -package unix -I test -I src -o test/test.cmo test/test.ml
+ocamlfind ocamlopt -c -g -I src -package uutf -package unix -I test -I src -o test/test.cmx test/test.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg -package uutf src/jsonm.cmxa test/test.cmx -o test/test.native
+ocamlfind ocamldep -package uutf -package unix -modules test/jtree.ml > test/jtree.ml.depends
+ocamlfind ocamlc -c -g -I src -package uutf -package unix -I test -I src -o test/jtree.cmo test/jtree.ml
+ocamlfind ocamlopt -c -g -I src -package uutf -package unix -I test -I src -o test/jtree.cmx test/jtree.ml
+ocamlfind ocamlopt -linkpkg -g -linkpkg -package uutf src/jsonm.cmxa test/jtree.cmx -o test/jtree.native
+ocamlfind ocamldep -package uutf -package unix -modules test/examples.ml > test/examples.ml.depends
+ocamlfind ocamlc -c -g -I src -package uutf -package unix -I test -I src -o test/examples.cmo test/examples.ml
++ ocamlfind ocamlc -c -g -I src -package uutf -package unix -I test -I src -o test/examples.cmo test/examples.ml
+File "test/examples.ml", line 48, characters 11-24:
+Warning 3: deprecated feature: String.create
+File "test/examples.ml", line 49, characters 11-24:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -c -g -I src -package uutf -package unix -I test -I src -o test/examples.cmx test/examples.ml
++ ocamlfind ocamlopt -c -g -I src -package uutf -package unix -I test -I src -o test/examples.cmx test/examples.ml
+File "test/examples.ml", line 48, characters 11-24:
+Warning 3: deprecated feature: String.create
+File "test/examples.ml", line 49, characters 11-24:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -linkpkg -g -linkpkg -package uutf -package unix src/jsonm.cmxa test/examples.cmx -o test/examples.native
+File "/Users/dbuenzli/.odb/install-oasis/oasis-0.3.0/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/jsonm/jsonm.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/jsonm/jsonm.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/jsonm/jsonm.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/jsonm/jsonm.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/jsonm/jsonm.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/jsonm/jsonm.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/jsonm/jsonm.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/jsonm/META
+Installing jsonm.0.9.1.
+
+=-=-= Installing lwt.2.4.5 =-=-=
+lwt.2.4.5  Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+--2014-05-09 15:49:41--  https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+Resolving github.com (github.com)... 192.30.252.130
+Connecting to github.com (github.com)|192.30.252.130|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/ocsigen/lwt/tar.gz/2.4.5 [following]
+--2014-05-09 15:49:42--  https://codeload.github.com/ocsigen/lwt/tar.gz/2.4.5
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.147
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 298612 (292K) [application/x-gzip]
+Saving to: 'lwt-2.4.5.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 17%  282K 1s
+    50K .......... .......... .......... .......... .......... 34%  387K 1s
+   100K .......... .......... .......... .......... .......... 51% 1003K 0s
+   150K .......... .......... .......... .......... .......... 68%  569K 0s
+   200K .......... .......... .......... .......... .......... 85% 1.24M 0s
+   250K .......... .......... .......... .......... .         100%  887K=0.5s
+
+2014-05-09 15:49:43 (550 KB/s) - 'lwt-2.4.5.tar.gz' saved [298612/298612]
+
+Building lwt.2.4.5:
+  ./configure --disable-libev --enable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-text
+  make build
+  make install
+File "setup.ml", line 254, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Field 'pkg_camlp4' is not set: When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_quotations_o' is not set: When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+E: Cannot find findlib package camlp4
+E: Cannot find findlib package camlp4.extend
+E: Cannot find findlib package camlp4.quotations.o
+E: Failure("3 configuration errors")
+[ERROR] The compilation of lwt.2.4.5 failed.
+Removing lwt.2.4.5.
+  ocamlfind remove lwt
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/lwt
+
+=-=-= Installing pcre-ocaml.7.0.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/pcre-ocaml.7.0.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/pcre-ocaml.7.0.4+opam.tar.gz
+--2014-05-09 15:49:51--  https://opam.ocaml.org/archives/pcre-ocaml.7.0.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 86459 (84K) [application/octet-stream]
+Saving to: 'pcre-ocaml.7.0.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 59%  249K 0s
+    50K .......... .......... .......... ....                 100%  348K=0.3s
+
+2014-05-09 15:49:51 (282 KB/s) - 'pcre-ocaml.7.0.4+opam.tar.gz' saved [86459/86459]
+
+Building pcre-ocaml.7.0.4:
+  make
+  make install
+ocaml setup.ml -configure 
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ pcre-ocaml
+Package version: ..................................... 7.0.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+with_pcre_config: .................................... pcre-config
+Strict compile-time checks: .......................... true
+Build examples: ...................................... true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+
+ocaml setup.ml -build 
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt '' -c lib/pcre_stubs.c
+mv pcre_stubs.o lib/pcre_stubs.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlmklib -o lib/pcre_stubs -lpcre lib/pcre_stubs.o
+ocamlfind ocamldep -modules lib/pcre.mli > lib/pcre.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -w Aer-44 -I lib -o lib/pcre.cmi lib/pcre.mli
+ocamlfind ocamldep -modules lib/pcre.ml > lib/pcre.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -w Aer-44 -I lib -o lib/pcre.cmo lib/pcre.ml
++ ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -w Aer-44 -I lib -o lib/pcre.cmo lib/pcre.ml
+File "lib/pcre.ml", line 273, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 279, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 285, characters 6-23:
+Warning 3: deprecated feature: String.unsafe_set
+File "lib/pcre.ml", line 286, characters 6-23:
+Warning 3: deprecated feature: String.unsafe_set
+File "lib/pcre.ml", line 287, characters 11-28:
+Warning 3: deprecated feature: String.unsafe_set
+File "lib/pcre.ml", line 573, characters 16-29:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 622, characters 16-29:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 669, characters 16-29:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 724, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 745, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 766, characters 14-27:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlc -a -dllib -lpcre_stubs -cclib -lpcre_stubs -cclib -lpcre -cclib -lpcre lib/pcre.cmo -o lib/pcre.cma
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -w Aer-44 -I lib -o lib/pcre.cmx lib/pcre.ml
++ ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -w Aer-44 -I lib -o lib/pcre.cmx lib/pcre.ml
+File "lib/pcre.ml", line 273, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 279, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 285, characters 6-23:
+Warning 3: deprecated feature: String.unsafe_set
+File "lib/pcre.ml", line 286, characters 6-23:
+Warning 3: deprecated feature: String.unsafe_set
+File "lib/pcre.ml", line 287, characters 11-28:
+Warning 3: deprecated feature: String.unsafe_set
+File "lib/pcre.ml", line 573, characters 16-29:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 622, characters 16-29:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 669, characters 16-29:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 724, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 745, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 766, characters 14-27:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -a -cclib -lpcre_stubs -cclib -lpcre -cclib -lpcre lib/pcre.cmx -o lib/pcre.cmxa
+ocamlfind ocamlopt -shared -cclib -lpcre_stubs -I lib -cclib -lpcre lib/pcre.cmxa lib/pcre.cmx -o lib/pcre.cmxs
+ocamlfind ocamldep -modules examples/cloc/cloc.ml > examples/cloc/cloc.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/cloc -I lib -o examples/cloc/cloc.cmo examples/cloc/cloc.ml
++ ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/cloc -I lib -o examples/cloc/cloc.cmo examples/cloc/cloc.ml
+File "examples/cloc/cloc.ml", line 5, characters 15-28:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/cloc -I lib -o examples/cloc/cloc.cmx examples/cloc/cloc.ml
++ ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/cloc -I lib -o examples/cloc/cloc.cmx examples/cloc/cloc.ml
+File "examples/cloc/cloc.ml", line 5, characters 15-28:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg lib/pcre.cmxa examples/cloc/cloc.cmx -o examples/cloc/cloc.native
+ocamlfind ocamldep -modules examples/count_hash/count_hash.ml > examples/count_hash/count_hash.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/count_hash -I lib -o examples/count_hash/count_hash.cmo examples/count_hash/count_hash.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/count_hash -I lib -o examples/count_hash/count_hash.cmx examples/count_hash/count_hash.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg lib/pcre.cmxa examples/count_hash/count_hash.cmx -o examples/count_hash/count_hash.native
+ocamlfind ocamldep -modules examples/pcregrep/pcregrep.ml > examples/pcregrep/pcregrep.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/pcregrep -I lib -o examples/pcregrep/pcregrep.cmo examples/pcregrep/pcregrep.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/pcregrep -I lib -o examples/pcregrep/pcregrep.cmx examples/pcregrep/pcregrep.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg lib/pcre.cmxa examples/pcregrep/pcregrep.cmx -o examples/pcregrep/pcregrep.native
+ocamlfind ocamldep -modules examples/subst/subst.ml > examples/subst/subst.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/subst -I lib -o examples/subst/subst.cmo examples/subst/subst.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/subst -I lib -o examples/subst/subst.cmx examples/subst/subst.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg lib/pcre.cmxa examples/subst/subst.cmx -o examples/subst/subst.native
+ocaml setup.ml -install 
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/pcre.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/libpcre_stubs.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/pcre.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/pcre.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/pcre.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/pcre.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/pcre.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/pcre.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllpcre_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllpcre_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+trunk/lib/stublibs is not mentioned in ld.conf
+Installing pcre-ocaml.7.0.4.
+
+=-=-= Installing ocamlnet.3.7.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+--2014-05-09 15:50:03--  https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3424904 (3.3M) [application/octet-stream]
+Saving to: 'ocamlnet.3.7.3+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  1%  250K 13s
+    50K .......... .......... .......... .......... ..........  2%  496K 10s
+   100K .......... .......... .......... .......... ..........  4%  501K 9s
+   150K .......... .......... .......... .......... ..........  5%  516K 8s
+   200K .......... .......... .......... .......... ..........  7% 9.56M 6s
+   250K .......... .......... .......... .......... ..........  8%  650K 6s
+   300K .......... .......... .......... .......... .......... 10% 2.10M 5s
+   350K .......... .......... .......... .......... .......... 11%  653K 5s
+   400K .......... .......... .......... .......... .......... 13% 2.34M 5s
+   450K .......... .......... .......... .......... .......... 14% 6.98M 4s
+   500K .......... .......... .......... .......... .......... 16%  548K 4s
+   550K .......... .......... .......... .......... .......... 17% 7.80M 4s
+   600K .......... .......... .......... .......... .......... 19% 9.39M 3s
+   650K .......... .......... .......... .......... .......... 20%  558K 3s
+   700K .......... .......... .......... .......... .......... 22% 7.25M 3s
+   750K .......... .......... .......... .......... .......... 23%  726K 3s
+   800K .......... .......... .......... .......... .......... 25% 1.66M 3s
+   850K .......... .......... .......... .......... .......... 26% 10.7M 3s
+   900K .......... .......... .......... .......... .......... 28%  755K 3s
+   950K .......... .......... .......... .......... .......... 29% 1.69M 3s
+  1000K .......... .......... .......... .......... .......... 31% 1.48M 2s
+  1050K .......... .......... .......... .......... .......... 32% 11.8M 2s
+  1100K .......... .......... .......... .......... .......... 34%  801K 2s
+  1150K .......... .......... .......... .......... .......... 35% 1.37M 2s
+  1200K .......... .......... .......... .......... .......... 37% 1.31M 2s
+  1250K .......... .......... .......... .......... .......... 38% 1.73M 2s
+  1300K .......... .......... .......... .......... .......... 40%  728K 2s
+  1350K .......... .......... .......... .......... .......... 41% 11.3M 2s
+  1400K .......... .......... .......... .......... .......... 43% 2.47M 2s
+  1450K .......... .......... .......... .......... .......... 44% 1.29M 2s
+  1500K .......... .......... .......... .......... .......... 46%  847K 2s
+  1550K .......... .......... .......... .......... .......... 47% 6.09M 2s
+  1600K .......... .......... .......... .......... .......... 49% 1.53M 2s
+  1650K .......... .......... .......... .......... .......... 50%  842K 2s
+  1700K .......... .......... .......... .......... .......... 52% 7.78M 1s
+  1750K .......... .......... .......... .......... .......... 53% 11.4M 1s
+  1800K .......... .......... .......... .......... .......... 55% 1.57M 1s
+  1850K .......... .......... .......... .......... .......... 56%  828K 1s
+  1900K .......... .......... .......... .......... .......... 58% 9.10M 1s
+  1950K .......... .......... .......... .......... .......... 59% 1.50M 1s
+  2000K .......... .......... .......... .......... .......... 61% 1.31M 1s
+  2050K .......... .......... .......... .......... .......... 62% 1.80M 1s
+  2100K .......... .......... .......... .......... .......... 64% 6.25M 1s
+  2150K .......... .......... .......... .......... .......... 65% 1.78M 1s
+  2200K .......... .......... .......... .......... .......... 67% 1.31M 1s
+  2250K .......... .......... .......... .......... .......... 68% 1.84M 1s
+  2300K .......... .......... .......... .......... .......... 70% 5.13M 1s
+  2350K .......... .......... .......... .......... .......... 71% 1.70M 1s
+  2400K .......... .......... .......... .......... .......... 73% 1.34M 1s
+  2450K .......... .......... .......... .......... .......... 74% 1.54M 1s
+  2500K .......... .......... .......... .......... .......... 76% 11.7M 1s
+  2550K .......... .......... .......... .......... .......... 77% 1.83M 1s
+  2600K .......... .......... .......... .......... .......... 79% 1.31M 1s
+  2650K .......... .......... .......... .......... .......... 80% 2.31M 0s
+  2700K .......... .......... .......... .......... .......... 82% 3.66M 0s
+  2750K .......... .......... .......... .......... .......... 83% 1.67M 0s
+  2800K .......... .......... .......... .......... .......... 85% 1.31M 0s
+  2850K .......... .......... .......... .......... .......... 86% 2.28M 0s
+  2900K .......... .......... .......... .......... .......... 88% 1.34M 0s
+  2950K .......... .......... .......... .......... .......... 89% 11.6M 0s
+  3000K .......... .......... .......... .......... .......... 91% 1.28M 0s
+  3050K .......... .......... .......... .......... .......... 92% 2.33M 0s
+  3100K .......... .......... .......... .......... .......... 94% 11.7M 0s
+  3150K .......... .......... .......... .......... .......... 95% 1.34M 0s
+  3200K .......... .......... .......... .......... .......... 97% 11.7M 0s
+  3250K .......... .......... .......... .......... .......... 98% 1.28M 0s
+  3300K .......... .......... .......... .......... ....      100% 2.24M=2.4s
+
+2014-05-09 15:50:05 (1.36 MB/s) - 'ocamlnet.3.7.3+opam.tar.gz' saved [3424904/3424904]
+
+Applying fix-ocaml-4.02.patch.
+patching file src/netstring/netencoding.mli
+Building ocamlnet.3.7.3:
+  ./configure -bindir /home/opam/.opam/4.02.0dev+trunk/bin -enable-pcre -disable-gtk2 -enable-ssl -disable-zip -enable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Welcome to Ocamlnet version 3.7.3
+Checking operating system... Linux
+Checking for findlib... found
+Checking multi-threading support... posix (ok)
+Checking word size... 64 bit
+Checking endianess... little
+Checking for GPROF... found
+Checking for PCRE... found
+Checking for win32... no
+Checking whether Ocaml has Printexc.register_printer... found
+Checking for POSIX pthread... found
+Checking whether Ocaml has fancy page tables... found
+Checking on new implementation of caml_modify... found
+Checking whether new caml_modify can be overridden... found
+Checking whether out-of-heap values are supported and mutable... yes
+Checking for POSIX shared memory... found
+Checking for POSIX semaphores (anonymous)... found
+Checking for POSIX semaphores (named)... found
+Checking for POSIX spawn... found
+Checking for POSIX fadvise... found
+Checking for POSIX fallocate... found
+Checking for POSIX memalign... found
+Checking for syslog... found
+Checking for POSIX functions like openat... found
+Checking for fchdir... found
+Checking for fdopendir... found
+Checking for realpath... found
+Checking for grantpt (System V style PTYs)... found
+Checking for posix_openpt (System V style PTYs)... found
+Checking for initgroups...found
+Checking for POSIX clocks...found
+Checking for POSIX timers...found
+Checking for eventfd (Linux)...found
+Checking for timerfd (Linux)...found
+Checking for epoll (Linux)...found
+Checking for compare_and_swap (GCC)...found
+Checking for GPROF... found
+Checking for O_SHARE_DELETE... yes
+Checking for O_CLOEXEC... yes
+Checking for getpeereid... not found
+Checking for getpeerucred... not found
+Checking whether netcamlbox and netmulticore are supported... yes
+Checking for ssl... found
+Checking for cryptokit... found
+Preprocessor for ocamlrpcgen: cpp
+
+Effective options:
+    -enable-pcre
+    -disable-full-pcre
+    -disable-gtk
+    -disable-gtk2
+    -disable-tcl
+    -enable-ssl
+    -disable-zip
+    -enable-crypto
+    -disable-apache
+    -with-nethttpd
+    -without-rpc-auth-dh
+    -bindir /home/opam/.opam/4.02.0dev+trunk/bin
+    -datadir /home/opam/.opam/4.02.0dev+trunk/lib/netstring
+    -cpp cpp
+
+Writing Makefile.conf
+
+Please check Makefile.conf.
+
+You can now compile Ocamlnet by invoking
+   make all
+for the bytecode compiler, and optionally by invoking
+   make opt
+for the native-code compiler (if supported on your architecture).
+Finally, a
+   make install
+will install the package(s).
+for pkg in netstring-pcre netsys netshm netstring equeue shell netgssapi rpc-generator rpc rpc-auth-local pop smtp netclient netcgi2 netplex netcgi2-plex netcamlbox netmulticore nethttpd equeue-ssl rpc-ssl netmech-scram nethttpd-for-netcgi2; do \
+		( cd src/$pkg && make -f Makefile.pre generate ) || exit; \
+		( cd src/$pkg && make -f Makefile.pre depend ) || exit; \
+		( cd src/$pkg && make all ) || exit; \
+	done
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netstring-pcre'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netstring-pcre'
+camlp4  pa_o.cmo pa_op.cmo pr_o.cmo \
+	    -parser Camlp4MacroParser -D ENABLE_STR_EXTERNALS -D HAVE_PCRE \
+	    -intf netstring_pcre.mlip > netstring_pcre.mli || \
+	      rm -f netstring_pcre.mli
+camlp4  pa_o.cmo pa_op.cmo pr_o.cmo \
+	    -parser Camlp4MacroParser -D ENABLE_STR_EXTERNALS -D HAVE_PCRE \
+	    -impl netstring_pcre.mlp > netstring_pcre.ml || \
+	      rm -f netstring_pcre.ml
+sed -e 's/@VERSION@/3.7.3/' \
+	    -e 's/@AUTHDHREQS@//' \
+	    -e 's/@PREFERRED_CGI_PKG@//' \
+	    -e 's/@REGEXP_PROVIDER@/str/' \
+	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+ 	    -e 's/@ZIP_PROVIDER@//' \
+		META.in >META
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netstring-pcre'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netstring-pcre'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netstring-pcre'
+ocamlfind ocamldep   *.ml *.mli >depend || { rm -f depend; exit 1; }
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netstring-pcre'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netstring-pcre'
+ocamlfind ocamlc -g   -package "unix pcre" -c  netstring_pcre.mli
+ocamlfind ocamlc -g   -package "unix pcre"  -c  netstring_pcre.ml
+if [ "X" = "X" ]; then \
+		ocamlfind ocamlc -g   -package "unix pcre"  -a -o netstring-pcre.cma  netstring_pcre.cmo; \
+	else \
+		../../tools/mkstublib -o netstring-pcre netstring_pcre.cmo  ; \
+	fi
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netstring-pcre'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+sed -e 's/@VERSION@/3.7.3/' \
+	    -e 's/@AUTHDHREQS@//' \
+	    -e 's/@PREFERRED_CGI_PKG@//' \
+	    -e 's/@REGEXP_PROVIDER@/str/' \
+	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+ 	    -e 's/@ZIP_PROVIDER@//' \
+		META.in >META
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+ocamlfind ocamldep -package "camlp4.macro" -syntax camlp4o  *.ml *.mli >depend || { rm -f depend; exit 1; }
+make[1]: *** [depend] Error 1
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+make: *** [all] Error 2
+[ERROR] The compilation of ocamlnet.3.7.3 failed.
+Removing ocamlnet.3.7.3.
+  ocamlfind remove equeue
+  ocamlfind remove equeue-ssl
+  ocamlfind remove netcamlbox
+  ocamlfind remove netcgi2
+  ocamlfind remove netcgi2-plex
+  ocamlfind remove netclient
+  ocamlfind remove netgssapi
+  ocamlfind remove nethttpd
+  ocamlfind remove nethttpd-for-netcgi2
+  ocamlfind remove netmech-scram
+  ocamlfind remove netmulticore
+  ocamlfind remove netplex
+  ocamlfind remove netshm
+  ocamlfind remove netstring
+  ocamlfind remove netstring-pcre
+  ocamlfind remove netsys
+  ocamlfind remove pop
+  ocamlfind remove rpc
+  ocamlfind remove rpc-auth-local
+  ocamlfind remove rpc-generator
+  ocamlfind remove rpc-ssl
+  ocamlfind remove shell
+  ocamlfind remove smtp
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/equeue
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/equeue-ssl
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netcamlbox
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netcgi2
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netcgi2-plex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netclient
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netgssapi
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/nethttpd
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/nethttpd-for-netcgi2
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netmech-scram
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netmulticore
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netplex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netshm
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netstring
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netstring-pcre
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netsys
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/pop
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/rpc
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/rpc-auth-local
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/rpc-generator
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/rpc-ssl
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/shell
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/smtp
+
+[ERROR] Due to some errors while processing { lwt.2.4.5, ocamlnet.3.7.3, tyxml.3.0.0 }, the following actions will NOT proceed:
+ - install ocsigenserver.2.4.0
+ - install libres3.0.1
+
+===== ERROR while installing lwt.2.4.5 =====
+# opam-version         1.1.1
+# os                   linux
+# command              ./configure --disable-libev --enable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-text
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5
+# compiler             4.02.0dev+trunk
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-3232-b76d46.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-3232-b76d46.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/lwt.2.4.5/lwt-3232-b76d46.err
+### stderr ###
+# ...[truncated]
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# W: Failure("When looking for findlib package camlp4.quotations.o, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist")
+# E: Cannot find findlib package camlp4
+# E: Cannot find findlib package camlp4.extend
+# E: Cannot find findlib package camlp4.quotations.o
+# E: Failure("3 configuration errors")
+
+
+===== ERROR while installing ocamlnet.3.7.3 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/ocamlnet-3582-03b1a4.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/ocamlnet-3582-03b1a4.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/ocamlnet-3582-03b1a4.err
+### stdout ###
+# ...[truncated]
+# 	    -e 's/@PREFERRED_CGI_PKG@//' \
+# 	    -e 's/@REGEXP_PROVIDER@/str/' \
+# 	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+#  	    -e 's/@ZIP_PROVIDER@//' \
+# 		META.in >META
+# make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+# make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+# ocamlfind ocamldep -package "camlp4.macro" -syntax camlp4o  *.ml *.mli >depend || { rm -f depend; exit 1; }
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+### stderr ###
+# Welcome to Ocamlnet version 3.7.3
+# make[1]: *** [depend] Error 1
+# make: *** [all] Error 2
+
+
+===== ERROR while installing tyxml.3.0.0 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/tyxml.3.0.0
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/tyxml.3.0.0/tyxml-2415-c743ac.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/tyxml.3.0.0/tyxml-2415-c743ac.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/tyxml.3.0.0/tyxml-2415-c743ac.err
+### stdout ###
+# ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+# rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+# ./setup.exe -configure 
+### stderr ###
+# File "setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated feature: String.set
+# W: Field 'pkg_camlp4' is not set: When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# E: Cannot find findlib package camlp4
+# E: Cannot find findlib package camlp4.lib
+# E: Failure("2 configuration errors")
+# make: *** [setup.data] Error 1
+
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+trunk/backup/state-20140409154721.export"
+'opam install libres3' failed.
