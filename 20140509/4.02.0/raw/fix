@@ -1,0 +1,52 @@
+++ opam install fix -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install fix
+Ubuntu srcexts:
+The following actions will be performed:
+ - install fix.20130611
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing fix.20130611 =-=-=
+default    Downloading https://opam.ocaml.org/archives/fix.20130611+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/fix.20130611+opam.tar.gz
+--2014-05-09 13:26:26--  https://opam.ocaml.org/archives/fix.20130611+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14110 (14K) [application/octet-stream]
+Saving to: 'fix.20130611+opam.tar.gz'
+
+     0K .......... ...                                        100%  101M=0s
+
+2014-05-09 13:26:27 (101 MB/s) - 'fix.20130611+opam.tar.gz' saved [14110/14110]
+
+Building fix.20130611:
+  make
+  make install
+ocamlbuild -use-ocamlfind -cflags "-g" -lflags "-g" -classic-display Fix.cma Fix.cmxa
+ocamlfind ocamldep -modules Fix.mli > Fix.mli.depends
+ocamlfind ocamlc -c -g -o Fix.cmi Fix.mli
+ocamlfind ocamldep -modules Fix.ml > Fix.ml.depends
+ocamlfind ocamlc -c -g -o Fix.cmo Fix.ml
+ocamlfind ocamlc -a -g Fix.cmo -o Fix.cma
+ocamlfind ocamlopt -c -g -o Fix.cmx Fix.ml
+ocamlfind ocamlopt -a -g Fix.cmx -o Fix.cmxa
+ocamlbuild -use-ocamlfind -cflags "-g" -lflags "-g" -classic-display Fix.cma Fix.cmxa
+ocamlfind install fix META \
+	  _build/Fix.cma _build/Fix.cmxa \
+	  _build/Fix.a \
+	  _build/Fix.cmx _build/Fix.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/fix/Fix.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/fix/Fix.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/fix/Fix.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/fix/Fix.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/fix/Fix.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/fix/META
+Installing fix.20130611.
