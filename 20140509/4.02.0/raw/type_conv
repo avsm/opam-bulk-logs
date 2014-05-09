@@ -1,0 +1,35 @@
+++ opam install type_conv -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install type_conv
+The following actions will be performed:
+ - install camlp4.4.02.0 [required by type_conv]
+ - install type_conv.109.60.01
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing camlp4.4.02.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/camlp4.4.02.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/camlp4.4.02.0+opam.tar.gz
+--2014-05-09 20:44:20--  https://opam.ocaml.org/archives/camlp4.4.02.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2014-05-09 20:44:21 ERROR 404: Not Found.
+
+
+[ERROR] Due to some errors while processing camlp4.4.02.0, the following actions will NOT proceed:
+ - install type_conv.109.60.01
+
+===== ERROR while installing camlp4.4.02.0 =====
+Could not get the source for camlp4.4.02.0:
+# opam-version    1.1.1
+# os              linux
+Cannot download https://opam.ocaml.org/archives/camlp4.4.02.0+opam.tar.gz, please check your connection settings.
+'opam install type_conv' failed.
