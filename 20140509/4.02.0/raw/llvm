@@ -1,0 +1,645 @@
+++ opam install llvm -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install llvm
+The following actions will be performed:
+ - install llvm.3.4
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing llvm.3.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/llvm.3.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/llvm.3.4+opam.tar.gz
+--2014-05-09 16:02:23--  https://opam.ocaml.org/archives/llvm.3.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15922931 (15M) [application/octet-stream]
+Saving to: 'llvm.3.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  0%  244K 64s
+    50K .......... .......... .......... .......... ..........  0%  483K 48s
+   100K .......... .......... .......... .......... ..........  0%  488K 42s
+   150K .......... .......... .......... .......... ..........  1% 11.3M 32s
+   200K .......... .......... .......... .......... ..........  1%  497K 32s
+   250K .......... .......... .......... .......... ..........  1% 11.2M 26s
+   300K .......... .......... .......... .......... ..........  2%  508K 27s
+   350K .......... .......... .......... .......... ..........  2% 9.14M 24s
+   400K .......... .......... .......... .......... ..........  2%  541K 24s
+   450K .......... .......... .......... .......... ..........  3% 4.91M 22s
+   500K .......... .......... .......... .......... ..........  3% 11.7M 20s
+   550K .......... .......... .......... .......... ..........  3%  525K 21s
+   600K .......... .......... .......... .......... ..........  4% 6.87M 19s
+   650K .......... .......... .......... .......... ..........  4% 11.7M 18s
+   700K .......... .......... .......... .......... ..........  4%  517K 18s
+   750K .......... .......... .......... .......... ..........  5% 8.10M 17s
+   800K .......... .......... .......... .......... ..........  5%  595K 18s
+   850K .......... .......... .......... .......... ..........  5% 3.42M 17s
+   900K .......... .......... .......... .......... ..........  6% 6.67M 16s
+   950K .......... .......... .......... .......... ..........  6%  608K 16s
+  1000K .......... .......... .......... .......... ..........  6% 2.85M 16s
+  1050K .......... .......... .......... .......... ..........  7% 11.6M 15s
+  1100K .......... .......... .......... .......... ..........  7%  606K 15s
+  1150K .......... .......... .......... .......... ..........  7% 2.87M 15s
+  1200K .......... .......... .......... .......... ..........  8%  596K 15s
+  1250K .......... .......... .......... .......... ..........  8% 4.59M 15s
+  1300K .......... .......... .......... .......... ..........  8% 11.6M 14s
+  1350K .......... .......... .......... .......... ..........  9%  581K 14s
+  1400K .......... .......... .......... .......... ..........  9% 3.60M 14s
+  1450K .......... .......... .......... .......... ..........  9% 11.8M 14s
+  1500K .......... .......... .......... .......... ..........  9% 6.36M 13s
+  1550K .......... .......... .......... .......... .......... 10%  541K 14s
+  1600K .......... .......... .......... .......... .......... 10% 7.89M 13s
+  1650K .......... .......... .......... .......... .......... 10% 1.22M 13s
+  1700K .......... .......... .......... .......... .......... 11%  842K 13s
+  1750K .......... .......... .......... .......... .......... 11% 1.20M 13s
+  1800K .......... .......... .......... .......... .......... 11% 11.9M 13s
+  1850K .......... .......... .......... .......... .......... 12%  870K 13s
+  1900K .......... .......... .......... .......... .......... 12% 1.15M 13s
+  1950K .......... .......... .......... .......... .......... 12% 1.32M 12s
+  2000K .......... .......... .......... .......... .......... 13% 3.08M 12s
+  2050K .......... .......... .......... .......... .......... 13% 1.01M 12s
+  2100K .......... .......... .......... .......... .......... 13% 6.62M 12s
+  2150K .......... .......... .......... .......... .......... 14% 1.35M 12s
+  2200K .......... .......... .......... .......... .......... 14% 2.83M 12s
+  2250K .......... .......... .......... .......... .......... 14% 1.11M 12s
+  2300K .......... .......... .......... .......... .......... 15% 1.40M 11s
+  2350K .......... .......... .......... .......... .......... 15% 4.91M 11s
+  2400K .......... .......... .......... .......... .......... 15%  970K 11s
+  2450K .......... .......... .......... .......... .......... 16% 4.13M 11s
+  2500K .......... .......... .......... .......... .......... 16% 1.62M 11s
+  2550K .......... .......... .......... .......... .......... 16% 4.59M 11s
+  2600K .......... .......... .......... .......... .......... 17% 1.01M 11s
+  2650K .......... .......... .......... .......... .......... 17% 3.30M 11s
+  2700K .......... .......... .......... .......... .......... 17% 1.82M 10s
+  2750K .......... .......... .......... .......... .......... 18% 3.56M 10s
+  2800K .......... .......... .......... .......... .......... 18% 1.03M 10s
+  2850K .......... .......... .......... .......... .......... 18% 3.19M 10s
+  2900K .......... .......... .......... .......... .......... 18% 1.92M 10s
+  2950K .......... .......... .......... .......... .......... 19% 3.68M 10s
+  3000K .......... .......... .......... .......... .......... 19% 3.73M 10s
+  3050K .......... .......... .......... .......... .......... 19% 1.14M 10s
+  3100K .......... .......... .......... .......... .......... 20% 1.46M 10s
+  3150K .......... .......... .......... .......... .......... 20% 2.10M 10s
+  3200K .......... .......... .......... .......... .......... 20% 11.6M 9s
+  3250K .......... .......... .......... .......... .......... 21% 1.33M 9s
+  3300K .......... .......... .......... .......... .......... 21% 1.29M 9s
+  3350K .......... .......... .......... .......... .......... 21% 4.95M 9s
+  3400K .......... .......... .......... .......... .......... 22% 3.28M 9s
+  3450K .......... .......... .......... .......... .......... 22% 1.23M 9s
+  3500K .......... .......... .......... .......... .......... 22% 8.67M 9s
+  3550K .......... .......... .......... .......... .......... 23% 1.17M 9s
+  3600K .......... .......... .......... .......... .......... 23% 3.54M 9s
+  3650K .......... .......... .......... .......... .......... 23% 11.7M 9s
+  3700K .......... .......... .......... .......... .......... 24% 1.18M 9s
+  3750K .......... .......... .......... .......... .......... 24% 6.30M 8s
+  3800K .......... .......... .......... .......... .......... 24% 1.41M 8s
+  3850K .......... .......... .......... .......... .......... 25% 3.72M 8s
+  3900K .......... .......... .......... .......... .......... 25% 6.53M 8s
+  3950K .......... .......... .......... .......... .......... 25% 1.18M 8s
+  4000K .......... .......... .......... .......... .......... 26% 6.37M 8s
+  4050K .......... .......... .......... .......... .......... 26% 2.03M 8s
+  4100K .......... .......... .......... .......... .......... 26% 2.24M 8s
+  4150K .......... .......... .......... .......... .......... 27% 6.84M 8s
+  4200K .......... .......... .......... .......... .......... 27% 1.22M 8s
+  4250K .......... .......... .......... .......... .......... 27% 6.55M 8s
+  4300K .......... .......... .......... .......... .......... 27% 1.98M 8s
+  4350K .......... .......... .......... .......... .......... 28% 2.09M 8s
+  4400K .......... .......... .......... .......... .......... 28% 11.7M 7s
+  4450K .......... .......... .......... .......... .......... 28% 1.33M 7s
+  4500K .......... .......... .......... .......... .......... 29% 3.41M 7s
+  4550K .......... .......... .......... .......... .......... 29% 2.03M 7s
+  4600K .......... .......... .......... .......... .......... 29% 11.9M 7s
+  4650K .......... .......... .......... .......... .......... 30% 2.42M 7s
+  4700K .......... .......... .......... .......... .......... 30% 1.27M 7s
+  4750K .......... .......... .......... .......... .......... 30% 5.65M 7s
+  4800K .......... .......... .......... .......... .......... 31% 1.59M 7s
+  4850K .......... .......... .......... .......... .......... 31% 11.6M 7s
+  4900K .......... .......... .......... .......... .......... 31% 7.02M 7s
+  4950K .......... .......... .......... .......... .......... 32%  980K 7s
+  5000K .......... .......... .......... .......... .......... 32% 6.13M 7s
+  5050K .......... .......... .......... .......... .......... 32% 11.7M 7s
+  5100K .......... .......... .......... .......... .......... 33% 1.58M 7s
+  5150K .......... .......... .......... .......... .......... 33% 8.90M 7s
+  5200K .......... .......... .......... .......... .......... 33% 10.7M 6s
+  5250K .......... .......... .......... .......... .......... 34% 1.01M 6s
+  5300K .......... .......... .......... .......... .......... 34% 6.30M 6s
+  5350K .......... .......... .......... .......... .......... 34% 7.70M 6s
+  5400K .......... .......... .......... .......... .......... 35% 1.51M 6s
+  5450K .......... .......... .......... .......... .......... 35% 11.6M 6s
+  5500K .......... .......... .......... .......... .......... 35% 11.7M 6s
+  5550K .......... .......... .......... .......... .......... 36% 7.79M 6s
+  5600K .......... .......... .......... .......... .......... 36%  989K 6s
+  5650K .......... .......... .......... .......... .......... 36% 8.86M 6s
+  5700K .......... .......... .......... .......... .......... 36% 1.86M 6s
+  5750K .......... .......... .......... .......... .......... 37% 5.21M 6s
+  5800K .......... .......... .......... .......... .......... 37% 7.97M 6s
+  5850K .......... .......... .......... .......... .......... 37% 9.73M 6s
+  5900K .......... .......... .......... .......... .......... 38% 1.02M 6s
+  5950K .......... .......... .......... .......... .......... 38% 4.62M 6s
+  6000K .......... .......... .......... .......... .......... 38% 2.22M 6s
+  6050K .......... .......... .......... .......... .......... 39% 4.85M 6s
+  6100K .......... .......... .......... .......... .......... 39% 5.32M 5s
+  6150K .......... .......... .......... .......... .......... 39% 11.3M 5s
+  6200K .......... .......... .......... .......... .......... 40% 1.54M 5s
+  6250K .......... .......... .......... .......... .......... 40% 2.50M 5s
+  6300K .......... .......... .......... .......... .......... 40% 5.25M 5s
+  6350K .......... .......... .......... .......... .......... 41% 1.91M 5s
+  6400K .......... .......... .......... .......... .......... 41% 4.63M 5s
+  6450K .......... .......... .......... .......... .......... 41% 7.59M 5s
+  6500K .......... .......... .......... .......... .......... 42% 11.6M 5s
+  6550K .......... .......... .......... .......... .......... 42% 1.64M 5s
+  6600K .......... .......... .......... .......... .......... 42% 2.62M 5s
+  6650K .......... .......... .......... .......... .......... 43% 1.90M 5s
+  6700K .......... .......... .......... .......... .......... 43% 11.5M 5s
+  6750K .......... .......... .......... .......... .......... 43% 3.50M 5s
+  6800K .......... .......... .......... .......... .......... 44% 5.21M 5s
+  6850K .......... .......... .......... .......... .......... 44% 1.68M 5s
+  6900K .......... .......... .......... .......... .......... 44% 3.99M 5s
+  6950K .......... .......... .......... .......... .......... 45% 5.60M 5s
+  7000K .......... .......... .......... .......... .......... 45% 1.90M 5s
+  7050K .......... .......... .......... .......... .......... 45% 5.39M 5s
+  7100K .......... .......... .......... .......... .......... 45% 7.15M 5s
+  7150K .......... .......... .......... .......... .......... 46% 3.74M 5s
+  7200K .......... .......... .......... .......... .......... 46% 11.7M 4s
+  7250K .......... .......... .......... .......... .......... 46% 1.69M 4s
+  7300K .......... .......... .......... .......... .......... 47% 3.60M 4s
+  7350K .......... .......... .......... .......... .......... 47% 1.93M 4s
+  7400K .......... .......... .......... .......... .......... 47% 11.5M 4s
+  7450K .......... .......... .......... .......... .......... 48% 4.58M 4s
+  7500K .......... .......... .......... .......... .......... 48% 4.05M 4s
+  7550K .......... .......... .......... .......... .......... 48% 6.49M 4s
+  7600K .......... .......... .......... .......... .......... 49% 1.85M 4s
+  7650K .......... .......... .......... .......... .......... 49% 7.58M 4s
+  7700K .......... .......... .......... .......... .......... 49% 4.23M 4s
+  7750K .......... .......... .......... .......... .......... 50% 1.90M 4s
+  7800K .......... .......... .......... .......... .......... 50% 4.34M 4s
+  7850K .......... .......... .......... .......... .......... 50% 11.7M 4s
+  7900K .......... .......... .......... .......... .......... 51% 4.41M 4s
+  7950K .......... .......... .......... .......... .......... 51% 5.31M 4s
+  8000K .......... .......... .......... .......... .......... 51% 1.99M 4s
+  8050K .......... .......... .......... .......... .......... 52% 5.69M 4s
+  8100K .......... .......... .......... .......... .......... 52% 1.59M 4s
+  8150K .......... .......... .......... .......... .......... 52% 11.4M 4s
+  8200K .......... .......... .......... .......... .......... 53% 4.35M 4s
+  8250K .......... .......... .......... .......... .......... 53% 4.42M 4s
+  8300K .......... .......... .......... .......... .......... 53% 6.22M 4s
+  8350K .......... .......... .......... .......... .......... 54% 1.89M 4s
+  8400K .......... .......... .......... .......... .......... 54% 12.0M 4s
+  8450K .......... .......... .......... .......... .......... 54% 6.62M 4s
+  8500K .......... .......... .......... .......... .......... 54% 7.60M 3s
+  8550K .......... .......... .......... .......... .......... 55% 1.32M 3s
+  8600K .......... .......... .......... .......... .......... 55% 12.0M 3s
+  8650K .......... .......... .......... .......... .......... 55% 11.7M 3s
+  8700K .......... .......... .......... .......... .......... 56% 5.37M 3s
+  8750K .......... .......... .......... .......... .......... 56% 5.12M 3s
+  8800K .......... .......... .......... .......... .......... 56% 2.34M 3s
+  8850K .......... .......... .......... .......... .......... 57% 6.54M 3s
+  8900K .......... .......... .......... .......... .......... 57% 9.25M 3s
+  8950K .......... .......... .......... .......... .......... 57% 7.50M 3s
+  9000K .......... .......... .......... .......... .......... 58% 2.12M 3s
+  9050K .......... .......... .......... .......... .......... 58% 2.99M 3s
+  9100K .......... .......... .......... .......... .......... 58% 6.30M 3s
+  9150K .......... .......... .......... .......... .......... 59% 5.93M 3s
+  9200K .......... .......... .......... .......... .......... 59% 5.69M 3s
+  9250K .......... .......... .......... .......... .......... 59% 2.57M 3s
+  9300K .......... .......... .......... .......... .......... 60% 6.50M 3s
+  9350K .......... .......... .......... .......... .......... 60% 6.95M 3s
+  9400K .......... .......... .......... .......... .......... 60% 7.24M 3s
+  9450K .......... .......... .......... .......... .......... 61% 2.31M 3s
+  9500K .......... .......... .......... .......... .......... 61% 3.71M 3s
+  9550K .......... .......... .......... .......... .......... 61% 3.93M 3s
+  9600K .......... .......... .......... .......... .......... 62% 7.40M 3s
+  9650K .......... .......... .......... .......... .......... 62% 5.59M 3s
+  9700K .......... .......... .......... .......... .......... 62% 2.56M 3s
+  9750K .......... .......... .......... .......... .......... 63% 11.3M 3s
+  9800K .......... .......... .......... .......... .......... 63% 5.71M 3s
+  9850K .......... .......... .......... .......... .......... 63% 4.85M 3s
+  9900K .......... .......... .......... .......... .......... 63% 2.51M 3s
+  9950K .......... .......... .......... .......... .......... 64% 3.90M 3s
+ 10000K .......... .......... .......... .......... .......... 64% 4.37M 3s
+ 10050K .......... .......... .......... .......... .......... 64% 4.94M 2s
+ 10100K .......... .......... .......... .......... .......... 65% 6.52M 2s
+ 10150K .......... .......... .......... .......... .......... 65% 2.56M 2s
+ 10200K .......... .......... .......... .......... .......... 65% 9.81M 2s
+ 10250K .......... .......... .......... .......... .......... 66% 11.7M 2s
+ 10300K .......... .......... .......... .......... .......... 66% 3.93M 2s
+ 10350K .......... .......... .......... .......... .......... 66% 6.86M 2s
+ 10400K .......... .......... .......... .......... .......... 67% 2.61M 2s
+ 10450K .......... .......... .......... .......... .......... 67% 7.28M 2s
+ 10500K .......... .......... .......... .......... .......... 67% 3.78M 2s
+ 10550K .......... .......... .......... .......... .......... 68% 4.14M 2s
+ 10600K .......... .......... .......... .......... .......... 68% 9.95M 2s
+ 10650K .......... .......... .......... .......... .......... 68% 2.84M 2s
+ 10700K .......... .......... .......... .......... .......... 69% 6.30M 2s
+ 10750K .......... .......... .......... .......... .......... 69% 8.42M 2s
+ 10800K .......... .......... .......... .......... .......... 69% 4.49M 2s
+ 10850K .......... .......... .......... .......... .......... 70% 7.61M 2s
+ 10900K .......... .......... .......... .......... .......... 70% 4.22M 2s
+ 10950K .......... .......... .......... .......... .......... 70% 4.42M 2s
+ 11000K .......... .......... .......... .......... .......... 71% 3.56M 2s
+ 11050K .......... .......... .......... .......... .......... 71% 3.98M 2s
+ 11100K .......... .......... .......... .......... .......... 71% 7.69M 2s
+ 11150K .......... .......... .......... .......... .......... 72% 2.97M 2s
+ 11200K .......... .......... .......... .......... .......... 72% 6.80M 2s
+ 11250K .......... .......... .......... .......... .......... 72% 5.73M 2s
+ 11300K .......... .......... .......... .......... .......... 72% 6.71M 2s
+ 11350K .......... .......... .......... .......... .......... 73% 6.00M 2s
+ 11400K .......... .......... .......... .......... .......... 73% 11.6M 2s
+ 11450K .......... .......... .......... .......... .......... 73% 4.90M 2s
+ 11500K .......... .......... .......... .......... .......... 74% 2.46M 2s
+ 11550K .......... .......... .......... .......... .......... 74% 3.23M 2s
+ 11600K .......... .......... .......... .......... .......... 74% 8.54M 2s
+ 11650K .......... .......... .......... .......... .......... 75% 11.7M 2s
+ 11700K .......... .......... .......... .......... .......... 75% 3.25M 2s
+ 11750K .......... .......... .......... .......... .......... 75% 10.5M 2s
+ 11800K .......... .......... .......... .......... .......... 76% 4.89M 2s
+ 11850K .......... .......... .......... .......... .......... 76% 11.6M 2s
+ 11900K .......... .......... .......... .......... .......... 76% 6.06M 2s
+ 11950K .......... .......... .......... .......... .......... 77% 7.01M 1s
+ 12000K .......... .......... .......... .......... .......... 77% 4.25M 1s
+ 12050K .......... .......... .......... .......... .......... 77% 2.95M 1s
+ 12100K .......... .......... .......... .......... .......... 78% 8.05M 1s
+ 12150K .......... .......... .......... .......... .......... 78% 3.40M 1s
+ 12200K .......... .......... .......... .......... .......... 78% 8.14M 1s
+ 12250K .......... .......... .......... .......... .......... 79% 4.26M 1s
+ 12300K .......... .......... .......... .......... .......... 79% 4.21M 1s
+ 12350K .......... .......... .......... .......... .......... 79% 8.03M 1s
+ 12400K .......... .......... .......... .......... .......... 80% 11.6M 1s
+ 12450K .......... .......... .......... .......... .......... 80% 7.17M 1s
+ 12500K .......... .......... .......... .......... .......... 80% 7.47M 1s
+ 12550K .......... .......... .......... .......... .......... 81% 7.28M 1s
+ 12600K .......... .......... .......... .......... .......... 81% 7.77M 1s
+ 12650K .......... .......... .......... .......... .......... 81% 2.75M 1s
+ 12700K .......... .......... .......... .......... .......... 81% 3.66M 1s
+ 12750K .......... .......... .......... .......... .......... 82% 7.73M 1s
+ 12800K .......... .......... .......... .......... .......... 82% 3.20M 1s
+ 12850K .......... .......... .......... .......... .......... 82% 11.6M 1s
+ 12900K .......... .......... .......... .......... .......... 83% 4.26M 1s
+ 12950K .......... .......... .......... .......... .......... 83% 8.38M 1s
+ 13000K .......... .......... .......... .......... .......... 83% 8.26M 1s
+ 13050K .......... .......... .......... .......... .......... 84% 11.6M 1s
+ 13100K .......... .......... .......... .......... .......... 84% 7.14M 1s
+ 13150K .......... .......... .......... .......... .......... 84% 6.26M 1s
+ 13200K .......... .......... .......... .......... .......... 85% 10.6M 1s
+ 13250K .......... .......... .......... .......... .......... 85% 2.60M 1s
+ 13300K .......... .......... .......... .......... .......... 85% 11.7M 1s
+ 13350K .......... .......... .......... .......... .......... 86% 3.51M 1s
+ 13400K .......... .......... .......... .......... .......... 86% 9.80M 1s
+ 13450K .......... .......... .......... .......... .......... 86% 4.91M 1s
+ 13500K .......... .......... .......... .......... .......... 87% 6.33M 1s
+ 13550K .......... .......... .......... .......... .......... 87% 3.97M 1s
+ 13600K .......... .......... .......... .......... .......... 87% 8.45M 1s
+ 13650K .......... .......... .......... .......... .......... 88% 7.59M 1s
+ 13700K .......... .......... .......... .......... .......... 88% 11.7M 1s
+ 13750K .......... .......... .......... .......... .......... 88% 11.1M 1s
+ 13800K .......... .......... .......... .......... .......... 89% 5.74M 1s
+ 13850K .......... .......... .......... .......... .......... 89% 11.6M 1s
+ 13900K .......... .......... .......... .......... .......... 89% 3.06M 1s
+ 13950K .......... .......... .......... .......... .......... 90% 4.99M 1s
+ 14000K .......... .......... .......... .......... .......... 90% 5.64M 1s
+ 14050K .......... .......... .......... .......... .......... 90% 7.75M 1s
+ 14100K .......... .......... .......... .......... .......... 90% 5.06M 1s
+ 14150K .......... .......... .......... .......... .......... 91% 4.16M 1s
+ 14200K .......... .......... .......... .......... .......... 91% 10.7M 0s
+ 14250K .......... .......... .......... .......... .......... 91% 7.15M 0s
+ 14300K .......... .......... .......... .......... .......... 92% 6.95M 0s
+ 14350K .......... .......... .......... .......... .......... 92% 7.08M 0s
+ 14400K .......... .......... .......... .......... .......... 92% 6.06M 0s
+ 14450K .......... .......... .......... .......... .......... 93% 11.3M 0s
+ 14500K .......... .......... .......... .......... .......... 93% 11.6M 0s
+ 14550K .......... .......... .......... .......... .......... 93% 11.4M 0s
+ 14600K .......... .......... .......... .......... .......... 94% 3.17M 0s
+ 14650K .......... .......... .......... .......... .......... 94% 4.53M 0s
+ 14700K .......... .......... .......... .......... .......... 94% 11.6M 0s
+ 14750K .......... .......... .......... .......... .......... 95% 7.62M 0s
+ 14800K .......... .......... .......... .......... .......... 95% 3.82M 0s
+ 14850K .......... .......... .......... .......... .......... 95% 4.88M 0s
+ 14900K .......... .......... .......... .......... .......... 96% 7.75M 0s
+ 14950K .......... .......... .......... .......... .......... 96% 11.4M 0s
+ 15000K .......... .......... .......... .......... .......... 96% 7.40M 0s
+ 15050K .......... .......... .......... .......... .......... 97% 8.70M 0s
+ 15100K .......... .......... .......... .......... .......... 97% 7.55M 0s
+ 15150K .......... .......... .......... .......... .......... 97% 6.03M 0s
+ 15200K .......... .......... .......... .......... .......... 98% 11.7M 0s
+ 15250K .......... .......... .......... .......... .......... 98% 11.5M 0s
+ 15300K .......... .......... .......... .......... .......... 98% 3.23M 0s
+ 15350K .......... .......... .......... .......... .......... 99% 5.84M 0s
+ 15400K .......... .......... .......... .......... .......... 99% 7.64M 0s
+ 15450K .......... .......... .......... .......... .......... 99% 7.23M 0s
+ 15500K .......... .......... .......... .......... ......... 100% 5.14M=5.6s
+
+2014-05-09 16:02:29 (2.72 MB/s) - 'llvm.3.4+opam.tar.gz' saved [15922931/15922931]
+
+Applying makefile-doc.patch.
+patching file bindings/ocaml/Makefile
+Applying makefile+system.patch.
+patching file bindings/ocaml/Makefile.ocaml
+Building llvm.3.4:
+  ./configure CC=gcc CXX=g++ --prefix=/home/opam/.opam/4.02.0dev+trunk --disable-doxygen --disable-docs --enable-static --enable-shared --with-ocaml-libdir=/home/opam/.opam/4.02.0dev+trunk/lib/llvm
+  make -C bindings/ocaml
+  make -C bindings/ocaml install
+  cp /home/opam/.opam/4.02.0dev+trunk/lib/llvm/META.llvm /home/opam/.opam/4.02.0dev+trunk/lib/llvm/META
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C preprocessor... gcc -E
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking type of operating system we're going to host on... Linux
+checking type of operating system we're going to target... Linux
+checking target architecture... x86_64
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking optimization flags... -O3
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking for GNU make... make
+checking whether ln -s works... yes
+checking for cmp... /usr/bin/cmp
+checking for cp... /bin/cp
+checking for date... /bin/date
+checking for find... /usr/bin/find
+checking for grep... (cached) /bin/grep
+checking for mkdir... /bin/mkdir
+checking for mv... /bin/mv
+checking for ranlib... ranlib
+checking for ar... ar
+checking for rm... /bin/rm
+checking for sed... /bin/sed
+checking for tar... /bin/tar
+checking for pwd... /bin/pwd
+checking for Graphviz... echo Graphviz
+checking for dot... echo dot
+checking for fdp... echo fdp
+checking for neato... echo neato
+checking for twopi... echo twopi
+checking for circo... echo circo
+checking for gv... no
+checking for gsview32... no
+checking for dotty... echo dotty
+checking for xdot... no
+checking for xdot.py... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for bzip2... /bin/bzip2
+checking for cat... /bin/cat
+checking for doxygen... no
+checking for groff... no
+checking for gzip... /bin/gzip
+checking for pdfroff... no
+checking for zip... no
+checking for ocamlc... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc
+checking for ocamlopt... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt
+checking for ocamldep... /home/opam/.opam/4.02.0dev+trunk/bin/ocamldep
+checking for ocamldoc... /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+checking for gas... no
+checking for as... /usr/bin/as
+checking for linker version... 2.24
+checking for compiler -Wl,-R<path> option... yes
+checking for compiler -rdynamic option... yes
+checking for compiler -Wl,--version-script option... yes
+checking for an ANSI C-conforming const... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking which extension is used for loadable modules... .so
+checking for the default library search path... /lib /usr/lib /usr/lib/x86_64-linux-gnu/libfakeroot /usr/local/lib /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu 
+checking for objdir... .libs
+checking command to parse /usr/bin/nm -B output from  object... ok
+checking whether libtool supports -dlopen/-dlpreopen... yes
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen in -ldl... yes
+checking for dlerror... yes
+checking for _ prefix in compiled symbols... no
+checking whether deplibs are loaded by dlopen... yes
+checking argz.h usability... yes
+checking argz.h presence... yes
+checking for argz.h... yes
+checking for error_t... yes
+checking for argz_append... yes
+checking for argz_create_sep... yes
+checking for argz_insert... yes
+checking for argz_next... yes
+checking for argz_stringify... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking for memory.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking mach-o/dyld.h usability... no
+checking mach-o/dyld.h presence... no
+checking for mach-o/dyld.h... no
+checking for closedir... yes
+checking for opendir... yes
+checking for readdir... yes
+checking tool compatibility... ok
+checking optional compiler flags... -Wno-variadic-macros -Wno-missing-field-initializers   -Wno-maybe-uninitialized
+checking for python... ./configure: line 11792: result:: command not found
+no
+checking for python >= 2.5... ./configure: line 11818: test: line: integer expression expected
+./configure: line 11819: test: line: integer expression expected
+not found
+configure: error: found python line (); required >= 2.5
+See `config.log' for more details.
+[ERROR] The compilation of llvm.3.4 failed.
+Removing llvm.3.4.
+  ./configure CC=gcc CXX=g++ --prefix=/home/opam/.opam/4.02.0dev+trunk --disable-doxygen --disable-docs --enable-static --enable-shared --with-ocaml-libdir=/home/opam/.opam/4.02.0dev+trunk/lib/llvm
+  make -C bindings/ocaml -k uninstall
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C preprocessor... gcc -E
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking type of operating system we're going to host on... Linux
+checking type of operating system we're going to target... Linux
+checking target architecture... x86_64
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking optimization flags... -O3
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking for GNU make... make
+checking whether ln -s works... yes
+checking for cmp... /usr/bin/cmp
+checking for cp... /bin/cp
+checking for date... /bin/date
+checking for find... /usr/bin/find
+checking for grep... (cached) /bin/grep
+checking for mkdir... /bin/mkdir
+checking for mv... /bin/mv
+checking for ranlib... ranlib
+checking for ar... ar
+checking for rm... /bin/rm
+checking for sed... /bin/sed
+checking for tar... /bin/tar
+checking for pwd... /bin/pwd
+checking for Graphviz... echo Graphviz
+checking for dot... echo dot
+checking for fdp... echo fdp
+checking for neato... echo neato
+checking for twopi... echo twopi
+checking for circo... echo circo
+checking for gv... no
+checking for gsview32... no
+checking for dotty... echo dotty
+checking for xdot... no
+checking for xdot.py... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for bzip2... /bin/bzip2
+checking for cat... /bin/cat
+checking for doxygen... no
+checking for groff... no
+checking for gzip... /bin/gzip
+checking for pdfroff... no
+checking for zip... no
+checking for ocamlc... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc
+checking for ocamlopt... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt
+checking for ocamldep... /home/opam/.opam/4.02.0dev+trunk/bin/ocamldep
+checking for ocamldoc... /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+checking for gas... no
+checking for as... /usr/bin/as
+checking for linker version... 2.24
+checking for compiler -Wl,-R<path> option... yes
+checking for compiler -rdynamic option... yes
+checking for compiler -Wl,--version-script option... yes
+checking for an ANSI C-conforming const... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking which extension is used for loadable modules... .so
+checking for the default library search path... /lib /usr/lib /usr/lib/x86_64-linux-gnu/libfakeroot /usr/local/lib /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu 
+checking for objdir... .libs
+checking command to parse /usr/bin/nm -B output from  object... ok
+checking whether libtool supports -dlopen/-dlpreopen... yes
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen in -ldl... yes
+checking for dlerror... yes
+checking for _ prefix in compiled symbols... no
+checking whether deplibs are loaded by dlopen... yes
+checking argz.h usability... yes
+checking argz.h presence... yes
+checking for argz.h... yes
+checking for error_t... yes
+checking for argz_append... yes
+checking for argz_create_sep... yes
+checking for argz_insert... yes
+checking for argz_next... yes
+checking for argz_stringify... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking for memory.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking mach-o/dyld.h usability... no
+checking mach-o/dyld.h presence... no
+checking for mach-o/dyld.h... no
+checking for closedir... yes
+checking for opendir... yes
+checking for readdir... yes
+checking tool compatibility... ok
+checking optional compiler flags... -Wno-variadic-macros -Wno-missing-field-initializers   -Wno-maybe-uninitialized
+checking for python... ./configure: line 11792: result:: command not found
+no
+checking for python >= 2.5... ./configure: line 11818: test: line: integer expression expected
+./configure: line 11819: test: line: integer expression expected
+not found
+configure: error: found python line (); required >= 2.5
+See `config.log' for more details.
+make: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/llvm.3.4/bindings/ocaml'
+../../Makefile.common:60: ../../Makefile.config: No such file or directory
+../../Makefile.common:68: /Makefile.rules: No such file or directory
+make: *** No rule to make target `/Makefile.rules'.
+make: *** No rule to make target `../../Makefile.config'.
+make: Failed to remake makefile `/Makefile.rules'.
+make: Failed to remake makefile `../../Makefile.config'.
+make: *** No rule to make target `uninstall'.
+make: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/llvm.3.4/bindings/ocaml'
+
+
+===== ERROR while installing llvm.3.4 =====
+# opam-version         1.1.1
+# os                   linux
+# command              ./configure CC=gcc CXX=g++ --prefix=/home/opam/.opam/4.02.0dev+trunk --disable-doxygen --disable-docs --enable-static --enable-shared --with-ocaml-libdir=/home/opam/.opam/4.02.0dev+trunk/lib/llvm
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/llvm.3.4
+# compiler             4.02.0dev+trunk
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/llvm.3.4/llvm-24-60459a.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/llvm.3.4/llvm-24-60459a.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/llvm.3.4/llvm-24-60459a.err
+### stdout ###
+# ...[truncated]
+# checking mach-o/dyld.h usability... no
+# checking mach-o/dyld.h presence... no
+# checking for mach-o/dyld.h... no
+# checking for closedir... yes
+# checking for opendir... yes
+# checking for readdir... yes
+# checking tool compatibility... ok
+# checking optional compiler flags... -Wno-variadic-macros -Wno-missing-field-initializers   -Wno-maybe-uninitialized
+# checking for python... no
+# checking for python >= 2.5... not found
+### stderr ###
+# ./configure: line 11792: result:: command not found
+# ./configure: line 11818: test: line: integer expression expected
+# ./configure: line 11819: test: line: integer expression expected
+# configure: error: found python line (); required >= 2.5
+# See `config.log' for more details.
+
+'opam install llvm' failed.
