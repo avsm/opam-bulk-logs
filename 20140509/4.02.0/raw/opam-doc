@@ -1,0 +1,15 @@
+++ opam install opam-doc -e ubuntu
+[ERROR] "opam-doc" is not available for your compiler or your OS.
+'opam install opam-doc -e ubuntu' failed.
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install opam-doc
+[ERROR] "opam-doc" is not available for your compiler or your OS.
+'opam install opam-doc' failed.
