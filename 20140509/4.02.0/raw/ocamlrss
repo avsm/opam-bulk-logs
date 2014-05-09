@@ -1,0 +1,306 @@
+++ opam install ocamlrss -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocamlrss
+The following actions will be performed:
+ - install ocamlnet.3.7.3 [required by ocamlrss]
+ - install xmlm.1.2.0 [required by ocamlrss]
+ - install ocamlrss.2.2.2
+3 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocamlnet.3.7.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+--2014-05-09 17:57:22--  https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3424904 (3.3M) [application/octet-stream]
+Saving to: 'ocamlnet.3.7.3+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  1% 95.0K 35s
+    50K .......... .......... .......... .......... ..........  2%  160K 27s
+   100K .......... .......... .......... .......... ..........  4%  152K 25s
+   150K .......... .......... .......... .......... ..........  5% 56.7K 32s
+   200K .......... .......... .......... .......... ..........  7%  153K 29s
+   250K .......... .......... .......... .......... ..........  8%  123K 28s
+   300K .......... .......... .......... .......... .......... 10%  172K 26s
+   350K .......... .......... .......... .......... .......... 11%  150K 25s
+   400K .......... .......... .......... .......... .......... 13%  157K 24s
+   450K .......... .......... .......... .......... .......... 14%  337K 22s
+   500K .......... .......... .......... .......... .......... 16%  201K 21s
+   550K .......... .......... .......... .......... .......... 17%  381K 19s
+   600K .......... .......... .......... .......... .......... 19%  237K 19s
+   650K .......... .......... .......... .......... .......... 20%  359K 17s
+   700K .......... .......... .......... .......... .......... 22%  340K 16s
+   750K .......... .......... .......... .......... .......... 23%  237K 16s
+   800K .......... .......... .......... .......... .......... 25%  466K 15s
+   850K .......... .......... .......... .......... .......... 26%  350K 14s
+   900K .......... .......... .......... .......... .......... 28%  472K 13s
+   950K .......... .......... .......... .......... .......... 29%  464K 13s
+  1000K .......... .......... .......... .......... .......... 31%  464K 12s
+  1050K .......... .......... .......... .......... .......... 32%  488K 12s
+  1100K .......... .......... .......... .......... .......... 34%  966K 11s
+  1150K .......... .......... .......... .......... .......... 35%  346K 10s
+  1200K .......... .......... .......... .......... .......... 37%  474K 10s
+  1250K .......... .......... .......... .......... .......... 38%  873K 9s
+  1300K .......... .......... .......... .......... .......... 40%  717K 9s
+  1350K .......... .......... .......... .......... .......... 41%  475K 9s
+  1400K .......... .......... .......... .......... .......... 43% 1022K 8s
+  1450K .......... .......... .......... .......... .......... 44%  537K 8s
+  1500K .......... .......... .......... .......... .......... 46% 3.36M 7s
+  1550K .......... .......... .......... .......... .......... 47%  485K 7s
+  1600K .......... .......... .......... .......... .......... 49%  553K 7s
+  1650K .......... .......... .......... .......... .......... 50% 2.87M 6s
+  1700K .......... .......... .......... .......... .......... 52%  571K 6s
+  1750K .......... .......... .......... .......... .......... 53% 2.36M 6s
+  1800K .......... .......... .......... .......... .......... 55% 1001K 5s
+  1850K .......... .......... .......... .......... .......... 56%  870K 5s
+  1900K .......... .......... .......... .......... .......... 58%  603K 5s
+  1950K .......... .......... .......... .......... .......... 59%  795K 5s
+  2000K .......... .......... .......... .......... .......... 61% 1.10M 4s
+  2050K .......... .......... .......... .......... .......... 62%  822K 4s
+  2100K .......... .......... .......... .......... .......... 64%  899K 4s
+  2150K .......... .......... .......... .......... .......... 65% 3.47M 4s
+  2200K .......... .......... .......... .......... .......... 67%  629K 3s
+  2250K .......... .......... .......... .......... .......... 68% 2.58M 3s
+  2300K .......... .......... .......... .......... .......... 70% 1.09M 3s
+  2350K .......... .......... .......... .......... .......... 71%  789K 3s
+  2400K .......... .......... .......... .......... .......... 73%  608K 3s
+  2450K .......... .......... .......... .......... .......... 74% 3.08M 2s
+  2500K .......... .......... .......... .......... .......... 76% 3.51M 2s
+  2550K .......... .......... .......... .......... .......... 77%  597K 2s
+  2600K .......... .......... .......... .......... .......... 79% 3.66M 2s
+  2650K .......... .......... .......... .......... .......... 80% 1.20M 2s
+  2700K .......... .......... .......... .......... .......... 82%  922K 2s
+  2750K .......... .......... .......... .......... .......... 83% 1.98M 1s
+  2800K .......... .......... .......... .......... .......... 85%  761K 1s
+  2850K .......... .......... .......... .......... .......... 86% 1.75M 1s
+  2900K .......... .......... .......... .......... .......... 88% 3.22M 1s
+  2950K .......... .......... .......... .......... .......... 89%  777K 1s
+  3000K .......... .......... .......... .......... .......... 91% 1.86M 1s
+  3050K .......... .......... .......... .......... .......... 92% 2.82M 1s
+  3100K .......... .......... .......... .......... .......... 94%  810K 0s
+  3150K .......... .......... .......... .......... .......... 95% 1.65M 0s
+  3200K .......... .......... .......... .......... .......... 97% 2.66M 0s
+  3250K .......... .......... .......... .......... .......... 98%  849K 0s
+  3300K .......... .......... .......... .......... ....      100% 1.45M=8.0s
+
+2014-05-09 17:57:31 (417 KB/s) - 'ocamlnet.3.7.3+opam.tar.gz' saved [3424904/3424904]
+
+Applying fix-ocaml-4.02.patch.
+patching file src/netstring/netencoding.mli
+Building ocamlnet.3.7.3:
+  ./configure -bindir /home/opam/.opam/4.02.0dev+trunk/bin -disable-pcre -disable-gtk2 -disable-ssl -disable-zip -disable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Welcome to Ocamlnet version 3.7.3
+Checking operating system... Linux
+Checking for findlib... found
+Checking multi-threading support... posix (ok)
+Checking word size... 64 bit
+Checking endianess... little
+Checking for GPROF... found
+Checking for win32... no
+Checking whether Ocaml has Printexc.register_printer... found
+Checking for POSIX pthread... found
+Checking whether Ocaml has fancy page tables... found
+Checking on new implementation of caml_modify... found
+Checking whether new caml_modify can be overridden... found
+Checking whether out-of-heap values are supported and mutable... yes
+Checking for POSIX shared memory... found
+Checking for POSIX semaphores (anonymous)... found
+Checking for POSIX semaphores (named)... found
+Checking for POSIX spawn... found
+Checking for POSIX fadvise... found
+Checking for POSIX fallocate... found
+Checking for POSIX memalign... found
+Checking for syslog... found
+Checking for POSIX functions like openat... found
+Checking for fchdir... found
+Checking for fdopendir... found
+Checking for realpath... found
+Checking for grantpt (System V style PTYs)... found
+Checking for posix_openpt (System V style PTYs)... found
+Checking for initgroups...found
+Checking for POSIX clocks...found
+Checking for POSIX timers...found
+Checking for eventfd (Linux)...found
+Checking for timerfd (Linux)...found
+Checking for epoll (Linux)...found
+Checking for compare_and_swap (GCC)...found
+Checking for GPROF... found
+Checking for O_SHARE_DELETE... yes
+Checking for O_CLOEXEC... yes
+Checking for getpeereid... not found
+Checking for getpeerucred... not found
+Checking whether netcamlbox and netmulticore are supported... yes
+Preprocessor for ocamlrpcgen: cpp
+
+Effective options:
+    -disable-pcre
+    -disable-full-pcre
+    -disable-gtk
+    -disable-gtk2
+    -disable-tcl
+    -disable-ssl
+    -disable-zip
+    -disable-crypto
+    -disable-apache
+    -with-nethttpd
+    -without-rpc-auth-dh
+    -bindir /home/opam/.opam/4.02.0dev+trunk/bin
+    -datadir /home/opam/.opam/4.02.0dev+trunk/lib/netstring
+    -cpp cpp
+
+Writing Makefile.conf
+
+Please check Makefile.conf.
+
+You can now compile Ocamlnet by invoking
+   make all
+for the bytecode compiler, and optionally by invoking
+   make opt
+for the native-code compiler (if supported on your architecture).
+Finally, a
+   make install
+will install the package(s).
+for pkg in netsys netshm netstring equeue shell netgssapi rpc-generator rpc rpc-auth-local pop smtp netclient netcgi2 netplex netcgi2-plex netcamlbox netmulticore nethttpd nethttpd-for-netcgi2; do \
+		( cd src/$pkg && make -f Makefile.pre generate ) || exit; \
+		( cd src/$pkg && make -f Makefile.pre depend ) || exit; \
+		( cd src/$pkg && make all ) || exit; \
+	done
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+sed -e 's/@VERSION@/3.7.3/' \
+	    -e 's/@AUTHDHREQS@//' \
+	    -e 's/@PREFERRED_CGI_PKG@//' \
+	    -e 's/@REGEXP_PROVIDER@/str/' \
+	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+ 	    -e 's/@ZIP_PROVIDER@//' \
+		META.in >META
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+ocamlfind ocamldep -package "camlp4.macro" -syntax camlp4o  *.ml *.mli >depend || { rm -f depend; exit 1; }
+make[1]: *** [depend] Error 1
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+make: *** [all] Error 2
+[ERROR] The compilation of ocamlnet.3.7.3 failed.
+Removing ocamlnet.3.7.3.
+  ocamlfind remove equeue
+  ocamlfind remove netcamlbox
+  ocamlfind remove netcgi2
+  ocamlfind remove netcgi2-plex
+  ocamlfind remove netclient
+  ocamlfind remove netgssapi
+  ocamlfind remove nethttpd
+  ocamlfind remove nethttpd-for-netcgi2
+  ocamlfind remove netmulticore
+  ocamlfind remove netplex
+  ocamlfind remove netshm
+  ocamlfind remove netstring
+  ocamlfind remove netsys
+  ocamlfind remove pop
+  ocamlfind remove rpc
+  ocamlfind remove rpc-auth-local
+  ocamlfind remove rpc-generator
+  ocamlfind remove shell
+  ocamlfind remove smtp
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/equeue
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netcamlbox
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netcgi2
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netcgi2-plex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netclient
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netgssapi
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/nethttpd
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/nethttpd-for-netcgi2
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netmulticore
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netplex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netshm
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netstring
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netsys
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/pop
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/rpc
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/rpc-auth-local
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/rpc-generator
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/shell
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/smtp
+
+=-=-= Installing xmlm.1.2.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+--2014-05-09 17:57:46--  https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 51637 (50K) [application/octet-stream]
+Saving to: 'xmlm.1.2.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 99% 26.7K 0s
+    50K                                                       100%  814G=1.9s
+
+2014-05-09 17:57:48 (26.9 KB/s) - 'xmlm.1.2.0+opam.tar.gz' saved [51637/51637]
+
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+ocamlfind ocamldep -modules src/xmlm.mli > src/xmlm.mli.depends
+ocamlfind ocamlc -c -I src -I test -o src/xmlm.cmi src/xmlm.mli
+ocamlfind ocamldep -modules src/xmlm.ml > src/xmlm.ml.depends
+ocamlfind ocamlopt -c -annot -bin-annot -I src -I test -o src/xmlm.cmx src/xmlm.ml
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/xmlm.cmo src/xmlm.ml
+ocamlfind ocamlc -a src/xmlm.cmo -o src/xmlm.cma
+ocamlfind ocamlopt -a src/xmlm.cmx -o src/xmlm.cmxa
+ocamlfind ocamlopt -shared src/xmlm.cmx -o src/xmlm.cmxs
+ocamlfind ocamldep -modules test/xmltrip.ml > test/xmltrip.ml.depends
+ocamlfind ocamldep -modules test/xhtml.ml > test/xhtml.ml.depends
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xhtml.cmo test/xhtml.ml
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xmltrip.cmo test/xmltrip.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xhtml.cmx test/xhtml.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xmltrip.cmx test/xmltrip.ml
+ocamlfind ocamlopt -linkpkg src/xmlm.cmx test/xhtml.cmx test/xmltrip.cmx -o test/xmltrip.native
+Installing xmlm.1.2.0.
+[WARNING] opam-version is an unknown field in /home/opam/.opam/4.02.0dev+trunk/build/xmlm.1.2.0/xmlm.install: is your OPAM up-to-date ?
+
+[ERROR] Due to some errors while processing ocamlnet.3.7.3, the following actions will NOT proceed:
+ - install ocamlrss.2.2.2
+
+===== ERROR while installing ocamlnet.3.7.3 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/ocamlnet-23-865888.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/ocamlnet-23-865888.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/ocamlnet-23-865888.err
+### stdout ###
+# ...[truncated]
+# 	    -e 's/@PREFERRED_CGI_PKG@//' \
+# 	    -e 's/@REGEXP_PROVIDER@/str/' \
+# 	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+#  	    -e 's/@ZIP_PROVIDER@//' \
+# 		META.in >META
+# make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+# make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+# ocamlfind ocamldep -package "camlp4.macro" -syntax camlp4o  *.ml *.mli >depend || { rm -f depend; exit 1; }
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+### stderr ###
+# Welcome to Ocamlnet version 3.7.3
+# make[1]: *** [depend] Error 1
+# make: *** [all] Error 2
+
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+trunk/backup/state-20140409175712.export"
+'opam install ocamlrss' failed.
