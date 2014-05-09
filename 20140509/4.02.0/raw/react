@@ -1,0 +1,44 @@
+++ opam install react -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install react
+The following actions will be performed:
+ - install react.1.1.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing react.1.1.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/react.1.1.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/react.1.1.0+opam.tar.gz
+--2014-05-09 19:43:45--  https://opam.ocaml.org/archives/react.1.1.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 91011 (89K) [application/octet-stream]
+Saving to: 'react.1.1.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 56%  241K 0s
+    50K .......... .......... .......... ........             100% 1.03M=0.2s
+
+2014-05-09 19:43:46 (364 KB/s) - 'react.1.1.0+opam.tar.gz' saved [91011/91011]
+
+Building react.1.1.0:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+File "pkg/topkg-ext.ml", line 42, characters 12-25:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamldep -modules src/react.ml > src/react.ml.depends
+ocamlfind ocamldep -modules src/react.mli > src/react.mli.depends
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/react.cmi src/react.mli
+ocamlfind ocamlopt -c -annot -bin-annot -I src -I test -o src/react.cmx src/react.ml
+ocamlfind ocamlopt -a src/react.cmx -o src/react.cmxa
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/react.cmo src/react.ml
+ocamlfind ocamlc -a src/react.cmo -o src/react.cma
+ocamlfind ocamlopt -shared src/react.cmx -o src/react.cmxs
+Installing react.1.1.0.
