@@ -1,0 +1,145 @@
+++ opam install higlo -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install higlo
+The following actions will be performed:
+ - install ulex.1.1 [required by higlo]
+ - install xmlm.1.2.0 [required by higlo]
+ - install xtmpl.0.9 [required by higlo]
+ - install higlo.0.3
+4 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ulex.1.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ulex.1.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ulex.1.1+opam.tar.gz
+--2014-05-09 14:40:45--  https://opam.ocaml.org/archives/ulex.1.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20380 (20K) [application/octet-stream]
+Saving to: 'ulex.1.1+opam.tar.gz'
+
+     0K .......... .........                                  100%  196K=0.1s
+
+2014-05-09 14:40:45 (196 KB/s) - 'ulex.1.1+opam.tar.gz' saved [20380/20380]
+
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma
+ocamlfind ocamlc unix.cma -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cma -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmo -o myocamlbuild
+ocamlfind ocamldep -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
++ ocamlfind ocamldep -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
+Command exited with code 2.
+make: *** [all] Error 10
+[ERROR] The compilation of ulex.1.1 failed.
+Removing ulex.1.1.
+  ocamlfind remove ulex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/ulex
+
+=-=-= Installing xmlm.1.2.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+--2014-05-09 14:40:52--  https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 51637 (50K) [application/octet-stream]
+Saving to: 'xmlm.1.2.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 99%  245K 0s
+    50K                                                       100%  814G=0.2s
+
+2014-05-09 14:40:53 (247 KB/s) - 'xmlm.1.2.0+opam.tar.gz' saved [51637/51637]
+
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+ocamlfind ocamldep -modules src/xmlm.mli > src/xmlm.mli.depends
+ocamlfind ocamlc -c -I src -I test -o src/xmlm.cmi src/xmlm.mli
+ocamlfind ocamldep -modules src/xmlm.ml > src/xmlm.ml.depends
+ocamlfind ocamlopt -c -annot -bin-annot -I src -I test -o src/xmlm.cmx src/xmlm.ml
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/xmlm.cmo src/xmlm.ml
+ocamlfind ocamlc -a src/xmlm.cmo -o src/xmlm.cma
+ocamlfind ocamlopt -a src/xmlm.cmx -o src/xmlm.cmxa
+ocamlfind ocamlopt -shared src/xmlm.cmx -o src/xmlm.cmxs
+ocamlfind ocamldep -modules test/xmltrip.ml > test/xmltrip.ml.depends
+ocamlfind ocamldep -modules test/xhtml.ml > test/xhtml.ml.depends
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xhtml.cmo test/xhtml.ml
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xmltrip.cmo test/xmltrip.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xhtml.cmx test/xhtml.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xmltrip.cmx test/xmltrip.ml
+ocamlfind ocamlopt -linkpkg src/xmlm.cmx test/xhtml.cmx test/xmltrip.cmx -o test/xmltrip.native
+Installing xmlm.1.2.0.
+[WARNING] opam-version is an unknown field in /home/opam/.opam/4.02.0dev+trunk/build/xmlm.1.2.0/xmlm.install: is your OPAM up-to-date ?
+
+=-=-= Installing xtmpl.0.9 =-=-=
+default    Downloading https://opam.ocaml.org/archives/xtmpl.0.9+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/xtmpl.0.9+opam.tar.gz
+--2014-05-09 14:41:02--  https://opam.ocaml.org/archives/xtmpl.0.9+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14103 (14K) [application/octet-stream]
+Saving to: 'xtmpl.0.9+opam.tar.gz'
+
+     0K .......... ...                                        100% 71.3M=0s
+
+2014-05-09 14:41:02 (71.3 MB/s) - 'xtmpl.0.9+opam.tar.gz' saved [14103/14103]
+
+Building xtmpl.0.9:
+  make all
+  make install
+ocamlc.opt -g  -c `ocamlfind query -i-format xmlm` -annot -rectypes xtmpl.mli
+ocamlc.opt -g  -c `ocamlfind query -i-format xmlm` -annot -rectypes xtmpl.ml
+File "xtmpl.ml", line 34, characters 10-23:
+Warning 3: deprecated feature: String.create
+ocamlopt.opt -g  -c `ocamlfind query -i-format xmlm` -annot -rectypes xtmpl.ml
+File "xtmpl.ml", line 34, characters 10-23:
+Warning 3: deprecated feature: String.create
+ocamlopt.opt -g  -shared -o xtmpl.cmxs `ocamlfind query -i-format xmlm` -annot -rectypes xtmpl.cmx
+ocamlfind install xtmpl META LICENSE \
+		xtmpl.cmi xtmpl.mli xtmpl.cmo xtmpl.cmx xtmpl.cmxs xtmpl.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xtmpl/xtmpl.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xtmpl/xtmpl.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xtmpl/xtmpl.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xtmpl/xtmpl.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xtmpl/xtmpl.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xtmpl/xtmpl.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xtmpl/LICENSE
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/xtmpl/META
+Installing xtmpl.0.9.
+
+[ERROR] Due to some errors while processing ulex.1.1, the following actions will NOT proceed:
+ - install higlo.0.3
+
+===== ERROR while installing ulex.1.1 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/ulex.1.1
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/ulex.1.1/ulex-24-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/ulex.1.1/ulex-24-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/ulex.1.1/ulex-24-ad8886.err
+### stdout ###
+# ocamlbuild -byte-plugin pa_ulex.cma ulexing.cma
+# ocamlfind ocamlc unix.cma -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cma -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmo -o myocamlbuild
+# ocamlfind ocamldep -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
+# + ocamlfind ocamldep -pp camlp4orf -modules pa_ulex.ml > pa_ulex.ml.depends
+# Command exited with code 2.
+### stderr ###
+# make: *** [all] Error 10
+
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+trunk/backup/state-20140409144034.export"
+'opam install higlo' failed.
