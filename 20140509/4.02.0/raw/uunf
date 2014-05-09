@@ -1,0 +1,42 @@
+++ opam install uunf -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install uunf
+Ubuntu srcexts:
+The following actions will be performed:
+ - install uunf.0.9.2
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing uunf.0.9.2 =-=-=
+default    Downloading https://opam.ocaml.org/archives/uunf.0.9.2+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/uunf.0.9.2+opam.tar.gz
+--2014-05-09 20:53:18--  https://opam.ocaml.org/archives/uunf.0.9.2+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 51083 (50K) [application/octet-stream]
+Saving to: 'uunf.0.9.2+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ......... 100%  250K=0.2s
+
+2014-05-09 20:53:18 (250 KB/s) - 'uunf.0.9.2+opam.tar.gz' saved [51083/51083]
+
+Building uunf.0.9.2:
+  ./pkg/pkg-git
+  ./pkg/build true false
+ocamlfind ocamldep -modules src/uunf.mli > src/uunf.mli.depends
+ocamlfind ocamlc -c -annot -I src -I test -o src/uunf.cmi src/uunf.mli
+ocamlfind ocamldep -modules src/uunf.ml > src/uunf.ml.depends
+ocamlfind ocamlopt -c -annot -I src -I test -o src/uunf.cmx src/uunf.ml
+ocamlfind ocamlc -c -annot -I src -I test -o src/uunf.cmo src/uunf.ml
+ocamlfind ocamlc -a src/uunf.cmo -o src/uunf.cma
+ocamlfind ocamlopt -a src/uunf.cmx -o src/uunf.cmxa
+ocamlfind ocamlopt -shared src/uunf.cmx -o src/uunf.cmxs
+Installing uunf.0.9.2.
+[WARNING] opam-version is an unknown field in /home/opam/.opam/4.02.0dev+trunk/build/uunf.0.9.2/uunf.install: is your OPAM up-to-date ?
