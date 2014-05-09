@@ -1,0 +1,15 @@
+++ opam install otags -e ubuntu
+[ERROR] "otags" is not available for your compiler or your OS.
+'opam install otags -e ubuntu' failed.
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install otags
+[ERROR] "otags" is not available for your compiler or your OS.
+'opam install otags' failed.
