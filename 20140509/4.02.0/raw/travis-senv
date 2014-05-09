@@ -1,0 +1,87 @@
+++ opam install travis-senv -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install travis-senv
+The following actions will be performed:
+ - install cmdliner.0.9.4 [required by travis-senv]
+ - install travis-senv.1.0.0
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing cmdliner.0.9.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/cmdliner.0.9.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/cmdliner.0.9.4+opam.tar.gz
+--2014-05-09 20:42:25--  https://opam.ocaml.org/archives/cmdliner.0.9.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 58059 (57K) [application/octet-stream]
+Saving to: 'cmdliner.0.9.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 88%  246K 0s
+    50K ......                                                100% 47.9M=0.2s
+
+2014-05-09 20:42:26 (279 KB/s) - 'cmdliner.0.9.4+opam.tar.gz' saved [58059/58059]
+
+Building cmdliner.0.9.4:
+  ./pkg/pkg-git
+  ./pkg/build true
+ocamlfind ocamldep -modules src/cmdliner.mli > src/cmdliner.mli.depends
+ocamlfind ocamlc -c -I src -I test -o src/cmdliner.cmi src/cmdliner.mli
+ocamlfind ocamldep -modules src/cmdliner.ml > src/cmdliner.ml.depends
+ocamlfind ocamlopt -c -annot -bin-annot -I src -I test -o src/cmdliner.cmx src/cmdliner.ml
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/cmdliner.cmo src/cmdliner.ml
+ocamlfind ocamlc -a src/cmdliner.cmo -o src/cmdliner.cma
+ocamlfind ocamlopt -a src/cmdliner.cmx -o src/cmdliner.cmxa
+ocamlfind ocamlopt -shared src/cmdliner.cmx -o src/cmdliner.cmxs
+Installing cmdliner.0.9.4.
+
+=-=-= Installing travis-senv.1.0.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/travis-senv.1.0.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/travis-senv.1.0.0+opam.tar.gz
+--2014-05-09 20:42:34--  https://opam.ocaml.org/archives/travis-senv.1.0.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4383 (4.3K) [application/octet-stream]
+Saving to: 'travis-senv.1.0.0+opam.tar.gz'
+
+     0K ....                                                  100%  225M=0s
+
+2014-05-09 20:42:35 (225 MB/s) - 'travis-senv.1.0.0+opam.tar.gz' saved [4383/4383]
+
+Building travis-senv.1.0.0:
+  make
+ocamlbuild -use-ocamlfind -pkg cmdliner main.native
+ocamlfind ocamldep -package cmdliner -modules main.ml > main.ml.depends
+ocamlfind ocamldep -package cmdliner -modules base64.mli > base64.mli.depends
+ocamlfind ocamlc -c -package cmdliner -o base64.cmi base64.mli
+ocamlfind ocamlc -c -package cmdliner -o main.cmo main.ml
+ocamlfind ocamldep -package cmdliner -modules base64.ml > base64.ml.depends
+ocamlfind ocamlopt -c -package cmdliner -o base64.cmx base64.ml
++ ocamlfind ocamlopt -c -package cmdliner -o base64.cmx base64.ml
+File "base64.ml", line 39, characters 4-39:
+Warning 3: deprecated feature: String.set
+File "base64.ml", line 40, characters 42-77:
+Warning 3: deprecated feature: String.set
+File "base64.ml", line 41, characters 42-77:
+Warning 3: deprecated feature: String.set
+File "base64.ml", line 60, characters 4-35:
+Warning 3: deprecated feature: String.set
+File "base64.ml", line 61, characters 4-35:
+Warning 3: deprecated feature: String.set
+File "base64.ml", line 62, characters 4-35:
+Warning 3: deprecated feature: String.set
+File "base64.ml", line 63, characters 4-35:
+Warning 3: deprecated feature: String.set
+File "base64.ml", line 66, characters 4-44:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt -c -package cmdliner -o main.cmx main.ml
+ocamlfind ocamlopt -linkpkg -package cmdliner base64.cmx main.cmx -o main.native
+Installing travis-senv.1.0.0.
