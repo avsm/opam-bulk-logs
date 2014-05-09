@@ -1,0 +1,120 @@
+++ opam install mirage-clock-xen -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install mirage-clock-xen
+Ubuntu srcexts:
+The following actions will be performed:
+ - install mirage-types.1.1.2 [required by mirage-clock-xen]
+ - install mirage-clock-xen.1.0.0
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing mirage-types.1.1.2 =-=-=
+default    Downloading https://opam.ocaml.org/archives/mirage-types.1.1.2+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/mirage-types.1.1.2+opam.tar.gz
+--2014-05-09 16:29:10--  https://opam.ocaml.org/archives/mirage-types.1.1.2+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 80940 (79K) [application/octet-stream]
+Saving to: 'mirage-types.1.1.2+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 63%  157K 0s
+    50K .......... .......... .........                       100%  266K=0.4s
+
+2014-05-09 16:29:11 (184 KB/s) - 'mirage-types.1.1.2+opam.tar.gz' saved [80940/80940]
+
+Building mirage-types.1.1.2:
+  make install-types
+./build true
++ ocamlfind query lwt cstruct ipaddr
++ echo 
++ WITH_LWT=
++ ocamlbuild -tag bin_annot types/V1.cmi
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+File "_tags", line 19, characters 26-38:
+Warning: the tag "pkg_cmdliner" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 21, characters 26-36:
+Warning: the tag "pkg_ipaddr" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 22, characters 26-33:
+Warning: the tag "pkg_lwt" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 23, characters 26-42:
+Warning: the tag "pkg_mirage-types" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 24, characters 26-46:
+Warning: the tag "pkg_mirage-types.lwt" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 27, characters 16-28:
+Warning: the tag "pkg_cmdliner" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 29, characters 16-26:
+Warning: the tag "pkg_ipaddr" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 30, characters 16-23:
+Warning: the tag "pkg_lwt" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 31, characters 16-32:
+Warning: the tag "pkg_mirage-types" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 32, characters 16-36:
+Warning: the tag "pkg_mirage-types.lwt" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamldep -modules types/V1.mli > types/V1.mli.depends
+ocamlfind ocamlc -c -g -annot -bin-annot -principal -I types -o types/V1.cmi types/V1.mli
+W: Cannot get variable ext_obj
+W: Cannot get variable ext_lib
+W: Cannot get variable ext_dll
+W: Cannot get variable ocamlfind
+W: Cannot get variable ocamlfind
+W: Cannot get variable ocamlfind
+W: Cannot get variable ocamlfind
+W: Cannot get variable ocamlfind
+W: Cannot get variable ocamlfind
++ FILES=types/META _build/types/V1.mli _build/types/V1.cmi -optional _build/types/V1.cmti
++ [  !=  ]
++ [ true = true ]
++ ocamlfind remove mirage-types
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/mirage-types
++ ocamlfind install mirage-types types/META _build/types/V1.mli _build/types/V1.cmi -optional _build/types/V1.cmti
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mirage-types/V1.cmti
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mirage-types/V1.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mirage-types/V1.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mirage-types/META
+Installing mirage-types.1.1.2.
+
+=-=-= Installing mirage-clock-xen.1.0.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/mirage-clock-xen.1.0.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/mirage-clock-xen.1.0.0+opam.tar.gz
+--2014-05-09 16:29:18--  https://opam.ocaml.org/archives/mirage-clock-xen.1.0.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2933 (2.9K) [application/octet-stream]
+Saving to: 'mirage-clock-xen.1.0.0+opam.tar.gz'
+
+     0K ..                                                    100%  155M=0s
+
+2014-05-09 16:29:18 (155 MB/s) - 'mirage-clock-xen.1.0.0+opam.tar.gz' saved [2933/2933]
+
+Building mirage-clock-xen.1.0.0:
+  make xen-build
+  make xen-install
+OS=xen ./build
+ocamlfind ocamldep -modules xen/clock.mli > xen/clock.mli.depends
+ocamlfind ocamlc -c -I xen -o xen/clock.cmi xen/clock.mli
+ocamlfind ocamldep -modules xen/clock.ml > xen/clock.ml.depends
+ocamlfind ocamlc -c -I xen -o xen/clock.cmo xen/clock.ml
+ocamlfind ocamlc -a xen/clock.cmo -o xen/mirage-clock.cma
+ocamlfind ocamlopt -c -I xen -o xen/clock.cmx xen/clock.ml
+ocamlfind ocamlopt -a xen/clock.cmx -o xen/mirage-clock.cmxa
+ocamlfind ocamlopt -shared -linkall xen/mirage-clock.cmxa -o xen/mirage-clock.cmxs
+OS=xen ./build true
+ocamlfind ocamlopt -shared -linkall xen/mirage-clock.cmxa -o xen/mirage-clock.cmxs
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/mirage-clock-xen
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mirage-clock-xen/mirage-clock.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mirage-clock-xen/mirage-clock.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mirage-clock-xen/clock.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mirage-clock-xen/mirage-clock.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mirage-clock-xen/mirage-clock.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mirage-clock-xen/clock.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mirage-clock-xen/clock.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mirage-clock-xen/META
+Installing mirage-clock-xen.1.0.0.
