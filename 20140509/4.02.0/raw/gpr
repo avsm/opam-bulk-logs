@@ -1,0 +1,1551 @@
+++ opam install gpr -e ubuntu
++ depext='libblas-dev libgsl0-dev liblapack-dev'
++ echo Ubuntu depexts: libblas-dev libgsl0-dev liblapack-dev
+Ubuntu depexts: libblas-dev libgsl0-dev liblapack-dev
++ '[' 'libblas-dev libgsl0-dev liblapack-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libblas-dev libgsl0-dev liblapack-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libgfortran3:amd64.
+(Reading database ... 22248 files and directories currently installed.)
+Preparing to unpack .../libgfortran3_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libgfortran3:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package libblas3.
+Preparing to unpack .../libblas3_1.2.20110419-7_amd64.deb ...
+Unpacking libblas3 (1.2.20110419-7) ...
+Selecting previously unselected package libblas-dev.
+Preparing to unpack .../libblas-dev_1.2.20110419-7_amd64.deb ...
+Unpacking libblas-dev (1.2.20110419-7) ...
+Selecting previously unselected package libgsl0ldbl.
+Preparing to unpack .../libgsl0ldbl_1.16+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libgsl0ldbl (1.16+dfsg-1ubuntu1) ...
+Selecting previously unselected package libgsl0-dev.
+Preparing to unpack .../libgsl0-dev_1.16+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libgsl0-dev (1.16+dfsg-1ubuntu1) ...
+Selecting previously unselected package liblapack3.
+Preparing to unpack .../liblapack3_3.5.0-2ubuntu1_amd64.deb ...
+Unpacking liblapack3 (3.5.0-2ubuntu1) ...
+Selecting previously unselected package liblapack-dev.
+Preparing to unpack .../liblapack-dev_3.5.0-2ubuntu1_amd64.deb ...
+Unpacking liblapack-dev (3.5.0-2ubuntu1) ...
+Setting up libgfortran3:amd64 (4.8.2-19ubuntu1) ...
+Setting up libblas3 (1.2.20110419-7) ...
+update-alternatives: using /usr/lib/libblas/libblas.so.3 to provide /usr/lib/libblas.so.3 (libblas.so.3) in auto mode
+Setting up libblas-dev (1.2.20110419-7) ...
+update-alternatives: using /usr/lib/libblas/libblas.so to provide /usr/lib/libblas.so (libblas.so) in auto mode
+Setting up libgsl0ldbl (1.16+dfsg-1ubuntu1) ...
+Setting up libgsl0-dev (1.16+dfsg-1ubuntu1) ...
+Setting up liblapack3 (3.5.0-2ubuntu1) ...
+update-alternatives: using /usr/lib/lapack/liblapack.so.3 to provide /usr/lib/liblapack.so.3 (liblapack.so.3) in auto mode
+Setting up liblapack-dev (3.5.0-2ubuntu1) ...
+update-alternatives: using /usr/lib/lapack/liblapack.so to provide /usr/lib/liblapack.so (liblapack.so) in auto mode
+Processing triggers for libc-bin (2.19-0ubuntu6) ...
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install gpr
+The following actions will be performed:
+ - install gsl.1.15.0 [required by gpr]
+ - install ounit.2.0.0 [required by gpr]
+ - install pipebang.110.01.00 [required by gpr]
+ - install lacaml.7.0.13 [required by gpr]
+ - install type_conv.109.60.00 [required by gpr]
+ - install herelib.109.35.02 [required by gpr]
+ - install variantslib.109.15.03 [required by gpr]
+ - install sexplib.110.01.00 [required by gpr]
+ - install pa_ounit.109.53.02 [required by gpr]
+ - install fieldslib.109.20.03 [required by gpr]
+ - install comparelib.109.60.00 [required by gpr]
+ - install bin_prot.109.53.03 [required by gpr]
+ - install pa_bench.109.55.02 [required by gpr]
+ - install custom_printf.109.60.00 [required by gpr]
+ - install typerep.109.55.02 [required by gpr]
+ - install core_kernel.110.01.00 [required by gpr]
+ - install pa_test.110.01.00 [required by gpr]
+ - install core.110.01.00 [required by gpr]
+ - install gpr.1.1.3
+19 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing gsl.1.15.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/gsl.1.15.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/gsl.1.15.0+opam.tar.gz
+--2014-05-09 14:20:31--  https://opam.ocaml.org/archives/gsl.1.15.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 191603 (187K) [application/octet-stream]
+Saving to: 'gsl.1.15.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 26%  246K 1s
+    50K .......... .......... .......... .......... .......... 53%  488K 0s
+   100K .......... .......... .......... .......... .......... 80%  492K 0s
+   150K .......... .......... .......... .......              100% 15.5M=0.4s
+
+2014-05-09 14:20:32 (457 KB/s) - 'gsl.1.15.0+opam.tar.gz' saved [191603/191603]
+
+Building gsl.1.15.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+ocaml do_const.ml --mli > lib/const.mli
+ocaml do_const.ml > lib/const.ml
+ocaml do_sf.ml < lib/sf.mli.q > lib/sf.mli
+cp lib/sf.mli lib/sf.ml
+ocaml do_cdf.ml < /usr/include/gsl/gsl_cdf.h > lib/cdf.mli
+cp lib/cdf.mli lib/cdf.ml
+ocaml do_cdf.ml --c < /usr/include/gsl/gsl_cdf.h > lib/mlgsl_cdf.c
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ gsl
+Package version: ..................................... 1.15.0
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+trunk
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Strict compile-time checks: .......................... true
+Build examples: ...................................... true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+pkg_bigarray: ........................................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Cannot find source file matching module 'gsl' in library gsl
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas.c
+mv mlgsl_blas.o lib/mlgsl_blas.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex.c
+mv mlgsl_blas_complex.o lib/mlgsl_blas_complex.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_complex_float.c
+mv mlgsl_blas_complex_float.o lib/mlgsl_blas_complex_float.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_blas_float.c
+mv mlgsl_blas_float.o lib/mlgsl_blas_float.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_bspline.c
+mv mlgsl_bspline.o lib/mlgsl_bspline.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_cdf.c
+mv mlgsl_cdf.o lib/mlgsl_cdf.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_cheb.c
+mv mlgsl_cheb.o lib/mlgsl_cheb.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_combi.c
+mv mlgsl_combi.o lib/mlgsl_combi.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_complex.c
+mv mlgsl_complex.o lib/mlgsl_complex.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_diff.c
+mv mlgsl_diff.o lib/mlgsl_diff.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_eigen.c
+mv mlgsl_eigen.o lib/mlgsl_eigen.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_error.c
+mv mlgsl_error.o lib/mlgsl_error.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fft.c
+mv mlgsl_fft.o lib/mlgsl_fft.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fit.c
+mv mlgsl_fit.o lib/mlgsl_fit.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_fun.c
+mv mlgsl_fun.o lib/mlgsl_fun.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_histo.c
+mv mlgsl_histo.o lib/mlgsl_histo.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_ieee.c
+mv mlgsl_ieee.o lib/mlgsl_ieee.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_integration.c
+mv mlgsl_integration.o lib/mlgsl_integration.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_interp.c
+mv mlgsl_interp.o lib/mlgsl_interp.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_linalg.c
+mv mlgsl_linalg.o lib/mlgsl_linalg.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_linalg_complex.c
+mv mlgsl_linalg_complex.o lib/mlgsl_linalg_complex.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_math.c
+mv mlgsl_math.o lib/mlgsl_math.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_matrix_complex.c
+mv mlgsl_matrix_complex.o lib/mlgsl_matrix_complex.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_matrix_complex_float.c
+mv mlgsl_matrix_complex_float.o lib/mlgsl_matrix_complex_float.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_matrix_double.c
+mv mlgsl_matrix_double.o lib/mlgsl_matrix_double.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_matrix_float.c
+mv mlgsl_matrix_float.o lib/mlgsl_matrix_float.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_min.c
+mv mlgsl_min.o lib/mlgsl_min.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_monte.c
+mv mlgsl_monte.o lib/mlgsl_monte.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_multifit.c
+mv mlgsl_multifit.o lib/mlgsl_multifit.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_multimin.c
+mv mlgsl_multimin.o lib/mlgsl_multimin.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_multiroots.c
+mv mlgsl_multiroots.o lib/mlgsl_multiroots.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_odeiv.c
+mv mlgsl_odeiv.o lib/mlgsl_odeiv.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_permut.c
+mv mlgsl_permut.o lib/mlgsl_permut.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_poly.c
+mv mlgsl_poly.o lib/mlgsl_poly.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_qrng.c
+mv mlgsl_qrng.o lib/mlgsl_qrng.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_randist.c
+mv mlgsl_randist.o lib/mlgsl_randist.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_rng.c
+mv mlgsl_rng.o lib/mlgsl_rng.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_roots.c
+mv mlgsl_roots.o lib/mlgsl_roots.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_sf.c
+mv mlgsl_sf.o lib/mlgsl_sf.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_sort.c
+mv mlgsl_sort.o lib/mlgsl_sort.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_stats.c
+mv mlgsl_stats.o lib/mlgsl_stats.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_sum.c
+mv mlgsl_sum.o lib/mlgsl_sum.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_vector_double.c
+mv mlgsl_vector_double.o lib/mlgsl_vector_double.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_vector_float.c
+mv mlgsl_vector_float.o lib/mlgsl_vector_float.o
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -ccopt -I/usr/include -c lib/mlgsl_wavelet.c
+mv mlgsl_wavelet.o lib/mlgsl_wavelet.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlmklib -o lib/gsl_stubs -L/usr/lib -lgsl -lgslcblas -lm lib/mlgsl_blas.o lib/mlgsl_blas_complex.o lib/mlgsl_blas_complex_float.o lib/mlgsl_blas_float.o lib/mlgsl_bspline.o lib/mlgsl_cdf.o lib/mlgsl_cheb.o lib/mlgsl_combi.o lib/mlgsl_complex.o lib/mlgsl_diff.o lib/mlgsl_eigen.o lib/mlgsl_error.o lib/mlgsl_fft.o lib/mlgsl_fit.o lib/mlgsl_fun.o lib/mlgsl_histo.o lib/mlgsl_ieee.o lib/mlgsl_integration.o lib/mlgsl_interp.o lib/mlgsl_linalg.o lib/mlgsl_linalg_complex.o lib/mlgsl_math.o lib/mlgsl_matrix_complex.o lib/mlgsl_matrix_complex_float.o lib/mlgsl_matrix_double.o lib/mlgsl_matrix_float.o lib/mlgsl_min.o lib/mlgsl_monte.o lib/mlgsl_multifit.o lib/mlgsl_multimin.o lib/mlgsl_multiroots.o lib/mlgsl_odeiv.o lib/mlgsl_permut.o lib/mlgsl_poly.o lib/mlgsl_qrng.o lib/mlgsl_randist.o lib/mlgsl_rng.o lib/mlgsl_roots.o lib/mlgsl_sf.o lib/mlgsl_sort.o lib/mlgsl_stats.o lib/mlgsl_sum.o lib/mlgsl_vector_double.o lib/mlgsl_vector_float.o lib/mlgsl_wavelet.o
+ocamlfind ocamldep -package bigarray -modules lib/blas.mli > lib/blas.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/gsl_complex.mli > lib/gsl_complex.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/matrix.mli > lib/matrix.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/vector.mli > lib/vector.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/vector.cmi lib/vector.mli
+ocamlfind ocamldep -package bigarray -modules lib/matrix_complex.mli > lib/matrix_complex.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/gsl_complex.cmi lib/gsl_complex.mli
+ocamlfind ocamldep -package bigarray -modules lib/vector_complex.mli > lib/vector_complex.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/vector_complex.cmi lib/vector_complex.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/matrix.cmi lib/matrix.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/matrix_complex.cmi lib/matrix_complex.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/blas.cmi lib/blas.mli
+ocamlfind ocamldep -package bigarray -modules lib/blas.ml > lib/blas.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/blas_flat.mli > lib/blas_flat.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/matrix_complex_flat.mli > lib/matrix_complex_flat.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/vector_complex_flat.mli > lib/vector_complex_flat.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/vector_flat.mli > lib/vector_flat.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/vector_flat.cmi lib/vector_flat.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/vector_complex_flat.cmi lib/vector_complex_flat.mli
+ocamlfind ocamldep -package bigarray -modules lib/matrix_flat.mli > lib/matrix_flat.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/matrix_complex_flat.cmi lib/matrix_complex_flat.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/matrix_flat.cmi lib/matrix_flat.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/blas_flat.cmi lib/blas_flat.mli
+ocamlfind ocamldep -package bigarray -modules lib/blas_flat.ml > lib/blas_flat.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/blas_gen.mli > lib/blas_gen.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/vectmat.mli > lib/vectmat.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/vectmat.cmi lib/vectmat.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/blas_gen.cmi lib/blas_gen.mli
+ocamlfind ocamldep -package bigarray -modules lib/blas_gen.ml > lib/blas_gen.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/bspline.mli > lib/bspline.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/bspline.cmi lib/bspline.mli
+ocamlfind ocamldep -package bigarray -modules lib/bspline.ml > lib/bspline.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/cdf.mli > lib/cdf.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/cdf.cmi lib/cdf.mli
+ocamlfind ocamldep -package bigarray -modules lib/cdf.ml > lib/cdf.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/cheb.mli > lib/cheb.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/fun.mli > lib/fun.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/fun.cmi lib/fun.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/cheb.cmi lib/cheb.mli
+ocamlfind ocamldep -package bigarray -modules lib/cheb.ml > lib/cheb.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/combi.mli > lib/combi.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/combi.cmi lib/combi.mli
+ocamlfind ocamldep -package bigarray -modules lib/combi.ml > lib/combi.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/error.mli > lib/error.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/error.cmi lib/error.mli
+ocamlfind ocamldep -package bigarray -modules lib/const.mli > lib/const.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/const.cmi lib/const.mli
+ocamlfind ocamldep -package bigarray -modules lib/const.ml > lib/const.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/diff.mli > lib/diff.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/diff.cmi lib/diff.mli
+ocamlfind ocamldep -package bigarray -modules lib/diff.ml > lib/diff.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/eigen.mli > lib/eigen.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/eigen.cmi lib/eigen.mli
+ocamlfind ocamldep -package bigarray -modules lib/eigen.ml > lib/eigen.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/error.ml > lib/error.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/fft.mli > lib/fft.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/fft.cmi lib/fft.mli
+ocamlfind ocamldep -package bigarray -modules lib/fft.ml > lib/fft.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/fit.mli > lib/fit.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/fit.cmi lib/fit.mli
+ocamlfind ocamldep -package bigarray -modules lib/fit.ml > lib/fit.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/fun.ml > lib/fun.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/gsl_complex.ml > lib/gsl_complex.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/gsl_sort.mli > lib/gsl_sort.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/permut.mli > lib/permut.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/permut.cmi lib/permut.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/gsl_sort.cmi lib/gsl_sort.mli
+ocamlfind ocamldep -package bigarray -modules lib/gsl_sort.ml > lib/gsl_sort.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/histo.mli > lib/histo.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/histo.cmi lib/histo.mli
+ocamlfind ocamldep -package bigarray -modules lib/histo.ml > lib/histo.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/ieee.mli > lib/ieee.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/ieee.cmi lib/ieee.mli
+ocamlfind ocamldep -package bigarray -modules lib/ieee.ml > lib/ieee.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/integration.mli > lib/integration.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/integration.cmi lib/integration.mli
+ocamlfind ocamldep -package bigarray -modules lib/integration.ml > lib/integration.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/interp.mli > lib/interp.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/interp.cmi lib/interp.mli
+ocamlfind ocamldep -package bigarray -modules lib/interp.ml > lib/interp.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/linalg.mli > lib/linalg.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/linalg.cmi lib/linalg.mli
+ocamlfind ocamldep -package bigarray -modules lib/linalg.ml > lib/linalg.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/math.mli > lib/math.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/math.cmi lib/math.mli
+ocamlfind ocamldep -package bigarray -modules lib/math.ml > lib/math.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/matrix.ml > lib/matrix.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/matrix_complex.ml > lib/matrix_complex.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/matrix_complex_flat.ml > lib/matrix_complex_flat.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/matrix_flat.ml > lib/matrix_flat.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/min.mli > lib/min.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/min.cmi lib/min.mli
+ocamlfind ocamldep -package bigarray -modules lib/min.ml > lib/min.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/misc.ml > lib/misc.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/monte.mli > lib/monte.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/rng.mli > lib/rng.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/rng.cmi lib/rng.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/monte.cmi lib/monte.mli
+ocamlfind ocamldep -package bigarray -modules lib/monte.ml > lib/monte.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/multifit.mli > lib/multifit.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/multifit.cmi lib/multifit.mli
+ocamlfind ocamldep -package bigarray -modules lib/multifit.ml > lib/multifit.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/misc.cmo lib/misc.ml
+ocamlfind ocamldep -package bigarray -modules lib/multifit_nlin.mli > lib/multifit_nlin.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/multifit_nlin.cmi lib/multifit_nlin.mli
+ocamlfind ocamldep -package bigarray -modules lib/multifit_nlin.ml > lib/multifit_nlin.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/multimin.mli > lib/multimin.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/multimin.cmi lib/multimin.mli
+ocamlfind ocamldep -package bigarray -modules lib/multimin.ml > lib/multimin.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/multiroot.mli > lib/multiroot.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/multiroot.cmi lib/multiroot.mli
+ocamlfind ocamldep -package bigarray -modules lib/multiroot.ml > lib/multiroot.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/odeiv.mli > lib/odeiv.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/odeiv.cmi lib/odeiv.mli
+ocamlfind ocamldep -package bigarray -modules lib/odeiv.ml > lib/odeiv.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/permut.ml > lib/permut.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/poly.mli > lib/poly.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/poly.cmi lib/poly.mli
+ocamlfind ocamldep -package bigarray -modules lib/poly.ml > lib/poly.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/qrng.mli > lib/qrng.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/qrng.cmi lib/qrng.mli
+ocamlfind ocamldep -package bigarray -modules lib/qrng.ml > lib/qrng.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/randist.mli > lib/randist.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/randist.cmi lib/randist.mli
+ocamlfind ocamldep -package bigarray -modules lib/randist.ml > lib/randist.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/rng.ml > lib/rng.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/root.mli > lib/root.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/root.cmi lib/root.mli
+ocamlfind ocamldep -package bigarray -modules lib/root.ml > lib/root.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/sf.mli > lib/sf.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/sf.cmi lib/sf.mli
+ocamlfind ocamldep -package bigarray -modules lib/sf.ml > lib/sf.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/siman.mli > lib/siman.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/siman.cmi lib/siman.mli
+ocamlfind ocamldep -package bigarray -modules lib/siman.ml > lib/siman.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/stats.mli > lib/stats.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/stats.cmi lib/stats.mli
+ocamlfind ocamldep -package bigarray -modules lib/stats.ml > lib/stats.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/sum.mli > lib/sum.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/sum.cmi lib/sum.mli
+ocamlfind ocamldep -package bigarray -modules lib/sum.ml > lib/sum.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/vectmat.ml > lib/vectmat.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/vector.ml > lib/vector.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/vector_complex.ml > lib/vector_complex.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/vector_complex_flat.ml > lib/vector_complex_flat.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/vector_flat.ml > lib/vector_flat.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/wavelet.mli > lib/wavelet.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/wavelet.cmi lib/wavelet.mli
+ocamlfind ocamldep -package bigarray -modules lib/wavelet.ml > lib/wavelet.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/blas.cmo lib/blas.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/blas_flat.cmo lib/blas_flat.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/blas_gen.cmo lib/blas_gen.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/bspline.cmo lib/bspline.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/cdf.cmo lib/cdf.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/cheb.cmo lib/cheb.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/combi.cmo lib/combi.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/const.cmo lib/const.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/diff.cmo lib/diff.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/eigen.cmo lib/eigen.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/error.cmo lib/error.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/fft.cmo lib/fft.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/fit.cmo lib/fit.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/fun.cmo lib/fun.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/gsl_complex.cmo lib/gsl_complex.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/gsl_sort.cmo lib/gsl_sort.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/histo.cmo lib/histo.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/ieee.cmo lib/ieee.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/integration.cmo lib/integration.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/interp.cmo lib/interp.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/linalg.cmo lib/linalg.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/math.cmo lib/math.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/matrix.cmo lib/matrix.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/matrix_complex.cmo lib/matrix_complex.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/matrix_complex_flat.cmo lib/matrix_complex_flat.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/matrix_flat.cmo lib/matrix_flat.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/min.cmo lib/min.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/monte.cmo lib/monte.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/multifit.cmo lib/multifit.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/multifit_nlin.cmo lib/multifit_nlin.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/multimin.cmo lib/multimin.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/multiroot.cmo lib/multiroot.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/odeiv.cmo lib/odeiv.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/permut.cmo lib/permut.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/poly.cmo lib/poly.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/qrng.cmo lib/qrng.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/randist.cmo lib/randist.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/rng.cmo lib/rng.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/root.cmo lib/root.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/sf.cmo lib/sf.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/siman.cmo lib/siman.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/stats.cmo lib/stats.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/sum.cmo lib/sum.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/vectmat.cmo lib/vectmat.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/vector.cmo lib/vector.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/vector_complex.cmo lib/vector_complex.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/vector_complex_flat.cmo lib/vector_complex_flat.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/vector_flat.cmo lib/vector_flat.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/wavelet.cmo lib/wavelet.ml
+ocamlfind ocamlc -pack -g lib/gsl_complex.cmo lib/vector.cmo lib/matrix.cmo lib/vector_complex.cmo lib/matrix_complex.cmo lib/blas.cmo lib/vector_flat.cmo lib/vector_complex_flat.cmo lib/matrix_complex_flat.cmo lib/matrix_flat.cmo lib/blas_flat.cmo lib/vectmat.cmo lib/blas_gen.cmo lib/bspline.cmo lib/cdf.cmo lib/fun.cmo lib/cheb.cmo lib/error.cmo lib/combi.cmo lib/const.cmo lib/diff.cmo lib/eigen.cmo lib/fft.cmo lib/fit.cmo lib/permut.cmo lib/gsl_sort.cmo lib/histo.cmo lib/ieee.cmo lib/integration.cmo lib/interp.cmo lib/linalg.cmo lib/math.cmo lib/min.cmo lib/misc.cmo lib/rng.cmo lib/monte.cmo lib/multifit.cmo lib/multifit_nlin.cmo lib/multimin.cmo lib/multiroot.cmo lib/odeiv.cmo lib/poly.cmo lib/qrng.cmo lib/randist.cmo lib/root.cmo lib/sf.cmo lib/siman.cmo lib/stats.cmo lib/sum.cmo lib/wavelet.cmo -o lib/gsl.cmo
+ocamlfind ocamlc -a -dllib -lgsl_stubs -cclib -lgsl_stubs -cclib -L/usr/lib -cclib -lgsl -cclib -lgslcblas -cclib -lm -cclib -L/usr/lib -cclib -lgsl -cclib -lgslcblas -cclib -lm lib/gsl.cmo -o lib/gsl.cma
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/vector.cmx lib/vector.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/gsl_complex.cmx lib/gsl_complex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/vector_complex.cmx lib/vector_complex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/matrix.cmx lib/matrix.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/matrix_complex.cmx lib/matrix_complex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/blas.cmx lib/blas.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/vector_flat.cmx lib/vector_flat.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/vector_complex_flat.cmx lib/vector_complex_flat.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/matrix_complex_flat.cmx lib/matrix_complex_flat.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/matrix_flat.cmx lib/matrix_flat.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/vectmat.cmx lib/vectmat.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/fun.cmx lib/fun.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/error.cmx lib/error.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/permut.cmx lib/permut.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/rng.cmx lib/rng.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/math.cmx lib/math.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/misc.cmx lib/misc.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/blas_flat.cmx lib/blas_flat.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/blas_gen.cmx lib/blas_gen.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/bspline.cmx lib/bspline.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/cdf.cmx lib/cdf.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/cheb.cmx lib/cheb.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/combi.cmx lib/combi.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/const.cmx lib/const.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/diff.cmx lib/diff.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/eigen.cmx lib/eigen.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/fft.cmx lib/fft.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/fit.cmx lib/fit.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/gsl_sort.cmx lib/gsl_sort.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/histo.cmx lib/histo.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/ieee.cmx lib/ieee.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/integration.cmx lib/integration.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/interp.cmx lib/interp.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/linalg.cmx lib/linalg.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/min.cmx lib/min.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/monte.cmx lib/monte.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/multifit.cmx lib/multifit.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/multifit_nlin.cmx lib/multifit_nlin.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/multimin.cmx lib/multimin.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/multiroot.cmx lib/multiroot.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/odeiv.cmx lib/odeiv.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/poly.cmx lib/poly.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/qrng.cmx lib/qrng.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/randist.cmx lib/randist.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/root.cmx lib/root.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/sf.cmx lib/sf.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/siman.cmx lib/siman.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/stats.cmx lib/stats.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/sum.cmx lib/sum.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -for-pack Gsl -I lib -o lib/wavelet.cmx lib/wavelet.ml
+touch lib/gsl.mli  ; if  ocamlfind ocamlopt -pack -g -I lib lib/gsl_complex.cmx lib/vector.cmx lib/matrix.cmx lib/vector_complex.cmx lib/matrix_complex.cmx lib/blas.cmx lib/vector_flat.cmx lib/vector_complex_flat.cmx lib/matrix_complex_flat.cmx lib/matrix_flat.cmx lib/blas_flat.cmx lib/vectmat.cmx lib/blas_gen.cmx lib/bspline.cmx lib/cdf.cmx lib/fun.cmx lib/cheb.cmx lib/error.cmx lib/combi.cmx lib/const.cmx lib/diff.cmx lib/eigen.cmx lib/fft.cmx lib/fit.cmx lib/permut.cmx lib/gsl_sort.cmx lib/histo.cmx lib/ieee.cmx lib/integration.cmx lib/interp.cmx lib/linalg.cmx lib/math.cmx lib/min.cmx lib/misc.cmx lib/rng.cmx lib/monte.cmx lib/multifit.cmx lib/multifit_nlin.cmx lib/multimin.cmx lib/multiroot.cmx lib/odeiv.cmx lib/poly.cmx lib/qrng.cmx lib/randist.cmx lib/root.cmx lib/sf.cmx lib/siman.cmx lib/stats.cmx lib/sum.cmx lib/wavelet.cmx -o lib/gsl.cmx  ; then  rm -f lib/gsl.mli  ; else  rm -f lib/gsl.mli  ; exit 1; fi
+ocamlfind ocamlopt -a -cclib -lgsl_stubs -cclib -L/usr/lib -cclib -lgsl -cclib -lgslcblas -cclib -lm -cclib -L/usr/lib -cclib -lgsl -cclib -lgslcblas -cclib -lm lib/gsl.cmx -o lib/gsl.cmxa
+ocamlfind ocamlopt -shared -cclib -lgsl_stubs -I lib -cclib -L/usr/lib -cclib -lgsl -cclib -lgslcblas -cclib -lm lib/gsl.cmxa lib/gsl.cmx -o lib/gsl.cmxs
+ocamlfind ocamldep -package bigarray -modules examples/blas_ex.ml > examples/blas_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/blas_ex.cmo examples/blas_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/blas_ex.cmx examples/blas_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/blas_ex.cmx -o examples/blas_ex.native
+ocamlfind ocamldep -package bigarray -modules examples/bspline_ex.ml > examples/bspline_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/bspline_ex.cmo examples/bspline_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/bspline_ex.cmx examples/bspline_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/bspline_ex.cmx -o examples/bspline_ex.native
+ocamlfind ocamldep -package bigarray -modules examples/cheb_ex.ml > examples/cheb_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/cheb_ex.cmo examples/cheb_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/cheb_ex.cmx examples/cheb_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/cheb_ex.cmx -o examples/cheb_ex.native
+ocamlfind ocamldep -package bigarray -modules examples/combi_ex.ml > examples/combi_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/combi_ex.cmo examples/combi_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/combi_ex.cmx examples/combi_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/combi_ex.cmx -o examples/combi_ex.native
+ocamlfind ocamldep -package bigarray -modules examples/const_ex.ml > examples/const_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/const_ex.cmo examples/const_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/const_ex.cmx examples/const_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/const_ex.cmx -o examples/const_ex.native
+ocamlfind ocamldep -package bigarray -modules examples/diff_ex.ml > examples/diff_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/diff_ex.cmo examples/diff_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/diff_ex.cmx examples/diff_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/diff_ex.cmx -o examples/diff_ex.native
+ocamlfind ocamldep -package bigarray -modules examples/eigen_ex.ml > examples/eigen_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/eigen_ex.cmo examples/eigen_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/eigen_ex.cmx examples/eigen_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/eigen_ex.cmx -o examples/eigen_ex.native
+ocamlfind ocamldep -package bigarray -modules examples/fft_c.ml > examples/fft_c.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/fft_c.cmo examples/fft_c.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/fft_c.cmx examples/fft_c.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/fft_c.cmx -o examples/fft_c.native
+ocamlfind ocamldep -package bigarray -modules examples/fft_c2.ml > examples/fft_c2.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/fft_c2.cmo examples/fft_c2.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/fft_c2.cmx examples/fft_c2.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/fft_c2.cmx -o examples/fft_c2.native
+ocamlfind ocamldep -package bigarray -modules examples/fft_hc.ml > examples/fft_hc.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/fft_hc.cmo examples/fft_hc.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/fft_hc.cmx examples/fft_hc.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/fft_hc.cmx -o examples/fft_hc.native
+ocamlfind ocamldep -package bigarray -modules examples/fit_ex.ml > examples/fit_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/fit_ex.cmo examples/fit_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/fit_ex.cmx examples/fit_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/fit_ex.cmx -o examples/fit_ex.native
+ocamlfind ocamldep -package bigarray -modules examples/histo_ex.ml > examples/histo_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/histo_ex.cmo examples/histo_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/histo_ex.cmx examples/histo_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/histo_ex.cmx -o examples/histo_ex.native
+ocamlfind ocamldep -package bigarray -modules examples/integration_ex.ml > examples/integration_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/integration_ex.cmo examples/integration_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/integration_ex.cmx examples/integration_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/integration_ex.cmx -o examples/integration_ex.native
+ocamlfind ocamldep -package bigarray -modules examples/interp_ex.ml > examples/interp_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/interp_ex.cmo examples/interp_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/interp_ex.cmx examples/interp_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/interp_ex.cmx -o examples/interp_ex.native
+ocamlfind ocamldep -package bigarray -modules examples/linalg_ex.ml > examples/linalg_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/linalg_ex.cmo examples/linalg_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/linalg_ex.cmx examples/linalg_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/linalg_ex.cmx -o examples/linalg_ex.native
+ocamlfind ocamldep -package bigarray -modules examples/min_ex.ml > examples/min_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/min_ex.cmo examples/min_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/min_ex.cmx examples/min_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/min_ex.cmx -o examples/min_ex.native
+ocamlfind ocamldep -package bigarray -modules examples/monte_ex.ml > examples/monte_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/monte_ex.cmo examples/monte_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/monte_ex.cmx examples/monte_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/monte_ex.cmx -o examples/monte_ex.native
+ocamlfind ocamldep -package bigarray -modules examples/multifit_data_ex.ml > examples/multifit_data_ex.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/multifit_data_ex.cmo examples/multifit_data_ex.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/multifit_data_ex.cmx examples/multifit_data_ex.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/multifit_data_ex.cmx -o examples/multifit_data_ex.native
+ocamlfind ocamldep -package bigarray -pp camlp4of -modules examples/multifit_ex.ml > examples/multifit_ex.ml.depends
++ ocamlfind ocamldep -package bigarray -pp camlp4of -modules examples/multifit_ex.ml > examples/multifit_ex.ml.depends
+Command exited with code 2.
+E: Failure("Command ''/home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild' lib/libgsl_stubs.a lib/dllgsl_stubs.so lib/gsl.cma lib/gsl.cmxa lib/gsl.a lib/gsl.cmxs examples/blas_ex.native examples/bspline_ex.native examples/cheb_ex.native examples/combi_ex.native examples/const_ex.native examples/diff_ex.native examples/eigen_ex.native examples/fft_c.native examples/fft_c2.native examples/fft_hc.native examples/fit_ex.native examples/histo_ex.native examples/integration_ex.native examples/interp_ex.native examples/linalg_ex.native examples/min_ex.native examples/monte_ex.native examples/multifit_data_ex.native examples/multifit_ex.native examples/multifit_nlin_ex.native examples/multimin_ex.native examples/multiroot_ex.native examples/odeiv_ex.native examples/permut_ex.native examples/qrng_ex.native examples/rng_ex.native examples/root_ex.native examples/siman_ex.native examples/siman_tsp_ex.native examples/stats_ex.native examples/sum_ex.native examples/wavelet_ex.native -tag debug' terminated with error code 10")
+[ERROR] The compilation of gsl.1.15.0 failed.
+Removing gsl.1.15.0.
+  ocamlfind remove gsl
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/gsl
+
+=-=-= Installing herelib.109.35.02 =-=-=
+default    Downloading https://opam.ocaml.org/archives/herelib.109.35.02+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/herelib.109.35.02+opam.tar.gz
+--2014-05-09 14:21:12--  https://opam.ocaml.org/archives/herelib.109.35.02+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 47965 (47K) [application/octet-stream]
+Saving to: 'herelib.109.35.02+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ......    100%  235K=0.2s
+
+2014-05-09 14:21:12 (235 KB/s) - 'herelib.109.35.02+opam.tar.gz' saved [47965/47965]
+
+Building herelib.109.35.02:
+  make
+  make install
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+File "setup.ml", line 232, characters 8-26:
+Warning 3: deprecated feature: String.set
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_quotations' is not set: When looking for findlib package camlp4.quotations, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+E: Cannot find findlib package camlp4.extend
+E: Cannot find findlib package camlp4.lib
+E: Cannot find findlib package camlp4.quotations
+E: Failure("3 configuration errors")
+make: *** [setup.data] Error 1
+[ERROR] The compilation of herelib.109.35.02 failed.
+Removing herelib.109.35.02.
+  ocamlfind remove herelib
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/herelib
+
+=-=-= Installing lacaml.7.0.13 =-=-=
+default    Downloading https://opam.ocaml.org/archives/lacaml.7.0.13+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/lacaml.7.0.13+opam.tar.gz
+--2014-05-09 14:21:20--  https://opam.ocaml.org/archives/lacaml.7.0.13+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 166920 (163K) [application/octet-stream]
+Saving to: 'lacaml.7.0.13+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 30%  244K 0s
+    50K .......... .......... .......... .......... .......... 61%  484K 0s
+   100K .......... .......... .......... .......... .......... 92%  486K 0s
+   150K .......... ...                                        100% 42.8M=0.4s
+
+2014-05-09 14:21:20 (396 KB/s) - 'lacaml.7.0.13+opam.tar.gz' saved [166920/166920]
+
+Building lacaml.7.0.13:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ lacaml
+Package version: ..................................... 7.0.13
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+trunk
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+conf_ccopt: .......................................... 
+conf_cclib: .......................................... 
+Strict compile-time checks: .......................... true
+Build examples: ...................................... true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+pkg_bigarray: ........................................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Cannot find source file matching module 'lacaml_top' in library lacaml_top
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlc -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/impl_c.c
+mv impl_c.o lib/impl_c.o
+ocamlfind ocamlc -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/utils_c.c
+mv utils_c.o lib/utils_c.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/vec2_S_c.o' -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/vec_SD_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/vec2_D_c.o' -ccopt -DLACAML_DOUBLE -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/vec_SD_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/vec2_C_c.o' -ccopt -DLACAML_COMPLEX -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/vec_CZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/vec2_Z_c.o' -ccopt -DLACAML_COMPLEX -ccopt -DLACAML_DOUBLE -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/vec_CZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/vec4_S_c.o' -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/vec_SDCZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/vec4_D_c.o' -ccopt -DLACAML_DOUBLE -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/vec_SDCZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/vec4_C_c.o' -ccopt -DLACAML_COMPLEX -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/vec_SDCZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/vec4_Z_c.o' -ccopt -DLACAML_COMPLEX -ccopt -DLACAML_DOUBLE -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/vec_SDCZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/mat4_S_c.o' -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/mat_SDCZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/mat4_D_c.o' -ccopt -DLACAML_DOUBLE -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/mat_SDCZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/mat4_C_c.o' -ccopt -DLACAML_COMPLEX -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/mat_SDCZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/mat4_Z_c.o' -ccopt -DLACAML_COMPLEX -ccopt -DLACAML_DOUBLE -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/mat_SDCZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/impl2_S_c.o' -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/impl_SD_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/impl2_D_c.o' -ccopt -DLACAML_DOUBLE -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/impl_SD_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/impl2_C_c.o' -ccopt -DLACAML_COMPLEX -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/impl_CZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/impl2_Z_c.o' -ccopt -DLACAML_COMPLEX -ccopt -DLACAML_DOUBLE -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/impl_CZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/impl4_S_c.o' -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/impl_SDCZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/impl4_D_c.o' -ccopt -DLACAML_DOUBLE -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/impl_SDCZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/impl4_C_c.o' -ccopt -DLACAML_COMPLEX -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/impl_SDCZ_c.c
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt '-o lib/impl4_Z_c.o' -ccopt -DLACAML_COMPLEX -ccopt -DLACAML_DOUBLE -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/impl_SDCZ_c.c
+ocamlfind ocamlc -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/exp10.c
+mv exp10.o lib/exp10.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlmklib -o lib/lacaml_stubs -lblas -llapack lib/impl_c.o lib/utils_c.o lib/vec2_S_c.o lib/vec2_D_c.o lib/vec2_C_c.o lib/vec2_Z_c.o lib/vec4_S_c.o lib/vec4_D_c.o lib/vec4_C_c.o lib/vec4_Z_c.o lib/mat4_S_c.o lib/mat4_D_c.o lib/mat4_C_c.o lib/mat4_Z_c.o lib/impl2_S_c.o lib/impl2_D_c.o lib/impl2_C_c.o lib/impl2_Z_c.o lib/impl4_S_c.o lib/impl4_D_c.o lib/impl4_C_c.o lib/impl4_Z_c.o lib/exp10.o
+ocamlfind ocamldep -package bigarray -modules lib/lacaml.mli > lib/lacaml.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/utils.ml > lib/utils.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/common.mli > lib/common.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/common.cmi lib/common.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/utils.cmo lib/utils.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml.cmi lib/lacaml.mli
+ocamlfind ocamldep -package bigarray -modules lib/common.ml > lib/common.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/float32.ml > lib/float32.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/float64.ml > lib/float64.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/complex32.ml > lib/complex32.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/complex64.ml > lib/complex64.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/io.mli > lib/io.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/io.cmi lib/io.mli
+ocamlfind ocamldep -package bigarray -modules lib/io.ml > lib/io.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/real_io.mli > lib/real_io.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/real_io.cmi lib/real_io.mli
+ocamlfind ocamldep -package bigarray -modules lib/real_io.ml > lib/real_io.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/complex_io.mli > lib/complex_io.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/complex_io.cmi lib/complex_io.mli
+ocamlfind ocamldep -package bigarray -modules lib/complex_io.ml > lib/complex_io.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/version.ml > lib/version.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/z.mli > lib/z.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl2_Z.mli > lib/lacaml_impl2_Z.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/complex64.cmo lib/complex64.ml
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl4_Z.mli > lib/lacaml_impl4_Z.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat2_Z.mli > lib/lacaml_mat2_Z.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat4_Z.mli > lib/lacaml_mat4_Z.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec2_Z.mli > lib/lacaml_vec2_Z.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec4_Z.mli > lib/lacaml_vec4_Z.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl2_Z.cmi lib/lacaml_impl2_Z.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl4_Z.cmi lib/lacaml_impl4_Z.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat2_Z.cmi lib/lacaml_mat2_Z.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat4_Z.cmi lib/lacaml_mat4_Z.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec2_Z.cmi lib/lacaml_vec2_Z.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec4_Z.cmi lib/lacaml_vec4_Z.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/z.cmi lib/z.mli
+ocamlfind ocamldep -package bigarray -modules lib/z.ml > lib/z.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/c.mli > lib/c.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl2_C.mli > lib/lacaml_impl2_C.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/complex32.cmo lib/complex32.ml
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl4_C.mli > lib/lacaml_impl4_C.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat2_C.mli > lib/lacaml_mat2_C.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat4_C.mli > lib/lacaml_mat4_C.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec2_C.mli > lib/lacaml_vec2_C.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec4_C.mli > lib/lacaml_vec4_C.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl2_C.cmi lib/lacaml_impl2_C.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl4_C.cmi lib/lacaml_impl4_C.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat2_C.cmi lib/lacaml_mat2_C.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat4_C.cmi lib/lacaml_mat4_C.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec2_C.cmi lib/lacaml_vec2_C.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec4_C.cmi lib/lacaml_vec4_C.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/c.cmi lib/c.mli
+ocamlfind ocamldep -package bigarray -modules lib/c.ml > lib/c.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec2_Z.ml > lib/lacaml_vec2_Z.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec2_C.ml > lib/lacaml_vec2_C.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl2_Z.ml > lib/lacaml_impl2_Z.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/float64.cmo lib/float64.ml
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec4_D.mli > lib/lacaml_vec4_D.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec4_D.cmi lib/lacaml_vec4_D.mli
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl2_C.ml > lib/lacaml_impl2_C.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/float32.cmo lib/float32.ml
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec4_S.mli > lib/lacaml_vec4_S.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec4_S.cmi lib/lacaml_vec4_S.mli
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat2_Z.ml > lib/lacaml_mat2_Z.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat2_C.ml > lib/lacaml_mat2_C.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/d.mli > lib/d.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl2_D.mli > lib/lacaml_impl2_D.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl4_D.mli > lib/lacaml_impl4_D.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat2_D.mli > lib/lacaml_mat2_D.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat4_D.mli > lib/lacaml_mat4_D.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec2_D.mli > lib/lacaml_vec2_D.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl2_D.cmi lib/lacaml_impl2_D.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl4_D.cmi lib/lacaml_impl4_D.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat2_D.cmi lib/lacaml_mat2_D.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat4_D.cmi lib/lacaml_mat4_D.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec2_D.cmi lib/lacaml_vec2_D.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/d.cmi lib/d.mli
+ocamlfind ocamldep -package bigarray -modules lib/d.ml > lib/d.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/s.mli > lib/s.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl2_S.mli > lib/lacaml_impl2_S.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl4_S.mli > lib/lacaml_impl4_S.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat2_S.mli > lib/lacaml_mat2_S.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat4_S.mli > lib/lacaml_mat4_S.mli.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec2_S.mli > lib/lacaml_vec2_S.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl2_S.cmi lib/lacaml_impl2_S.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl4_S.cmi lib/lacaml_impl4_S.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat2_S.cmi lib/lacaml_mat2_S.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat4_S.cmi lib/lacaml_mat4_S.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec2_S.cmi lib/lacaml_vec2_S.mli
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/s.cmi lib/s.mli
+ocamlfind ocamldep -package bigarray -modules lib/s.ml > lib/s.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat2_D.ml > lib/lacaml_mat2_D.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat2_S.ml > lib/lacaml_mat2_S.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl2_D.ml > lib/lacaml_impl2_D.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl2_S.ml > lib/lacaml_impl2_S.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec2_D.ml > lib/lacaml_vec2_D.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec2_S.ml > lib/lacaml_vec2_S.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec4_Z.ml > lib/lacaml_vec4_Z.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec4_C.ml > lib/lacaml_vec4_C.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec4_D.ml > lib/lacaml_vec4_D.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_vec4_S.ml > lib/lacaml_vec4_S.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat4_Z.ml > lib/lacaml_mat4_Z.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat4_C.ml > lib/lacaml_mat4_C.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat4_D.ml > lib/lacaml_mat4_D.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_mat4_S.ml > lib/lacaml_mat4_S.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl4_Z.ml > lib/lacaml_impl4_Z.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl4_C.ml > lib/lacaml_impl4_C.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl4_D.ml > lib/lacaml_impl4_D.ml.depends
+ocamlfind ocamldep -package bigarray -modules lib/lacaml_impl4_S.ml > lib/lacaml_impl4_S.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/common.cmo lib/common.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/io.cmo lib/io.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/real_io.cmo lib/real_io.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/complex_io.cmo lib/complex_io.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/version.cmo lib/version.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/z.cmo lib/z.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/c.cmo lib/c.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec2_Z.cmo lib/lacaml_vec2_Z.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec2_C.cmo lib/lacaml_vec2_C.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl2_Z.cmo lib/lacaml_impl2_Z.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl2_C.cmo lib/lacaml_impl2_C.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat2_Z.cmo lib/lacaml_mat2_Z.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat2_C.cmo lib/lacaml_mat2_C.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/d.cmo lib/d.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/s.cmo lib/s.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat2_D.cmo lib/lacaml_mat2_D.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat2_S.cmo lib/lacaml_mat2_S.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl2_D.cmo lib/lacaml_impl2_D.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl2_S.cmo lib/lacaml_impl2_S.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec2_D.cmo lib/lacaml_vec2_D.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec2_S.cmo lib/lacaml_vec2_S.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec4_Z.cmo lib/lacaml_vec4_Z.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec4_C.cmo lib/lacaml_vec4_C.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec4_D.cmo lib/lacaml_vec4_D.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_vec4_S.cmo lib/lacaml_vec4_S.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat4_Z.cmo lib/lacaml_mat4_Z.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat4_C.cmo lib/lacaml_mat4_C.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat4_D.cmo lib/lacaml_mat4_D.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_mat4_S.cmo lib/lacaml_mat4_S.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl4_Z.cmo lib/lacaml_impl4_Z.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl4_C.cmo lib/lacaml_impl4_C.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl4_D.cmo lib/lacaml_impl4_D.ml
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -w Aer-44 -I lib -o lib/lacaml_impl4_S.cmo lib/lacaml_impl4_S.ml
+ocamlfind ocamlc -pack -g lib/common.cmo lib/utils.cmo lib/float32.cmo lib/float64.cmo lib/complex32.cmo lib/complex64.cmo lib/io.cmo lib/real_io.cmo lib/complex_io.cmo lib/version.cmo lib/lacaml_mat4_Z.cmo lib/lacaml_vec4_D.cmo lib/lacaml_vec4_Z.cmo lib/lacaml_impl4_Z.cmo lib/lacaml_impl2_Z.cmo lib/lacaml_mat2_Z.cmo lib/lacaml_vec2_Z.cmo lib/z.cmo lib/lacaml_mat4_C.cmo lib/lacaml_vec4_C.cmo lib/lacaml_vec4_S.cmo lib/lacaml_impl4_C.cmo lib/lacaml_impl2_C.cmo lib/lacaml_mat2_C.cmo lib/lacaml_vec2_C.cmo lib/c.cmo lib/lacaml_mat4_D.cmo lib/lacaml_impl4_D.cmo lib/lacaml_impl2_D.cmo lib/lacaml_mat2_D.cmo lib/lacaml_vec2_D.cmo lib/d.cmo lib/lacaml_mat4_S.cmo lib/lacaml_impl4_S.cmo lib/lacaml_impl2_S.cmo lib/lacaml_mat2_S.cmo lib/lacaml_vec2_S.cmo lib/s.cmo -o lib/lacaml.cmo
+ocamlfind ocamlc -a -dllib -llacaml_stubs -cclib -llacaml_stubs -cclib -lblas -cclib -llapack lib/lacaml.cmo -o lib/lacaml.cma
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/common.cmx lib/common.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/io.cmx lib/io.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/complex64.cmx lib/complex64.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/complex_io.cmx lib/complex_io.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/float64.cmx lib/float64.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/utils.cmx lib/utils.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_mat4_Z.cmx lib/lacaml_mat4_Z.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_vec4_D.cmx lib/lacaml_vec4_D.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_vec4_Z.cmx lib/lacaml_vec4_Z.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_impl4_Z.cmx lib/lacaml_impl4_Z.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_impl2_Z.cmx lib/lacaml_impl2_Z.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_mat2_Z.cmx lib/lacaml_mat2_Z.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_vec2_Z.cmx lib/lacaml_vec2_Z.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/complex32.cmx lib/complex32.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/float32.cmx lib/float32.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_mat4_C.cmx lib/lacaml_mat4_C.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_vec4_C.cmx lib/lacaml_vec4_C.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_vec4_S.cmx lib/lacaml_vec4_S.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_impl4_C.cmx lib/lacaml_impl4_C.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_impl2_C.cmx lib/lacaml_impl2_C.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_mat2_C.cmx lib/lacaml_mat2_C.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_vec2_C.cmx lib/lacaml_vec2_C.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_mat4_D.cmx lib/lacaml_mat4_D.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_impl4_D.cmx lib/lacaml_impl4_D.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/real_io.cmx lib/real_io.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_impl2_D.cmx lib/lacaml_impl2_D.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_mat2_D.cmx lib/lacaml_mat2_D.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_vec2_D.cmx lib/lacaml_vec2_D.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_mat4_S.cmx lib/lacaml_mat4_S.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_impl4_S.cmx lib/lacaml_impl4_S.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_impl2_S.cmx lib/lacaml_impl2_S.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_mat2_S.cmx lib/lacaml_mat2_S.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/lacaml_vec2_S.cmx lib/lacaml_vec2_S.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/version.cmx lib/version.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/z.cmx lib/z.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/c.cmx lib/c.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/d.cmx lib/d.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -w Aer-44 -I lib -o lib/s.cmx lib/s.ml
+ocamlfind ocamlopt -pack -g -I lib lib/common.cmx lib/utils.cmx lib/float32.cmx lib/float64.cmx lib/complex32.cmx lib/complex64.cmx lib/io.cmx lib/real_io.cmx lib/complex_io.cmx lib/version.cmx lib/lacaml_mat4_Z.cmx lib/lacaml_vec4_D.cmx lib/lacaml_vec4_Z.cmx lib/lacaml_impl4_Z.cmx lib/lacaml_impl2_Z.cmx lib/lacaml_mat2_Z.cmx lib/lacaml_vec2_Z.cmx lib/z.cmx lib/lacaml_mat4_C.cmx lib/lacaml_vec4_C.cmx lib/lacaml_vec4_S.cmx lib/lacaml_impl4_C.cmx lib/lacaml_impl2_C.cmx lib/lacaml_mat2_C.cmx lib/lacaml_vec2_C.cmx lib/c.cmx lib/lacaml_mat4_D.cmx lib/lacaml_impl4_D.cmx lib/lacaml_impl2_D.cmx lib/lacaml_mat2_D.cmx lib/lacaml_vec2_D.cmx lib/d.cmx lib/lacaml_mat4_S.cmx lib/lacaml_impl4_S.cmx lib/lacaml_impl2_S.cmx lib/lacaml_mat2_S.cmx lib/lacaml_vec2_S.cmx lib/s.cmx -o lib/lacaml.cmx
+ocamlfind ocamlopt -a -cclib -llacaml_stubs -cclib -lblas -cclib -llapack lib/lacaml.cmx -o lib/lacaml.cmxa
+ocamlfind ocamlopt -shared -cclib -llacaml_stubs -I lib lib/lacaml.cmxa lib/lacaml.cmx -o lib/lacaml.cmxs
+ocamlfind ocamldep -package bigarray -modules lib/install_printers.ml > lib/install_printers.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -I +compiler-libs -w Aer-44 -I lib -o lib/install_printers.cmo lib/install_printers.ml
++ ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -I +compiler-libs -w Aer-44 -I lib -o lib/install_printers.cmo lib/install_printers.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/compiler-libs, /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+ocamlfind ocamlc -pack -g lib/install_printers.cmo -o lib/lacaml_top.cmo
+ocamlfind ocamlc -a lib/lacaml_top.cmo -o lib/lacaml_top.cma
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -I +compiler-libs -w Aer-44 -for-pack Lacaml_top -I lib -o lib/install_printers.cmx lib/install_printers.ml
++ ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -package bigarray -for-pack Lacaml -I +compiler-libs -w Aer-44 -for-pack Lacaml_top -I lib -o lib/install_printers.cmx lib/install_printers.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/compiler-libs, /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+touch lib/lacaml_top.mli  ; if  ocamlfind ocamlopt -pack -g -I lib lib/install_printers.cmx -o lib/lacaml_top.cmx  ; then  rm -f lib/lacaml_top.mli  ; else  rm -f lib/lacaml_top.mli  ; exit 1; fi
+ocamlfind ocamlopt -a lib/lacaml_top.cmx -o lib/lacaml_top.cmxa
+ocamlfind ocamlopt -shared lib/lacaml_top.cmx -o lib/lacaml_top.cmxs
+ocamlfind ocamldep -package bigarray -modules examples/blas/blas.ml > examples/blas/blas.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/blas -I lib -o examples/blas/blas.cmo examples/blas/blas.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/blas -I lib -o examples/blas/blas.cmx examples/blas/blas.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/blas/blas.cmx -o examples/blas/blas.native
+ocamlfind ocamldep -package bigarray -modules examples/eig/eig.ml > examples/eig/eig.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/eig -I lib -o examples/eig/eig.cmo examples/eig/eig.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/eig -I lib -o examples/eig/eig.cmx examples/eig/eig.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/eig/eig.cmx -o examples/eig/eig.native
+ocamlfind ocamldep -package bigarray -modules examples/eig/sbev.ml > examples/eig/sbev.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/eig -I lib -o examples/eig/sbev.cmo examples/eig/sbev.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/eig -I lib -o examples/eig/sbev.cmx examples/eig/sbev.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/eig/sbev.cmx -o examples/eig/sbev.native
+ocamlfind ocamldep -package bigarray -modules examples/eig/sbgv.ml > examples/eig/sbgv.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/eig -I lib -o examples/eig/sbgv.cmo examples/eig/sbgv.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/eig -I lib -o examples/eig/sbgv.cmx examples/eig/sbgv.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/eig/sbgv.cmx -o examples/eig/sbgv.native
+ocamlfind ocamldep -package bigarray -modules examples/lin_eq/lin_eq.ml > examples/lin_eq/lin_eq.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/lin_eq -I lib -o examples/lin_eq/lin_eq.cmo examples/lin_eq/lin_eq.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/lin_eq -I lib -o examples/lin_eq/lin_eq.cmx examples/lin_eq/lin_eq.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/lin_eq/lin_eq.cmx -o examples/lin_eq/lin_eq.native
+ocamlfind ocamldep -package bigarray -modules examples/lin_eq/gbsv.ml > examples/lin_eq/gbsv.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/lin_eq -I lib -o examples/lin_eq/gbsv.cmo examples/lin_eq/gbsv.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/lin_eq -I lib -o examples/lin_eq/gbsv.cmx examples/lin_eq/gbsv.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/lin_eq/gbsv.cmx -o examples/lin_eq/gbsv.native
+ocamlfind ocamldep -package bigarray -modules examples/lin_eq_comp/lin_eq_comp.ml > examples/lin_eq_comp/lin_eq_comp.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/lin_eq_comp -I lib -o examples/lin_eq_comp/lin_eq_comp.cmo examples/lin_eq_comp/lin_eq_comp.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/lin_eq_comp -I lib -o examples/lin_eq_comp/lin_eq_comp.cmx examples/lin_eq_comp/lin_eq_comp.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/lin_eq_comp/lin_eq_comp.cmx -o examples/lin_eq_comp/lin_eq_comp.native
+ocamlfind ocamldep -package bigarray -modules examples/lin_reg/lin_reg.ml > examples/lin_reg/lin_reg.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/lin_reg -I lib -o examples/lin_reg/lin_reg.cmo examples/lin_reg/lin_reg.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/lin_reg -I lib -o examples/lin_reg/lin_reg.cmx examples/lin_reg/lin_reg.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/lin_reg/lin_reg.cmx -o examples/lin_reg/lin_reg.native
+ocamlfind ocamldep -package bigarray -modules examples/qr/qr.ml > examples/qr/qr.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/qr -I lib -o examples/qr/qr.cmo examples/qr/qr.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/qr -I lib -o examples/qr/qr.cmx examples/qr/qr.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/qr/qr.cmx -o examples/qr/qr.native
+ocamlfind ocamldep -package bigarray -modules examples/svd/svd.ml > examples/svd/svd.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/svd -I lib -o examples/svd/svd.cmo examples/svd/svd.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/svd -I lib -o examples/svd/svd.cmx examples/svd/svd.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/svd/svd.cmx -o examples/svd/svd.native
+ocamlfind ocamldep -package bigarray -modules examples/nag/nag_gbsv.ml > examples/nag/nag_gbsv.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_gbsv.cmo examples/nag/nag_gbsv.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_gbsv.cmx examples/nag/nag_gbsv.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/nag/nag_gbsv.cmx -o examples/nag/nag_gbsv.native
+ocamlfind ocamldep -package bigarray -modules examples/nag/nag_gesv.ml > examples/nag/nag_gesv.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_gesv.cmo examples/nag/nag_gesv.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_gesv.cmx examples/nag/nag_gesv.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/nag/nag_gesv.cmx -o examples/nag/nag_gesv.native
+ocamlfind ocamldep -package bigarray -modules examples/nag/nag_gtsv.ml > examples/nag/nag_gtsv.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_gtsv.cmo examples/nag/nag_gtsv.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_gtsv.cmx examples/nag/nag_gtsv.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/nag/nag_gtsv.cmx -o examples/nag/nag_gtsv.native
+ocamlfind ocamldep -package bigarray -modules examples/nag/nag_pbsv.ml > examples/nag/nag_pbsv.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_pbsv.cmo examples/nag/nag_pbsv.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_pbsv.cmx examples/nag/nag_pbsv.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/nag/nag_pbsv.cmx -o examples/nag/nag_pbsv.native
+ocamlfind ocamldep -package bigarray -modules examples/nag/nag_posv.ml > examples/nag/nag_posv.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_posv.cmo examples/nag/nag_posv.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_posv.cmx examples/nag/nag_posv.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/nag/nag_posv.cmx -o examples/nag/nag_posv.native
+ocamlfind ocamldep -package bigarray -modules examples/nag/nag_ppsv.ml > examples/nag/nag_ppsv.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_ppsv.cmo examples/nag/nag_ppsv.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_ppsv.cmx examples/nag/nag_ppsv.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/nag/nag_ppsv.cmx -o examples/nag/nag_ppsv.native
+ocamlfind ocamldep -package bigarray -modules examples/nag/nag_ptsv.ml > examples/nag/nag_ptsv.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_ptsv.cmo examples/nag/nag_ptsv.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_ptsv.cmx examples/nag/nag_ptsv.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/nag/nag_ptsv.cmx -o examples/nag/nag_ptsv.native
+ocamlfind ocamldep -package bigarray -modules examples/nag/nag_spsv.ml > examples/nag/nag_spsv.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_spsv.cmo examples/nag/nag_spsv.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_spsv.cmx examples/nag/nag_spsv.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/nag/nag_spsv.cmx -o examples/nag/nag_spsv.native
+ocamlfind ocamldep -package bigarray -modules examples/nag/nag_sysv.ml > examples/nag/nag_sysv.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_sysv.cmo examples/nag/nag_sysv.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples/nag -I lib -o examples/nag/nag_sysv.cmx examples/nag/nag_sysv.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/lacaml.cmxa lib/lacaml.cmx examples/nag/nag_sysv.cmx -o examples/nag/nag_sysv.native
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/lacaml.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/liblacaml_stubs.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/lacaml.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/lacaml.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/lacaml.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/lacaml.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/lacaml.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/install_printers.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/lacaml_top.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/lacaml_top.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/lacaml_top.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/lacaml_top.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/lacaml_top.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/lacaml_top.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/lacaml/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dlllacaml_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dlllacaml_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+trunk/lib/stublibs is not mentioned in ld.conf
+Installing lacaml.7.0.13.
+
+=-=-= Installing ounit.2.0.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ounit.2.0.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ounit.2.0.0+opam.tar.gz
+--2014-05-09 14:22:02--  https://opam.ocaml.org/archives/ounit.2.0.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 105698 (103K) [application/octet-stream]
+Saving to: 'ounit.2.0.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 48%  244K 0s
+    50K .......... .......... .......... .......... .......... 96%  486K 0s
+   100K ...                                                   100% 6143G=0.3s
+
+2014-05-09 14:22:03 (335 KB/s) - 'ounit.2.0.0+opam.tar.gz' saved [105698/105698]
+
+Building ounit.2.0.0:
+  make build
+  make install
+ocaml setup.ml -configure 
+File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ ounit
+Package version: ..................................... 2.0.0
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+pkg_threads: ......................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+
+ocaml setup.ml -build 
+File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Cannot find source file matching module 'OUnitLoggerHTMLData' in library oUnitAdvanced
+W: Cannot find source file matching module 'OUnitLoggerHTMLData' in library oUnitAdvanced
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitUtils.ml > src/oUnitUtils.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitPropList.ml > src/oUnitPropList.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitPlugin.ml > src/oUnitPlugin.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitConf.ml > src/oUnitConf.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPropList.cmo src/oUnitPropList.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitUtils.cmo src/oUnitUtils.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmo src/oUnitConf.ml
++ ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmo src/oUnitConf.ml
+File "src/oUnitConf.ml", line 77, characters 16-35:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitChooser.ml > src/oUnitChooser.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitCache.ml > src/oUnitCache.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitTest.ml > src/oUnitTest.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLogger.ml > src/oUnitLogger.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitShared.ml > src/oUnitShared.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLogger.cmo src/oUnitLogger.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitShared.cmo src/oUnitShared.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTest.cmo src/oUnitTest.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPlugin.cmo src/oUnitPlugin.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitResultSummary.ml > src/oUnitResultSummary.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCache.cmo src/oUnitCache.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitResultSummary.cmo src/oUnitResultSummary.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerStd.ml > src/oUnitLoggerStd.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerHTML.ml > src/oUnitLoggerHTML.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerHTMLData.ml > src/oUnitLoggerHTMLData.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTMLData.cmo src/oUnitLoggerHTMLData.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerJUnit.ml > src/oUnitLoggerJUnit.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTML.cmo src/oUnitLoggerHTML.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmo src/oUnitLoggerStd.ml
++ ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmo src/oUnitLoggerStd.ml
+File "src/oUnitLoggerStd.ml", line 161, characters 21-22:
+Warning 28: wildcard pattern given as argument to a constant constructor
+File "src/oUnitLoggerStd.ml", line 161, characters 30-31:
+Warning 28: wildcard pattern given as argument to a constant constructor
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitAssert.ml > src/oUnitAssert.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitBracket.ml > src/oUnitBracket.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitBracket.cmo src/oUnitBracket.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitState.ml > src/oUnitState.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitChooser.cmo src/oUnitChooser.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunner.ml > src/oUnitRunner.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitCheckEnv.ml > src/oUnitCheckEnv.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmo src/oUnitAssert.ml
++ ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmo src/oUnitAssert.ml
+File "src/oUnitAssert.ml", line 243, characters 20-33:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitDiff.mli > src/oUnitDiff.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmi src/oUnitDiff.mli
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitState.cmo src/oUnitState.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCheckEnv.cmo src/oUnitCheckEnv.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunnerProcesses.ml > src/oUnitRunnerProcesses.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunner.cmo src/oUnitRunner.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitCore.ml > src/oUnitCore.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerJUnit.cmo src/oUnitLoggerJUnit.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmo src/oUnitRunnerProcesses.ml
++ ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmo src/oUnitRunnerProcesses.ml
+File "src/oUnitRunnerProcesses.ml", line 80, characters 19-32:
+Warning 3: deprecated feature: String.create
+File "src/oUnitRunnerProcesses.ml", line 90, characters 42-55:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitTestData.ml > src/oUnitTestData.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitDiff.ml > src/oUnitDiff.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCore.cmo src/oUnitCore.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTestData.cmo src/oUnitTestData.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmo src/oUnitDiff.ml
+ocamlfind ocamlc -a src/oUnitUtils.cmo src/oUnitPropList.cmo src/oUnitConf.cmo src/oUnitPlugin.cmo src/oUnitLogger.cmo src/oUnitShared.cmo src/oUnitTest.cmo src/oUnitCache.cmo src/oUnitResultSummary.cmo src/oUnitChooser.cmo src/oUnitLoggerStd.cmo src/oUnitLoggerHTMLData.cmo src/oUnitLoggerHTML.cmo src/oUnitLoggerJUnit.cmo src/oUnitBracket.cmo src/oUnitAssert.cmo src/oUnitState.cmo src/oUnitDiff.cmo src/oUnitCheckEnv.cmo src/oUnitRunner.cmo src/oUnitRunnerProcesses.cmo src/oUnitCore.cmo src/oUnitTestData.cmo -o src/oUnitAdvanced.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPropList.cmx src/oUnitPropList.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitUtils.cmx src/oUnitUtils.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmx src/oUnitConf.ml
++ ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmx src/oUnitConf.ml
+File "src/oUnitConf.ml", line 77, characters 16-35:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLogger.cmx src/oUnitLogger.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitShared.cmx src/oUnitShared.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTest.cmx src/oUnitTest.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPlugin.cmx src/oUnitPlugin.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCache.cmx src/oUnitCache.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitResultSummary.cmx src/oUnitResultSummary.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTMLData.cmx src/oUnitLoggerHTMLData.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTML.cmx src/oUnitLoggerHTML.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmx src/oUnitLoggerStd.ml
++ ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmx src/oUnitLoggerStd.ml
+File "src/oUnitLoggerStd.ml", line 161, characters 21-22:
+Warning 28: wildcard pattern given as argument to a constant constructor
+File "src/oUnitLoggerStd.ml", line 161, characters 30-31:
+Warning 28: wildcard pattern given as argument to a constant constructor
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitBracket.cmx src/oUnitBracket.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitChooser.cmx src/oUnitChooser.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmx src/oUnitAssert.ml
++ ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmx src/oUnitAssert.ml
+File "src/oUnitAssert.ml", line 243, characters 20-33:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmx src/oUnitDiff.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitState.cmx src/oUnitState.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCheckEnv.cmx src/oUnitCheckEnv.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunner.cmx src/oUnitRunner.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerJUnit.cmx src/oUnitLoggerJUnit.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmx src/oUnitRunnerProcesses.ml
++ ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmx src/oUnitRunnerProcesses.ml
+File "src/oUnitRunnerProcesses.ml", line 80, characters 19-32:
+Warning 3: deprecated feature: String.create
+File "src/oUnitRunnerProcesses.ml", line 90, characters 42-55:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCore.cmx src/oUnitCore.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTestData.cmx src/oUnitTestData.ml
+ocamlfind ocamlopt -a src/oUnitUtils.cmx src/oUnitPropList.cmx src/oUnitConf.cmx src/oUnitPlugin.cmx src/oUnitLogger.cmx src/oUnitShared.cmx src/oUnitTest.cmx src/oUnitCache.cmx src/oUnitResultSummary.cmx src/oUnitChooser.cmx src/oUnitLoggerStd.cmx src/oUnitLoggerHTMLData.cmx src/oUnitLoggerHTML.cmx src/oUnitLoggerJUnit.cmx src/oUnitBracket.cmx src/oUnitAssert.cmx src/oUnitState.cmx src/oUnitDiff.cmx src/oUnitCheckEnv.cmx src/oUnitRunner.cmx src/oUnitRunnerProcesses.cmx src/oUnitCore.cmx src/oUnitTestData.cmx -o src/oUnitAdvanced.cmxa
+ocamlfind ocamlopt -shared -linkall src/oUnitAdvanced.cmxa -o src/oUnitAdvanced.cmxs
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit.mli > src/oUnit.mli.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit2.mli > src/oUnit2.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmi src/oUnit2.mli
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmi src/oUnit.mli
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit.ml > src/oUnit.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit2.ml > src/oUnit2.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmo src/oUnit.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmo src/oUnit2.ml
+ocamlfind ocamlc -a src/oUnit2.cmo src/oUnit.cmo -o src/oUnit.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmx src/oUnit2.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmx src/oUnit.ml
+ocamlfind ocamlopt -a src/oUnit2.cmx src/oUnit.cmx -o src/oUnit.cmxa
+ocamlfind ocamlopt -shared src/oUnit.cmx -o src/oUnit.cmxs
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitThreads.ml > src/oUnitThreads.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunnerThreads.ml > src/oUnitRunnerThreads.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerThreads.cmo src/oUnitRunnerThreads.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitThreads.cmo src/oUnitThreads.ml
+ocamlfind ocamlc -a src/oUnitRunnerThreads.cmo src/oUnitThreads.cmo -o src/oUnitThreads.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerThreads.cmx src/oUnitRunnerThreads.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitThreads.cmx src/oUnitThreads.ml
+ocamlfind ocamlopt -a src/oUnitRunnerThreads.cmx src/oUnitThreads.cmx -o src/oUnitThreads.cmxa
+ocamlfind ocamlopt -shared src/oUnitThreads.cmx -o src/oUnitThreads.cmxs
+ocaml setup.ml -install 
+File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Cannot find source header for module OUnitLoggerHTMLData in library oUnitAdvanced
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit2.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit2.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit2.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunnerThreads.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitUtils.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPropList.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPlugin.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitChooser.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitResultSummary.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerStd.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTML.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerJUnit.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAssert.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitBracket.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTest.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitState.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunner.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunnerProcesses.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCore.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLogger.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitConf.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitShared.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCache.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTestData.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCheckEnv.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitDiff.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAdvanced.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAdvanced.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAdvanced.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAdvanced.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitUtils.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPropList.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPlugin.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitChooser.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitResultSummary.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerStd.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTML.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTMLData.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerJUnit.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAssert.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitBracket.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTest.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitState.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunner.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunnerProcesses.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCore.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLogger.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitConf.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitShared.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCache.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTestData.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCheckEnv.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitDiff.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitUtils.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPropList.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPlugin.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitChooser.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitResultSummary.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerStd.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTML.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTMLData.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerJUnit.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAssert.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitBracket.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTest.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitState.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunner.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunnerProcesses.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCore.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLogger.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitConf.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitShared.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCache.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTestData.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCheckEnv.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitDiff.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/META
+Installing ounit.2.0.0.
+
+=-=-= Installing pipebang.110.01.00 =-=-=
+default    Downloading https://opam.ocaml.org/archives/pipebang.110.01.00+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/pipebang.110.01.00+opam.tar.gz
+--2014-05-09 14:22:17--  https://opam.ocaml.org/archives/pipebang.110.01.00+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 47405 (46K) [application/octet-stream]
+Saving to: 'pipebang.110.01.00+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ......    100%  227K=0.2s
+
+2014-05-09 14:22:18 (227 KB/s) - 'pipebang.110.01.00+opam.tar.gz' saved [47405/47405]
+
+Building pipebang.110.01.00:
+  make
+  make install
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+File "setup.ml", line 232, characters 8-26:
+Warning 3: deprecated feature: String.set
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_quotations' is not set: When looking for findlib package camlp4.quotations, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+E: Cannot find findlib package camlp4.extend
+E: Cannot find findlib package camlp4.lib
+E: Cannot find findlib package camlp4.quotations
+E: Failure("3 configuration errors")
+make: *** [setup.data] Error 1
+[ERROR] The compilation of pipebang.110.01.00 failed.
+Removing pipebang.110.01.00.
+  ocamlfind remove pa_pipebang
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/pa_pipebang
+
+=-=-= Installing type_conv.109.60.00 =-=-=
+default    Downloading https://opam.ocaml.org/archives/type_conv.109.60.00+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/type_conv.109.60.00+opam.tar.gz
+--2014-05-09 14:22:25--  https://opam.ocaml.org/archives/type_conv.109.60.00+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 62393 (61K) [application/octet-stream]
+Saving to: 'type_conv.109.60.00+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 82%  249K 0s
+    50K ..........                                            100% 74.4M=0.2s
+
+2014-05-09 14:22:26 (303 KB/s) - 'type_conv.109.60.00+opam.tar.gz' saved [62393/62393]
+
+Building type_conv.109.60.00:
+  make
+  make install
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+File "setup.ml", line 232, characters 8-26:
+Warning 3: deprecated feature: String.set
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+W: Field 'pkg_camlp4_quotations' is not set: When looking for findlib package camlp4.quotations, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+E: Cannot find findlib package camlp4.extend
+E: Cannot find findlib package camlp4.quotations
+E: Failure("2 configuration errors")
+make: *** [setup.data] Error 1
+[ERROR] The compilation of type_conv.109.60.00 failed.
+Removing type_conv.109.60.00.
+  ocamlfind remove type_conv
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/type_conv
+
+[ERROR] Due to some errors while processing { gsl.1.15.0, herelib.109.35.02, pipebang.110.01.00, type_conv.109.60.00 }, the following actions will NOT proceed:
+ - install custom_printf.109.60.00
+ - install variantslib.109.15.03
+ - install typerep.109.55.02
+ - install pa_ounit.109.53.02
+ - install gpr.1.1.3
+ - install pa_test.110.01.00
+ - install sexplib.110.01.00
+ - install pa_bench.109.55.02
+ - install comparelib.109.60.00
+ - install fieldslib.109.20.03
+ - install core.110.01.00
+ - install bin_prot.109.53.03
+ - install core_kernel.110.01.00
+
+===== ERROR while installing gsl.1.15.0 =====
+# opam-version         1.1.1
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/gsl.1.15.0
+# compiler             4.02.0dev+trunk
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/gsl.1.15.0/gsl-146-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/gsl.1.15.0/gsl-146-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/gsl.1.15.0/gsl-146-ad8886.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/monte_ex.cmo examples/monte_ex.ml
+# ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/monte_ex.cmx examples/monte_ex.ml
+# ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/monte_ex.cmx -o examples/monte_ex.native
+# ocamlfind ocamldep -package bigarray -modules examples/multifit_data_ex.ml > examples/multifit_data_ex.ml.depends
+# ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/multifit_data_ex.cmo examples/multifit_data_ex.ml
+# ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -package bigarray -w Aer-44 -I examples -I lib -o examples/multifit_data_ex.cmx examples/multifit_data_ex.ml
+# ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg -package bigarray lib/gsl.cmxa examples/multifit_data_ex.cmx -o examples/multifit_data_ex.native
+# ocamlfind ocamldep -package bigarray -pp camlp4of -modules examples/multifit_ex.ml > examples/multifit_ex.ml.depends
+# + ocamlfind ocamldep -package bigarray -pp camlp4of -modules examples/multifit_ex.ml > examples/multifit_ex.ml.depends
+# Command exited with code 2.
+### stderr ###
+# File "setup.ml", line 234, characters 8-26:
+# Warning 3: deprecated feature: String.set
+# File "setup.ml", line 234, characters 8-26:
+# Warning 3: deprecated feature: String.set
+# W: Cannot find source file matching module 'gsl' in library gsl
+# E: Failure("Command ''/home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild' lib/libgsl_stubs.a lib/dllgsl_stubs.so lib/gsl.cma lib/gsl.cmxa lib/gsl.a lib/gsl.cmxs examples/blas_ex.native examples/bspline_ex.native examples/cheb_ex.native examples/combi_ex.native examples/const_ex.native examples/diff_ex.native examples/eigen_ex.native examples/fft_c.native examples/fft_c2.native examples/fft_hc.native ...[truncated]
+
+
+===== ERROR while installing herelib.109.35.02 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/herelib.109.35.02
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/herelib.109.35.02/herelib-1931-d8a4ae.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/herelib.109.35.02/herelib-1931-d8a4ae.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/herelib.109.35.02/herelib-1931-d8a4ae.err
+### stdout ###
+# ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+# rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+# ./setup.exe -configure 
+### stderr ###
+# ...[truncated]
+# File "setup.ml", line 232, characters 8-26:
+# Warning 3: deprecated feature: String.set
+# W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_quotations' is not set: When looking for findlib package camlp4.quotations, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# E: Cannot find findlib package camlp4.extend
+# E: Cannot find findlib package camlp4.lib
+# E: Cannot find findlib package camlp4.quotations
+# E: Failure("3 configuration errors")
+# make: *** [setup.data] Error 1
+
+
+===== ERROR while installing pipebang.110.01.00 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/pipebang.110.01.00
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/pipebang.110.01.00/pipebang-3912-d0f245.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/pipebang.110.01.00/pipebang-3912-d0f245.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/pipebang.110.01.00/pipebang-3912-d0f245.err
+### stdout ###
+# ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+# rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+# ./setup.exe -configure 
+### stderr ###
+# ...[truncated]
+# File "setup.ml", line 232, characters 8-26:
+# Warning 3: deprecated feature: String.set
+# W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_quotations' is not set: When looking for findlib package camlp4.quotations, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# E: Cannot find findlib package camlp4.extend
+# E: Cannot find findlib package camlp4.lib
+# E: Cannot find findlib package camlp4.quotations
+# E: Failure("3 configuration errors")
+# make: *** [setup.data] Error 1
+
+
+===== ERROR while installing type_conv.109.60.00 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/type_conv.109.60.00
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/type_conv.109.60.00/type_conv-3998-6cc03f.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/type_conv.109.60.00/type_conv-3998-6cc03f.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/type_conv.109.60.00/type_conv-3998-6cc03f.err
+### stdout ###
+# ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+# rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+# ./setup.exe -configure 
+### stderr ###
+# File "setup.ml", line 232, characters 8-26:
+# Warning 3: deprecated feature: String.set
+# W: Field 'pkg_camlp4_quotations' is not set: When looking for findlib package camlp4.quotations, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# E: Cannot find findlib package camlp4.extend
+# E: Cannot find findlib package camlp4.quotations
+# E: Failure("2 configuration errors")
+# make: *** [setup.data] Error 1
+
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+trunk/backup/state-20140409142012.export"
+'opam install gpr' failed.
