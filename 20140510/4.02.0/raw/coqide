@@ -1,0 +1,32 @@
+++ opam install coqide -e ubuntu
+'opam install coqide -e ubuntu' failed.
++ depext='
+The dependency camlp5 of package coqide.8.4pl2 is not available for your compiler or your OS.'
++ echo Ubuntu depexts: The dependency camlp5 of package coqide.8.4pl2 is not available for your compiler or your OS.
++ '[' '
+The dependency camlp5 of package coqide.8.4pl2 is not available for your compiler or your OS.' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: The dependency camlp5 of package coqide.8.4pl2 is not available for your compiler or your OS.
++ sudo apt-get install -qq -y The dependency camlp5 of package coqide.8.4pl2 is not available for your compiler or your OS.
+E: Unable to locate package dependency
+E: Unable to locate package of
+E: Unable to locate package package
+E: Unable to locate package coqide.8.4pl2
+E: Couldn't find any package by regex 'coqide.8.4pl2'
+E: Unable to locate package is
+E: Unable to locate package not
+E: Unable to locate package available
+E: Unable to locate package for
+E: Unable to locate package your
+E: Unable to locate package compiler
+E: Unable to locate package or
+E: Unable to locate package your
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install coqide
+
+The dependency camlp5 of package coqide.8.4pl2 is not available for your compiler or your OS.
+'opam install coqide' failed.
