@@ -1,0 +1,44 @@
+++ opam install glical -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install glical
+The following actions will be performed:
+ - install glical.0.0.3
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing glical.0.0.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/glical.0.0.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/glical.0.0.3+opam.tar.gz
+--2014-05-10 21:04:21--  https://opam.ocaml.org/archives/glical.0.0.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 10766 (11K) [application/octet-stream]
+Saving to: 'glical.0.0.3+opam.tar.gz'
+
+     0K ..........                                            100% 76.8M=0s
+
+2014-05-10 21:04:21 (76.8 MB/s) - 'glical.0.0.3+opam.tar.gz' saved [10766/10766]
+
+Building glical.0.0.3:
+  ./configure -prefix /home/opam/.opam/4.02.0dev+trunk
+  make build
+  make install
+ocamlc -c glical_kernel.mli
+ocamlc -c glical_kernel.ml
+ocamlc -c glical.mli
+ocamlc -c glical.ml
+ocamlc -a glical_kernel.cmo glical.cmo -o glical.cma
+ocamlopt -c glical_kernel.ml
+ocamlopt -c glical.ml
+ocamlopt -a glical_kernel.cmx glical.cmx -o glical.cmxa
+mkdir -p "/home/opam/.opam/4.02.0dev+trunk"/lib/glical/
+cp glical.cma glical.cmxa glical.mli glical.cmi glical.cmo glical.cmx glical_kernel.cmi glical_kernel.mli glical_kernel.cmo glical_kernel.cmx "/home/opam/.opam/4.02.0dev+trunk"/lib/glical/
+Installing glical.0.0.3.
