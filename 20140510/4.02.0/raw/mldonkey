@@ -1,0 +1,241 @@
+++ opam install mldonkey -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install mldonkey
+The following actions will be performed:
+ - install mldonkey.3.1.5
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing mldonkey.3.1.5 =-=-=
+default    Downloading https://opam.ocaml.org/archives/mldonkey.3.1.5+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/mldonkey.3.1.5+opam.tar.gz
+--2014-05-10 23:23:23--  https://opam.ocaml.org/archives/mldonkey.3.1.5+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3575612 (3.4M) [application/octet-stream]
+Saving to: 'mldonkey.3.1.5+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  1%  246K 14s
+    50K .......... .......... .......... .......... ..........  2%  489K 10s
+   100K .......... .......... .......... .......... ..........  4% 1.21M 8s
+   150K .......... .......... .......... .......... ..........  5%  810K 7s
+   200K .......... .......... .......... .......... ..........  7% 10.5M 5s
+   250K .......... .......... .......... .......... ..........  8% 1.26M 5s
+   300K .......... .......... .......... .......... .......... 10%  850K 5s
+   350K .......... .......... .......... .......... .......... 11% 1.27M 4s
+   400K .......... .......... .......... .......... .......... 12% 11.9M 4s
+   450K .......... .......... .......... .......... .......... 14% 11.7M 3s
+   500K .......... .......... .......... .......... .......... 15% 11.7M 3s
+   550K .......... .......... .......... .......... .......... 17% 1002K 3s
+   600K .......... .......... .......... .......... .......... 18% 10.2M 3s
+   650K .......... .......... .......... .......... .......... 20% 11.7M 2s
+   700K .......... .......... .......... .......... .......... 21% 1.52M 2s
+   750K .......... .......... .......... .......... .......... 22% 8.98M 2s
+   800K .......... .......... .......... .......... .......... 24% 11.7M 2s
+   850K .......... .......... .......... .......... .......... 25% 11.7M 2s
+   900K .......... .......... .......... .......... .......... 27% 11.7M 2s
+   950K .......... .......... .......... .......... .......... 28% 1.04M 2s
+  1000K .......... .......... .......... .......... .......... 30% 9.11M 2s
+  1050K .......... .......... .......... .......... .......... 31% 1.69M 2s
+  1100K .......... .......... .......... .......... .......... 32% 10.7M 2s
+  1150K .......... .......... .......... .......... .......... 34% 6.46M 1s
+  1200K .......... .......... .......... .......... .......... 35% 11.7M 1s
+  1250K .......... .......... .......... .......... .......... 37% 11.7M 1s
+  1300K .......... .......... .......... .......... .......... 38% 1.16M 1s
+  1350K .......... .......... .......... .......... .......... 40% 11.3M 1s
+  1400K .......... .......... .......... .......... .......... 41% 5.50M 1s
+  1450K .......... .......... .......... .......... .......... 42% 1.78M 1s
+  1500K .......... .......... .......... .......... .......... 44% 6.60M 1s
+  1550K .......... .......... .......... .......... .......... 45% 8.98M 1s
+  1600K .......... .......... .......... .......... .......... 47% 11.7M 1s
+  1650K .......... .......... .......... .......... .......... 48% 11.7M 1s
+  1700K .......... .......... .......... .......... .......... 50% 11.7M 1s
+  1750K .......... .......... .......... .......... .......... 51% 1.18M 1s
+  1800K .......... .......... .......... .......... .......... 52% 11.9M 1s
+  1850K .......... .......... .......... .......... .......... 54% 6.23M 1s
+  1900K .......... .......... .......... .......... .......... 55% 1.78M 1s
+  1950K .......... .......... .......... .......... .......... 57% 7.03M 1s
+  2000K .......... .......... .......... .......... .......... 58% 8.19M 1s
+  2050K .......... .......... .......... .......... .......... 60% 11.7M 1s
+  2100K .......... .......... .......... .......... .......... 61% 11.7M 1s
+  2150K .......... .......... .......... .......... .......... 63% 11.4M 1s
+  2200K .......... .......... .......... .......... .......... 64% 1.54M 1s
+  2250K .......... .......... .......... .......... .......... 65% 4.38M 1s
+  2300K .......... .......... .......... .......... .......... 67% 5.87M 1s
+  2350K .......... .......... .......... .......... .......... 68% 1.91M 0s
+  2400K .......... .......... .......... .......... .......... 70% 5.30M 0s
+  2450K .......... .......... .......... .......... .......... 71% 8.18M 0s
+  2500K .......... .......... .......... .......... .......... 73% 11.7M 0s
+  2550K .......... .......... .......... .......... .......... 74% 11.3M 0s
+  2600K .......... .......... .......... .......... .......... 75% 11.8M 0s
+  2650K .......... .......... .......... .......... .......... 77% 1.39M 0s
+  2700K .......... .......... .......... .......... .......... 78% 11.7M 0s
+  2750K .......... .......... .......... .......... .......... 80% 4.61M 0s
+  2800K .......... .......... .......... .......... .......... 81% 2.27M 0s
+  2850K .......... .......... .......... .......... .......... 83% 7.76M 0s
+  2900K .......... .......... .......... .......... .......... 84% 4.29M 0s
+  2950K .......... .......... .......... .......... .......... 85% 9.61M 0s
+  3000K .......... .......... .......... .......... .......... 87% 11.7M 0s
+  3050K .......... .......... .......... .......... .......... 88% 11.6M 0s
+  3100K .......... .......... .......... .......... .......... 90% 1.41M 0s
+  3150K .......... .......... .......... .......... .......... 91% 4.61M 0s
+  3200K .......... .......... .......... .......... .......... 93% 11.7M 0s
+  3250K .......... .......... .......... .......... .......... 94% 11.7M 0s
+  3300K .......... .......... .......... .......... .......... 95% 2.35M 0s
+  3350K .......... .......... .......... .......... .......... 97% 11.4M 0s
+  3400K .......... .......... .......... .......... .......... 98% 4.80M 0s
+  3450K .......... .......... .......... .......... .         100% 6.12M=1.3s
+
+2014-05-10 23:23:24 (2.65 MB/s) - 'mldonkey.3.1.5+opam.tar.gz' saved [3575612/3575612]
+
+Building mldonkey.3.1.5:
+  ./configure --enable-debug --prefix /home/opam/.opam/4.02.0dev+trunk
+  make
+  make install
+Arguments to configure:  '--enable-option-checking=fatal' '--enable-debug' '--prefix' '/home/opam/.opam/4.02.0dev+trunk'
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+
+--------------------------------
+     Checking system tools.
+--------------------------------
+checking for ranlib... ranlib
+checking for gmake... no
+checking for make... make
+checking if make is GNU make ... yes
+checking for bzip2... bzip2
+checking for gzip... (cached) bzip2
+checking for perl... /usr/bin/perl
+checking for rpmbuild... no
+checking for rpm... no
+checking for wget... wget
+----------------------------------------
+     Checking system tools finished.
+----------------------------------------
+
+--------------------------------
+     Checking OCaml compiler.
+--------------------------------
+checking for ocamlc.opt... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+checking for ocamlc... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+checking for camlp4... /usr/bin/camlp4
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocamlopt... (cached) ocamlopt.opt
+checking for ocamldep... ocamldep
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamllex... (cached) ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for ocamldoc... ocamldoc
+checking for ocamlmktop... ocamlmktop
+checking for camlp4... /usr/bin/camlp4
+checking for camlp4of... camlp4of
+-------------------------------------------
+     Checking OCaml 4.02.0+dev5-2014-04-29 finished.
+-------------------------------------------
+
+----------------------------------
+     Checking system headers.
+----------------------------------
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking for setrlimit... yes
+checking for getrlimit... yes
+checking for strerror_r... yes
+checking for strerror... yes
+checking for posix_fallocate... yes
+checking byteswap.h usability... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking for sys/types.h... (cached) yes
+checking for sys/time.h... yes
+checking for sys/resource.h... yes
+checking for netinet/in_systm.h... yes
+checking for netinet/in.h... yes
+checking for netinet/ip.h... yes
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking for poll... yes
+checking sys/vfs.h usability... yes
+checking sys/vfs.h presence... yes
+checking for sys/vfs.h... yes
+checking sys/statvfs.h usability... yes
+checking sys/statvfs.h presence... yes
+checking for sys/statvfs.h... yes
+checking for sys/param.h... yes
+checking for sys/mount.h... yes
+-------------------------------------------
+     Checking system headers finished.
+-------------------------------------------
+
+-----------------------------------
+     Checking system libraries.
+-----------------------------------
+----- checking zlib (required)
+checking for inflate in -lz... no
+Zlib missing, did you install zlib and zlib-developer packages?
+[ERROR] The compilation of mldonkey.3.1.5 failed.
+Removing mldonkey.3.1.5.
+
+
+===== ERROR while installing mldonkey.3.1.5 =====
+# opam-version         1.1.1
+# os                   linux
+# command              ./configure --enable-debug --prefix /home/opam/.opam/4.02.0dev+trunk
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/mldonkey.3.1.5
+# compiler             4.02.0dev+trunk
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/mldonkey.3.1.5/mldonkey-23-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/mldonkey.3.1.5/mldonkey-23-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/mldonkey.3.1.5/mldonkey-23-ad8886.err
+### stdout ###
+# ...[truncated]
+# -------------------------------------------
+#      Checking system headers finished.
+# -------------------------------------------
+# 
+# -----------------------------------
+#      Checking system libraries.
+# -----------------------------------
+# ----- checking zlib (required)
+# checking for inflate in -lz... no
+# Zlib missing, did you install zlib and zlib-developer packages?
+
+'opam install mldonkey' failed.
