@@ -1,0 +1,1440 @@
+++ opam install liquidsoap -e ubuntu
++ depext='libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev'
+Ubuntu depexts: libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev
++ echo Ubuntu depexts: libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev
++ '[' 'libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libasprintf0c2:amd64.
+(Reading database ... 22248 files and directories currently installed.)
+Preparing to unpack .../libasprintf0c2_0.18.3.1-1ubuntu2_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.1-1ubuntu2) ...
+Selecting previously unselected package libpipeline1:amd64.
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5ubuntu1_amd64.deb ...
+Unpacking bsdmainutils (9.0.5ubuntu1) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libao-common.
+Preparing to unpack .../libao-common_1.1.0-2ubuntu2_all.deb ...
+Unpacking libao-common (1.1.0-2ubuntu2) ...
+Selecting previously unselected package libao4:amd64.
+Preparing to unpack .../libao4_1.1.0-2ubuntu2_amd64.deb ...
+Unpacking libao4:amd64 (1.1.0-2ubuntu2) ...
+Selecting previously unselected package libasound2-data.
+Preparing to unpack .../libasound2-data_1.0.27.2-3ubuntu7_all.deb ...
+Unpacking libasound2-data (1.0.27.2-3ubuntu7) ...
+Selecting previously unselected package libasound2:amd64.
+Preparing to unpack .../libasound2_1.0.27.2-3ubuntu7_amd64.deb ...
+Unpacking libasound2:amd64 (1.0.27.2-3ubuntu7) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2ubuntu1_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2ubuntu1) ...
+Selecting previously unselected package libelfg0:amd64.
+Preparing to unpack .../libelfg0_0.8.13-5_amd64.deb ...
+Unpacking libelfg0:amd64 (0.8.13-5) ...
+Selecting previously unselected package libfaad2:amd64.
+Preparing to unpack .../libfaad2_2.7-8_amd64.deb ...
+Unpacking libfaad2:amd64 (2.7-8) ...
+Selecting previously unselected package libogg0:amd64.
+Preparing to unpack .../libogg0_1.3.1-1ubuntu1_amd64.deb ...
+Unpacking libogg0:amd64 (1.3.1-1ubuntu1) ...
+Selecting previously unselected package libflac8:amd64.
+Preparing to unpack .../libflac8_1.3.0-2_amd64.deb ...
+Unpacking libflac8:amd64 (1.3.0-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5ubuntu3_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5ubuntu3) ...
+Selecting previously unselected package libgettextpo0:amd64.
+Preparing to unpack .../libgettextpo0_0.18.3.1-1ubuntu2_amd64.deb ...
+Unpacking libgettextpo0:amd64 (0.18.3.1-1ubuntu2) ...
+Selecting previously unselected package libgstreamer0.10-0:amd64.
+Preparing to unpack .../libgstreamer0.10-0_0.10.36-1.2ubuntu3_amd64.deb ...
+Unpacking libgstreamer0.10-0:amd64 (0.10.36-1.2ubuntu3) ...
+Selecting previously unselected package liborc-0.4-0:amd64.
+Preparing to unpack .../liborc-0.4-0_1%3a0.4.18-1ubuntu1_amd64.deb ...
+Unpacking liborc-0.4-0:amd64 (1:0.4.18-1ubuntu1) ...
+Selecting previously unselected package libgstreamer-plugins-base0.10-0:amd64.
+Preparing to unpack .../libgstreamer-plugins-base0.10-0_0.10.36-1.1ubuntu2_amd64.deb ...
+Unpacking libgstreamer-plugins-base0.10-0:amd64 (0.10.36-1.1ubuntu2) ...
+Selecting previously unselected package libgstreamer1.0-0:amd64.
+Preparing to unpack .../libgstreamer1.0-0_1.2.3-1_amd64.deb ...
+Unpacking libgstreamer1.0-0:amd64 (1.2.3-1) ...
+Selecting previously unselected package libjack0:amd64.
+Preparing to unpack .../libjack0_1%3a0.121.3+20120418git75e3e20b-2.1ubuntu1_amd64.deb ...
+Unpacking libjack0:amd64 (1:0.121.3+20120418git75e3e20b-2.1ubuntu1) ...
+Selecting previously unselected package libmad0:amd64.
+Preparing to unpack .../libmad0_0.15.1b-8ubuntu1_amd64.deb ...
+Unpacking libmad0:amd64 (0.15.1b-8ubuntu1) ...
+Selecting previously unselected package libmp3lame0:amd64.
+Preparing to unpack .../libmp3lame0_3.99.5+repack1-3ubuntu1_amd64.deb ...
+Unpacking libmp3lame0:amd64 (3.99.5+repack1-3ubuntu1) ...
+Selecting previously unselected package libpcrecpp0:amd64.
+Preparing to unpack .../libpcrecpp0_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package libportaudio2:amd64.
+Preparing to unpack .../libportaudio2_19+svn20140130-1_amd64.deb ...
+Unpacking libportaudio2:amd64 (19+svn20140130-1) ...
+Selecting previously unselected package libportaudiocpp0:amd64.
+Preparing to unpack .../libportaudiocpp0_19+svn20140130-1_amd64.deb ...
+Unpacking libportaudiocpp0:amd64 (19+svn20140130-1) ...
+Selecting previously unselected package libsamplerate0:amd64.
+Preparing to unpack .../libsamplerate0_0.1.8-7_amd64.deb ...
+Unpacking libsamplerate0:amd64 (0.1.8-7) ...
+Selecting previously unselected package libschroedinger-1.0-0:amd64.
+Preparing to unpack .../libschroedinger-1.0-0_1.0.11-2ubuntu1_amd64.deb ...
+Unpacking libschroedinger-1.0-0:amd64 (1.0.11-2ubuntu1) ...
+Selecting previously unselected package libsoundtouch0:amd64.
+Preparing to unpack .../libsoundtouch0_1.7.1-5_amd64.deb ...
+Unpacking libsoundtouch0:amd64 (1.7.1-5) ...
+Selecting previously unselected package libspeex1:amd64.
+Preparing to unpack .../libspeex1_1.2~rc1.1-1ubuntu1_amd64.deb ...
+Unpacking libspeex1:amd64 (1.2~rc1.1-1ubuntu1) ...
+Selecting previously unselected package libtheora0:amd64.
+Preparing to unpack .../libtheora0_1.1.1+dfsg.1-3.2_amd64.deb ...
+Unpacking libtheora0:amd64 (1.1.1+dfsg.1-3.2) ...
+Selecting previously unselected package libvorbis0a:amd64.
+Preparing to unpack .../libvorbis0a_1.3.2-1.3ubuntu1_amd64.deb ...
+Unpacking libvorbis0a:amd64 (1.3.2-1.3ubuntu1) ...
+Selecting previously unselected package libvorbisenc2:amd64.
+Preparing to unpack .../libvorbisenc2_1.3.2-1.3ubuntu1_amd64.deb ...
+Unpacking libvorbisenc2:amd64 (1.3.2-1.3ubuntu1) ...
+Selecting previously unselected package libvorbisfile3:amd64.
+Preparing to unpack .../libvorbisfile3_1.3.2-1.3ubuntu1_amd64.deb ...
+Unpacking libvorbisfile3:amd64 (1.3.2-1.3ubuntu1) ...
+Selecting previously unselected package libpython2.7-minimal:amd64.
+Preparing to unpack .../libpython2.7-minimal_2.7.6-8_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.6-8) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../python2.7-minimal_2.7.6-8_amd64.deb ...
+Unpacking python2.7-minimal (2.7.6-8) ...
+Selecting previously unselected package libgavl1:amd64.
+Preparing to unpack .../libgavl1_1.4.0-1_amd64.deb ...
+Unpacking libgavl1:amd64 (1.4.0-1) ...
+Selecting previously unselected package libvo-aacenc0:amd64.
+Preparing to unpack .../libvo-aacenc0_0.1.3-1_amd64.deb ...
+Unpacking libvo-aacenc0:amd64 (0.1.3-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.1-1ubuntu2_amd64.deb ...
+Unpacking gettext-base (0.18.3.1-1ubuntu2) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.1-1ubuntu2_amd64.deb ...
+Unpacking gettext (0.18.3.1-1ubuntu2) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2ubuntu1_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2ubuntu1) ...
+Selecting previously unselected package dh-apparmor.
+Preparing to unpack .../dh-apparmor_2.8.95~2430-0ubuntu5_all.deb ...
+Unpacking dh-apparmor (2.8.95~2430-0ubuntu5) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20131227ubuntu1_all.deb ...
+Unpacking debhelper (9.20131227ubuntu1) ...
+Selecting previously unselected package gir1.2-freedesktop.
+Preparing to unpack .../gir1.2-freedesktop_1.40.0-1_amd64.deb ...
+Unpacking gir1.2-freedesktop (1.40.0-1) ...
+Selecting previously unselected package gir1.2-gstreamer-0.10.
+Preparing to unpack .../gir1.2-gstreamer-0.10_0.10.36-1.2ubuntu3_amd64.deb ...
+Unpacking gir1.2-gstreamer-0.10 (0.10.36-1.2ubuntu3) ...
+Selecting previously unselected package gir1.2-gst-plugins-base-0.10.
+Preparing to unpack .../gir1.2-gst-plugins-base-0.10_0.10.36-1.1ubuntu2_amd64.deb ...
+Unpacking gir1.2-gst-plugins-base-0.10 (0.10.36-1.1ubuntu2) ...
+Selecting previously unselected package gir1.2-gstreamer-1.0.
+Preparing to unpack .../gir1.2-gstreamer-1.0_1.2.3-1_amd64.deb ...
+Unpacking gir1.2-gstreamer-1.0 (1.2.3-1) ...
+Selecting previously unselected package libao-dev:amd64.
+Preparing to unpack .../libao-dev_1.1.0-2ubuntu2_amd64.deb ...
+Unpacking libao-dev:amd64 (1.1.0-2ubuntu2) ...
+Selecting previously unselected package libasound2-dev:amd64.
+Preparing to unpack .../libasound2-dev_1.0.27.2-3ubuntu7_amd64.deb ...
+Unpacking libasound2-dev:amd64 (1.0.27.2-3ubuntu7) ...
+Selecting previously unselected package libasprintf-dev:amd64.
+Preparing to unpack .../libasprintf-dev_0.18.3.1-1ubuntu2_amd64.deb ...
+Unpacking libasprintf-dev:amd64 (0.18.3.1-1ubuntu2) ...
+Selecting previously unselected package libfaad-dev:amd64.
+Preparing to unpack .../libfaad-dev_2.7-8_amd64.deb ...
+Unpacking libfaad-dev:amd64 (2.7-8) ...
+Selecting previously unselected package libogg-dev:amd64.
+Preparing to unpack .../libogg-dev_1.3.1-1ubuntu1_amd64.deb ...
+Unpacking libogg-dev:amd64 (1.3.1-1ubuntu1) ...
+Selecting previously unselected package libflac-dev:amd64.
+Preparing to unpack .../libflac-dev_1.3.0-2_amd64.deb ...
+Unpacking libflac-dev:amd64 (1.3.0-2) ...
+Selecting previously unselected package libgavl-dev:amd64.
+Preparing to unpack .../libgavl-dev_1.4.0-1_amd64.deb ...
+Unpacking libgavl-dev:amd64 (1.4.0-1) ...
+Selecting previously unselected package libgettextpo-dev:amd64.
+Preparing to unpack .../libgettextpo-dev_0.18.3.1-1ubuntu2_amd64.deb ...
+Unpacking libgettextpo-dev:amd64 (0.18.3.1-1ubuntu2) ...
+Selecting previously unselected package libglib2.0-bin.
+Preparing to unpack .../libglib2.0-bin_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-bin (2.40.0-2) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../libpython2.7-stdlib_2.7.6-8_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.6-8) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../python2.7_2.7.6-8_amd64.deb ...
+Unpacking python2.7 (2.7.6-8) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../python-minimal_2.7.5-5ubuntu3_amd64.deb ...
+Unpacking python-minimal (2.7.5-5ubuntu3) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../libpython-stdlib_2.7.5-5ubuntu3_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.5-5ubuntu3) ...
+Selecting previously unselected package python.
+Preparing to unpack .../python_2.7.5-5ubuntu3_amd64.deb ...
+Unpacking python (2.7.5-5ubuntu3) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Selecting previously unselected package libglib2.0-dev.
+Preparing to unpack .../libglib2.0-dev_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-dev (2.40.0-2) ...
+Selecting previously unselected package libxml2-dev:amd64.
+Preparing to unpack .../libxml2-dev_2.9.1+dfsg1-3ubuntu4_amd64.deb ...
+Unpacking libxml2-dev:amd64 (2.9.1+dfsg1-3ubuntu4) ...
+Selecting previously unselected package libgstreamer0.10-dev.
+Preparing to unpack .../libgstreamer0.10-dev_0.10.36-1.2ubuntu3_amd64.deb ...
+Unpacking libgstreamer0.10-dev (0.10.36-1.2ubuntu3) ...
+Selecting previously unselected package libgstreamer-plugins-base0.10-dev.
+Preparing to unpack .../libgstreamer-plugins-base0.10-dev_0.10.36-1.1ubuntu2_amd64.deb ...
+Unpacking libgstreamer-plugins-base0.10-dev (0.10.36-1.1ubuntu2) ...
+Selecting previously unselected package libgstreamer1.0-dev.
+Preparing to unpack .../libgstreamer1.0-dev_1.2.3-1_amd64.deb ...
+Adding 'diversion of /usr/bin/dh_gstscancodecs to /usr/bin/dh_gstscancodecs-gst0.10 by libgstreamer1.0-dev'
+Adding 'diversion of /usr/share/man/man1/dh_gstscancodecs.1.gz to /usr/share/man/man1/dh_gstscancodecs.1.gz-gst0.10 by libgstreamer1.0-dev'
+Unpacking libgstreamer1.0-dev (1.2.3-1) ...
+Selecting previously unselected package libjack-dev.
+Preparing to unpack .../libjack-dev_1%3a0.121.3+20120418git75e3e20b-2.1ubuntu1_amd64.deb ...
+Unpacking libjack-dev (1:0.121.3+20120418git75e3e20b-2.1ubuntu1) ...
+Selecting previously unselected package liblo7.
+Preparing to unpack .../liblo7_0.28-3_amd64.deb ...
+Unpacking liblo7 (0.28-3) ...
+Selecting previously unselected package liblo-dev.
+Preparing to unpack .../liblo-dev_0.28-3_amd64.deb ...
+Unpacking liblo-dev (0.28-3) ...
+Selecting previously unselected package libmad0-dev.
+Preparing to unpack .../libmad0-dev_0.15.1b-8ubuntu1_amd64.deb ...
+Unpacking libmad0-dev (0.15.1b-8ubuntu1) ...
+Selecting previously unselected package libsys-hostname-long-perl.
+Preparing to unpack .../libsys-hostname-long-perl_1.4-3_all.deb ...
+Unpacking libsys-hostname-long-perl (1.4-3) ...
+Selecting previously unselected package libmail-sendmail-perl.
+Preparing to unpack .../libmail-sendmail-perl_0.79.16-1_all.deb ...
+Unpacking libmail-sendmail-perl (0.79.16-1) ...
+Selecting previously unselected package libmp3lame-dev:amd64.
+Preparing to unpack .../libmp3lame-dev_3.99.5+repack1-3ubuntu1_amd64.deb ...
+Unpacking libmp3lame-dev:amd64 (3.99.5+repack1-3ubuntu1) ...
+Selecting previously unselected package liborc-0.4-dev.
+Preparing to unpack .../liborc-0.4-dev_1%3a0.4.18-1ubuntu1_amd64.deb ...
+Unpacking liborc-0.4-dev (1:0.4.18-1ubuntu1) ...
+Selecting previously unselected package libsamplerate0-dev:amd64.
+Preparing to unpack .../libsamplerate0-dev_0.1.8-7_amd64.deb ...
+Unpacking libsamplerate0-dev:amd64 (0.1.8-7) ...
+Selecting previously unselected package libschroedinger-dev:amd64.
+Preparing to unpack .../libschroedinger-dev_1.0.11-2ubuntu1_amd64.deb ...
+Unpacking libschroedinger-dev:amd64 (1.0.11-2ubuntu1) ...
+Selecting previously unselected package libsoundtouch-dev.
+Preparing to unpack .../libsoundtouch-dev_1.7.1-5_amd64.deb ...
+Unpacking libsoundtouch-dev (1.7.1-5) ...
+Selecting previously unselected package libspeex-dev:amd64.
+Preparing to unpack .../libspeex-dev_1.2~rc1.1-1ubuntu1_amd64.deb ...
+Unpacking libspeex-dev:amd64 (1.2~rc1.1-1ubuntu1) ...
+Selecting previously unselected package libtheora-dev:amd64.
+Preparing to unpack .../libtheora-dev_1.1.1+dfsg.1-3.2_amd64.deb ...
+Unpacking libtheora-dev:amd64 (1.1.1+dfsg.1-3.2) ...
+Selecting previously unselected package libvorbis-dev:amd64.
+Preparing to unpack .../libvorbis-dev_1.3.2-1.3ubuntu1_amd64.deb ...
+Unpacking libvorbis-dev:amd64 (1.3.2-1.3ubuntu1) ...
+Selecting previously unselected package portaudio19-dev.
+Preparing to unpack .../portaudio19-dev_19+svn20140130-1_amd64.deb ...
+Unpacking portaudio19-dev (19+svn20140130-1) ...
+Selecting previously unselected package libgavl-doc.
+Preparing to unpack .../libgavl-doc_1.4.0-1_all.deb ...
+Unpacking libgavl-doc (1.4.0-1) ...
+Selecting previously unselected package libvo-aacenc-dev:amd64.
+Preparing to unpack .../libvo-aacenc-dev_0.1.3-1_amd64.deb ...
+Unpacking libvo-aacenc-dev:amd64 (0.1.3-1) ...
+Processing triggers for mime-support (3.54ubuntu1) ...
+Processing triggers for libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libasprintf0c2:amd64 (0.18.3.1-1ubuntu2) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5ubuntu1) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+Building database of manual pages ...
+Setting up libao-common (1.1.0-2ubuntu2) ...
+Setting up libao4:amd64 (1.1.0-2ubuntu2) ...
+Setting up libasound2-data (1.0.27.2-3ubuntu7) ...
+Setting up libasound2:amd64 (1.0.27.2-3ubuntu7) ...
+Setting up libcroco3:amd64 (0.6.8-2ubuntu1) ...
+Setting up libelfg0:amd64 (0.8.13-5) ...
+Setting up libfaad2:amd64 (2.7-8) ...
+Setting up libogg0:amd64 (1.3.1-1ubuntu1) ...
+Setting up libflac8:amd64 (1.3.0-2) ...
+Setting up libunistring0:amd64 (0.9.3-5ubuntu3) ...
+Setting up libgettextpo0:amd64 (0.18.3.1-1ubuntu2) ...
+Setting up libgstreamer0.10-0:amd64 (0.10.36-1.2ubuntu3) ...
+Setting up liborc-0.4-0:amd64 (1:0.4.18-1ubuntu1) ...
+Setting up libgstreamer-plugins-base0.10-0:amd64 (0.10.36-1.1ubuntu2) ...
+Setting up libgstreamer1.0-0:amd64 (1.2.3-1) ...
+Setting up libjack0:amd64 (1:0.121.3+20120418git75e3e20b-2.1ubuntu1) ...
+Setting up libmad0:amd64 (0.15.1b-8ubuntu1) ...
+Setting up libmp3lame0:amd64 (3.99.5+repack1-3ubuntu1) ...
+Setting up libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Setting up libportaudio2:amd64 (19+svn20140130-1) ...
+Setting up libportaudiocpp0:amd64 (19+svn20140130-1) ...
+Setting up libsamplerate0:amd64 (0.1.8-7) ...
+Setting up libschroedinger-1.0-0:amd64 (1.0.11-2ubuntu1) ...
+Setting up libsoundtouch0:amd64 (1.7.1-5) ...
+Setting up libspeex1:amd64 (1.2~rc1.1-1ubuntu1) ...
+Setting up libtheora0:amd64 (1.1.1+dfsg.1-3.2) ...
+Setting up libvorbis0a:amd64 (1.3.2-1.3ubuntu1) ...
+Setting up libvorbisenc2:amd64 (1.3.2-1.3ubuntu1) ...
+Setting up libvorbisfile3:amd64 (1.3.2-1.3ubuntu1) ...
+Setting up libpython2.7-minimal:amd64 (2.7.6-8) ...
+Setting up python2.7-minimal (2.7.6-8) ...
+Linking and byte-compiling packages for runtime python2.7...
+Setting up libgavl1:amd64 (1.4.0-1) ...
+Setting up libvo-aacenc0:amd64 (0.1.3-1) ...
+Setting up gettext-base (0.18.3.1-1ubuntu2) ...
+Setting up gettext (0.18.3.1-1ubuntu2) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2ubuntu1) ...
+Setting up dh-apparmor (2.8.95~2430-0ubuntu5) ...
+Setting up debhelper (9.20131227ubuntu1) ...
+Setting up gir1.2-freedesktop (1.40.0-1) ...
+Setting up gir1.2-gstreamer-0.10 (0.10.36-1.2ubuntu3) ...
+Setting up gir1.2-gst-plugins-base-0.10 (0.10.36-1.1ubuntu2) ...
+Setting up gir1.2-gstreamer-1.0 (1.2.3-1) ...
+Setting up libao-dev:amd64 (1.1.0-2ubuntu2) ...
+Setting up libasound2-dev:amd64 (1.0.27.2-3ubuntu7) ...
+Setting up libasprintf-dev:amd64 (0.18.3.1-1ubuntu2) ...
+Setting up libfaad-dev:amd64 (2.7-8) ...
+Setting up libogg-dev:amd64 (1.3.1-1ubuntu1) ...
+Setting up libflac-dev:amd64 (1.3.0-2) ...
+Setting up libgavl-dev:amd64 (1.4.0-1) ...
+Setting up libgettextpo-dev:amd64 (0.18.3.1-1ubuntu2) ...
+Setting up libglib2.0-bin (2.40.0-2) ...
+Setting up libpython2.7-stdlib:amd64 (2.7.6-8) ...
+Setting up python2.7 (2.7.6-8) ...
+Setting up python-minimal (2.7.5-5ubuntu3) ...
+Setting up libpython-stdlib:amd64 (2.7.5-5ubuntu3) ...
+Setting up python (2.7.5-5ubuntu3) ...
+Setting up libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up libglib2.0-dev (2.40.0-2) ...
+Setting up libxml2-dev:amd64 (2.9.1+dfsg1-3ubuntu4) ...
+Setting up libgstreamer0.10-dev (0.10.36-1.2ubuntu3) ...
+Setting up libgstreamer-plugins-base0.10-dev (0.10.36-1.1ubuntu2) ...
+Setting up libgstreamer1.0-dev (1.2.3-1) ...
+Setting up libjack-dev (1:0.121.3+20120418git75e3e20b-2.1ubuntu1) ...
+Setting up liblo7 (0.28-3) ...
+Setting up liblo-dev (0.28-3) ...
+Setting up libmad0-dev (0.15.1b-8ubuntu1) ...
+Setting up libsys-hostname-long-perl (1.4-3) ...
+Setting up libmail-sendmail-perl (0.79.16-1) ...
+Setting up libmp3lame-dev:amd64 (3.99.5+repack1-3ubuntu1) ...
+Setting up liborc-0.4-dev (1:0.4.18-1ubuntu1) ...
+Setting up libsamplerate0-dev:amd64 (0.1.8-7) ...
+Setting up libschroedinger-dev:amd64 (1.0.11-2ubuntu1) ...
+Setting up libsoundtouch-dev (1.7.1-5) ...
+Setting up libspeex-dev:amd64 (1.2~rc1.1-1ubuntu1) ...
+Setting up libtheora-dev:amd64 (1.1.1+dfsg.1-3.2) ...
+Setting up libvorbis-dev:amd64 (1.3.2-1.3ubuntu1) ...
+Setting up portaudio19-dev (19+svn20140130-1) ...
+Setting up libgavl-doc (1.4.0-1) ...
+Setting up libvo-aacenc-dev:amd64 (0.1.3-1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6) ...
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install liquidsoap
+Ubuntu srcexts:
+The following actions will be performed:
+ - install camomile.0.8.5 [required by liquidsoap]
+ - install dtools.0.3.0 [required by liquidsoap]
+ - install conf-libpcre.1 [required by liquidsoap]
+ - install ocaml-mad.0.4.4 [required by liquidsoap]
+ - install pcre-ocaml.7.0.4 [required by liquidsoap]
+ - install mm.0.2.1 [required by liquidsoap]
+ - install duppy.0.5.0 [required by liquidsoap]
+ - install liquidsoap.1.1.0
+8 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing camomile.0.8.5 =-=-=
+default    Downloading https://opam.ocaml.org/archives/camomile.0.8.5+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/camomile.0.8.5+opam.tar.gz
+--2014-05-10 22:25:03--  https://opam.ocaml.org/archives/camomile.0.8.5+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3709743 (3.5M) [application/octet-stream]
+Saving to: 'camomile.0.8.5+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  1%  246K 15s
+    50K .......... .......... .......... .......... ..........  2%  492K 11s
+   100K .......... .......... .......... .......... ..........  4% 1.19M 8s
+   150K .......... .......... .......... .......... ..........  5%  827K 7s
+   200K .......... .......... .......... .......... ..........  6% 1.17M 6s
+   250K .......... .......... .......... .......... ..........  8% 1.25M 5s
+   300K .......... .......... .......... .......... ..........  9%  833K 5s
+   350K .......... .......... .......... .......... .......... 11% 1.22M 5s
+   400K .......... .......... .......... .......... .......... 12% 8.36M 4s
+   450K .......... .......... .......... .......... .......... 13%  825K 4s
+   500K .......... .......... .......... .......... .......... 15% 1.34M 4s
+   550K .......... .......... .......... .......... .......... 16% 2.37M 4s
+   600K .......... .......... .......... .......... .......... 17% 1.07M 3s
+   650K .......... .......... .......... .......... .......... 19% 1.25M 3s
+   700K .......... .......... .......... .......... .......... 20% 2.66M 3s
+   750K .......... .......... .......... .......... .......... 22%  641K 3s
+   800K .......... .......... .......... .......... .......... 23% 2.21M 3s
+   850K .......... .......... .......... .......... .......... 24% 11.8M 3s
+   900K .......... .......... .......... .......... .......... 26%  650K 3s
+   950K .......... .......... .......... .......... .......... 27% 2.20M 3s
+  1000K .......... .......... .......... .......... .......... 28% 1.27M 3s
+  1050K .......... .......... .......... .......... .......... 30% 1.23M 3s
+  1100K .......... .......... .......... .......... .......... 31% 1.97M 2s
+  1150K .......... .......... .......... .......... .......... 33% 1.23M 2s
+  1200K .......... .......... .......... .......... .......... 34% 1.27M 2s
+  1250K .......... .......... .......... .......... .......... 35%  826K 2s
+  1300K .......... .......... .......... .......... .......... 37% 11.7M 2s
+  1350K .......... .......... .......... .......... .......... 38% 1.27M 2s
+  1400K .......... .......... .......... .......... .......... 40% 2.36M 2s
+  1450K .......... .......... .......... .......... .......... 41% 1.13M 2s
+  1500K .......... .......... .......... .......... .......... 42% 11.7M 2s
+  1550K .......... .......... .......... .......... .......... 44% 1.26M 2s
+  1600K .......... .......... .......... .......... .......... 45% 2.42M 2s
+  1650K .......... .......... .......... .......... .......... 46% 1.14M 2s
+  1700K .......... .......... .......... .......... .......... 48% 1.32M 2s
+  1750K .......... .......... .......... .......... .......... 49% 11.4M 2s
+  1800K .......... .......... .......... .......... .......... 51% 2.68M 1s
+  1850K .......... .......... .......... .......... .......... 52% 1.15M 1s
+  1900K .......... .......... .......... .......... .......... 53% 1.60M 1s
+  1950K .......... .......... .......... .......... .......... 55% 2.29M 1s
+  2000K .......... .......... .......... .......... .......... 56% 1.11M 1s
+  2050K .......... .......... .......... .......... .......... 57% 6.97M 1s
+  2100K .......... .......... .......... .......... .......... 59% 1.38M 1s
+  2150K .......... .......... .......... .......... .......... 60% 3.23M 1s
+  2200K .......... .......... .......... .......... .......... 62% 1.10M 1s
+  2250K .......... .......... .......... .......... .......... 63% 12.0M 1s
+  2300K .......... .......... .......... .......... .......... 64% 1.47M 1s
+  2350K .......... .......... .......... .......... .......... 66% 2.39M 1s
+  2400K .......... .......... .......... .......... .......... 67% 1.08M 1s
+  2450K .......... .......... .......... .......... .......... 69% 1.49M 1s
+  2500K .......... .......... .......... .......... .......... 70% 11.8M 1s
+  2550K .......... .......... .......... .......... .......... 71% 2.41M 1s
+  2600K .......... .......... .......... .......... .......... 73% 1.17M 1s
+  2650K .......... .......... .......... .......... .......... 74% 1.37M 1s
+  2700K .......... .......... .......... .......... .......... 75% 12.0M 1s
+  2750K .......... .......... .......... .......... .......... 77% 2.28M 1s
+  2800K .......... .......... .......... .......... .......... 78% 1.21M 1s
+  2850K .......... .......... .......... .......... .......... 80% 9.77M 1s
+  2900K .......... .......... .......... .......... .......... 81% 1.37M 0s
+  2950K .......... .......... .......... .......... .......... 82% 11.3M 0s
+  3000K .......... .......... .......... .......... .......... 84% 2.55M 0s
+  3050K .......... .......... .......... .......... .......... 85% 1.22M 0s
+  3100K .......... .......... .......... .......... .......... 86% 8.77M 0s
+  3150K .......... .......... .......... .......... .......... 88% 1.51M 0s
+  3200K .......... .......... .......... .......... .......... 89% 6.95M 0s
+  3250K .......... .......... .......... .......... .......... 91% 2.67M 0s
+  3300K .......... .......... .......... .......... .......... 92% 1.26M 0s
+  3350K .......... .......... .......... .......... .......... 93% 6.24M 0s
+  3400K .......... .......... .......... .......... .......... 95% 11.7M 0s
+  3450K .......... .......... .......... .......... .......... 96% 1.60M 0s
+  3500K .......... .......... .......... .......... .......... 97% 3.68M 0s
+  3550K .......... .......... .......... .......... .......... 99% 1.17M 0s
+  3600K .......... .......... ..                              100% 41.2M=2.4s
+
+2014-05-10 22:25:06 (1.49 MB/s) - 'camomile.0.8.5+opam.tar.gz' saved [3709743/3709743]
+
+Building camomile.0.8.5:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make
+  make install
+checking for cppo... false
+checking for grep that handles long lines and -e... /bin/grep
+checking for fgrep... /bin/grep -F
+checking for ocamlc... ocamlc
+ocaml version is 4.02.0+dev5-2014-04-29
+ocaml library path is /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking ocamlopt version... ok
+checking for ocamlc.opt... ocamlc.opt
+checking ocamlc.opt version... ok
+checking for ocamlopt.opt... ocamlopt.opt
+checking ocamlc.opt version... ok
+checking for ocamldep... ocamldep
+checking for ocamllex... ocamllex
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for ocamlweb... true
+checking for camlp4o... camlp4o
+checking for ocamlfind... install-with-ocamlfind
+checking for ocamldoc... ocamldoc
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating META
+echo '(* This file is automatically generated *)' > camomileDefaultConfig.ml
+echo 'let datadir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+trunk/share" "camomile") "database"' >> camomileDefaultConfig.ml
+echo 'let localedir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+trunk/share" "camomile") "locales"' >> camomileDefaultConfig.ml
+echo 'let charmapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+trunk/share" "camomile") "charmaps"' >> camomileDefaultConfig.ml
+echo 'let unimapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+trunk/share" "camomile") "mappings"' >> camomileDefaultConfig.ml
+ocamldep -slash -I internal -I public -I toolslib -I . *.ml *.mli \
+	internal/*.ml internal/*.mli \
+	public/*.ml public/*.mli \
+	mappings/*.ml mappings/*.mli \
+	toolslib/*.ml toolslib/*.mli \
+	> .depend
+ocamldep -slash -pp "camlp4o -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml" -I internal -I public -I toolslib -I . \
+	tools/tools/parse_unidata.ml tools/parse_uniset.ml tools/camomilecharmap.ml tools/parse_specialcasing.ml tools/parse_casefolding.ml tools/parse_scripts.ml tools/parse_allkeys.ml mappings/gen_mappings.ml tools/parse_age.ml tools/camomilelocaledef.ml tools/camomilestringprep.ml >> .depend
+Segmentation fault
+make: *** [.depend] Error 139
+[ERROR] The compilation of camomile.0.8.5 failed.
+Removing camomile.0.8.5.
+  ocamlfind remove camomile
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/camomile
+
+=-=-= Installing conf-libpcre.1 =-=-=
+Building conf-libpcre.1:
+  pkg-config libpcre
+Installing conf-libpcre.1.
+
+=-=-= Installing dtools.0.3.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/dtools.0.3.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/dtools.0.3.0+opam.tar.gz
+--2014-05-10 22:25:20--  https://opam.ocaml.org/archives/dtools.0.3.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 110671 (108K) [application/octet-stream]
+Saving to: 'dtools.0.3.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 46%  241K 0s
+    50K .......... .......... .......... .......... .......... 92%  484K 0s
+   100K ........                                              100% 53.6M=0.3s
+
+2014-05-10 22:25:21 (348 KB/s) - 'dtools.0.3.0+opam.tar.gz' saved [110671/110671]
+
+Building dtools.0.3.0:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make
+  make install
+configuring ocaml-dtools 0.3.0
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking that calling user is not root... ok
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for ar... ar
+checking for ocamlc... ocamlc
+OCaml version is 4.02.0+dev5-2014-04-29
+checking if ocaml compiler supports first-class modules... yes
+OCaml library path is /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+checking for camlidl... no
+checking for ocamllex... ocamllex
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for camlp4... camlp4
+versions differs from ocamlc
+checking for camlp4boot... no
+checking for camlp4o... camlp4o
+checking for camlp4of... camlp4of
+checking for camlp4oof... camlp4oof
+checking for camlp4orf... camlp4orf
+checking for camlp4prof... camlp4prof
+checking for camlp4r... camlp4r
+checking for camlp4rf... camlp4rf
+checking for ocamlfind... ocamlfind
+checking for caml/threads.h... yes
+checking for gcc option to produce PIC... -fPIC
+checking for ocaml syslog module... Not found.
+configure: creating ./config.status
+config.status: creating src/Makefile
+config.status: creating src/META
+config.status: creating Makefile
+make -C src
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+making ._bcdi/dtools.di from dtools.mli
+making ._d/dtools.d from dtools.ml
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+ocamlc.opt -c -thread dtools.mli
+ocamlc.opt -c -thread dtools.ml
+ocamlc.opt -a     -linkall         \
+				  -o dtools.cma  dtools.cmo
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+making ._ncdi/dtools.di from dtools.mli
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+ocamlopt.opt -c -thread dtools.ml
+ocamlopt.opt -a      -linkall          \
+				 -o dtools.cmxa dtools.cmx
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make -C src install
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: `dtools.cma' is up to date.
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: `dtools.cmxa' is up to date.
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+
+Installing library with ocamlfind
+ocamlfind install  dtools META dtools.cma dtools.cmxa dtools.cmx dtools.mli dtools.cmi dtools.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dtools/dtools.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dtools/dtools.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dtools/dtools.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dtools/dtools.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dtools/dtools.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dtools/dtools.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dtools/META
+
+Installation successful.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+Installing dtools.0.3.0.
+
+=-=-= Installing ocaml-mad.0.4.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocaml-mad.0.4.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocaml-mad.0.4.4+opam.tar.gz
+--2014-05-10 22:25:30--  https://opam.ocaml.org/archives/ocaml-mad.0.4.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 143577 (140K) [application/octet-stream]
+Saving to: 'ocaml-mad.0.4.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 35%  246K 0s
+    50K .......... .......... .......... .......... .......... 71%  492K 0s
+   100K .......... .......... .......... ..........           100% 1004K=0.3s
+
+2014-05-10 22:25:31 (406 KB/s) - 'ocaml-mad.0.4.4+opam.tar.gz' saved [143577/143577]
+
+Building ocaml-mad.0.4.4:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make
+  make install
+configuring ocaml-mad 0.4.4
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking that calling user is not root... ok
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for ar... ar
+checking for ocamlc... ocamlc
+OCaml version is 4.02.0+dev5-2014-04-29
+checking if ocaml compiler supports first-class modules... yes
+OCaml library path is /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+checking for camlidl... no
+checking for ocamllex... ocamllex
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for camlp4... camlp4
+versions differs from ocamlc
+checking for camlp4boot... no
+checking for camlp4o... camlp4o
+checking for camlp4of... camlp4of
+checking for camlp4oof... camlp4oof
+checking for camlp4orf... camlp4orf
+checking for camlp4prof... camlp4prof
+checking for camlp4r... camlp4r
+checking for camlp4rf... camlp4rf
+checking for ocamlfind... ocamlfind
+checking for caml/threads.h... yes
+checking for gcc option to produce PIC... -fPIC
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/META
+make -C src
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+making ._bcdi/mad.di from mad.mli
+making ._d/mad.d from mad.ml
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/opam/.opam/4.02.0dev+trunk/include   -Wall -DCAML_NAME_SPACE \
+				-DPIC -fPIC -I/home/opam/.opam/4.02.0dev+trunk/include  \
+				    -o mad_stubs.o " mad_stubs.c 
+mad_stubs.c: In function 'ocaml_mad_openfile':
+mad_stubs.c:175:8: warning: ignoring return value of 'fread', declared with attribute warn_unused_result [-Wunused-result]
+   fread(&id3_header,sizeof(char),3,fd);
+        ^
+mad_stubs.c:181:10: warning: ignoring return value of 'fread', declared with attribute warn_unused_result [-Wunused-result]
+     fread(&id3_header,sizeof(char),3,fd);
+          ^
+mad_stubs.c:187:10: warning: ignoring return value of 'fread', declared with attribute warn_unused_result [-Wunused-result]
+     fread(&id3_len,sizeof(char),4,fd);
+          ^
+ar rcs libmad_stubs.a  mad_stubs.o
+ocamlc.opt -c mad.mli
+ocamlc.opt -c mad.ml
+ocamlmklib      -L/home/opam/.opam/4.02.0dev+trunk/lib    \
+				-o mad_stubs  mad_stubs.o -lmad \
+				
+ocamlc.opt -a -dllib dllmad_stubs.so       -ccopt -L/home/opam/.opam/4.02.0dev+trunk/lib  -ccopt -L/home/opam/.opam/4.02.0dev+trunk/lib     \
+				-cclib -lmad_stubs -cclib -lmad  -o mad.cma  mad.cmo
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+making ._ncdi/mad.di from mad.mli
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+make[2]: `libmad_stubs.a' is up to date.
+ocamlopt.opt -c mad.ml
+ocamlopt.opt -a        -ccopt -L/home/opam/.opam/4.02.0dev+trunk/lib  -ccopt -L/home/opam/.opam/4.02.0dev+trunk/lib    -cclib -lmad_stubs -cclib -lmad  \
+				 -o mad.cmxa mad.cmx
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+make -C src install
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+make[2]: `libmad_stubs.a' is up to date.
+make[2]: `mad.cma' is up to date.
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+make[2]: `libmad_stubs.a' is up to date.
+make[2]: `mad.cmxa' is up to date.
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+
+Installing library with ocamlfind
+ocamlfind install  mad META mad.mli mad.cmi mad.cma mad.cmxa mad.cmx libmad_stubs.a mad.a dllmad_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mad/mad.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mad/libmad_stubs.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mad/mad.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mad/mad.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mad/mad.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mad/mad.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mad/mad.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mad/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllmad_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllmad_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+trunk/lib/stublibs is not mentioned in ld.conf
+
+Installation successful.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocaml-mad.0.4.4/src'
+Installing ocaml-mad.0.4.4.
+
+=-=-= Installing mm.0.2.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/mm.0.2.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/mm.0.2.1+opam.tar.gz
+--2014-05-10 22:25:40--  https://opam.ocaml.org/archives/mm.0.2.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 418054 (408K) [application/octet-stream]
+Saving to: 'mm.0.2.1+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 12%  245K 1s
+    50K .......... .......... .......... .......... .......... 24%  491K 1s
+   100K .......... .......... .......... .......... .......... 36%  869K 1s
+   150K .......... .......... .......... .......... .......... 48% 1.10M 0s
+   200K .......... .......... .......... .......... .......... 61% 10.9M 0s
+   250K .......... .......... .......... .......... .......... 73%  911K 0s
+   300K .......... .......... .......... .......... .......... 85% 1.06M 0s
+   350K .......... .......... .......... .......... .......... 97% 1.34M 0s
+   400K ........                                              100% 53.2M=0.5s
+
+2014-05-10 22:25:41 (743 KB/s) - 'mm.0.2.1+opam.tar.gz' saved [418054/418054]
+
+Building mm.0.2.1:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make
+  make install
+configuring ocaml-mm 0.2.1
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking that calling user is not root... ok
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for ar... ar
+checking for ocamlc... ocamlc
+OCaml version is 4.02.0+dev5-2014-04-29
+checking if ocaml compiler supports first-class modules... yes
+OCaml library path is /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+checking for camlidl... no
+checking for ocamllex... ocamllex
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for camlp4... camlp4
+versions differs from ocamlc
+checking for camlp4boot... no
+checking for camlp4o... camlp4o
+checking for camlp4of... camlp4of
+checking for camlp4oof... camlp4oof
+checking for camlp4orf... camlp4orf
+checking for camlp4prof... camlp4prof
+checking for camlp4r... camlp4r
+checking for camlp4rf... camlp4rf
+checking for ocamlfind... ocamlfind
+checking for caml/threads.h... yes
+checking for gcc option to produce PIC... -fPIC
+checking for memalign... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking for OCaml library alsa... not found
+checking for OCaml library ao... not found
+checking for OCaml library pulseaudio... not found
+checking for OCaml library gstreamer... not found
+checking for OCaml library mad... found
+checking for OCaml library ogg... not found
+checking for OCaml library sdl... not found
+checking for OCaml library theora... not found
+checking sys/soundcard.h usability... yes
+checking sys/soundcard.h presence... yes
+checking for sys/soundcard.h... yes
+checking libavcodec/avcodec.h usability... no
+checking libavcodec/avcodec.h presence... no
+checking for libavcodec/avcodec.h... no
+checking linux/videodev.h usability... no
+checking linux/videodev.h presence... no
+checking for linux/videodev.h... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating external/Makefile
+config.status: creating external/Makefile.defs
+config.status: creating src/META
+config.status: creating config.h
+
+
+Supported external libraries:
+  - Alsa      : no
+  - AO        : no
+  - FFmpeg    : no
+  - Gstreamer : no
+  - Mad       : yes
+  - ogg       : no
+  - OSS       : yes
+  - Pulseaudio: no
+  - SDL       : no
+  - Theora    : no
+  - V4L       : no
+
+make -C src all
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+ocamldep synth.mli > ._bcdi/synth.di
+ocamldep MIDI.mli > ._bcdi/MIDI.di
+ocamldep video.mli > ._bcdi/video.di
+ocamldep image.mli > ._bcdi/image.di
+ocamldep audio.mli > ._bcdi/audio.di
+ocamldep ringbuffer.mli > ._bcdi/ringbuffer.di
+ocamldep synth.ml > ._d/synth.d
+ocamldep MIDI.ml > ._d/MIDI.d
+ocamldep video.ml > ._d/video.d
+ocamldep image.ml > ._d/image.d
+ocamldep audio.ml > ._d/audio.d
+ocamldep IO.ml > ._d/IO.d
+ocamldep ringbuffer.ml > ._d/ringbuffer.d
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/opam/.opam/4.02.0dev+trunk/include -I.. -g -Wall -O3 \
+				-DPIC   \
+				  -I.. -I/home/opam/.opam/4.02.0dev+trunk/lib/mad  -o audio_c.o " audio_c.c
+ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/opam/.opam/4.02.0dev+trunk/include -I.. -g -Wall -O3 \
+				-DPIC   \
+				  -I.. -I/home/opam/.opam/4.02.0dev+trunk/lib/mad  -o image_c.o " image_c.c
+image_c.c: In function 'caml_rgb_color_to_alpha':
+image_c.c:1319:10: warning: variable 'd' set but not used [-Wunused-but-set-variable]
+   double d;
+          ^
+image_c.c:1318:22: warning: variable 'aa' set but not used [-Wunused-but-set-variable]
+   double rr, gg, bb, aa;
+                      ^
+ar rcs libmm_stubs.a  audio_c.o image_c.o
+ocamlc.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad ringbuffer.mli
+ocamlc.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad ringbuffer.ml
+ocamlc.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad IO.ml
+File "IO.ml", line 71, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "IO.ml", line 129, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "IO.ml", line 131, characters 6-54:
+Warning 3: deprecated feature: String.set
+File "IO.ml", line 142, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "IO.ml", line 144, characters 6-64:
+Warning 3: deprecated feature: String.set
+ocamlc.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad audio.mli
+ocamlc.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad audio.ml
+File "audio.ml", line 956, characters 15-28:
+Warning 3: deprecated feature: String.create
+ocamlc.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad image.mli
+ocamlc.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad image.ml
+ocamlc.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad video.mli
+ocamlc.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad video.ml
+ocamlc.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad MIDI.mli
+ocamlc.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad MIDI.ml
+File "MIDI.ml", line 101, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "MIDI.ml", line 107, characters 8-39:
+Warning 3: deprecated feature: String.set
+File "MIDI.ml", line 108, characters 8-22:
+Warning 3: deprecated feature: String.set
+File "MIDI.ml", line 109, characters 8-22:
+Warning 3: deprecated feature: String.set
+File "MIDI.ml", line 111, characters 8-39:
+Warning 3: deprecated feature: String.set
+File "MIDI.ml", line 112, characters 8-22:
+Warning 3: deprecated feature: String.set
+File "MIDI.ml", line 113, characters 8-22:
+Warning 3: deprecated feature: String.set
+File "MIDI.ml", line 289, characters 15-28:
+Warning 3: deprecated feature: String.create
+File "MIDI.ml", line 292, characters 14-52:
+Warning 3: deprecated feature: String.set
+File "MIDI.ml", line 153, characters 51-52:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+ocamlc.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad synth.mli
+ocamlc.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad synth.ml
+ocamlmklib    -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad     \
+				-o mm_stubs  audio_c.o image_c.o   \
+				
+ocamlc.opt -a -dllib dllmm_stubs.so    -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad -linkall        -cclib -lmm_stubs    -o mm.cma ringbuffer.cmo IO.cmo audio.cmo image.cmo video.cmo MIDI.cmo synth.cmo
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+ocamldep -native synth.mli > ._ncdi/synth.di
+ocamldep -native MIDI.mli > ._ncdi/MIDI.di
+ocamldep -native video.mli > ._ncdi/video.di
+ocamldep -native image.mli > ._ncdi/image.di
+ocamldep -native audio.mli > ._ncdi/audio.di
+ocamldep -native ringbuffer.mli > ._ncdi/ringbuffer.di
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+make[2]: `libmm_stubs.a' is up to date.
+ocamlopt.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad ringbuffer.ml
+ocamlopt.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad IO.ml
+File "IO.ml", line 71, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "IO.ml", line 129, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "IO.ml", line 131, characters 6-54:
+Warning 3: deprecated feature: String.set
+File "IO.ml", line 142, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "IO.ml", line 144, characters 6-64:
+Warning 3: deprecated feature: String.set
+ocamlopt.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad audio.ml
+File "audio.ml", line 956, characters 15-28:
+Warning 3: deprecated feature: String.create
+ocamlopt.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad image.ml
+ocamlopt.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad video.ml
+ocamlopt.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad MIDI.ml
+File "MIDI.ml", line 101, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "MIDI.ml", line 107, characters 8-39:
+Warning 3: deprecated feature: String.set
+File "MIDI.ml", line 108, characters 8-22:
+Warning 3: deprecated feature: String.set
+File "MIDI.ml", line 109, characters 8-22:
+Warning 3: deprecated feature: String.set
+File "MIDI.ml", line 111, characters 8-39:
+Warning 3: deprecated feature: String.set
+File "MIDI.ml", line 112, characters 8-22:
+Warning 3: deprecated feature: String.set
+File "MIDI.ml", line 113, characters 8-22:
+Warning 3: deprecated feature: String.set
+File "MIDI.ml", line 289, characters 15-28:
+Warning 3: deprecated feature: String.create
+File "MIDI.ml", line 292, characters 14-52:
+Warning 3: deprecated feature: String.set
+File "MIDI.ml", line 153, characters 51-52:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+ocamlopt.opt -c -dtypes -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad synth.ml
+ocamlopt.opt -a     -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad -linkall       -cclib -lmm_stubs    -o mm.cmxa ringbuffer.cmx IO.cmx audio.cmx image.cmx video.cmx MIDI.cmx synth.cmx
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+make -C src install
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+make[2]: `libmm_stubs.a' is up to date.
+ocamlc.opt -a -dllib dllmm_stubs.so    -I .. -I /home/opam/.opam/4.02.0dev+trunk/lib/mad -linkall        -cclib -lmm_stubs    -o mm.cma ringbuffer.cmo IO.cmo audio.cmo image.cmo video.cmo MIDI.cmo synth.cmo
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+make[2]: `libmm_stubs.a' is up to date.
+make[2]: `mm.cmxa' is up to date.
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+
+Installing library with ocamlfind
+ocamlfind install  mm META *.cm* *.mli *.so *.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/mm.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/libmm_stubs.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/video.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/synth.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/ringbuffer.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/image.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/audio.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/MIDI.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/video.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/video.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/video.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/synth.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/synth.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/synth.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/ringbuffer.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/ringbuffer.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/ringbuffer.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/mm.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/mm.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/image.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/image.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/image.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/audio.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/audio.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/audio.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/MIDI.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/MIDI.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/MIDI.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/IO.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/IO.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/IO.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/mm/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllmm_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllmm_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+trunk/lib/stublibs is not mentioned in ld.conf
+
+Installation successful.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/mm.0.2.1/src'
+Installing mm.0.2.1.
+
+=-=-= Installing pcre-ocaml.7.0.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/pcre-ocaml.7.0.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/pcre-ocaml.7.0.4+opam.tar.gz
+--2014-05-10 22:25:56--  https://opam.ocaml.org/archives/pcre-ocaml.7.0.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 86459 (84K) [application/octet-stream]
+Saving to: 'pcre-ocaml.7.0.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 59%  245K 0s
+    50K .......... .......... .......... ....                 100%  879K=0.2s
+
+2014-05-10 22:25:56 (348 KB/s) - 'pcre-ocaml.7.0.4+opam.tar.gz' saved [86459/86459]
+
+Building pcre-ocaml.7.0.4:
+  make
+  make install
+ocaml setup.ml -configure 
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ pcre-ocaml
+Package version: ..................................... 7.0.4
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+with_pcre_config: .................................... pcre-config
+Strict compile-time checks: .......................... true
+Build examples: ...................................... true
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+
+ocaml setup.ml -build 
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamlc -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -ccopt '' -c lib/pcre_stubs.c
+mv pcre_stubs.o lib/pcre_stubs.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlmklib -o lib/pcre_stubs -lpcre lib/pcre_stubs.o
+ocamlfind ocamldep -modules lib/pcre.mli > lib/pcre.mli.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -w Aer-44 -I lib -o lib/pcre.cmi lib/pcre.mli
+ocamlfind ocamldep -modules lib/pcre.ml > lib/pcre.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -w Aer-44 -I lib -o lib/pcre.cmo lib/pcre.ml
++ ocamlfind ocamlc -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -w Aer-44 -I lib -o lib/pcre.cmo lib/pcre.ml
+File "lib/pcre.ml", line 273, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 279, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 285, characters 6-23:
+Warning 3: deprecated feature: String.unsafe_set
+File "lib/pcre.ml", line 286, characters 6-23:
+Warning 3: deprecated feature: String.unsafe_set
+File "lib/pcre.ml", line 287, characters 11-28:
+Warning 3: deprecated feature: String.unsafe_set
+File "lib/pcre.ml", line 573, characters 16-29:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 622, characters 16-29:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 669, characters 16-29:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 724, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 745, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 766, characters 14-27:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlc -a -dllib -lpcre_stubs -cclib -lpcre_stubs -cclib -lpcre -cclib -lpcre lib/pcre.cmo -o lib/pcre.cma
+ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -w Aer-44 -I lib -o lib/pcre.cmx lib/pcre.ml
++ ocamlfind ocamlopt -c -g -annot -strict-sequence -ccopt -g -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -w Aer-44 -I lib -o lib/pcre.cmx lib/pcre.ml
+File "lib/pcre.ml", line 273, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 279, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 285, characters 6-23:
+Warning 3: deprecated feature: String.unsafe_set
+File "lib/pcre.ml", line 286, characters 6-23:
+Warning 3: deprecated feature: String.unsafe_set
+File "lib/pcre.ml", line 287, characters 11-28:
+Warning 3: deprecated feature: String.unsafe_set
+File "lib/pcre.ml", line 573, characters 16-29:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 622, characters 16-29:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 669, characters 16-29:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 724, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 745, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "lib/pcre.ml", line 766, characters 14-27:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -a -cclib -lpcre_stubs -cclib -lpcre -cclib -lpcre lib/pcre.cmx -o lib/pcre.cmxa
+ocamlfind ocamlopt -shared -cclib -lpcre_stubs -I lib -cclib -lpcre lib/pcre.cmxa lib/pcre.cmx -o lib/pcre.cmxs
+ocamlfind ocamldep -modules examples/cloc/cloc.ml > examples/cloc/cloc.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/cloc -I lib -o examples/cloc/cloc.cmo examples/cloc/cloc.ml
++ ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/cloc -I lib -o examples/cloc/cloc.cmo examples/cloc/cloc.ml
+File "examples/cloc/cloc.ml", line 5, characters 15-28:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/cloc -I lib -o examples/cloc/cloc.cmx examples/cloc/cloc.ml
++ ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/cloc -I lib -o examples/cloc/cloc.cmx examples/cloc/cloc.ml
+File "examples/cloc/cloc.ml", line 5, characters 15-28:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg lib/pcre.cmxa examples/cloc/cloc.cmx -o examples/cloc/cloc.native
+ocamlfind ocamldep -modules examples/count_hash/count_hash.ml > examples/count_hash/count_hash.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/count_hash -I lib -o examples/count_hash/count_hash.cmo examples/count_hash/count_hash.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/count_hash -I lib -o examples/count_hash/count_hash.cmx examples/count_hash/count_hash.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg lib/pcre.cmxa examples/count_hash/count_hash.cmx -o examples/count_hash/count_hash.native
+ocamlfind ocamldep -modules examples/pcregrep/pcregrep.ml > examples/pcregrep/pcregrep.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/pcregrep -I lib -o examples/pcregrep/pcregrep.cmo examples/pcregrep/pcregrep.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/pcregrep -I lib -o examples/pcregrep/pcregrep.cmx examples/pcregrep/pcregrep.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg lib/pcre.cmxa examples/pcregrep/pcregrep.cmx -o examples/pcregrep/pcregrep.native
+ocamlfind ocamldep -modules examples/subst/subst.ml > examples/subst/subst.ml.depends
+ocamlfind ocamlc -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/subst -I lib -o examples/subst/subst.cmo examples/subst/subst.ml
+ocamlfind ocamlopt -c -g -annot -strict-sequence -I lib -w Aer-44 -I examples/subst -I lib -o examples/subst/subst.cmx examples/subst/subst.ml
+ocamlfind ocamlopt -linkpkg -g -I lib -linkpkg lib/pcre.cmxa examples/subst/subst.cmx -o examples/subst/subst.native
+ocaml setup.ml -install 
+File "setup.ml", line 234, characters 8-26:
+Warning 3: deprecated feature: String.set
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/pcre.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/libpcre_stubs.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/pcre.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/pcre.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/pcre.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/pcre.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/pcre.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/pcre.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pcre/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllpcre_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllpcre_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+trunk/lib/stublibs is not mentioned in ld.conf
+Installing pcre-ocaml.7.0.4.
+
+=-=-= Installing duppy.0.5.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/duppy.0.5.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/duppy.0.5.0+opam.tar.gz
+--2014-05-10 22:26:07--  https://opam.ocaml.org/archives/duppy.0.5.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 125020 (122K) [application/octet-stream]
+Saving to: 'duppy.0.5.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 40%  245K 0s
+    50K .......... .......... .......... .......... .......... 81%  489K 0s
+   100K .......... .......... ..                              100% 24.6M=0.3s
+
+2014-05-10 22:26:08 (397 KB/s) - 'duppy.0.5.0+opam.tar.gz' saved [125020/125020]
+
+Building duppy.0.5.0:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make
+  make install
+configuring ocaml-duppy 0.5.0
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking that calling user is not root... ok
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for ar... ar
+checking for ocamlc... ocamlc
+OCaml version is 4.02.0+dev5-2014-04-29
+checking if ocaml compiler supports first-class modules... yes
+OCaml library path is /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+checking for camlidl... no
+checking for ocamllex... ocamllex
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for camlp4... camlp4
+versions differs from ocamlc
+checking for camlp4boot... no
+checking for camlp4o... camlp4o
+checking for camlp4of... camlp4of
+checking for camlp4oof... camlp4oof
+checking for camlp4orf... camlp4orf
+checking for camlp4prof... camlp4prof
+checking for camlp4r... camlp4r
+checking for camlp4rf... camlp4rf
+checking for ocamlfind... ocamlfind
+checking for caml/threads.h... yes
+checking for gcc option to produce PIC... -fPIC
+checking for ocaml pcre module... ok
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/META
+config.status: creating src/Makefile
+config.status: creating examples/Makefile.telnet
+config.status: creating examples/Makefile.http
+make -C src all
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/duppy.0.5.0/src'
+ocamlfind ocamlc -c -package camlp4 -package camlp4.quotations.o -package camlp4.extend -syntax camlp4o pa_duppy.mli
+ocamlfind ocamlc -c -package camlp4 -package camlp4.quotations.o -package camlp4.extend -syntax camlp4o pa_duppy.ml
+ocamlc.opt got signal and exited
+make[1]: *** [pa_duppy.cmo] Error 2
+make[1]: *** Deleting file `pa_duppy.cmo'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/duppy.0.5.0/src'
+make: *** [all] Error 2
+[ERROR] The compilation of duppy.0.5.0 failed.
+Removing duppy.0.5.0.
+  ocamlfind remove duppy
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/duppy
+
+[ERROR] Due to some errors while processing { camomile.0.8.5, duppy.0.5.0 }, the following actions will NOT proceed:
+ - install liquidsoap.1.1.0
+
+===== ERROR while installing camomile.0.8.5 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/camomile.0.8.5
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/camomile.0.8.5/camomile-16805-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/camomile.0.8.5/camomile-16805-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/camomile.0.8.5/camomile-16805-ad8886.err
+### stdout ###
+# ...[truncated]
+# echo 'let charmapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+trunk/share" "camomile") "charmaps"' >> camomileDefaultConfig.ml
+# echo 'let unimapdir = Filename.concat (Filename.concat "/home/opam/.opam/4.02.0dev+trunk/share" "camomile") "mappings"' >> camomileDefaultConfig.ml
+# ocamldep -slash -I internal -I public -I toolslib -I . *.ml *.mli \
+# 	internal/*.ml internal/*.mli \
+# 	public/*.ml public/*.mli \
+# 	mappings/*.ml mappings/*.mli \
+# 	toolslib/*.ml toolslib/*.mli \
+# 	> .depend
+# ocamldep -slash -pp "camlp4o -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml" -I internal -I public -I toolslib -I . \
+# 	tools/tools/parse_unidata.ml tools/parse_uniset.ml tools/camomilecharmap.ml tools/parse_specialcasing.ml tools/parse_casefolding.ml tools/parse_scripts.ml tools/parse_allkeys.ml mappings/gen_mappings.ml tools/parse_age.ml tools/camomilelocaledef.ml tools/camomilestringprep.ml >> .depend
+### stderr ###
+# config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+# Segmentation fault
+# make: *** [.depend] Error 139
+
+
+===== ERROR while installing duppy.0.5.0 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/duppy.0.5.0
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/duppy.0.5.0/duppy-19702-865888.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/duppy.0.5.0/duppy-19702-865888.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/duppy.0.5.0/duppy-19702-865888.err
+### stdout ###
+# ...[truncated]
+# config.status: creating src/META
+# config.status: creating src/Makefile
+# config.status: creating examples/Makefile.telnet
+# config.status: creating examples/Makefile.http
+# make -C src all
+# make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/duppy.0.5.0/src'
+# ocamlfind ocamlc -c -package camlp4 -package camlp4.quotations.o -package camlp4.extend -syntax camlp4o pa_duppy.mli
+# ocamlfind ocamlc -c -package camlp4 -package camlp4.quotations.o -package camlp4.extend -syntax camlp4o pa_duppy.ml
+# ocamlc.opt got signal and exited
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/duppy.0.5.0/src'
+### stderr ###
+# make[1]: *** [pa_duppy.cmo] Error 2
+# make[1]: *** Deleting file `pa_duppy.cmo'
+# make: *** [all] Error 2
+
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+trunk/backup/state-20140410222449.export"
+'opam install liquidsoap' failed.
