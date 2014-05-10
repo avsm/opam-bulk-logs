@@ -1,0 +1,1571 @@
+++ opam install lablqt -e ubuntu
++ depext='qt5-qmake qtdeclarative5-dev'
++ echo Ubuntu depexts: qt5-qmake qtdeclarative5-dev
+Ubuntu depexts: qt5-qmake qtdeclarative5-dev
++ '[' 'qt5-qmake qtdeclarative5-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y qt5-qmake qtdeclarative5-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libelf1:amd64.
+(Reading database ... 22248 files and directories currently installed.)
+Preparing to unpack .../libelf1_0.158-0ubuntu5_amd64.deb ...
+Unpacking libelf1:amd64 (0.158-0ubuntu5) ...
+Selecting previously unselected package libatk1.0-data.
+Preparing to unpack .../libatk1.0-data_2.10.0-2ubuntu2_all.deb ...
+Unpacking libatk1.0-data (2.10.0-2ubuntu2) ...
+Selecting previously unselected package libatk1.0-0:amd64.
+Preparing to unpack .../libatk1.0-0_2.10.0-2ubuntu2_amd64.deb ...
+Unpacking libatk1.0-0:amd64 (2.10.0-2ubuntu2) ...
+Selecting previously unselected package libavahi-common-data:amd64.
+Preparing to unpack .../libavahi-common-data_0.6.31-4ubuntu1_amd64.deb ...
+Unpacking libavahi-common-data:amd64 (0.6.31-4ubuntu1) ...
+Selecting previously unselected package libavahi-common3:amd64.
+Preparing to unpack .../libavahi-common3_0.6.31-4ubuntu1_amd64.deb ...
+Unpacking libavahi-common3:amd64 (0.6.31-4ubuntu1) ...
+Selecting previously unselected package libavahi-client3:amd64.
+Preparing to unpack .../libavahi-client3_0.6.31-4ubuntu1_amd64.deb ...
+Unpacking libavahi-client3:amd64 (0.6.31-4ubuntu1) ...
+Selecting previously unselected package libboost-system1.54.0:amd64.
+Preparing to unpack .../libboost-system1.54.0_1.54.0-4ubuntu3_amd64.deb ...
+Unpacking libboost-system1.54.0:amd64 (1.54.0-4ubuntu3) ...
+Selecting previously unselected package libpixman-1-0:amd64.
+Preparing to unpack .../libpixman-1-0_0.30.2-2ubuntu1_amd64.deb ...
+Unpacking libpixman-1-0:amd64 (0.30.2-2ubuntu1) ...
+Selecting previously unselected package libxcb-render0:amd64.
+Preparing to unpack .../libxcb-render0_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-render0:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-shm0:amd64.
+Preparing to unpack .../libxcb-shm0_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-shm0:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libcairo2:amd64.
+Preparing to unpack .../libcairo2_1.13.0~20140204-0ubuntu1_amd64.deb ...
+Unpacking libcairo2:amd64 (1.13.0~20140204-0ubuntu1) ...
+Selecting previously unselected package libcups2:amd64.
+Preparing to unpack .../libcups2_1.7.2-0ubuntu1_amd64.deb ...
+Unpacking libcups2:amd64 (1.7.2-0ubuntu1) ...
+Selecting previously unselected package libdatrie1:amd64.
+Preparing to unpack .../libdatrie1_0.2.8-1_amd64.deb ...
+Unpacking libdatrie1:amd64 (0.2.8-1) ...
+Selecting previously unselected package libpciaccess0:amd64.
+Preparing to unpack .../libpciaccess0_0.13.2-1_amd64.deb ...
+Unpacking libpciaccess0:amd64 (0.13.2-1) ...
+Selecting previously unselected package libdrm-intel1:amd64.
+Preparing to unpack .../libdrm-intel1_2.4.52-1_amd64.deb ...
+Unpacking libdrm-intel1:amd64 (2.4.52-1) ...
+Selecting previously unselected package libdrm-nouveau2:amd64.
+Preparing to unpack .../libdrm-nouveau2_2.4.52-1_amd64.deb ...
+Unpacking libdrm-nouveau2:amd64 (2.4.52-1) ...
+Selecting previously unselected package libdrm-radeon1:amd64.
+Preparing to unpack .../libdrm-radeon1_2.4.52-1_amd64.deb ...
+Unpacking libdrm-radeon1:amd64 (2.4.52-1) ...
+Selecting previously unselected package libllvm3.4:amd64.
+Preparing to unpack .../libllvm3.4_1%3a3.4-1ubuntu3_amd64.deb ...
+Unpacking libllvm3.4:amd64 (1:3.4-1ubuntu3) ...
+Selecting previously unselected package libgl1-mesa-dri:amd64.
+Preparing to unpack .../libgl1-mesa-dri_10.1.0-4ubuntu5_amd64.deb ...
+Unpacking libgl1-mesa-dri:amd64 (10.1.0-4ubuntu5) ...
+Selecting previously unselected package libwayland-client0:amd64.
+Preparing to unpack .../libwayland-client0_1.4.0-1ubuntu1_amd64.deb ...
+Unpacking libwayland-client0:amd64 (1.4.0-1ubuntu1) ...
+Selecting previously unselected package libwayland-server0:amd64.
+Preparing to unpack .../libwayland-server0_1.4.0-1ubuntu1_amd64.deb ...
+Unpacking libwayland-server0:amd64 (1.4.0-1ubuntu1) ...
+Selecting previously unselected package libxcb-dri2-0:amd64.
+Preparing to unpack .../libxcb-dri2-0_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-dri2-0:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libgbm1:amd64.
+Preparing to unpack .../libgbm1_10.1.0-4ubuntu5_amd64.deb ...
+Unpacking libgbm1:amd64 (10.1.0-4ubuntu5) ...
+Selecting previously unselected package libx11-xcb1:amd64.
+Preparing to unpack .../libx11-xcb1_2%3a1.6.2-1ubuntu2_amd64.deb ...
+Unpacking libx11-xcb1:amd64 (2:1.6.2-1ubuntu2) ...
+Selecting previously unselected package libxcb-xfixes0:amd64.
+Preparing to unpack .../libxcb-xfixes0_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-xfixes0:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libegl1-mesa:amd64.
+Preparing to unpack .../libegl1-mesa_10.1.0-4ubuntu5_amd64.deb ...
+Unpacking libegl1-mesa:amd64 (10.1.0-4ubuntu5) ...
+Selecting previously unselected package libglapi-mesa:amd64.
+Preparing to unpack .../libglapi-mesa_10.1.0-4ubuntu5_amd64.deb ...
+Unpacking libglapi-mesa:amd64 (10.1.0-4ubuntu5) ...
+Selecting previously unselected package libopenvg1-mesa:amd64.
+Preparing to unpack .../libopenvg1-mesa_10.1.0-4ubuntu5_amd64.deb ...
+Unpacking libopenvg1-mesa:amd64 (10.1.0-4ubuntu5) ...
+Selecting previously unselected package libxfixes3:amd64.
+Preparing to unpack .../libxfixes3_1%3a5.0.1-1ubuntu1_amd64.deb ...
+Unpacking libxfixes3:amd64 (1:5.0.1-1ubuntu1) ...
+Selecting previously unselected package libwayland-egl1-mesa:amd64.
+Preparing to unpack .../libwayland-egl1-mesa_10.1.0-4ubuntu5_amd64.deb ...
+Unpacking libwayland-egl1-mesa:amd64 (10.1.0-4ubuntu5) ...
+Selecting previously unselected package libegl1-mesa-drivers:amd64.
+Preparing to unpack .../libegl1-mesa-drivers_10.1.0-4ubuntu5_amd64.deb ...
+Unpacking libegl1-mesa-drivers:amd64 (10.1.0-4ubuntu5) ...
+Selecting previously unselected package libjpeg-turbo8:amd64.
+Preparing to unpack .../libjpeg-turbo8_1.3.0-0ubuntu2_amd64.deb ...
+Unpacking libjpeg-turbo8:amd64 (1.3.0-0ubuntu2) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../libjpeg8_8c-2ubuntu8_amd64.deb ...
+Unpacking libjpeg8:amd64 (8c-2ubuntu8) ...
+Selecting previously unselected package libjasper1:amd64.
+Preparing to unpack .../libjasper1_1.900.1-14ubuntu3_amd64.deb ...
+Unpacking libjasper1:amd64 (1.900.1-14ubuntu3) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../libjbig0_2.0-2ubuntu4_amd64.deb ...
+Unpacking libjbig0:amd64 (2.0-2ubuntu4) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../libtiff5_4.0.3-7_amd64.deb ...
+Unpacking libtiff5:amd64 (4.0.3-7) ...
+Selecting previously unselected package libgdk-pixbuf2.0-common.
+Preparing to unpack .../libgdk-pixbuf2.0-common_2.30.7-0ubuntu1_all.deb ...
+Unpacking libgdk-pixbuf2.0-common (2.30.7-0ubuntu1) ...
+Selecting previously unselected package libgdk-pixbuf2.0-0:amd64.
+Preparing to unpack .../libgdk-pixbuf2.0-0_2.30.7-0ubuntu1_amd64.deb ...
+Unpacking libgdk-pixbuf2.0-0:amd64 (2.30.7-0ubuntu1) ...
+Selecting previously unselected package libxcb-dri3-0:amd64.
+Preparing to unpack .../libxcb-dri3-0_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-dri3-0:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-glx0:amd64.
+Preparing to unpack .../libxcb-glx0_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-glx0:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-present0:amd64.
+Preparing to unpack .../libxcb-present0_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-present0:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-sync1:amd64.
+Preparing to unpack .../libxcb-sync1_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-sync1:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxdamage1:amd64.
+Preparing to unpack .../libxdamage1_1%3a1.1.4-1ubuntu1_amd64.deb ...
+Unpacking libxdamage1:amd64 (1:1.1.4-1ubuntu1) ...
+Selecting previously unselected package libxshmfence1:amd64.
+Preparing to unpack .../libxshmfence1_1.1-2_amd64.deb ...
+Unpacking libxshmfence1:amd64 (1.1-2) ...
+Selecting previously unselected package libxxf86vm1:amd64.
+Preparing to unpack .../libxxf86vm1_1%3a1.1.3-1_amd64.deb ...
+Unpacking libxxf86vm1:amd64 (1:1.1.3-1) ...
+Selecting previously unselected package libgl1-mesa-glx:amd64.
+Preparing to unpack .../libgl1-mesa-glx_10.1.0-4ubuntu5_amd64.deb ...
+Unpacking libgl1-mesa-glx:amd64 (10.1.0-4ubuntu5) ...
+Selecting previously unselected package libgles2-mesa:amd64.
+Preparing to unpack .../libgles2-mesa_10.1.0-4ubuntu5_amd64.deb ...
+Unpacking libgles2-mesa:amd64 (10.1.0-4ubuntu5) ...
+Selecting previously unselected package libgraphite2-3:amd64.
+Preparing to unpack .../libgraphite2-3_1.2.4-1ubuntu1_amd64.deb ...
+Unpacking libgraphite2-3:amd64 (1.2.4-1ubuntu1) ...
+Selecting previously unselected package libgtk2.0-common.
+Preparing to unpack .../libgtk2.0-common_2.24.23-0ubuntu1_all.deb ...
+Unpacking libgtk2.0-common (2.24.23-0ubuntu1) ...
+Selecting previously unselected package libthai-data.
+Preparing to unpack .../libthai-data_0.1.20-3_all.deb ...
+Unpacking libthai-data (0.1.20-3) ...
+Selecting previously unselected package libthai0:amd64.
+Preparing to unpack .../libthai0_0.1.20-3_amd64.deb ...
+Unpacking libthai0:amd64 (0.1.20-3) ...
+Selecting previously unselected package fontconfig.
+Preparing to unpack .../fontconfig_2.11.0-0ubuntu4_amd64.deb ...
+Unpacking fontconfig (2.11.0-0ubuntu4) ...
+Selecting previously unselected package libpango-1.0-0:amd64.
+Preparing to unpack .../libpango-1.0-0_1.36.3-1ubuntu1_amd64.deb ...
+Unpacking libpango-1.0-0:amd64 (1.36.3-1ubuntu1) ...
+Selecting previously unselected package libharfbuzz0b:amd64.
+Preparing to unpack .../libharfbuzz0b_0.9.27-1_amd64.deb ...
+Unpacking libharfbuzz0b:amd64 (0.9.27-1) ...
+Selecting previously unselected package libpangoft2-1.0-0:amd64.
+Preparing to unpack .../libpangoft2-1.0-0_1.36.3-1ubuntu1_amd64.deb ...
+Unpacking libpangoft2-1.0-0:amd64 (1.36.3-1ubuntu1) ...
+Selecting previously unselected package libpangocairo-1.0-0:amd64.
+Preparing to unpack .../libpangocairo-1.0-0_1.36.3-1ubuntu1_amd64.deb ...
+Unpacking libpangocairo-1.0-0:amd64 (1.36.3-1ubuntu1) ...
+Selecting previously unselected package libxcomposite1:amd64.
+Preparing to unpack .../libxcomposite1_1%3a0.4.4-1_amd64.deb ...
+Unpacking libxcomposite1:amd64 (1:0.4.4-1) ...
+Selecting previously unselected package libxcursor1:amd64.
+Preparing to unpack .../libxcursor1_1%3a1.1.14-1_amd64.deb ...
+Unpacking libxcursor1:amd64 (1:1.1.14-1) ...
+Selecting previously unselected package libxi6:amd64.
+Preparing to unpack .../libxi6_2%3a1.7.1.901-1ubuntu1_amd64.deb ...
+Unpacking libxi6:amd64 (2:1.7.1.901-1ubuntu1) ...
+Selecting previously unselected package libxinerama1:amd64.
+Preparing to unpack .../libxinerama1_2%3a1.1.3-1_amd64.deb ...
+Unpacking libxinerama1:amd64 (2:1.1.3-1) ...
+Selecting previously unselected package libxrandr2:amd64.
+Preparing to unpack .../libxrandr2_2%3a1.4.2-1_amd64.deb ...
+Unpacking libxrandr2:amd64 (2:1.4.2-1) ...
+Selecting previously unselected package libgtk2.0-0:amd64.
+Preparing to unpack .../libgtk2.0-0_2.24.23-0ubuntu1_amd64.deb ...
+Unpacking libgtk2.0-0:amd64 (2.24.23-0ubuntu1) ...
+Selecting previously unselected package libice6:amd64.
+Preparing to unpack .../libice6_2%3a1.0.8-2_amd64.deb ...
+Unpacking libice6:amd64 (2:1.0.8-2) ...
+Selecting previously unselected package libicu52:amd64.
+Preparing to unpack .../libicu52_52.1-3_amd64.deb ...
+Unpacking libicu52:amd64 (52.1-3) ...
+Selecting previously unselected package libprotobuf8:amd64.
+Preparing to unpack .../libprotobuf8_2.5.0-9ubuntu1_amd64.deb ...
+Unpacking libprotobuf8:amd64 (2.5.0-9ubuntu1) ...
+Selecting previously unselected package libmirprotobuf0:amd64.
+Preparing to unpack .../libmirprotobuf0_0.1.8+14.04.20140411-0ubuntu1_amd64.deb ...
+Unpacking libmirprotobuf0:amd64 (0.1.8+14.04.20140411-0ubuntu1) ...
+Selecting previously unselected package libxkbcommon0:amd64.
+Preparing to unpack .../libxkbcommon0_0.4.1-0ubuntu1_amd64.deb ...
+Unpacking libxkbcommon0:amd64 (0.4.1-0ubuntu1) ...
+Selecting previously unselected package libmirclientplatform-mesa:amd64.
+Preparing to unpack .../libmirclientplatform-mesa_0.1.8+14.04.20140411-0ubuntu1_amd64.deb ...
+Unpacking libmirclientplatform-mesa:amd64 (0.1.8+14.04.20140411-0ubuntu1) ...
+Selecting previously unselected package libmirclient7:amd64.
+Preparing to unpack .../libmirclient7_0.1.8+14.04.20140411-0ubuntu1_amd64.deb ...
+Unpacking libmirclient7:amd64 (0.1.8+14.04.20140411-0ubuntu1) ...
+Selecting previously unselected package libqt5core5a:amd64.
+Preparing to unpack .../libqt5core5a_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking libqt5core5a:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package libqt5concurrent5:amd64.
+Preparing to unpack .../libqt5concurrent5_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking libqt5concurrent5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package libqt5dbus5:amd64.
+Preparing to unpack .../libqt5dbus5_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking libqt5dbus5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package libsm6:amd64.
+Preparing to unpack .../libsm6_2%3a1.2.1-2_amd64.deb ...
+Unpacking libsm6:amd64 (2:1.2.1-2) ...
+Selecting previously unselected package libxcb-icccm4:amd64.
+Preparing to unpack .../libxcb-icccm4_0.4.1-1ubuntu1_amd64.deb ...
+Unpacking libxcb-icccm4:amd64 (0.4.1-1ubuntu1) ...
+Selecting previously unselected package libxcb-util0:amd64.
+Preparing to unpack .../libxcb-util0_0.3.8-2ubuntu1_amd64.deb ...
+Unpacking libxcb-util0:amd64 (0.3.8-2ubuntu1) ...
+Selecting previously unselected package libxcb-image0:amd64.
+Preparing to unpack .../libxcb-image0_0.3.9-1ubuntu2_amd64.deb ...
+Unpacking libxcb-image0:amd64 (0.3.9-1ubuntu2) ...
+Selecting previously unselected package libxcb-randr0:amd64.
+Preparing to unpack .../libxcb-randr0_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-randr0:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-render-util0:amd64.
+Preparing to unpack .../libxcb-render-util0_0.3.8-1.1ubuntu1_amd64.deb ...
+Unpacking libxcb-render-util0:amd64 (0.3.8-1.1ubuntu1) ...
+Selecting previously unselected package libxcb-shape0:amd64.
+Preparing to unpack .../libxcb-shape0_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-shape0:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-xkb1:amd64.
+Preparing to unpack .../libxcb-xkb1_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-xkb1:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libqt5gui5:amd64.
+Preparing to unpack .../libqt5gui5_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking libqt5gui5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package libqt5network5:amd64.
+Preparing to unpack .../libqt5network5_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking libqt5network5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package libqt5widgets5:amd64.
+Preparing to unpack .../libqt5widgets5_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking libqt5widgets5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package libqt5opengl5:amd64.
+Preparing to unpack .../libqt5opengl5_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking libqt5opengl5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package libdrm-dev:amd64.
+Preparing to unpack .../libdrm-dev_2.4.52-1_amd64.deb ...
+Unpacking libdrm-dev:amd64 (2.4.52-1) ...
+Selecting previously unselected package mesa-common-dev.
+Preparing to unpack .../mesa-common-dev_10.1.0-4ubuntu5_amd64.deb ...
+Unpacking mesa-common-dev (10.1.0-4ubuntu5) ...
+Selecting previously unselected package libx11-xcb-dev:amd64.
+Preparing to unpack .../libx11-xcb-dev_2%3a1.6.2-1ubuntu2_amd64.deb ...
+Unpacking libx11-xcb-dev:amd64 (2:1.6.2-1ubuntu2) ...
+Selecting previously unselected package libxcb-dri3-dev:amd64.
+Preparing to unpack .../libxcb-dri3-dev_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-dri3-dev:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-render0-dev:amd64.
+Preparing to unpack .../libxcb-render0-dev_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-render0-dev:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-randr0-dev:amd64.
+Preparing to unpack .../libxcb-randr0-dev_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-randr0-dev:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-shape0-dev:amd64.
+Preparing to unpack .../libxcb-shape0-dev_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-shape0-dev:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-xfixes0-dev:amd64.
+Preparing to unpack .../libxcb-xfixes0-dev_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-xfixes0-dev:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-sync-dev:amd64.
+Preparing to unpack .../libxcb-sync-dev_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-sync-dev:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-present-dev:amd64.
+Preparing to unpack .../libxcb-present-dev_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-present-dev:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxshmfence-dev:amd64.
+Preparing to unpack .../libxshmfence-dev_1.1-2_amd64.deb ...
+Unpacking libxshmfence-dev:amd64 (1.1-2) ...
+Selecting previously unselected package libxcb-dri2-0-dev:amd64.
+Preparing to unpack .../libxcb-dri2-0-dev_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-dri2-0-dev:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-glx0-dev:amd64.
+Preparing to unpack .../libxcb-glx0-dev_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-glx0-dev:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package x11proto-xext-dev.
+Preparing to unpack .../x11proto-xext-dev_7.3.0-1_all.deb ...
+Unpacking x11proto-xext-dev (7.3.0-1) ...
+Selecting previously unselected package x11proto-fixes-dev.
+Preparing to unpack .../x11proto-fixes-dev_1%3a5.0-2ubuntu2_all.deb ...
+Unpacking x11proto-fixes-dev (1:5.0-2ubuntu2) ...
+Selecting previously unselected package libxfixes-dev:amd64.
+Preparing to unpack .../libxfixes-dev_1%3a5.0.1-1ubuntu1_amd64.deb ...
+Unpacking libxfixes-dev:amd64 (1:5.0.1-1ubuntu1) ...
+Selecting previously unselected package x11proto-damage-dev.
+Preparing to unpack .../x11proto-damage-dev_1%3a1.2.1-2_all.deb ...
+Unpacking x11proto-damage-dev (1:1.2.1-2) ...
+Selecting previously unselected package libxdamage-dev:amd64.
+Preparing to unpack .../libxdamage-dev_1%3a1.1.4-1ubuntu1_amd64.deb ...
+Unpacking libxdamage-dev:amd64 (1:1.1.4-1ubuntu1) ...
+Selecting previously unselected package libxext-dev:amd64.
+Preparing to unpack .../libxext-dev_2%3a1.3.2-1_amd64.deb ...
+Unpacking libxext-dev:amd64 (2:1.3.2-1) ...
+Selecting previously unselected package x11proto-xf86vidmode-dev.
+Preparing to unpack .../x11proto-xf86vidmode-dev_2.3.1-2_all.deb ...
+Unpacking x11proto-xf86vidmode-dev (2.3.1-2) ...
+Selecting previously unselected package libxxf86vm-dev:amd64.
+Preparing to unpack .../libxxf86vm-dev_1%3a1.1.3-1_amd64.deb ...
+Unpacking libxxf86vm-dev:amd64 (1:1.1.3-1) ...
+Selecting previously unselected package x11proto-dri2-dev.
+Preparing to unpack .../x11proto-dri2-dev_2.8-2_all.deb ...
+Unpacking x11proto-dri2-dev (2.8-2) ...
+Selecting previously unselected package x11proto-gl-dev.
+Preparing to unpack .../x11proto-gl-dev_1.4.17-1_all.deb ...
+Unpacking x11proto-gl-dev (1.4.17-1) ...
+Selecting previously unselected package libgl1-mesa-dev.
+Preparing to unpack .../libgl1-mesa-dev_10.1.0-4ubuntu5_amd64.deb ...
+Unpacking libgl1-mesa-dev (10.1.0-4ubuntu5) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Selecting previously unselected package libprotobuf-lite8:amd64.
+Preparing to unpack .../libprotobuf-lite8_2.5.0-9ubuntu1_amd64.deb ...
+Unpacking libprotobuf-lite8:amd64 (2.5.0-9ubuntu1) ...
+Selecting previously unselected package libprotobuf-dev:amd64.
+Preparing to unpack .../libprotobuf-dev_2.5.0-9ubuntu1_amd64.deb ...
+Unpacking libprotobuf-dev:amd64 (2.5.0-9ubuntu1) ...
+Selecting previously unselected package libmirprotobuf-dev:amd64.
+Preparing to unpack .../libmirprotobuf-dev_0.1.8+14.04.20140411-0ubuntu1_amd64.deb ...
+Unpacking libmirprotobuf-dev:amd64 (0.1.8+14.04.20140411-0ubuntu1) ...
+Selecting previously unselected package mircommon-dev:amd64.
+Preparing to unpack .../mircommon-dev_0.1.8+14.04.20140411-0ubuntu1_amd64.deb ...
+Unpacking mircommon-dev:amd64 (0.1.8+14.04.20140411-0ubuntu1) ...
+Selecting previously unselected package libmirclient-dev:amd64.
+Preparing to unpack .../libmirclient-dev_0.1.8+14.04.20140411-0ubuntu1_amd64.deb ...
+Unpacking libmirclient-dev:amd64 (0.1.8+14.04.20140411-0ubuntu1) ...
+Selecting previously unselected package libwayland-cursor0:amd64.
+Preparing to unpack .../libwayland-cursor0_1.4.0-1ubuntu1_amd64.deb ...
+Unpacking libwayland-cursor0:amd64 (1.4.0-1ubuntu1) ...
+Selecting previously unselected package libwayland-dev.
+Preparing to unpack .../libwayland-dev_1.4.0-1ubuntu1_amd64.deb ...
+Unpacking libwayland-dev (1.4.0-1ubuntu1) ...
+Selecting previously unselected package libegl1-mesa-dev.
+Preparing to unpack .../libegl1-mesa-dev_10.1.0-4ubuntu5_amd64.deb ...
+Unpacking libegl1-mesa-dev (10.1.0-4ubuntu5) ...
+Selecting previously unselected package libgles2-mesa-dev.
+Preparing to unpack .../libgles2-mesa-dev_10.1.0-4ubuntu5_amd64.deb ...
+Unpacking libgles2-mesa-dev (10.1.0-4ubuntu5) ...
+Selecting previously unselected package libglu1-mesa:amd64.
+Preparing to unpack .../libglu1-mesa_9.0.0-2_amd64.deb ...
+Unpacking libglu1-mesa:amd64 (9.0.0-2) ...
+Selecting previously unselected package libglu1-mesa-dev.
+Preparing to unpack .../libglu1-mesa-dev_9.0.0-2_amd64.deb ...
+Unpacking libglu1-mesa-dev (9.0.0-2) ...
+Selecting previously unselected package libqt5printsupport5:amd64.
+Preparing to unpack .../libqt5printsupport5_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking libqt5printsupport5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package libqt5sql5:amd64.
+Preparing to unpack .../libqt5sql5_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking libqt5sql5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package libqt5test5:amd64.
+Preparing to unpack .../libqt5test5_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking libqt5test5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package libqt5xml5:amd64.
+Preparing to unpack .../libqt5xml5_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking libqt5xml5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package qtchooser.
+Preparing to unpack .../qtchooser_39-g4717841-3_amd64.deb ...
+Unpacking qtchooser (39-g4717841-3) ...
+Selecting previously unselected package qt5-qmake:amd64.
+Preparing to unpack .../qt5-qmake_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking qt5-qmake:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package qtbase5-dev-tools.
+Preparing to unpack .../qtbase5-dev-tools_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking qtbase5-dev-tools (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package qtbase5-dev:amd64.
+Preparing to unpack .../qtbase5-dev_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking qtbase5-dev:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package libqt5opengl5-dev:amd64.
+Preparing to unpack .../libqt5opengl5-dev_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking libqt5opengl5-dev:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package libqt5qml5:amd64.
+Preparing to unpack .../libqt5qml5_5.2.1-3ubuntu15_amd64.deb ...
+Unpacking libqt5qml5:amd64 (5.2.1-3ubuntu15) ...
+Selecting previously unselected package libqt5quick5:amd64.
+Preparing to unpack .../libqt5quick5_5.2.1-3ubuntu15_amd64.deb ...
+Unpacking libqt5quick5:amd64 (5.2.1-3ubuntu15) ...
+Selecting previously unselected package libqt5quickparticles5:amd64.
+Preparing to unpack .../libqt5quickparticles5_5.2.1-3ubuntu15_amd64.deb ...
+Unpacking libqt5quickparticles5:amd64 (5.2.1-3ubuntu15) ...
+Selecting previously unselected package libqt5quicktest5:amd64.
+Preparing to unpack .../libqt5quicktest5_5.2.1-3ubuntu15_amd64.deb ...
+Unpacking libqt5quicktest5:amd64 (5.2.1-3ubuntu15) ...
+Selecting previously unselected package libqt5sql5-sqlite:amd64.
+Preparing to unpack .../libqt5sql5-sqlite_5.2.1+dfsg-1ubuntu14_amd64.deb ...
+Unpacking libqt5sql5-sqlite:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Selecting previously unselected package libtxc-dxtn-s2tc0:amd64.
+Preparing to unpack .../libtxc-dxtn-s2tc0_0~git20131104-1.1_amd64.deb ...
+Unpacking libtxc-dxtn-s2tc0:amd64 (0~git20131104-1.1) ...
+Selecting previously unselected package hicolor-icon-theme.
+Preparing to unpack .../hicolor-icon-theme_0.13-1_all.deb ...
+Unpacking hicolor-icon-theme (0.13-1) ...
+Selecting previously unselected package libgtk2.0-bin.
+Preparing to unpack .../libgtk2.0-bin_2.24.23-0ubuntu1_amd64.deb ...
+Unpacking libgtk2.0-bin (2.24.23-0ubuntu1) ...
+Selecting previously unselected package qtdeclarative5-dev.
+Preparing to unpack .../qtdeclarative5-dev_5.2.1-3ubuntu15_amd64.deb ...
+Unpacking qtdeclarative5-dev (5.2.1-3ubuntu15) ...
+Setting up libelf1:amd64 (0.158-0ubuntu5) ...
+Setting up libatk1.0-data (2.10.0-2ubuntu2) ...
+Setting up libatk1.0-0:amd64 (2.10.0-2ubuntu2) ...
+Setting up libavahi-common-data:amd64 (0.6.31-4ubuntu1) ...
+Setting up libavahi-common3:amd64 (0.6.31-4ubuntu1) ...
+Setting up libavahi-client3:amd64 (0.6.31-4ubuntu1) ...
+Setting up libboost-system1.54.0:amd64 (1.54.0-4ubuntu3) ...
+Setting up libpixman-1-0:amd64 (0.30.2-2ubuntu1) ...
+Setting up libxcb-render0:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-shm0:amd64 (1.10-2ubuntu1) ...
+Setting up libcairo2:amd64 (1.13.0~20140204-0ubuntu1) ...
+Setting up libcups2:amd64 (1.7.2-0ubuntu1) ...
+Setting up libdatrie1:amd64 (0.2.8-1) ...
+Setting up libpciaccess0:amd64 (0.13.2-1) ...
+Setting up libdrm-intel1:amd64 (2.4.52-1) ...
+Setting up libdrm-nouveau2:amd64 (2.4.52-1) ...
+Setting up libdrm-radeon1:amd64 (2.4.52-1) ...
+Setting up libllvm3.4:amd64 (1:3.4-1ubuntu3) ...
+Setting up libgl1-mesa-dri:amd64 (10.1.0-4ubuntu5) ...
+Setting up libwayland-client0:amd64 (1.4.0-1ubuntu1) ...
+Setting up libwayland-server0:amd64 (1.4.0-1ubuntu1) ...
+Setting up libxcb-dri2-0:amd64 (1.10-2ubuntu1) ...
+Setting up libgbm1:amd64 (10.1.0-4ubuntu5) ...
+Setting up libx11-xcb1:amd64 (2:1.6.2-1ubuntu2) ...
+Setting up libxcb-xfixes0:amd64 (1.10-2ubuntu1) ...
+Setting up libegl1-mesa:amd64 (10.1.0-4ubuntu5) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/mesa-egl/ld.so.conf to provide /etc/ld.so.conf.d/x86_64-linux-gnu_EGL.conf (x86_64-linux-gnu_egl_conf) in auto mode
+Setting up libglapi-mesa:amd64 (10.1.0-4ubuntu5) ...
+Setting up libopenvg1-mesa:amd64 (10.1.0-4ubuntu5) ...
+Setting up libxfixes3:amd64 (1:5.0.1-1ubuntu1) ...
+Setting up libwayland-egl1-mesa:amd64 (10.1.0-4ubuntu5) ...
+Setting up libegl1-mesa-drivers:amd64 (10.1.0-4ubuntu5) ...
+Setting up libjpeg-turbo8:amd64 (1.3.0-0ubuntu2) ...
+Setting up libjpeg8:amd64 (8c-2ubuntu8) ...
+Setting up libjasper1:amd64 (1.900.1-14ubuntu3) ...
+Setting up libjbig0:amd64 (2.0-2ubuntu4) ...
+Setting up libtiff5:amd64 (4.0.3-7) ...
+Setting up libgdk-pixbuf2.0-common (2.30.7-0ubuntu1) ...
+Setting up libgdk-pixbuf2.0-0:amd64 (2.30.7-0ubuntu1) ...
+Setting up libxcb-dri3-0:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-glx0:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-present0:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-sync1:amd64 (1.10-2ubuntu1) ...
+Setting up libxdamage1:amd64 (1:1.1.4-1ubuntu1) ...
+Setting up libxshmfence1:amd64 (1.1-2) ...
+Setting up libxxf86vm1:amd64 (1:1.1.3-1) ...
+Setting up libgl1-mesa-glx:amd64 (10.1.0-4ubuntu5) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/mesa/ld.so.conf to provide /etc/ld.so.conf.d/x86_64-linux-gnu_GL.conf (x86_64-linux-gnu_gl_conf) in auto mode
+Setting up libgles2-mesa:amd64 (10.1.0-4ubuntu5) ...
+Setting up libgraphite2-3:amd64 (1.2.4-1ubuntu1) ...
+Setting up libgtk2.0-common (2.24.23-0ubuntu1) ...
+Setting up libthai-data (0.1.20-3) ...
+Setting up libthai0:amd64 (0.1.20-3) ...
+Setting up fontconfig (2.11.0-0ubuntu4) ...
+Regenerating fonts cache... done.
+Setting up libpango-1.0-0:amd64 (1.36.3-1ubuntu1) ...
+Setting up libharfbuzz0b:amd64 (0.9.27-1) ...
+Setting up libpangoft2-1.0-0:amd64 (1.36.3-1ubuntu1) ...
+Setting up libpangocairo-1.0-0:amd64 (1.36.3-1ubuntu1) ...
+Setting up libxcomposite1:amd64 (1:0.4.4-1) ...
+Setting up libxcursor1:amd64 (1:1.1.14-1) ...
+Setting up libxi6:amd64 (2:1.7.1.901-1ubuntu1) ...
+Setting up libxinerama1:amd64 (2:1.1.3-1) ...
+Setting up libxrandr2:amd64 (2:1.4.2-1) ...
+Setting up libgtk2.0-0:amd64 (2.24.23-0ubuntu1) ...
+Setting up libice6:amd64 (2:1.0.8-2) ...
+Setting up libicu52:amd64 (52.1-3) ...
+Setting up libprotobuf8:amd64 (2.5.0-9ubuntu1) ...
+Setting up libmirprotobuf0:amd64 (0.1.8+14.04.20140411-0ubuntu1) ...
+Setting up libxkbcommon0:amd64 (0.4.1-0ubuntu1) ...
+Setting up libqt5core5a:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up libqt5concurrent5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up libqt5dbus5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up libsm6:amd64 (2:1.2.1-2) ...
+Setting up libxcb-icccm4:amd64 (0.4.1-1ubuntu1) ...
+Setting up libxcb-util0:amd64 (0.3.8-2ubuntu1) ...
+Setting up libxcb-image0:amd64 (0.3.9-1ubuntu2) ...
+Setting up libxcb-randr0:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-render-util0:amd64 (0.3.8-1.1ubuntu1) ...
+Setting up libxcb-shape0:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-xkb1:amd64 (1.10-2ubuntu1) ...
+Setting up libqt5gui5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up libqt5network5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up libqt5widgets5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up libqt5opengl5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up libdrm-dev:amd64 (2.4.52-1) ...
+Setting up mesa-common-dev (10.1.0-4ubuntu5) ...
+Setting up libx11-xcb-dev:amd64 (2:1.6.2-1ubuntu2) ...
+Setting up libxcb-dri3-dev:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-render0-dev:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-randr0-dev:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-shape0-dev:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-xfixes0-dev:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-sync-dev:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-present-dev:amd64 (1.10-2ubuntu1) ...
+Setting up libxshmfence-dev:amd64 (1.1-2) ...
+Setting up libxcb-dri2-0-dev:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-glx0-dev:amd64 (1.10-2ubuntu1) ...
+Setting up x11proto-xext-dev (7.3.0-1) ...
+Setting up x11proto-fixes-dev (1:5.0-2ubuntu2) ...
+Setting up libxfixes-dev:amd64 (1:5.0.1-1ubuntu1) ...
+Setting up x11proto-damage-dev (1:1.2.1-2) ...
+Setting up libxdamage-dev:amd64 (1:1.1.4-1ubuntu1) ...
+Setting up libxext-dev:amd64 (2:1.3.2-1) ...
+Setting up x11proto-xf86vidmode-dev (2.3.1-2) ...
+Setting up libxxf86vm-dev:amd64 (1:1.1.3-1) ...
+Setting up x11proto-dri2-dev (2.8-2) ...
+Setting up x11proto-gl-dev (1.4.17-1) ...
+Setting up libgl1-mesa-dev (10.1.0-4ubuntu5) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up libprotobuf-lite8:amd64 (2.5.0-9ubuntu1) ...
+Setting up libprotobuf-dev:amd64 (2.5.0-9ubuntu1) ...
+Setting up libmirprotobuf-dev:amd64 (0.1.8+14.04.20140411-0ubuntu1) ...
+Setting up mircommon-dev:amd64 (0.1.8+14.04.20140411-0ubuntu1) ...
+Setting up libwayland-cursor0:amd64 (1.4.0-1ubuntu1) ...
+Setting up libwayland-dev (1.4.0-1ubuntu1) ...
+Setting up libglu1-mesa:amd64 (9.0.0-2) ...
+Setting up libglu1-mesa-dev (9.0.0-2) ...
+Setting up libqt5printsupport5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up libqt5sql5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up libqt5test5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up libqt5xml5:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up qtchooser (39-g4717841-3) ...
+Setting up qt5-qmake:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up qtbase5-dev-tools (5.2.1+dfsg-1ubuntu14) ...
+Setting up libqt5qml5:amd64 (5.2.1-3ubuntu15) ...
+Setting up libqt5quick5:amd64 (5.2.1-3ubuntu15) ...
+Setting up libqt5quickparticles5:amd64 (5.2.1-3ubuntu15) ...
+Setting up libqt5quicktest5:amd64 (5.2.1-3ubuntu15) ...
+Setting up libqt5sql5-sqlite:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up libtxc-dxtn-s2tc0:amd64 (0~git20131104-1.1) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/libtxc_dxtn_s2tc.so.0 to provide /usr/lib/x86_64-linux-gnu/libtxc_dxtn.so (libtxc-dxtn-x86_64-linux-gnu) in auto mode
+Setting up hicolor-icon-theme (0.13-1) ...
+Setting up libgtk2.0-bin (2.24.23-0ubuntu1) ...
+Setting up libmirclient7:amd64 (0.1.8+14.04.20140411-0ubuntu1) ...
+Setting up libmirclient-dev:amd64 (0.1.8+14.04.20140411-0ubuntu1) ...
+Setting up libegl1-mesa-dev (10.1.0-4ubuntu5) ...
+Setting up libgles2-mesa-dev (10.1.0-4ubuntu5) ...
+Setting up qtbase5-dev:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up libqt5opengl5-dev:amd64 (5.2.1+dfsg-1ubuntu14) ...
+Setting up qtdeclarative5-dev (5.2.1-3ubuntu15) ...
+Setting up libmirclientplatform-mesa:amd64 (0.1.8+14.04.20140411-0ubuntu1) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/mir/clientplatform/mesa/ld.so.conf to provide /etc/ld.so.conf.d/x86_64-linux-gnu_mirclientplatform.conf (x86_64-linux-gnu_mirclientplatform_conf) in auto mode
+Processing triggers for libc-bin (2.19-0ubuntu6) ...
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install lablqt
+The following actions will be performed:
+ - install conf-qt.5.2 [required by lablqt]
+ - install ounit.2.0.0 [required by lablqt]
+ - install pipebang.110.01.00 [required by lablqt]
+ - install type_conv.109.60.00 [required by lablqt]
+ - install cppo.0.9.3 [required by lablqt]
+ - install herelib.109.35.02 [required by lablqt]
+ - install easy-format.1.0.2 [required by lablqt]
+ - install variantslib.109.15.03 [required by lablqt]
+ - install sexplib.111.03.00 [required by lablqt]
+ - install pa_ounit.109.53.02 [required by lablqt]
+ - install fieldslib.109.20.03 [required by lablqt]
+ - install comparelib.109.60.00 [required by lablqt]
+ - install bin_prot.111.03.00 [required by lablqt]
+ - install biniou.1.0.9 [required by lablqt]
+ - install pa_bench.109.55.02 [required by lablqt]
+ - install typerep.109.55.02 [required by lablqt]
+ - install yojson.1.1.8 [required by lablqt]
+ - install core_kernel.111.03.00 [required by lablqt]
+ - install lablqt.0.2
+19 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing conf-qt.5.2 =-=-=
+Building conf-qt.5.2:
+  bash -c echo "Your Qt version is `qmake -query QT_VERSION`"
+  bash -c min="5.2.0"; cur=`qmake -query QT_VERSION`; res=`echo -e "$min\n$cur" | sort | head -n 1`; [ "$res" = "$min" ]
+qmake: could not find a Qt installation of ''
+Your Qt version is 
+qmake: could not find a Qt installation of ''
+[ERROR] The compilation of conf-qt.5.2 failed.
+Removing conf-qt.5.2.
+
+=-=-= Installing cppo.0.9.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/cppo.0.9.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/cppo.0.9.3+opam.tar.gz
+--2014-05-10 22:06:13--  https://opam.ocaml.org/archives/cppo.0.9.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20088 (20K) [application/octet-stream]
+Saving to: 'cppo.0.9.3+opam.tar.gz'
+
+     0K .......... .........                                  100%  196K=0.1s
+
+2014-05-10 22:06:14 (196 KB/s) - 'cppo.0.9.3+opam.tar.gz' saved [20088/20088]
+
+Building cppo.0.9.3:
+  make
+echo 'let cppo_version = "0.9.3"' > cppo_version.ml
+ocamlyacc cppo_parser.mly
+ocamllex cppo_lexer.mll
+354 states, 13186 transitions, table size 54868 bytes
+3462 additional bytes used for bindings
+ocamlopt -o cppo -dtypes unix.cmxa cppo_version.ml cppo_types.ml cppo_parser.mli cppo_parser.ml cppo_lexer.ml cppo_command.ml cppo_eval.ml cppo_main.ml
+Installing cppo.0.9.3.
+
+=-=-= Installing easy-format.1.0.2 =-=-=
+default    Downloading https://opam.ocaml.org/archives/easy-format.1.0.2+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/easy-format.1.0.2+opam.tar.gz
+--2014-05-10 22:06:23--  https://opam.ocaml.org/archives/easy-format.1.0.2+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13746 (13K) [application/octet-stream]
+Saving to: 'easy-format.1.0.2+opam.tar.gz'
+
+     0K .......... ...                                        100% 57.2M=0s
+
+2014-05-10 22:06:23 (57.2 MB/s) - 'easy-format.1.0.2+opam.tar.gz' saved [13746/13746]
+
+Building easy-format.1.0.2:
+  make
+  make install
+ocamlc -c easy_format.mli
+ocamlc -c -dtypes easy_format.ml
+touch bytecode
+ocamlc -c easy_format.mli
+ocamlopt -c -dtypes easy_format.ml
+ocamlopt -I . -shared -linkall -o easy_format.cmxs easy_format.cmx
+touch nativecode
+echo "version = \"1.0.2\"" > META; cat META.tpl >> META
+INSTALL_FILES="META easy_format.cmi easy_format.mli"; \
+		if test -f bytecode; then \
+		  INSTALL_FILES="$INSTALL_FILES easy_format.cmo"; \
+		fi; \
+		if test -f nativecode; then \
+		  INSTALL_FILES="$INSTALL_FILES easy_format.cmx easy_format.o easy_format.cmxs"; \
+		fi; \
+		ocamlfind install easy-format $INSTALL_FILES
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/easy-format/easy_format.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/easy-format/easy_format.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/easy-format/easy_format.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/easy-format/easy_format.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/easy-format/easy_format.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/easy-format/easy_format.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/easy-format/META
+Installing easy-format.1.0.2.
+
+=-=-= Installing herelib.109.35.02 =-=-=
+default    Downloading https://opam.ocaml.org/archives/herelib.109.35.02+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/herelib.109.35.02+opam.tar.gz
+--2014-05-10 22:06:30--  https://opam.ocaml.org/archives/herelib.109.35.02+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 47965 (47K) [application/octet-stream]
+Saving to: 'herelib.109.35.02+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ......    100%  232K=0.2s
+
+2014-05-10 22:06:31 (232 KB/s) - 'herelib.109.35.02+opam.tar.gz' saved [47965/47965]
+
+Building herelib.109.35.02:
+  make
+  make install
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+File "setup.ml", line 232, characters 8-26:
+Warning 3: deprecated feature: String.set
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_quotations' is not set: When looking for findlib package camlp4.quotations, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+E: Cannot find findlib package camlp4.extend
+E: Cannot find findlib package camlp4.lib
+E: Cannot find findlib package camlp4.quotations
+E: Failure("3 configuration errors")
+make: *** [setup.data] Error 1
+[ERROR] The compilation of herelib.109.35.02 failed.
+Removing herelib.109.35.02.
+  ocamlfind remove herelib
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/herelib
+
+=-=-= Installing ounit.2.0.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ounit.2.0.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ounit.2.0.0+opam.tar.gz
+--2014-05-10 22:06:38--  https://opam.ocaml.org/archives/ounit.2.0.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 105698 (103K) [application/octet-stream]
+Saving to: 'ounit.2.0.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 48%  250K 0s
+    50K .......... .......... .......... .......... .......... 96%  504K 0s
+   100K ...                                                   100% 6143G=0.3s
+
+2014-05-10 22:06:39 (345 KB/s) - 'ounit.2.0.0+opam.tar.gz' saved [105698/105698]
+
+Building ounit.2.0.0:
+  make build
+  make install
+ocaml setup.ml -configure 
+File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ ounit
+Package version: ..................................... 2.0.0
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /usr/local
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+pkg_threads: ......................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+
+ocaml setup.ml -build 
+File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Cannot find source file matching module 'OUnitLoggerHTMLData' in library oUnitAdvanced
+W: Cannot find source file matching module 'OUnitLoggerHTMLData' in library oUnitAdvanced
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitUtils.ml > src/oUnitUtils.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitPropList.ml > src/oUnitPropList.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitPlugin.ml > src/oUnitPlugin.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitConf.ml > src/oUnitConf.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPropList.cmo src/oUnitPropList.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitUtils.cmo src/oUnitUtils.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmo src/oUnitConf.ml
++ ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmo src/oUnitConf.ml
+File "src/oUnitConf.ml", line 77, characters 16-35:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitChooser.ml > src/oUnitChooser.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitCache.ml > src/oUnitCache.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitTest.ml > src/oUnitTest.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLogger.ml > src/oUnitLogger.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitShared.ml > src/oUnitShared.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLogger.cmo src/oUnitLogger.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitShared.cmo src/oUnitShared.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTest.cmo src/oUnitTest.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPlugin.cmo src/oUnitPlugin.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitResultSummary.ml > src/oUnitResultSummary.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCache.cmo src/oUnitCache.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitResultSummary.cmo src/oUnitResultSummary.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerStd.ml > src/oUnitLoggerStd.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerHTML.ml > src/oUnitLoggerHTML.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerHTMLData.ml > src/oUnitLoggerHTMLData.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTMLData.cmo src/oUnitLoggerHTMLData.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitLoggerJUnit.ml > src/oUnitLoggerJUnit.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTML.cmo src/oUnitLoggerHTML.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmo src/oUnitLoggerStd.ml
++ ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmo src/oUnitLoggerStd.ml
+File "src/oUnitLoggerStd.ml", line 161, characters 21-22:
+Warning 28: wildcard pattern given as argument to a constant constructor
+File "src/oUnitLoggerStd.ml", line 161, characters 30-31:
+Warning 28: wildcard pattern given as argument to a constant constructor
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitAssert.ml > src/oUnitAssert.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitBracket.ml > src/oUnitBracket.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitBracket.cmo src/oUnitBracket.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitState.ml > src/oUnitState.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitChooser.cmo src/oUnitChooser.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunner.ml > src/oUnitRunner.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitCheckEnv.ml > src/oUnitCheckEnv.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmo src/oUnitAssert.ml
++ ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmo src/oUnitAssert.ml
+File "src/oUnitAssert.ml", line 243, characters 20-33:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitDiff.mli > src/oUnitDiff.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmi src/oUnitDiff.mli
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitState.cmo src/oUnitState.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCheckEnv.cmo src/oUnitCheckEnv.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunnerProcesses.ml > src/oUnitRunnerProcesses.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunner.cmo src/oUnitRunner.ml
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitCore.ml > src/oUnitCore.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerJUnit.cmo src/oUnitLoggerJUnit.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmo src/oUnitRunnerProcesses.ml
++ ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmo src/oUnitRunnerProcesses.ml
+File "src/oUnitRunnerProcesses.ml", line 80, characters 19-32:
+Warning 3: deprecated feature: String.create
+File "src/oUnitRunnerProcesses.ml", line 90, characters 42-55:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitTestData.ml > src/oUnitTestData.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitDiff.ml > src/oUnitDiff.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCore.cmo src/oUnitCore.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTestData.cmo src/oUnitTestData.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmo src/oUnitDiff.ml
+ocamlfind ocamlc -a src/oUnitUtils.cmo src/oUnitPropList.cmo src/oUnitConf.cmo src/oUnitPlugin.cmo src/oUnitLogger.cmo src/oUnitShared.cmo src/oUnitTest.cmo src/oUnitCache.cmo src/oUnitResultSummary.cmo src/oUnitChooser.cmo src/oUnitLoggerStd.cmo src/oUnitLoggerHTMLData.cmo src/oUnitLoggerHTML.cmo src/oUnitLoggerJUnit.cmo src/oUnitBracket.cmo src/oUnitAssert.cmo src/oUnitState.cmo src/oUnitDiff.cmo src/oUnitCheckEnv.cmo src/oUnitRunner.cmo src/oUnitRunnerProcesses.cmo src/oUnitCore.cmo src/oUnitTestData.cmo -o src/oUnitAdvanced.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPropList.cmx src/oUnitPropList.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitUtils.cmx src/oUnitUtils.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmx src/oUnitConf.ml
++ ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitConf.cmx src/oUnitConf.ml
+File "src/oUnitConf.ml", line 77, characters 16-35:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLogger.cmx src/oUnitLogger.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitShared.cmx src/oUnitShared.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTest.cmx src/oUnitTest.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitPlugin.cmx src/oUnitPlugin.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCache.cmx src/oUnitCache.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitResultSummary.cmx src/oUnitResultSummary.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTMLData.cmx src/oUnitLoggerHTMLData.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerHTML.cmx src/oUnitLoggerHTML.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmx src/oUnitLoggerStd.ml
++ ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerStd.cmx src/oUnitLoggerStd.ml
+File "src/oUnitLoggerStd.ml", line 161, characters 21-22:
+Warning 28: wildcard pattern given as argument to a constant constructor
+File "src/oUnitLoggerStd.ml", line 161, characters 30-31:
+Warning 28: wildcard pattern given as argument to a constant constructor
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitBracket.cmx src/oUnitBracket.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitChooser.cmx src/oUnitChooser.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmx src/oUnitAssert.ml
++ ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitAssert.cmx src/oUnitAssert.ml
+File "src/oUnitAssert.ml", line 243, characters 20-33:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitDiff.cmx src/oUnitDiff.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitState.cmx src/oUnitState.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCheckEnv.cmx src/oUnitCheckEnv.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunner.cmx src/oUnitRunner.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitLoggerJUnit.cmx src/oUnitLoggerJUnit.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmx src/oUnitRunnerProcesses.ml
++ ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerProcesses.cmx src/oUnitRunnerProcesses.ml
+File "src/oUnitRunnerProcesses.ml", line 80, characters 19-32:
+Warning 3: deprecated feature: String.create
+File "src/oUnitRunnerProcesses.ml", line 90, characters 42-55:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitCore.cmx src/oUnitCore.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitTestData.cmx src/oUnitTestData.ml
+ocamlfind ocamlopt -a src/oUnitUtils.cmx src/oUnitPropList.cmx src/oUnitConf.cmx src/oUnitPlugin.cmx src/oUnitLogger.cmx src/oUnitShared.cmx src/oUnitTest.cmx src/oUnitCache.cmx src/oUnitResultSummary.cmx src/oUnitChooser.cmx src/oUnitLoggerStd.cmx src/oUnitLoggerHTMLData.cmx src/oUnitLoggerHTML.cmx src/oUnitLoggerJUnit.cmx src/oUnitBracket.cmx src/oUnitAssert.cmx src/oUnitState.cmx src/oUnitDiff.cmx src/oUnitCheckEnv.cmx src/oUnitRunner.cmx src/oUnitRunnerProcesses.cmx src/oUnitCore.cmx src/oUnitTestData.cmx -o src/oUnitAdvanced.cmxa
+ocamlfind ocamlopt -shared -linkall src/oUnitAdvanced.cmxa -o src/oUnitAdvanced.cmxs
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit.mli > src/oUnit.mli.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit2.mli > src/oUnit2.mli.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmi src/oUnit2.mli
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmi src/oUnit.mli
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit.ml > src/oUnit.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnit2.ml > src/oUnit2.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmo src/oUnit.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmo src/oUnit2.ml
+ocamlfind ocamlc -a src/oUnit2.cmo src/oUnit.cmo -o src/oUnit.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit2.cmx src/oUnit2.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnit.cmx src/oUnit.ml
+ocamlfind ocamlopt -a src/oUnit2.cmx src/oUnit.cmx -o src/oUnit.cmxa
+ocamlfind ocamlopt -shared src/oUnit.cmx -o src/oUnit.cmxs
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitThreads.ml > src/oUnitThreads.ml.depends
+ocamlfind ocamldep -package threads -package unix -modules src/oUnitRunnerThreads.ml > src/oUnitRunnerThreads.ml.depends
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerThreads.cmo src/oUnitRunnerThreads.ml
+ocamlfind ocamlc -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitThreads.cmo src/oUnitThreads.ml
+ocamlfind ocamlc -a src/oUnitRunnerThreads.cmo src/oUnitThreads.cmo -o src/oUnitThreads.cma
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitRunnerThreads.cmx src/oUnitRunnerThreads.ml
+ocamlfind ocamlopt -c -g -I src -I src -package threads -package unix -thread -I src -o src/oUnitThreads.cmx src/oUnitThreads.ml
+ocamlfind ocamlopt -a src/oUnitRunnerThreads.cmx src/oUnitThreads.cmx -o src/oUnitThreads.cmxa
+ocamlfind ocamlopt -shared src/oUnitThreads.cmx -o src/oUnitThreads.cmxs
+ocaml setup.ml -install 
+File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+Warning 3: deprecated feature: String.set
+W: Cannot find source header for module OUnitLoggerHTMLData in library oUnitAdvanced
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit2.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit2.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnit2.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitThreads.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunnerThreads.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitUtils.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPropList.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPlugin.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitChooser.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitResultSummary.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerStd.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTML.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerJUnit.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAssert.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitBracket.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTest.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitState.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunner.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunnerProcesses.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCore.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLogger.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitConf.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitShared.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCache.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTestData.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCheckEnv.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitDiff.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAdvanced.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAdvanced.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAdvanced.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAdvanced.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitUtils.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPropList.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPlugin.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitChooser.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitResultSummary.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerStd.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTML.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTMLData.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerJUnit.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAssert.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitBracket.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTest.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitState.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunner.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunnerProcesses.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCore.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLogger.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitConf.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitShared.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCache.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTestData.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCheckEnv.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitDiff.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitUtils.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPropList.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitPlugin.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitChooser.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitResultSummary.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerStd.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTML.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerHTMLData.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLoggerJUnit.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitAssert.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitBracket.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTest.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitState.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunner.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitRunnerProcesses.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCore.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitLogger.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitConf.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitShared.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCache.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitTestData.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitCheckEnv.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/oUnitDiff.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/oUnit/META
+Installing ounit.2.0.0.
+
+=-=-= Installing pipebang.110.01.00 =-=-=
+default    Downloading https://opam.ocaml.org/archives/pipebang.110.01.00+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/pipebang.110.01.00+opam.tar.gz
+--2014-05-10 22:06:53--  https://opam.ocaml.org/archives/pipebang.110.01.00+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 47405 (46K) [application/octet-stream]
+Saving to: 'pipebang.110.01.00+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ......    100%  229K=0.2s
+
+2014-05-10 22:06:54 (229 KB/s) - 'pipebang.110.01.00+opam.tar.gz' saved [47405/47405]
+
+Building pipebang.110.01.00:
+  make
+  make install
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+File "setup.ml", line 232, characters 8-26:
+Warning 3: deprecated feature: String.set
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_quotations' is not set: When looking for findlib package camlp4.quotations, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+E: Cannot find findlib package camlp4.extend
+E: Cannot find findlib package camlp4.lib
+E: Cannot find findlib package camlp4.quotations
+E: Failure("3 configuration errors")
+make: *** [setup.data] Error 1
+[ERROR] The compilation of pipebang.110.01.00 failed.
+Removing pipebang.110.01.00.
+  ocamlfind remove pa_pipebang
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/pa_pipebang
+
+=-=-= Installing type_conv.109.60.00 =-=-=
+default    Downloading https://opam.ocaml.org/archives/type_conv.109.60.00+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/type_conv.109.60.00+opam.tar.gz
+--2014-05-10 22:07:01--  https://opam.ocaml.org/archives/type_conv.109.60.00+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 62393 (61K) [application/octet-stream]
+Saving to: 'type_conv.109.60.00+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 82%  247K 0s
+    50K ..........                                            100% 73.6M=0.2s
+
+2014-05-10 22:07:02 (300 KB/s) - 'type_conv.109.60.00+opam.tar.gz' saved [62393/62393]
+
+Building type_conv.109.60.00:
+  make
+  make install
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+File "setup.ml", line 232, characters 8-26:
+Warning 3: deprecated feature: String.set
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+W: Field 'pkg_camlp4_quotations' is not set: When looking for findlib package camlp4.quotations, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+E: Cannot find findlib package camlp4.extend
+E: Cannot find findlib package camlp4.quotations
+E: Failure("2 configuration errors")
+make: *** [setup.data] Error 1
+[ERROR] The compilation of type_conv.109.60.00 failed.
+Removing type_conv.109.60.00.
+  ocamlfind remove type_conv
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/type_conv
+
+=-=-= Installing biniou.1.0.9 =-=-=
+default    Downloading https://opam.ocaml.org/archives/biniou.1.0.9+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/biniou.1.0.9+opam.tar.gz
+--2014-05-10 22:07:09--  https://opam.ocaml.org/archives/biniou.1.0.9+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 24297 (24K) [application/octet-stream]
+Saving to: 'biniou.1.0.9+opam.tar.gz'
+
+     0K .......... .......... ...                             100%  240K=0.1s
+
+2014-05-10 22:07:09 (240 KB/s) - 'biniou.1.0.9+opam.tar.gz' saved [24297/24297]
+
+Building biniou.1.0.9:
+  make
+  make install
+ocamlfind ocamlc -a -dtypes -g -o biniou.cma \
+		-package "easy-format" bi_util.mli bi_util.ml bi_share.mli bi_share.ml bi_outbuf.mli bi_outbuf.ml bi_inbuf.mli bi_inbuf.ml bi_vint.mli bi_vint.ml bi_io.mli bi_io.ml bi_dump.ml bi_stream.mli bi_stream.ml
+File "bi_util.ml", line 11, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_util.ml", line 13, characters 4-51:
+Warning 3: deprecated feature: String.set
+File "bi_util.ml", line 18, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_util.ml", line 20, characters 4-51:
+Warning 3: deprecated feature: String.set
+File "bi_util.ml", line 36, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_util.ml", line 41, characters 6-64:
+Warning 3: deprecated feature: String.set
+File "bi_util.ml", line 43, characters 4-54:
+Warning 3: deprecated feature: String.set
+File "bi_outbuf.ml", line 24, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_outbuf.ml", line 40, characters 8-21:
+Warning 3: deprecated feature: String.create
+File "bi_outbuf.ml", line 86, characters 2-18:
+Warning 3: deprecated feature: String.set
+File "bi_outbuf.ml", line 90, characters 2-18:
+Warning 3: deprecated feature: String.set
+File "bi_outbuf.ml", line 96, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 97, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 102, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 103, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 104, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 105, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 116, characters 13-26:
+Warning 3: deprecated feature: String.create
+File "bi_inbuf.ml", line 99, characters 8-21:
+Warning 3: deprecated feature: String.create
+File "bi_io.ml", line 86, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 88, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 90, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 92, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 216, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 220, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 231, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 235, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 562, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "bi_stream.ml", line 56, characters 16-29:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -a -dtypes -g \
+		-o biniou.cmxa -package "easy-format" bi_util.mli bi_util.ml bi_share.mli bi_share.ml bi_outbuf.mli bi_outbuf.ml bi_inbuf.mli bi_inbuf.ml bi_vint.mli bi_vint.ml bi_io.mli bi_io.ml bi_dump.ml bi_stream.mli bi_stream.ml
+File "bi_util.ml", line 11, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_util.ml", line 13, characters 4-51:
+Warning 3: deprecated feature: String.set
+File "bi_util.ml", line 18, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_util.ml", line 20, characters 4-51:
+Warning 3: deprecated feature: String.set
+File "bi_util.ml", line 36, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_util.ml", line 41, characters 6-64:
+Warning 3: deprecated feature: String.set
+File "bi_util.ml", line 43, characters 4-54:
+Warning 3: deprecated feature: String.set
+File "bi_outbuf.ml", line 24, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_outbuf.ml", line 40, characters 8-21:
+Warning 3: deprecated feature: String.create
+File "bi_outbuf.ml", line 86, characters 2-18:
+Warning 3: deprecated feature: String.set
+File "bi_outbuf.ml", line 90, characters 2-18:
+Warning 3: deprecated feature: String.set
+File "bi_outbuf.ml", line 96, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 97, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 102, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 103, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 104, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 105, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 116, characters 13-26:
+Warning 3: deprecated feature: String.create
+File "bi_inbuf.ml", line 99, characters 8-21:
+Warning 3: deprecated feature: String.create
+File "bi_io.ml", line 86, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 88, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 90, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 92, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 216, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 220, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 231, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 235, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 562, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "bi_stream.ml", line 56, characters 16-29:
+Warning 3: deprecated feature: String.create
+ocamlopt -shared -linkall -I . -o biniou.cmxs biniou.cmxa
+ocamlfind ocamlopt -o bdump -dtypes -g \
+		-package easy-format -linkpkg \
+		biniou.cmxa bdump.ml
+ocamlfind ocamlopt -o test_biniou -dtypes -g \
+		-package "easy-format unix" -linkpkg \
+		biniou.cmxa test_biniou.ml
+sed -e 's:@@VERSION@@:1.0.9:' META.in > META
+test ! -f bdump || cp bdump /home/opam/.opam/4.02.0dev+trunk/bin/
+test ! -f bdump.exe || cp bdump.exe /home/opam/.opam/4.02.0dev+trunk/bin/
+ocamlfind install biniou META \
+          $(ls bi_util.mli bi_share.mli bi_outbuf.mli bi_inbuf.mli bi_vint.mli bi_io.mli bi_stream.mli bi_util.cmi bi_share.cmi bi_outbuf.cmi bi_inbuf.cmi bi_vint.cmi bi_io.cmi bi_dump.cmi bi_stream.cmi bi_util.cmo bi_share.cmo bi_outbuf.cmo bi_inbuf.cmo bi_vint.cmo bi_io.cmo bi_dump.cmo bi_stream.cmo bi_util.cmx bi_share.cmx bi_outbuf.cmx bi_inbuf.cmx bi_vint.cmx bi_io.cmx bi_dump.cmx bi_stream.cmx bi_util.o bi_share.o bi_outbuf.o bi_inbuf.o bi_vint.o bi_io.o bi_dump.o bi_stream.o biniou.cma biniou.cmxa biniou.cmxs biniou.a)
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/biniou.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/biniou.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/biniou.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/biniou.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_vint.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_vint.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_vint.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_vint.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_vint.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_util.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_util.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_util.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_util.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_util.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_stream.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_stream.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_stream.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_stream.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_stream.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_share.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_share.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_share.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_share.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_share.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_outbuf.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_outbuf.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_outbuf.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_outbuf.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_outbuf.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_io.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_io.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_io.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_io.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_io.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_inbuf.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_inbuf.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_inbuf.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_inbuf.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_inbuf.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_dump.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_dump.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_dump.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_dump.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/META
+Installing biniou.1.0.9.
+
+=-=-= Installing yojson.1.1.8 =-=-=
+default    Downloading https://opam.ocaml.org/archives/yojson.1.1.8+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/yojson.1.1.8+opam.tar.gz
+--2014-05-10 22:07:18--  https://opam.ocaml.org/archives/yojson.1.1.8+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 25182 (25K) [application/octet-stream]
+Saving to: 'yojson.1.1.8+opam.tar.gz'
+
+     0K .......... .......... ....                            100%  248K=0.1s
+
+2014-05-10 22:07:18 (248 KB/s) - 'yojson.1.1.8+opam.tar.gz' saved [25182/25182]
+
+Building yojson.1.1.8:
+  make
+  make install
+sed -e 's:@@VERSION@@:1.1.8:' META.in > META
+cppo -n yojson.mli.cppo -o yojson.mli
+ocamlfind ocamlc -c -dtypes -g -package easy-format,biniou yojson.mli
+ocamllex read.mll
+433 states, 2020 transitions, table size 10678 bytes
+cppo -D "VERSION 1.1.8" yojson.ml.cppo -o yojson.ml
+ocamlfind ocamlc -c -dtypes -g -package easy-format,biniou yojson.ml
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "read.mll", line 367, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "read.mll", line 368, characters 4-16:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "read.mll", line 367, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "read.mll", line 368, characters 4-16:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "read.mll", line 367, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "read.mll", line 368, characters 4-16:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlc -c -dtypes -g -package easy-format,biniou yojson_biniou.mli
+ocamlfind ocamlc -c -dtypes -g -package easy-format,biniou yojson_biniou.ml
+ocamlfind ocamlopt -c -dtypes -g -package easy-format,biniou yojson.ml
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "read.mll", line 367, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "read.mll", line 368, characters 4-16:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "read.mll", line 367, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "read.mll", line 368, characters 4-16:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "read.mll", line 367, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "read.mll", line 368, characters 4-16:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt -c -dtypes -g -package easy-format,biniou yojson_biniou.ml
+ocamlopt -shared -linkall -I . -o yojson.cmxs yojson.cmx
+ocamlopt -shared -linkall -I . -o yojson_biniou.cmxs yojson_biniou.cmx
+ocamlfind ocamlopt -o ydump -dtypes -g -package easy-format,biniou -linkpkg \
+		yojson.cmx yojson_biniou.cmx ydump.ml
+test ! -f ydump || cp ydump /home/opam/.opam/4.02.0dev+trunk/bin/
+test ! -f ydump.exe || cp ydump.exe /home/opam/.opam/4.02.0dev+trunk/bin/
+ocamlfind install yojson META \
+          $(ls yojson.mli yojson_biniou.mli yojson.cmi yojson_biniou.cmi yojson.cmo yojson_biniou.cmo yojson.cmx yojson_biniou.cmx yojson.cmxs yojson_biniou.cmxs yojson.o yojson_biniou.o)
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson_biniou.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson_biniou.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson_biniou.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson_biniou.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson_biniou.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson_biniou.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/META
+Installing yojson.1.1.8.
+
+[ERROR] Due to some errors while processing { conf-qt.5.2, herelib.109.35.02, pipebang.110.01.00, type_conv.109.60.00 }, the following actions will NOT proceed:
+ - install lablqt.0.2
+ - install variantslib.109.15.03
+ - install typerep.109.55.02
+ - install pa_ounit.109.53.02
+ - install pa_bench.109.55.02
+ - install comparelib.109.60.00
+ - install fieldslib.109.20.03
+ - install bin_prot.111.03.00
+ - install core_kernel.111.03.00
+ - install sexplib.111.03.00
+
+===== ERROR while installing conf-qt.5.2 =====
+# opam-version         1.1.1
+# os                   linux
+# command              bash -c min="5.2.0"; cur=`qmake -query QT_VERSION`; res=`echo -e "$min\n$cur" | sort | head -n 1`; [ "$res" = "$min" ]
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/conf-qt.5.2
+# compiler             4.02.0dev+trunk
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/conf-qt.5.2/conf-qt-1674-dd682e.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/conf-qt.5.2/conf-qt-1674-dd682e.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/conf-qt.5.2/conf-qt-1674-dd682e.err
+### stdout ###
+# Your Qt version is 
+### stderr ###
+# qmake: could not find a Qt installation of ''
+# qmake: could not find a Qt installation of ''
+
+
+===== ERROR while installing herelib.109.35.02 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/herelib.109.35.02
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/herelib.109.35.02/herelib-1864-6cc03f.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/herelib.109.35.02/herelib-1864-6cc03f.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/herelib.109.35.02/herelib-1864-6cc03f.err
+### stdout ###
+# ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+# rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+# ./setup.exe -configure 
+### stderr ###
+# ...[truncated]
+# File "setup.ml", line 232, characters 8-26:
+# Warning 3: deprecated feature: String.set
+# W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_quotations' is not set: When looking for findlib package camlp4.quotations, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# E: Cannot find findlib package camlp4.extend
+# E: Cannot find findlib package camlp4.lib
+# E: Cannot find findlib package camlp4.quotations
+# E: Failure("3 configuration errors")
+# make: *** [setup.data] Error 1
+
+
+===== ERROR while installing pipebang.110.01.00 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/pipebang.110.01.00
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/pipebang.110.01.00/pipebang-2431-e4db2f.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/pipebang.110.01.00/pipebang-2431-e4db2f.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/pipebang.110.01.00/pipebang-2431-e4db2f.err
+### stdout ###
+# ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+# rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+# ./setup.exe -configure 
+### stderr ###
+# ...[truncated]
+# File "setup.ml", line 232, characters 8-26:
+# Warning 3: deprecated feature: String.set
+# W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_quotations' is not set: When looking for findlib package camlp4.quotations, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# E: Cannot find findlib package camlp4.extend
+# E: Cannot find findlib package camlp4.lib
+# E: Cannot find findlib package camlp4.quotations
+# E: Failure("3 configuration errors")
+# make: *** [setup.data] Error 1
+
+
+===== ERROR while installing type_conv.109.60.00 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/type_conv.109.60.00
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/type_conv.109.60.00/type_conv-2517-0a5907.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/type_conv.109.60.00/type_conv-2517-0a5907.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/type_conv.109.60.00/type_conv-2517-0a5907.err
+### stdout ###
+# ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+# rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+# ./setup.exe -configure 
+### stderr ###
+# File "setup.ml", line 232, characters 8-26:
+# Warning 3: deprecated feature: String.set
+# W: Field 'pkg_camlp4_quotations' is not set: When looking for findlib package camlp4.quotations, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_extend' is not set: When looking for findlib package camlp4.extend, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# E: Cannot find findlib package camlp4.extend
+# E: Cannot find findlib package camlp4.quotations
+# E: Failure("2 configuration errors")
+# make: *** [setup.data] Error 1
+
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+trunk/backup/state-20140410220547.export"
+'opam install lablqt' failed.
