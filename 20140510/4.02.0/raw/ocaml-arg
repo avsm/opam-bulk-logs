@@ -1,0 +1,44 @@
+++ opam install ocaml-arg -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-arg
+The following actions will be performed:
+ - install ocaml-arg.0.3
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocaml-arg.0.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocaml-arg.0.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocaml-arg.0.3+opam.tar.gz
+--2014-05-10 23:50:31--  https://opam.ocaml.org/archives/ocaml-arg.0.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3237 (3.2K) [application/octet-stream]
+Saving to: 'ocaml-arg.0.3+opam.tar.gz'
+
+     0K ...                                                   100%  163M=0s
+
+2014-05-10 23:50:31 (163 MB/s) - 'ocaml-arg.0.3+opam.tar.gz' saved [3237/3237]
+
+Building ocaml-arg.0.3:
+  make
+ocamlbuild -I src arg.cma arg.cmxa
+ocamlfind ocamldep -modules src/argExt.ml > src/argExt.ml.depends
+ocamlfind ocamldep -modules src/formatExt.ml > src/formatExt.ml.depends
+ocamlfind ocamldep -modules src/subCommand.ml > src/subCommand.ml.depends
+ocamlfind ocamlc -c -I src -o src/formatExt.cmo src/formatExt.ml
+ocamlfind ocamlc -c -I src -o src/subCommand.cmo src/subCommand.ml
+ocamlfind ocamlc -c -I src -o src/argExt.cmo src/argExt.ml
+ocamlfind ocamlc -a src/formatExt.cmo src/subCommand.cmo src/argExt.cmo -o src/arg.cma
+ocamlfind ocamlopt -c -I src -o src/formatExt.cmx src/formatExt.ml
+ocamlfind ocamlopt -c -I src -o src/subCommand.cmx src/subCommand.ml
+ocamlfind ocamlopt -c -I src -o src/argExt.cmx src/argExt.ml
+ocamlfind ocamlopt -a src/formatExt.cmx src/subCommand.cmx src/argExt.cmx -o src/arg.cmxa
+Installing ocaml-arg.0.3.
