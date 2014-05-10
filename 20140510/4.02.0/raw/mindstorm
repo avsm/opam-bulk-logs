@@ -1,0 +1,164 @@
+++ opam install mindstorm -e ubuntu
++ depext=libbluetooth-dev
+Ubuntu depexts: libbluetooth-dev
++ echo Ubuntu depexts: libbluetooth-dev
++ '[' libbluetooth-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libbluetooth-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libbluetooth3:amd64.
+(Reading database ... 22248 files and directories currently installed.)
+Preparing to unpack .../libbluetooth3_4.101-0ubuntu13_amd64.deb ...
+Unpacking libbluetooth3:amd64 (4.101-0ubuntu13) ...
+Selecting previously unselected package libbluetooth-dev.
+Preparing to unpack .../libbluetooth-dev_4.101-0ubuntu13_amd64.deb ...
+Unpacking libbluetooth-dev (4.101-0ubuntu13) ...
+Setting up libbluetooth3:amd64 (4.101-0ubuntu13) ...
+Setting up libbluetooth-dev (4.101-0ubuntu13) ...
+Processing triggers for libc-bin (2.19-0ubuntu6) ...
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install mindstorm
+The following actions will be performed:
+ - install mindstorm.0.5.3
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing mindstorm.0.5.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/mindstorm.0.5.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/mindstorm.0.5.3+opam.tar.gz
+--2014-05-10 22:50:09--  https://opam.ocaml.org/archives/mindstorm.0.5.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 79164 (77K) [application/octet-stream]
+Saving to: 'mindstorm.0.5.3+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 64%  246K 0s
+    50K .......... .......... .......                         100% 24.0M=0.2s
+
+2014-05-10 22:50:10 (378 KB/s) - 'mindstorm.0.5.3+opam.tar.gz' saved [79164/79164]
+
+Building mindstorm.0.5.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+File "setup.ml", line 245, characters 8-26:
+Warning 3: deprecated feature: String.set
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ mindstorm
+Package version: ..................................... 0.5.3
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+trunk
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+usb_include: ......................................... 
+Whether libusb development files are installed: ...... false
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_unix: ............................................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+pkg_threads: ......................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+
+File "setup.ml", line 245, characters 8-26:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt -DUNIX -c src/mindstorm_stubs.c
+mv mindstorm_stubs.o src/mindstorm_stubs.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlmklib -o src/mindstorm_stubs -lbluetooth src/mindstorm_stubs.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamldep -package unix -modules src/mindstorm.mli > src/mindstorm.mli.depends
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -c -g -annot -ccopt -DUNIX -package unix -I src -o src/mindstorm.cmi src/mindstorm.mli
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamldep -pp 'camlp4o pa_macro.cmo -DUNIX -DAMD64' -package unix -modules src/mindstorm.ml > src/mindstorm.ml.depends
++ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamldep -pp 'camlp4o pa_macro.cmo -DUNIX -DAMD64' -package unix -modules src/mindstorm.ml > src/mindstorm.ml.depends
+Command exited with code 2.
+E: Failure("Command ''/home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild' src/libmindstorm_stubs.a src/dllmindstorm_stubs.so src/mindstorm.cma src/mindstorm.cmxa src/mindstorm.a src/mindstorm.cmxs examples/roam.native examples/run_push.native examples/test_speed.native examples/test_threads.native examples/wander.native -tag debug' terminated with error code 10")
+[ERROR] The compilation of mindstorm.0.5.3 failed.
+Removing mindstorm.0.5.3.
+  ocamlfind remove mindstorm
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/mindstorm
+
+
+===== ERROR while installing mindstorm.0.5.3 =====
+# opam-version         1.1.1
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/mindstorm.0.5.3
+# compiler             4.02.0dev+trunk
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/mindstorm.0.5.3/mindstorm-82-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/mindstorm.0.5.3/mindstorm-82-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/mindstorm.0.5.3/mindstorm-82-ad8886.err
+### stdout ###
+# ...[truncated]
+# 
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -ccopt -DUNIX -c src/mindstorm_stubs.c
+# mv mindstorm_stubs.o src/mindstorm_stubs.o
+# /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlmklib -o src/mindstorm_stubs -lbluetooth src/mindstorm_stubs.o
+# /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamldep -package unix -modules src/mindstorm.mli > src/mindstorm.mli.depends
+# /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -c -g -annot -ccopt -DUNIX -package unix -I src -o src/mindstorm.cmi src/mindstorm.mli
+# /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamldep -pp 'camlp4o pa_macro.cmo -DUNIX -DAMD64' -package unix -modules src/mindstorm.ml > src/mindstorm.ml.depends
+# + /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamldep -pp 'camlp4o pa_macro.cmo -DUNIX -DAMD64' -package unix -modules src/mindstorm.ml > src/mindstorm.ml.depends
+# Command exited with code 2.
+### stderr ###
+# File "setup.ml", line 245, characters 8-26:
+# Warning 3: deprecated feature: String.set
+# File "setup.ml", line 245, characters 8-26:
+# Warning 3: deprecated feature: String.set
+# E: Failure("Command ''/home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild' src/libmindstorm_stubs.a src/dllmindstorm_stubs.so src/mindstorm.cma src/mindstorm.cmxa src/mindstorm.a src/mindstorm.cmxs examples/roam.native examples/run_push.native examples/test_speed.native examples/test_threads.native examples/wander.native -tag debug' terminated with error code 10")
+
+'opam install mindstorm' failed.
