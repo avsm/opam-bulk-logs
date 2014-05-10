@@ -1,0 +1,147 @@
+++ opam install crypt -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install crypt
+Ubuntu srcexts:
+The following actions will be performed:
+ - install ocaml-makefile.6.37.0 [required by crypt]
+ - install crypt.1.2
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocaml-makefile.6.37.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocaml-makefile.6.37.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocaml-makefile.6.37.0+opam.tar.gz
+--2014-05-10 19:40:03--  https://opam.ocaml.org/archives/ocaml-makefile.6.37.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 51183 (50K) [application/octet-stream]
+Saving to: 'ocaml-makefile.6.37.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ......... 100%  252K=0.2s
+
+2014-05-10 19:40:04 (252 KB/s) - 'ocaml-makefile.6.37.0+opam.tar.gz' saved [51183/51183]
+
+Building ocaml-makefile.6.37.0:
+  mkdir -p /home/opam/.opam/4.02.0dev+trunk/lib/ocaml-makefile
+  cp OCamlMakefile /home/opam/.opam/4.02.0dev+trunk/lib/ocaml-makefile
+Installing ocaml-makefile.6.37.0.
+
+=-=-= Installing crypt.1.2 =-=-=
+default    Downloading https://opam.ocaml.org/archives/crypt.1.2+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/crypt.1.2+opam.tar.gz
+--2014-05-10 19:40:11--  https://opam.ocaml.org/archives/crypt.1.2+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2557 (2.5K) [application/octet-stream]
+Saving to: 'crypt.1.2+opam.tar.gz'
+
+     0K ..                                                    100%  134M=0s
+
+2014-05-10 19:40:11 (134 MB/s) - 'crypt.1.2+opam.tar.gz' saved [2557/2557]
+
+Building crypt.1.2:
+  make
+  make install
+cd lib && make
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/lib'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/lib'
+ocamldep -native crypt.mli > ._ncdi/crypt.di
+ocamldep crypt.ml > ._d/crypt.d
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/lib'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/lib'
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt -c -cc "cc" -ccopt "-fPIC  \
+				-DPIC -DNATIVE_CODE   \
+				    -o crypt_stubs.o " crypt_stubs.c
+ar rcs libcrypt_stubs.a  crypt_stubs.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt -c crypt.mli
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt -c crypt.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt -a -cclib -lcrypt_stubs           -ccopt -lcrypt     -o crypt.cmxa crypt.cmx
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/lib'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/lib'
+ocamldep crypt.mli > ._bcdi/crypt.di
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/lib'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/lib'
+make[2]: `libcrypt_stubs.a' is up to date.
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt -c crypt.ml
+ocamlmklib         \
+				-o crypt_stubs  crypt_stubs.o   \
+				-lcrypt
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt -a -cclib -lcrypt_stubs    -dllib dllcrypt_stubs.so       -ccopt -lcrypt      -o crypt.cma crypt.cmo
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/lib'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/lib'
+cd test && make
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/test'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/test'
+ocamldep -I ../lib test.ml > ._d/test.d
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/test'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/test'
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt -c -I ../lib test.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt \
+				  \
+				     -I ../lib          crypt.cmxa -o test.opt \
+				test.cmx
+../lib/libcrypt_stubs.a(crypt_stubs.o): In function `crypt_raw':
+crypt_stubs.c:(.text+0x73): undefined reference to `crypt'
+../lib/libcrypt_stubs.a(crypt_stubs.o): In function `crypt_md5':
+crypt_stubs.c:(.text+0x21c): undefined reference to `crypt'
+collect2: error: ld returned 1 exit status
+File "caml_startup", line 1:
+Error: Error during linking
+make[2]: *** [test.opt] Error 2
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/test'
+make[1]: *** [native-code] Error 2
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/test'
+make: *** [all] Error 2
+[ERROR] The compilation of crypt.1.2 failed.
+Removing crypt.1.2.
+  make uninstall
+ocamlfind remove crypt
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/crypt
+
+
+===== ERROR while installing crypt.1.2 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/crypt-82-d8a4ae.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/crypt-82-d8a4ae.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/crypt-82-d8a4ae.err
+### stdout ###
+# ...[truncated]
+# ocamldep -I ../lib test.ml > ._d/test.d
+# make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/test'
+# make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/test'
+# /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt -c -I ../lib test.ml
+# /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt \
+# 				  \
+# 				     -I ../lib          crypt.cmxa -o test.opt \
+# 				test.cmx
+# make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/test'
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.2/test'
+### stderr ###
+# ...[truncated]
+# ../lib/libcrypt_stubs.a(crypt_stubs.o): In function `crypt_raw':
+# crypt_stubs.c:(.text+0x73): undefined reference to `crypt'
+# ../lib/libcrypt_stubs.a(crypt_stubs.o): In function `crypt_md5':
+# crypt_stubs.c:(.text+0x21c): undefined reference to `crypt'
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+# make[2]: *** [test.opt] Error 2
+# make[1]: *** [native-code] Error 2
+# make: *** [all] Error 2
+
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+trunk/backup/state-20140410193954.export"
+'opam install crypt' failed.
