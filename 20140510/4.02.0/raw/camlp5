@@ -1,0 +1,15 @@
+++ opam install camlp5 -e ubuntu
+[ERROR] "camlp5" is not available for your compiler or your OS.
+'opam install camlp5 -e ubuntu' failed.
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install camlp5
+Ubuntu srcexts:
+[ERROR] "camlp5" is not available for your compiler or your OS.
+'opam install camlp5' failed.
