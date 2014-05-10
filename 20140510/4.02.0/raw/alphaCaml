@@ -1,0 +1,189 @@
+++ opam install alphaCaml -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install alphaCaml
+The following actions will be performed:
+ - install alphaCaml.20061214
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing alphaCaml.20061214 =-=-=
+default    Downloading https://opam.ocaml.org/archives/alphaCaml.20061214+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/alphaCaml.20061214+opam.tar.gz
+--2014-05-10 17:35:52--  https://opam.ocaml.org/archives/alphaCaml.20061214+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 165321 (161K) [application/octet-stream]
+Saving to: 'alphaCaml.20061214+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 30%  492K 0s
+    50K .......... .......... .......... .......... .......... 61%  496K 0s
+   100K .......... .......... .......... .......... .......... 92%  514K 0s
+   150K .......... .                                          100% 41.3M=0.3s
+
+2014-05-10 17:35:53 (538 KB/s) - 'alphaCaml.20061214+opam.tar.gz' saved [165321/165321]
+
+Building alphaCaml.20061214:
+  make
+  make install PREFIX=/home/opam/.opam/4.02.0dev+trunk
+make -s -C tool 
+136 states, 14449 transitions, table size 58612 bytes
+File "lexer.mll", line 23, characters 17-30:
+Warning 3: deprecated feature: String.create
+make -s -C library 
+File "patricia.ml", line 1388, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1381, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1377, characters 14-15:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1280, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1274, characters 14-15:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1121, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1119, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1115, characters 14-15:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1082, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1076, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1070, characters 12-13:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1044, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1035, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1029, characters 12-13:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 976, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 967, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 958, characters 12-13:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 772, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 763, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 757, characters 12-13:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 722, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 716, characters 14-15:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 635, characters 22-23:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 541, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 539, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 535, characters 14-15:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 501, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 495, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 487, characters 12-13:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 413, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 404, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 395, characters 14-15:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "atom.ml", line 19, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "atom.ml", line 21, characters 6-24:
+Warning 3: deprecated feature: String.set
+File "patricia.ml", line 1388, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1381, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1377, characters 14-15:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1280, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1274, characters 14-15:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1121, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1119, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1115, characters 14-15:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1082, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1076, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1070, characters 12-13:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1044, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1035, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 1029, characters 12-13:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 976, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 967, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 958, characters 12-13:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 772, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 763, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 757, characters 12-13:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 722, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 716, characters 14-15:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 635, characters 22-23:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 541, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 539, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 535, characters 14-15:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 501, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 495, characters 25-26:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 487, characters 12-13:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 413, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 404, characters 27-28:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "patricia.ml", line 395, characters 14-15:
+Warning 3: deprecated feature: operator (&); you should use (&&) instead
+File "atom.ml", line 19, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "atom.ml", line 21, characters 6-24:
+Warning 3: deprecated feature: String.set
+make -s -C tool 
+make -s -C library 
+make -s -C tool  install
+make -s -C library  install
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/alphaLib/alphaLib.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/alphaLib/alphaLib.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/alphaLib/alphaLib.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/alphaLib/alphaLib.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/alphaLib/signatures.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/alphaLib/META
+mkdir -p /home/opam/.opam/4.02.0dev+trunk/doc/alphaCaml/
+install alphaCaml.pdf /home/opam/.opam/4.02.0dev+trunk/doc/alphaCaml/alphaCaml.pdf
+Installing alphaCaml.20061214.
