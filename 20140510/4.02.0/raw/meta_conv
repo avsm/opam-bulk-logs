@@ -1,0 +1,15 @@
+++ opam install meta_conv -e ubuntu
+[ERROR] "meta_conv" is not available for your compiler or your OS.
+'opam install meta_conv -e ubuntu' failed.
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install meta_conv
+[ERROR] "meta_conv" is not available for your compiler or your OS.
+'opam install meta_conv' failed.
