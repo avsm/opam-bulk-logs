@@ -1,0 +1,66 @@
+++ opam install config-file -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam switch 4.02.0dev+trunk
+# To complete the configuration of OPAM, you need to run:
+eval `opam config env`
+++ opam config env
++ eval 'CAML_LD_LIBRARY_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/stublibs";' export 'CAML_LD_LIBRARY_PATH;' 'PERL5LIB="/home/opam/.opam/4.02.0dev+trunk/lib/perl5";' export 'PERL5LIB;' 'OCAML_TOPLEVEL_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/toplevel";' export 'OCAML_TOPLEVEL_PATH;' 'MANPATH="/home/opam/.opam/4.02.0dev+trunk/man:";' export 'MANPATH;' 'PATH="/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";' export 'PATH;'
+++ CAML_LD_LIBRARY_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/stublibs
+++ export CAML_LD_LIBRARY_PATH
+++ PERL5LIB=/home/opam/.opam/4.02.0dev+trunk/lib/perl5
+++ export PERL5LIB
+++ OCAML_TOPLEVEL_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/toplevel
+++ export OCAML_TOPLEVEL_PATH
+++ MANPATH=/home/opam/.opam/4.02.0dev+trunk/man:
+++ export MANPATH
+++ PATH=/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
++ ocamlc -v
+The OCaml compiler, version 4.02.0+dev5-2014-04-29
+Standard library directory: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
++ opam install config-file
+The following actions will be performed:
+ - install config-file.1.2
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing config-file.1.2 =-=-=
+config-file.1.2 Downloading https://forge.ocamlcore.org/frs/download.php/1387/config-file-1.2.tar.gz
+--2014-05-11 15:33:22--  https://forge.ocamlcore.org/frs/download.php/1387/config-file-1.2.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 50207 (49K) [application/binary]
+Saving to: 'config-file-1.2.tar.gz'
+
+     0K .......... .......... .......... .......... ......... 100% 1.47M=0.03s
+
+2014-05-11 15:33:22 (1.47 MB/s) - 'config-file-1.2.tar.gz' saved [50207/50207]
+
+Building config-file.1.2:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make all
+  make install
+checking for ocamlfind... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+checking for camlp4... /usr/bin/camlp4
+configure: creating ./config.status
+config.status: creating master.Makefile
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc   -c config_file.mli
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc   -c config_file.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlopt   -c config_file.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlopt -o config_file.cmxs -shared config_file.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/config-file/config_file.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/config-file/config_file.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/config-file/config_file.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/config-file/config_file.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/config-file/config_file.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/config-file/config_file.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/config-file/META
+Installing config-file.1.2.
