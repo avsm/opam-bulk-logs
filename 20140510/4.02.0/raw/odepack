@@ -1,0 +1,61 @@
+++ opam install odepack -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install odepack
+The following actions will be performed:
+ - install odepack.0.6.4
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing odepack.0.6.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/odepack.0.6.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/odepack.0.6.4+opam.tar.gz
+--2014-05-11 00:36:56--  https://opam.ocaml.org/archives/odepack.0.6.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 50524 (49K) [application/octet-stream]
+Saving to: 'odepack.0.6.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ......... 100%  247K=0.2s
+
+2014-05-11 00:36:57 (247 KB/s) - 'odepack.0.6.4+opam.tar.gz' saved [50524/50524]
+
+Building odepack.0.6.4:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+File "setup.ml", line 217, characters 8-26:
+Warning 3: deprecated feature: String.set
+Please install one of these fortran compilers: gfortran, g95, g77, f77.
+If you use a different compiler, send its name to the author (see _oasis file).
+[ERROR] The compilation of odepack.0.6.4 failed.
+Removing odepack.0.6.4.
+  ocamlfind remove odepack
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/odepack
+
+
+===== ERROR while installing odepack.0.6.4 =====
+# opam-version         1.1.1
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/odepack.0.6.4
+# compiler             4.02.0dev+trunk
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/odepack.0.6.4/odepack-24-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/odepack.0.6.4/odepack-24-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/odepack.0.6.4/odepack-24-ad8886.err
+### stdout ###
+# Please install one of these fortran compilers: gfortran, g95, g77, f77.
+# If you use a different compiler, send its name to the author (see _oasis file).
+### stderr ###
+# File "setup.ml", line 217, characters 8-26:
+# Warning 3: deprecated feature: String.set
+
+'opam install odepack' failed.
