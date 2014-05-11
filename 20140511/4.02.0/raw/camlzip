@@ -1,0 +1,163 @@
+++ opam install camlzip -e ubuntu
++ depext=zlib1g-dev
+Ubuntu depexts: zlib1g-dev
++ echo Ubuntu depexts: zlib1g-dev
++ '[' zlib1g-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y zlib1g-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... 22248 files and directories currently installed.)
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam switch 4.02.0dev+trunk
+Ubuntu srcexts:
+# To complete the configuration of OPAM, you need to run:
+eval `opam config env`
+++ opam config env
++ eval 'CAML_LD_LIBRARY_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/stublibs";' export 'CAML_LD_LIBRARY_PATH;' 'PERL5LIB="/home/opam/.opam/4.02.0dev+trunk/lib/perl5";' export 'PERL5LIB;' 'OCAML_TOPLEVEL_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/toplevel";' export 'OCAML_TOPLEVEL_PATH;' 'MANPATH="/home/opam/.opam/4.02.0dev+trunk/man:";' export 'MANPATH;' 'PATH="/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";' export 'PATH;'
+++ CAML_LD_LIBRARY_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/stublibs
+++ export CAML_LD_LIBRARY_PATH
+++ PERL5LIB=/home/opam/.opam/4.02.0dev+trunk/lib/perl5
+++ export PERL5LIB
+++ OCAML_TOPLEVEL_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/toplevel
+++ export OCAML_TOPLEVEL_PATH
+++ MANPATH=/home/opam/.opam/4.02.0dev+trunk/man:
+++ export MANPATH
+++ PATH=/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
++ ocamlc -v
+The OCaml compiler, version 4.02.0+dev5-2014-04-29
+Standard library directory: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
++ opam install camlzip
+The following actions will be performed:
+ - install camlzip.1.05
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing camlzip.1.05 =-=-=
+camlzip.1.05 Downloading http://forge.ocamlcore.org/frs/download.php/1037/camlzip-1.05.tar.gz
+--2014-05-11 14:43:07--  http://forge.ocamlcore.org/frs/download.php/1037/camlzip-1.05.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 25817 (25K) [application/binary]
+Saving to: 'camlzip-1.05.tar.gz'
+
+     0K .......... .......... .....                           100% 1.12M=0.02s
+
+2014-05-11 14:43:07 (1.12 MB/s) - 'camlzip-1.05.tar.gz' saved [25817/25817]
+
+Copying ~/.opam/repo/default/packages/camlzip/camlzip.1.05/files/fix-install.patch to ~/.opam/4.02.0dev+trunk/build/camlzip.1.05/
+Applying fix-install.patch.
+patching file META
+patching file Makefile
+Building camlzip.1.05:
+  make all
+  make allopt
+  make install-findlib
+ocamlc -g -c -ccopt -g -ccopt -I/usr/local/include zlibstubs.c
+ocamlmklib -oc camlzip zlibstubs.o \
+            -L/usr/local/lib -lz
+ocamlc -g -c zlib.mli
+ocamlc -g -c zlib.ml
+File "zlib.ml", line 49, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "zlib.ml", line 50, characters 15-28:
+Warning 3: deprecated feature: String.create
+File "zlib.ml", line 72, characters 15-28:
+Warning 3: deprecated feature: String.create
+File "zlib.ml", line 91, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "zlib.ml", line 92, characters 15-28:
+Warning 3: deprecated feature: String.create
+ocamlc -g -c zip.mli
+ocamlc -g -c zip.ml
+File "zip.ml", line 31, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "zip.ml", line 120, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "zip.ml", line 272, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "zip.ml", line 319, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "zip.ml", line 510, characters 18-31:
+Warning 3: deprecated feature: String.create
+ocamlc -g -c gzip.mli
+ocamlc -g -c gzip.ml
+File "gzip.ml", line 68, characters 16-29:
+Warning 3: deprecated feature: String.create
+File "gzip.ml", line 149, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "gzip.ml", line 185, characters 17-30:
+Warning 3: deprecated feature: String.create
+File "gzip.ml", line 218, characters 2-22:
+Warning 3: deprecated feature: String.set
+ocamlmklib -o zip -oc camlzip zlib.cmo zip.cmo gzip.cmo \
+            -L/usr/local/lib -lz
+ocamlopt -c zlib.ml
+File "zlib.ml", line 49, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "zlib.ml", line 50, characters 15-28:
+Warning 3: deprecated feature: String.create
+File "zlib.ml", line 72, characters 15-28:
+Warning 3: deprecated feature: String.create
+File "zlib.ml", line 91, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "zlib.ml", line 92, characters 15-28:
+Warning 3: deprecated feature: String.create
+ocamlopt -c zip.ml
+File "zip.ml", line 31, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "zip.ml", line 120, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "zip.ml", line 272, characters 14-27:
+Warning 3: deprecated feature: String.create
+File "zip.ml", line 319, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "zip.ml", line 510, characters 18-31:
+Warning 3: deprecated feature: String.create
+ocamlopt -c gzip.ml
+File "gzip.ml", line 68, characters 16-29:
+Warning 3: deprecated feature: String.create
+File "gzip.ml", line 149, characters 18-31:
+Warning 3: deprecated feature: String.create
+File "gzip.ml", line 185, characters 17-30:
+Warning 3: deprecated feature: String.create
+File "gzip.ml", line 218, characters 2-22:
+Warning 3: deprecated feature: String.set
+ocamlmklib -o zip -oc camlzip zlib.cmx zip.cmx gzip.cmx \
+            -L/usr/local/lib -lz
+ocamlopt -shared -linkall -I ./ -o zip.cmxs zip.cmxa
+ocamlfind install zip META *.mli *.a *.cmi *.cma gzip.cmx zip.cmx zlib.cmx zip.cmxa zip.cmxs dllcamlzip.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/zip.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/zip.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/zlib.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/zip.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/gzip.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/zip.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/zlib.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/zip.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/gzip.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/zip.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/libcamlzip.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/zlib.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/zip.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/gzip.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/zip/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllcamlzip.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllcamlzip.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+trunk/lib/stublibs is not mentioned in ld.conf
+echo 'directory="../zip"' >> META && ocamlfind install camlzip META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/camlzip/META
+Installing camlzip.1.05.
