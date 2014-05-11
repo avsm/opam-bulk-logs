@@ -1,0 +1,278 @@
+++ opam install ocp-index -e ubuntu
+'opam install ocp-index -e ubuntu' failed.
++ depext='Your request cannot be satisfied. The reasons are:
+       
+The dependency typerex.1.99.4-beta of package ocp-build.1.99.4-beta is not available for your compiler or your OS.
+ (and) 
+The dependency typerex.1.99.5-beta of package ocp-build.1.99.5-beta is not available for your compiler or your OS.
+ (and) 
+The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS.
+This is due to the following unmet dependencies(s):
+       ocp-build.1.99.4-beta needed by ocp-index.0.2.0.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.0.2.0.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.0.2.0.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.0.1.0.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.0.1.0.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.0.1.0.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.0.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.0.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.0.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.0.3.0.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.0.3.0.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.0.3.0.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2.'
++ echo Ubuntu depexts: Your request cannot be satisfied. The reasons are: The dependency typerex.1.99.4-beta of package ocp-build.1.99.4-beta is not available for your compiler or your OS. '(and)' The dependency typerex.1.99.5-beta of package ocp-build.1.99.5-beta is not available for your compiler or your OS. '(and)' The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS. This is due to the following unmet 'dependencies(s):' ocp-build.1.99.4-beta needed by ocp-index.0.2.0. '(or)' ocp-build.1.99.5-beta needed by ocp-index.0.2.0. '(or)' ocp-build.1.99.6-beta needed by ocp-index.0.2.0. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.1. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.1. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.1. '(or)' ocp-build.1.99.4-beta needed by ocp-index.0.1.0. '(or)' ocp-build.1.99.5-beta needed by ocp-index.0.1.0. '(or)' ocp-build.1.99.6-beta needed by ocp-index.0.1.0. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.0. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.0. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.0. '(or)' ocp-build.1.99.4-beta needed by ocp-index.0.3.0. '(or)' ocp-build.1.99.5-beta needed by ocp-index.0.3.0. '(or)' ocp-build.1.99.6-beta needed by ocp-index.0.3.0. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.2. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.2. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.2.
++ '[' 'Your request cannot be satisfied. The reasons are:
+       
+The dependency typerex.1.99.4-beta of package ocp-build.1.99.4-beta is not available for your compiler or your OS.
+ (and) 
+The dependency typerex.1.99.5-beta of package ocp-build.1.99.5-beta is not available for your compiler or your OS.
+ (and) 
+The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS.
+This is due to the following unmet dependencies(s):
+       ocp-build.1.99.4-beta needed by ocp-index.0.2.0.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.0.2.0.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.0.2.0.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.0.1.0.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.0.1.0.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.0.1.0.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.0.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.0.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.0.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.0.3.0.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.0.3.0.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.0.3.0.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2.' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: Your request cannot be satisfied. The reasons are: The dependency typerex.1.99.4-beta of package ocp-build.1.99.4-beta is not available for your compiler or your OS. (and) The dependency typerex.1.99.5-beta of package ocp-build.1.99.5-beta is not available for your compiler or your OS. (and) The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS. This is due to the following unmet dependencies(s): ocp-build.1.99.4-beta needed by ocp-index.0.2.0. (or) ocp-build.1.99.5-beta needed by ocp-index.0.2.0. (or) ocp-build.1.99.6-beta needed by ocp-index.0.2.0. (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1. (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1. (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1. (or) ocp-build.1.99.4-beta needed by ocp-index.0.1.0. (or) ocp-build.1.99.5-beta needed by ocp-index.0.1.0. (or) ocp-build.1.99.6-beta needed by ocp-index.0.1.0. (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.0. (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.0. (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.0. (or) ocp-build.1.99.4-beta needed by ocp-index.0.3.0. (or) ocp-build.1.99.5-beta needed by ocp-index.0.3.0. (or) ocp-build.1.99.6-beta needed by ocp-index.0.3.0. (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2. (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2. (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2.
++ sudo apt-get install -qq -y Your request cannot be satisfied. The reasons are: The dependency typerex.1.99.4-beta of package ocp-build.1.99.4-beta is not available for your compiler or your OS. '(and)' The dependency typerex.1.99.5-beta of package ocp-build.1.99.5-beta is not available for your compiler or your OS. '(and)' The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS. This is due to the following unmet 'dependencies(s):' ocp-build.1.99.4-beta needed by ocp-index.0.2.0. '(or)' ocp-build.1.99.5-beta needed by ocp-index.0.2.0. '(or)' ocp-build.1.99.6-beta needed by ocp-index.0.2.0. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.1. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.1. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.1. '(or)' ocp-build.1.99.4-beta needed by ocp-index.0.1.0. '(or)' ocp-build.1.99.5-beta needed by ocp-index.0.1.0. '(or)' ocp-build.1.99.6-beta needed by ocp-index.0.1.0. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.0. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.0. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.0. '(or)' ocp-build.1.99.4-beta needed by ocp-index.0.3.0. '(or)' ocp-build.1.99.5-beta needed by ocp-index.0.3.0. '(or)' ocp-build.1.99.6-beta needed by ocp-index.0.3.0. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.2. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.2. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.2.
+E: Unable to locate package Your
+E: Unable to locate package request
+E: Unable to locate package cannot
+E: Unable to locate package be
+E: Unable to locate package satisfied.
+E: Couldn't find any package by regex 'satisfied.'
+E: Unable to locate package reasons
+E: Unable to locate package are
+E: Unable to locate package dependency
+E: Unable to locate package typerex.1.99.4-beta
+E: Couldn't find any package by regex 'typerex.1.99.4-beta'
+E: Unable to locate package of
+E: Unable to locate package package
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package is
+E: Unable to locate package not
+E: Unable to locate package available
+E: Unable to locate package for
+E: Unable to locate package your
+E: Unable to locate package compiler
+E: Unable to locate package or
+E: Unable to locate package your
+E: Unable to locate package (and)
+E: Unable to locate package dependency
+E: Unable to locate package typerex.1.99.5-beta
+E: Couldn't find any package by regex 'typerex.1.99.5-beta'
+E: Unable to locate package of
+E: Unable to locate package package
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package is
+E: Unable to locate package not
+E: Unable to locate package available
+E: Unable to locate package for
+E: Unable to locate package your
+E: Unable to locate package compiler
+E: Unable to locate package or
+E: Unable to locate package your
+E: Unable to locate package (and)
+E: Unable to locate package dependency
+E: Unable to locate package typerex.1.99.6-beta
+E: Couldn't find any package by regex 'typerex.1.99.6-beta'
+E: Unable to locate package of
+E: Unable to locate package package
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package is
+E: Unable to locate package not
+E: Unable to locate package available
+E: Unable to locate package for
+E: Unable to locate package your
+E: Unable to locate package compiler
+E: Unable to locate package or
+E: Unable to locate package your
+E: Unable to locate package This
+E: Unable to locate package is
+E: Unable to locate package due
+E: Unable to locate package to
+E: Unable to locate package following
+E: Unable to locate package unmet
+E: Unable to locate package dependencies(s)
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.0.2.0.
+E: Couldn't find any package by regex 'ocp-index.0.2.0.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.0.2.0.
+E: Couldn't find any package by regex 'ocp-index.0.2.0.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.0.2.0.
+E: Couldn't find any package by regex 'ocp-index.0.2.0.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1.
+E: Couldn't find any package by regex 'ocp-index.1.0.1.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1.
+E: Couldn't find any package by regex 'ocp-index.1.0.1.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1.
+E: Couldn't find any package by regex 'ocp-index.1.0.1.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.0.1.0.
+E: Couldn't find any package by regex 'ocp-index.0.1.0.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.0.1.0.
+E: Couldn't find any package by regex 'ocp-index.0.1.0.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.0.1.0.
+E: Couldn't find any package by regex 'ocp-index.0.1.0.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.0.
+E: Couldn't find any package by regex 'ocp-index.1.0.0.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.0.
+E: Couldn't find any package by regex 'ocp-index.1.0.0.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.0.
+E: Couldn't find any package by regex 'ocp-index.1.0.0.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.0.3.0.
+E: Couldn't find any package by regex 'ocp-index.0.3.0.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.0.3.0.
+E: Couldn't find any package by regex 'ocp-index.0.3.0.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.0.3.0.
+E: Couldn't find any package by regex 'ocp-index.0.3.0.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2.
+E: Couldn't find any package by regex 'ocp-index.1.0.2.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2.
+E: Couldn't find any package by regex 'ocp-index.1.0.2.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2.
+E: Couldn't find any package by regex 'ocp-index.1.0.2.'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocp-index
+Your request cannot be satisfied. The reasons are:
+       
+The dependency typerex.1.99.4-beta of package ocp-build.1.99.4-beta is not available for your compiler or your OS.
+ (and) 
+The dependency typerex.1.99.5-beta of package ocp-build.1.99.5-beta is not available for your compiler or your OS.
+ (and) 
+The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS.
+This is due to the following unmet dependencies(s):
+       ocp-build.1.99.4-beta needed by ocp-index.0.2.0.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.0.2.0.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.0.2.0.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.0.1.0.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.0.1.0.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.0.1.0.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.0.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.0.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.0.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.0.3.0.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.0.3.0.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.0.3.0.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2.
+'opam install ocp-index' failed.
