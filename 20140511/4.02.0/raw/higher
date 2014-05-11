@@ -1,0 +1,89 @@
+++ opam install higher -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam switch 4.02.0dev+trunk
+Ubuntu srcexts:
+# To complete the configuration of OPAM, you need to run:
+eval `opam config env`
+++ opam config env
++ eval 'CAML_LD_LIBRARY_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/stublibs";' export 'CAML_LD_LIBRARY_PATH;' 'PERL5LIB="/home/opam/.opam/4.02.0dev+trunk/lib/perl5";' export 'PERL5LIB;' 'OCAML_TOPLEVEL_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/toplevel";' export 'OCAML_TOPLEVEL_PATH;' 'MANPATH="/home/opam/.opam/4.02.0dev+trunk/man:";' export 'MANPATH;' 'PATH="/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";' export 'PATH;'
+++ CAML_LD_LIBRARY_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/stublibs
+++ export CAML_LD_LIBRARY_PATH
+++ PERL5LIB=/home/opam/.opam/4.02.0dev+trunk/lib/perl5
+++ export PERL5LIB
+++ OCAML_TOPLEVEL_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/toplevel
+++ export OCAML_TOPLEVEL_PATH
+++ MANPATH=/home/opam/.opam/4.02.0dev+trunk/man:
+++ export MANPATH
+++ PATH=/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
++ ocamlc -v
+The OCaml compiler, version 4.02.0+dev5-2014-04-29
+Standard library directory: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
++ opam install higher
+The following actions will be performed:
+ - install higher.0.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing higher.0.1 =-=-=
+higher.0.1 Downloading https://github.com/ocamllabs/higher/archive/0.1.tar.gz
+--2014-05-11 19:33:34--  https://github.com/ocamllabs/higher/archive/0.1.tar.gz
+Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/ocamllabs/higher/tar.gz/0.1 [following]
+--2014-05-11 19:33:34--  https://codeload.github.com/ocamllabs/higher/tar.gz/0.1
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.145
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.145|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: 'higher-0.1.tar.gz'
+
+     0K .........                                              14.9M=0.001s
+
+2014-05-11 19:33:35 (14.9 MB/s) - 'higher-0.1.tar.gz' saved [9679]
+
+Building higher.0.1:
+  make
+  make install
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/higher.0.1'
+ocamldep higher.mli > ._bcdi/higher.di
+ocamldep higher.ml > ._d/higher.d
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/higher.0.1'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/higher.0.1'
+ocamlc -c higher.mli
+ocamlc -c higher.ml
+ocamlc -a                -o higher.cma higher.cmo
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/higher.0.1'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/higher.0.1'
+ocamldep -native higher.mli > ._ncdi/higher.di
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/higher.0.1'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/higher.0.1'
+ocamlopt -c higher.ml
+ocamlopt -a                -o higher.cmxa higher.cmx
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/higher.0.1'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/higher.0.1'
+make[1]: `higher.cma' is up to date.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/higher.0.1'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/higher.0.1'
+make[1]: `higher.cmxa' is up to date.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/higher.0.1'
+
+Installing library with ocamlfind
+ocamlfind install  higher META higher.mli higher.cmi higher.cma higher.cmx higher.cmxa higher.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/higher/higher.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/higher/higher.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/higher/higher.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/higher/higher.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/higher/higher.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/higher/higher.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/higher/META
+
+Installation successful.
+Installing higher.0.1.
