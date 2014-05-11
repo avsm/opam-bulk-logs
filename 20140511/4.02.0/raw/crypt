@@ -1,0 +1,143 @@
+++ opam install crypt -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam switch 4.02.0dev+trunk
+Ubuntu srcexts:
+# To complete the configuration of OPAM, you need to run:
+eval `opam config env`
+++ opam config env
++ eval 'CAML_LD_LIBRARY_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/stublibs";' export 'CAML_LD_LIBRARY_PATH;' 'PERL5LIB="/home/opam/.opam/4.02.0dev+trunk/lib/perl5";' export 'PERL5LIB;' 'OCAML_TOPLEVEL_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/toplevel";' export 'OCAML_TOPLEVEL_PATH;' 'MANPATH="/home/opam/.opam/4.02.0dev+trunk/man:";' export 'MANPATH;' 'PATH="/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";' export 'PATH;'
+++ CAML_LD_LIBRARY_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/stublibs
+++ export CAML_LD_LIBRARY_PATH
+++ PERL5LIB=/home/opam/.opam/4.02.0dev+trunk/lib/perl5
+++ export PERL5LIB
+++ OCAML_TOPLEVEL_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/toplevel
+++ export OCAML_TOPLEVEL_PATH
+++ MANPATH=/home/opam/.opam/4.02.0dev+trunk/man:
+++ export MANPATH
+++ PATH=/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
++ ocamlc -v
+The OCaml compiler, version 4.02.0+dev5-2014-04-29
+Standard library directory: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
++ opam install crypt
+The following actions will be performed:
+ - install ocaml-makefile.6.37.0 [required by crypt]
+ - install crypt.1.3
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocaml-makefile.6.37.0 =-=-=
+ocaml-makefile.6.37.0 Downloading https://bitbucket.org/mmottl/ocaml-makefile/downloads/ocaml-makefile-6.37.0.tar.gz
+--2014-05-11 16:23:00--  https://bitbucket.org/mmottl/ocaml-makefile/downloads/ocaml-makefile-6.37.0.tar.gz
+Resolving bitbucket.org (bitbucket.org)... 131.103.20.168, 131.103.20.167
+Connecting to bitbucket.org (bitbucket.org)|131.103.20.168|:443... connected.
+HTTP request sent, awaiting response... 302 FOUND
+Location: http://cdn.bitbucket.org/mmottl/ocaml-makefile/downloads/ocaml-makefile-6.37.0.tar.gz [following]
+--2014-05-11 16:23:00--  http://cdn.bitbucket.org/mmottl/ocaml-makefile/downloads/ocaml-makefile-6.37.0.tar.gz
+Resolving cdn.bitbucket.org (cdn.bitbucket.org)... 54.230.3.204, 54.240.166.30, 54.230.0.63, ...
+Connecting to cdn.bitbucket.org (cdn.bitbucket.org)|54.230.3.204|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 49202 (48K) [application/x-tar]
+Saving to: 'ocaml-makefile-6.37.0.tar.gz'
+
+     0K .......... .......... .......... .......... ........  100% 86.6K=0.6s
+
+2014-05-11 16:23:01 (86.6 KB/s) - 'ocaml-makefile-6.37.0.tar.gz' saved [49202/49202]
+
+Building ocaml-makefile.6.37.0:
+  mkdir -p /home/opam/.opam/4.02.0dev+trunk/lib/ocaml-makefile
+  cp OCamlMakefile /home/opam/.opam/4.02.0dev+trunk/lib/ocaml-makefile
+Installing ocaml-makefile.6.37.0.
+
+=-=-= Installing crypt.1.3 =-=-=
+crypt.1.3  Downloading https://github.com/vbmithr/ocaml-crypt/archive/1.3.tar.gz
+--2014-05-11 16:23:02--  https://github.com/vbmithr/ocaml-crypt/archive/1.3.tar.gz
+Resolving github.com (github.com)... 192.30.252.130
+Connecting to github.com (github.com)|192.30.252.130|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/vbmithr/ocaml-crypt/tar.gz/1.3 [following]
+--2014-05-11 16:23:03--  https://codeload.github.com/vbmithr/ocaml-crypt/tar.gz/1.3
+Resolving codeload.github.com (codeload.github.com)... 192.30.252.146
+Connecting to codeload.github.com (codeload.github.com)|192.30.252.146|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: 'ocaml-crypt-1.3.tar.gz'
+
+     0K ..                                                     16.6M=0s
+
+2014-05-11 16:23:03 (16.6 MB/s) - 'ocaml-crypt-1.3.tar.gz' saved [2053]
+
+Building crypt.1.3:
+  make
+  make install
+cd lib && make
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/lib'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/lib'
+ocamldep -native crypt.mli > ._ncdi/crypt.di
+ocamldep crypt.ml > ._d/crypt.d
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/lib'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/lib'
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt -c -cc "cc" -ccopt "-fPIC  \
+				-DPIC -DNATIVE_CODE   \
+				    -o crypt_stubs.o " crypt_stubs.c
+ar rcs libcrypt_stubs.a  crypt_stubs.o
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt -c crypt.mli
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt -c crypt.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt -a -cclib -lcrypt_stubs -cclib -lcrypt               -o crypt.cmxa crypt.cmx
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/lib'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/lib'
+ocamldep crypt.mli > ._bcdi/crypt.di
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/lib'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/lib'
+make[2]: `libcrypt_stubs.a' is up to date.
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt -c crypt.ml
+ocamlmklib         \
+				-o crypt_stubs  crypt_stubs.o -lcrypt  \
+				
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt -a -cclib -lcrypt_stubs -cclib -lcrypt   -dllib dllcrypt_stubs.so             -o crypt.cma crypt.cmo
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/lib'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/lib'
+cd test && make
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/test'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/test'
+ocamldep -I ../lib test.ml > ._d/test.d
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/test'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/test'
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt -c -I ../lib test.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt \
+				  \
+				     -I ../lib          crypt.cmxa -o test.opt \
+				test.cmx
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/test'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/test'
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt -c -I ../lib test.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt \
+				  \
+				    -I ../lib          crypt.cma -o test.byte \
+				test.cmo
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/test'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/crypt.1.3/test'
+ocamlfind install crypt lib/crypt* lib/dll* lib/lib* lib/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crypt/libcrypt_stubs.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crypt/crypt_stubs.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crypt/crypt_stubs.c
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crypt/crypt.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crypt/crypt.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crypt/crypt.ml
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crypt/crypt.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crypt/crypt.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crypt/crypt.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crypt/crypt.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crypt/crypt.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crypt/crypt.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/crypt/META
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllcrypt_stubs.so
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/stublibs/dllcrypt_stubs.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/4.02.0dev+trunk/lib/stublibs is not mentioned in ld.conf
+Installing crypt.1.3.
