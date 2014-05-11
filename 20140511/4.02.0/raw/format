@@ -1,0 +1,85 @@
+++ opam install format -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam switch 4.02.0dev+trunk
+# To complete the configuration of OPAM, you need to run:
+eval `opam config env`
+++ opam config env
++ eval 'CAML_LD_LIBRARY_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/stublibs";' export 'CAML_LD_LIBRARY_PATH;' 'PERL5LIB="/home/opam/.opam/4.02.0dev+trunk/lib/perl5";' export 'PERL5LIB;' 'OCAML_TOPLEVEL_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/toplevel";' export 'OCAML_TOPLEVEL_PATH;' 'MANPATH="/home/opam/.opam/4.02.0dev+trunk/man:";' export 'MANPATH;' 'PATH="/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";' export 'PATH;'
+++ CAML_LD_LIBRARY_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/stublibs
+++ export CAML_LD_LIBRARY_PATH
+++ PERL5LIB=/home/opam/.opam/4.02.0dev+trunk/lib/perl5
+++ export PERL5LIB
+++ OCAML_TOPLEVEL_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/toplevel
+++ export OCAML_TOPLEVEL_PATH
+++ MANPATH=/home/opam/.opam/4.02.0dev+trunk/man:
+++ export MANPATH
+++ PATH=/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
++ ocamlc -v
+The OCaml compiler, version 4.02.0+dev5-2014-04-29
+Standard library directory: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
++ opam install format
+The following actions will be performed:
+ - install format.0.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing format.0.1 =-=-=
+format.0.1 Downloading https://forge.ocamlcore.org/frs/download.php/376/format-1.0.tar.gz
+--2014-05-11 17:46:38--  https://forge.ocamlcore.org/frs/download.php/376/format-1.0.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 18478 (18K) [application/binary]
+Saving to: 'format-1.0.tar.gz'
+
+     0K .......... ........                                   100% 1.58M=0.01s
+
+2014-05-11 17:46:38 (1.58 MB/s) - 'format-1.0.tar.gz' saved [18478/18478]
+
+Building format.0.1:
+  make
+  make install
+ocamllex formatLexer.mll
+23 states, 271 transitions, table size 1222 bytes
+1219 additional bytes used for bindings
+ocamlyacc formatParser.mly
+rm -f formatParser.mli
+ocamlc -I +camlp4 -c formatParser.ml
+File "formatParser.ml", line 3, characters 22-45:
+Error: Unbound module Camlp4
+make: *** [formatParser.cmi] Error 2
+[ERROR] The compilation of format.0.1 failed.
+Removing format.0.1.
+
+
+===== ERROR while installing format.0.1 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/format.0.1
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/format.0.1/format-31-c61e7b.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/format.0.1/format-31-c61e7b.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/format.0.1/format-31-c61e7b.err
+### stdout ###
+# ocamllex formatLexer.mll
+# 23 states, 271 transitions, table size 1222 bytes
+# 1219 additional bytes used for bindings
+# ocamlyacc formatParser.mly
+# rm -f formatParser.mli
+# ocamlc -I +camlp4 -c formatParser.ml
+### stderr ###
+# File "formatParser.ml", line 3, characters 22-45:
+# Error: Unbound module Camlp4
+# make: *** [formatParser.cmi] Error 2
+
+'opam install format' failed.
