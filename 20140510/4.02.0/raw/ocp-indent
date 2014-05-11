@@ -1,0 +1,121 @@
+++ opam install ocp-indent -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocp-indent
+Ubuntu srcexts:
+The following actions will be performed:
+ - install ocp-indent.0.6.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocp-indent.0.6.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocp-indent.0.6.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocp-indent.0.6.1+opam.tar.gz
+--2014-05-11 00:29:22--  https://opam.ocaml.org/archives/ocp-indent.0.6.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 79297 (77K) [application/octet-stream]
+Saving to: 'ocp-indent.0.6.1+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 64%  246K 0s
+    50K .......... .......... .......                         100% 23.3M=0.2s
+
+2014-05-11 00:29:23 (379 KB/s) - 'ocp-indent.0.6.1+opam.tar.gz' saved [79297/79297]
+
+Building ocp-indent.0.6.1:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  ocamlbuild src/main.native
+  cp -f _build/src/main.native ./ocp-indent
+  cp -f _build/src/main.native /home/opam/.opam/4.02.0dev+trunk/bin/ocp-indent
+  mkdir -p /home/opam/.opam/4.02.0dev+trunk/share/typerex/ocp-indent
+  cp -f tools/ocp-indent.el /home/opam/.opam/4.02.0dev+trunk/share/typerex/ocp-indent/
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for ocamlc... ocamlc
+OCaml version is 4.02.0+dev5-2014-04-29
+OCaml library path is /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+configure: creating ./config.status
+config.status: creating Makefile.config
+config.status: creating src/globals.ml
+
+Executables will be installed in /home/opam/.opam/4.02.0dev+trunk/bin
+ocamlfind ocamldep -modules src/main.ml > src/main.ml.depends
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamllex.opt -q src/approx_lexer.mll
+ocamlfind ocamldep -modules src/approx_lexer.ml > src/approx_lexer.ml.depends
+ocamlfind ocamldep -modules src/approx_common.mli > src/approx_common.mli.depends
+ocamlfind ocamldep -modules src/approx_tokens.ml > src/approx_tokens.ml.depends
+ocamlfind ocamlc -c -I src -o src/approx_common.cmi src/approx_common.mli
+ocamlfind ocamlc -c -I src -o src/approx_tokens.cmo src/approx_tokens.ml
+ocamlfind ocamldep -modules src/block.mli > src/block.mli.depends
+ocamlfind ocamldep -modules src/nstream.mli > src/nstream.mli.depends
+ocamlfind ocamlc -c -I src -o src/approx_lexer.cmo src/approx_lexer.ml
++ ocamlfind ocamlc -c -I src -o src/approx_lexer.cmo src/approx_lexer.ml
+File "src/approx_lexer.mll", line 125, characters 28-41:
+Warning 3: deprecated feature: String.create
+File "src/approx_lexer.mll", line 135, characters 19-32:
+Warning 3: deprecated feature: String.create
+File "src/approx_lexer.mll", line 139, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "src/approx_lexer.mll", line 208, characters 17-29:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamldep -modules src/pos.mli > src/pos.mli.depends
+ocamlfind ocamlc -c -I src -o src/pos.cmi src/pos.mli
+ocamlfind ocamlc -c -I src -o src/nstream.cmi src/nstream.mli
+ocamlfind ocamldep -modules src/config.mli > src/config.mli.depends
+ocamlfind ocamldep -modules src/util.ml > src/util.ml.depends
+ocamlfind ocamlc -c -I src -o src/block.cmi src/block.mli
+ocamlfind ocamlc -c -I src -o src/config.cmi src/config.mli
+ocamlfind ocamlc -c -I src -o src/util.cmo src/util.ml
+ocamlfind ocamlc -c -I src -o src/main.cmo src/main.ml
+ocamlfind ocamlopt -c -I src -o src/approx_tokens.cmx src/approx_tokens.ml
+ocamlfind ocamldep -modules src/block.ml > src/block.ml.depends
+ocamlfind ocamlopt -c -I src -o src/approx_lexer.cmx src/approx_lexer.ml
++ ocamlfind ocamlopt -c -I src -o src/approx_lexer.cmx src/approx_lexer.ml
+File "src/approx_lexer.mll", line 125, characters 28-41:
+Warning 3: deprecated feature: String.create
+File "src/approx_lexer.mll", line 135, characters 19-32:
+Warning 3: deprecated feature: String.create
+File "src/approx_lexer.mll", line 139, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "src/approx_lexer.mll", line 208, characters 17-29:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamldep -modules src/config.ml > src/config.ml.depends
+ocamlfind ocamldep -modules src/globals.ml > src/globals.ml.depends
+ocamlfind ocamlc -c -I src -o src/globals.cmo src/globals.ml
+ocamlfind ocamlopt -c -I src -o src/globals.cmx src/globals.ml
+ocamlfind ocamlopt -c -I src -o src/util.cmx src/util.ml
+ocamlfind ocamldep -modules src/nstream.ml > src/nstream.ml.depends
+ocamlfind ocamldep -modules src/pos.ml > src/pos.ml.depends
+ocamlfind ocamldep -modules src/reader.ml > src/reader.ml.depends
+ocamlfind ocamldep -modules src/reader.mli > src/reader.mli.depends
+ocamlfind ocamlc -c -I src -o src/reader.cmi src/reader.mli
+ocamlfind ocamlopt -c -I src -o src/pos.cmx src/pos.ml
+ocamlfind ocamlopt -c -I src -o src/reader.cmx src/reader.ml
+ocamlfind ocamlopt -c -I src -o src/config.cmx src/config.ml
+ocamlfind ocamlopt -c -I src -o src/nstream.cmx src/nstream.ml
+ocamlfind ocamlopt -c -I src -o src/block.cmx src/block.ml
+ocamlfind ocamlopt -c -I src -o src/main.cmx src/main.ml
+ocamlfind ocamlopt -linkpkg src/approx_tokens.cmx src/approx_lexer.cmx src/globals.cmx src/util.cmx src/config.cmx src/pos.cmx src/reader.cmx src/nstream.cmx src/block.cmx src/main.cmx -o src/main.native
+Installing ocp-indent.0.6.1.
