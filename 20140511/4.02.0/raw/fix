@@ -1,0 +1,69 @@
+++ opam install fix -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam switch 4.02.0dev+trunk
+# To complete the configuration of OPAM, you need to run:
+eval `opam config env`
+++ opam config env
++ eval 'CAML_LD_LIBRARY_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/stublibs";' export 'CAML_LD_LIBRARY_PATH;' 'PERL5LIB="/home/opam/.opam/4.02.0dev+trunk/lib/perl5";' export 'PERL5LIB;' 'OCAML_TOPLEVEL_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/toplevel";' export 'OCAML_TOPLEVEL_PATH;' 'MANPATH="/home/opam/.opam/4.02.0dev+trunk/man:";' export 'MANPATH;' 'PATH="/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";' export 'PATH;'
+++ CAML_LD_LIBRARY_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/stublibs
+++ export CAML_LD_LIBRARY_PATH
+++ PERL5LIB=/home/opam/.opam/4.02.0dev+trunk/lib/perl5
+++ export PERL5LIB
+++ OCAML_TOPLEVEL_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/toplevel
+++ export OCAML_TOPLEVEL_PATH
+++ MANPATH=/home/opam/.opam/4.02.0dev+trunk/man:
+++ export MANPATH
+++ PATH=/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
++ ocamlc -v
+The OCaml compiler, version 4.02.0+dev5-2014-04-29
+Standard library directory: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
++ opam install fix
+The following actions will be performed:
+ - install fix.20130611
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing fix.20130611 =-=-=
+fix.20130611 Downloading http://gallium.inria.fr/~fpottier/fix/fix-20130611.tar.gz
+--2014-05-11 17:33:02--  http://gallium.inria.fr/~fpottier/fix/fix-20130611.tar.gz
+Resolving gallium.inria.fr (gallium.inria.fr)... 128.93.11.35
+Connecting to gallium.inria.fr (gallium.inria.fr)|128.93.11.35|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14790 (14K) [application/x-gzip]
+Saving to: 'fix-20130611.tar.gz'
+
+     0K .......... ....                                       100% 1.13M=0.01s
+
+2014-05-11 17:33:02 (1.13 MB/s) - 'fix-20130611.tar.gz' saved [14790/14790]
+
+Building fix.20130611:
+  make
+  make install
+ocamlbuild -use-ocamlfind -cflags "-g" -lflags "-g" -classic-display Fix.cma Fix.cmxa
+ocamlfind ocamldep -modules Fix.mli > Fix.mli.depends
+ocamlfind ocamlc -c -g -o Fix.cmi Fix.mli
+ocamlfind ocamldep -modules Fix.ml > Fix.ml.depends
+ocamlfind ocamlc -c -g -o Fix.cmo Fix.ml
+ocamlfind ocamlc -a -g Fix.cmo -o Fix.cma
+ocamlfind ocamlopt -c -g -o Fix.cmx Fix.ml
+ocamlfind ocamlopt -a -g Fix.cmx -o Fix.cmxa
+ocamlbuild -use-ocamlfind -cflags "-g" -lflags "-g" -classic-display Fix.cma Fix.cmxa
+ocamlfind install fix META \
+	  _build/Fix.cma _build/Fix.cmxa \
+	  _build/Fix.a \
+	  _build/Fix.cmx _build/Fix.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/fix/Fix.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/fix/Fix.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/fix/Fix.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/fix/Fix.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/fix/Fix.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/fix/META
+Installing fix.20130611.
