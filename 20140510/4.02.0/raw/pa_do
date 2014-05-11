@@ -1,0 +1,15 @@
+++ opam install pa_do -e ubuntu
+[ERROR] "pa_do" is not available for your compiler or your OS.
+'opam install pa_do -e ubuntu' failed.
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install pa_do
+[ERROR] "pa_do" is not available for your compiler or your OS.
+'opam install pa_do' failed.
