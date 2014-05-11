@@ -1,0 +1,127 @@
+++ opam install headache -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam switch 4.02.0dev+trunk
+# To complete the configuration of OPAM, you need to run:
+eval `opam config env`
+++ opam config env
++ eval 'CAML_LD_LIBRARY_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/stublibs";' export 'CAML_LD_LIBRARY_PATH;' 'PERL5LIB="/home/opam/.opam/4.02.0dev+trunk/lib/perl5";' export 'PERL5LIB;' 'OCAML_TOPLEVEL_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/toplevel";' export 'OCAML_TOPLEVEL_PATH;' 'MANPATH="/home/opam/.opam/4.02.0dev+trunk/man:";' export 'MANPATH;' 'PATH="/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";' export 'PATH;'
+++ CAML_LD_LIBRARY_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/stublibs
+++ export CAML_LD_LIBRARY_PATH
+++ PERL5LIB=/home/opam/.opam/4.02.0dev+trunk/lib/perl5
+++ export PERL5LIB
+++ OCAML_TOPLEVEL_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/toplevel
+++ export OCAML_TOPLEVEL_PATH
+++ MANPATH=/home/opam/.opam/4.02.0dev+trunk/man:
+++ export MANPATH
+++ PATH=/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
++ ocamlc -v
+The OCaml compiler, version 4.02.0+dev5-2014-04-29
+Standard library directory: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
++ opam install headache
+The following actions will be performed:
+ - install headache.1.03
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing headache.1.03 =-=-=
+headache.1.03 Downloading https://forge.ocamlcore.org/frs/download.php/415/headache-1.03.tar.gz
+--2014-05-11 19:30:31--  https://forge.ocamlcore.org/frs/download.php/415/headache-1.03.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 151947 (148K) [application/binary]
+Saving to: 'headache-1.03.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 33% 1.16M 0s
+    50K .......... .......... .......... .......... .......... 67% 3.81M 0s
+   100K .......... .......... .......... .......... ........  100% 2.42M=0.07s
+
+2014-05-11 19:30:32 (1.95 MB/s) - 'headache-1.03.tar.gz' saved [151947/151947]
+
+Copying ~/.opam/repo/default/packages/headache/headache.1.03/files/headache.install to ~/.opam/4.02.0dev+trunk/build/headache.1.03/
+Building headache.1.03:
+  mkdir -p /home/opam/.opam/4.02.0dev+trunk/bin
+  ./configure --bindir /home/opam/.opam/4.02.0dev+trunk/bin
+  make
+  make install
+
+*** Objective Caml
+checking for ocamlc... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc
+checking ocamlc version... 4.02.0+dev5-2014-04-29
+checking Objective Caml library path... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+checking for ocamlopt... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt
+checking ocamlopt version... 4.02.0+dev5-2014-04-29
+checking for ocamlyacc... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlyacc
+checking for ocamllex... /home/opam/.opam/4.02.0dev+trunk/bin/ocamllex
+checking for ocamldep... /home/opam/.opam/4.02.0dev+trunk/bin/ocamldep
+
+*** Installation directories
+checking binaries installation path:... /home/opam/.opam/4.02.0dev+trunk/bin
+
+configure: creating ./config.status
+config.status: creating Makefile
+
+------------------------------------------------------------
+Everything seems to be ok.
+You can now start compilation by 'make'.
+------------------------------------------------------------
+make all
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/headache.1.03'
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c info.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c model.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c config.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlyacc -v config_parse.mly
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c config_parse.mli
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlyacc -v config_parse.mly
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c config_parse.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamllex config_lex.mll
+24 states, 529 transitions, table size 2260 bytes
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c config_lex.ml
+File "config_lex.mll", line 58, characters 28-41:
+Warning 3: deprecated feature: String.create
+File "config_lex.mll", line 68, characters 19-32:
+Warning 3: deprecated feature: String.create
+File "config_lex.mll", line 72, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c mkconfig.ml
+ocamlc -o mkconfig unix.cma str.cma model.cmo config.cmo config_parse.cmo config_lex.cmo mkconfig.cmo
+./mkconfig
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c config_builtin.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c main.ml
+File "main.ml", line 137, characters 12-25:
+Warning 3: deprecated feature: String.create
+ocamlc -o headache unix.cma str.cma info.cmo model.cmo config.cmo config_parse.cmo config_lex.cmo config_builtin.cmo main.cmo
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/headache.1.03'
+
+------------------------------------------------------------
+Compilation seems to succeed
+You can install the software. As a superuser, do
+'make install'
+------------------------------------------------------------
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c config_parse.mli
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c config_parse.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c config_lex.ml
+File "config_lex.mll", line 58, characters 28-41:
+Warning 3: deprecated feature: String.create
+File "config_lex.mll", line 68, characters 19-32:
+Warning 3: deprecated feature: String.create
+File "config_lex.mll", line 72, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c mkconfig.ml
+ocamlc -o mkconfig unix.cma str.cma model.cmo config.cmo config_parse.cmo config_lex.cmo mkconfig.cmo
+./mkconfig
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c config_builtin.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc  -c main.ml
+File "main.ml", line 137, characters 12-25:
+Warning 3: deprecated feature: String.create
+ocamlc -o headache unix.cma str.cma info.cmo model.cmo config.cmo config_parse.cmo config_lex.cmo config_builtin.cmo main.cmo
+cp -f headache /home/opam/.opam/4.02.0dev+trunk/bin
+Installing headache.1.03.
