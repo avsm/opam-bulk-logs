@@ -1,0 +1,61 @@
+++ opam install glical -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam switch 4.02.0dev+trunk
+# To complete the configuration of OPAM, you need to run:
+eval `opam config env`
+++ opam config env
++ eval 'CAML_LD_LIBRARY_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/stublibs";' export 'CAML_LD_LIBRARY_PATH;' 'PERL5LIB="/home/opam/.opam/4.02.0dev+trunk/lib/perl5";' export 'PERL5LIB;' 'OCAML_TOPLEVEL_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/toplevel";' export 'OCAML_TOPLEVEL_PATH;' 'MANPATH="/home/opam/.opam/4.02.0dev+trunk/man:";' export 'MANPATH;' 'PATH="/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";' export 'PATH;'
+++ CAML_LD_LIBRARY_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/stublibs
+++ export CAML_LD_LIBRARY_PATH
+++ PERL5LIB=/home/opam/.opam/4.02.0dev+trunk/lib/perl5
+++ export PERL5LIB
+++ OCAML_TOPLEVEL_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/toplevel
+++ export OCAML_TOPLEVEL_PATH
+++ MANPATH=/home/opam/.opam/4.02.0dev+trunk/man:
+++ export MANPATH
+++ PATH=/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
++ ocamlc -v
+The OCaml compiler, version 4.02.0+dev5-2014-04-29
+Standard library directory: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
++ opam install glical
+The following actions will be performed:
+ - install glical.0.0.3
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing glical.0.0.3 =-=-=
+glical.0.0.3 Downloading http://pw374.github.io/distrib/glical/glical-0.0.3.tar.gz
+--2014-05-11 19:02:29--  http://pw374.github.io/distrib/glical/glical-0.0.3.tar.gz
+Resolving pw374.github.io (pw374.github.io)... 185.31.18.133
+Connecting to pw374.github.io (pw374.github.io)|185.31.18.133|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 10882 (11K) [application/octet-stream]
+Saving to: 'glical-0.0.3.tar.gz'
+
+     0K ..........                                            100% 68.5M=0s
+
+2014-05-11 19:02:30 (68.5 MB/s) - 'glical-0.0.3.tar.gz' saved [10882/10882]
+
+Building glical.0.0.3:
+  ./configure -prefix /home/opam/.opam/4.02.0dev+trunk
+  make build
+  make install
+ocamlc -c glical_kernel.mli
+ocamlc -c glical_kernel.ml
+ocamlc -c glical.mli
+ocamlc -c glical.ml
+ocamlc -a glical_kernel.cmo glical.cmo -o glical.cma
+ocamlopt -c glical_kernel.ml
+ocamlopt -c glical.ml
+ocamlopt -a glical_kernel.cmx glical.cmx -o glical.cmxa
+mkdir -p "/home/opam/.opam/4.02.0dev+trunk"/lib/glical/
+cp glical.cma glical.cmxa glical.mli glical.cmi glical.cmo glical.cmx glical_kernel.cmi glical_kernel.mli glical_kernel.cmo glical_kernel.cmx "/home/opam/.opam/4.02.0dev+trunk"/lib/glical/
+Installing glical.0.0.3.
