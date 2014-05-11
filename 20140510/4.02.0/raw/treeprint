@@ -1,0 +1,33 @@
+++ opam install treeprint -e ubuntu
+'opam install treeprint -e ubuntu' failed.
++ depext='
+The dependency meta_conv of package treeprint.1.0.2 is not available for your compiler or your OS.'
++ echo Ubuntu depexts: The dependency meta_conv of package treeprint.1.0.2 is not available for your compiler or your OS.
+Ubuntu depexts: The dependency meta_conv of package treeprint.1.0.2 is not available for your compiler or your OS.
++ '[' '
+The dependency meta_conv of package treeprint.1.0.2 is not available for your compiler or your OS.' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y The dependency meta_conv of package treeprint.1.0.2 is not available for your compiler or your OS.
+E: Unable to locate package dependency
+E: Unable to locate package meta_conv
+E: Unable to locate package of
+E: Unable to locate package package
+E: Unable to locate package treeprint.1.0.2
+E: Couldn't find any package by regex 'treeprint.1.0.2'
+E: Unable to locate package is
+E: Unable to locate package not
+E: Unable to locate package available
+E: Unable to locate package for
+E: Unable to locate package your
+E: Unable to locate package compiler
+E: Unable to locate package or
+E: Unable to locate package your
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install treeprint
+
+The dependency meta_conv of package treeprint.1.0.2 is not available for your compiler or your OS.
+'opam install treeprint' failed.
