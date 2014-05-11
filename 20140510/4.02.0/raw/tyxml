@@ -1,0 +1,76 @@
+++ opam install tyxml -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install tyxml
+The following actions will be performed:
+ - install tyxml.3.0.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing tyxml.3.0.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/tyxml.3.0.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/tyxml.3.0.0+opam.tar.gz
+--2014-05-11 03:14:52--  https://opam.ocaml.org/archives/tyxml.3.0.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 148315 (145K) [application/octet-stream]
+Saving to: 'tyxml.3.0.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 34%  245K 0s
+    50K .......... .......... .......... .......... .......... 69%  488K 0s
+   100K .......... .......... .......... .......... ....      100%  861K=0.4s
+
+2014-05-11 03:14:53 (403 KB/s) - 'tyxml.3.0.0+opam.tar.gz' saved [148315/148315]
+
+Building tyxml.3.0.0:
+  make
+  make install
+ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+File "setup.ml", line 247, characters 8-26:
+Warning 3: deprecated feature: String.set
+rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+./setup.exe -configure 
+W: Field 'pkg_camlp4' is not set: When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+E: Cannot find findlib package camlp4
+E: Cannot find findlib package camlp4.lib
+E: Failure("2 configuration errors")
+make: *** [setup.data] Error 1
+[ERROR] The compilation of tyxml.3.0.0 failed.
+Removing tyxml.3.0.0.
+  ocamlfind remove tyxml
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/tyxml
+
+
+===== ERROR while installing tyxml.3.0.0 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/tyxml.3.0.0
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/tyxml.3.0.0/tyxml-24-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/tyxml.3.0.0/tyxml-24-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/tyxml.3.0.0/tyxml-24-ad8886.err
+### stdout ###
+# ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+# rm -f setup.cmx setup.cmi setup.o setup.obj setup.cmo
+# ./setup.exe -configure 
+### stderr ###
+# File "setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated feature: String.set
+# W: Field 'pkg_camlp4' is not set: When looking for findlib package camlp4, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# W: Field 'pkg_camlp4_lib' is not set: When looking for findlib package camlp4.lib, directory /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/camlp4 return doesn't exist
+# E: Cannot find findlib package camlp4
+# E: Cannot find findlib package camlp4.lib
+# E: Failure("2 configuration errors")
+# make: *** [setup.data] Error 1
+
+'opam install tyxml' failed.
