@@ -1,0 +1,187 @@
+++ opam install ocamltter -e ubuntu
+'opam install ocamltter -e ubuntu' failed.
++ depext='Your request cannot be satisfied. The reasons are:
+       
+The dependency meta_conv.1.0.0 of package tiny_json_conv.1.2.0 is not available for your compiler or your OS.
+ (and) 
+The dependency meta_conv>=1.1.0 of package tiny_json_conv.1.3.0 is not available for your compiler or your OS.
+ (and) 
+The dependency meta_conv>=1.1.1 of package tiny_json_conv.1.4.0 is not available for your compiler or your OS.
+ (and) 
+The dependency meta_conv>=1.1.1 of package tiny_json_conv.1.4.1 is not available for your compiler or your OS.
+This is due to the following unmet dependencies(s):
+       tiny_json_conv.1.2.0 needed by ocamltter.2.0.0.
+  (or) tiny_json_conv.1.4.0 needed by ocamltter.2.1.0.
+  (or) tiny_json_conv.1.4.0 needed by ocamltter.2.1.1.
+  (or) tiny_json_conv.1.4.0 needed by ocamltter.2.1.2.
+  (or) tiny_json_conv.1.3.0 needed by ocamltter.2.0.1.
+  (or) tiny_json_conv.1.4.0 needed by ocamltter.2.0.1.
+  (or) tiny_json_conv.1.4.1 needed by ocamltter.2.0.1.'
++ echo Ubuntu depexts: Your request cannot be satisfied. The reasons are: The dependency meta_conv.1.0.0 of package tiny_json_conv.1.2.0 is not available for your compiler or your OS. '(and)' The dependency 'meta_conv>=1.1.0' of package tiny_json_conv.1.3.0 is not available for your compiler or your OS. '(and)' The dependency 'meta_conv>=1.1.1' of package tiny_json_conv.1.4.0 is not available for your compiler or your OS. '(and)' The dependency 'meta_conv>=1.1.1' of package tiny_json_conv.1.4.1 is not available for your compiler or your OS. This is due to the following unmet 'dependencies(s):' tiny_json_conv.1.2.0 needed by ocamltter.2.0.0. '(or)' tiny_json_conv.1.4.0 needed by ocamltter.2.1.0. '(or)' tiny_json_conv.1.4.0 needed by ocamltter.2.1.1. '(or)' tiny_json_conv.1.4.0 needed by ocamltter.2.1.2. '(or)' tiny_json_conv.1.3.0 needed by ocamltter.2.0.1. '(or)' tiny_json_conv.1.4.0 needed by ocamltter.2.0.1. '(or)' tiny_json_conv.1.4.1 needed by ocamltter.2.0.1.
++ '[' 'Your request cannot be satisfied. The reasons are:
+       
+The dependency meta_conv.1.0.0 of package tiny_json_conv.1.2.0 is not available for your compiler or your OS.
+ (and) 
+The dependency meta_conv>=1.1.0 of package tiny_json_conv.1.3.0 is not available for your compiler or your OS.
+ (and) 
+The dependency meta_conv>=1.1.1 of package tiny_json_conv.1.4.0 is not available for your compiler or your OS.
+ (and) 
+The dependency meta_conv>=1.1.1 of package tiny_json_conv.1.4.1 is not available for your compiler or your OS.
+This is due to the following unmet dependencies(s):
+       tiny_json_conv.1.2.0 needed by ocamltter.2.0.0.
+  (or) tiny_json_conv.1.4.0 needed by ocamltter.2.1.0.
+  (or) tiny_json_conv.1.4.0 needed by ocamltter.2.1.1.
+  (or) tiny_json_conv.1.4.0 needed by ocamltter.2.1.2.
+  (or) tiny_json_conv.1.3.0 needed by ocamltter.2.0.1.
+  (or) tiny_json_conv.1.4.0 needed by ocamltter.2.0.1.
+  (or) tiny_json_conv.1.4.1 needed by ocamltter.2.0.1.' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: Your request cannot be satisfied. The reasons are: The dependency meta_conv.1.0.0 of package tiny_json_conv.1.2.0 is not available for your compiler or your OS. (and) The dependency meta_conv>=1.1.0 of package tiny_json_conv.1.3.0 is not available for your compiler or your OS. (and) The dependency meta_conv>=1.1.1 of package tiny_json_conv.1.4.0 is not available for your compiler or your OS. (and) The dependency meta_conv>=1.1.1 of package tiny_json_conv.1.4.1 is not available for your compiler or your OS. This is due to the following unmet dependencies(s): tiny_json_conv.1.2.0 needed by ocamltter.2.0.0. (or) tiny_json_conv.1.4.0 needed by ocamltter.2.1.0. (or) tiny_json_conv.1.4.0 needed by ocamltter.2.1.1. (or) tiny_json_conv.1.4.0 needed by ocamltter.2.1.2. (or) tiny_json_conv.1.3.0 needed by ocamltter.2.0.1. (or) tiny_json_conv.1.4.0 needed by ocamltter.2.0.1. (or) tiny_json_conv.1.4.1 needed by ocamltter.2.0.1.
++ sudo apt-get install -qq -y Your request cannot be satisfied. The reasons are: The dependency meta_conv.1.0.0 of package tiny_json_conv.1.2.0 is not available for your compiler or your OS. '(and)' The dependency 'meta_conv>=1.1.0' of package tiny_json_conv.1.3.0 is not available for your compiler or your OS. '(and)' The dependency 'meta_conv>=1.1.1' of package tiny_json_conv.1.4.0 is not available for your compiler or your OS. '(and)' The dependency 'meta_conv>=1.1.1' of package tiny_json_conv.1.4.1 is not available for your compiler or your OS. This is due to the following unmet 'dependencies(s):' tiny_json_conv.1.2.0 needed by ocamltter.2.0.0. '(or)' tiny_json_conv.1.4.0 needed by ocamltter.2.1.0. '(or)' tiny_json_conv.1.4.0 needed by ocamltter.2.1.1. '(or)' tiny_json_conv.1.4.0 needed by ocamltter.2.1.2. '(or)' tiny_json_conv.1.3.0 needed by ocamltter.2.0.1. '(or)' tiny_json_conv.1.4.0 needed by ocamltter.2.0.1. '(or)' tiny_json_conv.1.4.1 needed by ocamltter.2.0.1.
+E: Unable to locate package Your
+E: Unable to locate package request
+E: Unable to locate package cannot
+E: Unable to locate package be
+E: Unable to locate package satisfied.
+E: Couldn't find any package by regex 'satisfied.'
+E: Unable to locate package reasons
+E: Unable to locate package are
+E: Unable to locate package dependency
+E: Unable to locate package meta_conv.1.0.0
+E: Couldn't find any package by regex 'meta_conv.1.0.0'
+E: Unable to locate package of
+E: Unable to locate package package
+E: Unable to locate package tiny_json_conv.1.2.0
+E: Couldn't find any package by regex 'tiny_json_conv.1.2.0'
+E: Unable to locate package is
+E: Unable to locate package not
+E: Unable to locate package available
+E: Unable to locate package for
+E: Unable to locate package your
+E: Unable to locate package compiler
+E: Unable to locate package or
+E: Unable to locate package your
+E: Unable to locate package (and)
+E: Unable to locate package dependency
+E: Unable to locate package meta_conv>
+E: Unable to locate package of
+E: Unable to locate package package
+E: Unable to locate package tiny_json_conv.1.3.0
+E: Couldn't find any package by regex 'tiny_json_conv.1.3.0'
+E: Unable to locate package is
+E: Unable to locate package not
+E: Unable to locate package available
+E: Unable to locate package for
+E: Unable to locate package your
+E: Unable to locate package compiler
+E: Unable to locate package or
+E: Unable to locate package your
+E: Unable to locate package (and)
+E: Unable to locate package dependency
+E: Unable to locate package meta_conv>
+E: Unable to locate package of
+E: Unable to locate package package
+E: Unable to locate package tiny_json_conv.1.4.0
+E: Couldn't find any package by regex 'tiny_json_conv.1.4.0'
+E: Unable to locate package is
+E: Unable to locate package not
+E: Unable to locate package available
+E: Unable to locate package for
+E: Unable to locate package your
+E: Unable to locate package compiler
+E: Unable to locate package or
+E: Unable to locate package your
+E: Unable to locate package (and)
+E: Unable to locate package dependency
+E: Unable to locate package meta_conv>
+E: Unable to locate package of
+E: Unable to locate package package
+E: Unable to locate package tiny_json_conv.1.4.1
+E: Couldn't find any package by regex 'tiny_json_conv.1.4.1'
+E: Unable to locate package is
+E: Unable to locate package not
+E: Unable to locate package available
+E: Unable to locate package for
+E: Unable to locate package your
+E: Unable to locate package compiler
+E: Unable to locate package or
+E: Unable to locate package your
+E: Unable to locate package This
+E: Unable to locate package is
+E: Unable to locate package due
+E: Unable to locate package to
+E: Unable to locate package following
+E: Unable to locate package unmet
+E: Unable to locate package dependencies(s)
+E: Unable to locate package tiny_json_conv.1.2.0
+E: Couldn't find any package by regex 'tiny_json_conv.1.2.0'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocamltter.2.0.0.
+E: Couldn't find any package by regex 'ocamltter.2.0.0.'
+E: Unable to locate package (or)
+E: Unable to locate package tiny_json_conv.1.4.0
+E: Couldn't find any package by regex 'tiny_json_conv.1.4.0'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocamltter.2.1.0.
+E: Couldn't find any package by regex 'ocamltter.2.1.0.'
+E: Unable to locate package (or)
+E: Unable to locate package tiny_json_conv.1.4.0
+E: Couldn't find any package by regex 'tiny_json_conv.1.4.0'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocamltter.2.1.1.
+E: Couldn't find any package by regex 'ocamltter.2.1.1.'
+E: Unable to locate package (or)
+E: Unable to locate package tiny_json_conv.1.4.0
+E: Couldn't find any package by regex 'tiny_json_conv.1.4.0'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocamltter.2.1.2.
+E: Couldn't find any package by regex 'ocamltter.2.1.2.'
+E: Unable to locate package (or)
+E: Unable to locate package tiny_json_conv.1.3.0
+E: Couldn't find any package by regex 'tiny_json_conv.1.3.0'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocamltter.2.0.1.
+E: Couldn't find any package by regex 'ocamltter.2.0.1.'
+E: Unable to locate package (or)
+E: Unable to locate package tiny_json_conv.1.4.0
+E: Couldn't find any package by regex 'tiny_json_conv.1.4.0'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocamltter.2.0.1.
+E: Couldn't find any package by regex 'ocamltter.2.0.1.'
+E: Unable to locate package (or)
+E: Unable to locate package tiny_json_conv.1.4.1
+E: Couldn't find any package by regex 'tiny_json_conv.1.4.1'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocamltter.2.0.1.
+E: Couldn't find any package by regex 'ocamltter.2.0.1.'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocamltter
+Your request cannot be satisfied. The reasons are:
+       
+The dependency meta_conv.1.0.0 of package tiny_json_conv.1.2.0 is not available for your compiler or your OS.
+ (and) 
+The dependency meta_conv>=1.1.0 of package tiny_json_conv.1.3.0 is not available for your compiler or your OS.
+ (and) 
+The dependency meta_conv>=1.1.1 of package tiny_json_conv.1.4.0 is not available for your compiler or your OS.
+ (and) 
+The dependency meta_conv>=1.1.1 of package tiny_json_conv.1.4.1 is not available for your compiler or your OS.
+This is due to the following unmet dependencies(s):
+       tiny_json_conv.1.2.0 needed by ocamltter.2.0.0.
+  (or) tiny_json_conv.1.4.0 needed by ocamltter.2.1.0.
+  (or) tiny_json_conv.1.4.0 needed by ocamltter.2.1.1.
+  (or) tiny_json_conv.1.4.0 needed by ocamltter.2.1.2.
+  (or) tiny_json_conv.1.3.0 needed by ocamltter.2.0.1.
+  (or) tiny_json_conv.1.4.0 needed by ocamltter.2.0.1.
+  (or) tiny_json_conv.1.4.1 needed by ocamltter.2.0.1.
+'opam install ocamltter' failed.
