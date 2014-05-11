@@ -1,0 +1,154 @@
+++ opam install dtools -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam switch 4.02.0dev+trunk
+# To complete the configuration of OPAM, you need to run:
+eval `opam config env`
+++ opam config env
++ eval 'CAML_LD_LIBRARY_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/stublibs";' export 'CAML_LD_LIBRARY_PATH;' 'PERL5LIB="/home/opam/.opam/4.02.0dev+trunk/lib/perl5";' export 'PERL5LIB;' 'OCAML_TOPLEVEL_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/toplevel";' export 'OCAML_TOPLEVEL_PATH;' 'MANPATH="/home/opam/.opam/4.02.0dev+trunk/man:";' export 'MANPATH;' 'PATH="/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";' export 'PATH;'
+++ CAML_LD_LIBRARY_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/stublibs
+++ export CAML_LD_LIBRARY_PATH
+++ PERL5LIB=/home/opam/.opam/4.02.0dev+trunk/lib/perl5
+++ export PERL5LIB
+++ OCAML_TOPLEVEL_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/toplevel
+++ export OCAML_TOPLEVEL_PATH
+++ MANPATH=/home/opam/.opam/4.02.0dev+trunk/man:
+++ export MANPATH
+++ PATH=/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
++ ocamlc -v
+The OCaml compiler, version 4.02.0+dev5-2014-04-29
+Standard library directory: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
++ opam install dtools
+The following actions will be performed:
+ - install dtools.0.3.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing dtools.0.3.0 =-=-=
+dtools.0.3.0 Downloading http://downloads.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz
+--2014-05-11 16:47:01--  http://downloads.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz
+Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 216.34.181.59
+Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.34.181.59|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://kent.dl.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz [following]
+--2014-05-11 16:47:01--  http://kent.dl.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz
+Resolving kent.dl.sourceforge.net (kent.dl.sourceforge.net)... 212.219.56.185
+Connecting to kent.dl.sourceforge.net (kent.dl.sourceforge.net)|212.219.56.185|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 110975 (108K) [application/x-gzip]
+Saving to: 'ocaml-dtools-0.3.0.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 46% 2.97M 0s
+    50K .......... .......... .......... .......... .......... 92% 6.54M 0s
+   100K ........                                              100% 11.6M=0.02s
+
+2014-05-11 16:47:01 (4.30 MB/s) - 'ocaml-dtools-0.3.0.tar.gz' saved [110975/110975]
+
+Building dtools.0.3.0:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make
+  make install
+configuring ocaml-dtools 0.3.0
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking that calling user is not root... ok
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for ar... ar
+checking for ocamlc... ocamlc
+OCaml version is 4.02.0+dev5-2014-04-29
+checking if ocaml compiler supports first-class modules... yes
+OCaml library path is /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+checking for ocamlopt... ocamlopt
+checking for ocamlc.opt... ocamlc.opt
+checking for ocamlopt.opt... ocamlopt.opt
+checking for ocaml... ocaml
+checking for ocamldep... ocamldep
+checking for ocamlmktop... ocamlmktop
+checking for ocamlmklib... ocamlmklib
+checking for ocamldoc... ocamldoc
+checking for ocamlbuild... ocamlbuild
+checking for camlidl... no
+checking for ocamllex... ocamllex
+checking for ocamllex.opt... ocamllex.opt
+checking for ocamlyacc... ocamlyacc
+checking for camlp4... camlp4
+versions differs from ocamlc
+checking for camlp4boot... no
+checking for camlp4o... camlp4o
+checking for camlp4of... camlp4of
+checking for camlp4oof... camlp4oof
+checking for camlp4orf... camlp4orf
+checking for camlp4prof... camlp4prof
+checking for camlp4r... camlp4r
+checking for camlp4rf... camlp4rf
+checking for ocamlfind... ocamlfind
+checking for caml/threads.h... yes
+checking for gcc option to produce PIC... -fPIC
+checking for ocaml syslog module... Not found.
+configure: creating ./config.status
+config.status: creating src/Makefile
+config.status: creating src/META
+config.status: creating Makefile
+make -C src
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+making ._bcdi/dtools.di from dtools.mli
+making ._d/dtools.d from dtools.ml
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+ocamlc.opt -c -thread dtools.mli
+ocamlc.opt -c -thread dtools.ml
+ocamlc.opt -a     -linkall         \
+				  -o dtools.cma  dtools.cmo
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+making ._ncdi/dtools.di from dtools.mli
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+ocamlopt.opt -c -thread dtools.ml
+ocamlopt.opt -a      -linkall          \
+				 -o dtools.cmxa dtools.cmx
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make -C src install
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: `dtools.cma' is up to date.
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+make[2]: `dtools.cmxa' is up to date.
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+
+Installing library with ocamlfind
+ocamlfind install  dtools META dtools.cma dtools.cmxa dtools.cmx dtools.mli dtools.cmi dtools.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dtools/dtools.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dtools/dtools.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dtools/dtools.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dtools/dtools.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dtools/dtools.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dtools/dtools.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dtools/META
+
+Installation successful.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dtools.0.3.0/src'
+Installing dtools.0.3.0.
