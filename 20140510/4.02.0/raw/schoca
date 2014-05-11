@@ -1,0 +1,87 @@
+++ opam install schoca -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install schoca
+The following actions will be performed:
+ - install schoca.0.2.3
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing schoca.0.2.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/schoca.0.2.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/schoca.0.2.3+opam.tar.gz
+--2014-05-11 02:10:07--  https://opam.ocaml.org/archives/schoca.0.2.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 40490 (40K) [application/octet-stream]
+Saving to: 'schoca.0.2.3+opam.tar.gz'
+
+     0K .......... .......... .......... .........            100%  385K=0.1s
+
+2014-05-11 02:10:08 (385 KB/s) - 'schoca.0.2.3+opam.tar.gz' saved [40490/40490]
+
+Building schoca.0.2.3:
+  make
+  make install DESTPREF=/home/opam/.opam/4.02.0dev+trunk
+for dir in lib shell examples ;\
+	do \
+	  make -C ${dir} ; \
+	done
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3/lib'
+ocamlfind ocamldep   -package camlp4  -syntax camlp4o \
+	   scmConfig.ml scmUtil.ml scmUtil.mli scmDynnum.ml scmDynnum.mli scmTypes.ml scmTypes.mli scmParser.mli scmParser.ml scmLexer.ml scmEval.ml scmSchoca.ml > .depend
+make[1]: *** No rule to make target `.depend', needed by `depend'.  Stop.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3/lib'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3/shell'
+ocamlfind ocamldep  -I ../lib -package camlp4  -syntax camlp4o \
+	   scmMain.ml > .depend
+make[1]: *** No rule to make target `.depend', needed by `depend'.  Stop.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3/shell'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3/examples'
+ocamlfind ocamldep  -I ../lib -package camlp4  -syntax camlp4o \
+	   read_ini_file.ml > .depend
+make[1]: *** No rule to make target `.depend', needed by `depend'.  Stop.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3/examples'
+make: *** [subdirs] Error 2
+[ERROR] The compilation of schoca.0.2.3 failed.
+Removing schoca.0.2.3.
+  ocamlfind remove schoca
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/schoca
+
+
+===== ERROR while installing schoca.0.2.3 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3/schoca-24-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3/schoca-24-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3/schoca-24-ad8886.err
+### stdout ###
+# ...[truncated]
+# 	   scmConfig.ml scmUtil.ml scmUtil.mli scmDynnum.ml scmDynnum.mli scmTypes.ml scmTypes.mli scmParser.mli scmParser.ml scmLexer.ml scmEval.ml scmSchoca.ml > .depend
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3/lib'
+# make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3/shell'
+# ocamlfind ocamldep  -I ../lib -package camlp4  -syntax camlp4o \
+# 	   scmMain.ml > .depend
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3/shell'
+# make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3/examples'
+# ocamlfind ocamldep  -I ../lib -package camlp4  -syntax camlp4o \
+# 	   read_ini_file.ml > .depend
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/schoca.0.2.3/examples'
+### stderr ###
+# make[1]: *** No rule to make target `.depend', needed by `depend'.  Stop.
+# make[1]: *** No rule to make target `.depend', needed by `depend'.  Stop.
+# make[1]: *** No rule to make target `.depend', needed by `depend'.  Stop.
+# make: *** [subdirs] Error 2
+
+'opam install schoca' failed.
