@@ -1,0 +1,363 @@
+++ opam install acgtk -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install acgtk
+Ubuntu srcexts:
+The following actions will be performed:
+ - install dypgen.20120619-1 [required by acgtk]
+ - install bolt.1.4 [required by acgtk]
+ - install acgtk.1.0b
+3 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing bolt.1.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/bolt.1.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/bolt.1.4+opam.tar.gz
+--2014-05-11 22:40:55--  https://opam.ocaml.org/archives/bolt.1.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 627271 (613K) [application/octet-stream]
+Saving to: 'bolt.1.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  8%  246K 2s
+    50K .......... .......... .......... .......... .......... 16%  490K 2s
+   100K .......... .......... .......... .......... .......... 24% 1.22M 1s
+   150K .......... .......... .......... .......... .......... 32%  780K 1s
+   200K .......... .......... .......... .......... .......... 40% 11.8M 1s
+   250K .......... .......... .......... .......... .......... 48%  516K 1s
+   300K .......... .......... .......... .......... .......... 57% 11.7M 0s
+   350K .......... .......... .......... .......... .......... 65% 1.45M 0s
+   400K .......... .......... .......... .......... .......... 73% 1.17M 0s
+   450K .......... .......... .......... .......... .......... 81% 1.90M 0s
+   500K .......... .......... .......... .......... .......... 89% 11.7M 0s
+   550K .......... .......... .......... .......... .......... 97% 11.5M 0s
+   600K .......... ..                                         100% 42.4M=0.6s
+
+2014-05-11 22:40:56 (982 KB/s) - 'bolt.1.4+opam.tar.gz' saved [627271/627271]
+
+Applying opam.patch.
+patching file Makefile
+Applying opam.bolt.META.patch.
+patching file META
+Building bolt.1.4:
+  ./configure -ocaml-prefix /home/opam/.opam/4.02.0dev+trunk -ocamlfind /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+  make all
+  make install
+Makefile.config successfully created
+echo 'bolt.cma' > bolt.itarget
+(which ocamlopt && echo 'bolt.cmxa' >> bolt.itarget) || true
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt
+(which ocamljava && echo 'bolt.cmjo' >> bolt.itarget) || true
+WARNINGS=FALSE PATH_OCAML_PREFIX=/home/opam/.opam/4.02.0dev+trunk ocamlbuild -classic-display -no-links bolt.cmo
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+File "_tags", line 27, characters 19-27:
+Warning: the tag "warnings" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 30, characters 27-49:
+Warning: the tag "src_library_version_ml" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamldep -modules src/library/level.mli > src/library/level.mli.depends
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/level.cmi src/library/level.mli
+ocamlfind ocamldep -modules src/library/level.ml > src/library/level.ml.depends
+ocamlfind ocamldep -modules src/library/output.mli > src/library/output.mli.depends
+ocamlfind ocamldep -modules src/library/layout.mli > src/library/layout.mli.depends
+ocamlfind ocamldep -modules src/library/event.mli > src/library/event.mli.depends
+ocamlfind ocamldep -modules src/library/name.mli > src/library/name.mli.depends
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/name.cmi src/library/name.mli
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/event.cmi src/library/event.mli
+ocamlfind ocamldep -modules src/library/signal.mli > src/library/signal.mli.depends
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/layout.cmi src/library/layout.mli
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/signal.cmi src/library/signal.mli
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/output.cmi src/library/output.mli
+ocamlfind ocamldep -modules src/library/output.ml > src/library/output.ml.depends
+ocamlfind ocamldep -modules src/library/utils.mli > src/library/utils.mli.depends
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/utils.cmi src/library/utils.mli
+ocamlfind ocamldep -modules src/library/signal.ml > src/library/signal.ml.depends
+ocamlfind ocamldep -modules src/library/logger.mli > src/library/logger.mli.depends
+ocamlfind ocamldep -modules src/library/mode.mli > src/library/mode.mli.depends
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/mode.cmi src/library/mode.mli
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/logger.cmi src/library/logger.mli
+ocamlfind ocamldep -modules src/library/logger.ml > src/library/logger.ml.depends
+ocamlfind ocamldep -modules src/library/configuration.mli > src/library/configuration.mli.depends
+ocamlfind ocamldep -modules src/library/configurationNew.mli > src/library/configurationNew.mli.depends
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/configuration.cmi src/library/configuration.mli
+ocamlfind ocamldep -modules src/library/configurationOld.mli > src/library/configurationOld.mli.depends
+ocamlfind ocamldep -modules src/library/filter.mli > src/library/filter.mli.depends
+ocamlfind ocamldep -modules src/library/tree.mli > src/library/tree.mli.depends
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/filter.cmi src/library/filter.mli
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/configurationNew.cmi src/library/configurationNew.mli
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/configurationOld.cmi src/library/configurationOld.mli
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/tree.cmi src/library/tree.mli
+ocamlfind ocamldep -modules src/library/configurationNew.ml > src/library/configurationNew.ml.depends
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamllex.opt -q src/library/configLexer.mll
+ocamlfind ocamldep -modules src/library/configLexer.ml > src/library/configLexer.ml.depends
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlyacc src/library/configParser.mly
+ocamlfind ocamldep -modules src/library/configParser.mli > src/library/configParser.mli.depends
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/configParser.cmi src/library/configParser.mli
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/configLexer.cmo src/library/configLexer.ml
+ocamlfind ocamldep -modules src/library/configurationOld.ml > src/library/configurationOld.ml.depends
+ocamlfind ocamldep -modules src/library/utils.ml > src/library/utils.ml.depends
+cp /tmp/version47b894.ml src/library/version.ml
+ocamlfind ocamldep -modules src/library/version.mli > src/library/version.mli.depends
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/version.cmi src/library/version.mli
+ocamlfind ocamldep -modules src/library/version.ml > src/library/version.ml.depends
+ocamlfind ocamldep -modules src/library/configuration.ml > src/library/configuration.ml.depends
+ocamlfind ocamldep -modules src/library/mode.ml > src/library/mode.ml.depends
+ocamlfind ocamldep -modules src/library/event.ml > src/library/event.ml.depends
+ocamlfind ocamldep -modules src/library/name.ml > src/library/name.ml.depends
+ocamlfind ocamldep -modules src/library/filter.ml > src/library/filter.ml.depends
+ocamlfind ocamldep -modules src/library/layout.ml > src/library/layout.ml.depends
+ocamlfind ocamldep -modules src/library/configParser.ml > src/library/configParser.ml.depends
+ocamlfind ocamldep -modules src/library/tree.ml > src/library/tree.ml.depends
+ocamlfind ocamldep -modules src/support/log4j.mli > src/support/log4j.mli.depends
+ocamlfind ocamlc -c -I src/support -I src -I src/threads -I src/library -I src/syntax -o src/support/log4j.cmi src/support/log4j.mli
+ocamlfind ocamldep -modules src/support/log4j.ml > src/support/log4j.ml.depends
+ocamlfind ocamldep -modules src/support/daikon.mli > src/support/daikon.mli.depends
+ocamlfind ocamlc -c -I src/support -I src -I src/threads -I src/library -I src/syntax -o src/support/daikon.cmi src/support/daikon.mli
+ocamlfind ocamldep -modules src/support/daikon.ml > src/support/daikon.ml.depends
+ocamlfind ocamldep -modules src/support/paje.mli > src/support/paje.mli.depends
+ocamlfind ocamlc -c -I src/support -I src -I src/threads -I src/library -I src/syntax -o src/support/paje.cmi src/support/paje.mli
+ocamlfind ocamldep -modules src/support/paje.ml > src/support/paje.ml.depends
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/level.cmo src/library/level.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/output.cmo src/library/output.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/signal.cmo src/library/signal.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/logger.cmo src/library/logger.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/configurationNew.cmo src/library/configurationNew.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/configurationOld.cmo src/library/configurationOld.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/utils.cmo src/library/utils.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/version.cmo src/library/version.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/configuration.cmo src/library/configuration.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/mode.cmo src/library/mode.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/event.cmo src/library/event.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/name.cmo src/library/name.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/filter.cmo src/library/filter.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/layout.cmo src/library/layout.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/configParser.cmo src/library/configParser.ml
+ocamlfind ocamlc -c -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/tree.cmo src/library/tree.ml
+ocamlfind ocamlc -c -I src/support -I src -I src/threads -I src/library -I src/syntax -o src/support/log4j.cmo src/support/log4j.ml
+ocamlfind ocamlc -c -I src/support -I src -I src/threads -I src/library -I src/syntax -o src/support/daikon.cmo src/support/daikon.ml
++ ocamlfind ocamlc -c -I src/support -I src -I src/threads -I src/library -I src/syntax -o src/support/daikon.cmo src/support/daikon.ml
+File "src/support/daikon.ml", line 91, characters 17-30:
+Warning 3: deprecated feature: String.create
+File "src/support/daikon.ml", line 141, characters 6-25:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlc -c -I src/support -I src -I src/threads -I src/library -I src/syntax -o src/support/paje.cmo src/support/paje.ml
+ocamlfind ocamlc -pack src/library/level.cmo src/library/utils.cmo src/library/name.cmo src/library/event.cmo src/library/version.cmo src/library/layout.cmo src/library/signal.cmo src/library/output.cmo src/library/configuration.cmo src/library/configParser.cmo src/library/configLexer.cmo src/library/configurationNew.cmo src/library/configurationOld.cmo src/library/filter.cmo src/library/mode.cmo src/library/tree.cmo src/library/logger.cmo src/support/log4j.cmo src/support/daikon.cmo src/support/paje.cmo -o bolt.cmo
+WARNINGS=FALSE PATH_OCAML_PREFIX=/home/opam/.opam/4.02.0dev+trunk ocamlbuild -classic-display -no-links bolt.cmx
+File "_tags", line 27, characters 19-27:
+Warning: the tag "warnings" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 30, characters 27-49:
+Warning: the tag "src_library_version_ml" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+cp /tmp/version323d90.ml src/library/version.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/level.cmx src/library/level.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/utils.cmx src/library/utils.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/name.cmx src/library/name.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/event.cmx src/library/event.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/version.cmx src/library/version.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/layout.cmx src/library/layout.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/signal.cmx src/library/signal.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/configuration.cmx src/library/configuration.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/configParser.cmx src/library/configParser.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/configLexer.cmx src/library/configLexer.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/output.cmx src/library/output.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/filter.cmx src/library/filter.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/mode.cmx src/library/mode.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/configurationNew.cmx src/library/configurationNew.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/configurationOld.cmx src/library/configurationOld.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/tree.cmx src/library/tree.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/library -I src -I src/support -I src/threads -I src/syntax -o src/library/logger.cmx src/library/logger.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/support -I src -I src/threads -I src/library -I src/syntax -o src/support/log4j.cmx src/support/log4j.ml
+ocamlfind ocamlopt -c -for-pack Bolt -I src/support -I src -I src/threads -I src/library -I src/syntax -o src/support/daikon.cmx src/support/daikon.ml
++ ocamlfind ocamlopt -c -for-pack Bolt -I src/support -I src -I src/threads -I src/library -I src/syntax -o src/support/daikon.cmx src/support/daikon.ml
+File "src/support/daikon.ml", line 91, characters 17-30:
+Warning 3: deprecated feature: String.create
+File "src/support/daikon.ml", line 141, characters 6-25:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt -c -for-pack Bolt -I src/support -I src -I src/threads -I src/library -I src/syntax -o src/support/paje.cmx src/support/paje.ml
+touch bolt.mli  ; if  ocamlfind ocamlopt -pack -I src/library -I src/support src/library/level.cmx src/library/utils.cmx src/library/name.cmx src/library/event.cmx src/library/version.cmx src/library/layout.cmx src/library/signal.cmx src/library/output.cmx src/library/configuration.cmx src/library/configParser.cmx src/library/configLexer.cmx src/library/configurationNew.cmx src/library/configurationOld.cmx src/library/filter.cmx src/library/mode.cmx src/library/tree.cmx src/library/logger.cmx src/support/log4j.cmx src/support/daikon.cmx src/support/paje.cmx -o bolt.cmx  ; then  rm -f bolt.mli  ; else  rm -f bolt.mli  ; exit 1; fi
+WARNINGS=FALSE PATH_OCAML_PREFIX=/home/opam/.opam/4.02.0dev+trunk ocamlbuild -classic-display -no-links bolt.otarget
+File "_tags", line 27, characters 19-27:
+Warning: the tag "warnings" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 30, characters 27-49:
+Warning: the tag "src_library_version_ml" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+cp /tmp/versiona67748.ml src/library/version.ml
+ocamlfind ocamlc -a bolt.cmo -o bolt.cma
+ocamlfind ocamlopt -a bolt.cmx -o bolt.cmxa
+WARNINGS=FALSE PATH_OCAML_PREFIX=/home/opam/.opam/4.02.0dev+trunk ocamlbuild -classic-display -no-links bolt_pp.cmo
+File "_tags", line 27, characters 19-27:
+Warning: the tag "warnings" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+File "_tags", line 30, characters 27-49:
+Warning: the tag "src_library_version_ml" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+ocamlfind ocamldep -pp /home/opam/.opam/4.02.0dev+trunk/bin/camlp4of -modules src/syntax/bolt_pp.ml > src/syntax/bolt_pp.ml.depends
++ ocamlfind ocamldep -pp /home/opam/.opam/4.02.0dev+trunk/bin/camlp4of -modules src/syntax/bolt_pp.ml > src/syntax/bolt_pp.ml.depends
+sh: 1: /home/opam/.opam/4.02.0dev+trunk/bin/camlp4of: not found
+File "src/syntax/bolt_pp.ml", line 1:
+Error: Error while running external preprocessor
+Command line: /home/opam/.opam/4.02.0dev+trunk/bin/camlp4of 'src/syntax/bolt_pp.ml' > /tmp/ocamlppe595a1
+
+Command exited with code 2.
+make: *** [all] Error 10
+[ERROR] The compilation of bolt.1.4 failed.
+Removing bolt.1.4.
+  ocamlfind remove bolt
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/bolt
+
+=-=-= Installing dypgen.20120619-1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/dypgen.20120619-1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/dypgen.20120619-1+opam.tar.gz
+--2014-05-11 22:41:02--  https://opam.ocaml.org/archives/dypgen.20120619-1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 474165 (463K) [application/octet-stream]
+Saving to: 'dypgen.20120619-1+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 10%  250K 2s
+    50K .......... .......... .......... .......... .......... 21%  498K 1s
+   100K .......... .......... .......... .......... .......... 32% 1.24M 1s
+   150K .......... .......... .......... .......... .......... 43%  792K 1s
+   200K .......... .......... .......... .......... .......... 53% 11.6M 0s
+   250K .......... .......... .......... .......... .......... 64%  523K 0s
+   300K .......... .......... .......... .......... .......... 75% 11.8M 0s
+   350K .......... .......... .......... .......... .......... 86% 1.49M 0s
+   400K .......... .......... .......... .......... .......... 97%  803K 0s
+   450K .......... ...                                        100%  148M=0.6s
+
+2014-05-11 22:41:03 (769 KB/s) - 'dypgen.20120619-1+opam.tar.gz' saved [474165/474165]
+
+Applying install-bsd-compatible.patch.
+patching file Makefile
+patching file dyplib/Makefile
+Building dypgen.20120619-1:
+  make
+  make install DYPGENLIBDIR=/home/opam/.opam/4.02.0dev+trunk/lib BINDIR=/home/opam/.opam/4.02.0dev+trunk/bin MANDIR=/home/opam/.opam/4.02.0dev+trunk/man/man1
+cd dyplib; make
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dypgen.20120619-1/dyplib'
+ocamlc  -c dyp.mli
+ocamlc  -c priority_by_relation.ml
+ocamlc  -c automaton.ml
+ocamlc  -c dyplex.ml
+ocamlc  -c dyp.ml
+ocamlc -a -o dyp.cma priority_by_relation.cmo automaton.cmo dyplex.cmo dyp.cmo
+ocamlopt  -c priority_by_relation.ml
+ocamlopt  -c automaton.ml
+ocamlopt  -c dyplex.ml
+ocamlopt  -c dyp.ml
+ocamlopt -a -o dyp.cmxa priority_by_relation.cmx automaton.cmx dyplex.cmx dyp.cmx
+ocamlopt  -p -c -o priority_by_relation.p.cmx priority_by_relation.ml
+ocamlopt  -p -c -o automaton.p.cmx automaton.ml
+ocamlopt  -p -c -o dyplex.p.cmx dyplex.ml
+ocamlopt  -p -c -o dyp.p.cmx dyp.ml
+ocamlopt -a -o dyp.p.cmxa priority_by_relation.p.cmx automaton.p.cmx dyplex.p.cmx dyp.p.cmx
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dypgen.20120619-1/dyplib'
+cd dypgen; make
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dypgen.20120619-1/dypgen'
+ocamlc -I ../dyplib -c parse_tree.mli
+ocamlc -I ../dyplib -c dypgen_parser.mli
+ocamlc -I ../dyplib -c argument.ml
+ocamllex extract_type.mll
+360 states, 11307 transitions, table size 47388 bytes
+22672 additional bytes used for bindings
+ocamlc -I ../dyplib -c extract_type.ml
+File "extract_type.mll", line 126, characters 6-29:
+Warning 3: deprecated feature: String.set
+File "extract_type.mll", line 140, characters 4-22:
+Warning 3: deprecated feature: String.set
+File "extract_type.mll", line 140, characters 24-44:
+Warning 3: deprecated feature: String.set
+File "extract_type.mll", line 144, characters 4-24:
+Warning 3: deprecated feature: String.set
+File "extract_type.mll", line 167, characters 4-15:
+Warning 3: deprecated feature: String.fill
+ocamlc -I ../dyplib -c dypgen_parser.ml
+ocamllex dypgen_lexer.mll
+195 states, 1556 transitions, table size 7394 bytes
+2280 additional bytes used for bindings
+ocamlc -I ../dyplib -c dypgen_lexer.ml
+File "dypgen_lexer.mll", line 59, characters 38-48:
+Warning 3: deprecated feature: String.set
+ocamllex insert_linenum.mll
+42 states, 273 transitions, table size 1344 bytes
+ocamlc -I ../dyplib -c insert_linenum.ml
+ocamlc -I ../dyplib -c dypgen.ml
+ocamlc -I ../dyplib -o dypgen dyp.cma argument.cmo extract_type.cmo dypgen_parser.cmo dypgen_lexer.cmo insert_linenum.cmo dypgen.cmo
+ocamlopt -I ../dyplib -c argument.ml
+ocamlopt -I ../dyplib -c extract_type.ml
+File "extract_type.mll", line 126, characters 6-29:
+Warning 3: deprecated feature: String.set
+File "extract_type.mll", line 140, characters 4-22:
+Warning 3: deprecated feature: String.set
+File "extract_type.mll", line 140, characters 24-44:
+Warning 3: deprecated feature: String.set
+File "extract_type.mll", line 144, characters 4-24:
+Warning 3: deprecated feature: String.set
+File "extract_type.mll", line 167, characters 4-15:
+Warning 3: deprecated feature: String.fill
+ocamlopt -I ../dyplib -c dypgen_parser.ml
+ocamlopt -I ../dyplib -c dypgen_lexer.ml
+File "dypgen_lexer.mll", line 59, characters 38-48:
+Warning 3: deprecated feature: String.set
+ocamlopt -I ../dyplib -c insert_linenum.ml
+ocamlopt -I ../dyplib -c dypgen.ml
+ocamlopt -I ../dyplib -o dypgen.opt dyp.cmxa argument.cmx extract_type.cmx dypgen_parser.cmx dypgen_lexer.cmx insert_linenum.cmx dypgen.cmx
+rm dypgen_lexer.ml extract_type.ml insert_linenum.ml
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dypgen.20120619-1/dypgen'
+mkdir -p /home/opam/.opam/4.02.0dev+trunk/bin
+cp dypgen/dypgen.opt /home/opam/.opam/4.02.0dev+trunk/bin
+install -d /home/opam/.opam/4.02.0dev+trunk/bin
+install -m 755 dypgen/dypgen /home/opam/.opam/4.02.0dev+trunk/bin
+install -m 755 dyp2gram.pl /home/opam/.opam/4.02.0dev+trunk/bin/dyp2gram
+install -d /home/opam/.opam/4.02.0dev+trunk/man/man1
+install -m 644 doc/dypgen.1 /home/opam/.opam/4.02.0dev+trunk/man/man1/dypgen.1
+install -m 644 doc/dypgen.1 /home/opam/.opam/4.02.0dev+trunk/man/man1/dypgen.opt.1
+install -m 644 doc/dypgen.1 /home/opam/.opam/4.02.0dev+trunk/man/man1/dyp2gram.1
+cd dyplib; make install
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/dypgen.20120619-1/dyplib'
+ocamlfind remove -destdir /home/opam/.opam/4.02.0dev+trunk/lib dyp
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/dyp
+install -d /home/opam/.opam/4.02.0dev+trunk/lib
+ocamlfind install -destdir /home/opam/.opam/4.02.0dev+trunk/lib dyp META dyp.cma dyp.cmxa dyp.a dyp.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dyp/dyp.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dyp/dyp.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dyp/dyp.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dyp/dyp.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/dyp/META
+chmod a-x /home/opam/.opam/4.02.0dev+trunk/lib/dyp/META #why is this needed ?
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/dypgen.20120619-1/dyplib'
+Installing dypgen.20120619-1.
+
+[ERROR] Due to some errors while processing bolt.1.4, the following actions will NOT proceed:
+ - install acgtk.1.0b
+
+===== ERROR while installing bolt.1.4 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/bolt.1.4
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/bolt.1.4/bolt-24-60459a.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/bolt.1.4/bolt-24-60459a.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/bolt.1.4/bolt-24-60459a.err
+### stdout ###
+# ...[truncated]
+# File "_tags", line 30, characters 27-49:
+# Warning: the tag "src_library_version_ml" is not used in any flag declaration, so it will have no effect; it may be a typo. Otherwise use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# ocamlfind ocamldep -pp /home/opam/.opam/4.02.0dev+trunk/bin/camlp4of -modules src/syntax/bolt_pp.ml > src/syntax/bolt_pp.ml.depends
+# + ocamlfind ocamldep -pp /home/opam/.opam/4.02.0dev+trunk/bin/camlp4of -modules src/syntax/bolt_pp.ml > src/syntax/bolt_pp.ml.depends
+# sh: 1: /home/opam/.opam/4.02.0dev+trunk/bin/camlp4of: not found
+# File "src/syntax/bolt_pp.ml", line 1:
+# Error: Error while running external preprocessor
+# Command line: /home/opam/.opam/4.02.0dev+trunk/bin/camlp4of 'src/syntax/bolt_pp.ml' > /tmp/ocamlppe595a1
+# 
+# Command exited with code 2.
+### stderr ###
+# make: *** [all] Error 10
+
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+trunk/backup/state-20140411224048.export"
+'opam install acgtk' failed.
