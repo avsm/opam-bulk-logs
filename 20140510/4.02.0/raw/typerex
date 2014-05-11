@@ -1,0 +1,15 @@
+++ opam install typerex -e ubuntu
+[ERROR] "typerex" is not available for your compiler or your OS.
+'opam install typerex -e ubuntu' failed.
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install typerex
+[ERROR] "typerex" is not available for your compiler or your OS.
+'opam install typerex' failed.
