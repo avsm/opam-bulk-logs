@@ -1,0 +1,524 @@
+++ opam install iocaml -e ubuntu
+'opam install iocaml -e ubuntu' failed.
++ depext='Your request cannot be satisfied. The reasons are:
+       
+The dependency typerex.1.99.4-beta of package ocp-build.1.99.4-beta is not available for your compiler or your OS.
+ (and) 
+The dependency typerex.1.99.5-beta of package ocp-build.1.99.5-beta is not available for your compiler or your OS.
+ (and) 
+The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS.
+This is due to the following unmet dependencies(s):
+       ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.'
++ echo Ubuntu depexts: Your request cannot be satisfied. The reasons are: The dependency typerex.1.99.4-beta of package ocp-build.1.99.4-beta is not available for your compiler or your OS. '(and)' The dependency typerex.1.99.5-beta of package ocp-build.1.99.5-beta is not available for your compiler or your OS. '(and)' The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS. This is due to the following unmet 'dependencies(s):' ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
++ '[' 'Your request cannot be satisfied. The reasons are:
+       
+The dependency typerex.1.99.4-beta of package ocp-build.1.99.4-beta is not available for your compiler or your OS.
+ (and) 
+The dependency typerex.1.99.5-beta of package ocp-build.1.99.5-beta is not available for your compiler or your OS.
+ (and) 
+The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS.
+This is due to the following unmet dependencies(s):
+       ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: Your request cannot be satisfied. The reasons are: The dependency typerex.1.99.4-beta of package ocp-build.1.99.4-beta is not available for your compiler or your OS. (and) The dependency typerex.1.99.5-beta of package ocp-build.1.99.5-beta is not available for your compiler or your OS. (and) The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS. This is due to the following unmet dependencies(s): ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1. (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1. (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1. (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1. (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1. (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1. (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
++ sudo apt-get install -qq -y Your request cannot be satisfied. The reasons are: The dependency typerex.1.99.4-beta of package ocp-build.1.99.4-beta is not available for your compiler or your OS. '(and)' The dependency typerex.1.99.5-beta of package ocp-build.1.99.5-beta is not available for your compiler or your OS. '(and)' The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS. This is due to the following unmet 'dependencies(s):' ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2. '(or)' ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+E: Unable to locate package Your
+E: Unable to locate package request
+E: Unable to locate package cannot
+E: Unable to locate package be
+E: Unable to locate package satisfied.
+E: Couldn't find any package by regex 'satisfied.'
+E: Unable to locate package reasons
+E: Unable to locate package are
+E: Unable to locate package dependency
+E: Unable to locate package typerex.1.99.4-beta
+E: Couldn't find any package by regex 'typerex.1.99.4-beta'
+E: Unable to locate package of
+E: Unable to locate package package
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package is
+E: Unable to locate package not
+E: Unable to locate package available
+E: Unable to locate package for
+E: Unable to locate package your
+E: Unable to locate package compiler
+E: Unable to locate package or
+E: Unable to locate package your
+E: Unable to locate package (and)
+E: Unable to locate package dependency
+E: Unable to locate package typerex.1.99.5-beta
+E: Couldn't find any package by regex 'typerex.1.99.5-beta'
+E: Unable to locate package of
+E: Unable to locate package package
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package is
+E: Unable to locate package not
+E: Unable to locate package available
+E: Unable to locate package for
+E: Unable to locate package your
+E: Unable to locate package compiler
+E: Unable to locate package or
+E: Unable to locate package your
+E: Unable to locate package (and)
+E: Unable to locate package dependency
+E: Unable to locate package typerex.1.99.6-beta
+E: Couldn't find any package by regex 'typerex.1.99.6-beta'
+E: Unable to locate package of
+E: Unable to locate package package
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package is
+E: Unable to locate package not
+E: Unable to locate package available
+E: Unable to locate package for
+E: Unable to locate package your
+E: Unable to locate package compiler
+E: Unable to locate package or
+E: Unable to locate package your
+E: Unable to locate package This
+E: Unable to locate package is
+E: Unable to locate package due
+E: Unable to locate package to
+E: Unable to locate package following
+E: Unable to locate package unmet
+E: Unable to locate package dependencies(s)
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1
+E: Couldn't find any package by regex 'ocp-index.1.0.1'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.3
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.3'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.3.
+E: Couldn't find any package by regex 'iocaml.0.4.3.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1
+E: Couldn't find any package by regex 'ocp-index.1.0.1'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.3
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.3'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.3.
+E: Couldn't find any package by regex 'iocaml.0.4.3.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1
+E: Couldn't find any package by regex 'ocp-index.1.0.1'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.3
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.3'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.3.
+E: Couldn't find any package by regex 'iocaml.0.4.3.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2
+E: Couldn't find any package by regex 'ocp-index.1.0.2'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.3
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.3'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.3.
+E: Couldn't find any package by regex 'iocaml.0.4.3.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2
+E: Couldn't find any package by regex 'ocp-index.1.0.2'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.3
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.3'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.3.
+E: Couldn't find any package by regex 'iocaml.0.4.3.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2
+E: Couldn't find any package by regex 'ocp-index.1.0.2'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.3
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.3'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.3.
+E: Couldn't find any package by regex 'iocaml.0.4.3.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1
+E: Couldn't find any package by regex 'ocp-index.1.0.1'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.3.1.
+E: Couldn't find any package by regex 'iocaml.0.3.1.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1
+E: Couldn't find any package by regex 'ocp-index.1.0.1'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.3.1.
+E: Couldn't find any package by regex 'iocaml.0.3.1.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1
+E: Couldn't find any package by regex 'ocp-index.1.0.1'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.3.1.
+E: Couldn't find any package by regex 'iocaml.0.3.1.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2
+E: Couldn't find any package by regex 'ocp-index.1.0.2'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.3.1.
+E: Couldn't find any package by regex 'iocaml.0.3.1.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2
+E: Couldn't find any package by regex 'ocp-index.1.0.2'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.3.1.
+E: Couldn't find any package by regex 'iocaml.0.3.1.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2
+E: Couldn't find any package by regex 'ocp-index.1.0.2'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.3.1.
+E: Couldn't find any package by regex 'iocaml.0.3.1.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1
+E: Couldn't find any package by regex 'ocp-index.1.0.1'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.0
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.0'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.2.
+E: Couldn't find any package by regex 'iocaml.0.4.2.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1
+E: Couldn't find any package by regex 'ocp-index.1.0.1'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.0
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.0'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.2.
+E: Couldn't find any package by regex 'iocaml.0.4.2.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1
+E: Couldn't find any package by regex 'ocp-index.1.0.1'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.0
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.0'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.2.
+E: Couldn't find any package by regex 'iocaml.0.4.2.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2
+E: Couldn't find any package by regex 'ocp-index.1.0.2'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.0
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.0'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.2.
+E: Couldn't find any package by regex 'iocaml.0.4.2.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2
+E: Couldn't find any package by regex 'ocp-index.1.0.2'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.0
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.0'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.2.
+E: Couldn't find any package by regex 'iocaml.0.4.2.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2
+E: Couldn't find any package by regex 'ocp-index.1.0.2'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.0
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.0'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.2.
+E: Couldn't find any package by regex 'iocaml.0.4.2.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1
+E: Couldn't find any package by regex 'ocp-index.1.0.1'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.3
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.3'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.2.
+E: Couldn't find any package by regex 'iocaml.0.4.2.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1
+E: Couldn't find any package by regex 'ocp-index.1.0.1'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.3
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.3'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.2.
+E: Couldn't find any package by regex 'iocaml.0.4.2.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.1
+E: Couldn't find any package by regex 'ocp-index.1.0.1'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.3
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.3'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.2.
+E: Couldn't find any package by regex 'iocaml.0.4.2.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.4-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.4-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2
+E: Couldn't find any package by regex 'ocp-index.1.0.2'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.3
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.3'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.2.
+E: Couldn't find any package by regex 'iocaml.0.4.2.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.5-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.5-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2
+E: Couldn't find any package by regex 'ocp-index.1.0.2'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.3
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.3'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.2.
+E: Couldn't find any package by regex 'iocaml.0.4.2.'
+E: Unable to locate package (or)
+E: Unable to locate package ocp-build.1.99.6-beta
+E: Couldn't find any package by regex 'ocp-build.1.99.6-beta'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package ocp-index.1.0.2
+E: Couldn't find any package by regex 'ocp-index.1.0.2'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml-kernel.0.4.3
+E: Couldn't find any package by regex 'iocaml-kernel.0.4.3'
+E: Unable to locate package needed
+E: Unable to locate package by
+E: Unable to locate package iocaml.0.4.2.
+E: Couldn't find any package by regex 'iocaml.0.4.2.'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam switch 4.02.0dev+trunk
+# To complete the configuration of OPAM, you need to run:
+eval `opam config env`
+++ opam config env
++ eval 'CAML_LD_LIBRARY_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/stublibs";' export 'CAML_LD_LIBRARY_PATH;' 'PERL5LIB="/home/opam/.opam/4.02.0dev+trunk/lib/perl5";' export 'PERL5LIB;' 'OCAML_TOPLEVEL_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/toplevel";' export 'OCAML_TOPLEVEL_PATH;' 'MANPATH="/home/opam/.opam/4.02.0dev+trunk/man:";' export 'MANPATH;' 'PATH="/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";' export 'PATH;'
+++ CAML_LD_LIBRARY_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/stublibs
+++ export CAML_LD_LIBRARY_PATH
+++ PERL5LIB=/home/opam/.opam/4.02.0dev+trunk/lib/perl5
+++ export PERL5LIB
+++ OCAML_TOPLEVEL_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/toplevel
+++ export OCAML_TOPLEVEL_PATH
+++ MANPATH=/home/opam/.opam/4.02.0dev+trunk/man:
+++ export MANPATH
+++ PATH=/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
++ ocamlc -v
+The OCaml compiler, version 4.02.0+dev5-2014-04-29
+Standard library directory: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
++ opam install iocaml
+Your request cannot be satisfied. The reasons are:
+       
+The dependency typerex.1.99.4-beta of package ocp-build.1.99.4-beta is not available for your compiler or your OS.
+ (and) 
+The dependency typerex.1.99.5-beta of package ocp-build.1.99.5-beta is not available for your compiler or your OS.
+ (and) 
+The dependency typerex.1.99.6-beta of package ocp-build.1.99.6-beta is not available for your compiler or your OS.
+This is due to the following unmet dependencies(s):
+       ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.3.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml.0.3.1.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.0 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.1 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.4-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.5-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+  (or) ocp-build.1.99.6-beta needed by ocp-index.1.0.2 needed by iocaml-kernel.0.4.3 needed by iocaml.0.4.2.
+'opam install iocaml' failed.
