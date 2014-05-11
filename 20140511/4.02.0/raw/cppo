@@ -1,0 +1,56 @@
+++ opam install cppo -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam switch 4.02.0dev+trunk
+# To complete the configuration of OPAM, you need to run:
+eval `opam config env`
+++ opam config env
++ eval 'CAML_LD_LIBRARY_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/stublibs";' export 'CAML_LD_LIBRARY_PATH;' 'PERL5LIB="/home/opam/.opam/4.02.0dev+trunk/lib/perl5";' export 'PERL5LIB;' 'OCAML_TOPLEVEL_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/toplevel";' export 'OCAML_TOPLEVEL_PATH;' 'MANPATH="/home/opam/.opam/4.02.0dev+trunk/man:";' export 'MANPATH;' 'PATH="/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";' export 'PATH;'
+++ CAML_LD_LIBRARY_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/stublibs
+++ export CAML_LD_LIBRARY_PATH
+++ PERL5LIB=/home/opam/.opam/4.02.0dev+trunk/lib/perl5
+++ export PERL5LIB
+++ OCAML_TOPLEVEL_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/toplevel
+++ export OCAML_TOPLEVEL_PATH
+++ MANPATH=/home/opam/.opam/4.02.0dev+trunk/man:
+++ export MANPATH
+++ PATH=/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
++ ocamlc -v
+The OCaml compiler, version 4.02.0+dev5-2014-04-29
+Standard library directory: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
++ opam install cppo
+The following actions will be performed:
+ - install cppo.0.9.3
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing cppo.0.9.3 =-=-=
+cppo.0.9.3 Downloading http://mjambon.com/releases/cppo/cppo-0.9.3.tar.gz
+--2014-05-11 16:20:16--  http://mjambon.com/releases/cppo/cppo-0.9.3.tar.gz
+Resolving mjambon.com (mjambon.com)... 173.246.103.93
+Connecting to mjambon.com (mjambon.com)|173.246.103.93|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20393 (20K) [application/octet-stream]
+Saving to: 'cppo-0.9.3.tar.gz'
+
+     0K .......... .........                                  100%  103K=0.2s
+
+2014-05-11 16:20:17 (103 KB/s) - 'cppo-0.9.3.tar.gz' saved [20393/20393]
+
+Copying ~/.opam/repo/default/packages/cppo/cppo.0.9.3/files/cppo.install to ~/.opam/4.02.0dev+trunk/build/cppo.0.9.3/
+Building cppo.0.9.3:
+  make
+echo 'let cppo_version = "0.9.3"' > cppo_version.ml
+ocamlyacc cppo_parser.mly
+ocamllex cppo_lexer.mll
+354 states, 13186 transitions, table size 54868 bytes
+3462 additional bytes used for bindings
+ocamlopt -o cppo -dtypes unix.cmxa cppo_version.ml cppo_types.ml cppo_parser.mli cppo_parser.ml cppo_lexer.ml cppo_command.ml cppo_eval.ml cppo_main.ml
+Installing cppo.0.9.3.
