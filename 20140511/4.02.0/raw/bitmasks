@@ -1,0 +1,131 @@
+++ opam install bitmasks -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam switch 4.02.0dev+trunk
+# To complete the configuration of OPAM, you need to run:
+eval `opam config env`
+++ opam config env
++ eval 'CAML_LD_LIBRARY_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/stublibs";' export 'CAML_LD_LIBRARY_PATH;' 'PERL5LIB="/home/opam/.opam/4.02.0dev+trunk/lib/perl5";' export 'PERL5LIB;' 'OCAML_TOPLEVEL_PATH="/home/opam/.opam/4.02.0dev+trunk/lib/toplevel";' export 'OCAML_TOPLEVEL_PATH;' 'MANPATH="/home/opam/.opam/4.02.0dev+trunk/man:";' export 'MANPATH;' 'PATH="/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";' export 'PATH;'
+++ CAML_LD_LIBRARY_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/stublibs
+++ export CAML_LD_LIBRARY_PATH
+++ PERL5LIB=/home/opam/.opam/4.02.0dev+trunk/lib/perl5
+++ export PERL5LIB
+++ OCAML_TOPLEVEL_PATH=/home/opam/.opam/4.02.0dev+trunk/lib/toplevel
+++ export OCAML_TOPLEVEL_PATH
+++ MANPATH=/home/opam/.opam/4.02.0dev+trunk/man:
+++ export MANPATH
+++ PATH=/home/opam/.opam/4.02.0dev+trunk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export PATH
++ ocamlc -v
+The OCaml compiler, version 4.02.0+dev5-2014-04-29
+Standard library directory: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
++ opam install bitmasks
+The following actions will be performed:
+ - install bitmasks.1.0.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing bitmasks.1.0.0 =-=-=
+bitmasks.1.0.0 Downloading https://forge.ocamlcore.org/frs/download.php/1386/bitmasks-1.0.0.tar.gz
+--2014-05-11 14:21:17--  https://forge.ocamlcore.org/frs/download.php/1386/bitmasks-1.0.0.tar.gz
+Resolving forge.ocamlcore.org (forge.ocamlcore.org)... 87.98.154.45
+Connecting to forge.ocamlcore.org (forge.ocamlcore.org)|87.98.154.45|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 50086 (49K) [application/binary]
+Saving to: 'bitmasks-1.0.0.tar.gz'
+
+     0K .......... .......... .......... .......... ........  100% 1.46M=0.03s
+
+2014-05-11 14:21:17 (1.46 MB/s) - 'bitmasks-1.0.0.tar.gz' saved [50086/50086]
+
+Building bitmasks.1.0.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+File "setup.ml", line 247, characters 8-26:
+Warning 3: deprecated feature: String.set
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+ocamlc: .............................................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlopt: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlbuild: .......................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+Package name: ........................................ bitmasks
+Package version: ..................................... 1.0.0
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.02.0
+standard_library_default: ............................ /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library: .................................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_runtime: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/4.02.0dev+trunk
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+ocamldoc: ............................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamldoc
+
+File "setup.ml", line 247, characters 8-26:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamldep -modules BitMaskSet.mli > BitMaskSet.mli.depends
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -c -g -o BitMaskSet.cmi BitMaskSet.mli
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamldep -modules BitMaskSet.ml > BitMaskSet.ml.depends
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -c -g -o BitMaskSet.cmo BitMaskSet.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc -a BitMaskSet.cmo -o bitmasks.cma
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlopt -c -g -o BitMaskSet.cmx BitMaskSet.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlopt -a BitMaskSet.cmx -o bitmasks.cmxa
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlopt -shared bitmasks.cmxa BitMaskSet.cmx -o bitmasks.cmxs
+File "setup.ml", line 247, characters 8-26:
+Warning 3: deprecated feature: String.set
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bitmasks/BitMaskSet.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bitmasks/bitmasks.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bitmasks/bitmasks.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bitmasks/bitmasks.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bitmasks/bitmasks.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bitmasks/BitMaskSet.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bitmasks/BitMaskSet.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/bitmasks/META
+Installing bitmasks.1.0.0.
