@@ -866,4 +866,7 @@ Installing menhir.20130912.
 default    Downloading https://opam.ocaml.org/archives/res.4.0.4+opam.tar.gz
 Downloading https://opam.ocaml.org/archives/res.4.0.4+opam.tar.gz
 --2014-05-12 22:37:58--  https://opam.ocaml.org/archives/res.4.0.4+opam.tar.gz
-Resolving opam.ocaml.org (opam.ocaml.org)... 
+Resolving opam.ocaml.org (opam.ocaml.org)... failed: Name or service not known.
+wget: unable to resolve host address 'opam.ocaml.org'
+
+=-=-= Installing cfg.2.0.3 =-=-=

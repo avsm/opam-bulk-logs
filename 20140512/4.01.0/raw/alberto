@@ -111,3 +111,100 @@ Installed /home/opam/.opam/system/lib/binary/META
 Installing binary.0.1.
 
 =-=-= Installing alberto.0.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/alberto.0.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/alberto.0.1+opam.tar.gz
+--2014-05-12 22:38:03--  https://opam.ocaml.org/archives/alberto.0.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 46132 (45K) [application/octet-stream]
+Saving to: 'alberto.0.1+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .....     100%  439K=0.1s
+
+2014-05-12 22:38:04 (439 KB/s) - 'alberto.0.1+opam.tar.gz' saved [46132/46132]
+
+Building alberto.0.1:
+  ./configure --prefix /home/opam/.opam/system
+  make
+  make install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ alberto
+Package version: ..................................... 0.1
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/system
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Build examples: ...................................... false
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+pkg_binary: .......................................... /home/opam/.opam/system/lib/binary
+pkg_camlp4: .......................................... /usr/lib/ocaml/camlp4
+pkg_num: ............................................. /home/opam/.opam/system/lib/num
+
+ocaml setup.ml -build 
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -package num -package camlp4 -package binary -modules src/alberto.mli > src/alberto.mli.depends
+ocamlfind ocamlc -c -g -w @a -package num -package camlp4 -package binary -I src -o src/alberto.cmi src/alberto.mli
+ocamlfind ocamldep -package num -package camlp4 -package binary -syntax camlp4o -modules src/alberto.ml > src/alberto.ml.depends
+ocamlfind ocamlc -c -g -w @a -package num -package camlp4 -package binary -syntax camlp4o -I src -o src/alberto.cmo src/alberto.ml
+ocamlfind ocamlc -a -w @a src/alberto.cmo -o src/alberto.cma
+ocamlfind ocamlopt -c -g -w @a -package num -package camlp4 -package binary -syntax camlp4o -I src -o src/alberto.cmx src/alberto.ml
+ocamlfind ocamlopt -a -w @a src/alberto.cmx -o src/alberto.cmxa
+ocamlfind ocamlopt -shared src/alberto.cmx -o src/alberto.cmxs
+ocaml setup.ml -install 
+Installed /home/opam/.opam/system/lib/alberto/alberto.mli
+Installed /home/opam/.opam/system/lib/alberto/alberto.cma
+Installed /home/opam/.opam/system/lib/alberto/alberto.cmxa
+Installed /home/opam/.opam/system/lib/alberto/alberto.a
+Installed /home/opam/.opam/system/lib/alberto/alberto.cmxs
+Installed /home/opam/.opam/system/lib/alberto/alberto.cmi
+Installed /home/opam/.opam/system/lib/alberto/alberto.cmx
+Installed /home/opam/.opam/system/lib/alberto/META
+Installing alberto.0.1.

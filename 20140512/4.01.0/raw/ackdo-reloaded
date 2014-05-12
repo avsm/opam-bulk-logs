@@ -1991,4 +1991,7 @@ Installing custom_printf.111.03.00.
 default    Downloading https://opam.ocaml.org/archives/pa_bench.109.55.02+opam.tar.gz
 Downloading https://opam.ocaml.org/archives/pa_bench.109.55.02+opam.tar.gz
 --2014-05-12 22:37:47--  https://opam.ocaml.org/archives/pa_bench.109.55.02+opam.tar.gz
-Resolving opam.ocaml.org (opam.ocaml.org)... 
+Resolving opam.ocaml.org (opam.ocaml.org)... failed: Name or service not known.
+wget: unable to resolve host address 'opam.ocaml.org'
+
+=-=-= Installing pa_test.111.08.00 =-=-=
