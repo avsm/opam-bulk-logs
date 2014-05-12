@@ -1,0 +1,89 @@
+++ opam install camlzip -e ubuntu
++ depext=zlib1g-dev
++ echo Ubuntu depexts: zlib1g-dev
+Ubuntu depexts: zlib1g-dev
++ '[' zlib1g-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y zlib1g-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... 22248 files and directories currently installed.)
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install camlzip
+Ubuntu srcexts:
+The following actions will be performed:
+ - install camlzip.1.05
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing camlzip.1.05 =-=-=
+default    Downloading https://opam.ocaml.org/archives/camlzip.1.05+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/camlzip.1.05+opam.tar.gz
+--2014-05-12 23:53:37--  https://opam.ocaml.org/archives/camlzip.1.05+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 27053 (26K) [application/octet-stream]
+Saving to: 'camlzip.1.05+opam.tar.gz'
+
+     0K .......... .......... ......                          100%  261K=0.1s
+
+2014-05-12 23:53:37 (261 KB/s) - 'camlzip.1.05+opam.tar.gz' saved [27053/27053]
+
+Applying fix-install.patch.
+patching file META
+patching file Makefile
+Building camlzip.1.05:
+  make all
+  make allopt
+  make install-findlib
+ocamlc -g -c -ccopt -g -ccopt -I/usr/local/include zlibstubs.c
+ocamlmklib -oc camlzip zlibstubs.o \
+            -L/usr/local/lib -lz
+ocamlc -g -c zlib.mli
+ocamlc -g -c zlib.ml
+ocamlc -g -c zip.mli
+ocamlc -g -c zip.ml
+ocamlc -g -c gzip.mli
+ocamlc -g -c gzip.ml
+ocamlmklib -o zip -oc camlzip zlib.cmo zip.cmo gzip.cmo \
+            -L/usr/local/lib -lz
+ocamlopt -c zlib.ml
+ocamlopt -c zip.ml
+ocamlopt -c gzip.ml
+ocamlmklib -o zip -oc camlzip zlib.cmx zip.cmx gzip.cmx \
+            -L/usr/local/lib -lz
+ocamlopt -shared -linkall -I ./ -o zip.cmxs zip.cmxa
+ocamlfind install zip META *.mli *.a *.cmi *.cma gzip.cmx zip.cmx zlib.cmx zip.cmxa zip.cmxs dllcamlzip.so
+Installed /home/opam/.opam/system/lib/zip/zip.cmxs
+Installed /home/opam/.opam/system/lib/zip/zip.cmxa
+Installed /home/opam/.opam/system/lib/zip/zlib.cmx
+Installed /home/opam/.opam/system/lib/zip/zip.cmx
+Installed /home/opam/.opam/system/lib/zip/gzip.cmx
+Installed /home/opam/.opam/system/lib/zip/zip.cma
+Installed /home/opam/.opam/system/lib/zip/zlib.cmi
+Installed /home/opam/.opam/system/lib/zip/zip.cmi
+Installed /home/opam/.opam/system/lib/zip/gzip.cmi
+Installed /home/opam/.opam/system/lib/zip/zip.a
+Installed /home/opam/.opam/system/lib/zip/libcamlzip.a
+Installed /home/opam/.opam/system/lib/zip/zlib.mli
+Installed /home/opam/.opam/system/lib/zip/zip.mli
+Installed /home/opam/.opam/system/lib/zip/gzip.mli
+Installed /home/opam/.opam/system/lib/zip/META
+Installed /home/opam/.opam/system/lib/stublibs/dllcamlzip.so
+Installed /home/opam/.opam/system/lib/stublibs/dllcamlzip.so.owner
+ocamlfind: [WARNING] You have installed DLLs but the directory /home/opam/.opam/system/lib/stublibs is not mentioned in ld.conf
+echo 'directory="../zip"' >> META && ocamlfind install camlzip META
+Installed /home/opam/.opam/system/lib/camlzip/META
+Installing camlzip.1.05.
