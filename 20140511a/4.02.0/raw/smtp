@@ -1,0 +1,52 @@
+++ opam install smtp -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install smtp
+Ubuntu srcexts:
+The following actions will be performed:
+ - install smtp.0.2
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing smtp.0.2 =-=-=
+default    Downloading https://opam.ocaml.org/archives/smtp.0.2+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/smtp.0.2+opam.tar.gz
+--2014-05-12 13:38:30--  https://opam.ocaml.org/archives/smtp.0.2+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7851 (7.7K) [application/octet-stream]
+Saving to: 'smtp.0.2+opam.tar.gz'
+
+     0K .......                                               100%  802M=0s
+
+2014-05-12 13:38:30 (802 MB/s) - 'smtp.0.2+opam.tar.gz' saved [7851/7851]
+
+Building smtp.0.2:
+  ocaml pkg/build.ml native=true native-dynlink=true unix=true lwt=false
+ocamlfind ocamldep -modules test/test_unix.ml > test/test_unix.ml.depends
+ocamlfind ocamldep -modules src/smtp_unix.mli > src/smtp_unix.mli.depends
+ocamlfind ocamldep -modules src/smtp.mli > src/smtp.mli.depends
+ocamlfind ocamlc -c -bin-annot -I src -I test -o src/smtp.cmi src/smtp.mli
+ocamlfind ocamlc -c -bin-annot -I src -I test -o src/smtp_unix.cmi src/smtp_unix.mli
+ocamlfind ocamlc -c -bin-annot -I test -I src -o test/test_unix.cmo test/test_unix.ml
+ocamlfind ocamldep -modules src/smtp_unix.ml > src/smtp_unix.ml.depends
+ocamlfind ocamldep -modules src/smtp.ml > src/smtp.ml.depends
+ocamlfind ocamlopt -c -bin-annot -I src -I test -o src/smtp.cmx src/smtp.ml
+ocamlfind ocamlopt -c -bin-annot -I src -I test -o src/smtp_unix.cmx src/smtp_unix.ml
+ocamlfind ocamlopt -c -bin-annot -I test -I src -o test/test_unix.cmx test/test_unix.ml
+ocamlfind ocamlopt -linkpkg unix.cmxa src/smtp.cmx src/smtp_unix.cmx test/test_unix.cmx -o test/test_unix.native
+ocamlfind ocamlopt -a src/smtp.cmx -o src/smtp.cmxa
+ocamlfind ocamlc -c -bin-annot -I src -I test -o src/smtp.cmo src/smtp.ml
+ocamlfind ocamlc -a src/smtp.cmo -o src/smtp.cma
+ocamlfind ocamlopt -shared src/smtp.cmx -o src/smtp.cmxs
+ocamlfind ocamlopt -a src/smtp.cmx src/smtp_unix.cmx -o src/smtp_unix.cmxa
+ocamlfind ocamlc -c -bin-annot -I src -I test -o src/smtp_unix.cmo src/smtp_unix.ml
+ocamlfind ocamlc -a src/smtp.cmo src/smtp_unix.cmo -o src/smtp_unix.cma
+ocamlfind ocamlopt -shared src/smtp_unix.cmx -o src/smtp_unix.cmxs
+Installing smtp.0.2.

@@ -1,0 +1,139 @@
+++ opam install sedlex -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install sedlex
+The following actions will be performed:
+ - install ppx_tools.0.1 [required by sedlex]
+ - install sedlex.1.99.1
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ppx_tools.0.1 =-=-=
+ppx_tools.0.1 Fetching git://github.com/alainfrisch/ppx_tools.git
+Initialized empty Git repository in /home/opam/.opam/packages.dev/ppx_tools.0.1/.git/
+From git://github.com/alainfrisch/ppx_tools
+ * [new branch]      master     -> origin/master
+.depend
+.gitignore
+LICENSE
+META
+Makefile
+README.md
+ast_convenience.ml
+ast_convenience.mli
+ast_mapper_class.ml
+ast_mapper_class.mli
+dumpast.ml
+genlifter.ml
+ppx_metaquot.ml
+HEAD is now at efdd6c1 Make ppx_metaquot transitive.
+Building ppx_tools.0.1:
+  make all
+  make install
+ocamlc -w +A-4-17-44-45 -I +compiler-libs -safe-string -c ast_convenience.mli
+ocamlc -w +A-4-17-44-45 -I +compiler-libs -safe-string -c ast_convenience.ml
+ocamlc -w +A-4-17-44-45 -I +compiler-libs -safe-string -c ast_mapper_class.mli
+ocamlc -w +A-4-17-44-45 -I +compiler-libs -safe-string -c ast_mapper_class.ml
+ocamlc -a -o ppx_tools.cma ast_convenience.cmo ast_mapper_class.cmo
+ocamlc -w +A-4-17-44-45 -I +compiler-libs -safe-string -c genlifter.ml
+ocamlc -w +A-4-17-44-45 -I +compiler-libs -safe-string -o genlifter ocamlcommon.cma ppx_tools.cma genlifter.cmo
+./genlifter -I +compiler-libs Parsetree.expression > ast_lifter.ml || rm -rf ast_lifter.ml
+ocamlc -w +A-4-17-44-45 -I +compiler-libs -safe-string -c ast_lifter.ml
+ocamlc -w +A-4-17-44-45 -I +compiler-libs -safe-string -c dumpast.ml
+ocamlc -w +A-4-17-44-45 -I +compiler-libs -safe-string -o dumpast ocamlcommon.cma ocamlbytecomp.cma ast_lifter.cmo dumpast.cmo
+ocamlc -w +A-4-17-44-45 -I +compiler-libs -safe-string -c ppx_metaquot.ml
+ocamlc -w +A-4-17-44-45 -I +compiler-libs -safe-string -o ppx_metaquot ocamlcommon.cma ppx_tools.cma ast_lifter.cmo ppx_metaquot.cmo
+ocamlopt -w +A-4-17-44-45 -I +compiler-libs -safe-string -c ast_convenience.ml
+ocamlopt -w +A-4-17-44-45 -I +compiler-libs -safe-string -c ast_mapper_class.ml
+ocamlopt -a -o ppx_tools.cmxa ast_convenience.cmx ast_mapper_class.cmx
+ocamlopt -shared -o ppx_tools.cmxs -linkall ppx_tools.cmxa
+ocamlfind install ppx_tools META genlifter dumpast ppx_metaquot ppx_tools.cma ppx_tools.cmxa ppx_tools.a ppx_tools.cmxs ast_convenience.cmi ast_convenience.cmx ast_mapper_class.cmi ast_mapper_class.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ppx_tools/ast_mapper_class.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ppx_tools/ast_mapper_class.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ppx_tools/ast_convenience.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ppx_tools/ast_convenience.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ppx_tools/ppx_tools.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ppx_tools/ppx_tools.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ppx_tools/ppx_tools.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ppx_tools/ppx_tools.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ppx_tools/ppx_metaquot
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ppx_tools/dumpast
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ppx_tools/genlifter
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/ppx_tools/META
+Installing ppx_tools.0.1.
+
+=-=-= Installing sedlex.1.99.1 =-=-=
+sedlex.1.99.1 Fetching git://github.com/alainfrisch/sedlex.git
+Initialized empty Git repository in /home/opam/.opam/packages.dev/sedlex.1.99.1/.git/
+From git://github.com/alainfrisch/sedlex
+ * [new branch]      master     -> origin/master
+CHANGES
+LICENSE
+META
+Makefile
+README
+examples/Makefile
+examples/tokenizer.ml
+src/lib/Makefile
+src/lib/sedlexing.ml
+src/lib/sedlexing.mli
+src/syntax/Makefile
+src/syntax/cset.ml
+src/syntax/cset.mli
+src/syntax/sedlex.ml
+src/syntax/sedlex.mli
+src/syntax/sedlex_ppx.ml
+HEAD is now at 0ebf313 Better error reporting.
+Building sedlex.1.99.1:
+  make all
+  make opt
+  make install
+(cd src/lib && make all doc)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/sedlex.1.99.1/src/lib'
+ocamlc -w +A-4-9 -safe-string -c sedlexing.mli sedlexing.ml
+ocamlc -a -o sedlexing.cma sedlexing.cmo
+rm -rf ../../libdoc
+mkdir ../../libdoc
+ocamldoc -html sedlexing.mli -d ../../libdoc
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/sedlex.1.99.1/src/lib'
+(cd src/syntax && make all)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/sedlex.1.99.1/src/syntax'
+ocamlfind ocamlc -package ppx_tools -w +A-4-9 -annot -a -o sedlex.cma cset.mli cset.ml sedlex.mli sedlex.ml sedlex_ppx.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml, /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/compiler-libs
+ocamlfind ocamlc -package ppx_tools -w +A-4-9 -annot -o sedlex.exe -linkpkg -linkall sedlex.cma
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml, /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/compiler-libs
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/sedlex.1.99.1/src/syntax'
+(cd src/syntax && make opt)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/sedlex.1.99.1/src/syntax'
+ocamlfind ocamlopt -package ppx_tools -w +A-4-9 -annot -a -o sedlex.cmxa cset.mli cset.ml sedlex.mli sedlex.ml sedlex_ppx.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml, /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/compiler-libs
+ocamlfind ocamlopt -package ppx_tools -w +A-4-9 -annot -o sedlex.opt.exe -linkpkg -linkall sedlex.cmxa
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml, /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/compiler-libs
+ocamlfind ocamlopt -package ppx_tools -w +A-4-9 -annot -shared -o sedlex.cmxs cset.mli cset.ml sedlex.mli sedlex.ml sedlex_ppx.ml
+findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.0dev+trunk/lib/ocaml, /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/compiler-libs
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/sedlex.1.99.1/src/syntax'
+(cd src/lib && make opt)
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/sedlex.1.99.1/src/lib'
+ocamlopt -safe-string -c sedlexing.mli sedlexing.ml
+ocamlopt -a -o sedlexing.cmxa sedlexing.cmx
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/sedlex.1.99.1/src/lib'
+ocamlfind install sedlex META src/syntax/sedlex.cma src/syntax/sedlex.exe src/lib/sedlexing.cma src/lib/sedlexing.cmi src/syntax/sedlex.cmxs src/syntax/sedlex.a src/syntax/sedlex.cmxa src/syntax/sedlex.opt.exe src/lib/sedlexing.cmx src/lib/sedlexing.a src/lib/sedlexing.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sedlex/sedlexing.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sedlex/sedlexing.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sedlex/sedlexing.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sedlex/sedlex.opt.exe
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sedlex/sedlex.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sedlex/sedlex.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sedlex/sedlex.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sedlex/sedlexing.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sedlex/sedlexing.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sedlex/sedlex.exe
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sedlex/sedlex.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/sedlex/META
+Installing sedlex.1.99.1.
