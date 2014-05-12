@@ -1,0 +1,30 @@
+++ opam install lacc -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install lacc
+Ubuntu srcexts:
+The following actions will be performed:
+ - install lacc.0.2
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing lacc.0.2 =-=-=
+lacc.0.2   Downloading https://github.com/UnixJunkie/lacc/archive/v0.2.tar.gz 
+--2014-05-12 07:14:55--  https://github.com/UnixJunkie/lacc/archive/v0.2.tar.gz%20
+Resolving github.com (github.com)... 192.30.252.130
+Connecting to github.com (github.com)|192.30.252.130|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2014-05-12 07:14:55 ERROR 404: Not Found.
+
+[ERROR] https://github.com/UnixJunkie/lacc/archive/v0.2.tar.gz  is not available
+
+
+===== ERROR while installing lacc.0.2 =====
+Could not get the source for lacc.0.2:
+OpamGlobals.Exit(66)
+'opam install lacc' failed.
