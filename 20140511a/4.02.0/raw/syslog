@@ -1,0 +1,66 @@
+++ opam install syslog -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install syslog
+Ubuntu srcexts:
+The following actions will be performed:
+ - install syslog.1.4
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing syslog.1.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/syslog.1.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/syslog.1.4+opam.tar.gz
+--2014-05-12 13:59:25--  https://opam.ocaml.org/archives/syslog.1.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 29132 (28K) [application/octet-stream]
+Saving to: 'syslog.1.4+opam.tar.gz'
+
+     0K .......... .......... ........                        100%  280K=0.1s
+
+2014-05-12 13:59:26 (280 KB/s) - 'syslog.1.4+opam.tar.gz' saved [29132/29132]
+
+Building syslog.1.4:
+  make reallyall
+  make install
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/syslog.1.4'
+making ._bcdi/syslog.di from syslog.mli
+making ._d/syslog.d from syslog.ml
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/syslog.1.4'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/syslog.1.4'
+ocamlfind ocamlc -package unix -c syslog.mli
+ocamlfind ocamlc -package unix -c syslog.ml
+ocamlfind ocamlc -a             \
+				  -o syslog.cma  syslog.cmo
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/syslog.1.4'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/syslog.1.4'
+making ._ncdi/syslog.di from syslog.mli
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/syslog.1.4'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/syslog.1.4'
+ocamlfind ocamlopt -package unix -c syslog.ml
+ocamlfind ocamlopt -a               \
+				 -o syslog.cmxa syslog.cmx
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/syslog.1.4'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/syslog.1.4'
+make[1]: `syslog.cma' is up to date.
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/syslog.1.4'
+
+Installing library with ocamlfind
+ocamlfind install syslog META syslog.mli syslog.cmi syslog.cma syslog.cmx syslog.cmxa syslog.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/syslog/syslog.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/syslog/syslog.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/syslog/syslog.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/syslog/syslog.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/syslog/syslog.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/syslog/syslog.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/syslog/META
+
+Installation successful.
+Installing syslog.1.4.
