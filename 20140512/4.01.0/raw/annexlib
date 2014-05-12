@@ -164,3 +164,16 @@ Installing pcre-ocaml.7.0.4.
 
 =-=-= Installing annexlib.0.13.5 =-=-=
 annexlib.0.13.5 Downloading http://godi-backup2.camlcity.org/godi-backup/annexlib-0.13.5.tar.gz
+--2014-05-12 22:40:41--  http://godi-backup2.camlcity.org/godi-backup/annexlib-0.13.5.tar.gz
+Resolving godi-backup2.camlcity.org (godi-backup2.camlcity.org)... 88.198.178.4, 2a01:4f8:d16:4740::2
+Connecting to godi-backup2.camlcity.org (godi-backup2.camlcity.org)|88.198.178.4|:80... failed: Connection refused.
+Connecting to godi-backup2.camlcity.org (godi-backup2.camlcity.org)|2a01:4f8:d16:4740::2|:80... failed: Network is unreachable.
+[ERROR] http://godi-backup2.camlcity.org/godi-backup/annexlib-0.13.5.tar.gz is not available
+
+
+===== ERROR while installing annexlib.0.13.5 =====
+Could not get the source for annexlib.0.13.5:
+OpamGlobals.Exit(66)
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/system/backup/state-20140412224012.export"
+'opam install annexlib' failed.
