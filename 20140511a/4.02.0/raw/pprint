@@ -1,0 +1,79 @@
+++ opam install pprint -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install pprint
+Ubuntu srcexts:
+The following actions will be performed:
+ - install pprint.20140424
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing pprint.20140424 =-=-=
+default    Downloading https://opam.ocaml.org/archives/pprint.20140424+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/pprint.20140424+opam.tar.gz
+--2014-05-12 12:31:23--  https://opam.ocaml.org/archives/pprint.20140424+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 23840 (23K) [application/octet-stream]
+Saving to: 'pprint.20140424+opam.tar.gz'
+
+     0K .......... .......... ...                             100%  231K=0.1s
+
+2014-05-12 12:31:24 (231 KB/s) - 'pprint.20140424+opam.tar.gz' saved [23840/23840]
+
+Building pprint.20140424:
+  make -C src
+  make -C src install
+make: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/pprint.20140424/src'
+ocamlbuild -use-ocamlfind -cflags "-g" -lflags "-g" -classic-display PPrintLib.cma PPrintLib.cmxa
+ocamlfind ocamldep -modules PPrint.ml > PPrint.ml.depends
+ocamlfind ocamldep -modules PPrintCombinators.mli > PPrintCombinators.mli.depends
+ocamlfind ocamldep -modules PPrintEngine.mli > PPrintEngine.mli.depends
+ocamlfind ocamldep -modules PPrintRenderer.ml > PPrintRenderer.ml.depends
+ocamlfind ocamlc -c -g -o PPrintRenderer.cmo PPrintRenderer.ml
+ocamlfind ocamlc -c -g -o PPrintEngine.cmi PPrintEngine.mli
+ocamlfind ocamldep -modules PPrintOCaml.mli > PPrintOCaml.mli.depends
+ocamlfind ocamlc -c -g -o PPrintCombinators.cmi PPrintCombinators.mli
+ocamlfind ocamlc -c -g -o PPrintOCaml.cmi PPrintOCaml.mli
+ocamlfind ocamldep -modules PPrintCombinators.ml > PPrintCombinators.ml.depends
+ocamlfind ocamldep -modules PPrintEngine.ml > PPrintEngine.ml.depends
+ocamlfind ocamldep -modules PPrintOCaml.ml > PPrintOCaml.ml.depends
+ocamlfind ocamlc -c -g -o PPrint.cmo PPrint.ml
+ocamlfind ocamlc -c -g -o PPrintCombinators.cmo PPrintCombinators.ml
+ocamlfind ocamlc -c -g -o PPrintEngine.cmo PPrintEngine.ml
+ocamlfind ocamlc -c -g -o PPrintOCaml.cmo PPrintOCaml.ml
+ocamlfind ocamlc -a -g PPrintRenderer.cmo PPrintEngine.cmo PPrintCombinators.cmo PPrintOCaml.cmo PPrint.cmo -o PPrintLib.cma
+ocamlfind ocamlopt -c -g -o PPrintRenderer.cmx PPrintRenderer.ml
+ocamlfind ocamlopt -c -g -o PPrintEngine.cmx PPrintEngine.ml
+ocamlfind ocamlopt -c -g -o PPrintCombinators.cmx PPrintCombinators.ml
+ocamlfind ocamlopt -c -g -o PPrintOCaml.cmx PPrintOCaml.ml
+ocamlfind ocamlopt -c -g -o PPrint.cmx PPrint.ml
+ocamlfind ocamlopt -a -g PPrintRenderer.cmx PPrintEngine.cmx PPrintCombinators.cmx PPrintOCaml.cmx PPrint.cmx -o PPrintLib.cmxa
+make: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/pprint.20140424/src'
+make: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/pprint.20140424/src'
+ocamlbuild -use-ocamlfind -cflags "-g" -lflags "-g" -classic-display PPrintLib.cma PPrintLib.cmxa
+ocamlfind install pprint META \
+		_build/PPrintLib.cma _build/PPrintLib.cmxa \
+		_build/PPrintLib.a _build/*.cmx _build/*.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pprint/PPrintRenderer.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pprint/PPrintOCaml.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pprint/PPrintEngine.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pprint/PPrintCombinators.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pprint/PPrint.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pprint/PPrintRenderer.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pprint/PPrintOCaml.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pprint/PPrintEngine.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pprint/PPrintCombinators.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pprint/PPrint.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pprint/PPrintLib.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pprint/PPrintLib.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pprint/PPrintLib.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/pprint/META
+make: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/pprint.20140424/src'
+Installing pprint.20140424.
