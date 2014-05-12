@@ -1,0 +1,79 @@
+++ opam install acme -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install acme
+Ubuntu srcexts:
+The following actions will be performed:
+ - install ocaml9p.0.4 [required by acme]
+ - install acme.0.1
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocaml9p.0.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocaml9p.0.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocaml9p.0.4+opam.tar.gz
+--2014-05-12 22:45:11--  https://opam.ocaml.org/archives/ocaml9p.0.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9654 (9.4K) [application/octet-stream]
+Saving to: 'ocaml9p.0.4+opam.tar.gz'
+
+     0K .........                                             100% 27.2M=0s
+
+2014-05-12 22:45:12 (27.2 MB/s) - 'ocaml9p.0.4+opam.tar.gz' saved [9654/9654]
+
+Building ocaml9p.0.4:
+  make
+  make install
+ocamlfind ocamlc -c -I lib -package "unix str" lib/fcall.mli
+ocamlfind ocamlc -c -I lib -package "unix str" lib/o9pc.mli
+ocamlfind ocamlc -c -I lib -package "unix str" lib/fcall.ml
+ocamlfind ocamlc -c -I lib -package "unix str" lib/o9pc.ml
+ocamlfind ocamlc -a -o o9p.cma -package "unix str" lib/fcall.cmo lib/o9pc.cmo
+ocamlfind ocamlopt -c -I lib -package "unix str" lib/fcall.ml
+ocamlfind ocamlopt -c -I lib -package "unix str" lib/o9pc.ml
+ocamlfind ocamlopt -a -o o9p.cmxa -package "unix str" lib/fcall.cmx lib/o9pc.cmx
+ocamlfind install o9p o9p.cma lib/fcall.cmi lib/o9pc.cmi o9p.a o9p.cmxa META
+Installed /home/opam/.opam/system/lib/o9p/o9p.cmxa
+Installed /home/opam/.opam/system/lib/o9p/o9p.a
+Installed /home/opam/.opam/system/lib/o9p/o9pc.cmi
+Installed /home/opam/.opam/system/lib/o9p/fcall.cmi
+Installed /home/opam/.opam/system/lib/o9p/o9p.cma
+Installed /home/opam/.opam/system/lib/o9p/META
+Installing ocaml9p.0.4.
+
+=-=-= Installing acme.0.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/acme.0.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/acme.0.1+opam.tar.gz
+--2014-05-12 22:45:18--  https://opam.ocaml.org/archives/acme.0.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3411 (3.3K) [application/octet-stream]
+Saving to: 'acme.0.1+opam.tar.gz'
+
+     0K ...                                                   100%  295M=0s
+
+2014-05-12 22:45:19 (295 MB/s) - 'acme.0.1+opam.tar.gz' saved [3411/3411]
+
+Building acme.0.1:
+  make
+  make install
+ocamlfind ocamlc -c  -package "o9p" Acme.mli
+ocamlfind ocamlc -c  -package "o9p" Acme.ml
+ocamlfind ocamlc -a -o Acme.cma -package "o9p" Acme.cmo
+ocamlfind ocamlopt -c  -package "o9p" Acme.ml
+ocamlfind ocamlopt -a -o Acme.cmxa -package "o9p" Acme.cmx
+ocamlfind install acme Acme.cma Acme.cmi Acme.a Acme.cmxa META
+Installed /home/opam/.opam/system/lib/acme/Acme.cmxa
+Installed /home/opam/.opam/system/lib/acme/Acme.a
+Installed /home/opam/.opam/system/lib/acme/Acme.cmi
+Installed /home/opam/.opam/system/lib/acme/Acme.cma
+Installed /home/opam/.opam/system/lib/acme/META
+Installing acme.0.1.
