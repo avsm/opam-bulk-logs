@@ -15,3 +15,38 @@ dpkg-preconfigure: unable to re-open stdin:
 Selecting previously unselected package libasound2-data.
 (Reading database ... 22248 files and directories currently installed.)
 Preparing to unpack .../libasound2-data_1.0.27.2-3ubuntu7_all.deb ...
+Unpacking libasound2-data (1.0.27.2-3ubuntu7) ...
+Selecting previously unselected package libasound2:amd64.
+Preparing to unpack .../libasound2_1.0.27.2-3ubuntu7_amd64.deb ...
+Unpacking libasound2:amd64 (1.0.27.2-3ubuntu7) ...
+Selecting previously unselected package libasound2-dev:amd64.
+Preparing to unpack .../libasound2-dev_1.0.27.2-3ubuntu7_amd64.deb ...
+Unpacking libasound2-dev:amd64 (1.0.27.2-3ubuntu7) ...
+Setting up libasound2-data (1.0.27.2-3ubuntu7) ...
+Setting up libasound2:amd64 (1.0.27.2-3ubuntu7) ...
+Setting up libasound2-dev:amd64 (1.0.27.2-3ubuntu7) ...
+Processing triggers for libc-bin (2.19-0ubuntu6) ...
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install alsa
+Ubuntu srcexts:
+The following actions will be performed:
+ - install alsa.0.2.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing alsa.0.2.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/alsa.0.2.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/alsa.0.2.1+opam.tar.gz
+--2014-05-12 22:39:14--  https://opam.ocaml.org/archives/alsa.0.2.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... failed: Name or service not known.
+wget: unable to resolve host address 'opam.ocaml.org'
+
+
+===== ERROR while installing alsa.0.2.1 =====
+Could not get the source for alsa.0.2.1:
+# opam-version    1.1.1
+# os              linux
+Cannot download https://opam.ocaml.org/archives/alsa.0.2.1+opam.tar.gz, please check your connection settings.
+'opam install alsa' failed.

@@ -477,3 +477,48 @@ ocamlfind ocamldep -package camlp4.quotations -package camlp4.extend -modules li
 ocamlfind ocamlc -c -g -w Aemr-28 -strict-sequence -package camlp4.quotations -package camlp4.extend -I lib -o lib/pa_type_conv.cmi lib/pa_type_conv.mli
 ocamlfind ocamldep -package camlp4.quotations -package camlp4.extend -syntax camlp4o -modules lib/pa_type_conv.ml > lib/pa_type_conv.ml.depends
 ocamlfind ocamlc -c -g -w Aemr-28 -strict-sequence -package camlp4.quotations -package camlp4.extend -syntax camlp4o -I lib -o lib/pa_type_conv.cmo lib/pa_type_conv.ml
++ ocamlfind ocamlc -c -g -w Aemr-28 -strict-sequence -package camlp4.quotations -package camlp4.extend -syntax camlp4o -I lib -o lib/pa_type_conv.cmo lib/pa_type_conv.ml
+File "lib/pa_type_conv.ml", line 7, characters 0-8:
+Warning 44: this open statement shadows the module identifier Loc (which is later used)
+File "lib/pa_type_conv.ml", line 690, characters 0-11:
+Warning 44: this open statement shadows the module identifier Loc (which is later used)
+File "lib/pa_type_conv.ml", line 690, characters 0-11:
+Warning 44: this open statement shadows the module identifier Gram (which is later used)
+File "lib/pa_type_conv.ml", line 690, characters 0-11:
+Warning 44: this open statement shadows the module identifier Ast (which is later used)
+File "lib/pa_type_conv.ml", line 690, characters 0-11:
+Warning 44: this open statement shadows the module identifier Quotation (which is later used)
+ocamlfind ocamlc -a lib/pa_type_conv.cmo -o lib/pa_type_conv.cma
+ocamlfind ocamlopt -c -g -w Aemr-28 -strict-sequence -package camlp4.quotations -package camlp4.extend -syntax camlp4o -I lib -o lib/pa_type_conv.cmx lib/pa_type_conv.ml
++ ocamlfind ocamlopt -c -g -w Aemr-28 -strict-sequence -package camlp4.quotations -package camlp4.extend -syntax camlp4o -I lib -o lib/pa_type_conv.cmx lib/pa_type_conv.ml
+File "lib/pa_type_conv.ml", line 7, characters 0-8:
+Warning 44: this open statement shadows the module identifier Loc (which is later used)
+File "lib/pa_type_conv.ml", line 690, characters 0-11:
+Warning 44: this open statement shadows the module identifier Loc (which is later used)
+File "lib/pa_type_conv.ml", line 690, characters 0-11:
+Warning 44: this open statement shadows the module identifier Gram (which is later used)
+File "lib/pa_type_conv.ml", line 690, characters 0-11:
+Warning 44: this open statement shadows the module identifier Ast (which is later used)
+File "lib/pa_type_conv.ml", line 690, characters 0-11:
+Warning 44: this open statement shadows the module identifier Quotation (which is later used)
+ocamlfind ocamlopt -a lib/pa_type_conv.cmx -o lib/pa_type_conv.cmxa
+ocamlfind ocamlopt -shared lib/pa_type_conv.cmx -o lib/pa_type_conv.cmxs
+./setup.exe -install 
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.mli
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cma
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmxa
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.a
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmxs
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmi
+Installed /home/opam/.opam/system/lib/type_conv/pa_type_conv.cmx
+Installed /home/opam/.opam/system/lib/type_conv/META
+Installing type_conv.109.12.00.
+
+=-=-= Installing fileutils.0.4.4 =-=-=
+default    Downloading https://opam.ocaml.org/archives/fileutils.0.4.4+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/fileutils.0.4.4+opam.tar.gz
+--2014-05-12 22:39:11--  https://opam.ocaml.org/archives/fileutils.0.4.4+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... failed: Name or service not known.
+wget: unable to resolve host address 'opam.ocaml.org'
+
+=-=-= Installing ocaml-data-notation.0.0.11 =-=-=
