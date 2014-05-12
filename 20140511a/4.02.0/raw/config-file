@@ -1,0 +1,49 @@
+++ opam install config-file -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install config-file
+The following actions will be performed:
+ - install config-file.1.2
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing config-file.1.2 =-=-=
+default    Downloading https://opam.ocaml.org/archives/config-file.1.2+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/config-file.1.2+opam.tar.gz
+--2014-05-12 02:40:46--  https://opam.ocaml.org/archives/config-file.1.2+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 50139 (49K) [application/octet-stream]
+Saving to: 'config-file.1.2+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ........  100%  244K=0.2s
+
+2014-05-12 02:40:46 (244 KB/s) - 'config-file.1.2+opam.tar.gz' saved [50139/50139]
+
+Building config-file.1.2:
+  ./configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  make all
+  make install
+checking for ocamlfind... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+checking for camlp4... /usr/bin/camlp4
+configure: creating ./config.status
+config.status: creating master.Makefile
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc   -c config_file.mli
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlc   -c config_file.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlopt   -c config_file.ml
+/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind ocamlopt -o config_file.cmxs -shared config_file.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/config-file/config_file.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/config-file/config_file.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/config-file/config_file.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/config-file/config_file.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/config-file/config_file.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/config-file/config_file.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/config-file/META
+Installing config-file.1.2.
