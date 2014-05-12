@@ -522,3 +522,28 @@ Resolving opam.ocaml.org (opam.ocaml.org)... failed: Name or service not known.
 wget: unable to resolve host address 'opam.ocaml.org'
 
 =-=-= Installing ocaml-data-notation.0.0.11 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocaml-data-notation.0.0.11+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocaml-data-notation.0.0.11+opam.tar.gz
+--2014-05-12 22:39:37--  https://opam.ocaml.org/archives/ocaml-data-notation.0.0.11+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... failed: Name or service not known.
+wget: unable to resolve host address 'opam.ocaml.org'
+
+[ERROR] Due to some errors while processing { fileutils.0.4.4, ocaml-data-notation.0.0.11 }, the following actions will NOT proceed:
+ - install oasis.0.4.4
+ - install aliases.0.0.5
+ - install ocamlmod.0.0.4
+
+===== ERROR while installing fileutils.0.4.4 =====
+Could not get the source for fileutils.0.4.4:
+# opam-version    1.1.1
+# os              linux
+Cannot download https://opam.ocaml.org/archives/fileutils.0.4.4+opam.tar.gz, please check your connection settings.
+
+===== ERROR while installing ocaml-data-notation.0.0.11 =====
+Could not get the source for ocaml-data-notation.0.0.11:
+# opam-version    1.1.1
+# os              linux
+Cannot download https://opam.ocaml.org/archives/ocaml-data-notation.0.0.11+opam.tar.gz, please check your connection settings.
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/system/backup/state-20140412223822.export"
+'opam install aliases' failed.
