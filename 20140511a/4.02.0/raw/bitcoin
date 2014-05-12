@@ -1,0 +1,705 @@
+++ opam install bitcoin -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install bitcoin
+Ubuntu srcexts:
+The following actions will be performed:
+ - install ocamlnet.3.7.3 [required by bitcoin]
+ - install cppo.0.9.3 [required by bitcoin]
+ - install easy-format.1.0.2 [required by bitcoin]
+ - install biniou.1.0.9 [required by bitcoin]
+ - install yojson.1.1.8 [required by bitcoin]
+ - install bitcoin.1.1.1
+6 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing cppo.0.9.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/cppo.0.9.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/cppo.0.9.3+opam.tar.gz
+--2014-05-12 01:38:26--  https://opam.ocaml.org/archives/cppo.0.9.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20088 (20K) [application/octet-stream]
+Saving to: 'cppo.0.9.3+opam.tar.gz'
+
+     0K .......... .........                                  100%  195K=0.1s
+
+2014-05-12 01:38:27 (195 KB/s) - 'cppo.0.9.3+opam.tar.gz' saved [20088/20088]
+
+Building cppo.0.9.3:
+  make
+echo 'let cppo_version = "0.9.3"' > cppo_version.ml
+ocamlyacc cppo_parser.mly
+ocamllex cppo_lexer.mll
+354 states, 13186 transitions, table size 54868 bytes
+3462 additional bytes used for bindings
+ocamlopt -o cppo -dtypes unix.cmxa cppo_version.ml cppo_types.ml cppo_parser.mli cppo_parser.ml cppo_lexer.ml cppo_command.ml cppo_eval.ml cppo_main.ml
+Installing cppo.0.9.3.
+
+=-=-= Installing easy-format.1.0.2 =-=-=
+default    Downloading https://opam.ocaml.org/archives/easy-format.1.0.2+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/easy-format.1.0.2+opam.tar.gz
+--2014-05-12 01:38:32--  https://opam.ocaml.org/archives/easy-format.1.0.2+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13746 (13K) [application/octet-stream]
+Saving to: 'easy-format.1.0.2+opam.tar.gz'
+
+     0K .......... ...                                        100%  171M=0s
+
+2014-05-12 01:38:32 (171 MB/s) - 'easy-format.1.0.2+opam.tar.gz' saved [13746/13746]
+
+Building easy-format.1.0.2:
+  make
+  make install
+ocamlc -c easy_format.mli
+ocamlc -c -dtypes easy_format.ml
+touch bytecode
+ocamlc -c easy_format.mli
+ocamlopt -c -dtypes easy_format.ml
+ocamlopt -I . -shared -linkall -o easy_format.cmxs easy_format.cmx
+touch nativecode
+echo "version = \"1.0.2\"" > META; cat META.tpl >> META
+INSTALL_FILES="META easy_format.cmi easy_format.mli"; \
+		if test -f bytecode; then \
+		  INSTALL_FILES="$INSTALL_FILES easy_format.cmo"; \
+		fi; \
+		if test -f nativecode; then \
+		  INSTALL_FILES="$INSTALL_FILES easy_format.cmx easy_format.o easy_format.cmxs"; \
+		fi; \
+		ocamlfind install easy-format $INSTALL_FILES
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/easy-format/easy_format.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/easy-format/easy_format.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/easy-format/easy_format.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/easy-format/easy_format.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/easy-format/easy_format.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/easy-format/easy_format.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/easy-format/META
+Installing easy-format.1.0.2.
+
+=-=-= Installing ocamlnet.3.7.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+--2014-05-12 01:38:36--  https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3424904 (3.3M) [application/octet-stream]
+Saving to: 'ocamlnet.3.7.3+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  1%  243K 14s
+    50K .......... .......... .......... .......... ..........  2%  481K 10s
+   100K .......... .......... .......... .......... ..........  4%  487K 9s
+   150K .......... .......... .......... .......... ..........  5% 11.6M 7s
+   200K .......... .......... .......... .......... ..........  7%  498K 6s
+   250K .......... .......... .......... .......... ..........  8% 11.8M 5s
+   300K .......... .......... .......... .......... .......... 10%  508K 5s
+   350K .......... .......... .......... .......... .......... 11% 8.99M 5s
+   400K .......... .......... .......... .......... .......... 13% 1.25M 4s
+   450K .......... .......... .......... .......... .......... 14%  794K 4s
+   500K .......... .......... .......... .......... .......... 16% 11.8M 4s
+   550K .......... .......... .......... .......... .......... 17%  689K 4s
+   600K .......... .......... .......... .......... .......... 19% 1.77M 3s
+   650K .......... .......... .......... .......... .......... 20% 8.53M 3s
+   700K .......... .......... .......... .......... .......... 22% 1.45M 3s
+   750K .......... .......... .......... .......... .......... 23%  724K 3s
+   800K .......... .......... .......... .......... .......... 25% 1.53M 3s
+   850K .......... .......... .......... .......... .......... 26% 1.28M 3s
+   900K .......... .......... .......... .......... .......... 28% 1.49M 3s
+   950K .......... .......... .......... .......... .......... 29% 1.47M 3s
+  1000K .......... .......... .......... .......... .......... 31% 1.38M 2s
+  1050K .......... .......... .......... .......... .......... 32% 1.49M 2s
+  1100K .......... .......... .......... .......... .......... 34% 1.37M 2s
+  1150K .......... .......... .......... .......... .......... 35% 1.33M 2s
+  1200K .......... .......... .......... .......... .......... 37%  804K 2s
+  1250K .......... .......... .......... .......... .......... 38% 1.30M 2s
+  1300K .......... .......... .......... .......... .......... 40% 11.7M 2s
+  1350K .......... .......... .......... .......... .......... 41% 1.78M 2s
+  1400K .......... .......... .......... .......... .......... 43%  711K 2s
+  1450K .......... .......... .......... .......... .......... 44% 1.94M 2s
+  1500K .......... .......... .......... .......... .......... 46% 11.8M 2s
+  1550K .......... .......... .......... .......... .......... 47% 1.28M 2s
+  1600K .......... .......... .......... .......... .......... 49% 1.25M 2s
+  1650K .......... .......... .......... .......... .......... 50% 1.81M 2s
+  1700K .......... .......... .......... .......... .......... 52% 1.35M 1s
+  1750K .......... .......... .......... .......... .......... 53% 1.39M 1s
+  1800K .......... .......... .......... .......... .......... 55% 6.51M 1s
+  1850K .......... .......... .......... .......... .......... 56% 1.91M 1s
+  1900K .......... .......... .......... .......... .......... 58% 1.33M 1s
+  1950K .......... .......... .......... .......... .......... 59% 1.45M 1s
+  2000K .......... .......... .......... .......... .......... 61% 2.10M 1s
+  2050K .......... .......... .......... .......... .......... 62% 4.71M 1s
+  2100K .......... .......... .......... .......... .......... 64% 1.33M 1s
+  2150K .......... .......... .......... .......... .......... 65% 1.51M 1s
+  2200K .......... .......... .......... .......... .......... 67% 2.14M 1s
+  2250K .......... .......... .......... .......... .......... 68% 5.06M 1s
+  2300K .......... .......... .......... .......... .......... 70% 1.32M 1s
+  2350K .......... .......... .......... .......... .......... 71% 1.42M 1s
+  2400K .......... .......... .......... .......... .......... 73% 2.13M 1s
+  2450K .......... .......... .......... .......... .......... 74% 6.87M 1s
+  2500K .......... .......... .......... .......... .......... 76% 1.33M 1s
+  2550K .......... .......... .......... .......... .......... 77% 1.36M 1s
+  2600K .......... .......... .......... .......... .......... 79% 2.12M 1s
+  2650K .......... .......... .......... .......... .......... 80% 7.46M 0s
+  2700K .......... .......... .......... .......... .......... 82% 1.45M 0s
+  2750K .......... .......... .......... .......... .......... 83% 1.20M 0s
+  2800K .......... .......... .......... .......... .......... 85% 2.13M 0s
+  2850K .......... .......... .......... .......... .......... 86% 11.7M 0s
+  2900K .......... .......... .......... .......... .......... 88% 1.39M 0s
+  2950K .......... .......... .......... .......... .......... 89% 1.35M 0s
+  3000K .......... .......... .......... .......... .......... 91% 6.17M 0s
+  3050K .......... .......... .......... .......... .......... 92% 2.15M 0s
+  3100K .......... .......... .......... .......... .......... 94% 11.7M 0s
+  3150K .......... .......... .......... .......... .......... 95%  745K 0s
+  3200K .......... .......... .......... .......... .......... 97% 12.0M 0s
+  3250K .......... .......... .......... .......... .......... 98% 6.63M 0s
+  3300K .......... .......... .......... .......... ....      100% 2.35M=2.4s
+
+2014-05-12 01:38:39 (1.38 MB/s) - 'ocamlnet.3.7.3+opam.tar.gz' saved [3424904/3424904]
+
+Applying fix-ocaml-4.02.patch.
+patching file src/netstring/netencoding.mli
+Building ocamlnet.3.7.3:
+  ./configure -bindir /home/opam/.opam/4.02.0dev+trunk/bin -disable-pcre -disable-gtk2 -disable-ssl -disable-zip -disable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Welcome to Ocamlnet version 3.7.3
+Checking operating system... Linux
+Checking for findlib... found
+Checking multi-threading support... posix (ok)
+Checking word size... 64 bit
+Checking endianess... little
+Checking for GPROF... found
+Checking for win32... no
+Checking whether Ocaml has Printexc.register_printer... found
+Checking for POSIX pthread... found
+Checking whether Ocaml has fancy page tables... found
+Checking on new implementation of caml_modify... found
+Checking whether new caml_modify can be overridden... found
+Checking whether out-of-heap values are supported and mutable... yes
+Checking for POSIX shared memory... found
+Checking for POSIX semaphores (anonymous)... found
+Checking for POSIX semaphores (named)... found
+Checking for POSIX spawn... found
+Checking for POSIX fadvise... found
+Checking for POSIX fallocate... found
+Checking for POSIX memalign... found
+Checking for syslog... found
+Checking for POSIX functions like openat... found
+Checking for fchdir... found
+Checking for fdopendir... found
+Checking for realpath... found
+Checking for grantpt (System V style PTYs)... found
+Checking for posix_openpt (System V style PTYs)... found
+Checking for initgroups...found
+Checking for POSIX clocks...found
+Checking for POSIX timers...found
+Checking for eventfd (Linux)...found
+Checking for timerfd (Linux)...found
+Checking for epoll (Linux)...found
+Checking for compare_and_swap (GCC)...found
+Checking for GPROF... found
+Checking for O_SHARE_DELETE... yes
+Checking for O_CLOEXEC... yes
+Checking for getpeereid... not found
+Checking for getpeerucred... not found
+Checking whether netcamlbox and netmulticore are supported... yes
+Preprocessor for ocamlrpcgen: cpp
+
+Effective options:
+    -disable-pcre
+    -disable-full-pcre
+    -disable-gtk
+    -disable-gtk2
+    -disable-tcl
+    -disable-ssl
+    -disable-zip
+    -disable-crypto
+    -disable-apache
+    -with-nethttpd
+    -without-rpc-auth-dh
+    -bindir /home/opam/.opam/4.02.0dev+trunk/bin
+    -datadir /home/opam/.opam/4.02.0dev+trunk/lib/netstring
+    -cpp cpp
+
+Writing Makefile.conf
+
+Please check Makefile.conf.
+
+You can now compile Ocamlnet by invoking
+   make all
+for the bytecode compiler, and optionally by invoking
+   make opt
+for the native-code compiler (if supported on your architecture).
+Finally, a
+   make install
+will install the package(s).
+for pkg in netsys netshm netstring equeue shell netgssapi rpc-generator rpc rpc-auth-local pop smtp netclient netcgi2 netplex netcgi2-plex netcamlbox netmulticore nethttpd nethttpd-for-netcgi2; do \
+		( cd src/$pkg && make -f Makefile.pre generate ) || exit; \
+		( cd src/$pkg && make -f Makefile.pre depend ) || exit; \
+		( cd src/$pkg && make all ) || exit; \
+	done
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+make[2]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+sed -e 's/@VERSION@/3.7.3/' \
+	    -e 's/@AUTHDHREQS@//' \
+	    -e 's/@PREFERRED_CGI_PKG@//' \
+	    -e 's/@REGEXP_PROVIDER@/str/' \
+	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+ 	    -e 's/@ZIP_PROVIDER@//' \
+		META.in >META
+make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+ocamlfind ocamldep -package "camlp4.macro" -syntax camlp4o  *.ml *.mli >depend || { rm -f depend; exit 1; }
+make[1]: *** [depend] Error 1
+make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+make: *** [all] Error 2
+[ERROR] The compilation of ocamlnet.3.7.3 failed.
+Removing ocamlnet.3.7.3.
+  ocamlfind remove equeue
+  ocamlfind remove netcamlbox
+  ocamlfind remove netcgi2
+  ocamlfind remove netcgi2-plex
+  ocamlfind remove netclient
+  ocamlfind remove netgssapi
+  ocamlfind remove nethttpd
+  ocamlfind remove nethttpd-for-netcgi2
+  ocamlfind remove netmulticore
+  ocamlfind remove netplex
+  ocamlfind remove netshm
+  ocamlfind remove netstring
+  ocamlfind remove netsys
+  ocamlfind remove pop
+  ocamlfind remove rpc
+  ocamlfind remove rpc-auth-local
+  ocamlfind remove rpc-generator
+  ocamlfind remove shell
+  ocamlfind remove smtp
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/equeue
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netcamlbox
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netcgi2
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netcgi2-plex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netclient
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netgssapi
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/nethttpd
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/nethttpd-for-netcgi2
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netmulticore
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netplex
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netshm
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netstring
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/netsys
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/pop
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/rpc
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/rpc-auth-local
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/rpc-generator
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/shell
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.0dev+trunk/lib/smtp
+
+=-=-= Installing biniou.1.0.9 =-=-=
+default    Downloading https://opam.ocaml.org/archives/biniou.1.0.9+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/biniou.1.0.9+opam.tar.gz
+--2014-05-12 01:38:46--  https://opam.ocaml.org/archives/biniou.1.0.9+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 24297 (24K) [application/octet-stream]
+Saving to: 'biniou.1.0.9+opam.tar.gz'
+
+     0K .......... .......... ...                             100%  232K=0.1s
+
+2014-05-12 01:38:47 (232 KB/s) - 'biniou.1.0.9+opam.tar.gz' saved [24297/24297]
+
+Building biniou.1.0.9:
+  make
+  make install
+ocamlfind ocamlc -a -dtypes -g -o biniou.cma \
+		-package "easy-format" bi_util.mli bi_util.ml bi_share.mli bi_share.ml bi_outbuf.mli bi_outbuf.ml bi_inbuf.mli bi_inbuf.ml bi_vint.mli bi_vint.ml bi_io.mli bi_io.ml bi_dump.ml bi_stream.mli bi_stream.ml
+File "bi_util.ml", line 11, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_util.ml", line 13, characters 4-51:
+Warning 3: deprecated feature: String.set
+File "bi_util.ml", line 18, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_util.ml", line 20, characters 4-51:
+Warning 3: deprecated feature: String.set
+File "bi_util.ml", line 36, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_util.ml", line 41, characters 6-64:
+Warning 3: deprecated feature: String.set
+File "bi_util.ml", line 43, characters 4-54:
+Warning 3: deprecated feature: String.set
+File "bi_outbuf.ml", line 24, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_outbuf.ml", line 40, characters 8-21:
+Warning 3: deprecated feature: String.create
+File "bi_outbuf.ml", line 86, characters 2-18:
+Warning 3: deprecated feature: String.set
+File "bi_outbuf.ml", line 90, characters 2-18:
+Warning 3: deprecated feature: String.set
+File "bi_outbuf.ml", line 96, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 97, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 102, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 103, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 104, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 105, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 116, characters 13-26:
+Warning 3: deprecated feature: String.create
+File "bi_inbuf.ml", line 99, characters 8-21:
+Warning 3: deprecated feature: String.create
+File "bi_io.ml", line 86, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 88, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 90, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 92, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 216, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 220, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 231, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 235, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 562, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "bi_stream.ml", line 56, characters 16-29:
+Warning 3: deprecated feature: String.create
+ocamlfind ocamlopt -a -dtypes -g \
+		-o biniou.cmxa -package "easy-format" bi_util.mli bi_util.ml bi_share.mli bi_share.ml bi_outbuf.mli bi_outbuf.ml bi_inbuf.mli bi_inbuf.ml bi_vint.mli bi_vint.ml bi_io.mli bi_io.ml bi_dump.ml bi_stream.mli bi_stream.ml
+File "bi_util.ml", line 11, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_util.ml", line 13, characters 4-51:
+Warning 3: deprecated feature: String.set
+File "bi_util.ml", line 18, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_util.ml", line 20, characters 4-51:
+Warning 3: deprecated feature: String.set
+File "bi_util.ml", line 36, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_util.ml", line 41, characters 6-64:
+Warning 3: deprecated feature: String.set
+File "bi_util.ml", line 43, characters 4-54:
+Warning 3: deprecated feature: String.set
+File "bi_outbuf.ml", line 24, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "bi_outbuf.ml", line 40, characters 8-21:
+Warning 3: deprecated feature: String.create
+File "bi_outbuf.ml", line 86, characters 2-18:
+Warning 3: deprecated feature: String.set
+File "bi_outbuf.ml", line 90, characters 2-18:
+Warning 3: deprecated feature: String.set
+File "bi_outbuf.ml", line 96, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 97, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 102, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 103, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 104, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 105, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_outbuf.ml", line 116, characters 13-26:
+Warning 3: deprecated feature: String.create
+File "bi_inbuf.ml", line 99, characters 8-21:
+Warning 3: deprecated feature: String.create
+File "bi_io.ml", line 86, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 88, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 90, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 92, characters 2-19:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 216, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 220, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 231, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 235, characters 4-21:
+Warning 3: deprecated feature: String.unsafe_set
+File "bi_io.ml", line 562, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "bi_stream.ml", line 56, characters 16-29:
+Warning 3: deprecated feature: String.create
+ocamlopt -shared -linkall -I . -o biniou.cmxs biniou.cmxa
+ocamlfind ocamlopt -o bdump -dtypes -g \
+		-package easy-format -linkpkg \
+		biniou.cmxa bdump.ml
+ocamlfind ocamlopt -o test_biniou -dtypes -g \
+		-package "easy-format unix" -linkpkg \
+		biniou.cmxa test_biniou.ml
+sed -e 's:@@VERSION@@:1.0.9:' META.in > META
+test ! -f bdump || cp bdump /home/opam/.opam/4.02.0dev+trunk/bin/
+test ! -f bdump.exe || cp bdump.exe /home/opam/.opam/4.02.0dev+trunk/bin/
+ocamlfind install biniou META \
+          $(ls bi_util.mli bi_share.mli bi_outbuf.mli bi_inbuf.mli bi_vint.mli bi_io.mli bi_stream.mli bi_util.cmi bi_share.cmi bi_outbuf.cmi bi_inbuf.cmi bi_vint.cmi bi_io.cmi bi_dump.cmi bi_stream.cmi bi_util.cmo bi_share.cmo bi_outbuf.cmo bi_inbuf.cmo bi_vint.cmo bi_io.cmo bi_dump.cmo bi_stream.cmo bi_util.cmx bi_share.cmx bi_outbuf.cmx bi_inbuf.cmx bi_vint.cmx bi_io.cmx bi_dump.cmx bi_stream.cmx bi_util.o bi_share.o bi_outbuf.o bi_inbuf.o bi_vint.o bi_io.o bi_dump.o bi_stream.o biniou.cma biniou.cmxa biniou.cmxs biniou.a)
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/biniou.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/biniou.cmxa
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/biniou.cma
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/biniou.a
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_vint.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_vint.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_vint.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_vint.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_vint.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_util.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_util.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_util.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_util.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_util.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_stream.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_stream.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_stream.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_stream.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_stream.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_share.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_share.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_share.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_share.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_share.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_outbuf.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_outbuf.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_outbuf.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_outbuf.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_outbuf.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_io.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_io.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_io.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_io.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_io.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_inbuf.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_inbuf.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_inbuf.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_inbuf.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_inbuf.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_dump.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_dump.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_dump.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/bi_dump.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/biniou/META
+Installing biniou.1.0.9.
+
+=-=-= Installing yojson.1.1.8 =-=-=
+default    Downloading https://opam.ocaml.org/archives/yojson.1.1.8+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/yojson.1.1.8+opam.tar.gz
+--2014-05-12 01:38:51--  https://opam.ocaml.org/archives/yojson.1.1.8+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 25182 (25K) [application/octet-stream]
+Saving to: 'yojson.1.1.8+opam.tar.gz'
+
+     0K .......... .......... ....                            100%  243K=0.1s
+
+2014-05-12 01:38:51 (243 KB/s) - 'yojson.1.1.8+opam.tar.gz' saved [25182/25182]
+
+Building yojson.1.1.8:
+  make
+  make install
+sed -e 's:@@VERSION@@:1.1.8:' META.in > META
+cppo -n yojson.mli.cppo -o yojson.mli
+ocamlfind ocamlc -c -dtypes -g -package easy-format,biniou yojson.mli
+ocamllex read.mll
+433 states, 2020 transitions, table size 10678 bytes
+cppo -D "VERSION 1.1.8" yojson.ml.cppo -o yojson.ml
+ocamlfind ocamlc -c -dtypes -g -package easy-format,biniou yojson.ml
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "read.mll", line 367, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "read.mll", line 368, characters 4-16:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "read.mll", line 367, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "read.mll", line 368, characters 4-16:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "read.mll", line 367, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "read.mll", line 368, characters 4-16:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlc -c -dtypes -g -package easy-format,biniou yojson_biniou.mli
+ocamlfind ocamlc -c -dtypes -g -package easy-format,biniou yojson_biniou.ml
+ocamlfind ocamlopt -c -dtypes -g -package easy-format,biniou yojson.ml
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "read.mll", line 367, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "read.mll", line 368, characters 4-16:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "read.mll", line 367, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "read.mll", line 368, characters 4-16:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 21, characters 2-38:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 22, characters 2-41:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 61, characters 10-23:
+Warning 3: deprecated feature: String.create
+File "write.ml", line 63, characters 4-23:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 88, characters 4-20:
+Warning 3: deprecated feature: String.set
+File "write.ml", line 98, characters 4-18:
+Warning 3: deprecated feature: String.set
+File "read.mll", line 367, characters 12-25:
+Warning 3: deprecated feature: String.create
+File "read.mll", line 368, characters 4-16:
+Warning 3: deprecated feature: String.set
+ocamlfind ocamlopt -c -dtypes -g -package easy-format,biniou yojson_biniou.ml
+ocamlopt -shared -linkall -I . -o yojson.cmxs yojson.cmx
+ocamlopt -shared -linkall -I . -o yojson_biniou.cmxs yojson_biniou.cmx
+ocamlfind ocamlopt -o ydump -dtypes -g -package easy-format,biniou -linkpkg \
+		yojson.cmx yojson_biniou.cmx ydump.ml
+test ! -f ydump || cp ydump /home/opam/.opam/4.02.0dev+trunk/bin/
+test ! -f ydump.exe || cp ydump.exe /home/opam/.opam/4.02.0dev+trunk/bin/
+ocamlfind install yojson META \
+          $(ls yojson.mli yojson_biniou.mli yojson.cmi yojson_biniou.cmi yojson.cmo yojson_biniou.cmo yojson.cmx yojson_biniou.cmx yojson.cmxs yojson_biniou.cmxs yojson.o yojson_biniou.o)
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson_biniou.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson_biniou.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson_biniou.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson_biniou.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson_biniou.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson_biniou.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson.o
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson.mli
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson.cmxs
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson.cmx
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson.cmo
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/yojson.cmi
+Installed /home/opam/.opam/4.02.0dev+trunk/lib/yojson/META
+Installing yojson.1.1.8.
+
+[ERROR] Due to some errors while processing ocamlnet.3.7.3, the following actions will NOT proceed:
+ - install bitcoin.1.1.1
+
+===== ERROR while installing ocamlnet.3.7.3 =====
+# opam-version         1.1.1
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3
+# compiler             4.02.0dev+trunk
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/ocamlnet-192-335865.env
+# stdout-file          /home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/ocamlnet-192-335865.out
+# stderr-file          /home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/ocamlnet-192-335865.err
+### stdout ###
+# ...[truncated]
+# 	    -e 's/@PREFERRED_CGI_PKG@//' \
+# 	    -e 's/@REGEXP_PROVIDER@/str/' \
+# 	    -e 's/@COMPAT_PCRE_PROVIDER@//' \
+#  	    -e 's/@ZIP_PROVIDER@//' \
+# 		META.in >META
+# make[2]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+# make[1]: Entering directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+# ocamlfind ocamldep -package "camlp4.macro" -syntax camlp4o  *.ml *.mli >depend || { rm -f depend; exit 1; }
+# make[1]: Leaving directory `/home/opam/.opam/4.02.0dev+trunk/build/ocamlnet.3.7.3/src/netsys'
+### stderr ###
+# Welcome to Ocamlnet version 3.7.3
+# make[1]: *** [depend] Error 1
+# make: *** [all] Error 2
+
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/4.02.0dev+trunk/backup/state-20140412013817.export"
+'opam install bitcoin' failed.
