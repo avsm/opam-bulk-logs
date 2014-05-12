@@ -1,0 +1,100 @@
+++ opam install ocamlify -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocamlify
+Ubuntu srcexts:
+The following actions will be performed:
+ - install ocamlify.0.0.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocamlify.0.0.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocamlify.0.0.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocamlify.0.0.1+opam.tar.gz
+--2014-05-12 10:16:46--  https://opam.ocaml.org/archives/ocamlify.0.0.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 46668 (46K) [application/octet-stream]
+Saving to: 'ocamlify.0.0.1+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .....     100%  226K=0.2s
+
+2014-05-12 10:16:47 (226 KB/s) - 'ocamlify.0.0.1+opam.tar.gz' saved [46668/46668]
+
+Building ocamlify.0.0.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.0dev+trunk
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+I: Running command '/home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt -config > /tmp/oasis-53c164.txt'
+I: Running command '/home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind query -format %v findlib > /tmp/oasis-cf684f.txt'
+
+Configuration: 
+
+OCamlbuild additional flags: ................... 
+Compile with ocaml profile flag on.: ........... false
+Compile with ocaml debug flag on.: ............. true
+Remove a directory.: ........................... rm -rf
+Remove a file.: ................................ rm -f
+suffix_program: ................................ 
+is_native: ..................................... true
+findlib_version: ............................... 1.4
+PS documentation: .............................. $docdir
+PDF documentation: ............................. $docdir
+DVI documentation: ............................. $docdir
+HTML documentation: ............................ $docdir
+Documentation root: ............................ $datarootdir/doc/$pkg_name
+Man documentation: ............................. $datarootdir/man
+Locale-dependent data: ......................... $datarootdir/locale
+Info documentation: ............................ $datarootdir/info
+Read-only architecture-independent data: ....... $datarootdir
+Read-only arch-independent data root: .......... $prefix/share
+Object code libraries: ......................... $exec_prefix/lib
+Modifiable single-machine data: ................ $prefix/var
+Modifiable architecture-independent data: ...... $prefix/com
+Read-only single-machine data: ................. $prefix/etc
+Program executables: ........................... $exec_prefix/libexec
+System admin executables: ...................... $exec_prefix/sbin
+User executables: .............................. $exec_prefix/bin
+Install architecture-dependent files in dir: ... $prefix
+Install architecture-independent files dir: .... /home/opam/.opam/4.02.0dev+trunk
+systhread_supported: ........................... true
+default_executable_name: ....................... a.out
+ext_dll: ....................................... .so
+ext_lib: ....................................... .a
+ext_asm: ....................................... .s
+ext_obj: ....................................... .o
+model: ......................................... default
+native_c_compiler: ............................. gcc -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+bytecomp_c_compiler: ........................... gcc -fno-defer-pop -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+standard_runtime: .............................. /home/opam/.opam/4.02.0dev+trunk/bin/ocamlrun
+standard_library: .............................. /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+standard_library_default: ...................... /home/opam/.opam/4.02.0dev+trunk/lib/ocaml
+ocaml_version: ................................. 4.02.0+dev5-2014-04-29
+ccomp_type: .................................... cc
+architecture: .................................. amd64
+system: ........................................ linux
+os_type: ....................................... Unix
+Package version: ............................... 0.0.1
+Package name: .................................. ocamlify
+ocamlbuild: .................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild
+ocamlopt: ...................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlopt.opt
+ocamlc: ........................................ /home/opam/.opam/4.02.0dev+trunk/bin/ocamlc.opt
+ocamlfind: ..................................... /home/opam/.opam/4.02.0dev+trunk/bin/ocamlfind
+
+I: Running command '/home/opam/.opam/4.02.0dev+trunk/bin/ocamlbuild src/ocamlify.byte -tag debug'
+ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.0dev+trunk/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -modules src/ocamlify.ml > src/ocamlify.ml.depends
+ocamlfind ocamldep -modules src/OCamlifyConfig.ml > src/OCamlifyConfig.ml.depends
+ocamlfind ocamlc -c -g -I src -o src/OCamlifyConfig.cmo src/OCamlifyConfig.ml
+ocamlfind ocamlc -c -g -I src -o src/ocamlify.cmo src/ocamlify.ml
+ocamlfind ocamlc -linkpkg -g -linkpkg src/OCamlifyConfig.cmo src/ocamlify.cmo -o src/ocamlify.byte
+I: Running command 'cp '_build/src/ocamlify.byte' '_build/src/ocamlify''
+I: Copying file '/home/opam/.opam/4.02.0dev+trunk/build/ocamlify.0.0.1/_build/src/ocamlify' to '/home/opam/.opam/4.02.0dev+trunk/bin/ocamlify'
+I: Running command 'cp '/home/opam/.opam/4.02.0dev+trunk/build/ocamlify.0.0.1/_build/src/ocamlify' '/home/opam/.opam/4.02.0dev+trunk/bin/ocamlify''
+Installing ocamlify.0.0.1.
