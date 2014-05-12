@@ -1,0 +1,110 @@
+++ opam install binary -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install binary
+The following actions will be performed:
+ - install binary.0.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing binary.0.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/binary.0.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/binary.0.1+opam.tar.gz
+--2014-05-12 23:38:54--  https://opam.ocaml.org/archives/binary.0.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 51758 (51K) [application/octet-stream]
+Saving to: 'binary.0.1+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 98%  245K 0s
+    50K                                                       100% 1039G=0.2s
+
+2014-05-12 23:38:54 (247 KB/s) - 'binary.0.1+opam.tar.gz' saved [51758/51758]
+
+Building binary.0.1:
+  ./configure --prefix /home/opam/.opam/system
+  make
+  make install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ binary
+Package version: ..................................... 0.1
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/system
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+
+ocaml setup.ml -build 
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+ocamlfind ocamldep -modules src/binary.mli > src/binary.mli.depends
+ocamlfind ocamlc -c -g -w @a -I src -o src/binary.cmi src/binary.mli
+ocamlfind ocamldep -modules src/binary.ml > src/binary.ml.depends
+ocamlfind ocamlc -c -g -w @a -I src -o src/binary.cmo src/binary.ml
+ocamlfind ocamlc -a -w @a src/binary.cmo -o src/binary.cma
+ocamlfind ocamlopt -c -g -w @a -I src -o src/binary.cmx src/binary.ml
+ocamlfind ocamlopt -a -w @a src/binary.cmx -o src/binary.cmxa
+ocamlfind ocamlopt -shared src/binary.cmx -o src/binary.cmxs
+ocaml setup.ml -install 
+Installed /home/opam/.opam/system/lib/binary/binary.mli
+Installed /home/opam/.opam/system/lib/binary/binary.cma
+Installed /home/opam/.opam/system/lib/binary/binary.cmxa
+Installed /home/opam/.opam/system/lib/binary/binary.a
+Installed /home/opam/.opam/system/lib/binary/binary.cmxs
+Installed /home/opam/.opam/system/lib/binary/binary.cmi
+Installed /home/opam/.opam/system/lib/binary/binary.cmx
+Installed /home/opam/.opam/system/lib/binary/META
+Installing binary.0.1.
