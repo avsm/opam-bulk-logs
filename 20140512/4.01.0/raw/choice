@@ -1,0 +1,54 @@
+++ opam install choice -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install choice
+Ubuntu srcexts:
+The following actions will be performed:
+ - install choice.0.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing choice.0.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/choice.0.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/choice.0.1+opam.tar.gz
+--2014-05-12 23:56:12--  https://opam.ocaml.org/archives/choice.0.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 5399 (5.3K) [application/octet-stream]
+Saving to: 'choice.0.1+opam.tar.gz'
+
+     0K .....                                                 100%  429M=0s
+
+2014-05-12 23:56:12 (429 MB/s) - 'choice.0.1+opam.tar.gz' saved [5399/5399]
+
+Building choice.0.1:
+  make
+  make install
+ocamlbuild -use-ocamlfind choice.cmxa choice.cma choice.a choice.cmi choice.cmxs choice.docdir/index.html
+ocamlfind ocamldep -modules choice.ml > choice.ml.depends
+ocamlfind ocamldep -modules choice.mli > choice.mli.depends
+ocamlfind ocamlc -c -o choice.cmi choice.mli
+ocamlfind ocamlopt -c -o choice.cmx choice.ml
+ocamlfind ocamlopt -a choice.cmx -o choice.cmxa
+ocamlfind ocamlc -c -o choice.cmo choice.ml
+ocamlfind ocamlc -a choice.cmo -o choice.cma
+ocamlfind ocamlopt -shared choice.cmx -o choice.cmxs
+ocamlfind ocamldoc -dump choice.odoc choice.mli
+rm -rf choice.docdir
+mkdir -p choice.docdir
+ocamlfind ocamldoc -load choice.odoc -html -d choice.docdir
+ocamlfind install choice META _build/choice.cmxa _build/choice.cma _build/choice.a _build/choice.cmi _build/choice.cmxs choice.mli
+Installed /home/opam/.opam/system/lib/choice/choice.mli
+Installed /home/opam/.opam/system/lib/choice/choice.cmxs
+Installed /home/opam/.opam/system/lib/choice/choice.cmi
+Installed /home/opam/.opam/system/lib/choice/choice.a
+Installed /home/opam/.opam/system/lib/choice/choice.cma
+Installed /home/opam/.opam/system/lib/choice/choice.cmxa
+Installed /home/opam/.opam/system/lib/choice/META
+Installing choice.0.1.
