@@ -122,3 +122,14 @@ Installing camlbz2.0.6.0.
 Installing camlp4.4.01.0.
 
 =-=-= Installing ounit.2.0.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ounit.2.0.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ounit.2.0.0+opam.tar.gz
+--2014-05-12 22:41:26--  https://opam.ocaml.org/archives/ounit.2.0.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... failed: Name or service not known.
+wget: unable to resolve host address 'opam.ocaml.org'
+
+=-=-= Installing lwt.2.4.5 =-=-=
+default    Downloading https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
+--2014-05-12 22:41:52--  https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 

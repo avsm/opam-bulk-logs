@@ -529,3 +529,37 @@ Building conf-gmp.1:
 Installing conf-gmp.1.
 
 =-=-= Installing lablgtk.2.16.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/lablgtk.2.16.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/lablgtk.2.16.0+opam.tar.gz
+--2014-05-12 22:41:25--  https://opam.ocaml.org/archives/lablgtk.2.16.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... failed: Name or service not known.
+wget: unable to resolve host address 'opam.ocaml.org'
+
+=-=-= Installing zarith.1.2 =-=-=
+default    Downloading https://opam.ocaml.org/archives/zarith.1.2+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/zarith.1.2+opam.tar.gz
+--2014-05-12 22:41:51--  https://opam.ocaml.org/archives/zarith.1.2+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... failed: Name or service not known.
+wget: unable to resolve host address 'opam.ocaml.org'
+
+[ERROR] Due to some errors while processing { lablgtk.2.16.0, zarith.1.2 }, the following actions will NOT proceed:
+ - install ocamlgraph.1.8.5
+ - install altgr-ergo.0.95.2
+
+===== ERROR while installing lablgtk.2.16.0 =====
+Could not get the source for lablgtk.2.16.0:
+# opam-version    1.1.1
+# os              linux
+Cannot download https://opam.ocaml.org/archives/lablgtk.2.16.0+opam.tar.gz, please check your connection settings.
+
+===== ERROR while installing zarith.1.2 =====
+Could not get the source for zarith.1.2:
+# opam-version    1.1.1
+# os              linux
+Cannot download https://opam.ocaml.org/archives/zarith.1.2+opam.tar.gz, please check your connection settings.
+
+=-=-= lablgtk.2.16.0 troobleshooting =-=-=
+This package requires gtk+ 2.0 development packages installed on your system.
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/system/backup/state-20140412224104.export"
+'opam install altgr-ergo' failed.
