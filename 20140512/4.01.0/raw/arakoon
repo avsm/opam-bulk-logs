@@ -119,3 +119,6 @@ Installed /home/opam/.opam/system/lib/stublibs/dllcamlbz2.so.owner
 Installing camlbz2.0.6.0.
 
 =-=-= Installing camlp4.4.01.0 =-=-=
+Installing camlp4.4.01.0.
+
+=-=-= Installing ounit.2.0.0 =-=-=
