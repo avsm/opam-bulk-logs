@@ -132,4 +132,24 @@ wget: unable to resolve host address 'opam.ocaml.org'
 default    Downloading https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
 Downloading https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
 --2014-05-12 22:41:52--  https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz
-Resolving opam.ocaml.org (opam.ocaml.org)... 
+Resolving opam.ocaml.org (opam.ocaml.org)... failed: Name or service not known.
+wget: unable to resolve host address 'opam.ocaml.org'
+
+[ERROR] Due to some errors while processing { lwt.2.4.5, ounit.2.0.0 }, the following actions will NOT proceed:
+ - install arakoon.1.6.7
+ - install camltc.0.9.1
+
+===== ERROR while installing lwt.2.4.5 =====
+Could not get the source for lwt.2.4.5:
+# opam-version    1.1.1
+# os              linux
+Cannot download https://opam.ocaml.org/archives/lwt.2.4.5+opam.tar.gz, please check your connection settings.
+
+===== ERROR while installing ounit.2.0.0 =====
+Could not get the source for ounit.2.0.0:
+# opam-version    1.1.1
+# os              linux
+Cannot download https://opam.ocaml.org/archives/ounit.2.0.0+opam.tar.gz, please check your connection settings.
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/system/backup/state-20140412224057.export"
+'opam install arakoon' failed.
