@@ -21,3 +21,31 @@ Downloading https://opam.ocaml.org/archives/bolt.1.4+opam.tar.gz
 --2014-05-12 22:34:33--  https://opam.ocaml.org/archives/bolt.1.4+opam.tar.gz
 Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
 Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 627271 (613K) [application/octet-stream]
+Saving to: 'bolt.1.4+opam.tar.gz'
+
+     0K .......... .......... .......... .......... ..........  8%  242K 2s
+    50K .......... .......... .......... .......... .......... 16%  481K 2s
+   100K .......... .......... .......... .......... .......... 24% 1.25M 1s
+   150K .......... .......... .......... .......... .......... 32%  744K 1s
+   200K .......... .......... .......... .......... .......... 40%  501K 1s
+   250K .......... .......... .......... .......... .......... 48% 11.8M 1s
+   300K .......... .......... .......... .......... .......... 57% 11.7M 0s
+   350K .......... .......... .......... .......... .......... 65%  515K 0s
+   400K .......... .......... .......... .......... .......... 73% 11.8M 0s
+   450K .......... .......... .......... .......... .......... 81% 11.7M 0s
+   500K .......... .......... .......... .......... .......... 89% 11.7M 0s
+   550K .......... .......... .......... .......... .......... 97% 11.4M 0s
+   600K .......... ..                                         100% 37.4M=0.6s
+
+2014-05-12 22:34:34 (959 KB/s) - 'bolt.1.4+opam.tar.gz' saved [627271/627271]
+
+Applying opam.patch.
+patching file Makefile
+Applying opam.bolt.META.patch.
+patching file META
+Building bolt.1.4:
+  ./configure -ocamlfind /home/opam/.opam/system/bin/ocamlfind
+  make all
+  make install
