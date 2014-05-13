@@ -1,0 +1,48 @@
+++ opam install format -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install format
+The following actions will be performed:
+ - install format.0.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing format.0.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/format.0.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/format.0.1+opam.tar.gz
+--2014-05-13 00:44:27--  https://opam.ocaml.org/archives/format.0.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 19012 (19K) [application/octet-stream]
+Saving to: 'format.0.1+opam.tar.gz'
+
+     0K .......... ........                                   100%  186K=0.1s
+
+2014-05-13 00:44:28 (186 KB/s) - 'format.0.1+opam.tar.gz' saved [19012/19012]
+
+Building format.0.1:
+  make
+  make install
+ocamllex formatLexer.mll
+23 states, 271 transitions, table size 1222 bytes
+1219 additional bytes used for bindings
+ocamlyacc formatParser.mly
+rm -f formatParser.mli
+ocamlc -I +camlp4 -c formatParser.ml
+ocamlc -I +camlp4 -c formatLexer.ml
+ocamlc -I +camlp4 -pp camlp4of -c pa_format.ml
+ocamlc -I +camlp4 -pp camlp4of -c pa_format_short.ml
+ocamlfind install format META formatLexer.cmo formatParser.cmo pa_format.cmo pa_format_short.cmo
+Installed /home/opam/.opam/system/lib/format/pa_format_short.cmo
+Installed /home/opam/.opam/system/lib/format/pa_format.cmo
+Installed /home/opam/.opam/system/lib/format/formatParser.cmo
+Installed /home/opam/.opam/system/lib/format/formatLexer.cmo
+Installed /home/opam/.opam/system/lib/format/META
+Installing format.0.1.
