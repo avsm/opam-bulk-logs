@@ -1,0 +1,38 @@
+++ opam install hweak -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install hweak
+The following actions will be performed:
+ - install hweak.1.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing hweak.1.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/hweak.1.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/hweak.1.1+opam.tar.gz
+--2014-05-13 01:17:49--  https://opam.ocaml.org/archives/hweak.1.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4944 (4.8K) [application/octet-stream]
+Saving to: 'hweak.1.1+opam.tar.gz'
+
+     0K ....                                                  100%  458M=0s
+
+2014-05-13 01:17:49 (458 MB/s) - 'hweak.1.1+opam.tar.gz' saved [4944/4944]
+
+Building hweak.1.1:
+  mkdir -p /home/opam/.opam/system/lib/hweak
+  make
+  cp hweak.cmi hweak.cmo weak_memo.cmi weak_memo.cmo /home/opam/.opam/system/lib/hweak
+ocamlc  -c hweak.mli
+ocamlc  -c hweak.ml
+ocamlc  -c weak_memo.mli
+ocamlc  -c weak_memo.ml
+Installing hweak.1.1.
