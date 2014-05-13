@@ -1,0 +1,50 @@
+++ opam install smart-print -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install smart-print
+Ubuntu srcexts:
+The following actions will be performed:
+ - install smart-print.0.2.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing smart-print.0.2.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/smart-print.0.2.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/smart-print.0.2.0+opam.tar.gz
+--2014-05-13 03:43:36--  https://opam.ocaml.org/archives/smart-print.0.2.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 11000 (11K) [application/octet-stream]
+Saving to: 'smart-print.0.2.0+opam.tar.gz'
+
+     0K ..........                                            100% 10.1M=0.001s
+
+2014-05-13 03:43:36 (10.1 MB/s) - 'smart-print.0.2.0+opam.tar.gz' saved [11000/11000]
+
+Building smart-print.0.2.0:
+  make
+  make install
+ocamlbuild smartPrintLib.cma smartPrintLib.cmxa
+/usr/bin/ocamldep.opt -modules smartPrint.mli > smartPrint.mli.depends
+/usr/bin/ocamlc.opt -c -o smartPrint.cmi smartPrint.mli
+/usr/bin/ocamldep.opt -modules smartPrint.ml > smartPrint.ml.depends
+/usr/bin/ocamlc.opt -c -o smartPrint.cmo smartPrint.ml
+/usr/bin/ocamlc.opt -a smartPrint.cmo -o smartPrintLib.cma
+/usr/bin/ocamlopt.opt -c -o smartPrint.cmx smartPrint.ml
+/usr/bin/ocamlopt.opt -a smartPrint.cmx -o smartPrintLib.cmxa
+ocamlbuild smartPrintLib.cma smartPrintLib.cmxa
+ocamlfind install smart_print META _build/smartPrint.cmi _build/smartPrint.cmx _build/smartPrintLib.a _build/smartPrintLib.cma _build/smartPrintLib.cmxa _build/smartPrintLib.mllib
+Installed /home/opam/.opam/system/lib/smart_print/smartPrintLib.mllib
+Installed /home/opam/.opam/system/lib/smart_print/smartPrintLib.cmxa
+Installed /home/opam/.opam/system/lib/smart_print/smartPrintLib.cma
+Installed /home/opam/.opam/system/lib/smart_print/smartPrintLib.a
+Installed /home/opam/.opam/system/lib/smart_print/smartPrint.cmx
+Installed /home/opam/.opam/system/lib/smart_print/smartPrint.cmi
+Installed /home/opam/.opam/system/lib/smart_print/META
+Installing smart-print.0.2.0.
