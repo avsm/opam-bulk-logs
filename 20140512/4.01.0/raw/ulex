@@ -1,0 +1,32 @@
+++ opam install ulex -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ulex
+The following actions will be performed:
+ - install ulex.1.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ulex.1.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ulex.1.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ulex.1.1+opam.tar.gz
+--2014-05-13 03:57:11--  https://opam.ocaml.org/archives/ulex.1.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2014-05-13 03:57:12 ERROR 404: Not Found.
+
+
+
+===== ERROR while installing ulex.1.1 =====
+Could not get the source for ulex.1.1:
+# opam-version    1.1.1
+# os              linux
+Cannot download https://opam.ocaml.org/archives/ulex.1.1+opam.tar.gz, please check your connection settings.
+'opam install ulex' failed.
