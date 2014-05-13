@@ -1,0 +1,15 @@
+++ opam install ppx_tools -e ubuntu
+[ERROR] "ppx_tools" is not available for your compiler or your OS.
+'opam install ppx_tools -e ubuntu' failed.
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ppx_tools
+Ubuntu srcexts:
+[ERROR] "ppx_tools" is not available for your compiler or your OS.
+'opam install ppx_tools' failed.
