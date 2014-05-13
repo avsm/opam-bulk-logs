@@ -1,0 +1,15 @@
+++ opam install ppx_protobuf -e ubuntu
+[ERROR] "ppx_protobuf" is not available for your compiler or your OS.
+'opam install ppx_protobuf -e ubuntu' failed.
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ppx_protobuf
+[ERROR] "ppx_protobuf" is not available for your compiler or your OS.
+'opam install ppx_protobuf' failed.
