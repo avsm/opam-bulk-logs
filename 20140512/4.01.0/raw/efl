@@ -1,0 +1,64 @@
+++ opam install efl -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install efl
+Ubuntu srcexts:
+The following actions will be performed:
+ - install efl.1.9.0
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing efl.1.9.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/efl.1.9.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/efl.1.9.0+opam.tar.gz
+--2014-05-13 00:32:11--  https://opam.ocaml.org/archives/efl.1.9.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 241543 (236K) [application/octet-stream]
+Saving to: 'efl.1.9.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 21%  245K 1s
+    50K .......... .......... .......... .......... .......... 42%  487K 0s
+   100K .......... .......... .......... .......... .......... 63% 1.23M 0s
+   150K .......... .......... .......... .......... .......... 84%  776K 0s
+   200K .......... .......... .......... .....                100% 13.3M=0.4s
+
+2014-05-13 00:32:12 (570 KB/s) - 'efl.1.9.0+opam.tar.gz' saved [241543/241543]
+
+Building efl.1.9.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/system
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Package elementary was not found in the pkg-config search path.
+Perhaps you should add the directory containing `elementary.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'elementary' found
+[ERROR] The compilation of efl.1.9.0 failed.
+Removing efl.1.9.0.
+  ocamlfind remove efl
+ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/efl
+
+
+===== ERROR while installing efl.1.9.0 =====
+# opam-version         1.1.1
+# os                   linux
+# command              ocaml setup.ml -configure --prefix /home/opam/.opam/system
+# path                 /home/opam/.opam/system/build/efl.1.9.0
+# compiler             system (4.01.0)
+# exit-code            1
+# env-file             /home/opam/.opam/system/build/efl.1.9.0/efl-30-a71bb4.env
+# stdout-file          /home/opam/.opam/system/build/efl.1.9.0/efl-30-a71bb4.out
+# stderr-file          /home/opam/.opam/system/build/efl.1.9.0/efl-30-a71bb4.err
+### stderr ###
+# Package elementary was not found in the pkg-config search path.
+# Perhaps you should add the directory containing `elementary.pc'
+# to the PKG_CONFIG_PATH environment variable
+# No package 'elementary' found
+
+'opam install efl' failed.
