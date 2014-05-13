@@ -1,0 +1,38 @@
+++ opam install cppo -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install cppo
+The following actions will be performed:
+ - install cppo.0.9.3
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing cppo.0.9.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/cppo.0.9.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/cppo.0.9.3+opam.tar.gz
+--2014-05-13 00:22:27--  https://opam.ocaml.org/archives/cppo.0.9.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20088 (20K) [application/octet-stream]
+Saving to: 'cppo.0.9.3+opam.tar.gz'
+
+     0K .......... .........                                  100%  196K=0.1s
+
+2014-05-13 00:22:27 (196 KB/s) - 'cppo.0.9.3+opam.tar.gz' saved [20088/20088]
+
+Building cppo.0.9.3:
+  make
+echo 'let cppo_version = "0.9.3"' > cppo_version.ml
+ocamlyacc cppo_parser.mly
+ocamllex cppo_lexer.mll
+354 states, 13186 transitions, table size 54868 bytes
+3462 additional bytes used for bindings
+ocamlopt -o cppo -dtypes unix.cmxa cppo_version.ml cppo_types.ml cppo_parser.mli cppo_parser.ml cppo_lexer.ml cppo_command.ml cppo_eval.ml cppo_main.ml
+Installing cppo.0.9.3.
