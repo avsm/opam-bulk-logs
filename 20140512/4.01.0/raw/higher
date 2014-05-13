@@ -1,0 +1,67 @@
+++ opam install higher -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install higher
+The following actions will be performed:
+ - install higher.0.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing higher.0.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/higher.0.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/higher.0.1+opam.tar.gz
+--2014-05-13 01:17:25--  https://opam.ocaml.org/archives/higher.0.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9881 (9.6K) [application/octet-stream]
+Saving to: 'higher.0.1+opam.tar.gz'
+
+     0K .........                                             100% 61.7M=0s
+
+2014-05-13 01:17:26 (61.7 MB/s) - 'higher.0.1+opam.tar.gz' saved [9881/9881]
+
+Building higher.0.1:
+  make
+  make install
+make[1]: Entering directory `/home/opam/.opam/system/build/higher.0.1'
+ocamldep higher.mli > ._bcdi/higher.di
+ocamldep higher.ml > ._d/higher.d
+make[1]: Leaving directory `/home/opam/.opam/system/build/higher.0.1'
+make[1]: Entering directory `/home/opam/.opam/system/build/higher.0.1'
+ocamlc -c higher.mli
+ocamlc -c higher.ml
+ocamlc -a                -o higher.cma higher.cmo
+make[1]: Leaving directory `/home/opam/.opam/system/build/higher.0.1'
+make[1]: Entering directory `/home/opam/.opam/system/build/higher.0.1'
+ocamldep -native higher.mli > ._ncdi/higher.di
+make[1]: Leaving directory `/home/opam/.opam/system/build/higher.0.1'
+make[1]: Entering directory `/home/opam/.opam/system/build/higher.0.1'
+ocamlopt -c higher.ml
+ocamlopt -a                -o higher.cmxa higher.cmx
+make[1]: Leaving directory `/home/opam/.opam/system/build/higher.0.1'
+make[1]: Entering directory `/home/opam/.opam/system/build/higher.0.1'
+make[1]: `higher.cma' is up to date.
+make[1]: Leaving directory `/home/opam/.opam/system/build/higher.0.1'
+make[1]: Entering directory `/home/opam/.opam/system/build/higher.0.1'
+make[1]: `higher.cmxa' is up to date.
+make[1]: Leaving directory `/home/opam/.opam/system/build/higher.0.1'
+
+Installing library with ocamlfind
+ocamlfind install  higher META higher.mli higher.cmi higher.cma higher.cmx higher.cmxa higher.a
+Installed /home/opam/.opam/system/lib/higher/higher.a
+Installed /home/opam/.opam/system/lib/higher/higher.cmxa
+Installed /home/opam/.opam/system/lib/higher/higher.cmx
+Installed /home/opam/.opam/system/lib/higher/higher.cma
+Installed /home/opam/.opam/system/lib/higher/higher.cmi
+Installed /home/opam/.opam/system/lib/higher/higher.mli
+Installed /home/opam/.opam/system/lib/higher/META
+
+Installation successful.
+Installing higher.0.1.
