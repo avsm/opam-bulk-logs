@@ -1,0 +1,53 @@
+++ opam install nonstd -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install nonstd
+Ubuntu srcexts:
+The following actions will be performed:
+ - install nonstd.0.0.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing nonstd.0.0.1 =-=-=
+default    Downloading https://opam.ocaml.org/archives/nonstd.0.0.1+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/nonstd.0.0.1+opam.tar.gz
+--2014-05-13 02:23:03--  https://opam.ocaml.org/archives/nonstd.0.0.1+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4535 (4.4K) [application/octet-stream]
+Saving to: 'nonstd.0.0.1+opam.tar.gz'
+
+     0K ....                                                  100%  385M=0s
+
+2014-05-13 02:23:04 (385 MB/s) - 'nonstd.0.0.1+opam.tar.gz' saved [4535/4535]
+
+Building nonstd.0.0.1:
+  ocaml please.ml build
+  ocaml please.ml install
+Please-> Building
+! cp ../nonstd.ml .
+! ocamlfind ocamlc  -c nonstd.ml -o nonstd.cmo
+! ocamlfind ocamlopt  -c nonstd.ml  -annot -bin-annot -o nonstd.cmx
+! ocamlc nonstd.cmo -a -o nonstd.cma
+! ocamlopt nonstd.cmx -a -o nonstd.cmxa
+! ocamlopt nonstd.cmxa nonstd.a -shared -o nonstd.cmxs
+Please-> Done.
+Please-> Installing
+! ocamlfind install nonstd ../META nonstd.cmx nonstd.cmo nonstd.cma nonstd.cmi nonstd.cmxa nonstd.cmxs nonstd.a nonstd.o
+Installed /home/opam/.opam/system/lib/nonstd/nonstd.o
+Installed /home/opam/.opam/system/lib/nonstd/nonstd.a
+Installed /home/opam/.opam/system/lib/nonstd/nonstd.cmxs
+Installed /home/opam/.opam/system/lib/nonstd/nonstd.cmxa
+Installed /home/opam/.opam/system/lib/nonstd/nonstd.cmi
+Installed /home/opam/.opam/system/lib/nonstd/nonstd.cma
+Installed /home/opam/.opam/system/lib/nonstd/nonstd.cmo
+Installed /home/opam/.opam/system/lib/nonstd/nonstd.cmx
+Installed /home/opam/.opam/system/lib/nonstd/META
+Please-> Done.
+Installing nonstd.0.0.1.
