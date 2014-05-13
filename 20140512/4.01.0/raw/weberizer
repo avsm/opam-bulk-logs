@@ -1,0 +1,35 @@
+++ opam install weberizer -e ubuntu
+Ubuntu depexts:
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install weberizer
+The following actions will be performed:
+ - install ocamlnet.3.7.3 [required by weberizer]
+ - install weberizer.0.7.7
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing ocamlnet.3.7.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+--2014-05-13 04:02:56--  https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2014-05-13 04:02:56 ERROR 404: Not Found.
+
+
+[ERROR] Due to some errors while processing ocamlnet.3.7.3, the following actions will NOT proceed:
+ - install weberizer.0.7.7
+
+===== ERROR while installing ocamlnet.3.7.3 =====
+Could not get the source for ocamlnet.3.7.3:
+# opam-version    1.1.1
+# os              linux
+Cannot download https://opam.ocaml.org/archives/ocamlnet.3.7.3+opam.tar.gz, please check your connection settings.
+'opam install weberizer' failed.
