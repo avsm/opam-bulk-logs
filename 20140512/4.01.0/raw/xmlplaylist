@@ -1,0 +1,68 @@
+++ opam install xmlplaylist -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install xmlplaylist
+The following actions will be performed:
+ - install xmlm.1.2.0 [required by xmlplaylist]
+ - install xmlplaylist.0.1.3
+2 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing xmlm.1.2.0 =-=-=
+default    Downloading https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+--2014-05-13 04:10:04--  https://opam.ocaml.org/archives/xmlm.1.2.0+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... 192.237.250.17, 2001:4801:7823:76:bb74:1f8e:ff10:627
+Connecting to opam.ocaml.org (opam.ocaml.org)|192.237.250.17|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 51637 (50K) [application/octet-stream]
+Saving to: 'xmlm.1.2.0+opam.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 99%  248K 0s
+    50K                                                       100%  814G=0.2s
+
+2014-05-13 04:10:04 (250 KB/s) - 'xmlm.1.2.0+opam.tar.gz' saved [51637/51637]
+
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+ocamlfind ocamldep -modules src/xmlm.mli > src/xmlm.mli.depends
+ocamlfind ocamlc -c -I src -I test -o src/xmlm.cmi src/xmlm.mli
+ocamlfind ocamldep -modules src/xmlm.ml > src/xmlm.ml.depends
+ocamlfind ocamlopt -c -annot -bin-annot -I src -I test -o src/xmlm.cmx src/xmlm.ml
+ocamlfind ocamlc -c -annot -bin-annot -I src -I test -o src/xmlm.cmo src/xmlm.ml
+ocamlfind ocamlc -a src/xmlm.cmo -o src/xmlm.cma
+ocamlfind ocamlopt -a src/xmlm.cmx -o src/xmlm.cmxa
+ocamlfind ocamlopt -shared src/xmlm.cmx -o src/xmlm.cmxs
+ocamlfind ocamldep -modules test/xmltrip.ml > test/xmltrip.ml.depends
+ocamlfind ocamldep -modules test/xhtml.ml > test/xhtml.ml.depends
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xhtml.cmo test/xhtml.ml
+ocamlfind ocamlc -c -annot -bin-annot -I test -I src -o test/xmltrip.cmo test/xmltrip.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xhtml.cmx test/xhtml.ml
+ocamlfind ocamlopt -c -annot -bin-annot -I test -I src -o test/xmltrip.cmx test/xmltrip.ml
+ocamlfind ocamlopt -linkpkg src/xmlm.cmx test/xhtml.cmx test/xmltrip.cmx -o test/xmltrip.native
+Installing xmlm.1.2.0.
+[WARNING] opam-version is an unknown field in /home/opam/.opam/system/build/xmlm.1.2.0/xmlm.install: is your OPAM up-to-date ?
+
+=-=-= Installing xmlplaylist.0.1.3 =-=-=
+default    Downloading https://opam.ocaml.org/archives/xmlplaylist.0.1.3+opam.tar.gz
+Downloading https://opam.ocaml.org/archives/xmlplaylist.0.1.3+opam.tar.gz
+--2014-05-13 04:10:13--  https://opam.ocaml.org/archives/xmlplaylist.0.1.3+opam.tar.gz
+Resolving opam.ocaml.org (opam.ocaml.org)... failed: Name or service not known.
+wget: unable to resolve host address 'opam.ocaml.org'
+
+
+===== ERROR while installing xmlplaylist.0.1.3 =====
+Could not get the source for xmlplaylist.0.1.3:
+# opam-version    1.1.1
+# os              linux
+Cannot download https://opam.ocaml.org/archives/xmlplaylist.0.1.3+opam.tar.gz, please check your connection settings.
+
+The former state can be restored with opam switch import -f "/home/opam/.opam/system/backup/state-20140413040954.export"
+'opam install xmlplaylist' failed.
