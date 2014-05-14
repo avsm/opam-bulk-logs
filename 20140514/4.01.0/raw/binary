@@ -1,0 +1,102 @@
+++ opam install binary -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install binary
+The following actions will be performed:
+ - install binary.0.1.1
+1 to install | 0 to reinstall | 0 to upgrade | 0 to downgrade | 0 to remove
+
+=-=-= Installing binary.0.1.1 =-=-=
+default    Synchronizing with /home/opam/opam-repository/archives/binary.0.1.1+opam.tar.gz
+sending incremental file list
+binary.0.1.1+opam.tar.gz
+
+sent 55,980 bytes  received 35 bytes  112,030.00 bytes/sec
+total size is 55,843  speedup is 1.00
+Building binary.0.1.1:
+  ./configure --prefix /home/opam/.opam/system
+  make
+  make install
+
+Configuration: 
+ocamlfind: ........................................... /home/opam/.opam/system/bin/ocamlfind
+ocamlc: .............................................. /usr/bin/ocamlc.opt
+ocamlopt: ............................................ /usr/bin/ocamlopt.opt
+ocamlbuild: .......................................... /usr/bin/ocamlbuild
+Package name: ........................................ binary
+Package version: ..................................... 0.1.1
+os_type: ............................................. Unix
+system: .............................................. linux
+architecture: ........................................ amd64
+ccomp_type: .......................................... cc
+ocaml_version: ....................................... 4.01.0
+standard_library_default: ............................ /usr/lib/ocaml
+standard_library: .................................... /usr/lib/ocaml
+standard_runtime: .................................... /usr/bin/ocamlrun
+bytecomp_c_compiler: ................................. gcc -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+native_c_compiler: ................................... gcc -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+model: ............................................... default
+ext_obj: ............................................. .o
+ext_asm: ............................................. .s
+ext_lib: ............................................. .a
+ext_dll: ............................................. .so
+default_executable_name: ............................. a.out
+systhread_supported: ................................. true
+Install architecture-independent files dir: .......... /home/opam/.opam/system
+Install architecture-dependent files in dir: ......... $prefix
+User executables: .................................... $exec_prefix/bin
+System admin executables: ............................ $exec_prefix/sbin
+Program executables: ................................. $exec_prefix/libexec
+Read-only single-machine data: ....................... $prefix/etc
+Modifiable architecture-independent data: ............ $prefix/com
+Modifiable single-machine data: ...................... $prefix/var
+Object code libraries: ............................... $exec_prefix/lib
+Read-only arch-independent data root: ................ $prefix/share
+Read-only architecture-independent data: ............. $datarootdir
+Info documentation: .................................. $datarootdir/info
+Locale-dependent data: ............................... $datarootdir/locale
+Man documentation: ................................... $datarootdir/man
+Documentation root: .................................. $datarootdir/doc/$pkg_name
+HTML documentation: .................................. $docdir
+DVI documentation: ................................... $docdir
+PDF documentation: ................................... $docdir
+PS documentation: .................................... $docdir
+findlib_version: ..................................... 1.4
+is_native: ........................................... true
+suffix_program: ...................................... 
+Remove a file.: ...................................... rm -f
+Remove a directory.: ................................. rm -rf
+Turn ocaml debug flag on: ............................ true
+Turn ocaml profile flag on: .......................... false
+Compiler support generation of .cmxs.: ............... true
+OCamlbuild additional flags: ......................... 
+Create documentations: ............................... true
+Compile tests executable and library and run them: ... false
+
+ocaml setup.ml -build 
+/usr/bin/ocamlopt.opt unix.cmxa -I /usr/lib/ocaml/ocamlbuild /usr/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /usr/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+/home/opam/.opam/system/bin/ocamlfind ocamldep -modules src/binary.mli > src/binary.mli.depends
+/home/opam/.opam/system/bin/ocamlfind ocamlc -c -g -w +a -I src -o src/binary.cmi src/binary.mli
+/home/opam/.opam/system/bin/ocamlfind ocamldep -modules src/binary.ml > src/binary.ml.depends
+/home/opam/.opam/system/bin/ocamlfind ocamlc -c -g -w +a -I src -o src/binary.cmo src/binary.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlc -a -w +a src/binary.cmo -o src/binary.cma
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -c -g -w +a -I src -o src/binary.cmx src/binary.ml
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -a -w +a src/binary.cmx -o src/binary.cmxa
+/home/opam/.opam/system/bin/ocamlfind ocamlopt -shared src/binary.cmxa src/binary.cmx -o src/binary.cmxs
+ocaml setup.ml -install 
+Installed /home/opam/.opam/system/lib/binary/binary.mli
+Installed /home/opam/.opam/system/lib/binary/binary.cma
+Installed /home/opam/.opam/system/lib/binary/binary.cmxa
+Installed /home/opam/.opam/system/lib/binary/binary.a
+Installed /home/opam/.opam/system/lib/binary/binary.cmxs
+Installed /home/opam/.opam/system/lib/binary/binary.cmi
+Installed /home/opam/.opam/system/lib/binary/binary.cmx
+Installed /home/opam/.opam/system/lib/binary/META
+Installing binary.0.1.1.
