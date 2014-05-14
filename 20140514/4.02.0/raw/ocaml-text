@@ -1,0 +1,15 @@
+++ opam install ocaml-text -e ubuntu
+[ERROR] ocaml-text is not a valid versioned package name
+'opam install ocaml-text -e ubuntu' failed.
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-text
+[ERROR] ocaml-text is not a valid versioned package name
+'opam install ocaml-text' failed.
