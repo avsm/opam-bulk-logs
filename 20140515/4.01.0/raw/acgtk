@@ -9,3 +9,4 @@ Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install acgtk
+'opam installext acgtk' failed.
