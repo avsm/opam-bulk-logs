@@ -6,11 +6,11 @@ Ubuntu depexts:
 ++ opam install aacplus -e source,linux
 + srcext=https://gist.githubusercontent.com/avsm/11409198/raw
 + echo Ubuntu srcexts: https://gist.githubusercontent.com/avsm/11409198/raw
-Ubuntu srcexts: https://gist.githubusercontent.com/avsm/11409198/raw
 + '[' https://gist.githubusercontent.com/avsm/11409198/raw '!=' '' ']'
+Ubuntu srcexts: https://gist.githubusercontent.com/avsm/11409198/raw
++ bash
 + curl -sL https://gist.githubusercontent.com/avsm/11409198/raw
 /usr/bin/opam-installext: line 12: curl: command not found
-+ bash
 + opam install aacplus
 The following actions will be performed:
  - install aacplus.0.2.1
@@ -92,9 +92,9 @@ ocamlfind: [WARNING] No such directory: /home/opam/.opam/system/lib/aacplus
 # path                 /home/opam/.opam/system/build/aacplus.0.2.1
 # compiler             system (4.01.0)
 # exit-code            1
-# env-file             /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-33-6d07ae.env
-# stdout-file          /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-33-6d07ae.out
-# stderr-file          /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-33-6d07ae.err
+# env-file             /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-34-6d07ae.env
+# stdout-file          /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-34-6d07ae.out
+# stderr-file          /home/opam/.opam/system/build/aacplus.0.2.1/aacplus-34-6d07ae.err
 ### stdout ###
 # ...[truncated]
 # checking for camlp4prof... camlp4prof
