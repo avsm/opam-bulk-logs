@@ -1,0 +1,3 @@
+Unable to find image 'opam:ubuntu-trusty-4.02.0' locally
+Repository opam already being pulled by another client. Waiting.
+2014/05/16 13:20:07 Error: No such image: opam:ubuntu-trusty-4.02.0 (tag: ubuntu-trusty-4.02.0)
