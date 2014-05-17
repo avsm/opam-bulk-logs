@@ -1,3 +1,1 @@
-Unable to find image 'opam:ubuntu-trusty-4.02.0' locally
-Pulling repository opam
-2014/05/17 15:02:53 HTTP code: 404
+++ opam install ackdo-reloaded -e ubuntu
