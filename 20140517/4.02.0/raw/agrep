@@ -1,3 +1,6 @@
-Unable to find image 'opam:ubuntu-trusty-4.02.0' locally
-Pulling repository opam
-2014/05/17 15:03:08 HTTP code: 404
+++ opam install agrep -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install agrep -e source,linux
