@@ -1,0 +1,2 @@
+++ opam install 0install -e ubuntu
+'opam installext 0install' failed.
