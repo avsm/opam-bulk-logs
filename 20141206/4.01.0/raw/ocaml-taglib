@@ -1,0 +1,14 @@
+++ opam install ocaml-taglib -e ubuntu
+[ERROR] No package named ocaml-taglib found.
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install ocaml-taglib -e source,linux
+[ERROR] No package named ocaml-taglib found.
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-taglib
+Ubuntu srcexts:
+[ERROR] No package named ocaml-taglib found.
