@@ -9,3 +9,39 @@ debconf: delaying package configuration, since apt-utils is not installed
 Selecting previously unselected package zlib1g-dev:amd64.
 (Reading database ... 17996 files and directories currently installed.)
 Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
+++ opam install javalib -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install javalib
+Debian srcexts:
+The following actions will be performed:
+ - install   camlzip.1.05                          [required by javalib]
+ - install   extlib-compat.1.6.1                   [required by javalib]
+ - install   javalib.2.3
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camlzip.1.05] Downloading http://forge.ocamlcore.org/frs/download.php/1037/camlzip-1.05.tar.gz
+[extlib-compat.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+[javalib.2.3] Downloading https://gforge.inria.fr/frs/download.php/33090/javalib-2.3.tar.bz2
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/camlzip/camlzip.1.05/files/fix-install.patch to ~/.opam/4.01.0/build/camlzip.1.05/
+Applying fix-install.patch.
+Building camlzip.1.05:
+  make all
+  make allopt
+  make install-findlib
+Installing camlzip.1.05.
+Building extlib-compat.1.6.1:
+  make build install
+Installing extlib-compat.1.6.1.
+Building javalib.2.3:
+  ./configure.sh
+  make ptrees
+  make installptrees
+  make
+  make install
+Installing javalib.2.3.
