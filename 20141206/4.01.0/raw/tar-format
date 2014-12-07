@@ -1,0 +1,23 @@
+++ opam install tar-format -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install tar-format -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install tar-format
+The following actions will be performed:
+ - install   tar-format.0.1.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[tar-format.0.1.1] Downloading https://github.com/djs55/ocaml-tar/archive/0.1.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building tar-format.0.1.1:
+  make
+  make install
+Installing tar-format.0.1.1.
