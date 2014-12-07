@@ -1,9 +1,9 @@
 ++ opam install altgr-ergo -e ubuntu
 + depext='libexpat1-dev libgmp-dev libgtk2.0-dev libgtksourceview2.0-dev'
 + echo Ubuntu depexts: libexpat1-dev libgmp-dev libgtk2.0-dev libgtksourceview2.0-dev
+Ubuntu depexts: libexpat1-dev libgmp-dev libgtk2.0-dev libgtksourceview2.0-dev
 + '[' 'libexpat1-dev libgmp-dev libgtk2.0-dev libgtksourceview2.0-dev' '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
-Ubuntu depexts: libexpat1-dev libgmp-dev libgtk2.0-dev libgtksourceview2.0-dev
 + sudo apt-get install -qq -y libexpat1-dev libgmp-dev libgtk2.0-dev libgtksourceview2.0-dev
 debconf: unable to initialize frontend: Dialog
 debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
@@ -485,10 +485,10 @@ Setting up libmail-sendmail-perl (0.79.16-1) ...
 Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
 ++ opam install altgr-ergo -e source,linux
 + srcext=
+Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install altgr-ergo
-Ubuntu srcexts:
 The following actions will be performed:
  - install   conf-gmp.1                            [required by zarith]
  - install   conf-gtksourceview.2                  [required by altgr-ergo]
