@@ -104,3 +104,4 @@ Building acpc.1.2:
   cp dist/build/acpc_mol2tool/acpc_mol2tool /home/opam/.opam/4.01.0/bin
   cp dist/build/acpc_pqrtool/acpc_pqrtool /home/opam/.opam/4.01.0/bin
   cp dist/build/acpc_pltool/acpc_pltool /home/opam/.opam/4.01.0/bin
+Installing acpc.1.2.
