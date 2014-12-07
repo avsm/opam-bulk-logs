@@ -203,3 +203,7 @@ Installing async_extra.111.28.00.
 Building async.111.25.00:
   make
   make install
+Installing async.111.25.00.
+Building async_find.111.28.00:
+  make
+  make install
