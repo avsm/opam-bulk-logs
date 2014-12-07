@@ -71,3 +71,50 @@ Installing conf-leveldb.1.
 Building cryptokit.1.9:
   make
   make install
+Installing cryptokit.1.9.
+Building extlib.1.6.1:
+  make minimal=1 build install
+Installing extlib.1.6.1.
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/opam.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/omake.install to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/fam.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
+Applying opam.patch.
+Applying fam.patch.
+Applying readline.patch.
+Building omake.0.9.8.6-0.rc1:
+  make bootstrap PREFIX=/home/opam/.opam/4.01.0
+  make all PREFIX=/home/opam/.opam/4.01.0
+  make install PREFIX=/home/opam/.opam/4.01.0
+Installing omake.0.9.8.6-0.rc1.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Copying ~/.opam/repo/default/packages/leveldb/leveldb.1.0.3/files/fix_snappy_link_issue.patch to ~/.opam/4.01.0/build/leveldb.1.0.3/
+Applying fix_snappy_link_issue.patch.
+Building leveldb.1.0.3:
+  omake -j9
+  omake install prefix=/home/opam/.opam/4.01.0
+Installing leveldb.1.0.3.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.01.0 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building sexplib.111.17.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.111.17.00.
+Building extprot.1.1.2:
+  omake
+  omake install prefix=/home/opam/.opam/4.01.0
+Installing extprot.1.1.2.
+Building obigstore.0.9.1:
+  omake -j9
+  omake install prefix=/home/opam/.opam/4.01.0
