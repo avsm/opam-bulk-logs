@@ -1,0 +1,24 @@
+++ opam install xmldiff -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install xmldiff
+The following actions will be performed:
+ - install   xmlm.1.2.0                            [required by xmldiff]
+ - install   xmldiff.0.2
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+[xmldiff.0.2] Downloading http://zoggy.github.com/xmldiff/xmldiff-0.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Building xmldiff.0.2:
+  make all
+  make install
+Installing xmldiff.0.2.
