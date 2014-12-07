@@ -1,9 +1,14 @@
-++ opam install gg -e centos,centos-7
+++ opam install gg -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install gg -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install gg
-CentOS 7 depexts:
 The following actions will be performed:
  - install   gg.0.9.0
 === 1 to install ===
