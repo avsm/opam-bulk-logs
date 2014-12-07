@@ -1,60 +1,11 @@
-++ opam install travis-senv -e centos,centos-7
+++ opam install travis-senv -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install travis-senv -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install travis-senv
-The following actions will be performed:
- - install   cmdliner.0.9.6                        [required by travis-senv]
- - install   travis-senv.1.0.0
-=== 2 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
-[travis-senv.1.0.0] Downloading https://github.com/avsm/travis-senv/archive/v1.0.0.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building cmdliner.0.9.6:
-  ocaml pkg/git.ml
-  ocaml pkg/build.ml native=false native-dynlink=false
-Installing cmdliner.0.9.6.
-Building travis-senv.1.0.0:
-  make
-[ERROR] The compilation of travis-senv.1.0.0 failed.
-Removing travis-senv.1.0.0.
-  Nothing to do.
-
-
-#=== ERROR while installing travis-senv.1.0.0 =================================#
-# opam-version         1.2.0
-# os                   linux
-# command              make
-# path                 /home/opam/.opam/4.01.0/build/travis-senv.1.0.0
-# compiler             4.01.0
-# exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/travis-senv.1.0.0/travis-senv-95-ffb3fd.env
-# stdout-file          /home/opam/.opam/4.01.0/build/travis-senv.1.0.0/travis-senv-95-ffb3fd.out
-# stderr-file          /home/opam/.opam/4.01.0/build/travis-senv.1.0.0/travis-senv-95-ffb3fd.err
-### stdout ###
-# ...[truncated]
-# ocamlfind ocamlc -c -package cmdliner -o base64.cmi base64.mli
-# ocamlfind ocamlc -c -package cmdliner -o main.cmo main.ml
-# ocamlfind ocamldep -package cmdliner -modules base64.ml > base64.ml.depends
-# ocamlfind ocamlopt -c -package cmdliner -o base64.cmx base64.ml
-# ocamlfind ocamlopt -c -package cmdliner -o main.cmx main.ml
-# ocamlfind ocamlopt -linkpkg -package cmdliner base64.cmx main.cmx -o main.native
-# + ocamlfind ocamlopt -linkpkg -package cmdliner base64.cmx main.cmx -o main.native
-# File "_none_", line 1:
-# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
-# Command exited with code 2.
-### stderr ###
-# make: *** [_build/main.native] Error 10
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   cmdliner.0.9.6
-The following failed
- - install   travis-senv.1.0.0
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107162320.export"
