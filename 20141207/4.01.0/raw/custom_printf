@@ -41,3 +41,8 @@ Building sexplib.111.25.00:
   ./configure --enable-syntax
   make
   make install
+Installing sexplib.111.25.00.
+Building custom_printf.111.25.00:
+  make
+  make install
+Installing custom_printf.111.25.00.
