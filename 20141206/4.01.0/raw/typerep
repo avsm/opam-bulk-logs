@@ -40,3 +40,5 @@ Building typerep.111.17.00:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing typerep.111.17.00.
+2014/12/07 10:42:22 Error: Cannot destroy container 6b4c80658a589d191bf4bc03ebdadfe521b53f634f39fd7ce1959cc1954dcca1: Driver aufs failed to remove root filesystem 6b4c80658a589d191bf4bc03ebdadfe521b53f634f39fd7ce1959cc1954dcca1: rename /var/lib/docker/aufs/diff/6b4c80658a589d191bf4bc03ebdadfe521b53f634f39fd7ce1959cc1954dcca1 /var/lib/docker/aufs/diff/6b4c80658a589d191bf4bc03ebdadfe521b53f634f39fd7ce1959cc1954dcca1-removing: device or resource busy
