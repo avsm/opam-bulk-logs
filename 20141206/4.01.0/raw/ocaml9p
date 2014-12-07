@@ -1,8 +1,8 @@
 ++ opam install ocaml9p -e ubuntu
 + depext=
 + echo Ubuntu depexts:
-+ '[' '' '!=' '' ']'
 Ubuntu depexts:
++ '[' '' '!=' '' ']'
 ++ opam install ocaml9p -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
@@ -20,4 +20,3 @@ The following actions will be performed:
 Building ocaml9p.0.4:
   make
   make install
-Installing ocaml9p.0.4.
