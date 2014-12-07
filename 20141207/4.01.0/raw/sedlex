@@ -9,3 +9,16 @@ Debian depexts:
 + '[' '' '!=' '' ']'
 + opam install sedlex
 Debian srcexts:
+The following actions will be performed:
+ - install   sedlex.1.99
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sedlex.1.99] Downloading http://www.lexifi.com/sedlex/sedlex-1.99.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building sedlex.1.99:
+  make all
+  make opt
+  make install
+Installing sedlex.1.99.
