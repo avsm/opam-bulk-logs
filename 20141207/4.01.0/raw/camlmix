@@ -1,7 +1,12 @@
-++ opam install camlmix -e centos,centos-7
+++ opam install camlmix -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install camlmix -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install camlmix
 The following actions will be performed:
