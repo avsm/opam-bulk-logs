@@ -62,3 +62,15 @@ Building ocamlnet.3.7.7:
   make all
   make opt
   make install
+Installing ocamlnet.3.7.7.
+Building tyxml.3.3.0:
+  ./configure --enable-syntax --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing tyxml.3.3.0.
+Building bookaml.1.0:
+  ./configure --prefix /home/opam/.opam/4.01.0 --docdir /home/opam/.opam/4.01.0/doc/bookaml --disable-ocsigen --enable-ocamlnet
+  make
+  make doc
+  make install
+Installing bookaml.1.0.
