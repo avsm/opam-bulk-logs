@@ -1,7 +1,12 @@
-++ opam install uunf -e centos,centos-7
+++ opam install uunf -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install uunf -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install uunf
 The following actions will be performed:
@@ -15,4 +20,3 @@ The following actions will be performed:
 Building uunf.0.9.3:
   ./pkg/pkg-git
   ./pkg/build true false
-Installing uunf.0.9.3.
