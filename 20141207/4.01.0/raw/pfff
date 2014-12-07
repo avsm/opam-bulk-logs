@@ -1,21 +1,17 @@
-++ opam install pfff -e centos,centos-7
+++ opam install pfff -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install pfff -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install pfff
+Debian srcexts:
 The following actions will be performed:
  - install   pfff.0.27.3
 === 1 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [pfff.0.27.3] Downloading https://github.com/facebook/pfff/archive/v0.27.3.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building pfff.0.27.3:
-  ./configure --novisual --nocmt --nobytecode
-  make depend
-  make
-  make opt
-  make install-findlib
-Installing pfff.0.27.3.
