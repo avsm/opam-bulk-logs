@@ -1,0 +1,58 @@
+++ opam install gasoline -e ubuntu
++ depext=bmake
++ echo Ubuntu depexts: bmake
++ '[' bmake '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: bmake
++ sudo apt-get install -qq -y bmake
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package bmake.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../bmake_20131001-4_amd64.deb ...
+Unpacking bmake (20131001-4) ...
+Setting up bmake (20131001-4) ...
+++ opam install gasoline -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install gasoline
+The following actions will be performed:
+ - install   camomile.0.8.5                        [required by gasoline]
+ - install   bsdowl.2.2                            [required by gasoline]
+ - install   gasoline.0.1
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bsdowl.2.2] Downloading https://github.com/michipili/bsdowl/releases/download/v2.2/bsdowl-2.2.tar.gz
+[camomile.0.8.5] Downloading https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
+[gasoline.0.1] Downloading https://github.com/michipili/gasoline/releases/download/v0.1/gasoline-0.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/bsdowl/bsdowl.2.2/files/remove.sh to ~/.opam/4.01.0/build/bsdowl.2.2/
+Copying ~/.opam/repo/default/packages/bsdowl/bsdowl.2.2/files/bsdowl.install to ~/.opam/4.01.0/build/bsdowl.2.2/
+Building bsdowl.2.2:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  bmake -r build
+Installing bsdowl.2.2.
+Copying ~/.opam/repo/default/packages/camomile/camomile.0.8.5/files/no-camlp4.patch to ~/.opam/4.01.0/build/camomile.0.8.5/
+Copying ~/.opam/repo/default/packages/camomile/camomile.0.8.5/files/cmxs.patch to ~/.opam/4.01.0/build/camomile.0.8.5/
+Applying cmxs.patch.
+Applying no-camlp4.patch.
+Building camomile.0.8.5:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing camomile.0.8.5.
+Copying ~/.opam/repo/default/packages/gasoline/gasoline.0.1/files/gasoline.install to ~/.opam/4.01.0/build/gasoline.0.1/
+Copying ~/.opam/repo/default/packages/gasoline/gasoline.0.1/files/META to ~/.opam/4.01.0/build/gasoline.0.1/
+Building gasoline.0.1:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  bmake -I/home/opam/.opam/4.01.0/share/bsdowl all
+Installing gasoline.0.1.
