@@ -1,0 +1,24 @@
+++ opam install xstrp4 -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install xstrp4 -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install xstrp4
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   xstrp4.1.8
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[xstrp4.1.8] Downloading http://download.camlcity.org/download/xstrp4-1.8.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building xstrp4.1.8:
+  ./configure
+  make all
+  make install
+Installing xstrp4.1.8.
