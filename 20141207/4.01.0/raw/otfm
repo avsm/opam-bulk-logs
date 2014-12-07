@@ -1,0 +1,24 @@
+++ opam install otfm -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install otfm
+The following actions will be performed:
+ - install   uutf.0.9.3                            [required by otfm]
+ - install   otfm.0.2.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[uutf.0.9.3] Downloading http://erratique.ch/software/uutf/releases/uutf-0.9.3.tbz
+[otfm.0.2.0] Downloading http://erratique.ch/software/otfm/releases/otfm-0.2.0.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+Building otfm.0.2.0:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing otfm.0.2.0.
