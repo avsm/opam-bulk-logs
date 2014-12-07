@@ -91,3 +91,63 @@ Building io-page.1.2.0:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing io-page.1.2.0.
+Building tuntap.1.0.0:
+  make PREFIX=/home/opam/.opam/4.01.0
+  make PREFIX=/home/opam/.opam/4.01.0 install
+[ERROR] The compilation of tuntap.1.0.0 failed.
+Removing tuntap.1.0.0.
+  ocamlfind remove tuntap
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   base-bytes.legacy
+ - install   sexplib.111.25.00
+ - install   optcomp.1.6
+ - install   cmdliner.0.9.6
+ - install   type_conv.111.13.00
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   ipaddr.2.5.0
+ - install   base-no-ppx.base
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   ocplib-endian.0.7
+ - install   mirage-types.2.0.1
+The following failed
+ - install   tuntap.1.0.0
+Due to the errors, the following have been cancelled
+ - install   mirage-net-unix.1.1.1
+
+#=== ERROR while installing tuntap.1.0.0 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make PREFIX=/home/opam/.opam/4.01.0
+# path                 /home/opam/.opam/4.01.0/build/tuntap.1.0.0
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/tuntap.1.0.0/tuntap-4201-48c407.env
+# stdout-file          /home/opam/.opam/4.01.0/build/tuntap.1.0.0/tuntap-4201-48c407.out
+# stderr-file          /home/opam/.opam/4.01.0/build/tuntap.1.0.0/tuntap-4201-48c407.err
+### stdout ###
+# ...[truncated]
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -a -cclib -ltuntap_stubs -bin-annot lib/tuntap.cmx -o lib/tuntap.cmxa
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -shared -I lib lib/tuntap.cmxa lib/tuntap.cmx -o lib/tuntap.cmxs
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamldep -package cmdliner -package ipaddr -modules bin/otunctl.ml > bin/otunctl.ml.depends
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package cmdliner -package ipaddr -I bin -I lib -o bin/otunctl.cmo bin/otunctl.ml
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -I lib -package cmdliner -package ipaddr -I bin -I lib -o bin/otunctl.cmx bin/otunctl.ml
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package cmdliner -package ipaddr lib/tuntap.cmxa bin/otunctl.cmx -o bin/otunctl.native
+# + /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package cmdliner -package ipaddr lib/tuntap.cmxa bin/otunctl.cmx -o bin/otunctl.native
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+# Command exited with code 2.
+### stderr ###
+# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' lib/libtuntap_stubs.a lib/dlltuntap_stubs.so lib/tuntap.cma lib/tuntap.cmxa lib/tuntap.a lib/tuntap.cmxs bin/otunctl.native test/sendfd_test.native test/nonblock_test.native test/nonblock_read.native test/getifaddrs_test.native test/set_ipv4_test.native -tag debug' terminated with error code 10")
+# make: *** [build] Error 1
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107202455.export"
