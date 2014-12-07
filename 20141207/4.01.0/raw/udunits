@@ -34,3 +34,4 @@ Building udunits.0.2.0:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing udunits.0.2.0.
