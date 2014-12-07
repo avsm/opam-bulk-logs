@@ -28,3 +28,11 @@ Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
 + '[' '' '!=' '' ']'
 + opam install flac
 Ubuntu srcexts:
+The following actions will be performed:
+ - install   ogg.0.4.3                             [required by flac]
+ - install   flac.0.1.1
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[flac.0.1.1] Downloading http://sourceforge.net/projects/savonet/files/ocaml-flac/0.1.1/ocaml-flac-0.1.1.tar.gz/download
+[ogg.0.4.3] Downloading http://sourceforge.net/projects/savonet/files/ocaml-ogg/0.4.3/ocaml-ogg-0.4.3.tar.gz/download
