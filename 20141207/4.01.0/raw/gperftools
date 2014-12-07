@@ -13,3 +13,28 @@ Selecting previously unselected package libunwind7.
 Unpacking libunwind7 (from .../libunwind7_0.99-0.3_amd64.deb) ...
 Selecting previously unselected package libgoogle-perftools4.
 Unpacking libgoogle-perftools4 (from .../libgoogle-perftools4_2.0-2_amd64.deb) ...
+Selecting previously unselected package libgoogle-perftools-dev.
+Unpacking libgoogle-perftools-dev (from .../libgoogle-perftools-dev_2.0-2_amd64.deb) ...
+Setting up libtcmalloc-minimal4 (2.0-2) ...
+Setting up libunwind7 (0.99-0.3) ...
+Setting up libgoogle-perftools4 (2.0-2) ...
+Setting up libgoogle-perftools-dev (2.0-2) ...
+++ opam install gperftools -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install gperftools
+Debian srcexts:
+The following actions will be performed:
+ - install   gperftools.0.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[gperftools.0.2] Downloading https://forge.ocamlcore.org/frs/download.php/1132/ocaml-gperftools-0.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building gperftools.0.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing gperftools.0.2.
