@@ -1,9 +1,14 @@
-++ opam install qcheck -e centos,centos-7
+++ opam install qcheck -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install qcheck -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install qcheck
+Debian srcexts:
 The following actions will be performed:
  - install   qcheck.0.3
 === 1 to install ===
