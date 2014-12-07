@@ -1,0 +1,16 @@
+++ opam install faad -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install faad
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   faad.0.3.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[faad.0.3.2] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-faad/0.3.2/ocaml-faad-0.3.2.tar.gz
+[ERROR] curl: code 404 while downloading http://downloads.sourceforge.net/project/savonet/ocaml-faad/0.3.2/ocaml-faad-0.3.2.tar.gz
+[ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-faad/0.3.2/ocaml-faad-0.3.2.tar.gz is not available
+[ERROR] Could not download archives of faad.0.3.2
+
