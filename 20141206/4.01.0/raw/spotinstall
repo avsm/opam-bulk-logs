@@ -69,3 +69,7 @@ Installing omake.0.9.8.6-0.rc1.
 Building ounit.2.0.0:
   make build
   make install
+Installing ounit.2.0.0.
+Building type_conv.111.13.00:
+  make
+  make install
