@@ -1,9 +1,14 @@
-++ opam install fix -e centos,centos-7
+++ opam install fix -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install fix -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install fix
+Debian srcexts:
 The following actions will be performed:
  - install   fix.20130611
 === 1 to install ===
