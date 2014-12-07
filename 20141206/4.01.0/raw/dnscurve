@@ -1088,3 +1088,8 @@ Installing ipaddr.2.5.0.
 Building sodium.0.3.0:
   make
   make PREFIX=/home/opam/.opam/4.01.0 install
+Installing sodium.0.3.0.
+Building dns.0.8.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0 --enable-lwt
+  ocaml setup.ml -build
+  ocaml setup.ml -install
