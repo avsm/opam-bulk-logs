@@ -398,3 +398,4 @@ Building cairo.1.2.0:
   ocamlopt.opt -shared -linkall -I src -ccopt -I/usr/include/cairo -ccopt -I/usr/include/glib-2.0 -ccopt -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -ccopt -I/usr/include/pixman-1 -ccopt -I/usr/include/freetype2 -ccopt -I/usr/include/libpng12 -o src/cairo.cmxs -cclib -Lsrc/ -cclib -lcairo src/cairo.cmxa
   cp src/cairo.cmxs /home/opam/.opam/4.01.0/lib/cairo
   cp META /home/opam/.opam/4.01.0/lib/cairo
+Installing cairo.1.2.0.
