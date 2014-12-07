@@ -1,0 +1,39 @@
+++ opam install bsdowl -e ubuntu
++ depext=bmake
++ echo Ubuntu depexts: bmake
++ '[' bmake '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: bmake
++ sudo apt-get install -qq -y bmake
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package bmake.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../bmake_20131001-4_amd64.deb ...
+Unpacking bmake (20131001-4) ...
+Setting up bmake (20131001-4) ...
+++ opam install bsdowl -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install bsdowl
+The following actions will be performed:
+ - install   bsdowl.2.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bsdowl.2.2] Downloading https://github.com/michipili/bsdowl/releases/download/v2.2/bsdowl-2.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/bsdowl/bsdowl.2.2/files/remove.sh to ~/.opam/4.02.1/build/bsdowl.2.2/
+Copying ~/.opam/repo/default/packages/bsdowl/bsdowl.2.2/files/bsdowl.install to ~/.opam/4.02.1/build/bsdowl.2.2/
+Building bsdowl.2.2:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  bmake -r build
+Installing bsdowl.2.2.
