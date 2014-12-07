@@ -1,0 +1,51 @@
+++ opam install odbc -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install odbc
+The following actions will be performed:
+ - install   odbc.3.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[odbc.3.0] Downloading https://forge.ocamlcore.org/frs/download.php/1452/ocaml-odbc-3.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building odbc.3.0:
+  ./configure --prefix=/home/opam/.opam/4.01.0
+  make
+  make findlib_install
+[ERROR] The compilation of odbc.3.0 failed.
+Removing odbc.3.0.
+  ocamlfind remove odbc
+
+
+#=== ERROR while installing odbc.3.0 ==========================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make findlib_install
+# path                 /home/opam/.opam/4.01.0/build/odbc.3.0
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/odbc.3.0/odbc-26-5f1023.env
+# stdout-file          /home/opam/.opam/4.01.0/build/odbc.3.0/odbc-26-5f1023.out
+# stderr-file          /home/opam/.opam/4.01.0/build/odbc.3.0/odbc-26-5f1023.err
+### stdout ###
+# ...[truncated]
+# rm -f .depend
+# ocamldep  odbc.ml ocamlodbc_lowlevel.ml ocamlodbc.ml odbc.mli ocamlodbc.mli > .depend
+# for d in ; do \
+#   make BASE=$d library; \
+# done
+# for d in ; do \
+#   make BASE=$d library; \
+# done
+# ocamlfind install odbc META odbc.cma odbc.cmx odbc.cmxa \
+#   
+### stderr ###
+# configure: WARNING: Biniki will not be compiled.
+# Makefile:144: .depend: No such file or directory
+# ocamlfind: odbc.cmxa: No such file or directory
+# make: *** [findlib_install] Error 2
+
