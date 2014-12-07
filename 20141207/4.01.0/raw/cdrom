@@ -1,9 +1,14 @@
-++ opam install cdrom -e centos,centos-7
+++ opam install cdrom -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install cdrom -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install cdrom
-CentOS 7 depexts:
 The following actions will be performed:
  - install   obuild.0.1.1                          [required by cdrom]
  - install   cdrom.0.9.1
