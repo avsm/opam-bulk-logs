@@ -1,7 +1,7 @@
 ++ opam install speex -e ubuntu
 + depext='libogg-dev libspeex-dev'
-Ubuntu depexts: libogg-dev libspeex-dev
 + echo Ubuntu depexts: libogg-dev libspeex-dev
+Ubuntu depexts: libogg-dev libspeex-dev
 + '[' 'libogg-dev libspeex-dev' '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
 + sudo apt-get install -qq -y libogg-dev libspeex-dev
@@ -32,8 +32,8 @@ Setting up libspeex-dev:amd64 (1.2~rc1.1-1ubuntu1) ...
 Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
 ++ opam install speex -e source,linux
 + srcext=
-+ echo Ubuntu srcexts:
 Ubuntu srcexts:
++ echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install speex
 The following actions will be performed:
