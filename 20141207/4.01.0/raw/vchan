@@ -98,3 +98,10 @@ Installing io-page.1.2.0.
 Building xenstore.1.2.5:
   make all
   make install
+Installing xenstore.1.2.5.
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+Building xenstore_transport.0.9.4:
+  make all
+  make install

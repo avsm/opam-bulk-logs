@@ -131,3 +131,11 @@ Building uuidm.0.9.5:
   ocaml setup.ml -build
   ocaml setup.ml -install
 Installing uuidm.0.9.5.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.01.0 --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-ppx
+  make build
+  make install
