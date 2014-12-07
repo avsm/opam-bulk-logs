@@ -1,7 +1,12 @@
-++ opam install ott -e centos,centos-7
-CentOS 7 depexts:
+++ opam install ott -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install ott -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ott
 The following actions will be performed:
