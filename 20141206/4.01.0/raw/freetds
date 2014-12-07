@@ -1,7 +1,7 @@
 ++ opam install freetds -e ubuntu
-Ubuntu depexts: freetds-dev
 + depext=freetds-dev
 + echo Ubuntu depexts: freetds-dev
+Ubuntu depexts: freetds-dev
 + '[' freetds-dev '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
 + sudo apt-get install -qq -y freetds-dev
@@ -32,8 +32,8 @@ Setting up freetds-dev (0.91-5) ...
 Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
 ++ opam install freetds -e source,linux
 + srcext=
-Ubuntu srcexts:
 + echo Ubuntu srcexts:
+Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install freetds
 The following actions will be performed:
