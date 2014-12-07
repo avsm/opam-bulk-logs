@@ -13,3 +13,23 @@ Selecting previously unselected package libbluetooth-dev.
 Unpacking libbluetooth-dev (from .../libbluetooth-dev_4.99-2_amd64.deb) ...
 Setting up libbluetooth3:amd64 (4.99-2) ...
 Setting up libbluetooth-dev (4.99-2) ...
+++ opam install mindstorm -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install mindstorm
+Debian srcexts:
+The following actions will be performed:
+ - install   base-bytes.legacy                     [required by mindstorm]
+ - install   mindstorm.0.5.4
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mindstorm.0.5.4] Downloading https://github.com/Chris00/ocaml-mindstorm/releases/download/0.5.4/mindstorm-0.5.4.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.legacy.
+Building mindstorm.0.5.4:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
