@@ -9,3 +9,11 @@ Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install camlimages
+The following actions will be performed:
+ - install   omake.0.9.8.6-0.rc1                   [required by camlimages]
+ - install   camlimages.4.1.2
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camlimages.4.1.2] Downloading https://bitbucket.org/camlspotter/camlimages/get/4.1.2.tar.gz
+[omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
