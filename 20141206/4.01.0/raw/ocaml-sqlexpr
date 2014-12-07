@@ -1,0 +1,14 @@
+++ opam install ocaml-sqlexpr -e ubuntu
+[ERROR] No package named ocaml-sqlexpr found.
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install ocaml-sqlexpr -e source,linux
+[ERROR] No package named ocaml-sqlexpr found.
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-sqlexpr
+[ERROR] No package named ocaml-sqlexpr found.
