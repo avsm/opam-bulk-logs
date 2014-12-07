@@ -449,3 +449,4 @@ Building why3.0.85:
   ./configure --prefix /home/opam/.opam/4.01.0 --disable-bench
   make opt byte
   make install install-lib
+Installing why3.0.85.
