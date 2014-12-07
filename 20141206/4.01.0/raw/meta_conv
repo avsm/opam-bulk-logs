@@ -1,14 +1,14 @@
 ++ opam install meta_conv -e ubuntu
 + depext=
 + echo Ubuntu depexts:
-+ '[' '' '!=' '' ']'
 Ubuntu depexts:
++ '[' '' '!=' '' ']'
 ++ opam install meta_conv -e source,linux
 + srcext=
-Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install meta_conv
+Ubuntu srcexts:
 The following actions will be performed:
  - install   omake.0.9.8.6-0.rc1                   [required by meta_conv]
  - install   type_conv.111.13.00                   [required by meta_conv]
@@ -41,4 +41,3 @@ Building meta_conv.1.1.4:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing meta_conv.1.1.4.
