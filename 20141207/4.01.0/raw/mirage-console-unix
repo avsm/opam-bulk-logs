@@ -72,3 +72,85 @@ Building sexplib.111.25.00:
   ./configure --enable-syntax
   make
   make install
+Installing sexplib.111.25.00.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.01.0 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Building io-page.1.2.0:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing io-page.1.2.0.
+Building shared-memory-ring.1.1.0:
+  make all
+  make install
+Installing shared-memory-ring.1.1.0.
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+Building mirage-clock-unix.1.0.0:
+  make unix-build
+  make unix-install
+Installing mirage-clock-unix.1.0.0.
+Building mirage-unix.2.0.1:
+  make unix-build
+  make unix-install PREFIX=/home/opam/.opam/4.01.0
+Installing mirage-unix.2.0.1.
+Building mirage-console-unix.1.0.0:
+  make unix-build
+  make unix-install
+[ERROR] The compilation of mirage-console-unix.1.0.0 failed.
+Removing mirage-console-unix.1.0.0.
+  ocamlfind remove mirage-console-unix
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   base-bytes.legacy
+ - install   mirage-clock-unix.1.0.0
+ - install   mirage-unix.2.0.1
+ - install   sexplib.111.25.00
+ - install   shared-memory-ring.1.1.0
+ - install   optcomp.1.6
+ - install   type_conv.111.13.00
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   base-no-ppx.base
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   ocplib-endian.0.7
+ - install   mirage-types.2.0.1
+The following failed
+ - install   mirage-console-unix.1.0.0
+
+#=== ERROR while installing mirage-console-unix.1.0.0 =========================#
+# opam-version         1.2.0
+# os                   linux
+# command              make unix-install
+# path                 /home/opam/.opam/4.01.0/build/mirage-console-unix.1.0.0
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/mirage-console-unix.1.0.0/mirage-console-unix-4738-f0f09f.env
+# stdout-file          /home/opam/.opam/4.01.0/build/mirage-console-unix.1.0.0/mirage-console-unix-4738-f0f09f.out
+# stderr-file          /home/opam/.opam/4.01.0/build/mirage-console-unix.1.0.0/mirage-console-unix-4738-f0f09f.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlc -c -package mirage-unix -package mirage-types -I unix -o unix/console.cmo unix/console.ml
+# + ocamlfind ocamlc -c -package mirage-unix -package mirage-types -I unix -o unix/console.cmo unix/console.ml
+# File "unix/console.ml", line 1:
+# Error: The implementation unix/console.ml
+#        does not match the interface unix/console.cmi:
+#        The field `close' is required but not provided
+#        The field `writev' is required but not provided
+#        The field `read' is required but not provided
+#        The field `buffer' is required but not provided
+# Command exited with code 2.
+### stderr ###
+# ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.01.0/lib/mirage-console-unix
+# ocamlfind: _build/unix/mirage-console.cmxs: No such file or directory
+# make: *** [unix-install] Error 2
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107201927.export"
