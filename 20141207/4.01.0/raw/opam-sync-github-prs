@@ -276,3 +276,18 @@ Building uri.1.7.2:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing uri.1.7.2.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.01.0/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Copying ~/.opam/repo/default/packages/atdgen/atdgen.1.4.1/files/atdgen.install to ~/.opam/4.01.0/build/atdgen.1.4.1/
+Building atdgen.1.4.1:
+  make
+  make install BINDIR=/home/opam/.opam/4.01.0/bin
+Installing atdgen.1.4.1.
+Building conduit.0.7.1:
+  make
+  make install
+Installing conduit.0.7.1.
