@@ -1,0 +1,63 @@
+++ opam install omake-mode -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install omake-mode
+The following actions will be performed:
+ - install   omake.0.9.8.6-0.rc1                   [required by omake-mode]
+ - install   conf-libpcre.1                        [required by pcre]
+ - install   res.4.0.6                             [required by core_extended]
+ - install   type_conv.109.41.00                   [required by bin_prot]
+ - install   ounit.2.0.0                           [required by omake-mode]
+ - install   herelib.109.35.00                     [required by async_core]
+ - install   pipebang.109.28.00                    [required by core_extended]
+ - install   inotify.2.0                           [required by omake-mode]
+ - install   pcre.7.1.3                            [required by omake-mode]
+ - install   variantslib.109.15.00                 [required by core]
+ - install   sexplib.109.41.00                     [required by core_extended]
+ - install   fieldslib.109.20.00                   [required by core_extended]
+ - install   comparelib.109.27.00                  [required by core_extended]
+ - install   bin_prot.109.42.00                    [required by core_extended]
+ - install   pa_ounit.109.36.00                    [required by core_extended]
+ - install   custom_printf.109.27.00               [required by core_extended]
+ - install   core_kernel.109.42.00                 [required by core]
+ - install   core.109.42.00                        [required by omake-mode]
+ - install   textutils.109.36.00                   [required by core_extended]
+ - install   async_core.109.42.00                  [required by async]
+ - install   core_extended.109.42.00               [required by omake-mode]
+ - install   async_unix.109.42.00                  [required by async]
+ - install   async_extra.109.42.00                 [required by async]
+ - install   async.109.42.00                       [required by omake-mode]
+ - install   omake-mode.1.1.1
+=== 25 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[async.109.42.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.42.00/individual/async-109.42.00.tar.gz
+[async_core.109.42.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.42.00/individual/async_core-109.42.00.tar.gz
+[async_extra.109.42.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.42.00/individual/async_extra-109.42.00.tar.gz
+[async_unix.109.42.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.42.00/individual/async_unix-109.42.00.tar.gz
+[bin_prot.109.42.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.42.00/individual/bin_prot-109.42.00.tar.gz
+[comparelib.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/comparelib-109.27.00.tar.gz
+[core.109.42.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.42.00/individual/core-109.42.00.tar.gz
+[core_extended.109.42.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.42.00/individual/core_extended-109.42.00.tar.gz
+[core_kernel.109.42.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.42.00/individual/core_kernel-109.42.00.tar.gz
+[custom_printf.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/custom_printf-109.27.00.tar.gz
+[fieldslib.109.20.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.00.tar.gz
+[herelib.109.35.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.00.tar.gz
+[inotify.2.0] Downloading https://github.com/whitequark/ocaml-inotify/archive/2.0.tar.gz
+[omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
+[omake-mode.1.1.1] Downloading https://github.com/seanmcl/omake-mode/archive/1.1.1.tar.gz
+[ERROR] curl: code 406 while downloading https://github.com/seanmcl/omake-mode/archive/1.1.1.tar.gz
+[ERROR] https://github.com/seanmcl/omake-mode/archive/1.1.1.tar.gz is not available
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pa_ounit.109.36.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.36.00/individual/pa_ounit-109.36.00.tar.gz
+[pcre.7.1.3] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.3/pcre-ocaml-7.1.3.tar.gz
+[pipebang.109.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.28.00/individual/pipebang-109.28.00.tar.gz
+[res.4.0.6] Downloading https://github.com/mmottl/res/releases/download/v4.0.6/res-4.0.6.tar.gz
+[sexplib.109.41.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.41.00/individual/sexplib-109.41.00.tar.gz
+[textutils.109.36.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.36.00/individual/textutils-109.36.00.tar.gz
+[type_conv.109.41.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.41.00/individual/type_conv-109.41.00.tar.gz
+[variantslib.109.15.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.00.tar.gz
+[ERROR] Could not download archives of omake-mode.1.1.1
+
