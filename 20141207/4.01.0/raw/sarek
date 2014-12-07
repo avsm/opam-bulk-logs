@@ -1,9 +1,14 @@
-++ opam install sarek -e centos,centos-7
+++ opam install sarek -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install sarek -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install sarek
-CentOS 7 depexts:
 The following actions will be performed:
  - install   ocp-build.1.99.8-beta                 [required by sarek]
  - install   spoc.20140620                         [required by sarek]
@@ -34,13 +39,6 @@ Removing ocp-build.1.99.8-beta.
   rm -rf /home/opam/.opam/4.01.0/lib/ocaml/typerex/ocp-build
 
 
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-The following failed
- - install   ocp-build.1.99.8-beta
-Due to the errors, the following have been cancelled
- - install   sarek.20140620
- - install   spoc.20140620
-
 #=== ERROR while installing ocp-build.1.99.8-beta =============================#
 # opam-version         1.2.0
 # os                   linux
@@ -48,9 +46,9 @@ Due to the errors, the following have been cancelled
 # path                 /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta
 # compiler             4.01.0
 # exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-50-ffb3fd.env
-# stdout-file          /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-50-ffb3fd.out
-# stderr-file          /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-50-ffb3fd.err
+# env-file             /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-173-c61e7b.env
+# stdout-file          /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-173-c61e7b.out
+# stderr-file          /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-173-c61e7b.err
 ### stdout ###
 # ...[truncated]
 # Creating root directory _obuild/
@@ -68,3 +66,10 @@ Due to the errors, the following have been cancelled
 # make[1]: *** [ocp-build] Error 2
 # make: *** [boot/ocp-build] Error 2
 
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following failed
+ - install   ocp-build.1.99.8-beta
+Due to the errors, the following have been cancelled
+ - install   sarek.20140620
+ - install   spoc.20140620
