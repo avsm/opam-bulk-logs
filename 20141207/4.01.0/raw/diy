@@ -21,3 +21,4 @@ Building diy.5.01:
   sed -i -e s#^PREFIX=.*$#PREFIX=/home/opam/.opam/4.01.0# Makefile
   make -j 1
   make install
+Installing diy.5.01.

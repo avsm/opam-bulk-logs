@@ -442,3 +442,10 @@ Building lablgtk-extras.1.4:
   ./configure --prefix /home/opam/.opam/4.01.0
   make all
   make install
+Installing lablgtk-extras.1.4.
+Copying ~/.opam/repo/default/packages/dbforge/dbforge.2.0.1/files/dbforge.install to ~/.opam/4.01.0/build/dbforge.2.0.1/
+Building dbforge.2.0.1:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make all
+  make install-lib
+Installing dbforge.2.0.1.
