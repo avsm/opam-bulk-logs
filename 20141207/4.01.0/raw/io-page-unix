@@ -42,3 +42,4 @@ Installing cstruct.0.8.1.
 Building io-page-unix.0.9.9:
   make unix-build
   make unix-install
+Installing io-page-unix.0.9.9.
