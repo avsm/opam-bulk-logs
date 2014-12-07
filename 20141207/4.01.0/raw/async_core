@@ -1,24 +1,29 @@
-++ opam install async_core -e centos,centos-7
+++ opam install async_core -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install async_core -e source,linux
+Debian srcexts:
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install async_core
 The following actions will be performed:
  - install   pipebang.109.28.02                    [required by core]
  - install   herelib.109.35.02                     [required by async_core]
  - install   res.4.0.6                             [required by core]
- - install   type_conv.109.53.02                   [required by bin_prot]
  - install   ounit.2.0.0                           [required by pa_ounit]
+ - install   type_conv.109.53.00                   [required by bin_prot]
  - install   variantslib.109.15.03                 [required by core]
  - install   sexplib.109.55.02                     [required by async_core]
+ - install   pa_ounit.109.53.02                    [required by async_core]
  - install   fieldslib.109.20.03                   [required by async_core]
  - install   comparelib.109.27.02                  [required by core]
- - install   bin_prot.109.53.03                    [required by async_core]
- - install   pa_ounit.109.53.02                    [required by async_core]
- - install   typerep.109.55.02                     [required by core_kernel]
+ - install   bin_prot.109.53.02                    [required by async_core]
  - install   pa_bench.109.55.02                    [required by core_kernel]
  - install   custom_printf.109.27.02               [required by core]
+ - install   typerep.109.55.02                     [required by core_kernel]
  - install   core_kernel.109.55.02                 [required by core]
  - install   pa_test.109.53.02                     [required by async_core]
  - install   core.109.55.02                        [required by async_core]
@@ -26,9 +31,9 @@ The following actions will be performed:
 === 18 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[async_core.109.55.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.55.00/individual/async_core-109.55.02.tar.gz
-[bin_prot.109.53.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/bin_prot-109.53.03.tar.gz
+[bin_prot.109.53.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/bin_prot-109.53.02.tar.gz
 [comparelib.109.27.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/comparelib-109.27.02.tar.gz
+[async_core.109.55.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.55.00/individual/async_core-109.55.02.tar.gz
 [core.109.55.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.55.00/individual/core-109.55.02.tar.gz
 [core_kernel.109.55.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.55.00/individual/core_kernel-109.55.02.tar.gz
 [custom_printf.109.27.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/custom_printf-109.27.02.tar.gz
@@ -41,7 +46,7 @@ The following actions will be performed:
 [pipebang.109.28.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.28.00/individual/pipebang-109.28.02.tar.gz
 [res.4.0.6] Downloading https://github.com/mmottl/res/releases/download/v4.0.6/res-4.0.6.tar.gz
 [sexplib.109.55.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.55.00/individual/sexplib-109.55.02.tar.gz
-[type_conv.109.53.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/type_conv-109.53.02.tar.gz
+[type_conv.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/type_conv-109.53.00.tar.gz
 [typerep.109.55.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.55.00/individual/typerep-109.55.02.tar.gz
 [variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
 
@@ -63,16 +68,16 @@ Building res.4.0.6:
   ocaml setup.ml -build
   ocaml setup.ml -install
 Installing res.4.0.6.
-Building type_conv.109.53.02:
+Building type_conv.109.53.00:
   make
   make install
-Installing type_conv.109.53.02.
-Copying ~/.opam/repo/default/packages/bin_prot/bin_prot.109.53.03/files/fix-arm-double-field.diff to ~/.opam/4.01.0/build/bin_prot.109.53.03/
+Installing type_conv.109.53.00.
+Copying ~/.opam/repo/default/packages/bin_prot/bin_prot.109.53.02/files/fix-arm-double-field.diff to ~/.opam/4.01.0/build/bin_prot.109.53.02/
 Applying fix-arm-double-field.diff.
-Building bin_prot.109.53.03:
+Building bin_prot.109.53.02:
   make
   make install
-Installing bin_prot.109.53.03.
+Installing bin_prot.109.53.02.
 Building comparelib.109.27.02:
   make
   make install
@@ -109,18 +114,3 @@ Installing typerep.109.55.02.
 Building core_kernel.109.55.02:
   make
   make install
-Installing core_kernel.109.55.02.
-Building pa_test.109.53.02:
-  make
-  make install
-Installing pa_test.109.53.02.
-Copying ~/.opam/repo/default/packages/core/core.109.55.02/files/core.install to ~/.opam/4.01.0/build/core.109.55.02/
-Building core.109.55.02:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-Installing core.109.55.02.
-Building async_core.109.55.02:
-  make
-  make install
-Installing async_core.109.55.02.

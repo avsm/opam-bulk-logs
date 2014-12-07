@@ -132,3 +132,12 @@ Building core.111.28.00:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing core.111.28.00.
+Building textutils.111.28.00:
+  make
+  make install
+Installing textutils.111.28.00.
+Building ackdo-reloaded.0.4:
+  make build
+  make opaminstall BINDIR=/home/opam/.opam/4.01.0/bin
+Installing ackdo-reloaded.0.4.
