@@ -19,3 +19,60 @@ The following actions will be performed:
 [cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
 [obuild.0.1.1] Downloading https://github.com/ocaml-obuild/obuild/archive/obuild-v0.1.1.tar.gz
 [mirari.0.9.1] Downloading https://github.com/mirage/mirari/archive/mirari-0.9.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Copying ~/.opam/repo/default/packages/obuild/obuild.0.1.1/files/obuild.install to ~/.opam/4.01.0/build/obuild.0.1.1/
+Building obuild.0.1.1:
+  ./bootstrap
+Installing obuild.0.1.1.
+Copying ~/.opam/repo/default/packages/mirari/mirari.0.9.1/files/mirari.install to ~/.opam/4.01.0/build/mirari.0.9.1/
+Building mirari.0.9.1:
+  make
+[ERROR] The compilation of mirari.0.9.1 failed.
+Removing mirari.0.9.1.
+  Nothing to do.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   obuild.0.1.1
+ - install   cmdliner.0.9.6
+The following failed
+ - install   mirari.0.9.1
+
+#=== ERROR while installing mirari.0.9.1 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.01.0/build/mirari.0.9.1
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/mirari.0.9.1/mirari-677-d0f245.env
+# stdout-file          /home/opam/.opam/4.01.0/build/mirari.0.9.1/mirari-677-d0f245.out
+# stderr-file          /home/opam/.opam/4.01.0/build/mirari.0.9.1/mirari-677-d0f245.err
+### stdout ###
+# ...[truncated]
+# Configuring mirari-0.9.0...
+# make[1]: Leaving directory `/home/opam/.opam/4.01.0/build/mirari.0.9.1'
+# make build
+# make[1]: Entering directory `/home/opam/.opam/4.01.0/build/mirari.0.9.1'
+# obuild build
+# [1 of 5] Compiling Path_generated                
+# [2 of 5] Compiling Mirari                        
+# [3 of 5] Compiling Main                          
+# [4 of 5] Linking executable dist/build/mirari/mirari
+# make[1]: Leaving directory `/home/opam/.opam/4.01.0/build/mirari.0.9.1'
+### stderr ###
+# 
+# File "_none_", line 1:
+# Error: Cannot find file cmdliner.cmxa
+# 
+# make[1]: *** [build] Error 6
+# make: *** [all] Error 2
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107202911.export"
