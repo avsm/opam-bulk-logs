@@ -1,12 +1,12 @@
 ++ opam install pa_where -e ubuntu
 + depext=
-Ubuntu depexts:
 + echo Ubuntu depexts:
+Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install pa_where -e source,linux
 + srcext=
-Ubuntu srcexts:
 + echo Ubuntu srcexts:
+Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install pa_where
 The following actions will be performed:
