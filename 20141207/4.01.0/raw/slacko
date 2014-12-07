@@ -107,3 +107,16 @@ Building ssl.0.4.7:
   make
   make install
 Installing ssl.0.4.7.
+Building stringext.1.1.0:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing stringext.1.1.0.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.01.0/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
