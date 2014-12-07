@@ -193,3 +193,4 @@ Building ocsigenserver.2.5:
 Installing ocsigenserver.2.5.
 Building eliom.4.1.0:
   make
+Installing eliom.4.1.0.
