@@ -9,3 +9,79 @@ debconf: delaying package configuration, since apt-utils is not installed
 Selecting previously unselected package libgfortran3:amd64.
 (Reading database ... 17996 files and directories currently installed.)
 Unpacking libgfortran3:amd64 (from .../libgfortran3_4.7.2-5_amd64.deb) ...
+Selecting previously unselected package libblas3.
+Unpacking libblas3 (from .../libblas3_1.2.20110419-5_amd64.deb) ...
+Selecting previously unselected package libblas-dev.
+Unpacking libblas-dev (from .../libblas-dev_1.2.20110419-5_amd64.deb) ...
+Selecting previously unselected package libgsl0ldbl.
+Unpacking libgsl0ldbl (from .../libgsl0ldbl_1.15+dfsg.2-2_amd64.deb) ...
+Selecting previously unselected package libgsl0-dev.
+Unpacking libgsl0-dev (from .../libgsl0-dev_1.15+dfsg.2-2_amd64.deb) ...
+Selecting previously unselected package liblapack3.
+Unpacking liblapack3 (from .../liblapack3_3.4.1+dfsg-1+deb70u1_amd64.deb) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+Selecting previously unselected package liblapack-dev.
+Unpacking liblapack-dev (from .../liblapack-dev_3.4.1+dfsg-1+deb70u1_amd64.deb) ...
+Setting up libgfortran3:amd64 (4.7.2-5) ...
+Setting up libblas3 (1.2.20110419-5) ...
+update-alternatives: using /usr/lib/libblas/libblas.so.3 to provide /usr/lib/libblas.so.3 (libblas.so.3) in auto mode
+Setting up libblas-dev (1.2.20110419-5) ...
+update-alternatives: using /usr/lib/libblas/libblas.so to provide /usr/lib/libblas.so (libblas.so) in auto mode
+Setting up libgsl0ldbl (1.15+dfsg.2-2) ...
+Setting up libgsl0-dev (1.15+dfsg.2-2) ...
+Setting up liblapack3 (3.4.1+dfsg-1+deb70u1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+update-alternatives: using /usr/lib/lapack/liblapack.so.3 to provide /usr/lib/liblapack.so.3 (liblapack.so.3) in auto mode
+Setting up liblapack-dev (3.4.1+dfsg-1+deb70u1) ...
+update-alternatives: using /usr/lib/lapack/liblapack.so to provide /usr/lib/liblapack.so (liblapack.so) in auto mode
+++ opam install gpr -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install gpr
+The following actions will be performed:
+ - install   conf-gsl.1                            [required by gsl]
+ - install   herelib.109.35.02                     [required by core]
+ - install   type_conv.111.13.00                   [required by custom_printf, bin_prot, comparelib]
+ - install   pipebang.110.01.00                    [required by core]
+ - install   ounit.2.0.0                           [required by pa_ounit]
+ - install   lacaml.7.1.5                          [required by gpr]
+ - install   gsl.1.18.0                            [required by gpr]
+ - install   variantslib.109.15.03                 [required by core]
+ - install   sexplib.111.25.00                     [required by core]
+ - install   fieldslib.109.20.03                   [required by core]
+ - install   enumerate.111.08.00                   [required by core]
+ - install   comparelib.109.60.00                  [required by core]
+ - install   bin_prot.111.03.00                    [required by core]
+ - install   pa_ounit.111.28.00                    [required by core]
+ - install   pa_test.111.08.00                     [required by core]
+ - install   typerep.111.17.00                     [required by core_kernel]
+ - install   pa_bench.111.28.00                    [required by core]
+ - install   custom_printf.111.25.00               [required by core]
+ - install   core_kernel.111.28.00                 [required by core]
+ - install   core.111.28.00                        [required by gpr]
+ - install   gpr.1.2.0
+=== 21 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bin_prot.111.03.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.03.00/individual/bin_prot-111.03.00.tar.gz
+[comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
+[core.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/core-111.28.00.tar.gz
+[core_kernel.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/core_kernel-111.28.00.tar.gz
+[custom_printf.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/custom_printf-111.25.00.tar.gz
+[enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[gpr.1.2.0] Downloading https://github.com/mmottl/gpr/releases/download/v1.2.0/gpr-1.2.0.tar.gz
+[gsl.1.18.0] Downloading https://github.com/mmottl/gsl-ocaml/releases/download/v1.18.0/gsl-ocaml-1.18.0.tar.gz
+[herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
