@@ -1,43 +1,7 @@
-++ opam install 0install -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-+ '[' '' '!=' '' ']'
-+ opam install 0install
-CentOS 7 depexts:
-The following actions will be performed:
- - install   ounit.2.0.0                           [required by 0install]
- - install   extlib.1.6.1                          [required by 0install]
- - install   xmlm.1.2.0                            [required by 0install]
- - install   easy-format.1.0.2                     [required by yojson]
- - install   sha.1.9                               [required by 0install]
- - install   react.1.2.0                           [required by 0install]
- - install   cppo.1.1.2                            [required by yojson]
- - install   biniou.1.0.9                          [required by yojson]
- - install   lwt.2.4.5                             [required by 0install]
- - install   yojson.1.1.8                          [required by 0install]
- - install   ocurl.0.7.2                           [required by 0install]
- - install   0install.2.8
-=== 12 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[0install.2.8] Downloading https://downloads.sf.net/project/zero-install/0install/2.8/0install-2.8.tar.bz2
-[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
-[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
-[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
-[extlib.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
-[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/0install.2.8/0install-2.8.tar.bz2:
-  - 25520678fcb91603a876a3dd2db24dc3 [expected result]
-  - fd516cf6c10518647a91abf45dd984cf [actual result]
-This is surely due to outdated package descriptions and should be fixed by running `opam update`.
-In case an update does not fix that problem, you can use the `--no-checksums` command-line option
-to /bypass checking for invalid checksums.
-[ERROR] https://downloads.sf.net/project/zero-install/0install/2.8/0install-2.8.tar.bz2 is not available
-[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
-[ocurl.0.7.2] Downloading http://ygrek.org.ua/p/release/ocurl/ocurl-0.7.2.tar.gz
-[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
-[react.1.2.0] Downloading http://erratique.ch/software/react/releases/react-1.2.0.tbz
-[sha.1.9] Downloading https://github.com/vincenthz/ocaml-sha/archive/ocaml-sha-v1.9.tar.gz
-[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
-[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
-[ERROR] Could not download archives of 0install.2.8
-
+++ opam install 0install -e debian
++ depext='libcurl4-gnutls-dev unzip'
++ echo Debian depexts: libcurl4-gnutls-dev unzip
++ '[' 'libcurl4-gnutls-dev unzip' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: libcurl4-gnutls-dev unzip
++ sudo apt-get install -qq -y libcurl4-gnutls-dev unzip

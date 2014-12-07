@@ -1,9 +1,14 @@
-++ opam install acgtk -e centos,centos-7
+++ opam install acgtk -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install acgtk -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install acgtk
+Debian srcexts:
 The following actions will be performed:
  - install   dypgen.20120619-1                     [required by acgtk]
  - install   ANSITerminal.0.6.5                    [required by acgtk]
@@ -22,25 +27,3 @@ Building ANSITerminal.0.6.5:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing ANSITerminal.0.6.5.
-Copying ~/.opam/repo/default/packages/bolt/bolt.1.4/files/opam.patch to ~/.opam/4.01.0/build/bolt.1.4/
-Copying ~/.opam/repo/default/packages/bolt/bolt.1.4/files/opam.bolt.META.patch to ~/.opam/4.01.0/build/bolt.1.4/
-Applying opam.patch.
-Applying opam.bolt.META.patch.
-Building bolt.1.4:
-  ./configure -ocaml-prefix /home/opam/.opam/4.01.0 -ocamlfind /home/opam/.opam/4.01.0/bin/ocamlfind
-  make all
-  make install
-Installing bolt.1.4.
-Copying ~/.opam/repo/default/packages/dypgen/dypgen.20120619-1/files/install-bsd-compatible.patch to ~/.opam/4.01.0/build/dypgen.20120619-1/
-Copying ~/.opam/repo/default/packages/dypgen/dypgen.20120619-1/files/dypgen.install to ~/.opam/4.01.0/build/dypgen.20120619-1/
-Applying install-bsd-compatible.patch.
-Building dypgen.20120619-1:
-  make
-  make install DYPGENLIBDIR=/home/opam/.opam/4.01.0/lib BINDIR=/home/opam/.opam/4.01.0/bin MANDIR=/home/opam/.opam/4.01.0/man/man1
-Installing dypgen.20120619-1.
-Building acgtk.1.1:
-  ./configure --prefix=/home/opam/.opam/4.01.0
-  make all
-  make install-all
-Installing acgtk.1.1.
