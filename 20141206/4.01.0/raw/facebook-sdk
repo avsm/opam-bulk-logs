@@ -209,3 +209,4 @@ Building facebook-sdk.0.2.12:
   ./configure --prefix /home/opam/.opam/4.01.0
   make build
   make install
+Installing facebook-sdk.0.2.12.
