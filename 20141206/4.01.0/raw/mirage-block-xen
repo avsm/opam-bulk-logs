@@ -193,3 +193,8 @@ Installing mirage-clock-xen.1.0.0.
 Building mirage-xen.2.0.1:
   make xen-build
   make xen-install PREFIX=/home/opam/.opam/4.01.0
+Installing mirage-xen.2.0.1.
+Building mirage-block-xen.1.2.0:
+  make
+  make install BINDIR=/home/opam/.opam/4.01.0/bin
+Installing mirage-block-xen.1.2.0.
