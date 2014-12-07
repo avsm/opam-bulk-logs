@@ -5,3 +5,13 @@ Debian depexts: libexpat1-dev libglade2-dev libgnomecanvas2-dev libgtk2.0-dev li
 + '[' 'libexpat1-dev libglade2-dev libgnomecanvas2-dev libgtk2.0-dev libgtksourceview2.0-dev libmysqlclient-dev libpcre3-dev zlib1g-dev' '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
 + sudo apt-get install -qq -y libexpat1-dev libglade2-dev libgnomecanvas2-dev libgtk2.0-dev libgtksourceview2.0-dev libmysqlclient-dev libpcre3-dev zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libpipeline1:amd64 (from .../libpipeline1_1.2.1-1_amd64.deb) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Unpacking libasprintf0c2:amd64 (from .../libasprintf0c2_0.18.1.1-9_amd64.deb) ...
+Selecting previously unselected package libart-2.0-2:amd64.
+Unpacking libart-2.0-2:amd64 (from .../libart-2.0-2_2.3.21-2_amd64.deb) ...
+Selecting previously unselected package libatk1.0-data.
+Unpacking libatk1.0-data (from .../libatk1.0-data_2.4.0-2_all.deb) ...
