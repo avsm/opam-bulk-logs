@@ -52,3 +52,4 @@ Installing ulex.1.1.
 Copying ~/.opam/repo/default/packages/beluga/beluga.0.5/files/beluga.install to ~/.opam/4.01.0/build/beluga.0.5/
 Building beluga.0.5:
   omake NATIVE_ENABLED=true
+Installing beluga.0.5.
