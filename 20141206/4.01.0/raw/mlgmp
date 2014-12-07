@@ -90,3 +90,4 @@ Building mlgmp.20120224:
   cp conversions.c _build/conversions.c
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing mlgmp.20120224.
