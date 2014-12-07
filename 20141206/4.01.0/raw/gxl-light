@@ -21,3 +21,8 @@ The following actions will be performed:
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Building xml-light.2.4:
   make install_ocamlfind
+Installing xml-light.2.4.
+Building gxl-light.1.0:
+  make build
+  make install
+Installing gxl-light.1.0.
