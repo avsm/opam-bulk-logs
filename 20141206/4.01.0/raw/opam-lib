@@ -79,3 +79,4 @@ Installing dose.3.2.2+opam.
 Building opam-lib.1.2.0:
   ./configure
   make
+Installing opam-lib.1.2.0.
