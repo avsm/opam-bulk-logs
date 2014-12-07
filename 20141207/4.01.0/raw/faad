@@ -1,16 +1,36 @@
-++ opam install faad -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install faad -e debian
++ depext=libfaad-dev
+Debian depexts: libfaad-dev
++ echo Debian depexts: libfaad-dev
++ '[' libfaad-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libfaad-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libfaad2:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libfaad2:amd64 (from .../libfaad2_2.7-8_amd64.deb) ...
+Selecting previously unselected package libfaad-dev:amd64.
+Unpacking libfaad-dev:amd64 (from .../libfaad-dev_2.7-8_amd64.deb) ...
+Setting up libfaad2:amd64 (2.7-8) ...
+Setting up libfaad-dev:amd64 (2.7-8) ...
+++ opam install faad -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install faad
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   faad.0.3.2
 === 1 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [faad.0.3.2] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-faad/0.3.2/ocaml-faad-0.3.2.tar.gz
-[ERROR] curl: code 404 while downloading http://downloads.sourceforge.net/project/savonet/ocaml-faad/0.3.2/ocaml-faad-0.3.2.tar.gz
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/faad.0.3.2/ocaml-faad-0.3.2.tar.gz:
+  - a6f15887ecb9ed0d3b3c930776d54c0a [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
 [ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-faad/0.3.2/ocaml-faad-0.3.2.tar.gz is not available
 [ERROR] Could not download archives of faad.0.3.2
 
