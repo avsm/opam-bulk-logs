@@ -1,8 +1,20 @@
-++ opam install zmq -e centos,centos-7
+++ opam install zmq -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
+++ opam install zmq -e source,linux
++ srcext=https://gist.github.com/hcarty/77e32afdecbf09af0213/raw
+Debian srcexts: https://gist.github.com/hcarty/77e32afdecbf09af0213/raw
++ echo Debian srcexts: https://gist.github.com/hcarty/77e32afdecbf09af0213/raw
++ '[' https://gist.github.com/hcarty/77e32afdecbf09af0213/raw '!=' '' ']'
+++ mktemp
++ t=/tmp/tmp.vTTuduj3hE
++ curl -sL https://gist.github.com/hcarty/77e32afdecbf09af0213/raw
++ bash -ex /tmp/tmp.vTTuduj3hE
++ sudo apt-add-repository ppa:chris-lea/zeromq
++ echo yes
+sudo: apt-add-repository: command not found
 + opam install zmq
 The following actions will be performed:
  - install   ounit.2.0.0                           [required by zmq]
@@ -50,63 +62,3 @@ Building uint.1.1.5:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing uint.1.1.5.
-Building ocaml-data-notation.0.0.11:
-  make
-  make install
-Installing ocaml-data-notation.0.0.11.
-Copying ~/.opam/repo/default/packages/oasis/oasis.0.4.5/files/oasis.install to ~/.opam/4.01.0/build/oasis.0.4.5/
-Building oasis.0.4.5:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing oasis.0.4.5.
-Building zmq.4.0-3:
-  oasis setup
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Removing zmq.4.0-3.
-[ERROR] The compilation of zmq.4.0-3 failed.
-  ocamlfind remove ZMQ
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   ocamlmod.0.0.7
- - install   uint.1.1.5
- - install   ocaml-data-notation.0.0.11
- - install   ocamlify.0.0.1
- - install   oasis.0.4.5
- - install   type_conv.111.13.00
- - install   ounit.2.0.0
-The following failed
- - install   zmq.4.0-3
-
-#=== ERROR while installing zmq.4.0-3 =========================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ocaml setup.ml -build
-# path                 /home/opam/.opam/4.01.0/build/zmq.4.0-3
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/zmq.4.0-3/zmq-2388-335865.env
-# stdout-file          /home/opam/.opam/4.01.0/build/zmq.4.0-3/zmq-2388-335865.out
-# stderr-file          /home/opam/.opam/4.01.0/build/zmq.4.0-3/zmq-2388-335865.err
-### stdout ###
-# ...[truncated]
-# pkg_str: ............................................. /home/opam/.opam/4.01.0/lib/ocaml
-# 
-# /home/opam/.opam/4.01.0/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -ccopt -I -ccopt /home/opam/.opam/4.01.0/lib/uint -ccopt -Wall -ccopt -Wextra -ccopt -O2 -c src/caml_zmq_stubs.c
-# + /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -ccopt -I -ccopt /home/opam/.opam/4.01.0/lib/uint -ccopt -Wall -ccopt -Wextra -ccopt -O2 -c src/caml_zmq_stubs.c
-# src/caml_zmq_stubs.c:30:17: fatal error: zmq.h: No such file or directory
-#  #include <zmq.h>
-#                  ^
-# compilation terminated.
-# Command exited with code 2.
-### stderr ###
-# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' src/libZMQ_stubs.a src/dllZMQ_stubs.so src/ZMQ.cma src/ZMQ.cmxa src/ZMQ.a src/ZMQ.cmxs examples/hwserver.native examples/hwclient.native examples/wuserver.native examples/wuclient.native examples/wuproxy.native examples/taskvent.native examples/taskwork.native examples/tasksink.native -tag debug' terminated with error code 10")
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107165522.export"
