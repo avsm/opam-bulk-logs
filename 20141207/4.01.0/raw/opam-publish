@@ -81,3 +81,56 @@ Installing dose.3.2.2+opam.
 Building opam-lib.1.2.0:
   ./configure
   make
+[ERROR] The compilation of opam-lib.1.2.0 failed.
+Removing opam-lib.1.2.0.
+  Nothing to do.
+
+
+#=== ERROR while installing opam-lib.1.2.0 ====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.01.0/build/opam-lib.1.2.0
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/opam-lib.1.2.0/opam-lib-4769-dc6e87.env
+# stdout-file          /home/opam/.opam/4.01.0/build/opam-lib.1.2.0/opam-lib-4769-dc6e87.out
+# stderr-file          /home/opam/.opam/4.01.0/build/opam-lib.1.2.0/opam-lib-4769-dc6e87.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlopt -package unix,extlib,re,re.emacs,re.str,re.perl,re.pcre,re.glob,cmdliner,ocamlgraph,cudf,dose3,jsonm -c -g -w +a-4-9-32-41-44-45 -bin-annot -short-paths -I core -I solver -I repositories -I client -I client/ client/opamArg.ml
+# ocamlfind ocamlopt -package unix,extlib,re,re.emacs,re.str,re.perl,re.pcre,re.glob,cmdliner,ocamlgraph,cudf,dose3,jsonm -c -g -w +a-4-9-32-41-44-45 -bin-annot -short-paths -I core -I solver -I repositories -I client -I client/ client/opamMain.ml
+# ocamlfind ocamlopt \
+# 				-package unix,extlib,re,re.emacs,re.str,re.perl,re.pcre,re.glob,cmdliner,ocamlgraph,cudf,dose3,jsonm -linkpkg \
+# 				     -I core -I solver -I repositories -I client -I client/  -g -w +a-4-9-32-41-44-45 -bin-annot   -ccopt -Lclient/    ./opam-core.cmxa ./opam-solver.cmxa ./opam-repositories.cmxa ./opam-client.cmxa -o opam \
+# 				client/opamArg.cmx client/opamMain.cmx
+# make[4]: Leaving directory `/home/opam/.opam/4.01.0/build/opam-lib.1.2.0/src'
+# make[3]: Leaving directory `/home/opam/.opam/4.01.0/build/opam-lib.1.2.0/src'
+# make[2]: Leaving directory `/home/opam/.opam/4.01.0/build/opam-lib.1.2.0/src'
+# make[1]: Leaving directory `/home/opam/.opam/4.01.0/build/opam-lib.1.2.0/src'
+### stderr ###
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+# make[4]: *** [opam] Error 2
+# make[3]: *** [native-code] Error 2
+# make[2]: *** [subproj_opam] Error 2
+# make[1]: *** [opam] Error 2
+# make: *** [opam] Error 2
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   jsonm.0.9.1
+ - install   uutf.0.9.3
+ - install   dose.3.2.2+opam
+ - install   cudf.0.7
+ - install   extlib-compat.1.6.1
+ - install   cmdliner.0.9.6
+ - install   ocamlgraph.1.8.5
+ - install   re.1.2.2
+The following failed
+ - install   opam-lib.1.2.0
+Due to the errors, the following have been cancelled
+ - install   opam-publish.0.1~beta
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107210258.export"
