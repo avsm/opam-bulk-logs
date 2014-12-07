@@ -1,0 +1,401 @@
+++ opam install sociaml-tumblr-api -e centos,centos-7
++ depext=openssl-devel
++ echo CentOS 7 depexts: openssl-devel
++ '[' openssl-devel '!=' '' ']'
++ sudo yum install -y openssl-devel
+CentOS 7 depexts: openssl-devel
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: anorien.csc.warwick.ac.uk
+ * extras: anorien.csc.warwick.ac.uk
+ * updates: anorien.csc.warwick.ac.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package openssl-devel.x86_64 1:1.0.1e-34.el7_0.6 will be installed
+--> Processing Dependency: zlib-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Running transaction check
+---> Package krb5-devel.x86_64 0:1.11.3-49.el7 will be installed
+--> Processing Dependency: libverto-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libselinux-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libcom_err-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+---> Package zlib-devel.x86_64 0:1.2.7-13.el7 will be installed
+--> Running transaction check
+---> Package keyutils-libs-devel.x86_64 0:1.5.8-3.el7 will be installed
+---> Package libcom_err-devel.x86_64 0:1.42.9-4.el7 will be installed
+---> Package libselinux-devel.x86_64 0:2.2.2-6.el7 will be installed
+--> Processing Dependency: libsepol-devel >= 2.1.9-1 for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libpcre) for package: libselinux-devel-2.2.2-6.el7.x86_64
+---> Package libverto-devel.x86_64 0:0.2.5-4.el7 will be installed
+--> Running transaction check
+---> Package libsepol-devel.x86_64 0:2.1.9-3.el7 will be installed
+---> Package pcre-devel.x86_64 0:8.32-12.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                 Arch       Version                   Repository   Size
+================================================================================
+Installing:
+ openssl-devel           x86_64     1:1.0.1e-34.el7_0.6       updates     1.2 M
+Installing for dependencies:
+ keyutils-libs-devel     x86_64     1.5.8-3.el7               base         37 k
+ krb5-devel              x86_64     1.11.3-49.el7             base        611 k
+ libcom_err-devel        x86_64     1.42.9-4.el7              base         30 k
+ libselinux-devel        x86_64     2.2.2-6.el7               base        174 k
+ libsepol-devel          x86_64     2.1.9-3.el7               base         71 k
+ libverto-devel          x86_64     0.2.5-4.el7               base         12 k
+ pcre-devel              x86_64     8.32-12.el7               base        477 k
+ zlib-devel              x86_64     1.2.7-13.el7              base         49 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+8 Dependent packages)
+
+Total download size: 2.6 M
+Installed size: 5.7 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              1.7 MB/s | 2.6 MB  00:01     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : keyutils-libs-devel-1.5.8-3.el7.x86_64                       1/9 
+  Installing : pcre-devel-8.32-12.el7.x86_64                                2/9 
+  Installing : zlib-devel-1.2.7-13.el7.x86_64                               3/9 
+  Installing : libsepol-devel-2.1.9-3.el7.x86_64                            4/9 
+  Installing : libselinux-devel-2.2.2-6.el7.x86_64                          5/9 
+  Installing : libverto-devel-0.2.5-4.el7.x86_64                            6/9 
+  Installing : libcom_err-devel-1.42.9-4.el7.x86_64                         7/9 
+  Installing : krb5-devel-1.11.3-49.el7.x86_64                              8/9 
+  Installing : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     9/9 
+  Verifying  : libcom_err-devel-1.42.9-4.el7.x86_64                         1/9 
+  Verifying  : libselinux-devel-2.2.2-6.el7.x86_64                          2/9 
+  Verifying  : libverto-devel-0.2.5-4.el7.x86_64                            3/9 
+  Verifying  : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     4/9 
+  Verifying  : libsepol-devel-2.1.9-3.el7.x86_64                            5/9 
+  Verifying  : krb5-devel-1.11.3-49.el7.x86_64                              6/9 
+  Verifying  : zlib-devel-1.2.7-13.el7.x86_64                               7/9 
+  Verifying  : pcre-devel-8.32-12.el7.x86_64                                8/9 
+  Verifying  : keyutils-libs-devel-1.5.8-3.el7.x86_64                       9/9 
+
+Installed:
+  openssl-devel.x86_64 1:1.0.1e-34.el7_0.6                                      
+
+Dependency Installed:
+  keyutils-libs-devel.x86_64 0:1.5.8-3.el7                                      
+  krb5-devel.x86_64 0:1.11.3-49.el7                                             
+  libcom_err-devel.x86_64 0:1.42.9-4.el7                                        
+  libselinux-devel.x86_64 0:2.2.2-6.el7                                         
+  libsepol-devel.x86_64 0:2.1.9-3.el7                                           
+  libverto-devel.x86_64 0:0.2.5-4.el7                                           
+  pcre-devel.x86_64 0:8.32-12.el7                                               
+  zlib-devel.x86_64 0:1.2.7-13.el7                                              
+
+Complete!
++ opam install sociaml-tumblr-api
+The following actions will be performed:
+ - install   omake.0.9.8.6-0.rc1                   [required by tiny_json_conv, meta_conv, tiny_json]
+ - install   re.1.2.2                              [required by cohttp]
+ - install   ocamlify.0.0.1                        [required by oasis]
+ - install   ounit.2.0.0                           [required by cohttp, pa_ounit]
+ - install   csv.1.3.4                             [required by sociaml-tumblr-api]
+ - install   ssl.0.4.7                             [required by sociaml-oauth-client, lwt]
+ - install   res.4.0.6                             [required by core_kernel]
+ - install   cryptokit.1.9                         [required by sociaml-oauth-client]
+ - install   calendar.2.03.2                       [required by sociaml-tumblr-api]
+ - install   herelib.109.35.00                     [required by core_kernel]
+ - install   pipebang.109.28.00                    [required by core_kernel]
+ - install   ocamlmod.0.0.7                        [required by oasis]
+ - install   type_conv.109.47.00                   [required by meta_conv]
+ - install   tiny_json.1.1.2                       [required by sociaml-tumblr-api]
+ - install   uri.1.3.12                            [required by sociaml-tumblr-api]
+ - install   lwt.2.4.5                             [required by sociaml-tumblr-api]
+ - install   variantslib.109.15.00                 [required by core_kernel]
+ - install   sexplib.109.47.00                     [required by core_kernel]
+ - install   pa_ounit.109.36.00                    [required by core_kernel]
+ - install   ocaml-data-notation.0.0.11            [required by oasis]
+ - install   meta_conv.1.1.4                       [required by sociaml-tumblr-api]
+ - install   fieldslib.109.20.00                   [required by core_kernel]
+ - install   comparelib.109.27.00                  [required by core_kernel]
+ - install   bin_prot.109.47.00                    [required by core_kernel]
+ - install   cohttp.0.9.6                          [required by sociaml-oauth-client]
+ - install   custom_printf.109.27.00               [required by core]
+ - install   oasis.0.4.5                           [required by sociaml-tumblr-api]
+ - install   tiny_json_conv.1.4.1                  [required by sociaml-tumblr-api]
+ - install   core_kernel.109.47.00                 [required by sociaml-tumblr-api]
+ - install   core.109.47.00                        [required by sociaml-oauth-client]
+ - install   re2.109.45.02                         [required by sociaml-oauth-client]
+ - install   sociaml-oauth-client.0.4.1            [required by sociaml-tumblr-api]
+ - install   sociaml-tumblr-api.0.2.0
+=== 33 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bin_prot.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/bin_prot-109.47.00.tar.gz
+[calendar.2.03.2] Downloading http://forge.ocamlcore.org/frs/download.php/915/calendar-2.03.2.tar.gz
+[cohttp.0.9.6] Downloading https://github.com/mirage/ocaml-cohttp/archive/ocaml-cohttp-0.9.6.tar.gz
+[comparelib.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/comparelib-109.27.00.tar.gz
+[core.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/core-109.47.00.tar.gz
+[core_kernel.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/core_kernel-109.47.00.tar.gz
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[csv.1.3.4] Downloading https://github.com/Chris00/ocaml-csv/releases/download/1.3.3/csv-1.3.4.tar.gz
+[custom_printf.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/custom_printf-109.27.00.tar.gz
+[fieldslib.109.20.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.00.tar.gz
+[herelib.109.35.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.00.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[meta_conv.1.1.4] Downloading https://bitbucket.org/camlspotter/meta_conv/get/1.1.4.tar.gz
+[oasis.0.4.5] Downloading https://forge.ocamlcore.org/frs/download.php/1475/oasis-0.4.5.tar.gz
+[ocaml-data-notation.0.0.11] Downloading https://forge.ocamlcore.org/frs/download.php/1310/ocaml-data-notation-0.0.11.tar.gz
+[ocamlify.0.0.1] Downloading http://forge.ocamlcore.org/frs/download.php/379/ocamlify-0.0.1.tar.gz
+[ocamlmod.0.0.7] Downloading https://forge.ocamlcore.org/frs/download.php/1350/ocamlmod-0.0.7.tar.gz
+[omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pa_ounit.109.36.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.36.00/individual/pa_ounit-109.36.00.tar.gz
+[pipebang.109.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.28.00/individual/pipebang-109.28.00.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[re2.109.45.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.45.00/individual/re2-109.45.02.tar.gz
+[res.4.0.6] Downloading https://github.com/mmottl/res/releases/download/v4.0.6/res-4.0.6.tar.gz
+[sexplib.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/sexplib-109.47.00.tar.gz
+[sociaml-oauth-client.0.4.1] Downloading https://github.com/dominicjprice/sociaml-oauth-client/archive/v0.4.1.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[sociaml-tumblr-api.0.2.0] Downloading https://github.com/dominicjprice/sociaml-tumblr-api/archive/v0.2.0.tar.gz
+[tiny_json.1.1.2] Downloading https://bitbucket.org/camlspotter/tiny_json/get/1.1.2.tar.gz
+[tiny_json_conv.1.4.1] Downloading https://bitbucket.org/camlspotter/tiny_json_conv/get/1.4.1.tar.gz
+[type_conv.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/type_conv-109.47.00.tar.gz
+[uri.1.3.12] Downloading https://github.com/mirage/ocaml-uri/archive/v1.3.12.tar.gz
+[variantslib.109.15.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building calendar.2.03.2:
+  ./configure
+  make
+  make install
+Installing calendar.2.03.2.
+Building cryptokit.1.9:
+  make
+  make install
+Installing cryptokit.1.9.
+Copying ~/.opam/repo/default/packages/csv/csv.1.3.4/files/csv.install to ~/.opam/4.01.0/build/csv.1.3.4/
+Building csv.1.3.4:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing csv.1.3.4.
+Building herelib.109.35.00:
+  make
+  make install
+Installing herelib.109.35.00.
+Copying ~/.opam/repo/default/packages/ocamlify/ocamlify.0.0.1/files/ocamlify.install to ~/.opam/4.01.0/build/ocamlify.0.0.1/
+Building ocamlify.0.0.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlify.0.0.1.
+Copying ~/.opam/repo/default/packages/ocamlmod/ocamlmod.0.0.7/files/ocamlmod.install to ~/.opam/4.01.0/build/ocamlmod.0.0.7/
+Building ocamlmod.0.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlmod.0.0.7.
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/opam.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/omake.install to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/fam.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
+Applying opam.patch.
+Applying fam.patch.
+Applying readline.patch.
+Building omake.0.9.8.6-0.rc1:
+  make bootstrap PREFIX=/home/opam/.opam/4.01.0
+  make all PREFIX=/home/opam/.opam/4.01.0
+  make install PREFIX=/home/opam/.opam/4.01.0
+Installing omake.0.9.8.6-0.rc1.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building pipebang.109.28.00:
+  make
+  make install
+Installing pipebang.109.28.00.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Building res.4.0.6:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing res.4.0.6.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.01.0/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing ssl.0.4.7.
+Building type_conv.109.47.00:
+  make
+  make install
+Installing type_conv.109.47.00.
+Building bin_prot.109.47.00:
+  make
+  make install
+Installing bin_prot.109.47.00.
+Building comparelib.109.27.00:
+  make
+  make install
+Installing comparelib.109.27.00.
+Building fieldslib.109.20.00:
+  make
+  make install
+Installing fieldslib.109.20.00.
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+Installing lwt.2.4.5.
+Building meta_conv.1.1.4:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing meta_conv.1.1.4.
+Building ocaml-data-notation.0.0.11:
+  make
+  make install
+Installing ocaml-data-notation.0.0.11.
+Building pa_ounit.109.36.00:
+  make
+  make install
+Installing pa_ounit.109.36.00.
+Building sexplib.109.47.00:
+  make
+  make install
+Installing sexplib.109.47.00.
+Building tiny_json.1.1.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing tiny_json.1.1.2.
+Building uri.1.3.12:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.3.12.
+Building variantslib.109.15.00:
+  make
+  make install
+Installing variantslib.109.15.00.
+Building cohttp.0.9.6:
+  make PREFIX=/home/opam/.opam/4.01.0
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing cohttp.0.9.6.
+Building core_kernel.109.47.00:
+  make
+  make install
+Installing core_kernel.109.47.00.
+Building custom_printf.109.27.00:
+  make
+  make install
+Installing custom_printf.109.27.00.
+Copying ~/.opam/repo/default/packages/oasis/oasis.0.4.5/files/oasis.install to ~/.opam/4.01.0/build/oasis.0.4.5/
+Building oasis.0.4.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing oasis.0.4.5.
+Building tiny_json_conv.1.4.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing tiny_json_conv.1.4.1.
+Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/corebuild over ~/.opam/4.01.0/build/core.109.47.00/
+Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/core.install to ~/.opam/4.01.0/build/core.109.47.00/
+Building core.109.47.00:
+  make
+  make install
+Installing core.109.47.00.
+Building re2.109.45.02:
+  make
+  make install
+Installing re2.109.45.02.
+Building sociaml-oauth-client.0.4.1:
+  oasis setup
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make build
+  make install
+[ERROR] The compilation of sociaml-oauth-client.0.4.1 failed.
+Removing sociaml-oauth-client.0.4.1.
+  make uninstall
+  ocamlfind remove sociaml-oauth-client
+
+
+#=== ERROR while installing sociaml-oauth-client.0.4.1 ========================#
+# opam-version         1.2.0
+# os                   linux
+# command              make build
+# path                 /home/opam/.opam/4.01.0/build/sociaml-oauth-client.0.4.1
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/sociaml-oauth-client.0.4.1/sociaml-oauth-client-18581-af57d6.env
+# stdout-file          /home/opam/.opam/4.01.0/build/sociaml-oauth-client.0.4.1/sociaml-oauth-client-18581-af57d6.out
+# stderr-file          /home/opam/.opam/4.01.0/build/sociaml-oauth-client.0.4.1/sociaml-oauth-client-18581-af57d6.err
+### stdout ###
+# ...[truncated]
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -a src/oauth_client_posix.cmo -o src/oauth_client_posix.cma
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -thread -I src -package cohttp -package core -package cryptokit -package re2 -I src -o src/oauth_client_posix.cmx src/oauth_client_posix.ml
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -a src/oauth_client_posix.cmx -o src/oauth_client_posix.cmxa
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -shared src/oauth_client_posix.cmxa src/oauth_client_posix.cmx -o src/oauth_client_posix.cmxs
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamldep -package cohttp -package cohttp.lwt -package core -package lwt -syntax camlp4o -package lwt.syntax -package re2 -package uri -modules src/v1.0a/client.mli > src/v1.0a/client.mli.depends
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -annot -bin-annot -thread -I src -package cohttp -package cohttp.lwt -package core -package lwt -syntax camlp4o -package lwt.syntax -package re2 -package uri -I src/v1.0a -I src -o src/v1.0a/client.cmi src/v1.0a/client.mli
+# + /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -annot -bin-annot -thread -I src -package cohttp -package cohttp.lwt -package core -package lwt -syntax camlp4o -package lwt.syntax -package re2 -package uri -I src/v1.0a -I src -o src/v1.0a/client.cmi src/v1.0a/client.mli
+# File "src/v1.0a/client.mli", line 59, characters 21-38:
+# Error: Unbound module type Cohttp_lwt.Client
+# Command exited with code 2.
+### stderr ###
+# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' src/oauth_client.cma src/oauth_client.cmxa src/oauth_client.a src/oauth_client.cmxs src/oauth_client_posix.cma src/oauth_client_posix.cmxa src/oauth_client_posix.a src/oauth_client_posix.cmxs src/v1.0a/oauth_client_v1_0a.cma src/v1.0a/oauth_client_v1_0a.cmxa src/v1.0a/oauth_client_v1_0a.a src/v1.0a/oauth_client_v1_0a.cmxs -tag debug' te...[truncated]
+# make: *** [build] Error 1
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   type_conv.109.47.00
+ - install   ocamlmod.0.0.7
+ - install   pipebang.109.28.00
+ - install   herelib.109.35.00
+ - install   calendar.2.03.2
+ - install   fieldslib.109.20.00
+ - install   cryptokit.1.9
+ - install   res.4.0.6
+ - install   sexplib.109.47.00
+ - install   tiny_json.1.1.2
+ - install   lwt.2.4.5
+ - install   core.109.47.00
+ - install   re2.109.45.02
+ - install   ocaml-data-notation.0.0.11
+ - install   variantslib.109.15.00
+ - install   ssl.0.4.7
+ - install   csv.1.3.4
+ - install   ounit.2.0.0
+ - install   pa_ounit.109.36.00
+ - install   custom_printf.109.27.00
+ - install   core_kernel.109.47.00
+ - install   bin_prot.109.47.00
+ - install   ocamlify.0.0.1
+ - install   oasis.0.4.5
+ - install   re.1.2.2
+ - install   cohttp.0.9.6
+ - install   meta_conv.1.1.4
+ - install   tiny_json_conv.1.4.1
+ - install   uri.1.3.12
+ - install   omake.0.9.8.6-0.rc1
+ - install   comparelib.109.27.00
+The following failed
+ - install   sociaml-oauth-client.0.4.1
+Due to the errors, the following have been cancelled
+ - install   sociaml-tumblr-api.0.2.0
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107160148.export"
