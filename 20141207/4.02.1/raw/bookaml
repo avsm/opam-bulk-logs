@@ -1,0 +1,83 @@
+++ opam install bookaml -e ubuntu
++ depext=zlib1g-dev
++ echo Ubuntu depexts: zlib1g-dev
++ '[' zlib1g-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: zlib1g-dev
++ sudo apt-get install -qq -y zlib1g-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+++ opam install bookaml -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install bookaml
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   cryptokit.1.9                         [required by bookaml]
+ - install   calendar.2.03.2                       [required by bookaml]
+ - install   batteries.2.3.1                       [required by bookaml]
+ - install   uutf.0.9.3                            [required by tyxml]
+ - install   ocamlnet.3.7.7                        [required by bookaml]
+ - install   tyxml.3.3.0                           [required by bookaml]
+ - install   bookaml.1.0
+=== 7 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
+[calendar.2.03.2] Downloading http://forge.ocamlcore.org/frs/download.php/915/calendar-2.03.2.tar.gz
+[bookaml.1.0] Downloading http://forge.ocamlcore.org/frs/download.php/1434/bookaml-1.0.tgz
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
+[tyxml.3.3.0] Downloading https://github.com/ocsigen/tyxml/archive/3.3.0.tar.gz
+[uutf.0.9.3] Downloading http://erratique.ch/software/uutf/releases/uutf-0.9.3.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building batteries.2.3.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make all
+  make install
+Installing batteries.2.3.1.
+Building calendar.2.03.2:
+  ./configure
+  make
+  make install
+Installing calendar.2.03.2.
+Building cryptokit.1.9:
+  make
+  make install
+Installing cryptokit.1.9.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.02.1/build/ocamlnet.3.7.7/
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/ocamlnet.install to ~/.opam/4.02.1/build/ocamlnet.3.7.7/
+Applying robust-host.patch.
+Building ocamlnet.3.7.7:
+  ./configure -bindir /home/opam/.opam/4.02.1/bin -disable-pcre -disable-gtk2 -disable-ssl -disable-zip -enable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Installing ocamlnet.3.7.7.
+Building tyxml.3.3.0:
+  ./configure --enable-syntax --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing tyxml.3.3.0.
+Building bookaml.1.0:
+  ./configure --prefix /home/opam/.opam/4.02.1 --docdir /home/opam/.opam/4.02.1/doc/bookaml --disable-ocsigen --enable-ocamlnet
+  make
+  make doc
+  make install
+Installing bookaml.1.0.
