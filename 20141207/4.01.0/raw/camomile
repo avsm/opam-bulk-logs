@@ -25,3 +25,4 @@ Building camomile.0.8.5:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing camomile.0.8.5.
