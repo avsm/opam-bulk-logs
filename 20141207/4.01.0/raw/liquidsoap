@@ -1,9 +1,18 @@
-++ opam install liquidsoap -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install liquidsoap -e debian
++ depext='libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev'
++ echo Debian depexts: libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev
+Debian depexts: libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev
++ '[' 'libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libao-dev libfaad-dev libflac-dev libgavl-dev libgstreamer-plugins-base0.10-dev libgstreamer0.10-dev libgstreamer1.0-dev liblo-dev libmad0-dev libmp3lame-dev libogg-dev libpcre3-dev libsamplerate-dev libschroedinger-dev libsoundtouch-dev libspeex-dev libtheora-dev libvo-aacenc-dev libvorbis-dev portaudio19-dev
+E: Unable to locate package libgstreamer1.0-dev
+E: Couldn't find any package by regex 'libgstreamer1.0-dev'
+++ opam install liquidsoap -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install liquidsoap
-CentOS 7 depexts:
 The following actions will be performed:
  - install   dtools.0.3.0                          [required by liquidsoap]
  - install   conf-libpcre.1                        [required by pcre]
@@ -19,89 +28,42 @@ The following actions will be performed:
 [camomile.0.8.5] Downloading https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
 [dtools.0.3.0] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz
 [duppy.0.5.0] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-duppy/0.5.0/ocaml-duppy-0.5.0.tar.gz
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/duppy.0.5.0/ocaml-duppy-0.5.0.tar.gz:
+  - c321b7ad6f586bfd2548bf99eb479421 [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
+[ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-duppy/0.5.0/ocaml-duppy-0.5.0.tar.gz is not available
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/dtools.0.3.0/ocaml-dtools-0.3.0.tar.gz:
+  - 0cbf60f517a936244ad4d98c6d904907 [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
+[ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz is not available
 [liquidsoap.1.1.0] Downloading http://downloads.sourceforge.net/project/savonet/liquidsoap/1.1.0/liquidsoap-1.1.0.tar.bz2
 [mad.0.4.4] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-mad/0.4.4/ocaml-mad-0.4.4.tar.gz
-[mm.0.2.1] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-mm/0.2.1/ocaml-mm-0.2.1.tar.gz
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/liquidsoap.1.1.0/liquidsoap-1.1.0.tar.bz2:
+  - 43a282c44b6744e80fb8850738194b9d [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
+[ERROR] http://downloads.sourceforge.net/project/savonet/liquidsoap/1.1.0/liquidsoap-1.1.0.tar.bz2 is not available
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/mad.0.4.4/ocaml-mad-0.4.4.tar.gz:
+  - e45b8c48e1fe6cbec0d4299fa80a66bd [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
+[ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-mad/0.4.4/ocaml-mad-0.4.4.tar.gz is not available
 [pcre.7.1.3] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.3/pcre-ocaml-7.1.3.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Copying ~/.opam/repo/default/packages/camomile/camomile.0.8.5/files/no-camlp4.patch to ~/.opam/4.01.0/build/camomile.0.8.5/
-Copying ~/.opam/repo/default/packages/camomile/camomile.0.8.5/files/cmxs.patch to ~/.opam/4.01.0/build/camomile.0.8.5/
-Applying cmxs.patch.
-Applying no-camlp4.patch.
-Building camomile.0.8.5:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-Installing camomile.0.8.5.
-Building conf-libpcre.1:
-  pkg-config libpcre
-[ERROR] The compilation of conf-libpcre.1 failed.
-Removing conf-libpcre.1.
-  Nothing to do.
-Building dtools.0.3.0:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-Installing dtools.0.3.0.
-Building mad.0.4.4:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-[ERROR] The compilation of mad.0.4.4 failed.
-Removing mad.0.4.4.
-  ocamlfind remove mad
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   camomile.0.8.5
- - install   dtools.0.3.0
-The following failed
- - install   conf-libpcre.1
- - install   mad.0.4.4
-Due to the errors, the following have been cancelled
- - install   duppy.0.5.0
- - install   liquidsoap.1.1.0
- - install   pcre.7.1.3
- - install   mm.0.2.1
-
-#=== ERROR while installing conf-libpcre.1 ====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              pkg-config libpcre
-# path                 /home/opam/.opam/4.01.0/build/conf-libpcre.1
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/conf-libpcre.1/conf-libpcre-1561-d2c37b.env
-# stdout-file          /home/opam/.opam/4.01.0/build/conf-libpcre.1/conf-libpcre-1561-d2c37b.out
-# stderr-file          /home/opam/.opam/4.01.0/build/conf-libpcre.1/conf-libpcre-1561-d2c37b.err
-
-
-#=== ERROR while installing mad.0.4.4 =========================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --prefix /home/opam/.opam/4.01.0
-# path                 /home/opam/.opam/4.01.0/build/mad.0.4.4
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/mad.0.4.4/mad-2056-a71bb4.env
-# stdout-file          /home/opam/.opam/4.01.0/build/mad.0.4.4/mad-2056-a71bb4.out
-# stderr-file          /home/opam/.opam/4.01.0/build/mad.0.4.4/mad-2056-a71bb4.err
-### stdout ###
-# ...[truncated]
-# checking for stdlib.h... yes
-# checking for string.h... yes
-# checking for memory.h... yes
-# checking for strings.h... yes
-# checking for inttypes.h... yes
-# checking for stdint.h... yes
-# checking for unistd.h... yes
-# checking mad.h usability... no
-# checking mad.h presence... no
-# checking for mad.h... no
-### stderr ###
-# configure: error: libmad not found
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107142515.export"
+[mm.0.2.1] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-mm/0.2.1/ocaml-mm-0.2.1.tar.gz
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/mm.0.2.1/ocaml-mm-0.2.1.tar.gz:
+  - bc0e63868eef60eb7a6ca61abb7a78d4 [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
+[ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-mm/0.2.1/ocaml-mm-0.2.1.tar.gz is not available
