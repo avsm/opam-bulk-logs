@@ -104,3 +104,20 @@ Building ocurl.0.7.2:
   ./configure
   make
   make install
+Installing ocurl.0.7.2.
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Building ocamlrss.2.2.2:
+  make
+  make install
+Installing ocamlrss.2.2.2.
+Building xtmpl.0.5:
+  make all
+  make install
+Installing xtmpl.0.5.
+Building erssical.0.1:
+  make
+  make BINDIR=/home/opam/.opam/4.01.0/bin install
+Installing erssical.0.1.
