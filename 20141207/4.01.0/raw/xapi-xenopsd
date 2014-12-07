@@ -252,3 +252,172 @@ Building oasis.0.4.5:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing oasis.0.4.5.
+Building rpc.1.5.1:
+  make
+  make install
+Installing rpc.1.5.1.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Building xapi-inventory.0.9.1:
+  ./configure --default_inventory=/home/opam/.opam/4.01.0/etc
+  make
+  make install
+Installing xapi-inventory.0.9.1.
+Building xenctrl.0.9.26:
+  ./configure
+  make
+  make install BINDIR=/home/opam/.opam/4.01.0/bin
+Removing xenctrl.0.9.26.
+[ERROR] The compilation of xenctrl.0.9.26 failed.
+  make uninstall
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.01.0/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Building cohttp.0.10.1:
+  make PREFIX=/home/opam/.opam/4.01.0
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing cohttp.0.10.1.
+Building qmp.0.9.1:
+  make
+  make install BINDIR=/home/opam/.opam/4.01.0/bin
+[ERROR] The compilation of qmp.0.9.1 failed.
+Removing qmp.0.9.1.
+  make uninstall BINDIR=/home/opam/.opam/4.01.0/bin
+Building xapi-rrd.0.9.1:
+  make
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing xapi-rrd.0.9.1.
+Building xenstore.1.2.5:
+  make all
+  make install
+Installing xenstore.1.2.5.
+Building message-switch.0.10.4:
+  ./configure --bindir /home/opam/.opam/4.01.0/bin
+  make
+  make install
+[ERROR] The compilation of message-switch.0.10.4 failed.
+Removing message-switch.0.10.4.
+  ocamlfind remove message_switch
+Building xenstore_transport.0.9.4:
+  make all
+  make install
+Installing xenstore_transport.0.9.4.
+
+
+#=== ERROR while installing message-switch.0.10.4 =============================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure --bindir /home/opam/.opam/4.01.0/bin
+# path                 /home/opam/.opam/4.01.0/build/message-switch.0.10.4
+# compiler             4.01.0
+# exit-code            127
+# env-file             /home/opam/.opam/4.01.0/build/message-switch.0.10.4/message-switch-12747-a8fa88.env
+# stdout-file          /home/opam/.opam/4.01.0/build/message-switch.0.10.4/message-switch-12747-a8fa88.out
+# stderr-file          /home/opam/.opam/4.01.0/build/message-switch.0.10.4/message-switch-12747-a8fa88.err
+### stderr ###
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+# ./configure: line 12: /tmp/configure.6oa2G/configure: No such file or directory
+
+
+#=== ERROR while installing qmp.0.9.1 =========================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.01.0/build/qmp.0.9.1
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/qmp.0.9.1/qmp-11903-2f37d9.env
+# stdout-file          /home/opam/.opam/4.01.0/build/qmp.0.9.1/qmp-11903-2f37d9.out
+# stderr-file          /home/opam/.opam/4.01.0/build/qmp.0.9.1/qmp-11903-2f37d9.err
+### stdout ###
+# ...[truncated]
+#   [CMD]: /home/opam/.opam/4.01.0/bin/ocamlopt.opt -o dist/build/messages/messages -I dist/build/messages -I /home/opam/.opam/4.01.0/lib/easy-format -I /home/opam/.opam/4.01.0/lib/biniou -I /home/opam/.opam/4.01.0/lib/yojson -I dist/build/lib-qmp -I /home/opam/.opam/4.01.0/lib/ocaml -I /home/opam/.opam/4.01.0/lib/oUnit -I /home/opam/.opam/4.01.0/lib/oUnit easy_format.cmx biniou.cmxa yojson.cmx qmp.cmxa unix.cmxa oUnitAdvanced.cmxa oUnit.cmxa -cclib -Ldist/build/lib-qmp messages.cmx
+# [11 of 15] Compiling Client                        
+#   [CMD]: /home/opam/.opam/4.01.0/bin/ocamlopt.opt -I dist/build/cli -I dist/build/autogen -I cli -I dist/build/lib-qmp -I /home/opam/.opam/4.01.0/lib/cmdliner -I /home/opam/.opam/4.01.0/lib/ocaml -I /home/opam/.opam/4.01.0/lib/easy-format -I /home/opam/.opam/4.01.0/lib/biniou -I /home/opam/.opam/4.01.0/lib/yojson -bin-annot -o dist/build/cli/client.cmx -c cli/client.ml
+# [12 of 15] Compiling Cli                           
+#   [CMD]: /home/opam/.opam/4.01.0/bin/ocamlopt.opt -I dist/build/cli -I dist/build/autogen -I cli -I dist/build/lib-qmp -I /home/opam/.opam/4.01.0/lib/cmdliner -I /home/opam/.opam/4.01.0/lib/ocaml -I /home/opam/.opam/4.01.0/lib/easy-format -I /home/opam/.opam/4.01.0/lib/biniou -I /home/opam/.opam/4.01.0/lib/yojson -bin-annot -o dist/build/cli/cli.cmx -c cli/cli.ml
+#   compilation order: Common,Client,Cli
+#   self deps: qmp
+# package deps: [cmdliner,unix,easy-format,biniou,yojson,qmp]
+# [13 of 15] Linking executable dist/build/cli/cli
+#   [CMD]: /home/opam/.opam/4.01.0/bin/ocamlopt.opt -o dist/build/cli/cli -I dist/build/cli -I /home/opam/.opam/4.01.0/lib/cmdliner -I /home/opam/.opam/4.01.0/lib/ocaml -I /home/opam/.opam/4.01.0/lib/easy-format -I /home/opam/.opam/4.01.0/lib/biniou -I /home/opam/.opam/4.01.0/lib/yojson -I dist/build/lib-qmp cmdliner.cmxa unix.cmxa easy_format.cmx biniou.cmxa yojson.cmx qmp.cmxa -cclib -Ldist/build/lib-qmp common.cmx client.cmx cli.cmx
+### stderr ###
+# 
+# File "_none_", line 1:
+# Error: Cannot find file cmdliner.cmxa
+# 
+# make: *** [build] Error 6
+
+
+#=== ERROR while installing xenctrl.0.9.26 ====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure
+# path                 /home/opam/.opam/4.01.0/build/xenctrl.0.9.26
+# compiler             4.01.0
+# exit-code            127
+# env-file             /home/opam/.opam/4.01.0/build/xenctrl.0.9.26/xenctrl-10486-a19e5c.env
+# stdout-file          /home/opam/.opam/4.01.0/build/xenctrl.0.9.26/xenctrl-10486-a19e5c.out
+# stderr-file          /home/opam/.opam/4.01.0/build/xenctrl.0.9.26/xenctrl-10486-a19e5c.err
+### stderr ###
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+# ./configure: line 12: /tmp/tmp.Ap6xvbja9v/configure: No such file or directory
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   uutf.0.9.3
+ - install   ocamlmod.0.0.7
+ - install   uuidm.0.9.5
+ - install   cppo.1.1.2
+ - install   syslog.1.4
+ - install   base-no-ppx.base
+ - install   easy-format.1.0.2
+ - install   xmlm.1.2.0
+ - install   fd-send-recv.1.0.1
+ - install   cohttp.0.10.1
+ - install   xapi-rrd.0.9.1
+ - install   yojson.1.1.8
+ - install   biniou.1.0.9
+ - install   xapi-stdext.0.12.0
+ - install   sexplib.111.17.00
+ - install   ocaml-data-notation.0.0.11
+ - install   oclock.0.4.0
+ - install   xapi-inventory.0.9.1
+ - install   xenstore.1.2.5
+ - install   xenstore_transport.0.9.4
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   ssl.0.4.7
+ - install   rpc.1.5.1
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   base-bytes.legacy
+ - install   stringext.1.1.0
+ - install   ocamlify.0.0.1
+ - install   oasis.0.4.5
+ - install   obuild.0.1.1
+ - install   optcomp.1.6
+ - install   type_conv.111.13.00
+ - install   re.1.2.2
+ - install   uri.1.7.2
+ - install   fieldslib.109.20.03
+ - install   ocplib-endian.0.7
+The following failed
+ - install   message-switch.0.10.4
+ - install   qmp.0.9.1
+ - install   xenctrl.0.9.26
+Due to the errors, the following have been cancelled
+ - install   xapi-xenopsd.0.9.44
+ - install   xapi-idl.0.9.19
+ - install   xapi-forkexecd.0.9.2
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107224211.export"
