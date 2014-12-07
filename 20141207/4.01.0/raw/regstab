@@ -1,7 +1,12 @@
-++ opam install regstab -e centos,centos-7
+++ opam install regstab -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install regstab -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install regstab
 The following actions will be performed:
