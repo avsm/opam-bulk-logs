@@ -1,0 +1,29 @@
+++ opam install aio -e debian
++ depext=libaio-dev
++ echo Debian depexts: libaio-dev
++ '[' libaio-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: libaio-dev
++ sudo apt-get install -qq -y libaio-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libaio1:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libaio1:amd64 (from .../libaio1_0.3.109-3_amd64.deb) ...
+Selecting previously unselected package libaio-dev.
+Unpacking libaio-dev (from .../libaio-dev_0.3.109-3_amd64.deb) ...
+Setting up libaio1:amd64 (0.3.109-3) ...
+Setting up libaio-dev (0.3.109-3) ...
+++ opam install aio -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install aio
+Debian srcexts:
+The following actions will be performed:
+ - install   aio.0.0.3
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[aio.0.0.3] Downloading https://forge.ocamlcore.org/frs/download.php/818/libaio-ocaml_1.0.orig.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

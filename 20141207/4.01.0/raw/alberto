@@ -1,33 +1,22 @@
-++ opam install alberto -e centos,centos-7
+++ opam install alberto -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install alberto -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install alberto
+Debian srcexts:
 The following actions will be performed:
  - install   optcomp.1.6                           [required by ocplib-endian]
- - install   ocplib-endian.0.4                     [required by alberto]
+ - install   base-bytes.legacy                     [required by ocplib-endian]
+ - install   ocplib-endian.0.7                     [required by alberto]
  - install   alberto.0.2
-=== 3 to install ===
+=== 4 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [alberto.0.2] Downloading https://github.com/selectel/alberto/archive/0.2.tar.gz
-[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
 [optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building optcomp.1.6:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-Installing optcomp.1.6.
-Building ocplib-endian.0.4:
-  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing ocplib-endian.0.4.
-Building alberto.0.2:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-Installing alberto.0.2.
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
