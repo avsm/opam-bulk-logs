@@ -1,88 +1,24 @@
-++ opam install conf-mpfr -e centos,centos-7
-+ depext='gmp gmp-devel'
-+ echo CentOS 7 depexts: gmp gmp-devel
-CentOS 7 depexts: gmp gmp-devel
-+ '[' 'gmp gmp-devel' '!=' '' ']'
-+ sudo yum install -y gmp gmp-devel
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * base: anorien.csc.warwick.ac.uk
- * extras: anorien.csc.warwick.ac.uk
- * updates: anorien.csc.warwick.ac.uk
-Package 1:gmp-5.1.1-5.el7.x86_64 already installed and latest version
-Resolving Dependencies
---> Running transaction check
----> Package gmp-devel.x86_64 1:5.1.1-5.el7 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package            Arch            Version                 Repository     Size
-================================================================================
-Installing:
- gmp-devel          x86_64          1:5.1.1-5.el7           base          175 k
-
-Transaction Summary
-================================================================================
-Install  1 Package
-
-Total download size: 175 k
-Installed size: 335 k
-Downloading packages:
-Running transaction check
-Running transaction test
-Transaction test succeeded
-Running transaction
-  Installing : 1:gmp-devel-5.1.1-5.el7.x86_64                               1/1 
-  Verifying  : 1:gmp-devel-5.1.1-5.el7.x86_64                               1/1 
-
-Installed:
-  gmp-devel.x86_64 1:5.1.1-5.el7                                                
-
-Complete!
+++ opam install conf-mpfr -e debian
++ depext='libgmp-dev libmpfr-dev'
+Debian depexts: libgmp-dev libmpfr-dev
++ echo Debian depexts: libgmp-dev libmpfr-dev
++ '[' 'libgmp-dev libmpfr-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libgmp-dev libmpfr-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libgmpxx4ldbl:amd64 (from .../libgmpxx4ldbl_2%3a5.0.5+dfsg-2_amd64.deb) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Unpacking libgmp-dev:amd64 (from .../libgmp-dev_2%3a5.0.5+dfsg-2_amd64.deb) ...
+Selecting previously unselected package libmpfr-dev:amd64.
+Unpacking libmpfr-dev:amd64 (from .../libmpfr-dev_3.1.0-5_amd64.deb) ...
+Setting up libgmpxx4ldbl:amd64 (2:5.0.5+dfsg-2) ...
+Setting up libgmp-dev:amd64 (2:5.0.5+dfsg-2) ...
+Setting up libmpfr-dev:amd64 (3.1.0-5) ...
+++ opam install conf-mpfr -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install conf-mpfr
-The following actions will be performed:
- - install   conf-gmp.1                            [required by conf-mpfr]
- - install   conf-mpfr.1
-=== 2 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Copying ~/.opam/repo/default/packages/conf-gmp/conf-gmp.1/files/test.c to ~/.opam/4.01.0/build/conf-gmp.1/
-Building conf-gmp.1:
-  sh -c cc -c $CFLAGS test.c
-Installing conf-gmp.1.
-Copying ~/.opam/repo/default/packages/conf-mpfr/conf-mpfr.1/files/test.c to ~/.opam/4.01.0/build/conf-mpfr.1/
-Building conf-mpfr.1:
-  cc test.c -lgmp -lmpfr
-Removing conf-mpfr.1.
-[ERROR] The compilation of conf-mpfr.1 failed.
-  Nothing to do.
-
-#=== ERROR while installing conf-mpfr.1 =======================================#
-# opam-version         1.2.0
-# os                   linux
-# command              cc test.c -lgmp -lmpfr
-# path                 /home/opam/.opam/4.01.0/build/conf-mpfr.1
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/conf-mpfr.1/conf-mpfr-56-58c514.env
-# stdout-file          /home/opam/.opam/4.01.0/build/conf-mpfr.1/conf-mpfr-56-58c514.out
-# stderr-file          /home/opam/.opam/4.01.0/build/conf-mpfr.1/conf-mpfr-56-58c514.err
-### stderr ###
-# test.c:2:18: fatal error: mpfr.h: No such file or directory
-#  #include <mpfr.h>
-#                   ^
-# compilation terminated.
-
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   conf-gmp.1
-The following failed
- - install   conf-mpfr.1
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107130736.export"
