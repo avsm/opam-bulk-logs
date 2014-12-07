@@ -1,7 +1,12 @@
-++ opam install deriving -e centos,centos-7
+++ opam install deriving -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install deriving -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install deriving
 The following actions will be performed:
@@ -11,8 +16,8 @@ The following actions will be performed:
 === 3 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[deriving.0.7] Downloading http://ocsigen.org/download/deriving-0.7.tar.gz
 [optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[deriving.0.7] Downloading http://ocsigen.org/download/deriving-0.7.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Installing base-bytes.legacy.
