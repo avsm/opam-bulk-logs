@@ -1,0 +1,14 @@
+++ opam install ocaml-usb -e ubuntu
+[ERROR] No package named ocaml-usb found.
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install ocaml-usb -e source,linux
+[ERROR] No package named ocaml-usb found.
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-usb
+[ERROR] No package named ocaml-usb found.
