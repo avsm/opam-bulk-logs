@@ -1,9 +1,14 @@
-++ opam install graphicspdf -e centos,centos-7
+++ opam install graphicspdf -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install graphicspdf -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install graphicspdf
-CentOS 7 depexts:
 The following actions will be performed:
  - install   camlpdf.2.1.1                         [required by graphicspdf]
  - install   graphicspdf.1.1
