@@ -58,3 +58,7 @@ Building lwt.2.4.6:
   ./configure --prefix /home/opam/.opam/4.01.0 --disable-libev --enable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-ppx
   make build
   make install
+Installing lwt.2.4.6.
+Building js_of_ocaml.2.3:
+  make build
+  make install-lib BINDIR=/home/opam/.opam/4.01.0/bin
