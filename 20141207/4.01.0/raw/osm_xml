@@ -1,164 +1,131 @@
-++ opam install osm_xml -e centos,centos-7
+++ opam install osm_xml -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install osm_xml -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install osm_xml
 The following actions will be performed:
+ - install   herelib.109.35.02                     [required by core]
+ - install   type_conv.111.13.00                   [required by custom_printf, bin_prot, comparelib]
+ - install   pipebang.110.01.00                    [required by core]
  - install   ounit.2.0.0                           [required by osm_xml]
  - install   xmlm.1.2.0                            [required by osm_xml]
- - install   herelib.109.35.00                     [required by core]
- - install   pipebang.109.28.00                    [required by core]
- - install   type_conv.109.47.00                   [required by custom_printf, bin_prot, comparelib]
- - install   res.4.0.6                             [required by core]
- - install   variantslib.109.15.00                 [required by core]
- - install   sexplib.109.47.00                     [required by core]
- - install   pa_ounit.109.36.00                    [required by core]
- - install   fieldslib.109.20.00                   [required by core]
- - install   comparelib.109.27.00                  [required by core]
- - install   bin_prot.109.47.00                    [required by core]
- - install   custom_printf.109.27.00               [required by core]
- - install   core_kernel.109.47.00                 [required by core]
- - install   core.109.47.00                        [required by osm_xml]
+ - install   variantslib.109.15.03                 [required by core]
+ - install   sexplib.111.25.00                     [required by core]
+ - install   fieldslib.109.20.03                   [required by core]
+ - install   enumerate.111.08.00                   [required by core]
+ - install   comparelib.109.60.00                  [required by core]
+ - install   bin_prot.111.03.00                    [required by core]
+ - install   pa_ounit.111.28.00                    [required by core]
+ - install   pa_test.111.08.00                     [required by core]
+ - install   typerep.111.17.00                     [required by core_kernel]
+ - install   pa_bench.111.28.00                    [required by core]
+ - install   custom_printf.111.25.00               [required by core]
+ - install   core_kernel.111.28.00                 [required by core]
+ - install   core.111.28.01                        [required by osm_xml]
  - install   osm_xml.0.0.1
-=== 16 to install ===
+=== 19 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[bin_prot.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/bin_prot-109.47.00.tar.gz
-[comparelib.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/comparelib-109.27.00.tar.gz
-[core.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/core-109.47.00.tar.gz
-[core_kernel.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/core_kernel-109.47.00.tar.gz
-[custom_printf.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/custom_printf-109.27.00.tar.gz
-[fieldslib.109.20.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.00.tar.gz
-[herelib.109.35.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.00.tar.gz
+[bin_prot.111.03.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.03.00/individual/bin_prot-111.03.00.tar.gz
+[comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
+[core.111.28.01] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/core-111.28.01.tar.gz
+[core_kernel.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/core_kernel-111.28.00.tar.gz
+[custom_printf.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/custom_printf-111.25.00.tar.gz
+[enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
 [osm_xml.0.0.1] Downloading https://github.com/aluuu/osm_xml/archive/v0.0.1.tar.gz
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
-[pa_ounit.109.36.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.36.00/individual/pa_ounit-109.36.00.tar.gz
-[pipebang.109.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.28.00/individual/pipebang-109.28.00.tar.gz
-[res.4.0.6] Downloading https://github.com/mmottl/res/releases/download/v4.0.6/res-4.0.6.tar.gz
-[sexplib.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/sexplib-109.47.00.tar.gz
-[type_conv.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/type_conv-109.47.00.tar.gz
-[variantslib.109.15.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.00.tar.gz
+[pa_bench.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_bench-111.28.00.tar.gz
+[pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
+[pa_test.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/pa_test-111.08.00.tar.gz
+[pipebang.110.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/110.01.00/individual/pipebang-110.01.00.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
+[variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
 [xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building herelib.109.35.00:
+Building herelib.109.35.02:
   make
   make install
-Installing herelib.109.35.00.
+Installing herelib.109.35.02.
 Building ounit.2.0.0:
   make build
   make install
 Installing ounit.2.0.0.
-Building pipebang.109.28.00:
+Building pipebang.110.01.00:
   make
   make install
-Installing pipebang.109.28.00.
-Building res.4.0.6:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing res.4.0.6.
-Building type_conv.109.47.00:
+Installing pipebang.110.01.00.
+Building type_conv.111.13.00:
   make
   make install
-Installing type_conv.109.47.00.
+Installing type_conv.111.13.00.
 Building xmlm.1.2.0:
   ./pkg/pkg-git
   ./pkg/build true
 Installing xmlm.1.2.0.
-Building bin_prot.109.47.00:
+Building bin_prot.111.03.00:
   make
   make install
-Installing bin_prot.109.47.00.
-Building comparelib.109.27.00:
+Installing bin_prot.111.03.00.
+Building comparelib.109.60.00:
   make
   make install
-Installing comparelib.109.27.00.
-Building fieldslib.109.20.00:
+Installing comparelib.109.60.00.
+Building enumerate.111.08.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   make
   make install
-Installing fieldslib.109.20.00.
-Building pa_ounit.109.36.00:
+Installing enumerate.111.08.00.
+Building fieldslib.109.20.03:
   make
   make install
-Installing pa_ounit.109.36.00.
-Building sexplib.109.47.00:
+Installing fieldslib.109.20.03.
+Building pa_ounit.111.28.00:
   make
   make install
-Installing sexplib.109.47.00.
-Building variantslib.109.15.00:
+Installing pa_ounit.111.28.00.
+Building sexplib.111.25.00:
+  ./configure --enable-syntax
   make
   make install
-Installing variantslib.109.15.00.
-Building core_kernel.109.47.00:
+Installing sexplib.111.25.00.
+Building variantslib.109.15.03:
   make
   make install
-Installing core_kernel.109.47.00.
-Building custom_printf.109.27.00:
+Installing variantslib.109.15.03.
+Building custom_printf.111.25.00:
   make
   make install
-Installing custom_printf.109.27.00.
-Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/corebuild over ~/.opam/4.01.0/build/core.109.47.00/
-Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/core.install to ~/.opam/4.01.0/build/core.109.47.00/
-Building core.109.47.00:
+Installing custom_printf.111.25.00.
+Building pa_bench.111.28.00:
   make
   make install
-Installing core.109.47.00.
-Building osm_xml.0.0.1:
-  ./configure --enable-tests --prefix=/home/opam/.opam/4.01.0
+Installing pa_bench.111.28.00.
+Building pa_test.111.08.00:
   make
   make install
-[ERROR] The compilation of osm_xml.0.0.1 failed.
-Removing osm_xml.0.0.1.
-  ocamlfind remove osm_xml
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   res.4.0.6
- - install   custom_printf.109.27.00
- - install   sexplib.109.47.00
- - install   type_conv.109.47.00
- - install   core_kernel.109.47.00
- - install   bin_prot.109.47.00
- - install   variantslib.109.15.00
- - install   pipebang.109.28.00
- - install   core.109.47.00
- - install   herelib.109.35.00
- - install   xmlm.1.2.0
- - install   ounit.2.0.0
- - install   pa_ounit.109.36.00
- - install   fieldslib.109.20.00
- - install   comparelib.109.27.00
-The following failed
- - install   osm_xml.0.0.1
-
-#=== ERROR while installing osm_xml.0.0.1 =====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              make
-# path                 /home/opam/.opam/4.01.0/build/osm_xml.0.0.1
-# compiler             4.01.0
-# exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/osm_xml.0.0.1/osm_xml-9344-48c407.env
-# stdout-file          /home/opam/.opam/4.01.0/build/osm_xml.0.0.1/osm_xml-9344-48c407.out
-# stderr-file          /home/opam/.opam/4.01.0/build/osm_xml.0.0.1/osm_xml-9344-48c407.err
-### stdout ###
-# ...[truncated]
-# ocamldoc: ............................................ /home/opam/.opam/4.01.0/bin/ocamldoc
-# 
-# ocaml setup.ml -build 
-# /home/opam/.opam/4.01.0/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamldep -package core -package threads -package xmlm -modules src/types.mli > src/types.mli.depends
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package core -package threads -package xmlm -thread -I src -o src/types.cmi src/types.mli
-# + /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package core -package threads -package xmlm -thread -I src -o src/types.cmi src/types.mli
-# File "src/types.mli", line 19, characters 15-142:
-# Error: The signature constrained by `with' has no component named Key.comparator_witness
-# Command exited with code 2.
-### stderr ###
-# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' src/osm_xml.cma src/osm_xml.cmxa src/osm_xml.a src/osm_xml.cmxs test/test.native -tag debug -tag tests' terminated with error code 10")
-# make: *** [build] Error 1
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107152739.export"
+Installing pa_test.111.08.00.
+Building typerep.111.17.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing typerep.111.17.00.
+Building core_kernel.111.28.00:
+  make
+  make install
+Installing core_kernel.111.28.00.
+Copying ~/.opam/repo/default/packages/core/core.111.28.01/files/core.install to ~/.opam/4.01.0/build/core.111.28.01/
+Building core.111.28.01:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
