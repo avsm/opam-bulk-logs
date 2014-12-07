@@ -1,0 +1,14 @@
+++ opam install ocaml-mad -e ubuntu
+[ERROR] No package named ocaml-mad found.
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install ocaml-mad -e source,linux
+[ERROR] No package named ocaml-mad found.
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-mad
+Ubuntu srcexts:
+[ERROR] No package named ocaml-mad found.
