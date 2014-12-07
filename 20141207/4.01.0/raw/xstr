@@ -9,3 +9,16 @@ Debian depexts:
 + '[' '' '!=' '' ']'
 + opam install xstr
 Debian srcexts:
+The following actions will be performed:
+ - install   xstr.0.2.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[xstr.0.2.1] Downloading http://download.camlcity.org/download/xstr-0.2.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building xstr.0.2.1:
+  make all
+  make opt
+  make install
+Installing xstr.0.2.1.
