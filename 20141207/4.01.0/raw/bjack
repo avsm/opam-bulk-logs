@@ -1,0 +1,15 @@
+++ opam install bjack -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install bjack
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   bjack.0.1.4
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bjack.0.1.4] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-bjack/0.1.4/ocaml-bjack-0.1.4.tar.gz
+[ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-bjack/0.1.4/ocaml-bjack-0.1.4.tar.gz is not available
+[ERROR] Could not download archives of bjack.0.1.4
+
