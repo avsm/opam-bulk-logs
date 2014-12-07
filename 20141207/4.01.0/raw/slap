@@ -1,0 +1,67 @@
+++ opam install slap -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install slap
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   cppo.1.1.2                            [required by slap]
+ - install   lacaml.7.1.5                          [required by slap]
+ - install   slap.0.2.2
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[lacaml.7.1.5] Downloading https://github.com/mmottl/lacaml/releases/download/v7.1.5/lacaml-7.1.5.tar.gz
+[slap.0.2.2] Downloading https://github.com/akabe/slap/archive/v0.2.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.01.0/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building lacaml.7.1.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+[ERROR] The compilation of lacaml.7.1.5 failed.
+Removing lacaml.7.1.5.
+  ocamlfind remove lacaml
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   cppo.1.1.2
+The following failed
+ - install   lacaml.7.1.5
+Due to the errors, the following have been cancelled
+ - install   slap.0.2.2
+
+#=== ERROR while installing lacaml.7.1.5 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/opam/.opam/4.01.0/build/lacaml.7.1.5
+# compiler             4.01.0
+# exit-code            1
+# env-file             /home/opam/.opam/4.01.0/build/lacaml.7.1.5/lacaml-124-d2c37b.env
+# stdout-file          /home/opam/.opam/4.01.0/build/lacaml.7.1.5/lacaml-124-d2c37b.out
+# stderr-file          /home/opam/.opam/4.01.0/build/lacaml.7.1.5/lacaml-124-d2c37b.err
+### stdout ###
+# ...[truncated]
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -ccopt '-o lib/impl4_C_c.o' -ccopt -DLACAML_COMPLEX -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/impl_SDCZ_c.c
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -ccopt '-o lib/impl4_Z_c.o' -ccopt -DLACAML_COMPLEX -ccopt -DLACAML_DOUBLE -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/impl_SDCZ_c.c
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/exp10.c
+# mv exp10.o lib/exp10.o
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlmklib -o lib/lacaml_stubs -lblas -llapack lib/impl_c.o lib/utils_c.o lib/vec2_S_c.o lib/vec2_D_c.o lib/vec2_C_c.o lib/vec2_Z_c.o lib/vec4_S_c.o lib/vec4_D_c.o lib/vec4_C_c.o lib/vec4_Z_c.o lib/mat4_S_c.o lib/mat4_D_c.o lib/mat4_C_c.o lib/mat4_Z_c.o lib/impl2_S_c.o lib/impl2_D_c.o lib/impl2_C_c.o lib/impl2_Z_c.o lib/impl4_S_c.o lib/impl4_D_c.o lib/impl4_C_c.o lib/impl4_Z_c.o lib/exp10.o
+# + /home/opam/.opam/4.01.0/bin/ocamlfind ocamlmklib -o lib/lacaml_stubs -lblas -llapack lib/impl_c.o lib/utils_c.o lib/vec2_S_c.o lib/vec2_D_c.o lib/vec2_C_c.o lib/vec2_Z_c.o lib/vec4_S_c.o lib/vec4_D_c.o lib/vec4_C_c.o lib/vec4_Z_c.o lib/mat4_S_c.o lib/mat4_D_c.o lib/mat4_C_c.o lib/mat4_Z_c.o lib/impl2_S_c.o lib/impl2_D_c.o lib/impl2_C_c.o lib/impl2_Z_c.o lib/impl4_S_c.o lib/impl4_D_c.o lib/impl4_C_c.o lib/impl4_Z_c.o lib/exp10.o
+# /usr/bin/ld: cannot find -lblas
+# /usr/bin/ld: cannot find -llapack
+# collect2: error: ld returned 1 exit status
+# Command exited with code 2.
+### stderr ###
+# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' lib/liblacaml_stubs.a lib/dlllacaml_stubs.so lib/lacaml.cma lib/lacaml.cmxa lib/lacaml.a lib/lacaml.cmxs lib/lacaml_top.cma lib/lacaml_top.cmxa lib/lacaml_top.a lib/lacaml_top.cmxs examples/blas/blas.native examples/eig/eig.native examples/eig/sbev.native examples/eig/sbgv.native examples/lin_eq/lin_eq.native examples/lin_eq/gbsv.native...[truncated]
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107155925.export"
