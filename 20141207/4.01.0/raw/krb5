@@ -136,3 +136,7 @@ Copying ~/.opam/repo/default/packages/core/core.109.45.00/files/core.install to 
 Building core.109.45.00:
   make
   make install
+Installing core.109.45.00.
+Building async_core.109.45.00:
+  make
+  make install

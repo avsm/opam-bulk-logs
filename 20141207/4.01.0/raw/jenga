@@ -191,3 +191,7 @@ Installing textutils.111.28.00.
 Building async_unix.111.28.00:
   make
   make install
+Installing async_unix.111.28.00.
+Building core_extended.111.28.00:
+  make
+  make install

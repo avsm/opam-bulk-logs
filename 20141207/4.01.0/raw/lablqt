@@ -1,47 +1,64 @@
-++ opam install lablqt -e centos,centos-7
+++ opam install lablqt -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install lablqt -e source,linux
++ srcext=https://gist.githubusercontent.com/Kakadu/7dc6f7c9f8760f7fbace/raw/295dd3528cf9cf2be7a67a9752e530353bb6211b/get_qt.sh
++ echo Debian srcexts: https://gist.githubusercontent.com/Kakadu/7dc6f7c9f8760f7fbace/raw/295dd3528cf9cf2be7a67a9752e530353bb6211b/get_qt.sh
+Debian srcexts: https://gist.githubusercontent.com/Kakadu/7dc6f7c9f8760f7fbace/raw/295dd3528cf9cf2be7a67a9752e530353bb6211b/get_qt.sh
++ '[' https://gist.githubusercontent.com/Kakadu/7dc6f7c9f8760f7fbace/raw/295dd3528cf9cf2be7a67a9752e530353bb6211b/get_qt.sh '!=' '' ']'
+++ mktemp
++ t=/tmp/tmp.MMVJIq2kIK
++ curl -sL https://gist.githubusercontent.com/Kakadu/7dc6f7c9f8760f7fbace/raw/295dd3528cf9cf2be7a67a9752e530353bb6211b/get_qt.sh
++ bash -ex /tmp/tmp.MMVJIq2kIK
++ sudo add-apt-repository 'deb http://archive.ubuntu.com/ubuntu trusty universe'
+sudo: add-apt-repository: command not found
 + opam install lablqt
 The following actions will be performed:
+ - install   herelib.109.35.02                     [required by core_kernel]
+ - install   type_conv.111.13.00                   [required by variantslib, pa_test, fieldslib, comparelib, bin_prot, enumerate, pa_bench, typerep]
  - install   conf-qt.5.2.1                         [required by lablqt]
- - install   res.4.0.6                             [required by core_kernel]
+ - install   pipebang.110.01.00                    [required by core_kernel]
  - install   ounit.2.0.0                           [required by pa_ounit]
  - install   easy-format.1.0.2                     [required by yojson]
- - install   herelib.109.35.00                     [required by core_kernel]
- - install   type_conv.109.53.00                   [required by variantslib, pa_ounit, comparelib, bin_prot, fieldslib, sexplib]
  - install   cppo.1.1.2                            [required by yojson]
- - install   pipebang.109.28.00                    [required by core_kernel]
+ - install   variantslib.109.15.03                 [required by core_kernel]
+ - install   sexplib.111.25.00                     [required by core_kernel]
+ - install   fieldslib.109.20.03                   [required by core_kernel]
+ - install   enumerate.111.08.00                   [required by core_kernel]
+ - install   comparelib.109.60.00                  [required by core_kernel]
+ - install   bin_prot.111.03.00                    [required by core_kernel]
+ - install   pa_ounit.111.28.00                    [required by core_kernel]
  - install   biniou.1.0.9                          [required by yojson]
- - install   variantslib.109.15.00                 [required by core_kernel]
- - install   sexplib.109.53.00                     [required by core_kernel]
- - install   pa_ounit.109.53.00                    [required by core_kernel]
- - install   fieldslib.109.20.00                   [required by core_kernel]
- - install   comparelib.109.27.00                  [required by core_kernel]
- - install   bin_prot.109.53.00                    [required by core_kernel]
+ - install   pa_test.111.08.00                     [required by core_kernel]
+ - install   typerep.111.17.00                     [required by core_kernel]
+ - install   pa_bench.111.28.00                    [required by core_kernel]
  - install   yojson.1.1.8                          [required by lablqt]
- - install   core_kernel.109.53.00                 [required by lablqt]
+ - install   core_kernel.111.28.00                 [required by lablqt]
  - install   lablqt.0.2
-=== 18 to install ===
+=== 21 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[bin_prot.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/bin_prot-109.53.00.tar.gz
+[bin_prot.111.03.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.03.00/individual/bin_prot-111.03.00.tar.gz
 [biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
-[comparelib.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/comparelib-109.27.00.tar.gz
-[core_kernel.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/core_kernel-109.53.00.tar.gz
+[comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
+[core_kernel.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/core_kernel-111.28.00.tar.gz
 [cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
 [easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
-[fieldslib.109.20.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.00.tar.gz
-[herelib.109.35.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.00.tar.gz
+[enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
 [lablqt.0.2] Downloading https://github.com/Kakadu/lablqt/archive/0.2.tar.gz
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
-[pa_ounit.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/pa_ounit-109.53.00.tar.gz
-[pipebang.109.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.28.00/individual/pipebang-109.28.00.tar.gz
-[res.4.0.6] Downloading https://github.com/mmottl/res/releases/download/v4.0.6/res-4.0.6.tar.gz
-[sexplib.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/sexplib-109.53.00.tar.gz
-[type_conv.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/type_conv-109.53.00.tar.gz
-[variantslib.109.15.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.00.tar.gz
+[pa_bench.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_bench-111.28.00.tar.gz
+[pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
+[pa_test.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/pa_test-111.08.00.tar.gz
+[pipebang.110.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/110.01.00/individual/pipebang-110.01.00.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
+[variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
 [yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -60,105 +77,75 @@ Building easy-format.1.0.2:
   make
   make install
 Installing easy-format.1.0.2.
-Building herelib.109.35.00:
+Building herelib.109.35.02:
   make
   make install
-Installing herelib.109.35.00.
+Installing herelib.109.35.02.
 Building ounit.2.0.0:
   make build
   make install
 Installing ounit.2.0.0.
-Building pipebang.109.28.00:
+Building pipebang.110.01.00:
   make
   make install
-Installing pipebang.109.28.00.
-Building res.4.0.6:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing res.4.0.6.
-Building type_conv.109.53.00:
+Installing pipebang.110.01.00.
+Building type_conv.111.13.00:
   make
   make install
-Installing type_conv.109.53.00.
-Building bin_prot.109.53.00:
+Installing type_conv.111.13.00.
+Building bin_prot.111.03.00:
   make
   make install
-Installing bin_prot.109.53.00.
+Installing bin_prot.111.03.00.
 Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.01.0/build/biniou.1.0.9/
 Building biniou.1.0.9:
   make
   make install
 Installing biniou.1.0.9.
-Building comparelib.109.27.00:
+Building comparelib.109.60.00:
   make
   make install
-Installing comparelib.109.27.00.
-Building fieldslib.109.20.00:
+Installing comparelib.109.60.00.
+Building enumerate.111.08.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   make
   make install
-Installing fieldslib.109.20.00.
-Building pa_ounit.109.53.00:
+Installing enumerate.111.08.00.
+Building fieldslib.109.20.03:
   make
   make install
-Installing pa_ounit.109.53.00.
-Building sexplib.109.53.00:
+Installing fieldslib.109.20.03.
+Building pa_ounit.111.28.00:
   make
   make install
-Installing sexplib.109.53.00.
-Building variantslib.109.15.00:
+Installing pa_ounit.111.28.00.
+Building sexplib.111.25.00:
+  ./configure --enable-syntax
   make
   make install
-Installing variantslib.109.15.00.
-Building core_kernel.109.53.00:
+Installing sexplib.111.25.00.
+Building variantslib.109.15.03:
   make
   make install
-Installing core_kernel.109.53.00.
+Installing variantslib.109.15.03.
+Building pa_bench.111.28.00:
+  make
+  make install
+Installing pa_bench.111.28.00.
+Building pa_test.111.08.00:
+  make
+  make install
+Installing pa_test.111.08.00.
+Building typerep.111.17.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing typerep.111.17.00.
 Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.01.0/build/yojson.1.1.8/
 Building yojson.1.1.8:
   make
   make install
 Installing yojson.1.1.8.
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   pa_ounit.109.53.00
- - install   sexplib.109.53.00
- - install   variantslib.109.15.00
- - install   pipebang.109.28.00
- - install   cppo.1.1.2
- - install   type_conv.109.53.00
- - install   herelib.109.35.00
- - install   easy-format.1.0.2
- - install   ounit.2.0.0
- - install   fieldslib.109.20.00
- - install   core_kernel.109.53.00
- - install   res.4.0.6
- - install   yojson.1.1.8
- - install   bin_prot.109.53.00
- - install   biniou.1.0.9
- - install   comparelib.109.27.00
-The following failed
- - install   conf-qt.5.2.1
-Due to the errors, the following have been cancelled
- - install   lablqt.0.2
-
-#=== ERROR while installing conf-qt.5.2.1 =====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              bash -c min="5.2.1"; cur=`qmake -query QT_VERSION`; res=`echo -e "$min\n$cur" | sort | head -n 1`; [ "$res" = "$min" ]
-# path                 /home/opam/.opam/4.01.0/build/conf-qt.5.2.1
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/conf-qt.5.2.1/conf-qt-189-a71bb4.env
-# stdout-file          /home/opam/.opam/4.01.0/build/conf-qt.5.2.1/conf-qt-189-a71bb4.out
-# stderr-file          /home/opam/.opam/4.01.0/build/conf-qt.5.2.1/conf-qt-189-a71bb4.err
-### stdout ###
-# Your Qt version is 
-### stderr ###
-# bash: qmake: command not found
-# bash: qmake: command not found
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107141431.export"
+Building core_kernel.111.28.00:
+  make
+  make install
