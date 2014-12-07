@@ -1,19 +1,11 @@
-++ opam install bson -e centos,centos-7
+++ opam install bson -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+Debian depexts:
+++ opam install bson -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install bson
-The following actions will be performed:
- - install   bson.0.89.3
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[bson.0.89.3] Downloading https://github.com/MassD/bson/archive/v0.89.3.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building bson.0.89.3:
-  ocaml setup.ml -configure --disable-syntax --disable-client --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing bson.0.89.3.
+Debian srcexts:
