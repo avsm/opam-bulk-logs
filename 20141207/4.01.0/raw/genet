@@ -535,3 +535,8 @@ Building rdf.0.8.0:
   ./configure --prefix /home/opam/.opam/4.01.0
   make all
   make install
+Installing rdf.0.8.0.
+Building genet.0.6:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
