@@ -145,3 +145,7 @@ Installing async_kernel.111.28.00.
 Building re2.111.08.00:
   make
   make install
+Installing re2.111.08.00.
+Building textutils.111.28.00:
+  make
+  make install
