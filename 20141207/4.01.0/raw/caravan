@@ -167,3 +167,7 @@ Installing core.111.28.01.
 Building async_kernel.111.28.00:
   make
   make install
+Installing async_kernel.111.28.00.
+Building textutils.111.28.00:
+  make
+  make install

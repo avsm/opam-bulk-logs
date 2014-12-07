@@ -171,3 +171,4 @@ Installing core.111.28.00.
 Building capnp.2.0.1:
   env PREFIX=/home/opam/.opam/4.01.0 omake
   env PREFIX=/home/opam/.opam/4.01.0 omake install
+Installing capnp.2.0.1.
