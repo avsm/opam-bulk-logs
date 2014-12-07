@@ -4,3 +4,44 @@ Debian depexts:
 + echo Debian depexts:
 + '[' '' '!=' '' ']'
 ++ opam install mpris -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
+Debian srcexts:
++ opam install mpris
+The following actions will be performed:
+ - install   xmlm.1.2.0                            [required by obus]
+ - install   base-no-ppx.base                      [required by lwt]
+ - install   type_conv.111.13.00                   [required by obus]
+ - install   react.1.2.0                           [required by obus]
+ - install   lwt.2.4.6                             [required by obus]
+ - install   obus.1.1.6                            [required by mpris]
+ - install   mpris.0.1.0
+=== 7 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[mpris.0.1.0] Downloading https://github.com/johnelse/ocaml-mpris/archive/0.1.0.tar.gz
+[obus.1.1.6] Downloading https://github.com/diml/obus/archive/1.1.6.tar.gz
+[react.1.2.0] Downloading http://erratique.ch/software/react/releases/react-1.2.0.tbz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-no-ppx.base.
+Building react.1.2.0:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing react.1.2.0.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.01.0 --disable-libev --enable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-ppx
+  make build
+  make install
