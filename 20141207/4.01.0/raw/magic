@@ -1,48 +1,33 @@
-++ opam install magic -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install magic -e debian
++ depext=libmagic-dev
++ echo Debian depexts: libmagic-dev
+Debian depexts: libmagic-dev
++ '[' libmagic-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libmagic-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libmagic-dev:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libmagic-dev:amd64 (from .../libmagic-dev_5.11-2+deb7u6_amd64.deb) ...
+Setting up libmagic-dev:amd64 (5.11-2+deb7u6) ...
+++ opam install magic -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install magic
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   magic.0.7.3
 === 1 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [magic.0.7.3] Downloading http://downloads.sourceforge.net/project/ocaml-magic/ocaml-magic/0.7/ocaml-magic-0.7.3.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building magic.0.7.3:
-  ./configure --prefix /home/opam/.opam/4.01.0 --datarootdir /home/opam/.opam/4.01.0
-  make byte opt
-  make install
-[ERROR] The compilation of magic.0.7.3 failed.
-Removing magic.0.7.3.
-  make uninstall
-
-
-#=== ERROR while installing magic.0.7.3 =======================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --prefix /home/opam/.opam/4.01.0 --datarootdir /home/opam/.opam/4.01.0
-# path                 /home/opam/.opam/4.01.0/build/magic.0.7.3
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/magic.0.7.3/magic-26-5f1023.env
-# stdout-file          /home/opam/.opam/4.01.0/build/magic.0.7.3/magic-26-5f1023.out
-# stderr-file          /home/opam/.opam/4.01.0/build/magic.0.7.3/magic-26-5f1023.err
-### stdout ###
-# ...[truncated]
-# checking for gcc... gcc
-# checking for C compiler default output file name... a.out
-# checking whether the C compiler works... yes
-# checking whether we are cross compiling... no
-# checking for suffix of executables... 
-# checking for suffix of object files... o
-# checking whether we are using the GNU C compiler... yes
-# checking whether gcc accepts -g... yes
-# checking for gcc option to accept ISO C89... none needed
-# checking for libmagic... 
-### stderr ###
-# configure: error: Check for magic-library failed.
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/magic.0.7.3/ocaml-magic-0.7.3.tar.gz:
+  - 5b8a4d149fe8ce095ab8115f2e49beba [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
+[ERROR] http://downloads.sourceforge.net/project/ocaml-magic/ocaml-magic/0.7/ocaml-magic-0.7.3.tar.gz is not available
+[ERROR] Could not download archives of magic.0.7.3
 
