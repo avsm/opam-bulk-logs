@@ -15,9 +15,3 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [fix.20130611] Downloading http://gallium.inria.fr/~fpottier/fix/fix-20130611.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building fix.20130611:
-  make
-  make install
-Installing fix.20130611.
