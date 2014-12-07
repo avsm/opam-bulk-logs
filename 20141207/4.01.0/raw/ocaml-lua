@@ -50,3 +50,4 @@ Building ocaml-lua.1.2:
   make
   make doc
   make install
+Installing ocaml-lua.1.2.
