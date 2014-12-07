@@ -1,48 +1,29 @@
-++ opam install async_ssl -e centos,centos-7
-+ depext=libffi-devel
-+ echo CentOS 7 depexts: libffi-devel
-CentOS 7 depexts: libffi-devel
-+ '[' libffi-devel '!=' '' ']'
-+ sudo yum install -y libffi-devel
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * base: anorien.csc.warwick.ac.uk
- * extras: anorien.csc.warwick.ac.uk
- * updates: centos.openitc.uk
-Resolving Dependencies
---> Running transaction check
----> Package libffi-devel.x86_64 0:3.0.13-11.el7 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package              Arch           Version                 Repository    Size
-================================================================================
-Installing:
- libffi-devel         x86_64         3.0.13-11.el7           base          22 k
-
-Transaction Summary
-================================================================================
-Install  1 Package
-
-Total download size: 22 k
-Installed size: 27 k
-Downloading packages:
-Running transaction check
-Running transaction test
-Transaction test succeeded
-Running transaction
-  Installing : libffi-devel-3.0.13-11.el7.x86_64                            1/1 
-install-info: No such file or directory for /usr/share/info/libffi.info.gz
-warning: %post(libffi-devel-3.0.13-11.el7.x86_64) scriptlet failed, exit status 1
-Non-fatal POSTIN scriptlet failure in rpm package libffi-devel-3.0.13-11.el7.x86_64
-  Verifying  : libffi-devel-3.0.13-11.el7.x86_64                            1/1 
-
-Installed:
-  libffi-devel.x86_64 0:3.0.13-11.el7                                           
-
-Complete!
+++ opam install async_ssl -e debian
++ depext='libffi-dev libssl-dev'
+Debian depexts: libffi-dev libssl-dev
++ echo Debian depexts: libffi-dev libssl-dev
++ '[' 'libffi-dev libssl-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libffi-dev libssl-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libffi-dev:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libffi-dev:amd64 (from .../libffi-dev_3.0.10-3_amd64.deb) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Selecting previously unselected package libssl-dev.
+Unpacking libssl-dev (from .../libssl-dev_1.0.1e-2+deb7u13_amd64.deb) ...
+Selecting previously unselected package libssl-doc.
+Unpacking libssl-doc (from .../libssl-doc_1.0.1e-2+deb7u13_all.deb) ...
+Setting up libffi-dev:amd64 (3.0.10-3) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
+Setting up libssl-dev (1.0.1e-2+deb7u13) ...
+Setting up libssl-doc (1.0.1e-2+deb7u13) ...
+++ opam install async_ssl -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install async_ssl
 The following actions will be performed:
  - install   herelib.109.35.02                     [required by async_ssl]
@@ -174,85 +155,3 @@ Building core.111.28.01:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   make
   make install
-Installing core.111.28.01.
-Building async_kernel.111.28.00:
-  make
-  make install
-Installing async_kernel.111.28.00.
-Building async_unix.111.28.00:
-  make
-  make install
-Installing async_unix.111.28.00.
-Building async_extra.111.28.00:
-  make
-  make install
-Installing async_extra.111.28.00.
-Building async.111.25.00:
-  make
-  make install
-Installing async.111.25.00.
-Building async_ssl.111.21.00:
-  make
-  make install
-[ERROR] The compilation of async_ssl.111.21.00 failed.
-Removing async_ssl.111.21.00.
-  ocamlfind remove async_ssl
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   core_kernel.111.28.00
- - install   sexplib.111.25.00
- - install   ctypes.0.3.3
- - install   async.111.25.00
- - install   pa_test.111.08.00
- - install   enumerate.111.08.00
- - install   custom_printf.111.25.00
- - install   ounit.2.0.0
- - install   async_kernel.111.28.00
- - install   comparelib.109.60.00
- - install   pa_ounit.111.28.00
- - install   core.111.28.01
- - install   base-bytes.legacy
- - install   variantslib.109.15.03
- - install   pipebang.110.01.00
- - install   typerep.111.17.00
- - install   async_unix.111.28.00
- - install   type_conv.111.13.00
- - install   herelib.109.35.02
- - install   async_extra.111.28.00
- - install   pa_bench.111.28.00
- - install   fieldslib.109.20.03
- - install   bin_prot.111.03.00
-The following failed
- - install   async_ssl.111.21.00
-
-#=== ERROR while installing async_ssl.111.21.00 ===============================#
-# opam-version         1.2.0
-# os                   linux
-# command              make
-# path                 /home/opam/.opam/4.01.0/build/async_ssl.111.21.00
-# compiler             4.01.0
-# exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/async_ssl.111.21.00/async_ssl-13780-2913ab.env
-# stdout-file          /home/opam/.opam/4.01.0/build/async_ssl.111.21.00/async_ssl-13780-2913ab.out
-# stderr-file          /home/opam/.opam/4.01.0/build/async_ssl.111.21.00/async_ssl-13780-2913ab.err
-### stdout ###
-# ...[truncated]
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -ccopt -I/home/opam/.opam/4.01.0/lib/ctypes/.. -syntax camlp4o -thread -package threads -package sexplib.syntax -package sexplib -package pa_ounit.syntax -package pa_ounit -package pa_bench.syntax -package pa_bench -package herelib.syntax -package herelib -package ctypes.stubs -package ctypes -package core -package async -I lib -o lib/ffi_stubgen.cmo lib/ffi_stubgen.ml
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -linkpkg -g -linkpkg -thread -package threads -package sexplib.syntax -package sexplib -package pa_ounit.syntax -package pa_ounit -package pa_bench.syntax -package pa_bench -package herelib.syntax -package herelib -package ctypes.stubs -package ctypes -package core -package async lib/ffi_bindings.cmo lib/ffi_stubgen.cmo -o lib/ffi_stubgen.byte
-# lib/ffi_stubgen.byte -c > lib/ffi_generated_stubs.c
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -ccopt -I/home/opam/.opam/4.01.0/lib/ctypes/.. -c lib/ffi_generated_stubs.c
-# + /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -ccopt -I/home/opam/.opam/4.01.0/lib/ctypes/.. -c lib/ffi_generated_stubs.c
-# lib/ffi_generated_stubs.c:2:25: fatal error: openssl/ssl.h: No such file or directory
-#  #include <openssl/ssl.h>
-#                          ^
-# compilation terminated.
-# Command exited with code 2.
-### stderr ###
-# W: Cannot find source file matching module 'async_ssl' in library async_ssl
-# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' lib/libasync_ssl_stubs.a lib/dllasync_ssl_stubs.so lib/async_ssl.cma lib/async_ssl.cmxa lib/async_ssl.a lib/async_ssl.cmxs -use-ocamlfind -tag debug' terminated with error code 10")
-# make: *** [build] Error 1
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107123723.export"

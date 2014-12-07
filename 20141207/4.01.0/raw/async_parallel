@@ -135,3 +135,20 @@ Installing core.111.28.01.
 Building async_kernel.111.28.00:
   make
   make install
+Installing async_kernel.111.28.00.
+Building async_unix.111.28.00:
+  make
+  make install
+Installing async_unix.111.28.00.
+Building async_extra.111.28.00:
+  make
+  make install
+Installing async_extra.111.28.00.
+Building async.111.25.00:
+  make
+  make install
+Installing async.111.25.00.
+Building async_parallel.111.28.00:
+  make
+  make install
+Installing async_parallel.111.28.00.
