@@ -149,3 +149,7 @@ Installing re2.111.08.00.
 Building textutils.111.28.00:
   make
   make install
+Installing textutils.111.28.00.
+Building async_unix.111.28.00:
+  make
+  make install

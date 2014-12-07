@@ -1,17 +1,22 @@
-++ opam install gadelac -e centos,centos-7
+++ opam install gadelac -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install gadelac -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install gadelac
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   menhir.20140422                       [required by gadelac]
  - install   gadelac.0.6.1
 === 2 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[gadelac.0.6.1] Downloading https://bitbucket.org/Abdallah/gadelac/get/v0.6.1.tar.gz
 [menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[gadelac.0.6.1] Downloading https://bitbucket.org/Abdallah/gadelac/get/v0.6.1.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.01.0/build/menhir.20140422/
