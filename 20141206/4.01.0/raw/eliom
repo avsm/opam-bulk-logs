@@ -32,3 +32,44 @@ Selecting previously unselected package libssl-doc.
 Preparing to unpack .../libssl-doc_1.0.1f-1ubuntu2.7_all.deb ...
 Unpacking libssl-doc (1.0.1f-1ubuntu2.7) ...
 Setting up libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Setting up libgdbm-dev (1.8.3-12build1) ...
+Setting up libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up libssl-dev:amd64 (1.0.1f-1ubuntu2.7) ...
+Setting up libssl-doc (1.0.1f-1ubuntu2.7) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
+++ opam install eliom -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install eliom
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   dbm.1.0                               [required by ocsigenserver]
+ - install   optcomp.1.6                           [required by deriving]
+ - install   conf-libpcre.1                        [required by pcre]
+ - install   base-bytes.legacy                     [required by deriving]
+ - install   cryptokit.1.9                         [required by ocsigenserver]
+ - install   calendar.2.03.2                       [required by eliom]
+ - install   ipaddr.2.4.0                          [required by eliom]
+ - install   ssl.0.4.7                             [required by ocsigenserver]
+ - install   base-no-ppx.base                      [required by lwt]
+ - install   cmdliner.0.9.6                        [required by js_of_ocaml]
+ - install   menhir.20140422                       [required by js_of_ocaml]
+ - install   react.1.2.0                           [required by ocsigenserver]
+ - install   uutf.0.9.3                            [required by tyxml]
+ - install   pcre.7.1.3                            [required by ocsigenserver]
+ - install   deriving.0.7                          [required by eliom]
+ - install   reactiveData.0.1                      [required by eliom]
+ - install   lwt.2.4.6                             [required by ocsigenserver, js_of_ocaml]
+ - install   tyxml.3.3.0                           [required by eliom]
+ - install   ocamlnet.3.7.7                        [required by ocsigenserver]
+ - install   js_of_ocaml.2.5                       [required by eliom]
+ - install   ocsigenserver.2.5                     [required by eliom]
+ - install   eliom.4.1.0
+=== 22 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[calendar.2.03.2] Downloading http://forge.ocamlcore.org/frs/download.php/915/calendar-2.03.2.tar.gz
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
