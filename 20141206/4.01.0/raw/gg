@@ -1,14 +1,14 @@
 ++ opam install gg -e ubuntu
 + depext=
 + echo Ubuntu depexts:
-Ubuntu depexts:
 + '[' '' '!=' '' ']'
+Ubuntu depexts:
 ++ opam install gg -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
-+ opam install gg
 Ubuntu srcexts:
++ opam install gg
 The following actions will be performed:
  - install   gg.0.9.0
 === 1 to install ===
