@@ -1,1 +1,34 @@
 ++ opam install conf-libpng -e debian
++ depext=libpng12-dev
++ echo Debian depexts: libpng12-dev
++ '[' libpng12-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: libpng12-dev
++ sudo apt-get install -qq -y libpng12-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpng12-0:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libpng12-0:amd64 (from .../libpng12-0_1.2.49-1_amd64.deb) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Selecting previously unselected package libpng12-dev.
+Unpacking libpng12-dev (from .../libpng12-dev_1.2.49-1_amd64.deb) ...
+Setting up libpng12-0:amd64 (1.2.49-1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
+Setting up libpng12-dev (1.2.49-1) ...
+++ opam install conf-libpng -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install conf-libpng
+The following actions will be performed:
+ - install   conf-libpng.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building conf-libpng.1:
+  pkg-config libpng
+Installing conf-libpng.1.
