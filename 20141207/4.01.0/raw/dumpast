@@ -20,3 +20,4 @@ The following actions will be performed:
 Building dumpast.0.1.0:
   make
   make install
+Installing dumpast.0.1.0.
