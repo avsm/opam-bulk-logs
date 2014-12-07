@@ -84,3 +84,4 @@ Building mezzo.0.0.m8:
   ./configure
   make
   make install
+Installing mezzo.0.0.m8.
