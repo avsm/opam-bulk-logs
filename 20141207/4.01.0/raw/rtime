@@ -1,7 +1,12 @@
-++ opam install rtime -e centos,centos-7
+++ opam install rtime -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install rtime -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install rtime
 The following actions will be performed:
