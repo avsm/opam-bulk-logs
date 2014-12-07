@@ -40,3 +40,4 @@ Building pxp.1.2.3:
   make all
   make opt
   make install MANDIR=/home/opam/.opam/4.01.0/man
+Installing pxp.1.2.3.
