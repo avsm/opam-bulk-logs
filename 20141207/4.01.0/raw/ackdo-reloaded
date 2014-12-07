@@ -67,3 +67,24 @@ Installing kaputt.1.2.
 Building ounit.2.0.0:
   make build
   make install
+Installing ounit.2.0.0.
+Building pipebang.110.01.00:
+  make
+  make install
+Installing pipebang.110.01.00.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building bin_prot.111.03.00:
+  make
+  make install
+Installing bin_prot.111.03.00.
+Building comparelib.109.60.00:
+  make
+  make install
+Installing comparelib.109.60.00.
+Building enumerate.111.08.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
