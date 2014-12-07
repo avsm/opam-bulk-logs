@@ -50,3 +50,8 @@ Building obus.1.1.6:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing obus.1.1.6.
+Building mpris.0.1.0:
+  make
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing mpris.0.1.0.
