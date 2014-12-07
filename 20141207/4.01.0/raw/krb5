@@ -140,3 +140,7 @@ Installing core.109.45.00.
 Building async_core.109.45.00:
   make
   make install
+Installing async_core.109.45.00.
+Building async_unix.109.45.00:
+  make
+  make install
