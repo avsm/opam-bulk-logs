@@ -1,8 +1,13 @@
-++ opam install tyxml -e centos,centos-7
+++ opam install tyxml -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+++ opam install tyxml -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install tyxml
 The following actions will be performed:
  - install   uutf.0.9.3                            [required by tyxml]
@@ -22,4 +27,3 @@ Building tyxml.3.3.0:
   ./configure --enable-syntax --prefix /home/opam/.opam/4.01.0
   make
   make install
-Installing tyxml.3.3.0.
