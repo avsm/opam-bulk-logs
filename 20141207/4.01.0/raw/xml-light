@@ -1,0 +1,17 @@
+++ opam install xml-light -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install xml-light
+The following actions will be performed:
+ - install   xml-light.2.4
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[xml-light.2.4] Downloading https://github.com/ncannasse/xml-light/archive/2.4.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building xml-light.2.4:
+  make install_ocamlfind
+Installing xml-light.2.4.
