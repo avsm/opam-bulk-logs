@@ -51,3 +51,33 @@ Building ocamlnet.3.7.7:
   make all
   make opt
   make install
+Installing ocamlnet.3.7.7.
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+Installing ulex.1.1.
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Building xtmpl.0.9:
+  make all
+  make install
+Installing xtmpl.0.9.
+Copying ~/.opam/repo/default/packages/higlo/higlo.0.3/files/higlo.install to ~/.opam/4.01.0/build/higlo.0.3/
+Building higlo.0.3:
+  make all
+  make install-lib
+Installing higlo.0.3.
+Copying ~/.opam/repo/default/packages/stog/stog.0.12.0/files/stog.install to ~/.opam/4.01.0/build/stog.0.12.0/
+Building stog.0.12.0:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make stog_filter_parser.mli
+  make all
+  make install-lib install-share
+Installing stog.0.12.0.
+Building stog-writing.0.12.0:
+  make all
+  make install
+Installing stog-writing.0.12.0.
