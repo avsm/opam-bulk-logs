@@ -1,14 +1,14 @@
 ++ opam install iocamljs-kernel -e ubuntu
 + depext=
-Ubuntu depexts:
 + echo Ubuntu depexts:
 + '[' '' '!=' '' ']'
+Ubuntu depexts:
 ++ opam install iocamljs-kernel -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
+Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install iocamljs-kernel
-Ubuntu srcexts:
 The following actions will be performed:
  - install   base-no-ppx.base                      [required by lwt]
  - install   cmdliner.0.9.6                        [required by js_of_ocaml]

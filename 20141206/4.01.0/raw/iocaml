@@ -253,3 +253,57 @@ Building jsonm.0.9.1:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing jsonm.0.9.1.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.01.0 --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building ocplib-endian.0.7:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.7.
+Building sexplib.111.17.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.111.17.00.
+Building ezjsonm.0.3.1:
+  ./configure --prefix /home/opam/.opam/4.01.0 --enable-lwt
+  make
+  make install
+Installing ezjsonm.0.3.1.
+Building js_of_ocaml.2.5:
+  make build
+  make install-lib BINDIR=/home/opam/.opam/4.01.0/bin
+Installing js_of_ocaml.2.5.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.01.0/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Copying ~/.opam/repo/default/packages/atdgen/atdgen.1.4.1/files/atdgen.install to ~/.opam/4.01.0/build/atdgen.1.4.1/
+Building atdgen.1.4.1:
+  make
+  make install BINDIR=/home/opam/.opam/4.01.0/bin
+Installing atdgen.1.4.1.
+Building cohttp.0.10.1:
+  make PREFIX=/home/opam/.opam/4.01.0
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing cohttp.0.10.1.
+Building cow.1.0.0:
+  make all
+  make install
+Installing cow.1.0.0.
+Copying ~/.opam/repo/default/packages/iocamljs-kernel/iocamljs-kernel.0.4.6/files/iocamljs-kernel.install to ~/.opam/4.01.0/build/iocamljs-kernel.0.4.6/
+Copying ~/.opam/repo/default/packages/iocamljs-kernel/iocamljs-kernel.0.4.6/files/4.00.1.patch to ~/.opam/4.01.0/build/iocamljs-kernel.0.4.6/
+Applying 4.00.1.patch.
+Building iocamljs-kernel.0.4.6:
+  make clean min
+  make clean full
