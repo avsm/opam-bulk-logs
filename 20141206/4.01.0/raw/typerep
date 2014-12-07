@@ -4,8 +4,8 @@
 Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install typerep -e source,linux
-+ srcext=
 Ubuntu srcexts:
++ srcext=
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install typerep
@@ -40,4 +40,3 @@ Building typerep.111.17.00:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   make
   make install
-Installing typerep.111.17.00.
