@@ -84,3 +84,12 @@ Installing type_conv.111.13.00.
 Building bin_prot.111.03.00:
   make
   make install
+Installing bin_prot.111.03.00.
+Building comparelib.109.60.00:
+  make
+  make install
+Installing comparelib.109.60.00.
+Building enumerate.111.08.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install

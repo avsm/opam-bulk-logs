@@ -6,3 +6,28 @@ Debian depexts: zlib1g-dev
 + sudo apt-get install -qq -y build-essential m4
 + sudo apt-get install -qq -y zlib1g-dev
 debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
+++ opam install erm_xmpp -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install erm_xmpp
+The following actions will be performed:
+ - install   cryptokit.1.9                         [required by erm_xmpp]
+ - install   erm_xml.0.3                           [required by erm_xmpp]
+ - install   erm_xmpp.0.2
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[erm_xml.0.3] Downloading https://github.com/ermine/xml/tarball/v0.3
+[erm_xmpp.0.2] Downloading https://github.com/ermine/xmpp/tarball/v0.2
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cryptokit.1.9:
+  make
+  make install
