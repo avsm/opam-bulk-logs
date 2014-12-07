@@ -1,0 +1,18 @@
+++ opam install ocamlspot -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install ocamlspot
+The following actions will be performed:
+ - install   ocamlspot.4.01.0.2.2.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamlspot.4.01.0.2.2.0] Downloading https://bitbucket.org/camlspotter/ocamlspot/get/4.01.0.2.2.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/ocamlspot/ocamlspot.4.01.0.2.2.0/files/ocamlspot.install to ~/.opam/4.01.0/build/ocamlspot.4.01.0.2.2.0/
+Building ocamlspot.4.01.0.2.2.0:
+  make all opt install BINDIR=/home/opam/.opam/4.01.0/bin PREFIX=/home/opam/.opam/4.01.0
+Installing ocamlspot.4.01.0.2.2.0.
