@@ -161,3 +161,4 @@ Copying ~/.opam/repo/default/packages/lambdoc/lambdoc.1.0-beta2/files/lambdoc.in
 Building lambdoc.1.0-beta2:
   make
   make install
+Installing lambdoc.1.0-beta2.
