@@ -705,3 +705,4 @@ Installing batteries.2.3.1.
 Building portia.0.1:
   make
   make install
+Installing portia.0.1.
