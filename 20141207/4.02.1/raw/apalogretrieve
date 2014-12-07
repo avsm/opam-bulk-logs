@@ -1,0 +1,23 @@
+++ opam install apalogretrieve -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install apalogretrieve -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install apalogretrieve
+The following actions will be performed:
+ - install   apalogretrieve.0.9.6-4
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[apalogretrieve.0.9.6-4] Downloading http://www.first.in-berlin.de/software/tools/apalogretrieve/apalogretrieve-0-9-6_4.tgz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/apalogretrieve/apalogretrieve.0.9.6-4/files/apalogretrieve.install to ~/.opam/4.02.1/build/apalogretrieve.0.9.6-4/
+Building apalogretrieve.0.9.6-4:
+  sh compile.native
+Installing apalogretrieve.0.9.6-4.
