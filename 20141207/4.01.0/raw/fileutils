@@ -1,25 +1,6 @@
-++ opam install fileutils -e centos,centos-7
+++ opam install fileutils -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-+ opam install fileutils
-The following actions will be performed:
- - install   ounit.2.0.0                           [required by fileutils]
- - install   fileutils.0.4.4
-=== 2 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[fileutils.0.4.4] Downloading http://forge.ocamlcore.org/frs/download.php/892/ocaml-fileutils-0.4.4.tar.gz
-[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building ounit.2.0.0:
-  make build
-  make install
-Installing ounit.2.0.0.
-Building fileutils.0.4.4:
-  ./configure
-  make
-  make install
-Installing fileutils.0.4.4.
+Debian depexts:
+++ opam install fileutils -e source,linux
