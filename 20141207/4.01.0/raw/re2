@@ -127,3 +127,4 @@ Installing core.111.28.00.
 Building re2.111.08.00:
   make
   make install
+Installing re2.111.08.00.
