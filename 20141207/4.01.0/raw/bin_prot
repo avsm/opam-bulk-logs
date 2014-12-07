@@ -1,9 +1,14 @@
-++ opam install bin_prot -e centos,centos-7
+++ opam install bin_prot -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install bin_prot -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install bin_prot
+Debian srcexts:
 The following actions will be performed:
  - install   type_conv.111.13.00                   [required by bin_prot]
  - install   bin_prot.111.03.00
