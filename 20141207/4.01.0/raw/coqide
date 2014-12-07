@@ -403,3 +403,4 @@ Building coqide.8.4.5:
   make -j1 coqide-files
   make -j1 coqide-binaries
   make install-coqide
+Installing coqide.8.4.5.
