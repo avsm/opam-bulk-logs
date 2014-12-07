@@ -1,12 +1,12 @@
 ++ opam install oasis-mirage -e ubuntu
 + depext=
-Ubuntu depexts:
 + echo Ubuntu depexts:
 + '[' '' '!=' '' ']'
+Ubuntu depexts:
 ++ opam install oasis-mirage -e source,linux
 + srcext=
-+ echo Ubuntu srcexts:
 Ubuntu srcexts:
++ echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install oasis-mirage
 The following actions will be performed:
@@ -44,23 +44,3 @@ Installing ocamlmod.0.0.7.
 Building ounit.2.0.0:
   make build
   make install
-Installing ounit.2.0.0.
-Building type_conv.111.13.00:
-  make
-  make install
-Installing type_conv.111.13.00.
-Building fileutils.0.4.4:
-  ./configure
-  make
-  make install
-Installing fileutils.0.4.4.
-Building ocaml-data-notation.0.0.11:
-  make
-  make install
-Installing ocaml-data-notation.0.0.11.
-Copying ~/.opam/repo/default/packages/oasis-mirage/oasis-mirage.0.3.0a/files/oasis.install to ~/.opam/4.01.0/build/oasis-mirage.0.3.0a/
-Building oasis-mirage.0.3.0a:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing oasis-mirage.0.3.0a.
