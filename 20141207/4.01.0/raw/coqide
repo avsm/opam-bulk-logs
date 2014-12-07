@@ -1,84 +1,30 @@
-++ opam install coqide -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
-+ '[' '' '!=' '' ']'
-+ opam install coqide
-The following actions will be performed:
- - install   camlp5.6.12                           [required by coqide]
- - install   lablgtk.2.18.3                        [required by coqide]
- - install   coq.8.4.5                             [required by coqide]
- - install   coqide.8.4.5
-=== 4 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[camlp5.6.12] Downloading http://camlp5.gforge.inria.fr/distrib/src/camlp5-6.12.tgz
-[coq.8.4.5] Downloading http://coq.inria.fr/distrib/8.4pl5/files/coq-8.4pl5.tar.gz
-[coqide.8.4.5] Downloading http://coq.inria.fr/distrib/8.4pl5/files/coq-8.4pl5.tar.gz
-[lablgtk.2.18.3] Downloading https://forge.ocamlcore.org/frs/download.php/1479/lablgtk-2.18.3.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Copying ~/.opam/repo/default/packages/camlp5/camlp5.6.12/files/camlp5.install to ~/.opam/4.01.0/build/camlp5.6.12/
-Building camlp5.6.12:
-  ./configure --prefix /home/opam/.opam/4.01.0 -libdir /home/opam/.opam/4.01.0/lib -mandir /home/opam/.opam/4.01.0/man
-  make world.opt
-  make install
-Installing camlp5.6.12.
-Copying ~/.opam/repo/default/packages/lablgtk/lablgtk.2.18.3/files/lablgtk.install to ~/.opam/4.01.0/build/lablgtk.2.18.3/
-Copying ~/.opam/repo/default/packages/lablgtk/lablgtk.2.18.3/files/lablgldir.patch to ~/.opam/4.01.0/build/lablgtk.2.18.3/
-Applying lablgldir.patch.
-Building lablgtk.2.18.3:
-  ./configure --prefix /home/opam/.opam/4.01.0 LABLGLDIR=/home/opam/.opam/4.01.0/lib/lablgl
-  make world
-  make install
-[ERROR] The compilation of lablgtk.2.18.3 failed.
-Removing lablgtk.2.18.3.
-  ocamlfind remove lablgtk2
-Copying ~/.opam/repo/default/packages/coq/coq.8.4.5/files/coq.install to ~/.opam/4.01.0/build/coq.8.4.5/
-Building coq.8.4.5:
-  ./configure -configdir /home/opam/.opam/4.01.0/lib/coq/config -mandir /home/opam/.opam/4.01.0/man -docdir /home/opam/.opam/4.01.0/doc --prefix /home/opam/.opam/4.01.0 --usecamlp5 --camlp5dir /home/opam/.opam/4.01.0/lib/camlp5 --coqide no
-  make -j1 world
-  make -j1 states
-  make install
-Installing coq.8.4.5.
-
-
-#=== ERROR while installing lablgtk.2.18.3 ====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --prefix /home/opam/.opam/4.01.0 LABLGLDIR=/home/opam/.opam/4.01.0/lib/lablgl
-# path                 /home/opam/.opam/4.01.0/build/lablgtk.2.18.3
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/lablgtk.2.18.3/lablgtk-4336-865888.env
-# stdout-file          /home/opam/.opam/4.01.0/build/lablgtk.2.18.3/lablgtk-4336-865888.out
-# stderr-file          /home/opam/.opam/4.01.0/build/lablgtk.2.18.3/lablgtk-4336-865888.err
-### stdout ###
-# ...[truncated]
-# checking for suffix of object files... o
-# checking whether we are using the GNU C compiler... yes
-# checking whether gcc accepts -g... yes
-# checking for gcc option to accept ISO C89... none needed
-# checking platform... Unix
-# checking native dynlink... checking for pkg-config... /usr/bin/pkg-config
-# checking for GTK+ - version >= 2.0.0... no
-# *** Could not run GTK+ test program, checking why...
-# *** The test program failed to compile or link. See the file config.log for the
-# *** exact error that occured. This usually means GTK+ is incorrectly installed.
-### stderr ###
-# configure: error: GTK+ is required
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   camlp5.6.12
- - install   coq.8.4.5
-The following failed
- - install   lablgtk.2.18.3
-Due to the errors, the following have been cancelled
- - install   coqide.8.4.5
-
-=-=- lablgtk.2.18.3 troubleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-=> This package requires gtk+ 2.0 development packages installed on your system
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107130933.export"
+++ opam install coqide -e debian
++ depext='libexpat1-dev libgtk2.0-dev'
++ echo Debian depexts: libexpat1-dev libgtk2.0-dev
++ '[' 'libexpat1-dev libgtk2.0-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: libexpat1-dev libgtk2.0-dev
++ sudo apt-get install -qq -y libexpat1-dev libgtk2.0-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libpipeline1:amd64 (from .../libpipeline1_1.2.1-1_amd64.deb) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Unpacking libasprintf0c2:amd64 (from .../libasprintf0c2_0.18.1.1-9_amd64.deb) ...
+Selecting previously unselected package libatk1.0-data.
+Unpacking libatk1.0-data (from .../libatk1.0-data_2.4.0-2_all.deb) ...
+Selecting previously unselected package libatk1.0-0:amd64.
+Unpacking libatk1.0-0:amd64 (from .../libatk1.0-0_2.4.0-2_amd64.deb) ...
+Selecting previously unselected package libavahi-common-data:amd64.
+Unpacking libavahi-common-data:amd64 (from .../libavahi-common-data_0.6.31-2_amd64.deb) ...
+Selecting previously unselected package libavahi-common3:amd64.
+Unpacking libavahi-common3:amd64 (from .../libavahi-common3_0.6.31-2_amd64.deb) ...
+Selecting previously unselected package libavahi-client3:amd64.
+Unpacking libavahi-client3:amd64 (from .../libavahi-client3_0.6.31-2_amd64.deb) ...
+Selecting previously unselected package libfreetype6:amd64.
+Unpacking libfreetype6:amd64 (from .../libfreetype6_2.4.9-1.1_amd64.deb) ...
+Selecting previously unselected package ucf.
+Unpacking ucf (from .../ucf_3.0025+nmu3_all.deb) ...
+Moving old data out of the way
+Selecting previously unselected package ttf-dejavu-core.
+Unpacking ttf-dejavu-core (from .../ttf-dejavu-core_2.33-3_all.deb) ...
