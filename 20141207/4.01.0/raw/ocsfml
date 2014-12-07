@@ -1,26 +1,7 @@
-++ opam install ocsfml -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
-+ '[' '' '!=' '' ']'
-+ opam install ocsfml
-The following actions will be performed:
- - install   ocsfml.2.0
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[ocsfml.2.0] Downloading https://github.com/KyoDralliam/Ocsfml/tarball/master
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building ocsfml.2.0:
-  cmake .
-  make
-  make install
-[ERROR] The compilation of ocsfml.2.0 failed.
-Removing ocsfml.2.0.
-  make uninstall
-
-
-#=== ERROR while installing ocsfml.2.0 ========================================#
-Internal error:
-  "cmake": command not found.
+++ opam install ocsfml -e debian
+Debian depexts: cmake libboost-dev libsfml-dev
++ depext='cmake libboost-dev libsfml-dev'
++ echo Debian depexts: cmake libboost-dev libsfml-dev
++ '[' 'cmake libboost-dev libsfml-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y cmake libboost-dev libsfml-dev

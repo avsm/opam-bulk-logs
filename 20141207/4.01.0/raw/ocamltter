@@ -177,3 +177,9 @@ Building orakuda.1.2.1:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing orakuda.1.2.1.
+Building ocamltter.2.1.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamltter.2.1.2.
