@@ -1,0 +1,16 @@
+++ opam install frei0r -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install frei0r
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   frei0r.0.1.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[frei0r.0.1.0] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-frei0r/0.1.0/ocaml-frei0r-0.1.0.tar.gz
+[ERROR] curl: code 404 while downloading http://downloads.sourceforge.net/project/savonet/ocaml-frei0r/0.1.0/ocaml-frei0r-0.1.0.tar.gz
+[ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-frei0r/0.1.0/ocaml-frei0r-0.1.0.tar.gz is not available
+[ERROR] Could not download archives of frei0r.0.1.0
+
