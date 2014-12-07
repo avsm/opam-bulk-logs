@@ -1,7 +1,7 @@
 ++ opam install spelll -e ubuntu
-Ubuntu depexts:
 + depext=
 + echo Ubuntu depexts:
+Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install spelll -e source,linux
 + srcext=
