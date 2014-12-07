@@ -27,3 +27,9 @@ The following actions will be performed:
 [aio.0.0.3] Downloading https://forge.ocamlcore.org/frs/download.php/818/libaio-ocaml_1.0.orig.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/aio/aio.0.0.3/files/meta.patch to ~/.opam/4.01.0/build/aio.0.0.3/
+Applying meta.patch.
+Building aio.0.0.3:
+  make
+  make install
+Installing aio.0.0.3.
