@@ -1,8 +1,13 @@
-++ opam install yojson -e centos,centos-7
+++ opam install yojson -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+Debian depexts:
+++ opam install yojson -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
+Debian srcexts:
 + opam install yojson
 The following actions will be performed:
  - install   easy-format.1.0.2                     [required by yojson]
@@ -36,4 +41,3 @@ Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install t
 Building yojson.1.1.8:
   make
   make install
-Installing yojson.1.1.8.
