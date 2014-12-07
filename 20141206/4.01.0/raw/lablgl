@@ -254,10 +254,10 @@ Setting up freeglut3-dev:amd64 (2.8.1-1) ...
 Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
 ++ opam install lablgl -e source,linux
 + srcext=
+Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install lablgl
-Ubuntu srcexts:
 The following actions will be performed:
  - install   lablgl.1.05
 === 1 to install ===
