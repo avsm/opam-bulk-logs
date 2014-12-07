@@ -20,17 +20,17 @@ Setting up libffi-dev:amd64 (3.1~rc1+r3.0.13-12) ...
 ++ opam install sodium -e source,linux
 + srcext=https://gist.github.com/avsm/9037146/raw
 + echo Ubuntu srcexts: https://gist.github.com/avsm/9037146/raw
-+ '[' https://gist.github.com/avsm/9037146/raw '!=' '' ']'
 Ubuntu srcexts: https://gist.github.com/avsm/9037146/raw
++ '[' https://gist.github.com/avsm/9037146/raw '!=' '' ']'
 ++ mktemp
-+ t=/tmp/tmp.03anMWey2q
++ t=/tmp/tmp.00B8UGGGN8
 + curl -sL https://gist.github.com/avsm/9037146/raw
-+ bash -ex /tmp/tmp.03anMWey2q
++ bash -ex /tmp/tmp.00B8UGGGN8
 + V=0.7.1
 + curl -OL https://download.libsodium.org/libsodium/releases/libsodium-0.7.1.tar.gz
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 1501k  100 1501k    0     0  4301k      0 --:--:-- --:--:-- --:--:-- 4314k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 1501k  100 1501k    0     0  3731k      0 --:--:-- --:--:-- --:--:-- 3735k
 + tar -zxvf libsodium-0.7.1.tar.gz
 libsodium-0.7.1/
 libsodium-0.7.1/aclocal.m4
