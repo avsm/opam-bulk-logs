@@ -23,11 +23,11 @@ Setting up libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
 Setting up libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
 Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
 ++ opam install orakuda -e source,linux
+Ubuntu srcexts:
 + srcext=
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install orakuda
-Ubuntu srcexts:
 The following actions will be performed:
  - install   omake.0.9.8.6-0.rc1                   [required by orakuda]
  - install   ounit.2.0.0                           [required by pa_ounit]
@@ -40,8 +40,8 @@ The following actions will be performed:
 === 8 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
 [orakuda.1.2.1] Downloading https://bitbucket.org/camlspotter/orakuda/get/1.2.1.tar.gz
+[omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
 [pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
 [pcre.7.1.3] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.3/pcre-ocaml-7.1.3.tar.gz
