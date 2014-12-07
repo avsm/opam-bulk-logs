@@ -1,9 +1,9 @@
 ++ opam install ffmpeg -e ubuntu
 + depext='libavutil-dev libswscale-dev'
 + echo Ubuntu depexts: libavutil-dev libswscale-dev
+Ubuntu depexts: libavutil-dev libswscale-dev
 + '[' 'libavutil-dev libswscale-dev' '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
-Ubuntu depexts: libavutil-dev libswscale-dev
 + sudo apt-get install -qq -y libavutil-dev libswscale-dev
 debconf: unable to initialize frontend: Dialog
 debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
@@ -33,9 +33,9 @@ Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
 ++ opam install ffmpeg -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
+Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install ffmpeg
-Ubuntu srcexts:
 The following actions will be performed:
  - install   ffmpeg.0.1.0
 === 1 to install ===
@@ -48,4 +48,33 @@ Building ffmpeg.0.1.0:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
-Installing ffmpeg.0.1.0.
+[ERROR] The compilation of ffmpeg.0.1.0 failed.
+Removing ffmpeg.0.1.0.
+  ocamlfind remove ffmpeg
+
+
+#=== ERROR while installing ffmpeg.0.1.0 ======================================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              ./configure --prefix /home/opam/.opam/4.01.0
+# path                 /home/opam/.opam/4.01.0/build/ffmpeg.0.1.0
+# compiler             4.01.0
+# exit-code            1
+# env-file             /home/opam/.opam/4.01.0/build/ffmpeg.0.1.0/ffmpeg-206-6d07ae.env
+# stdout-file          /home/opam/.opam/4.01.0/build/ffmpeg.0.1.0/ffmpeg-206-6d07ae.out
+# stderr-file          /home/opam/.opam/4.01.0/build/ffmpeg.0.1.0/ffmpeg-206-6d07ae.err
+### stdout ###
+# ...[truncated]
+# checking for suffix of executables... 
+# checking whether we are cross compiling... no
+# checking for suffix of object files... o
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# checking build system type... x86_64-unknown-linux-gnu
+# checking host system type... x86_64-unknown-linux-gnu
+# checking for a BSD-compatible install... /usr/bin/install -c
+# checking that calling user is not root... 
+### stderr ###
+# configure: error: configure script must not be run with root user!
+
