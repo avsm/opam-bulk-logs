@@ -1,0 +1,16 @@
+++ opam install cil -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install cil
+The following actions will be performed:
+ - install   cil.1.7.3
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cil.1.7.3] Downloading http://downloads.sourceforge.net/project/cil/cil/cil-1.7.3.tar.gz
+[ERROR] curl: code 404 while downloading http://downloads.sourceforge.net/project/cil/cil/cil-1.7.3.tar.gz
+[ERROR] http://downloads.sourceforge.net/project/cil/cil/cil-1.7.3.tar.gz is not available
+[ERROR] Could not download archives of cil.1.7.3
+
