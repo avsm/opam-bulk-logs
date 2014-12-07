@@ -1,14 +1,14 @@
 ++ opam install xmldiff -e ubuntu
 + depext=
+Ubuntu depexts:
 + echo Ubuntu depexts:
 + '[' '' '!=' '' ']'
-Ubuntu depexts:
 ++ opam install xmldiff -e source,linux
 + srcext=
+Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install xmldiff
-Ubuntu srcexts:
 The following actions will be performed:
  - install   xmlm.1.2.0                            [required by xmldiff]
  - install   xmldiff.0.2
@@ -17,13 +17,3 @@ The following actions will be performed:
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [xmldiff.0.2] Downloading http://zoggy.github.com/xmldiff/xmldiff-0.2.tar.gz
 [xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building xmlm.1.2.0:
-  ./pkg/pkg-git
-  ./pkg/build true
-Installing xmlm.1.2.0.
-Building xmldiff.0.2:
-  make all
-  make install
-Installing xmldiff.0.2.
