@@ -1,14 +1,14 @@
 ++ opam install bencode_rpc -e ubuntu
 + depext=
 + echo Ubuntu depexts:
-+ '[' '' '!=' '' ']'
 Ubuntu depexts:
++ '[' '' '!=' '' ']'
 ++ opam install bencode_rpc -e source,linux
 + srcext=
+Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install bencode_rpc
-Ubuntu srcexts:
 The following actions will be performed:
  - install   base-no-ppx.base                      [required by lwt]
  - install   lwt.2.4.6                             [required by bencode_rpc]
