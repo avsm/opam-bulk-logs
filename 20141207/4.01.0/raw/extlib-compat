@@ -1,7 +1,12 @@
-++ opam install extlib-compat -e centos,centos-7
+++ opam install extlib-compat -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install extlib-compat -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install extlib-compat
 The following actions will be performed:
