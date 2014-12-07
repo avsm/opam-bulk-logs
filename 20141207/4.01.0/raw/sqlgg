@@ -54,3 +54,4 @@ Installing deriving.0.7.
 Copying ~/.opam/repo/default/packages/sqlgg/sqlgg.0.2.5/files/sqlgg.install to ~/.opam/4.01.0/build/sqlgg.0.2.5/
 Building sqlgg.0.2.5:
   make -C src
+Installing sqlgg.0.2.5.
