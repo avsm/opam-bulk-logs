@@ -4,3 +4,35 @@
 Debian depexts: gfortran
 + '[' gfortran '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y gfortran
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libgfortran3:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libgfortran3:amd64 (from .../libgfortran3_4.7.2-5_amd64.deb) ...
+Selecting previously unselected package gfortran-4.7.
+Unpacking gfortran-4.7 (from .../gfortran-4.7_4.7.2-5_amd64.deb) ...
+Selecting previously unselected package gfortran.
+Unpacking gfortran (from .../gfortran_4%3a4.7.2-1_amd64.deb) ...
+Setting up libgfortran3:amd64 (4.7.2-5) ...
+Setting up gfortran-4.7 (4.7.2-5) ...
+Setting up gfortran (4:4.7.2-1) ...
+update-alternatives: using /usr/bin/gfortran to provide /usr/bin/f95 (f95) in auto mode
+++ opam install odepack -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install odepack
+Debian srcexts:
+The following actions will be performed:
+ - install   odepack.0.6.6
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[odepack.0.6.6] Downloading https://forge.ocamlcore.org/frs/download.php/1402/odepack-0.6.6.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building odepack.0.6.6:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing odepack.0.6.6.
