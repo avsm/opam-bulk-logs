@@ -35,3 +35,9 @@ Building sqlite3.2.0.7:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing sqlite3.2.0.7.
+Building sqlite3EZ.0.1.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing sqlite3EZ.0.1.0.
