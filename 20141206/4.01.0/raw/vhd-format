@@ -97,3 +97,4 @@ Installing mirage-types.2.0.1.
 Building vhd-format.0.7.1:
   make
   make install
+Installing vhd-format.0.7.1.
