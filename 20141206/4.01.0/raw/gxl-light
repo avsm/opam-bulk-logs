@@ -5,10 +5,10 @@ Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install gxl-light -e source,linux
 + srcext=
-Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install gxl-light
+Ubuntu srcexts:
 The following actions will be performed:
  - install   xml-light.2.4                         [required by gxl-light]
  - install   gxl-light.1.0
@@ -21,8 +21,3 @@ The following actions will be performed:
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Building xml-light.2.4:
   make install_ocamlfind
-Installing xml-light.2.4.
-Building gxl-light.1.0:
-  make build
-  make install
-Installing gxl-light.1.0.
