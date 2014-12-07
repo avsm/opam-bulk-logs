@@ -5,8 +5,8 @@ Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install mirage-net -e source,linux
 + srcext=
-+ echo Ubuntu srcexts:
 Ubuntu srcexts:
++ echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install mirage-net
 The following actions will be performed:
@@ -18,8 +18,8 @@ The following actions will be performed:
 === 5 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[cstruct.0.4.1] Downloading http://github.com/mirage/ocaml-cstruct/tarball/ocaml-cstruct-0.4.1
 [lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[cstruct.0.4.1] Downloading http://github.com/mirage/ocaml-cstruct/tarball/ocaml-cstruct-0.4.1
 [mirage.0.4.0] Downloading https://github.com/mirage/mirage-platform/tarball/mirage-platform-0.4.0
 [mirage-net.0.3.1] Downloading https://github.com/mirage/mirage-net/archive/mirage-net-0.3.1.tar.gz
 
