@@ -15,3 +15,11 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [pfff.0.27.3] Downloading https://github.com/facebook/pfff/archive/v0.27.3.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building pfff.0.27.3:
+  ./configure --novisual --nocmt --nobytecode
+  make depend
+  make
+  make opt
+  make install-findlib
