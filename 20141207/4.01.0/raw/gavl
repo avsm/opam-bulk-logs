@@ -1,7 +1,25 @@
-++ opam install gavl -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+++ opam install gavl -e debian
++ depext=libgavl-dev
++ echo Debian depexts: libgavl-dev
+Debian depexts: libgavl-dev
++ '[' libgavl-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libgavl-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libgavl1:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libgavl1:amd64 (from .../libgavl1_1.4.0-1_amd64.deb) ...
+Selecting previously unselected package libgavl-dev:amd64.
+Unpacking libgavl-dev:amd64 (from .../libgavl-dev_1.4.0-1_amd64.deb) ...
+Selecting previously unselected package libgavl-doc.
+Unpacking libgavl-doc (from .../libgavl-doc_1.4.0-1_all.deb) ...
+Setting up libgavl1:amd64 (1.4.0-1) ...
+Setting up libgavl-dev:amd64 (1.4.0-1) ...
+Setting up libgavl-doc (1.4.0-1) ...
+++ opam install gavl -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install gavl
 The following actions will be performed:
@@ -10,7 +28,12 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [gavl.0.1.5] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-gavl/0.1.5/ocaml-gavl-0.1.5.tar.gz
-[ERROR] curl: code 404 while downloading http://downloads.sourceforge.net/project/savonet/ocaml-gavl/0.1.5/ocaml-gavl-0.1.5.tar.gz
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/gavl.0.1.5/ocaml-gavl-0.1.5.tar.gz:
+  - f55a9984e05f32bffecdce21c6784943 [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
 [ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-gavl/0.1.5/ocaml-gavl-0.1.5.tar.gz is not available
 [ERROR] Could not download archives of gavl.0.1.5
 
