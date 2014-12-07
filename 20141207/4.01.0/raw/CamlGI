@@ -1,7 +1,12 @@
-++ opam install CamlGI -e centos,centos-7
+++ opam install CamlGI -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install CamlGI -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install CamlGI
 The following actions will be performed:
@@ -10,7 +15,10 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [CamlGI.0.6] Downloading http://downloads.sourceforge.net/project/ocaml-cgi/CamlGI/0.6/CamlGI-0.6.tar.gz
-[ERROR] curl: code 404 while downloading http://downloads.sourceforge.net/project/ocaml-cgi/CamlGI/0.6/CamlGI-0.6.tar.gz
-[ERROR] http://downloads.sourceforge.net/project/ocaml-cgi/CamlGI/0.6/CamlGI-0.6.tar.gz is not available
-[ERROR] Could not download archives of CamlGI.0.6
 
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/CamlGI/CamlGI.0.6/files/CamlGI.install to ~/.opam/4.01.0/build/CamlGI.0.6/
+Building CamlGI.0.6:
+  make
+  make install
+Installing CamlGI.0.6.
