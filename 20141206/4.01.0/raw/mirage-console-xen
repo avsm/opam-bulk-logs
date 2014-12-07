@@ -155,3 +155,102 @@ Building oasis.0.4.5:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing oasis.0.4.5.
+Building xen-evtchn.1.0.5:
+  make
+  make install
+Installing xen-evtchn.1.0.5.
+Building io-page.1.2.0:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing io-page.1.2.0.
+Building shared-memory-ring.1.1.0:
+  make all
+  make install
+Installing shared-memory-ring.1.1.0.
+Building xenstore.1.2.5:
+  make all
+  make install
+Installing xenstore.1.2.5.
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+Building xen-gnt.2.0.0:
+  make
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing xen-gnt.2.0.0.
+Building mirage-clock-xen.1.0.0:
+  make xen-build
+  make xen-install
+Installing mirage-clock-xen.1.0.0.
+Building mirage-xen.2.0.1:
+  make xen-build
+  make xen-install PREFIX=/home/opam/.opam/4.01.0
+Installing mirage-xen.2.0.1.
+Building mirage-console-xen.1.0.2:
+  make xen-build
+  make xen-install
+[ERROR] The compilation of mirage-console-xen.1.0.2 failed.
+Removing mirage-console-xen.1.0.2.
+  ocamlfind remove mirage-console-xen
+
+
+#=== ERROR while installing mirage-console-xen.1.0.2 ==========================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              make xen-install
+# path                 /home/opam/.opam/4.01.0/build/mirage-console-xen.1.0.2
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/mirage-console-xen.1.0.2/mirage-console-xen-10394-af3201.env
+# stdout-file          /home/opam/.opam/4.01.0/build/mirage-console-xen.1.0.2/mirage-console-xen-10394-af3201.out
+# stderr-file          /home/opam/.opam/4.01.0/build/mirage-console-xen.1.0.2/mirage-console-xen-10394-af3201.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlc -c -package xen-evtchn -package xen-gnt -package io-page -package mirage-types -package mirage-xen -package lwt -I xen -o xen/console.cmo xen/console.ml
+# + ocamlfind ocamlc -c -package xen-evtchn -package xen-gnt -package io-page -package mirage-types -package mirage-xen -package lwt -I xen -o xen/console.cmo xen/console.ml
+# File "xen/console.ml", line 1:
+# Error: The implementation xen/console.ml
+#        does not match the interface xen/console.cmi:
+#        The field `close' is required but not provided
+#        The field `writev' is required but not provided
+#        The field `read' is required but not provided
+#        The field `buffer' is required but not provided
+# Command exited with code 2.
+### stderr ###
+# ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.01.0/lib/mirage-console-xen
+# ocamlfind: _build/xen/mirage-console.cmxs: No such file or directory
+# make: *** [xen-install] Error 2
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   ocamlmod.0.0.7
+ - install   mirage-xen-minios.0.4.2
+ - install   ocaml-data-notation.0.0.11
+ - install   shared-memory-ring.1.1.0
+ - install   xenstore.1.2.5
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   base-no-ppx.base
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   conf-pkg-config.1.0
+ - install   base-bytes.legacy
+ - install   ocamlify.0.0.1
+ - install   xen-evtchn.1.0.5
+ - install   oasis.0.4.5
+ - install   optcomp.1.6
+ - install   type_conv.111.13.00
+ - install   mirage-xen.2.0.1
+ - install   mirage-clock-xen.1.0.0
+ - install   xen-gnt.2.0.0
+ - install   ocplib-endian.0.7
+ - install   mirage-types.2.0.1
+ - install   sexplib.111.17.00
+The following failed
+ - install   mirage-console-xen.1.0.2
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107083438.export"
