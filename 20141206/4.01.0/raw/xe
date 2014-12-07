@@ -1,7 +1,7 @@
 ++ opam install xe -e ubuntu
 + depext=libssl-dev
-Ubuntu depexts: libssl-dev
 + echo Ubuntu depexts: libssl-dev
+Ubuntu depexts: libssl-dev
 + '[' libssl-dev '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
 + sudo apt-get install -qq -y libssl-dev
@@ -27,10 +27,10 @@ Setting up libssl-dev:amd64 (1.0.1f-1ubuntu2.7) ...
 Setting up libssl-doc (1.0.1f-1ubuntu2.7) ...
 ++ opam install xe -e source,linux
 + srcext=
+Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install xe
-Ubuntu srcexts:
 The following actions will be performed:
  - install   re.1.2.2                              [required by xe]
  - install   type_conv.111.13.00                   [required by fieldslib]
@@ -85,136 +85,3 @@ Building optcomp.1.6:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
-Installing optcomp.1.6.
-Building ounit.2.0.0:
-  make build
-  make install
-Installing ounit.2.0.0.
-Building re.1.2.2:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing re.1.2.2.
-Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.01.0/build/ssl.0.4.7/
-Building ssl.0.4.7:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-Installing ssl.0.4.7.
-Building stringext.1.1.0:
-  ocaml setup.ml -configure
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing stringext.1.1.0.
-Building type_conv.111.13.00:
-  make
-  make install
-Installing type_conv.111.13.00.
-Copying ~/.opam/repo/default/packages/uuidm/uuidm.0.9.5/files/uuidm.install to ~/.opam/4.01.0/build/uuidm.0.9.5/
-Building uuidm.0.9.5:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing uuidm.0.9.5.
-Building fieldslib.109.20.03:
-  make
-  make install
-Installing fieldslib.109.20.03.
-Building lwt.2.4.6:
-  ./configure --prefix /home/opam/.opam/4.01.0 --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-ppx
-  make build
-  make install
-Installing lwt.2.4.6.
-Building ocplib-endian.0.7:
-  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing ocplib-endian.0.7.
-Building sexplib.111.25.00:
-  ./configure --enable-syntax
-  make
-  make install
-Installing sexplib.111.25.00.
-Building cstruct.1.5.0:
-  ./configure --prefix /home/opam/.opam/4.01.0 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
-  make
-  make install
-Installing cstruct.1.5.0.
-Building ipaddr.2.5.0:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  make build
-  make install
-Installing ipaddr.2.5.0.
-Building uri.1.7.2:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing uri.1.7.2.
-Building conduit.0.7.1:
-  make
-  make install
-Installing conduit.0.7.1.
-Building cohttp.0.13.0:
-  make PREFIX=/home/opam/.opam/4.01.0
-  make PREFIX=/home/opam/.opam/4.01.0 install
-Installing cohttp.0.13.0.
-Building xe.0.6.2:
-  make
-  make install BINDIR=/home/opam/.opam/4.01.0/bin
-[ERROR] The compilation of xe.0.6.2 failed.
-Removing xe.0.6.2.
-  make uninstall BINDIR=/home/opam/.opam/4.01.0/bin
-
-
-#=== ERROR while installing xe.0.6.2 ==========================================#
-# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
-# os                   linux
-# command              make
-# path                 /home/opam/.opam/4.01.0/build/xe.0.6.2
-# compiler             4.01.0
-# exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/xe.0.6.2/xe-7911-2913ab.env
-# stdout-file          /home/opam/.opam/4.01.0/build/xe.0.6.2/xe-7911-2913ab.out
-# stderr-file          /home/opam/.opam/4.01.0/build/xe.0.6.2/xe-7911-2913ab.err
-### stdout ###
-# ...[truncated]
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -package cohttp -package cohttp.lwt -package cstruct -package lwt -package lwt.ssl -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.str -package unix -package uri -package uuidm -I src -o src/cohttp_unbuffered_io.cmo src/cohttp_unbuffered_io.ml
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -package cohttp -package cohttp.lwt -package cstruct -package lwt -package lwt.ssl -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.str -package unix -package uri -package uuidm -I src -o src/options.cmo src/options.ml
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -package cohttp -package cohttp.lwt -package cstruct -package lwt -package lwt.ssl -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.str -package unix -package uri -package uuidm -I src -o src/unixext.cmo src/unixext.ml
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -package cohttp -package cohttp.lwt -package cstruct -package lwt -package lwt.ssl -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.str -package unix -package uri -package uuidm -I src -o src/newcli.cmo src/newcli.ml
-# + /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -package cohttp -package cohttp.lwt -package cstruct -package lwt -package lwt.ssl -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.str -package unix -package uri -package uuidm -I src -o src/newcli.cmo src/newcli.ml
-# File "src/newcli.ml", line 23, characters 30-50:
-# Error: Signature mismatch:
-#        ...
-#        The field `conn' is required but not provided
-# Command exited with code 2.
-### stderr ###
-# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' src/newcli.native -tag debug' terminated with error code 10")
-# make: *** [build] Error 1
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   cohttp.0.13.0
- - install   sexplib.111.25.00
- - install   uuidm.0.9.5
- - install   conduit.0.7.1
- - install   cmdliner.0.9.6
- - install   cstruct.1.5.0
- - install   ipaddr.2.5.0
- - install   base-no-ppx.base
- - install   ssl.0.4.7
- - install   lwt.2.4.6
- - install   ounit.2.0.0
- - install   base-bytes.legacy
- - install   stringext.1.1.0
- - install   optcomp.1.6
- - install   type_conv.111.13.00
- - install   re.1.2.2
- - install   uri.1.7.2
- - install   fieldslib.109.20.03
- - install   ocplib-endian.0.7
-The following failed
- - install   xe.0.6.2
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107043628.export"
