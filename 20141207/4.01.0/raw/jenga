@@ -224,3 +224,9 @@ Installing ocaml_plugin.111.28.00.
 Building async_inotify.111.28.00:
   make
   make install
+Installing async_inotify.111.28.00.
+Copying ~/.opam/repo/default/packages/jenga/jenga.111.28.00/files/jenga.install to ~/.opam/4.01.0/build/jenga.111.28.00/
+Building jenga.111.28.00:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
