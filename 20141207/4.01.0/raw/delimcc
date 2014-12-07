@@ -1,8 +1,13 @@
-++ opam install delimcc -e centos,centos-7
+++ opam install delimcc -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
+++ opam install delimcc -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
+Debian srcexts:
 + opam install delimcc
 The following actions will be performed:
  - install   delimcc.0
