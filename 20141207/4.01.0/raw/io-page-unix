@@ -34,3 +34,11 @@ Building ocplib-endian.0.7:
   ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing ocplib-endian.0.7.
+Building cstruct.0.8.1:
+  make
+  make install
+Installing cstruct.0.8.1.
+Building io-page-unix.0.9.9:
+  make unix-build
+  make unix-install
