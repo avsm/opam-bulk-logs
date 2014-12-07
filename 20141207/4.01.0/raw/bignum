@@ -133,3 +133,9 @@ Installing typerep.111.17.00.
 Building core_kernel.111.28.00:
   make
   make install
+Installing core_kernel.111.28.00.
+Building bignum.111.28.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing bignum.111.28.00.

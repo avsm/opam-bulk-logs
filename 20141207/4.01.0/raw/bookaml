@@ -1,17 +1,30 @@
-++ opam install bookaml -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install bookaml -e debian
++ depext=zlib1g-dev
++ echo Debian depexts: zlib1g-dev
++ '[' zlib1g-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: zlib1g-dev
++ sudo apt-get install -qq -y zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
+++ opam install bookaml -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install bookaml
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   cryptokit.1.9                         [required by bookaml]
  - install   calendar.2.03.2                       [required by bookaml]
  - install   batteries.2.3.1                       [required by bookaml]
- - install   tyxml.3.2.1                           [required by bookaml]
+ - install   uutf.0.9.3                            [required by tyxml]
  - install   ocamlnet.3.7.7                        [required by bookaml]
+ - install   tyxml.3.3.0                           [required by bookaml]
  - install   bookaml.1.0
-=== 6 to install ===
+=== 7 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
@@ -19,7 +32,8 @@ The following actions will be performed:
 [calendar.2.03.2] Downloading http://forge.ocamlcore.org/frs/download.php/915/calendar-2.03.2.tar.gz
 [cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
 [ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
-[tyxml.3.2.1] Downloading https://github.com/ocsigen/tyxml/archive/3.2.1.tar.gz
+[tyxml.3.3.0] Downloading https://github.com/ocsigen/tyxml/archive/3.3.0.tar.gz
+[uutf.0.9.3] Downloading http://erratique.ch/software/uutf/releases/uutf-0.9.3.tbz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Building batteries.2.3.1:
@@ -35,52 +49,16 @@ Installing calendar.2.03.2.
 Building cryptokit.1.9:
   make
   make install
-[ERROR] The compilation of cryptokit.1.9 failed.
-Removing cryptokit.1.9.
-  ocamlfind remove cryptokit
-Building tyxml.3.2.1:
-  ./configure --enable-syntax --prefix /home/opam/.opam/4.01.0
-  make
+Installing cryptokit.1.9.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/ocamlnet.install to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
+Applying robust-host.patch.
+Building ocamlnet.3.7.7:
+  ./configure -bindir /home/opam/.opam/4.01.0/bin -disable-pcre -disable-gtk2 -disable-ssl -disable-zip -enable-crypto -with-nethttpd
+  make all
+  make opt
   make install
-Installing tyxml.3.2.1.
-
-
-#=== ERROR while installing cryptokit.1.9 =====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              make
-# path                 /home/opam/.opam/4.01.0/build/cryptokit.1.9
-# compiler             4.01.0
-# exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/cryptokit.1.9/cryptokit-1745-e7966f.env
-# stdout-file          /home/opam/.opam/4.01.0/build/cryptokit.1.9/cryptokit-1745-e7966f.out
-# stderr-file          /home/opam/.opam/4.01.0/build/cryptokit.1.9/cryptokit-1745-e7966f.err
-### stdout ###
-# ...[truncated]
-# mv stubs-misc.o src/stubs-misc.o
-# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-rng.c
-# mv stubs-rng.o src/stubs-rng.o
-# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
-# + ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
-# src/stubs-zlib.c:19:18: fatal error: zlib.h: No such file or directory
-#  #include <zlib.h>
-#                   ^
-# compilation terminated.
-# Command exited with code 2.
-### stderr ###
-# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' src/libcryptokit_stubs.a src/dllcryptokit_stubs.so src/cryptokit.cma src/cryptokit.cmxa src/cryptokit.a src/cryptokit.cmxs -tag debug -classic-display' terminated with error code 10")
-# make: *** [build] Error 1
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   tyxml.3.2.1
- - install   batteries.2.3.1
- - install   calendar.2.03.2
-The following failed
- - install   cryptokit.1.9
-Due to the errors, the following have been cancelled
- - install   bookaml.1.0
- - install   ocamlnet.3.7.7
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107125318.export"
