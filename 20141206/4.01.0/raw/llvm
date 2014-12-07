@@ -1,21 +1,21 @@
 ++ opam install llvm -e ubuntu
 + depext=
 + echo Ubuntu depexts:
-+ '[' '' '!=' '' ']'
 Ubuntu depexts:
++ '[' '' '!=' '' ']'
 ++ opam install llvm -e source,linux
 + srcext=https://gist.githubusercontent.com/jpdeplaix/58db9c49a79813fc1dda/raw
 + echo Ubuntu srcexts: https://gist.githubusercontent.com/jpdeplaix/58db9c49a79813fc1dda/raw
 + '[' https://gist.githubusercontent.com/jpdeplaix/58db9c49a79813fc1dda/raw '!=' '' ']'
 Ubuntu srcexts: https://gist.githubusercontent.com/jpdeplaix/58db9c49a79813fc1dda/raw
 ++ mktemp
-+ t=/tmp/tmp.G13YJ063JI
++ t=/tmp/tmp.L7cQCx3jdi
 + curl -sL https://gist.githubusercontent.com/jpdeplaix/58db9c49a79813fc1dda/raw
-+ bash -ex /tmp/tmp.G13YJ063JI
++ bash -ex /tmp/tmp.L7cQCx3jdi
 + sudo add-apt-repository 'deb http://llvm.org/apt/precise/ llvm-toolchain-precise-3.5 main'
-+ sudo apt-key add -
 + wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key
-/tmp/tmp.G13YJ063JI: line 4: wget: command not found
++ sudo apt-key add -
+/tmp/tmp.L7cQCx3jdi: line 4: wget: command not found
 gpg: no valid OpenPGP data found.
 + opam install llvm
 The following actions will be performed:
@@ -45,9 +45,9 @@ Removing llvm.3.5.
 # path                 /home/opam/.opam/4.01.0/build/llvm.3.5
 # compiler             4.01.0
 # exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/llvm.3.5/llvm-163-2c871f.env
-# stdout-file          /home/opam/.opam/4.01.0/build/llvm.3.5/llvm-163-2c871f.out
-# stderr-file          /home/opam/.opam/4.01.0/build/llvm.3.5/llvm-163-2c871f.err
+# env-file             /home/opam/.opam/4.01.0/build/llvm.3.5/llvm-164-2c871f.env
+# stdout-file          /home/opam/.opam/4.01.0/build/llvm.3.5/llvm-164-2c871f.out
+# stderr-file          /home/opam/.opam/4.01.0/build/llvm.3.5/llvm-164-2c871f.err
 ### stdout ###
 # Error: LLVM is not installed.
 ### stderr ###
