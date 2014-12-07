@@ -184,3 +184,9 @@ Building openflow.0.6.2:
   ocaml setup.ml -configure --enable-async --disable-quickcheck
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing openflow.0.6.2.
+Building ox.1.1.1:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ox.1.1.1.

@@ -1,9 +1,27 @@
-++ opam install plasma -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install plasma -e debian
++ depext='libpcre3-dev zlib1g-dev'
++ echo Debian depexts: libpcre3-dev zlib1g-dev
+Debian depexts: libpcre3-dev zlib1g-dev
++ '[' 'libpcre3-dev zlib1g-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libpcre3-dev zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libpcrecpp0:amd64 (from .../libpcrecpp0_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package libpcre3-dev.
+Unpacking libpcre3-dev (from .../libpcre3-dev_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Setting up libpcrecpp0:amd64 (1:8.30-5) ...
+Setting up libpcre3-dev (1:8.30-5) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
+++ opam install plasma -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install plasma
-CentOS 7 depexts:
 The following actions will be performed:
  - install   cryptokit.1.9                         [required by plasma]
  - install   omake.0.9.8.6-0.rc1                   [required by plasma]
@@ -17,8 +35,8 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
-[ocamlgraph.1.8.2] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.2.tar.gz
 [ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
+[ocamlgraph.1.8.2] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.2.tar.gz
 [omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
 [pcre.7.1.3] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.3/pcre-ocaml-7.1.3.tar.gz
 [plasma.0.6.2] Downloading http://download.camlcity.org/download/plasma-0.6.2.tar.gz
@@ -27,15 +45,11 @@ The following actions will be performed:
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Building conf-libpcre.1:
   pkg-config libpcre
-Removing conf-libpcre.1.
-[ERROR] The compilation of conf-libpcre.1 failed.
-  Nothing to do.
+Installing conf-libpcre.1.
 Building cryptokit.1.9:
   make
   make install
-[ERROR] The compilation of cryptokit.1.9 failed.
-Removing cryptokit.1.9.
-  ocamlfind remove cryptokit
+Installing cryptokit.1.9.
 Copying ~/.opam/repo/default/packages/ocamlgraph/ocamlgraph.1.8.2/files/ocamlgraph.install to ~/.opam/4.01.0/build/ocamlgraph.1.8.2/
 Building ocamlgraph.1.8.2:
   ./configure
@@ -53,64 +67,3 @@ Building omake.0.9.8.6-0.rc1:
   make bootstrap PREFIX=/home/opam/.opam/4.01.0
   make all PREFIX=/home/opam/.opam/4.01.0
   make install PREFIX=/home/opam/.opam/4.01.0
-Installing omake.0.9.8.6-0.rc1.
-Building xstrp4.1.8:
-  ./configure
-  make all
-  make install
-Installing xstrp4.1.8.
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   xstrp4.1.8
- - install   ocamlgraph.1.8.2
- - install   omake.0.9.8.6-0.rc1
-The following failed
- - install   conf-libpcre.1
- - install   cryptokit.1.9
-Due to the errors, the following have been cancelled
- - install   plasma.0.6.2
- - install   pcre.7.1.3
- - install   ocamlnet.3.7.7
-
-#=== ERROR while installing conf-libpcre.1 ====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              pkg-config libpcre
-# path                 /home/opam/.opam/4.01.0/build/conf-libpcre.1
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/conf-libpcre.1/conf-libpcre-88-ffb3fd.env
-# stdout-file          /home/opam/.opam/4.01.0/build/conf-libpcre.1/conf-libpcre-88-ffb3fd.out
-# stderr-file          /home/opam/.opam/4.01.0/build/conf-libpcre.1/conf-libpcre-88-ffb3fd.err
-
-
-#=== ERROR while installing cryptokit.1.9 =====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              make
-# path                 /home/opam/.opam/4.01.0/build/cryptokit.1.9
-# compiler             4.01.0
-# exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/cryptokit.1.9/cryptokit-91-c61e7b.env
-# stdout-file          /home/opam/.opam/4.01.0/build/cryptokit.1.9/cryptokit-91-c61e7b.out
-# stderr-file          /home/opam/.opam/4.01.0/build/cryptokit.1.9/cryptokit-91-c61e7b.err
-### stdout ###
-# ...[truncated]
-# mv stubs-misc.o src/stubs-misc.o
-# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-rng.c
-# mv stubs-rng.o src/stubs-rng.o
-# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
-# + ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
-# src/stubs-zlib.c:19:18: fatal error: zlib.h: No such file or directory
-#  #include <zlib.h>
-#                   ^
-# compilation terminated.
-# Command exited with code 2.
-### stderr ###
-# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' src/libcryptokit_stubs.a src/dllcryptokit_stubs.so src/cryptokit.cma src/cryptokit.cmxa src/cryptokit.a src/cryptokit.cmxs -tag debug -classic-display' terminated with error code 10")
-# make: *** [build] Error 1
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107154214.export"
