@@ -1,8 +1,13 @@
-++ opam install cmdliner -e centos,centos-7
+++ opam install cmdliner -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+Debian depexts:
+++ opam install cmdliner -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install cmdliner
 The following actions will be performed:
  - install   cmdliner.0.9.6
