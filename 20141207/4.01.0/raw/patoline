@@ -87,3 +87,4 @@ Building patoline.0.1:
   ocaml unix.cma configure.ml --prefix /home/opam/.opam/4.01.0 --bin-prefix /home/opam/.opam/4.01.0/bin --ocaml-libs /home/opam/.opam/4.01.0/lib --fonts-dir /home/opam/.opam/4.01.0/share/patoline/fonts --grammars-dir /home/opam/.opam/4.01.0/lib/patoline/grammars --plugins-dir /home/opam/.opam/4.01.0/lib/patoline/plugins --hyphen-dir /home/opam/.opam/4.01.0/share/patoline/hyphen
   make
   make install
+Installing patoline.0.1.
