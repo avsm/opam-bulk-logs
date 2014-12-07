@@ -1,9 +1,14 @@
-++ opam install cfg -e centos,centos-7
+++ opam install cfg -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+++ opam install cfg -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install cfg
+Debian srcexts:
 The following actions will be performed:
  - install   menhir.20140422                       [required by cfg]
  - install   cfg.2.0.4
