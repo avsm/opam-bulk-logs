@@ -1,9 +1,14 @@
-++ opam install variantslib -e centos,centos-7
+++ opam install variantslib -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install variantslib -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install variantslib
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   type_conv.111.13.00                   [required by variantslib]
  - install   variantslib.109.15.03
@@ -17,8 +22,3 @@ The following actions will be performed:
 Building type_conv.111.13.00:
   make
   make install
-Installing type_conv.111.13.00.
-Building variantslib.109.15.03:
-  make
-  make install
-Installing variantslib.109.15.03.
