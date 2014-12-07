@@ -19,3 +19,11 @@ The following actions will be performed:
 [type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building dyntype.0.9.0:
+  make
+  make install
+Installing dyntype.0.9.0.

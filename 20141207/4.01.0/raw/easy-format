@@ -1,7 +1,12 @@
-++ opam install easy-format -e centos,centos-7
+++ opam install easy-format -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install easy-format -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install easy-format
 The following actions will be performed:
@@ -10,9 +15,3 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building easy-format.1.0.2:
-  make
-  make install
-Installing easy-format.1.0.2.
