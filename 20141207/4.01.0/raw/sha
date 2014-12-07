@@ -1,0 +1,20 @@
+++ opam install sha -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install sha
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   sha.1.9
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sha.1.9] Downloading https://github.com/vincenthz/ocaml-sha/archive/ocaml-sha-v1.9.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/sha/sha.1.9/files/freebsd.patch to ~/.opam/4.01.0/build/sha.1.9/
+Applying freebsd.patch.
+Building sha.1.9:
+  make
+  make install
+Installing sha.1.9.
