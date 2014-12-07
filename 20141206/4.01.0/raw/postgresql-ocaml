@@ -1,0 +1,14 @@
+++ opam install postgresql-ocaml -e ubuntu
+[ERROR] No package named postgresql-ocaml found.
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install postgresql-ocaml -e source,linux
+[ERROR] No package named postgresql-ocaml found.
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install postgresql-ocaml
+[ERROR] No package named postgresql-ocaml found.
