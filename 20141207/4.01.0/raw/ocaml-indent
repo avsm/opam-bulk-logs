@@ -1,9 +1,14 @@
-++ opam install ocaml-indent -e centos,centos-7
+++ opam install ocaml-indent -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+Debian depexts:
+++ opam install ocaml-indent -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install ocaml-indent
+Debian srcexts:
 The following actions will be performed:
  - install   omake.0.9.8.6-0.rc1                   [required by ocaml-indent]
  - install   type_conv.111.13.00                   [required by sexplib]
@@ -12,9 +17,9 @@ The following actions will be performed:
 === 4 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[ocaml-indent.1.2.1] Downloading https://bitbucket.org/camlspotter/ocaml-indent/get/1.2.1.tar.gz
 [omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
 [sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[ocaml-indent.1.2.1] Downloading https://bitbucket.org/camlspotter/ocaml-indent/get/1.2.1.tar.gz
 [type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -38,9 +43,3 @@ Building sexplib.111.25.00:
   ./configure --enable-syntax
   make
   make install
-Installing sexplib.111.25.00.
-Building ocaml-indent.1.2.1:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing ocaml-indent.1.2.1.
