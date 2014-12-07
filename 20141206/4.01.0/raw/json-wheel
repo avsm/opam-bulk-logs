@@ -1,8 +1,8 @@
 ++ opam install json-wheel -e ubuntu
 + depext=
-Ubuntu depexts:
 + echo Ubuntu depexts:
 + '[' '' '!=' '' ']'
+Ubuntu depexts:
 ++ opam install json-wheel -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
@@ -27,8 +27,3 @@ Building ocamlnet.3.7.7:
   make all
   make opt
   make install
-Installing ocamlnet.3.7.7.
-Building json-wheel.1.0.6:
-  make
-  make install PREFIX=/home/opam/.opam/4.01.0
-Installing json-wheel.1.0.6.
