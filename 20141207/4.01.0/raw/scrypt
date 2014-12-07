@@ -33,3 +33,4 @@ The following actions will be performed:
 Building scrypt.0.2.1:
   make
   make install
+Installing scrypt.0.2.1.
