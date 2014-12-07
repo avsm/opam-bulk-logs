@@ -44,3 +44,20 @@ Building ocamlnet.3.7.7:
   make all
   make opt
   make install
+Installing ocamlnet.3.7.7.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.01.0/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.01.0/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Building bitcoin.1.1.1:
+  ./configure --prefix /home/opam/.opam/4.01.0 --docdir /home/opam/.opam/4.01.0/doc/bitcoin --disable-ocsigen --enable-ocamlnet
+  make
+  make doc
+  make install
+Installing bitcoin.1.1.1.
