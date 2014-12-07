@@ -23,3 +23,7 @@ Building xmlm.1.2.0:
   ./pkg/pkg-git
   ./pkg/build true
 Installing xmlm.1.2.0.
+Building uucd.2.0.0:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing uucd.2.0.0.
