@@ -1,67 +1,36 @@
-++ opam install frama-c -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-+ '[' '' '!=' '' ']'
-+ opam install frama-c
-CentOS 7 depexts:
-The following actions will be performed:
- - install   conf-gtksourceview.2                  [required by frama-c]
- - install   conf-gnomecanvas.2                    [required by frama-c]
- - install   lablgtk.2.18.3                        [required by frama-c]
- - install   ocamlgraph.1.8.5                      [required by frama-c]
- - install   frama-c.20140301
-=== 5 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[frama-c.20140301] Downloading http://frama-c.com/download/frama-c-Neon-20140301.tar.gz
-[lablgtk.2.18.3] Downloading https://forge.ocamlcore.org/frs/download.php/1479/lablgtk-2.18.3.tar.gz
-[ocamlgraph.1.8.5] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.5.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building conf-gnomecanvas.2:
-  pkg-config libgnomecanvas-2.0
-[ERROR] The compilation of conf-gnomecanvas.2 failed.
-Removing conf-gnomecanvas.2.
-  Nothing to do.
-Building conf-gtksourceview.2:
-  pkg-config gtksourceview-2.0
-[ERROR] The compilation of conf-gtksourceview.2 failed.
-Removing conf-gtksourceview.2.
-  Nothing to do.
-
-
-#=== ERROR while installing conf-gnomecanvas.2 ================================#
-# opam-version         1.2.0
-# os                   linux
-# command              pkg-config libgnomecanvas-2.0
-# path                 /home/opam/.opam/4.01.0/build/conf-gnomecanvas.2
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/conf-gnomecanvas.2/conf-gnomecanvas-48-7afd23.env
-# stdout-file          /home/opam/.opam/4.01.0/build/conf-gnomecanvas.2/conf-gnomecanvas-48-7afd23.out
-# stderr-file          /home/opam/.opam/4.01.0/build/conf-gnomecanvas.2/conf-gnomecanvas-48-7afd23.err
-
-
-#=== ERROR while installing conf-gtksourceview.2 ==============================#
-# opam-version         1.2.0
-# os                   linux
-# command              pkg-config gtksourceview-2.0
-# path                 /home/opam/.opam/4.01.0/build/conf-gtksourceview.2
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/conf-gtksourceview.2/conf-gtksourceview-51-5f1023.env
-# stdout-file          /home/opam/.opam/4.01.0/build/conf-gtksourceview.2/conf-gtksourceview-51-5f1023.out
-# stderr-file          /home/opam/.opam/4.01.0/build/conf-gtksourceview.2/conf-gtksourceview-51-5f1023.err
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-The following failed
- - install   conf-gnomecanvas.2
- - install   conf-gtksourceview.2
-Due to the errors, the following have been cancelled
- - install   ocamlgraph.1.8.5
- - install   frama-c.20140301
- - install   lablgtk.2.18.3
-
-=-=- conf-gtksourceview.2 troubleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-=> This package requires gtksourceview 2.0 development packages installed on your system
+++ opam install frama-c -e debian
++ depext='libexpat1-dev libgnomecanvas2-dev libgtk2.0-dev libgtksourceview2.0-dev'
++ echo Debian depexts: libexpat1-dev libgnomecanvas2-dev libgtk2.0-dev libgtksourceview2.0-dev
+Debian depexts: libexpat1-dev libgnomecanvas2-dev libgtk2.0-dev libgtksourceview2.0-dev
++ '[' 'libexpat1-dev libgnomecanvas2-dev libgtk2.0-dev libgtksourceview2.0-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libexpat1-dev libgnomecanvas2-dev libgtk2.0-dev libgtksourceview2.0-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libpipeline1:amd64 (from .../libpipeline1_1.2.1-1_amd64.deb) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Unpacking libasprintf0c2:amd64 (from .../libasprintf0c2_0.18.1.1-9_amd64.deb) ...
+Selecting previously unselected package libart-2.0-2:amd64.
+Unpacking libart-2.0-2:amd64 (from .../libart-2.0-2_2.3.21-2_amd64.deb) ...
+Selecting previously unselected package libatk1.0-data.
+Unpacking libatk1.0-data (from .../libatk1.0-data_2.4.0-2_all.deb) ...
+Selecting previously unselected package libatk1.0-0:amd64.
+Unpacking libatk1.0-0:amd64 (from .../libatk1.0-0_2.4.0-2_amd64.deb) ...
+Selecting previously unselected package libavahi-common-data:amd64.
+Unpacking libavahi-common-data:amd64 (from .../libavahi-common-data_0.6.31-2_amd64.deb) ...
+Selecting previously unselected package libavahi-common3:amd64.
+Unpacking libavahi-common3:amd64 (from .../libavahi-common3_0.6.31-2_amd64.deb) ...
+Selecting previously unselected package libavahi-client3:amd64.
+Unpacking libavahi-client3:amd64 (from .../libavahi-client3_0.6.31-2_amd64.deb) ...
+Selecting previously unselected package libfreetype6:amd64.
+Unpacking libfreetype6:amd64 (from .../libfreetype6_2.4.9-1.1_amd64.deb) ...
+Selecting previously unselected package ucf.
+Unpacking ucf (from .../ucf_3.0025+nmu3_all.deb) ...
+Moving old data out of the way
+Selecting previously unselected package ttf-dejavu-core.
+Unpacking ttf-dejavu-core (from .../ttf-dejavu-core_2.33-3_all.deb) ...
+Selecting previously unselected package fontconfig-config.
+Unpacking fontconfig-config (from .../fontconfig-config_2.9.0-7.1_all.deb) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Unpacking libfontconfig1:amd64 (from .../libfontconfig1_2.9.0-7.1_amd64.deb) ...
