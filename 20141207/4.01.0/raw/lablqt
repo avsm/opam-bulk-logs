@@ -149,3 +149,50 @@ Installing yojson.1.1.8.
 Building core_kernel.111.28.00:
   make
   make install
+Installing core_kernel.111.28.00.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   core_kernel.111.28.00
+ - install   sexplib.111.25.00
+ - install   cppo.1.1.2
+ - install   pa_test.111.08.00
+ - install   easy-format.1.0.2
+ - install   enumerate.111.08.00
+ - install   ounit.2.0.0
+ - install   comparelib.109.60.00
+ - install   pa_ounit.111.28.00
+ - install   variantslib.109.15.03
+ - install   pipebang.110.01.00
+ - install   yojson.1.1.8
+ - install   typerep.111.17.00
+ - install   type_conv.111.13.00
+ - install   herelib.109.35.02
+ - install   biniou.1.0.9
+ - install   pa_bench.111.28.00
+ - install   fieldslib.109.20.03
+ - install   bin_prot.111.03.00
+The following failed
+ - install   conf-qt.5.2.1
+Due to the errors, the following have been cancelled
+ - install   lablqt.0.2
+
+#=== ERROR while installing conf-qt.5.2.1 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              bash -c min="5.2.1"; cur=`qmake -query QT_VERSION`; res=`echo -e "$min\n$cur" | sort | head -n 1`; [ "$res" = "$min" ]
+# path                 /home/opam/.opam/4.01.0/build/conf-qt.5.2.1
+# compiler             4.01.0
+# exit-code            1
+# env-file             /home/opam/.opam/4.01.0/build/conf-qt.5.2.1/conf-qt-346-2dea01.env
+# stdout-file          /home/opam/.opam/4.01.0/build/conf-qt.5.2.1/conf-qt-346-2dea01.out
+# stderr-file          /home/opam/.opam/4.01.0/build/conf-qt.5.2.1/conf-qt-346-2dea01.err
+### stdout ###
+# Your Qt version is 
+### stderr ###
+# bash: qmake: command not found
+# bash: qmake: command not found
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107200009.export"
