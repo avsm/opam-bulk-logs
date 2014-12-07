@@ -1,0 +1,14 @@
+++ opam install patience -e ubuntu
+[ERROR] No package named patience found.
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install patience -e source,linux
+[ERROR] No package named patience found.
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install patience
+[ERROR] No package named patience found.
