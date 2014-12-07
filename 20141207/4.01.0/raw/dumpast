@@ -1,7 +1,12 @@
-++ opam install dumpast -e centos,centos-7
+++ opam install dumpast -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install dumpast -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install dumpast
 The following actions will be performed:
@@ -15,4 +20,3 @@ The following actions will be performed:
 Building dumpast.0.1.0:
   make
   make install
-Installing dumpast.0.1.0.
