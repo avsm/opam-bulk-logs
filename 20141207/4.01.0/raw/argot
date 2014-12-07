@@ -1,7 +1,12 @@
-++ opam install argot -e centos,centos-7
+++ opam install argot -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install argot -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install argot
 The following actions will be performed:
@@ -10,10 +15,3 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [argot.1.1] Downloading http://forge.ocamlcore.org/frs/download.php/960/argot-1.1.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building argot.1.1:
-  sh configure
-  make all
-  make install
-Installing argot.1.1.
