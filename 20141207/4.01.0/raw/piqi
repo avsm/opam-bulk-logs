@@ -62,3 +62,4 @@ Installing piqilib.0.6.9.
 Building piqi.0.7.1:
   make
   make DESTDIR=/home/opam/.opam/4.01.0 install
+Installing piqi.0.7.1.
