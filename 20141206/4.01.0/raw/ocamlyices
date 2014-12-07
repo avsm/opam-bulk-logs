@@ -51,9 +51,9 @@ The following failed
 # path                 /home/opam/.opam/4.01.0/build/ocamlyices.0.7.1
 # compiler             4.01.0
 # exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/ocamlyices.0.7.1/ocamlyices-295-ad8886.env
-# stdout-file          /home/opam/.opam/4.01.0/build/ocamlyices.0.7.1/ocamlyices-295-ad8886.out
-# stderr-file          /home/opam/.opam/4.01.0/build/ocamlyices.0.7.1/ocamlyices-295-ad8886.err
+# env-file             /home/opam/.opam/4.01.0/build/ocamlyices.0.7.1/ocamlyices-293-ad8886.env
+# stdout-file          /home/opam/.opam/4.01.0/build/ocamlyices.0.7.1/ocamlyices-293-ad8886.out
+# stderr-file          /home/opam/.opam/4.01.0/build/ocamlyices.0.7.1/ocamlyices-293-ad8886.err
 ### stdout ###
 # ...[truncated]
 # checking for memory.h... yes
@@ -80,4 +80,4 @@ The following failed
 #   
 
 
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107032626.export"
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107091337.export"
