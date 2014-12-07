@@ -1,9 +1,14 @@
-++ opam install omd -e centos,centos-7
+++ opam install omd -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install omd -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install omd
+Debian srcexts:
 The following actions will be performed:
  - install   omd.1.2.3
 === 1 to install ===
