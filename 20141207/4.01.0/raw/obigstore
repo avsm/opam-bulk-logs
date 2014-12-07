@@ -1,23 +1,48 @@
-++ opam install obigstore -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install obigstore -e debian
++ depext='libleveldb-dev libsnappy-dev zlib1g-dev'
++ echo Debian depexts: libleveldb-dev libsnappy-dev zlib1g-dev
++ '[' 'libleveldb-dev libsnappy-dev zlib1g-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: libleveldb-dev libsnappy-dev zlib1g-dev
++ sudo apt-get install -qq -y libleveldb-dev libsnappy-dev zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libsnappy1.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libsnappy1 (from .../libsnappy1_1.0.5-2_amd64.deb) ...
+Selecting previously unselected package libleveldb1:amd64.
+Unpacking libleveldb1:amd64 (from .../libleveldb1_0+20120530.gitdd0d562-1_amd64.deb) ...
+Selecting previously unselected package libleveldb-dev:amd64.
+Unpacking libleveldb-dev:amd64 (from .../libleveldb-dev_0+20120530.gitdd0d562-1_amd64.deb) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Selecting previously unselected package libsnappy-dev.
+Unpacking libsnappy-dev (from .../libsnappy-dev_1.0.5-2_amd64.deb) ...
+Setting up libsnappy1 (1.0.5-2) ...
+Setting up libleveldb1:amd64 (0+20120530.gitdd0d562-1) ...
+Setting up libleveldb-dev:amd64 (0+20120530.gitdd0d562-1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
+Setting up libsnappy-dev (1.0.5-2) ...
+++ opam install obigstore -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install obigstore
-CentOS 7 depexts:
 The following actions will be performed:
  - install   cryptokit.1.9                         [required by obigstore]
  - install   omake.0.9.8.6-0.rc1                   [required by obigstore]
  - install   ounit.2.0.0                           [required by leveldb]
  - install   extlib.1.6.1                          [required by extprot]
  - install   batteries.2.3.1                       [required by obigstore]
+ - install   base-no-ppx.base                      [required by lwt]
  - install   type_conv.111.13.00                   [required by sexplib]
- - install   lwt.2.4.5                             [required by obigstore]
  - install   conf-leveldb.1                        [required by leveldb]
- - install   sexplib.111.25.00                     [required by extprot]
+ - install   lwt.2.4.6                             [required by obigstore]
+ - install   sexplib.111.17.00                     [required by extprot]
  - install   leveldb.1.0.3                         [required by obigstore]
  - install   extprot.1.1.2                         [required by obigstore]
  - install   obigstore.0.9.1
-=== 12 to install ===
+=== 13 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
@@ -25,129 +50,16 @@ The following actions will be performed:
 [extlib.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
 [extprot.1.1.2] Downloading https://github.com/mfp/extprot/archive/v1.1.2.tar.gz
 [leveldb.1.0.3] Downloading https://github.com/mfp/ocaml-leveldb/archive/ocaml-leveldb-1.0.3.tar.gz
-[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
 [obigstore.0.9.1] Downloading https://github.com/mfp/obigstore/archive/obigstore-0.9.1.tar.gz
 [omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
-[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[sexplib.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/sexplib-111.17.00.tar.gz
 [type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-no-ppx.base.
 Building batteries.2.3.1:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   make all
   make install
-Installing batteries.2.3.1.
-Copying ~/.opam/repo/default/packages/conf-leveldb/conf-leveldb.1/files/test.cc to ~/.opam/4.01.0/build/conf-leveldb.1/
-Building conf-leveldb.1:
-  cc -c test.cc
-[ERROR] The compilation of conf-leveldb.1 failed.
-Removing conf-leveldb.1.
-  Nothing to do.
-Building cryptokit.1.9:
-  make
-  make install
-[ERROR] The compilation of cryptokit.1.9 failed.
-Removing cryptokit.1.9.
-  ocamlfind remove cryptokit
-Building extlib.1.6.1:
-  make minimal=1 build install
-Installing extlib.1.6.1.
-Building lwt.2.4.5:
-  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
-  make build
-  make install
-Installing lwt.2.4.5.
-Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
-Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/opam.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
-Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/omake.install to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
-Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/fam.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
-Applying opam.patch.
-Applying fam.patch.
-Applying readline.patch.
-Building omake.0.9.8.6-0.rc1:
-  make bootstrap PREFIX=/home/opam/.opam/4.01.0
-  make all PREFIX=/home/opam/.opam/4.01.0
-  make install PREFIX=/home/opam/.opam/4.01.0
-Installing omake.0.9.8.6-0.rc1.
-Building ounit.2.0.0:
-  make build
-  make install
-Installing ounit.2.0.0.
-Building type_conv.111.13.00:
-  make
-  make install
-Installing type_conv.111.13.00.
-Building sexplib.111.25.00:
-  ./configure --enable-syntax
-  make
-  make install
-Installing sexplib.111.25.00.
-Building extprot.1.1.2:
-  omake
-  omake install prefix=/home/opam/.opam/4.01.0
-Installing extprot.1.1.2.
-
-
-#=== ERROR while installing conf-leveldb.1 ====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              cc -c test.cc
-# path                 /home/opam/.opam/4.01.0/build/conf-leveldb.1
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/conf-leveldb.1/conf-leveldb-1449-d2d111.env
-# stdout-file          /home/opam/.opam/4.01.0/build/conf-leveldb.1/conf-leveldb-1449-d2d111.out
-# stderr-file          /home/opam/.opam/4.01.0/build/conf-leveldb.1/conf-leveldb-1449-d2d111.err
-### stderr ###
-# test.cc:1:24: fatal error: leveldb/db.h: No such file or directory
-#  #include <leveldb/db.h>
-#                         ^
-# compilation terminated.
-
-
-#=== ERROR while installing cryptokit.1.9 =====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              make
-# path                 /home/opam/.opam/4.01.0/build/cryptokit.1.9
-# compiler             4.01.0
-# exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/cryptokit.1.9/cryptokit-1458-a00279.env
-# stdout-file          /home/opam/.opam/4.01.0/build/cryptokit.1.9/cryptokit-1458-a00279.out
-# stderr-file          /home/opam/.opam/4.01.0/build/cryptokit.1.9/cryptokit-1458-a00279.err
-### stdout ###
-# ...[truncated]
-# mv stubs-misc.o src/stubs-misc.o
-# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-rng.c
-# mv stubs-rng.o src/stubs-rng.o
-# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
-# + ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
-# src/stubs-zlib.c:19:18: fatal error: zlib.h: No such file or directory
-#  #include <zlib.h>
-#                   ^
-# compilation terminated.
-# Command exited with code 2.
-### stderr ###
-# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' src/libcryptokit_stubs.a src/dllcryptokit_stubs.so src/cryptokit.cma src/cryptokit.cmxa src/cryptokit.a src/cryptokit.cmxs -tag debug -classic-display' terminated with error code 10")
-# make: *** [build] Error 1
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   lwt.2.4.5
- - install   sexplib.111.25.00
- - install   type_conv.111.13.00
- - install   extprot.1.1.2
- - install   batteries.2.3.1
- - install   extlib.1.6.1
- - install   ounit.2.0.0
- - install   omake.0.9.8.6-0.rc1
-The following failed
- - install   conf-leveldb.1
- - install   cryptokit.1.9
-Due to the errors, the following have been cancelled
- - install   leveldb.1.0.3
- - install   obigstore.0.9.1
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107145625.export"

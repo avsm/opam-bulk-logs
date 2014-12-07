@@ -52,3 +52,10 @@ Building oasis.0.4.5:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing oasis.0.4.5.
+Copying ~/.opam/repo/default/packages/oasis2opam/oasis2opam.0.5.0/files/oasis2opam.install to ~/.opam/4.01.0/build/oasis2opam.0.5.0/
+Building oasis2opam.0.5.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing oasis2opam.0.5.0.
