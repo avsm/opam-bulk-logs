@@ -19,3 +19,6 @@ The following actions will be performed:
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Installing base-bytes.legacy.
+Building uucp.0.9.0:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true

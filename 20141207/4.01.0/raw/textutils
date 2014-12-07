@@ -127,3 +127,4 @@ Installing core.111.28.01.
 Building textutils.111.28.00:
   make
   make install
+Installing textutils.111.28.00.
