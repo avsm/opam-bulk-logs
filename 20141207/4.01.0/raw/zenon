@@ -1,7 +1,12 @@
-++ opam install zenon -e centos,centos-7
+++ opam install zenon -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install zenon -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install zenon
 The following actions will be performed:
@@ -21,18 +26,3 @@ Building camlp5.6.12:
   ./configure --prefix /home/opam/.opam/4.01.0 -libdir /home/opam/.opam/4.01.0/lib -mandir /home/opam/.opam/4.01.0/man
   make world.opt
   make install
-Installing camlp5.6.12.
-Copying ~/.opam/repo/default/packages/coq/coq.8.4.5/files/coq.install to ~/.opam/4.01.0/build/coq.8.4.5/
-Building coq.8.4.5:
-  ./configure -configdir /home/opam/.opam/4.01.0/lib/coq/config -mandir /home/opam/.opam/4.01.0/man -docdir /home/opam/.opam/4.01.0/doc --prefix /home/opam/.opam/4.01.0 --usecamlp5 --camlp5dir /home/opam/.opam/4.01.0/lib/camlp5 --coqide no
-  make -j1 world
-  make -j1 states
-  make install
-Installing coq.8.4.5.
-Copying ~/.opam/repo/default/packages/zenon/zenon.0.7.1/files/zenon.install to ~/.opam/4.01.0/build/zenon.0.7.1/
-Building zenon.0.7.1:
-  mkdir -p /home/opam/.opam/4.01.0/lib/zenon/_
-  ./configure --prefix /home/opam/.opam/4.01.0 --tools_prefix /home/opam/.opam/4.01.0/lib/zenon/_
-  make
-  make install
-Installing zenon.0.7.1.

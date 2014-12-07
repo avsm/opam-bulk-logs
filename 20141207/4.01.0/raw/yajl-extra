@@ -59,3 +59,10 @@ Building batteries.2.3.1:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   make all
   make install
+Installing batteries.2.3.1.
+Building yajl.0.7.3:
+  make install
+Installing yajl.0.7.3.
+Building yajl-extra.0.7.3:
+  make install-extra
+Installing yajl-extra.0.7.3.
