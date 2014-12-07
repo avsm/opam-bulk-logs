@@ -5,10 +5,10 @@ Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install promela -e source,linux
 + srcext=
+Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install promela
-Ubuntu srcexts:
 The following actions will be performed:
  - install   ospec.0.3.2                           [required by promela]
  - install   promela.0.4.2
