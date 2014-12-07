@@ -1,0 +1,28 @@
+++ opam install bolt -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install bolt -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install bolt
+The following actions will be performed:
+ - install   bolt.1.4
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bolt.1.4] Downloading https://forge.ocamlcore.org/frs/download.php/1043/bolt-1.4.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/bolt/bolt.1.4/files/opam.patch to ~/.opam/4.02.1/build/bolt.1.4/
+Copying ~/.opam/repo/default/packages/bolt/bolt.1.4/files/opam.bolt.META.patch to ~/.opam/4.02.1/build/bolt.1.4/
+Applying opam.patch.
+Applying opam.bolt.META.patch.
+Building bolt.1.4:
+  ./configure -ocaml-prefix /home/opam/.opam/4.02.1 -ocamlfind /home/opam/.opam/4.02.1/bin/ocamlfind
+  make all
+  make install
+Installing bolt.1.4.
