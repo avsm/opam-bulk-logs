@@ -33,3 +33,11 @@ Building coq.8.4.5:
   make -j1 world
   make -j1 states
   make install
+Installing coq.8.4.5.
+Copying ~/.opam/repo/default/packages/zenon/zenon.0.7.1/files/zenon.install to ~/.opam/4.01.0/build/zenon.0.7.1/
+Building zenon.0.7.1:
+  mkdir -p /home/opam/.opam/4.01.0/lib/zenon/_
+  ./configure --prefix /home/opam/.opam/4.01.0 --tools_prefix /home/opam/.opam/4.01.0/lib/zenon/_
+  make
+  make install
+Installing zenon.0.7.1.
