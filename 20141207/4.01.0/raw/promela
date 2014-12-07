@@ -1,9 +1,14 @@
-++ opam install promela -e centos,centos-7
+++ opam install promela -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install promela -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install promela
+Debian srcexts:
 The following actions will be performed:
  - install   ospec.0.3.2                           [required by promela]
  - install   promela.0.4.2
