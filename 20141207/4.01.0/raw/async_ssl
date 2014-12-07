@@ -163,3 +163,16 @@ Installing async_kernel.111.28.00.
 Building async_unix.111.28.00:
   make
   make install
+Installing async_unix.111.28.00.
+Building async_extra.111.28.00:
+  make
+  make install
+Installing async_extra.111.28.00.
+Building async.111.25.00:
+  make
+  make install
+Installing async.111.25.00.
+Building async_ssl.111.21.00:
+  make
+  make install
+Installing async_ssl.111.21.00.
