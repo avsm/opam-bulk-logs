@@ -19,8 +19,8 @@ Unpacking time (1.7-24) ...
 Setting up time (1.7-24) ...
 ++ opam install bitstring -e source,linux
 + srcext=
-Ubuntu srcexts:
 + echo Ubuntu srcexts:
+Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install bitstring
 The following actions will be performed:
