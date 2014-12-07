@@ -9,3 +9,15 @@ Debian depexts:
 + '[' '' '!=' '' ']'
 + opam install format
 Debian srcexts:
+The following actions will be performed:
+ - install   format.0.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[format.0.1] Downloading https://forge.ocamlcore.org/frs/download.php/376/format-1.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building format.0.1:
+  make
+  make install
+Installing format.0.1.
