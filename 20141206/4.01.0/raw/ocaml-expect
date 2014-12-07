@@ -1,0 +1,14 @@
+++ opam install ocaml-expect -e ubuntu
+[ERROR] No package named ocaml-expect found.
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install ocaml-expect -e source,linux
+[ERROR] No package named ocaml-expect found.
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-expect
+Ubuntu srcexts:
+[ERROR] No package named ocaml-expect found.
