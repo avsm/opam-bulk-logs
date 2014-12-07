@@ -1,51 +1,62 @@
-++ opam install ivy -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
-+ '[' '' '!=' '' ']'
+++ opam install ivy -e debian
++ depext=libglib2.0-dev
+Debian depexts: libglib2.0-dev
++ echo Debian depexts: libglib2.0-dev
++ '[' libglib2.0-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libglib2.0-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libelf1.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libelf1 (from .../libelf1_0.152-1+wheezy1_amd64.deb) ...
+Selecting previously unselected package libglib2.0-bin.
+Unpacking libglib2.0-bin (from .../libglib2.0-bin_2.33.12+really2.32.4-5_amd64.deb) ...
+Selecting previously unselected package libpcrecpp0:amd64.
+Unpacking libpcrecpp0:amd64 (from .../libpcrecpp0_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package libpcre3-dev.
+Unpacking libpcre3-dev (from .../libpcre3-dev_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Selecting previously unselected package libglib2.0-dev.
+Unpacking libglib2.0-dev (from .../libglib2.0-dev_2.33.12+really2.32.4-5_amd64.deb) ...
+Processing triggers for libglib2.0-0:amd64 ...
+No schema files found: doing nothing.
+Setting up libelf1 (0.152-1+wheezy1) ...
+Setting up libglib2.0-bin (2.33.12+really2.32.4-5) ...
+Setting up libpcrecpp0:amd64 (1:8.30-5) ...
+Setting up libpcre3-dev (1:8.30-5) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
+Setting up libglib2.0-dev (2.33.12+really2.32.4-5) ...
+++ opam install ivy -e source,linux
++ srcext=https://gist.github.com/flixr/10003993/raw
++ echo Debian srcexts: https://gist.github.com/flixr/10003993/raw
++ '[' https://gist.github.com/flixr/10003993/raw '!=' '' ']'
+Debian srcexts: https://gist.github.com/flixr/10003993/raw
+++ mktemp
++ t=/tmp/tmp.wbbjzSOnx7
++ curl -sL https://gist.github.com/flixr/10003993/raw
++ bash -ex /tmp/tmp.wbbjzSOnx7
++ sudo apt-get install libpcre3-dev tcl-dev libglib2.0-dev libxt-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libglib2.0-dev is already the newest version.
+libpcre3-dev is already the newest version.
+libpcre3-dev set to manually installed.
+The following extra packages will be installed:
+  libice-dev libice6 libsm-dev libsm6 libxt6 tcl tcl8.5 tcl8.5-dev x11-common
+Suggested packages:
+  libice-doc libsm-doc libxt-doc tcl-doc tcl-tclreadline tcl8.5-doc
+The following NEW packages will be installed:
+  libice-dev libice6 libsm-dev libsm6 libxt-dev libxt6 tcl tcl-dev tcl8.5
+  tcl8.5-dev x11-common
+0 upgraded, 11 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3951 kB of archives.
+After this operation, 10.2 MB of additional disk space will be used.
+Do you want to continue [Y/n]? Abort.
 + opam install ivy
 The following actions will be performed:
  - install   ivy.1.2.2
 === 1 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[ivy.1.2.2] Downloading http://www.eei.cena.fr/products/ivy/download/packages/ivy-ocaml_1.2-2.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building ivy.1.2.2:
-  make
-  make install COMPAT_SYMLINK_CREATE=no
-[ERROR] The compilation of ivy.1.2.2 failed.
-Removing ivy.1.2.2.
-  ocamlfind remove ivy
-  ocamlfind remove glibivy
-
-#=== ERROR while installing ivy.1.2.2 =========================================#
-# opam-version         1.2.0
-# os                   linux
-# command              make
-# path                 /home/opam/.opam/4.01.0/build/ivy.1.2.2
-# compiler             4.01.0
-# exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/ivy.1.2.2/ivy-26-5f1023.env
-# stdout-file          /home/opam/.opam/4.01.0/build/ivy.1.2.2/ivy-26-5f1023.out
-# stderr-file          /home/opam/.opam/4.01.0/build/ivy.1.2.2/ivy-26-5f1023.err
-### stdout ###
-# ocamldep  *.mli *.ml > .depend
-# ocamlc  -c ivy.mli
-# ocamlc   -c ivy.ml
-# ocamlc  -c ivyLoop.mli
-# ocamlc   -c ivyLoop.ml
-# cc -Wall -c -fPIC -I /opt/local/include/  -I `ocamlc -where` `pkg-config --cflags glib-2.0` civy.c
-### stderr ###
-# Package glib-2.0 was not found in the pkg-config search path.
-# Perhaps you should add the directory containing `glib-2.0.pc'
-# to the PKG_CONFIG_PATH environment variable
-# No package 'glib-2.0' found
-# civy.c:5:21: fatal error: Ivy/ivy.h: No such file or directory
-#  #include <Ivy/ivy.h>
-#                      ^
-# compilation terminated.
-# make: *** [civy.o] Error 1
-
-
