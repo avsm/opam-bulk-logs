@@ -1,0 +1,29 @@
+++ opam install bin_prot -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install bin_prot -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install bin_prot
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   type_conv.111.13.00                   [required by bin_prot]
+ - install   bin_prot.111.03.00
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bin_prot.111.03.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.03.00/individual/bin_prot-111.03.00.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building bin_prot.111.03.00:
+  make
+  make install
+Installing bin_prot.111.03.00.
