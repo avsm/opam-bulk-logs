@@ -1,7 +1,12 @@
-++ opam install hex -e centos,centos-7
+++ opam install hex -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install hex -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install hex
 The following actions will be performed:

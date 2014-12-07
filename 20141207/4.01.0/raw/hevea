@@ -4,3 +4,21 @@
 Debian depexts:
 + '[' '' '!=' '' ']'
 ++ opam install hevea -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install hevea
+Debian srcexts:
+The following actions will be performed:
+ - install   hevea.2.01
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[hevea.2.01] Downloading http://hevea.inria.fr/old/hevea-2.01.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/hevea/hevea.2.01/files/hevea.install to ~/.opam/4.01.0/build/hevea.2.01/
+Building hevea.2.01:
+  make PREFIX=/home/opam/.opam/4.01.0
+  make install
+Installing hevea.2.01.
