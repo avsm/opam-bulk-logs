@@ -377,3 +377,11 @@ Building lablgtk.2.18.3:
   ./configure --prefix /home/opam/.opam/4.01.0 LABLGLDIR=/home/opam/.opam/4.01.0/lib/lablgl
   make world
   make install
+Installing lablgtk.2.18.3.
+Building xml-light.2.4:
+  make install_ocamlfind
+Installing xml-light.2.4.
+Building ocamleditor.1.13.2:
+  ocaml build.ml ocamleditor
+  ocaml tools/install.ml -prefix /home/opam/.opam/4.01.0
+Installing ocamleditor.1.13.2.

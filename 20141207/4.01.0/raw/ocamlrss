@@ -1,7 +1,12 @@
-++ opam install ocamlrss -e centos,centos-7
+++ opam install ocamlrss -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install ocamlrss -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ocamlrss
 The following actions will be performed:
@@ -24,12 +29,3 @@ Building ocamlnet.3.7.7:
   make all
   make opt
   make install
-Installing ocamlnet.3.7.7.
-Building xmlm.1.2.0:
-  ./pkg/pkg-git
-  ./pkg/build true
-Installing xmlm.1.2.0.
-Building ocamlrss.2.2.2:
-  make
-  make install
-Installing ocamlrss.2.2.2.
