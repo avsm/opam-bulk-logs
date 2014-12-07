@@ -368,3 +368,5 @@ The following actions will be performed:
 [lablgtk.2.18.3] Downloading https://forge.ocamlcore.org/frs/download.php/1479/lablgtk-2.18.3.tar.gz
 [ocamldiff.1.1] Downloading http://zoggy.github.com/ocamldiff/ocamldiff-1.1.tar.gz
 [odiff-gtk.1.0] Downloading http://zoggy.github.io/odiff-gtk/odiff-gtk-1.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
