@@ -1,8 +1,14 @@
-++ opam install camlp4 -e centos,centos-7
+++ opam install camlp4 -e debian
 [NOTE] Package camlp4 is already installed (current version is 4.01.0).
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install camlp4 -e source,linux
+[NOTE] Package camlp4 is already installed (current version is 4.01.0).
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install camlp4
-CentOS 7 depexts:
 [NOTE] Package camlp4 is already installed (current version is 4.01.0).
