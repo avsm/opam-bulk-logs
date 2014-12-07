@@ -15,3 +15,9 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [oclock.0.4.0] Downloading https://github.com/polazarus/oclock/archive/v0.4.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building oclock.0.4.0:
+  make all
+  make install
+Installing oclock.0.4.0.
