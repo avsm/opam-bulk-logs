@@ -1,0 +1,86 @@
+++ opam install stone -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install stone
+The following actions will be performed:
+ - install   config-file.1.2                       [required by stone]
+ - install   ounit.2.0.0                           [required by cow]
+ - install   re.1.2.2                              [required by cow]
+ - install   type_conv.111.13.00                   [required by cow]
+ - install   ulex.1.1                              [required by cow]
+ - install   omd.1.2.3                             [required by stone]
+ - install   sexplib.111.25.00                     [required by uri]
+ - install   dyntype.0.9.0                         [required by cow]
+ - install   uri.1.4.0                             [required by cow]
+ - install   cow.0.5.5                             [required by stone]
+ - install   stone.0.3.2
+=== 11 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[config-file.1.2] Downloading https://forge.ocamlcore.org/frs/download.php/1387/config-file-1.2.tar.gz
+[cow.0.5.5] Downloading https://github.com/mirage/ocaml-cow/archive/ocaml-cow-0.5.5.tar.gz
+[dyntype.0.9.0] Downloading https://github.com/mirage/dyntype/archive/dyntype-0.9.0.tar.gz
+[omd.1.2.3] Downloading http://pw374.github.io/distrib/omd/omd-1.2.3.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[stone.0.3.2] Downloading https://github.com/Armael/stone/archive/v0.3.2.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[ulex.1.1] Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+[uri.1.4.0] Downloading https://github.com/mirage/ocaml-uri/archive/v1.4.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building config-file.1.2:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make all
+  make install
+Installing config-file.1.2.
+Copying ~/.opam/repo/default/packages/omd/omd.1.2.3/files/omd.install to ~/.opam/4.01.0/build/omd.1.2.3/
+Building omd.1.2.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing omd.1.2.3.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+Installing ulex.1.1.
+Building dyntype.0.9.0:
+  make
+  make install
+Installing dyntype.0.9.0.
+Building sexplib.111.25.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.111.25.00.
+Building uri.1.4.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.4.0.
+Building cow.0.5.5:
+  make all
+  make install
+Installing cow.0.5.5.
+Building stone.0.3.2:
+  ./configure --bin-dir /home/opam/.opam/4.01.0/bin
+  make
+  make install
+Installing stone.0.3.2.
