@@ -1,7 +1,12 @@
-++ opam install mikmatch -e centos,centos-7
+++ opam install mikmatch -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install mikmatch -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install mikmatch
 The following actions will be performed:

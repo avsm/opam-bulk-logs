@@ -171,3 +171,8 @@ Building core.111.28.00:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing core.111.28.00.
+Building libsvm.0.9.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
