@@ -103,3 +103,8 @@ Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/core.install to 
 Building core.109.47.00:
   make
   make install
+Installing core.109.47.00.
+Building js-lz4.109.38.alpha1:
+  make
+  make install
+Installing js-lz4.109.38.alpha1.
