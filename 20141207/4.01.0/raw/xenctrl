@@ -1,38 +1,53 @@
-++ opam install xenctrl -e centos,centos-7
-+ depext=xen-devel
-+ echo CentOS 7 depexts: xen-devel
-CentOS 7 depexts: xen-devel
-+ '[' xen-devel '!=' '' ']'
-+ sudo yum install -y xen-devel
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * base: anorien.csc.warwick.ac.uk
- * extras: anorien.csc.warwick.ac.uk
- * updates: anorien.csc.warwick.ac.uk
-No package xen-devel available.
-Error: Nothing to do
+++ opam install xenctrl -e debian
++ depext='libxen-dev uuid-dev'
++ echo Debian depexts: libxen-dev uuid-dev
+Debian depexts: libxen-dev uuid-dev
++ '[' 'libxen-dev uuid-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libxen-dev uuid-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libxen-4.1.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libxen-4.1 (from .../libxen-4.1_4.1.4-3+deb7u3_amd64.deb) ...
+Selecting previously unselected package libxenstore3.0.
+Unpacking libxenstore3.0 (from .../libxenstore3.0_4.1.4-3+deb7u3_amd64.deb) ...
+Selecting previously unselected package libxen-dev.
+Unpacking libxen-dev (from .../libxen-dev_4.1.4-3+deb7u3_amd64.deb) ...
+Selecting previously unselected package uuid-dev.
+Unpacking uuid-dev (from .../uuid-dev_2.20.1-5.3_amd64.deb) ...
+Setting up libxen-4.1 (4.1.4-3+deb7u3) ...
+Setting up libxenstore3.0 (4.1.4-3+deb7u3) ...
+Setting up libxen-dev (4.1.4-3+deb7u3) ...
+Setting up uuid-dev (2.20.1-5.3) ...
+++ opam install xenctrl -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install xenctrl
 The following actions will be performed:
+ - install   base-no-ppx.base                      [required by lwt]
  - install   cmdliner.0.9.6                        [required by xenctrl]
- - install   lwt.2.4.5                             [required by xenctrl]
+ - install   lwt.2.4.6                             [required by xenctrl]
  - install   xenctrl.0.9.26
-=== 3 to install ===
+=== 4 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
-[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
 [xenctrl.0.9.26] Downloading https://github.com/xapi-project/ocaml-xen-lowlevel-libs/archive/0.9.26.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-no-ppx.base.
 Building cmdliner.0.9.6:
   ocaml pkg/git.ml
   ocaml pkg/build.ml native=false native-dynlink=false
 Installing cmdliner.0.9.6.
-Building lwt.2.4.5:
-  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.01.0 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-ppx
   make build
   make install
-Installing lwt.2.4.5.
+Installing lwt.2.4.6.
 Building xenctrl.0.9.26:
   ./configure
   make
@@ -44,8 +59,9 @@ Removing xenctrl.0.9.26.
 
 =-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 These actions have been completed successfully
- - install   lwt.2.4.5
  - install   cmdliner.0.9.6
+ - install   base-no-ppx.base
+ - install   lwt.2.4.6
 The following failed
  - install   xenctrl.0.9.26
 
@@ -56,13 +72,13 @@ The following failed
 # path                 /home/opam/.opam/4.01.0/build/xenctrl.0.9.26
 # compiler             4.01.0
 # exit-code            127
-# env-file             /home/opam/.opam/4.01.0/build/xenctrl.0.9.26/xenctrl-1391-1872ec.env
-# stdout-file          /home/opam/.opam/4.01.0/build/xenctrl.0.9.26/xenctrl-1391-1872ec.out
-# stderr-file          /home/opam/.opam/4.01.0/build/xenctrl.0.9.26/xenctrl-1391-1872ec.err
+# env-file             /home/opam/.opam/4.01.0/build/xenctrl.0.9.26/xenctrl-1924-a71bb4.env
+# stdout-file          /home/opam/.opam/4.01.0/build/xenctrl.0.9.26/xenctrl-1924-a71bb4.out
+# stderr-file          /home/opam/.opam/4.01.0/build/xenctrl.0.9.26/xenctrl-1924-a71bb4.err
 ### stderr ###
 # File "configure.ml", line 1:
 # Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
-# ./configure: line 12: /tmp/tmp.xbEupt7Gru/configure: No such file or directory
+# ./configure: line 12: /tmp/tmp.mbY8CjZXVf/configure: No such file or directory
 
 
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107165214.export"
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107224747.export"
