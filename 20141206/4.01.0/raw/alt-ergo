@@ -38,9 +38,9 @@ Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
 ++ opam install alt-ergo -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
+Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install alt-ergo
-Ubuntu srcexts:
 The following actions will be performed:
  - install   conf-gmp.1                            [required by zarith]
  - install   ocamlgraph.1.8.5                      [required by alt-ergo]
