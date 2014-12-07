@@ -1,0 +1,24 @@
+++ opam install msgpack -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
+CentOS 7 depexts:
++ opam install msgpack
+The following actions will be performed:
+ - install   extlib.1.6.1                          [required by msgpack]
+ - install   msgpack.1.0.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[extlib.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+[msgpack.1.0.0] Downloading https://github.com/msgpack/msgpack-ocaml/archive/1.0.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building extlib.1.6.1:
+  make minimal=1 build install
+Installing extlib.1.6.1.
+Building msgpack.1.0.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0 --enable-core --disable-conv
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing msgpack.1.0.0.
