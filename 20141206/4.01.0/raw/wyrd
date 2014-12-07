@@ -22,3 +22,4 @@ Building wyrd.1.4.6:
   ./configure --prefix /home/opam/.opam/4.01.0 --sbindir=/home/opam/.opam/4.01.0/lib/wyrd/sbin --libexecdir=/home/opam/.opam/4.01.0/lib/wyrd/libexec --sysconfdir=/home/opam/.opam/4.01.0/lib/wyrd/etc --sharedstatedir=/home/opam/.opam/4.01.0/lib/wyrd/com --localstatedir=/home/opam/.opam/4.01.0/lib/wyrd/var --libdir=/home/opam/.opam/4.01.0/lib/wyrd/lib --includedir=/home/opam/.opam/4.01.0/lib/wyrd/include --datarootdir=/home/opam/.opam/4.01.0/lib/wyrd/share --enable-utf8
   make
   make install
+Installing wyrd.1.4.6.
