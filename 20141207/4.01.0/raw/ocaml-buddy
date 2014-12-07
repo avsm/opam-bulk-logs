@@ -31,3 +31,4 @@ Building ocaml-buddy.0.6.1:
   make all
   make opt
   make install
+Installing ocaml-buddy.0.6.1.

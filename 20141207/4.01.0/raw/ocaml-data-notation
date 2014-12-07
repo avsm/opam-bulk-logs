@@ -1,24 +1,11 @@
-++ opam install ocaml-data-notation -e centos,centos-7
+++ opam install ocaml-data-notation -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install ocaml-data-notation -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ocaml-data-notation
-CentOS 7 depexts:
-The following actions will be performed:
- - install   type_conv.111.13.00                   [required by ocaml-data-notation]
- - install   ocaml-data-notation.0.0.11
-=== 2 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[ocaml-data-notation.0.0.11] Downloading https://forge.ocamlcore.org/frs/download.php/1310/ocaml-data-notation-0.0.11.tar.gz
-[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building type_conv.111.13.00:
-  make
-  make install
-Installing type_conv.111.13.00.
-Building ocaml-data-notation.0.0.11:
-  make
-  make install
-Installing ocaml-data-notation.0.0.11.
+Debian srcexts:
