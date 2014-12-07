@@ -1,7 +1,22 @@
-++ opam install mad -e centos,centos-7
-+ depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+++ opam install mad -e debian
++ depext=libmad0-dev
+Debian depexts: libmad0-dev
++ echo Debian depexts: libmad0-dev
++ '[' libmad0-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libmad0-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libmad0.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libmad0 (from .../libmad0_0.15.1b-7_amd64.deb) ...
+Selecting previously unselected package libmad0-dev.
+Unpacking libmad0-dev (from .../libmad0-dev_0.15.1b-7_amd64.deb) ...
+Setting up libmad0 (0.15.1b-7) ...
+Setting up libmad0-dev (0.15.1b-7) ...
+++ opam install mad -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install mad
 The following actions will be performed:
@@ -10,39 +25,12 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [mad.0.4.4] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-mad/0.4.4/ocaml-mad-0.4.4.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building mad.0.4.4:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-[ERROR] The compilation of mad.0.4.4 failed.
-Removing mad.0.4.4.
-  ocamlfind remove mad
-
-
-#=== ERROR while installing mad.0.4.4 =========================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --prefix /home/opam/.opam/4.01.0
-# path                 /home/opam/.opam/4.01.0/build/mad.0.4.4
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/mad.0.4.4/mad-33-5f1023.env
-# stdout-file          /home/opam/.opam/4.01.0/build/mad.0.4.4/mad-33-5f1023.out
-# stderr-file          /home/opam/.opam/4.01.0/build/mad.0.4.4/mad-33-5f1023.err
-### stdout ###
-# ...[truncated]
-# checking for stdlib.h... yes
-# checking for string.h... yes
-# checking for memory.h... yes
-# checking for strings.h... yes
-# checking for inttypes.h... yes
-# checking for stdint.h... yes
-# checking for unistd.h... yes
-# checking mad.h usability... no
-# checking mad.h presence... no
-# checking for mad.h... no
-### stderr ###
-# configure: error: libmad not found
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/mad.0.4.4/ocaml-mad-0.4.4.tar.gz:
+  - e45b8c48e1fe6cbec0d4299fa80a66bd [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
+[ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-mad/0.4.4/ocaml-mad-0.4.4.tar.gz is not available
+[ERROR] Could not download archives of mad.0.4.4
 
