@@ -1,13 +1,13 @@
 ++ opam install oqamldebug -e ubuntu
 + depext=
 + echo Ubuntu depexts:
-+ '[' '' '!=' '' ']'
 Ubuntu depexts:
++ '[' '' '!=' '' ']'
 ++ opam install oqamldebug -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
-+ '[' '' '!=' '' ']'
 Ubuntu srcexts:
++ '[' '' '!=' '' ']'
 + opam install oqamldebug
 The following actions will be performed:
  - install   oqamldebug.0.9.4
