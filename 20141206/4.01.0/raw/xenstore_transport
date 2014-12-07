@@ -63,3 +63,5 @@ Installing xenstore.1.2.5.
 Building xenstore_transport.0.9.4:
   make all
   make install
+Installing xenstore_transport.0.9.4.
+2014/12/07 11:18:02 Error: Cannot destroy container 6c75e6cfb27b8ed235c3056649d571cf4ca1960b047f369c50466ff1f8eda0dc: Driver aufs failed to remove root filesystem 6c75e6cfb27b8ed235c3056649d571cf4ca1960b047f369c50466ff1f8eda0dc: rename /var/lib/docker/aufs/diff/6c75e6cfb27b8ed235c3056649d571cf4ca1960b047f369c50466ff1f8eda0dc /var/lib/docker/aufs/diff/6c75e6cfb27b8ed235c3056649d571cf4ca1960b047f369c50466ff1f8eda0dc-removing: device or resource busy
