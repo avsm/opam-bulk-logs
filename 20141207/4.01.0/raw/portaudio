@@ -1,9 +1,39 @@
-++ opam install portaudio -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install portaudio -e debian
++ depext='pkg-config portaudio19-dev'
++ echo Debian depexts: pkg-config portaudio19-dev
++ '[' 'pkg-config portaudio19-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: pkg-config portaudio19-dev
++ sudo apt-get install -qq -y pkg-config portaudio19-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libasound2:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libasound2:amd64 (from .../libasound2_1.0.25-4_amd64.deb) ...
+Selecting previously unselected package libjack0:amd64.
+Unpacking libjack0:amd64 (from .../libjack0_1%3a0.121.3+20120418git75e3e20b-2.1_amd64.deb) ...
+Selecting previously unselected package libportaudio2:amd64.
+Unpacking libportaudio2:amd64 (from .../libportaudio2_19+svn20111121-1_amd64.deb) ...
+Selecting previously unselected package libportaudiocpp0:amd64.
+Unpacking libportaudiocpp0:amd64 (from .../libportaudiocpp0_19+svn20111121-1_amd64.deb) ...
+Selecting previously unselected package libasound2-dev:amd64.
+Unpacking libasound2-dev:amd64 (from .../libasound2-dev_1.0.25-4_amd64.deb) ...
+Selecting previously unselected package libjack-dev.
+Unpacking libjack-dev (from .../libjack-dev_1%3a0.121.3+20120418git75e3e20b-2.1_amd64.deb) ...
+Selecting previously unselected package portaudio19-dev.
+Unpacking portaudio19-dev (from .../portaudio19-dev_19+svn20111121-1_amd64.deb) ...
+Setting up libasound2:amd64 (1.0.25-4) ...
+Setting up libjack0:amd64 (1:0.121.3+20120418git75e3e20b-2.1) ...
+Setting up libportaudio2:amd64 (19+svn20111121-1) ...
+Setting up libportaudiocpp0:amd64 (19+svn20111121-1) ...
+Setting up libasound2-dev:amd64 (1.0.25-4) ...
+Setting up libjack-dev (1:0.121.3+20120418git75e3e20b-2.1) ...
+Setting up portaudio19-dev (19+svn20111121-1) ...
+++ opam install portaudio -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
 + opam install portaudio
+Debian srcexts:
 The following actions will be performed:
  - install   portaudio.0.2.0
 === 1 to install ===
@@ -16,33 +46,4 @@ Building portaudio.0.2.0:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
-[ERROR] The compilation of portaudio.0.2.0 failed.
-Removing portaudio.0.2.0.
-  ocamlfind remove portaudio
-
-
-#=== ERROR while installing portaudio.0.2.0 ===================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --prefix /home/opam/.opam/4.01.0
-# path                 /home/opam/.opam/4.01.0/build/portaudio.0.2.0
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/portaudio.0.2.0/portaudio-28-5f1023.env
-# stdout-file          /home/opam/.opam/4.01.0/build/portaudio.0.2.0/portaudio-28-5f1023.out
-# stderr-file          /home/opam/.opam/4.01.0/build/portaudio.0.2.0/portaudio-28-5f1023.err
-### stdout ###
-# ...[truncated]
-# checking for camlp4rf... camlp4rf
-# checking for ocamlfind... ocamlfind
-# checking for caml/threads.h... no
-# checking for gcc... (cached) gcc
-# checking whether we are using the GNU C compiler... (cached) yes
-# checking whether gcc accepts -g... (cached) yes
-# checking for gcc option to accept ISO C89... (cached) none needed
-# checking for ar... ar
-# checking for pkg-config... /usr/bin/pkg-config
-# checking pkg-config is at least version 0.9.0... yes
-### stderr ###
-# configure: error: libportaudio not found
-
+Installing portaudio.0.2.0.
