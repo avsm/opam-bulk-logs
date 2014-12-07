@@ -1,0 +1,19 @@
+++ opam install sedlex -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install sedlex
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   sedlex.1.99
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sedlex.1.99] Downloading http://www.lexifi.com/sedlex/sedlex-1.99.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building sedlex.1.99:
+  make all
+  make opt
+  make install
+Installing sedlex.1.99.
