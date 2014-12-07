@@ -1,0 +1,23 @@
+++ opam install cstruct -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install cstruct -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install cstruct
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   cstruct.0.5.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cstruct.0.5.0] Downloading https://github.com/mirage/ocaml-cstruct/tarball/ocaml-cstruct-0.5.0
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cstruct.0.5.0:
+  make
+  make install
+Installing cstruct.0.5.0.
