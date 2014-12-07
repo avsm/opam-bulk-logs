@@ -1,0 +1,248 @@
+++ opam install mirage-http-unix -e centos,centos-7
++ depext=openssl-devel
+CentOS 7 depexts: openssl-devel
++ echo CentOS 7 depexts: openssl-devel
++ '[' openssl-devel '!=' '' ']'
++ sudo yum install -y openssl-devel
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.econdc.com
+ * extras: mirror.sov.uk.goscomb.net
+ * updates: mirror.sov.uk.goscomb.net
+Resolving Dependencies
+--> Running transaction check
+---> Package openssl-devel.x86_64 1:1.0.1e-34.el7_0.6 will be installed
+--> Processing Dependency: zlib-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Running transaction check
+---> Package krb5-devel.x86_64 0:1.11.3-49.el7 will be installed
+--> Processing Dependency: libverto-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libselinux-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libcom_err-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+---> Package zlib-devel.x86_64 0:1.2.7-13.el7 will be installed
+--> Running transaction check
+---> Package keyutils-libs-devel.x86_64 0:1.5.8-3.el7 will be installed
+---> Package libcom_err-devel.x86_64 0:1.42.9-4.el7 will be installed
+---> Package libselinux-devel.x86_64 0:2.2.2-6.el7 will be installed
+--> Processing Dependency: libsepol-devel >= 2.1.9-1 for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libpcre) for package: libselinux-devel-2.2.2-6.el7.x86_64
+---> Package libverto-devel.x86_64 0:0.2.5-4.el7 will be installed
+--> Running transaction check
+---> Package libsepol-devel.x86_64 0:2.1.9-3.el7 will be installed
+---> Package pcre-devel.x86_64 0:8.32-12.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                 Arch       Version                   Repository   Size
+================================================================================
+Installing:
+ openssl-devel           x86_64     1:1.0.1e-34.el7_0.6       updates     1.2 M
+Installing for dependencies:
+ keyutils-libs-devel     x86_64     1.5.8-3.el7               base         37 k
+ krb5-devel              x86_64     1.11.3-49.el7             base        611 k
+ libcom_err-devel        x86_64     1.42.9-4.el7              base         30 k
+ libselinux-devel        x86_64     2.2.2-6.el7               base        174 k
+ libsepol-devel          x86_64     2.1.9-3.el7               base         71 k
+ libverto-devel          x86_64     0.2.5-4.el7               base         12 k
+ pcre-devel              x86_64     8.32-12.el7               base        477 k
+ zlib-devel              x86_64     1.2.7-13.el7              base         49 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+8 Dependent packages)
+
+Total download size: 2.6 M
+Installed size: 5.7 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              3.6 MB/s | 2.6 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : keyutils-libs-devel-1.5.8-3.el7.x86_64                       1/9 
+  Installing : pcre-devel-8.32-12.el7.x86_64                                2/9 
+  Installing : zlib-devel-1.2.7-13.el7.x86_64                               3/9 
+  Installing : libsepol-devel-2.1.9-3.el7.x86_64                            4/9 
+  Installing : libselinux-devel-2.2.2-6.el7.x86_64                          5/9 
+  Installing : libverto-devel-0.2.5-4.el7.x86_64                            6/9 
+  Installing : libcom_err-devel-1.42.9-4.el7.x86_64                         7/9 
+  Installing : krb5-devel-1.11.3-49.el7.x86_64                              8/9 
+  Installing : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     9/9 
+  Verifying  : libcom_err-devel-1.42.9-4.el7.x86_64                         1/9 
+  Verifying  : libselinux-devel-2.2.2-6.el7.x86_64                          2/9 
+  Verifying  : libverto-devel-0.2.5-4.el7.x86_64                            3/9 
+  Verifying  : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     4/9 
+  Verifying  : libsepol-devel-2.1.9-3.el7.x86_64                            5/9 
+  Verifying  : krb5-devel-1.11.3-49.el7.x86_64                              6/9 
+  Verifying  : zlib-devel-1.2.7-13.el7.x86_64                               7/9 
+  Verifying  : pcre-devel-8.32-12.el7.x86_64                                8/9 
+  Verifying  : keyutils-libs-devel-1.5.8-3.el7.x86_64                       9/9 
+
+Installed:
+  openssl-devel.x86_64 1:1.0.1e-34.el7_0.6                                      
+
+Dependency Installed:
+  keyutils-libs-devel.x86_64 0:1.5.8-3.el7                                      
+  krb5-devel.x86_64 0:1.11.3-49.el7                                             
+  libcom_err-devel.x86_64 0:1.42.9-4.el7                                        
+  libselinux-devel.x86_64 0:2.2.2-6.el7                                         
+  libsepol-devel.x86_64 0:2.1.9-3.el7                                           
+  libverto-devel.x86_64 0:0.2.5-4.el7                                           
+  pcre-devel.x86_64 0:8.32-12.el7                                               
+  zlib-devel.x86_64 0:1.2.7-13.el7                                              
+
+Complete!
++ opam install mirage-http-unix
+The following actions will be performed:
+ - install   re.1.2.2                              [required by cohttp]
+ - install   type_conv.111.13.00                   [required by uri, fieldslib, sexplib]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   ipaddr.1.0.0                          [required by mirage-tcpip-unix]
+ - install   ounit.2.0.0                           [required by cohttp]
+ - install   ssl.0.4.7                             [required by mirage-http-unix]
+ - install   mirage-types.1.0.0                    [required by mirage-http-unix]
+ - install   sexplib.111.25.00                     [required by cohttp]
+ - install   fieldslib.109.20.03                   [required by cohttp]
+ - install   ocplib-endian.0.4                     [required by cstruct]
+ - install   tuntap.0.7.0                          [required by mirage-net-unix]
+ - install   lwt.2.4.5                             [required by mirage-http-unix]
+ - install   mirage-clock-unix.1.0.0               [required by mirage-tcpip-unix]
+ - install   uri.1.4.0                             [required by cohttp]
+ - install   cstruct.1.5.0                         [required by mirage-tcpip-unix]
+ - install   cohttp.0.10.0                         [required by mirage-http-unix]
+ - install   shared-memory-ring.1.1.0              [required by mirage-unix]
+ - install   io-page-unix.0.9.9                    [required by mirage-unix, mirage-net-unix]
+ - install   mirage-unix.1.0.0                     [required by mirage-http-unix]
+ - install   mirage-net-unix.1.0.0                 [required by mirage-tcpip-unix]
+ - install   mirage-tcpip-unix.0.9.5               [required by mirage-http-unix]
+ - install   mirage-http-unix.1.0.0
+=== 22 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cohttp.0.10.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.10.0.tar.gz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[io-page-unix.0.9.9] Downloading https://github.com/mirage/io-page/archive/v0.9.9.tar.gz
+[ipaddr.1.0.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/1.0.0.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[mirage-clock-unix.1.0.0] Downloading https://github.com/mirage/mirage-clock/archive/v1.0.0.tar.gz
+[mirage-http-unix.1.0.0] Downloading https://github.com/mirage/mirage-http-unix/archive/v1.0.0.tar.gz
+[mirage-net-unix.1.0.0] Downloading https://github.com/mirage/mirage-net-unix/archive/v1.0.0.tar.gz
+[mirage-tcpip-unix.0.9.5] Downloading https://github.com/mirage/mirage-tcpip/archive/v0.9.5.tar.gz
+[mirage-types.1.0.0] Downloading https://github.com/mirage/mirage-types/archive/v1.0.0.tar.gz
+[mirage-unix.1.0.0] Downloading https://github.com/mirage/mirage-platform/archive/v1.0.0.tar.gz
+[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[shared-memory-ring.1.1.0] Downloading https://github.com/mirage/shared-memory-ring/archive/1.1.0.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[tuntap.0.7.0] Downloading https://github.com/mirage/ocaml-tuntap/archive/v0.7.0.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[uri.1.4.0] Downloading https://github.com/mirage/ocaml-uri/archive/v1.4.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ipaddr.1.0.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make build
+  make install
+Installing ipaddr.1.0.0.
+Building mirage-types.1.0.0:
+  make all
+  make install
+Installing mirage-types.1.0.0.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.01.0/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing ssl.0.4.7.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+Installing lwt.2.4.5.
+Building mirage-clock-unix.1.0.0:
+  make unix-build
+  make unix-install
+Installing mirage-clock-unix.1.0.0.
+Building ocplib-endian.0.4:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.4.
+Building sexplib.111.25.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.111.25.00.
+Building tuntap.0.7.0:
+  make PREFIX=/home/opam/.opam/4.01.0
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing tuntap.0.7.0.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.01.0 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Building uri.1.4.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.4.0.
+Building cohttp.0.10.0:
+  make PREFIX=/home/opam/.opam/4.01.0
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing cohttp.0.10.0.
+Building io-page-unix.0.9.9:
+  make unix-build
+  make unix-install
+Installing io-page-unix.0.9.9.
+Building shared-memory-ring.1.1.0:
+  make all
+  make install
+Installing shared-memory-ring.1.1.0.
+Building mirage-net-unix.1.0.0:
+  make
+  make install
+Installing mirage-net-unix.1.0.0.
+Building mirage-unix.1.0.0:
+  make unix-build
+  make unix-install PREFIX=/home/opam/.opam/4.01.0
+Installing mirage-unix.1.0.0.
+Building mirage-tcpip-unix.0.9.5:
+  make OS=unix
+  make OS=unix install
+Installing mirage-tcpip-unix.0.9.5.
+Building mirage-http-unix.1.0.0:
+  make
+  make install
+Installing mirage-http-unix.1.0.0.
