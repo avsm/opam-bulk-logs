@@ -184,3 +184,10 @@ Installing core.111.28.01.
 Building re2.111.08.00:
   make
   make install
+Installing re2.111.08.00.
+Building sociaml-vcard.0.2.1:
+  oasis setup
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make build
+  make install
+Installing sociaml-vcard.0.2.1.
