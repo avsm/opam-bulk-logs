@@ -1,0 +1,302 @@
+++ opam install themoviedb -e centos,centos-7
++ depext=openssl-devel
++ echo CentOS 7 depexts: openssl-devel
+CentOS 7 depexts: openssl-devel
++ '[' openssl-devel '!=' '' ']'
++ sudo yum install -y openssl-devel
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: anorien.csc.warwick.ac.uk
+ * extras: anorien.csc.warwick.ac.uk
+ * updates: anorien.csc.warwick.ac.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package openssl-devel.x86_64 1:1.0.1e-34.el7_0.6 will be installed
+--> Processing Dependency: zlib-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Running transaction check
+---> Package krb5-devel.x86_64 0:1.11.3-49.el7 will be installed
+--> Processing Dependency: libverto-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libselinux-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libcom_err-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+---> Package zlib-devel.x86_64 0:1.2.7-13.el7 will be installed
+--> Running transaction check
+---> Package keyutils-libs-devel.x86_64 0:1.5.8-3.el7 will be installed
+---> Package libcom_err-devel.x86_64 0:1.42.9-4.el7 will be installed
+---> Package libselinux-devel.x86_64 0:2.2.2-6.el7 will be installed
+--> Processing Dependency: libsepol-devel >= 2.1.9-1 for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libpcre) for package: libselinux-devel-2.2.2-6.el7.x86_64
+---> Package libverto-devel.x86_64 0:0.2.5-4.el7 will be installed
+--> Running transaction check
+---> Package libsepol-devel.x86_64 0:2.1.9-3.el7 will be installed
+---> Package pcre-devel.x86_64 0:8.32-12.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                 Arch       Version                   Repository   Size
+================================================================================
+Installing:
+ openssl-devel           x86_64     1:1.0.1e-34.el7_0.6       updates     1.2 M
+Installing for dependencies:
+ keyutils-libs-devel     x86_64     1.5.8-3.el7               base         37 k
+ krb5-devel              x86_64     1.11.3-49.el7             base        611 k
+ libcom_err-devel        x86_64     1.42.9-4.el7              base         30 k
+ libselinux-devel        x86_64     2.2.2-6.el7               base        174 k
+ libsepol-devel          x86_64     2.1.9-3.el7               base         71 k
+ libverto-devel          x86_64     0.2.5-4.el7               base         12 k
+ pcre-devel              x86_64     8.32-12.el7               base        477 k
+ zlib-devel              x86_64     1.2.7-13.el7              base         49 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+8 Dependent packages)
+
+Total download size: 2.6 M
+Installed size: 5.7 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              1.9 MB/s | 2.6 MB  00:01     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : keyutils-libs-devel-1.5.8-3.el7.x86_64                       1/9 
+  Installing : pcre-devel-8.32-12.el7.x86_64                                2/9 
+  Installing : zlib-devel-1.2.7-13.el7.x86_64                               3/9 
+  Installing : libsepol-devel-2.1.9-3.el7.x86_64                            4/9 
+  Installing : libselinux-devel-2.2.2-6.el7.x86_64                          5/9 
+  Installing : libverto-devel-0.2.5-4.el7.x86_64                            6/9 
+  Installing : libcom_err-devel-1.42.9-4.el7.x86_64                         7/9 
+  Installing : krb5-devel-1.11.3-49.el7.x86_64                              8/9 
+  Installing : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     9/9 
+  Verifying  : libcom_err-devel-1.42.9-4.el7.x86_64                         1/9 
+  Verifying  : libselinux-devel-2.2.2-6.el7.x86_64                          2/9 
+  Verifying  : libverto-devel-0.2.5-4.el7.x86_64                            3/9 
+  Verifying  : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     4/9 
+  Verifying  : libsepol-devel-2.1.9-3.el7.x86_64                            5/9 
+  Verifying  : krb5-devel-1.11.3-49.el7.x86_64                              6/9 
+  Verifying  : zlib-devel-1.2.7-13.el7.x86_64                               7/9 
+  Verifying  : pcre-devel-8.32-12.el7.x86_64                                8/9 
+  Verifying  : keyutils-libs-devel-1.5.8-3.el7.x86_64                       9/9 
+
+Installed:
+  openssl-devel.x86_64 1:1.0.1e-34.el7_0.6                                      
+
+Dependency Installed:
+  keyutils-libs-devel.x86_64 0:1.5.8-3.el7                                      
+  krb5-devel.x86_64 0:1.11.3-49.el7                                             
+  libcom_err-devel.x86_64 0:1.42.9-4.el7                                        
+  libselinux-devel.x86_64 0:2.2.2-6.el7                                         
+  libsepol-devel.x86_64 0:2.1.9-3.el7                                           
+  libverto-devel.x86_64 0:0.2.5-4.el7                                           
+  pcre-devel.x86_64 0:8.32-12.el7                                               
+  zlib-devel.x86_64 0:1.2.7-13.el7                                              
+
+Complete!
++ opam install themoviedb
+The following actions will be performed:
+ - install   type_conv.111.13.00                   [required by deriving]
+ - install   optcomp.1.6                           [required by deriving]
+ - install   conf-libpcre.1                        [required by pcre]
+ - install   cryptokit.1.9                         [required by ocsigenserver]
+ - install   tyxml.3.1.1                           [required by ocsigenserver]
+ - install   ssl.0.4.7                             [required by ocsigenserver, lwt]
+ - install   easy-format.1.0.2                     [required by yojson]
+ - install   sqlite3.2.0.7                         [required by ocsigenserver]
+ - install   react.1.2.0                           [required by ocsigenserver, lwt]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   sexplib.111.25.00                     [required by ipaddr]
+ - install   deriving.0.6.2                        [required by deriving-yojson]
+ - install   pcre.7.1.3                            [required by ocsigenserver]
+ - install   biniou.1.0.9                          [required by yojson]
+ - install   lwt.2.4.5                             [required by themoviedb]
+ - install   ipaddr.2.5.0                          [required by ocsigenserver]
+ - install   ocamlnet.3.7.7                        [required by ocsigenserver]
+ - install   yojson.1.1.8                          [required by themoviedb]
+ - install   ocsigenserver.2.4.0                   [required by themoviedb]
+ - install   deriving-yojson.0.4                   [required by themoviedb]
+ - install   themoviedb.0.8.1
+=== 21 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[deriving.0.6.2] Downloading http://ocsigen.org/download/deriving-0.6.2.tar.gz
+[deriving-yojson.0.4] Downloading https://github.com/hhugo/deriving-yojson/archive/0.4.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
+[ocsigenserver.2.4.0] Downloading https://github.com/ocsigen/ocsigenserver/archive/2.4.0.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[pcre.7.1.3] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.3/pcre-ocaml-7.1.3.tar.gz
+[react.1.2.0] Downloading http://erratique.ch/software/react/releases/react-1.2.0.tbz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[sqlite3.2.0.7] Downloading https://github.com/mmottl/sqlite3-ocaml/releases/download/v2.0.7/sqlite3-ocaml-2.0.7.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[themoviedb.0.8.1] Downloading https://github.com/msimon/the_movie_db/archive/v0.8.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[tyxml.3.1.1] Downloading https://github.com/ocsigen/tyxml/archive/3.1.1.tar.gz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building conf-libpcre.1:
+  pkg-config libpcre
+Installing conf-libpcre.1.
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.01.0/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building cryptokit.1.9:
+  make
+  make install
+Installing cryptokit.1.9.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing optcomp.1.6.
+Building react.1.2.0:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing react.1.2.0.
+Building sqlite3.2.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+[ERROR] The compilation of sqlite3.2.0.7 failed.
+Removing sqlite3.2.0.7.
+  ocamlfind remove sqlite3
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.01.0/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing ssl.0.4.7.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building tyxml.3.1.1:
+  ./configure --enable-syntax --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing tyxml.3.1.1.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.01.0/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Building deriving.0.6.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0 --enable-tc
+  make
+  make install
+Installing deriving.0.6.2.
+Building lwt.2.4.5:
+  ./configure --disable-libev --enable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-text
+  make build
+  make install
+Installing lwt.2.4.5.
+Building pcre.7.1.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing pcre.7.1.3.
+Building sexplib.111.25.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.111.25.00.
+Building ipaddr.2.5.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make build
+  make install
+Installing ipaddr.2.5.0.
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/ocamlnet.install to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
+Applying robust-host.patch.
+Building ocamlnet.3.7.7:
+  ./configure -bindir /home/opam/.opam/4.01.0/bin -enable-pcre -disable-gtk2 -enable-ssl -disable-zip -enable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Installing ocamlnet.3.7.7.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.01.0/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Building deriving-yojson.0.4:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing deriving-yojson.0.4.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   deriving.0.6.2
+ - install   sexplib.111.25.00
+ - install   cppo.1.1.2
+ - install   react.1.2.0
+ - install   ipaddr.2.5.0
+ - install   easy-format.1.0.2
+ - install   ssl.0.4.7
+ - install   tyxml.3.1.1
+ - install   cryptokit.1.9
+ - install   ocamlnet.3.7.7
+ - install   lwt.2.4.5
+ - install   conf-libpcre.1
+ - install   yojson.1.1.8
+ - install   optcomp.1.6
+ - install   type_conv.111.13.00
+ - install   pcre.7.1.3
+ - install   biniou.1.0.9
+ - install   deriving-yojson.0.4
+The following failed
+ - install   sqlite3.2.0.7
+Due to the errors, the following have been cancelled
+ - install   themoviedb.0.8.1
+ - install   ocsigenserver.2.4.0
+
+#=== ERROR while installing sqlite3.2.0.7 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/opam/.opam/4.01.0/build/sqlite3.2.0.7
+# compiler             4.01.0
+# exit-code            1
+# env-file             /home/opam/.opam/4.01.0/build/sqlite3.2.0.7/sqlite3-852-d474c2.env
+# stdout-file          /home/opam/.opam/4.01.0/build/sqlite3.2.0.7/sqlite3-852-d474c2.out
+# stderr-file          /home/opam/.opam/4.01.0/build/sqlite3.2.0.7/sqlite3-852-d474c2.err
+### stdout ###
+# ...[truncated]
+# Turn ocaml profile flag on: .......................... false
+# Compiler support generation of .cmxs.: ............... true
+# OCamlbuild additional flags: ......................... 
+# Strict compile-time checks: .......................... true
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... false
+# ocamldoc: ............................................ /home/opam/.opam/4.01.0/bin/ocamldoc
+# 
+# /home/opam/.opam/4.01.0/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# Failure: pkg-config failed for cflags.
+### stderr ###
+# Package sqlite3 was not found in the pkg-config search path.
+# Perhaps you should add the directory containing `sqlite3.pc'
+# to the PKG_CONFIG_PATH environment variable
+# No package 'sqlite3' found
+# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' lib/libsqlite3_stubs.a lib/dllsqlite3_stubs.so lib/sqlite3.cma lib/sqlite3.cmxa lib/sqlite3.a lib/sqlite3.cmxs -tag debug' terminated with error code 2")
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107161922.export"
