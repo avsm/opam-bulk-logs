@@ -30,3 +30,7 @@ Building containers.0.6:
   ./configure --prefix /home/opam/.opam/4.01.0 --disable-thread --disable-bench --disable-tests --disable-cgi --disable-lwt --enable-docs --enable-misc
   make build
   make install
+Installing containers.0.6.
+
+=-=- containers.0.6 installed successfully =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> in containers, modules start with 'CC' (stands for 'core containers')
