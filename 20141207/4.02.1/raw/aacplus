@@ -1,0 +1,67 @@
+++ opam install aacplus -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install aacplus -e source,linux
++ srcext=https://gist.githubusercontent.com/avsm/11409198/raw
++ echo Ubuntu srcexts: https://gist.githubusercontent.com/avsm/11409198/raw
+Ubuntu srcexts: https://gist.githubusercontent.com/avsm/11409198/raw
++ '[' https://gist.githubusercontent.com/avsm/11409198/raw '!=' '' ']'
+++ mktemp
++ t=/tmp/tmp.CEgbqr2k76
++ curl -sL https://gist.githubusercontent.com/avsm/11409198/raw
++ bash -ex /tmp/tmp.CEgbqr2k76
++ V=2.0.2
++ curl -OL http://217.20.164.161/~tipok/aacplus/libaacplus-2.0.2.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   316  100   316    0     0   3125      0 --:--:-- --:--:-- --:--:--  3160
++ tar -zxvf libaacplus-2.0.2.tar.gz
+
+gzip: stdin: not in gzip format
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
++ opam install aacplus
+The following actions will be performed:
+ - install   aacplus.0.2.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[aacplus.0.2.1] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building aacplus.0.2.1:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+[ERROR] The compilation of aacplus.0.2.1 failed.
+Removing aacplus.0.2.1.
+  ocamlfind remove aacplus
+
+
+#=== ERROR while installing aacplus.0.2.1 =====================================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              ./configure --prefix /home/opam/.opam/4.02.1
+# path                 /home/opam/.opam/4.02.1/build/aacplus.0.2.1
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/aacplus.0.2.1/aacplus-132-6d07ae.env
+# stdout-file          /home/opam/.opam/4.02.1/build/aacplus.0.2.1/aacplus-132-6d07ae.out
+# stderr-file          /home/opam/.opam/4.02.1/build/aacplus.0.2.1/aacplus-132-6d07ae.err
+### stdout ###
+# ...[truncated]
+# checking for camlp4prof... camlp4prof
+# checking for camlp4r... camlp4r
+# checking for camlp4rf... camlp4rf
+# checking for ocamlfind... ocamlfind
+# checking for caml/threads.h... yes
+# checking for gcc option to produce PIC... -fPIC
+# checking whether to build shared modules... yes
+# checking for pkg-config... /usr/bin/pkg-config
+# checking pkg-config is at least version 0.9.0... yes
+# checking whether pkg-config knows about aacplus >= 2.0.1... 
+### stderr ###
+# configure: error: aacplus.pc not found.. Do you need to set PKG_CONFIG_PATH?
+
