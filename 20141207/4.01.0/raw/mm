@@ -1,48 +1,26 @@
-++ opam install mm -e centos,centos-7
+++ opam install mm -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install mm -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install mm
+Debian srcexts:
 The following actions will be performed:
  - install   mm.0.2.1
 === 1 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [mm.0.2.1] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-mm/0.2.1/ocaml-mm-0.2.1.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building mm.0.2.1:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-[ERROR] The compilation of mm.0.2.1 failed.
-Removing mm.0.2.1.
-  ocamlfind remove mm
-
-
-#=== ERROR while installing mm.0.2.1 ==========================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --prefix /home/opam/.opam/4.01.0
-# path                 /home/opam/.opam/4.01.0/build/mm.0.2.1
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/mm.0.2.1/mm-28-5f1023.env
-# stdout-file          /home/opam/.opam/4.01.0/build/mm.0.2.1/mm-28-5f1023.out
-# stderr-file          /home/opam/.opam/4.01.0/build/mm.0.2.1/mm-28-5f1023.err
-### stdout ###
-# ...[truncated]
-# checking for suffix of executables... 
-# checking whether we are cross compiling... no
-# checking for suffix of object files... o
-# checking whether we are using the GNU C compiler... yes
-# checking whether gcc accepts -g... yes
-# checking for gcc option to accept ISO C89... none needed
-# checking build system type... x86_64-unknown-linux-gnu
-# checking host system type... x86_64-unknown-linux-gnu
-# checking for a BSD-compatible install... /usr/bin/install -c
-# checking that calling user is not root... 
-### stderr ###
-# configure: error: configure script must not be run with root user!
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/mm.0.2.1/ocaml-mm-0.2.1.tar.gz:
+  - bc0e63868eef60eb7a6ca61abb7a78d4 [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
+[ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-mm/0.2.1/ocaml-mm-0.2.1.tar.gz is not available
+[ERROR] Could not download archives of mm.0.2.1
 
