@@ -147,3 +147,6 @@ Installing async_extra.111.28.00.
 Building async.111.25.00:
   make
   make install
+Installing async.111.25.00.
+Building obeanstalk.0.1:
+  make opam-install
