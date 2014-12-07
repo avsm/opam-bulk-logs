@@ -12,3 +12,152 @@ debconf: unable to initialize frontend: Readline
 debconf: (This frontend requires a controlling tty.)
 debconf: falling back to frontend: Teletype
 dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../libssl-dev_1.0.1f-1ubuntu2.7_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.0.1f-1ubuntu2.7) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../libssl-doc_1.0.1f-1ubuntu2.7_all.deb ...
+Unpacking libssl-doc (1.0.1f-1ubuntu2.7) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up libssl-dev:amd64 (1.0.1f-1ubuntu2.7) ...
+Setting up libssl-doc (1.0.1f-1ubuntu2.7) ...
+++ opam install mirage-www -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install mirage-www
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   hex.0.1.0                             [required by ezjsonm]
+ - install   re.1.2.2                              [required by mirage, cow, cohttp, fat-filesystem]
+ - install   type_conv.111.13.00                   [required by cow]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   stringext.1.1.0                       [required by uri]
+ - install   base-bytes.legacy                     [required by ocplib-endian]
+ - install   ounit.2.0.0                           [required by cow, cohttp]
+ - install   ssl.0.4.7                             [required by mirage-www]
+ - install   cmdliner.0.9.6                        [required by mirage, crunch, fat-filesystem]
+ - install   ulex.1.1                              [required by cow]
+ - install   omd.0.9.3                             [required by cowabloga, cow]
+ - install   xmlm.1.2.0                            [required by cow]
+ - install   base-no-ppx.base                      [required by lwt]
+ - install   uutf.0.9.3                            [required by jsonm]
+ - install   sexplib.111.25.00                     [required by cohttp]
+ - install   fieldslib.109.20.03                   [required by cohttp]
+ - install   dyntype.0.9.0                         [required by cow]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   crunch.1.3.0                          [required by mirage-www]
+ - install   lwt.2.4.6                             [required by mirage-www]
+ - install   jsonm.0.9.1                           [required by ezjsonm]
+ - install   uri.1.7.2                             [required by cow, cohttp]
+ - install   ipaddr.2.5.0                          [required by mirage-www]
+ - install   cstruct.1.5.0                         [required by mirage-www]
+ - install   ezjsonm.0.3.1                         [required by cow]
+ - install   cohttp.0.10.1                         [required by mirage-www]
+ - install   tuntap.1.0.0                          [required by mirage-net-unix]
+ - install   shared-memory-ring.1.1.0              [required by mirage-unix]
+ - install   io-page.1.2.0                         [required by mirage, fat-filesystem]
+ - install   cow.1.0.0                             [required by mirage-www]
+ - install   mirage-types.2.0.1                    [required by mirage-http, mirage-console-unix, fat-filesystem, mirage, mirage-fs-unix]
+ - install   cowabloga.0.0.6                       [required by mirage-www]
+ - install   mirage-net-unix.1.1.1                 [required by tcpip]
+ - install   mirage-fs-unix.1.1.3                  [required by mirage-www]
+ - install   mirage-clock-unix.1.0.0               [required by tcpip, mirage-unix]
+ - install   mirage-block-unix.1.2.1               [required by mirage-www]
+ - install   mirage.1.1.0                          [required by mirage-www]
+ - install   mirage-unix.2.0.1                     [required by mirage-console-unix]
+ - install   fat-filesystem.0.10.1                 [required by mirage-www]
+ - install   mirage-console-unix.1.0.0             [required by mirage-www]
+ - install   tcpip.1.1.3                           [required by mirage-www]
+ - install   mirage-http.1.1.0                     [required by mirage-www]
+ - install   mirage-www.1.1.0
+=== 43 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cohttp.0.10.1] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.10.1.tar.gz
+[cow.1.0.0] Downloading https://github.com/mirage/ocaml-cow/archive/v1.0.0.tar.gz
+[cowabloga.0.0.6] Downloading https://github.com/mirage/cowabloga/archive/v0.0.6.tar.gz
+[crunch.1.3.0] Downloading https://github.com/mirage/ocaml-crunch/archive/v1.3.0.tar.gz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[dyntype.0.9.0] Downloading https://github.com/mirage/dyntype/archive/dyntype-0.9.0.tar.gz
+[ezjsonm.0.3.1] Downloading https://github.com/mirage/ezjsonm/archive/0.3.1.tar.gz
+[fat-filesystem.0.10.1] Downloading https://github.com/mirage/ocaml-fat/archive/0.10.1.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[hex.0.1.0] Downloading https://github.com/mirage/ocaml-hex/archive/0.1.0.tar.gz
+[io-page.1.2.0] Downloading https://github.com/mirage/io-page/archive/v1.2.0.tar.gz
+[ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
+[jsonm.0.9.1] Downloading http://erratique.ch/software/jsonm/releases/jsonm-0.9.1.tbz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[mirage.1.1.0] Downloading https://github.com/mirage/mirage/archive/1.1.0.tar.gz
+[mirage-block-unix.1.2.1] Downloading https://github.com/mirage/mirage-block-unix/archive/1.2.1.tar.gz
+[mirage-clock-unix.1.0.0] Downloading https://github.com/mirage/mirage-clock/archive/v1.0.0.tar.gz
+[mirage-console-unix.1.0.0] Downloading https://github.com/mirage/mirage-console/archive/v1.0.0.tar.gz
+[mirage-fs-unix.1.1.3] Downloading https://github.com/mirage/mirage-fs-unix/archive/v1.1.3.tar.gz
+[mirage-http.1.1.0] Downloading https://github.com/mirage/mirage-http/archive/v1.1.0.tar.gz
+[mirage-net-unix.1.1.1] Downloading https://github.com/mirage/mirage-net-unix/archive/v1.1.1.tar.gz
+[mirage-types.2.0.1] Downloading https://github.com/mirage/mirage/archive/v2.0.1.tar.gz
+[mirage-unix.2.0.1] Downloading https://github.com/mirage/mirage-platform/archive/v2.0.1.tar.gz
+[mirage-www.1.1.0] Downloading https://github.com/mirage/mirage-www/archive/1.1.0.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[omd.0.9.3] Downloading http://pw374.github.io/distrib/omd/omd-0.9.3.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[shared-memory-ring.1.1.0] Downloading https://github.com/mirage/shared-memory-ring/archive/1.1.0.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[stringext.1.1.0] Downloading https://github.com/rgrinberg/stringext/archive/v1.1.0.tar.gz
+[tcpip.1.1.3] Downloading https://github.com/mirage/mirage-tcpip/archive/v1.1.3.tar.gz
+[tuntap.1.0.0] Downloading https://github.com/mirage/ocaml-tuntap/archive/v1.0.0.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[ulex.1.1] Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+[uri.1.7.2] Downloading https://github.com/mirage/ocaml-uri/archive/v1.7.2.tar.gz
+[uutf.0.9.3] Downloading http://erratique.ch/software/uutf/releases/uutf-0.9.3.tbz
+[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.legacy.
+Installing base-no-ppx.base.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing cmdliner.0.9.6.
+Building hex.0.1.0:
+  make
+  make install
+Installing hex.0.1.0.
+Copying ~/.opam/repo/default/packages/omd/omd.0.9.3/files/omd.install to ~/.opam/4.01.0/build/omd.0.9.3/
+Building omd.0.9.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing omd.0.9.3.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.01.0/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing ssl.0.4.7.
+Building stringext.1.1.0:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
