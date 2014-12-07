@@ -1,9 +1,14 @@
-++ opam install uint -e centos,centos-7
+++ opam install uint -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+Debian depexts:
+++ opam install uint -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install uint
+Debian srcexts:
 The following actions will be performed:
  - install   uint.1.1.5
 === 1 to install ===
@@ -16,4 +21,3 @@ Building uint.1.1.5:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing uint.1.1.5.
