@@ -57,3 +57,4 @@ Installing cstruct.0.6.2.
 Building xenstore.1.2.5:
   make all
   make install
+Installing xenstore.1.2.5.
