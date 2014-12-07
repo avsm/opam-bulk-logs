@@ -1,8 +1,13 @@
-++ opam install odb-server -e centos,centos-7
+++ opam install odb-server -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+++ opam install odb-server -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install odb-server
 The following actions will be performed:
  - install   odb-server.0.1
