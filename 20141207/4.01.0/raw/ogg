@@ -31,3 +31,4 @@ Building ogg.0.4.3:
   ./configure --prefix /home/opam/.opam/4.01.0/lib --mandir /home/opam/.opam/4.01.0/man
   make all
   make install
+Installing ogg.0.4.3.
