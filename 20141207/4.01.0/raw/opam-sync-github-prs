@@ -291,3 +291,6 @@ Building conduit.0.7.1:
   make
   make install
 Installing conduit.0.7.1.
+Building core_kernel.111.28.00:
+  make
+  make install
