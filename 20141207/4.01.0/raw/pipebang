@@ -1,8 +1,13 @@
-++ opam install pipebang -e centos,centos-7
+++ opam install pipebang -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+++ opam install pipebang -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install pipebang
 The following actions will be performed:
  - install   pipebang.110.01.00
