@@ -1,9 +1,9 @@
 ++ opam install lablgtk-extras -e ubuntu
 + depext='libexpat1-dev libgtk2.0-dev libgtksourceview2.0-dev'
 + echo Ubuntu depexts: libexpat1-dev libgtk2.0-dev libgtksourceview2.0-dev
-Ubuntu depexts: libexpat1-dev libgtk2.0-dev libgtksourceview2.0-dev
 + '[' 'libexpat1-dev libgtk2.0-dev libgtksourceview2.0-dev' '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libexpat1-dev libgtk2.0-dev libgtksourceview2.0-dev
 + sudo apt-get install -qq -y libexpat1-dev libgtk2.0-dev libgtksourceview2.0-dev
 debconf: unable to initialize frontend: Dialog
 debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
@@ -477,8 +477,8 @@ Setting up libmail-sendmail-perl (0.79.16-1) ...
 Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
 ++ opam install lablgtk-extras -e source,linux
 + srcext=
-Ubuntu srcexts:
 + echo Ubuntu srcexts:
+Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install lablgtk-extras
 The following actions will be performed:
@@ -507,17 +507,3 @@ Installing config-file.1.2.
 Building xmlm.1.2.0:
   ./pkg/pkg-git
   ./pkg/build true
-Installing xmlm.1.2.0.
-Copying ~/.opam/repo/default/packages/lablgtk/lablgtk.2.18.3/files/lablgtk.install to ~/.opam/4.01.0/build/lablgtk.2.18.3/
-Copying ~/.opam/repo/default/packages/lablgtk/lablgtk.2.18.3/files/lablgldir.patch to ~/.opam/4.01.0/build/lablgtk.2.18.3/
-Applying lablgldir.patch.
-Building lablgtk.2.18.3:
-  ./configure --prefix /home/opam/.opam/4.01.0 LABLGLDIR=/home/opam/.opam/4.01.0/lib/lablgl
-  make world
-  make install
-Installing lablgtk.2.18.3.
-Building lablgtk-extras.1.4:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make all
-  make install
-Installing lablgtk-extras.1.4.
