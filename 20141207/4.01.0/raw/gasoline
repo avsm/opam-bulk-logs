@@ -1,7 +1,15 @@
-++ opam install gasoline -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+++ opam install gasoline -e debian
++ depext=bmake
++ echo Debian depexts: bmake
+Debian depexts: bmake
++ '[' bmake '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y bmake
+E: Unable to locate package bmake
+++ opam install gasoline -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install gasoline
 The following actions will be performed:
@@ -34,10 +42,6 @@ Building camomile.0.8.5:
   make install
 Installing camomile.0.8.5.
 
-#=== ERROR while installing bsdowl.2.2 ========================================#
-Internal error:
-  "bmake": command not found.
-
 
 =-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 These actions have been completed successfully
@@ -47,4 +51,8 @@ The following failed
 Due to the errors, the following have been cancelled
  - install   gasoline.0.1
 
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107134407.export"
+#=== ERROR while installing bsdowl.2.2 ========================================#
+Internal error:
+  "bmake": command not found.
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107192638.export"
