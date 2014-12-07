@@ -295,3 +295,11 @@ Copying ~/.opam/repo/default/packages/atdgen/atdgen.1.4.1/files/atdgen.install t
 Building atdgen.1.4.1:
   make
   make install BINDIR=/home/opam/.opam/4.01.0/bin
+Installing atdgen.1.4.1.
+Building conduit.0.7.1:
+  make
+  make install
+Installing conduit.0.7.1.
+Building core_kernel.111.28.00:
+  make
+  make install
