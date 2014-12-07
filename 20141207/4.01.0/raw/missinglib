@@ -22,3 +22,10 @@ The following actions will be performed:
 Building ounit.2.0.0:
   make build
   make install
+Installing ounit.2.0.0.
+Copying ~/.opam/repo/default/packages/missinglib/missinglib.0.4.1/files/opam.patch to ~/.opam/4.01.0/build/missinglib.0.4.1/
+Applying opam.patch.
+Building missinglib.0.4.1:
+  make
+  make install
+Installing missinglib.0.4.1.

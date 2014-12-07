@@ -5,3 +5,29 @@
 + sudo apt-get install -qq -y build-essential m4
 Debian depexts: zlib1g-dev
 + sudo apt-get install -qq -y zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
+++ opam install mldonkey -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install mldonkey
+The following actions will be performed:
+ - install   mldonkey.3.1.5
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mldonkey.3.1.5] Downloading http://downloads.sourceforge.net/project/mldonkey/mldonkey/3.1.5/mldonkey-3.1.5.tar.bz2
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/mldonkey.3.1.5/mldonkey-3.1.5.tar.bz2:
+  - eca07c8ce88702dd437c72db531162d9 [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
+[ERROR] http://downloads.sourceforge.net/project/mldonkey/mldonkey/3.1.5/mldonkey-3.1.5.tar.bz2 is not available
+[ERROR] Could not download archives of mldonkey.3.1.5
+
