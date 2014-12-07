@@ -53,3 +53,9 @@ Building sawja.1.5:
   ./configure.sh
   make
   make install
+Installing sawja.1.5.
+Building nit.0.6:
+  ./configure.sh -l /home/opam/.opam/4.01.0
+  make
+  make install
+Installing nit.0.6.
