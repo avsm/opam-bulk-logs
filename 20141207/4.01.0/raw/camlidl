@@ -1,7 +1,12 @@
-++ opam install camlidl -e centos,centos-7
+++ opam install camlidl -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install camlidl -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install camlidl
 The following actions will be performed:
