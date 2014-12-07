@@ -123,3 +123,8 @@ Installing typerep.111.17.00.
 Building core_kernel.111.28.00:
   make
   make install
+Installing core_kernel.111.28.00.
+Building cfstream.1.1.2:
+  omake -j2 PREFIX=/home/opam/.opam/4.01.0 COMPILE_TEST=false
+  omake install
+Installing cfstream.1.1.2.
