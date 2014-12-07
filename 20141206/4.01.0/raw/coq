@@ -31,3 +31,4 @@ Building coq.8.4.5:
   make -j1 world
   make -j1 states
   make install
+Installing coq.8.4.5.
