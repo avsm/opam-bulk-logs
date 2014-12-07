@@ -4,3 +4,20 @@
 + '[' '' '!=' '' ']'
 Debian depexts:
 ++ opam install procord -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install procord
+Debian srcexts:
+The following actions will be performed:
+ - install   procord.0.2.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[procord.0.2.0] Downloading https://github.com/cryptosense/procord/archive/v0.2.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building procord.0.2.0:
+  make
+  make install
+Installing procord.0.2.0.
