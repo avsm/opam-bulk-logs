@@ -6,9 +6,9 @@ Ubuntu depexts:
 ++ opam install pa_do -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
-Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install pa_do
+Ubuntu srcexts:
 The following actions will be performed:
  - install   pa_do.0.8.16
 === 1 to install ===
@@ -20,4 +20,3 @@ The following actions will be performed:
 Building pa_do.0.8.16:
   make
   make install
-Installing pa_do.0.8.16.
