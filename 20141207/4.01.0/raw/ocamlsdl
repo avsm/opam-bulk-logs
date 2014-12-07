@@ -1,48 +1,21 @@
-++ opam install ocamlsdl -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
-+ '[' '' '!=' '' ']'
-+ opam install ocamlsdl
-The following actions will be performed:
- - install   ocamlsdl.0.9.1
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[ocamlsdl.0.9.1] Downloading http://downloads.sourceforge.net/project/ocamlsdl/OCamlSDL/ocamlsdl-0.9.1/ocamlsdl-0.9.1.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building ocamlsdl.0.9.1:
-  ./configure --with-installdir=/home/opam/.opam/4.01.0/lib/ocamlsdl
-  make
-  make install
-[ERROR] The compilation of ocamlsdl.0.9.1 failed.
-Removing ocamlsdl.0.9.1.
-  ocamlfind remove sdl
-
-
-#=== ERROR while installing ocamlsdl.0.9.1 ====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --with-installdir=/home/opam/.opam/4.01.0/lib/ocamlsdl
-# path                 /home/opam/.opam/4.01.0/build/ocamlsdl.0.9.1
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/ocamlsdl.0.9.1/ocamlsdl-26-5f1023.env
-# stdout-file          /home/opam/.opam/4.01.0/build/ocamlsdl.0.9.1/ocamlsdl-26-5f1023.out
-# stderr-file          /home/opam/.opam/4.01.0/build/ocamlsdl.0.9.1/ocamlsdl-26-5f1023.err
-### stdout ###
-# ...[truncated]
-# checking for alloca... yes
-# checking for inline... inline
-# checking for a BSD-compatible install... /usr/bin/install -c
-# checking for OCaml module lablGL... not found
-# checking for sdl-config... no
-# checking for SDL - version >= 1.2.0... no
-# *** The sdl-config script installed by SDL could not be found
-# *** If SDL was installed in PREFIX, make sure PREFIX/bin is in
-# *** your path, or set the SDL_CONFIG environment variable to the
-# *** full path to sdl-config.
-### stderr ###
-# configure: error: *** SDL version 1.2.0 not found!
-
+++ opam install ocamlsdl -e debian
++ depext=libsdl1.2-dev
++ echo Debian depexts: libsdl1.2-dev
+Debian depexts: libsdl1.2-dev
++ '[' libsdl1.2-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libsdl1.2-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libwrap0:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libwrap0:amd64 (from .../libwrap0_7.6.q-24_amd64.deb) ...
+Selecting previously unselected package libasound2:amd64.
+Unpacking libasound2:amd64 (from .../libasound2_1.0.25-4_amd64.deb) ...
+Selecting previously unselected package libasyncns0:amd64.
+Unpacking libasyncns0:amd64 (from .../libasyncns0_0.8-4_amd64.deb) ...
+Selecting previously unselected package libavahi-common-data:amd64.
+Unpacking libavahi-common-data:amd64 (from .../libavahi-common-data_0.6.31-2_amd64.deb) ...
+Selecting previously unselected package libavahi-common3:amd64.
+Unpacking libavahi-common3:amd64 (from .../libavahi-common3_0.6.31-2_amd64.deb) ...
+Selecting previously unselected package libavahi-client3:amd64.
+Unpacking libavahi-client3:amd64 (from .../libavahi-client3_0.6.31-2_amd64.deb) ...
