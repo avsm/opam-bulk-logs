@@ -57,3 +57,4 @@ Applying opam.patch.
 Building arakoon.1.6.7:
   make
   make install DESTDIR=/home/opam/.opam/4.01.0
+Installing arakoon.1.6.7.
