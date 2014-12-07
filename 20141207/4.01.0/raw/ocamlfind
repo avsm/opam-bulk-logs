@@ -1,8 +1,14 @@
-++ opam install ocamlfind -e centos,centos-7
+++ opam install ocamlfind -e debian
 [NOTE] Package ocamlfind is already installed (current version is 1.5.5).
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install ocamlfind -e source,linux
+[NOTE] Package ocamlfind is already installed (current version is 1.5.5).
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ocamlfind
+Debian srcexts:
 [NOTE] Package ocamlfind is already installed (current version is 1.5.5).
