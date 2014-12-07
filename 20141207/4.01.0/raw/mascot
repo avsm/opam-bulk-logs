@@ -1,0 +1,22 @@
+++ opam install mascot -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install mascot
+The following actions will be performed:
+ - install   mascot.1.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mascot.1.0] Downloading http://forge.ocamlcore.org/frs/download.php/990/mascot-1.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/mascot/mascot.1.0/files/mascot.install to ~/.opam/4.01.0/build/mascot.1.0/
+Copying ~/.opam/repo/default/packages/mascot/mascot.1.0/files/4.01.patch to ~/.opam/4.01.0/build/mascot.1.0/
+Applying 4.01.patch.
+Building mascot.1.0:
+  ./configure
+  make all
+  make install
+Installing mascot.1.0.
