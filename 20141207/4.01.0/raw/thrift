@@ -1,0 +1,23 @@
+++ opam install thrift -e debian
++ depext=
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install thrift -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install thrift
+Debian srcexts:
+The following actions will be performed:
+ - install   thrift.0.9.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[thrift.0.9.0] Downloading https://github.com/vbmithr/ocaml-thrift-lib/archive/0.9.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building thrift.0.9.0:
+  make
+  make install
+Installing thrift.0.9.0.
