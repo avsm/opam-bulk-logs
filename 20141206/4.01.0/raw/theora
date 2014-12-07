@@ -1,7 +1,7 @@
 ++ opam install theora -e ubuntu
 + depext='libogg-dev libtheora-dev'
-+ echo Ubuntu depexts: libogg-dev libtheora-dev
 Ubuntu depexts: libogg-dev libtheora-dev
++ echo Ubuntu depexts: libogg-dev libtheora-dev
 + '[' 'libogg-dev libtheora-dev' '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
 + sudo apt-get install -qq -y libogg-dev libtheora-dev
@@ -33,9 +33,9 @@ Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
 ++ opam install theora -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
-Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install theora
+Ubuntu srcexts:
 The following actions will be performed:
  - install   ogg.0.4.3                             [required by theora]
  - install   theora.0.3.0
