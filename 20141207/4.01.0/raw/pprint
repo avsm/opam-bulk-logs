@@ -1,0 +1,18 @@
+++ opam install pprint -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install pprint
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   pprint.20140424
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pprint.20140424] Downloading http://gallium.inria.fr/~fpottier/pprint/pprint-20140424.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building pprint.20140424:
+  make -C src
+  make -C src install
+Installing pprint.20140424.
