@@ -50,3 +50,4 @@ The following actions will be performed:
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Building yajl.0.7.3:
   make install
+Installing yajl.0.7.3.
