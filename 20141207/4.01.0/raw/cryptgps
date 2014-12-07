@@ -1,9 +1,14 @@
-++ opam install cryptgps -e centos,centos-7
+++ opam install cryptgps -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install cryptgps -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install cryptgps
-CentOS 7 depexts:
 The following actions will be performed:
  - install   cryptgps.0.2.1
 === 1 to install ===
