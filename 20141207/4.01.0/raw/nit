@@ -48,3 +48,8 @@ Building javalib.2.3:
   make installptrees
   make
   make install
+Installing javalib.2.3.
+Building sawja.1.5:
+  ./configure.sh
+  make
+  make install
