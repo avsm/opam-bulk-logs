@@ -51,3 +51,9 @@ Building cstruct.1.5.0:
   ./configure --prefix /home/opam/.opam/4.01.0 --disable-lwt --enable-camlp4 --disable-async --enable-unix --disable-tests
   make
   make install
+Installing cstruct.1.5.0.
+Building packet.0.3.1:
+  ocaml setup.ml -configure --disable-quickcheck
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing packet.0.3.1.
