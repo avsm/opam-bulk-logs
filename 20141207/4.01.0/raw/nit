@@ -16,3 +16,28 @@ Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
 + '[' '' '!=' '' ']'
 + opam install nit
 Debian srcexts:
+The following actions will be performed:
+ - install   camlzip.1.05                          [required by javalib]
+ - install   extlib-compat.1.6.1                   [required by javalib]
+ - install   javalib.2.3                           [required by nit]
+ - install   sawja.1.5                             [required by nit]
+ - install   nit.0.6
+=== 5 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camlzip.1.05] Downloading http://forge.ocamlcore.org/frs/download.php/1037/camlzip-1.05.tar.gz
+[extlib-compat.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+[javalib.2.3] Downloading https://gforge.inria.fr/frs/download.php/33090/javalib-2.3.tar.bz2
+[nit.0.6] Downloading https://gforge.inria.fr/frs/download.php/33093/nit-0.6.tar.bz2
+[sawja.1.5] Downloading https://gforge.inria.fr/frs/download.php/33091/sawja-1.5.tar.bz2
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/camlzip/camlzip.1.05/files/fix-install.patch to ~/.opam/4.01.0/build/camlzip.1.05/
+Applying fix-install.patch.
+Building camlzip.1.05:
+  make all
+  make allopt
+  make install-findlib
+Installing camlzip.1.05.
+Building extlib-compat.1.6.1:
+  make build install
