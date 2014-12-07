@@ -4,3 +4,37 @@
 + '[' '' '!=' '' ']'
 Debian depexts:
 ++ opam install dose -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install dose
+Debian srcexts:
+The following actions will be performed:
+ - install   re.1.2.2                              [required by dose]
+ - install   ocamlgraph.1.8.5                      [required by dose]
+ - install   extlib-compat.1.6.1                   [required by dose]
+ - install   cudf.0.7                              [required by dose]
+ - install   dose.3.2.2+opam
+=== 5 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cudf.0.7] Downloading https://gforge.inria.fr/frs/download.php/33593/cudf-0.7.tar.gz
+[dose.3.2.2+opam] Downloading https://gforge.inria.fr/frs/download.php/file/33677/dose3-3.2.2.tar.gz
+[extlib-compat.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+[ocamlgraph.1.8.5] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.5.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building extlib-compat.1.6.1:
+  make build install
+Installing extlib-compat.1.6.1.
+Copying ~/.opam/repo/default/packages/ocamlgraph/ocamlgraph.1.8.5/files/ocamlgraph.install to ~/.opam/4.01.0/build/ocamlgraph.1.8.5/
+Building ocamlgraph.1.8.5:
+  ./configure
+  make
+  make install-findlib
+Installing ocamlgraph.1.8.5.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install

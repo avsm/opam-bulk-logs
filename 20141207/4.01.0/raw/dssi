@@ -1,9 +1,30 @@
-++ opam install dssi -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install dssi -e debian
++ depext='dssi-dev ladspa-sdk'
+Debian depexts: dssi-dev ladspa-sdk
++ echo Debian depexts: dssi-dev ladspa-sdk
++ '[' 'dssi-dev ladspa-sdk' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y dssi-dev ladspa-sdk
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libasound2:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libasound2:amd64 (from .../libasound2_1.0.25-4_amd64.deb) ...
+Selecting previously unselected package ladspa-sdk.
+Unpacking ladspa-sdk (from .../ladspa-sdk_1.13-1_amd64.deb) ...
+Selecting previously unselected package libasound2-dev:amd64.
+Unpacking libasound2-dev:amd64 (from .../libasound2-dev_1.0.25-4_amd64.deb) ...
+Selecting previously unselected package dssi-dev.
+Unpacking dssi-dev (from .../dssi-dev_1.1.1~dfsg0-1_all.deb) ...
+Setting up libasound2:amd64 (1.0.25-4) ...
+Setting up ladspa-sdk (1.13-1) ...
+Setting up libasound2-dev:amd64 (1.0.25-4) ...
+Setting up dssi-dev (1.1.1~dfsg0-1) ...
+++ opam install dssi -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install dssi
-CentOS 7 depexts:
 The following actions will be performed:
  - install   ladspa.0.1.4                          [required by dssi]
  - install   dssi.0.1.1
@@ -12,9 +33,19 @@ The following actions will be performed:
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [dssi.0.1.1] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-dssi/0.1.1/ocaml-dssi-0.1.1.tar.gz
 [ladspa.0.1.4] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ladspa/0.1.4/ocaml-ladspa-0.1.4.tar.gz
-[ERROR] curl: code 404 while downloading http://downloads.sourceforge.net/project/savonet/ocaml-dssi/0.1.1/ocaml-dssi-0.1.1.tar.gz
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/dssi.0.1.1/ocaml-dssi-0.1.1.tar.gz:
+  - e9b831a7a1abde56f37e704dbe5741c0 [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
 [ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-dssi/0.1.1/ocaml-dssi-0.1.1.tar.gz is not available
-[ERROR] curl: code 404 while downloading http://downloads.sourceforge.net/project/savonet/ocaml-ladspa/0.1.4/ocaml-ladspa-0.1.4.tar.gz
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/ladspa.0.1.4/ocaml-ladspa-0.1.4.tar.gz:
+  - 9931908da1bc7efd82ab83e4ab36c8ca [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
 [ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-ladspa/0.1.4/ocaml-ladspa-0.1.4.tar.gz is not available
 [ERROR] Could not download archives of dssi.0.1.1 and ladspa.0.1.4
 
