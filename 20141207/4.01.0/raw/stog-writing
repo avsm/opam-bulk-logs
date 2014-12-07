@@ -1,7 +1,12 @@
-++ opam install stog-writing -e centos,centos-7
+++ opam install stog-writing -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install stog-writing -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install stog-writing
 The following actions will be performed:
@@ -37,42 +42,3 @@ Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.instal
 Building menhir.20140422:
   make PREFIX=/home/opam/.opam/4.01.0 docdir=/home/opam/.opam/4.01.0/doc/menhir libdir=/home/opam/.opam/4.01.0/lib/menhir mandir=/home/opam/.opam/4.01.0/man/man1
   make install PREFIX=/home/opam/.opam/4.01.0 docdir=/home/opam/.opam/4.01.0/doc/menhir libdir=/home/opam/.opam/4.01.0/lib/menhir mandir=/home/opam/.opam/4.01.0/man/man1
-Installing menhir.20140422.
-Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
-Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/ocamlnet.install to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
-Applying robust-host.patch.
-Building ocamlnet.3.7.7:
-  ./configure -bindir /home/opam/.opam/4.01.0/bin -disable-pcre -disable-gtk2 -disable-ssl -disable-zip -disable-crypto -with-nethttpd
-  make all
-  make opt
-  make install
-Installing ocamlnet.3.7.7.
-Building ulex.1.1:
-  make
-  make all.opt
-  make install
-Installing ulex.1.1.
-Building xmlm.1.2.0:
-  ./pkg/pkg-git
-  ./pkg/build true
-Installing xmlm.1.2.0.
-Building xtmpl.0.9:
-  make all
-  make install
-Installing xtmpl.0.9.
-Copying ~/.opam/repo/default/packages/higlo/higlo.0.3/files/higlo.install to ~/.opam/4.01.0/build/higlo.0.3/
-Building higlo.0.3:
-  make all
-  make install-lib
-Installing higlo.0.3.
-Copying ~/.opam/repo/default/packages/stog/stog.0.12.0/files/stog.install to ~/.opam/4.01.0/build/stog.0.12.0/
-Building stog.0.12.0:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make stog_filter_parser.mli
-  make all
-  make install-lib install-share
-Installing stog.0.12.0.
-Building stog-writing.0.12.0:
-  make all
-  make install
-Installing stog-writing.0.12.0.
