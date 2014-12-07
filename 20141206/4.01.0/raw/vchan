@@ -110,3 +110,4 @@ Building vchan.2.0.0:
   ./configure
   make
   make install
+Installing vchan.2.0.0.
