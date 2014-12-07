@@ -1,7 +1,12 @@
-++ opam install quickcheck -e centos,centos-7
+++ opam install quickcheck -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install quickcheck -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install quickcheck
 The following actions will be performed:
@@ -18,9 +23,3 @@ Building optcomp.1.6:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
-Installing optcomp.1.6.
-Building quickcheck.1.0.2:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing quickcheck.1.0.2.
