@@ -381,3 +381,8 @@ Installing lablgtk.2.18.3.
 Building ocamldiff.1.1:
   make all
   make install
+Installing ocamldiff.1.1.
+Building odiff-gtk.1.0:
+  make all
+  make install
+Installing odiff-gtk.1.0.
