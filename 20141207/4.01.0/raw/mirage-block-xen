@@ -1,186 +1,90 @@
-++ opam install mirage-block-xen -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+++ opam install mirage-block-xen -e debian
++ depext='libxen-dev pkg-config'
++ echo Debian depexts: libxen-dev pkg-config
+Debian depexts: libxen-dev pkg-config
++ '[' 'libxen-dev pkg-config' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libxen-dev pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libxen-4.1.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libxen-4.1 (from .../libxen-4.1_4.1.4-3+deb7u3_amd64.deb) ...
+Selecting previously unselected package libxenstore3.0.
+Unpacking libxenstore3.0 (from .../libxenstore3.0_4.1.4-3+deb7u3_amd64.deb) ...
+Selecting previously unselected package libxen-dev.
+Unpacking libxen-dev (from .../libxen-dev_4.1.4-3+deb7u3_amd64.deb) ...
+Setting up libxen-4.1 (4.1.4-3+deb7u3) ...
+Setting up libxenstore3.0 (4.1.4-3+deb7u3) ...
+Setting up libxen-dev (4.1.4-3+deb7u3) ...
+++ opam install mirage-block-xen -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install mirage-block-xen
+Debian srcexts:
 The following actions will be performed:
  - install   type_conv.111.13.00                   [required by sexplib]
  - install   optcomp.1.6                           [required by ocplib-endian]
- - install   lwt.2.4.5                             [required by mirage-block-xen]
+ - install   ocamlify.0.0.1                        [required by oasis]
+ - install   base-bytes.legacy                     [required by ocplib-endian]
+ - install   conf-pkg-config.1.0                   [required by mirage-xen]
  - install   ounit.2.0.0                           [required by xenstore, shared-memory-ring, xen-gnt]
+ - install   base-no-ppx.base                      [required by lwt]
  - install   cmdliner.0.9.6                        [required by mirage-block-xen]
+ - install   mirage-xen-minios.0.4.2               [required by mirage-xen]
+ - install   ocamlmod.0.0.7                        [required by oasis]
  - install   sexplib.111.25.00                     [required by mirage-types, cstruct, ipaddr]
- - install   ocplib-endian.0.4                     [required by cstruct]
- - install   xen-evtchn.1.0.5                      [required by mirage-xen]
+ - install   ocaml-data-notation.0.0.11            [required by oasis]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   lwt.2.4.6                             [required by mirage-block-xen]
  - install   ipaddr.2.5.0                          [required by mirage-block-xen]
+ - install   oasis.0.4.5                           [required by xen-gnt]
+ - install   xen-evtchn.1.0.5                      [required by mirage-xen]
  - install   cstruct.1.5.0                         [required by mirage-block-xen]
  - install   xenstore.1.2.5                        [required by mirage-xen]
  - install   shared-memory-ring.1.1.0              [required by mirage-block-xen]
  - install   io-page.1.2.0                         [required by mirage-block-xen]
- - install   xen-gnt.1.0.3                         [required by mirage-xen]
+ - install   xen-gnt.2.0.0                         [required by mirage-xen]
  - install   mirage-types.2.0.1                    [required by mirage-block-xen]
  - install   mirage-clock-xen.1.0.0                [required by mirage-xen]
- - install   mirage-xen.1.1.1                      [required by mirage-block-xen]
+ - install   mirage-xen.2.0.1                      [required by mirage-block-xen]
  - install   mirage-block-xen.1.2.0
-=== 18 to install ===
+=== 26 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
 [cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
 [io-page.1.2.0] Downloading https://github.com/mirage/io-page/archive/v1.2.0.tar.gz
 [ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
-[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
 [mirage-block-xen.1.2.0] Downloading https://github.com/mirage/mirage-block-xen/archive/v1.2.0.tar.gz
 [mirage-clock-xen.1.0.0] Downloading https://github.com/mirage/mirage-clock/archive/v1.0.0.tar.gz
 [mirage-types.2.0.1] Downloading https://github.com/mirage/mirage/archive/v2.0.1.tar.gz
-[mirage-xen.1.1.1] Downloading https://github.com/mirage/mirage-platform/archive/v1.1.1.tar.gz
-[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[mirage-xen.2.0.1] Downloading https://github.com/mirage/mirage-platform/archive/v2.0.1.tar.gz
+[mirage-xen-minios.0.4.2] Downloading https://github.com/mirage/mirage-xen-minios/releases/download/v0.4.2/mirage-xen-minios-v0.4.2.tar.bz2
+[oasis.0.4.5] Downloading https://forge.ocamlcore.org/frs/download.php/1475/oasis-0.4.5.tar.gz
+[ocaml-data-notation.0.0.11] Downloading https://forge.ocamlcore.org/frs/download.php/1310/ocaml-data-notation-0.0.11.tar.gz
+[ocamlify.0.0.1] Downloading http://forge.ocamlcore.org/frs/download.php/379/ocamlify-0.0.1.tar.gz
+[ocamlmod.0.0.7] Downloading https://forge.ocamlcore.org/frs/download.php/1350/ocamlmod-0.0.7.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
 [optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
 [sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
 [shared-memory-ring.1.1.0] Downloading https://github.com/mirage/shared-memory-ring/archive/1.1.0.tar.gz
 [type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
 [xen-evtchn.1.0.5] Downloading https://github.com/mirage/ocaml-evtchn/archive/v1.0.5.tar.gz
-[xen-gnt.1.0.3] Downloading https://github.com/mirage/ocaml-gnt/archive/v1.0.3.tar.gz
+[xen-gnt.2.0.0] Downloading https://github.com/mirage/ocaml-gnt/archive/v2.0.0.tar.gz
 [xenstore.1.2.5] Downloading https://github.com/mirage/ocaml-xenstore/archive/1.2.5.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.legacy.
+Installing base-no-ppx.base.
 Building cmdliner.0.9.6:
   ocaml pkg/git.ml
   ocaml pkg/build.ml native=false native-dynlink=false
 Installing cmdliner.0.9.6.
-Building lwt.2.4.5:
-  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+Building conf-pkg-config.1.0:
+  pkg-config --help
+Installing conf-pkg-config.1.0.
+Building mirage-xen-minios.0.4.2:
   make build
-  make install
-Installing lwt.2.4.5.
-Building optcomp.1.6:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-Installing optcomp.1.6.
-Building ounit.2.0.0:
-  make build
-  make install
-Installing ounit.2.0.0.
-Building type_conv.111.13.00:
-  make
-  make install
-Installing type_conv.111.13.00.
-Building ocplib-endian.0.4:
-  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing ocplib-endian.0.4.
-Building sexplib.111.25.00:
-  ./configure --enable-syntax
-  make
-  make install
-Installing sexplib.111.25.00.
-Building xen-evtchn.1.0.5:
-  make
-  make install
-[ERROR] The compilation of xen-evtchn.1.0.5 failed.
-Removing xen-evtchn.1.0.5.
-  make uninstall
-Building cstruct.1.5.0:
-  ./configure --prefix /home/opam/.opam/4.01.0 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
-  make
-  make install
-Installing cstruct.1.5.0.
-Building ipaddr.2.5.0:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  make build
-  make install
-Installing ipaddr.2.5.0.
-Building io-page.1.2.0:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-Installing io-page.1.2.0.
-Building shared-memory-ring.1.1.0:
-  make all
-  make install
-Installing shared-memory-ring.1.1.0.
-Building xenstore.1.2.5:
-  make all
-  make install
-Installing xenstore.1.2.5.
-Building mirage-types.2.0.1:
-  make install-types
-Installing mirage-types.2.0.1.
-Building xen-gnt.1.0.3:
-  make
-  make PREFIX=/home/opam/.opam/4.01.0 install
-Removing xen-gnt.1.0.3.
-[ERROR] The compilation of xen-gnt.1.0.3 failed.
-  make PREFIX=/home/opam/.opam/4.01.0 uninstall
-Building mirage-clock-xen.1.0.0:
-  make xen-build
-  make xen-install
-Installing mirage-clock-xen.1.0.0.
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   ocplib-endian.0.4
- - install   sexplib.111.25.00
- - install   shared-memory-ring.1.1.0
- - install   xenstore.1.2.5
- - install   cmdliner.0.9.6
- - install   cstruct.1.5.0
- - install   io-page.1.2.0
- - install   ipaddr.2.5.0
- - install   ounit.2.0.0
- - install   lwt.2.4.5
- - install   optcomp.1.6
- - install   type_conv.111.13.00
- - install   mirage-clock-xen.1.0.0
- - install   mirage-types.2.0.1
-The following failed
- - install   xen-evtchn.1.0.5
- - install   xen-gnt.1.0.3
-Due to the errors, the following have been cancelled
- - install   mirage-block-xen.1.2.0
- - install   mirage-xen.1.1.1
-
-#=== ERROR while installing xen-evtchn.1.0.5 ==================================#
-# opam-version         1.2.0
-# os                   linux
-# command              make
-# path                 /home/opam/.opam/4.01.0/build/xen-evtchn.1.0.5
-# compiler             4.01.0
-# exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/xen-evtchn.1.0.5/xen-evtchn-2657-2c871f.env
-# stdout-file          /home/opam/.opam/4.01.0/build/xen-evtchn.1.0.5/xen-evtchn-2657-2c871f.out
-# stderr-file          /home/opam/.opam/4.01.0/build/xen-evtchn.1.0.5/xen-evtchn-2657-2c871f.err
-### stdout ###
-# ocamlfind ocamlopt -package "cmdliner" -linkpkg configure.ml -o configure
-### stderr ###
-# Makefile:8: config.mk: No such file or directory
-# File "configure.ml", line 1:
-# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
-# make: *** [configure] Error 2
-
-
-#=== ERROR while installing xen-gnt.1.0.3 =====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              make
-# path                 /home/opam/.opam/4.01.0/build/xen-gnt.1.0.3
-# compiler             4.01.0
-# exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/xen-gnt.1.0.3/xen-gnt-4242-ebe0e0.env
-# stdout-file          /home/opam/.opam/4.01.0/build/xen-gnt.1.0.3/xen-gnt-4242-ebe0e0.out
-# stderr-file          /home/opam/.opam/4.01.0/build/xen-gnt.1.0.3/xen-gnt-4242-ebe0e0.err
-### stdout ###
-# ocamlfind ocamlopt -package "cmdliner" -linkpkg configure.ml -o configure
-### stderr ###
-# Makefile:8: config.mk: No such file or directory
-# File "configure.ml", line 1:
-# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
-# make: *** [configure] Error 2
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107143556.export"
