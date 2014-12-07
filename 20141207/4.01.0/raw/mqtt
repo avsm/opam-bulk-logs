@@ -1,0 +1,46 @@
+++ opam install mqtt -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install mqtt
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by mqtt]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   lwt.2.4.5                             [required by mqtt]
+ - install   ocplib-endian.0.4                     [required by mqtt]
+ - install   mqtt.0.0.1
+=== 5 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[mqtt.0.0.1] Downloading https://github.com/j0sh/ocaml-mqtt/archive/v0.0.1.tar.gz
+[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+Installing lwt.2.4.5.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building ocplib-endian.0.4:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.4.
+Building mqtt.0.0.1:
+  ./configure
+  make
+  make install
+Installing mqtt.0.0.1.
