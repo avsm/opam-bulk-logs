@@ -139,3 +139,4 @@ Installing xtmpl.0.5.
 Building erssical.0.1:
   make
   make BINDIR=/home/opam/.opam/4.01.0/bin install
+Installing erssical.0.1.
