@@ -1,7 +1,12 @@
-++ opam install sexplib -e centos,centos-7
+++ opam install sexplib -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install sexplib -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install sexplib
 The following actions will be performed:
@@ -12,14 +17,3 @@ The following actions will be performed:
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
 [type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building type_conv.111.13.00:
-  make
-  make install
-Installing type_conv.111.13.00.
-Building sexplib.111.25.00:
-  ./configure --enable-syntax
-  make
-  make install
-Installing sexplib.111.25.00.
