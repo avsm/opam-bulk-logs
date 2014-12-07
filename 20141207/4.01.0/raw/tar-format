@@ -20,3 +20,4 @@ The following actions will be performed:
 Building tar-format.0.1.1:
   make
   make install
+Installing tar-format.0.1.1.
