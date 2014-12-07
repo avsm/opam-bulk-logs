@@ -53,3 +53,4 @@ Installing pxp.1.2.3.
 Building blahcaml.2.1:
   make
   make install
+Installing blahcaml.2.1.
