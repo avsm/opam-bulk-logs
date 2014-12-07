@@ -5,8 +5,8 @@ Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install packet -e source,linux
 + srcext=
-Ubuntu srcexts:
 + echo Ubuntu srcexts:
+Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install packet
 The following actions will be performed:
@@ -56,4 +56,3 @@ Building packet.0.3.1:
   ocaml setup.ml -configure --disable-quickcheck
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing packet.0.3.1.
