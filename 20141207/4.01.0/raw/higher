@@ -1,0 +1,18 @@
+++ opam install higher -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install higher
+The following actions will be performed:
+ - install   higher.0.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[higher.0.2] Downloading https://github.com/ocamllabs/higher/archive/0.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building higher.0.2:
+  make
+  make install
+Installing higher.0.2.
