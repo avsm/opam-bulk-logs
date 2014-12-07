@@ -161,3 +161,24 @@ Installing core.109.55.02.
 Building async_core.109.55.02:
   make
   make install
+Installing async_core.109.55.02.
+Building protobuf.1.0.0:
+  make
+  make install
+Installing protobuf.1.0.0.
+Building async_unix.109.55.02:
+  make
+  make install
+Installing async_unix.109.55.02.
+Building async_extra.109.55.02:
+  make
+  make install
+Installing async_extra.109.55.02.
+Building async.109.53.02:
+  make
+  make install
+Installing async.109.53.02.
+Building riakc.2.0.0:
+  make
+  make install
+Installing riakc.2.0.0.
