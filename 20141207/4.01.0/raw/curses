@@ -1,9 +1,24 @@
-++ opam install curses -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install curses -e debian
++ depext=libncurses-dev
+Debian depexts: libncurses-dev
++ echo Debian depexts: libncurses-dev
++ '[' libncurses-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libncurses-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libtinfo-dev:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libtinfo-dev:amd64 (from .../libtinfo-dev_5.9-10_amd64.deb) ...
+Selecting previously unselected package libncurses5-dev.
+Unpacking libncurses5-dev (from .../libncurses5-dev_5.9-10_amd64.deb) ...
+Setting up libtinfo-dev:amd64 (5.9-10) ...
+Setting up libncurses5-dev (5.9-10) ...
+++ opam install curses -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install curses
-CentOS 7 depexts:
 The following actions will be performed:
  - install   curses.1.0.3
 === 1 to install ===
@@ -17,33 +32,3 @@ Building curses.1.0.3:
   make byte
   make opt
   make install
-[ERROR] The compilation of curses.1.0.3 failed.
-Removing curses.1.0.3.
-  ocamlfind remove curses
-
-
-#=== ERROR while installing curses.1.0.3 ======================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --enable-widec
-# path                 /home/opam/.opam/4.01.0/build/curses.1.0.3
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/curses.1.0.3/curses-26-5f1023.env
-# stdout-file          /home/opam/.opam/4.01.0/build/curses.1.0.3/curses-26-5f1023.out
-# stderr-file          /home/opam/.opam/4.01.0/build/curses.1.0.3/curses-26-5f1023.err
-### stdout ###
-# ...[truncated]
-# checking termios.h usability... yes
-# checking termios.h presence... yes
-# checking for termios.h... yes
-# checking sys/ioctl.h usability... yes
-# checking sys/ioctl.h presence... yes
-# checking for sys/ioctl.h... yes
-# checking windows.h usability... no
-# checking windows.h presence... no
-# checking for windows.h... no
-# checking for working ncurses library... 
-### stderr ###
-# configure: error: not found
-
