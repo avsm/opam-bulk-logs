@@ -119,3 +119,21 @@ Building ocurl.0.7.2:
   ./configure
   make
   make install
+Installing ocurl.0.7.2.
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.01.0/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/ocamlnet.install to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
+Applying robust-host.patch.
+Building ocamlnet.3.7.7:
+  ./configure -bindir /home/opam/.opam/4.01.0/bin -disable-pcre -disable-gtk2 -disable-ssl -disable-zip -enable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
