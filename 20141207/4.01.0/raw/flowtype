@@ -11,3 +11,18 @@ Selecting previously unselected package libelf1.
 Unpacking libelf1 (from .../libelf1_0.152-1+wheezy1_amd64.deb) ...
 Selecting previously unselected package libelf-dev.
 Unpacking libelf-dev (from .../libelf-dev_0.152-1+wheezy1_amd64.deb) ...
+Setting up libelf1 (0.152-1+wheezy1) ...
+Setting up libelf-dev (0.152-1+wheezy1) ...
+++ opam install flowtype -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install flowtype
+The following actions will be performed:
+ - install   base-bytes.legacy                     [required by flowtype]
+ - install   flowtype.0.1.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[flowtype.0.1.0] Downloading https://github.com/facebook/flow/archive/v0.1.0.tar.gz
