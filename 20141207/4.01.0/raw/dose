@@ -38,3 +38,14 @@ Building re.1.2.2:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing re.1.2.2.
+Building cudf.0.7:
+  make all opt
+  make install DESTDIR=/home/opam/.opam/4.01.0 OCAMLLIBDIR=lib BINDIR=bin LIBDIR=lib INCDIR=include
+Installing cudf.0.7.
+Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0005-Add-a-check_request-function-allowing-more-control-o.patch to ~/.opam/4.01.0/build/dose.3.2.2+opam/
+Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0004-Remove-broken-assert.patch to ~/.opam/4.01.0/build/dose.3.2.2+opam/
+Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0003-Removed-hard-failure-cases-in-favor-of-finer-diagnos.patch to ~/.opam/4.01.0/build/dose.3.2.2+opam/
+Applying 0003-Removed-hard-failure-cases-in-favor-of-finer-diagnos.patch.
+Applying 0004-Remove-broken-assert.patch.
+Applying 0005-Add-a-check_request-function-allowing-more-control-o.patch.

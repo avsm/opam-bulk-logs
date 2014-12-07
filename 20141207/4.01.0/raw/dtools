@@ -1,16 +1,26 @@
-++ opam install dtools -e centos,centos-7
+++ opam install dtools -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install dtools -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install dtools
+Debian srcexts:
 The following actions will be performed:
  - install   dtools.0.3.0
 === 1 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [dtools.0.3.0] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz
-[ERROR] curl: code 404 while downloading http://downloads.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/dtools.0.3.0/ocaml-dtools-0.3.0.tar.gz:
+  - 0cbf60f517a936244ad4d98c6d904907 [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
 [ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz is not available
-
 [ERROR] Could not download archives of dtools.0.3.0
+
