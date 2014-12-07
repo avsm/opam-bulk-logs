@@ -53,3 +53,8 @@ Installing ocplib-endian.0.7.
 Building cstruct.1.0.1:
   make
   make install
+Installing cstruct.1.0.1.
+Building shared-memory-ring.1.1.0:
+  make all
+  make install
+Installing shared-memory-ring.1.1.0.
