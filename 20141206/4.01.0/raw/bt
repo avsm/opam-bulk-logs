@@ -194,3 +194,10 @@ Installing conduit.0.7.1.
 Building cohttp.0.13.0:
   make PREFIX=/home/opam/.opam/4.01.0
   make PREFIX=/home/opam/.opam/4.01.0 install
+Installing cohttp.0.13.0.
+Copying ~/.opam/repo/default/packages/bt/bt.0.2/files/bt.install to ~/.opam/4.01.0/build/bt.0.2/
+Building bt.0.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing bt.0.2.
