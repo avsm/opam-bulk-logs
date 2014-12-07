@@ -24,3 +24,9 @@ Building camlp5.6.12:
   ./configure --prefix /home/opam/.opam/4.01.0 -libdir /home/opam/.opam/4.01.0/lib -mandir /home/opam/.opam/4.01.0/man
   make world.opt
   make install
+Installing camlp5.6.12.
+Copying ~/.opam/repo/default/packages/ledit/ledit.2.03/files/ledit.install to ~/.opam/4.01.0/build/ledit.2.03/
+Building ledit.2.03:
+  make
+  make install LIBDIR=/home/opam/.opam/4.01.0/lib/ledit MANDIR=/home/opam/.opam/4.01.0/man/man1 BINDIR=/home/opam/.opam/4.01.0/bin
+Installing ledit.2.03.
