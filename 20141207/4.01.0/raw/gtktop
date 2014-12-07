@@ -416,3 +416,14 @@ Building lablgtk.2.18.3:
   ./configure --prefix /home/opam/.opam/4.01.0 LABLGLDIR=/home/opam/.opam/4.01.0/lib/lablgl
   make world
   make install
+Installing lablgtk.2.18.3.
+Building lablgtk-extras.1.4:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make all
+  make install
+Installing lablgtk-extras.1.4.
+Building gtktop.2.0:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make all
+  make install
+Installing gtktop.2.0.
