@@ -508,3 +508,4 @@ The following actions will be performed:
 Building imagemagick.0.34:
   make
   make find_install
+Installing imagemagick.0.34.
