@@ -150,3 +150,4 @@ Building async.111.25.00:
 Installing async.111.25.00.
 Building obeanstalk.0.1:
   make opam-install
+Installing obeanstalk.0.1.
