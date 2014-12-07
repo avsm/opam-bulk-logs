@@ -22,3 +22,4 @@ Building ocamlgraph.1.8.5:
   ./configure
   make
   make install-findlib
+Installing ocamlgraph.1.8.5.
