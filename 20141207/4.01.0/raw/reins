@@ -36,3 +36,4 @@ Applying fix_build.patch.
 Building reins.0.1a:
   omake
   omake install
+Installing reins.0.1a.
