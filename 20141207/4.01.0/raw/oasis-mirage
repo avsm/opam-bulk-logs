@@ -1,0 +1,61 @@
+++ opam install oasis-mirage -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install oasis-mirage
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by fileutils]
+ - install   type_conv.111.13.00                   [required by ocaml-data-notation]
+ - install   ocamlify.0.0.1                        [required by oasis-mirage]
+ - install   ocamlmod.0.0.7                        [required by oasis-mirage]
+ - install   fileutils.0.4.4                       [required by oasis-mirage]
+ - install   ocaml-data-notation.0.0.11            [required by oasis-mirage]
+ - install   oasis-mirage.0.3.0a
+=== 7 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[fileutils.0.4.4] Downloading http://forge.ocamlcore.org/frs/download.php/892/ocaml-fileutils-0.4.4.tar.gz
+[oasis-mirage.0.3.0a] Downloading https://github.com/avsm/oasis/archive/avsm+mirage-xen2.tar.gz
+[ocaml-data-notation.0.0.11] Downloading https://forge.ocamlcore.org/frs/download.php/1310/ocaml-data-notation-0.0.11.tar.gz
+[ocamlify.0.0.1] Downloading http://forge.ocamlcore.org/frs/download.php/379/ocamlify-0.0.1.tar.gz
+[ocamlmod.0.0.7] Downloading https://forge.ocamlcore.org/frs/download.php/1350/ocamlmod-0.0.7.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/ocamlify/ocamlify.0.0.1/files/ocamlify.install to ~/.opam/4.01.0/build/ocamlify.0.0.1/
+Building ocamlify.0.0.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlify.0.0.1.
+Copying ~/.opam/repo/default/packages/ocamlmod/ocamlmod.0.0.7/files/ocamlmod.install to ~/.opam/4.01.0/build/ocamlmod.0.0.7/
+Building ocamlmod.0.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlmod.0.0.7.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building fileutils.0.4.4:
+  ./configure
+  make
+  make install
+Installing fileutils.0.4.4.
+Building ocaml-data-notation.0.0.11:
+  make
+  make install
+Installing ocaml-data-notation.0.0.11.
+Copying ~/.opam/repo/default/packages/oasis-mirage/oasis-mirage.0.3.0a/files/oasis.install to ~/.opam/4.01.0/build/oasis-mirage.0.3.0a/
+Building oasis-mirage.0.3.0a:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing oasis-mirage.0.3.0a.
