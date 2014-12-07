@@ -196,3 +196,9 @@ Installing ocsigenserver.2.5.
 Building eliom.4.1.0:
   make
 Installing eliom.4.1.0.
+Building litiom.4.0:
+  ./configure --prefix /home/opam/.opam/4.01.0 --docdir /home/opam/.opam/4.01.0/doc/litiom
+  make
+  make doc
+  make install
+Installing litiom.4.0.
