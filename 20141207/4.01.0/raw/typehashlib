@@ -1,0 +1,25 @@
+++ opam install typehashlib -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install typehashlib
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   type_conv.111.13.00                   [required by typehashlib]
+ - install   typehashlib.109.15.04
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[typehashlib.109.15.04] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/typehashlib-109.15.04.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building typehashlib.109.15.04:
+  make
+  make install
+Installing typehashlib.109.15.04.
+2014/12/07 16:25:11 Error: Cannot destroy container b441466135c1ae7f026dab95cd4bfbeddde1f52208b96855e4571a939318f253: Driver aufs failed to remove root filesystem b441466135c1ae7f026dab95cd4bfbeddde1f52208b96855e4571a939318f253: rename /var/lib/docker/aufs/mnt/b441466135c1ae7f026dab95cd4bfbeddde1f52208b96855e4571a939318f253 /var/lib/docker/aufs/mnt/b441466135c1ae7f026dab95cd4bfbeddde1f52208b96855e4571a939318f253-removing: device or resource busy
