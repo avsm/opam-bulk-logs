@@ -1,7 +1,12 @@
-++ opam install atdgen -e centos,centos-7
+++ opam install atdgen -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install atdgen -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install atdgen
 The following actions will be performed:
