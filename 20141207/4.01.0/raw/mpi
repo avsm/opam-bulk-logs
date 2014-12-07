@@ -53,3 +53,4 @@ Building mpi.1.01:
   make all
   make opt
   make install
+Installing mpi.1.01.
