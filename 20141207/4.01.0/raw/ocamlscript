@@ -1,8 +1,13 @@
-++ opam install ocamlscript -e centos,centos-7
+++ opam install ocamlscript -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+Debian depexts:
+++ opam install ocamlscript -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install ocamlscript
 The following actions will be performed:
  - install   ocamlscript.2.0.2
