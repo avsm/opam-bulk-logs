@@ -205,3 +205,132 @@ Building cstruct.1.5.0:
   ./configure --prefix /home/opam/.opam/4.01.0 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
   make
   make install
+Installing cstruct.1.5.0.
+Copying ~/.opam/repo/default/packages/oasis/oasis.0.4.5/files/oasis.install to ~/.opam/4.01.0/build/oasis.0.4.5/
+Building oasis.0.4.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing oasis.0.4.5.
+Building rpc.1.5.1:
+  make
+  make install
+Installing rpc.1.5.1.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Building xapi-inventory.0.9.1:
+  ./configure --default_inventory=/home/opam/.opam/4.01.0/etc
+  make
+  make install
+Installing xapi-inventory.0.9.1.
+Building cohttp.0.10.1:
+  make PREFIX=/home/opam/.opam/4.01.0
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing cohttp.0.10.1.
+Building crc.0.9.0:
+  make
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing crc.0.9.0.
+Building io-page.1.2.0:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing io-page.1.2.0.
+Building xapi-rrd.0.9.1:
+  make
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing xapi-rrd.0.9.1.
+Building message-switch.0.10.4:
+  ./configure --bindir /home/opam/.opam/4.01.0/bin
+  make
+  make install
+[ERROR] The compilation of message-switch.0.10.4 failed.
+Removing message-switch.0.10.4.
+  ocamlfind remove message_switch
+Building xen-gnt.2.0.0:
+  make
+  make PREFIX=/home/opam/.opam/4.01.0 install
+[ERROR] The compilation of xen-gnt.2.0.0 failed.
+Removing xen-gnt.2.0.0.
+  make PREFIX=/home/opam/.opam/4.01.0 uninstall
+
+
+#=== ERROR while installing message-switch.0.10.4 =============================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure --bindir /home/opam/.opam/4.01.0/bin
+# path                 /home/opam/.opam/4.01.0/build/message-switch.0.10.4
+# compiler             4.01.0
+# exit-code            127
+# env-file             /home/opam/.opam/4.01.0/build/message-switch.0.10.4/message-switch-11486-4519e5.env
+# stdout-file          /home/opam/.opam/4.01.0/build/message-switch.0.10.4/message-switch-11486-4519e5.out
+# stderr-file          /home/opam/.opam/4.01.0/build/message-switch.0.10.4/message-switch-11486-4519e5.err
+### stderr ###
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+# ./configure: line 12: /tmp/configure.8ROj9/configure: No such file or directory
+
+
+#=== ERROR while installing xen-gnt.2.0.0 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.01.0/build/xen-gnt.2.0.0
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/xen-gnt.2.0.0/xen-gnt-11507-d8393c.env
+# stdout-file          /home/opam/.opam/4.01.0/build/xen-gnt.2.0.0/xen-gnt-11507-d8393c.out
+# stderr-file          /home/opam/.opam/4.01.0/build/xen-gnt.2.0.0/xen-gnt-11507-d8393c.err
+### stdout ###
+# ocamlfind ocamlopt -package "cmdliner" -linkpkg configure.ml -o configure
+### stderr ###
+# Makefile:8: config.mk: No such file or directory
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+# make: *** [configure] Error 2
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   crc.0.9.0
+ - install   ocamlmod.0.0.7
+ - install   uuidm.0.9.5
+ - install   syslog.1.4
+ - install   base-no-ppx.base
+ - install   xmlm.1.2.0
+ - install   fd-send-recv.1.0.1
+ - install   cohttp.0.10.1
+ - install   xapi-rrd.0.9.1
+ - install   xapi-stdext.0.12.0
+ - install   sexplib.111.17.00
+ - install   ocaml-data-notation.0.0.11
+ - install   xapi-inventory.0.9.1
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   ssl.0.4.7
+ - install   rpc.1.5.1
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   base-bytes.legacy
+ - install   stringext.1.1.0
+ - install   ocamlify.0.0.1
+ - install   oasis.0.4.5
+ - install   obuild.0.1.1
+ - install   optcomp.1.6
+ - install   type_conv.111.13.00
+ - install   re.1.2.2
+ - install   uri.1.7.2
+ - install   fieldslib.109.20.03
+ - install   ocplib-endian.0.7
+The following failed
+ - install   message-switch.0.10.4
+ - install   xen-gnt.2.0.0
+Due to the errors, the following have been cancelled
+ - install   xapi-rrd-transport.0.7.2
+ - install   xapi-idl.0.9.19
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107223635.export"
