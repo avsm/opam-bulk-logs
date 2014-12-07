@@ -63,3 +63,11 @@ Building batteries.2.3.1:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   make all
   make install
+Installing batteries.2.3.1.
+Copying ~/.opam/repo/default/packages/conf-leveldb/conf-leveldb.1/files/test.cc to ~/.opam/4.01.0/build/conf-leveldb.1/
+Building conf-leveldb.1:
+  cc -c test.cc
+Installing conf-leveldb.1.
+Building cryptokit.1.9:
+  make
+  make install
