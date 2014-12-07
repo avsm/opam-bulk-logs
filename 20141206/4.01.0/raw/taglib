@@ -44,3 +44,4 @@ Building taglib.0.3.0:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing taglib.0.3.0.
