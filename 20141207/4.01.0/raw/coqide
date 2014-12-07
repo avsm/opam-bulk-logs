@@ -392,3 +392,14 @@ Building coq.8.4.5:
   make -j1 world
   make -j1 states
   make install
+Installing coq.8.4.5.
+Copying ~/.opam/repo/default/packages/coqide/coqide.8.4.5/files/MAKEFILE_remove_useless_for_coqide.patch to ~/.opam/4.01.0/build/coqide.8.4.5/
+Applying MAKEFILE_remove_useless_for_coqide.patch.
+Building coqide.8.4.5:
+  ./configure -configdir /home/opam/.opam/4.01.0/lib/coq/config -mandir /home/opam/.opam/4.01.0/man -docdir /home/opam/.opam/4.01.0/doc --prefix /home/opam/.opam/4.01.0 --usecamlp5 --camlp5dir /home/opam/.opam/4.01.0/lib/camlp5
+  make -j1 parsing/tok.cmo
+  make -j1 parsing/tok.cmx
+  make -j1 parsing/tok.cmi
+  make -j1 coqide-files
+  make -j1 coqide-binaries
+  make install-coqide
