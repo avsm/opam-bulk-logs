@@ -1,0 +1,14 @@
+++ opam install irminsule -e ubuntu
+[ERROR] No package named irminsule found.
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install irminsule -e source,linux
+[ERROR] No package named irminsule found.
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install irminsule
+Ubuntu srcexts:
+[ERROR] No package named irminsule found.
