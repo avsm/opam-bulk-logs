@@ -32,3 +32,9 @@ Building ocplib-endian.0.7:
   ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing ocplib-endian.0.7.
+Building alberto.0.2:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing alberto.0.2.
