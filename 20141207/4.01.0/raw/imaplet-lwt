@@ -132,3 +132,24 @@ The following actions will be performed:
 [pipebang.110.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/110.01.00/individual/pipebang-110.01.00.tar.gz
 [re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
 [re2.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/re2-111.08.00.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[sha.1.9] Downloading https://github.com/vincenthz/ocaml-sha/archive/ocaml-sha-v1.9.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[stringext.1.1.0] Downloading https://github.com/rgrinberg/stringext/archive/v1.1.0.tar.gz
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/ssl.0.4.7/ocaml-ssl-0.4.7.tar.gz:
+  - 873533ce43cf4b88b4fb0ea27289320a [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
+[ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz is not available
+[tls.0.2.0] Downloading https://github.com/mirleft/ocaml-tls/archive/0.2.0.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
+[uri.1.7.2] Downloading https://github.com/mirage/ocaml-uri/archive/v1.7.2.tar.gz
+[uutf.0.9.3] Downloading http://erratique.ch/software/uutf/releases/uutf-0.9.3.tbz
+[variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
+[x509.0.2.0] Downloading https://github.com/mirleft/ocaml-x509/archive/0.2.0.tar.gz
+[zarith.1.3] Downloading https://forge.ocamlcore.org/frs/download.php/1471/zarith-1.3.tgz
+
+[ERROR] Could not download archives of ssl.0.4.7
