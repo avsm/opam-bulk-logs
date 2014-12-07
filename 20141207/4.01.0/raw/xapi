@@ -296,3 +296,70 @@ Building oasis.0.4.5:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing oasis.0.4.5.
+Building opasswd.0.9.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing opasswd.0.9.3.
+Building rpc.1.5.1:
+  make
+  make install
+Installing rpc.1.5.1.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Building xapi-inventory.0.9.1:
+  ./configure --default_inventory=/home/opam/.opam/4.01.0/etc
+  make
+  make install
+Installing xapi-inventory.0.9.1.
+Building xenctrl.0.9.26:
+  ./configure
+  make
+  make install BINDIR=/home/opam/.opam/4.01.0/bin
+[ERROR] The compilation of xenctrl.0.9.26 failed.
+Removing xenctrl.0.9.26.
+  make uninstall
+Building cohttp.0.10.1:
+  make PREFIX=/home/opam/.opam/4.01.0
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing cohttp.0.10.1.
+Building crc.0.9.0:
+  make
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing crc.0.9.0.
+Building io-page.1.2.0:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing io-page.1.2.0.
+Building nbd.1.0.2:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install BINDIR=/home/opam/.opam/4.01.0/bin
+Installing nbd.1.0.2.
+Building tar-format.0.2.1:
+  make
+  make install
+Installing tar-format.0.2.1.
+Building xapi-rrd.0.9.1:
+  make
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing xapi-rrd.0.9.1.
+Building xenstore.1.2.5:
+  make all
+  make install
+Installing xenstore.1.2.5.
+Building message-switch.0.10.4:
+  ./configure --bindir /home/opam/.opam/4.01.0/bin
+  make
+  make install
+[ERROR] The compilation of message-switch.0.10.4 failed.
+Removing message-switch.0.10.4.
+  ocamlfind remove message_switch
+Building xen-api-client.0.9.7:
+  make
+  make install
