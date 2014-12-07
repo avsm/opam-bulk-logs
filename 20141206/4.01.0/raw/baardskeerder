@@ -6,9 +6,9 @@ Ubuntu depexts:
 ++ opam install baardskeerder -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
+Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install baardskeerder
-Ubuntu srcexts:
 The following actions will be performed:
  - install   ounit.2.0.0                           [required by baardskeerder]
  - install   base-no-ppx.base                      [required by lwt]
@@ -49,4 +49,3 @@ Installing quickcheck.1.0.2.
 Building baardskeerder.0.5.2:
   sh -c cd src && make
   sh -c cd src && make install
-Installing baardskeerder.0.5.2.
