@@ -21,3 +21,4 @@ Building forkwork.0.3.2:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing forkwork.0.3.2.

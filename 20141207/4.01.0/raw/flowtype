@@ -26,3 +26,9 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [flowtype.0.1.0] Downloading https://github.com/facebook/flow/archive/v0.1.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.legacy.
+Copying ~/.opam/repo/default/packages/flowtype/flowtype.0.1.0/files/flowtype.install to ~/.opam/4.01.0/build/flowtype.0.1.0/
+Building flowtype.0.1.0:
+  make
