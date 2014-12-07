@@ -47,3 +47,4 @@ Building ocaml-indent.1.2.1:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing ocaml-indent.1.2.1.
