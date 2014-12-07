@@ -22,3 +22,8 @@ The following actions will be performed:
 Building type_conv.111.13.00:
   make
   make install
+Installing type_conv.111.13.00.
+Building variantslib.109.15.03:
+  make
+  make install
+Installing variantslib.109.15.03.

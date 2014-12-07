@@ -375,3 +375,9 @@ Building lablgtk.2.18.3:
   ./configure --prefix /home/opam/.opam/4.01.0 LABLGLDIR=/home/opam/.opam/4.01.0/lib/lablgl
   make world
   make install
+Installing lablgtk.2.18.3.
+Copying ~/.opam/repo/default/packages/unison/unison.2.40.102/files/unison.install to ~/.opam/4.01.0/build/unison.2.40.102/
+Copying ~/.opam/repo/default/packages/unison/unison.2.40.102/files/opam.patch to ~/.opam/4.01.0/build/unison.2.40.102/
+Applying opam.patch.
+Building unison.2.40.102:
+  make install OCAMLLIBDIR=/home/opam/.opam/4.01.0/lib HOME=/home/opam/.opam/4.01.0
