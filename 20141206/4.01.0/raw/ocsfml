@@ -354,3 +354,4 @@ Building ocsfml.2.0:
   cmake .
   make
   make install
+Installing ocsfml.2.0.
