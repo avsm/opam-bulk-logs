@@ -67,3 +67,5 @@ This is surely due to outdated package descriptions and should be fixed by runni
 In case an update does not fix that problem, you can use the `--no-checksums` command-line option
 to /bypass checking for invalid checksums.
 [ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-mm/0.2.1/ocaml-mm-0.2.1.tar.gz is not available
+[ERROR] Could not download archives of dtools.0.3.0, duppy.0.5.0, liquidsoap.1.1.0, mad.0.4.4 and mm.0.2.1
+
