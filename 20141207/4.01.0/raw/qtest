@@ -44,3 +44,11 @@ Installing ocamlmod.0.0.7.
 Building ounit.2.0.0:
   make build
   make install
+Installing ounit.2.0.0.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building ocaml-data-notation.0.0.11:
+  make
+  make install
