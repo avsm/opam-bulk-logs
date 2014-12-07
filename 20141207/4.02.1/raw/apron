@@ -1,0 +1,72 @@
+++ opam install apron -e ubuntu
++ depext='libgmp-dev libmpfr-dev'
++ echo Ubuntu depexts: libgmp-dev libmpfr-dev
+Ubuntu depexts: libgmp-dev libmpfr-dev
++ '[' 'libgmp-dev libmpfr-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libgmp-dev libmpfr-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libgmpxx4ldbl_2%3a5.1.3+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:5.1.3+dfsg-1ubuntu1) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../libgmp-dev_2%3a5.1.3+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:5.1.3+dfsg-1ubuntu1) ...
+Selecting previously unselected package libmpfr-dev:amd64.
+Preparing to unpack .../libmpfr-dev_3.1.2-1_amd64.deb ...
+Unpacking libmpfr-dev:amd64 (3.1.2-1) ...
+Setting up libgmpxx4ldbl:amd64 (2:5.1.3+dfsg-1ubuntu1) ...
+Setting up libgmp-dev:amd64 (2:5.1.3+dfsg-1ubuntu1) ...
+Setting up libmpfr-dev:amd64 (3.1.2-1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.3) ...
+++ opam install apron -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install apron
+The following actions will be performed:
+ - install   camlidl.1.05                          [required by apron]
+ - install   conf-gmp.1                            [required by apron]
+ - install   conf-mpfr.1                           [required by apron]
+ - install   apron.0.9.10
+=== 4 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[apron.0.9.10] Downloading https://github.com/UnixJunkie/apron-vanilla/archive/apron_dist_trunk_svn_r1053.tar.gz
+[camlidl.1.05] Downloading http://caml.inria.fr/pub/old_caml_site/distrib/bazar-ocaml/camlidl-1.05.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/camlidl/camlidl.1.05/files/cpp-location.diff to ~/.opam/4.02.1/build/camlidl.1.05/
+Copying ~/.opam/repo/default/packages/camlidl/camlidl.1.05/files/camlidl.install to ~/.opam/4.02.1/build/camlidl.1.05/
+Copying ~/.opam/repo/default/packages/camlidl/camlidl.1.05/files/META to ~/.opam/4.02.1/build/camlidl.1.05/
+Applying cpp-location.diff.
+Building camlidl.1.05:
+  mv config/Makefile.unix config/Makefile
+  mkdir -p /home/opam/.opam/4.02.1/bin /home/opam/.opam/4.02.1/lib/camlidl /home/opam/.opam/4.02.1/lib/camlidl/caml
+  make all
+  make install BINDIR=/home/opam/.opam/4.02.1/bin OCAMLLIB=/home/opam/.opam/4.02.1/lib/camlidl
+Installing camlidl.1.05.
+Copying ~/.opam/repo/default/packages/conf-gmp/conf-gmp.1/files/test.c to ~/.opam/4.02.1/build/conf-gmp.1/
+Building conf-gmp.1:
+  cc -c test.c
+Installing conf-gmp.1.
+Copying ~/.opam/repo/default/packages/conf-mpfr/conf-mpfr.1/files/test.c to ~/.opam/4.02.1/build/conf-mpfr.1/
+Building conf-mpfr.1:
+  cc test.c -lgmp -lmpfr
+Installing conf-mpfr.1.
+Copying ~/.opam/repo/default/packages/apron/apron.0.9.10/files/opam.patch to ~/.opam/4.02.1/build/apron.0.9.10/
+Copying ~/.opam/repo/default/packages/apron/apron.0.9.10/files/Makefile.config to ~/.opam/4.02.1/build/apron.0.9.10/
+Applying opam.patch.
+Building apron.0.9.10:
+  make rebuild
+  make
+  make install
+Installing apron.0.9.10.
