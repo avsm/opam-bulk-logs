@@ -23,3 +23,4 @@ Building pfff.0.27.3:
   make
   make opt
   make install-findlib
+Installing pfff.0.27.3.
