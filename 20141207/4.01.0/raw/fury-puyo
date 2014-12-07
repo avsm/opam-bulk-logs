@@ -1,21 +1,6 @@
-++ opam install fury-puyo -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-+ '[' '' '!=' '' ']'
-CentOS 7 depexts:
-+ opam install fury-puyo
-The following actions will be performed:
- - install   conf-sdl-ttf.1                        [required by fury-puyo]
- - install   conf-sdl-image.1                      [required by fury-puyo]
- - install   conf-sdl-mixer.1                      [required by fury-puyo]
- - install   ocamlsdl.0.9.1                        [required by fury-puyo]
- - install   fury-puyo.0.5
-=== 5 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[ocamlsdl.0.9.1] Downloading http://downloads.sourceforge.net/project/ocamlsdl/OCamlSDL/ocamlsdl-0.9.1/ocamlsdl-0.9.1.tar.gz
-[fury-puyo.0.5] Downloading https://forge.ocamlcore.org/frs/download.php/352/furypuyo-0.5.tar.gz
-[ERROR] curl: code 404 while downloading http://downloads.sourceforge.net/project/ocamlsdl/OCamlSDL/ocamlsdl-0.9.1/ocamlsdl-0.9.1.tar.gz
-[ERROR] http://downloads.sourceforge.net/project/ocamlsdl/OCamlSDL/ocamlsdl-0.9.1/ocamlsdl-0.9.1.tar.gz is not available
-[ERROR] Could not download archives of ocamlsdl.0.9.1
-
+++ opam install fury-puyo -e debian
++ depext='libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev'
++ echo Debian depexts: libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev
+Debian depexts: libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev
++ '[' 'libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
