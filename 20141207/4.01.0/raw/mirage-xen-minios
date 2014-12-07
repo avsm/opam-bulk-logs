@@ -1,9 +1,14 @@
-++ opam install mirage-xen-minios -e centos,centos-7
+++ opam install mirage-xen-minios -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install mirage-xen-minios -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install mirage-xen-minios
-CentOS 7 depexts:
 The following actions will be performed:
  - install   mirage-xen-minios.0.4.2
 === 1 to install ===
