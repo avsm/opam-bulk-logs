@@ -1,7 +1,12 @@
-++ opam install xapi-inventory -e centos,centos-7
+++ opam install xapi-inventory -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install xapi-inventory -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install xapi-inventory
 The following actions will be performed:
@@ -14,8 +19,8 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
-[fd-send-recv.1.0.1] Downloading https://github.com/xen-org/ocaml-fd-send-recv/archive/ocaml-fd-send-recv-1.0.1.tar.gz
 [uuidm.0.9.5] Downloading http://erratique.ch/software/uuidm/releases/uuidm-0.9.5.tbz
+[fd-send-recv.1.0.1] Downloading https://github.com/xen-org/ocaml-fd-send-recv/archive/ocaml-fd-send-recv-1.0.1.tar.gz
 [xapi-inventory.0.9.1] Downloading https://github.com/xapi-project/xcp-inventory/archive/v0.9.1.tar.gz
 [xapi-stdext.0.12.0] Downloading http://github.com/xapi-project/stdext/archive/v0.12.0.tar.gz
 
