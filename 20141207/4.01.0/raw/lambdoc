@@ -156,3 +156,8 @@ Installing pxp.1.2.3.
 Building blahcaml.2.1:
   make
   make install
+Installing blahcaml.2.1.
+Copying ~/.opam/repo/default/packages/lambdoc/lambdoc.1.0-beta2/files/lambdoc.install to ~/.opam/4.01.0/build/lambdoc.1.0-beta2/
+Building lambdoc.1.0-beta2:
+  make
+  make install
