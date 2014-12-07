@@ -1,0 +1,16 @@
+++ opam install aacplus -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install aacplus
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   aacplus.0.2.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[aacplus.0.2.1] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz
+[ERROR] curl: code 500 while downloading http://downloads.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz
+[ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-aacplus/0.2.1/ocaml-aacplus-0.2.1.tar.gz is not available
+[ERROR] Could not download archives of aacplus.0.2.1
+
