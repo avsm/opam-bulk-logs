@@ -1,12 +1,12 @@
 ++ opam install FrontC -e ubuntu
+Ubuntu depexts:
 + depext=
 + echo Ubuntu depexts:
-Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install FrontC -e source,linux
+Ubuntu srcexts:
 + srcext=
 + echo Ubuntu srcexts:
-Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install FrontC
 The following actions will be performed:
@@ -24,4 +24,3 @@ Applying opam.patch.
 Building FrontC.3.4:
   make install PREFIX=/home/opam/.opam/4.01.0/lib OCAML_SITE=/home/opam/.opam/4.01.0/lib
   cp META /home/opam/.opam/4.01.0/lib/FrontC
-Installing FrontC.3.4.
