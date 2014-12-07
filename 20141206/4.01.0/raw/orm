@@ -1,9 +1,9 @@
 ++ opam install orm -e ubuntu
 + depext='libsqlite3-dev pkg-config'
+Ubuntu depexts: libsqlite3-dev pkg-config
 + echo Ubuntu depexts: libsqlite3-dev pkg-config
 + '[' 'libsqlite3-dev pkg-config' '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
-Ubuntu depexts: libsqlite3-dev pkg-config
 + sudo apt-get install -qq -y libsqlite3-dev pkg-config
 debconf: unable to initialize frontend: Dialog
 debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
@@ -19,10 +19,10 @@ Unpacking libsqlite3-dev:amd64 (3.8.2-1ubuntu2) ...
 Setting up libsqlite3-dev:amd64 (3.8.2-1ubuntu2) ...
 ++ opam install orm -e source,linux
 + srcext=
+Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install orm
-Ubuntu srcexts:
 The following actions will be performed:
  - install   type_conv.111.13.00                   [required by dyntype]
  - install   sqlite3.2.0.7                         [required by orm]
