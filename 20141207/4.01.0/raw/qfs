@@ -1,0 +1,96 @@
+++ opam install qfs -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install qfs
+The following actions will be performed:
+ - install   type_conv.111.13.00                   [required by ocaml-data-notation]
+ - install   ocamlify.0.0.1                        [required by oasis]
+ - install   ocamlmod.0.0.7                        [required by oasis]
+ - install   ocaml-data-notation.0.0.11            [required by oasis]
+ - install   oasis.0.4.5                           [required by qfs]
+ - install   qfs.0.1
+=== 6 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[oasis.0.4.5] Downloading https://forge.ocamlcore.org/frs/download.php/1475/oasis-0.4.5.tar.gz
+[ocaml-data-notation.0.0.11] Downloading https://forge.ocamlcore.org/frs/download.php/1310/ocaml-data-notation-0.0.11.tar.gz
+[ocamlify.0.0.1] Downloading http://forge.ocamlcore.org/frs/download.php/379/ocamlify-0.0.1.tar.gz
+[ocamlmod.0.0.7] Downloading https://forge.ocamlcore.org/frs/download.php/1350/ocamlmod-0.0.7.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[qfs.0.1] Downloading https://github.com/ahrefs/ocaml-qfs/archive/0.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/ocamlify/ocamlify.0.0.1/files/ocamlify.install to ~/.opam/4.01.0/build/ocamlify.0.0.1/
+Building ocamlify.0.0.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlify.0.0.1.
+Copying ~/.opam/repo/default/packages/ocamlmod/ocamlmod.0.0.7/files/ocamlmod.install to ~/.opam/4.01.0/build/ocamlmod.0.0.7/
+Building ocamlmod.0.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlmod.0.0.7.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building ocaml-data-notation.0.0.11:
+  make
+  make install
+Installing ocaml-data-notation.0.0.11.
+Copying ~/.opam/repo/default/packages/oasis/oasis.0.4.5/files/oasis.install to ~/.opam/4.01.0/build/oasis.0.4.5/
+Building oasis.0.4.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing oasis.0.4.5.
+Building qfs.0.1:
+  make
+  make install
+[ERROR] The compilation of qfs.0.1 failed.
+Removing qfs.0.1.
+  ocamlfind remove qfs
+
+
+#=== ERROR while installing qfs.0.1 ===========================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.01.0/build/qfs.0.1
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/qfs.0.1/qfs-1927-865888.env
+# stdout-file          /home/opam/.opam/4.01.0/build/qfs.0.1/qfs-1927-865888.out
+# stderr-file          /home/opam/.opam/4.01.0/build/qfs.0.1/qfs-1927-865888.err
+### stdout ###
+# ...[truncated]
+# 
+# ocaml setup.ml -build 
+# /home/opam/.opam/4.01.0/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind ocamlc -ccopt -x -ccopt c++ -ccopt -Wall -ccopt -Wno-write-strings -c src/qfs_stubs.c
+# + ocamlfind ocamlc -ccopt -x -ccopt c++ -ccopt -Wall -ccopt -Wno-write-strings -c src/qfs_stubs.c
+# src/qfs_stubs.c:3:31: fatal error: boost/smart_ptr.hpp: No such file or directory
+#  #include <boost/smart_ptr.hpp>
+#                                ^
+# compilation terminated.
+# Command exited with code 2.
+### stderr ###
+# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' src/libqfs_stubs.a src/dllqfs_stubs.so src/qfs.cma src/qfs.cmxa src/qfs.a src/qfs.cmxs src/example.native -tag debug' terminated with error code 10")
+# make: *** [build] Error 1
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   ocamlmod.0.0.7
+ - install   ocaml-data-notation.0.0.11
+ - install   ocamlify.0.0.1
+ - install   oasis.0.4.5
+ - install   type_conv.111.13.00
+The following failed
+ - install   qfs.0.1
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107154534.export"
