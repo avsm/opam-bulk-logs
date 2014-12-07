@@ -1,9 +1,14 @@
-++ opam install KaSim -e centos,centos-7
+++ opam install KaSim -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install KaSim -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install KaSim
+Debian srcexts:
 The following actions will be performed:
  - install   KaSim.3.5.141112
 === 1 to install ===
