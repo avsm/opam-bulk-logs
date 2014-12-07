@@ -1,14 +1,14 @@
 ++ opam install wget -e ubuntu
 + depext=
 + echo Ubuntu depexts:
-+ '[' '' '!=' '' ']'
 Ubuntu depexts:
++ '[' '' '!=' '' ']'
 ++ opam install wget -e source,linux
 + srcext=
-Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install wget
+Ubuntu srcexts:
 The following actions will be performed:
  - install   ocp-build.1.99.8-beta                 [required by wget]
  - install   wget.0.1.0
@@ -37,12 +37,6 @@ Removing ocp-build.1.99.8-beta.
   rm -rf /home/opam/.opam/4.01.0/lib/ocaml/typerex/ocp-build
 
 
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-The following failed
- - install   ocp-build.1.99.8-beta
-Due to the errors, the following have been cancelled
- - install   wget.0.1.0
-
 #=== ERROR while installing ocp-build.1.99.8-beta =============================#
 # opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
 # os                   linux
@@ -50,9 +44,9 @@ Due to the errors, the following have been cancelled
 # path                 /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta
 # compiler             4.01.0
 # exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-141-e7966f.env
-# stdout-file          /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-141-e7966f.out
-# stderr-file          /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-141-e7966f.err
+# env-file             /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-138-e7966f.env
+# stdout-file          /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-138-e7966f.out
+# stderr-file          /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-138-e7966f.err
 ### stdout ###
 # ...[truncated]
 # Creating root directory _obuild/
@@ -70,3 +64,9 @@ Due to the errors, the following have been cancelled
 # make[1]: *** [ocp-build] Error 2
 # make: *** [boot/ocp-build] Error 2
 
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following failed
+ - install   ocp-build.1.99.8-beta
+Due to the errors, the following have been cancelled
+ - install   wget.0.1.0
