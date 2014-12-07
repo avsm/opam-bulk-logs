@@ -1,26 +1,35 @@
-++ opam install planck -e centos,centos-7
+++ opam install planck -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install planck -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install planck
+Debian srcexts:
 The following actions will be performed:
  - install   omake.0.9.8.6-0.rc1                   [required by planck]
+ - install   ounit.2.0.0                           [required by pa_ounit]
  - install   type_conv.111.13.00                   [required by sexplib]
  - install   ocamlgraph.1.8.5                      [required by planck]
  - install   pa_monad_custom.v6.0.0                [required by planck]
- - install   spotlib.2.1.2                         [required by planck]
- - install   sexplib.111.25.00                     [required by planck]
+ - install   sexplib.111.17.00                     [required by planck]
+ - install   pa_ounit.111.28.00                    [required by spotlib]
+ - install   spotlib.2.4.1                         [required by planck]
  - install   planck.2.1.1
-=== 7 to install ===
+=== 9 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [ocamlgraph.1.8.5] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.5.tar.gz
 [omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
 [pa_monad_custom.v6.0.0] Downloading https://bitbucket.org/camlspotter/pa_monad_custom/get/v6.0.0.tar.gz
+[pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
 [planck.2.1.1] Downloading https://bitbucket.org/camlspotter/planck/get/2.1.1.tar.gz
-[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
-[spotlib.2.1.2] Downloading https://bitbucket.org/camlspotter/spotlib/get/2.1.2.tar.gz
+[sexplib.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/sexplib-111.17.00.tar.gz
+[spotlib.2.4.1] Downloading https://bitbucket.org/camlspotter/spotlib/get/2.4.1.tar.gz
 [type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -41,80 +50,3 @@ Building omake.0.9.8.6-0.rc1:
   make bootstrap PREFIX=/home/opam/.opam/4.01.0
   make all PREFIX=/home/opam/.opam/4.01.0
   make install PREFIX=/home/opam/.opam/4.01.0
-Installing omake.0.9.8.6-0.rc1.
-Building pa_monad_custom.v6.0.0:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing pa_monad_custom.v6.0.0.
-Building type_conv.111.13.00:
-  make
-  make install
-Installing type_conv.111.13.00.
-Building sexplib.111.25.00:
-  ./configure --enable-syntax
-  make
-  make install
-Installing sexplib.111.25.00.
-Building spotlib.2.1.2:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing spotlib.2.1.2.
-Building planck.2.1.1:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-[ERROR] The compilation of planck.2.1.1 failed.
-Removing planck.2.1.1.
-  ocamlfind remove planck
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   pa_monad_custom.v6.0.0
- - install   sexplib.111.25.00
- - install   ocamlgraph.1.8.5
- - install   type_conv.111.13.00
- - install   spotlib.2.1.2
- - install   omake.0.9.8.6-0.rc1
-The following failed
- - install   planck.2.1.1
-
-#=== ERROR while installing planck.2.1.1 ======================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ocaml setup.ml -build
-# path                 /home/opam/.opam/4.01.0/build/planck.2.1.1
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/planck.2.1.1/planck-4176-865888.env
-# stdout-file          /home/opam/.opam/4.01.0/build/planck.2.1.1/planck-4176-865888.out
-# stderr-file          /home/opam/.opam/4.01.0/build/planck.2.1.1/planck-4176-865888.err
-### stdout ###
-# ...[truncated]
-# *** omake: finished reading OMakefiles (0.08 sec)
-# --- Checking if ocamldep understands -modules... (yes)
-# - build pa_bind_inline pa_bind_inline.o
-# + ocamlfind ocamlc -annot -bin-annot -package camlp4 -g -w A-4-9 -warn-error a -g -pp camlp4of -I . -c pa_bind_inline.ml
-# - build pa_bind_inline pa_bind_inline.o
-# + ocamlfind ocamlopt -annot -bin-annot -package camlp4 -g -w A-4-9 -warn-error a -pp camlp4of -I . -c pa_bind_inline.ml
-# - build lib elem.cmo
-# + ocamlfind ocamlc -annot -bin-annot -for-pack Planck -package sexplib,spotlib -g -w A-4-9 -warn-error a -g -syntax camlp4o -package sexplib.syntax -ppopt ../pa_bind_inline/pa_bind_inline.cmo -I . -c elem.ml
-# *** omake: 130/288 targets are up to date
-# *** omake: failed (5.94 sec, 42/42 scans, 15/22 rules, 76/253 digests)
-### stderr ###
-# ...[truncated]
-# File "pa_bind_inline.ml", line 11, characters 0-12:
-# Warning 44: this open statement shadows the module identifier Id (which is later used)
-# *** omake: warning: stdout is not a tty, disabling the progress bar
-#    (use --progress to override).
-# File "elem.ml", line 15, characters 10-32:
-# Error: Unbound module Mtypes.Make_comparable
-# *** omake: targets were not rebuilt because of errors:
-#    lib/elem.cmo
-#       depends on: lib/elem.ml
-# E: Failure("Command 'cp OMakeroot.in OMakeroot; PREFIX=/home/opam/.opam/4.01.0 omake' terminated with error code 2")
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107154206.export"
