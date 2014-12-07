@@ -52,3 +52,4 @@ Installing sexplib.111.17.00.
 Building extprot.1.1.2:
   omake
   omake install prefix=/home/opam/.opam/4.01.0
+Installing extprot.1.1.2.
