@@ -74,3 +74,64 @@ Setting up libkadm5srv-mit9:amd64 (1.12+dfsg-2ubuntu4.2) ...
 Setting up libgnutlsxx27:amd64 (2.12.23-12ubuntu2.1) ...
 Setting up comerr-dev (2.1-1.42.9-3ubuntu1) ...
 Setting up krb5-multidev (1.12+dfsg-2ubuntu4.2) ...
+Setting up libgpg-error-dev (1.12-0.2ubuntu1) ...
+Setting up libgcrypt11-dev (1.5.3-2ubuntu4.1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up libtasn1-6-dev (3.4-3ubuntu0.1) ...
+Setting up libp11-kit-dev (0.20.2-2ubuntu2) ...
+Setting up libgnutls-dev (2.12.23-12ubuntu2.1) ...
+Setting up libidn11-dev (1.28-1ubuntu2) ...
+Setting up libkrb5-dev (1.12+dfsg-2ubuntu4.2) ...
+Setting up libldap2-dev:amd64 (2.4.31-1+nmu2ubuntu8) ...
+Setting up librtmp-dev (2.4+20121230.gitdf6c518-1) ...
+Setting up libcurl4-gnutls-dev:amd64 (7.35.0-1ubuntu2.2) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
+++ opam install 0install -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install 0install
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by 0install]
+ - install   extlib.1.6.1                          [required by 0install]
+ - install   xmlm.1.2.0                            [required by 0install]
+ - install   easy-format.1.0.2                     [required by yojson]
+ - install   base-no-ppx.base                      [required by lwt]
+ - install   sha.1.9                               [required by 0install]
+ - install   react.1.2.0                           [required by 0install]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   biniou.1.0.9                          [required by yojson]
+ - install   lwt.2.4.6                             [required by 0install]
+ - install   yojson.1.1.8                          [required by 0install]
+ - install   ocurl.0.7.2                           [required by 0install]
+ - install   0install.2.8
+=== 13 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[0install.2.8] Downloading https://downloads.sf.net/project/zero-install/0install/2.8/0install-2.8.tar.bz2
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[extlib.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[ocurl.0.7.2] Downloading http://ygrek.org.ua/p/release/ocurl/ocurl-0.7.2.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[react.1.2.0] Downloading http://erratique.ch/software/react/releases/react-1.2.0.tbz
+[sha.1.9] Downloading https://github.com/vincenthz/ocaml-sha/archive/ocaml-sha-v1.9.tar.gz
+[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-no-ppx.base.
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.01.0/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Building extlib.1.6.1:
+  make minimal=1 build install
