@@ -4,3 +4,25 @@
 Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install variantslib -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install variantslib
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   type_conv.111.13.00                   [required by variantslib]
+ - install   variantslib.109.15.03
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building variantslib.109.15.03:
+  make
+  make install
