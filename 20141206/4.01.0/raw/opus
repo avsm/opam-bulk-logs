@@ -1,9 +1,9 @@
 ++ opam install opus -e ubuntu
 + depext='libavutil-dev libogg-dev libopus-dev'
-Ubuntu depexts: libavutil-dev libogg-dev libopus-dev
 + echo Ubuntu depexts: libavutil-dev libogg-dev libopus-dev
 + '[' 'libavutil-dev libogg-dev libopus-dev' '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libavutil-dev libogg-dev libopus-dev
 + sudo apt-get install -qq -y libavutil-dev libogg-dev libopus-dev
 debconf: unable to initialize frontend: Dialog
 debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
@@ -40,8 +40,8 @@ Setting up libopus-dev (1.1-0ubuntu1) ...
 Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
 ++ opam install opus -e source,linux
 + srcext=
-+ echo Ubuntu srcexts:
 Ubuntu srcexts:
++ echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install opus
 The following actions will be performed:
