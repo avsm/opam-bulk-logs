@@ -93,3 +93,13 @@ Installing variantslib.109.15.00.
 Building core_kernel.109.47.00:
   make
   make install
+Installing core_kernel.109.47.00.
+Building custom_printf.109.27.00:
+  make
+  make install
+Installing custom_printf.109.27.00.
+Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/corebuild over ~/.opam/4.01.0/build/core.109.47.00/
+Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/core.install to ~/.opam/4.01.0/build/core.109.47.00/
+Building core.109.47.00:
+  make
+  make install
