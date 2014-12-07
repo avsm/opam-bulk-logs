@@ -1,9 +1,9 @@
 ++ opam install xenctrl -e ubuntu
 + depext='libxen-dev uuid-dev'
 + echo Ubuntu depexts: libxen-dev uuid-dev
-Ubuntu depexts: libxen-dev uuid-dev
 + '[' 'libxen-dev uuid-dev' '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libxen-dev uuid-dev
 + sudo apt-get install -qq -y libxen-dev uuid-dev
 debconf: unable to initialize frontend: Dialog
 debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
@@ -36,8 +36,8 @@ Setting up uuid-dev (2.20.1-5.1ubuntu20.3) ...
 Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
 ++ opam install xenctrl -e source,linux
 + srcext=
-+ echo Ubuntu srcexts:
 Ubuntu srcexts:
++ echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install xenctrl
 The following actions will be performed:
