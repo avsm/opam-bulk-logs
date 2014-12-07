@@ -147,3 +147,8 @@ Installing async_extra.111.28.00.
 Building async.111.25.00:
   make
   make install
+Installing async.111.25.00.
+Building gen_server.2.0.2:
+  make
+  make install
+Installing gen_server.2.0.2.
