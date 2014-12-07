@@ -9,3 +9,26 @@ debconf: delaying package configuration, since apt-utils is not installed
 Selecting previously unselected package libasound2:amd64.
 (Reading database ... 17996 files and directories currently installed.)
 Unpacking libasound2:amd64 (from .../libasound2_1.0.25-4_amd64.deb) ...
+Selecting previously unselected package libasound2-dev:amd64.
+Unpacking libasound2-dev:amd64 (from .../libasound2-dev_1.0.25-4_amd64.deb) ...
+Setting up libasound2:amd64 (1.0.25-4) ...
+Setting up libasound2-dev:amd64 (1.0.25-4) ...
+++ opam install alsa -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install alsa
+The following actions will be performed:
+ - install   alsa.0.2.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[alsa.0.2.1] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-alsa/0.2.1/ocaml-alsa-0.2.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building alsa.0.2.1:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing alsa.0.2.1.
