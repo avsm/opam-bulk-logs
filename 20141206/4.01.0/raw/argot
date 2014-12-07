@@ -1,0 +1,24 @@
+++ opam install argot -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install argot -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install argot
+The following actions will be performed:
+ - install   argot.1.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[argot.1.1] Downloading http://forge.ocamlcore.org/frs/download.php/960/argot-1.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building argot.1.1:
+  sh configure
+  make all
+  make install
+Installing argot.1.1.
