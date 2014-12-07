@@ -1,9 +1,14 @@
-++ opam install ocamlify -e centos,centos-7
+++ opam install ocamlify -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+Debian depexts:
+++ opam install ocamlify -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install ocamlify
+Debian srcexts:
 The following actions will be performed:
  - install   ocamlify.0.0.1
 === 1 to install ===

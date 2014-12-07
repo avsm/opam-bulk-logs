@@ -9,3 +9,31 @@ debconf: delaying package configuration, since apt-utils is not installed
 Selecting previously unselected package libsigsegv2.
 (Reading database ... 17996 files and directories currently installed.)
 Unpacking libsigsegv2 (from .../libsigsegv2_2.9-4_amd64.deb) ...
+Setting up libsigsegv2 (2.9-4) ...
+Selecting previously unselected package gawk.
+(Reading database ... 18006 files and directories currently installed.)
+Unpacking gawk (from .../gawk_1%3a4.0.1+dfsg-2.1_amd64.deb) ...
+Selecting previously unselected package libgsl0ldbl.
+Unpacking libgsl0ldbl (from .../libgsl0ldbl_1.15+dfsg.2-2_amd64.deb) ...
+Selecting previously unselected package libgsl0-dev.
+Unpacking libgsl0-dev (from .../libgsl0-dev_1.15+dfsg.2-2_amd64.deb) ...
+Setting up gawk (1:4.0.1+dfsg-2.1) ...
+Setting up libgsl0ldbl (1.15+dfsg.2-2) ...
+Setting up libgsl0-dev (1.15+dfsg.2-2) ...
+++ opam install ocamlgsl -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocamlgsl
+Debian srcexts:
+The following actions will be performed:
+ - install   ocamlgsl.0.6.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamlgsl.0.6.0] Downloading http://oandrieu.nerim.net/ocaml/gsl/ocamlgsl-0.6.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ocamlgsl.0.6.0:
+  make
+  make install-findlib
