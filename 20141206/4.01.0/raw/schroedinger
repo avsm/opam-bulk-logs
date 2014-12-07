@@ -58,3 +58,9 @@ Building ogg.0.4.3:
   ./configure --prefix /home/opam/.opam/4.01.0/lib --mandir /home/opam/.opam/4.01.0/man
   make all
   make install
+Installing ogg.0.4.3.
+Building schroedinger.0.1.0:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing schroedinger.0.1.0.
