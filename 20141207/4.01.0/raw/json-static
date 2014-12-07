@@ -1,7 +1,12 @@
-++ opam install json-static -e centos,centos-7
+++ opam install json-static -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install json-static -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install json-static
 The following actions will be performed:
@@ -11,9 +16,9 @@ The following actions will be performed:
 === 3 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
 [json-static.0.9.8] Downloading http://mjambon.com/json-static-0.9.8.tar.bz2
 [json-wheel.1.0.6] Downloading http://mjambon.com/json-wheel-1.0.6.tar.bz2
-[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
