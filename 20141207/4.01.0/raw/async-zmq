@@ -171,3 +171,21 @@ Installing typerep.111.17.00.
 Building core_kernel.111.28.00:
   make
   make install
+Installing core_kernel.111.28.00.
+Building zmq.4.0-3:
+  oasis setup
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+[ERROR] The compilation of zmq.4.0-3 failed.
+Removing zmq.4.0-3.
+  ocamlfind remove ZMQ
+Copying ~/.opam/repo/default/packages/core/core.111.28.00/files/core.install to ~/.opam/4.01.0/build/core.111.28.00/
+Building core.111.28.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing core.111.28.00.
+Building async_kernel.111.28.00:
+  make
+  make install
