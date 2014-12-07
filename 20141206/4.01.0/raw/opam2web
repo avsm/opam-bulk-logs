@@ -141,3 +141,71 @@ Building dose.3.2.2+opam:
   ./configure --with-ocamlgraph --bindir=/home/opam/.opam/4.01.0/bin
   make TARGETS=
   make install
+Installing dose.3.2.2+opam.
+Building js_of_ocaml.2.5:
+  make build
+  make install-lib BINDIR=/home/opam/.opam/4.01.0/bin
+Installing js_of_ocaml.2.5.
+Building opam-lib.1.2.0:
+  ./configure
+  make
+Installing opam-lib.1.2.0.
+Building opamfu.0.1.1:
+  make build
+  make install
+[ERROR] The compilation of opamfu.0.1.1 failed.
+Removing opamfu.0.1.1.
+  make uninstall
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+#=== ERROR while installing opamfu.0.1.1 ======================================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              make build
+# path                 /home/opam/.opam/4.01.0/build/opamfu.0.1.1
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/opamfu.0.1.1/opamfu-13924-8b9749.env
+# stdout-file          /home/opam/.opam/4.01.0/build/opamfu.0.1.1/opamfu-13924-8b9749.out
+# stderr-file          /home/opam/.opam/4.01.0/build/opamfu.0.1.1/opamfu-13924-8b9749.err
+### stdout ###
+# cat META.in ui/opamfuCli.META > META
+# cp lib/opamfu.mllib.in lib/opamfu.mllib
+# echo  >> lib/opamfu.mllib
+# ocamlbuild -use-ocamlfind -cflags -w,@f@p@u@40 -pkgs opam.client,uri,cmdliner -I ui -I lib -tags "debug" opamfu.cma opamfu.cmxa opamfu.a opamfuCli.cma opamfuCli.cmxa opamfuCli.a
+# ocamlfind ocamldep -package cmdliner -package uri -package opam.client -modules lib/opamfUniverse.mli > lib/opamfUniverse.mli.depends
+# + ocamlfind ocamldep -package cmdliner -package uri -package opam.client -modules lib/opamfUniverse.mli > lib/opamfUniverse.mli.depends
+# ocamlfind: Package `opam.client' not found
+# Command exited with code 2.
+### stderr ###
+# make: *** [build] Error 10
+
+These actions have been completed successfully
+ - install   uutf.0.9.3
+ - install   js_of_ocaml.2.5
+ - install   menhir.20140422
+ - install   ulex.1.1
+ - install   cmdliner.0.9.6
+ - install   ocamlgraph.1.8.5
+ - install   base-no-ppx.base
+ - install   xmlm.1.2.0
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   opam-lib.1.2.0
+ - install   jsonm.0.9.1
+ - install   dose.3.2.2+opam
+ - install   dyntype.0.9.0
+ - install   cudf.0.7
+ - install   extlib-compat.1.6.1
+ - install   cow.0.6.0
+ - install   type_conv.111.13.00
+ - install   re.1.2.2
+ - install   uri.1.3.12
+The following failed
+ - install   opamfu.0.1.1
+Due to the errors, the following have been cancelled
+ - install   opam2web.1.3.1
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107092211.export"

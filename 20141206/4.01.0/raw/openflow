@@ -1,14 +1,14 @@
 ++ opam install openflow -e ubuntu
 + depext=
 + echo Ubuntu depexts:
-+ '[' '' '!=' '' ']'
 Ubuntu depexts:
++ '[' '' '!=' '' ']'
 ++ opam install openflow -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
+Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install openflow
-Ubuntu srcexts:
 The following actions will be performed:
  - install   type_conv.111.13.00                   [required by sexplib]
  - install   optcomp.1.6                           [required by ocplib-endian]
