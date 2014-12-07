@@ -1,9 +1,9 @@
 ++ opam install lzo -e ubuntu
+Ubuntu depexts: liblzo2-dev
 + depext=liblzo2-dev
 + echo Ubuntu depexts: liblzo2-dev
 + '[' liblzo2-dev '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
-Ubuntu depexts: liblzo2-dev
 + sudo apt-get install -qq -y liblzo2-dev
 debconf: unable to initialize frontend: Dialog
 debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
@@ -24,8 +24,8 @@ Setting up liblzo2-dev:amd64 (2.06-1.2ubuntu1.1) ...
 Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
 ++ opam install lzo -e source,linux
 + srcext=
-+ echo Ubuntu srcexts:
 Ubuntu srcexts:
++ echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install lzo
 The following actions will be performed:
