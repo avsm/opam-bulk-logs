@@ -1,0 +1,24 @@
+++ opam install cpdf -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install cpdf
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   camlpdf.2.1.1                         [required by cpdf]
+ - install   cpdf.2.1.1
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camlpdf.2.1.1] Downloading https://github.com/johnwhitington/camlpdf/archive/v2.1.1.zip
+[cpdf.2.1.1] Downloading https://github.com/johnwhitington/cpdf-source/archive/v2.1.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building camlpdf.2.1.1:
+  make
+  make install
+Installing camlpdf.2.1.1.
+Building cpdf.2.1.1:
+  make
+  make install
+Installing cpdf.2.1.1.
