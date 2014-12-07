@@ -1,0 +1,403 @@
+++ opam install opam-sync-github-prs -e centos,centos-7
++ depext=openssl-devel
+CentOS 7 depexts: openssl-devel
++ echo CentOS 7 depexts: openssl-devel
++ '[' openssl-devel '!=' '' ']'
++ sudo yum install -y openssl-devel
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: anorien.csc.warwick.ac.uk
+ * extras: anorien.csc.warwick.ac.uk
+ * updates: anorien.csc.warwick.ac.uk
+Resolving Dependencies
+--> Running transaction check
+---> Package openssl-devel.x86_64 1:1.0.1e-34.el7_0.6 will be installed
+--> Processing Dependency: zlib-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Running transaction check
+---> Package krb5-devel.x86_64 0:1.11.3-49.el7 will be installed
+--> Processing Dependency: libverto-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libselinux-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libcom_err-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+---> Package zlib-devel.x86_64 0:1.2.7-13.el7 will be installed
+--> Running transaction check
+---> Package keyutils-libs-devel.x86_64 0:1.5.8-3.el7 will be installed
+---> Package libcom_err-devel.x86_64 0:1.42.9-4.el7 will be installed
+---> Package libselinux-devel.x86_64 0:2.2.2-6.el7 will be installed
+--> Processing Dependency: libsepol-devel >= 2.1.9-1 for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libpcre) for package: libselinux-devel-2.2.2-6.el7.x86_64
+---> Package libverto-devel.x86_64 0:0.2.5-4.el7 will be installed
+--> Running transaction check
+---> Package libsepol-devel.x86_64 0:2.1.9-3.el7 will be installed
+---> Package pcre-devel.x86_64 0:8.32-12.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                 Arch       Version                   Repository   Size
+================================================================================
+Installing:
+ openssl-devel           x86_64     1:1.0.1e-34.el7_0.6       updates     1.2 M
+Installing for dependencies:
+ keyutils-libs-devel     x86_64     1.5.8-3.el7               base         37 k
+ krb5-devel              x86_64     1.11.3-49.el7             base        611 k
+ libcom_err-devel        x86_64     1.42.9-4.el7              base         30 k
+ libselinux-devel        x86_64     2.2.2-6.el7               base        174 k
+ libsepol-devel          x86_64     2.1.9-3.el7               base         71 k
+ libverto-devel          x86_64     0.2.5-4.el7               base         12 k
+ pcre-devel              x86_64     8.32-12.el7               base        477 k
+ zlib-devel              x86_64     1.2.7-13.el7              base         49 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+8 Dependent packages)
+
+Total download size: 2.6 M
+Installed size: 5.7 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              1.7 MB/s | 2.6 MB  00:01     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : keyutils-libs-devel-1.5.8-3.el7.x86_64                       1/9 
+  Installing : pcre-devel-8.32-12.el7.x86_64                                2/9 
+  Installing : zlib-devel-1.2.7-13.el7.x86_64                               3/9 
+  Installing : libsepol-devel-2.1.9-3.el7.x86_64                            4/9 
+  Installing : libselinux-devel-2.2.2-6.el7.x86_64                          5/9 
+  Installing : libverto-devel-0.2.5-4.el7.x86_64                            6/9 
+  Installing : libcom_err-devel-1.42.9-4.el7.x86_64                         7/9 
+  Installing : krb5-devel-1.11.3-49.el7.x86_64                              8/9 
+  Installing : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     9/9 
+  Verifying  : libcom_err-devel-1.42.9-4.el7.x86_64                         1/9 
+  Verifying  : libselinux-devel-2.2.2-6.el7.x86_64                          2/9 
+  Verifying  : libverto-devel-0.2.5-4.el7.x86_64                            3/9 
+  Verifying  : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     4/9 
+  Verifying  : libsepol-devel-2.1.9-3.el7.x86_64                            5/9 
+  Verifying  : krb5-devel-1.11.3-49.el7.x86_64                              6/9 
+  Verifying  : zlib-devel-1.2.7-13.el7.x86_64                               7/9 
+  Verifying  : pcre-devel-8.32-12.el7.x86_64                                8/9 
+  Verifying  : keyutils-libs-devel-1.5.8-3.el7.x86_64                       9/9 
+
+Installed:
+  openssl-devel.x86_64 1:1.0.1e-34.el7_0.6                                      
+
+Dependency Installed:
+  keyutils-libs-devel.x86_64 0:1.5.8-3.el7                                      
+  krb5-devel.x86_64 0:1.11.3-49.el7                                             
+  libcom_err-devel.x86_64 0:1.42.9-4.el7                                        
+  libselinux-devel.x86_64 0:2.2.2-6.el7                                         
+  libsepol-devel.x86_64 0:2.1.9-3.el7                                           
+  libverto-devel.x86_64 0:0.2.5-4.el7                                           
+  pcre-devel.x86_64 0:8.32-12.el7                                               
+  zlib-devel.x86_64 0:1.2.7-13.el7                                              
+
+Complete!
++ opam install opam-sync-github-prs
+The following actions will be performed:
+ - install   re.1.2.2                              [required by cohttp]
+ - install   ounit.2.0.0                           [required by cohttp]
+ - install   ssl.0.4.7                             [required by github]
+ - install   cmdliner.0.9.6                        [required by github]
+ - install   menhir.20140422                       [required by atd]
+ - install   react.1.2.0                           [required by lambda-term]
+ - install   camomile.0.8.5                        [required by zed]
+ - install   res.4.0.6                             [required by core]
+ - install   easy-format.1.0.2                     [required by yojson, atd, biniou]
+ - install   herelib.109.35.00                     [required by core]
+ - install   type_conv.109.53.00                   [required by pa_test, comparelib, bin_prot, custom_printf]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   pipebang.109.28.00                    [required by core]
+ - install   lwt.2.4.5                             [required by opam-sync-github-prs]
+ - install   zed.1.3                               [required by lambda-term]
+ - install   biniou.1.0.9                          [required by atdgen]
+ - install   atd.1.1.2                             [required by atdgen]
+ - install   variantslib.109.15.00                 [required by core]
+ - install   sexplib.109.53.00                     [required by core]
+ - install   pa_ounit.109.53.00                    [required by core]
+ - install   fieldslib.109.20.00                   [required by core]
+ - install   comparelib.109.27.00                  [required by core]
+ - install   bin_prot.109.53.00                    [required by core]
+ - install   lambda-term.1.7                       [required by github]
+ - install   yojson.1.1.8                          [required by github]
+ - install   uri.1.4.0                             [required by github]
+ - install   custom_printf.109.27.00               [required by core]
+ - install   core_kernel.109.53.00                 [required by core]
+ - install   atdgen.1.4.1                          [required by github]
+ - install   cohttp.0.10.0                         [required by github]
+ - install   pa_test.109.53.00                     [required by core]
+ - install   github.0.8.1                          [required by opam-sync-github-prs]
+ - install   core.109.53.01                        [required by opam-sync-github-prs]
+ - install   opam-sync-github-prs.1.0.0
+=== 34 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[atd.1.1.2] Downloading http://mjambon.com/releases/atd/atd-1.1.2.tar.gz
+[atdgen.1.4.1] Downloading http://mjambon.com/releases/atdgen/atdgen-1.4.1.tar.gz
+[bin_prot.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/bin_prot-109.53.00.tar.gz
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[camomile.0.8.5] Downloading https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cohttp.0.10.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.10.0.tar.gz
+[comparelib.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/comparelib-109.27.00.tar.gz
+[core.109.53.01] Downloading https://github.com/janestreet/core/archive/109.53.01.tar.gz
+[core_kernel.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/core_kernel-109.53.00.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[custom_printf.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/custom_printf-109.27.00.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[fieldslib.109.20.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.00.tar.gz
+[github.0.8.1] Downloading https://github.com/avsm/ocaml-github/archive/v0.8.1.tar.gz
+[herelib.109.35.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.00.tar.gz
+[lambda-term.1.7] Downloading https://github.com/diml/lambda-term/archive/1.7.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[opam-sync-github-prs.1.0.0] Downloading https://github.com/avsm/opam-sync-github-prs/archive/v1.0.0.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pa_ounit.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/pa_ounit-109.53.00.tar.gz
+[pa_test.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/pa_test-109.53.00.tar.gz
+[pipebang.109.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.28.00/individual/pipebang-109.28.00.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[react.1.2.0] Downloading http://erratique.ch/software/react/releases/react-1.2.0.tbz
+[res.4.0.6] Downloading https://github.com/mmottl/res/releases/download/v4.0.6/res-4.0.6.tar.gz
+[sexplib.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/sexplib-109.53.00.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[type_conv.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/type_conv-109.53.00.tar.gz
+[uri.1.4.0] Downloading https://github.com/mirage/ocaml-uri/archive/v1.4.0.tar.gz
+[variantslib.109.15.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.00.tar.gz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+[zed.1.3] Downloading https://github.com/diml/zed/archive/1.3.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/camomile/camomile.0.8.5/files/no-camlp4.patch to ~/.opam/4.01.0/build/camomile.0.8.5/
+Copying ~/.opam/repo/default/packages/camomile/camomile.0.8.5/files/cmxs.patch to ~/.opam/4.01.0/build/camomile.0.8.5/
+Applying cmxs.patch.
+Applying no-camlp4.patch.
+Building camomile.0.8.5:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing camomile.0.8.5.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.01.0/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Building herelib.109.35.00:
+  make
+  make install
+Installing herelib.109.35.00.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.01.0/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.01.0 docdir=/home/opam/.opam/4.01.0/doc/menhir libdir=/home/opam/.opam/4.01.0/lib/menhir mandir=/home/opam/.opam/4.01.0/man/man1
+  make install PREFIX=/home/opam/.opam/4.01.0 docdir=/home/opam/.opam/4.01.0/doc/menhir libdir=/home/opam/.opam/4.01.0/lib/menhir mandir=/home/opam/.opam/4.01.0/man/man1
+Installing menhir.20140422.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building pipebang.109.28.00:
+  make
+  make install
+Installing pipebang.109.28.00.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Building react.1.2.0:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing react.1.2.0.
+Building res.4.0.6:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing res.4.0.6.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.01.0/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing ssl.0.4.7.
+Building type_conv.109.53.00:
+  make
+  make install
+Installing type_conv.109.53.00.
+Copying ~/.opam/repo/default/packages/atd/atd.1.1.2/files/atd.install to ~/.opam/4.01.0/build/atd.1.1.2/
+Building atd.1.1.2:
+  make
+  make install BINDIR=/home/opam/.opam/4.01.0/bin
+Installing atd.1.1.2.
+Building bin_prot.109.53.00:
+  make
+  make install
+Installing bin_prot.109.53.00.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.01.0/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Building comparelib.109.27.00:
+  make
+  make install
+Installing comparelib.109.27.00.
+Building fieldslib.109.20.00:
+  make
+  make install
+Installing fieldslib.109.20.00.
+Building lwt.2.4.5:
+  ./configure --disable-libev --enable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-text
+  make build
+  make install
+Installing lwt.2.4.5.
+Building pa_ounit.109.53.00:
+  make
+  make install
+Installing pa_ounit.109.53.00.
+Building sexplib.109.53.00:
+  make
+  make install
+Installing sexplib.109.53.00.
+Building variantslib.109.15.00:
+  make
+  make install
+Installing variantslib.109.15.00.
+Building zed.1.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing zed.1.3.
+Building core_kernel.109.53.00:
+  make
+  make install
+Installing core_kernel.109.53.00.
+Building custom_printf.109.27.00:
+  make
+  make install
+Installing custom_printf.109.27.00.
+Copying ~/.opam/repo/default/packages/lambda-term/lambda-term.1.7/files/lambda-term.install to ~/.opam/4.01.0/build/lambda-term.1.7/
+Building lambda-term.1.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing lambda-term.1.7.
+Building uri.1.4.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.4.0.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.01.0/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Copying ~/.opam/repo/default/packages/atdgen/atdgen.1.4.1/files/atdgen.install to ~/.opam/4.01.0/build/atdgen.1.4.1/
+Building atdgen.1.4.1:
+  make
+  make install BINDIR=/home/opam/.opam/4.01.0/bin
+Installing atdgen.1.4.1.
+Building cohttp.0.10.0:
+  make PREFIX=/home/opam/.opam/4.01.0
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing cohttp.0.10.0.
+Building pa_test.109.53.00:
+  make
+  make install
+Installing pa_test.109.53.00.
+Copying ~/.opam/repo/default/packages/core/core.109.53.01/files/core.install to ~/.opam/4.01.0/build/core.109.53.01/
+Building core.109.53.01:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing core.109.53.01.
+Building github.0.8.1:
+  make PREFIX=/home/opam/.opam/4.01.0
+  make PREFIX=/home/opam/.opam/4.01.0 install
+[ERROR] The compilation of github.0.8.1 failed.
+Removing github.0.8.1.
+  ocamlfind remove github
+
+
+#=== ERROR while installing github.0.8.1 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make PREFIX=/home/opam/.opam/4.01.0
+# path                 /home/opam/.opam/4.01.0/build/github.0.8.1
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/github.0.8.1/github-18282-06fa5f.env
+# stdout-file          /home/opam/.opam/4.01.0/build/github.0.8.1/github-18282-06fa5f.out
+# stderr-file          /home/opam/.opam/4.01.0/build/github.0.8.1/github-18282-06fa5f.err
+### stdout ###
+# ...[truncated]
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamldep -package atdgen -package cmdliner -package cohttp -package cohttp.lwt -package lambda-term -syntax camlp4o -package lwt.syntax -package lwt.unix -package re -package uri -package yojson -modules jar/passwd.ml > jar/passwd.ml.depends
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -strict-sequence -I lib -I unix -package atdgen -package cmdliner -package cohttp -package cohttp.lwt -package lambda-term -syntax camlp4o -package lwt.syntax -package lwt.unix -package re -package uri -package yojson -I jar -I unix -o jar/passwd.cmo jar/passwd.ml
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -strict-sequence -I lib -I unix -package atdgen -package cmdliner -package cohttp -package cohttp.lwt -package lambda-term -syntax camlp4o -package lwt.syntax -package lwt.unix -package re -package uri -package yojson -I jar -I unix -o jar/jar.cmo jar/jar.ml
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -principal -strict-sequence -I lib -I unix -package atdgen -package cmdliner -package cohttp -package cohttp.lwt -package lambda-term -syntax camlp4o -package lwt.syntax -package lwt.unix -package re -package uri -package yojson -I jar -I unix -o jar/passwd.cmx jar/passwd.ml
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -principal -strict-sequence -I lib -I unix -package atdgen -package cmdliner -package cohttp -package cohttp.lwt -package lambda-term -syntax camlp4o -package lwt.syntax -package lwt.unix -package re -package uri -package yojson -I jar -I unix -o jar/jar.cmx jar/jar.ml
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -g -linkpkg -package atdgen -package cmdliner -package cohttp -package cohttp.lwt -package lambda-term -package lwt.syntax -package lwt.unix -package re -package uri -package yojson jar/passwd.cmx lib/github.cmxa unix/github_unix.cmxa jar/jar.cmx -o jar/jar.native
+# + /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -g -linkpkg -package atdgen -package cmdliner -package cohttp -package cohttp.lwt -package lambda-term -package lwt.syntax -package lwt.unix -package re -package uri -package yojson jar/passwd.cmx lib/github.cmxa unix/github_unix.cmxa jar/jar.cmx -o jar/jar.native
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+# Command exited with code 2.
+### stderr ###
+# W: Cannot find source file matching module 'Github_j' in library github
+# W: Cannot find source file matching module 'Github_t' in library github
+# W: Cannot find source file matching module 'Github_j' in library github
+# W: Cannot find source file matching module 'Github_t' in library github
+# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' lib/github.cma lib/github.cmxa lib/github.a lib/github.cmxs unix/github_unix.cma unix/github_unix.cmxa unix/github_unix.a unix/github_unix.cmxs lib_test/rwo.native jar/jar.native lib_test/current_user.native lib_test/get_token.native lib_test/repo_info.native lib_test/issues.native lib_test/tags.native lib_test/milestones.native lib_tes...[truncated]
+# make: *** [build] Error 1
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.109.53.00
+ - install   pipebang.109.28.00
+ - install   cppo.1.1.2
+ - install   type_conv.109.53.00
+ - install   herelib.109.35.00
+ - install   uri.1.4.0
+ - install   easy-format.1.0.2
+ - install   cohttp.0.10.0
+ - install   fieldslib.109.20.00
+ - install   res.4.0.6
+ - install   lwt.2.4.5
+ - install   yojson.1.1.8
+ - install   bin_prot.109.53.00
+ - install   biniou.1.0.9
+ - install   pa_test.109.53.00
+ - install   atd.1.1.2
+ - install   pa_ounit.109.53.00
+ - install   atdgen.1.4.1
+ - install   variantslib.109.15.00
+ - install   camomile.0.8.5
+ - install   react.1.2.0
+ - install   menhir.20140422
+ - install   cmdliner.0.9.6
+ - install   ssl.0.4.7
+ - install   ounit.2.0.0
+ - install   zed.1.3
+ - install   core_kernel.109.53.00
+ - install   core.109.53.01
+ - install   custom_printf.109.27.00
+ - install   lambda-term.1.7
+ - install   re.1.2.2
+ - install   comparelib.109.27.00
+The following failed
+ - install   github.0.8.1
+Due to the errors, the following have been cancelled
+ - install   opam-sync-github-prs.1.0.0
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107151607.export"
