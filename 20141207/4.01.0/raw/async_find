@@ -1,129 +1,102 @@
-++ opam install async_find -e centos,centos-7
-CentOS 7 depexts:
+++ opam install async_find -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install async_find -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install async_find
 The following actions will be performed:
- - install   res.4.0.6                             [required by core]
+ - install   herelib.109.35.02                     [required by async_unix, async_kernel]
+ - install   type_conv.111.13.00                   [required by bin_prot]
+ - install   pipebang.110.01.00                    [required by async_extra]
  - install   ounit.2.0.0                           [required by pa_ounit]
- - install   herelib.109.35.00                     [required by async_core]
- - install   pipebang.109.28.00                    [required by async_extra]
- - install   type_conv.109.47.00                   [required by bin_prot]
- - install   variantslib.109.15.00                 [required by core]
- - install   sexplib.109.47.00                     [required by async_find]
- - install   pa_ounit.109.36.00                    [required by async_extra, async_core]
- - install   fieldslib.109.20.00                   [required by async_extra, async_core]
- - install   comparelib.109.27.00                  [required by async_unix, core]
- - install   bin_prot.109.47.00                    [required by async_extra, async_core]
- - install   custom_printf.109.27.00               [required by core]
- - install   core_kernel.109.47.00                 [required by core]
- - install   core.109.47.00                        [required by async_extra, async_core]
- - install   async_core.109.47.00                  [required by async]
- - install   async_unix.109.47.00                  [required by async]
- - install   async_extra.109.47.00                 [required by async]
- - install   async.109.42.00                       [required by async_find]
+ - install   variantslib.109.15.03                 [required by core]
+ - install   sexplib.111.25.00                     [required by async_find]
+ - install   fieldslib.109.20.03                   [required by async_extra]
+ - install   enumerate.111.08.00                   [required by core]
+ - install   comparelib.109.60.00                  [required by async_unix]
+ - install   bin_prot.111.03.00                    [required by async_extra]
+ - install   pa_ounit.111.28.00                    [required by async_extra]
+ - install   pa_test.111.08.00                     [required by async_unix, async_kernel]
+ - install   typerep.111.17.00                     [required by core_kernel]
+ - install   pa_bench.111.28.00                    [required by core]
+ - install   custom_printf.111.25.00               [required by core]
+ - install   core_kernel.111.28.00                 [required by core]
+ - install   core.111.28.00                        [required by async_extra]
+ - install   async_kernel.111.28.00                [required by async]
+ - install   async_unix.111.28.00                  [required by async]
+ - install   async_extra.111.28.00                 [required by async]
+ - install   async.111.25.00                       [required by async_find]
  - install   async_find.111.28.00
-=== 19 to install ===
+=== 22 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[async.109.42.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.42.00/individual/async-109.42.00.tar.gz
-[async_core.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/async_core-109.47.00.tar.gz
-[async_extra.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/async_extra-109.47.00.tar.gz
+[async.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/async-111.25.00.tar.gz
+[async_extra.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/async_extra-111.28.00.tar.gz
 [async_find.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/async_find-111.28.00.tar.gz
-[async_unix.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/async_unix-109.47.00.tar.gz
-[bin_prot.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/bin_prot-109.47.00.tar.gz
-[comparelib.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/comparelib-109.27.00.tar.gz
-[core.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/core-109.47.00.tar.gz
-[core_kernel.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/core_kernel-109.47.00.tar.gz
-[custom_printf.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/custom_printf-109.27.00.tar.gz
-[fieldslib.109.20.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.00.tar.gz
-[herelib.109.35.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.00.tar.gz
+[async_kernel.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/async_kernel-111.28.00.tar.gz
+[async_unix.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/async_unix-111.28.00.tar.gz
+[bin_prot.111.03.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.03.00/individual/bin_prot-111.03.00.tar.gz
+[comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
+[core.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/core-111.28.00.tar.gz
+[core_kernel.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/core_kernel-111.28.00.tar.gz
+[custom_printf.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/custom_printf-111.25.00.tar.gz
+[enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
-[pa_ounit.109.36.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.36.00/individual/pa_ounit-109.36.00.tar.gz
-[pipebang.109.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.28.00/individual/pipebang-109.28.00.tar.gz
-[res.4.0.6] Downloading https://github.com/mmottl/res/releases/download/v4.0.6/res-4.0.6.tar.gz
-[sexplib.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/sexplib-109.47.00.tar.gz
-[type_conv.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/type_conv-109.47.00.tar.gz
-[variantslib.109.15.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.00.tar.gz
+[pa_bench.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_bench-111.28.00.tar.gz
+[pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
+[pa_test.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/pa_test-111.08.00.tar.gz
+[pipebang.110.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/110.01.00/individual/pipebang-110.01.00.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
+[variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building herelib.109.35.00:
+Building herelib.109.35.02:
   make
   make install
-Installing herelib.109.35.00.
+Installing herelib.109.35.02.
 Building ounit.2.0.0:
   make build
   make install
 Installing ounit.2.0.0.
-Building pipebang.109.28.00:
+Building pipebang.110.01.00:
   make
   make install
-Installing pipebang.109.28.00.
-Building res.4.0.6:
+Installing pipebang.110.01.00.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building bin_prot.111.03.00:
+  make
+  make install
+Installing bin_prot.111.03.00.
+Building comparelib.109.60.00:
+  make
+  make install
+Installing comparelib.109.60.00.
+Building enumerate.111.08.00:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing res.4.0.6.
-Building type_conv.109.47.00:
   make
   make install
-Installing type_conv.109.47.00.
-Building bin_prot.109.47.00:
+Installing enumerate.111.08.00.
+Building fieldslib.109.20.03:
   make
   make install
-Installing bin_prot.109.47.00.
-Building comparelib.109.27.00:
+Installing fieldslib.109.20.03.
+Building pa_ounit.111.28.00:
   make
   make install
-Installing comparelib.109.27.00.
-Building fieldslib.109.20.00:
+Installing pa_ounit.111.28.00.
+Building sexplib.111.25.00:
+  ./configure --enable-syntax
   make
   make install
-Installing fieldslib.109.20.00.
-Building pa_ounit.109.36.00:
-  make
-  make install
-Installing pa_ounit.109.36.00.
-Building sexplib.109.47.00:
-  make
-  make install
-Installing sexplib.109.47.00.
-Building variantslib.109.15.00:
-  make
-  make install
-Installing variantslib.109.15.00.
-Building core_kernel.109.47.00:
-  make
-  make install
-Installing core_kernel.109.47.00.
-Building custom_printf.109.27.00:
-  make
-  make install
-Installing custom_printf.109.27.00.
-Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/corebuild over ~/.opam/4.01.0/build/core.109.47.00/
-Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/core.install to ~/.opam/4.01.0/build/core.109.47.00/
-Building core.109.47.00:
-  make
-  make install
-Installing core.109.47.00.
-Building async_core.109.47.00:
-  make
-  make install
-Installing async_core.109.47.00.
-Building async_unix.109.47.00:
-  make
-  make install
-Installing async_unix.109.47.00.
-Building async_extra.109.47.00:
-  make
-  make install
-Installing async_extra.109.47.00.
-Building async.109.42.00:
-  make
-  make install
-Installing async.109.42.00.
-Building async_find.111.28.00:
-  make
-  make install
-Installing async_find.111.28.00.
