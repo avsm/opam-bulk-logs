@@ -1,0 +1,28 @@
+++ opam install freetennis -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install freetennis
+The following actions will be performed:
+ - install   omake.0.9.8.6-0.rc1                   [required by camlimages]
+ - install   lablgl.1.05                           [required by freetennis]
+ - install   ocamlsdl.0.9.1                        [required by freetennis]
+ - install   lablgtk.2.18.3                        [required by freetennis]
+ - install   camlimages.4.1.2                      [required by freetennis]
+ - install   freetennis.0.4.8
+=== 6 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camlimages.4.1.2] Downloading https://bitbucket.org/camlspotter/camlimages/get/4.1.2.tar.gz
+[freetennis.0.4.8] Downloading http://downloads.sourceforge.net/project/freetennis/freetennis/0.4.8/freetennis-0.4.8.tar.bz2
+[lablgl.1.05] Downloading https://forge.ocamlcore.org/frs/download.php/1254/lablgl-1.05.tar.gz
+[ERROR] curl: code 404 while downloading http://downloads.sourceforge.net/project/freetennis/freetennis/0.4.8/freetennis-0.4.8.tar.bz2
+[ERROR] http://downloads.sourceforge.net/project/freetennis/freetennis/0.4.8/freetennis-0.4.8.tar.bz2 is not available
+[lablgtk.2.18.3] Downloading https://forge.ocamlcore.org/frs/download.php/1479/lablgtk-2.18.3.tar.gz
+[ocamlsdl.0.9.1] Downloading http://downloads.sourceforge.net/project/ocamlsdl/OCamlSDL/ocamlsdl-0.9.1/ocamlsdl-0.9.1.tar.gz
+[ERROR] curl: code 404 while downloading http://downloads.sourceforge.net/project/ocamlsdl/OCamlSDL/ocamlsdl-0.9.1/ocamlsdl-0.9.1.tar.gz
+[ERROR] http://downloads.sourceforge.net/project/ocamlsdl/OCamlSDL/ocamlsdl-0.9.1/ocamlsdl-0.9.1.tar.gz is not available
+[omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
+[ERROR] Could not download archives of freetennis.0.4.8 and ocamlsdl.0.9.1
+
