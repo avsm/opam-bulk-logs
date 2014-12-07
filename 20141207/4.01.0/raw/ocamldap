@@ -65,3 +65,10 @@ Building ocamlnet.3.7.7:
   make all
   make opt
   make install
+Installing ocamlnet.3.7.7.
+Copying ~/.opam/repo/default/packages/ocamldap/ocamldap.2.2/files/ocaml-4.02.patch to ~/.opam/4.01.0/build/ocamldap.2.2/
+Applying ocaml-4.02.patch.
+Building ocamldap.2.2:
+  make
+  make install
+Installing ocamldap.2.2.
