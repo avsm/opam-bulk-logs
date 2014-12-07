@@ -177,3 +177,8 @@ Installing async_extra.111.28.00.
 Building async.111.25.00:
   make
   make install
+Installing async.111.25.00.
+Building mqtt_client.0.0.1:
+  make all
+  make install
+Installing mqtt_client.0.0.1.
