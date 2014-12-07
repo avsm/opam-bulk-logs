@@ -1,9 +1,24 @@
-++ opam install ocaml-xml-rpc -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install ocaml-xml-rpc -e debian
++ depext=libpcre3-dev
++ echo Debian depexts: libpcre3-dev
+Debian depexts: libpcre3-dev
++ '[' libpcre3-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libpcre3-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libpcrecpp0:amd64 (from .../libpcrecpp0_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package libpcre3-dev.
+Unpacking libpcre3-dev (from .../libpcre3-dev_1%3a8.30-5_amd64.deb) ...
+Setting up libpcrecpp0:amd64 (1:8.30-5) ...
+Setting up libpcre3-dev (1:8.30-5) ...
+++ opam install ocaml-xml-rpc -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ocaml-xml-rpc
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   ulex.1.1                              [required by pxp]
  - install   conf-libpcre.1                        [required by pcre]
@@ -16,8 +31,8 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [annexlib.0.13.5] Downloading http://godi-backup2.camlcity.org/godi-backup/annexlib-0.13.5.tar.gz
-[ocaml-xml-rpc.0.2.3] Downloading http://raevnos.pennmush.org/code/ocaml-xml-rpc/ocaml-xml-rpc-0.2.3.tar.gz
 [ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
+[ocaml-xml-rpc.0.2.3] Downloading http://raevnos.pennmush.org/code/ocaml-xml-rpc/ocaml-xml-rpc-0.2.3.tar.gz
 [pcre.7.1.3] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.3/pcre-ocaml-7.1.3.tar.gz
 [pxp.1.2.3] Downloading http://download.camlcity.org/download/pxp-1.2.3.tar.gz
 [ulex.1.1] Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
@@ -25,38 +40,41 @@ The following actions will be performed:
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Building conf-libpcre.1:
   pkg-config libpcre
-[ERROR] The compilation of conf-libpcre.1 failed.
-Removing conf-libpcre.1.
-  Nothing to do.
+Installing conf-libpcre.1.
 Building ulex.1.1:
   make
   make all.opt
   make install
 Installing ulex.1.1.
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   ulex.1.1
-The following failed
- - install   conf-libpcre.1
-Due to the errors, the following have been cancelled
- - install   pxp.1.2.3
- - install   pcre.7.1.3
- - install   ocaml-xml-rpc.0.2.3
- - install   annexlib.0.13.5
- - install   ocamlnet.3.7.7
-
-#=== ERROR while installing conf-libpcre.1 ====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              pkg-config libpcre
-# path                 /home/opam/.opam/4.01.0/build/conf-libpcre.1
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/conf-libpcre.1/conf-libpcre-78-58c514.env
-# stdout-file          /home/opam/.opam/4.01.0/build/conf-libpcre.1/conf-libpcre-78-58c514.out
-# stderr-file          /home/opam/.opam/4.01.0/build/conf-libpcre.1/conf-libpcre-78-58c514.err
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107150229.export"
+Building pcre.7.1.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing pcre.7.1.3.
+Building annexlib.0.13.5:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make all
+  make opt
+  make install
+Installing annexlib.0.13.5.
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/ocamlnet.install to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
+Applying robust-host.patch.
+Building ocamlnet.3.7.7:
+  ./configure -bindir /home/opam/.opam/4.01.0/bin -enable-pcre -disable-gtk2 -disable-ssl -disable-zip -disable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Installing ocamlnet.3.7.7.
+Building pxp.1.2.3:
+  ./configure -without-wlex -without-wlex-compat -lexlist utf8,iso88591
+  make all
+  make opt
+  make install MANDIR=/home/opam/.opam/4.01.0/man
+Installing pxp.1.2.3.
+Copying ~/.opam/repo/default/packages/ocaml-xml-rpc/ocaml-xml-rpc.0.2.3/files/ocaml-xml-rpc.install to ~/.opam/4.01.0/build/ocaml-xml-rpc.0.2.3/
+Building ocaml-xml-rpc.0.2.3:
+  make
+  make opt
+  make install BIN_DIR=/home/opam/.opam/4.01.0/bin
+Installing ocaml-xml-rpc.0.2.3.
