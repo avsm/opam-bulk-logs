@@ -1,9 +1,14 @@
-++ opam install containers -e centos,centos-7
+++ opam install containers -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install containers -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install containers
-CentOS 7 depexts:
 The following actions will be performed:
  - install   cppo.1.1.2                            [required by containers]
  - install   base-bytes.legacy                     [required by containers]
@@ -25,7 +30,3 @@ Building containers.0.6:
   ./configure --prefix /home/opam/.opam/4.01.0 --disable-thread --disable-bench --disable-tests --disable-cgi --disable-lwt --enable-docs --enable-misc
   make build
   make install
-Installing containers.0.6.
-
-=-=- containers.0.6 installed successfully =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-=> in containers, modules start with 'CC' (stands for 'core containers')
