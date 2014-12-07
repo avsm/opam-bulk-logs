@@ -1,19 +1,11 @@
-++ opam install alphaCaml -e centos,centos-7
+++ opam install alphaCaml -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install alphaCaml -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install alphaCaml
-CentOS 7 depexts:
-The following actions will be performed:
- - install   alphaCaml.20061214
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[alphaCaml.20061214] Downloading http://cristal.inria.fr/~fpottier/alphaCaml/alphaCaml-20061214.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Copying ~/.opam/repo/default/packages/alphaCaml/alphaCaml.20061214/files/alphaCaml.install to ~/.opam/4.01.0/build/alphaCaml.20061214/
-Building alphaCaml.20061214:
-  make
-  make install PREFIX=/home/opam/.opam/4.01.0
-Installing alphaCaml.20061214.
+Debian srcexts:
