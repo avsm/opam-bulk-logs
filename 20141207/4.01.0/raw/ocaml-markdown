@@ -1,0 +1,96 @@
+++ opam install ocaml-markdown -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-markdown
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by ocaml-markdown]
+ - install   tyxml.3.2.1                           [required by ocaml-markdown]
+ - install   type_conv.111.13.00                   [required by sexplib]
+ - install   extlib.1.5.3                          [required by ocaml-markdown]
+ - install   sexplib.111.25.00                     [required by ocaml-markdown]
+ - install   ocaml-markdown.0.1.1
+=== 6 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[extlib.1.5.3] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.5.3.tar.gz
+[ocaml-markdown.0.1.1] Downloading https://forge.ocamlcore.org/frs/download.php/1196/ocaml-markdown-0.1.1.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[tyxml.3.2.1] Downloading https://github.com/ocsigen/tyxml/archive/3.2.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/extlib/extlib.1.5.3/files/extlib.install to ~/.opam/4.01.0/build/extlib.1.5.3/
+Building extlib.1.5.3:
+  make all
+  make opt
+  make cmxs
+  make install
+Installing extlib.1.5.3.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building tyxml.3.2.1:
+  ./configure --enable-syntax --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing tyxml.3.2.1.
+Building sexplib.111.25.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.111.25.00.
+Building ocaml-markdown.0.1.1:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+[ERROR] The compilation of ocaml-markdown.0.1.1 failed.
+Removing ocaml-markdown.0.1.1.
+  ocamlfind remove markdown
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   extlib.1.5.3
+ - install   sexplib.111.25.00
+ - install   type_conv.111.13.00
+ - install   tyxml.3.2.1
+ - install   ounit.2.0.0
+The following failed
+ - install   ocaml-markdown.0.1.1
+
+#=== ERROR while installing ocaml-markdown.0.1.1 ==============================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.01.0/build/ocaml-markdown.0.1.1
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/ocaml-markdown.0.1.1/ocaml-markdown-1381-a71bb4.env
+# stdout-file          /home/opam/.opam/4.01.0/build/ocaml-markdown.0.1.1/ocaml-markdown-1381-a71bb4.out
+# stderr-file          /home/opam/.opam/4.01.0/build/ocaml-markdown.0.1.1/ocaml-markdown-1381-a71bb4.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlc -a src/Markdown.cmo -o src/markdown.cma
+# ocamlfind ocamlopt -c -g -I src -package tyxml -package str -package sexplib.syntax -package sexplib -package extlib -syntax camlp4o -I src -o src/Markdown.cmx src/Markdown.ml
+# ocamlfind ocamlopt -a src/Markdown.cmx -o src/markdown.cmxa
+# ocamlfind ocamlopt -shared -linkall src/markdown.cmxa -o src/markdown.cmxs
+# ocamlfind ocamldep -package tyxml -package str -package sexplib -package extlib -modules src/MarkdownHTML.ml > src/MarkdownHTML.ml.depends
+# ocamlfind ocamlc -c -g -I src -package tyxml -package str -package sexplib -package extlib -I src -o src/MarkdownHTML.cmo src/MarkdownHTML.ml
+# + ocamlfind ocamlc -c -g -I src -package tyxml -package str -package sexplib -package extlib -I src -o src/MarkdownHTML.cmo src/MarkdownHTML.ml
+# File "src/MarkdownHTML.ml", line 3, characters 27-39:
+# Error: Unbound module Xhtml_sigs
+# Command exited with code 2.
+### stderr ###
+# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' src/markdown.cma src/markdown.cmxa src/markdown.a src/markdown.cmxs src/html.cma src/html.cmxa src/html.a src/html.cmxs test/test.byte -tag debug' terminated with error code 10")
+# make: *** [build] Error 1
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107150048.export"
