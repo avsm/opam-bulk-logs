@@ -1,9 +1,14 @@
-++ opam install pprint -e centos,centos-7
+++ opam install pprint -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install pprint -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install pprint
-CentOS 7 depexts:
 The following actions will be performed:
  - install   pprint.20140424
 === 1 to install ===

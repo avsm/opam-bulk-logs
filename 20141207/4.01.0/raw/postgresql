@@ -55,3 +55,10 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [postgresql.2.1.2] Downloading https://github.com/mmottl/postgresql-ocaml/releases/download/v2.1.2/postgresql-ocaml-2.1.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building postgresql.2.1.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0 --disable-lablgtk2
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing postgresql.2.1.2.
