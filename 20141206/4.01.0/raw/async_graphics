@@ -1,14 +1,14 @@
 ++ opam install async_graphics -e ubuntu
 + depext=
-+ echo Ubuntu depexts:
 Ubuntu depexts:
++ echo Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install async_graphics -e source,linux
 + srcext=
+Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install async_graphics
-Ubuntu srcexts:
 The following actions will be performed:
  - install   herelib.109.35.02                     [required by async_unix, async_kernel]
  - install   type_conv.111.13.00                   [required by bin_prot]
@@ -135,19 +135,3 @@ Installing core.111.28.01.
 Building async_kernel.111.28.00:
   make
   make install
-Installing async_kernel.111.28.00.
-Building async_unix.111.28.00:
-  make
-  make install
-Installing async_unix.111.28.00.
-Building async_extra.111.28.00:
-  make
-  make install
-Installing async_extra.111.28.00.
-Building async.111.25.00:
-  make
-  make install
-Installing async.111.25.00.
-Building async_graphics.0.5.1:
-  ./install.sh
-Installing async_graphics.0.5.1.
