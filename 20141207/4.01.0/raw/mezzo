@@ -1,0 +1,82 @@
+++ opam install mezzo -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
+CentOS 7 depexts:
++ opam install mezzo
+The following actions will be performed:
+ - install   easy-format.1.0.2                     [required by yojson]
+ - install   ulex.1.1                              [required by mezzo]
+ - install   pprint.20140424                       [required by mezzo]
+ - install   menhir.20140422                       [required by mezzo]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   functory.0.5                          [required by mezzo]
+ - install   fix.20130611                          [required by mezzo]
+ - install   biniou.1.0.9                          [required by yojson]
+ - install   yojson.1.1.8                          [required by mezzo]
+ - install   mezzo.0.0.m8
+=== 10 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[fix.20130611] Downloading http://gallium.inria.fr/~fpottier/fix/fix-20130611.tar.gz
+[functory.0.5] Downloading https://www.lri.fr/~filliatr/functory/download/functory-0.5.tar.gz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[mezzo.0.0.m8] Downloading https://github.com/protz/mezzo/archive/m8.tar.gz
+[pprint.20140424] Downloading http://gallium.inria.fr/~fpottier/pprint/pprint-20140424.tar.gz
+[ulex.1.1] Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.01.0/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Building fix.20130611:
+  make
+  make install
+Installing fix.20130611.
+Building functory.0.5:
+  ./configure
+  make
+  make ocamlfind-install
+Installing functory.0.5.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.01.0/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.01.0 docdir=/home/opam/.opam/4.01.0/doc/menhir libdir=/home/opam/.opam/4.01.0/lib/menhir mandir=/home/opam/.opam/4.01.0/man/man1
+  make install PREFIX=/home/opam/.opam/4.01.0 docdir=/home/opam/.opam/4.01.0/doc/menhir libdir=/home/opam/.opam/4.01.0/lib/menhir mandir=/home/opam/.opam/4.01.0/man/man1
+Installing menhir.20140422.
+Building pprint.20140424:
+  make -C src
+  make -C src install
+Installing pprint.20140424.
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+Installing ulex.1.1.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.01.0/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.01.0/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Copying ~/.opam/repo/default/packages/mezzo/mezzo.0.0.m8/files/no-deprecated-fatal-warning.patch to ~/.opam/4.01.0/build/mezzo.0.0.m8/
+Copying ~/.opam/repo/default/packages/mezzo/mezzo.0.0.m8/files/mezzo.install to ~/.opam/4.01.0/build/mezzo.0.0.m8/
+Applying no-deprecated-fatal-warning.patch.
+Building mezzo.0.0.m8:
+  ./configure
+  make
+  make install
+Installing mezzo.0.0.m8.
