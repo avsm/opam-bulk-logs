@@ -185,3 +185,4 @@ Building themoviedb.0.8.1:
   ocaml setup.ml -configure --disable-utest --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing themoviedb.0.8.1.

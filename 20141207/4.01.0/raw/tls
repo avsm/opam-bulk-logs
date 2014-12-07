@@ -104,3 +104,8 @@ Building x509.0.2.0:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing x509.0.2.0.
+Building tls.0.2.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0 --disable-lwt --disable-mirage
+  ocaml setup.ml -build
+  ocaml setup.ml -install
