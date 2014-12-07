@@ -1,142 +1,80 @@
-++ opam install opam-query -e centos,centos-7
+++ opam install opam-query -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install opam-query -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install opam-query
-CentOS 7 depexts:
 The following actions will be performed:
- - install   extlib.1.6.1                          [required by dose, cudf]
  - install   re.1.2.2                              [required by uri, opam-lib]
- - install   type_conv.111.13.00                   [required by uri]
  - install   ocamlgraph.1.8.5                      [required by opam-lib]
  - install   cmdliner.0.9.6                        [required by opam-query]
- - install   containers.0.4.1                      [required by opam-query]
- - install   ocp-build.1.99.8-beta                 [required by dose, cudf]
- - install   sexplib.111.25.00                     [required by uri]
- - install   cudf.0.6.3                            [required by opam-lib]
- - install   uri.1.4.0                             [required by opam-query]
- - install   dose.3.1.2                            [required by opam-lib]
- - install   opam-lib.1.1.1                        [required by opam-query]
+ - install   cppo.1.1.2                            [required by containers]
+ - install   extlib-compat.1.6.1                   [required by dose, cudf]
+ - install   uutf.0.9.3                            [required by jsonm]
+ - install   base-bytes.legacy                     [required by containers]
+ - install   uri.1.1                               [required by opam-query]
+ - install   cudf.0.7                              [required by opam-lib]
+ - install   jsonm.0.9.1                           [required by opam-lib]
+ - install   containers.0.6                        [required by opam-query]
+ - install   dose.3.2.2+opam                       [required by opam-lib]
+ - install   opam-lib.1.2.0                        [required by opam-query]
  - install   opam-query.1.1
-=== 13 to install ===
+=== 14 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
-[containers.0.4.1] Downloading https://github.com/c-cube/ocaml-containers/archive/0.4.1.tar.gz
-[cudf.0.6.3] Downloading https://gforge.inria.fr/frs/download.php/31910/cudf-0.6.3.tar.gz
-[dose.3.1.2] Downloading https://gforge.inria.fr/frs/download.php/31595/dose3-3.1.2.tar.gz
-[extlib.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+[containers.0.6] Downloading https://github.com/c-cube/ocaml-containers/archive/0.6.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[cudf.0.7] Downloading https://gforge.inria.fr/frs/download.php/33593/cudf-0.7.tar.gz
+[dose.3.2.2+opam] Downloading https://gforge.inria.fr/frs/download.php/file/33677/dose3-3.2.2.tar.gz
+[extlib-compat.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+[jsonm.0.9.1] Downloading http://erratique.ch/software/jsonm/releases/jsonm-0.9.1.tbz
 [ocamlgraph.1.8.5] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.5.tar.gz
-[ocp-build.1.99.8-beta] Downloading https://github.com/OCamlPro/ocp-build/tarball/ocp-build.1.99.8-beta
-[opam-lib.1.1.1] Downloading https://github.com/OCamlPro/opam/archive/1.1.1.tar.gz
+[opam-lib.1.2.0] Downloading https://github.com/ocaml/opam/archive/1.2.0.tar.gz
 [opam-query.1.1] Downloading https://github.com/whitequark/opam-query/archive/v1.1.tar.gz
 [re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
-[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
-[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
-[uri.1.4.0] Downloading https://github.com/mirage/ocaml-uri/archive/v1.4.0.tar.gz
+[uri.1.1] Downloading http://github.com/mirage/ocaml-uri/tarball/ocaml-uri-1.1
+[uutf.0.9.3] Downloading http://erratique.ch/software/uutf/releases/uutf-0.9.3.tbz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.legacy.
 Building cmdliner.0.9.6:
   ocaml pkg/git.ml
   ocaml pkg/build.ml native=false native-dynlink=false
 Installing cmdliner.0.9.6.
-Building containers.0.4.1:
-  ./configure --prefix /home/opam/.opam/4.01.0 --disable-thread --disable-bench --disable-tests --disable-cgi --disable-lwt --enable-docs --enable-misc
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.01.0/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building extlib-compat.1.6.1:
   make build install
-Installing containers.0.4.1.
-Building extlib.1.6.1:
-  make minimal=1 build install
-Installing extlib.1.6.1.
+Installing extlib-compat.1.6.1.
 Copying ~/.opam/repo/default/packages/ocamlgraph/ocamlgraph.1.8.5/files/ocamlgraph.install to ~/.opam/4.01.0/build/ocamlgraph.1.8.5/
 Building ocamlgraph.1.8.5:
   ./configure
   make
   make install-findlib
 Installing ocamlgraph.1.8.5.
-Building ocp-build.1.99.8-beta:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-[ERROR] The compilation of ocp-build.1.99.8-beta failed.
-Removing ocp-build.1.99.8-beta.
-  rm -f /home/opam/.opam/4.01.0/bin/ocp-build
-  rm -f /home/opam/.opam/4.01.0/bin/ocp-build.byte
-  rm -f /home/opam/.opam/4.01.0/lib/META.ocp-build-bundle
-  rm -rf /home/opam/.opam/4.01.0/lib/ocaml/typerex/ocp-build-bundle
-  rm -f /home/opam/.opam/4.01.0/lib/META.ocp-build-win32
-  rm -rf /home/opam/.opam/4.01.0/lib/ocaml/typerex/ocp-build-win32
-  rm -f /home/opam/.opam/4.01.0/lib/META.ocp-build-misc
-  rm -rf /home/opam/.opam/4.01.0/lib/ocaml/typerex/ocp-build-misc
-  rm -f /home/opam/.opam/4.01.0/lib/META.ocp-build
-  rm -rf /home/opam/.opam/4.01.0/lib/ocaml/typerex/ocp-build
 Building re.1.2.2:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
 Installing re.1.2.2.
-Building type_conv.111.13.00:
-  make
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+Building containers.0.6:
+  ./configure --prefix /home/opam/.opam/4.01.0 --disable-thread --disable-bench --disable-tests --disable-cgi --disable-lwt --enable-docs --enable-misc
+  make build
   make install
-Installing type_conv.111.13.00.
-Building sexplib.111.25.00:
-  ./configure --enable-syntax
-  make
-  make install
-Installing sexplib.111.25.00.
-Building uri.1.4.0:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing uri.1.4.0.
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   sexplib.111.25.00
- - install   containers.0.4.1
- - install   cmdliner.0.9.6
- - install   ocamlgraph.1.8.5
- - install   type_conv.111.13.00
- - install   re.1.2.2
- - install   uri.1.4.0
- - install   extlib.1.6.1
-The following failed
- - install   ocp-build.1.99.8-beta
-Due to the errors, the following have been cancelled
- - install   opam-query.1.1
- - install   dose.3.1.2
- - install   cudf.0.6.3
- - install   opam-lib.1.1.1
-
-=-=- containers.0.4.1 installed successfully =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-=> in containers, modules start with 'CC' (stands for 'core containers')
-
-#=== ERROR while installing ocp-build.1.99.8-beta =============================#
-# opam-version         1.2.0
-# os                   linux
-# command              make
-# path                 /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta
-# compiler             4.01.0
-# exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-1854-0a5907.env
-# stdout-file          /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-1854-0a5907.out
-# stderr-file          /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-1854-0a5907.err
-### stdout ###
-# ...[truncated]
-# Creating root directory _obuild/
-# make -C boot
-# make[1]: Entering directory `/home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/boot'
-# awk '{ print "external "$1": unit -> unit = \"" $1 "\"" }' primitives > primitives.ml
-# ./make-ocpbuild-run.sh
-# ocamlc -o ocp-build.run -custom -make-runtime win32_c.c primitives.ml unix.cma -cclib -lunix
-# cat ocp-build.run ocp-build.boot > ocp-build
-# chmod +x ocp-build
-# ./ocp-build -help >/dev/null 2>&1
-# make[1]: Leaving directory `/home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/boot'
-### stderr ###
-# config.status: WARNING:  '../src/ocp-build-bundle.ocp.in' seems to ignore the --datarootdir setting
-# make[1]: *** [ocp-build] Error 2
-# make: *** [boot/ocp-build] Error 2
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107151536.export"
+Installing containers.0.6.
+Building cudf.0.7:
+  make all opt
+  make install DESTDIR=/home/opam/.opam/4.01.0 OCAMLLIBDIR=lib BINDIR=bin LIBDIR=lib INCDIR=include
