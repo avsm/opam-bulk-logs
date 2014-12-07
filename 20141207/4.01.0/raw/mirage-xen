@@ -154,3 +154,7 @@ Installing io-page.1.2.0.
 Building shared-memory-ring.1.1.0:
   make all
   make install
+Installing shared-memory-ring.1.1.0.
+Building xenstore.1.2.5:
+  make all
+  make install
