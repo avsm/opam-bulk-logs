@@ -1,188 +1,67 @@
-++ opam install openflow -e centos,centos-7
+++ opam install openflow -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install openflow -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install openflow
-CentOS 7 depexts:
 The following actions will be performed:
+ - install   type_conv.111.13.00                   [required by sexplib]
  - install   optcomp.1.6                           [required by ocplib-endian]
- - install   res.4.0.6                             [required by core]
- - install   ounit.2.0.0                           [required by pa_ounit]
- - install   herelib.109.35.00                     [required by core]
- - install   pipebang.109.28.00                    [required by core]
- - install   type_conv.109.47.00                   [required by custom_printf, bin_prot, comparelib]
- - install   ocplib-endian.0.4                     [required by cstruct]
- - install   variantslib.109.15.00                 [required by core]
- - install   sexplib.109.47.00                     [required by openflow]
- - install   pa_ounit.109.36.00                    [required by core]
- - install   fieldslib.109.20.00                   [required by core]
- - install   comparelib.109.27.00                  [required by core]
- - install   bin_prot.109.47.00                    [required by core]
+ - install   base-bytes.legacy                     [required by ocplib-endian]
+ - install   sexplib.111.25.00                     [required by packet, cstruct]
+ - install   ocplib-endian.0.7                     [required by cstruct]
  - install   cstruct.1.5.0                         [required by openflow]
- - install   custom_printf.109.27.00               [required by core]
- - install   core_kernel.109.47.00                 [required by core]
- - install   packet.0.3.0                          [required by openflow]
- - install   core.109.47.00                        [required by openflow]
- - install   openflow.0.6.2
-=== 19 to install ===
+ - install   packet.0.3.1                          [required by openflow]
+ - install   openflow.0.2.0
+=== 8 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[bin_prot.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/bin_prot-109.47.00.tar.gz
-[comparelib.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/comparelib-109.27.00.tar.gz
-[core.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/core-109.47.00.tar.gz
-[core_kernel.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/core_kernel-109.47.00.tar.gz
 [cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
-[custom_printf.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/custom_printf-109.27.00.tar.gz
-[fieldslib.109.20.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.00.tar.gz
-[herelib.109.35.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.00.tar.gz
-[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
-[openflow.0.6.2] Downloading https://github.com/frenetic-lang/ocaml-openflow/archive/v0.6.2.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[openflow.0.2.0] Downloading https://github.com/frenetic-lang/ocaml-openflow/archive/v0.2.0.tar.gz
 [optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
-[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
-[pa_ounit.109.36.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.36.00/individual/pa_ounit-109.36.00.tar.gz
-[packet.0.3.0] Downloading https://github.com/frenetic-lang/ocaml-packet/archive/v0.3.0.tar.gz
-[pipebang.109.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.28.00/individual/pipebang-109.28.00.tar.gz
-[res.4.0.6] Downloading https://github.com/mmottl/res/releases/download/v4.0.6/res-4.0.6.tar.gz
-[sexplib.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/sexplib-109.47.00.tar.gz
-[type_conv.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/type_conv-109.47.00.tar.gz
-[variantslib.109.15.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.00.tar.gz
+[packet.0.3.1] Downloading https://github.com/frenetic-lang/ocaml-packet/archive/v0.3.1.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building herelib.109.35.00:
-  make
-  make install
-Installing herelib.109.35.00.
+Installing base-bytes.legacy.
 Building optcomp.1.6:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
 Installing optcomp.1.6.
-Building ounit.2.0.0:
-  make build
-  make install
-Installing ounit.2.0.0.
-Building pipebang.109.28.00:
+Building type_conv.111.13.00:
   make
   make install
-Installing pipebang.109.28.00.
-Building res.4.0.6:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing res.4.0.6.
-Building type_conv.109.47.00:
-  make
-  make install
-Installing type_conv.109.47.00.
-Building bin_prot.109.47.00:
-  make
-  make install
-Installing bin_prot.109.47.00.
-Building comparelib.109.27.00:
-  make
-  make install
-Installing comparelib.109.27.00.
-Building fieldslib.109.20.00:
-  make
-  make install
-Installing fieldslib.109.20.00.
-Building ocplib-endian.0.4:
+Installing type_conv.111.13.00.
+Building ocplib-endian.0.7:
   ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing ocplib-endian.0.4.
-Building pa_ounit.109.36.00:
+Installing ocplib-endian.0.7.
+Building sexplib.111.25.00:
+  ./configure --enable-syntax
   make
   make install
-Installing pa_ounit.109.36.00.
-Building sexplib.109.47.00:
-  make
-  make install
-Installing sexplib.109.47.00.
-Building variantslib.109.15.00:
-  make
-  make install
-Installing variantslib.109.15.00.
-Building core_kernel.109.47.00:
-  make
-  make install
-Installing core_kernel.109.47.00.
+Installing sexplib.111.25.00.
 Building cstruct.1.5.0:
-  ./configure --prefix /home/opam/.opam/4.01.0 --disable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  ./configure --prefix /home/opam/.opam/4.01.0 --disable-lwt --enable-camlp4 --disable-async --enable-unix --disable-tests
   make
   make install
 Installing cstruct.1.5.0.
-Building custom_printf.109.27.00:
-  make
-  make install
-Installing custom_printf.109.27.00.
-Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/corebuild over ~/.opam/4.01.0/build/core.109.47.00/
-Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/core.install to ~/.opam/4.01.0/build/core.109.47.00/
-Building core.109.47.00:
-  make
-  make install
-Installing core.109.47.00.
-Building packet.0.3.0:
+Building packet.0.3.1:
   ocaml setup.ml -configure --disable-quickcheck
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing packet.0.3.0.
-Building openflow.0.6.2:
-  ocaml setup.ml -configure --disable-async --disable-quickcheck
+Installing packet.0.3.1.
+Building openflow.0.2.0:
+  ocaml setup.ml -configure --disable-lwt --disable-quickcheck
   ocaml setup.ml -build
   ocaml setup.ml -install
-[ERROR] The compilation of openflow.0.6.2 failed.
-Removing openflow.0.6.2.
-  ocamlfind remove openflow
-
-
-#=== ERROR while installing openflow.0.6.2 ====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ocaml setup.ml -build
-# path                 /home/opam/.opam/4.01.0/build/openflow.0.6.2
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/openflow.0.6.2/openflow-9896-d6d332.env
-# stdout-file          /home/opam/.opam/4.01.0/build/openflow.0.6.2/openflow-9896-d6d332.out
-# stderr-file          /home/opam/.opam/4.01.0/build/openflow.0.6.2/openflow-9896-d6d332.err
-### stdout ###
-# ...[truncated]
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -syntax camlp4o -thread -package threads -package str -package sexplib.syntax -package sexplib -package packet -package cstruct.syntax -package cstruct -package core -I lib -o lib/OpenFlow_Header.cmo lib/OpenFlow_Header.ml
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -syntax camlp4o -thread -package threads -package str -package sexplib.syntax -package sexplib -package packet -package cstruct.syntax -package cstruct -package core -I lib -o lib/OpenFlow0x01.cmo lib/OpenFlow0x01.ml
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -syntax camlp4o -thread -package threads -package str -package sexplib.syntax -package sexplib -package packet -package cstruct.syntax -package cstruct -package core -I lib -o lib/OpenFlow0x01_Core.cmo lib/OpenFlow0x01_Core.ml
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -syntax camlp4o -thread -package threads -package str -package sexplib.syntax -package sexplib -package packet -package cstruct.syntax -package cstruct -package core -I lib -o lib/OpenFlow0x01_Stats.cmo lib/OpenFlow0x01_Stats.ml
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -syntax camlp4o -thread -package threads -package str -package sexplib.syntax -package sexplib -package packet -package cstruct.syntax -package cstruct -package core -I lib -o lib/OpenFlow0x04.cmo lib/OpenFlow0x04.ml
-# + /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -c -g -syntax camlp4o -thread -package threads -package str -package sexplib.syntax -package sexplib -package packet -package cstruct.syntax -package cstruct -package core -I lib -o lib/OpenFlow0x04.cmo lib/OpenFlow0x04.ml
-# File "lib/OpenFlow0x04.ml", line 1188, characters 49-63:
-# Error: Unbound value string_of_ipv6
-# Did you mean string_of_ip?
-# Command exited with code 2.
-### stderr ###
-# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' lib/openflow.cma lib/openflow.cmxa lib/openflow.a lib/openflow.cmxs -use-ocamlfind -tag debug' terminated with error code 10")
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   type_conv.109.47.00
- - install   ocplib-endian.0.4
- - install   variantslib.109.15.00
- - install   pipebang.109.28.00
- - install   packet.0.3.0
- - install   herelib.109.35.00
- - install   cstruct.1.5.0
- - install   ounit.2.0.0
- - install   pa_ounit.109.36.00
- - install   fieldslib.109.20.00
- - install   res.4.0.6
- - install   custom_printf.109.27.00
- - install   sexplib.109.47.00
- - install   core_kernel.109.47.00
- - install   bin_prot.109.47.00
- - install   core.109.47.00
- - install   optcomp.1.6
- - install   comparelib.109.27.00
-The following failed
- - install   openflow.0.6.2
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107151942.export"
+Installing openflow.0.2.0.
