@@ -1,1 +1,35 @@
 ++ opam install fat-filesystem -e debian
++ depext=
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install fat-filesystem -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install fat-filesystem
+Debian srcexts:
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by mirage-block-unix]
+ - install   base-no-ppx.base                      [required by lwt]
+ - install   re.1.2.2                              [required by fat-filesystem]
+ - install   type_conv.111.13.00                   [required by sexplib]
+ - install   cmdliner.0.9.6                        [required by fat-filesystem]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   base-bytes.legacy                     [required by ocplib-endian]
+ - install   lwt.2.4.6                             [required by fat-filesystem]
+ - install   sexplib.111.25.00                     [required by cstruct]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   cstruct.1.5.0                         [required by fat-filesystem]
+ - install   io-page.1.2.0                         [required by fat-filesystem]
+ - install   mirage-types.2.0.1                    [required by fat-filesystem]
+ - install   mirage-block-unix.1.2.1               [required by fat-filesystem]
+ - install   fat-filesystem.0.10.1
+=== 15 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[fat-filesystem.0.10.1] Downloading https://github.com/mirage/ocaml-fat/archive/0.10.1.tar.gz
+[io-page.1.2.0] Downloading https://github.com/mirage/io-page/archive/v1.2.0.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
