@@ -1,9 +1,14 @@
-++ opam install atd -e centos,centos-7
+++ opam install atd -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install atd -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install atd
+Debian srcexts:
 The following actions will be performed:
  - install   easy-format.1.0.2                     [required by atd]
  - install   menhir.20140422                       [required by atd]
@@ -11,8 +16,8 @@ The following actions will be performed:
 === 3 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[atd.1.1.2] Downloading http://mjambon.com/releases/atd/atd-1.1.2.tar.gz
 [easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[atd.1.1.2] Downloading http://mjambon.com/releases/atd/atd-1.1.2.tar.gz
 [menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
