@@ -5,3 +5,29 @@
 Debian depexts: libev-dev
 + sudo apt-get install -qq -y build-essential m4
 + sudo apt-get install -qq -y libev-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libev4.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libev4 (from .../libev4_1%3a4.11-1_amd64.deb) ...
+Selecting previously unselected package libev-dev.
+Unpacking libev-dev (from .../libev-dev_1%3a4.11-1_amd64.deb) ...
+Setting up libev4 (1:4.11-1) ...
+Setting up libev-dev (1:4.11-1) ...
+++ opam install conf-libev -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install conf-libev
+Debian srcexts:
+The following actions will be performed:
+ - install   conf-libev.4-11
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/conf-libev/conf-libev.4-11/files/discover.ml to ~/.opam/4.01.0/build/conf-libev.4-11/
+Copying ~/.opam/repo/default/packages/conf-libev/conf-libev.4-11/files/build.sh to ~/.opam/4.01.0/build/conf-libev.4-11/
+Building conf-libev.4-11:
+  ./build.sh
+Installing conf-libev.4-11.
