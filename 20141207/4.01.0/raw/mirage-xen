@@ -139,3 +139,18 @@ Building oasis.0.4.5:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing oasis.0.4.5.
+Building xen-evtchn.1.0.5:
+  make
+  make install
+[ERROR] The compilation of xen-evtchn.1.0.5 failed.
+Removing xen-evtchn.1.0.5.
+  make uninstall
+Building io-page.1.2.0:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing io-page.1.2.0.
+Building shared-memory-ring.1.1.0:
+  make all
+  make install
