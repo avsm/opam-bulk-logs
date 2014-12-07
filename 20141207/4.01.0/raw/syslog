@@ -1,8 +1,13 @@
-++ opam install syslog -e centos,centos-7
+++ opam install syslog -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+++ opam install syslog -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install syslog
 The following actions will be performed:
  - install   syslog.1.4
