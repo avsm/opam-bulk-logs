@@ -1,150 +1,98 @@
-++ opam install why -e centos,centos-7
-+ depext='gmp gmp-devel'
-+ echo CentOS 7 depexts: gmp gmp-devel
-+ '[' 'gmp gmp-devel' '!=' '' ']'
-+ sudo yum install -y gmp gmp-devel
-CentOS 7 depexts: gmp gmp-devel
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * base: anorien.csc.warwick.ac.uk
- * extras: anorien.csc.warwick.ac.uk
- * updates: anorien.csc.warwick.ac.uk
-Package 1:gmp-5.1.1-5.el7.x86_64 already installed and latest version
-Resolving Dependencies
---> Running transaction check
----> Package gmp-devel.x86_64 1:5.1.1-5.el7 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package            Arch            Version                 Repository     Size
-================================================================================
-Installing:
- gmp-devel          x86_64          1:5.1.1-5.el7           base          175 k
-
-Transaction Summary
-================================================================================
-Install  1 Package
-
-Total download size: 175 k
-Installed size: 335 k
-Downloading packages:
-Running transaction check
-Running transaction test
-Transaction test succeeded
-Running transaction
-  Installing : 1:gmp-devel-5.1.1-5.el7.x86_64                               1/1 
-  Verifying  : 1:gmp-devel-5.1.1-5.el7.x86_64                               1/1 
-
-Installed:
-  gmp-devel.x86_64 1:5.1.1-5.el7                                                
-
-Complete!
-+ opam install why
-The following actions will be performed:
- - install   conf-gmp.1                            [required by zarith]
- - install   conf-gtksourceview.2                  [required by why3, frama-c]
- - install   camlp5.6.12                           [required by coq]
- - install   conf-gnomecanvas.2                    [required by frama-c]
- - install   zarith.1.3                            [required by alt-ergo]
- - install   coq.8.4.5                             [required by why]
- - install   lablgtk.2.18.3                        [required by why]
- - install   ocamlgraph.1.8.5                      [required by why]
- - install   frama-c.20140301                      [required by why]
- - install   alt-ergo.0.95.2                       [required by why]
- - install   why3.0.83                             [required by why]
- - install   why.2.34
-=== 12 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[alt-ergo.0.95.2] Downloading http://alt-ergo.ocamlpro.com/http/alt-ergo-0.95.2/alt-ergo-0.95.2.tar.gz
-[camlp5.6.12] Downloading http://camlp5.gforge.inria.fr/distrib/src/camlp5-6.12.tgz
-[coq.8.4.5] Downloading http://coq.inria.fr/distrib/8.4pl5/files/coq-8.4pl5.tar.gz
-[frama-c.20140301] Downloading http://frama-c.com/download/frama-c-Neon-20140301.tar.gz
-[lablgtk.2.18.3] Downloading https://forge.ocamlcore.org/frs/download.php/1479/lablgtk-2.18.3.tar.gz
-[ocamlgraph.1.8.5] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.5.tar.gz
-[why.2.34] Downloading http://why.lri.fr/download/why-2.34.tar.gz
-[why3.0.83] Downloading https://gforge.inria.fr/frs/download.php/33490/why3-0.83.tar.gz
-[zarith.1.3] Downloading https://forge.ocamlcore.org/frs/download.php/1471/zarith-1.3.tgz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Copying ~/.opam/repo/default/packages/camlp5/camlp5.6.12/files/camlp5.install to ~/.opam/4.01.0/build/camlp5.6.12/
-Building camlp5.6.12:
-  ./configure --prefix /home/opam/.opam/4.01.0 -libdir /home/opam/.opam/4.01.0/lib -mandir /home/opam/.opam/4.01.0/man
-  make world.opt
-  make install
-Installing camlp5.6.12.
-Copying ~/.opam/repo/default/packages/conf-gmp/conf-gmp.1/files/test.c to ~/.opam/4.01.0/build/conf-gmp.1/
-Building conf-gmp.1:
-  sh -c cc -c $CFLAGS test.c
-Installing conf-gmp.1.
-Building conf-gnomecanvas.2:
-  pkg-config libgnomecanvas-2.0
-[ERROR] The compilation of conf-gnomecanvas.2 failed.
-Removing conf-gnomecanvas.2.
-  Nothing to do.
-Building conf-gtksourceview.2:
-  pkg-config gtksourceview-2.0
-[ERROR] The compilation of conf-gtksourceview.2 failed.
-Removing conf-gtksourceview.2.
-  Nothing to do.
-Copying ~/.opam/repo/default/packages/coq/coq.8.4.5/files/coq.install to ~/.opam/4.01.0/build/coq.8.4.5/
-Building coq.8.4.5:
-  ./configure -configdir /home/opam/.opam/4.01.0/lib/coq/config -mandir /home/opam/.opam/4.01.0/man -docdir /home/opam/.opam/4.01.0/doc --prefix /home/opam/.opam/4.01.0 --usecamlp5 --camlp5dir /home/opam/.opam/4.01.0/lib/camlp5 --coqide no
-  make -j1 world
-  make -j1 states
-  make install
-Installing coq.8.4.5.
-Building zarith.1.3:
-  ./configure
-  make
-  make install
-Installing zarith.1.3.
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   camlp5.6.12
- - install   conf-gmp.1
- - install   coq.8.4.5
- - install   zarith.1.3
-The following failed
- - install   conf-gnomecanvas.2
- - install   conf-gtksourceview.2
-Due to the errors, the following have been cancelled
- - install   alt-ergo.0.95.2
- - install   ocamlgraph.1.8.5
- - install   why.2.34
- - install   frama-c.20140301
- - install   lablgtk.2.18.3
- - install   why3.0.83
-
-#=== ERROR while installing conf-gnomecanvas.2 ================================#
-# opam-version         1.2.0
-# os                   linux
-# command              pkg-config libgnomecanvas-2.0
-# path                 /home/opam/.opam/4.01.0/build/conf-gnomecanvas.2
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/conf-gnomecanvas.2/conf-gnomecanvas-4429-a71bb4.env
-# stdout-file          /home/opam/.opam/4.01.0/build/conf-gnomecanvas.2/conf-gnomecanvas-4429-a71bb4.out
-# stderr-file          /home/opam/.opam/4.01.0/build/conf-gnomecanvas.2/conf-gnomecanvas-4429-a71bb4.err
-
-
-#=== ERROR while installing conf-gtksourceview.2 ==============================#
-# opam-version         1.2.0
-# os                   linux
-# command              pkg-config gtksourceview-2.0
-# path                 /home/opam/.opam/4.01.0/build/conf-gtksourceview.2
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/conf-gtksourceview.2/conf-gtksourceview-4432-a00279.env
-# stdout-file          /home/opam/.opam/4.01.0/build/conf-gtksourceview.2/conf-gtksourceview-4432-a00279.out
-# stderr-file          /home/opam/.opam/4.01.0/build/conf-gtksourceview.2/conf-gtksourceview-4432-a00279.err
-
-
-=-=- conf-gtksourceview.2 troubleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-=> This package requires gtksourceview 2.0 development packages installed on your system
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107163002.export"
+++ opam install why -e debian
++ depext='autoconf libexpat1-dev libgmp-dev libgnomecanvas2-dev libgtk2.0-dev libgtksourceview2.0-dev'
++ echo Debian depexts: autoconf libexpat1-dev libgmp-dev libgnomecanvas2-dev libgtk2.0-dev libgtksourceview2.0-dev
+Debian depexts: autoconf libexpat1-dev libgmp-dev libgnomecanvas2-dev libgtk2.0-dev libgtksourceview2.0-dev
++ '[' 'autoconf libexpat1-dev libgmp-dev libgnomecanvas2-dev libgtk2.0-dev libgtksourceview2.0-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y autoconf libexpat1-dev libgmp-dev libgnomecanvas2-dev libgtk2.0-dev libgtksourceview2.0-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libpipeline1:amd64 (from .../libpipeline1_1.2.1-1_amd64.deb) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Unpacking libasprintf0c2:amd64 (from .../libasprintf0c2_0.18.1.1-9_amd64.deb) ...
+Selecting previously unselected package libart-2.0-2:amd64.
+Unpacking libart-2.0-2:amd64 (from .../libart-2.0-2_2.3.21-2_amd64.deb) ...
+Selecting previously unselected package libatk1.0-data.
+Unpacking libatk1.0-data (from .../libatk1.0-data_2.4.0-2_all.deb) ...
+Selecting previously unselected package libatk1.0-0:amd64.
+Unpacking libatk1.0-0:amd64 (from .../libatk1.0-0_2.4.0-2_amd64.deb) ...
+Selecting previously unselected package libavahi-common-data:amd64.
+Unpacking libavahi-common-data:amd64 (from .../libavahi-common-data_0.6.31-2_amd64.deb) ...
+Selecting previously unselected package libavahi-common3:amd64.
+Unpacking libavahi-common3:amd64 (from .../libavahi-common3_0.6.31-2_amd64.deb) ...
+Selecting previously unselected package libavahi-client3:amd64.
+Unpacking libavahi-client3:amd64 (from .../libavahi-client3_0.6.31-2_amd64.deb) ...
+Selecting previously unselected package libfreetype6:amd64.
+Unpacking libfreetype6:amd64 (from .../libfreetype6_2.4.9-1.1_amd64.deb) ...
+Selecting previously unselected package ucf.
+Unpacking ucf (from .../ucf_3.0025+nmu3_all.deb) ...
+Moving old data out of the way
+Selecting previously unselected package ttf-dejavu-core.
+Unpacking ttf-dejavu-core (from .../ttf-dejavu-core_2.33-3_all.deb) ...
+Selecting previously unselected package fontconfig-config.
+Unpacking fontconfig-config (from .../fontconfig-config_2.9.0-7.1_all.deb) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Unpacking libfontconfig1:amd64 (from .../libfontconfig1_2.9.0-7.1_amd64.deb) ...
+Selecting previously unselected package libpixman-1-0:amd64.
+Unpacking libpixman-1-0:amd64 (from .../libpixman-1-0_0.26.0-4+deb7u1_amd64.deb) ...
+Selecting previously unselected package libpng12-0:amd64.
+Unpacking libpng12-0:amd64 (from .../libpng12-0_1.2.49-1_amd64.deb) ...
+Selecting previously unselected package libxcb-render0:amd64.
+Unpacking libxcb-render0:amd64 (from .../libxcb-render0_1.8.1-2+deb7u1_amd64.deb) ...
+Selecting previously unselected package libxcb-shm0:amd64.
+Unpacking libxcb-shm0:amd64 (from .../libxcb-shm0_1.8.1-2+deb7u1_amd64.deb) ...
+Selecting previously unselected package libxrender1:amd64.
+Unpacking libxrender1:amd64 (from .../libxrender1_1%3a0.9.7-1+deb7u1_amd64.deb) ...
+Selecting previously unselected package libcairo2:amd64.
+Unpacking libcairo2:amd64 (from .../libcairo2_1.12.2-3_amd64.deb) ...
+Selecting previously unselected package libcairo-gobject2:amd64.
+Unpacking libcairo-gobject2:amd64 (from .../libcairo-gobject2_1.12.2-3_amd64.deb) ...
+Selecting previously unselected package libcairo-script-interpreter2:amd64.
+Unpacking libcairo-script-interpreter2:amd64 (from .../libcairo-script-interpreter2_1.12.2-3_amd64.deb) ...
+Selecting previously unselected package libcroco3:amd64.
+Unpacking libcroco3:amd64 (from .../libcroco3_0.6.6-2_amd64.deb) ...
+Selecting previously unselected package libcups2:amd64.
+Unpacking libcups2:amd64 (from .../libcups2_1.5.3-5+deb7u4_amd64.deb) ...
+Selecting previously unselected package libdatrie1:amd64.
+Unpacking libdatrie1:amd64 (from .../libdatrie1_0.2.5-3_amd64.deb) ...
+Selecting previously unselected package libjpeg8:amd64.
+Unpacking libjpeg8:amd64 (from .../libjpeg8_8d-1+deb7u1_amd64.deb) ...
+Selecting previously unselected package libjasper1:amd64.
+Unpacking libjasper1:amd64 (from .../libjasper1_1.900.1-13+deb7u1_amd64.deb) ...
+Selecting previously unselected package libjbig0:amd64.
+Unpacking libjbig0:amd64 (from .../libjbig0_2.0-2+deb7u1_amd64.deb) ...
+Selecting previously unselected package libtiff4:amd64.
+Unpacking libtiff4:amd64 (from .../libtiff4_3.9.6-11_amd64.deb) ...
+Selecting previously unselected package libgdk-pixbuf2.0-common.
+Unpacking libgdk-pixbuf2.0-common (from .../libgdk-pixbuf2.0-common_2.26.1-1_all.deb) ...
+Selecting previously unselected package libgdk-pixbuf2.0-0:amd64.
+Unpacking libgdk-pixbuf2.0-0:amd64 (from .../libgdk-pixbuf2.0-0_2.26.1-1_amd64.deb) ...
+Selecting previously unselected package libthai-data.
+Unpacking libthai-data (from .../libthai-data_0.1.18-2_all.deb) ...
+Selecting previously unselected package libthai0:amd64.
+Unpacking libthai0:amd64 (from .../libthai0_0.1.18-2_amd64.deb) ...
+Selecting previously unselected package libxft2:amd64.
+Unpacking libxft2:amd64 (from .../libxft2_2.3.1-1_amd64.deb) ...
+Selecting previously unselected package fontconfig.
+Unpacking fontconfig (from .../fontconfig_2.9.0-7.1_amd64.deb) ...
+Selecting previously unselected package libpango1.0-0:amd64.
+Unpacking libpango1.0-0:amd64 (from .../libpango1.0-0_1.30.0-1_amd64.deb) ...
+Selecting previously unselected package libxcomposite1:amd64.
+Unpacking libxcomposite1:amd64 (from .../libxcomposite1_1%3a0.4.3-2_amd64.deb) ...
+Selecting previously unselected package libxfixes3:amd64.
+Unpacking libxfixes3:amd64 (from .../libxfixes3_1%3a5.0-4+deb7u1_amd64.deb) ...
+Selecting previously unselected package libxdamage1:amd64.
+Unpacking libxdamage1:amd64 (from .../libxdamage1_1%3a1.1.3-2_amd64.deb) ...
+Selecting previously unselected package libgtk2.0-common.
+Unpacking libgtk2.0-common (from .../libgtk2.0-common_2.24.10-2_all.deb) ...
+Selecting previously unselected package libxcursor1:amd64.
+Unpacking libxcursor1:amd64 (from .../libxcursor1_1%3a1.1.13-1+deb7u1_amd64.deb) ...
+Selecting previously unselected package libxi6:amd64.
+Unpacking libxi6:amd64 (from .../libxi6_2%3a1.6.1-1+deb7u1_amd64.deb) ...
+Selecting previously unselected package libxinerama1:amd64.
+Unpacking libxinerama1:amd64 (from .../libxinerama1_2%3a1.1.2-1+deb7u1_amd64.deb) ...
+Selecting previously unselected package libxrandr2:amd64.
+Unpacking libxrandr2:amd64 (from .../libxrandr2_2%3a1.3.2-2+deb7u1_amd64.deb) ...
+Selecting previously unselected package libgtk2.0-0:amd64.
+Unpacking libgtk2.0-0:amd64 (from .../libgtk2.0-0_2.24.10-2_amd64.deb) ...
