@@ -156,3 +156,92 @@ Installing io-page.1.2.0.
 Building shared-memory-ring.1.1.0:
   make all
   make install
+Installing shared-memory-ring.1.1.0.
+Building xenstore.1.2.5:
+  make all
+  make install
+Installing xenstore.1.2.5.
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+Building xen-gnt.2.0.0:
+  make
+  make PREFIX=/home/opam/.opam/4.01.0 install
+[ERROR] The compilation of xen-gnt.2.0.0 failed.
+Removing xen-gnt.2.0.0.
+  make PREFIX=/home/opam/.opam/4.01.0 uninstall
+Building mirage-clock-xen.1.0.0:
+  make xen-build
+  make xen-install
+Installing mirage-clock-xen.1.0.0.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+#=== ERROR while installing xen-evtchn.1.0.5 ==================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.01.0/build/xen-evtchn.1.0.5
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/xen-evtchn.1.0.5/xen-evtchn-7691-70a526.env
+# stdout-file          /home/opam/.opam/4.01.0/build/xen-evtchn.1.0.5/xen-evtchn-7691-70a526.out
+# stderr-file          /home/opam/.opam/4.01.0/build/xen-evtchn.1.0.5/xen-evtchn-7691-70a526.err
+### stdout ###
+# ocamlfind ocamlopt -package "cmdliner" -linkpkg configure.ml -o configure
+### stderr ###
+# Makefile:8: config.mk: No such file or directory
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+# make: *** [configure] Error 2
+
+These actions have been completed successfully
+ - install   ocamlmod.0.0.7
+ - install   mirage-xen-minios.0.4.2
+ - install   ocaml-data-notation.0.0.11
+ - install   sexplib.111.25.00
+ - install   shared-memory-ring.1.1.0
+ - install   xenstore.1.2.5
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   base-no-ppx.base
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   conf-pkg-config.1.0
+ - install   base-bytes.legacy
+ - install   ocamlify.0.0.1
+ - install   oasis.0.4.5
+ - install   optcomp.1.6
+ - install   type_conv.111.13.00
+ - install   mirage-clock-xen.1.0.0
+ - install   ocplib-endian.0.7
+ - install   mirage-types.2.0.1
+The following failed
+ - install   xen-evtchn.1.0.5
+ - install   xen-gnt.2.0.0
+Due to the errors, the following have been cancelled
+ - install   mirage-xen.2.0.1
+ - install   mirage-console-xen.1.0.2
+
+#=== ERROR while installing xen-gnt.2.0.0 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.01.0/build/xen-gnt.2.0.0
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/xen-gnt.2.0.0/xen-gnt-9131-543ebd.env
+# stdout-file          /home/opam/.opam/4.01.0/build/xen-gnt.2.0.0/xen-gnt-9131-543ebd.out
+# stderr-file          /home/opam/.opam/4.01.0/build/xen-gnt.2.0.0/xen-gnt-9131-543ebd.err
+### stdout ###
+# ocamlfind ocamlopt -package "cmdliner" -linkpkg configure.ml -o configure
+### stderr ###
+# Makefile:8: config.mk: No such file or directory
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+# make: *** [configure] Error 2
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107202030.export"

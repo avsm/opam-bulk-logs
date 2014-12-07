@@ -1,1 +1,89 @@
 ++ opam install mirage-http -e debian
++ depext=
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install mirage-http -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install mirage-http
+The following actions will be performed:
+ - install   re.1.2.2                              [required by cohttp]
+ - install   type_conv.111.13.00                   [required by fieldslib]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   stringext.1.1.0                       [required by cohttp]
+ - install   base-bytes.legacy                     [required by ocplib-endian]
+ - install   ounit.2.0.0                           [required by cohttp]
+ - install   cmdliner.0.9.6                        [required by cohttp]
+ - install   base64.1.0.0                          [required by dns]
+ - install   base-no-ppx.base                      [required by lwt]
+ - install   sexplib.111.25.00                     [required by mirage-http]
+ - install   fieldslib.109.20.03                   [required by cohttp]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   lwt.2.4.6                             [required by mirage-http]
+ - install   uri.1.7.2                             [required by cohttp]
+ - install   ipaddr.2.5.0                          [required by conduit]
+ - install   cstruct.1.5.0                         [required by conduit]
+ - install   tuntap.1.0.0                          [required by mirage-net-unix]
+ - install   xenstore.1.2.5                        [required by vchan]
+ - install   shared-memory-ring.1.1.0              [required by mirage-unix]
+ - install   io-page.1.2.0                         [required by vchan]
+ - install   xenstore_transport.0.9.4              [required by vchan]
+ - install   mirage-types.2.0.1                    [required by mirage-conduit]
+ - install   mirage-types-lwt.2.0.1                [required by mirage-http]
+ - install   mirage-net-unix.1.1.1                 [required by tcpip]
+ - install   mirage-clock-unix.1.0.0               [required by tcpip]
+ - install   vchan.2.0.0                           [required by mirage-conduit]
+ - install   mirage-unix.2.0.1                     [required by tcpip]
+ - install   mirage-console.2.0.0                  [required by tcpip]
+ - install   tcpip.2.0.3                           [required by mirage-conduit]
+ - install   dns.0.11.0                            [required by mirage-dns]
+ - install   mirage-dns.2.0.0                      [required by mirage-conduit]
+ - install   conduit.0.7.1                         [required by mirage-conduit, cohttp]
+ - install   mirage-conduit.2.0.0                  [required by mirage-http]
+ - install   cohttp.0.13.0                         [required by mirage-http]
+ - install   mirage-http.2.1.0
+=== 35 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[base64.1.0.0] Downloading https://github.com/mirage/ocaml-base64/archive/v1.0.0.tar.gz
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cohttp.0.13.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.13.0.tar.gz
+[conduit.0.7.1] Downloading https://github.com/mirage/ocaml-conduit/archive/v0.7.1.tar.gz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[dns.0.11.0] Downloading https://github.com/mirage/ocaml-dns/archive/v0.11.0.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[io-page.1.2.0] Downloading https://github.com/mirage/io-page/archive/v1.2.0.tar.gz
+[ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[mirage-clock-unix.1.0.0] Downloading https://github.com/mirage/mirage-clock/archive/v1.0.0.tar.gz
+[mirage-console.2.0.0] Downloading https://github.com/mirage/mirage-console/archive/2.0.0.tar.gz
+[mirage-http.2.1.0] Downloading https://github.com/mirage/mirage-http/archive/v2.1.0.tar.gz
+[mirage-net-unix.1.1.1] Downloading https://github.com/mirage/mirage-net-unix/archive/v1.1.1.tar.gz
+[mirage-types.2.0.1] Downloading https://github.com/mirage/mirage/archive/v2.0.1.tar.gz
+[mirage-unix.2.0.1] Downloading https://github.com/mirage/mirage-platform/archive/v2.0.1.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[shared-memory-ring.1.1.0] Downloading https://github.com/mirage/shared-memory-ring/archive/1.1.0.tar.gz
+[stringext.1.1.0] Downloading https://github.com/rgrinberg/stringext/archive/v1.1.0.tar.gz
+[tcpip.2.0.3] Downloading https://github.com/mirage/mirage-tcpip/archive/v2.0.3.tar.gz
+[tuntap.1.0.0] Downloading https://github.com/mirage/ocaml-tuntap/archive/v1.0.0.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[uri.1.7.2] Downloading https://github.com/mirage/ocaml-uri/archive/v1.7.2.tar.gz
+[vchan.2.0.0] Downloading https://github.com/mirage/ocaml-vchan/archive/v2.0.0.tar.gz
+[xenstore.1.2.5] Downloading https://github.com/mirage/ocaml-xenstore/archive/1.2.5.tar.gz
+[xenstore_transport.0.9.4] Downloading https://github.com/djs55/ocaml-xenstore-clients/archive/0.9.4.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.legacy.
+Installing base-no-ppx.base.
+Building base64.1.0.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing base64.1.0.0.
