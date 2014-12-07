@@ -63,3 +63,4 @@ Installing xenstore.1.2.5.
 Building xenstore_transport.0.9.4:
   make all
   make install
+Installing xenstore_transport.0.9.4.
