@@ -77,3 +77,7 @@ Building dose.3.2.2+opam:
   ./configure --with-ocamlgraph --bindir=/home/opam/.opam/4.01.0/bin
   make TARGETS=
   make install
+Installing dose.3.2.2+opam.
+Building opam-lib.1.2.0:
+  ./configure
+  make
