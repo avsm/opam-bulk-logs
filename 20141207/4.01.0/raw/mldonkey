@@ -1,0 +1,47 @@
+++ opam install mldonkey -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
+CentOS 7 depexts:
++ opam install mldonkey
+The following actions will be performed:
+ - install   mldonkey.3.1.5
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mldonkey.3.1.5] Downloading http://downloads.sourceforge.net/project/mldonkey/mldonkey/3.1.5/mldonkey-3.1.5.tar.bz2
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/mldonkey/mldonkey.3.1.5/files/mldonkey.install to ~/.opam/4.01.0/build/mldonkey.3.1.5/
+Building mldonkey.3.1.5:
+  ./configure --enable-debug --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+[ERROR] The compilation of mldonkey.3.1.5 failed.
+Removing mldonkey.3.1.5.
+  Nothing to do.
+
+
+#=== ERROR while installing mldonkey.3.1.5 ====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure --enable-debug --prefix /home/opam/.opam/4.01.0
+# path                 /home/opam/.opam/4.01.0/build/mldonkey.3.1.5
+# compiler             4.01.0
+# exit-code            1
+# env-file             /home/opam/.opam/4.01.0/build/mldonkey.3.1.5/mldonkey-28-ffb3fd.env
+# stdout-file          /home/opam/.opam/4.01.0/build/mldonkey.3.1.5/mldonkey-28-ffb3fd.out
+# stderr-file          /home/opam/.opam/4.01.0/build/mldonkey.3.1.5/mldonkey-28-ffb3fd.err
+### stdout ###
+# ...[truncated]
+# -------------------------------------------
+#      Checking system headers finished.
+# -------------------------------------------
+# 
+# -----------------------------------
+#      Checking system libraries.
+# -----------------------------------
+# ----- checking zlib (required)
+# checking for inflate in -lz... no
+# Zlib missing, did you install zlib and zlib-developer packages?
+
