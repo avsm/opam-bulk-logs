@@ -1,9 +1,9 @@
 ++ opam install acpc -e ubuntu
 + depext=autoconf
 + echo Ubuntu depexts: autoconf
+Ubuntu depexts: autoconf
 + '[' autoconf '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
-Ubuntu depexts: autoconf
 + sudo apt-get install -qq -y autoconf
 debconf: unable to initialize frontend: Dialog
 debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
@@ -29,9 +29,9 @@ update-alternatives: using /usr/bin/automake-1.14 to provide /usr/bin/automake (
 ++ opam install acpc -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
+Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install acpc
-Ubuntu srcexts:
 The following actions will be performed:
  - install   batteries.2.3.1                       [required by acpc]
  - install   vector3.0.2                           [required by acpc]
