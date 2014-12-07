@@ -1,12 +1,12 @@
 ++ opam install uucd -e ubuntu
 + depext=
-Ubuntu depexts:
 + echo Ubuntu depexts:
+Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install uucd -e source,linux
 + srcext=
-Ubuntu srcexts:
 + echo Ubuntu srcexts:
+Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install uucd
 The following actions will be performed:
@@ -23,7 +23,3 @@ Building xmlm.1.2.0:
   ./pkg/pkg-git
   ./pkg/build true
 Installing xmlm.1.2.0.
-Building uucd.2.0.0:
-  ocaml pkg/git.ml
-  ocaml pkg/build.ml native=true native-dynlink=true
-Installing uucd.2.0.0.
