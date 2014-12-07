@@ -1,18 +1,11 @@
-++ opam install ansicolor -e centos,centos-7
+++ opam install ansicolor -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install ansicolor -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ansicolor
-The following actions will be performed:
- - install   ansicolor.0.5
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[ansicolor.0.5] Downloading http://projects.phauna.org/ansicolor/release/ansicolor-0.5.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building ansicolor.0.5:
-  make OCAMLMAKEFILE=./OCamlMakefile
-  make install OCAMLMAKEFILE=./OCamlMakefile
-Installing ansicolor.0.5.
+Debian srcexts:
