@@ -1,0 +1,533 @@
+++ opam install xapi -e centos,centos-7
++ depext='blktap-devel libffi-devel libuuid-devel openssl-devel pam-devel xen-devel'
++ echo CentOS 7 depexts: blktap-devel libffi-devel libuuid-devel openssl-devel pam-devel xen-devel
++ '[' 'blktap-devel libffi-devel libuuid-devel openssl-devel pam-devel xen-devel' '!=' '' ']'
++ sudo yum install -y blktap-devel libffi-devel libuuid-devel openssl-devel pam-devel xen-devel
+CentOS 7 depexts: blktap-devel libffi-devel libuuid-devel openssl-devel pam-devel xen-devel
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: anorien.csc.warwick.ac.uk
+ * extras: mirrors.melbourne.co.uk
+ * updates: anorien.csc.warwick.ac.uk
+No package blktap-devel available.
+No package xen-devel available.
+Resolving Dependencies
+--> Running transaction check
+---> Package libffi-devel.x86_64 0:3.0.13-11.el7 will be installed
+---> Package libuuid-devel.x86_64 0:2.23.2-16.el7 will be installed
+---> Package openssl-devel.x86_64 1:1.0.1e-34.el7_0.6 will be installed
+--> Processing Dependency: zlib-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+---> Package pam-devel.x86_64 0:1.1.8-9.el7 will be installed
+--> Running transaction check
+---> Package krb5-devel.x86_64 0:1.11.3-49.el7 will be installed
+--> Processing Dependency: libverto-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libselinux-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libcom_err-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+---> Package zlib-devel.x86_64 0:1.2.7-13.el7 will be installed
+--> Running transaction check
+---> Package keyutils-libs-devel.x86_64 0:1.5.8-3.el7 will be installed
+---> Package libcom_err-devel.x86_64 0:1.42.9-4.el7 will be installed
+---> Package libselinux-devel.x86_64 0:2.2.2-6.el7 will be installed
+--> Processing Dependency: libsepol-devel >= 2.1.9-1 for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libpcre) for package: libselinux-devel-2.2.2-6.el7.x86_64
+---> Package libverto-devel.x86_64 0:0.2.5-4.el7 will be installed
+--> Running transaction check
+---> Package libsepol-devel.x86_64 0:2.1.9-3.el7 will be installed
+---> Package pcre-devel.x86_64 0:8.32-12.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                 Arch       Version                   Repository   Size
+================================================================================
+Installing:
+ libffi-devel            x86_64     3.0.13-11.el7             base         22 k
+ libuuid-devel           x86_64     2.23.2-16.el7             base         81 k
+ openssl-devel           x86_64     1:1.0.1e-34.el7_0.6       updates     1.2 M
+ pam-devel               x86_64     1.1.8-9.el7               base        182 k
+Installing for dependencies:
+ keyutils-libs-devel     x86_64     1.5.8-3.el7               base         37 k
+ krb5-devel              x86_64     1.11.3-49.el7             base        611 k
+ libcom_err-devel        x86_64     1.42.9-4.el7              base         30 k
+ libselinux-devel        x86_64     2.2.2-6.el7               base        174 k
+ libsepol-devel          x86_64     2.1.9-3.el7               base         71 k
+ libverto-devel          x86_64     0.2.5-4.el7               base         12 k
+ pcre-devel              x86_64     8.32-12.el7               base        477 k
+ zlib-devel              x86_64     1.2.7-13.el7              base         49 k
+
+Transaction Summary
+================================================================================
+Install  4 Packages (+8 Dependent packages)
+
+Total download size: 2.9 M
+Installed size: 6.2 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              3.2 MB/s | 2.9 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : keyutils-libs-devel-1.5.8-3.el7.x86_64                      1/12 
+  Installing : pcre-devel-8.32-12.el7.x86_64                               2/12 
+  Installing : zlib-devel-1.2.7-13.el7.x86_64                              3/12 
+  Installing : libsepol-devel-2.1.9-3.el7.x86_64                           4/12 
+  Installing : libselinux-devel-2.2.2-6.el7.x86_64                         5/12 
+  Installing : libverto-devel-0.2.5-4.el7.x86_64                           6/12 
+  Installing : libcom_err-devel-1.42.9-4.el7.x86_64                        7/12 
+  Installing : krb5-devel-1.11.3-49.el7.x86_64                             8/12 
+  Installing : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                    9/12 
+  Installing : libuuid-devel-2.23.2-16.el7.x86_64                         10/12 
+  Installing : pam-devel-1.1.8-9.el7.x86_64                               11/12 
+  Installing : libffi-devel-3.0.13-11.el7.x86_64                          12/12 
+install-info: No such file or directory for /usr/share/info/libffi.info.gz
+warning: %post(libffi-devel-3.0.13-11.el7.x86_64) scriptlet failed, exit status 1
+Non-fatal POSTIN scriptlet failure in rpm package libffi-devel-3.0.13-11.el7.x86_64
+  Verifying  : libcom_err-devel-1.42.9-4.el7.x86_64                        1/12 
+  Verifying  : libselinux-devel-2.2.2-6.el7.x86_64                         2/12 
+  Verifying  : libverto-devel-0.2.5-4.el7.x86_64                           3/12 
+  Verifying  : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                    4/12 
+  Verifying  : libsepol-devel-2.1.9-3.el7.x86_64                           5/12 
+  Verifying  : krb5-devel-1.11.3-49.el7.x86_64                             6/12 
+  Verifying  : zlib-devel-1.2.7-13.el7.x86_64                              7/12 
+  Verifying  : pcre-devel-8.32-12.el7.x86_64                               8/12 
+  Verifying  : libffi-devel-3.0.13-11.el7.x86_64                           9/12 
+  Verifying  : pam-devel-1.1.8-9.el7.x86_64                               10/12 
+  Verifying  : libuuid-devel-2.23.2-16.el7.x86_64                         11/12 
+  Verifying  : keyutils-libs-devel-1.5.8-3.el7.x86_64                     12/12 
+
+Installed:
+  libffi-devel.x86_64 0:3.0.13-11.el7      libuuid-devel.x86_64 0:2.23.2-16.el7
+  openssl-devel.x86_64 1:1.0.1e-34.el7_0.6 pam-devel.x86_64 0:1.1.8-9.el7      
+
+Dependency Installed:
+  keyutils-libs-devel.x86_64 0:1.5.8-3.el7                                      
+  krb5-devel.x86_64 0:1.11.3-49.el7                                             
+  libcom_err-devel.x86_64 0:1.42.9-4.el7                                        
+  libselinux-devel.x86_64 0:2.2.2-6.el7                                         
+  libsepol-devel.x86_64 0:2.1.9-3.el7                                           
+  libverto-devel.x86_64 0:0.2.5-4.el7                                           
+  pcre-devel.x86_64 0:8.32-12.el7                                               
+  zlib-devel.x86_64 0:1.2.7-13.el7                                              
+
+Complete!
++ opam install xapi
+The following actions will be performed:
+ - install   omake.0.9.8.6-0.rc1                   [required by xapi]
+ - install   re.1.2.2                              [required by xen-api-client, tar-format, xapi-forkexecd]
+ - install   type_conv.111.13.00                   [required by rpc]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   obuild.0.1.1                          [required by nbd, cdrom]
+ - install   ounit.2.0.0                           [required by xapi]
+ - install   ssl.0.4.7                             [required by xapi]
+ - install   libvhd.0.9.0                          [required by xapi]
+ - install   cmdliner.0.9.6                        [required by tar-format, nbd]
+ - install   oclock.0.4.0                          [required by xapi]
+ - install   ctypes.0.3                            [required by opasswd]
+ - install   fd-send-recv.1.0.1                    [required by xapi]
+ - install   xmlm.1.2.0                            [required by xen-api-client, rpc, xapi-libs-transitional]
+ - install   syslog.1.4                            [required by xapi-forkexecd]
+ - install   uuidm.0.9.5                           [required by xapi-forkexecd]
+ - install   sexplib.111.25.00                     [required by cstruct]
+ - install   fieldslib.109.20.03                   [required by cohttp]
+ - install   ocplib-endian.0.4                     [required by cstruct]
+ - install   cdrom.0.9.1                           [required by xapi]
+ - install   lwt.2.4.5                             [required by xen-api-client, rpc, nbd, tar-format]
+ - install   opasswd.0.9.3                         [required by xapi]
+ - install   xapi-stdext.0.12.0                    [required by xapi]
+ - install   uri.1.4.0                             [required by xen-api-client]
+ - install   xenctrl.0.9.26                        [required by xapi]
+ - install   rpc.1.5.1                             [required by xapi]
+ - install   cstruct.1.5.0                         [required by xen-api-client, nbd, tar-format]
+ - install   xapi-inventory.0.9.1                  [required by xapi]
+ - install   cohttp.0.10.0                         [required by xen-api-client]
+ - install   xapi-rrd.0.9.1                        [required by xapi-rrd-transport, xapi-idl]
+ - install   xenstore.1.2.5                        [required by xapi]
+ - install   tar-format.0.2.1                      [required by xapi]
+ - install   nbd.1.0.2                             [required by xapi]
+ - install   io-page.1.2.0                         [required by xen-gnt]
+ - install   crc.0.9.0                             [required by xapi-rrd-transport]
+ - install   xen-api-client.0.9.7                  [required by xapi]
+ - install   message-switch.0.10.4                 [required by xapi-idl]
+ - install   xenstore_transport.0.9.4              [required by xapi-libs-transitional]
+ - install   xen-gnt.1.0.3                         [required by xapi-rrd-transport]
+ - install   xapi-idl.0.9.19                       [required by xapi]
+ - install   xapi-rrd-transport.0.7.2              [required by xapi-rrdd-plugin]
+ - install   xapi-forkexecd.0.9.2                  [required by xapi]
+ - install   xapi-tapctl.0.9.2                     [required by xapi]
+ - install   xapi-netdev.0.9.1                     [required by xapi]
+ - install   xapi-libs-transitional.0.9.6          [required by xapi]
+ - install   xapi-rrdd-plugin.0.6.0                [required by xapi]
+ - install   xapi.1.9.56
+=== 46 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cdrom.0.9.1] Downloading https://github.com/xen-org/cdrom/archive/cdrom-0.9.1.tar.gz
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cohttp.0.10.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.10.0.tar.gz
+[crc.0.9.0] Downloading https://github.com/xapi-project/ocaml-crc/archive/0.9.0.tar.gz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[ctypes.0.3] Downloading https://github.com/ocamllabs/ocaml-ctypes/archive/0.3.tar.gz
+[fd-send-recv.1.0.1] Downloading https://github.com/xen-org/ocaml-fd-send-recv/archive/ocaml-fd-send-recv-1.0.1.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[io-page.1.2.0] Downloading https://github.com/mirage/io-page/archive/v1.2.0.tar.gz
+[libvhd.0.9.0] Downloading https://github.com/xen-org/libvhd/archive/libvhd-0.9.0.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[message-switch.0.10.4] Downloading https://github.com/djs55/message-switch/archive/v0.10.4.tar.gz
+[nbd.1.0.2] Downloading https://github.com/xapi-project/nbd/archive/v1.0.2/nbd-1.0.2.tar.gz
+[obuild.0.1.1] Downloading https://github.com/ocaml-obuild/obuild/archive/obuild-v0.1.1.tar.gz
+[oclock.0.4.0] Downloading https://github.com/polazarus/oclock/archive/v0.4.tar.gz
+[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
+[opasswd.0.9.3] Downloading https://github.com/mcclurmc/ocaml-opasswd/archive/0.9.3.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[rpc.1.5.1] Downloading https://github.com/mirage/ocaml-rpc/archive/1.5.1.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[syslog.1.4] Downloading http://ftp.de.debian.org/debian/pool/main/s/syslog-ocaml/syslog-ocaml_1.4.orig.tar.gz
+[tar-format.0.2.1] Downloading https://github.com/djs55/ocaml-tar/archive/0.2.1.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[uri.1.4.0] Downloading https://github.com/mirage/ocaml-uri/archive/v1.4.0.tar.gz
+[uuidm.0.9.5] Downloading http://erratique.ch/software/uuidm/releases/uuidm-0.9.5.tbz
+[xapi.1.9.56] Downloading https://github.com/xapi-project/xen-api/archive/v1.9.56.tar.gz
+[xapi-forkexecd.0.9.2] Downloading https://github.com/xapi-project/forkexecd/archive/0.9.2/forkexecd-0.9.2.tar.gz
+[xapi-idl.0.9.19] Downloading https://github.com/xapi-project/xcp-idl/archive/v0.9.19.tar.gz
+[xapi-inventory.0.9.1] Downloading https://github.com/xapi-project/xcp-inventory/archive/v0.9.1.tar.gz
+[xapi-libs-transitional.0.9.6] Downloading https://github.com/xapi-project/xen-api-libs-transitional/archive/v0.9.6.tar.gz
+[xapi-netdev.0.9.1] Downloading https://github.com/xapi-project/netdev/archive/v0.9.1/netdev-0.9.1.tar.gz
+[xapi-rrd.0.9.1] Downloading https://github.com/xapi-project/xcp-rrd/archive/v0.9.1.tar.gz
+[xapi-rrd-transport.0.7.2] Downloading https://github.com/xapi-project/rrd-transport/archive/0.7.2.tar.gz
+[xapi-rrdd-plugin.0.6.0] Downloading https://github.com/xapi-project/ocaml-rrdd-plugin/archive/0.6.0.tar.gz
+[xapi-stdext.0.12.0] Downloading http://github.com/xapi-project/stdext/archive/v0.12.0.tar.gz
+[xapi-tapctl.0.9.2] Downloading https://github.com/xapi-project/tapctl/archive/v0.9.2.tar.gz
+[xen-api-client.0.9.7] Downloading https://github.com/xen-org/xen-api-client/archive/0.9.7.tar.gz
+[xen-gnt.1.0.3] Downloading https://github.com/mirage/ocaml-gnt/archive/v1.0.3.tar.gz
+[xenctrl.0.9.26] Downloading https://github.com/xapi-project/ocaml-xen-lowlevel-libs/archive/0.9.26.tar.gz
+[xenstore.1.2.5] Downloading https://github.com/mirage/ocaml-xenstore/archive/1.2.5.tar.gz
+[xenstore_transport.0.9.4] Downloading https://github.com/djs55/ocaml-xenstore-clients/archive/0.9.4.tar.gz
+[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Building ctypes.0.3:
+  make
+  make install
+Installing ctypes.0.3.
+Building fd-send-recv.1.0.1:
+  make
+  make install
+Installing fd-send-recv.1.0.1.
+Building libvhd.0.9.0:
+  make
+  make install BINDIR=/home/opam/.opam/4.01.0/bin
+[ERROR] The compilation of libvhd.0.9.0 failed.
+Removing libvhd.0.9.0.
+  make uninstall BINDIR=/home/opam/.opam/4.01.0/bin
+Copying ~/.opam/repo/default/packages/obuild/obuild.0.1.1/files/obuild.install to ~/.opam/4.01.0/build/obuild.0.1.1/
+Building obuild.0.1.1:
+  ./bootstrap
+Installing obuild.0.1.1.
+Building oclock.0.4.0:
+  make all
+  make install
+Installing oclock.0.4.0.
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/opam.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/omake.install to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/fam.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
+Applying opam.patch.
+Applying fam.patch.
+Applying readline.patch.
+Building omake.0.9.8.6-0.rc1:
+  make bootstrap PREFIX=/home/opam/.opam/4.01.0
+  make all PREFIX=/home/opam/.opam/4.01.0
+  make install PREFIX=/home/opam/.opam/4.01.0
+Installing omake.0.9.8.6-0.rc1.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.01.0/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing ssl.0.4.7.
+Building syslog.1.4:
+  make reallyall
+  make install
+Installing syslog.1.4.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Copying ~/.opam/repo/default/packages/uuidm/uuidm.0.9.5/files/uuidm.install to ~/.opam/4.01.0/build/uuidm.0.9.5/
+Building uuidm.0.9.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uuidm.0.9.5.
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Building cdrom.0.9.1:
+  make
+  make install
+Installing cdrom.0.9.1.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+Installing lwt.2.4.5.
+Building ocplib-endian.0.4:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.4.
+Building opasswd.0.9.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing opasswd.0.9.3.
+Building sexplib.111.25.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.111.25.00.
+Building xapi-stdext.0.12.0:
+  make
+  make install BINDIR=/home/opam/.opam/4.01.0/bin
+Installing xapi-stdext.0.12.0.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.01.0 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Building rpc.1.5.1:
+  make
+  make install
+Installing rpc.1.5.1.
+Building uri.1.4.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.4.0.
+Building xapi-inventory.0.9.1:
+  ./configure --default_inventory=/home/opam/.opam/4.01.0/etc
+  make
+  make install
+Installing xapi-inventory.0.9.1.
+Building xenctrl.0.9.26:
+  ./configure
+  make
+  make install BINDIR=/home/opam/.opam/4.01.0/bin
+[ERROR] The compilation of xenctrl.0.9.26 failed.
+Removing xenctrl.0.9.26.
+  make uninstall
+Building cohttp.0.10.0:
+  make PREFIX=/home/opam/.opam/4.01.0
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing cohttp.0.10.0.
+Building crc.0.9.0:
+  make
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing crc.0.9.0.
+Building io-page.1.2.0:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing io-page.1.2.0.
+Building nbd.1.0.2:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install BINDIR=/home/opam/.opam/4.01.0/bin
+Installing nbd.1.0.2.
+Building tar-format.0.2.1:
+  make
+  make install
+Installing tar-format.0.2.1.
+Building xapi-rrd.0.9.1:
+  make
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing xapi-rrd.0.9.1.
+Building xenstore.1.2.5:
+  make all
+  make install
+Installing xenstore.1.2.5.
+Building message-switch.0.10.4:
+  ./configure --bindir /home/opam/.opam/4.01.0/bin
+  make
+  make install
+[ERROR] The compilation of message-switch.0.10.4 failed.
+Removing message-switch.0.10.4.
+  ocamlfind remove message_switch
+Building xen-api-client.0.9.7:
+  make
+  make install
+Installing xen-api-client.0.9.7.
+Building xen-gnt.1.0.3:
+  make
+  make PREFIX=/home/opam/.opam/4.01.0 install
+[ERROR] The compilation of xen-gnt.1.0.3 failed.
+Removing xen-gnt.1.0.3.
+  make PREFIX=/home/opam/.opam/4.01.0 uninstall
+Building xenstore_transport.0.9.4:
+  make all
+  make install
+Installing xenstore_transport.0.9.4.
+
+
+#=== ERROR while installing libvhd.0.9.0 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.01.0/build/libvhd.0.9.0
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/libvhd.0.9.0/libvhd-1457-2913ab.env
+# stdout-file          /home/opam/.opam/4.01.0/build/libvhd.0.9.0/libvhd-1457-2913ab.out
+# stderr-file          /home/opam/.opam/4.01.0/build/libvhd.0.9.0/libvhd-1457-2913ab.err
+### stdout ###
+# ...[truncated]
+# 
+# ocaml setup.ml -build 
+# /home/opam/.opam/4.01.0/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind ocamlc -c lib/vhd_stubs.c
+# + ocamlfind ocamlc -c lib/vhd_stubs.c
+# lib/vhd_stubs.c:11:24: fatal error: vhd/libvhd.h: No such file or directory
+#  #include <vhd/libvhd.h>
+#                         ^
+# compilation terminated.
+# Command exited with code 2.
+### stderr ###
+# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' lib/liblibvhd_stubs.a lib/dlllibvhd_stubs.so lib/libvhd.cma lib/libvhd.cmxa lib/libvhd.a lib/libvhd.cmxs lib_test/open.byte -tag debug' terminated with error code 10")
+# make: *** [build] Error 1
+
+
+#=== ERROR while installing message-switch.0.10.4 =============================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure --bindir /home/opam/.opam/4.01.0/bin
+# path                 /home/opam/.opam/4.01.0/build/message-switch.0.10.4
+# compiler             4.01.0
+# exit-code            127
+# env-file             /home/opam/.opam/4.01.0/build/message-switch.0.10.4/message-switch-11908-4eee66.env
+# stdout-file          /home/opam/.opam/4.01.0/build/message-switch.0.10.4/message-switch-11908-4eee66.out
+# stderr-file          /home/opam/.opam/4.01.0/build/message-switch.0.10.4/message-switch-11908-4eee66.err
+### stderr ###
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+# ./configure: line 12: /tmp/configure.Hv32y/configure: No such file or directory
+
+
+#=== ERROR while installing xen-gnt.1.0.3 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.01.0/build/xen-gnt.1.0.3
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/xen-gnt.1.0.3/xen-gnt-12347-81a3ce.env
+# stdout-file          /home/opam/.opam/4.01.0/build/xen-gnt.1.0.3/xen-gnt-12347-81a3ce.out
+# stderr-file          /home/opam/.opam/4.01.0/build/xen-gnt.1.0.3/xen-gnt-12347-81a3ce.err
+### stdout ###
+# ocamlfind ocamlopt -package "cmdliner" -linkpkg configure.ml -o configure
+### stderr ###
+# Makefile:8: config.mk: No such file or directory
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+# make: *** [configure] Error 2
+
+
+#=== ERROR while installing xenctrl.0.9.26 ====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure
+# path                 /home/opam/.opam/4.01.0/build/xenctrl.0.9.26
+# compiler             4.01.0
+# exit-code            127
+# env-file             /home/opam/.opam/4.01.0/build/xenctrl.0.9.26/xenctrl-9712-559acc.env
+# stdout-file          /home/opam/.opam/4.01.0/build/xenctrl.0.9.26/xenctrl-9712-559acc.out
+# stderr-file          /home/opam/.opam/4.01.0/build/xenctrl.0.9.26/xenctrl-9712-559acc.err
+### stderr ###
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+# ./configure: line 12: /tmp/tmp.q0fyLhNWDG/configure: No such file or directory
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   crc.0.9.0
+ - install   tar-format.0.2.1
+ - install   ocplib-endian.0.4
+ - install   sexplib.111.25.00
+ - install   uuidm.0.9.5
+ - install   syslog.1.4
+ - install   uri.1.4.0
+ - install   xmlm.1.2.0
+ - install   opasswd.0.9.3
+ - install   cohttp.0.10.0
+ - install   fd-send-recv.1.0.1
+ - install   xapi-rrd.0.9.1
+ - install   lwt.2.4.5
+ - install   ctypes.0.3
+ - install   xapi-stdext.0.12.0
+ - install   nbd.1.0.2
+ - install   oclock.0.4.0
+ - install   xapi-inventory.0.9.1
+ - install   xenstore.1.2.5
+ - install   xenstore_transport.0.9.4
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   ssl.0.4.7
+ - install   rpc.1.5.1
+ - install   ounit.2.0.0
+ - install   xen-api-client.0.9.7
+ - install   obuild.0.1.1
+ - install   optcomp.1.6
+ - install   type_conv.111.13.00
+ - install   re.1.2.2
+ - install   fieldslib.109.20.03
+ - install   cdrom.0.9.1
+ - install   omake.0.9.8.6-0.rc1
+The following failed
+ - install   libvhd.0.9.0
+ - install   message-switch.0.10.4
+ - install   xen-gnt.1.0.3
+ - install   xenctrl.0.9.26
+Due to the errors, the following have been cancelled
+ - install   xapi-tapctl.0.9.2
+ - install   xapi-netdev.0.9.1
+ - install   xapi-rrd-transport.0.7.2
+ - install   xapi-idl.0.9.19
+ - install   xapi-rrdd-plugin.0.6.0
+ - install   xapi.1.9.56
+ - install   xapi-libs-transitional.0.9.6
+ - install   xapi-forkexecd.0.9.2
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107163148.export"
