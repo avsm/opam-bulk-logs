@@ -1,9 +1,14 @@
-++ opam install ocp-build -e centos,centos-7
+++ opam install ocp-build -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+Debian depexts:
+++ opam install ocp-build -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install ocp-build
+Debian srcexts:
 The following actions will be performed:
  - install   ocp-build.1.99.8-beta
 === 1 to install ===
@@ -37,9 +42,9 @@ Removing ocp-build.1.99.8-beta.
 # path                 /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta
 # compiler             4.01.0
 # exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-28-5f1023.env
-# stdout-file          /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-28-5f1023.out
-# stderr-file          /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-28-5f1023.err
+# env-file             /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-152-6d07ae.env
+# stdout-file          /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-152-6d07ae.out
+# stderr-file          /home/opam/.opam/4.01.0/build/ocp-build.1.99.8-beta/ocp-build-152-6d07ae.err
 ### stdout ###
 # ...[truncated]
 # Creating root directory _obuild/
