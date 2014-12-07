@@ -53,3 +53,7 @@ Building fileutils.0.4.4:
   ./configure
   make
   make install
+Installing fileutils.0.4.4.
+Building ocaml-data-notation.0.0.11:
+  make
+  make install
