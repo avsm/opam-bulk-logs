@@ -1,0 +1,14 @@
+++ opam install opa-base -e ubuntu
+[ERROR] opa-base is not available because it requires OCaml < 4.01.0.
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install opa-base -e source,linux
+Ubuntu depexts:
+[ERROR] opa-base is not available because it requires OCaml < 4.01.0.
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install opa-base
+Ubuntu srcexts:
+[ERROR] opa-base is not available because it requires OCaml < 4.01.0.
