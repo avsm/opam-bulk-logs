@@ -1,0 +1,14 @@
+++ opam install pcre-ocaml -e ubuntu
+[ERROR] No package named pcre-ocaml found.
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install pcre-ocaml -e source,linux
+[ERROR] No package named pcre-ocaml found.
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install pcre-ocaml
+Ubuntu srcexts:
+[ERROR] No package named pcre-ocaml found.
