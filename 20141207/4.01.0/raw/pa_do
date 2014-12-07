@@ -1,0 +1,49 @@
+++ opam install pa_do -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install pa_do
+The following actions will be performed:
+ - install   pa_do.0.8.16
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pa_do.0.8.16] Downloading http://forge.ocamlcore.org/frs/download.php/1063/pa_do-0.8.16.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building pa_do.0.8.16:
+  make
+  make install
+[ERROR] The compilation of pa_do.0.8.16 failed.
+Removing pa_do.0.8.16.
+  ocamlfind remove pa_do
+
+
+#=== ERROR while installing pa_do.0.8.16 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.01.0/build/pa_do.0.8.16
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/pa_do.0.8.16/pa_do-32-5f1023.env
+# stdout-file          /home/opam/.opam/4.01.0/build/pa_do.0.8.16/pa_do-32-5f1023.out
+# stderr-file          /home/opam/.opam/4.01.0/build/pa_do.0.8.16/pa_do-32-5f1023.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlc -g -linkpkg -package num examples/pi_digits.cmo -o examples/pi_digits.byte
+# ocamlfind ocamldep -package camlp4 -package graphics -package num -syntax camlp4o -ppopt src/pa_do.cma -ppopt src/pa_infix.cma -ppopt nums.cma -ppopt src/pa_do_nums.cma -modules examples/rk4.ml > examples/rk4.ml.depends
+# ocamlfind ocamlc -c -g -annot -package camlp4 -package graphics -package num -syntax camlp4o -ppopt src/pa_do.cma -ppopt src/pa_infix.cma -ppopt nums.cma -ppopt src/pa_do_nums.cma -I examples -o examples/rk4.cmo examples/rk4.ml
+# ocamlfind ocamlc -g -linkpkg examples/rk4.cmo -o examples/rk4.byte
+# ocamlfind ocamldep -package camlp4 -package graphics -package num -syntax camlp4o -ppopt src/pa_do.cma -ppopt src/pa_infix.cma -ppopt nums.cma -ppopt src/pa_do_nums.cma -modules examples/newton_basin.ml > examples/newton_basin.ml.depends
+# ocamlfind ocamlc -c -g -annot -package camlp4 -package graphics -package num -syntax camlp4o -ppopt src/pa_do.cma -ppopt src/pa_infix.cma -ppopt nums.cma -ppopt src/pa_do_nums.cma -I examples -o examples/newton_basin.cmo examples/newton_basin.ml
+# + ocamlfind ocamlc -c -g -annot -package camlp4 -package graphics -package num -syntax camlp4o -ppopt src/pa_do.cma -ppopt src/pa_infix.cma -ppopt nums.cma -ppopt src/pa_do_nums.cma -I examples -o examples/newton_basin.cmo examples/newton_basin.ml
+# File "examples/newton_basin.ml", line 2, characters 0-13:
+# Error: Unbound module Graphics
+# Command exited with code 2.
+### stderr ###
+# fatal: Not a git repository (or any of the parent directories): .git
+# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' src/pa_do.cma src/pa_do.cmxa src/pa_do.a src/pa_do.cmxs src/pa_do_nums.cma src/pa_do_nums.cmxa src/pa_do_nums.a src/pa_do_nums.cmxs src/pa_infix.cma src/pa_infix.cmxa src/pa_infix.a src/pa_infix.cmxs src/pa_do_top.cma src/pa_do_top.cmxa src/pa_do_top.a src/pa_do_top.cmxs src/pa_do_top_make.cma src/pa_do_top_make.cmxa src/pa_do_top_make....[truncated]
+# make: *** [all] Error 1
+
