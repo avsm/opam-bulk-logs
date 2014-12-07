@@ -1,0 +1,57 @@
+++ opam install mirage-xen -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install mirage-xen
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   type_conv.111.13.00                   [required by sexplib]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   ocamlify.0.0.1                        [required by oasis]
+ - install   lwt.2.4.5                             [required by mirage-xen]
+ - install   conf-pkg-config.1.0                   [required by mirage-xen]
+ - install   ounit.2.0.0                           [required by xenstore, shared-memory-ring, xen-gnt]
+ - install   cmdliner.0.9.6                        [required by xen-gnt, xen-evtchn]
+ - install   mirage-xen-minios.0.4.2               [required by mirage-xen]
+ - install   ocamlmod.0.0.7                        [required by oasis]
+ - install   sexplib.111.25.00                     [required by cstruct]
+ - install   ocaml-data-notation.0.0.11            [required by oasis]
+ - install   ocplib-endian.0.4                     [required by cstruct]
+ - install   xen-evtchn.1.0.5                      [required by mirage-xen]
+ - install   oasis.0.4.5                           [required by xen-gnt]
+ - install   cstruct.1.5.0                         [required by mirage-xen]
+ - install   xenstore.1.2.5                        [required by mirage-xen]
+ - install   shared-memory-ring.1.1.0              [required by mirage-xen]
+ - install   io-page.1.2.0                         [required by mirage-xen]
+ - install   xen-gnt.2.0.0                         [required by mirage-xen]
+ - install   mirage-types.2.0.1                    [required by mirage-clock-xen]
+ - install   mirage-clock-xen.1.0.0                [required by mirage-xen]
+ - install   mirage-xen.2.0.1
+=== 22 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[io-page.1.2.0] Downloading https://github.com/mirage/io-page/archive/v1.2.0.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[mirage-clock-xen.1.0.0] Downloading https://github.com/mirage/mirage-clock/archive/v1.0.0.tar.gz
+[mirage-types.2.0.1] Downloading https://github.com/mirage/mirage/archive/v2.0.1.tar.gz
+[mirage-xen.2.0.1] Downloading https://github.com/mirage/mirage-platform/archive/v2.0.1.tar.gz
+[mirage-xen-minios.0.4.2] Downloading https://github.com/mirage/mirage-xen-minios/releases/download/v0.4.2/mirage-xen-minios-v0.4.2.tar.bz2
+[oasis.0.4.5] Downloading https://forge.ocamlcore.org/frs/download.php/1475/oasis-0.4.5.tar.gz
+[ocaml-data-notation.0.0.11] Downloading https://forge.ocamlcore.org/frs/download.php/1310/ocaml-data-notation-0.0.11.tar.gz
+[ocamlify.0.0.1] Downloading http://forge.ocamlcore.org/frs/download.php/379/ocamlify-0.0.1.tar.gz
+[ocamlmod.0.0.7] Downloading https://forge.ocamlcore.org/frs/download.php/1350/ocamlmod-0.0.7.tar.gz
+[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[shared-memory-ring.1.1.0] Downloading https://github.com/mirage/shared-memory-ring/archive/1.1.0.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[xen-evtchn.1.0.5] Downloading https://github.com/mirage/ocaml-evtchn/archive/v1.0.5.tar.gz
+[xen-gnt.2.0.0] Downloading https://github.com/mirage/ocaml-gnt/archive/v2.0.0.tar.gz
+[xenstore.1.2.5] Downloading https://github.com/mirage/ocaml-xenstore/archive/1.2.5.tar.gz
+[ERROR] https://forge.ocamlcore.org/frs/download.php/1350/ocamlmod-0.0.7.tar.gz is not available
+[ERROR] https://github.com/mirage/mirage-xen-minios/releases/download/v0.4.2/mirage-xen-minios-v0.4.2.tar.bz2 is not available
+[ERROR] Could not download archives of mirage-xen-minios.0.4.2 and ocamlmod.0.0.7
+
