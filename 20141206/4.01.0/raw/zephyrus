@@ -1,14 +1,14 @@
 ++ opam install zephyrus -e ubuntu
 + depext=
-+ echo Ubuntu depexts:
 Ubuntu depexts:
++ echo Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install zephyrus -e source,linux
 + srcext=
+Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install zephyrus
-Ubuntu srcexts:
 The following actions will be performed:
  - install   easy-format.1.0.2                     [required by atd]
  - install   menhir.20140422                       [required by zephyrus]
@@ -77,19 +77,6 @@ Removing zephyrus.0.1.
   Nothing to do.
 
 
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   atdgen.1.4.1
- - install   extlib-compat.1.6.1
- - install   cppo.1.1.2
- - install   yojson.1.1.8
- - install   menhir.20140422
- - install   easy-format.1.0.2
- - install   biniou.1.0.9
- - install   atd.1.1.2
-The following failed
- - install   zephyrus.0.1
-
 #=== ERROR while installing zephyrus.0.1 ======================================#
 # opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
 # os                   linux
@@ -97,9 +84,9 @@ The following failed
 # path                 /home/opam/.opam/4.01.0/build/zephyrus.0.1
 # compiler             4.01.0
 # exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/zephyrus.0.1/zephyrus-3744-f0f09f.env
-# stdout-file          /home/opam/.opam/4.01.0/build/zephyrus.0.1/zephyrus-3744-f0f09f.out
-# stderr-file          /home/opam/.opam/4.01.0/build/zephyrus.0.1/zephyrus-3744-f0f09f.err
+# env-file             /home/opam/.opam/4.01.0/build/zephyrus.0.1/zephyrus-3745-f0f09f.env
+# stdout-file          /home/opam/.opam/4.01.0/build/zephyrus.0.1/zephyrus-3745-f0f09f.out
+# stderr-file          /home/opam/.opam/4.01.0/build/zephyrus.0.1/zephyrus-3745-f0f09f.err
 ### stdout ###
 # ...[truncated]
 # ocamlfind ocamldep -package atdgen -package unix -modules src/atd/json_j.mli > src/atd/json_j.mli.depends
@@ -116,4 +103,17 @@ The following failed
 # make: *** [all] Error 10
 
 
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107044450.export"
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   atdgen.1.4.1
+ - install   extlib-compat.1.6.1
+ - install   cppo.1.1.2
+ - install   yojson.1.1.8
+ - install   menhir.20140422
+ - install   easy-format.1.0.2
+ - install   biniou.1.0.9
+ - install   atd.1.1.2
+The following failed
+ - install   zephyrus.0.1
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107111850.export"
