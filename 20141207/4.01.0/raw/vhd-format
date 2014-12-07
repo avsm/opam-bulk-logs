@@ -4,3 +4,38 @@
 + '[' '' '!=' '' ']'
 Debian depexts:
 ++ opam install vhd-format -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install vhd-format
+Debian srcexts:
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by vhd-format]
+ - install   base-no-ppx.base                      [required by lwt]
+ - install   type_conv.111.13.00                   [required by sexplib]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   uuidm.0.9.5                           [required by vhd-format]
+ - install   base-bytes.legacy                     [required by ocplib-endian]
+ - install   lwt.2.4.6                             [required by vhd-format]
+ - install   sexplib.111.25.00                     [required by mirage-types, cstruct, ipaddr]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   ipaddr.2.5.0                          [required by vhd-format]
+ - install   cstruct.1.5.0                         [required by vhd-format]
+ - install   io-page.1.2.0                         [required by vhd-format]
+ - install   mirage-types.2.0.1                    [required by vhd-format]
+ - install   vhd-format.0.7.1
+=== 14 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[io-page.1.2.0] Downloading https://github.com/mirage/io-page/archive/v1.2.0.tar.gz
+[ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[mirage-types.2.0.1] Downloading https://github.com/mirage/mirage/archive/v2.0.1.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[uuidm.0.9.5] Downloading http://erratique.ch/software/uuidm/releases/uuidm-0.9.5.tbz
+[vhd-format.0.7.1] Downloading https://github.com/djs55/ocaml-vhd/archive/v0.7.1.tar.gz
