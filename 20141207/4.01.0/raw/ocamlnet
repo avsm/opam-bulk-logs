@@ -9,3 +9,19 @@ Debian depexts:
 + '[' '' '!=' '' ']'
 + opam install ocamlnet
 Debian srcexts:
+The following actions will be performed:
+ - install   ocamlnet.3.7.7
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/ocamlnet.install to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
+Applying robust-host.patch.
+Building ocamlnet.3.7.7:
+  ./configure -bindir /home/opam/.opam/4.01.0/bin -disable-pcre -disable-gtk2 -disable-ssl -disable-zip -disable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
