@@ -1,0 +1,327 @@
+++ opam install sociaml-oauth-client -e centos,centos-7
++ depext=openssl-devel
++ echo CentOS 7 depexts: openssl-devel
++ '[' openssl-devel '!=' '' ']'
++ sudo yum install -y openssl-devel
+CentOS 7 depexts: openssl-devel
+Loaded plugins: fastestmirror
+http://mirror.ukhost4u.com/centos/7.0.1406/os/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://mirror.ukhost4u.com/centos/7.0.1406/os/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30183 milliseconds')
+Trying other mirror.
+Loading mirror speeds from cached hostfile
+ * base: mirror.econdc.com
+ * extras: mirrors.coreix.net
+ * updates: mirror.econdc.com
+Resolving Dependencies
+--> Running transaction check
+---> Package openssl-devel.x86_64 1:1.0.1e-34.el7_0.6 will be installed
+--> Processing Dependency: zlib-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Running transaction check
+---> Package krb5-devel.x86_64 0:1.11.3-49.el7 will be installed
+--> Processing Dependency: libverto-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libselinux-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libcom_err-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+---> Package zlib-devel.x86_64 0:1.2.7-13.el7 will be installed
+--> Running transaction check
+---> Package keyutils-libs-devel.x86_64 0:1.5.8-3.el7 will be installed
+---> Package libcom_err-devel.x86_64 0:1.42.9-4.el7 will be installed
+---> Package libselinux-devel.x86_64 0:2.2.2-6.el7 will be installed
+--> Processing Dependency: libsepol-devel >= 2.1.9-1 for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libpcre) for package: libselinux-devel-2.2.2-6.el7.x86_64
+---> Package libverto-devel.x86_64 0:0.2.5-4.el7 will be installed
+--> Running transaction check
+---> Package libsepol-devel.x86_64 0:2.1.9-3.el7 will be installed
+---> Package pcre-devel.x86_64 0:8.32-12.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                 Arch       Version                   Repository   Size
+================================================================================
+Installing:
+ openssl-devel           x86_64     1:1.0.1e-34.el7_0.6       updates     1.2 M
+Installing for dependencies:
+ keyutils-libs-devel     x86_64     1.5.8-3.el7               base         37 k
+ krb5-devel              x86_64     1.11.3-49.el7             base        611 k
+ libcom_err-devel        x86_64     1.42.9-4.el7              base         30 k
+ libselinux-devel        x86_64     2.2.2-6.el7               base        174 k
+ libsepol-devel          x86_64     2.1.9-3.el7               base         71 k
+ libverto-devel          x86_64     0.2.5-4.el7               base         12 k
+ pcre-devel              x86_64     8.32-12.el7               base        477 k
+ zlib-devel              x86_64     1.2.7-13.el7              base         49 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+8 Dependent packages)
+
+Total download size: 2.6 M
+Installed size: 5.7 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              2.7 MB/s | 2.6 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : keyutils-libs-devel-1.5.8-3.el7.x86_64                       1/9 
+  Installing : pcre-devel-8.32-12.el7.x86_64                                2/9 
+  Installing : zlib-devel-1.2.7-13.el7.x86_64                               3/9 
+  Installing : libsepol-devel-2.1.9-3.el7.x86_64                            4/9 
+  Installing : libselinux-devel-2.2.2-6.el7.x86_64                          5/9 
+  Installing : libverto-devel-0.2.5-4.el7.x86_64                            6/9 
+  Installing : libcom_err-devel-1.42.9-4.el7.x86_64                         7/9 
+  Installing : krb5-devel-1.11.3-49.el7.x86_64                              8/9 
+  Installing : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     9/9 
+  Verifying  : libcom_err-devel-1.42.9-4.el7.x86_64                         1/9 
+  Verifying  : libselinux-devel-2.2.2-6.el7.x86_64                          2/9 
+  Verifying  : libverto-devel-0.2.5-4.el7.x86_64                            3/9 
+  Verifying  : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     4/9 
+  Verifying  : libsepol-devel-2.1.9-3.el7.x86_64                            5/9 
+  Verifying  : krb5-devel-1.11.3-49.el7.x86_64                              6/9 
+  Verifying  : zlib-devel-1.2.7-13.el7.x86_64                               7/9 
+  Verifying  : pcre-devel-8.32-12.el7.x86_64                                8/9 
+  Verifying  : keyutils-libs-devel-1.5.8-3.el7.x86_64                       9/9 
+
+Installed:
+  openssl-devel.x86_64 1:1.0.1e-34.el7_0.6                                      
+
+Dependency Installed:
+  keyutils-libs-devel.x86_64 0:1.5.8-3.el7                                      
+  krb5-devel.x86_64 0:1.11.3-49.el7                                             
+  libcom_err-devel.x86_64 0:1.42.9-4.el7                                        
+  libselinux-devel.x86_64 0:2.2.2-6.el7                                         
+  libsepol-devel.x86_64 0:2.1.9-3.el7                                           
+  libverto-devel.x86_64 0:0.2.5-4.el7                                           
+  pcre-devel.x86_64 0:8.32-12.el7                                               
+  zlib-devel.x86_64 0:1.2.7-13.el7                                              
+
+Complete!
++ opam install sociaml-oauth-client
+The following actions will be performed:
+ - install   re.1.2.2                              [required by cohttp]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   ocamlify.0.0.1                        [required by oasis]
+ - install   stringext.1.1.0                       [required by cohttp]
+ - install   ounit.2.0.0                           [required by cohttp]
+ - install   ssl.0.4.7                             [required by sociaml-oauth-client]
+ - install   res.4.0.6                             [required by core_kernel]
+ - install   cryptokit.1.9                         [required by sociaml-oauth-client]
+ - install   herelib.109.35.00                     [required by core_kernel]
+ - install   type_conv.109.53.00                   [required by ocaml-data-notation, pa_ounit, bin_prot, fieldslib, comparelib, variantslib]
+ - install   pipebang.109.28.00                    [required by core_kernel]
+ - install   ocamlmod.0.0.7                        [required by oasis]
+ - install   ocplib-endian.0.4                     [required by cstruct]
+ - install   lwt.2.4.5                             [required by sociaml-oauth-client]
+ - install   variantslib.109.15.00                 [required by core_kernel]
+ - install   sexplib.109.53.00                     [required by re2, cohttp, core_kernel]
+ - install   pa_ounit.109.53.00                    [required by re2, core_kernel]
+ - install   ocaml-data-notation.0.0.11            [required by oasis]
+ - install   fieldslib.109.20.00                   [required by core_kernel, cohttp]
+ - install   comparelib.109.27.00                  [required by re2, core_kernel]
+ - install   bin_prot.109.53.00                    [required by re2, core_kernel]
+ - install   uri.1.7.2                             [required by sociaml-oauth-client]
+ - install   ipaddr.2.5.0                          [required by conduit]
+ - install   cstruct.1.5.0                         [required by conduit]
+ - install   custom_printf.109.27.00               [required by core]
+ - install   oasis.0.4.5                           [required by sociaml-oauth-client]
+ - install   core_kernel.109.53.00                 [required by sociaml-oauth-client]
+ - install   conduit.0.7.1                         [required by cohttp]
+ - install   pa_test.109.53.00                     [required by core]
+ - install   cohttp.0.12.0                         [required by sociaml-oauth-client]
+ - install   core.109.53.01                        [required by re2]
+ - install   re2.109.53.00                         [required by sociaml-oauth-client]
+ - install   sociaml-oauth-client.0.5.0
+=== 33 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bin_prot.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/bin_prot-109.53.00.tar.gz
+[cohttp.0.12.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.12.0.tar.gz
+[comparelib.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/comparelib-109.27.00.tar.gz
+[conduit.0.7.1] Downloading https://github.com/mirage/ocaml-conduit/archive/v0.7.1.tar.gz
+[core.109.53.01] Downloading https://github.com/janestreet/core/archive/109.53.01.tar.gz
+[core_kernel.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/core_kernel-109.53.00.tar.gz
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[custom_printf.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/custom_printf-109.27.00.tar.gz
+[fieldslib.109.20.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.00.tar.gz
+[herelib.109.35.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.00.tar.gz
+[ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[oasis.0.4.5] Downloading https://forge.ocamlcore.org/frs/download.php/1475/oasis-0.4.5.tar.gz
+[ocaml-data-notation.0.0.11] Downloading https://forge.ocamlcore.org/frs/download.php/1310/ocaml-data-notation-0.0.11.tar.gz
+[ocamlify.0.0.1] Downloading http://forge.ocamlcore.org/frs/download.php/379/ocamlify-0.0.1.tar.gz
+[ocamlmod.0.0.7] Downloading https://forge.ocamlcore.org/frs/download.php/1350/ocamlmod-0.0.7.tar.gz
+[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pa_ounit.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/pa_ounit-109.53.00.tar.gz
+[pa_test.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/pa_test-109.53.00.tar.gz
+[pipebang.109.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.28.00/individual/pipebang-109.28.00.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[re2.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/re2-109.53.00.tar.gz
+[res.4.0.6] Downloading https://github.com/mmottl/res/releases/download/v4.0.6/res-4.0.6.tar.gz
+[sexplib.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/sexplib-109.53.00.tar.gz
+[sociaml-oauth-client.0.5.0] Downloading https://github.com/dominicjprice/sociaml-oauth-client/archive/v0.5.0.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[stringext.1.1.0] Downloading https://github.com/rgrinberg/stringext/archive/v1.1.0.tar.gz
+[type_conv.109.53.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.53.00/individual/type_conv-109.53.00.tar.gz
+[uri.1.7.2] Downloading https://github.com/mirage/ocaml-uri/archive/v1.7.2.tar.gz
+[variantslib.109.15.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cryptokit.1.9:
+  make
+  make install
+Installing cryptokit.1.9.
+Building herelib.109.35.00:
+  make
+  make install
+Installing herelib.109.35.00.
+Copying ~/.opam/repo/default/packages/ocamlify/ocamlify.0.0.1/files/ocamlify.install to ~/.opam/4.01.0/build/ocamlify.0.0.1/
+Building ocamlify.0.0.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlify.0.0.1.
+Copying ~/.opam/repo/default/packages/ocamlmod/ocamlmod.0.0.7/files/ocamlmod.install to ~/.opam/4.01.0/build/ocamlmod.0.0.7/
+Building ocamlmod.0.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlmod.0.0.7.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building pipebang.109.28.00:
+  make
+  make install
+Installing pipebang.109.28.00.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Building res.4.0.6:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing res.4.0.6.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.01.0/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing ssl.0.4.7.
+Building stringext.1.1.0:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing stringext.1.1.0.
+Building type_conv.109.53.00:
+  make
+  make install
+Installing type_conv.109.53.00.
+Building bin_prot.109.53.00:
+  make
+  make install
+Installing bin_prot.109.53.00.
+Building comparelib.109.27.00:
+  make
+  make install
+Installing comparelib.109.27.00.
+Building fieldslib.109.20.00:
+  make
+  make install
+Installing fieldslib.109.20.00.
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+Installing lwt.2.4.5.
+Building ocaml-data-notation.0.0.11:
+  make
+  make install
+Installing ocaml-data-notation.0.0.11.
+Building ocplib-endian.0.4:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.4.
+Building pa_ounit.109.53.00:
+  make
+  make install
+Installing pa_ounit.109.53.00.
+Building sexplib.109.53.00:
+  make
+  make install
+Installing sexplib.109.53.00.
+Building variantslib.109.15.00:
+  make
+  make install
+Installing variantslib.109.15.00.
+Building core_kernel.109.53.00:
+  make
+  make install
+Installing core_kernel.109.53.00.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.01.0 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Building custom_printf.109.27.00:
+  make
+  make install
+Installing custom_printf.109.27.00.
+Building ipaddr.2.5.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make build
+  make install
+Installing ipaddr.2.5.0.
+Copying ~/.opam/repo/default/packages/oasis/oasis.0.4.5/files/oasis.install to ~/.opam/4.01.0/build/oasis.0.4.5/
+Building oasis.0.4.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing oasis.0.4.5.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Building conduit.0.7.1:
+  make
+  make install
+Installing conduit.0.7.1.
+Building pa_test.109.53.00:
+  make
+  make install
+Installing pa_test.109.53.00.
+Building cohttp.0.12.0:
+  make PREFIX=/home/opam/.opam/4.01.0
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing cohttp.0.12.0.
+Copying ~/.opam/repo/default/packages/core/core.109.53.01/files/core.install to ~/.opam/4.01.0/build/core.109.53.01/
+Building core.109.53.01:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing core.109.53.01.
+Building re2.109.53.00:
+  make
+  make install
+Installing re2.109.53.00.
+Building sociaml-oauth-client.0.5.0:
+  oasis setup
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make build
+  make install
+Installing sociaml-oauth-client.0.5.0.
