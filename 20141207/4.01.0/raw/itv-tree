@@ -1,9 +1,14 @@
-++ opam install itv-tree -e centos,centos-7
+++ opam install itv-tree -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install itv-tree -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install itv-tree
+Debian srcexts:
 The following actions will be performed:
  - install   itv-tree.2.0
 === 1 to install ===
