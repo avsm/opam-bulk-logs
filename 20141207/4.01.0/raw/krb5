@@ -144,3 +144,7 @@ Installing async_core.109.45.00.
 Building async_unix.109.45.00:
   make
   make install
+Installing async_unix.109.45.00.
+Building async_extra.109.45.00:
+  make
+  make install
