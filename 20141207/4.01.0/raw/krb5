@@ -148,3 +148,12 @@ Installing async_unix.109.45.00.
 Building async_extra.109.45.00:
   make
   make install
+Installing async_extra.109.45.00.
+Building async.109.42.00:
+  make
+  make install
+Installing async.109.42.00.
+Building krb5.109.38.alpha1:
+  make
+  make install
+Installing krb5.109.38.alpha1.
