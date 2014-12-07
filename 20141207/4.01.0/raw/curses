@@ -32,3 +32,4 @@ Building curses.1.0.3:
   make byte
   make opt
   make install
+Installing curses.1.0.3.
