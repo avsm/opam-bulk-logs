@@ -1,7 +1,12 @@
-++ opam install tophide -e centos,centos-7
+++ opam install tophide -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install tophide -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install tophide
 The following actions will be performed:
