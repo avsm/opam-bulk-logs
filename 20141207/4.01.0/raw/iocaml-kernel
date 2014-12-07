@@ -1,75 +1,45 @@
-++ opam install iocaml-kernel -e centos,centos-7
-+ depext=libffi-devel
-+ echo CentOS 7 depexts: libffi-devel
-+ '[' libffi-devel '!=' '' ']'
-+ sudo yum install -y libffi-devel
-CentOS 7 depexts: libffi-devel
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirror.econdc.com
- * extras: mirror.sov.uk.goscomb.net
- * updates: mirror.sov.uk.goscomb.net
-Resolving Dependencies
---> Running transaction check
----> Package libffi-devel.x86_64 0:3.0.13-11.el7 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package              Arch           Version                 Repository    Size
-================================================================================
-Installing:
- libffi-devel         x86_64         3.0.13-11.el7           base          22 k
-
-Transaction Summary
-================================================================================
-Install  1 Package
-
-Total download size: 22 k
-Installed size: 27 k
-Downloading packages:
-Running transaction check
-Running transaction test
-Transaction test succeeded
-Running transaction
-  Installing : libffi-devel-3.0.13-11.el7.x86_64                            1/1 
-install-info: No such file or directory for /usr/share/info/libffi.info.gz
-warning: %post(libffi-devel-3.0.13-11.el7.x86_64) scriptlet failed, exit status 1
-Non-fatal POSTIN scriptlet failure in rpm package libffi-devel-3.0.13-11.el7.x86_64
-  Verifying  : libffi-devel-3.0.13-11.el7.x86_64                            1/1 
-
-Installed:
-  libffi-devel.x86_64 0:3.0.13-11.el7                                           
-
-Complete!
+++ opam install iocaml-kernel -e debian
++ depext='libffi-dev libzmq3-dev'
++ echo Debian depexts: libffi-dev libzmq3-dev
++ '[' 'libffi-dev libzmq3-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: libffi-dev libzmq3-dev
++ sudo apt-get install -qq -y libffi-dev libzmq3-dev
+E: Unable to locate package libzmq3-dev
+++ opam install iocaml-kernel -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install iocaml-kernel
+Debian srcexts:
 The following actions will be performed:
  - install   ounit.2.0.0                           [required by iocaml-kernel]
  - install   easy-format.1.0.2                     [required by yojson, atd, biniou]
+ - install   base-no-ppx.base                      [required by lwt]
  - install   optcomp.1.6                           [required by iocaml-kernel]
  - install   menhir.20140422                       [required by atd]
  - install   cppo.1.1.2                            [required by yojson]
  - install   uuidm.0.9.5                           [required by iocaml-kernel]
- - install   ctypes.0.3                            [required by iocaml-kernel]
- - install   lwt.2.4.5                             [required by iocaml-kernel]
  - install   uint.1.1.5                            [required by iocaml-kernel]
+ - install   base-bytes.legacy                     [required by ctypes]
  - install   biniou.1.0.9                          [required by atdgen]
+ - install   lwt.2.4.6                             [required by iocaml-kernel]
  - install   atd.1.1.2                             [required by atdgen]
+ - install   ctypes.0.3.3                          [required by iocaml-kernel]
  - install   yojson.1.1.8                          [required by iocaml-kernel]
  - install   atdgen.1.4.1                          [required by iocaml-kernel]
  - install   iocaml-kernel.0.4.6
-=== 14 to install ===
+=== 16 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [atd.1.1.2] Downloading http://mjambon.com/releases/atd/atd-1.1.2.tar.gz
 [atdgen.1.4.1] Downloading http://mjambon.com/releases/atdgen/atdgen-1.4.1.tar.gz
 [biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
 [cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
-[ctypes.0.3] Downloading https://github.com/ocamllabs/ocaml-ctypes/archive/0.3.tar.gz
+[ctypes.0.3.3] Downloading https://github.com/ocamllabs/ocaml-ctypes/archive/0.3.3.tar.gz
 [easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
 [iocaml-kernel.0.4.6] Downloading https://github.com/andrewray/iocaml/archive/v0.4.6.tar.gz
-[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
 [menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
 [optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
@@ -78,117 +48,18 @@ The following actions will be performed:
 [yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.legacy.
+Installing base-no-ppx.base.
 Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.01.0/build/cppo.1.1.2/
 Building cppo.1.1.2:
   make
   make install-lib
 Installing cppo.1.1.2.
-Building ctypes.0.3:
-  make
-  make install
-Installing ctypes.0.3.
 Building easy-format.1.0.2:
   make
   make install
 Installing easy-format.1.0.2.
-Building lwt.2.4.5:
-  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
-  make build
-  make install
-Installing lwt.2.4.5.
 Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.01.0/build/menhir.20140422/
 Building menhir.20140422:
   make PREFIX=/home/opam/.opam/4.01.0 docdir=/home/opam/.opam/4.01.0/doc/menhir libdir=/home/opam/.opam/4.01.0/lib/menhir mandir=/home/opam/.opam/4.01.0/man/man1
   make install PREFIX=/home/opam/.opam/4.01.0 docdir=/home/opam/.opam/4.01.0/doc/menhir libdir=/home/opam/.opam/4.01.0/lib/menhir mandir=/home/opam/.opam/4.01.0/man/man1
-Installing menhir.20140422.
-Building optcomp.1.6:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-Installing optcomp.1.6.
-Building ounit.2.0.0:
-  make build
-  make install
-Installing ounit.2.0.0.
-Building uint.1.1.5:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing uint.1.1.5.
-Copying ~/.opam/repo/default/packages/uuidm/uuidm.0.9.5/files/uuidm.install to ~/.opam/4.01.0/build/uuidm.0.9.5/
-Building uuidm.0.9.5:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing uuidm.0.9.5.
-Copying ~/.opam/repo/default/packages/atd/atd.1.1.2/files/atd.install to ~/.opam/4.01.0/build/atd.1.1.2/
-Building atd.1.1.2:
-  make
-  make install BINDIR=/home/opam/.opam/4.01.0/bin
-Installing atd.1.1.2.
-Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.01.0/build/biniou.1.0.9/
-Building biniou.1.0.9:
-  make
-  make install
-Installing biniou.1.0.9.
-Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.01.0/build/yojson.1.1.8/
-Building yojson.1.1.8:
-  make
-  make install
-Installing yojson.1.1.8.
-Copying ~/.opam/repo/default/packages/atdgen/atdgen.1.4.1/files/atdgen.install to ~/.opam/4.01.0/build/atdgen.1.4.1/
-Building atdgen.1.4.1:
-  make
-  make install BINDIR=/home/opam/.opam/4.01.0/bin
-Installing atdgen.1.4.1.
-Copying ~/.opam/repo/default/packages/iocaml-kernel/iocaml-kernel.0.4.6/files/4.00.1.patch to ~/.opam/4.01.0/build/iocaml-kernel.0.4.6/
-Applying 4.00.1.patch.
-Building iocaml-kernel.0.4.6:
-  make all
-  make install
-[ERROR] The compilation of iocaml-kernel.0.4.6 failed.
-Removing iocaml-kernel.0.4.6.
-  make uninstall
-
-
-#=== ERROR while installing iocaml-kernel.0.4.6 ===============================#
-# opam-version         1.2.0
-# os                   linux
-# command              make all
-# path                 /home/opam/.opam/4.01.0/build/iocaml-kernel.0.4.6
-# compiler             4.01.0
-# exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/iocaml-kernel.0.4.6/iocaml-kernel-5744-2913ab.env
-# stdout-file          /home/opam/.opam/4.01.0/build/iocaml-kernel.0.4.6/iocaml-kernel-5744-2913ab.out
-# stderr-file          /home/opam/.opam/4.01.0/build/iocaml-kernel.0.4.6/iocaml-kernel-5744-2913ab.err
-### stdout ###
-# atdgen -t Ipython_json.atd
-# atdgen -j Ipython_json.atd
-# ocamlfind c iocaml_zmq_stubs.c
-### stderr ###
-# iocaml_zmq_stubs.c:1:17: fatal error: zmq.h: No such file or directory
-#  #include <zmq.h>
-#                  ^
-# compilation terminated.
-# make: *** [stub] Error 2
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   atdgen.1.4.1
- - install   uint.1.1.5
- - install   lwt.2.4.5
- - install   ctypes.0.3
- - install   uuidm.0.9.5
- - install   cppo.1.1.2
- - install   yojson.1.1.8
- - install   menhir.20140422
- - install   optcomp.1.6
- - install   easy-format.1.0.2
- - install   biniou.1.0.9
- - install   ounit.2.0.0
- - install   atd.1.1.2
-The following failed
- - install   iocaml-kernel.0.4.6
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107140016.export"
