@@ -1,9 +1,9 @@
 ++ opam install patoline -e ubuntu
 + depext='libsqlite3-dev pkg-config zlib1g-dev'
 + echo Ubuntu depexts: libsqlite3-dev pkg-config zlib1g-dev
+Ubuntu depexts: libsqlite3-dev pkg-config zlib1g-dev
 + '[' 'libsqlite3-dev pkg-config zlib1g-dev' '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
-Ubuntu depexts: libsqlite3-dev pkg-config zlib1g-dev
 + sudo apt-get install -qq -y libsqlite3-dev pkg-config zlib1g-dev
 debconf: unable to initialize frontend: Dialog
 debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
@@ -23,8 +23,8 @@ Setting up libsqlite3-dev:amd64 (3.8.2-1ubuntu2) ...
 Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
 ++ opam install patoline -e source,linux
 + srcext=
-Ubuntu srcexts:
 + echo Ubuntu srcexts:
+Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install patoline
 The following actions will be performed:
