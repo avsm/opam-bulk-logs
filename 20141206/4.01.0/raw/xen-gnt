@@ -129,3 +129,8 @@ Building io-page.1.2.0:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing io-page.1.2.0.
+Building xen-gnt.2.0.0:
+  make
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing xen-gnt.2.0.0.
