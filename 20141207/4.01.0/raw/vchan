@@ -105,3 +105,51 @@ Installing mirage-types.2.0.1.
 Building xenstore_transport.0.9.4:
   make all
   make install
+Installing xenstore_transport.0.9.4.
+Installing mirage-types-lwt.2.0.1.
+Building vchan.2.0.0:
+  ./configure
+  make
+  make install
+[ERROR] The compilation of vchan.2.0.0 failed.
+Removing vchan.2.0.0.
+  ocamlfind remove vchan
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.111.25.00
+ - install   xenstore.1.2.5
+ - install   xenstore_transport.0.9.4
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   mirage-types-lwt.2.0.1
+ - install   ipaddr.2.5.0
+ - install   base-no-ppx.base
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   base-bytes.legacy
+ - install   optcomp.1.6
+ - install   type_conv.111.13.00
+ - install   ocplib-endian.0.7
+ - install   mirage-types.2.0.1
+The following failed
+ - install   vchan.2.0.0
+
+#=== ERROR while installing vchan.2.0.0 =======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure
+# path                 /home/opam/.opam/4.01.0/build/vchan.2.0.0
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/vchan.2.0.0/vchan-5332-d6d332.env
+# stdout-file          /home/opam/.opam/4.01.0/build/vchan.2.0.0/vchan-5332-d6d332.out
+# stderr-file          /home/opam/.opam/4.01.0/build/vchan.2.0.0/vchan-5332-d6d332.err
+### stderr ###
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107222501.export"
