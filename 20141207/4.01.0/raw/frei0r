@@ -1,16 +1,33 @@
-++ opam install frei0r -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install frei0r -e debian
++ depext=frei0r-plugins-dev
+Debian depexts: frei0r-plugins-dev
++ echo Debian depexts: frei0r-plugins-dev
++ '[' frei0r-plugins-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y frei0r-plugins-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package frei0r-plugins-dev.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking frei0r-plugins-dev (from .../frei0r-plugins-dev_1.1.22git20091109-1.2_amd64.deb) ...
+Setting up frei0r-plugins-dev (1.1.22git20091109-1.2) ...
+++ opam install frei0r -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install frei0r
-CentOS 7 depexts:
 The following actions will be performed:
  - install   frei0r.0.1.0
 === 1 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [frei0r.0.1.0] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-frei0r/0.1.0/ocaml-frei0r-0.1.0.tar.gz
-[ERROR] curl: code 404 while downloading http://downloads.sourceforge.net/project/savonet/ocaml-frei0r/0.1.0/ocaml-frei0r-0.1.0.tar.gz
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/frei0r.0.1.0/ocaml-frei0r-0.1.0.tar.gz:
+  - 800d8051d72d3367acda15187a247e97 [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
 [ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-frei0r/0.1.0/ocaml-frei0r-0.1.0.tar.gz is not available
 [ERROR] Could not download archives of frei0r.0.1.0
 
