@@ -17,3 +17,13 @@ The following actions will be performed:
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [xmldiff.0.2] Downloading http://zoggy.github.com/xmldiff/xmldiff-0.2.tar.gz
 [xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Building xmldiff.0.2:
+  make all
+  make install
+Installing xmldiff.0.2.
