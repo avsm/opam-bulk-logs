@@ -33,3 +33,12 @@ Building lwt.2.4.6:
   ./configure --prefix /home/opam/.opam/4.01.0 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-ppx
   make build
   make install
+Installing lwt.2.4.6.
+Building mirage.0.4.0:
+  make all
+  make install
+Installing mirage.0.4.0.
+Building mirage-net.0.3.1:
+  make all
+  make install
+Installing mirage-net.0.3.1.
