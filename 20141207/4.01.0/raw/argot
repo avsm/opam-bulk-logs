@@ -15,3 +15,10 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [argot.1.1] Downloading http://forge.ocamlcore.org/frs/download.php/960/argot-1.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building argot.1.1:
+  sh configure
+  make all
+  make install
+Installing argot.1.1.
