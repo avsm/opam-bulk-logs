@@ -5,8 +5,8 @@ Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install tyxml -e source,linux
 + srcext=
-+ echo Ubuntu srcexts:
 Ubuntu srcexts:
++ echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install tyxml
 The following actions will be performed:
@@ -27,4 +27,3 @@ Building tyxml.3.3.0:
   ./configure --enable-syntax --prefix /home/opam/.opam/4.01.0
   make
   make install
-Installing tyxml.3.3.0.
