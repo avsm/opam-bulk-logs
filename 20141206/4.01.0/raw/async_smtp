@@ -1,12 +1,12 @@
 ++ opam install async_smtp -e ubuntu
 + depext=
-Ubuntu depexts:
 + echo Ubuntu depexts:
+Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install async_smtp -e source,linux
 + srcext=
-Ubuntu srcexts:
 + echo Ubuntu srcexts:
+Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install async_smtp
 The following actions will be performed:
@@ -133,46 +133,3 @@ Installing typerep.111.17.00.
 Building core_kernel.111.28.00:
   make
   make install
-Installing core_kernel.111.28.00.
-Copying ~/.opam/repo/default/packages/core/core.111.28.01/files/core.install to ~/.opam/4.01.0/build/core.111.28.01/
-Building core.111.28.01:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-Installing core.111.28.01.
-Building async_kernel.111.28.00:
-  make
-  make install
-Installing async_kernel.111.28.00.
-Building re2.111.08.00:
-  make
-  make install
-Installing re2.111.08.00.
-Building textutils.111.28.00:
-  make
-  make install
-Installing textutils.111.28.00.
-Building async_unix.111.28.00:
-  make
-  make install
-Installing async_unix.111.28.00.
-Building core_extended.111.28.00:
-  make
-  make install
-Installing core_extended.111.28.00.
-Building async_extra.111.28.00:
-  make
-  make install
-Installing async_extra.111.28.00.
-Building async.111.25.00:
-  make
-  make install
-Installing async.111.25.00.
-Building email_message.109.42.alpha1:
-  make
-  make install
-Installing email_message.109.42.alpha1.
-Building async_smtp.109.38.alpha1:
-  make
-  make install
-Installing async_smtp.109.38.alpha1.
