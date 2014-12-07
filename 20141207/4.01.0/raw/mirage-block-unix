@@ -77,3 +77,10 @@ Building io-page.1.2.0:
   make
   make install
 Installing io-page.1.2.0.
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+Building mirage-block-unix.1.2.1:
+  make
+  make install
+Installing mirage-block-unix.1.2.1.
