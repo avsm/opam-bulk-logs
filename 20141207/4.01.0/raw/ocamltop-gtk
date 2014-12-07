@@ -418,3 +418,4 @@ Building lablgtk.2.18.3:
   ./configure --prefix /home/opam/.opam/4.01.0 LABLGLDIR=/home/opam/.opam/4.01.0/lib/lablgl
   make world
   make install
+Installing lablgtk.2.18.3.
