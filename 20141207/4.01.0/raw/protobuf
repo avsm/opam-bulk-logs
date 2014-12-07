@@ -140,3 +140,4 @@ Installing core.111.13.00.
 Building protobuf.1.0.0:
   make
   make install
+Installing protobuf.1.0.0.
