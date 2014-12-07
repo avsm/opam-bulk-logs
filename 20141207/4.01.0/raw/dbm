@@ -1,9 +1,21 @@
-++ opam install dbm -e centos,centos-7
-+ depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+++ opam install dbm -e debian
++ depext=libgdbm-dev
++ echo Debian depexts: libgdbm-dev
+Debian depexts: libgdbm-dev
++ '[' libgdbm-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libgdbm-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libgdbm-dev.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libgdbm-dev (from .../libgdbm-dev_1.8.3-11_amd64.deb) ...
+Setting up libgdbm-dev (1.8.3-11) ...
+++ opam install dbm -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install dbm
+Debian srcexts:
 The following actions will be performed:
  - install   dbm.1.0
 === 1 to install ===
@@ -23,23 +35,4 @@ Building dbm.1.0:
   make test
   make install STUBLIBDIR=/home/opam/.opam/4.01.0/lib/stublibs LIBDIR=/home/opam/.opam/4.01.0/lib/dbm
   cp META /home/opam/.opam/4.01.0/lib/dbm
-[ERROR] The compilation of dbm.1.0 failed.
-Removing dbm.1.0.
-  Nothing to do.
-
-
-#=== ERROR while installing dbm.1.0 ===========================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure
-# path                 /home/opam/.opam/4.01.0/build/dbm.1.0
-# compiler             4.01.0
-# exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/dbm.1.0/dbm-25-865888.env
-# stdout-file          /home/opam/.opam/4.01.0/build/dbm.1.0/dbm-25-865888.out
-# stderr-file          /home/opam/.opam/4.01.0/build/dbm.1.0/dbm-25-865888.err
-### stdout ###
-# Configuring for OCaml version 4.01.0
-# 
-# NDBM not found, the "camldbm" library cannot be built.
-
+Installing dbm.1.0.
