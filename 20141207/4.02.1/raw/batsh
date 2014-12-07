@@ -1,0 +1,193 @@
+++ opam install batsh -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install batsh -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install batsh
+The following actions will be performed:
+ - install   herelib.109.35.02                     [required by core_kernel]
+ - install   pipebang.110.01.00                    [required by core_kernel]
+ - install   ocp-build.1.99.8-beta                 [required by batsh]
+ - install   ounit.2.0.0                           [required by batsh]
+ - install   cmdliner.0.9.6                        [required by batsh]
+ - install   type_conv.112.01.00                   [required by variantslib, pa_test, fieldslib, comparelib, bin_prot, enumerate, pa_bench, typerep]
+ - install   dlist.0.1.0                           [required by batsh]
+ - install   variantslib.109.15.03                 [required by core_kernel]
+ - install   sexplib.112.01.00                     [required by core_kernel]
+ - install   pa_ounit.111.28.00                    [required by core_kernel]
+ - install   fieldslib.109.20.03                   [required by core_kernel]
+ - install   enumerate.111.08.00                   [required by core_kernel]
+ - install   comparelib.109.60.00                  [required by core_kernel]
+ - install   bin_prot.112.01.00                    [required by core_kernel]
+ - install   pa_bench.111.28.00                    [required by core_kernel]
+ - install   pa_test.111.08.00                     [required by core_kernel]
+ - install   typerep.111.17.00                     [required by core_kernel]
+ - install   core_kernel.112.01.00                 [required by batsh]
+ - install   batsh.0.0.5
+=== 19 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bin_prot.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/bin_prot-112.01.00.tar.gz
+[batsh.0.0.5] Downloading https://github.com/BYVoid/Batsh/archive/v0.0.5.tar.gz
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
+[core_kernel.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core_kernel-112.01.00.tar.gz
+[dlist.0.1.0] Downloading https://github.com/BYVoid/Dlist/archive/v0.1.0.tar.gz
+[enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
+[ocp-build.1.99.8-beta] Downloading https://github.com/OCamlPro/ocp-build/tarball/ocp-build.1.99.8-beta
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pa_bench.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_bench-111.28.00.tar.gz
+[pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
+[pa_test.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/pa_test-111.08.00.tar.gz
+[pipebang.110.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/110.01.00/individual/pipebang-110.01.00.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
+[variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing cmdliner.0.9.6.
+Building herelib.109.35.02:
+  make
+  make install
+Installing herelib.109.35.02.
+Building ocp-build.1.99.8-beta:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+[ERROR] The compilation of ocp-build.1.99.8-beta failed.
+Removing ocp-build.1.99.8-beta.
+  rm -f /home/opam/.opam/4.02.1/bin/ocp-build
+  rm -f /home/opam/.opam/4.02.1/bin/ocp-build.byte
+  rm -f /home/opam/.opam/4.02.1/lib/META.ocp-build-bundle
+  rm -rf /home/opam/.opam/4.02.1/lib/ocaml/typerex/ocp-build-bundle
+  rm -f /home/opam/.opam/4.02.1/lib/META.ocp-build-win32
+  rm -rf /home/opam/.opam/4.02.1/lib/ocaml/typerex/ocp-build-win32
+  rm -f /home/opam/.opam/4.02.1/lib/META.ocp-build-misc
+  rm -rf /home/opam/.opam/4.02.1/lib/ocaml/typerex/ocp-build-misc
+  rm -f /home/opam/.opam/4.02.1/lib/META.ocp-build
+  rm -rf /home/opam/.opam/4.02.1/lib/ocaml/typerex/ocp-build
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building pipebang.110.01.00:
+  make
+  make install
+Installing pipebang.110.01.00.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building bin_prot.112.01.00:
+  make
+  make install
+Installing bin_prot.112.01.00.
+Building comparelib.109.60.00:
+  make
+  make install
+Installing comparelib.109.60.00.
+Building enumerate.111.08.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing enumerate.111.08.00.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building pa_ounit.111.28.00:
+  make
+  make install
+Installing pa_ounit.111.28.00.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building variantslib.109.15.03:
+  make
+  make install
+Installing variantslib.109.15.03.
+Building pa_bench.111.28.00:
+  make
+  make install
+Installing pa_bench.111.28.00.
+Building pa_test.111.08.00:
+  make
+  make install
+Installing pa_test.111.08.00.
+Building typerep.111.17.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing typerep.111.17.00.
+Building core_kernel.112.01.00:
+  make
+  make install
+Installing core_kernel.112.01.00.
+
+
+#=== ERROR while installing ocp-build.1.99.8-beta =============================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/ocp-build.1.99.8-beta
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/ocp-build.1.99.8-beta/ocp-build-591-548b09.env
+# stdout-file          /home/opam/.opam/4.02.1/build/ocp-build.1.99.8-beta/ocp-build-591-548b09.out
+# stderr-file          /home/opam/.opam/4.02.1/build/ocp-build.1.99.8-beta/ocp-build-591-548b09.err
+### stdout ###
+# ...[truncated]
+# gcc -Wl,-E -o ocamlrun \
+# 		  prims.o libbyterun402.a -lm  -ldl -lcurses -lpthread
+# echo "/usr/local/lib/ocaml/stublibs" > ld.conf
+# echo "/usr/local/lib/ocaml" >> ld.conf
+# make[2]: Leaving directory `/home/opam/.opam/4.02.1/build/ocp-build.1.99.8-beta/boot/ocamlrun-4.02/byterun'
+# ocamlc -o ocp-build.run -custom -make-runtime win32_c.c primitives.ml unix.cma -cclib -lunix -I ocamlrun-4.02/byterun -cclib -lbyterun402
+# cat ocp-build.run ocp-build.boot > ocp-build
+# chmod +x ocp-build
+# ./ocp-build -help >/dev/null 2>&1
+# make[1]: Leaving directory `/home/opam/.opam/4.02.1/build/ocp-build.1.99.8-beta/boot'
+### stderr ###
+# config.status: WARNING:  '../src/ocp-build-bundle.ocp.in' seems to ignore the --datarootdir setting
+# make[1]: *** [ocp-build] Error 2
+# make: *** [boot/ocp-build] Error 2
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.112.01.00
+ - install   core_kernel.112.01.00
+ - install   type_conv.112.01.00
+ - install   bin_prot.112.01.00
+ - install   cmdliner.0.9.6
+ - install   pa_test.111.08.00
+ - install   enumerate.111.08.00
+ - install   ounit.2.0.0
+ - install   comparelib.109.60.00
+ - install   pa_ounit.111.28.00
+ - install   variantslib.109.15.03
+ - install   pipebang.110.01.00
+ - install   typerep.111.17.00
+ - install   herelib.109.35.02
+ - install   pa_bench.111.28.00
+ - install   fieldslib.109.20.03
+The following failed
+ - install   ocp-build.1.99.8-beta
+Due to the errors, the following have been cancelled
+ - install   dlist.0.1.0
+ - install   batsh.0.0.5
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141107235305.export"
