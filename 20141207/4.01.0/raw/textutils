@@ -49,3 +49,12 @@ The following actions will be performed:
 [type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
 [typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
 [variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building herelib.109.35.02:
+  make
+  make install
+Installing herelib.109.35.02.
+Building ounit.2.0.0:
+  make build
+  make install
