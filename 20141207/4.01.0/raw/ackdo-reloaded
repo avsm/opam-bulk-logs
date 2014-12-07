@@ -1,118 +1,53 @@
-++ opam install ackdo-reloaded -e centos,centos-7
+++ opam install ackdo-reloaded -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install ackdo-reloaded -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ackdo-reloaded
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
- - install   res.4.0.6                             [required by core]
+ - install   herelib.109.35.02                     [required by core]
+ - install   type_conv.111.13.00                   [required by custom_printf, bin_prot, comparelib]
+ - install   pipebang.110.01.00                    [required by core]
  - install   ounit.2.0.0                           [required by pa_ounit]
  - install   kaputt.1.2                            [required by ackdo-reloaded]
- - install   herelib.109.35.00                     [required by core]
- - install   pipebang.109.28.00                    [required by core]
- - install   type_conv.109.47.00                   [required by custom_printf, bin_prot, comparelib]
- - install   variantslib.109.15.00                 [required by core]
- - install   sexplib.109.47.00                     [required by ackdo-reloaded]
- - install   pa_ounit.109.36.00                    [required by textutils, core]
- - install   fieldslib.109.20.00                   [required by core]
- - install   comparelib.109.27.00                  [required by core]
- - install   bin_prot.109.47.00                    [required by core]
- - install   custom_printf.109.27.00               [required by core]
- - install   core_kernel.109.47.00                 [required by core]
- - install   core.109.47.00                        [required by ackdo-reloaded]
- - install   textutils.109.36.00                   [required by ackdo-reloaded]
+ - install   variantslib.109.15.03                 [required by core]
+ - install   sexplib.111.25.00                     [required by ackdo-reloaded]
+ - install   fieldslib.109.20.03                   [required by core]
+ - install   enumerate.111.08.00                   [required by core]
+ - install   comparelib.109.60.00                  [required by core]
+ - install   bin_prot.111.03.00                    [required by core]
+ - install   pa_ounit.111.28.00                    [required by textutils, core]
+ - install   pa_test.111.08.00                     [required by core]
+ - install   typerep.111.17.00                     [required by core_kernel]
+ - install   pa_bench.111.28.00                    [required by core]
+ - install   custom_printf.111.25.00               [required by core]
+ - install   core_kernel.111.28.00                 [required by core]
+ - install   core.111.28.00                        [required by ackdo-reloaded]
+ - install   textutils.111.28.00                   [required by ackdo-reloaded]
  - install   ackdo-reloaded.0.4
-=== 17 to install ===
+=== 20 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [ackdo-reloaded.0.4] Downloading https://github.com/rgrinberg/ackdo-reloaded/archive/0.4.tar.gz
-[bin_prot.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/bin_prot-109.47.00.tar.gz
-[comparelib.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/comparelib-109.27.00.tar.gz
-[core.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/core-109.47.00.tar.gz
-[core_kernel.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/core_kernel-109.47.00.tar.gz
-[custom_printf.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/custom_printf-109.27.00.tar.gz
-[fieldslib.109.20.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.00.tar.gz
-[herelib.109.35.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.00.tar.gz
+[bin_prot.111.03.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.03.00/individual/bin_prot-111.03.00.tar.gz
+[comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
+[core.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/core-111.28.00.tar.gz
+[core_kernel.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/core_kernel-111.28.00.tar.gz
+[custom_printf.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/custom_printf-111.25.00.tar.gz
+[enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
 [kaputt.1.2] Downloading http://forge.ocamlcore.org/frs/download.php/987/kaputt-1.2.tar.gz
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
-[pa_ounit.109.36.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.36.00/individual/pa_ounit-109.36.00.tar.gz
-[pipebang.109.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.28.00/individual/pipebang-109.28.00.tar.gz
-[res.4.0.6] Downloading https://github.com/mmottl/res/releases/download/v4.0.6/res-4.0.6.tar.gz
-[sexplib.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/sexplib-109.47.00.tar.gz
-[textutils.109.36.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.36.00/individual/textutils-109.36.00.tar.gz
-[type_conv.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/type_conv-109.47.00.tar.gz
-[variantslib.109.15.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.00.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building herelib.109.35.00:
-  make
-  make install
-Installing herelib.109.35.00.
-Building kaputt.1.2:
-  sh configure
-  make all
-  make install
-Installing kaputt.1.2.
-Building ounit.2.0.0:
-  make build
-  make install
-Installing ounit.2.0.0.
-Building pipebang.109.28.00:
-  make
-  make install
-Installing pipebang.109.28.00.
-Building res.4.0.6:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing res.4.0.6.
-Building type_conv.109.47.00:
-  make
-  make install
-Installing type_conv.109.47.00.
-Building bin_prot.109.47.00:
-  make
-  make install
-Installing bin_prot.109.47.00.
-Building comparelib.109.27.00:
-  make
-  make install
-Installing comparelib.109.27.00.
-Building fieldslib.109.20.00:
-  make
-  make install
-Installing fieldslib.109.20.00.
-Building pa_ounit.109.36.00:
-  make
-  make install
-Installing pa_ounit.109.36.00.
-Building sexplib.109.47.00:
-  make
-  make install
-Installing sexplib.109.47.00.
-Building variantslib.109.15.00:
-  make
-  make install
-Installing variantslib.109.15.00.
-Building core_kernel.109.47.00:
-  make
-  make install
-Installing core_kernel.109.47.00.
-Building custom_printf.109.27.00:
-  make
-  make install
-Installing custom_printf.109.27.00.
-Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/corebuild over ~/.opam/4.01.0/build/core.109.47.00/
-Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/core.install to ~/.opam/4.01.0/build/core.109.47.00/
-Building core.109.47.00:
-  make
-  make install
-Installing core.109.47.00.
-Building textutils.109.36.00:
-  make
-  make install
-Installing textutils.109.36.00.
-Building ackdo-reloaded.0.4:
-  make build
-  make opaminstall BINDIR=/home/opam/.opam/4.01.0/bin
-Installing ackdo-reloaded.0.4.
+[pa_bench.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_bench-111.28.00.tar.gz
+[pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
+[pa_test.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/pa_test-111.08.00.tar.gz
+[pipebang.110.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/110.01.00/individual/pipebang-110.01.00.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[textutils.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/textutils-111.28.00.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz

@@ -1,9 +1,14 @@
-++ opam install acme -e centos,centos-7
+++ opam install acme -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install acme -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install acme
+Debian srcexts:
 The following actions will be performed:
  - install   ocaml9p.0.4                           [required by acme]
  - install   acme.0.1
