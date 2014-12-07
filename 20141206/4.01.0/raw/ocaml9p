@@ -20,3 +20,4 @@ The following actions will be performed:
 Building ocaml9p.0.4:
   make
   make install
+Installing ocaml9p.0.4.
