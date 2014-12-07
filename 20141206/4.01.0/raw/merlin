@@ -1,14 +1,14 @@
 ++ opam install merlin -e ubuntu
 + depext=
 + echo Ubuntu depexts:
+Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install merlin -e source,linux
-Ubuntu depexts:
 + srcext=
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
-+ opam install merlin
 Ubuntu srcexts:
++ opam install merlin
 The following actions will be performed:
  - install   easy-format.1.0.2                     [required by yojson]
  - install   cppo.1.1.2                            [required by yojson]
