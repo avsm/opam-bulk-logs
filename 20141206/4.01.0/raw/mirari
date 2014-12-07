@@ -28,3 +28,8 @@ Installing cmdliner.0.9.6.
 Copying ~/.opam/repo/default/packages/obuild/obuild.0.1.1/files/obuild.install to ~/.opam/4.01.0/build/obuild.0.1.1/
 Building obuild.0.1.1:
   ./bootstrap
+Installing obuild.0.1.1.
+Copying ~/.opam/repo/default/packages/mirari/mirari.0.9.1/files/mirari.install to ~/.opam/4.01.0/build/mirari.0.9.1/
+Building mirari.0.9.1:
+  make
+Installing mirari.0.9.1.
