@@ -530,3 +530,8 @@ Building ocamlnet.3.7.7:
   make all
   make opt
   make install
+Installing ocamlnet.3.7.7.
+Building rdf.0.8.0:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make all
+  make install
