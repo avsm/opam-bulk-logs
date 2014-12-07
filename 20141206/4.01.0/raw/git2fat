@@ -1,0 +1,14 @@
+++ opam install git2fat -e ubuntu
+[ERROR] No package named git2fat found.
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install git2fat -e source,linux
+[ERROR] No package named git2fat found.
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install git2fat
+Ubuntu srcexts:
+[ERROR] No package named git2fat found.
