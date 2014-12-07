@@ -307,3 +307,9 @@ Applying 4.00.1.patch.
 Building iocamljs-kernel.0.4.6:
   make clean min
   make clean full
+Installing iocamljs-kernel.0.4.6.
+Copying ~/.opam/repo/default/packages/iocaml-kernel/iocaml-kernel.0.4.6/files/4.00.1.patch to ~/.opam/4.01.0/build/iocaml-kernel.0.4.6/
+Applying 4.00.1.patch.
+Building iocaml-kernel.0.4.6:
+  make all
+  make install
