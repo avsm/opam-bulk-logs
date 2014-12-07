@@ -1,0 +1,26 @@
+++ opam install TestSimple -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install TestSimple
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   batteries.2.3.1                       [required by TestSimple]
+ - install   TestSimple.0.3.1
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
+[TestSimple.0.3.1] Downloading https://github.com/hcarty/ocaml-testsimple/archive/v0.3.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building batteries.2.3.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make all
+  make install
+Installing batteries.2.3.1.
+Building TestSimple.0.3.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing TestSimple.0.3.1.
