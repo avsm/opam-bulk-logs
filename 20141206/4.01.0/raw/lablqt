@@ -1157,3 +1157,4 @@ Building lablqt.0.2:
   make generator
   bash -c cd lablqml && ./configure --datarootdir=/home/opam/.opam/4.01.0/lib && make
   make opam.install
+Installing lablqt.0.2.
