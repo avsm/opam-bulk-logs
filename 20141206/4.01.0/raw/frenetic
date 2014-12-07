@@ -1,37 +1,11 @@
 ++ opam install frenetic -e ubuntu
 + depext=
-+ echo Ubuntu depexts:
 Ubuntu depexts:
++ echo Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install frenetic -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
-Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install frenetic
-The following actions will be performed:
- - install   ounit.2.0.0                           [required by frenetic]
- - install   base-no-ppx.base                      [required by lwt]
- - install   optcomp.1.6                           [required by ocplib-endian]
- - install   base-bytes.legacy                     [required by ocplib-endian]
- - install   lwt.2.4.6                             [required by frenetic]
- - install   ocplib-endian.0.7                     [required by cstruct]
- - install   cstruct.0.7.0                         [required by frenetic]
- - install   packet.0.1                            [required by frenetic]
- - install   openflow.0.2.0                        [required by frenetic]
- - install   frenetic.1.0.1
-=== 10 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[cstruct.0.7.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/ocaml-cstruct-0.7.0.tar.gz
-[frenetic.1.0.1] Downloading https://github.com/frenetic-lang/frenetic/releases/frenetic-1.0.1/827/frenetic-1.0.1.tar.gz
-[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
-[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
-[openflow.0.2.0] Downloading https://github.com/frenetic-lang/ocaml-openflow/archive/v0.2.0.tar.gz
-[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
-[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
-[packet.0.1] Downloading https://people.cs.umass.edu/~arjun/download/packet.0.1.tar.gz
-[ERROR] curl: code 404 while downloading https://people.cs.umass.edu/~arjun/download/packet.0.1.tar.gz
-[ERROR] https://people.cs.umass.edu/~arjun/download/packet.0.1.tar.gz is not available
-[ERROR] Could not download archives of packet.0.1
-
+Ubuntu srcexts:
