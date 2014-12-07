@@ -187,3 +187,7 @@ Copying ~/.opam/repo/default/packages/core/core.109.41.00/files/core.install to 
 Building core.109.41.00:
   make
   make install
+Installing core.109.41.00.
+Building flow.0.3:
+  omake
+  omake install

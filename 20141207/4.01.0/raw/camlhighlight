@@ -56,3 +56,31 @@ Building batteries.2.3.1:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   make all
   make install
+Installing batteries.2.3.1.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+Building sexplib.111.17.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.111.17.00.
+Building tyxml.3.3.0:
+  ./configure --enable-syntax --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing tyxml.3.3.0.
+Copying ~/.opam/repo/default/packages/camlhighlight/camlhighlight.3.0/files/sexp-dir.patch.in to ~/.opam/4.01.0/build/camlhighlight.3.0/
+Copying ~/.opam/repo/default/packages/camlhighlight/camlhighlight.3.0/files/camlhighlight.install to ~/.opam/4.01.0/build/camlhighlight.3.0/
+Applying sexp-dir.patch.
+Building camlhighlight.3.0:
+  ./configure --prefix /home/opam/.opam/4.01.0 --docdir /home/opam/.opam/4.01.0/doc/camlhighlight
+  make
+  make doc
+  make install
+Installing camlhighlight.3.0.
