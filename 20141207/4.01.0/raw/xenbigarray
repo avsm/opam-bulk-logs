@@ -1,0 +1,18 @@
+++ opam install xenbigarray -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install xenbigarray
+The following actions will be performed:
+ - install   xenbigarray.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[xenbigarray.1.0.0] Downloading https://github.com/mirage/xenbigarray/archive/xenbigarray-1.0.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building xenbigarray.1.0.0:
+  make
+  make install
+Installing xenbigarray.1.0.0.
