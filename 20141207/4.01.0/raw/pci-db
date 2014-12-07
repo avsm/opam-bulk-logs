@@ -1,7 +1,12 @@
-++ opam install pci-db -e centos,centos-7
+++ opam install pci-db -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install pci-db -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install pci-db
 The following actions will be performed:
@@ -21,4 +26,3 @@ Installing ounit.2.0.0.
 Building pci-db.0.3.0:
   make
   make PREFIX=/home/opam/.opam/4.01.0 install
-Installing pci-db.0.3.0.
