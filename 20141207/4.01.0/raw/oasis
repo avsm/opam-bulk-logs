@@ -1,9 +1,14 @@
-++ opam install oasis -e centos,centos-7
+++ opam install oasis -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install oasis -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install oasis
+Debian srcexts:
 The following actions will be performed:
  - install   type_conv.111.13.00                   [required by ocaml-data-notation]
  - install   ocamlify.0.0.1                        [required by oasis]
@@ -45,4 +50,3 @@ Building oasis.0.4.5:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing oasis.0.4.5.
