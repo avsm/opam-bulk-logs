@@ -32,3 +32,41 @@ The following actions will be performed:
 [cduce.0.5.5] Downloading http://www.cduce.org/download/cduce-0.5.5.tar.gz
 [ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
 [pcre.7.1.3] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.3/pcre-ocaml-7.1.3.tar.gz
+[pxp.1.2.3] Downloading http://download.camlcity.org/download/pxp-1.2.3.tar.gz
+[ulex.1.1] Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building conf-libpcre.1:
+  pkg-config libpcre
+Installing conf-libpcre.1.
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+Installing ulex.1.1.
+Building pcre.7.1.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing pcre.7.1.3.
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/ocamlnet.install to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
+Applying robust-host.patch.
+Building ocamlnet.3.7.7:
+  ./configure -bindir /home/opam/.opam/4.01.0/bin -enable-pcre -disable-gtk2 -disable-ssl -disable-zip -disable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Installing ocamlnet.3.7.7.
+Building pxp.1.2.3:
+  ./configure -without-wlex -without-wlex-compat -lexlist utf8,iso88591
+  make all
+  make opt
+  make install MANDIR=/home/opam/.opam/4.01.0/man
+Installing pxp.1.2.3.
+Copying ~/.opam/repo/default/packages/cduce/cduce.0.5.5/files/cduce.install to ~/.opam/4.01.0/build/cduce.0.5.5/
+Building cduce.0.5.5:
+  ./configure --prefix=/home/opam/.opam/4.01.0 --mandir=/home/opam/.opam/4.01.0/doc/cduce
+  make all
+  make install
+Installing cduce.0.5.5.
