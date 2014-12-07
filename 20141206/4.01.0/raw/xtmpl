@@ -22,3 +22,8 @@ The following actions will be performed:
 Building xmlm.1.2.0:
   ./pkg/pkg-git
   ./pkg/build true
+Installing xmlm.1.2.0.
+Building xtmpl.0.9:
+  make all
+  make install
+Installing xtmpl.0.9.
