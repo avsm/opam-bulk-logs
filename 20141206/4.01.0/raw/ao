@@ -44,3 +44,4 @@ Building ao.0.2.0:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing ao.0.2.0.
