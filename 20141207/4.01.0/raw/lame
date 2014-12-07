@@ -1,48 +1,36 @@
-++ opam install lame -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install lame -e debian
++ depext=libmp3lame-dev
++ echo Debian depexts: libmp3lame-dev
+Debian depexts: libmp3lame-dev
++ '[' libmp3lame-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libmp3lame-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libmp3lame0:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libmp3lame0:amd64 (from .../libmp3lame0_3.99.5+repack1-3_amd64.deb) ...
+Selecting previously unselected package libmp3lame-dev:amd64.
+Unpacking libmp3lame-dev:amd64 (from .../libmp3lame-dev_3.99.5+repack1-3_amd64.deb) ...
+Setting up libmp3lame0:amd64 (3.99.5+repack1-3) ...
+Setting up libmp3lame-dev:amd64 (3.99.5+repack1-3) ...
+++ opam install lame -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install lame
-CentOS 7 depexts:
 The following actions will be performed:
  - install   lame.0.3.1
 === 1 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [lame.0.3.1] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-lame/0.3.1/ocaml-lame-0.3.1.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building lame.0.3.1:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-[ERROR] The compilation of lame.0.3.1 failed.
-Removing lame.0.3.1.
-  ocamlfind remove lame
-
-
-#=== ERROR while installing lame.0.3.1 ========================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --prefix /home/opam/.opam/4.01.0
-# path                 /home/opam/.opam/4.01.0/build/lame.0.3.1
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/lame.0.3.1/lame-28-5f1023.env
-# stdout-file          /home/opam/.opam/4.01.0/build/lame.0.3.1/lame-28-5f1023.out
-# stderr-file          /home/opam/.opam/4.01.0/build/lame.0.3.1/lame-28-5f1023.err
-### stdout ###
-# ...[truncated]
-# checking for stdlib.h... yes
-# checking for string.h... yes
-# checking for memory.h... yes
-# checking for strings.h... yes
-# checking for inttypes.h... yes
-# checking for stdint.h... yes
-# checking for unistd.h... yes
-# checking lame/lame.h usability... no
-# checking lame/lame.h presence... no
-# checking for lame/lame.h... no
-### stderr ###
-# configure: error: Cannot find liblame.
+[ERROR] Wrong checksum for /home/opam/.opam/packages.dev/lame.0.3.1/ocaml-lame-0.3.1.tar.gz:
+  - 070d913c6e565b568da1bc491f232a8a [expected result]
+  - b2e23b153fad3034ec48336f81eefd33 [actual result]
+This is surely due to outdated package descriptions and should be fixed by running `opam update`.
+In case an update does not fix that problem, you can use the `--no-checksums` command-line option
+to /bypass checking for invalid checksums.
+[ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-lame/0.3.1/ocaml-lame-0.3.1.tar.gz is not available
+[ERROR] Could not download archives of lame.0.3.1
 
