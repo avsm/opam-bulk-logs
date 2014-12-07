@@ -6,9 +6,9 @@ Ubuntu depexts:
 ++ opam install type_conv -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
-Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install type_conv
+Ubuntu srcexts:
 The following actions will be performed:
  - install   type_conv.111.13.00
 === 1 to install ===
