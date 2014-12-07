@@ -381,3 +381,4 @@ Copying ~/.opam/repo/default/packages/unison/unison.2.40.102/files/opam.patch to
 Applying opam.patch.
 Building unison.2.40.102:
   make install OCAMLLIBDIR=/home/opam/.opam/4.01.0/lib HOME=/home/opam/.opam/4.01.0
+Installing unison.2.40.102.
