@@ -1,7 +1,12 @@
-++ opam install mongo -e centos,centos-7
+++ opam install mongo -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install mongo -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install mongo
 The following actions will be performed:
