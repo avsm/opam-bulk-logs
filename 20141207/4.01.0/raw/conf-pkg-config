@@ -1,9 +1,16 @@
-++ opam install conf-pkg-config -e centos,centos-7
-+ depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+++ opam install conf-pkg-config -e debian
++ depext=pkg-config
++ echo Debian depexts: pkg-config
+Debian depexts: pkg-config
++ '[' pkg-config '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y pkg-config
+++ opam install conf-pkg-config -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install conf-pkg-config
+Debian srcexts:
 The following actions will be performed:
  - install   conf-pkg-config.1.0
 === 1 to install ===
