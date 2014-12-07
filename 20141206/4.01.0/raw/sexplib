@@ -1,0 +1,29 @@
+++ opam install sexplib -e ubuntu
+Ubuntu depexts:
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install sexplib -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install sexplib
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   type_conv.111.13.00                   [required by sexplib]
+ - install   sexplib.111.13.00
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sexplib.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/sexplib-111.13.00.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building sexplib.111.13.00:
+  make
+  make install
+Installing sexplib.111.13.00.
