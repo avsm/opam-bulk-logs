@@ -1,9 +1,14 @@
-++ opam install odate -e centos,centos-7
+++ opam install odate -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install odate -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install odate
+Debian srcexts:
 The following actions will be performed:
  - install   type_conv.111.13.00                   [required by ocaml-data-notation]
  - install   menhir.20140422                       [required by odate]
