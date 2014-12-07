@@ -1,48 +1,18 @@
-++ opam install fftw3 -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-+ '[' '' '!=' '' ']'
-CentOS 7 depexts:
-+ opam install fftw3
-The following actions will be performed:
- - install   fftw3.0.7.1
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[fftw3.0.7.1] Downloading https://github.com/Chris00/fftw-ocaml/releases/download/0.7.1/ocaml-fftw3-0.7.1.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building fftw3.0.7.1:
-  ./configure --prefix /home/opam/.opam/4.01.0 --sbindir=/home/opam/.opam/4.01.0/lib/fftw3/sbin --libexecdir=/home/opam/.opam/4.01.0/lib/fftw3/libexec --sysconfdir=/home/opam/.opam/4.01.0/lib/fftw3/etc --sharedstatedir=/home/opam/.opam/4.01.0/lib/fftw3/com --localstatedir=/home/opam/.opam/4.01.0/lib/fftw3/var --libdir=/home/opam/.opam/4.01.0/lib/fftw3/lib --includedir=/home/opam/.opam/4.01.0/lib/fftw3/include --datarootdir=/home/opam/.opam/4.01.0/lib/fftw3/share
-  make
-  make install
-[ERROR] The compilation of fftw3.0.7.1 failed.
-Removing fftw3.0.7.1.
-  ocamlfind remove fftw3
-
-
-#=== ERROR while installing fftw3.0.7.1 =======================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --prefix /home/opam/.opam/4.01.0 --sbindir=/home/opam/.opam/4.01.0/lib/fftw3/sbin --libexecdir=/home/opam/.opam/4.01.0/lib/fftw3/libexec --sysconfdir=/home/opam/.opam/4.01.0/lib/fftw3/etc --sharedstatedir=/home/opam/.opam/4.01.0/lib/fftw3/com --localstatedir=/home/opam/.opam/4.01.0/lib/fftw3/var --libdir=/home/opam/.opam/4.01.0/lib/fftw3/lib --includedir=/home/opam/.opam/4.01.0/lib/fftw3/include --datarootdir=/home/opam/.opam/4.01.0/lib/fftw3/share
-# path                 /home/opam/.opam/4.01.0/build/fftw3.0.7.1
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/fftw3.0.7.1/fftw3-26-5f1023.env
-# stdout-file          /home/opam/.opam/4.01.0/build/fftw3.0.7.1/fftw3-26-5f1023.out
-# stderr-file          /home/opam/.opam/4.01.0/build/fftw3.0.7.1/fftw3-26-5f1023.err
-### stdout ###
-# ...[truncated]
-# checking for gcc... gcc
-# checking whether the C compiler works... yes
-# checking for C compiler default output file name... a.out
-# checking for suffix of executables... 
-# checking whether we are cross compiling... no
-# checking for suffix of object files... o
-# checking whether we are using the GNU C compiler... yes
-# checking whether gcc accepts -g... yes
-# checking for gcc option to accept ISO C89... none needed
-# checking for libfftw3 (double precision)... 
-### stderr ###
-# configure: error: Check for fftw3 (double precision) failed.
-
+++ opam install fftw3 -e debian
++ depext=libfftw3-dev
++ echo Debian depexts: libfftw3-dev
+Debian depexts: libfftw3-dev
++ '[' libfftw3-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libfftw3-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libfftw3-3:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libfftw3-3:amd64 (from .../libfftw3-3_3.3.2-3.1_amd64.deb) ...
+Selecting previously unselected package libfftw3-bin.
+Unpacking libfftw3-bin (from .../libfftw3-bin_3.3.2-3.1_amd64.deb) ...
+Selecting previously unselected package libfftw3-dev:amd64.
+Unpacking libfftw3-dev:amd64 (from .../libfftw3-dev_3.3.2-3.1_amd64.deb) ...
+Setting up libfftw3-3:amd64 (3.3.2-3.1) ...
+Setting up libfftw3-bin (3.3.2-3.1) ...
+Setting up libfftw3-dev:amd64 (3.3.2-3.1) ...
