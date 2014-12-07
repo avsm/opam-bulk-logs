@@ -128,3 +128,12 @@ Building tyxml.3.3.0:
   ./configure --enable-syntax --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing tyxml.3.3.0.
+Copying ~/.opam/repo/default/packages/camlhighlight/camlhighlight.3.0/files/sexp-dir.patch.in to ~/.opam/4.01.0/build/camlhighlight.3.0/
+Copying ~/.opam/repo/default/packages/camlhighlight/camlhighlight.3.0/files/camlhighlight.install to ~/.opam/4.01.0/build/camlhighlight.3.0/
+Applying sexp-dir.patch.
+Building camlhighlight.3.0:
+  ./configure --prefix /home/opam/.opam/4.01.0 --docdir /home/opam/.opam/4.01.0/doc/camlhighlight
+  make
+  make doc
+  make install

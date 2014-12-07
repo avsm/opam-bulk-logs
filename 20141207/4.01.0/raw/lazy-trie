@@ -9,3 +9,16 @@ Debian srcexts:
 + echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install lazy-trie
+The following actions will be performed:
+ - install   lazy-trie.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[lazy-trie.1.0.0] Downloading https://github.com/mirage/ocaml-lazy-trie/archive/1.0.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building lazy-trie.1.0.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing lazy-trie.1.0.0.
