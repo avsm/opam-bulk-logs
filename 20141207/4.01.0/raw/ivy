@@ -60,3 +60,37 @@ The following actions will be performed:
 === 1 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ivy.1.2.2] Downloading http://www.eei.cena.fr/products/ivy/download/packages/ivy-ocaml_1.2-2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ivy.1.2.2:
+  make
+  make install COMPAT_SYMLINK_CREATE=no
+[ERROR] The compilation of ivy.1.2.2 failed.
+Removing ivy.1.2.2.
+  ocamlfind remove ivy
+  ocamlfind remove glibivy
+
+
+#=== ERROR while installing ivy.1.2.2 =========================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.01.0/build/ivy.1.2.2
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/ivy.1.2.2/ivy-257-6d07ae.env
+# stdout-file          /home/opam/.opam/4.01.0/build/ivy.1.2.2/ivy-257-6d07ae.out
+# stderr-file          /home/opam/.opam/4.01.0/build/ivy.1.2.2/ivy-257-6d07ae.err
+### stdout ###
+# ocamldep  *.mli *.ml > .depend
+# ocamlc  -c ivy.mli
+# ocamlc   -c ivy.ml
+# ocamlc  -c ivyLoop.mli
+# ocamlc   -c ivyLoop.ml
+# cc -Wall -c -fPIC -I /opt/local/include/  -I `ocamlc -where` `pkg-config --cflags glib-2.0` civy.c
+### stderr ###
+# civy.c:5:21: fatal error: Ivy/ivy.h: No such file or directory
+# compilation terminated.
+# make: *** [civy.o] Error 1
+
