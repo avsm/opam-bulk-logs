@@ -117,3 +117,13 @@ Building optcomp.1.6:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing optcomp.1.6.
+Building react.1.2.0:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing react.1.2.0.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.01.0/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
