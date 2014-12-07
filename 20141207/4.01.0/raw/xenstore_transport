@@ -55,3 +55,7 @@ Installing ocplib-endian.0.7.
 Building cstruct.0.6.0:
   make
   make install
+Installing cstruct.0.6.0.
+Building xenstore.1.2.5:
+  make all
+  make install

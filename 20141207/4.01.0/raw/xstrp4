@@ -17,3 +17,8 @@ The following actions will be performed:
 [xstrp4.1.8] Downloading http://download.camlcity.org/download/xstrp4-1.8.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building xstrp4.1.8:
+  ./configure
+  make all
+  make install
+Installing xstrp4.1.8.
