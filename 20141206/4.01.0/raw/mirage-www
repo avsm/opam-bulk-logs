@@ -257,3 +257,11 @@ Installing tuntap.1.0.0.
 Building cowabloga.0.0.6:
   make all
   make install
+Installing cowabloga.0.0.6.
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+Building mirage.1.1.0:
+  ./configure --bindir /home/opam/.opam/4.01.0/bin
+  make
+  make install

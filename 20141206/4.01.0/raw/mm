@@ -21,3 +21,5 @@ Building mm.0.2.1:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing mm.0.2.1.
+2014/12/07 08:46:34 Error: Cannot destroy container 4084335630e5922673ff893414bcec2dbdbd05e7883c889765428b1d12b1938d: Driver aufs failed to remove root filesystem 4084335630e5922673ff893414bcec2dbdbd05e7883c889765428b1d12b1938d: rename /var/lib/docker/aufs/mnt/4084335630e5922673ff893414bcec2dbdbd05e7883c889765428b1d12b1938d /var/lib/docker/aufs/mnt/4084335630e5922673ff893414bcec2dbdbd05e7883c889765428b1d12b1938d-removing: device or resource busy
