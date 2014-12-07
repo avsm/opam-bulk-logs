@@ -545,3 +545,9 @@ Building lablgtk-extras.1.4:
   ./configure --prefix /home/opam/.opam/4.01.0
   make all
   make install
+Installing lablgtk-extras.1.4.
+Copying ~/.opam/repo/default/packages/chamo/chamo.2.02/files/chamo.install to ~/.opam/4.01.0/build/chamo.2.02/
+Building chamo.2.02:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make all
+  make install-lib
