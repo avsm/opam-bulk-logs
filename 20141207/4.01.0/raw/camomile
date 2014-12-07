@@ -1,8 +1,13 @@
-++ opam install camomile -e centos,centos-7
+++ opam install camomile -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install camomile -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
+Debian srcexts:
 + opam install camomile
 The following actions will be performed:
  - install   camomile.0.8.5
@@ -10,14 +15,3 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [camomile.0.8.5] Downloading https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Copying ~/.opam/repo/default/packages/camomile/camomile.0.8.5/files/no-camlp4.patch to ~/.opam/4.01.0/build/camomile.0.8.5/
-Copying ~/.opam/repo/default/packages/camomile/camomile.0.8.5/files/cmxs.patch to ~/.opam/4.01.0/build/camomile.0.8.5/
-Applying cmxs.patch.
-Applying no-camlp4.patch.
-Building camomile.0.8.5:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make
-  make install
-Installing camomile.0.8.5.
