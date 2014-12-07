@@ -45,3 +45,16 @@ Building ocamlgraph.1.8.5:
   ./configure
   make
   make install-findlib
+Installing ocamlgraph.1.8.5.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+Building cudf.0.7:
+  make all opt
+  make install DESTDIR=/home/opam/.opam/4.01.0 OCAMLLIBDIR=lib BINDIR=bin LIBDIR=lib INCDIR=include
