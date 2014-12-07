@@ -313,3 +313,15 @@ Applying 4.00.1.patch.
 Building iocaml-kernel.0.4.6:
   make all
   make install
+Installing iocaml-kernel.0.4.6.
+Copying ~/.opam/repo/default/packages/websocket/websocket.0.8.1/files/websocket.install to ~/.opam/4.01.0/build/websocket.0.8.1/
+Building websocket.0.8.1:
+  make
+  make install
+Installing websocket.0.8.1.
+Copying ~/.opam/repo/default/packages/iocaml/iocaml.0.4.6/files/iocaml.install to ~/.opam/4.01.0/build/iocaml.0.4.6/
+Copying ~/.opam/repo/default/packages/iocaml/iocaml.0.4.6/files/chromium-bug.patch to ~/.opam/4.01.0/build/iocaml.0.4.6/
+Applying chromium-bug.patch.
+Building iocaml.0.4.6:
+  make all
+Installing iocaml.0.4.6.
