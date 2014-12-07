@@ -1,14 +1,14 @@
 ++ opam install ocaml-data-notation -e ubuntu
-Ubuntu depexts:
 + depext=
+Ubuntu depexts:
 + echo Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install ocaml-data-notation -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
-Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install ocaml-data-notation
+Ubuntu srcexts:
 The following actions will be performed:
  - install   type_conv.111.13.00                   [required by ocaml-data-notation]
  - install   ocaml-data-notation.0.0.11
