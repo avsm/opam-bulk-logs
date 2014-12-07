@@ -1,9 +1,14 @@
-++ opam install rope -e centos,centos-7
+++ opam install rope -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install rope -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install rope
-CentOS 7 depexts:
 The following actions will be performed:
  - install   rope.0.5
 === 1 to install ===

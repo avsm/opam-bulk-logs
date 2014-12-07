@@ -143,3 +143,7 @@ Building typerep.109.55.02:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing typerep.109.55.02.
+Building core_kernel.109.55.02:
+  make
+  make install
