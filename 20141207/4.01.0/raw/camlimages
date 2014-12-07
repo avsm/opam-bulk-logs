@@ -1,32 +1,11 @@
-++ opam install camlimages -e centos,centos-7
+++ opam install camlimages -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install camlimages -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install camlimages
-The following actions will be performed:
- - install   omake.0.9.8.6-0.rc1                   [required by camlimages]
- - install   camlimages.4.1.2
-=== 2 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[camlimages.4.1.2] Downloading https://bitbucket.org/camlspotter/camlimages/get/4.1.2.tar.gz
-[omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
-Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/opam.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
-Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/omake.install to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
-Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/fam.patch to ~/.opam/4.01.0/build/omake.0.9.8.6-0.rc1/
-Applying opam.patch.
-Applying fam.patch.
-Applying readline.patch.
-Building omake.0.9.8.6-0.rc1:
-  make bootstrap PREFIX=/home/opam/.opam/4.01.0
-  make all PREFIX=/home/opam/.opam/4.01.0
-  make install PREFIX=/home/opam/.opam/4.01.0
-Installing omake.0.9.8.6-0.rc1.
-Building camlimages.4.1.2:
-  omake --configure
-  omake install
-Installing camlimages.4.1.2.
+Debian srcexts:

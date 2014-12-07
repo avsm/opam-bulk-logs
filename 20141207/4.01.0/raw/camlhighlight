@@ -27,3 +27,32 @@ Setting up libboost-dev (1.49.0.1) ...
 Setting up libboost-regex1.49.0 (1.49.0-3.2) ...
 Setting up libsource-highlight-common (3.1.6-1.1) ...
 Setting up libsource-highlight4 (3.1.6-1.1) ...
+Setting up libsource-highlight-dev (3.1.6-1.1) ...
+++ opam install camlhighlight -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install camlhighlight
+Debian srcexts:
+The following actions will be performed:
+ - install   batteries.2.3.1                       [required by camlhighlight]
+ - install   type_conv.111.13.00                   [required by sexplib]
+ - install   uutf.0.9.3                            [required by tyxml]
+ - install   sexplib.111.17.00                     [required by camlhighlight]
+ - install   tyxml.3.3.0                           [required by camlhighlight]
+ - install   camlhighlight.3.0
+=== 6 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
+[sexplib.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/sexplib-111.17.00.tar.gz
+[camlhighlight.3.0] Downloading http://forge.ocamlcore.org/frs/download.php/1435/camlhighlight-3.0.tgz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+[tyxml.3.3.0] Downloading https://github.com/ocsigen/tyxml/archive/3.3.0.tar.gz
+[uutf.0.9.3] Downloading http://erratique.ch/software/uutf/releases/uutf-0.9.3.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building batteries.2.3.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make all
+  make install

@@ -72,3 +72,4 @@ Installing rpc.1.5.1.
 Building camldm.0.1.0:
   make
   make install BINDIR=/home/opam/.opam/4.01.0/bin
+Installing camldm.0.1.0.
