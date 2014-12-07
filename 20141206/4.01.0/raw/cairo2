@@ -150,3 +150,4 @@ Building cairo2.0.4.6:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0 --disable-lablgtk2
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing cairo2.0.4.6.
