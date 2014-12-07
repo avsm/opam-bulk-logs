@@ -1,0 +1,24 @@
+++ opam install annot -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install annot -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install annot
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   annot.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[annot.1.0.0] Downloading http://github.com/avsm/ocaml-annot/tarball/ocaml-annot-1.0.0
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building annot.1.0.0:
+  ./configure --prefix=/home/opam/.opam/4.02.1
+  make
+  make install
+Installing annot.1.0.0.
