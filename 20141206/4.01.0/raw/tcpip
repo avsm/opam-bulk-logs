@@ -133,3 +133,4 @@ Installing mirage-console.2.0.0.
 Building tcpip.2.0.3:
   make
   make install
+Installing tcpip.2.0.3.

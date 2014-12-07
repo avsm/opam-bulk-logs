@@ -140,3 +140,7 @@ Building ssl.0.4.7:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing ssl.0.4.7.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
