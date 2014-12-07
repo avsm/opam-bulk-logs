@@ -1,145 +1,18 @@
-++ opam install stog-rdf -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-+ '[' '' '!=' '' ']'
-+ opam install stog-rdf
-CentOS 7 depexts:
-The following actions will be performed:
- - install   cryptokit.1.9                         [required by rdf]
- - install   config-file.1.2                       [required by stog]
- - install   xmlm.1.2.0                            [required by stog, rdf]
- - install   ulex.1.1                              [required by rdf]
- - install   menhir.20140422                       [required by rdf]
- - install   conf-libpcre.1                        [required by pcre]
- - install   uuidm.0.9.5                           [required by rdf]
- - install   xtmpl.0.9                             [required by stog]
- - install   pcre.7.1.3                            [required by rdf]
- - install   higlo.0.3                             [required by stog]
- - install   ocamlnet.3.7.7                        [required by stog, rdf]
- - install   stog.0.12.0                           [required by stog-rdf]
- - install   rdf.0.8.0                             [required by stog-rdf]
- - install   stog-rdf.0.11.0
-=== 14 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[config-file.1.2] Downloading https://forge.ocamlcore.org/frs/download.php/1387/config-file-1.2.tar.gz
-[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
-[higlo.0.3] Downloading http://zoggy.github.com/higlo/higlo-0.3.tar.gz
-[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
-[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
-[pcre.7.1.3] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.3/pcre-ocaml-7.1.3.tar.gz
-[rdf.0.8.0] Downloading http://zoggy.github.io/ocaml-rdf/ocaml-rdf-0.8.0.tar.gz
-[stog.0.12.0] Downloading http://zoggy.github.com/stog/stog-0.12.0.tar.gz
-[stog-rdf.0.11.0] Downloading http://zoggy.github.com/stog/plugins/stog-rdf-0.11.0.tar.gz
-[ulex.1.1] Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
-[uuidm.0.9.5] Downloading http://erratique.ch/software/uuidm/releases/uuidm-0.9.5.tbz
-[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
-[xtmpl.0.9] Downloading http://zoggy.github.com/xtmpl/xtmpl-0.9.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building conf-libpcre.1:
-  pkg-config libpcre
-[ERROR] The compilation of conf-libpcre.1 failed.
-Removing conf-libpcre.1.
-  Nothing to do.
-Building config-file.1.2:
-  ./configure --prefix /home/opam/.opam/4.01.0
-  make all
-  make install
-Installing config-file.1.2.
-Building cryptokit.1.9:
-  make
-  make install
-[ERROR] The compilation of cryptokit.1.9 failed.
-Removing cryptokit.1.9.
-  ocamlfind remove cryptokit
-Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.01.0/build/menhir.20140422/
-Building menhir.20140422:
-  make PREFIX=/home/opam/.opam/4.01.0 docdir=/home/opam/.opam/4.01.0/doc/menhir libdir=/home/opam/.opam/4.01.0/lib/menhir mandir=/home/opam/.opam/4.01.0/man/man1
-  make install PREFIX=/home/opam/.opam/4.01.0 docdir=/home/opam/.opam/4.01.0/doc/menhir libdir=/home/opam/.opam/4.01.0/lib/menhir mandir=/home/opam/.opam/4.01.0/man/man1
-Installing menhir.20140422.
-Building ulex.1.1:
-  make
-  make all.opt
-  make install
-Installing ulex.1.1.
-Copying ~/.opam/repo/default/packages/uuidm/uuidm.0.9.5/files/uuidm.install to ~/.opam/4.01.0/build/uuidm.0.9.5/
-Building uuidm.0.9.5:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing uuidm.0.9.5.
-Building xmlm.1.2.0:
-  ./pkg/pkg-git
-  ./pkg/build true
-Installing xmlm.1.2.0.
-Building xtmpl.0.9:
-  make all
-  make install
-Installing xtmpl.0.9.
-Copying ~/.opam/repo/default/packages/higlo/higlo.0.3/files/higlo.install to ~/.opam/4.01.0/build/higlo.0.3/
-Building higlo.0.3:
-  make all
-  make install-lib
-Installing higlo.0.3.
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   uuidm.0.9.5
- - install   menhir.20140422
- - install   ulex.1.1
- - install   higlo.0.3
- - install   xtmpl.0.9
- - install   xmlm.1.2.0
- - install   config-file.1.2
-The following failed
- - install   conf-libpcre.1
- - install   cryptokit.1.9
-Due to the errors, the following have been cancelled
- - install   stog-rdf.0.11.0
- - install   pcre.7.1.3
- - install   stog.0.12.0
- - install   ocamlnet.3.7.7
- - install   rdf.0.8.0
-
-#=== ERROR while installing conf-libpcre.1 ====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              pkg-config libpcre
-# path                 /home/opam/.opam/4.01.0/build/conf-libpcre.1
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/conf-libpcre.1/conf-libpcre-152-c61e7b.env
-# stdout-file          /home/opam/.opam/4.01.0/build/conf-libpcre.1/conf-libpcre-152-c61e7b.out
-# stderr-file          /home/opam/.opam/4.01.0/build/conf-libpcre.1/conf-libpcre-152-c61e7b.err
-
-
-#=== ERROR while installing cryptokit.1.9 =====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              make
-# path                 /home/opam/.opam/4.01.0/build/cryptokit.1.9
-# compiler             4.01.0
-# exit-code            2
-# env-file             /home/opam/.opam/4.01.0/build/cryptokit.1.9/cryptokit-403-6cc03f.env
-# stdout-file          /home/opam/.opam/4.01.0/build/cryptokit.1.9/cryptokit-403-6cc03f.out
-# stderr-file          /home/opam/.opam/4.01.0/build/cryptokit.1.9/cryptokit-403-6cc03f.err
-### stdout ###
-# ...[truncated]
-# mv stubs-misc.o src/stubs-misc.o
-# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-rng.c
-# mv stubs-rng.o src/stubs-rng.o
-# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
-# + ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
-# src/stubs-zlib.c:19:18: fatal error: zlib.h: No such file or directory
-#  #include <zlib.h>
-#                   ^
-# compilation terminated.
-# Command exited with code 2.
-### stderr ###
-# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' src/libcryptokit_stubs.a src/dllcryptokit_stubs.so src/cryptokit.cma src/cryptokit.cmxa src/cryptokit.a src/cryptokit.cmxs -tag debug -classic-display' terminated with error code 10")
-# make: *** [build] Error 1
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107161530.export"
+++ opam install stog-rdf -e debian
+Debian depexts: libpcre3-dev zlib1g-dev
++ depext='libpcre3-dev zlib1g-dev'
++ echo Debian depexts: libpcre3-dev zlib1g-dev
++ '[' 'libpcre3-dev zlib1g-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libpcre3-dev zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libpcrecpp0:amd64 (from .../libpcrecpp0_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package libpcre3-dev.
+Unpacking libpcre3-dev (from .../libpcre3-dev_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Setting up libpcrecpp0:amd64 (1:8.30-5) ...
+Setting up libpcre3-dev (1:8.30-5) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
