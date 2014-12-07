@@ -1,25 +1,25 @@
 ++ opam install lwt-zmq -e ubuntu
 + depext=
 + echo Ubuntu depexts:
-+ '[' '' '!=' '' ']'
 Ubuntu depexts:
++ '[' '' '!=' '' ']'
 ++ opam install lwt-zmq -e source,linux
 + srcext=https://gist.github.com/hcarty/77e32afdecbf09af0213/raw
 + echo Ubuntu srcexts: https://gist.github.com/hcarty/77e32afdecbf09af0213/raw
-+ '[' https://gist.github.com/hcarty/77e32afdecbf09af0213/raw '!=' '' ']'
 Ubuntu srcexts: https://gist.github.com/hcarty/77e32afdecbf09af0213/raw
++ '[' https://gist.github.com/hcarty/77e32afdecbf09af0213/raw '!=' '' ']'
 ++ mktemp
-+ t=/tmp/tmp.3P319GOCyU
++ t=/tmp/tmp.Wybp3pmi8N
 + curl -sL https://gist.github.com/hcarty/77e32afdecbf09af0213/raw
-+ bash -ex /tmp/tmp.3P319GOCyU
++ bash -ex /tmp/tmp.Wybp3pmi8N
 + sudo apt-add-repository ppa:chris-lea/zeromq
 + echo yes
  0MQ is a software library that lets you quickly design and implement a fast message-based application.
  More info: https://launchpad.net/~chris-lea/+archive/ubuntu/zeromq
-gpg: keyring `/tmp/tmpk28og0o6/secring.gpg' created
-gpg: keyring `/tmp/tmpk28og0o6/pubring.gpg' created
+gpg: keyring `/tmp/tmp44d1ll7p/secring.gpg' created
+gpg: keyring `/tmp/tmp44d1ll7p/pubring.gpg' created
 gpg: requesting key C7917B12 from hkp server keyserver.ubuntu.com
-gpg: /tmp/tmpk28og0o6/trustdb.gpg: trustdb created
+gpg: /tmp/tmp44d1ll7p/trustdb.gpg: trustdb created
 gpg: key C7917B12: public key "Launchpad chrislea" imported
 gpg: Total number processed: 1
 gpg:               imported: 1  (RSA: 1)
@@ -30,12 +30,12 @@ Get:1 http://ppa.launchpad.net trusty Release.gpg [316 B]
 Get:2 http://ppa.launchpad.net trusty Release [15.1 kB]
 Get:3 http://ppa.launchpad.net trusty/main amd64 Packages [1964 B]
 Ign http://archive.ubuntu.com trusty InRelease
-Ign http://archive.ubuntu.com trusty-updates InRelease
 Ign http://download.opensuse.org  InRelease
-Ign http://archive.ubuntu.com trusty-security InRelease
 Hit http://download.opensuse.org  Release.gpg
+Ign http://archive.ubuntu.com trusty-updates InRelease
 Hit http://download.opensuse.org  Release
 Hit http://download.opensuse.org  Packages
+Ign http://archive.ubuntu.com trusty-security InRelease
 Hit http://archive.ubuntu.com trusty Release.gpg
 Get:4 http://archive.ubuntu.com trusty-updates Release.gpg [933 B]
 Hit http://archive.ubuntu.com trusty-security Release.gpg
@@ -60,7 +60,7 @@ Hit http://archive.ubuntu.com trusty-security/universe Sources
 Hit http://archive.ubuntu.com trusty-security/main amd64 Packages
 Hit http://archive.ubuntu.com trusty-security/restricted amd64 Packages
 Hit http://archive.ubuntu.com trusty-security/universe amd64 Packages
-Fetched 1149 kB in 6s (174 kB/s)
+Fetched 1149 kB in 3s (293 kB/s)
 Reading package lists...
 W: Size of file /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-updates_main_binary-amd64_Packages.gz is not what the server reported 472219 472281
 W: Size of file /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_trusty-updates_universe_binary-amd64_Packages.gz is not what the server reported 288382 288405
@@ -110,91 +110,3 @@ Building ocamlify.0.0.1:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing ocamlify.0.0.1.
-Copying ~/.opam/repo/default/packages/ocamlmod/ocamlmod.0.0.7/files/ocamlmod.install to ~/.opam/4.01.0/build/ocamlmod.0.0.7/
-Building ocamlmod.0.0.7:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing ocamlmod.0.0.7.
-Building ounit.2.0.0:
-  make build
-  make install
-Installing ounit.2.0.0.
-Building type_conv.111.13.00:
-  make
-  make install
-Installing type_conv.111.13.00.
-Building uint.1.1.5:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing uint.1.1.5.
-Building lwt.2.4.6:
-  ./configure --prefix /home/opam/.opam/4.01.0 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-ppx
-  make build
-  make install
-Installing lwt.2.4.6.
-Building ocaml-data-notation.0.0.11:
-  make
-  make install
-Installing ocaml-data-notation.0.0.11.
-Copying ~/.opam/repo/default/packages/oasis/oasis.0.4.5/files/oasis.install to ~/.opam/4.01.0/build/oasis.0.4.5/
-Building oasis.0.4.5:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing oasis.0.4.5.
-Building zmq.4.0-3:
-  oasis setup
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-[ERROR] The compilation of zmq.4.0-3 failed.
-Removing zmq.4.0-3.
-  ocamlfind remove ZMQ
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   ocamlmod.0.0.7
- - install   uint.1.1.5
- - install   ocaml-data-notation.0.0.11
- - install   ocamlify.0.0.1
- - install   oasis.0.4.5
- - install   type_conv.111.13.00
- - install   base-no-ppx.base
- - install   lwt.2.4.6
- - install   ounit.2.0.0
-The following failed
- - install   zmq.4.0-3
-Due to the errors, the following have been cancelled
- - install   lwt-zmq.2.0.0
-
-#=== ERROR while installing zmq.4.0-3 =========================================#
-# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
-# os                   linux
-# command              ocaml setup.ml -build
-# path                 /home/opam/.opam/4.01.0/build/zmq.4.0-3
-# compiler             4.01.0
-# exit-code            1
-# env-file             /home/opam/.opam/4.01.0/build/zmq.4.0-3/zmq-4966-ebe0e0.env
-# stdout-file          /home/opam/.opam/4.01.0/build/zmq.4.0-3/zmq-4966-ebe0e0.out
-# stderr-file          /home/opam/.opam/4.01.0/build/zmq.4.0-3/zmq-4966-ebe0e0.err
-### stdout ###
-# ...[truncated]
-# pkg_str: ............................................. /home/opam/.opam/4.01.0/lib/ocaml
-# 
-# /home/opam/.opam/4.01.0/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.01.0/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
-# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -ccopt -I -ccopt /home/opam/.opam/4.01.0/lib/uint -ccopt -Wall -ccopt -Wextra -ccopt -O2 -c src/caml_zmq_stubs.c
-# + /home/opam/.opam/4.01.0/bin/ocamlfind ocamlc -ccopt -I -ccopt /home/opam/.opam/4.01.0/lib/uint -ccopt -Wall -ccopt -Wextra -ccopt -O2 -c src/caml_zmq_stubs.c
-# src/caml_zmq_stubs.c:30:17: fatal error: zmq.h: No such file or directory
-#  #include <zmq.h>
-#                  ^
-# compilation terminated.
-# Command exited with code 2.
-### stderr ###
-# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' src/libZMQ_stubs.a src/dllZMQ_stubs.so src/ZMQ.cma src/ZMQ.cmxa src/ZMQ.a src/ZMQ.cmxs examples/hwserver.native examples/hwclient.native examples/wuserver.native examples/wuclient.native examples/wuproxy.native examples/taskvent.native examples/taskwork.native examples/tasksink.native -tag debug' terminated with error code 10")
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107024739.export"
