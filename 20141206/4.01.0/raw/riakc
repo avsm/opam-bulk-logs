@@ -121,3 +121,19 @@ Applying fix-arm-double-field.diff.
 Building bin_prot.109.53.03:
   make
   make install
+Installing bin_prot.109.53.03.
+Building comparelib.109.27.02:
+  make
+  make install
+Installing comparelib.109.27.02.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building pa_ounit.109.53.02:
+  make
+  make install
+Installing pa_ounit.109.53.02.
+Building sexplib.109.55.02:
+  make
+  make install
