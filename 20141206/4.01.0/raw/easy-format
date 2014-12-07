@@ -1,7 +1,7 @@
 ++ opam install easy-format -e ubuntu
 + depext=
-+ echo Ubuntu depexts:
 Ubuntu depexts:
++ echo Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install easy-format -e source,linux
 + srcext=
@@ -9,15 +9,3 @@ Ubuntu depexts:
 + '[' '' '!=' '' ']'
 + opam install easy-format
 Ubuntu srcexts:
-The following actions will be performed:
- - install   easy-format.1.0.2
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building easy-format.1.0.2:
-  make
-  make install
-Installing easy-format.1.0.2.
