@@ -1,14 +1,14 @@
 ++ opam install aliases -e ubuntu
 + depext=
 + echo Ubuntu depexts:
-+ '[' '' '!=' '' ']'
 Ubuntu depexts:
++ '[' '' '!=' '' ']'
 ++ opam install aliases -e source,linux
 + srcext=
-Ubuntu srcexts:
 + echo Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install aliases
+Ubuntu srcexts:
 The following actions will be performed:
  - install   type_conv.111.13.00                   [required by ocaml-data-notation]
  - install   ocamlify.0.0.1                        [required by oasis]
