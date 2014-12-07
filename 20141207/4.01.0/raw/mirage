@@ -1,0 +1,144 @@
+++ opam install mirage -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install mirage
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   re.1.2.2                              [required by mirage]
+ - install   type_conv.111.13.00                   [required by sexplib]
+ - install   cmdliner.0.9.6                        [required by mirage]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   lwt.2.4.5                             [required by mirage]
+ - install   sexplib.111.25.00                     [required by mirage]
+ - install   crunch.1.3.0                          [required by mirage]
+ - install   ocplib-endian.0.4                     [required by cstruct]
+ - install   ipaddr.2.5.0                          [required by mirage]
+ - install   cstruct.1.5.0                         [required by mirage]
+ - install   io-page.1.2.0                         [required by mirage]
+ - install   mirage-types.2.0.1                    [required by mirage]
+ - install   mirage.2.0.1
+=== 13 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[crunch.1.3.0] Downloading https://github.com/mirage/ocaml-crunch/archive/v1.3.0.tar.gz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[io-page.1.2.0] Downloading https://github.com/mirage/io-page/archive/v1.2.0.tar.gz
+[ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[mirage.2.0.1] Downloading https://github.com/mirage/mirage/archive/v2.0.1.tar.gz
+[mirage-types.2.0.1] Downloading https://github.com/mirage/mirage/archive/v2.0.1.tar.gz
+[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+Installing lwt.2.4.5.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing optcomp.1.6.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Building crunch.1.3.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+[ERROR] The compilation of crunch.1.3.0 failed.
+Removing crunch.1.3.0.
+  rm -f /home/opam/.opam/4.01.0/bin/ocaml-crunch
+  ocamlfind remove crunch
+Building ocplib-endian.0.4:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.4.
+Building sexplib.111.25.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.111.25.00.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.01.0 --enable-lwt --enable-camlp4 --disable-async --enable-unix --disable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Building ipaddr.2.5.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  make build
+  make install
+Installing ipaddr.2.5.0.
+Building io-page.1.2.0:
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make
+  make install
+Installing io-page.1.2.0.
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   ocplib-endian.0.4
+ - install   lwt.2.4.5
+ - install   sexplib.111.25.00
+ - install   optcomp.1.6
+ - install   cmdliner.0.9.6
+ - install   type_conv.111.13.00
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   re.1.2.2
+ - install   ipaddr.2.5.0
+ - install   mirage-types.2.0.1
+The following failed
+ - install   crunch.1.3.0
+Due to the errors, the following have been cancelled
+ - install   mirage.2.0.1
+
+#=== ERROR while installing crunch.1.3.0 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/opam/.opam/4.01.0/build/crunch.1.3.0
+# compiler             4.01.0
+# exit-code            1
+# env-file             /home/opam/.opam/4.01.0/build/crunch.1.3.0/crunch-1971-e4db2f.env
+# stdout-file          /home/opam/.opam/4.01.0/build/crunch.1.3.0/crunch-1971-e4db2f.out
+# stderr-file          /home/opam/.opam/4.01.0/build/crunch.1.3.0/crunch-1971-e4db2f.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlc -c -g -I lib -package unix -package cmdliner -I lib -o lib/main.cmo lib/main.ml
+# ocamlfind ocamlopt -c -g -I lib -package unix -package cmdliner -I lib -o lib/main.cmx lib/main.ml
+# ocamlfind ocamlc -c lib/custom_unix_stubs.c
+# mv custom_unix_stubs.o lib/custom_unix_stubs.o
+# /home/opam/.opam/4.01.0/bin/ocamlmklib -o lib/ocaml-crunch_stubs lib/custom_unix_stubs.o
+# ocamlfind ocamlopt -g -linkpkg -package unix -package cmdliner lib/crunch.cmxa lib/main.cmx lib/libocaml-crunch_stubs.a -o lib/main.native
+# + ocamlfind ocamlopt -g -linkpkg -package unix -package cmdliner lib/crunch.cmxa lib/main.cmx lib/libocaml-crunch_stubs.a -o lib/main.native
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+# Command exited with code 2.
+### stderr ###
+# E: Failure("Command ''/home/opam/.opam/4.01.0/bin/ocamlbuild' lib/crunch.cma lib/crunch.cmxa lib/crunch.a lib/crunch.cmxs lib/main.native -tag debug' terminated with error code 10")
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107143428.export"
