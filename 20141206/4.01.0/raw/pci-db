@@ -26,3 +26,4 @@ Installing ounit.2.0.0.
 Building pci-db.0.3.0:
   make
   make PREFIX=/home/opam/.opam/4.01.0 install
+Installing pci-db.0.3.0.
