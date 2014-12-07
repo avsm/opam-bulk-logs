@@ -4,3 +4,20 @@
 + '[' '' '!=' '' ']'
 Debian depexts:
 ++ opam install inspect -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install inspect
+Debian srcexts:
+The following actions will be performed:
+ - install   inspect.0.2.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[inspect.0.2.1] Downloading https://github.com/krohrer/caml-inspect/archive/v0.2.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building inspect.0.2.1:
+  make
+  make install
+Installing inspect.0.2.1.
