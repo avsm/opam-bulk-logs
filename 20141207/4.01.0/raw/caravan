@@ -179,3 +179,12 @@ Installing async_unix.111.28.00.
 Building async_extra.111.28.00:
   make
   make install
+Installing async_extra.111.28.00.
+Building async.111.25.00:
+  make
+  make install
+Installing async.111.25.00.
+Building caravan.0.0.2:
+  make build
+  make install
+Installing caravan.0.0.2.
