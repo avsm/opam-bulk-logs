@@ -1,0 +1,24 @@
+++ opam install vg -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install vg
+The following actions will be performed:
+ - install   gg.0.9.0                              [required by vg]
+ - install   vg.0.8.1
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[gg.0.9.0] Downloading http://erratique.ch/software/gg/releases/gg-0.9.0.tbz
+[vg.0.8.1] Downloading http://erratique.ch/software/vg/releases/vg-0.8.1.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building gg.0.9.0:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing gg.0.9.0.
+Building vg.0.8.1:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true uutf=false otfm=false jsoo=false
+Installing vg.0.8.1.
