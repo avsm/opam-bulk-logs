@@ -296,3 +296,12 @@ Installing async_unix.111.28.00.
 Building async_extra.111.28.00:
   make
   make install
+Installing async_extra.111.28.00.
+Building async.111.25.00:
+  make
+  make install
+Installing async.111.25.00.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.01.0 --disable-lwt --enable-camlp4 --enable-async --enable-unix --enable-tests
+  make
+  make install
