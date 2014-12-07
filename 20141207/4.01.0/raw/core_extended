@@ -127,3 +127,11 @@ Building core.111.28.01:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing core.111.28.01.
+Building re2.111.08.00:
+  make
+  make install
+Installing re2.111.08.00.
+Building textutils.111.28.00:
+  make
+  make install
