@@ -26,3 +26,4 @@ Installing type_conv.111.13.00.
 Building sexplib.111.13.00:
   make
   make install
+Installing sexplib.111.13.00.
