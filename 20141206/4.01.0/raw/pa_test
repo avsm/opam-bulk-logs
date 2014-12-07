@@ -1,7 +1,7 @@
 ++ opam install pa_test -e ubuntu
 + depext=
-+ echo Ubuntu depexts:
 Ubuntu depexts:
++ echo Ubuntu depexts:
 + '[' '' '!=' '' ']'
 ++ opam install pa_test -e source,linux
 + srcext=
