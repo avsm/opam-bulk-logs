@@ -1,48 +1,68 @@
-++ opam install async_find -e ubuntu
-+ depext=
-Ubuntu depexts:
-+ echo Ubuntu depexts:
-+ '[' '' '!=' '' ']'
-++ opam install async_find -e source,linux
+++ opam install async_extended -e ubuntu
++ depext=zlib1g-dev
++ echo Ubuntu depexts: zlib1g-dev
+Ubuntu depexts: zlib1g-dev
++ '[' zlib1g-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y zlib1g-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+++ opam install async_extended -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
-+ '[' '' '!=' '' ']'
-+ opam install async_find
 Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install async_extended
 The following actions will be performed:
  - install   herelib.109.35.02                     [required by async_unix, async_kernel]
  - install   type_conv.111.13.00                   [required by bin_prot]
- - install   pipebang.110.01.00                    [required by async_extra]
+ - install   pipebang.110.01.00                    [required by core_extended]
  - install   ounit.2.0.0                           [required by pa_ounit]
+ - install   camlzip.1.05                          [required by async_extended]
  - install   variantslib.109.15.03                 [required by core]
- - install   sexplib.111.25.00                     [required by async_find]
- - install   fieldslib.109.20.03                   [required by async_extra]
+ - install   sexplib.111.25.00                     [required by async_extended]
+ - install   fieldslib.109.20.03                   [required by core_extended]
  - install   enumerate.111.08.00                   [required by core]
- - install   comparelib.109.60.00                  [required by async_unix]
- - install   bin_prot.111.03.00                    [required by async_extra]
- - install   pa_ounit.111.28.00                    [required by async_extra]
- - install   pa_test.111.08.00                     [required by async_unix, async_kernel]
+ - install   comparelib.109.60.00                  [required by core_extended]
+ - install   bin_prot.111.03.00                    [required by async_extended]
+ - install   pa_ounit.111.28.00                    [required by core_extended]
+ - install   pa_test.111.08.00                     [required by core_extended]
  - install   typerep.111.17.00                     [required by core_kernel]
  - install   pa_bench.111.28.00                    [required by core]
- - install   custom_printf.111.25.00               [required by core]
+ - install   custom_printf.111.25.00               [required by core_extended]
  - install   core_kernel.111.28.00                 [required by core]
- - install   core.111.28.01                        [required by async_extra]
+ - install   core.111.28.01                        [required by async_extended]
+ - install   textutils.111.28.00                   [required by async_extended]
+ - install   re2.111.08.00                         [required by core_extended]
  - install   async_kernel.111.28.00                [required by async]
+ - install   core_extended.111.28.00               [required by async_extended]
  - install   async_unix.111.28.00                  [required by async]
  - install   async_extra.111.28.00                 [required by async]
- - install   async.111.25.00                       [required by async_find]
- - install   async_find.111.28.00
-=== 22 to install ===
+ - install   async.111.25.00                       [required by async_extended]
+ - install   async_extended.111.28.00
+=== 26 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [async.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/async-111.25.00.tar.gz
+[async_extended.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/async_extended-111.28.00.tar.gz
 [async_extra.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/async_extra-111.28.00.tar.gz
-[async_find.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/async_find-111.28.00.tar.gz
 [async_kernel.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/async_kernel-111.28.00.tar.gz
 [async_unix.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/async_unix-111.28.00.tar.gz
 [bin_prot.111.03.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.03.00/individual/bin_prot-111.03.00.tar.gz
+[camlzip.1.05] Downloading http://forge.ocamlcore.org/frs/download.php/1037/camlzip-1.05.tar.gz
 [comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
 [core.111.28.01] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/core-111.28.01.tar.gz
+[core_extended.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/core_extended-111.28.00.tar.gz
 [core_kernel.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/core_kernel-111.28.00.tar.gz
 [custom_printf.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/custom_printf-111.25.00.tar.gz
 [enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
@@ -53,12 +73,21 @@ The following actions will be performed:
 [pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
 [pa_test.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/pa_test-111.08.00.tar.gz
 [pipebang.110.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/110.01.00/individual/pipebang-110.01.00.tar.gz
+[re2.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/re2-111.08.00.tar.gz
 [sexplib.111.25.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.25.00/individual/sexplib-111.25.00.tar.gz
+[textutils.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/textutils-111.28.00.tar.gz
 [type_conv.111.13.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.13.00/individual/type_conv-111.13.00.tar.gz
 [typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
 [variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/camlzip/camlzip.1.05/files/fix-install.patch to ~/.opam/4.01.0/build/camlzip.1.05/
+Applying fix-install.patch.
+Building camlzip.1.05:
+  make all
+  make allopt
+  make install-findlib
+Installing camlzip.1.05.
 Building herelib.109.35.02:
   make
   make install
@@ -136,10 +165,31 @@ Building async_kernel.111.28.00:
   make
   make install
 Installing async_kernel.111.28.00.
+Building re2.111.08.00:
+  make
+  make install
+Installing re2.111.08.00.
+Building textutils.111.28.00:
+  make
+  make install
+Installing textutils.111.28.00.
 Building async_unix.111.28.00:
   make
   make install
 Installing async_unix.111.28.00.
+Building core_extended.111.28.00:
+  make
+  make install
+Installing core_extended.111.28.00.
 Building async_extra.111.28.00:
   make
   make install
+Installing async_extra.111.28.00.
+Building async.111.25.00:
+  make
+  make install
+Installing async.111.25.00.
+Building async_extended.111.28.00:
+  make
+  make install
+Installing async_extended.111.28.00.
