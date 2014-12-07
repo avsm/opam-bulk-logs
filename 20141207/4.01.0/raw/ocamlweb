@@ -1,9 +1,14 @@
-++ opam install ocamlweb -e centos,centos-7
+++ opam install ocamlweb -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install ocamlweb -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ocamlweb
+Debian srcexts:
 The following actions will be performed:
  - install   ocamlweb.1.38
 === 1 to install ===
