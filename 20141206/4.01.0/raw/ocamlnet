@@ -25,3 +25,4 @@ Building ocamlnet.3.7.7:
   make all
   make opt
   make install
+Installing ocamlnet.3.7.7.
