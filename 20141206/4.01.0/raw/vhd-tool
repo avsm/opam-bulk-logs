@@ -195,3 +195,79 @@ Installing tar-format.0.2.1.
 Building cohttp.0.13.0:
   make PREFIX=/home/opam/.opam/4.01.0
   make PREFIX=/home/opam/.opam/4.01.0 install
+Installing cohttp.0.13.0.
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+Building vhd-format.0.7.1:
+  make
+  make install
+Installing vhd-format.0.7.1.
+Building vhd-tool.0.7.6:
+  ./configure --bindir=/home/opam/.opam/4.01.0/bin
+  make
+  make install
+[ERROR] The compilation of vhd-tool.0.7.6 failed.
+Removing vhd-tool.0.7.6.
+  make uninstall
+
+
+#=== ERROR while installing vhd-tool.0.7.6 ====================================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              make install
+# path                 /home/opam/.opam/4.01.0/build/vhd-tool.0.7.6
+# compiler             4.01.0
+# exit-code            2
+# env-file             /home/opam/.opam/4.01.0/build/vhd-tool.0.7.6/vhd-tool-9994-4345db.env
+# stdout-file          /home/opam/.opam/4.01.0/build/vhd-tool.0.7.6/vhd-tool-9994-4345db.out
+# stderr-file          /home/opam/.opam/4.01.0/build/vhd-tool.0.7.6/vhd-tool-9994-4345db.err
+### stdout ###
+# ...[truncated]
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cmdliner -package cohttp -package cohttp.lwt -package io-page.unix -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package nbd -package nbd.lwt -package re.str -package sha -package sha.sha1 -package tar -package threads -package uri -package vhd-format -package vhd-format.lwt -syntax camlp4o -thread -I src -o src/input.cmx src/input.ml
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cmdliner -package cohttp -package cohttp.lwt -package io-page.unix -package lwt -package lwt.unix -package nbd -package nbd.lwt -package re.str -package sha -package sha.sha1 -package tar -package threads -package uri -package vhd-format -package vhd-format.lwt -thread -I src -o src/streamCommon.cmx src/streamCommon.ml
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cmdliner -package cohttp -package cohttp.lwt -package io-page.unix -package lwt -package lwt.unix -package nbd -package nbd.lwt -package re.str -package sha -package sha.sha1 -package tar -package threads -package uri -package vhd-format -package vhd-format.lwt -thread -I src -o src/impl.cmx src/impl.ml
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cmdliner -package cohttp -package cohttp.lwt -package io-page.unix -package lwt -package lwt.unix -package nbd -package nbd.lwt -package re.str -package sha -package sha.sha1 -package tar -package threads -package uri -package vhd-format -package vhd-format.lwt -thread -I src -o src/main.cmx src/main.ml
+# /home/opam/.opam/4.01.0/bin/ocamlfind ocamlopt -g -linkpkg -package cmdliner -package cohttp -package cohttp.lwt -package io-page.unix -package lwt -package lwt.unix -package nbd -package nbd.lwt -package re.str -package sha -package sha.sha1 -package tar -package uri -package vhd-format -package vhd-format.lwt src/iO.cmx src/channels.cmx src/chunked.cmx src/cohttp_unbuffered_io.cmx src/common.cmx src/input.cmx src/streamCommon.cmx src/impl.cmx src/main.cmx -o src/main.native
+# rm -f configure.cmo configure.cmi
+# ocaml setup.ml -build
+# mkdir -p /home/opam/.opam/4.01.0/bin
+# install -m 755 main.native /home/opam/.opam/4.01.0/bin/vhd-tool || echo "Failed to install vhd-tool"
+# mkdir -p /usr/lib/xapi
+### stderr ###
+# mkdir: cannot create directory '/usr/lib/xapi': Permission denied
+# make: *** [install] Error 1
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   tar-format.0.2.1
+ - install   nbd.1.0.2
+ - install   cohttp.0.13.0
+ - install   sexplib.111.25.00
+ - install   uuidm.0.9.5
+ - install   conduit.0.7.1
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   ipaddr.2.5.0
+ - install   base-no-ppx.base
+ - install   ssl.0.4.7
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   base-bytes.legacy
+ - install   vhd-format.0.7.1
+ - install   stringext.1.1.0
+ - install   obuild.0.1.1
+ - install   optcomp.1.6
+ - install   sha.1.9
+ - install   type_conv.111.13.00
+ - install   re.1.2.2
+ - install   uri.1.7.2
+ - install   fieldslib.109.20.03
+ - install   ocplib-endian.0.7
+ - install   mirage-types.2.0.1
+The following failed
+ - install   vhd-tool.0.7.6
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107104624.export"
