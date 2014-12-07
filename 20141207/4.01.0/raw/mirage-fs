@@ -9,3 +9,14 @@ Debian srcexts:
 + echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install mirage-fs
+The following actions will be performed:
+ - install   mirage-fs.0.3.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mirage-fs.0.3.0] Downloading https://github.com/mirage/mirage-fs/tarball/mirage-fs-0.3.0
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building mirage-fs.0.3.0:
+  make all
+Installing mirage-fs.0.3.0.

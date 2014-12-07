@@ -77,3 +77,11 @@ Building io-page.1.2.0:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing io-page.1.2.0.
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+Building mirage-entropy-xen.0.1.6:
+  make xen-build
+  make xen-install
+Installing mirage-entropy-xen.0.1.6.
