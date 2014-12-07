@@ -1,14 +1,14 @@
 ++ opam install pcf-format -e ubuntu
 + depext=
+Ubuntu depexts:
 + echo Ubuntu depexts:
 + '[' '' '!=' '' ']'
-Ubuntu depexts:
 ++ opam install pcf-format -e source,linux
 + srcext=
 + echo Ubuntu srcexts:
-Ubuntu srcexts:
 + '[' '' '!=' '' ']'
 + opam install pcf-format
+Ubuntu srcexts:
 The following actions will be performed:
  - install   optcomp.1.6                           [required by ocplib-endian]
  - install   base-bytes.legacy                     [required by ocplib-endian]
@@ -29,17 +29,3 @@ Building optcomp.1.6:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
-Installing optcomp.1.6.
-Building ocplib-endian.0.7:
-  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.01.0
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing ocplib-endian.0.7.
-Building cstruct.0.7.1:
-  make
-  make install
-Installing cstruct.0.7.1.
-Building pcf-format.0.0.1:
-  make
-  make install
-Installing pcf-format.0.0.1.
