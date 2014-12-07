@@ -196,3 +196,4 @@ Building biocaml.0.3.1:
   omake configure PREFIX=/home/opam/.opam/4.01.0 BUILD_TESTS=false BUILD_APP=true
   omake -j2
   omake install
+Installing biocaml.0.3.1.
