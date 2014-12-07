@@ -1,0 +1,173 @@
+++ opam install receive-mail -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install receive-mail
+The following actions will be performed:
+ - install   re.1.2.2                              [required by receive-mail]
+ - install   ocamlify.0.0.1                        [required by oasis]
+ - install   lwt.2.4.5                             [required by receive-mail]
+ - install   bolt.1.4                              [required by receive-mail]
+ - install   ocamlnet.3.7.7                        [required by receive-mail]
+ - install   res.4.0.6                             [required by core]
+ - install   ounit.2.0.0                           [required by pa_ounit]
+ - install   herelib.109.35.00                     [required by core]
+ - install   pipebang.109.28.00                    [required by core]
+ - install   ocamlmod.0.0.7                        [required by oasis]
+ - install   type_conv.109.47.00                   [required by ocaml-data-notation, comparelib, bin_prot, custom_printf]
+ - install   variantslib.109.15.00                 [required by core]
+ - install   sexplib.109.47.00                     [required by core]
+ - install   pa_ounit.109.36.00                    [required by core]
+ - install   ocaml-data-notation.0.0.11            [required by oasis]
+ - install   fieldslib.109.20.00                   [required by core]
+ - install   comparelib.109.27.00                  [required by core]
+ - install   bin_prot.109.47.00                    [required by core]
+ - install   custom_printf.109.27.00               [required by core]
+ - install   oasis.0.4.5                           [required by receive-mail]
+ - install   core_kernel.109.47.00                 [required by core]
+ - install   core.109.47.00                        [required by receive-mail]
+ - install   receive-mail.0.1.2
+=== 23 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bin_prot.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/bin_prot-109.47.00.tar.gz
+[bolt.1.4] Downloading https://forge.ocamlcore.org/frs/download.php/1043/bolt-1.4.tar.gz
+[comparelib.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/comparelib-109.27.00.tar.gz
+[core.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/core-109.47.00.tar.gz
+[core_kernel.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/core_kernel-109.47.00.tar.gz
+[custom_printf.109.27.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.27.00/individual/custom_printf-109.27.00.tar.gz
+[fieldslib.109.20.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.00.tar.gz
+[herelib.109.35.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.00.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[oasis.0.4.5] Downloading https://forge.ocamlcore.org/frs/download.php/1475/oasis-0.4.5.tar.gz
+[ocaml-data-notation.0.0.11] Downloading https://forge.ocamlcore.org/frs/download.php/1310/ocaml-data-notation-0.0.11.tar.gz
+[ocamlify.0.0.1] Downloading http://forge.ocamlcore.org/frs/download.php/379/ocamlify-0.0.1.tar.gz
+[ocamlmod.0.0.7] Downloading https://forge.ocamlcore.org/frs/download.php/1350/ocamlmod-0.0.7.tar.gz
+[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pa_ounit.109.36.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.36.00/individual/pa_ounit-109.36.00.tar.gz
+[pipebang.109.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.28.00/individual/pipebang-109.28.00.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[receive-mail.0.1.2] Downloading https://github.com/dominicjprice/receive-mail/archive/v0.1.2.tar.gz
+[res.4.0.6] Downloading https://github.com/mmottl/res/releases/download/v4.0.6/res-4.0.6.tar.gz
+[sexplib.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/sexplib-109.47.00.tar.gz
+[type_conv.109.47.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.47.00/individual/type_conv-109.47.00.tar.gz
+[variantslib.109.15.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/bolt/bolt.1.4/files/opam.patch to ~/.opam/4.01.0/build/bolt.1.4/
+Copying ~/.opam/repo/default/packages/bolt/bolt.1.4/files/opam.bolt.META.patch to ~/.opam/4.01.0/build/bolt.1.4/
+Applying opam.patch.
+Applying opam.bolt.META.patch.
+Building bolt.1.4:
+  ./configure -ocaml-prefix /home/opam/.opam/4.01.0 -ocamlfind /home/opam/.opam/4.01.0/bin/ocamlfind
+  make all
+  make install
+Installing bolt.1.4.
+Building herelib.109.35.00:
+  make
+  make install
+Installing herelib.109.35.00.
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+Installing lwt.2.4.5.
+Copying ~/.opam/repo/default/packages/ocamlify/ocamlify.0.0.1/files/ocamlify.install to ~/.opam/4.01.0/build/ocamlify.0.0.1/
+Building ocamlify.0.0.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlify.0.0.1.
+Copying ~/.opam/repo/default/packages/ocamlmod/ocamlmod.0.0.7/files/ocamlmod.install to ~/.opam/4.01.0/build/ocamlmod.0.0.7/
+Building ocamlmod.0.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlmod.0.0.7.
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/ocamlnet.install to ~/.opam/4.01.0/build/ocamlnet.3.7.7/
+Applying robust-host.patch.
+Building ocamlnet.3.7.7:
+  ./configure -bindir /home/opam/.opam/4.01.0/bin -disable-pcre -disable-gtk2 -disable-ssl -disable-zip -disable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Installing ocamlnet.3.7.7.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building pipebang.109.28.00:
+  make
+  make install
+Installing pipebang.109.28.00.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Building res.4.0.6:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing res.4.0.6.
+Building type_conv.109.47.00:
+  make
+  make install
+Installing type_conv.109.47.00.
+Building bin_prot.109.47.00:
+  make
+  make install
+Installing bin_prot.109.47.00.
+Building comparelib.109.27.00:
+  make
+  make install
+Installing comparelib.109.27.00.
+Building fieldslib.109.20.00:
+  make
+  make install
+Installing fieldslib.109.20.00.
+Building ocaml-data-notation.0.0.11:
+  make
+  make install
+Installing ocaml-data-notation.0.0.11.
+Building pa_ounit.109.36.00:
+  make
+  make install
+Installing pa_ounit.109.36.00.
+Building sexplib.109.47.00:
+  make
+  make install
+Installing sexplib.109.47.00.
+Building variantslib.109.15.00:
+  make
+  make install
+Installing variantslib.109.15.00.
+Building core_kernel.109.47.00:
+  make
+  make install
+Installing core_kernel.109.47.00.
+Building custom_printf.109.27.00:
+  make
+  make install
+Installing custom_printf.109.27.00.
+Copying ~/.opam/repo/default/packages/oasis/oasis.0.4.5/files/oasis.install to ~/.opam/4.01.0/build/oasis.0.4.5/
+Building oasis.0.4.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing oasis.0.4.5.
+Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/corebuild over ~/.opam/4.01.0/build/core.109.47.00/
+Copying ~/.opam/repo/default/packages/core/core.109.47.00/files/core.install to ~/.opam/4.01.0/build/core.109.47.00/
+Building core.109.47.00:
+  make
+  make install
+Installing core.109.47.00.
+Building receive-mail.0.1.2:
+  oasis setup
+  ./configure --prefix /home/opam/.opam/4.01.0
+  make build
+  make install
+Installing receive-mail.0.1.2.
