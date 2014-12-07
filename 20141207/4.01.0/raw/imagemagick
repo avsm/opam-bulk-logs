@@ -394,3 +394,23 @@ Setting up librsvg2-dev (2.36.1-2) ...
 Setting up libxt-dev:amd64 (1:1.1.3-1+deb7u1) ...
 Setting up libmagickcore-dev (8:6.7.7.10-5+deb7u3) ...
 Setting up libpaper-utils (1.1.24+nmu2) ...
+Setting up libtool (2.4.2-1.1) ...
+Processing triggers for libgdk-pixbuf2.0-0:amd64 ...
+++ opam install imagemagick -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install imagemagick
+The following actions will be performed:
+ - install   imagemagick.0.34
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[imagemagick.0.34] Downloading http://www.linux-nantes.org/~fmonnier/OCaml/ImageMagick/downloads/OCaml-ImageMagick-0.34.tgz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building imagemagick.0.34:
+  make
+  make find_install
+Installing imagemagick.0.34.
