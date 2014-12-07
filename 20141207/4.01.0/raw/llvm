@@ -25,3 +25,35 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [llvm.3.5] Downloading http://llvm.org/releases/3.5.0/llvm-3.5.0.src.tar.xz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/llvm/llvm.3.5/files/makefile+system.patch to ~/.opam/4.01.0/build/llvm.3.5/
+Copying ~/.opam/repo/default/packages/llvm/llvm.3.5/files/makefile+build.patch to ~/.opam/4.01.0/build/llvm.3.5/
+Copying ~/.opam/repo/default/packages/llvm/llvm.3.5/files/compile.sh to ~/.opam/4.01.0/build/llvm.3.5/
+Applying makefile+build.patch.
+Applying makefile+system.patch.
+Building llvm.3.5:
+  ./compile.sh install 3.5 make /home/opam/.opam/4.01.0 /home/opam/.opam/4.01.0/lib
+[ERROR] The compilation of llvm.3.5 failed.
+Removing llvm.3.5.
+  ./compile.sh uninstall 3.5 make /home/opam/.opam/4.01.0 /home/opam/.opam/4.01.0/lib
+
+
+#=== ERROR while installing llvm.3.5 ==========================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./compile.sh install 3.5 make /home/opam/.opam/4.01.0 /home/opam/.opam/4.01.0/lib
+# path                 /home/opam/.opam/4.01.0/build/llvm.3.5
+# compiler             4.01.0
+# exit-code            1
+# env-file             /home/opam/.opam/4.01.0/build/llvm.3.5/llvm-165-2c871f.env
+# stdout-file          /home/opam/.opam/4.01.0/build/llvm.3.5/llvm-165-2c871f.out
+# stderr-file          /home/opam/.opam/4.01.0/build/llvm.3.5/llvm-165-2c871f.err
+### stdout ###
+# Error: LLVM is not installed.
+### stderr ###
+# stat: cannot stat `/usr/local/Cellar/llvm/3.5*/bin/llvm-config': No such file or directory
+# ./compile.sh: 1: ./compile.sh: llvm-config-3.5: not found
+# ./compile.sh: 1: ./compile.sh: llvm-config-mp-3.5: not found
+# ./compile.sh: 1: ./compile.sh: llvm-config: not found
+
