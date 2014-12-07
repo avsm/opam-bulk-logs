@@ -1,0 +1,14 @@
+++ opam install postgres -e ubuntu
+[ERROR] No package named postgres found.
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install postgres -e source,linux
+[ERROR] No package named postgres found.
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install postgres
+[ERROR] No package named postgres found.
