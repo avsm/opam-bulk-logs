@@ -102,3 +102,122 @@ Building ssl.0.4.7:
   ./configure --prefix /home/opam/.opam/4.01.0
   make
   make install
+Installing ssl.0.4.7.
+Building stringext.1.1.0:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing stringext.1.1.0.
+Building syslog.1.4:
+  make reallyall
+  make install
+Installing syslog.1.4.
+Building type_conv.111.13.00:
+  make
+  make install
+Installing type_conv.111.13.00.
+Copying ~/.opam/repo/default/packages/uuidm/uuidm.0.9.5/files/uuidm.install to ~/.opam/4.01.0/build/uuidm.0.9.5/
+Building uuidm.0.9.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uuidm.0.9.5.
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.01.0 --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building sexplib.111.25.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.111.25.00.
+Building xapi-stdext.0.12.0:
+  make
+  make install BINDIR=/home/opam/.opam/4.01.0/bin
+Installing xapi-stdext.0.12.0.
+Building rpc.1.5.1:
+  make
+  make install
+Installing rpc.1.5.1.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.01.0
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Building xapi-inventory.0.9.1:
+  ./configure --default_inventory=/home/opam/.opam/4.01.0/etc
+  make
+  make install
+Installing xapi-inventory.0.9.1.
+Building cohttp.0.10.1:
+  make PREFIX=/home/opam/.opam/4.01.0
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing cohttp.0.10.1.
+Building xapi-rrd.0.9.1:
+  make
+  make PREFIX=/home/opam/.opam/4.01.0 install
+Installing xapi-rrd.0.9.1.
+Building message-switch.0.10.4:
+  ./configure --bindir /home/opam/.opam/4.01.0/bin
+  make
+  make install
+[ERROR] The compilation of message-switch.0.10.4 failed.
+Removing message-switch.0.10.4.
+  ocamlfind remove message_switch
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.111.25.00
+ - install   uuidm.0.9.5
+ - install   syslog.1.4
+ - install   xapi-inventory.0.9.1
+ - install   cmdliner.0.9.6
+ - install   base-no-ppx.base
+ - install   xmlm.1.2.0
+ - install   ssl.0.4.7
+ - install   fd-send-recv.1.0.1
+ - install   rpc.1.5.1
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   cohttp.0.10.1
+ - install   xapi-rrd.0.9.1
+ - install   stringext.1.1.0
+ - install   obuild.0.1.1
+ - install   type_conv.111.13.00
+ - install   re.1.2.2
+ - install   xapi-stdext.0.12.0
+ - install   uri.1.7.2
+ - install   fieldslib.109.20.03
+The following failed
+ - install   message-switch.0.10.4
+Due to the errors, the following have been cancelled
+ - install   xapi-xenops-cli.0.9.1
+ - install   xapi-idl.0.9.19
+
+#=== ERROR while installing message-switch.0.10.4 =============================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure --bindir /home/opam/.opam/4.01.0/bin
+# path                 /home/opam/.opam/4.01.0/build/message-switch.0.10.4
+# compiler             4.01.0
+# exit-code            127
+# env-file             /home/opam/.opam/4.01.0/build/message-switch.0.10.4/message-switch-8037-062a54.env
+# stdout-file          /home/opam/.opam/4.01.0/build/message-switch.0.10.4/message-switch-8037-062a54.out
+# stderr-file          /home/opam/.opam/4.01.0/build/message-switch.0.10.4/message-switch-8037-062a54.err
+### stderr ###
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.01.0/lib/cmdliner/cmdliner.cmxa
+# ./configure: line 12: /tmp/configure.nk4h1/configure: No such file or directory
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.01.0/backup/state-20141107224149.export"
