@@ -1,9 +1,14 @@
-++ opam install ocapic -e centos,centos-7
+++ opam install ocapic -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install ocapic -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ocapic
-CentOS 7 depexts:
 The following actions will be performed:
  - install   ocamlclean.2.0                        [required by ocapic]
  - install   ocapic.3.0
@@ -25,8 +30,8 @@ Building ocapic.3.0:
   ./configure -prefix /home/opam/.opam/4.02.1
   make all
   make install
-Removing ocapic.3.0.
 [ERROR] The compilation of ocapic.3.0 failed.
+Removing ocapic.3.0.
   ./configure -prefix /home/opam/.opam/4.02.1
   make uninstall
 
@@ -44,9 +49,9 @@ The following failed
 # path                 /home/opam/.opam/4.02.1/build/ocapic.3.0
 # compiler             4.02.1
 # exit-code            2
-# env-file             /home/opam/.opam/4.02.1/build/ocapic.3.0/ocapic-190-1872ec.env
-# stdout-file          /home/opam/.opam/4.02.1/build/ocapic.3.0/ocapic-190-1872ec.out
-# stderr-file          /home/opam/.opam/4.02.1/build/ocapic.3.0/ocapic-190-1872ec.err
+# env-file             /home/opam/.opam/4.02.1/build/ocapic.3.0/ocapic-375-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.1/build/ocapic.3.0/ocapic-375-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.1/build/ocapic.3.0/ocapic-375-ad8886.err
 ### stdout ###
 # ...[truncated]
 # File "index.ml", line 22, characters 18-31:
@@ -64,4 +69,4 @@ The following failed
 # make: *** [all] Error 2
 
 
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108073509.export"
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108130127.export"
