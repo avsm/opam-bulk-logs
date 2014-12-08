@@ -1,139 +1,78 @@
-++ opam install bt -e centos,centos-7
-+ depext='gmp gmp-devel openssl-devel'
-+ echo CentOS 7 depexts: gmp gmp-devel openssl-devel
-+ '[' 'gmp gmp-devel openssl-devel' '!=' '' ']'
-+ sudo yum install -y gmp gmp-devel openssl-devel
-CentOS 7 depexts: gmp gmp-devel openssl-devel
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirror.sov.uk.goscomb.net
- * extras: mirror.sov.uk.goscomb.net
- * updates: mirrors.melbourne.co.uk
-Package 1:gmp-5.1.1-5.el7.x86_64 already installed and latest version
-Resolving Dependencies
---> Running transaction check
----> Package gmp-devel.x86_64 1:5.1.1-5.el7 will be installed
----> Package openssl-devel.x86_64 1:1.0.1e-34.el7_0.6 will be installed
---> Processing Dependency: zlib-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
---> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
---> Running transaction check
----> Package krb5-devel.x86_64 0:1.11.3-49.el7 will be installed
---> Processing Dependency: libverto-devel for package: krb5-devel-1.11.3-49.el7.x86_64
---> Processing Dependency: libselinux-devel for package: krb5-devel-1.11.3-49.el7.x86_64
---> Processing Dependency: libcom_err-devel for package: krb5-devel-1.11.3-49.el7.x86_64
---> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.11.3-49.el7.x86_64
----> Package zlib-devel.x86_64 0:1.2.7-13.el7 will be installed
---> Running transaction check
----> Package keyutils-libs-devel.x86_64 0:1.5.8-3.el7 will be installed
----> Package libcom_err-devel.x86_64 0:1.42.9-4.el7 will be installed
----> Package libselinux-devel.x86_64 0:2.2.2-6.el7 will be installed
---> Processing Dependency: libsepol-devel >= 2.1.9-1 for package: libselinux-devel-2.2.2-6.el7.x86_64
---> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.2.2-6.el7.x86_64
---> Processing Dependency: pkgconfig(libpcre) for package: libselinux-devel-2.2.2-6.el7.x86_64
----> Package libverto-devel.x86_64 0:0.2.5-4.el7 will be installed
---> Running transaction check
----> Package libsepol-devel.x86_64 0:2.1.9-3.el7 will be installed
----> Package pcre-devel.x86_64 0:8.32-12.el7 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package                 Arch       Version                   Repository   Size
-================================================================================
-Installing:
- gmp-devel               x86_64     1:5.1.1-5.el7             base        175 k
- openssl-devel           x86_64     1:1.0.1e-34.el7_0.6       updates     1.2 M
-Installing for dependencies:
- keyutils-libs-devel     x86_64     1.5.8-3.el7               base         37 k
- krb5-devel              x86_64     1.11.3-49.el7             base        611 k
- libcom_err-devel        x86_64     1.42.9-4.el7              base         30 k
- libselinux-devel        x86_64     2.2.2-6.el7               base        174 k
- libsepol-devel          x86_64     2.1.9-3.el7               base         71 k
- libverto-devel          x86_64     0.2.5-4.el7               base         12 k
- pcre-devel              x86_64     8.32-12.el7               base        477 k
- zlib-devel              x86_64     1.2.7-13.el7              base         49 k
-
-Transaction Summary
-================================================================================
-Install  2 Packages (+8 Dependent packages)
-
-Total download size: 2.8 M
-Installed size: 6.0 M
-Downloading packages:
---------------------------------------------------------------------------------
-Total                                              3.1 MB/s | 2.8 MB  00:00     
-Running transaction check
-Running transaction test
-Transaction test succeeded
-Running transaction
-  Installing : keyutils-libs-devel-1.5.8-3.el7.x86_64                      1/10 
-  Installing : pcre-devel-8.32-12.el7.x86_64                               2/10 
-  Installing : zlib-devel-1.2.7-13.el7.x86_64                              3/10 
-  Installing : libsepol-devel-2.1.9-3.el7.x86_64                           4/10 
-  Installing : libselinux-devel-2.2.2-6.el7.x86_64                         5/10 
-  Installing : libverto-devel-0.2.5-4.el7.x86_64                           6/10 
-  Installing : libcom_err-devel-1.42.9-4.el7.x86_64                        7/10 
-  Installing : krb5-devel-1.11.3-49.el7.x86_64                             8/10 
-  Installing : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                    9/10 
-  Installing : 1:gmp-devel-5.1.1-5.el7.x86_64                             10/10 
-  Verifying  : libcom_err-devel-1.42.9-4.el7.x86_64                        1/10 
-  Verifying  : libselinux-devel-2.2.2-6.el7.x86_64                         2/10 
-  Verifying  : libverto-devel-0.2.5-4.el7.x86_64                           3/10 
-  Verifying  : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                    4/10 
-  Verifying  : libsepol-devel-2.1.9-3.el7.x86_64                           5/10 
-  Verifying  : 1:gmp-devel-5.1.1-5.el7.x86_64                              6/10 
-  Verifying  : krb5-devel-1.11.3-49.el7.x86_64                             7/10 
-  Verifying  : zlib-devel-1.2.7-13.el7.x86_64                              8/10 
-  Verifying  : pcre-devel-8.32-12.el7.x86_64                               9/10 
-  Verifying  : keyutils-libs-devel-1.5.8-3.el7.x86_64                     10/10 
-
-Installed:
-  gmp-devel.x86_64 1:5.1.1-5.el7    openssl-devel.x86_64 1:1.0.1e-34.el7_0.6   
-
-Dependency Installed:
-  keyutils-libs-devel.x86_64 0:1.5.8-3.el7                                      
-  krb5-devel.x86_64 0:1.11.3-49.el7                                             
-  libcom_err-devel.x86_64 0:1.42.9-4.el7                                        
-  libselinux-devel.x86_64 0:2.2.2-6.el7                                         
-  libsepol-devel.x86_64 0:2.1.9-3.el7                                           
-  libverto-devel.x86_64 0:0.2.5-4.el7                                           
-  pcre-devel.x86_64 0:8.32-12.el7                                               
-  zlib-devel.x86_64 0:1.2.7-13.el7                                              
-
-Complete!
+++ opam install bt -e debian
++ depext='libgmp-dev libssl-dev time zlib1g-dev'
++ echo Debian depexts: libgmp-dev libssl-dev time zlib1g-dev
+Debian depexts: libgmp-dev libssl-dev time zlib1g-dev
++ '[' 'libgmp-dev libssl-dev time zlib1g-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libgmp-dev libssl-dev time zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libgmpxx4ldbl:amd64 (from .../libgmpxx4ldbl_2%3a5.0.5+dfsg-2_amd64.deb) ...
+Selecting previously unselected package time.
+Unpacking time (from .../archives/time_1.7-24_amd64.deb) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Unpacking libgmp-dev:amd64 (from .../libgmp-dev_2%3a5.0.5+dfsg-2_amd64.deb) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Selecting previously unselected package libssl-dev.
+Unpacking libssl-dev (from .../libssl-dev_1.0.1e-2+deb7u13_amd64.deb) ...
+Selecting previously unselected package libssl-doc.
+Unpacking libssl-doc (from .../libssl-doc_1.0.1e-2+deb7u13_all.deb) ...
+Setting up libgmpxx4ldbl:amd64 (2:5.0.5+dfsg-2) ...
+Setting up time (1.7-24) ...
+Setting up libgmp-dev:amd64 (2:5.0.5+dfsg-2) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
+Setting up libssl-dev (1.0.1e-2+deb7u13) ...
+Setting up libssl-doc (1.0.1e-2+deb7u13) ...
+++ opam install bt -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install bt
+Debian srcexts:
 The following actions will be performed:
+ - install   base-bytes.base                       [required by ocplib-endian]
  - install   qcheck.0.3                            [required by bt]
  - install   conf-gmp.1                            [required by zarith]
  - install   re.1.2.2                              [required by cohttp]
+ - install   optcomp.1.6                           [required by ocplib-endian]
  - install   stringext.1.1.0                       [required by cohttp]
+ - install   ppx_tools.0.99.2                      [required by lwt]
  - install   cryptokit.1.9                         [required by bt]
  - install   ounit.2.0.0                           [required by cohttp]
  - install   ssl.0.4.7                             [required by bt]
  - install   cmdliner.0.9.6                        [required by bt]
- - install   type_conv.112.01.00                   [required by uri, fieldslib]
+ - install   type_conv.112.01.00                   [required by fieldslib]
  - install   bitstring.2.0.4                       [required by bt]
  - install   zarith.1.3                            [required by bt]
- - install   lwt.2.4.5                             [required by bt]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   lwt.2.4.6                             [required by bt]
  - install   sexplib.112.01.00                     [required by cohttp]
  - install   fieldslib.109.20.03                   [required by cohttp]
  - install   uri.1.7.2                             [required by bt]
- - install   conduit.0.5.1                         [required by cohttp]
- - install   cohttp.0.11.2                         [required by bt]
+ - install   ipaddr.2.5.0                          [required by conduit]
+ - install   cstruct.1.5.0                         [required by conduit]
+ - install   conduit.0.7.1                         [required by cohttp]
+ - install   cohttp.0.13.0                         [required by bt]
  - install   bt.0.2
-=== 18 to install ===
+=== 24 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [bitstring.2.0.4] Downloading http://bitstring.googlecode.com/files/ocaml-bitstring-2.0.4.tar.gz
 [cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
 [bt.0.2] Downloading https://github.com/nojb/ocaml-bt/archive/v0.2.tar.gz
-[cohttp.0.11.2] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.11.2.tar.gz
-[conduit.0.5.1] Downloading https://github.com/mirage/ocaml-conduit/archive/v0.5.1.tar.gz
+[cohttp.0.13.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.13.0.tar.gz
+[conduit.0.7.1] Downloading https://github.com/mirage/ocaml-conduit/archive/v0.7.1.tar.gz
 [cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
 [fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
-[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
 [qcheck.0.3] Downloading https://github.com/c-cube/qcheck/archive/0.3.tar.gz
 [re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
 [sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
@@ -144,13 +83,12 @@ The following actions will be performed:
 [zarith.1.3] Downloading https://forge.ocamlcore.org/frs/download.php/1471/zarith-1.3.tgz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
 Building bitstring.2.0.4:
   ./configure --prefix /home/opam/.opam/4.02.1
   make srcdir=./
   make install
-[ERROR] The compilation of bitstring.2.0.4 failed.
-Removing bitstring.2.0.4.
-  ocamlfind remove bitstring
+Installing bitstring.2.0.4.
 Building cmdliner.0.9.6:
   ocaml pkg/git.ml
   ocaml pkg/build.ml native=false native-dynlink=false
@@ -163,10 +101,19 @@ Building cryptokit.1.9:
   make
   make install
 Installing cryptokit.1.9.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
 Building ounit.2.0.0:
   make build
   make install
 Installing ounit.2.0.0.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
 Building qcheck.0.3:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   make all install_file
@@ -187,92 +134,3 @@ Building stringext.1.1.0:
   ocaml setup.ml -configure
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing stringext.1.1.0.
-Building type_conv.112.01.00:
-  make
-  make install
-Installing type_conv.112.01.00.
-Building fieldslib.109.20.03:
-  make
-  make install
-Installing fieldslib.109.20.03.
-Building lwt.2.4.5:
-  ./configure --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
-  make build
-  make install
-Installing lwt.2.4.5.
-Building sexplib.112.01.00:
-  ./configure --enable-syntax
-  make
-  make install
-Installing sexplib.112.01.00.
-Building zarith.1.3:
-  ./configure
-  make
-  make install
-Installing zarith.1.3.
-Building conduit.0.5.1:
-  make
-  make install
-Installing conduit.0.5.1.
-Building uri.1.7.2:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing uri.1.7.2.
-Building cohttp.0.11.2:
-  make PREFIX=/home/opam/.opam/4.02.1
-  make PREFIX=/home/opam/.opam/4.02.1 install
-Installing cohttp.0.11.2.
-
-#=== ERROR while installing bitstring.2.0.4 ===================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --prefix /home/opam/.opam/4.02.1
-# path                 /home/opam/.opam/4.02.1/build/bitstring.2.0.4
-# compiler             4.02.1
-# exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/bitstring.2.0.4/bitstring-239-e4db2f.env
-# stdout-file          /home/opam/.opam/4.02.1/build/bitstring.2.0.4/bitstring-239-e4db2f.out
-# stderr-file          /home/opam/.opam/4.02.1/build/bitstring.2.0.4/bitstring-239-e4db2f.err
-### stdout ###
-# ...[truncated]
-# checking for ocamldep... ocamldep
-# checking for ocamlmktop... ocamlmktop
-# checking for ocamlmklib... ocamlmklib
-# checking for ocamldoc... ocamldoc
-# checking for ocamlbuild... ocamlbuild
-# checking for ocamlfind... ocamlfind
-# checking for camlp4of.opt... camlp4of.opt
-# checking for OCaml findlib package extlib... not found
-# checking for OCaml findlib package cil... not found
-# checking for time... no
-### stderr ###
-# configure: error: 'time' command not found
-
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   sexplib.112.01.00
- - install   type_conv.112.01.00
- - install   cohttp.0.11.2
- - install   cmdliner.0.9.6
- - install   ssl.0.4.7
- - install   conduit.0.5.1
- - install   ounit.2.0.0
- - install   cryptokit.1.9
- - install   stringext.1.1.0
- - install   lwt.2.4.5
- - install   re.1.2.2
- - install   conf-gmp.1
- - install   qcheck.0.3
- - install   uri.1.7.2
- - install   fieldslib.109.20.03
- - install   zarith.1.3
-The following failed
- - install   bitstring.2.0.4
-Due to the errors, the following have been cancelled
- - install   bt.0.2
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108052525.export"
