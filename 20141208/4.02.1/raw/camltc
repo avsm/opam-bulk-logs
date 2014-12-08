@@ -35,3 +35,7 @@ Building lwt.2.4.6:
   ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
   make build
   make install
+Installing lwt.2.4.6.
+Building camltc.0.9.2:
+  make -C src
+  make -C src install
