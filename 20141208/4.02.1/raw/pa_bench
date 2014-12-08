@@ -1,9 +1,14 @@
-++ opam install pa_bench -e centos,centos-7
+++ opam install pa_bench -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install pa_bench -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install pa_bench
+Debian srcexts:
 The following actions will be performed:
  - install   ounit.2.0.0                           [required by pa_ounit]
  - install   type_conv.112.01.00                   [required by pa_bench]
