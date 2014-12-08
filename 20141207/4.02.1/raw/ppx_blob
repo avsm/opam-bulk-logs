@@ -1,0 +1,23 @@
+++ opam install ppx_blob -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install ppx_blob -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ppx_blob
+The following actions will be performed:
+ - install   ppx_blob.0.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ppx_blob.0.1] Downloading https://github.com/johnwhitington/ppx_blob/archive/v0.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ppx_blob.0.1:
+  make
+  make install
+Installing ppx_blob.0.1.
