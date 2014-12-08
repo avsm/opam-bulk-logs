@@ -1,0 +1,24 @@
+++ opam install cry -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install cry -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install cry
+The following actions will be performed:
+ - install   cry.0.2.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cry.0.2.2] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-cry/0.2.2/ocaml-cry-0.2.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cry.0.2.2:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing cry.0.2.2.
