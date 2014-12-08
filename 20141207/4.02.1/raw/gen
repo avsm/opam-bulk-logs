@@ -1,0 +1,24 @@
+++ opam install gen -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install gen -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install gen
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   gen.0.2.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[gen.0.2.1] Downloading https://github.com/c-cube/gen/archive/0.2.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building gen.0.2.1:
+  ./configure --disable-docs
+  make all
+  make install
+Installing gen.0.2.1.
