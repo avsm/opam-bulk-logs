@@ -1,8 +1,13 @@
-++ opam install oqamldebug -e centos,centos-7
+++ opam install oqamldebug -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+++ opam install oqamldebug -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install oqamldebug
 The following actions will be performed:
  - install   oqamldebug.0.9.4
