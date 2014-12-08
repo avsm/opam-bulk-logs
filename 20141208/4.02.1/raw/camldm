@@ -9,3 +9,53 @@ debconf: delaying package configuration, since apt-utils is not installed
 Selecting previously unselected package libudev0:amd64.
 (Reading database ... 17996 files and directories currently installed.)
 Unpacking libudev0:amd64 (from .../libudev0_175-7.2_amd64.deb) ...
+Selecting previously unselected package dmsetup.
+Unpacking dmsetup (from .../dmsetup_2%3a1.02.74-8_amd64.deb) ...
+Selecting previously unselected package libdevmapper1.02.1:amd64.
+Unpacking libdevmapper1.02.1:amd64 (from .../libdevmapper1.02.1_2%3a1.02.74-8_amd64.deb) ...
+Selecting previously unselected package libdevmapper-event1.02.1:amd64.
+Unpacking libdevmapper-event1.02.1:amd64 (from .../libdevmapper-event1.02.1_2%3a1.02.74-8_amd64.deb) ...
+Selecting previously unselected package libsepol1-dev.
+Unpacking libsepol1-dev (from .../libsepol1-dev_2.1.4-3_amd64.deb) ...
+Selecting previously unselected package libselinux1-dev.
+Unpacking libselinux1-dev (from .../libselinux1-dev_2.1.9-5_amd64.deb) ...
+Selecting previously unselected package libdevmapper-dev.
+Unpacking libdevmapper-dev (from .../libdevmapper-dev_2%3a1.02.74-8_amd64.deb) ...
+Setting up libudev0:amd64 (175-7.2) ...
+Setting up libsepol1-dev (2.1.4-3) ...
+Setting up libselinux1-dev (2.1.9-5) ...
+Setting up libdevmapper1.02.1:amd64 (2:1.02.74-8) ...
+Setting up libdevmapper-event1.02.1:amd64 (2:1.02.74-8) ...
+Setting up libdevmapper-dev (2:1.02.74-8) ...
+Setting up dmsetup (2:1.02.74-8) ...
+++ opam install camldm -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install camldm
+The following actions will be performed:
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   xmlm.1.2.0                            [required by rpc]
+ - install   type_conv.112.01.00                   [required by rpc]
+ - install   lwt.2.4.6                             [required by rpc]
+ - install   rpc.1.5.1                             [required by camldm]
+ - install   camldm.0.1.0
+=== 6 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+[camldm.0.1.0] Downloading https://github.com/jonludlam/camldm/archive/0.1.0.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[rpc.1.5.1] Downloading https://github.com/mirage/ocaml-rpc/archive/1.5.1.tar.gz
+[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building type_conv.112.01.00:
+  make
+  make install
