@@ -1,0 +1,145 @@
+++ opam install mirage-console-unix -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install mirage-console-unix
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by shared-memory-ring]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   lwt.2.4.5                             [required by mirage-unix, mirage-types]
+ - install   type_conv.112.01.00                   [required by sexplib]
+ - install   ocplib-endian.0.4                     [required by cstruct]
+ - install   sexplib.112.01.00                     [required by mirage-types]
+ - install   cstruct.1.5.0                         [required by mirage-unix, mirage-types]
+ - install   shared-memory-ring.1.1.0              [required by mirage-unix]
+ - install   io-page.1.2.0                         [required by mirage-unix, mirage-types]
+ - install   mirage-types.2.0.1                    [required by mirage-console-unix]
+ - install   mirage-clock-unix.1.0.0               [required by mirage-unix]
+ - install   mirage-unix.2.0.1                     [required by mirage-console-unix]
+ - install   mirage-console-unix.1.0.0
+=== 13 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[io-page.1.2.0] Downloading https://github.com/mirage/io-page/archive/v1.2.0.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[mirage-clock-unix.1.0.0] Downloading https://github.com/mirage/mirage-clock/archive/v1.0.0.tar.gz
+[mirage-console-unix.1.0.0] Downloading https://github.com/mirage/mirage-console/archive/v1.0.0.tar.gz
+[mirage-types.2.0.1] Downloading https://github.com/mirage/mirage/archive/v2.0.1.tar.gz
+[mirage-unix.2.0.1] Downloading https://github.com/mirage/mirage-platform/archive/v2.0.1.tar.gz
+[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[shared-memory-ring.1.1.0] Downloading https://github.com/mirage/shared-memory-ring/archive/1.1.0.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+Installing lwt.2.4.5.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building ocplib-endian.0.4:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.4.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.02.1 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Building io-page.1.2.0:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing io-page.1.2.0.
+Building shared-memory-ring.1.1.0:
+  make all
+  make install
+Installing shared-memory-ring.1.1.0.
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+Building mirage-clock-unix.1.0.0:
+  make unix-build
+  make unix-install
+Installing mirage-clock-unix.1.0.0.
+Building mirage-unix.2.0.1:
+  make unix-build
+  make unix-install PREFIX=/home/opam/.opam/4.02.1
+Installing mirage-unix.2.0.1.
+Building mirage-console-unix.1.0.0:
+  make unix-build
+  make unix-install
+Removing mirage-console-unix.1.0.0.
+[ERROR] The compilation of mirage-console-unix.1.0.0 failed.
+  ocamlfind remove mirage-console-unix
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.112.01.00
+ - install   mirage-clock-unix.1.0.0
+ - install   mirage-unix.2.0.1
+ - install   ocplib-endian.0.4
+ - install   type_conv.112.01.00
+ - install   lwt.2.4.5
+ - install   shared-memory-ring.1.1.0
+ - install   optcomp.1.6
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   ounit.2.0.0
+ - install   mirage-types.2.0.1
+The following failed
+ - install   mirage-console-unix.1.0.0
+
+#=== ERROR while installing mirage-console-unix.1.0.0 =========================#
+# opam-version         1.2.0
+# os                   linux
+# command              make unix-install
+# path                 /home/opam/.opam/4.02.1/build/mirage-console-unix.1.0.0
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/mirage-console-unix.1.0.0/mirage-console-unix-3577-2c871f.env
+# stdout-file          /home/opam/.opam/4.02.1/build/mirage-console-unix.1.0.0/mirage-console-unix-3577-2c871f.out
+# stderr-file          /home/opam/.opam/4.02.1/build/mirage-console-unix.1.0.0/mirage-console-unix-3577-2c871f.err
+### stdout ###
+# ...[truncated]
+#   as the working directory does not look like an ocamlbuild project (no
+#   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+#   you should add the option "-r" or create an empty '_tags' file.
+#   
+#   To enable recursive traversal for some subdirectories only, you can use the
+#   following '_tags' file:
+#   
+#       true: -traverse
+#       <dir1> or <dir2>: traverse
+#       
+### stderr ###
+# ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.1/lib/mirage-console-unix
+# ocamlfind: _build/unix/mirage-console.cmxs: No such file or directory
+# make: *** [unix-install] Error 2
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108071013.export"
