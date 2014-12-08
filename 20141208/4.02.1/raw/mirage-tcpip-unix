@@ -72,3 +72,43 @@ Installing ounit.2.0.0.
 Building ppx_tools.0.99.2:
   make all
   make install
+Installing ppx_tools.0.99.2.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building mirage-clock-unix.1.0.0:
+  make unix-build
+  make unix-install
+Installing mirage-clock-unix.1.0.0.
+Building ocplib-endian.0.7:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.7.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building tuntap.0.7.0:
+  make PREFIX=/home/opam/.opam/4.02.1
+  make PREFIX=/home/opam/.opam/4.02.1 install
+Installing tuntap.0.7.0.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.02.1 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Building io-page-unix.0.9.9:
+  make unix-build
+  make unix-install
+Installing io-page-unix.0.9.9.
+Building shared-memory-ring.1.1.0:
+  make all
+  make install
