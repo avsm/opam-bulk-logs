@@ -99,3 +99,13 @@ Installing omd.1.2.3.
 Building type_conv.112.01.00:
   make
   make install
+Installing type_conv.112.01.00.
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+Installing ulex.1.1.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
