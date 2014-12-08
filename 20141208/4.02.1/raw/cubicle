@@ -22,3 +22,4 @@ Building cubicle.1.0.1:
   ./configure --prefix /home/opam/.opam/4.02.1
   make
   make install MANDIR=/home/opam/.opam/4.02.1/man
+Installing cubicle.1.0.1.
