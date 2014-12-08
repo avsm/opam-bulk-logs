@@ -280,3 +280,242 @@ Installing mirage-clock-unix.1.0.0.
 Building mirage-fs-unix.1.1.3:
   make
   make install
+Installing mirage-fs-unix.1.1.3.
+Building fat-filesystem.0.10.1:
+  ./configure --bindir /home/opam/.opam/4.02.1/bin
+  make
+  make install
+[ERROR] The compilation of fat-filesystem.0.10.1 failed.
+Removing fat-filesystem.0.10.1.
+  make uninstall
+Building mirage-unix.2.0.1:
+  make unix-build
+  make unix-install PREFIX=/home/opam/.opam/4.02.1
+Installing mirage-unix.2.0.1.
+Building mirage-console-unix.1.0.0:
+  make unix-build
+  make unix-install
+[ERROR] The compilation of mirage-console-unix.1.0.0 failed.
+Removing mirage-console-unix.1.0.0.
+  ocamlfind remove mirage-console-unix
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   uutf.0.9.3
+ - install   mirage-fs-unix.1.1.3
+ - install   shared-memory-ring.1.1.0
+ - install   ezjsonm.0.3.1
+ - install   xmlm.1.2.0
+ - install   ppx_tools.0.99.2
+ - install   mirage-block-unix.1.2.1
+ - install   cohttp.0.10.1
+ - install   mirage-clock-unix.1.0.0
+ - install   mirage-unix.2.0.1
+ - install   omd.0.9.1
+ - install   base-bytes.base
+ - install   sexplib.112.01.00
+ - install   type_conv.112.01.00
+ - install   ulex.1.1
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   ipaddr.2.5.0
+ - install   ssl.0.4.7
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   jsonm.0.9.1
+ - install   stringext.1.1.0
+ - install   dyntype.0.9.0
+ - install   optcomp.1.6
+ - install   cow.1.0.0
+ - install   re.1.2.2
+ - install   cowabloga.0.0.6
+ - install   hex.0.1.0
+ - install   uri.1.7.2
+ - install   fieldslib.109.20.03
+ - install   ocplib-endian.0.7
+ - install   mirage-types.2.0.1
+The following failed
+ - install   crunch.1.3.0
+ - install   fat-filesystem.0.10.1
+ - install   mirage.1.1.3
+ - install   mirage-console-unix.1.0.0
+ - install   tuntap.1.0.0
+Due to the errors, the following have been cancelled
+ - install   tcpip.1.1.2
+ - install   mirage-www.1.1.0
+ - install   mirage-http.1.1.0
+ - install   mirage-net-unix.1.1.1
+
+#=== ERROR while installing crunch.1.3.0 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/opam/.opam/4.02.1/build/crunch.1.3.0
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/crunch.1.3.0/crunch-3444-4345db.env
+# stdout-file          /home/opam/.opam/4.02.1/build/crunch.1.3.0/crunch-3444-4345db.out
+# stderr-file          /home/opam/.opam/4.02.1/build/crunch.1.3.0/crunch-3444-4345db.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlc -c -g -I lib -package unix -package cmdliner -I lib -o lib/main.cmo lib/main.ml
+# ocamlfind ocamlopt -c -g -I lib -package unix -package cmdliner -I lib -o lib/main.cmx lib/main.ml
+# ocamlfind ocamlc -c lib/custom_unix_stubs.c
+# mv custom_unix_stubs.o lib/custom_unix_stubs.o
+# /home/opam/.opam/4.02.1/bin/ocamlmklib -o lib/ocaml-crunch_stubs lib/custom_unix_stubs.o
+# ocamlfind ocamlopt -g -linkpkg -package unix -package cmdliner lib/crunch.cmxa lib/main.cmx lib/libocaml-crunch_stubs.a -o lib/main.native
+# + ocamlfind ocamlopt -g -linkpkg -package unix -package cmdliner lib/crunch.cmxa lib/main.cmx lib/libocaml-crunch_stubs.a -o lib/main.native
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# Command exited with code 2.
+### stderr ###
+# ...[truncated]
+# File "setup.ml", line 1793, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# File "setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "setup.ml", line 1793, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' lib/crunch.cma lib/crunch.cmxa lib/crunch.a lib/crunch.cmxs lib/main.native -tag debug' terminated with error code 10")
+
+
+#=== ERROR while installing fat-filesystem.0.10.1 =============================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/fat-filesystem.0.10.1
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/fat-filesystem.0.10.1/fat-filesystem-11461-5788a7.env
+# stdout-file          /home/opam/.opam/4.02.1/build/fat-filesystem.0.10.1/fat-filesystem-11461-5788a7.out
+# stderr-file          /home/opam/.opam/4.02.1/build/fat-filesystem.0.10.1/fat-filesystem-11461-5788a7.err
+### stdout ###
+# ...[truncated]
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -I lib -package cmdliner -package cstruct -package io-page -package io-page.unix -package lwt -package mirage-block-unix -package mirage-types -package re -package re.str -I fat -I lib -o fat/impl.cmo fat/impl.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -I lib -package cmdliner -package cstruct -package io-page -package io-page.unix -package lwt -package mirage-block-unix -package mirage-types -package re -package re.str -I fat -I lib -o fat/main.cmo fat/main.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -principal -I lib -package cmdliner -package cstruct -package io-page -package io-page.unix -package lwt -package mirage-block-unix -package mirage-types -package re -package re.str -I fat -I lib -o fat/common.cmx fat/common.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -principal -I lib -package cmdliner -package cstruct -package io-page -package io-page.unix -package lwt -package mirage-block-unix -package mirage-types -package re -package re.str -I fat -I lib -o fat/impl.cmx fat/impl.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -principal -I lib -package cmdliner -package cstruct -package io-page -package io-page.unix -package lwt -package mirage-block-unix -package mirage-types -package re -package re.str -I fat -I lib -o fat/main.cmx fat/main.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package cmdliner -package cstruct -package io-page -package io-page.unix -package lwt -package mirage-block-unix -package mirage-types -package re -package re.str fat/common.cmx lib/fat.cmxa fat/impl.cmx fat/main.cmx -o fat/main.native
+# + /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package cmdliner -package cstruct -package io-page -package io-page.unix -package lwt -package mirage-block-unix -package mirage-types -package re -package re.str fat/common.cmx lib/fat.cmxa fat/impl.cmx fat/main.cmx -o fat/main.native
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# Command exited with code 2.
+### stderr ###
+# File "setup.ml", line 234, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "setup.ml", line 2393, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# W: Cannot find source file matching module 'fat' in library fat
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' lib/fat.cma lib/fat.cmxa lib/fat.a lib/fat.cmxs fat/main.native shell/main.native lib_test/test.native -tag debug -j 4' terminated with error code 10")
+# make: *** [build] Error 1
+
+
+#=== ERROR while installing mirage.1.1.3 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/mirage.1.1.3
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/mirage.1.1.3/mirage-10858-777834.env
+# stdout-file          /home/opam/.opam/4.02.1/build/mirage.1.1.3/mirage-10858-777834.out
+# stderr-file          /home/opam/.opam/4.02.1/build/mirage.1.1.3/mirage-10858-777834.err
+### stdout ###
+# ...[truncated]
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -a lib/mirage_misc.cmx lib/mirage.cmx -o lib/mirage.cmxa
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -shared lib/mirage.cmxa lib/mirage_misc.cmx lib/mirage.cmx -o lib/mirage.cmxs
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamldep -package cmdliner -package dynlink -package ipaddr -package lwt -package mirage-types -package mirage-types.lwt -package unix -modules lib/main.ml > lib/main.ml.depends
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -I lib -package cmdliner -package dynlink -package ipaddr -package lwt -package mirage-types -package mirage-types.lwt -package unix -I lib -o lib/main.cmo lib/main.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -principal -I lib -package cmdliner -package dynlink -package ipaddr -package lwt -package mirage-types -package mirage-types.lwt -package unix -I lib -o lib/main.cmx lib/main.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package cmdliner -package dynlink -package ipaddr -package lwt -package mirage-types -package mirage-types.lwt -package unix lib/mirage.cmxa lib/main.cmx -o lib/main.native
+# + /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package cmdliner -package dynlink -package ipaddr -package lwt -package mirage-types -package mirage-types.lwt -package unix lib/mirage.cmxa lib/main.cmx -o lib/main.native
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# Command exited with code 2.
+### stderr ###
+# ...[truncated]
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# File "setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "setup.ml", line 2502, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' lib/mirage.cma lib/mirage.cmxa lib/mirage.a lib/mirage.cmxs lib/main.native -tag debug -classic-display' terminated with error code 10")
+# make: *** [build] Error 1
+
+
+#=== ERROR while installing mirage-console-unix.1.0.0 =========================#
+# opam-version         1.2.0
+# os                   linux
+# command              make unix-install
+# path                 /home/opam/.opam/4.02.1/build/mirage-console-unix.1.0.0
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/mirage-console-unix.1.0.0/mirage-console-unix-12077-f33fa5.env
+# stdout-file          /home/opam/.opam/4.02.1/build/mirage-console-unix.1.0.0/mirage-console-unix-12077-f33fa5.out
+# stderr-file          /home/opam/.opam/4.02.1/build/mirage-console-unix.1.0.0/mirage-console-unix-12077-f33fa5.err
+### stdout ###
+# ...[truncated]
+#   as the working directory does not look like an ocamlbuild project (no
+#   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+#   you should add the option "-r" or create an empty '_tags' file.
+#   
+#   To enable recursive traversal for some subdirectories only, you can use the
+#   following '_tags' file:
+#   
+#       true: -traverse
+#       <dir1> or <dir2>: traverse
+#       
+### stderr ###
+# ocamlfind: [WARNING] No such directory: /home/opam/.opam/4.02.1/lib/mirage-console-unix
+# ocamlfind: _build/unix/mirage-console.cmxs: No such file or directory
+# make: *** [unix-install] Error 2
+
+
+#=== ERROR while installing tuntap.1.0.0 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make PREFIX=/home/opam/.opam/4.02.1
+# path                 /home/opam/.opam/4.02.1/build/tuntap.1.0.0
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/tuntap.1.0.0/tuntap-10181-4519e5.env
+# stdout-file          /home/opam/.opam/4.02.1/build/tuntap.1.0.0/tuntap-10181-4519e5.out
+# stderr-file          /home/opam/.opam/4.02.1/build/tuntap.1.0.0/tuntap-10181-4519e5.err
+### stdout ###
+# ...[truncated]
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -a -cclib -ltuntap_stubs -bin-annot lib/tuntap.cmx -o lib/tuntap.cmxa
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -shared -I lib lib/tuntap.cmxa lib/tuntap.cmx -o lib/tuntap.cmxs
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamldep -package cmdliner -package ipaddr -modules bin/otunctl.ml > bin/otunctl.ml.depends
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package cmdliner -package ipaddr -I bin -I lib -o bin/otunctl.cmo bin/otunctl.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -I lib -package cmdliner -package ipaddr -I bin -I lib -o bin/otunctl.cmx bin/otunctl.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package cmdliner -package ipaddr lib/tuntap.cmxa bin/otunctl.cmx -o bin/otunctl.native
+# + /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package cmdliner -package ipaddr lib/tuntap.cmxa bin/otunctl.cmx -o bin/otunctl.native
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# Command exited with code 2.
+### stderr ###
+# ...[truncated]
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# File "setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "setup.ml", line 2412, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' lib/libtuntap_stubs.a lib/dlltuntap_stubs.so lib/tuntap.cma lib/tuntap.cmxa lib/tuntap.a lib/tuntap.cmxs bin/otunctl.native test/sendfd_test.native test/nonblock_test.native test/nonblock_read.native test/getifaddrs_test.native test/set_ipv4_test.native -tag debug' terminated with error code 10")
+# make: *** [build] Error 1
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108123757.export"
