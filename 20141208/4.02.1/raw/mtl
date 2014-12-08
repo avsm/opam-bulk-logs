@@ -1,0 +1,25 @@
+++ opam install mtl -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install mtl
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   obuild.0.1.1                          [required by mtl]
+ - install   mtl.1.0.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[obuild.0.1.1] Downloading https://github.com/ocaml-obuild/obuild/archive/obuild-v0.1.1.tar.gz
+[mtl.1.0.0] Downloading https://github.com/rgrinberg/ocaml-mtl/archive/v1.0.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/obuild/obuild.0.1.1/files/obuild.install to ~/.opam/4.02.1/build/obuild.0.1.1/
+Building obuild.0.1.1:
+  ./bootstrap
+Installing obuild.0.1.1.
+Building mtl.1.0.0:
+  make configure
+  make build
+  make install
+Installing mtl.1.0.0.
