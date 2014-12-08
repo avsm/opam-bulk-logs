@@ -4,3 +4,26 @@
 + '[' '' '!=' '' ']'
 Debian depexts:
 ++ opam install comparelib -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install comparelib
+The following actions will be performed:
+ - install   type_conv.112.01.00                   [required by comparelib]
+ - install   comparelib.109.60.00
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building comparelib.109.60.00:
+  make
+  make install
+Installing comparelib.109.60.00.
