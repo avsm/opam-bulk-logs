@@ -4,3 +4,24 @@
 + '[' '' '!=' '' ']'
 Debian depexts:
 ++ opam install containers -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install containers
+The following actions will be performed:
+ - install   base-bytes.base                       [required by containers]
+ - install   cppo.1.1.2                            [required by containers]
+ - install   containers.0.6
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[containers.0.6] Downloading https://github.com/c-cube/ocaml-containers/archive/0.6.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.02.1/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
