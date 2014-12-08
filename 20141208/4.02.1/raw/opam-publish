@@ -219,3 +219,177 @@ Building sexplib.112.01.00:
   ./configure --enable-syntax
   make
   make install
+Installing sexplib.112.01.00.
+Building zed.1.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing zed.1.3.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.02.1 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0005-Add-a-check_request-function-allowing-more-control-o.patch to ~/.opam/4.02.1/build/dose.3.2.2+opam/
+Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0004-Remove-broken-assert.patch to ~/.opam/4.02.1/build/dose.3.2.2+opam/
+Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0003-Removed-hard-failure-cases-in-favor-of-finer-diagnos.patch to ~/.opam/4.02.1/build/dose.3.2.2+opam/
+Applying 0003-Removed-hard-failure-cases-in-favor-of-finer-diagnos.patch.
+Applying 0004-Remove-broken-assert.patch.
+Applying 0005-Add-a-check_request-function-allowing-more-control-o.patch.
+Building dose.3.2.2+opam:
+  ./configure --with-ocamlgraph --bindir=/home/opam/.opam/4.02.1/bin
+  make TARGETS=
+  make install
+Installing dose.3.2.2+opam.
+Building ipaddr.2.5.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make build
+  make install
+Installing ipaddr.2.5.0.
+Copying ~/.opam/repo/default/packages/lambda-term/lambda-term.1.7/files/lambda-term.install to ~/.opam/4.02.1/build/lambda-term.1.7/
+Building lambda-term.1.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing lambda-term.1.7.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.02.1/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Copying ~/.opam/repo/default/packages/atdgen/atdgen.1.4.1/files/atdgen.install to ~/.opam/4.02.1/build/atdgen.1.4.1/
+Building atdgen.1.4.1:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing atdgen.1.4.1.
+Building conduit.0.7.1:
+  make
+  make install
+Installing conduit.0.7.1.
+Building opam-lib.1.2.0:
+  ./configure
+  make
+[ERROR] The compilation of opam-lib.1.2.0 failed.
+Removing opam-lib.1.2.0.
+  Nothing to do.
+Building cohttp.0.13.0:
+  make PREFIX=/home/opam/.opam/4.02.1
+  make PREFIX=/home/opam/.opam/4.02.1 install
+[ERROR] The compilation of cohttp.0.13.0 failed.
+Removing cohttp.0.13.0.
+  ocamlfind remove cohttp
+
+
+#=== ERROR while installing cohttp.0.13.0 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make PREFIX=/home/opam/.opam/4.02.1
+# path                 /home/opam/.opam/4.02.1/build/cohttp.0.13.0
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/cohttp.0.13.0/cohttp-18811-f32074.env
+# stdout-file          /home/opam/.opam/4.02.1/build/cohttp.0.13.0/cohttp-18811-f32074.out
+# stderr-file          /home/opam/.opam/4.02.1/build/cohttp.0.13.0/cohttp-18811-f32074.err
+### stdout ###
+# ...[truncated]
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -short-paths -principal -strict-sequence -I cohttp -I lwt -I lwt -I async -package cmdliner -package conduit.lwt-unix -package fieldslib -syntax camlp4o -package fieldslib.syntax -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -syntax camlp4o -package sexplib.syntax -package stringext -package threads -package unix -package uri -package uri.services -thread -I bin -I async -I cohttp -I lwt -o bin/cohttp_server_lwt.cmx bin/cohttp_server_lwt.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package conduit.lwt-unix -package fieldslib -package fieldslib.syntax -package lwt -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -package sexplib.syntax -package stringext -package unix -package uri -package uri.services cohttp/cohttp.cmxa lwt/cohttp_lwt.cmxa lwt/cohttp_lwt_unix.cmxa bin/cohttp_server_lwt.cmx -o bin/cohttp_server_lwt.native
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamldep -package cmdliner -package conduit.lwt-unix -package fieldslib -syntax camlp4o -package fieldslib.syntax -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -syntax camlp4o -package sexplib.syntax -package stringext -package threads -package unix -package uri -package uri.services -modules bin/cohttp_curl_lwt.ml > bin/cohttp_curl_lwt.ml.depends
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -principal -strict-sequence -I cohttp -I lwt -I lwt -I async -package cmdliner -package conduit.lwt-unix -package fieldslib -syntax camlp4o -package fieldslib.syntax -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -syntax camlp4o -package sexplib.syntax -package stringext -package threads -package unix -package uri -package uri.services -thread -I bin -I async -I cohttp -I lwt -o bin/cohttp_curl_lwt.cmo bin/cohttp_curl_lwt.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -short-paths -principal -strict-sequence -I cohttp -I lwt -I lwt -I async -package cmdliner -package conduit.lwt-unix -package fieldslib -syntax camlp4o -package fieldslib.syntax -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -syntax camlp4o -package sexplib.syntax -package stringext -package threads -package unix -package uri -package uri.services -thread -I bin -I async -I cohttp -I lwt -o bin/cohttp_curl_lwt.cmx bin/cohttp_curl_lwt.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package cmdliner -package conduit.lwt-unix -package fieldslib -package fieldslib.syntax -package lwt -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -package sexplib.syntax -package stringext -package unix -package uri -package uri.services cohttp/cohttp.cmxa lwt/cohttp_lwt.cmxa lwt/cohttp_lwt_unix.cmxa bin/cohttp_curl_lwt.cmx -o bin/cohttp_curl_lwt.native
+# + /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package cmdliner -package conduit.lwt-unix -package fieldslib -package fieldslib.syntax -package lwt -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -package sexplib.syntax -package stringext -package unix -package uri -package uri.services cohttp/cohttp.cmxa lwt/cohttp_lwt.cmxa lwt/cohttp_lwt_unix.cmxa bin/cohttp_curl_lwt.cmx -o bin/cohttp_curl_lwt.native
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# Command exited with code 2.
+### stderr ###
+# W: Cannot find source file matching module 'cohttp' in library cohttp
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' cohttp/cohttp.cma cohttp/cohttp.cmxa cohttp/cohttp.a cohttp/cohttp.cmxs lwt/cohttp_lwt.cma lwt/cohttp_lwt.cmxa lwt/cohttp_lwt.a lwt/cohttp_lwt.cmxs lwt/cohttp_lwt_unix.cma lwt/cohttp_lwt_unix.cmxa lwt/cohttp_lwt_unix.a lwt/cohttp_lwt_unix.cmxs bin/cohttp_server_lwt.native bin/cohttp_curl_lwt.native -tag debug -classic-display' terminate...[truncated]
+# make: *** [build] Error 1
+
+
+#=== ERROR while installing opam-lib.1.2.0 ====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/opam-lib.1.2.0
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/opam-lib.1.2.0/opam-lib-16711-2f37d9.env
+# stdout-file          /home/opam/.opam/4.02.1/build/opam-lib.1.2.0/opam-lib-16711-2f37d9.out
+# stderr-file          /home/opam/.opam/4.02.1/build/opam-lib.1.2.0/opam-lib-16711-2f37d9.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlopt -package unix,extlib,re,re.emacs,re.str,re.perl,re.pcre,re.glob,cmdliner,ocamlgraph,cudf,dose3,jsonm -c -g -w +a-4-9-32-41-44-45 -bin-annot -short-paths -I core -I solver -I repositories -I client -I client/ client/opamArg.ml
+# ocamlfind ocamlopt -package unix,extlib,re,re.emacs,re.str,re.perl,re.pcre,re.glob,cmdliner,ocamlgraph,cudf,dose3,jsonm -c -g -w +a-4-9-32-41-44-45 -bin-annot -short-paths -I core -I solver -I repositories -I client -I client/ client/opamMain.ml
+# ocamlfind ocamlopt \
+# 				-package unix,extlib,re,re.emacs,re.str,re.perl,re.pcre,re.glob,cmdliner,ocamlgraph,cudf,dose3,jsonm -linkpkg \
+# 				     -I core -I solver -I repositories -I client -I client/  -g -w +a-4-9-32-41-44-45 -bin-annot   -ccopt -Lclient/    ./opam-core.cmxa ./opam-solver.cmxa ./opam-repositories.cmxa ./opam-client.cmxa -o opam \
+# 				client/opamArg.cmx client/opamMain.cmx
+# make[4]: Leaving directory `/home/opam/.opam/4.02.1/build/opam-lib.1.2.0/src'
+# make[3]: Leaving directory `/home/opam/.opam/4.02.1/build/opam-lib.1.2.0/src'
+# make[2]: Leaving directory `/home/opam/.opam/4.02.1/build/opam-lib.1.2.0/src'
+# make[1]: Leaving directory `/home/opam/.opam/4.02.1/build/opam-lib.1.2.0/src'
+### stderr ###
+# ...[truncated]
+# Warning 48: implicit elimination of optional argument ?none
+# File "client/opamArg.ml", line 1547, characters 22-26:
+# Warning 48: implicit elimination of optional argument ?none
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# make[4]: *** [opam] Error 2
+# make[3]: *** [native-code] Error 2
+# make[2]: *** [subproj_opam] Error 2
+# make[1]: *** [opam] Error 2
+# make: *** [opam] Error 2
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   uutf.0.9.3
+ - install   cppo.1.1.2
+ - install   ocamlgraph.1.8.5
+ - install   easy-format.1.0.2
+ - install   ppx_tools.0.99.2
+ - install   extlib-compat.1.6.1
+ - install   yojson.1.1.8
+ - install   biniou.1.0.9
+ - install   base-bytes.base
+ - install   atd.1.1.2
+ - install   sexplib.112.01.00
+ - install   atdgen.1.4.1
+ - install   type_conv.112.01.00
+ - install   camomile.0.8.5
+ - install   react.1.2.0
+ - install   conduit.0.7.1
+ - install   menhir.20140422
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   ipaddr.2.5.0
+ - install   ssl.0.4.7
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   zed.1.3
+ - install   jsonm.0.9.1
+ - install   dose.3.2.2+opam
+ - install   stringext.1.1.0
+ - install   cudf.0.7
+ - install   lambda-term.1.7
+ - install   optcomp.1.6
+ - install   re.1.2.2
+ - install   uri.1.7.2
+ - install   fieldslib.109.20.03
+ - install   ocplib-endian.0.7
+The following failed
+ - install   cohttp.0.13.0
+ - install   opam-lib.1.2.0
+Due to the errors, the following have been cancelled
+ - install   github.0.9.3
+ - install   opam-publish.0.2.0
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108130833.export"
