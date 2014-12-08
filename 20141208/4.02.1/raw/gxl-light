@@ -1,0 +1,23 @@
+++ opam install gxl-light -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install gxl-light
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   xml-light.2.4                         [required by gxl-light]
+ - install   gxl-light.1.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[xml-light.2.4] Downloading https://github.com/ncannasse/xml-light/archive/2.4.tar.gz
+[gxl-light.1.0] Downloading https://github.com/amal029/ocaml-gxl-light/archive/v1_0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building xml-light.2.4:
+  make install_ocamlfind
+Installing xml-light.2.4.
+Building gxl-light.1.0:
+  make build
+  make install
+Installing gxl-light.1.0.
