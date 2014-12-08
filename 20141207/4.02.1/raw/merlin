@@ -1,0 +1,82 @@
+++ opam install merlin -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install merlin -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install merlin
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   easy-format.1.0.2                     [required by yojson]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   biniou.1.0.9                          [required by yojson]
+ - install   yojson.1.1.8                          [required by merlin]
+ - install   merlin.2.0.0
+=== 5 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+[merlin.2.0.0] Downloading https://github.com/the-lambda-church/merlin/archive/v2.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.02.1/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.02.1/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.02.1/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Building merlin.2.0.0:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  rm -rf /home/opam/.opam/4.02.1/share/ocamlmerlin
+  make -j 1
+Installing merlin.2.0.0.
+
+=-=- merlin.2.0.0 installed successfully =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> merlin installed.
+   
+   Quick setup for VIM
+   -------------------
+   Append this to your .vimrc to add merlin to vim's runtime-path:
+     let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+     execute "set rtp+=" . g:opamshare . "/merlin/vim"
+   
+   Also run the following line in vim to index the documentation:
+     :execute "helptags " . g:opamshare . "/merlin/vim/doc"
+   
+   Quick setup for EMACS
+   -------------------
+   Add opam emacs directory to your load-path by appending this to your .emacs:
+     ;; Add opam emacs directory to the load-path
+     (setq opam-share (substring (shell-command-to-string "opam config var share 2> /dev/null") 0 -1))
+     (add-to-list 'load-path (concat opam-share "/emacs/site-lisp"))
+     ;; Load merlin-mode
+     (require 'merlin)
+     ;; Start merlin on ocaml files
+     (add-hook 'tuareg-mode-hook 'merlin-mode t)
+     (add-hook 'caml-mode-hook 'merlin-mode t)
+     ;; Enable auto-complete
+     (setq merlin-use-auto-complete-mode 'easy)
+     ;; Use opam switch to lookup ocamlmerlin binary
+     (setq merlin-command 'opam)
+   
+   Take a look at https://github.com/the-lambda-church/merlin for more information
+   
