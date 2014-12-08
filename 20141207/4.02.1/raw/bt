@@ -1,0 +1,207 @@
+++ opam install bt -e ubuntu
++ depext='libgmp-dev libssl-dev time zlib1g-dev'
++ echo Ubuntu depexts: libgmp-dev libssl-dev time zlib1g-dev
++ '[' 'libgmp-dev libssl-dev time zlib1g-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libgmp-dev libssl-dev time zlib1g-dev
++ sudo apt-get install -qq -y libgmp-dev libssl-dev time zlib1g-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libgmpxx4ldbl_2%3a5.1.3+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:5.1.3+dfsg-1ubuntu1) ...
+Selecting previously unselected package time.
+Preparing to unpack .../archives/time_1.7-24_amd64.deb ...
+Unpacking time (1.7-24) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../libgmp-dev_2%3a5.1.3+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:5.1.3+dfsg-1ubuntu1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../libssl-dev_1.0.1f-1ubuntu2.7_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.0.1f-1ubuntu2.7) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../libssl-doc_1.0.1f-1ubuntu2.7_all.deb ...
+Unpacking libssl-doc (1.0.1f-1ubuntu2.7) ...
+Setting up libgmpxx4ldbl:amd64 (2:5.1.3+dfsg-1ubuntu1) ...
+Setting up time (1.7-24) ...
+Setting up libgmp-dev:amd64 (2:5.1.3+dfsg-1ubuntu1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up libssl-dev:amd64 (1.0.1f-1ubuntu2.7) ...
+Setting up libssl-doc (1.0.1f-1ubuntu2.7) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.3) ...
+++ opam install bt -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install bt
+The following actions will be performed:
+ - install   base-bytes.base                       [required by ocplib-endian]
+ - install   qcheck.0.3                            [required by bt]
+ - install   conf-gmp.1                            [required by zarith]
+ - install   re.1.2.2                              [required by cohttp]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   stringext.1.0.0                       [required by cohttp]
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   cryptokit.1.9                         [required by bt]
+ - install   ounit.2.0.0                           [required by cohttp]
+ - install   ssl.0.4.7                             [required by bt]
+ - install   cmdliner.0.9.6                        [required by bt]
+ - install   type_conv.112.01.00                   [required by fieldslib]
+ - install   bitstring.2.0.4                       [required by bt]
+ - install   zarith.1.3                            [required by bt]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   lwt.2.4.6                             [required by bt]
+ - install   sexplib.112.01.00                     [required by cohttp]
+ - install   fieldslib.109.20.03                   [required by cohttp]
+ - install   uri.1.7.2                             [required by bt]
+ - install   ipaddr.2.5.0                          [required by conduit]
+ - install   cstruct.1.5.0                         [required by conduit]
+ - install   conduit.0.6.1                         [required by cohttp]
+ - install   cohttp.0.12.0                         [required by bt]
+ - install   bt.0.2
+=== 24 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bitstring.2.0.4] Downloading http://bitstring.googlecode.com/files/ocaml-bitstring-2.0.4.tar.gz
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[bt.0.2] Downloading https://github.com/nojb/ocaml-bt/archive/v0.2.tar.gz
+[cohttp.0.12.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.12.0.tar.gz
+[conduit.0.6.1] Downloading https://github.com/mirage/ocaml-conduit/archive/v0.6.1.tar.gz
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+[qcheck.0.3] Downloading https://github.com/c-cube/qcheck/archive/0.3.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[stringext.1.0.0] Downloading https://github.com/rgrinberg/stringext/archive/v1.0.0.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[uri.1.7.2] Downloading https://github.com/mirage/ocaml-uri/archive/v1.7.2.tar.gz
+[zarith.1.3] Downloading https://forge.ocamlcore.org/frs/download.php/1471/zarith-1.3.tgz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building bitstring.2.0.4:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make srcdir=./
+  make install
+Installing bitstring.2.0.4.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing cmdliner.0.9.6.
+Copying ~/.opam/repo/default/packages/conf-gmp/conf-gmp.1/files/test.c to ~/.opam/4.02.1/build/conf-gmp.1/
+Building conf-gmp.1:
+  cc -c test.c
+Installing conf-gmp.1.
+Building cryptokit.1.9:
+  make
+  make install
+Installing cryptokit.1.9.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building qcheck.0.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make all install_file
+  make install
+Installing qcheck.0.3.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.02.1/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing ssl.0.4.7.
+Building stringext.1.0.0:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing stringext.1.0.0.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building ocplib-endian.0.7:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.7.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building zarith.1.3:
+  ./configure
+  make
+  make install
+Installing zarith.1.3.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.02.1 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Building ipaddr.2.5.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make build
+  make install
+Installing ipaddr.2.5.0.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Building conduit.0.6.1:
+  make
+  make install
+Installing conduit.0.6.1.
+Building cohttp.0.12.0:
+  make PREFIX=/home/opam/.opam/4.02.1
+  make PREFIX=/home/opam/.opam/4.02.1 install
+Installing cohttp.0.12.0.
+Copying ~/.opam/repo/default/packages/bt/bt.0.2/files/bt.install to ~/.opam/4.02.1/build/bt.0.2/
+Building bt.0.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing bt.0.2.
