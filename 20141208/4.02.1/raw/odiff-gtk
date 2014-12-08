@@ -377,3 +377,12 @@ Building lablgtk.2.18.3:
   ./configure --prefix /home/opam/.opam/4.02.1 LABLGLDIR=/home/opam/.opam/4.02.1/lib/lablgl
   make world
   make install
+Installing lablgtk.2.18.3.
+Building ocamldiff.1.1:
+  make all
+  make install
+Installing ocamldiff.1.1.
+Building odiff-gtk.1.0:
+  make all
+  make install
+Installing odiff-gtk.1.0.
