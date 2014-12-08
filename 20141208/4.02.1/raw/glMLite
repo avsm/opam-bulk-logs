@@ -1,9 +1,14 @@
-++ opam install glMLite -e centos,centos-7
+++ opam install glMLite -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install glMLite -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install glMLite
-CentOS 7 depexts:
 The following actions will be performed:
  - install   glMLite.0.03.51
 === 1 to install ===
@@ -19,6 +24,7 @@ Building glMLite.0.03.51:
 Removing glMLite.0.03.51.
   ocamlfind remove glMLite
 
+
 #=== ERROR while installing glMLite.0.03.51 ===================================#
 # opam-version         1.2.0
 # os                   linux
@@ -26,9 +32,9 @@ Removing glMLite.0.03.51.
 # path                 /home/opam/.opam/4.02.1/build/glMLite.0.03.51
 # compiler             4.02.1
 # exit-code            2
-# env-file             /home/opam/.opam/4.02.1/build/glMLite.0.03.51/glMLite-27-5f1023.env
-# stdout-file          /home/opam/.opam/4.02.1/build/glMLite.0.03.51/glMLite-27-5f1023.out
-# stderr-file          /home/opam/.opam/4.02.1/build/glMLite.0.03.51/glMLite-27-5f1023.err
+# env-file             /home/opam/.opam/4.02.1/build/glMLite.0.03.51/glMLite-153-6d07ae.env
+# stdout-file          /home/opam/.opam/4.02.1/build/glMLite.0.03.51/glMLite-153-6d07ae.out
+# stderr-file          /home/opam/.opam/4.02.1/build/glMLite.0.03.51/glMLite-153-6d07ae.err
 ### stdout ###
 # ...[truncated]
 # make[1]: Entering directory `/home/opam/.opam/4.02.1/build/glMLite.0.03.51/SRC'
@@ -37,21 +43,20 @@ Removing glMLite.0.03.51.
 # ocamlopt.opt -g -c -g -o xmlm.cmx xmlm.ml
 # ocamlopt.opt -g -a -g -o xmlm.cmxa xmlm.cmx
 # ocamlopt.opt -g \
-#       -I . xmlm.cmxa  \
-#       enums_xmlm.ml  -o enums.exe
+# 	      -I . xmlm.cmxa  \
+# 	      enums_xmlm.ml  -o enums.exe
 # ocamlc.opt -c configure.c
 # make[1]: Leaving directory `/home/opam/.opam/4.02.1/build/glMLite.0.03.51/SRC'
 ### stderr ###
 # ...[truncated]
+# File "xmlm.ml", line 574, characters 18-20:
+# Warning 3: deprecated: Pervasives.or
 # Use (||) instead.
 # File "xmlm.ml", line 771, characters 22-24:
 # Warning 3: deprecated: Pervasives.or
 # Use (||) instead.
 # configure.c:6:21: fatal error: GL/gl.h: No such file or directory
-#    #include <GL/gl.h>
-#                      ^
 # compilation terminated.
 # make[1]: *** [configure.o] Error 2
 # make: *** [all] Error 2
-
 
