@@ -1,7 +1,12 @@
-++ opam install pa_test -e centos,centos-7
+++ opam install pa_test -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install pa_test -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install pa_test
 The following actions will be performed:
@@ -15,23 +20,3 @@ The following actions will be performed:
 [comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
 [pa_test.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/pa_test-111.08.00.tar.gz
 [sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
-[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building type_conv.112.01.00:
-  make
-  make install
-Installing type_conv.112.01.00.
-Building comparelib.109.60.00:
-  make
-  make install
-Installing comparelib.109.60.00.
-Building sexplib.112.01.00:
-  ./configure --enable-syntax
-  make
-  make install
-Installing sexplib.112.01.00.
-Building pa_test.111.08.00:
-  make
-  make install
-Installing pa_test.111.08.00.
