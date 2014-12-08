@@ -1,7 +1,19 @@
-++ opam install riakc_ppx -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+++ opam install riakc_ppx -e debian
++ depext=time
++ echo Debian depexts: time
+Debian depexts: time
++ '[' time '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y time
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package time.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking time (from .../archives/time_1.7-24_amd64.deb) ...
+Setting up time (1.7-24) ...
+++ opam install riakc_ppx -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install riakc_ppx
 The following actions will be performed:
@@ -61,185 +73,3 @@ The following actions will be performed:
 [sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
 [type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
 [typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
-[variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building bitstring.2.0.4:
-  ./configure --prefix /home/opam/.opam/4.02.1
-  make srcdir=./
-  make install
-[ERROR] The compilation of bitstring.2.0.4 failed.
-Removing bitstring.2.0.4.
-  ocamlfind remove bitstring
-Building herelib.109.35.02:
-  make
-  make install
-Installing herelib.109.35.02.
-Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
-Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/opam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
-Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/omake.install to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
-Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/fam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
-Applying opam.patch.
-Applying fam.patch.
-Applying readline.patch.
-Building omake.0.9.8.6-0.rc1:
-  make bootstrap PREFIX=/home/opam/.opam/4.02.1
-  make all PREFIX=/home/opam/.opam/4.02.1
-  make install PREFIX=/home/opam/.opam/4.02.1
-Installing omake.0.9.8.6-0.rc1.
-Building ounit.2.0.0:
-  make build
-  make install
-Installing ounit.2.0.0.
-Building pipebang.110.01.00:
-  make
-  make install
-Installing pipebang.110.01.00.
-Building ppx_tools.0.99.2:
-  make all
-  make install
-Installing ppx_tools.0.99.2.
-Building type_conv.112.01.00:
-  make
-  make install
-Installing type_conv.112.01.00.
-Building bin_prot.112.01.00:
-  make
-  make install
-Installing bin_prot.112.01.00.
-Building comparelib.109.60.00:
-  make
-  make install
-Installing comparelib.109.60.00.
-Building enumerate.111.08.00:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  make
-  make install
-Installing enumerate.111.08.00.
-Building fieldslib.109.20.03:
-  make
-  make install
-Installing fieldslib.109.20.03.
-Building pa_ounit.111.28.00:
-  make
-  make install
-Installing pa_ounit.111.28.00.
-Building ppx_deriving.1.0:
-  ocaml pkg/build.ml native=false native-dynlink=false
-Installing ppx_deriving.1.0.
-Building sexplib.112.01.00:
-  ./configure --enable-syntax
-  make
-  make install
-Installing sexplib.112.01.00.
-Building variantslib.109.15.03:
-  make
-  make install
-Installing variantslib.109.15.03.
-Building custom_printf.112.01.00:
-  make
-  make install
-Installing custom_printf.112.01.00.
-Building pa_bench.111.28.00:
-  make
-  make install
-Installing pa_bench.111.28.00.
-Building pa_test.111.08.00:
-  make
-  make install
-Installing pa_test.111.08.00.
-Building ppx_deriving_protobuf.2.0:
-  ocaml pkg/build.ml native=false native-dynlink=false
-Installing ppx_deriving_protobuf.2.0.
-Building typerep.111.17.00:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  make
-  make install
-Installing typerep.111.17.00.
-Building core_kernel.112.01.00:
-  make
-  make install
-Installing core_kernel.112.01.00.
-Copying ~/.opam/repo/default/packages/core/core.112.01.01/files/core.install to ~/.opam/4.02.1/build/core.112.01.01/
-Building core.112.01.01:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  make
-  make install
-Installing core.112.01.01.
-Building async_kernel.112.01.00:
-  make
-  make install
-Installing async_kernel.112.01.00.
-Building async_unix.112.01.00:
-  make
-  make install
-Installing async_unix.112.01.00.
-Building async_extra.112.01.00:
-  make
-  make install
-Installing async_extra.112.01.00.
-Building async.112.01.00:
-  make
-  make install
-Installing async.112.01.00.
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   sexplib.112.01.00
- - install   async_unix.112.01.00
- - install   core_kernel.112.01.00
- - install   async.112.01.00
- - install   type_conv.112.01.00
- - install   async_kernel.112.01.00
- - install   bin_prot.112.01.00
- - install   async_extra.112.01.00
- - install   pa_test.111.08.00
- - install   core.112.01.01
- - install   enumerate.111.08.00
- - install   ounit.2.0.0
- - install   comparelib.109.60.00
- - install   ppx_tools.0.99.2
- - install   pa_ounit.111.28.00
- - install   variantslib.109.15.03
- - install   ppx_deriving.1.0
- - install   pipebang.110.01.00
- - install   typerep.111.17.00
- - install   ppx_deriving_protobuf.2.0
- - install   herelib.109.35.02
- - install   pa_bench.111.28.00
- - install   fieldslib.109.20.03
- - install   custom_printf.112.01.00
- - install   omake.0.9.8.6-0.rc1
-The following failed
- - install   bitstring.2.0.4
-Due to the errors, the following have been cancelled
- - install   riakc_ppx.3.1.0
-
-#=== ERROR while installing bitstring.2.0.4 ===================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --prefix /home/opam/.opam/4.02.1
-# path                 /home/opam/.opam/4.02.1/build/bitstring.2.0.4
-# compiler             4.02.1
-# exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/bitstring.2.0.4/bitstring-291-548b09.env
-# stdout-file          /home/opam/.opam/4.02.1/build/bitstring.2.0.4/bitstring-291-548b09.out
-# stderr-file          /home/opam/.opam/4.02.1/build/bitstring.2.0.4/bitstring-291-548b09.err
-### stdout ###
-# ...[truncated]
-# checking for ocamldep... ocamldep
-# checking for ocamlmktop... ocamlmktop
-# checking for ocamlmklib... ocamlmklib
-# checking for ocamldoc... ocamldoc
-# checking for ocamlbuild... ocamlbuild
-# checking for ocamlfind... ocamlfind
-# checking for camlp4of.opt... camlp4of.opt
-# checking for OCaml findlib package extlib... not found
-# checking for OCaml findlib package cil... not found
-# checking for time... no
-### stderr ###
-# configure: error: 'time' command not found
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108081618.export"
