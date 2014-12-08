@@ -14,3 +14,78 @@ Unpacking libpcre3-dev (from .../libpcre3-dev_1%3a8.30-5_amd64.deb) ...
 Setting up libpcrecpp0:amd64 (1:8.30-5) ...
 Setting up libpcre3-dev (1:8.30-5) ...
 ++ opam install coccinelle -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install coccinelle
+Debian srcexts:
+The following actions will be performed:
+ - install   conf-pkg-config.1.0                   [required by coccinelle]
+ - install   conf-python-2-7.1.0                   [required by coccinelle]
+ - install   menhir.20140422                       [required by coccinelle]
+ - install   conf-libpcre.1                        [required by pcre]
+ - install   conf-python-2-7-dev.1.0               [required by coccinelle]
+ - install   pcre.6.2.5                            [required by coccinelle]
+ - install   coccinelle.1.0.0-rc22
+=== 7 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coccinelle.1.0.0-rc22] Downloading http://coccinelle.lip6.fr/distrib/coccinelle-1.0.0-rc22.tgz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[pcre.6.2.5] Downloading https://github.com/mmottl/pcre-ocaml/archive/v6.2.5.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building conf-libpcre.1:
+  pkg-config libpcre
+Installing conf-libpcre.1.
+Building conf-pkg-config.1.0:
+  pkg-config --help
+Installing conf-pkg-config.1.0.
+Building conf-python-2-7.1.0:
+  python2.7 -c print 'python2.7 is installed'
+Installing conf-python-2-7.1.0.
+Copying ~/.opam/repo/default/packages/conf-python-2-7-dev/conf-python-2-7-dev.1.0/files/test.c to ~/.opam/4.02.1/build/conf-python-2-7-dev.1.0/
+Building conf-python-2-7-dev.1.0:
+  cc test.c
+[ERROR] The compilation of conf-python-2-7-dev.1.0 failed.
+Removing conf-python-2-7-dev.1.0.
+  Nothing to do.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+Installing menhir.20140422.
+Building pcre.6.2.5:
+  make
+  make install
+Installing pcre.6.2.5.
+
+
+#=== ERROR while installing conf-python-2-7-dev.1.0 ===========================#
+# opam-version         1.2.0
+# os                   linux
+# command              cc test.c
+# path                 /home/opam/.opam/4.02.1/build/conf-python-2-7-dev.1.0
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/conf-python-2-7-dev.1.0/conf-python-2-7-dev-232-a71bb4.env
+# stdout-file          /home/opam/.opam/4.02.1/build/conf-python-2-7-dev.1.0/conf-python-2-7-dev-232-a71bb4.out
+# stderr-file          /home/opam/.opam/4.02.1/build/conf-python-2-7-dev.1.0/conf-python-2-7-dev-232-a71bb4.err
+### stderr ###
+# test.c:1:30: fatal error: python2.7/Python.h: No such file or directory
+# compilation terminated.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   pcre.6.2.5
+ - install   conf-libpcre.1
+ - install   menhir.20140422
+ - install   conf-python-2-7.1.0
+ - install   conf-pkg-config.1.0
+The following failed
+ - install   conf-python-2-7-dev.1.0
+Due to the errors, the following have been cancelled
+ - install   coccinelle.1.0.0-rc22
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108104417.export"
