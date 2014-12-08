@@ -1,0 +1,14 @@
+++ opam install camlp4 -e ubuntu
+[NOTE] Package camlp4 is already installed (current version is 4.02.1+1).
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install camlp4 -e source,linux
+[NOTE] Package camlp4 is already installed (current version is 4.02.1+1).
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install camlp4
+Ubuntu srcexts:
+[NOTE] Package camlp4 is already installed (current version is 4.02.1+1).
