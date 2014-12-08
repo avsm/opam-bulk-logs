@@ -1,36 +1,103 @@
-++ opam install ojs-base -e centos,centos-7
-+ depext='Your request can'\''t be satisfied:
-  - No package matches ojs-base.
-
-No solution found, exiting'
-+ echo CentOS 7 depexts: Your request 'can'\''t' be satisfied: - No package matches ojs-base. No solution found, exiting
-+ '[' 'Your request can'\''t be satisfied:
-  - No package matches ojs-base.
-
-No solution found, exiting' '!=' '' ']'
-+ sudo yum install -y Your request 'can'\''t' be satisfied: - No package matches ojs-base. No solution found, exiting
-CentOS 7 depexts: Your request can't be satisfied: - No package matches ojs-base. No solution found, exiting
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * base: anorien.csc.warwick.ac.uk
- * extras: anorien.csc.warwick.ac.uk
- * updates: mirrors.melbourne.co.uk
-No package Your available.
-No package request available.
-No package can't available.
-No package be available.
-No package satisfied: available.
-No package No available.
-No package package available.
-No package matches available.
-No package ojs-base. available.
-No package No available.
-No package solution available.
-No package found, available.
-No package exiting available.
-Nothing to do
+++ opam install ojs-base -e debian
++ depext='libssl-dev zlib1g-dev'
+Debian depexts: libssl-dev zlib1g-dev
++ echo Debian depexts: libssl-dev zlib1g-dev
++ '[' 'libssl-dev zlib1g-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libssl-dev zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Selecting previously unselected package libssl-dev.
+Unpacking libssl-dev (from .../libssl-dev_1.0.1e-2+deb7u13_amd64.deb) ...
+Selecting previously unselected package libssl-doc.
+Unpacking libssl-doc (from .../libssl-doc_1.0.1e-2+deb7u13_all.deb) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
+Setting up libssl-dev (1.0.1e-2+deb7u13) ...
+Setting up libssl-doc (1.0.1e-2+deb7u13) ...
+++ opam install ojs-base -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install ojs-base
-Your request can't be satisfied:
-  - No package matches ojs-base.
+The following actions will be performed:
+ - install   base-bytes.base                       [required by ocplib-endian]
+ - install   re.1.2.2                              [required by cohttp]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   stringext.1.1.0                       [required by uri]
+ - install   ppx_tools.0.99.2                      [required by ppx_deriving, lwt]
+ - install   cryptokit.1.9                         [required by websocket]
+ - install   ounit.2.0.0                           [required by cohttp]
+ - install   ssl.0.4.7                             [required by websocket]
+ - install   easy-format.1.0.2                     [required by yojson]
+ - install   cmdliner.0.9.6                        [required by js_of_ocaml]
+ - install   menhir.20140422                       [required by js_of_ocaml]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   type_conv.112.01.00                   [required by uri, fieldslib, sexplib]
+ - install   ocplib-endian.0.7                     [required by websocket]
+ - install   ppx_deriving.1.0                      [required by ppx_deriving_yojson]
+ - install   lwt.2.4.6                             [required by ojs-base]
+ - install   biniou.1.0.9                          [required by yojson]
+ - install   sexplib.112.01.00                     [required by cohttp]
+ - install   fieldslib.109.20.03                   [required by cohttp]
+ - install   js_of_ocaml.2.5                       [required by ojs-base]
+ - install   yojson.1.1.8                          [required by ojs-base]
+ - install   uri.1.7.2                             [required by cohttp]
+ - install   ppx_deriving_yojson.2.0               [required by ojs-base]
+ - install   cohttp.0.10.1                         [required by websocket]
+ - install   websocket.0.8.1                       [required by ojs-base]
+ - install   ojs-base.0.2.0
+=== 26 to install ===
 
-No solution found, exiting
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cohttp.0.10.1] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.10.1.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[js_of_ocaml.2.5] Downloading https://github.com/ocsigen/js_of_ocaml/archive/2.5.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[ojs-base.0.2.0] Downloading http://zoggy.github.com/ojs-base/ojs-base-0.2.0.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[ppx_deriving.1.0] Downloading https://github.com/whitequark/ppx_deriving/archive/v1.0.tar.gz
+[ppx_deriving_yojson.2.0] Downloading https://github.com/whitequark/ppx_deriving_yojson/archive/v2.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[stringext.1.1.0] Downloading https://github.com/rgrinberg/stringext/archive/v1.1.0.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[uri.1.7.2] Downloading https://github.com/mirage/ocaml-uri/archive/v1.7.2.tar.gz
+[websocket.0.8.1] Downloading https://github.com/vbmithr/ocaml-websocket/archive/0.8.1.tar.gz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.02.1/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building cryptokit.1.9:
+  make
+  make install
+Installing cryptokit.1.9.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
