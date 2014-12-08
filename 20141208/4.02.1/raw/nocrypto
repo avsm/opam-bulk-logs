@@ -59,3 +59,7 @@ Installing optcomp.1.6.
 Building type_conv.112.01.00:
   make
   make install
+Installing type_conv.112.01.00.
+Building ctypes.0.3.3:
+  make
+  make install
