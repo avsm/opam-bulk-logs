@@ -4,3 +4,21 @@
 + '[' '' '!=' '' ']'
 Debian depexts:
 ++ opam install ocp-ocamlres -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocp-ocamlres
+Debian srcexts:
+The following actions will be performed:
+ - install   pprint.20140424                       [required by ocp-ocamlres]
+ - install   ocp-ocamlres.0.3
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[pprint.20140424] Downloading http://gallium.inria.fr/~fpottier/pprint/pprint-20140424.tar.gz
+[ocp-ocamlres.0.3] Downloading https://github.com/OCamlPro/ocp-ocamlres/archive/v0.3.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building pprint.20140424:
+  make -C src
+  make -C src install
