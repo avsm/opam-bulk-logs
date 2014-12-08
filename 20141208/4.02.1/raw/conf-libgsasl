@@ -1,37 +1,13 @@
-++ opam install conf-libgsasl -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-+ '[' '' '!=' '' ']'
-+ opam install conf-libgsasl
-CentOS 7 depexts:
-The following actions will be performed:
- - install   conf-libgsasl.1
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Copying ~/.opam/repo/default/packages/conf-libgsasl/conf-libgsasl.1/files/test.c to ~/.opam/4.02.1/build/conf-libgsasl.1/
-Building conf-libgsasl.1:
-  cc -c test.c
-[ERROR] The compilation of conf-libgsasl.1 failed.
-Removing conf-libgsasl.1.
-  Nothing to do.
-
-
-#=== ERROR while installing conf-libgsasl.1 ===================================#
-# opam-version         1.2.0
-# os                   linux
-# command              cc -c test.c
-# path                 /home/opam/.opam/4.02.1/build/conf-libgsasl.1
-# compiler             4.02.1
-# exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/conf-libgsasl.1/conf-libgsasl-17-42bb52.env
-# stdout-file          /home/opam/.opam/4.02.1/build/conf-libgsasl.1/conf-libgsasl-17-42bb52.out
-# stderr-file          /home/opam/.opam/4.02.1/build/conf-libgsasl.1/conf-libgsasl-17-42bb52.err
-### stderr ###
-# test.c:1:19: fatal error: gsasl.h: No such file or directory
-#  #include <gsasl.h>
-#                    ^
-# compilation terminated.
-
+++ opam install conf-libgsasl -e debian
++ depext=libgsasl7-dev
+Debian depexts: libgsasl7-dev
++ echo Debian depexts: libgsasl7-dev
++ '[' libgsasl7-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libgsasl7-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libgssrpc4:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libgssrpc4:amd64 (from .../libgssrpc4_1.10.1+dfsg-5+deb7u2_amd64.deb) ...
+Selecting previously unselected package libkadm5clnt-mit8:amd64.
+Unpacking libkadm5clnt-mit8:amd64 (from .../libkadm5clnt-mit8_1.10.1+dfsg-5+deb7u2_amd64.deb) ...
