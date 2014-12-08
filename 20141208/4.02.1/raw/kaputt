@@ -21,3 +21,4 @@ Building kaputt.1.2:
   sh configure
   make all
   make install
+Installing kaputt.1.2.
