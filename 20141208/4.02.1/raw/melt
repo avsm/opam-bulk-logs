@@ -391,3 +391,11 @@ Building bitstring.2.0.4:
   ./configure --prefix /home/opam/.opam/4.02.1
   make srcdir=./
   make install
+Installing bitstring.2.0.4.
+Copying ~/.opam/repo/default/packages/lablgtk/lablgtk.2.18.3/files/lablgtk.install to ~/.opam/4.02.1/build/lablgtk.2.18.3/
+Copying ~/.opam/repo/default/packages/lablgtk/lablgtk.2.18.3/files/lablgldir.patch to ~/.opam/4.02.1/build/lablgtk.2.18.3/
+Applying lablgldir.patch.
+Building lablgtk.2.18.3:
+  ./configure --prefix /home/opam/.opam/4.02.1 LABLGLDIR=/home/opam/.opam/4.02.1/lib/lablgl
+  make world
+  make install
