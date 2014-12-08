@@ -1272,3 +1272,59 @@ Need to get 61.7 MB of archives.
 After this operation, 213 MB of additional disk space will be used.
 Do you want to continue [Y/n]? Abort.
 + opam install tsdl
+The following actions will be performed:
+ - install   base-bytes.base                       [required by ctypes]
+ - install   ctypes.0.3.3                          [required by tsdl]
+ - install   tsdl.0.8.1
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ctypes.0.3.3] Downloading https://github.com/ocamllabs/ocaml-ctypes/archive/0.3.3.tar.gz
+[tsdl.0.8.1] Downloading http://erratique.ch/software/tsdl/releases/tsdl-0.8.1.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building ctypes.0.3.3:
+  make
+  make install
+Installing ctypes.0.3.3.
+Building tsdl.0.8.1:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+[ERROR] The compilation of tsdl.0.8.1 failed.
+Removing tsdl.0.8.1.
+  Nothing to do.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   ctypes.0.3.3
+ - install   base-bytes.base
+The following failed
+ - install   tsdl.0.8.1
+
+#=== ERROR while installing tsdl.0.8.1 ========================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ocaml pkg/build.ml native=true native-dynlink=true
+# path                 /home/opam/.opam/4.02.1/build/tsdl.0.8.1
+# compiler             4.02.1
+# exit-code            10
+# env-file             /home/opam/.opam/4.02.1/build/tsdl.0.8.1/tsdl-1047-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.1/build/tsdl.0.8.1/tsdl-1047-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.1/build/tsdl.0.8.1/tsdl-1047-ad8886.err
+### stdout ###
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.02.1/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.1/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.02.1/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# + pkg-config --cflags sdl2 > /tmp/pkgconfig4ee342pkg-config
+# Package sdl2 was not found in the pkg-config search path.
+# Perhaps you should add the directory containing `sdl2.pc'
+# to the PKG_CONFIG_PATH environment variable
+# No package 'sdl2' found
+# Command exited with code 1.
+### stderr ###
+# File "pkg/topkg-ext.ml", line 42, characters 12-25:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108142456.export"

@@ -1,37 +1,7 @@
-++ opam install tuareg -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-+ '[' '' '!=' '' ']'
-CentOS 7 depexts:
-+ opam install tuareg
-The following actions will be performed:
- - install   tuareg.2.0.8
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[tuareg.2.0.8] Downloading https://github.com/Chris00/tuareg/releases/download/2.0.8/tuareg-2.0.8.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building tuareg.2.0.8:
-  make install INSTALL_DIR=/home/opam/.opam/4.02.1/share/tuareg
-[ERROR] The compilation of tuareg.2.0.8 failed.
-Removing tuareg.2.0.8.
-  make uninstall
-
-
-#=== ERROR while installing tuareg.2.0.8 ======================================#
-# opam-version         1.2.0
-# os                   linux
-# command              make install INSTALL_DIR=/home/opam/.opam/4.02.1/share/tuareg
-# path                 /home/opam/.opam/4.02.1/build/tuareg.2.0.8
-# compiler             4.02.1
-# exit-code            2
-# env-file             /home/opam/.opam/4.02.1/build/tuareg.2.0.8/tuareg-26-5f1023.env
-# stdout-file          /home/opam/.opam/4.02.1/build/tuareg.2.0.8/tuareg-26-5f1023.out
-# stderr-file          /home/opam/.opam/4.02.1/build/tuareg.2.0.8/tuareg-26-5f1023.err
-### stdout ###
-# emacs --batch --no-init-file -f batch-byte-compile tuareg.el
-### stderr ###
-# make: emacs: Command not found
-# make: *** [tuareg.elc] Error 127
-
+++ opam install tuareg -e debian
++ depext=emacs
++ echo Debian depexts: emacs
+Debian depexts: emacs
++ '[' emacs '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y emacs
