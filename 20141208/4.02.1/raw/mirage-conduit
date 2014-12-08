@@ -1,0 +1,50 @@
+++ opam install mirage-conduit -e debian
++ depext=
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install mirage-conduit -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install mirage-conduit
+Debian srcexts:
+The following actions will be performed:
+ - install   base-bytes.base                       [required by ocplib-endian]
+ - install   re.1.2.2                              [required by uri]
+ - install   base64.1.0.0                          [required by dns]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   stringext.1.1.0                       [required by conduit]
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   ounit.2.0.0                           [required by uri]
+ - install   cmdliner.0.9.6                        [required by vchan]
+ - install   type_conv.112.01.00                   [required by uri]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   lwt.2.4.6                             [required by conduit]
+ - install   sexplib.112.01.00                     [required by conduit]
+ - install   uri.1.7.2                             [required by conduit]
+ - install   ipaddr.2.5.0                          [required by conduit]
+ - install   cstruct.1.5.0                         [required by conduit]
+ - install   tuntap.1.0.0                          [required by mirage-net-unix]
+ - install   xenstore.1.2.5                        [required by vchan]
+ - install   shared-memory-ring.1.1.0              [required by mirage-unix]
+ - install   io-page.1.2.0                         [required by vchan]
+ - install   xenstore_transport.0.9.4              [required by vchan]
+ - install   mirage-types.2.0.1                    [required by mirage-conduit]
+ - install   mirage-types-lwt.2.0.1                [required by vchan, mirage-dns]
+ - install   mirage-net-unix.1.1.1                 [required by tcpip]
+ - install   mirage-clock-unix.1.0.0               [required by tcpip]
+ - install   vchan.2.0.0                           [required by mirage-conduit]
+ - install   mirage-unix.2.0.1                     [required by tcpip]
+ - install   mirage-console.2.0.0                  [required by tcpip]
+ - install   tcpip.2.0.3                           [required by mirage-conduit]
+ - install   dns.0.11.0                            [required by mirage-dns]
+ - install   mirage-dns.2.0.0                      [required by mirage-conduit]
+ - install   conduit.0.7.1                         [required by mirage-conduit]
+ - install   mirage-conduit.2.0.0
+=== 32 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[base64.1.0.0] Downloading https://github.com/mirage/ocaml-base64/archive/v1.0.0.tar.gz
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[conduit.0.7.1] Downloading https://github.com/mirage/ocaml-conduit/archive/v0.7.1.tar.gz
