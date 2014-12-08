@@ -1,9 +1,14 @@
-++ opam install bitmasks -e centos,centos-7
+++ opam install bitmasks -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install bitmasks -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install bitmasks
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   bitmasks.1.0.0
 === 1 to install ===
