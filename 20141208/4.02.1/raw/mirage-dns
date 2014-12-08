@@ -1,17 +1,24 @@
-++ opam install mirage-dns -e centos,centos-7
+++ opam install mirage-dns -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install mirage-dns -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install mirage-dns
-CentOS 7 depexts:
 The following actions will be performed:
+ - install   base-bytes.base                       [required by ocplib-endian]
  - install   re.1.2.2                              [required by dns]
  - install   base64.1.0.0                          [required by dns]
- - install   cmdliner.0.9.6                        [required by dns]
  - install   optcomp.1.6                           [required by ocplib-endian]
- - install   lwt.2.4.5                             [required by mirage-dns]
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   cmdliner.0.9.6                        [required by dns]
  - install   type_conv.112.01.00                   [required by sexplib]
- - install   ocplib-endian.0.4                     [required by cstruct]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   lwt.2.4.6                             [required by mirage-dns]
  - install   sexplib.112.01.00                     [required by mirage-types-lwt, cstruct]
  - install   ipaddr.2.5.0                          [required by mirage-types-lwt, dns]
  - install   cstruct.1.5.0                         [required by mirage-dns]
@@ -20,7 +27,7 @@ The following actions will be performed:
  - install   mirage-types-lwt.2.0.1                [required by mirage-dns]
  - install   dns.0.11.0                            [required by mirage-dns]
  - install   mirage-dns.2.0.0
-=== 15 to install ===
+=== 17 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [base64.1.0.0] Downloading https://github.com/mirage/ocaml-base64/archive/v1.0.0.tar.gz
@@ -29,15 +36,17 @@ The following actions will be performed:
 [dns.0.11.0] Downloading https://github.com/mirage/ocaml-dns/archive/v0.11.0.tar.gz
 [io-page.1.2.0] Downloading https://github.com/mirage/io-page/archive/v1.2.0.tar.gz
 [ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
-[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
 [mirage-types.2.0.1] Downloading https://github.com/mirage/mirage/archive/v2.0.1.tar.gz
-[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
 [optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
 [re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
 [sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
 [type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
 Building base64.1.0.0:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
@@ -47,16 +56,15 @@ Building cmdliner.0.9.6:
   ocaml pkg/git.ml
   ocaml pkg/build.ml native=false native-dynlink=false
 Installing cmdliner.0.9.6.
-Building lwt.2.4.5:
-  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
-  make build
-  make install
-Installing lwt.2.4.5.
 Building optcomp.1.6:
   ./configure --prefix /home/opam/.opam/4.02.1
   make
   make install
 Installing optcomp.1.6.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
 Building re.1.2.2:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
@@ -66,11 +74,16 @@ Building type_conv.112.01.00:
   make
   make install
 Installing type_conv.112.01.00.
-Building ocplib-endian.0.4:
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building ocplib-endian.0.7:
   ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing ocplib-endian.0.4.
+Installing ocplib-endian.0.7.
 Building sexplib.112.01.00:
   ./configure --enable-syntax
   make
@@ -80,26 +93,3 @@ Building cstruct.1.5.0:
   ./configure --prefix /home/opam/.opam/4.02.1 --enable-lwt --enable-camlp4 --disable-async --enable-unix --disable-tests
   make
   make install
-Installing cstruct.1.5.0.
-Building ipaddr.2.5.0:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  make build
-  make install
-Installing ipaddr.2.5.0.
-Building io-page.1.2.0:
-  ./configure --prefix /home/opam/.opam/4.02.1
-  make
-  make install
-Installing io-page.1.2.0.
-Building mirage-types.2.0.1:
-  make install-types
-Installing mirage-types.2.0.1.
-Building dns.0.11.0:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1 --enable-lwt --enable-mirage
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing dns.0.11.0.
-Installing mirage-types-lwt.2.0.1.
-Building mirage-dns.2.0.0:
-  ocamlfind query dns.mirage
-Installing mirage-dns.2.0.0.
