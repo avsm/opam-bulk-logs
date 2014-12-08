@@ -1,0 +1,193 @@
+++ opam install libsvm -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install libsvm
+The following actions will be performed:
+ - install   herelib.109.35.02                     [required by core]
+ - install   pipebang.110.01.00                    [required by core]
+ - install   ounit.2.0.0                           [required by pa_ounit]
+ - install   type_conv.112.01.00                   [required by custom_printf, bin_prot, comparelib]
+ - install   lacaml.7.1.5                          [required by libsvm]
+ - install   variantslib.109.15.03                 [required by core]
+ - install   sexplib.112.01.00                     [required by libsvm]
+ - install   pa_ounit.111.28.00                    [required by core]
+ - install   fieldslib.109.20.03                   [required by core]
+ - install   enumerate.111.08.00                   [required by core]
+ - install   comparelib.109.60.00                  [required by core]
+ - install   bin_prot.112.01.00                    [required by core]
+ - install   pa_bench.111.28.00                    [required by core]
+ - install   custom_printf.112.01.00               [required by core]
+ - install   pa_test.111.08.00                     [required by core]
+ - install   typerep.111.17.00                     [required by core_kernel]
+ - install   core_kernel.112.01.00                 [required by core]
+ - install   core.112.01.01                        [required by libsvm]
+ - install   libsvm.0.9.2
+=== 19 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bin_prot.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/bin_prot-112.01.00.tar.gz
+[comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
+[core.112.01.01] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core-112.01.01.tar.gz
+[core_kernel.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core_kernel-112.01.00.tar.gz
+[custom_printf.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/custom_printf-112.01.00.tar.gz
+[enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
+[lacaml.7.1.5] Downloading https://github.com/mmottl/lacaml/releases/download/v7.1.5/lacaml-7.1.5.tar.gz
+[libsvm.0.9.2] Downloading https://bitbucket.org/ogu/libsvm-ocaml/downloads/libsvm-ocaml-0.9.2.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pa_bench.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_bench-111.28.00.tar.gz
+[pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
+[pa_test.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/pa_test-111.08.00.tar.gz
+[pipebang.110.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/110.01.00/individual/pipebang-110.01.00.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
+[variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building herelib.109.35.02:
+  make
+  make install
+Installing herelib.109.35.02.
+Building lacaml.7.1.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+[ERROR] The compilation of lacaml.7.1.5 failed.
+Removing lacaml.7.1.5.
+  ocamlfind remove lacaml
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building pipebang.110.01.00:
+  make
+  make install
+Installing pipebang.110.01.00.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building bin_prot.112.01.00:
+  make
+  make install
+Installing bin_prot.112.01.00.
+Building comparelib.109.60.00:
+  make
+  make install
+Installing comparelib.109.60.00.
+Building enumerate.111.08.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing enumerate.111.08.00.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building pa_ounit.111.28.00:
+  make
+  make install
+Installing pa_ounit.111.28.00.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building variantslib.109.15.03:
+  make
+  make install
+Installing variantslib.109.15.03.
+Building custom_printf.112.01.00:
+  make
+  make install
+Installing custom_printf.112.01.00.
+Building pa_bench.111.28.00:
+  make
+  make install
+Installing pa_bench.111.28.00.
+Building pa_test.111.08.00:
+  make
+  make install
+Installing pa_test.111.08.00.
+Building typerep.111.17.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing typerep.111.17.00.
+Building core_kernel.112.01.00:
+  make
+  make install
+Installing core_kernel.112.01.00.
+Copying ~/.opam/repo/default/packages/core/core.112.01.01/files/core.install to ~/.opam/4.02.1/build/core.112.01.01/
+Building core.112.01.01:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing core.112.01.01.
+
+
+#=== ERROR while installing lacaml.7.1.5 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/opam/.opam/4.02.1/build/lacaml.7.1.5
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/lacaml.7.1.5/lacaml-338-c743ac.env
+# stdout-file          /home/opam/.opam/4.02.1/build/lacaml.7.1.5/lacaml-338-c743ac.out
+# stderr-file          /home/opam/.opam/4.02.1/build/lacaml.7.1.5/lacaml-338-c743ac.err
+### stdout ###
+# ...[truncated]
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -ccopt '-o lib/impl4_C_c.o' -ccopt -DLACAML_COMPLEX -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/impl_SDCZ_c.c
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -ccopt '-o lib/impl4_Z_c.o' -ccopt -DLACAML_COMPLEX -ccopt -DLACAML_DOUBLE -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/impl_SDCZ_c.c
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -ccopt -g -ccopt '-std=c99' -ccopt -O2 -ccopt -fPIC -ccopt -DPIC -ccopt -Wall -ccopt -pedantic -ccopt -Wextra -ccopt -Wunused -ccopt -Wno-long-long -c lib/exp10.c
+# mv exp10.o lib/exp10.o
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlmklib -o lib/lacaml_stubs -lblas -llapack lib/impl_c.o lib/utils_c.o lib/vec2_S_c.o lib/vec2_D_c.o lib/vec2_C_c.o lib/vec2_Z_c.o lib/vec4_S_c.o lib/vec4_D_c.o lib/vec4_C_c.o lib/vec4_Z_c.o lib/mat4_S_c.o lib/mat4_D_c.o lib/mat4_C_c.o lib/mat4_Z_c.o lib/impl2_S_c.o lib/impl2_D_c.o lib/impl2_C_c.o lib/impl2_Z_c.o lib/impl4_S_c.o lib/impl4_D_c.o lib/impl4_C_c.o lib/impl4_Z_c.o lib/exp10.o
+# + /home/opam/.opam/4.02.1/bin/ocamlfind ocamlmklib -o lib/lacaml_stubs -lblas -llapack lib/impl_c.o lib/utils_c.o lib/vec2_S_c.o lib/vec2_D_c.o lib/vec2_C_c.o lib/vec2_Z_c.o lib/vec4_S_c.o lib/vec4_D_c.o lib/vec4_C_c.o lib/vec4_Z_c.o lib/mat4_S_c.o lib/mat4_D_c.o lib/mat4_C_c.o lib/mat4_Z_c.o lib/impl2_S_c.o lib/impl2_D_c.o lib/impl2_C_c.o lib/impl2_Z_c.o lib/impl4_S_c.o lib/impl4_D_c.o lib/impl4_C_c.o lib/impl4_Z_c.o lib/exp10.o
+# /usr/bin/ld: cannot find -lblas
+# /usr/bin/ld: cannot find -llapack
+# collect2: error: ld returned 1 exit status
+# Command exited with code 2.
+### stderr ###
+# ...[truncated]
+# File "setup.ml", line 2502, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# File "setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "setup.ml", line 2502, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' lib/liblacaml_stubs.a lib/dlllacaml_stubs.so lib/lacaml.cma lib/lacaml.cmxa lib/lacaml.a lib/lacaml.cmxs lib/lacaml_top.cma lib/lacaml_top.cmxa lib/lacaml_top.a lib/lacaml_top.cmxs examples/blas/blas.native examples/eig/eig.native examples/eig/sbev.native examples/eig/sbgv.native examples/lin_eq/lin_eq.native examples/lin_eq/gbsv.native examples/lin_eq_comp/lin_eq_comp.native examples/lin_reg/lin_reg.native examples/qr/qr.native examples/svd/svd.native examples/nag/nag_gbsv.native examples/nag/nag_gesv.native examples/nag/nag_gtsv.native examples/nag/nag_pbsv.native examples/nag/nag_posv.native examples/nag/nag_ppsv.native examples/nag/nag_ptsv.native examples/nag/nag_spsv.native examples/nag/nag_sysv.native -tag debug' terminated with error code 10")
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.112.01.00
+ - install   core_kernel.112.01.00
+ - install   type_conv.112.01.00
+ - install   bin_prot.112.01.00
+ - install   pa_test.111.08.00
+ - install   core.112.01.01
+ - install   enumerate.111.08.00
+ - install   ounit.2.0.0
+ - install   comparelib.109.60.00
+ - install   pa_ounit.111.28.00
+ - install   variantslib.109.15.03
+ - install   pipebang.110.01.00
+ - install   typerep.111.17.00
+ - install   herelib.109.35.02
+ - install   pa_bench.111.28.00
+ - install   fieldslib.109.20.03
+ - install   custom_printf.112.01.00
+The following failed
+ - install   lacaml.7.1.5
+Due to the errors, the following have been cancelled
+ - install   libsvm.0.9.2
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108065657.export"
