@@ -1,51 +1,29 @@
-++ opam install dose -e centos,centos-7
+++ opam install dose -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install dose -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install dose
 The following actions will be performed:
- - install   extlib.1.6.1                          [required by dose]
  - install   re.1.2.2                              [required by dose]
  - install   ocamlgraph.1.8.5                      [required by dose]
+ - install   extlib-compat.1.6.1                   [required by dose]
  - install   cudf.0.7                              [required by dose]
  - install   dose.3.2.2+opam
 === 5 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [cudf.0.7] Downloading https://gforge.inria.fr/frs/download.php/33593/cudf-0.7.tar.gz
-[extlib.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+[extlib-compat.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
 [dose.3.2.2+opam] Downloading https://gforge.inria.fr/frs/download.php/file/33677/dose3-3.2.2.tar.gz
 [ocamlgraph.1.8.5] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.5.tar.gz
 [re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building extlib.1.6.1:
-  make minimal=1 build install
-Installing extlib.1.6.1.
-Copying ~/.opam/repo/default/packages/ocamlgraph/ocamlgraph.1.8.5/files/ocamlgraph.install to ~/.opam/4.02.1/build/ocamlgraph.1.8.5/
-Building ocamlgraph.1.8.5:
-  ./configure
-  make
-  make install-findlib
-Installing ocamlgraph.1.8.5.
-Building re.1.2.2:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing re.1.2.2.
-Building cudf.0.7:
-  make all opt
-  make install DESTDIR=/home/opam/.opam/4.02.1 OCAMLLIBDIR=lib BINDIR=bin LIBDIR=lib INCDIR=include
-Installing cudf.0.7.
-Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0005-Add-a-check_request-function-allowing-more-control-o.patch to ~/.opam/4.02.1/build/dose.3.2.2+opam/
-Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0004-Remove-broken-assert.patch to ~/.opam/4.02.1/build/dose.3.2.2+opam/
-Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0003-Removed-hard-failure-cases-in-favor-of-finer-diagnos.patch to ~/.opam/4.02.1/build/dose.3.2.2+opam/
-Applying 0003-Removed-hard-failure-cases-in-favor-of-finer-diagnos.patch.
-Applying 0004-Remove-broken-assert.patch.
-Applying 0005-Add-a-check_request-function-allowing-more-control-o.patch.
-Building dose.3.2.2+opam:
-  ./configure --with-ocamlgraph --bindir=/home/opam/.opam/4.02.1/bin
-  make TARGETS=
-  make install
-Installing dose.3.2.2+opam.
+Building extlib-compat.1.6.1:
+  make build install
