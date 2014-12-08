@@ -1,0 +1,26 @@
+++ opam install bibtex2html -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install bibtex2html
+The following actions will be performed:
+ - install   hevea.2.01                            [required by bibtex2html]
+ - install   bibtex2html.1.98
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bibtex2html.1.98] Downloading http://www.lri.fr/~filliatr/ftp/bibtex2html/bibtex2html-1.98.tar.gz
+[hevea.2.01] Downloading http://hevea.inria.fr/old/hevea-2.01.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/hevea/hevea.2.01/files/hevea.install to ~/.opam/4.02.1/build/hevea.2.01/
+Building hevea.2.01:
+  make PREFIX=/home/opam/.opam/4.02.1
+  make install
+Installing hevea.2.01.
+Building bibtex2html.1.98:
+  ./configure --prefix=/home/opam/.opam/4.02.1
+  make
+  make install
+Installing bibtex2html.1.98.
