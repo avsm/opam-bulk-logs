@@ -23,3 +23,4 @@ Building headache.1.03:
   ./configure --bindir /home/opam/.opam/4.02.1/bin
   make
   make install
+Installing headache.1.03.
