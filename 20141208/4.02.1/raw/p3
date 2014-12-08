@@ -1,7 +1,12 @@
-++ opam install p3 -e centos,centos-7
+++ opam install p3 -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install p3 -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install p3
 The following actions will be performed:
