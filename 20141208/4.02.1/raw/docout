@@ -1,0 +1,24 @@
+++ opam install docout -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install docout
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   smart-print.0.2.0                     [required by docout]
+ - install   docout.0.0.1
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[docout.0.0.1] Downloading https://bitbucket.org/smondet/docout/get/docout.0.0.1.tar.gz
+[smart-print.0.2.0] Downloading https://github.com/clarus/smart-print/archive/v0.2.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building smart-print.0.2.0:
+  make
+  make install
+Installing smart-print.0.2.0.
+Building docout.0.0.1:
+  ocaml please.ml build
+  ocaml please.ml install
+Installing docout.0.0.1.
