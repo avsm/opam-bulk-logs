@@ -1,9 +1,24 @@
-++ opam install conf-libpcre -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install conf-libpcre -e debian
++ depext=libpcre3-dev
+Debian depexts: libpcre3-dev
++ echo Debian depexts: libpcre3-dev
++ '[' libpcre3-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libpcre3-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libpcrecpp0:amd64 (from .../libpcrecpp0_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package libpcre3-dev.
+Unpacking libpcre3-dev (from .../libpcre3-dev_1%3a8.30-5_amd64.deb) ...
+Setting up libpcrecpp0:amd64 (1:8.30-5) ...
+Setting up libpcre3-dev (1:8.30-5) ...
+++ opam install conf-libpcre -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install conf-libpcre
-CentOS 7 depexts:
 The following actions will be performed:
  - install   conf-libpcre.1
 === 1 to install ===
@@ -13,19 +28,4 @@ The following actions will be performed:
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Building conf-libpcre.1:
   pkg-config libpcre
-[ERROR] The compilation of conf-libpcre.1 failed.
-Removing conf-libpcre.1.
-  Nothing to do.
-
-
-#=== ERROR while installing conf-libpcre.1 ====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              pkg-config libpcre
-# path                 /home/opam/.opam/4.02.1/build/conf-libpcre.1
-# compiler             4.02.1
-# exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/conf-libpcre.1/conf-libpcre-17-dd682e.env
-# stdout-file          /home/opam/.opam/4.02.1/build/conf-libpcre.1/conf-libpcre-17-dd682e.out
-# stderr-file          /home/opam/.opam/4.02.1/build/conf-libpcre.1/conf-libpcre-17-dd682e.err
-
+Installing conf-libpcre.1.
