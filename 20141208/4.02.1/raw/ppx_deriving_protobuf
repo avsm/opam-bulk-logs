@@ -24,3 +24,10 @@ The following actions will be performed:
 Building ppx_tools.0.99.2:
   make all
   make install
+Installing ppx_tools.0.99.2.
+Building ppx_deriving.1.0:
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing ppx_deriving.1.0.
+Building ppx_deriving_protobuf.2.0:
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing ppx_deriving_protobuf.2.0.
