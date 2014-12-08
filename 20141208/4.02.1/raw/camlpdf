@@ -1,1 +1,22 @@
 ++ opam install camlpdf -e debian
++ depext=
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install camlpdf -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install camlpdf
+Debian srcexts:
+The following actions will be performed:
+ - install   camlpdf.2.1.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camlpdf.2.1.1] Downloading https://github.com/johnwhitington/camlpdf/archive/v2.1.1.zip
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building camlpdf.2.1.1:
+  make
+  make install
