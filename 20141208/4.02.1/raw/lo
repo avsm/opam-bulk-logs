@@ -1,9 +1,24 @@
-++ opam install lo -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install lo -e debian
++ depext=liblo-dev
+Debian depexts: liblo-dev
++ echo Debian depexts: liblo-dev
++ '[' liblo-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y liblo-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package liblo7.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking liblo7 (from .../liblo7_0.26~repack-7_amd64.deb) ...
+Selecting previously unselected package liblo-dev.
+Unpacking liblo-dev (from .../liblo-dev_0.26~repack-7_amd64.deb) ...
+Setting up liblo7 (0.26~repack-7) ...
+Setting up liblo-dev (0.26~repack-7) ...
+++ opam install lo -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install lo
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   lo.0.1.0
 === 1 to install ===
@@ -16,33 +31,4 @@ Building lo.0.1.0:
   ./configure --prefix /home/opam/.opam/4.02.1
   make
   make install
-[ERROR] The compilation of lo.0.1.0 failed.
-Removing lo.0.1.0.
-  ocamlfind remove lo
-
-
-#=== ERROR while installing lo.0.1.0 ==========================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --prefix /home/opam/.opam/4.02.1
-# path                 /home/opam/.opam/4.02.1/build/lo.0.1.0
-# compiler             4.02.1
-# exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/lo.0.1.0/lo-26-5f1023.env
-# stdout-file          /home/opam/.opam/4.02.1/build/lo.0.1.0/lo-26-5f1023.out
-# stderr-file          /home/opam/.opam/4.02.1/build/lo.0.1.0/lo-26-5f1023.err
-### stdout ###
-# ...[truncated]
-# checking for stdlib.h... yes
-# checking for string.h... yes
-# checking for memory.h... yes
-# checking for strings.h... yes
-# checking for inttypes.h... yes
-# checking for stdint.h... yes
-# checking for unistd.h... yes
-# checking lo/lo.h usability... no
-# checking lo/lo.h presence... no
-# checking for lo/lo.h... no
-### stderr ###
-# configure: error: LO headers not found.
-
+Installing lo.0.1.0.

@@ -29,3 +29,15 @@ The following actions will be performed:
 [llvm.3.5] Downloading http://llvm.org/releases/3.5.0/llvm-3.5.0.src.tar.xz
 [ocamlgraph.1.8.5] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.5.tar.gz
 [llvmgraph.0.1] Downloading https://github.com/Drup/llvmgraph/archive/0.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/llvm/llvm.3.5/files/makefile+system.patch to ~/.opam/4.02.1/build/llvm.3.5/
+Copying ~/.opam/repo/default/packages/llvm/llvm.3.5/files/makefile+build.patch to ~/.opam/4.02.1/build/llvm.3.5/
+Copying ~/.opam/repo/default/packages/llvm/llvm.3.5/files/compile.sh to ~/.opam/4.02.1/build/llvm.3.5/
+Applying makefile+build.patch.
+Applying makefile+system.patch.
+Building llvm.3.5:
+  ./compile.sh install 3.5 make /home/opam/.opam/4.02.1 /home/opam/.opam/4.02.1/lib
+[ERROR] The compilation of llvm.3.5 failed.
+Removing llvm.3.5.
+  ./compile.sh uninstall 3.5 make /home/opam/.opam/4.02.1 /home/opam/.opam/4.02.1/lib
