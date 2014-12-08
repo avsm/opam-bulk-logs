@@ -1,0 +1,19 @@
+++ opam install extunix -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install extunix
+The following actions will be performed:
+ - install   extunix.0.1.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[extunix.0.1.1] Downloading https://forge.ocamlcore.org/frs/download.php/1403/ocaml-extunix-0.1.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building extunix.0.1.1:
+  ocaml setup.ml -configure --disable-tests --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing extunix.0.1.1.
