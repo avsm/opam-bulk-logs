@@ -66,3 +66,30 @@ Building ocamlgraph.1.8.5:
   ./configure
   make
   make install-findlib
+Installing ocamlgraph.1.8.5.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Building stringext.1.1.0:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing stringext.1.1.0.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+Building containers.0.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-thread --disable-bench --disable-tests --disable-cgi --disable-lwt --enable-docs --enable-misc
+  make build
+  make install
+Installing containers.0.6.
+Building cudf.0.7:
+  make all opt
+  make install DESTDIR=/home/opam/.opam/4.02.1 OCAMLLIBDIR=lib BINDIR=bin LIBDIR=lib INCDIR=include
