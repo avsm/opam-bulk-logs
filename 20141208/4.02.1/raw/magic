@@ -4,3 +4,28 @@
 Debian depexts: libmagic-dev
 + '[' libmagic-dev '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libmagic-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libmagic-dev:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libmagic-dev:amd64 (from .../libmagic-dev_5.11-2+deb7u6_amd64.deb) ...
+Setting up libmagic-dev:amd64 (5.11-2+deb7u6) ...
+++ opam install magic -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install magic
+Debian srcexts:
+The following actions will be performed:
+ - install   magic.0.7.3
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[magic.0.7.3] Downloading http://downloads.sourceforge.net/project/ocaml-magic/ocaml-magic/0.7/ocaml-magic-0.7.3.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building magic.0.7.3:
+  ./configure --prefix /home/opam/.opam/4.02.1 --datarootdir /home/opam/.opam/4.02.1
+  make byte opt
+  make install
+Installing magic.0.7.3.
