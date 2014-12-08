@@ -198,3 +198,24 @@ Installing cstruct.1.5.0.
 Building rpc.1.5.1:
   make
   make install
+Installing rpc.1.5.1.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Building xapi-inventory.0.9.1:
+  ./configure --default_inventory=/home/opam/.opam/4.02.1/etc
+  make
+  make install
+Installing xapi-inventory.0.9.1.
+Building xenctrl.0.9.26:
+  ./configure
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+[ERROR] The compilation of xenctrl.0.9.26 failed.
+Removing xenctrl.0.9.26.
+  make uninstall
+Building cohttp.0.10.1:
+  make PREFIX=/home/opam/.opam/4.02.1
+  make PREFIX=/home/opam/.opam/4.02.1 install
