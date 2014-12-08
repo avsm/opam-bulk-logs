@@ -1,0 +1,21 @@
+++ opam install agrep -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install agrep
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   agrep.1.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[agrep.1.0] Downloading http://forge.ocamlcore.org/frs/download.php/330/ocamlagrep-1.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/agrep/agrep.1.0/files/find-install.patch to ~/.opam/4.02.1/build/agrep.1.0/
+Copying ~/.opam/repo/default/packages/agrep/agrep.1.0/files/META to ~/.opam/4.02.1/build/agrep.1.0/
+Applying find-install.patch.
+Building agrep.1.0:
+  make
+  make find-install
+Installing agrep.1.0.
