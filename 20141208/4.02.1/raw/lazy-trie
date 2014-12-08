@@ -1,9 +1,14 @@
-++ opam install lazy-trie -e centos,centos-7
+++ opam install lazy-trie -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install lazy-trie -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install lazy-trie
+Debian srcexts:
 The following actions will be performed:
  - install   type_conv.112.01.00                   [required by sexplib]
  - install   sexplib.112.01.00                     [required by lazy-trie]
