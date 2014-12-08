@@ -1,0 +1,26 @@
+++ opam install statsd-client -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install statsd-client
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   lwt.2.4.5                             [required by statsd-client]
+ - install   statsd-client.1.0.1
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[statsd-client.1.0.1] Downloading https://github.com/mfp/ocaml-statsd-client/archive/1.0.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+Installing lwt.2.4.5.
+Building statsd-client.1.0.1:
+  make all
+  make opt
+  make install
+Installing statsd-client.1.0.1.
