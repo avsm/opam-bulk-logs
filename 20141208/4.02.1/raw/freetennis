@@ -607,3 +607,26 @@ Building omake.0.9.8.6-0.rc1:
   make bootstrap PREFIX=/home/opam/.opam/4.02.1
   make all PREFIX=/home/opam/.opam/4.02.1
   make install PREFIX=/home/opam/.opam/4.02.1
+Installing omake.0.9.8.6-0.rc1.
+Copying ~/.opam/repo/default/packages/lablgtk/lablgtk.2.18.3/files/lablgtk.install to ~/.opam/4.02.1/build/lablgtk.2.18.3/
+Copying ~/.opam/repo/default/packages/lablgtk/lablgtk.2.18.3/files/lablgldir.patch to ~/.opam/4.02.1/build/lablgtk.2.18.3/
+Applying lablgldir.patch.
+Building lablgtk.2.18.3:
+  ./configure --prefix /home/opam/.opam/4.02.1 LABLGLDIR=/home/opam/.opam/4.02.1/lib/lablgl
+  make world
+  make install
+Installing lablgtk.2.18.3.
+Building ocamlsdl.0.9.1:
+  ./configure --with-installdir=/home/opam/.opam/4.02.1/lib/ocamlsdl --with-lablgldir=/home/opam/.opam/4.02.1/lib/lablgl
+  make
+  make install
+Installing ocamlsdl.0.9.1.
+Building camlimages.4.2.0:
+  omake --configure
+  omake install
+Installing camlimages.4.2.0.
+Copying ~/.opam/repo/default/packages/freetennis/freetennis.0.4.8/files/freetennis.install to ~/.opam/4.02.1/build/freetennis.0.4.8/
+Copying ~/.opam/repo/default/packages/freetennis/freetennis.0.4.8/files/freetennis over ~/.opam/4.02.1/build/freetennis.0.4.8/
+Building freetennis.0.4.8:
+  ocamlfind opt -linkpkg -package sdl.sdlmixer,lablgl,lablgtk2,camlimages -o freetennis.native freetennis.ml
+Installing freetennis.0.4.8.
