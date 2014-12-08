@@ -23,3 +23,4 @@ Building camltemplate.1.0.2:
   make opt
   make -C src install
   make -C doc install INSTALL_DIR=/home/opam/.opam/4.02.1/doc/camltemplate
+Installing camltemplate.1.0.2.

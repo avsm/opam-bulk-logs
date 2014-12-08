@@ -22,3 +22,4 @@ Building camlp5.6.12:
   ./configure --prefix /home/opam/.opam/4.02.1 -libdir /home/opam/.opam/4.02.1/lib -mandir /home/opam/.opam/4.02.1/man
   make world.opt
   make install
+Installing camlp5.6.12.
