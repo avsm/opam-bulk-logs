@@ -1,0 +1,23 @@
+++ opam install syslog -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install syslog -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install syslog
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   syslog.1.4
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[syslog.1.4] Downloading http://ftp.de.debian.org/debian/pool/main/s/syslog-ocaml/syslog-ocaml_1.4.orig.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building syslog.1.4:
+  make reallyall
+  make install
+Installing syslog.1.4.
