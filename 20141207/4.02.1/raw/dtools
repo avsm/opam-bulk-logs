@@ -1,0 +1,20 @@
+++ opam install dtools -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install dtools -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install dtools
+The following actions will be performed:
+ - install   dtools.0.3.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[dtools.0.3.0] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz
+[ERROR] http://downloads.sourceforge.net/project/savonet/ocaml-dtools/0.3.0/ocaml-dtools-0.3.0.tar.gz is not available
+[ERROR] Could not download archives of dtools.0.3.0
+
