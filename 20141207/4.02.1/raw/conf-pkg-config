@@ -1,0 +1,23 @@
+++ opam install conf-pkg-config -e ubuntu
++ depext=pkg-config
++ echo Ubuntu depexts: pkg-config
++ '[' pkg-config '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: pkg-config
++ sudo apt-get install -qq -y pkg-config
+++ opam install conf-pkg-config -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install conf-pkg-config
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   conf-pkg-config.1.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building conf-pkg-config.1.0:
+  pkg-config --help
+Installing conf-pkg-config.1.0.
