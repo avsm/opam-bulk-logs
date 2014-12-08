@@ -1,1 +1,29 @@
 ++ opam install dum -e debian
++ depext=
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install dum -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install dum
+The following actions will be performed:
+ - install   easy-format.1.0.2                     [required by dum]
+ - install   dum.1.0.1
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[dum.1.0.1] Downloading http://mjambon.com/releases/dum/dum-1.0.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Building dum.1.0.1:
+  make
+  make install
+Installing dum.1.0.1.

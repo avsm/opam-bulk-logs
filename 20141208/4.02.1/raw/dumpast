@@ -1,18 +1,6 @@
-++ opam install dumpast -e centos,centos-7
+++ opam install dumpast -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-+ opam install dumpast
-The following actions will be performed:
- - install   dumpast.0.1.0
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[dumpast.0.1.0] Downloading https://github.com/samoht/ocaml-dumpast/archive/0.1.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building dumpast.0.1.0:
-  make
-  make install
-Installing dumpast.0.1.0.
+++ opam install dumpast -e source,linux
