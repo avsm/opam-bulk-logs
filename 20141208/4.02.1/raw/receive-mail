@@ -102,3 +102,7 @@ Building ocamlnet.3.7.7:
   make all
   make opt
   make install
+Installing ocamlnet.3.7.7.
+Building ounit.2.0.0:
+  make build
+  make install
