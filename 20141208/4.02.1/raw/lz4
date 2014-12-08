@@ -1,48 +1,77 @@
-++ opam install lz4 -e centos,centos-7
-+ depext=libffi-devel
-+ echo CentOS 7 depexts: libffi-devel
-CentOS 7 depexts: libffi-devel
-+ '[' libffi-devel '!=' '' ']'
-+ sudo yum install -y libffi-devel
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * base: anorien.csc.warwick.ac.uk
- * extras: anorien.csc.warwick.ac.uk
- * updates: mirrors.coreix.net
-Resolving Dependencies
---> Running transaction check
----> Package libffi-devel.x86_64 0:3.0.13-11.el7 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package              Arch           Version                 Repository    Size
-================================================================================
-Installing:
- libffi-devel         x86_64         3.0.13-11.el7           base          22 k
-
-Transaction Summary
-================================================================================
-Install  1 Package
-
-Total download size: 22 k
-Installed size: 27 k
-Downloading packages:
-Running transaction check
-Running transaction test
-Transaction test succeeded
-Running transaction
-  Installing : libffi-devel-3.0.13-11.el7.x86_64                            1/1 
-install-info: No such file or directory for /usr/share/info/libffi.info.gz
-warning: %post(libffi-devel-3.0.13-11.el7.x86_64) scriptlet failed, exit status 1
-Non-fatal POSTIN scriptlet failure in rpm package libffi-devel-3.0.13-11.el7.x86_64
-  Verifying  : libffi-devel-3.0.13-11.el7.x86_64                            1/1 
-
-Installed:
-  libffi-devel.x86_64 0:3.0.13-11.el7                                           
-
-Complete!
+++ opam install lz4 -e debian
++ depext='libffi-dev liblz4-dev'
++ echo Debian depexts: libffi-dev liblz4-dev
+Debian depexts: libffi-dev liblz4-dev
++ '[' 'libffi-dev liblz4-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libffi-dev liblz4-dev
+E: Unable to locate package liblz4-dev
+++ opam install lz4 -e source,linux
++ srcext=https://gist.githubusercontent.com/whitequark/eef074a8daa14602e447/raw/c151d3ab2f35f6cac54c7ef7459e2bbfff852938/install.sh
+Debian srcexts: https://gist.githubusercontent.com/whitequark/eef074a8daa14602e447/raw/c151d3ab2f35f6cac54c7ef7459e2bbfff852938/install.sh
++ echo Debian srcexts: https://gist.githubusercontent.com/whitequark/eef074a8daa14602e447/raw/c151d3ab2f35f6cac54c7ef7459e2bbfff852938/install.sh
++ '[' https://gist.githubusercontent.com/whitequark/eef074a8daa14602e447/raw/c151d3ab2f35f6cac54c7ef7459e2bbfff852938/install.sh '!=' '' ']'
+++ mktemp
++ t=/tmp/tmp.RjScPIhng3
++ curl -sL https://gist.githubusercontent.com/whitequark/eef074a8daa14602e447/raw/c151d3ab2f35f6cac54c7ef7459e2bbfff852938/install.sh
++ bash -ex /tmp/tmp.RjScPIhng3
++ V=r119
++ curl -OJL https://github.com/Cyan4973/lz4/archive/r119.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   118    0   118    0     0    305      0 --:--:-- --:--:-- --:--:--   416
+  0     0    0 31009    0     0  32375      0 --:--:-- --:--:-- --:--:-- 32375  0     0    0  155k    0     0   137k      0 --:--:--  0:00:01 --:--:--  704k
+curl: Saved to filename 'lz4-r119.tar.gz'
++ tar -zxvf lz4-r119.tar.gz
+lz4-r119/
+lz4-r119/.travis.yml
+lz4-r119/LICENSE
+lz4-r119/LZ4_Streaming_Format.odt
+lz4-r119/Makefile
+lz4-r119/NEWS
+lz4-r119/README.md
+lz4-r119/cmake_unofficial/
+lz4-r119/cmake_unofficial/CMakeLists.txt
+lz4-r119/lz4.c
+lz4-r119/lz4.h
+lz4-r119/lz4_format_description.txt
+lz4-r119/lz4hc.c
+lz4-r119/lz4hc.h
+lz4-r119/programs/
+lz4-r119/programs/COPYING
+lz4-r119/programs/Makefile
+lz4-r119/programs/bench.c
+lz4-r119/programs/bench.h
+lz4-r119/programs/datagen.c
+lz4-r119/programs/fullbench.c
+lz4-r119/programs/fuzzer.c
+lz4-r119/programs/lz4.1
+lz4-r119/programs/lz4c.1
+lz4-r119/programs/lz4cat.1
+lz4-r119/programs/lz4cli.c
+lz4-r119/programs/lz4io.c
+lz4-r119/programs/lz4io.h
+lz4-r119/programs/xxhash.c
+lz4-r119/programs/xxhash.h
++ cd lz4-r119
++ make
+compiling static library
+compiling dynamic library
+creating versioned links
+make[1]: Entering directory `/home/opam/opam-repository/lz4-r119/programs'
+cc      -I.. -std=c99 -O3 -Wall -W -Wundef -DLZ4_VERSION=\"r119\" -DDISABLE_LZ4C_LEGACY_OPTIONS ../lz4.c ../lz4hc.c bench.c xxhash.c lz4io.c lz4cli.c -o lz4
+cc      -I.. -std=c99 -O3 -Wall -W -Wundef -DLZ4_VERSION=\"r119\" ../lz4.c ../lz4hc.c bench.c xxhash.c lz4io.c lz4cli.c -o lz4c
+make[1]: Leaving directory `/home/opam/opam-repository/lz4-r119/programs'
++ sudo make install
+compiling static library
+compiling dynamic library
+creating versioned links
+lz4 static and shared library installed
+make[1]: Entering directory `/home/opam/opam-repository/lz4-r119/programs'
+Installing binaries
+Installing man pages
+lz4 installation completed
+make[1]: Leaving directory `/home/opam/opam-repository/lz4-r119/programs'
 + opam install lz4
 The following actions will be performed:
  - install   base-bytes.base                       [required by lz4]
@@ -59,57 +88,48 @@ Installing base-bytes.base.
 Building ctypes.0.3.3:
   make
   make install
-Installing ctypes.0.3.3.
-Building lz4.1.0.0:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-[ERROR] The compilation of lz4.1.0.0 failed.
-Removing lz4.1.0.0.
-  ocamlfind remove lz4
-
-
-#=== ERROR while installing lz4.1.0.0 =========================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ocaml setup.ml -build
-# path                 /home/opam/.opam/4.02.1/build/lz4.1.0.0
-# compiler             4.02.1
-# exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/lz4.1.0.0/lz4-822-1872ec.env
-# stdout-file          /home/opam/.opam/4.02.1/build/lz4.1.0.0/lz4-822-1872ec.out
-# stderr-file          /home/opam/.opam/4.02.1/build/lz4.1.0.0/lz4-822-1872ec.err
-### stdout ###
-# ...[truncated]
-# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -c -g -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29@40 -I lib_gen -o lib_gen/LZ4_bindgen.cmo lib_gen/LZ4_bindgen.ml
-# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -g -linkpkg -package ctypes.stubs lib_gen/LZ4_bindings.cmo lib_gen/LZ4_bindgen.cmo -o lib_gen/LZ4_bindgen.byte
-# lib_gen/LZ4_bindgen.byte
-# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -ccopt -I -ccopt /home/opam/.opam/4.02.1/lib/ctypes/.. -c lib/LZ4_stubs.c
-# + /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -ccopt -I -ccopt /home/opam/.opam/4.02.1/lib/ctypes/.. -c lib/LZ4_stubs.c
-# lib/LZ4_stubs.c:3:17: fatal error: lz4.h: No such file or directory
-#  #include <lz4.h>
-#                  ^
-# compilation terminated.
-# Command exited with code 2.
-### stderr ###
-# ...[truncated]
-# Use Lazy.from_fun instead.
-# File "setup.ml", line 247, characters 8-26:
-# Warning 3: deprecated: String.set
-# Use Bytes.set instead.
-# File "setup.ml", line 2502, characters 6-24:
-# Warning 3: deprecated: Lazy.lazy_from_fun
-# Use Lazy.from_fun instead.
-# W: Cannot find source file matching module 'LZ4_bindings' in library lz4
-# W: Cannot find source file matching module 'LZ4_generated' in library lz4
-# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' lib_gen/LZ4_bindgen.byte lib/liblz4_stubs.a lib/dlllz4_stubs.so lib/lz4.cma lib/lz4.cmxa lib/lz4.a lib/lz4.cmxs -tag debug' terminated with error code 10")
+[ERROR] The compilation of ctypes.0.3.3 failed.
+Removing ctypes.0.3.3.
+  ocamlfind remove ctypes
 
 
 =-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 These actions have been completed successfully
- - install   ctypes.0.3.3
  - install   base-bytes.base
 The following failed
+ - install   ctypes.0.3.3
+Due to the errors, the following have been cancelled
  - install   lz4.1.0.0
 
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108070204.export"
+#=== ERROR while installing ctypes.0.3.3 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/ctypes.0.3.3
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/ctypes.0.3.3/ctypes-278-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.1/build/ctypes.0.3.3/ctypes-278-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.1/build/ctypes.0.3.3/ctypes-278-d2d111.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlc -c -o _build/src/ctypes-foreign-base/libffi_abi.cmi    -I _build/src/ctypes-foreign-base  -I _build/src/ctypes src/ctypes-foreign-base/libffi_abi.mli
+# ocamlfind ocamlc      -c -o _build/src/ctypes-foreign-base/libffi_abi.cmo -I _build/src/ctypes-foreign-base  -I _build/src/ctypes src/ctypes-foreign-base/libffi_abi.ml
+# ocamlfind ocamlc -c -o _build/src/ctypes-foreign-base/weakRef.cmi    -I _build/src/ctypes-foreign-base  -I _build/src/ctypes src/ctypes-foreign-base/weakRef.mli
+# ocamlfind ocamlc      -c -o _build/src/ctypes-foreign-base/weakRef.cmo -I _build/src/ctypes-foreign-base  -I _build/src/ctypes src/ctypes-foreign-base/weakRef.ml
+# ocamlfind ocamlc -c -o _build/src/ctypes-foreign-base/ffi.cmi    -I _build/src/ctypes-foreign-base  -I _build/src/ctypes src/ctypes-foreign-base/ffi.mli
+# ocamlfind ocamlc      -c -o _build/src/ctypes-foreign-base/ffi.cmo -I _build/src/ctypes-foreign-base  -I _build/src/ctypes src/ctypes-foreign-base/ffi.ml
+# ocamlfind ocamlc      -c -o _build/src/ctypes-foreign-base/foreign_basis.cmo -I _build/src/ctypes-foreign-base  -I _build/src/ctypes src/ctypes-foreign-base/foreign_basis.ml
+# ocamlfind ocamlc -a   -cclib -lctypes-foreign-base_stubs -dllib -lctypes-foreign-base_stubs   -o _build/ctypes-foreign-base.cma _build/src/ctypes-foreign-base/closure_properties.cmo _build/src/ctypes-foreign-base/dl.cmo _build/src/ctypes-foreign-base/ffi_stubs.cmo _build/src/ctypes-foreign-base/libffi_abi.cmo _build/src/ctypes-foreign-base/weakRef.cmo _build/src/ctypes-foreign-base/ffi.cmo _build/src/ctypes-foreign-base/foreign_basis.cmo 
+# cd _build/src/ctypes-foreign-base && ocamlfind ocamlc -c -ccopt -fPIC -ccopt -Wall -ccopt -O3 -ccopt -I -ccopt /home/opam/opam-repository/src -ccopt -I -ccopt /home/opam/opam-repository/tests -o dl_stubs.o  /home/opam/.opam/4.02.1/build/ctypes.0.3.3/src/ctypes-foreign-base/dl_stubs.c
+# cd _build/src/ctypes-foreign-base && ocamlfind ocamlc -c -ccopt -fPIC -ccopt -Wall -ccopt -O3 -ccopt -I -ccopt /home/opam/opam-repository/src -ccopt -I -ccopt /home/opam/opam-repository/tests -o ffi_call_stubs.o  /home/opam/.opam/4.02.1/build/ctypes.0.3.3/src/ctypes-foreign-base/ffi_call_stubs.c
+### stderr ###
+# /home/opam/.opam/4.02.1/build/ctypes.0.3.3/src/ctypes/type_info_stubs.c: In function 'ctypes_string_of_prim':
+# /home/opam/.opam/4.02.1/build/ctypes.0.3.3/src/ctypes/type_info_stubs.c:130:3: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'int64' [-Wformat]
+# /home/opam/.opam/4.02.1/build/ctypes.0.3.3/src/ctypes/type_info_stubs.c:130:3: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'int64' [-Wformat]
+# /home/opam/.opam/4.02.1/build/ctypes.0.3.3/src/ctypes-foreign-base/ffi_call_stubs.c:21:17: fatal error: ffi.h: No such file or directory
+# compilation terminated.
+# make: *** [_build/src/ctypes-foreign-base/ffi_call_stubs.o] Error 2
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108122021.export"
