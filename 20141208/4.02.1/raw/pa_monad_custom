@@ -1,7 +1,12 @@
-++ opam install pa_monad_custom -e centos,centos-7
+++ opam install pa_monad_custom -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install pa_monad_custom -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install pa_monad_custom
 The following actions will be performed:
