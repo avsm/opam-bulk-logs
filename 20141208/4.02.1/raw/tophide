@@ -1,0 +1,18 @@
+++ opam install tophide -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install tophide
+The following actions will be performed:
+ - install   tophide.1.0.3
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[tophide.1.0.3] Downloading https://github.com/mjambon/tophide/archive/v1.0.3.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building tophide.1.0.3:
+  make
+  make install
+Installing tophide.1.0.3.
