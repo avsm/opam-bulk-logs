@@ -1,9 +1,14 @@
-++ opam install redis -e centos,centos-7
+++ opam install redis -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install redis -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install redis
-CentOS 7 depexts:
 The following actions will be performed:
  - install   batteries.2.3.1                       [required by redis]
  - install   uuidm.0.9.5                           [required by redis]
@@ -12,8 +17,8 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
-[uuidm.0.9.5] Downloading http://erratique.ch/software/uuidm/releases/uuidm-0.9.5.tbz
 [redis.0.2.0] Downloading https://github.com/0xffea/ocaml-redis/archive/0.2.0.tar.gz
+[uuidm.0.9.5] Downloading http://erratique.ch/software/uuidm/releases/uuidm-0.9.5.tbz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Building batteries.2.3.1:
