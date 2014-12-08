@@ -1,9 +1,14 @@
-++ opam install combine -e centos,centos-7
+++ opam install combine -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install combine -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install combine
-CentOS 7 depexts:
 The following actions will be performed:
  - install   menhir.20140422                       [required by combine]
  - install   combine.0.55
