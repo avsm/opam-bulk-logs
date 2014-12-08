@@ -1,0 +1,25 @@
+++ opam install zenon -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install zenon -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install zenon
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   camlp5.6.12                           [required by coq]
+ - install   coq.8.4.5                             [required by zenon]
+ - install   zenon.0.7.1
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camlp5.6.12] Downloading http://camlp5.gforge.inria.fr/distrib/src/camlp5-6.12.tgz
+[coq.8.4.5] Downloading http://coq.inria.fr/distrib/8.4pl5/files/coq-8.4pl5.tar.gz
+[zenon.0.7.1] Downloading http://focal.inria.fr/zenon/zenon-0.7.1.tar.gz
+[ERROR] curl: code 404 while downloading http://focal.inria.fr/zenon/zenon-0.7.1.tar.gz
+[ERROR] http://focal.inria.fr/zenon/zenon-0.7.1.tar.gz is not available
+
+[ERROR] Could not download archives of zenon.0.7.1
