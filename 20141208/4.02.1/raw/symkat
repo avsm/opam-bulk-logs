@@ -1,9 +1,14 @@
-++ opam install symkat -e centos,centos-7
+++ opam install symkat -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install symkat -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install symkat
-CentOS 7 depexts:
 The following actions will be performed:
  - install   safa.1.3                              [required by symkat]
  - install   symkat.1.3
