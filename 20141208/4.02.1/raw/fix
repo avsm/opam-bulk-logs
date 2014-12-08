@@ -1,0 +1,18 @@
+++ opam install fix -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install fix
+The following actions will be performed:
+ - install   fix.20130611
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[fix.20130611] Downloading http://gallium.inria.fr/~fpottier/fix/fix-20130611.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building fix.20130611:
+  make
+  make install
+Installing fix.20130611.
