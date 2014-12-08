@@ -95,3 +95,12 @@ Installing fieldslib.109.20.03.
 Building pa_ounit.111.28.00:
   make
   make install
+Installing pa_ounit.111.28.00.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building variantslib.109.15.03:
+  make
+  make install
