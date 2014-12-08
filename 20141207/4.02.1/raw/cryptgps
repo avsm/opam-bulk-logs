@@ -1,0 +1,24 @@
+++ opam install cryptgps -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install cryptgps -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install cryptgps
+The following actions will be performed:
+ - install   cryptgps.0.2.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cryptgps.0.2.1] Downloading http://download.camlcity.org/download/cryptgps-0.2.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cryptgps.0.2.1:
+  make all
+  make opt
+  make install
+Installing cryptgps.0.2.1.
