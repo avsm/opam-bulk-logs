@@ -1,36 +1,63 @@
-++ opam install mirage-net-socket -e centos,centos-7
-+ depext='Your request can'\''t be satisfied:
-  - No package matches mirage-net-socket.
-
-No solution found, exiting'
-+ echo CentOS 7 depexts: Your request 'can'\''t' be satisfied: - No package matches mirage-net-socket. No solution found, exiting
-CentOS 7 depexts: Your request can't be satisfied: - No package matches mirage-net-socket. No solution found, exiting
-+ '[' 'Your request can'\''t be satisfied:
-  - No package matches mirage-net-socket.
-
-No solution found, exiting' '!=' '' ']'
-+ sudo yum install -y Your request 'can'\''t' be satisfied: - No package matches mirage-net-socket. No solution found, exiting
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirror.sov.uk.goscomb.net
- * extras: mirror.sov.uk.goscomb.net
- * updates: centos.openitc.uk
-No package Your available.
-No package request available.
-No package can't available.
-No package be available.
-No package satisfied: available.
-No package No available.
-No package package available.
-No package matches available.
-No package mirage-net-socket. available.
-No package No available.
-No package solution available.
-No package found, available.
-No package exiting available.
-Nothing to do
+++ opam install mirage-net-socket -e debian
++ depext=
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install mirage-net-socket -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install mirage-net-socket
-Your request can't be satisfied:
-  - No package matches mirage-net-socket.
+Debian srcexts:
+The following actions will be performed:
+ - install   base-bytes.base                       [required by ocplib-endian]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   ounit.2.0.0                           [required by tuntap, shared-memory-ring]
+ - install   fd-send-recv.1.0.1                    [required by mirage-unix]
+ - install   cmdliner.0.9.6                        [required by tuntap]
+ - install   type_conv.112.01.00                   [required by sexplib]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   lwt.2.4.6                             [required by mirage-unix]
+ - install   sexplib.112.01.00                     [required by ipaddr, cstruct]
+ - install   ipaddr.2.5.0                          [required by mirage-unix]
+ - install   cstruct.1.5.0                         [required by mirage-unix]
+ - install   tuntap.1.0.0                          [required by mirage-unix]
+ - install   shared-memory-ring.1.1.0              [required by mirage-unix]
+ - install   mirage-unix.0.9.5                     [required by mirage]
+ - install   mirage.0.9.5                          [required by mirage-net-socket]
+ - install   mirage-net-socket.0.9.4
+=== 17 to install ===
 
-No solution found, exiting
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[fd-send-recv.1.0.1] Downloading https://github.com/xen-org/ocaml-fd-send-recv/archive/ocaml-fd-send-recv-1.0.1.tar.gz
+[ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[mirage.0.9.5] Downloading https://github.com/mirage/mirage-platform/archive/v0.9.5.tar.gz
+[mirage-net-socket.0.9.4] Downloading https://github.com/mirage/mirage-net/archive/v0.9.4.tar.gz
+[mirage-unix.0.9.5] Downloading https://github.com/mirage/mirage-platform/archive/v0.9.5.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[shared-memory-ring.1.1.0] Downloading https://github.com/mirage/shared-memory-ring/archive/1.1.0.tar.gz
+[tuntap.1.0.0] Downloading https://github.com/mirage/ocaml-tuntap/archive/v1.0.0.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Building fd-send-recv.1.0.1:
+  make
+  make install
+Installing fd-send-recv.1.0.1.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
