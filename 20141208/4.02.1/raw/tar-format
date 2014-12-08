@@ -1,0 +1,29 @@
+++ opam install tar-format -e debian
++ depext=
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install tar-format -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install tar-format
+Debian srcexts:
+The following actions will be performed:
+ - install   base-bytes.base                       [required by ocplib-endian]
+ - install   ounit.2.0.0                           [required by tar-format]
+ - install   re.1.2.2                              [required by tar-format]
+ - install   cmdliner.0.9.6                        [required by tar-format]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   type_conv.112.01.00                   [required by sexplib]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   sexplib.112.01.00                     [required by cstruct]
+ - install   cstruct.1.5.0                         [required by tar-format]
+ - install   tar-format.0.2.1
+=== 10 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
