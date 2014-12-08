@@ -1,0 +1,30 @@
+++ opam install cpdf -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install cpdf -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install cpdf
+The following actions will be performed:
+ - install   camlpdf.1.7.1                         [required by cpdf]
+ - install   cpdf.1.7
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camlpdf.1.7.1] Downloading https://github.com/johnwhitington/camlpdf/archive/v1.7.1.tar.gz
+[cpdf.1.7] Downloading https://github.com/johnwhitington/cpdf-source/archive/v1.7.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building camlpdf.1.7.1:
+  make
+  make install
+Installing camlpdf.1.7.1.
+Copying ~/.opam/repo/default/packages/cpdf/cpdf.1.7/files/cpdf.install to ~/.opam/4.02.1/build/cpdf.1.7/
+Building cpdf.1.7:
+  make
+  make install
+Installing cpdf.1.7.
