@@ -1,9 +1,93 @@
-++ opam install wiringpi -e centos,centos-7
+++ opam install wiringpi -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
+++ opam install wiringpi -e source,linux
++ srcext=https://gist.github.com/Leonidas-from-XIV/a1a7315ac01f7fbee3f0/raw
++ echo Debian srcexts: https://gist.github.com/Leonidas-from-XIV/a1a7315ac01f7fbee3f0/raw
++ '[' https://gist.github.com/Leonidas-from-XIV/a1a7315ac01f7fbee3f0/raw '!=' '' ']'
+Debian srcexts: https://gist.github.com/Leonidas-from-XIV/a1a7315ac01f7fbee3f0/raw
+++ mktemp
++ t=/tmp/tmp.KChgy0JVG9
++ curl -sL https://gist.github.com/Leonidas-from-XIV/a1a7315ac01f7fbee3f0/raw
++ bash -ex /tmp/tmp.KChgy0JVG9
++ git clone git://git.drogon.net/wiringPi
+Cloning into 'wiringPi'...
++ cd wiringPi
++ ./build
+wiringPi Build script
+=====================
+
+
+WiringPi Library
+[UnInstall]
+[Compile] wiringPi.c
+wiringPi.c: In function 'wiringPiSetup':
+wiringPi.c:1785:7: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+wiringPi.c:1791:7: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+wiringPi.c:1797:7: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+wiringPi.c:1803:7: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+[Compile] wiringSerial.c
+[Compile] wiringShift.c
+[Compile] piHiPri.c
+[Compile] piThread.c
+[Compile] wiringPiSPI.c
+[Compile] wiringPiI2C.c
+[Compile] softPwm.c
+[Compile] softTone.c
+[Compile] mcp23008.c
+[Compile] mcp23016.c
+[Compile] mcp23017.c
+[Compile] mcp23s08.c
+[Compile] mcp23s17.c
+[Compile] sr595.c
+[Compile] pcf8574.c
+[Compile] pcf8591.c
+[Compile] mcp3002.c
+[Compile] mcp3004.c
+[Compile] mcp4802.c
+[Compile] mcp3422.c
+[Compile] max31855.c
+[Compile] max5322.c
+[Compile] sn3218.c
+[Compile] drcSerial.c
+[Link (Dynamic)]
+[Install Headers]
+[Install Dynamic Lib]
+
+WiringPi Devices Library
+[UnInstall]
+[Compile] ds1302.c
+[Compile] maxdetect.c
+[Compile] piNes.c
+[Compile] gertboard.c
+[Compile] piFace.c
+[Compile] lcd128x64.c
+[Compile] lcd.c
+[Compile] piGlow.c
+[Link (Dynamic)]
+[Install Headers]
+[Install Dynamic Lib]
+
+GPIO Utility
+[Compile] gpio.c
+[Compile] extensions.c
+[Compile] readall.c
+[Compile] pins.c
+[Link]
+[Install]
+
+All Done.
+
+NOTE: To compile programs with wiringPi, you need to add:
+    -lwiringPi
+  to your compile line(s) To use the Gertboard, MaxDetect, etc.
+  code (the devLib), you need to also add:
+    -lwiringPiDev
+  to your compile line(s).
+
 + opam install wiringpi
-CentOS 7 depexts:
 The following actions will be performed:
  - install   wiringpi.0.0.1
 === 1 to install ===
