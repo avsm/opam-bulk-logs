@@ -1,0 +1,186 @@
+++ opam install xen-block-driver -e ubuntu
++ depext='libxen-dev uuid-dev'
++ echo Ubuntu depexts: libxen-dev uuid-dev
+Ubuntu depexts: libxen-dev uuid-dev
++ '[' 'libxen-dev uuid-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libxen-dev uuid-dev
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xen/libxenstore3.0_4.4.1-0ubuntu0.14.04.1_amd64.deb  404  Not Found [IP: 91.189.88.153 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xen/libxen-4.4_4.4.1-0ubuntu0.14.04.1_amd64.deb  404  Not Found [IP: 91.189.88.153 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xen/libxen-dev_4.4.1-0ubuntu0.14.04.1_amd64.deb  404  Not Found [IP: 91.189.88.153 80]
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+++ opam install xen-block-driver -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install xen-block-driver
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   base-bytes.base                       [required by ocplib-endian]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   ounit.2.0.0                           [required by xenstore, io-page, shared-memory-ring]
+ - install   cmdliner.0.9.6                        [required by xen-block-driver]
+ - install   type_conv.112.01.00                   [required by sexplib]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   lwt.2.4.6                             [required by xen-block-driver]
+ - install   sexplib.112.01.00                     [required by cstruct]
+ - install   xenctrl.0.9.26                        [required by xen-block-driver]
+ - install   cstruct.1.5.0                         [required by xen-block-driver]
+ - install   xenstore.1.2.5                        [required by xenstore_transport]
+ - install   shared-memory-ring.1.1.0              [required by xen-block-driver]
+ - install   io-page.1.1.1                         [required by mirage-unix]
+ - install   xenstore_transport.0.9.4              [required by xen-block-driver]
+ - install   mirage-types.2.0.1                    [required by mirage-clock-unix]
+ - install   mirage-clock-unix.1.0.0               [required by mirage-unix]
+ - install   mirage-unix.2.0.0                     [required by xen-block-driver]
+ - install   xen-block-driver.0.2.5
+=== 19 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[io-page.1.1.1] Downloading https://github.com/mirage/io-page/archive/v1.1.1.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[mirage-clock-unix.1.0.0] Downloading https://github.com/mirage/mirage-clock/archive/v1.0.0.tar.gz
+[mirage-types.2.0.1] Downloading https://github.com/mirage/mirage/archive/v2.0.1.tar.gz
+[mirage-unix.2.0.0] Downloading https://github.com/mirage/mirage-platform/archive/v2.0.0.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[shared-memory-ring.1.1.0] Downloading https://github.com/mirage/shared-memory-ring/archive/1.1.0.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[xen-block-driver.0.2.5] Downloading https://github.com/mirage/ocaml-xen-block-driver/archive/0.2.5.tar.gz
+[xenctrl.0.9.26] Downloading https://github.com/xapi-project/ocaml-xen-lowlevel-libs/archive/0.9.26.tar.gz
+[xenstore.1.2.5] Downloading https://github.com/mirage/ocaml-xenstore/archive/1.2.5.tar.gz
+[xenstore_transport.0.9.4] Downloading https://github.com/djs55/ocaml-xenstore-clients/archive/0.9.4.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing cmdliner.0.9.6.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building ocplib-endian.0.7:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.7.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.02.1 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Building xenctrl.0.9.26:
+  ./configure
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+[ERROR] The compilation of xenctrl.0.9.26 failed.
+Removing xenctrl.0.9.26.
+  make uninstall
+Building io-page.1.1.1:
+  make
+  make install
+Installing io-page.1.1.1.
+Building shared-memory-ring.1.1.0:
+  make all
+  make install
+Installing shared-memory-ring.1.1.0.
+Building xenstore.1.2.5:
+  make all
+  make install
+Installing xenstore.1.2.5.
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+Building xenstore_transport.0.9.4:
+  make all
+  make install
+Installing xenstore_transport.0.9.4.
+Building mirage-clock-unix.1.0.0:
+  make unix-build
+  make unix-install
+Installing mirage-clock-unix.1.0.0.
+Building mirage-unix.2.0.0:
+  make unix-build
+  make unix-install PREFIX=/home/opam/.opam/4.02.1
+Installing mirage-unix.2.0.0.
+
+
+#=== ERROR while installing xenctrl.0.9.26 ====================================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              ./configure
+# path                 /home/opam/.opam/4.02.1/build/xenctrl.0.9.26
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/xenctrl.0.9.26/xenctrl-4041-f0f09f.env
+# stdout-file          /home/opam/.opam/4.02.1/build/xenctrl.0.9.26/xenctrl-4041-f0f09f.out
+# stderr-file          /home/opam/.opam/4.02.1/build/xenctrl.0.9.26/xenctrl-4041-f0f09f.err
+### stdout ###
+# Looking for xenctrl.h: missing
+# Looking for libxl_physinfo.outstanding_pages: missing
+# Looking for xen-4.5: missing
+# Looking for xc_domain_save generation_id: found
+# Looking for HVM_PARAM_VIRIDIAN: missing
+### stderr ###
+# Failure: we can't build anything without xenctrl.h
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.112.01.00
+ - install   type_conv.112.01.00
+ - install   shared-memory-ring.1.1.0
+ - install   xenstore.1.2.5
+ - install   xenstore_transport.0.9.4
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   ppx_tools.0.99.2
+ - install   mirage-clock-unix.1.0.0
+ - install   mirage-unix.2.0.0
+ - install   optcomp.1.6
+ - install   io-page.1.1.1
+ - install   ocplib-endian.0.7
+ - install   base-bytes.base
+ - install   mirage-types.2.0.1
+The following failed
+ - install   xenctrl.0.9.26
+Due to the errors, the following have been cancelled
+ - install   xen-block-driver.0.2.5
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108042755.export"
