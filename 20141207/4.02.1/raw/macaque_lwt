@@ -1,0 +1,96 @@
+++ opam install macaque_lwt -e ubuntu
++ depext=libpcre3-dev
++ echo Ubuntu depexts: libpcre3-dev
++ '[' libpcre3-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libpcre3-dev
++ sudo apt-get install -qq -y libpcre3-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libpcrecpp0_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Setting up libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Setting up libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.3) ...
+++ opam install macaque_lwt -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install macaque_lwt
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   csv.1.3.4                             [required by pgocaml]
+ - install   calendar.2.03.2                       [required by pgocaml]
+ - install   conf-libpcre.1                        [required by pcre]
+ - install   lwt.2.4.6                             [required by macaque_lwt]
+ - install   pcre.7.1.2                            [required by pgocaml]
+ - install   pgocaml.2.1                           [required by macaque]
+ - install   macaque.0.7.1                         [required by macaque_lwt]
+ - install   macaque_lwt.0.1
+=== 9 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[calendar.2.03.2] Downloading http://forge.ocamlcore.org/frs/download.php/915/calendar-2.03.2.tar.gz
+[csv.1.3.4] Downloading https://github.com/Chris00/ocaml-csv/releases/download/1.3.3/csv-1.3.4.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[macaque.0.7.1] Downloading https://github.com/ocsigen/macaque/archive/0.7.1.tar.gz
+[macaque_lwt.0.1] Downloading https://bitbucket.org/deplai_j/macaque_lwt/downloads/macaque_lwt-0.1.tar.gz
+[pcre.7.1.2] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.2/pcre-ocaml-7.1.2.tar.gz
+[pgocaml.2.1] Downloading http://forge.ocamlcore.org/frs/download.php/1413/pgocaml-2.1.tgz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building calendar.2.03.2:
+  ./configure
+  make
+  make install
+Installing calendar.2.03.2.
+Building conf-libpcre.1:
+  pkg-config libpcre
+Installing conf-libpcre.1.
+Copying ~/.opam/repo/default/packages/csv/csv.1.3.4/files/csv.install to ~/.opam/4.02.1/build/csv.1.3.4/
+Building csv.1.3.4:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing csv.1.3.4.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building pcre.7.1.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing pcre.7.1.2.
+Building pgocaml.2.1:
+  ./configure --prefix /home/opam/.opam/4.02.1 --docdir /home/opam/.opam/4.02.1/doc/pgocaml
+  make
+  make doc
+  make install
+Installing pgocaml.2.1.
+Building macaque.0.7.1:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing macaque.0.7.1.
+Building macaque_lwt.0.1:
+  make
+  make install
+Installing macaque_lwt.0.1.
