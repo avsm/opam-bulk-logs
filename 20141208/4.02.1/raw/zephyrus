@@ -1,0 +1,114 @@
+++ opam install zephyrus -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
+CentOS 7 depexts:
++ opam install zephyrus
+The following actions will be performed:
+ - install   extlib.1.6.1                          [required by zephyrus]
+ - install   easy-format.1.0.2                     [required by atd]
+ - install   menhir.20140422                       [required by zephyrus]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   biniou.1.0.9                          [required by atdgen]
+ - install   atd.1.1.2                             [required by zephyrus]
+ - install   yojson.1.1.8                          [required by atdgen]
+ - install   atdgen.1.4.1                          [required by zephyrus]
+ - install   zephyrus.0.1
+=== 9 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[atd.1.1.2] Downloading http://mjambon.com/releases/atd/atd-1.1.2.tar.gz
+[atdgen.1.4.1] Downloading http://mjambon.com/releases/atdgen/atdgen-1.4.1.tar.gz
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[extlib.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+[zephyrus.0.1] Downloading http://www.pps.univ-paris-diderot.fr/~qba/archives/2013.08.30/zephyrus-0.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.02.1/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Building extlib.1.6.1:
+  make minimal=1 build install
+Installing extlib.1.6.1.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+Installing menhir.20140422.
+Copying ~/.opam/repo/default/packages/atd/atd.1.1.2/files/atd.install to ~/.opam/4.02.1/build/atd.1.1.2/
+Building atd.1.1.2:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing atd.1.1.2.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.02.1/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.02.1/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Copying ~/.opam/repo/default/packages/atdgen/atdgen.1.4.1/files/atdgen.install to ~/.opam/4.02.1/build/atdgen.1.4.1/
+Building atdgen.1.4.1:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing atdgen.1.4.1.
+Building zephyrus.0.1:
+  make
+Removing zephyrus.0.1.
+[ERROR] The compilation of zephyrus.0.1 failed.
+  Nothing to do.
+
+
+#=== ERROR while installing zephyrus.0.1 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/zephyrus.0.1
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/zephyrus.0.1/zephyrus-2988-d474c2.env
+# stdout-file          /home/opam/.opam/4.02.1/build/zephyrus.0.1/zephyrus-2988-d474c2.out
+# stderr-file          /home/opam/.opam/4.02.1/build/zephyrus.0.1/zephyrus-2988-d474c2.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamldep -package atdgen -package unix -modules src/atd/json_j.mli > src/atd/json_j.mli.depends
+# ocamlfind ocamlc -c -w -24 -ccopt -O9 -package atdgen -package unix -I src/atd -I src -I src/engine -I src/output -I src/datatypes -I src/input -I src/engine/preprocess -I src/engine/solvers -I src/engine/translation -I src/engine/solvers/minizinc -o src/atd/json_j.cmi src/atd/json_j.mli
+# ocamlfind ocamldep -package atdgen -package unix -modules src/atd/json_t.ml > src/atd/json_t.ml.depends
+# ocamlfind ocamlopt -c -w -24 -ccopt -O9 -package atdgen -package unix -I src/atd -I src -I src/engine -I src/output -I src/datatypes -I src/input -I src/engine/preprocess -I src/engine/solvers -I src/engine/translation -I src/engine/solvers/minizinc -o src/atd/json_t.cmx src/atd/json_t.ml
+# ocamlfind ocamlopt -c -w -24 -ccopt -O9 -package atdgen -package unix -I src/atd -I src -I src/engine -I src/output -I src/datatypes -I src/input -I src/engine/preprocess -I src/engine/solvers -I src/engine/translation -I src/engine/solvers/minizinc -o src/atd/json_j.cmx src/atd/json_j.ml
+# + ocamlfind ocamlopt -c -w -24 -ccopt -O9 -package atdgen -package unix -I src/atd -I src -I src/engine -I src/output -I src/datatypes -I src/input -I src/engine/preprocess -I src/engine/solvers -I src/engine/translation -I src/engine/solvers/minizinc -o src/atd/json_j.cmx src/atd/json_j.ml
+# File "src/atd/json_j.ml", line 256, characters 48-70:
+# Error: This expression has type string but an expression was expected of type
+#          Yojson.Lexer_state.t = Yojson.lexer_state
+# Command exited with code 2.
+### stderr ###
+# make: *** [all] Error 10
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   atdgen.1.4.1
+ - install   cppo.1.1.2
+ - install   yojson.1.1.8
+ - install   menhir.20140422
+ - install   easy-format.1.0.2
+ - install   biniou.1.0.9
+ - install   extlib.1.6.1
+ - install   atd.1.1.2
+The following failed
+ - install   zephyrus.0.1
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108092110.export"
