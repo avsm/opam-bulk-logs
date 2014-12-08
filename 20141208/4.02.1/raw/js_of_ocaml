@@ -1,37 +1,48 @@
-++ opam install js_of_ocaml -e centos,centos-7
+++ opam install js_of_ocaml -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install js_of_ocaml -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install js_of_ocaml
 The following actions will be performed:
+ - install   ppx_tools.0.99.2                      [required by lwt]
  - install   cmdliner.0.9.6                        [required by js_of_ocaml]
  - install   menhir.20140422                       [required by js_of_ocaml]
- - install   lwt.2.4.5                             [required by js_of_ocaml]
+ - install   lwt.2.4.6                             [required by js_of_ocaml]
  - install   js_of_ocaml.2.5
-=== 4 to install ===
+=== 5 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
 [js_of_ocaml.2.5] Downloading https://github.com/ocsigen/js_of_ocaml/archive/2.5.tar.gz
-[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
 [menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Building cmdliner.0.9.6:
   ocaml pkg/git.ml
   ocaml pkg/build.ml native=false native-dynlink=false
 Installing cmdliner.0.9.6.
-Building lwt.2.4.5:
-  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
-  make build
-  make install
-Installing lwt.2.4.5.
 Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
 Building menhir.20140422:
   make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
   make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
 Installing menhir.20140422.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
 Building js_of_ocaml.2.5:
   make build
   make install-lib BINDIR=/home/opam/.opam/4.02.1/bin
@@ -40,6 +51,15 @@ Removing js_of_ocaml.2.5.
   ocamlfind remove js_of_ocaml
 
 
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   menhir.20140422
+ - install   cmdliner.0.9.6
+ - install   lwt.2.4.6
+ - install   ppx_tools.0.99.2
+The following failed
+ - install   js_of_ocaml.2.5
+
 #=== ERROR while installing js_of_ocaml.2.5 ===================================#
 # opam-version         1.2.0
 # os                   linux
@@ -47,9 +67,9 @@ Removing js_of_ocaml.2.5.
 # path                 /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5
 # compiler             4.02.1
 # exit-code            2
-# env-file             /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5/js_of_ocaml-2673-c61e7b.env
-# stdout-file          /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5/js_of_ocaml-2673-c61e7b.out
-# stderr-file          /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5/js_of_ocaml-2673-c61e7b.err
+# env-file             /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5/js_of_ocaml-3882-865888.env
+# stdout-file          /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5/js_of_ocaml-3882-865888.out
+# stderr-file          /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5/js_of_ocaml-3882-865888.err
 ### stdout ###
 # ...[truncated]
 # ocamlfind ocamlopt -safe-string -package findlib,cmdliner -for-pack Compiler -g -c driver.ml
@@ -71,12 +91,4 @@ Removing js_of_ocaml.2.5.
 # make: *** [compiler] Error 2
 
 
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   lwt.2.4.5
- - install   menhir.20140422
- - install   cmdliner.0.9.6
-The following failed
- - install   js_of_ocaml.2.5
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108064841.export"
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108120328.export"
