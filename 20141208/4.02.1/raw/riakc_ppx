@@ -187,3 +187,79 @@ Installing async_unix.112.01.00.
 Building async_extra.112.01.00:
   make
   make install
+Installing async_extra.112.01.00.
+Building async.112.01.00:
+  make
+  make install
+Installing async.112.01.00.
+Building riakc_ppx.3.1.0:
+  omake -j2
+  omake install
+[ERROR] The compilation of riakc_ppx.3.1.0 failed.
+Removing riakc_ppx.3.1.0.
+  ocamlfind remove riakc_ppx
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.112.01.00
+ - install   async_unix.112.01.00
+ - install   bitstring.2.0.4
+ - install   core_kernel.112.01.00
+ - install   async.112.01.00
+ - install   type_conv.112.01.00
+ - install   async_kernel.112.01.00
+ - install   bin_prot.112.01.00
+ - install   async_extra.112.01.00
+ - install   pa_test.111.08.00
+ - install   core.112.01.01
+ - install   enumerate.111.08.00
+ - install   ounit.2.0.0
+ - install   comparelib.109.60.00
+ - install   ppx_tools.0.99.2
+ - install   pa_ounit.111.28.00
+ - install   variantslib.109.15.03
+ - install   ppx_deriving.1.0
+ - install   pipebang.110.01.00
+ - install   typerep.111.17.00
+ - install   ppx_deriving_protobuf.2.0
+ - install   herelib.109.35.02
+ - install   pa_bench.111.28.00
+ - install   fieldslib.109.20.03
+ - install   custom_printf.112.01.00
+ - install   omake.0.9.8.6-0.rc1
+The following failed
+ - install   riakc_ppx.3.1.0
+
+#=== ERROR while installing riakc_ppx.3.1.0 ===================================#
+# opam-version         1.2.0
+# os                   linux
+# command              omake -j2
+# path                 /home/opam/.opam/4.02.1/build/riakc_ppx.3.1.0
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/riakc_ppx.3.1.0/riakc_ppx-19942-d37749.env
+# stdout-file          /home/opam/.opam/4.02.1/build/riakc_ppx.3.1.0/riakc_ppx-19942-d37749.out
+# stderr-file          /home/opam/.opam/4.02.1/build/riakc_ppx.3.1.0/riakc_ppx-19942-d37749.err
+### stdout ###
+# ...[truncated]
+# --- Checking for ocamlfind... (found /home/opam/.opam/4.02.1/bin/ocamlfind)
+# --- Checking for ocamlc.opt... (found /home/opam/.opam/4.02.1/bin/ocamlc.opt)
+# --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.02.1/bin/ocamlopt.opt)
+# --- Checking whether ocamlc understands the "z" warnings... (yes)
+# *** omake: finished reading OMakefiles (0.04 sec)
+# --- Checking if ocamldep understands -modules... (yes)
+# - build _build/examples list_buckets.opt
+# + ocamlfind ocamlopt -package core,async,async_unix,ppx_deriving,ppx_deriving_protobuf,ppx_deriving.show,ppx_deriving_protobuf.runtime,bitstring -safe-string -bin-annot -annot -warn-error P -thread -I . -I ../lib -o list_buckets.opt ../lib/riakc_ppx.cmxa list_buckets.cmx -linkpkg
+# *** omake: 168/230 targets are up to date
+# *** omake: failed (10.06 sec, 28/28 scans, 48/97 rules, 166/359 digests)
+### stderr ###
+# *** omake: warning: stdout is not a tty, disabling the progress bar
+#    (use --progress to override).
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/ppx_deriving_protobuf/protobuf.cmxa
+# *** omake: targets were not rebuilt because of errors:
+#    _build/examples/list_buckets.opt
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108134700.export"
