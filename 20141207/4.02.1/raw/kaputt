@@ -1,0 +1,24 @@
+++ opam install kaputt -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install kaputt -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install kaputt
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   kaputt.1.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[kaputt.1.2] Downloading http://forge.ocamlcore.org/frs/download.php/987/kaputt-1.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building kaputt.1.2:
+  sh configure
+  make all
+  make install
+Installing kaputt.1.2.
