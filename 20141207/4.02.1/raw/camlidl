@@ -1,0 +1,29 @@
+++ opam install camlidl -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install camlidl -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install camlidl
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   camlidl.1.05
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camlidl.1.05] Downloading http://caml.inria.fr/pub/old_caml_site/distrib/bazar-ocaml/camlidl-1.05.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/camlidl/camlidl.1.05/files/cpp-location.diff to ~/.opam/4.02.1/build/camlidl.1.05/
+Copying ~/.opam/repo/default/packages/camlidl/camlidl.1.05/files/camlidl.install to ~/.opam/4.02.1/build/camlidl.1.05/
+Copying ~/.opam/repo/default/packages/camlidl/camlidl.1.05/files/META to ~/.opam/4.02.1/build/camlidl.1.05/
+Applying cpp-location.diff.
+Building camlidl.1.05:
+  mv config/Makefile.unix config/Makefile
+  mkdir -p /home/opam/.opam/4.02.1/bin /home/opam/.opam/4.02.1/lib/camlidl /home/opam/.opam/4.02.1/lib/camlidl/caml
+  make all
+  make install BINDIR=/home/opam/.opam/4.02.1/bin OCAMLLIB=/home/opam/.opam/4.02.1/lib/camlidl
+Installing camlidl.1.05.
