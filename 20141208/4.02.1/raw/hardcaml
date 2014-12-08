@@ -1,0 +1,86 @@
+++ opam install hardcaml -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install hardcaml
+The following actions will be performed:
+ - install   cmdliner.0.9.6                        [required by js_of_ocaml]
+ - install   menhir.20140422                       [required by js_of_ocaml]
+ - install   lwt.2.4.5                             [required by hardcaml]
+ - install   js_of_ocaml.2.5                       [required by hardcaml]
+ - install   hardcaml.1.0.0
+=== 5 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[hardcaml.1.0.0] Downloading https://github.com/ujamjar/hardcaml/archive/v1.0.tar.gz
+[js_of_ocaml.2.5] Downloading https://github.com/ocsigen/js_of_ocaml/archive/2.5.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+Installing lwt.2.4.5.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+Installing menhir.20140422.
+Building js_of_ocaml.2.5:
+  make build
+  make install-lib BINDIR=/home/opam/.opam/4.02.1/bin
+[ERROR] The compilation of js_of_ocaml.2.5 failed.
+Removing js_of_ocaml.2.5.
+  ocamlfind remove js_of_ocaml
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   lwt.2.4.5
+ - install   menhir.20140422
+ - install   cmdliner.0.9.6
+The following failed
+ - install   js_of_ocaml.2.5
+Due to the errors, the following have been cancelled
+ - install   hardcaml.1.0.0
+
+#=== ERROR while installing js_of_ocaml.2.5 ===================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make build
+# path                 /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5/js_of_ocaml-2685-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5/js_of_ocaml-2685-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5/js_of_ocaml-2685-d2d111.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlopt -safe-string -package findlib,cmdliner -for-pack Compiler -g -c driver.ml
+# ocamlfind ocamlc -safe-string -package findlib,cmdliner -c pseudoFs.mli
+# ocamlfind ocamlopt -safe-string -package findlib,cmdliner -for-pack Compiler -g -c pseudoFs.ml
+# ocamlfind ocamlc -safe-string -package findlib,cmdliner -c commonArg.mli
+# ocamlfind ocamlopt -safe-string -package findlib,cmdliner -for-pack Compiler -g -c commonArg.ml
+# ocamlfind ocamlc -safe-string -package findlib,cmdliner -c compileArg.mli
+# ocamlfind ocamlopt -safe-string -package findlib,cmdliner -for-pack Compiler -g -c compileArg.ml
+# ocamlfind ocamlopt -safe-string -package findlib,cmdliner -for-pack Compiler -g -c compile.ml
+# ocamlfind ocamlopt -safe-string -package findlib,cmdliner -linkpkg -g -o compile.opt compiler_version.cmx util.cmx pretty_print.cmx option.cmx reserved.cmx varPrinter.cmx dgraph.cmx code.cmx javascript.cmx vlq64.cmx source_map.cmx js_output.cmx js_simpl.cmx parse_info.cmx js_token.cmx js_parser.cmx js_lexer.cmx parse_js.cmx primitive.cmx annot_parser.cmx annot_lexer.cmx instr.cmx subst.cmx pure_fun.cmx deadcode.cmx flow.cmx specialize.cmx specialize_js.cmx eval.cmx inline.cmx tailcall.cmx freevars.cmx phisimpl.cmx js_traverse.cmx js_assign.cmx js_tailcall.cmx linker.cmx parse_bytecode.cmx generate.cmx driver.cmx pseudoFs.cmx commonArg.cmx compileArg.cmx compile.cmx
+# make[1]: Leaving directory `/home/opam/.opam/4.02.1/build/js_of_ocaml.2.5/compiler'
+### stderr ###
+# Warning: 12 states have shift/reduce conflicts.
+# Warning: 47 shift/reduce conflicts were arbitrarily resolved.
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# make[1]: *** [compile.opt] Error 2
+# make: *** [compiler] Error 2
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108063533.export"
