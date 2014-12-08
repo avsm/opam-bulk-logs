@@ -70,3 +70,14 @@ Building oasis.0.4.5:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing oasis.0.4.5.
+Copying ~/.opam/repo/default/packages/mlgmp/mlgmp.20120224/files/_oasis to ~/.opam/4.02.1/build/mlgmp.20120224/
+Building mlgmp.20120224:
+  sh -c rm -f *.cmo *.cmi *.cma *.cmxa *.o *.a *.cmx *.cmxs
+  oasis setup
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  mkdir -p _build
+  cp conversions.c _build/conversions.c
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing mlgmp.20120224.
