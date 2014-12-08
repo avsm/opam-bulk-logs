@@ -1,116 +1,44 @@
-++ opam install cowabloga -e centos,centos-7
-+ depext=openssl-devel
-CentOS 7 depexts: openssl-devel
-+ echo CentOS 7 depexts: openssl-devel
-+ '[' openssl-devel '!=' '' ']'
-+ sudo yum install -y openssl-devel
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirror.sov.uk.goscomb.net
- * extras: mirror.sov.uk.goscomb.net
- * updates: mirrors.melbourne.co.uk
-Resolving Dependencies
---> Running transaction check
----> Package openssl-devel.x86_64 1:1.0.1e-34.el7_0.6 will be installed
---> Processing Dependency: zlib-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
---> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
---> Running transaction check
----> Package krb5-devel.x86_64 0:1.11.3-49.el7 will be installed
---> Processing Dependency: libverto-devel for package: krb5-devel-1.11.3-49.el7.x86_64
---> Processing Dependency: libselinux-devel for package: krb5-devel-1.11.3-49.el7.x86_64
---> Processing Dependency: libcom_err-devel for package: krb5-devel-1.11.3-49.el7.x86_64
---> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.11.3-49.el7.x86_64
----> Package zlib-devel.x86_64 0:1.2.7-13.el7 will be installed
---> Running transaction check
----> Package keyutils-libs-devel.x86_64 0:1.5.8-3.el7 will be installed
----> Package libcom_err-devel.x86_64 0:1.42.9-4.el7 will be installed
----> Package libselinux-devel.x86_64 0:2.2.2-6.el7 will be installed
---> Processing Dependency: libsepol-devel >= 2.1.9-1 for package: libselinux-devel-2.2.2-6.el7.x86_64
---> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.2.2-6.el7.x86_64
---> Processing Dependency: pkgconfig(libpcre) for package: libselinux-devel-2.2.2-6.el7.x86_64
----> Package libverto-devel.x86_64 0:0.2.5-4.el7 will be installed
---> Running transaction check
----> Package libsepol-devel.x86_64 0:2.1.9-3.el7 will be installed
----> Package pcre-devel.x86_64 0:8.32-12.el7 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package                 Arch       Version                   Repository   Size
-================================================================================
-Installing:
- openssl-devel           x86_64     1:1.0.1e-34.el7_0.6       updates     1.2 M
-Installing for dependencies:
- keyutils-libs-devel     x86_64     1.5.8-3.el7               base         37 k
- krb5-devel              x86_64     1.11.3-49.el7             base        611 k
- libcom_err-devel        x86_64     1.42.9-4.el7              base         30 k
- libselinux-devel        x86_64     2.2.2-6.el7               base        174 k
- libsepol-devel          x86_64     2.1.9-3.el7               base         71 k
- libverto-devel          x86_64     0.2.5-4.el7               base         12 k
- pcre-devel              x86_64     8.32-12.el7               base        477 k
- zlib-devel              x86_64     1.2.7-13.el7              base         49 k
-
-Transaction Summary
-================================================================================
-Install  1 Package (+8 Dependent packages)
-
-Total download size: 2.6 M
-Installed size: 5.7 M
-Downloading packages:
---------------------------------------------------------------------------------
-Total                                              2.2 MB/s | 2.6 MB  00:01     
-Running transaction check
-Running transaction test
-Transaction test succeeded
-Running transaction
-  Installing : keyutils-libs-devel-1.5.8-3.el7.x86_64                       1/9 
-  Installing : pcre-devel-8.32-12.el7.x86_64                                2/9 
-  Installing : zlib-devel-1.2.7-13.el7.x86_64                               3/9 
-  Installing : libsepol-devel-2.1.9-3.el7.x86_64                            4/9 
-  Installing : libselinux-devel-2.2.2-6.el7.x86_64                          5/9 
-  Installing : libverto-devel-0.2.5-4.el7.x86_64                            6/9 
-  Installing : libcom_err-devel-1.42.9-4.el7.x86_64                         7/9 
-  Installing : krb5-devel-1.11.3-49.el7.x86_64                              8/9 
-  Installing : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     9/9 
-  Verifying  : libcom_err-devel-1.42.9-4.el7.x86_64                         1/9 
-  Verifying  : libselinux-devel-2.2.2-6.el7.x86_64                          2/9 
-  Verifying  : libverto-devel-0.2.5-4.el7.x86_64                            3/9 
-  Verifying  : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     4/9 
-  Verifying  : libsepol-devel-2.1.9-3.el7.x86_64                            5/9 
-  Verifying  : krb5-devel-1.11.3-49.el7.x86_64                              6/9 
-  Verifying  : zlib-devel-1.2.7-13.el7.x86_64                               7/9 
-  Verifying  : pcre-devel-8.32-12.el7.x86_64                                8/9 
-  Verifying  : keyutils-libs-devel-1.5.8-3.el7.x86_64                       9/9 
-
-Installed:
-  openssl-devel.x86_64 1:1.0.1e-34.el7_0.6                                      
-
-Dependency Installed:
-  keyutils-libs-devel.x86_64 0:1.5.8-3.el7                                      
-  krb5-devel.x86_64 0:1.11.3-49.el7                                             
-  libcom_err-devel.x86_64 0:1.42.9-4.el7                                        
-  libselinux-devel.x86_64 0:2.2.2-6.el7                                         
-  libsepol-devel.x86_64 0:2.1.9-3.el7                                           
-  libverto-devel.x86_64 0:0.2.5-4.el7                                           
-  pcre-devel.x86_64 0:8.32-12.el7                                               
-  zlib-devel.x86_64 0:1.2.7-13.el7                                              
-
-Complete!
+++ opam install cowabloga -e debian
++ depext=libssl-dev
++ echo Debian depexts: libssl-dev
++ '[' libssl-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: libssl-dev
++ sudo apt-get install -qq -y libssl-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Selecting previously unselected package libssl-dev.
+Unpacking libssl-dev (from .../libssl-dev_1.0.1e-2+deb7u13_amd64.deb) ...
+Selecting previously unselected package libssl-doc.
+Unpacking libssl-doc (from .../libssl-doc_1.0.1e-2+deb7u13_all.deb) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
+Setting up libssl-dev (1.0.1e-2+deb7u13) ...
+Setting up libssl-doc (1.0.1e-2+deb7u13) ...
+++ opam install cowabloga -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install cowabloga
 The following actions will be performed:
+ - install   base-bytes.base                       [required by ocplib-endian]
+ - install   hex.0.1.0                             [required by ezjsonm]
  - install   re.1.2.2                              [required by cow, cohttp]
  - install   optcomp.1.6                           [required by ocplib-endian]
  - install   stringext.1.1.0                       [required by cohttp]
+ - install   ppx_tools.0.99.2                      [required by lwt]
  - install   ounit.2.0.0                           [required by cow, cohttp]
  - install   ssl.0.4.7                             [required by cowabloga]
  - install   xmlm.1.2.0                            [required by cow]
+ - install   cmdliner.0.9.6                        [required by cohttp]
  - install   ulex.1.1                              [required by cow]
  - install   omd.1.2.3                             [required by cowabloga]
  - install   type_conv.112.01.00                   [required by cow]
  - install   uutf.0.9.3                            [required by jsonm]
- - install   ocplib-endian.0.4                     [required by cstruct]
- - install   lwt.2.4.5                             [required by cowabloga]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   lwt.2.4.6                             [required by cowabloga]
  - install   sexplib.112.01.00                     [required by cohttp]
  - install   fieldslib.109.20.03                   [required by cohttp]
  - install   dyntype.0.9.0                         [required by cow]
@@ -118,29 +46,32 @@ The following actions will be performed:
  - install   uri.1.7.2                             [required by cow, cohttp]
  - install   ipaddr.2.5.0                          [required by conduit]
  - install   cstruct.1.5.0                         [required by cowabloga]
- - install   ezjsonm.0.2.0                         [required by cow]
+ - install   ezjsonm.0.3.1                         [required by cow]
  - install   conduit.0.7.1                         [required by cohttp]
  - install   cow.1.0.0                             [required by cowabloga]
- - install   cohttp.0.12.0                         [required by cowabloga]
+ - install   cohttp.0.13.0                         [required by cowabloga]
  - install   cowabloga.0.0.8
-=== 24 to install ===
+=== 28 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[cohttp.0.12.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.12.0.tar.gz
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cohttp.0.13.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.13.0.tar.gz
 [conduit.0.7.1] Downloading https://github.com/mirage/ocaml-conduit/archive/v0.7.1.tar.gz
 [cow.1.0.0] Downloading https://github.com/mirage/ocaml-cow/archive/v1.0.0.tar.gz
 [cowabloga.0.0.8] Downloading https://github.com/mirage/cowabloga/archive/v0.0.8.tar.gz
 [cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
 [dyntype.0.9.0] Downloading https://github.com/mirage/dyntype/archive/dyntype-0.9.0.tar.gz
-[ezjsonm.0.2.0] Downloading https://github.com/mirage/ezjsonm/archive/0.2.0.tar.gz
+[ezjsonm.0.3.1] Downloading https://github.com/mirage/ezjsonm/archive/0.3.1.tar.gz
 [fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[hex.0.1.0] Downloading https://github.com/mirage/ocaml-hex/archive/0.1.0.tar.gz
 [ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
 [jsonm.0.9.1] Downloading http://erratique.ch/software/jsonm/releases/jsonm-0.9.1.tbz
-[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
-[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
 [omd.1.2.3] Downloading http://pw374.github.io/distrib/omd/omd-1.2.3.tar.gz
 [optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
 [re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
 [sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
 [ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
@@ -152,6 +83,15 @@ The following actions will be performed:
 [xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Building hex.0.1.0:
+  make
+  make install
+Installing hex.0.1.0.
 Copying ~/.opam/repo/default/packages/omd/omd.1.2.3/files/omd.install to ~/.opam/4.02.1/build/omd.1.2.3/
 Building omd.1.2.3:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
@@ -167,6 +107,10 @@ Building ounit.2.0.0:
   make build
   make install
 Installing ounit.2.0.0.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
 Building re.1.2.2:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
@@ -214,16 +158,16 @@ Building jsonm.0.9.1:
   ocaml setup.ml -build
   ocaml setup.ml -install
 Installing jsonm.0.9.1.
-Building lwt.2.4.5:
-  ./configure --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
   make build
   make install
-Installing lwt.2.4.5.
-Building ocplib-endian.0.4:
+Installing lwt.2.4.6.
+Building ocplib-endian.0.7:
   ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing ocplib-endian.0.4.
+Installing ocplib-endian.0.7.
 Building sexplib.112.01.00:
   ./configure --enable-syntax
   make
@@ -234,11 +178,11 @@ Building cstruct.1.5.0:
   make
   make install
 Installing cstruct.1.5.0.
-Building ezjsonm.0.2.0:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1 --enable-lwt
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing ezjsonm.0.2.0.
+Building ezjsonm.0.3.1:
+  ./configure --prefix /home/opam/.opam/4.02.1 --enable-lwt
+  make
+  make install
+Installing ezjsonm.0.3.1.
 Building ipaddr.2.5.0:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   make build
@@ -257,11 +201,73 @@ Building cow.1.0.0:
   make all
   make install
 Installing cow.1.0.0.
-Building cohttp.0.12.0:
+Building cohttp.0.13.0:
   make PREFIX=/home/opam/.opam/4.02.1
   make PREFIX=/home/opam/.opam/4.02.1 install
-Installing cohttp.0.12.0.
-Building cowabloga.0.0.8:
-  make all
-  make install
-Installing cowabloga.0.0.8.
+[ERROR] The compilation of cohttp.0.13.0 failed.
+Removing cohttp.0.13.0.
+  ocamlfind remove cohttp
+
+
+#=== ERROR while installing cohttp.0.13.0 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make PREFIX=/home/opam/.opam/4.02.1
+# path                 /home/opam/.opam/4.02.1/build/cohttp.0.13.0
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/cohttp.0.13.0/cohttp-8437-9e78df.env
+# stdout-file          /home/opam/.opam/4.02.1/build/cohttp.0.13.0/cohttp-8437-9e78df.out
+# stderr-file          /home/opam/.opam/4.02.1/build/cohttp.0.13.0/cohttp-8437-9e78df.err
+### stdout ###
+# ...[truncated]
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -short-paths -principal -strict-sequence -I cohttp -I lwt -I lwt -I async -package cmdliner -package conduit.lwt-unix -package fieldslib -syntax camlp4o -package fieldslib.syntax -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -syntax camlp4o -package sexplib.syntax -package stringext -package threads -package unix -package uri -package uri.services -thread -I bin -I async -I cohttp -I lwt -o bin/cohttp_server_lwt.cmx bin/cohttp_server_lwt.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package conduit.lwt-unix -package fieldslib -package fieldslib.syntax -package lwt -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -package sexplib.syntax -package stringext -package unix -package uri -package uri.services cohttp/cohttp.cmxa lwt/cohttp_lwt.cmxa lwt/cohttp_lwt_unix.cmxa bin/cohttp_server_lwt.cmx -o bin/cohttp_server_lwt.native
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamldep -package cmdliner -package conduit.lwt-unix -package fieldslib -syntax camlp4o -package fieldslib.syntax -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -syntax camlp4o -package sexplib.syntax -package stringext -package threads -package unix -package uri -package uri.services -modules bin/cohttp_curl_lwt.ml > bin/cohttp_curl_lwt.ml.depends
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -principal -strict-sequence -I cohttp -I lwt -I lwt -I async -package cmdliner -package conduit.lwt-unix -package fieldslib -syntax camlp4o -package fieldslib.syntax -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -syntax camlp4o -package sexplib.syntax -package stringext -package threads -package unix -package uri -package uri.services -thread -I bin -I async -I cohttp -I lwt -o bin/cohttp_curl_lwt.cmo bin/cohttp_curl_lwt.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -short-paths -principal -strict-sequence -I cohttp -I lwt -I lwt -I async -package cmdliner -package conduit.lwt-unix -package fieldslib -syntax camlp4o -package fieldslib.syntax -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -syntax camlp4o -package sexplib.syntax -package stringext -package threads -package unix -package uri -package uri.services -thread -I bin -I async -I cohttp -I lwt -o bin/cohttp_curl_lwt.cmx bin/cohttp_curl_lwt.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package cmdliner -package conduit.lwt-unix -package fieldslib -package fieldslib.syntax -package lwt -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -package sexplib.syntax -package stringext -package unix -package uri -package uri.services cohttp/cohttp.cmxa lwt/cohttp_lwt.cmxa lwt/cohttp_lwt_unix.cmxa bin/cohttp_curl_lwt.cmx -o bin/cohttp_curl_lwt.native
+# + /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package cmdliner -package conduit.lwt-unix -package fieldslib -package fieldslib.syntax -package lwt -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -package sexplib.syntax -package stringext -package unix -package uri -package uri.services cohttp/cohttp.cmxa lwt/cohttp_lwt.cmxa lwt/cohttp_lwt_unix.cmxa bin/cohttp_curl_lwt.cmx -o bin/cohttp_curl_lwt.native
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# Command exited with code 2.
+### stderr ###
+# W: Cannot find source file matching module 'cohttp' in library cohttp
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' cohttp/cohttp.cma cohttp/cohttp.cmxa cohttp/cohttp.a cohttp/cohttp.cmxs lwt/cohttp_lwt.cma lwt/cohttp_lwt.cmxa lwt/cohttp_lwt.a lwt/cohttp_lwt.cmxs lwt/cohttp_lwt_unix.cma lwt/cohttp_lwt_unix.cmxa lwt/cohttp_lwt_unix.a lwt/cohttp_lwt_unix.cmxs bin/cohttp_server_lwt.native bin/cohttp_curl_lwt.native -tag debug -classic-display' terminate...[truncated]
+# make: *** [build] Error 1
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.112.01.00
+ - install   uutf.0.9.3
+ - install   type_conv.112.01.00
+ - install   conduit.0.7.1
+ - install   ezjsonm.0.3.1
+ - install   omd.1.2.3
+ - install   ulex.1.1
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   ipaddr.2.5.0
+ - install   xmlm.1.2.0
+ - install   ssl.0.4.7
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   ppx_tools.0.99.2
+ - install   jsonm.0.9.1
+ - install   stringext.1.1.0
+ - install   dyntype.0.9.0
+ - install   optcomp.1.6
+ - install   cow.1.0.0
+ - install   re.1.2.2
+ - install   hex.0.1.0
+ - install   uri.1.7.2
+ - install   fieldslib.109.20.03
+ - install   ocplib-endian.0.7
+ - install   base-bytes.base
+The following failed
+ - install   cohttp.0.13.0
+Due to the errors, the following have been cancelled
+ - install   cowabloga.0.0.8
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108110849.export"
