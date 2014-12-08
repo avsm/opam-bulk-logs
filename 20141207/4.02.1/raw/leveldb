@@ -1,0 +1,126 @@
+++ opam install leveldb -e ubuntu
++ depext='libleveldb-dev libsnappy-dev'
++ echo Ubuntu depexts: libleveldb-dev libsnappy-dev
+Ubuntu depexts: libleveldb-dev libsnappy-dev
++ '[' 'libleveldb-dev libsnappy-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libleveldb-dev libsnappy-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libsnappy1.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libsnappy1_1.1.0-1ubuntu1_amd64.deb ...
+Unpacking libsnappy1 (1.1.0-1ubuntu1) ...
+Selecting previously unselected package libleveldb1:amd64.
+Preparing to unpack .../libleveldb1_1.15.0-2_amd64.deb ...
+Unpacking libleveldb1:amd64 (1.15.0-2) ...
+Selecting previously unselected package libleveldb-dev:amd64.
+Preparing to unpack .../libleveldb-dev_1.15.0-2_amd64.deb ...
+Unpacking libleveldb-dev:amd64 (1.15.0-2) ...
+Selecting previously unselected package libsnappy-dev.
+Preparing to unpack .../libsnappy-dev_1.1.0-1ubuntu1_amd64.deb ...
+Unpacking libsnappy-dev (1.1.0-1ubuntu1) ...
+Setting up libsnappy1 (1.1.0-1ubuntu1) ...
+Setting up libleveldb1:amd64 (1.15.0-2) ...
+Setting up libleveldb-dev:amd64 (1.15.0-2) ...
+Setting up libsnappy-dev (1.1.0-1ubuntu1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.3) ...
+++ opam install leveldb -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install leveldb
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   omake.0.9.8.6-0.rc1                   [required by leveldb]
+ - install   ounit.2.0.0                           [required by leveldb]
+ - install   conf-leveldb.1                        [required by leveldb]
+ - install   leveldb.1.0.3
+=== 4 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
+[leveldb.1.0.3] Downloading https://github.com/mfp/ocaml-leveldb/archive/ocaml-leveldb-1.0.3.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/conf-leveldb/conf-leveldb.1/files/test.cc to ~/.opam/4.02.1/build/conf-leveldb.1/
+Building conf-leveldb.1:
+  cc -c test.cc
+Installing conf-leveldb.1.
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/opam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/omake.install to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/fam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Applying opam.patch.
+Applying fam.patch.
+Applying readline.patch.
+Building omake.0.9.8.6-0.rc1:
+  make bootstrap PREFIX=/home/opam/.opam/4.02.1
+  make all PREFIX=/home/opam/.opam/4.02.1
+  make install PREFIX=/home/opam/.opam/4.02.1
+Installing omake.0.9.8.6-0.rc1.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Copying ~/.opam/repo/default/packages/leveldb/leveldb.1.0.3/files/fix_snappy_link_issue.patch to ~/.opam/4.02.1/build/leveldb.1.0.3/
+Applying fix_snappy_link_issue.patch.
+Building leveldb.1.0.3:
+  omake -j9
+  omake install prefix=/home/opam/.opam/4.02.1
+[ERROR] The compilation of leveldb.1.0.3 failed.
+Removing leveldb.1.0.3.
+  ocamlfind remove leveldb
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   conf-leveldb.1
+ - install   ounit.2.0.0
+ - install   omake.0.9.8.6-0.rc1
+The following failed
+ - install   leveldb.1.0.3
+
+#=== ERROR while installing leveldb.1.0.3 =====================================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              omake -j9
+# path                 /home/opam/.opam/4.02.1/build/leveldb.1.0.3
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/leveldb.1.0.3/leveldb-3451-2c871f.env
+# stdout-file          /home/opam/.opam/4.02.1/build/leveldb.1.0.3/leveldb-3451-2c871f.out
+# stderr-file          /home/opam/.opam/4.02.1/build/leveldb.1.0.3/leveldb-3451-2c871f.err
+### stdout ###
+# ...[truncated]
+# --- Checking for gcc... (found /usr/bin/gcc)
+# --- Checking for g++... (found /usr/bin/g++)
+# - build test test_00util.o
+# + ocamlfind ocamlc -package unix,threads,oUnit -w +a-4-6-9-27-28-30..99 -warn-error +a-4-6-9-18-27-28-30..99 -annot -thread -g -I . -I ../src -c test_00util.ml
+# - build src levelDB.cmo
+# + ocamlfind ocamlc -w +a-4-6-9-27-28-30..99 -warn-error +a-4-6-9-18-27-28-30..99 -annot -thread -g -I . -c levelDB.ml
+# - build src levelDB.cmx
+# + ocamlfind ocamlopt -w +a-4-6-9-27-28-30..99 -warn-error +a-4-6-9-18-27-28-30..99 -annot -thread -inline 100 -I . -c levelDB.ml
+# *** omake: 34/71 targets are up to date
+# *** omake: failed (0.47 sec, 6/6 scans, 4/4 rules, 18/105 digests)
+### stderr ###
+# ...[truncated]
+#    src/levelDB.o
+#       depends on: src/levelDB.ml
+#    test/test_00util.cmi
+#       depends on: test/test_00util.ml
+#    test/test_00util.cmo
+#       depends on: test/test_00util.ml
+#    test/test_00util.cmx
+#       depends on: test/test_00util.ml
+#    test/test_00util.o
+#       depends on: test/test_00util.ml
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108014643.export"
