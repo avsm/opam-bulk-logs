@@ -1,7 +1,22 @@
-++ opam install jenga -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+++ opam install jenga -e debian
++ depext=libpcre3-dev
++ echo Debian depexts: libpcre3-dev
+Debian depexts: libpcre3-dev
++ '[' libpcre3-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libpcre3-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libpcrecpp0:amd64 (from .../libpcrecpp0_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package libpcre3-dev.
+Unpacking libpcre3-dev (from .../libpcre3-dev_1%3a8.30-5_amd64.deb) ...
+Setting up libpcrecpp0:amd64 (1:8.30-5) ...
+Setting up libpcre3-dev (1:8.30-5) ...
+++ opam install jenga -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install jenga
 The following actions will be performed:
@@ -77,9 +92,7 @@ The following actions will be performed:
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Building conf-libpcre.1:
   pkg-config libpcre
-[ERROR] The compilation of conf-libpcre.1 failed.
-Removing conf-libpcre.1.
-  Nothing to do.
+Installing conf-libpcre.1.
 Building herelib.109.35.02:
   make
   make install
@@ -122,6 +135,11 @@ Building pa_ounit.111.28.00:
   make
   make install
 Installing pa_ounit.111.28.00.
+Building pcre.7.1.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing pcre.7.1.3.
 Building sexplib.112.01.00:
   ./configure --enable-syntax
   make
@@ -151,112 +169,3 @@ Installing typerep.111.17.00.
 Building core_kernel.112.01.00:
   make
   make install
-Installing core_kernel.112.01.00.
-Copying ~/.opam/repo/default/packages/core/core.112.01.01/files/core.install to ~/.opam/4.02.1/build/core.112.01.01/
-Building core.112.01.01:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  make
-  make install
-Installing core.112.01.01.
-Building async_kernel.112.01.00:
-  make
-  make install
-Installing async_kernel.112.01.00.
-Building re2.111.08.00:
-  make
-  make install
-Installing re2.111.08.00.
-Building textutils.112.01.00:
-  make
-  make install
-Installing textutils.112.01.00.
-Building async_unix.112.01.00:
-  make
-  make install
-Installing async_unix.112.01.00.
-Building core_extended.112.01.00:
-  make
-  make install
-Installing core_extended.112.01.00.
-Building async_extra.112.01.00:
-  make
-  make install
-Installing async_extra.112.01.00.
-Building async.112.01.00:
-  make
-  make install
-Installing async.112.01.00.
-Building async_find.111.28.00:
-  make
-  make install
-Installing async_find.111.28.00.
-Building async_parallel.111.28.00:
-  make
-  make install
-Installing async_parallel.111.28.00.
-Building async_shell.109.28.03:
-  make
-  make install
-Installing async_shell.109.28.03.
-Building ocaml_plugin.112.01.00:
-  ./configure --prefix /home/opam/.opam/4.02.1
-  make
-  make install
-Installing ocaml_plugin.112.01.00.
-Building async_inotify.111.28.00:
-  make
-  make install
-Installing async_inotify.111.28.00.
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   async_unix.112.01.00
- - install   async.112.01.00
- - install   bin_prot.112.01.00
- - install   async_extra.112.01.00
- - install   core.112.01.01
- - install   comparelib.109.60.00
- - install   re2.111.08.00
- - install   pipebang.110.01.00
- - install   async_shell.109.28.03
- - install   pa_bench.111.28.00
- - install   sexplib.112.01.00
- - install   core_extended.112.01.00
- - install   core_kernel.112.01.00
- - install   async_find.111.28.00
- - install   async_parallel.111.28.00
- - install   type_conv.112.01.00
- - install   inotify.2.0
- - install   async_kernel.112.01.00
- - install   pa_test.111.08.00
- - install   async_inotify.111.28.00
- - install   enumerate.111.08.00
- - install   ounit.2.0.0
- - install   pa_ounit.111.28.00
- - install   textutils.112.01.00
- - install   variantslib.109.15.03
- - install   typerep.111.17.00
- - install   ocaml_plugin.112.01.00
- - install   herelib.109.35.02
- - install   fieldslib.109.20.03
- - install   custom_printf.112.01.00
-The following failed
- - install   conf-libpcre.1
-Due to the errors, the following have been cancelled
- - install   pcre.7.1.3
- - install   jenga.112.01.00
-
-#=== ERROR while installing conf-libpcre.1 ====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              pkg-config libpcre
-# path                 /home/opam/.opam/4.02.1/build/conf-libpcre.1
-# compiler             4.02.1
-# exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/conf-libpcre.1/conf-libpcre-345-8b8a2d.env
-# stdout-file          /home/opam/.opam/4.02.1/build/conf-libpcre.1/conf-libpcre-345-8b8a2d.out
-# stderr-file          /home/opam/.opam/4.02.1/build/conf-libpcre.1/conf-libpcre-345-8b8a2d.err
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108064609.export"
