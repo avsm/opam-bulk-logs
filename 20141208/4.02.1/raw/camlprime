@@ -1,0 +1,18 @@
+++ opam install camlprime -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install camlprime
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   camlprime.0.5
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camlprime.0.5] Downloading https://github.com/pymander/camlprime/archive/v0.5.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building camlprime.0.5:
+  make
+  make install
+Installing camlprime.0.5.
