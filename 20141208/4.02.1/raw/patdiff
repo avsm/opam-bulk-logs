@@ -174,3 +174,4 @@ Building patdiff.111.28.00:
   ./configure --prefix /home/opam/.opam/4.02.1
   make
   make install
+Installing patdiff.111.28.00.
