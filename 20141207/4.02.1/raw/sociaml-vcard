@@ -1,0 +1,193 @@
+++ opam install sociaml-vcard -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install sociaml-vcard -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install sociaml-vcard
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   herelib.109.35.02                     [required by core_kernel]
+ - install   pipebang.110.01.00                    [required by core_kernel]
+ - install   ocamlify.0.0.1                        [required by oasis]
+ - install   ounit.2.0.0                           [required by pa_ounit]
+ - install   ulex.1.1                              [required by sociaml-vcard]
+ - install   menhir.20140422                       [required by sociaml-vcard]
+ - install   camomile.0.8.5                        [required by sociaml-vcard]
+ - install   type_conv.112.01.00                   [required by ocaml-data-notation, typerep, pa_bench, enumerate, bin_prot, comparelib, fieldslib, pa_test, variantslib]
+ - install   ocamlmod.0.0.7                        [required by oasis]
+ - install   variantslib.109.15.03                 [required by core_kernel]
+ - install   sexplib.112.01.00                     [required by re2, core_kernel]
+ - install   pa_ounit.111.28.00                    [required by re2, core_kernel]
+ - install   ocaml-data-notation.0.0.11            [required by oasis]
+ - install   fieldslib.109.20.03                   [required by core_kernel]
+ - install   enumerate.111.08.00                   [required by core_kernel]
+ - install   comparelib.109.60.00                  [required by re2, core_kernel]
+ - install   bin_prot.112.01.00                    [required by re2, core_kernel]
+ - install   pa_bench.111.28.00                    [required by core_kernel]
+ - install   custom_printf.112.01.00               [required by core]
+ - install   oasis.0.4.5                           [required by sociaml-vcard]
+ - install   pa_test.111.08.00                     [required by core_kernel]
+ - install   typerep.111.17.00                     [required by core_kernel]
+ - install   core_kernel.112.01.00                 [required by sociaml-vcard]
+ - install   core.112.01.01                        [required by re2]
+ - install   re2.111.08.00                         [required by sociaml-vcard]
+ - install   sociaml-vcard.0.2.1
+=== 26 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bin_prot.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/bin_prot-112.01.00.tar.gz
+[camomile.0.8.5] Downloading https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
+[comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
+[core.112.01.01] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core-112.01.01.tar.gz
+[core_kernel.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core_kernel-112.01.00.tar.gz
+[custom_printf.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/custom_printf-112.01.00.tar.gz
+[enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[oasis.0.4.5] Downloading https://forge.ocamlcore.org/frs/download.php/1475/oasis-0.4.5.tar.gz
+[ocaml-data-notation.0.0.11] Downloading https://forge.ocamlcore.org/frs/download.php/1310/ocaml-data-notation-0.0.11.tar.gz
+[ocamlify.0.0.1] Downloading http://forge.ocamlcore.org/frs/download.php/379/ocamlify-0.0.1.tar.gz
+[ocamlmod.0.0.7] Downloading https://forge.ocamlcore.org/frs/download.php/1350/ocamlmod-0.0.7.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pa_bench.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_bench-111.28.00.tar.gz
+[pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
+[pa_test.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/pa_test-111.08.00.tar.gz
+[pipebang.110.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/110.01.00/individual/pipebang-110.01.00.tar.gz
+[re2.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/re2-111.08.00.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[sociaml-vcard.0.2.1] Downloading https://github.com/dominicjprice/sociaml-vcard/archive/v0.2.1.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
+[ulex.1.1] Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+[variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/camomile/camomile.0.8.5/files/no-camlp4.patch to ~/.opam/4.02.1/build/camomile.0.8.5/
+Copying ~/.opam/repo/default/packages/camomile/camomile.0.8.5/files/cmxs.patch to ~/.opam/4.02.1/build/camomile.0.8.5/
+Applying cmxs.patch.
+Applying no-camlp4.patch.
+Building camomile.0.8.5:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing camomile.0.8.5.
+Building herelib.109.35.02:
+  make
+  make install
+Installing herelib.109.35.02.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+Installing menhir.20140422.
+Copying ~/.opam/repo/default/packages/ocamlify/ocamlify.0.0.1/files/ocamlify.install to ~/.opam/4.02.1/build/ocamlify.0.0.1/
+Building ocamlify.0.0.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlify.0.0.1.
+Copying ~/.opam/repo/default/packages/ocamlmod/ocamlmod.0.0.7/files/ocamlmod.install to ~/.opam/4.02.1/build/ocamlmod.0.0.7/
+Building ocamlmod.0.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlmod.0.0.7.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building pipebang.110.01.00:
+  make
+  make install
+Installing pipebang.110.01.00.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+Installing ulex.1.1.
+Building bin_prot.112.01.00:
+  make
+  make install
+Installing bin_prot.112.01.00.
+Building comparelib.109.60.00:
+  make
+  make install
+Installing comparelib.109.60.00.
+Building enumerate.111.08.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing enumerate.111.08.00.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building ocaml-data-notation.0.0.11:
+  make
+  make install
+Installing ocaml-data-notation.0.0.11.
+Building pa_ounit.111.28.00:
+  make
+  make install
+Installing pa_ounit.111.28.00.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building variantslib.109.15.03:
+  make
+  make install
+Installing variantslib.109.15.03.
+Building custom_printf.112.01.00:
+  make
+  make install
+Installing custom_printf.112.01.00.
+Copying ~/.opam/repo/default/packages/oasis/oasis.0.4.5/files/oasis.install to ~/.opam/4.02.1/build/oasis.0.4.5/
+Building oasis.0.4.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing oasis.0.4.5.
+Building pa_bench.111.28.00:
+  make
+  make install
+Installing pa_bench.111.28.00.
+Building pa_test.111.08.00:
+  make
+  make install
+Installing pa_test.111.08.00.
+Building typerep.111.17.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing typerep.111.17.00.
+Building core_kernel.112.01.00:
+  make
+  make install
+Installing core_kernel.112.01.00.
+Copying ~/.opam/repo/default/packages/core/core.112.01.01/files/core.install to ~/.opam/4.02.1/build/core.112.01.01/
+Building core.112.01.01:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing core.112.01.01.
+Building re2.111.08.00:
+  make
+  make install
+Installing re2.111.08.00.
+Building sociaml-vcard.0.2.1:
+  oasis setup
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make build
+  make install
+Installing sociaml-vcard.0.2.1.
