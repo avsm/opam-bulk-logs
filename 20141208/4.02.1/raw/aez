@@ -1,0 +1,21 @@
+++ opam install aez -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install aez
+The following actions will be performed:
+ - install   aez.0.3
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[aez.0.3] Downloading http://cubicle.lri.fr/alt-ergo-zero/aez-0.3.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/aez/aez.0.3/files/add-meta.patch to ~/.opam/4.02.1/build/aez.0.3/
+Applying add-meta.patch.
+Building aez.0.3:
+  ./configure
+  make
+  ocamlfind install aez aez.a aez.cmi aez.cma aez.cmxa META
+Installing aez.0.3.
