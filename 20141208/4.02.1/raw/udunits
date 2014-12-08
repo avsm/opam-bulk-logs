@@ -1,0 +1,24 @@
+++ opam install udunits -e debian
++ depext='libexpat1-dev libudunits2-dev'
++ echo Debian depexts: libexpat1-dev libudunits2-dev
++ '[' 'libexpat1-dev libudunits2-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: libexpat1-dev libudunits2-dev
++ sudo apt-get install -qq -y libexpat1-dev libudunits2-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libudunits2-0:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libudunits2-0:amd64 (from .../libudunits2-0_2.1.23-3_amd64.deb) ...
+Selecting previously unselected package libexpat1-dev.
+Unpacking libexpat1-dev (from .../libexpat1-dev_2.1.0-1+deb7u1_amd64.deb) ...
+Selecting previously unselected package libudunits2-dev:amd64.
+Unpacking libudunits2-dev:amd64 (from .../libudunits2-dev_2.1.23-3_amd64.deb) ...
+Setting up libudunits2-0:amd64 (2.1.23-3) ...
+Setting up libexpat1-dev (2.1.0-1+deb7u1) ...
+Setting up libudunits2-dev:amd64 (2.1.23-3) ...
+++ opam install udunits -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install udunits
+Debian srcexts:
