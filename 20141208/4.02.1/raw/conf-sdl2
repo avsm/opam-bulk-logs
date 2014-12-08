@@ -1,0 +1,14 @@
+++ opam install conf-sdl2 -e debian
++ depext=libsdl2-dev
+Debian depexts: libsdl2-dev
++ echo Debian depexts: libsdl2-dev
++ '[' libsdl2-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libsdl2-dev
+E: Unable to locate package libsdl2-dev
+++ opam install conf-sdl2 -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install conf-sdl2
+Debian srcexts:
