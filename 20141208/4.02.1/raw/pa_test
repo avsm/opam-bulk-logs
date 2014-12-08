@@ -35,3 +35,8 @@ Building sexplib.112.01.00:
   ./configure --enable-syntax
   make
   make install
+Installing sexplib.112.01.00.
+Building pa_test.111.08.00:
+  make
+  make install
+Installing pa_test.111.08.00.
