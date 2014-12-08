@@ -1,9 +1,14 @@
-++ opam install oclock -e centos,centos-7
+++ opam install oclock -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install oclock -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install oclock
-CentOS 7 depexts:
 The following actions will be performed:
  - install   oclock.0.4.0
 === 1 to install ===
