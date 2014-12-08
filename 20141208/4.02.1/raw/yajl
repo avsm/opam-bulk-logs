@@ -1,0 +1,40 @@
+++ opam install yajl -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install yajl
+The following actions will be performed:
+ - install   yajl.0.7.3
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[yajl.0.7.3] Downloading https://raw.github.com/mlin/yajl-ocaml/tarball/yajl-ocaml-0.7.3.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building yajl.0.7.3:
+  make install
+[ERROR] The compilation of yajl.0.7.3 failed.
+Removing yajl.0.7.3.
+  ocamlfind remove yajl
+
+
+#=== ERROR while installing yajl.0.7.3 ========================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make install
+# path                 /home/opam/.opam/4.02.1/build/yajl.0.7.3
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/yajl.0.7.3/yajl-26-5f1023.env
+# stdout-file          /home/opam/.opam/4.02.1/build/yajl.0.7.3/yajl-26-5f1023.out
+# stderr-file          /home/opam/.opam/4.02.1/build/yajl.0.7.3/yajl-26-5f1023.err
+### stdout ###
+# # --
+# # work around yajl's ruby configure script; the following is all it does:
+# mkdir -p upstream/build
+# cd upstream/build && cmake -DCMAKE_INSTALL_PREFIX=/home/opam/.opam/4.02.1/build/yajl.0.7.3/upstream/local ..
+### stderr ###
+# /bin/sh: cmake: command not found
+# make: *** [/home/opam/.opam/4.02.1/build/yajl.0.7.3/upstream/local/lib/libyajl_s.a] Error 127
+
