@@ -1,0 +1,24 @@
+++ opam install mesh -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install mesh -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install mesh
+The following actions will be performed:
+ - install   mesh.0.8.5
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mesh.0.8.5] Downloading https://forge.ocamlcore.org/frs/download.php/1454/mesh-0.8.5.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building mesh.0.8.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1 --disable-lacaml
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing mesh.0.8.5.
