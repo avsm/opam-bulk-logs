@@ -1,0 +1,30 @@
+++ opam install pa_comprehension -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install pa_comprehension -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install pa_comprehension
+The following actions will be performed:
+ - install   batteries.2.3.1                       [required by pa_comprehension]
+ - install   pa_comprehension.0.4
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
+[pa_comprehension.0.4] Downloading https://bitbucket.org/cakeplus/pa_comprehension/get/0.4.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building batteries.2.3.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make all
+  make install
+Installing batteries.2.3.1.
+Building pa_comprehension.0.4:
+  make build
+  make install
+Installing pa_comprehension.0.4.
