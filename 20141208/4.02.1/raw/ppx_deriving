@@ -1,9 +1,14 @@
-++ opam install ppx_deriving -e centos,centos-7
+++ opam install ppx_deriving -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install ppx_deriving -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ppx_deriving
+Debian srcexts:
 The following actions will be performed:
  - install   ppx_tools.0.99.2                      [required by ppx_deriving]
  - install   ppx_deriving.1.0

@@ -1,9 +1,14 @@
-++ opam install ppx_deriving_protobuf -e centos,centos-7
+++ opam install ppx_deriving_protobuf -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install ppx_deriving_protobuf -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ppx_deriving_protobuf
+Debian srcexts:
 The following actions will be performed:
  - install   ppx_tools.0.99.2                      [required by ppx_deriving]
  - install   ppx_deriving.1.0                      [required by ppx_deriving_protobuf]
@@ -19,10 +24,3 @@ The following actions will be performed:
 Building ppx_tools.0.99.2:
   make all
   make install
-Installing ppx_tools.0.99.2.
-Building ppx_deriving.1.0:
-  ocaml pkg/build.ml native=false native-dynlink=false
-Installing ppx_deriving.1.0.
-Building ppx_deriving_protobuf.2.0:
-  ocaml pkg/build.ml native=false native-dynlink=false
-Installing ppx_deriving_protobuf.2.0.
