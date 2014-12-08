@@ -1,0 +1,54 @@
+++ opam install lablgtk -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install lablgtk
+The following actions will be performed:
+ - install   lablgtk.2.18.3
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[lablgtk.2.18.3] Downloading https://forge.ocamlcore.org/frs/download.php/1479/lablgtk-2.18.3.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/lablgtk/lablgtk.2.18.3/files/lablgtk.install to ~/.opam/4.02.1/build/lablgtk.2.18.3/
+Copying ~/.opam/repo/default/packages/lablgtk/lablgtk.2.18.3/files/lablgldir.patch to ~/.opam/4.02.1/build/lablgtk.2.18.3/
+Applying lablgldir.patch.
+Building lablgtk.2.18.3:
+  ./configure --prefix /home/opam/.opam/4.02.1 LABLGLDIR=/home/opam/.opam/4.02.1/lib/lablgl
+  make world
+  make install
+[ERROR] The compilation of lablgtk.2.18.3 failed.
+Removing lablgtk.2.18.3.
+  ocamlfind remove lablgtk2
+
+
+#=== ERROR while installing lablgtk.2.18.3 ====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure --prefix /home/opam/.opam/4.02.1 LABLGLDIR=/home/opam/.opam/4.02.1/lib/lablgl
+# path                 /home/opam/.opam/4.02.1/build/lablgtk.2.18.3
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-28-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-28-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-28-ad8886.err
+### stdout ###
+# ...[truncated]
+# checking for suffix of object files... o
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# checking platform... Unix
+# checking native dynlink... checking for pkg-config... /usr/bin/pkg-config
+# checking for GTK+ - version >= 2.0.0... no
+# *** Could not run GTK+ test program, checking why...
+# *** The test program failed to compile or link. See the file config.log for the
+# *** exact error that occured. This usually means GTK+ is incorrectly installed.
+### stderr ###
+# configure: error: GTK+ is required
+
+
+=-=- lablgtk.2.18.3 troubleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package requires gtk+ 2.0 development packages installed on your system
