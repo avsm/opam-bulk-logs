@@ -58,3 +58,10 @@ Building oasis.0.4.5:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing oasis.0.4.5.
+Building omonad.0.3.0:
+  oasis setup
+  ocaml setup.ml -configure --enable-tests --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing omonad.0.3.0.

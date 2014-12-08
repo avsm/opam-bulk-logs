@@ -1,7 +1,12 @@
-++ opam install oni -e centos,centos-7
+++ opam install oni -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install oni -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install oni
 The following actions will be performed:
@@ -12,8 +17,8 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
-[oni.1.0.11] Downloading https://bitbucket.org/jhw/oni/downloads/oni-1.0.11.tar.bz2
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[oni.1.0.11] Downloading https://bitbucket.org/jhw/oni/downloads/oni-1.0.11.tar.bz2
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
@@ -27,11 +32,3 @@ Building omake.0.9.8.6-0.rc1:
   make bootstrap PREFIX=/home/opam/.opam/4.02.1
   make all PREFIX=/home/opam/.opam/4.02.1
   make install PREFIX=/home/opam/.opam/4.02.1
-Installing omake.0.9.8.6-0.rc1.
-Building ounit.2.0.0:
-  make build
-  make install
-Installing ounit.2.0.0.
-Building oni.1.0.11:
-  ./etc/install.sh install
-Installing oni.1.0.11.
