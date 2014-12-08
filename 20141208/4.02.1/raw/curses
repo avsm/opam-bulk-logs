@@ -1,0 +1,49 @@
+++ opam install curses -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install curses
+The following actions will be performed:
+ - install   curses.1.0.3
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[curses.1.0.3] Downloading http://ocaml.phauna.org/distfiles/ocaml-curses-1.0.3.ogunden1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building curses.1.0.3:
+  ./configure --enable-widec
+  make byte
+  make opt
+  make install
+[ERROR] The compilation of curses.1.0.3 failed.
+Removing curses.1.0.3.
+  ocamlfind remove curses
+
+
+#=== ERROR while installing curses.1.0.3 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure --enable-widec
+# path                 /home/opam/.opam/4.02.1/build/curses.1.0.3
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/curses.1.0.3/curses-26-5f1023.env
+# stdout-file          /home/opam/.opam/4.02.1/build/curses.1.0.3/curses-26-5f1023.out
+# stderr-file          /home/opam/.opam/4.02.1/build/curses.1.0.3/curses-26-5f1023.err
+### stdout ###
+# ...[truncated]
+# checking termios.h usability... yes
+# checking termios.h presence... yes
+# checking for termios.h... yes
+# checking sys/ioctl.h usability... yes
+# checking sys/ioctl.h presence... yes
+# checking for sys/ioctl.h... yes
+# checking windows.h usability... no
+# checking windows.h presence... no
+# checking for windows.h... no
+# checking for working ncurses library... 
+### stderr ###
+# configure: error: not found
+
