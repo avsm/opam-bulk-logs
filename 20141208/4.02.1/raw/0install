@@ -164,3 +164,4 @@ Copying ~/.opam/repo/default/packages/0install/0install.2.8/files/0install.insta
 Applying gui_gtk_dir.patch.
 Building 0install.2.8:
   make
+Installing 0install.2.8.
