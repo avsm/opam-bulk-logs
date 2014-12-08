@@ -1,9 +1,14 @@
-++ opam install merlin -e centos,centos-7
+++ opam install merlin -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install merlin -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install merlin
+Debian srcexts:
 The following actions will be performed:
  - install   easy-format.1.0.2                     [required by yojson]
  - install   cppo.1.1.2                            [required by yojson]
@@ -16,8 +21,8 @@ The following actions will be performed:
 [biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
 [cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
 [easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
-[merlin.2.0.0] Downloading https://github.com/the-lambda-church/merlin/archive/v2.0.tar.gz
 [yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+[merlin.2.0.0] Downloading https://github.com/the-lambda-church/merlin/archive/v2.0.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.02.1/build/cppo.1.1.2/
