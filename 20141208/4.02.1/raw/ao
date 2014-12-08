@@ -1,0 +1,48 @@
+++ opam install ao -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install ao
+The following actions will be performed:
+ - install   ao.0.2.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ao.0.2.0] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ao/0.2.0/ocaml-ao-0.2.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ao.0.2.0:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+[ERROR] The compilation of ao.0.2.0 failed.
+Removing ao.0.2.0.
+  ocamlfind remove ao
+
+
+#=== ERROR while installing ao.0.2.0 ==========================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure --prefix /home/opam/.opam/4.02.1
+# path                 /home/opam/.opam/4.02.1/build/ao.0.2.0
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/ao.0.2.0/ao-26-5f1023.env
+# stdout-file          /home/opam/.opam/4.02.1/build/ao.0.2.0/ao-26-5f1023.out
+# stderr-file          /home/opam/.opam/4.02.1/build/ao.0.2.0/ao-26-5f1023.err
+### stdout ###
+# ...[truncated]
+# checking whether the C compiler works... yes
+# checking for C compiler default output file name... a.out
+# checking for suffix of executables... 
+# checking whether we are cross compiling... no
+# checking for suffix of object files... o
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# checking for pkg-config... /usr/bin/pkg-config
+# checking pkg-config is at least version 0.9.0... yes
+### stderr ###
+# configure: error: libao not found
+
