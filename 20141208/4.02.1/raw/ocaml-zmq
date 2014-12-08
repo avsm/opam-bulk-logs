@@ -1,9 +1,17 @@
-++ opam install ocaml-zmq -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install ocaml-zmq -e debian
++ depext=libzmq3-dev
+Debian depexts: libzmq3-dev
++ echo Debian depexts: libzmq3-dev
++ '[' libzmq3-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libzmq3-dev
+E: Unable to locate package libzmq3-dev
+++ opam install ocaml-zmq -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ocaml-zmq
-CentOS 7 depexts:
 The following actions will be performed:
  - install   ounit.2.0.0                           [required by ocaml-zmq]
  - install   uint.1.1.5                            [required by ocaml-zmq]
@@ -11,9 +19,9 @@ The following actions will be performed:
 === 3 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[ocaml-zmq.0] Downloading https://github.com/pdhborges/ocaml-zmq/tarball/67586823edd
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
 [uint.1.1.5] Downloading https://forge.ocamlcore.org/frs/download.php/1487/ocaml-uint-1.1.5.tar.gz
+[ocaml-zmq.0] Downloading https://github.com/pdhborges/ocaml-zmq/tarball/67586823edd
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Building ounit.2.0.0:
@@ -48,19 +56,19 @@ The following failed
 # path                 /home/opam/.opam/4.02.1/build/ocaml-zmq.0
 # compiler             4.02.1
 # exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/ocaml-zmq.0/ocaml-zmq-498-1872ec.env
-# stdout-file          /home/opam/.opam/4.02.1/build/ocaml-zmq.0/ocaml-zmq-498-1872ec.out
-# stderr-file          /home/opam/.opam/4.02.1/build/ocaml-zmq.0/ocaml-zmq-498-1872ec.err
+# env-file             /home/opam/.opam/4.02.1/build/ocaml-zmq.0/ocaml-zmq-794-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.1/build/ocaml-zmq.0/ocaml-zmq-794-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.1/build/ocaml-zmq.0/ocaml-zmq-794-ad8886.err
 ### stdout ###
 # ...[truncated]
+# Compile tests executable and library and run them: ... false
+# pkg_uint_uint64: ..................................... /home/opam/.opam/4.02.1/lib/uint
 # pkg_ounit: ........................................... /home/opam/.opam/4.02.1/lib/oUnit
 # 
 # /home/opam/.opam/4.02.1/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.02.1/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.1/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.02.1/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # ocamlfind ocamlc -ccopt -Wall -ccopt -W -ccopt -Wextra -ccopt -O2 -c src/caml_zmq_stubs.c
 # + ocamlfind ocamlc -ccopt -Wall -ccopt -W -ccopt -Wextra -ccopt -O2 -c src/caml_zmq_stubs.c
 # src/caml_zmq_stubs.c:26:17: fatal error: zmq.h: No such file or directory
-#  #include <zmq.h>
-#                  ^
 # compilation terminated.
 # Command exited with code 2.
 ### stderr ###
@@ -77,4 +85,4 @@ The following failed
 # E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' src/libZMQB_stubs.a src/dllZMQB_stubs.so src/ZMQB.cma src/ZMQB.cmxa src/ZMQB.a src/ZMQB.cmxs test/test.native -tag debug' terminated with error code 10")
 
 
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108073048.export"
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108125300.export"
