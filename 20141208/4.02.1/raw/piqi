@@ -51,3 +51,15 @@ Installing ulex.1.1.
 Building xmlm.1.2.0:
   ./pkg/pkg-git
   ./pkg/build true
+Installing xmlm.1.2.0.
+Building piqilib.0.6.9:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make ocaml
+  make install
+  make ocaml-install
+Installing piqilib.0.6.9.
+Building piqi.0.7.1:
+  make
+  make DESTDIR=/home/opam/.opam/4.02.1 install
+Installing piqi.0.7.1.
