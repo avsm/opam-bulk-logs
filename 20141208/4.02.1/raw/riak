@@ -1,0 +1,127 @@
+++ opam install riak -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install riak
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by riak]
+ - install   xmlm.1.2.0                            [required by piqilib]
+ - install   easy-format.1.0.2                     [required by piqilib]
+ - install   base64.1.0.0                          [required by piqilib]
+ - install   ulex.1.1                              [required by piqilib]
+ - install   optcomp.1.6                           [required by piqilib]
+ - install   lwt.2.4.5                             [required by riak]
+ - install   piqilib.0.6.9                         [required by piqi]
+ - install   piqi.0.7.1                            [required by riak]
+ - install   riak-pb.1.0.0                         [required by riak]
+ - install   riak.1.0.0
+=== 11 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[base64.1.0.0] Downloading https://github.com/mirage/ocaml-base64/archive/v1.0.0.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[piqi.0.7.1] Downloading https://github.com/alavrik/piqi-ocaml/archive/v0.7.1.tar.gz
+[piqilib.0.6.9] Downloading https://github.com/alavrik/piqi/archive/v0.6.9.tar.gz
+[riak.1.0.0] Downloading https://github.com/metadave/riak-ocaml-client/archive/riak-1.0.0.tar.gz
+[riak-pb.1.0.0] Downloading https://github.com/metadave/riak-ocaml-pb/archive/riak-pb-1.0.0.tar.gz
+[ulex.1.1] Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building base64.1.0.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing base64.1.0.0.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+Installing lwt.2.4.5.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+Installing ulex.1.1.
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Building piqilib.0.6.9:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make ocaml
+  make install
+  make ocaml-install
+Installing piqilib.0.6.9.
+Building piqi.0.7.1:
+  make
+  make DESTDIR=/home/opam/.opam/4.02.1 install
+Installing piqi.0.7.1.
+Building riak-pb.1.0.0:
+  ./configure
+  make
+  make install
+[ERROR] The compilation of riak-pb.1.0.0 failed.
+Removing riak-pb.1.0.0.
+  ocamlfind remove riak-pb
+
+
+#=== ERROR while installing riak-pb.1.0.0 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure
+# path                 /home/opam/.opam/4.02.1/build/riak-pb.1.0.0
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/riak-pb.1.0.0/riak-pb-3701-c743ac.env
+# stdout-file          /home/opam/.opam/4.02.1/build/riak-pb.1.0.0/riak-pb-3701-c743ac.out
+# stderr-file          /home/opam/.opam/4.02.1/build/riak-pb.1.0.0/riak-pb-3701-c743ac.err
+### stderr ###
+# ...[truncated]
+# File "setup.ml", line 1793, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# ocamlfind: Package `piqi' not found
+# W: Field 'pkg_piqi' is not set: Command ''/home/opam/.opam/4.02.1/bin/ocamlfind' query -format %d piqi > '/tmp/oasis-261719.txt'' terminated with error code 2
+# ocamlfind: Package `piqi.runtime' not found
+# W: Field 'pkg_piqi_runtime' is not set: Command ''/home/opam/.opam/4.02.1/bin/ocamlfind' query -format %d piqi.runtime > '/tmp/oasis-4e1f5b.txt'' terminated with error code 2
+# E: Cannot find findlib package piqi
+# E: Cannot find findlib package piqi.runtime
+# E: Failure("2 configuration errors")
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   piqi.0.7.1
+ - install   piqilib.0.6.9
+ - install   lwt.2.4.5
+ - install   optcomp.1.6
+ - install   ulex.1.1
+ - install   base64.1.0.0
+ - install   easy-format.1.0.2
+ - install   xmlm.1.2.0
+ - install   ounit.2.0.0
+The following failed
+ - install   riak-pb.1.0.0
+Due to the errors, the following have been cancelled
+ - install   riak.1.0.0
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108081528.export"
