@@ -5,3 +5,7 @@
 + sudo apt-get install -qq -y build-essential m4
 Debian depexts: libsdl-gfx1.2-dev
 + sudo apt-get install -qq -y libsdl-gfx1.2-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libwrap0:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libwrap0:amd64 (from .../libwrap0_7.6.q-24_amd64.deb) ...
