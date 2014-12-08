@@ -1,0 +1,44 @@
+++ opam install gettext -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
+CentOS 7 depexts:
++ opam install gettext
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by gettext]
+ - install   camomile.0.8.5                        [required by gettext]
+ - install   fileutils.0.4.4                       [required by gettext]
+ - install   gettext.0.3.5
+=== 4 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camomile.0.8.5] Downloading https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
+[fileutils.0.4.4] Downloading http://forge.ocamlcore.org/frs/download.php/892/ocaml-fileutils-0.4.4.tar.gz
+[gettext.0.3.5] Downloading https://forge.ocamlcore.org/frs/download.php/1433/ocaml-gettext-0.3.5.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/camomile/camomile.0.8.5/files/no-camlp4.patch to ~/.opam/4.02.1/build/camomile.0.8.5/
+Copying ~/.opam/repo/default/packages/camomile/camomile.0.8.5/files/cmxs.patch to ~/.opam/4.02.1/build/camomile.0.8.5/
+Applying cmxs.patch.
+Applying no-camlp4.patch.
+Building camomile.0.8.5:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing camomile.0.8.5.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building fileutils.0.4.4:
+  ./configure
+  make
+  make install
+Installing fileutils.0.4.4.
+Copying ~/.opam/repo/default/packages/gettext/gettext.0.3.5/files/gettext.install to ~/.opam/4.02.1/build/gettext.0.3.5/
+Building gettext.0.3.5:
+  ./configure --disable-doc --prefix /home/opam/.opam/4.02.1 --sbindir=/home/opam/.opam/4.02.1/lib/gettext/sbin --libexecdir=/home/opam/.opam/4.02.1/lib/gettext/libexec --sysconfdir=/home/opam/.opam/4.02.1/lib/gettext/etc --sharedstatedir=/home/opam/.opam/4.02.1/lib/gettext/com --localstatedir=/home/opam/.opam/4.02.1/lib/gettext/var --libdir=/home/opam/.opam/4.02.1/lib/gettext/lib --includedir=/home/opam/.opam/4.02.1/lib/gettext/include --datarootdir=/home/opam/.opam/4.02.1/lib/gettext/share
+  make
+  make install
+Installing gettext.0.3.5.
