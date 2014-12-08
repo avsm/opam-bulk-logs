@@ -1,0 +1,73 @@
+++ opam install crunch -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
+CentOS 7 depexts:
++ opam install crunch
+The following actions will be performed:
+ - install   cmdliner.0.9.6                        [required by crunch]
+ - install   crunch.1.3.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[crunch.1.3.0] Downloading https://github.com/mirage/ocaml-crunch/archive/v1.3.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Building crunch.1.3.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+[ERROR] The compilation of crunch.1.3.0 failed.
+Removing crunch.1.3.0.
+  rm -f /home/opam/.opam/4.02.1/bin/ocaml-crunch
+  ocamlfind remove crunch
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   cmdliner.0.9.6
+The following failed
+ - install   crunch.1.3.0
+
+#=== ERROR while installing crunch.1.3.0 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/opam/.opam/4.02.1/build/crunch.1.3.0
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/crunch.1.3.0/crunch-94-ffb3fd.env
+# stdout-file          /home/opam/.opam/4.02.1/build/crunch.1.3.0/crunch-94-ffb3fd.out
+# stderr-file          /home/opam/.opam/4.02.1/build/crunch.1.3.0/crunch-94-ffb3fd.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlc -c -g -I lib -package unix -package cmdliner -I lib -o lib/main.cmo lib/main.ml
+# ocamlfind ocamlopt -c -g -I lib -package unix -package cmdliner -I lib -o lib/main.cmx lib/main.ml
+# ocamlfind ocamlc -c lib/custom_unix_stubs.c
+# mv custom_unix_stubs.o lib/custom_unix_stubs.o
+# /home/opam/.opam/4.02.1/bin/ocamlmklib -o lib/ocaml-crunch_stubs lib/custom_unix_stubs.o
+# ocamlfind ocamlopt -g -linkpkg -package unix -package cmdliner lib/crunch.cmxa lib/main.cmx lib/libocaml-crunch_stubs.a -o lib/main.native
+# + ocamlfind ocamlopt -g -linkpkg -package unix -package cmdliner lib/crunch.cmxa lib/main.cmx lib/libocaml-crunch_stubs.a -o lib/main.native
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# Command exited with code 2.
+### stderr ###
+# ...[truncated]
+# File "setup.ml", line 1793, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# File "setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "setup.ml", line 1793, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' lib/crunch.cma lib/crunch.cmxa lib/crunch.a lib/crunch.cmxs lib/main.native -tag debug' terminated with error code 10")
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108060811.export"
