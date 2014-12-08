@@ -1,9 +1,14 @@
-++ opam install pa_comprehension -e centos,centos-7
+++ opam install pa_comprehension -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install pa_comprehension -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install pa_comprehension
-CentOS 7 depexts:
 The following actions will be performed:
  - install   batteries.2.3.1                       [required by pa_comprehension]
  - install   pa_comprehension.0.4
