@@ -41,3 +41,12 @@ Building containers.0.6:
   ./configure --prefix /home/opam/.opam/4.02.1 --disable-thread --disable-bench --disable-tests --disable-cgi --disable-lwt --enable-docs --enable-misc
   make build
   make install
+Installing containers.0.6.
+Building lilis.0.2.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1 --enable-containers --disable-batteries --disable-cfstream --disable-core-kernel --disable-tyxml --disable-js-of-ocaml --disable-executable
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing lilis.0.2.1.
+
+=-=- containers.0.6 installed successfully =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> in containers, modules start with 'CC' (stands for 'core containers')
