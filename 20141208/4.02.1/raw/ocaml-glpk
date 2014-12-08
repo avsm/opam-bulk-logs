@@ -11,3 +11,26 @@ Selecting previously unselected package libltdl7:amd64.
 Unpacking libltdl7:amd64 (from .../libltdl7_2.4.2-1.1_amd64.deb) ...
 Selecting previously unselected package libglpk0.
 Unpacking libglpk0 (from .../libglpk0_4.45-1_amd64.deb) ...
+Selecting previously unselected package libglpk-dev.
+Unpacking libglpk-dev (from .../libglpk-dev_4.45-1_amd64.deb) ...
+Setting up libltdl7:amd64 (2.4.2-1.1) ...
+Setting up libglpk0 (4.45-1) ...
+Setting up libglpk-dev (4.45-1) ...
+++ opam install ocaml-glpk -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-glpk
+Debian srcexts:
+The following actions will be performed:
+ - install   ocaml-glpk.0.1.6
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocaml-glpk.0.1.6] Downloading http://downloads.sourceforge.net/project/ocaml-glpk/ocaml-glpk/0.1.6/ocaml-glpk-0.1.6.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ocaml-glpk.0.1.6:
+  make
+  make install
+Installing ocaml-glpk.0.1.6.
