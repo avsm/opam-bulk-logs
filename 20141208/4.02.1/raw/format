@@ -1,9 +1,14 @@
-++ opam install format -e centos,centos-7
+++ opam install format -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install format -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install format
+Debian srcexts:
 The following actions will be performed:
  - install   format.0.1
 === 1 to install ===
@@ -15,4 +20,3 @@ The following actions will be performed:
 Building format.0.1:
   make
   make install
-Installing format.0.1.

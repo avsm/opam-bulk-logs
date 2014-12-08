@@ -32,3 +32,4 @@ Installing base-bytes.base.
 Copying ~/.opam/repo/default/packages/flowtype/flowtype.0.1.0/files/flowtype.install to ~/.opam/4.02.1/build/flowtype.0.1.0/
 Building flowtype.0.1.0:
   make
+Installing flowtype.0.1.0.
