@@ -1,9 +1,30 @@
-++ opam install ocamlfuse -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+++ opam install ocamlfuse -e debian
++ depext=libfuse-dev
+Debian depexts: libfuse-dev
++ echo Debian depexts: libfuse-dev
++ '[' libfuse-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libfuse-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libfuse2:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libfuse2:amd64 (from .../libfuse2_2.9.0-2+deb7u1_amd64.deb) ...
+Selecting previously unselected package libsepol1-dev.
+Unpacking libsepol1-dev (from .../libsepol1-dev_2.1.4-3_amd64.deb) ...
+Selecting previously unselected package libselinux1-dev.
+Unpacking libselinux1-dev (from .../libselinux1-dev_2.1.9-5_amd64.deb) ...
+Selecting previously unselected package libfuse-dev.
+Unpacking libfuse-dev (from .../libfuse-dev_2.9.0-2+deb7u1_amd64.deb) ...
+Setting up libfuse2:amd64 (2.9.0-2+deb7u1) ...
+Setting up libsepol1-dev (2.1.4-3) ...
+Setting up libselinux1-dev (2.1.9-5) ...
+Setting up libfuse-dev (2.9.0-2+deb7u1) ...
+++ opam install ocamlfuse -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ocamlfuse
+Debian srcexts:
 The following actions will be performed:
  - install   camlidl.1.05                          [required by ocamlfuse]
  - install   ocamlfuse.2.7.1-cvs2
@@ -24,50 +45,3 @@ Building camlidl.1.05:
   make all
   make install BINDIR=/home/opam/.opam/4.02.1/bin OCAMLLIB=/home/opam/.opam/4.02.1/lib/camlidl
 Installing camlidl.1.05.
-Building ocamlfuse.2.7.1-cvs2:
-  make -C lib INCDIRS=/home/opam/.opam/4.02.1/lib/camlidl
-  make -C lib install
-[ERROR] The compilation of ocamlfuse.2.7.1-cvs2 failed.
-Removing ocamlfuse.2.7.1-cvs2.
-  ocamlfind remove Fuse
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   camlidl.1.05
-The following failed
- - install   ocamlfuse.2.7.1-cvs2
-
-#=== ERROR while installing ocamlfuse.2.7.1-cvs2 ==============================#
-# opam-version         1.2.0
-# os                   linux
-# command              make -C lib INCDIRS=/home/opam/.opam/4.02.1/lib/camlidl
-# path                 /home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2
-# compiler             4.02.1
-# exit-code            2
-# env-file             /home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2/ocamlfuse-188-1872ec.env
-# stdout-file          /home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2/ocamlfuse-188-1872ec.out
-# stderr-file          /home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2/ocamlfuse-188-1872ec.err
-### stdout ###
-# ...[truncated]
-# making ._d/Fuse_lib.d from Fuse_lib.ml
-# making ._d/Unix_util.d from Unix_util.ml
-# making ._d/Result.d from Result.ml
-# make[1]: Leaving directory `/home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2/lib'
-# make[1]: Entering directory `/home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2/lib'
-# ocamlc -c -cc "cc" -ccopt "-fPIC -D_FILE_OFFSET_BITS=64 -I. -pthread \
-# 			-DPIC -DNATIVE_CODE   \
-# 			  -I/home/opam/.opam/4.02.1/lib/camlidl  -o Fuse_bindings_stubs.o " Fuse_bindings_stubs.c 
-# make[1]: Leaving directory `/home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2/lib'
-# make: Leaving directory `/home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2/lib'
-### stderr ###
-# In file included from Fuse_bindings_stubs.c:17:0:
-# Fuse_bindings.h:16:18: fatal error: fuse.h: No such file or directory
-#  #include <fuse.h>
-#                   ^
-# compilation terminated.
-# make[1]: *** [Fuse_bindings_stubs.o] Error 2
-# make: *** [native-code-library] Error 2
-
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108073221.export"
