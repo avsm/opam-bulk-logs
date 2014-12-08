@@ -1,0 +1,111 @@
+++ opam install coinst -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install coinst -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install coinst
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   cmdliner.0.9.6                        [required by js_of_ocaml]
+ - install   menhir.20140422                       [required by js_of_ocaml]
+ - install   extlib-compat.1.6.1                   [required by cudf]
+ - install   lwt.2.4.6                             [required by js_of_ocaml]
+ - install   cudf.0.7                              [required by coinst]
+ - install   js_of_ocaml.2.5                       [required by coinst]
+ - install   coinst.1.9.1
+=== 8 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[coinst.1.9.1] Downloading https://github.com/vouillon/coinst/archive/v1.9.1.tar.gz
+[cudf.0.7] Downloading https://gforge.inria.fr/frs/download.php/33593/cudf-0.7.tar.gz
+[extlib-compat.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+[js_of_ocaml.2.5] Downloading https://github.com/ocsigen/js_of_ocaml/archive/2.5.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing cmdliner.0.9.6.
+Building extlib-compat.1.6.1:
+  make build install
+Installing extlib-compat.1.6.1.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+Installing menhir.20140422.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building cudf.0.7:
+  make all opt
+  make install DESTDIR=/home/opam/.opam/4.02.1 OCAMLLIBDIR=lib BINDIR=bin LIBDIR=lib INCDIR=include
+Installing cudf.0.7.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building js_of_ocaml.2.5:
+  make build
+  make install-lib BINDIR=/home/opam/.opam/4.02.1/bin
+Installing js_of_ocaml.2.5.
+Building coinst.1.9.1:
+  make depend
+  make
+  install -c coinst coinst-upgrades comigrate /home/opam/.opam/4.02.1/bin
+[ERROR] The compilation of coinst.1.9.1 failed.
+Removing coinst.1.9.1.
+  rm -f /home/opam/.opam/4.02.1/bin/coinst rm -f /home/opam/.opam/4.02.1/bin/coinst-upgrades rm -f /home/opam/.opam/4.02.1/bin/comigrate
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   js_of_ocaml.2.5
+ - install   cudf.0.7
+ - install   extlib-compat.1.6.1
+ - install   menhir.20140422
+ - install   cmdliner.0.9.6
+ - install   lwt.2.4.6
+ - install   ppx_tools.0.99.2
+The following failed
+ - install   coinst.1.9.1
+
+#=== ERROR while installing coinst.1.9.1 ======================================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/coinst.1.9.1
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/coinst.1.9.1/coinst-5418-60459a.env
+# stdout-file          /home/opam/.opam/4.02.1/build/coinst.1.9.1/coinst-5418-60459a.out
+# stderr-file          /home/opam/.opam/4.02.1/build/coinst.1.9.1/coinst-5418-60459a.err
+### stdout ###
+# ocamlyacc viewer/dot_parser.mly
+# ocamllex viewer/dot_lexer.mll
+# 45 states, 444 transitions, table size 2046 bytes
+# ls *.ml *.mli viewer/*.ml viewer/*.mli | \
+#         xargs ocamlfind ocamldep -package js_of_ocaml,js_of_ocaml.syntax -syntax camlp4o -I viewer > .depend
+# ocamlfind ocamlc -package unix,str,bigarray,cudf -g -I viewer -c ptset.mli
+# ocamlfind ocamlopt  -package unix,str,bigarray,cudf -g -I viewer -c ptset.ml
+### stderr ###
+# File "ptset.ml", line 1:
+# Error: The implementation ptset.ml does not match the interface ptset.cmi:
+#        ...
+#        In module Big:
+#        The value `of_list' is required but not provided
+# make: *** [ptset.cmx] Error 2
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108001546.export"
