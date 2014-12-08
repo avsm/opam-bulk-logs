@@ -21,3 +21,4 @@ Building cryptgps.0.2.1:
   make all
   make opt
   make install
+Installing cryptgps.0.2.1.
