@@ -24,3 +24,10 @@ Building camlp5.6.12:
   ./configure --prefix /home/opam/.opam/4.02.1 -libdir /home/opam/.opam/4.02.1/lib -mandir /home/opam/.opam/4.02.1/man
   make world.opt
   make install
+Installing camlp5.6.12.
+Copying ~/.opam/repo/default/packages/coq/coq.8.4.5/files/coq.install to ~/.opam/4.02.1/build/coq.8.4.5/
+Building coq.8.4.5:
+  ./configure -configdir /home/opam/.opam/4.02.1/lib/coq/config -mandir /home/opam/.opam/4.02.1/man -docdir /home/opam/.opam/4.02.1/doc --prefix /home/opam/.opam/4.02.1 --usecamlp5 --camlp5dir /home/opam/.opam/4.02.1/lib/camlp5 --coqide no
+  make -j1 world
+  make -j1 states
+  make install

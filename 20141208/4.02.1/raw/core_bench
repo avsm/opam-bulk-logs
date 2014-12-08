@@ -1,9 +1,14 @@
-++ opam install core_bench -e centos,centos-7
+++ opam install core_bench -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install core_bench -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install core_bench
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   herelib.109.35.02                     [required by core]
  - install   pipebang.110.01.00                    [required by core]
@@ -120,12 +125,3 @@ Building core.112.01.01:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   make
   make install
-Installing core.112.01.01.
-Building textutils.112.01.00:
-  make
-  make install
-Installing textutils.112.01.00.
-Building core_bench.112.01.00:
-  make
-  make install
-Installing core_bench.112.01.00.
