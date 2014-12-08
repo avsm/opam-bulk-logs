@@ -1,18 +1,11 @@
-++ opam install ocaml-arg -e centos,centos-7
+++ opam install ocaml-arg -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install ocaml-arg -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ocaml-arg
-CentOS 7 depexts:
-The following actions will be performed:
- - install   ocaml-arg.0.3
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[ocaml-arg.0.3] Downloading https://github.com/samoht/ocaml-arg/tarball/0.3
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Copying ~/.opam/repo/default/packages/ocaml-arg/ocaml-arg.0.3/files/ocaml-arg.install to ~/.opam/4.02.1/build/ocaml-arg.0.3/
-Building ocaml-arg.0.3:
-  make
-Installing ocaml-arg.0.3.

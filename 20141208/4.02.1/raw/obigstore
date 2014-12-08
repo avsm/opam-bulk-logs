@@ -120,3 +120,61 @@ Installing sexplib.112.01.00.
 Building extprot.1.1.2:
   omake
   omake install prefix=/home/opam/.opam/4.02.1
+Installing extprot.1.1.2.
+
+
+#=== ERROR while installing leveldb.1.0.3 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              omake -j9
+# path                 /home/opam/.opam/4.02.1/build/leveldb.1.0.3
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/leveldb.1.0.3/leveldb-5812-d6d332.env
+# stdout-file          /home/opam/.opam/4.02.1/build/leveldb.1.0.3/leveldb-5812-d6d332.out
+# stderr-file          /home/opam/.opam/4.02.1/build/leveldb.1.0.3/leveldb-5812-d6d332.err
+### stdout ###
+# ...[truncated]
+# --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.02.1/bin/ocamlopt.opt)
+# --- Checking whether ocamlc understands the "z" warnings... (yes)
+# *** omake: finished reading OMakefiles (0.07 sec)
+# --- Checking if ocamldep understands -modules... (yes)
+# --- Checking for gcc... (found /usr/bin/gcc)
+# --- Checking for g++... (found /usr/bin/g++)
+# - build test test_00util.o
+# + ocamlfind ocamlc -package unix,threads,oUnit -w +a-4-6-9-27-28-30..99 -warn-error +a-4-6-9-18-27-28-30..99 -annot -thread -g -I . -I ../src -c test_00util.ml
+# *** omake: 45/71 targets are up to date
+# *** omake: failed (0.73 sec, 6/6 scans, 3/3 rules, 29/122 digests)
+### stderr ###
+# ...[truncated]
+#    (use --progress to override).
+# *** omake: targets were not rebuilt because of errors:
+#    test/test_00util.cmi
+#       depends on: test/test_00util.ml
+#    test/test_00util.cmo
+#       depends on: test/test_00util.ml
+#    test/test_00util.cmx
+#       depends on: test/test_00util.ml
+#    test/test_00util.o
+#       depends on: test/test_00util.ml
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   conf-leveldb.1
+ - install   sexplib.112.01.00
+ - install   type_conv.112.01.00
+ - install   extlib-compat.1.6.1
+ - install   extprot.1.1.2
+ - install   batteries.2.3.1
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   omake.0.9.8.6-0.rc1
+ - install   cryptokit.1.9
+ - install   ppx_tools.0.99.2
+The following failed
+ - install   leveldb.1.0.3
+Due to the errors, the following have been cancelled
+ - install   obigstore.0.9.1
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108124719.export"
