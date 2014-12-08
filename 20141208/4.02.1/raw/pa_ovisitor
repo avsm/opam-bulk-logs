@@ -1,9 +1,14 @@
-++ opam install pa_ovisitor -e centos,centos-7
+++ opam install pa_ovisitor -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install pa_ovisitor -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install pa_ovisitor
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   omake.0.9.8.6-0.rc1                   [required by pa_ovisitor]
  - install   type_conv.112.01.00                   [required by pa_ovisitor]
@@ -12,8 +17,8 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
-[pa_ovisitor.1.0.0] Downloading https://bitbucket.org/camlspotter/pa_ovisitor/get/1.0.0.tar.gz
 [type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[pa_ovisitor.1.0.0] Downloading https://bitbucket.org/camlspotter/pa_ovisitor/get/1.0.0.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
