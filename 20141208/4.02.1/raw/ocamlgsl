@@ -37,3 +37,4 @@ The following actions will be performed:
 Building ocamlgsl.0.6.0:
   make
   make install-findlib
+Installing ocamlgsl.0.6.0.
