@@ -1,8 +1,13 @@
-++ opam install ipaddr -e centos,centos-7
+++ opam install ipaddr -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+++ opam install ipaddr -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install ipaddr
 The following actions will be performed:
  - install   type_conv.112.01.00                   [required by sexplib]
