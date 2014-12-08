@@ -74,3 +74,26 @@ Setting up libdevmapper1.02.1:amd64 (2:1.02.74-8) ...
 Setting up libdevmapper-event1.02.1:amd64 (2:1.02.74-8) ...
 Setting up libvirt0 (0.9.12.3-1+deb7u1) ...
 Setting up libvirt-dev (0.9.12.3-1+deb7u1) ...
+Setting up dmsetup (2:1.02.74-8) ...
+Setting up lvm2 (2.02.95-8) ...
+invoke-rc.d: policy-rc.d denied execution of start.
+++ opam install libvirt -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install libvirt
+The following actions will be performed:
+ - install   libvirt.0.6.1.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[libvirt.0.6.1.2] Downloading http://libvirt.org/sources/ocaml/ocaml-libvirt-0.6.1.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building libvirt.0.6.1.2:
+  ./configure
+  make all
+  make opt
+  make install-opt
+Installing libvirt.0.6.1.2.
