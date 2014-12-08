@@ -27,3 +27,4 @@ Building sexplib.112.01.00:
   ./configure --enable-syntax
   make
   make install
+Installing sexplib.112.01.00.
