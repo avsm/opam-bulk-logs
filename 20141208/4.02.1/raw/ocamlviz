@@ -1,9 +1,17 @@
-++ opam install ocamlviz -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install ocamlviz -e debian
++ depext='autoconf libcairo2-dev libexpat1-dev libgtk2.0-dev liblablgtk2-ocaml-dev'
++ echo Debian depexts: autoconf libcairo2-dev libexpat1-dev libgtk2.0-dev liblablgtk2-ocaml-dev
++ '[' 'autoconf libcairo2-dev libexpat1-dev libgtk2.0-dev liblablgtk2-ocaml-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: autoconf libcairo2-dev libexpat1-dev libgtk2.0-dev liblablgtk2-ocaml-dev
++ sudo apt-get install -qq -y autoconf libcairo2-dev libexpat1-dev libgtk2.0-dev liblablgtk2-ocaml-dev
+E: Unable to correct problems, you have held broken packages.
+++ opam install ocamlviz -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ocamlviz
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   lablgtk.2.18.3                        [required by ocamlviz]
  - install   cairo2.0.4.6                          [required by ocamlviz]
@@ -11,8 +19,8 @@ The following actions will be performed:
 === 3 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[cairo2.0.4.6] Downloading https://forge.ocamlcore.org/frs/download.php/1279/cairo2-0.4.6.tar.gz
 [lablgtk.2.18.3] Downloading https://forge.ocamlcore.org/frs/download.php/1479/lablgtk-2.18.3.tar.gz
+[cairo2.0.4.6] Downloading https://forge.ocamlcore.org/frs/download.php/1279/cairo2-0.4.6.tar.gz
 [ocamlviz.1.01] Downloading http://ocamlviz.forge.ocamlcore.org/ocamlviz-1.01.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -42,9 +50,9 @@ Due to the errors, the following have been cancelled
 # path                 /home/opam/.opam/4.02.1/build/lablgtk.2.18.3
 # compiler             4.02.1
 # exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-47-a71bb4.env
-# stdout-file          /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-47-a71bb4.out
-# stderr-file          /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-47-a71bb4.err
+# env-file             /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-181-0a5907.env
+# stdout-file          /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-181-0a5907.out
+# stderr-file          /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-181-0a5907.err
 ### stdout ###
 # ...[truncated]
 # checking for suffix of object files... o
