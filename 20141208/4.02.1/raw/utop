@@ -68,3 +68,9 @@ Building lambda-term.1.7:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing lambda-term.1.7.
+Copying ~/.opam/repo/default/packages/utop/utop.1.16/files/utop.install to ~/.opam/4.02.1/build/utop.1.16/
+Building utop.1.16:
+  ./configure --prefix /home/opam/.opam/4.02.1 --enable-camlp4
+  make
+  make install
