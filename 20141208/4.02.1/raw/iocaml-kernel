@@ -1,101 +1,64 @@
-++ opam install iocaml-kernel -e centos,centos-7
-+ depext=libffi-devel
-+ echo CentOS 7 depexts: libffi-devel
-CentOS 7 depexts: libffi-devel
-+ '[' libffi-devel '!=' '' ']'
-+ sudo yum install -y libffi-devel
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.clouvider.net
- * extras: mirrors.coreix.net
- * updates: mirrors.coreix.net
-Resolving Dependencies
---> Running transaction check
----> Package libffi-devel.x86_64 0:3.0.13-11.el7 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-================================================================================
- Package              Arch           Version                 Repository    Size
-================================================================================
-Installing:
- libffi-devel         x86_64         3.0.13-11.el7           base          22 k
-
-Transaction Summary
-================================================================================
-Install  1 Package
-
-Total download size: 22 k
-Installed size: 27 k
-Downloading packages:
-Running transaction check
-Running transaction test
-Transaction test succeeded
-Running transaction
-  Installing : libffi-devel-3.0.13-11.el7.x86_64                            1/1 
-install-info: No such file or directory for /usr/share/info/libffi.info.gz
-warning: %post(libffi-devel-3.0.13-11.el7.x86_64) scriptlet failed, exit status 1
-Non-fatal POSTIN scriptlet failure in rpm package libffi-devel-3.0.13-11.el7.x86_64
-  Verifying  : libffi-devel-3.0.13-11.el7.x86_64                            1/1 
-
-Installed:
-  libffi-devel.x86_64 0:3.0.13-11.el7                                           
-
-Complete!
+++ opam install iocaml-kernel -e debian
++ depext='libffi-dev libzmq3-dev'
++ echo Debian depexts: libffi-dev libzmq3-dev
++ '[' 'libffi-dev libzmq3-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: libffi-dev libzmq3-dev
++ sudo apt-get install -qq -y libffi-dev libzmq3-dev
+E: Unable to locate package libzmq3-dev
+++ opam install iocaml-kernel -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install iocaml-kernel
+Debian srcexts:
 The following actions will be performed:
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   base-bytes.base                       [required by ctypes]
  - install   ounit.2.0.0                           [required by iocaml-kernel]
  - install   easy-format.1.0.2                     [required by yojson, atd, biniou]
  - install   optcomp.1.6                           [required by iocaml-kernel]
  - install   menhir.20140422                       [required by atd]
  - install   cppo.1.1.2                            [required by yojson]
  - install   uuidm.0.9.5                           [required by iocaml-kernel]
- - install   ctypes.0.3                            [required by iocaml-kernel]
- - install   lwt.2.4.5                             [required by iocaml-kernel]
  - install   uint.1.1.5                            [required by iocaml-kernel]
+ - install   lwt.2.4.6                             [required by iocaml-kernel]
+ - install   ctypes.0.3.3                          [required by iocaml-kernel]
  - install   biniou.1.0.9                          [required by atdgen]
  - install   atd.1.1.2                             [required by atdgen]
  - install   yojson.1.1.8                          [required by iocaml-kernel]
  - install   atdgen.1.4.1                          [required by iocaml-kernel]
  - install   iocaml-kernel.0.4.6
-=== 14 to install ===
+=== 16 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [atd.1.1.2] Downloading http://mjambon.com/releases/atd/atd-1.1.2.tar.gz
 [atdgen.1.4.1] Downloading http://mjambon.com/releases/atdgen/atdgen-1.4.1.tar.gz
 [biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
 [cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
-[ctypes.0.3] Downloading https://github.com/ocamllabs/ocaml-ctypes/archive/0.3.tar.gz
+[ctypes.0.3.3] Downloading https://github.com/ocamllabs/ocaml-ctypes/archive/0.3.3.tar.gz
 [easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
 [iocaml-kernel.0.4.6] Downloading https://github.com/andrewray/iocaml/archive/v0.4.6.tar.gz
-[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
 [menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
 [optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
 [uint.1.1.5] Downloading https://forge.ocamlcore.org/frs/download.php/1487/ocaml-uint-1.1.5.tar.gz
 [uuidm.0.9.5] Downloading http://erratique.ch/software/uuidm/releases/uuidm-0.9.5.tbz
 [yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
 Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.02.1/build/cppo.1.1.2/
 Building cppo.1.1.2:
   make
   make install-lib
 Installing cppo.1.1.2.
-Building ctypes.0.3:
-  make
-  make install
-Installing ctypes.0.3.
 Building easy-format.1.0.2:
   make
   make install
 Installing easy-format.1.0.2.
-Building lwt.2.4.5:
-  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
-  make build
-  make install
-Installing lwt.2.4.5.
 Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
 Building menhir.20140422:
   make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
@@ -110,6 +73,10 @@ Building ounit.2.0.0:
   make build
   make install
 Installing ounit.2.0.0.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
 Building uint.1.1.5:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
@@ -131,6 +98,17 @@ Building biniou.1.0.9:
   make
   make install
 Installing biniou.1.0.9.
+Building ctypes.0.3.3:
+  make
+  make install
+Removing ctypes.0.3.3.
+[ERROR] The compilation of ctypes.0.3.3 failed.
+  ocamlfind remove ctypes
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
 Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.02.1/build/yojson.1.1.8/
 Building yojson.1.1.8:
   make
@@ -141,44 +119,12 @@ Building atdgen.1.4.1:
   make
   make install BINDIR=/home/opam/.opam/4.02.1/bin
 Installing atdgen.1.4.1.
-Copying ~/.opam/repo/default/packages/iocaml-kernel/iocaml-kernel.0.4.6/files/4.00.1.patch to ~/.opam/4.02.1/build/iocaml-kernel.0.4.6/
-Applying 4.00.1.patch.
-Building iocaml-kernel.0.4.6:
-  make all
-  make install
-[ERROR] The compilation of iocaml-kernel.0.4.6 failed.
-Removing iocaml-kernel.0.4.6.
-  make uninstall
-
-
-#=== ERROR while installing iocaml-kernel.0.4.6 ===============================#
-# opam-version         1.2.0
-# os                   linux
-# command              make all
-# path                 /home/opam/.opam/4.02.1/build/iocaml-kernel.0.4.6
-# compiler             4.02.1
-# exit-code            2
-# env-file             /home/opam/.opam/4.02.1/build/iocaml-kernel.0.4.6/iocaml-kernel-5742-2913ab.env
-# stdout-file          /home/opam/.opam/4.02.1/build/iocaml-kernel.0.4.6/iocaml-kernel-5742-2913ab.out
-# stderr-file          /home/opam/.opam/4.02.1/build/iocaml-kernel.0.4.6/iocaml-kernel-5742-2913ab.err
-### stdout ###
-# atdgen -t Ipython_json.atd
-# atdgen -j Ipython_json.atd
-# ocamlfind c iocaml_zmq_stubs.c
-### stderr ###
-# iocaml_zmq_stubs.c:1:17: fatal error: zmq.h: No such file or directory
-#  #include <zmq.h>
-#                  ^
-# compilation terminated.
-# make: *** [stub] Error 2
 
 
 =-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 These actions have been completed successfully
  - install   atdgen.1.4.1
  - install   uint.1.1.5
- - install   lwt.2.4.5
- - install   ctypes.0.3
  - install   uuidm.0.9.5
  - install   cppo.1.1.2
  - install   yojson.1.1.8
@@ -186,9 +132,45 @@ These actions have been completed successfully
  - install   optcomp.1.6
  - install   easy-format.1.0.2
  - install   biniou.1.0.9
+ - install   lwt.2.4.6
  - install   ounit.2.0.0
+ - install   base-bytes.base
  - install   atd.1.1.2
+ - install   ppx_tools.0.99.2
 The following failed
+ - install   ctypes.0.3.3
+Due to the errors, the following have been cancelled
  - install   iocaml-kernel.0.4.6
 
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108064124.export"
+#=== ERROR while installing ctypes.0.3.3 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/ctypes.0.3.3
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/ctypes.0.3.3/ctypes-4192-487c34.env
+# stdout-file          /home/opam/.opam/4.02.1/build/ctypes.0.3.3/ctypes-4192-487c34.out
+# stderr-file          /home/opam/.opam/4.02.1/build/ctypes.0.3.3/ctypes-4192-487c34.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlc -c -o _build/src/ctypes-foreign-base/libffi_abi.cmi    -I _build/src/ctypes-foreign-base  -I _build/src/ctypes src/ctypes-foreign-base/libffi_abi.mli
+# ocamlfind ocamlc      -c -o _build/src/ctypes-foreign-base/libffi_abi.cmo -I _build/src/ctypes-foreign-base  -I _build/src/ctypes src/ctypes-foreign-base/libffi_abi.ml
+# ocamlfind ocamlc -c -o _build/src/ctypes-foreign-base/weakRef.cmi    -I _build/src/ctypes-foreign-base  -I _build/src/ctypes src/ctypes-foreign-base/weakRef.mli
+# ocamlfind ocamlc      -c -o _build/src/ctypes-foreign-base/weakRef.cmo -I _build/src/ctypes-foreign-base  -I _build/src/ctypes src/ctypes-foreign-base/weakRef.ml
+# ocamlfind ocamlc -c -o _build/src/ctypes-foreign-base/ffi.cmi    -I _build/src/ctypes-foreign-base  -I _build/src/ctypes src/ctypes-foreign-base/ffi.mli
+# ocamlfind ocamlc      -c -o _build/src/ctypes-foreign-base/ffi.cmo -I _build/src/ctypes-foreign-base  -I _build/src/ctypes src/ctypes-foreign-base/ffi.ml
+# ocamlfind ocamlc      -c -o _build/src/ctypes-foreign-base/foreign_basis.cmo -I _build/src/ctypes-foreign-base  -I _build/src/ctypes src/ctypes-foreign-base/foreign_basis.ml
+# ocamlfind ocamlc -a   -cclib -lctypes-foreign-base_stubs -dllib -lctypes-foreign-base_stubs   -o _build/ctypes-foreign-base.cma _build/src/ctypes-foreign-base/closure_properties.cmo _build/src/ctypes-foreign-base/dl.cmo _build/src/ctypes-foreign-base/ffi_stubs.cmo _build/src/ctypes-foreign-base/libffi_abi.cmo _build/src/ctypes-foreign-base/weakRef.cmo _build/src/ctypes-foreign-base/ffi.cmo _build/src/ctypes-foreign-base/foreign_basis.cmo 
+# cd _build/src/ctypes-foreign-base && ocamlfind ocamlc -c -ccopt -fPIC -ccopt -Wall -ccopt -O3 -ccopt -I -ccopt /home/opam/opam-repository/src -ccopt -I -ccopt /home/opam/opam-repository/tests -o dl_stubs.o  /home/opam/.opam/4.02.1/build/ctypes.0.3.3/src/ctypes-foreign-base/dl_stubs.c
+# cd _build/src/ctypes-foreign-base && ocamlfind ocamlc -c -ccopt -fPIC -ccopt -Wall -ccopt -O3 -ccopt -I -ccopt /home/opam/opam-repository/src -ccopt -I -ccopt /home/opam/opam-repository/tests -o ffi_call_stubs.o  /home/opam/.opam/4.02.1/build/ctypes.0.3.3/src/ctypes-foreign-base/ffi_call_stubs.c
+### stderr ###
+# /home/opam/.opam/4.02.1/build/ctypes.0.3.3/src/ctypes/type_info_stubs.c: In function 'ctypes_string_of_prim':
+# /home/opam/.opam/4.02.1/build/ctypes.0.3.3/src/ctypes/type_info_stubs.c:130:3: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'int64' [-Wformat]
+# /home/opam/.opam/4.02.1/build/ctypes.0.3.3/src/ctypes/type_info_stubs.c:130:3: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'int64' [-Wformat]
+# /home/opam/.opam/4.02.1/build/ctypes.0.3.3/src/ctypes-foreign-base/ffi_call_stubs.c:21:17: fatal error: ffi.h: No such file or directory
+# compilation terminated.
+# make: *** [_build/src/ctypes-foreign-base/ffi_call_stubs.o] Error 2
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108115636.export"
