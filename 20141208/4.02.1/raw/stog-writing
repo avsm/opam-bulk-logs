@@ -76,3 +76,8 @@ Building stog.0.13.0:
   make stog_filter_parser.mli
   make all
   make install-lib install-share
+Installing stog.0.13.0.
+Building stog-writing.0.13.0:
+  make all
+  make install
+Installing stog-writing.0.13.0.
