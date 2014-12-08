@@ -1,9 +1,14 @@
-++ opam install atd -e centos,centos-7
+++ opam install atd -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install atd -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install atd
+Debian srcexts:
 The following actions will be performed:
  - install   easy-format.1.0.2                     [required by atd]
  - install   menhir.20140422                       [required by atd]
