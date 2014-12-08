@@ -1,0 +1,65 @@
+++ opam install iocamljs-kernel -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install iocamljs-kernel -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install iocamljs-kernel
+The following actions will be performed:
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   cmdliner.0.9.6                        [required by js_of_ocaml]
+ - install   optcomp.1.6                           [required by iocamljs-kernel]
+ - install   menhir.20140422                       [required by js_of_ocaml]
+ - install   lwt.2.4.6                             [required by iocamljs-kernel]
+ - install   js_of_ocaml.2.5                       [required by iocamljs-kernel]
+ - install   iocamljs-kernel.0.4.6
+=== 7 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[iocamljs-kernel.0.4.6] Downloading https://github.com/andrewray/iocamljs/archive/v0.4.6.tar.gz
+[js_of_ocaml.2.5] Downloading https://github.com/ocsigen/js_of_ocaml/archive/2.5.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing cmdliner.0.9.6.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+Installing menhir.20140422.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building js_of_ocaml.2.5:
+  make build
+  make install-lib BINDIR=/home/opam/.opam/4.02.1/bin
+Installing js_of_ocaml.2.5.
+Copying ~/.opam/repo/default/packages/iocamljs-kernel/iocamljs-kernel.0.4.6/files/iocamljs-kernel.install to ~/.opam/4.02.1/build/iocamljs-kernel.0.4.6/
+Copying ~/.opam/repo/default/packages/iocamljs-kernel/iocamljs-kernel.0.4.6/files/4.00.1.patch to ~/.opam/4.02.1/build/iocamljs-kernel.0.4.6/
+Applying 4.00.1.patch.
+Building iocamljs-kernel.0.4.6:
+  make clean min
+  make clean full
+Installing iocamljs-kernel.0.4.6.
