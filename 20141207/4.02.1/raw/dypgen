@@ -1,0 +1,26 @@
+++ opam install dypgen -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install dypgen -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install dypgen
+The following actions will be performed:
+ - install   dypgen.20120619-1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[dypgen.20120619-1] Downloading http://dypgen.free.fr/dypgen-20120619-1.tar.bz2
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/dypgen/dypgen.20120619-1/files/install-bsd-compatible.patch to ~/.opam/4.02.1/build/dypgen.20120619-1/
+Copying ~/.opam/repo/default/packages/dypgen/dypgen.20120619-1/files/dypgen.install to ~/.opam/4.02.1/build/dypgen.20120619-1/
+Applying install-bsd-compatible.patch.
+Building dypgen.20120619-1:
+  make
+  make install DYPGENLIBDIR=/home/opam/.opam/4.02.1/lib BINDIR=/home/opam/.opam/4.02.1/bin MANDIR=/home/opam/.opam/4.02.1/man/man1
+Installing dypgen.20120619-1.
