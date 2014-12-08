@@ -20,3 +20,4 @@ The following actions will be performed:
 Copying ~/.opam/repo/default/packages/abella/abella.2.0.2/files/abella.install to ~/.opam/4.02.1/build/abella.2.0.2/
 Building abella.2.0.2:
   make
+Installing abella.2.0.2.
