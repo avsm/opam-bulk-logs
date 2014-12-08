@@ -1133,3 +1133,16 @@ Installing re.1.2.2.
 Building type_conv.112.01.00:
   make
   make install
+Installing type_conv.112.01.00.
+Building bin_prot.112.01.00:
+  make
+  make install
+Installing bin_prot.112.01.00.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.02.1/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Building comparelib.109.60.00:
+  make
+  make install
