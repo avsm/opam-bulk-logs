@@ -285,3 +285,91 @@ Building git.1.0.2:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
   ocaml setup.ml -install
+[ERROR] The compilation of git.1.0.2 failed.
+Removing git.1.0.2.
+  ocamlfind remove git
+  rm -f /home/opam/.opam/4.02.1/bin/ogit
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   uutf.0.9.3
+ - install   bin_prot.112.01.00
+ - install   ezjsonm.0.3.1
+ - install   dolog.0.5
+ - install   ocamlgraph.1.8.5
+ - install   camlzip.1.05
+ - install   comparelib.109.60.00
+ - install   cryptokit.1.9
+ - install   ppx_tools.0.99.2
+ - install   cohttp.0.10.1
+ - install   pipebang.110.01.00
+ - install   mstruct.1.3.1
+ - install   pa_bench.111.28.00
+ - install   base-bytes.base
+ - install   sexplib.112.01.00
+ - install   lazy-trie.1.1.0
+ - install   core_kernel.112.01.00
+ - install   type_conv.112.01.00
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   pa_test.111.08.00
+ - install   ssl.0.4.7
+ - install   enumerate.111.08.00
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   pa_ounit.111.28.00
+ - install   jsonm.0.9.1
+ - install   stringext.1.1.0
+ - install   variantslib.109.15.03
+ - install   typerep.111.17.00
+ - install   optcomp.1.6
+ - install   sha.1.9
+ - install   re.1.2.2
+ - install   herelib.109.35.02
+ - install   hex.0.1.0
+ - install   uri.1.7.2
+ - install   fieldslib.109.20.03
+ - install   ocplib-endian.0.7
+The following failed
+ - install   git.1.0.2
+Due to the errors, the following have been cancelled
+ - install   irmin.0.8.0
+
+#=== ERROR while installing git.1.0.2 =========================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/opam/.opam/4.02.1/build/git.1.0.2
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/git.1.0.2/git-16346-aa4a43.env
+# stdout-file          /home/opam/.opam/4.02.1/build/git.1.0.2/git-16346-aa4a43.out
+# stderr-file          /home/opam/.opam/4.02.1/build/git.1.0.2/git-16346-aa4a43.err
+### stdout ###
+# ...[truncated]
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -a lib/git_fs.cmx -o lib/git-fs.cmxa
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -shared -linkall lib/git-fs.cmxa -o lib/git-fs.cmxs
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamldep -syntax camlp4o -package bin_prot.syntax -package cmdliner -syntax camlp4o -package comparelib.syntax -package core_kernel -package cryptokit -package dolog -package lazy-trie -package lwt -package lwt.unix -package mstruct -package ocamlgraph -package re.pcre -syntax camlp4o -package sexplib.syntax -package uri -package zip -modules bin/ogit.ml > bin/ogit.ml.depends
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -c -g -I lib -I lib -I lib -I lib -syntax camlp4o -package bin_prot.syntax -package cmdliner -syntax camlp4o -package comparelib.syntax -package core_kernel -package cryptokit -package dolog -package lazy-trie -package lwt -package lwt.unix -package mstruct -package ocamlgraph -package re.pcre -syntax camlp4o -package sexplib.syntax -package uri -package zip -I bin -I lib -o bin/ogit.cmo bin/ogit.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -c -g -I lib -I lib -I lib -I lib -syntax camlp4o -package bin_prot.syntax -package cmdliner -syntax camlp4o -package comparelib.syntax -package core_kernel -package cryptokit -package dolog -package lazy-trie -package lwt -package lwt.unix -package mstruct -package ocamlgraph -package re.pcre -syntax camlp4o -package sexplib.syntax -package uri -package zip -I bin -I lib -o bin/ogit.cmx bin/ogit.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package bin_prot.syntax -package cmdliner -package comparelib.syntax -package core_kernel -package cryptokit -package dolog -package lazy-trie -package lwt -package lwt.unix -package mstruct -package ocamlgraph -package re.pcre -package sexplib.syntax -package uri -package zip lib/git.cmxa lib/git-unix.cmxa lib/git-fs.cmxa lib/git-memory.cmxa bin/ogit.cmx -o bin/ogit.native
+# + /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package bin_prot.syntax -package cmdliner -package comparelib.syntax -package core_kernel -package cryptokit -package dolog -package lazy-trie -package lwt -package lwt.unix -package mstruct -package ocamlgraph -package re.pcre -package sexplib.syntax -package uri -package zip lib/git.cmxa lib/git-unix.cmxa lib/git-fs.cmxa lib/git-memory.cmxa bin/ogit.cmx -o bin/ogit.native
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# Command exited with code 2.
+### stderr ###
+# ...[truncated]
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# File "setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "setup.ml", line 2502, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# W: Cannot find source file matching module 'git' in library git
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' lib/git.cma lib/git.cmxa lib/git.a lib/git.cmxs lib/git-memory.cma lib/git-memory.cmxa lib/git-memory.a lib/git-memory.cmxs lib/git-unix.cma lib/git-unix.cmxa lib/git-unix.a lib/git-unix.cmxs lib/git-fs.cma lib/git-fs.cmxa lib/git-fs.a lib/git-fs.cmxs bin/ogit.native -tag debug' terminated with error code 10")
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108115938.export"
