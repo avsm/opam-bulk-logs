@@ -1,18 +1,6 @@
-++ opam install termbox -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-+ '[' '' '!=' '' ']'
-+ opam install termbox
-CentOS 7 depexts:
-The following actions will be performed:
- - install   termbox.0.1.0
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[termbox.0.1.0] Downloading https://github.com/pacemkr/ocaml-termbox/tarball/v0.1.0
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building termbox.0.1.0:
-  make
-  make install
-Installing termbox.0.1.0.
+++ opam install termbox -e debian
++ depext=python
++ echo Debian depexts: python
+Debian depexts: python
++ '[' python '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4

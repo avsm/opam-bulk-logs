@@ -53,3 +53,14 @@ The following actions will be performed:
 [tcpip.2.0.3] Downloading https://github.com/mirage/mirage-tcpip/archive/v2.0.3.tar.gz
 [tuntap.1.0.0] Downloading https://github.com/mirage/ocaml-tuntap/archive/v1.0.0.tar.gz
 [type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
