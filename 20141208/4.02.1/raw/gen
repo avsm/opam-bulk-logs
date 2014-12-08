@@ -1,0 +1,19 @@
+++ opam install gen -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install gen
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   gen.0.2.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[gen.0.2.2] Downloading https://github.com/c-cube/gen/archive/0.2.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building gen.0.2.2:
+  ./configure --disable-docs --disable-tests --disable-bench
+  make all
+  make install
+Installing gen.0.2.2.
