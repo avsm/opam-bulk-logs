@@ -1,9 +1,14 @@
-++ opam install gxl-light -e centos,centos-7
+++ opam install gxl-light -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install gxl-light -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install gxl-light
-CentOS 7 depexts:
 The following actions will be performed:
  - install   xml-light.2.4                         [required by gxl-light]
  - install   gxl-light.1.0
