@@ -1,7 +1,12 @@
-++ opam install pprint -e centos,centos-7
+++ opam install pprint -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install pprint -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install pprint
 The following actions will be performed:
@@ -10,9 +15,3 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [pprint.20140424] Downloading http://gallium.inria.fr/~fpottier/pprint/pprint-20140424.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building pprint.20140424:
-  make -C src
-  make -C src install
-Installing pprint.20140424.
