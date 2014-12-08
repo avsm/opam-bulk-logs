@@ -1,9 +1,14 @@
-++ opam install omake -e centos,centos-7
+++ opam install omake -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install omake -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install omake
-CentOS 7 depexts:
 The following actions will be performed:
  - install   omake.0.9.8.6-0.rc1
 === 1 to install ===
@@ -23,4 +28,3 @@ Building omake.0.9.8.6-0.rc1:
   make bootstrap PREFIX=/home/opam/.opam/4.02.1
   make all PREFIX=/home/opam/.opam/4.02.1
   make install PREFIX=/home/opam/.opam/4.02.1
-Installing omake.0.9.8.6-0.rc1.
