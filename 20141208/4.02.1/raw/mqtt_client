@@ -1,9 +1,14 @@
-++ opam install mqtt_client -e centos,centos-7
+++ opam install mqtt_client -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+++ opam install mqtt_client -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install mqtt_client
+Debian srcexts:
 The following actions will be performed:
  - install   herelib.109.35.02                     [required by async_unix, async_kernel]
  - install   pipebang.110.01.00                    [required by async_extra]
@@ -102,78 +107,3 @@ Building enumerate.111.08.00:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   make
   make install
-Installing enumerate.111.08.00.
-Building fieldslib.109.20.03:
-  make
-  make install
-Installing fieldslib.109.20.03.
-Building ocaml-data-notation.0.0.11:
-  make
-  make install
-Installing ocaml-data-notation.0.0.11.
-Building pa_ounit.111.28.00:
-  make
-  make install
-Installing pa_ounit.111.28.00.
-Building sexplib.112.01.00:
-  ./configure --enable-syntax
-  make
-  make install
-Installing sexplib.112.01.00.
-Building variantslib.109.15.03:
-  make
-  make install
-Installing variantslib.109.15.03.
-Building custom_printf.112.01.00:
-  make
-  make install
-Installing custom_printf.112.01.00.
-Copying ~/.opam/repo/default/packages/oasis/oasis.0.4.5/files/oasis.install to ~/.opam/4.02.1/build/oasis.0.4.5/
-Building oasis.0.4.5:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing oasis.0.4.5.
-Building pa_bench.111.28.00:
-  make
-  make install
-Installing pa_bench.111.28.00.
-Building pa_test.111.08.00:
-  make
-  make install
-Installing pa_test.111.08.00.
-Building typerep.111.17.00:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  make
-  make install
-Installing typerep.111.17.00.
-Building core_kernel.112.01.00:
-  make
-  make install
-Installing core_kernel.112.01.00.
-Copying ~/.opam/repo/default/packages/core/core.112.01.01/files/core.install to ~/.opam/4.02.1/build/core.112.01.01/
-Building core.112.01.01:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  make
-  make install
-Installing core.112.01.01.
-Building async_kernel.112.01.00:
-  make
-  make install
-Installing async_kernel.112.01.00.
-Building async_unix.112.01.00:
-  make
-  make install
-Installing async_unix.112.01.00.
-Building async_extra.112.01.00:
-  make
-  make install
-Installing async_extra.112.01.00.
-Building async.112.01.00:
-  make
-  make install
-Installing async.112.01.00.
-Building mqtt_client.0.0.1:
-  make all
-  make install
-Installing mqtt_client.0.0.1.
