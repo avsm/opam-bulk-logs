@@ -54,3 +54,11 @@ The following actions will be performed:
 Building herelib.109.35.02:
   make
   make install
+Installing herelib.109.35.02.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building pipebang.110.01.00:
+  make
+  make install
