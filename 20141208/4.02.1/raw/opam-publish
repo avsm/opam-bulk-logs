@@ -1,0 +1,461 @@
+++ opam install opam-publish -e centos,centos-7
++ depext=openssl-devel
++ echo CentOS 7 depexts: openssl-devel
++ '[' openssl-devel '!=' '' ']'
++ sudo yum install -y openssl-devel
+CentOS 7 depexts: openssl-devel
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: anorien.csc.warwick.ac.uk
+ * extras: anorien.csc.warwick.ac.uk
+ * updates: mirror.sov.uk.goscomb.net
+Resolving Dependencies
+--> Running transaction check
+---> Package openssl-devel.x86_64 1:1.0.1e-34.el7_0.6 will be installed
+--> Processing Dependency: zlib-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Running transaction check
+---> Package krb5-devel.x86_64 0:1.11.3-49.el7 will be installed
+--> Processing Dependency: libverto-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libselinux-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libcom_err-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+---> Package zlib-devel.x86_64 0:1.2.7-13.el7 will be installed
+--> Running transaction check
+---> Package keyutils-libs-devel.x86_64 0:1.5.8-3.el7 will be installed
+---> Package libcom_err-devel.x86_64 0:1.42.9-4.el7 will be installed
+---> Package libselinux-devel.x86_64 0:2.2.2-6.el7 will be installed
+--> Processing Dependency: libsepol-devel >= 2.1.9-1 for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libpcre) for package: libselinux-devel-2.2.2-6.el7.x86_64
+---> Package libverto-devel.x86_64 0:0.2.5-4.el7 will be installed
+--> Running transaction check
+---> Package libsepol-devel.x86_64 0:2.1.9-3.el7 will be installed
+---> Package pcre-devel.x86_64 0:8.32-12.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                 Arch       Version                   Repository   Size
+================================================================================
+Installing:
+ openssl-devel           x86_64     1:1.0.1e-34.el7_0.6       updates     1.2 M
+Installing for dependencies:
+ keyutils-libs-devel     x86_64     1.5.8-3.el7               base         37 k
+ krb5-devel              x86_64     1.11.3-49.el7             base        611 k
+ libcom_err-devel        x86_64     1.42.9-4.el7              base         30 k
+ libselinux-devel        x86_64     2.2.2-6.el7               base        174 k
+ libsepol-devel          x86_64     2.1.9-3.el7               base         71 k
+ libverto-devel          x86_64     0.2.5-4.el7               base         12 k
+ pcre-devel              x86_64     8.32-12.el7               base        477 k
+ zlib-devel              x86_64     1.2.7-13.el7              base         49 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+8 Dependent packages)
+
+Total download size: 2.6 M
+Installed size: 5.7 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              3.3 MB/s | 2.6 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : keyutils-libs-devel-1.5.8-3.el7.x86_64                       1/9 
+  Installing : pcre-devel-8.32-12.el7.x86_64                                2/9 
+  Installing : zlib-devel-1.2.7-13.el7.x86_64                               3/9 
+  Installing : libsepol-devel-2.1.9-3.el7.x86_64                            4/9 
+  Installing : libselinux-devel-2.2.2-6.el7.x86_64                          5/9 
+  Installing : libverto-devel-0.2.5-4.el7.x86_64                            6/9 
+  Installing : libcom_err-devel-1.42.9-4.el7.x86_64                         7/9 
+  Installing : krb5-devel-1.11.3-49.el7.x86_64                              8/9 
+  Installing : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     9/9 
+  Verifying  : libcom_err-devel-1.42.9-4.el7.x86_64                         1/9 
+  Verifying  : libselinux-devel-2.2.2-6.el7.x86_64                          2/9 
+  Verifying  : libverto-devel-0.2.5-4.el7.x86_64                            3/9 
+  Verifying  : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     4/9 
+  Verifying  : libsepol-devel-2.1.9-3.el7.x86_64                            5/9 
+  Verifying  : krb5-devel-1.11.3-49.el7.x86_64                              6/9 
+  Verifying  : zlib-devel-1.2.7-13.el7.x86_64                               7/9 
+  Verifying  : pcre-devel-8.32-12.el7.x86_64                                8/9 
+  Verifying  : keyutils-libs-devel-1.5.8-3.el7.x86_64                       9/9 
+
+Installed:
+  openssl-devel.x86_64 1:1.0.1e-34.el7_0.6                                      
+
+Dependency Installed:
+  keyutils-libs-devel.x86_64 0:1.5.8-3.el7                                      
+  krb5-devel.x86_64 0:1.11.3-49.el7                                             
+  libcom_err-devel.x86_64 0:1.42.9-4.el7                                        
+  libselinux-devel.x86_64 0:2.2.2-6.el7                                         
+  libsepol-devel.x86_64 0:2.1.9-3.el7                                           
+  libverto-devel.x86_64 0:0.2.5-4.el7                                           
+  pcre-devel.x86_64 0:8.32-12.el7                                               
+  zlib-devel.x86_64 0:1.2.7-13.el7                                              
+
+Complete!
++ opam install opam-publish
+The following actions will be performed:
+ - install   extlib.1.6.1                          [required by dose, cudf]
+ - install   re.1.2.2                              [required by opam-lib]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   stringext.1.1.0                       [required by github]
+ - install   ounit.2.0.0                           [required by cohttp]
+ - install   ssl.0.4.7                             [required by github]
+ - install   cmdliner.0.9.6                        [required by opam-publish]
+ - install   menhir.20140422                       [required by atd]
+ - install   react.1.2.0                           [required by lambda-term]
+ - install   camomile.0.8.5                        [required by zed]
+ - install   type_conv.112.01.00                   [required by fieldslib]
+ - install   easy-format.1.0.2                     [required by yojson, atd, biniou]
+ - install   ocamlgraph.1.8.5                      [required by opam-lib]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   uutf.0.9.3                            [required by jsonm]
+ - install   cudf.0.7                              [required by opam-lib]
+ - install   ocplib-endian.0.4                     [required by cstruct]
+ - install   lwt.2.4.5                             [required by github]
+ - install   zed.1.3                               [required by lambda-term]
+ - install   sexplib.112.01.00                     [required by cohttp]
+ - install   fieldslib.109.20.03                   [required by cohttp]
+ - install   biniou.1.0.9                          [required by atdgen]
+ - install   atd.1.1.2                             [required by atdgen]
+ - install   jsonm.0.9.1                           [required by opam-lib]
+ - install   dose.3.2.2+opam                       [required by opam-lib]
+ - install   lambda-term.1.7                       [required by github]
+ - install   uri.1.7.2                             [required by github]
+ - install   ipaddr.2.5.0                          [required by conduit]
+ - install   cstruct.1.5.0                         [required by conduit]
+ - install   yojson.1.1.8                          [required by github]
+ - install   opam-lib.1.2.0                        [required by opam-publish]
+ - install   conduit.0.7.1                         [required by cohttp]
+ - install   atdgen.1.4.1                          [required by github]
+ - install   cohttp.0.13.0                         [required by github]
+ - install   github.0.9.3                          [required by opam-publish]
+ - install   opam-publish.0.2.0
+=== 36 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[atd.1.1.2] Downloading http://mjambon.com/releases/atd/atd-1.1.2.tar.gz
+[atdgen.1.4.1] Downloading http://mjambon.com/releases/atdgen/atdgen-1.4.1.tar.gz
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[camomile.0.8.5] Downloading https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cohttp.0.13.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.13.0.tar.gz
+[conduit.0.7.1] Downloading https://github.com/mirage/ocaml-conduit/archive/v0.7.1.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[cudf.0.7] Downloading https://gforge.inria.fr/frs/download.php/33593/cudf-0.7.tar.gz
+[dose.3.2.2+opam] Downloading https://gforge.inria.fr/frs/download.php/file/33677/dose3-3.2.2.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[extlib.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[github.0.9.3] Downloading https://github.com/avsm/ocaml-github/archive/v0.9.3.tar.gz
+[ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
+[jsonm.0.9.1] Downloading http://erratique.ch/software/jsonm/releases/jsonm-0.9.1.tbz
+[lambda-term.1.7] Downloading https://github.com/diml/lambda-term/archive/1.7.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[ocamlgraph.1.8.5] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.5.tar.gz
+[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[opam-lib.1.2.0] Downloading https://github.com/ocaml/opam/archive/1.2.0.tar.gz
+[opam-publish.0.2.0] Downloading https://github.com/AltGr/opam-publish/archive/0.2.0.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[react.1.2.0] Downloading http://erratique.ch/software/react/releases/react-1.2.0.tbz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[stringext.1.1.0] Downloading https://github.com/rgrinberg/stringext/archive/v1.1.0.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[uri.1.7.2] Downloading https://github.com/mirage/ocaml-uri/archive/v1.7.2.tar.gz
+[uutf.0.9.3] Downloading http://erratique.ch/software/uutf/releases/uutf-0.9.3.tbz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+[zed.1.3] Downloading https://github.com/diml/zed/archive/1.3.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/camomile/camomile.0.8.5/files/no-camlp4.patch to ~/.opam/4.02.1/build/camomile.0.8.5/
+Copying ~/.opam/repo/default/packages/camomile/camomile.0.8.5/files/cmxs.patch to ~/.opam/4.02.1/build/camomile.0.8.5/
+Applying cmxs.patch.
+Applying no-camlp4.patch.
+Building camomile.0.8.5:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing camomile.0.8.5.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.02.1/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Building extlib.1.6.1:
+  make minimal=1 build install
+Installing extlib.1.6.1.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+Installing menhir.20140422.
+Copying ~/.opam/repo/default/packages/ocamlgraph/ocamlgraph.1.8.5/files/ocamlgraph.install to ~/.opam/4.02.1/build/ocamlgraph.1.8.5/
+Building ocamlgraph.1.8.5:
+  ./configure
+  make
+  make install-findlib
+Installing ocamlgraph.1.8.5.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Building react.1.2.0:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing react.1.2.0.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.02.1/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing ssl.0.4.7.
+Building stringext.1.1.0:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing stringext.1.1.0.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+Copying ~/.opam/repo/default/packages/atd/atd.1.1.2/files/atd.install to ~/.opam/4.02.1/build/atd.1.1.2/
+Building atd.1.1.2:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing atd.1.1.2.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.02.1/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Building cudf.0.7:
+  make all opt
+  make install DESTDIR=/home/opam/.opam/4.02.1 OCAMLLIBDIR=lib BINDIR=bin LIBDIR=lib INCDIR=include
+Installing cudf.0.7.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Copying ~/.opam/repo/default/packages/jsonm/jsonm.0.9.1/files/jsonm.install to ~/.opam/4.02.1/build/jsonm.0.9.1/
+Building jsonm.0.9.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing jsonm.0.9.1.
+Building lwt.2.4.5:
+  ./configure --disable-libev --enable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --disable-text
+  make build
+  make install
+Installing lwt.2.4.5.
+Building ocplib-endian.0.4:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.4.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building zed.1.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing zed.1.3.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.02.1 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0005-Add-a-check_request-function-allowing-more-control-o.patch to ~/.opam/4.02.1/build/dose.3.2.2+opam/
+Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0004-Remove-broken-assert.patch to ~/.opam/4.02.1/build/dose.3.2.2+opam/
+Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0003-Removed-hard-failure-cases-in-favor-of-finer-diagnos.patch to ~/.opam/4.02.1/build/dose.3.2.2+opam/
+Applying 0003-Removed-hard-failure-cases-in-favor-of-finer-diagnos.patch.
+Applying 0004-Remove-broken-assert.patch.
+Applying 0005-Add-a-check_request-function-allowing-more-control-o.patch.
+Building dose.3.2.2+opam:
+  ./configure --with-ocamlgraph --bindir=/home/opam/.opam/4.02.1/bin
+  make TARGETS=
+  make install
+Installing dose.3.2.2+opam.
+Building ipaddr.2.5.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make build
+  make install
+Installing ipaddr.2.5.0.
+Copying ~/.opam/repo/default/packages/lambda-term/lambda-term.1.7/files/lambda-term.install to ~/.opam/4.02.1/build/lambda-term.1.7/
+Building lambda-term.1.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing lambda-term.1.7.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.02.1/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Copying ~/.opam/repo/default/packages/atdgen/atdgen.1.4.1/files/atdgen.install to ~/.opam/4.02.1/build/atdgen.1.4.1/
+Building atdgen.1.4.1:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing atdgen.1.4.1.
+Building conduit.0.7.1:
+  make
+  make install
+Installing conduit.0.7.1.
+Building opam-lib.1.2.0:
+  ./configure
+  make
+[ERROR] The compilation of opam-lib.1.2.0 failed.
+Removing opam-lib.1.2.0.
+  Nothing to do.
+Building cohttp.0.13.0:
+  make PREFIX=/home/opam/.opam/4.02.1
+  make PREFIX=/home/opam/.opam/4.02.1 install
+[ERROR] The compilation of cohttp.0.13.0 failed.
+Removing cohttp.0.13.0.
+  ocamlfind remove cohttp
+
+
+#=== ERROR while installing cohttp.0.13.0 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make PREFIX=/home/opam/.opam/4.02.1
+# path                 /home/opam/.opam/4.02.1/build/cohttp.0.13.0
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/cohttp.0.13.0/cohttp-15903-f33fa5.env
+# stdout-file          /home/opam/.opam/4.02.1/build/cohttp.0.13.0/cohttp-15903-f33fa5.out
+# stderr-file          /home/opam/.opam/4.02.1/build/cohttp.0.13.0/cohttp-15903-f33fa5.err
+### stdout ###
+# ...[truncated]
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -short-paths -principal -strict-sequence -I cohttp -I lwt -I lwt -I async -package cmdliner -package conduit.lwt-unix -package fieldslib -syntax camlp4o -package fieldslib.syntax -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -syntax camlp4o -package sexplib.syntax -package stringext -package threads -package unix -package uri -package uri.services -thread -I bin -I async -I cohttp -I lwt -o bin/cohttp_server_lwt.cmx bin/cohttp_server_lwt.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package conduit.lwt-unix -package fieldslib -package fieldslib.syntax -package lwt -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -package sexplib.syntax -package stringext -package unix -package uri -package uri.services cohttp/cohttp.cmxa lwt/cohttp_lwt.cmxa lwt/cohttp_lwt_unix.cmxa bin/cohttp_server_lwt.cmx -o bin/cohttp_server_lwt.native
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamldep -package cmdliner -package conduit.lwt-unix -package fieldslib -syntax camlp4o -package fieldslib.syntax -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -syntax camlp4o -package sexplib.syntax -package stringext -package threads -package unix -package uri -package uri.services -modules bin/cohttp_curl_lwt.ml > bin/cohttp_curl_lwt.ml.depends
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -principal -strict-sequence -I cohttp -I lwt -I lwt -I async -package cmdliner -package conduit.lwt-unix -package fieldslib -syntax camlp4o -package fieldslib.syntax -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -syntax camlp4o -package sexplib.syntax -package stringext -package threads -package unix -package uri -package uri.services -thread -I bin -I async -I cohttp -I lwt -o bin/cohttp_curl_lwt.cmo bin/cohttp_curl_lwt.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -short-paths -principal -strict-sequence -I cohttp -I lwt -I lwt -I async -package cmdliner -package conduit.lwt-unix -package fieldslib -syntax camlp4o -package fieldslib.syntax -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -syntax camlp4o -package sexplib.syntax -package stringext -package threads -package unix -package uri -package uri.services -thread -I bin -I async -I cohttp -I lwt -o bin/cohttp_curl_lwt.cmx bin/cohttp_curl_lwt.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package cmdliner -package conduit.lwt-unix -package fieldslib -package fieldslib.syntax -package lwt -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -package sexplib.syntax -package stringext -package unix -package uri -package uri.services cohttp/cohttp.cmxa lwt/cohttp_lwt.cmxa lwt/cohttp_lwt_unix.cmxa bin/cohttp_curl_lwt.cmx -o bin/cohttp_curl_lwt.native
+# + /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package cmdliner -package conduit.lwt-unix -package fieldslib -package fieldslib.syntax -package lwt -package lwt.syntax -package lwt.unix -package re.emacs -package sexplib -package sexplib.syntax -package stringext -package unix -package uri -package uri.services cohttp/cohttp.cmxa lwt/cohttp_lwt.cmxa lwt/cohttp_lwt_unix.cmxa bin/cohttp_curl_lwt.cmx -o bin/cohttp_curl_lwt.native
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# Command exited with code 2.
+### stderr ###
+# W: Cannot find source file matching module 'cohttp' in library cohttp
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' cohttp/cohttp.cma cohttp/cohttp.cmxa cohttp/cohttp.a cohttp/cohttp.cmxs lwt/cohttp_lwt.cma lwt/cohttp_lwt.cmxa lwt/cohttp_lwt.a lwt/cohttp_lwt.cmxs lwt/cohttp_lwt_unix.cma lwt/cohttp_lwt_unix.cmxa lwt/cohttp_lwt_unix.a lwt/cohttp_lwt_unix.cmxs bin/cohttp_server_lwt.native bin/cohttp_curl_lwt.native -tag debug -classic-display' terminate...[truncated]
+# make: *** [build] Error 1
+
+
+#=== ERROR while installing opam-lib.1.2.0 ====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/opam-lib.1.2.0
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/opam-lib.1.2.0/opam-lib-13617-bb845d.env
+# stdout-file          /home/opam/.opam/4.02.1/build/opam-lib.1.2.0/opam-lib-13617-bb845d.out
+# stderr-file          /home/opam/.opam/4.02.1/build/opam-lib.1.2.0/opam-lib-13617-bb845d.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlopt -package unix,extlib,re,re.emacs,re.str,re.perl,re.pcre,re.glob,cmdliner,ocamlgraph,cudf,dose3,jsonm -c -g -w +a-4-9-32-41-44-45 -bin-annot -short-paths -I core -I solver -I repositories -I client -I client/ client/opamArg.ml
+# ocamlfind ocamlopt -package unix,extlib,re,re.emacs,re.str,re.perl,re.pcre,re.glob,cmdliner,ocamlgraph,cudf,dose3,jsonm -c -g -w +a-4-9-32-41-44-45 -bin-annot -short-paths -I core -I solver -I repositories -I client -I client/ client/opamMain.ml
+# ocamlfind ocamlopt \
+# 			-package unix,extlib,re,re.emacs,re.str,re.perl,re.pcre,re.glob,cmdliner,ocamlgraph,cudf,dose3,jsonm -linkpkg \
+# 			     -I core -I solver -I repositories -I client -I client/  -g -w +a-4-9-32-41-44-45 -bin-annot   -ccopt -Lclient/    ./opam-core.cmxa ./opam-solver.cmxa ./opam-repositories.cmxa ./opam-client.cmxa -o opam \
+# 			client/opamArg.cmx client/opamMain.cmx
+# make[4]: Leaving directory `/home/opam/.opam/4.02.1/build/opam-lib.1.2.0/src'
+# make[3]: Leaving directory `/home/opam/.opam/4.02.1/build/opam-lib.1.2.0/src'
+# make[2]: Leaving directory `/home/opam/.opam/4.02.1/build/opam-lib.1.2.0/src'
+# make[1]: Leaving directory `/home/opam/.opam/4.02.1/build/opam-lib.1.2.0/src'
+### stderr ###
+# ...[truncated]
+# Warning 48: implicit elimination of optional argument ?none
+# File "client/opamArg.ml", line 1547, characters 22-26:
+# Warning 48: implicit elimination of optional argument ?none
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# make[4]: *** [opam] Error 2
+# make[3]: *** [native-code] Error 2
+# make[2]: *** [subproj_opam] Error 2
+# make[1]: *** [opam] Error 2
+# make: *** [opam] Error 2
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   uutf.0.9.3
+ - install   ocplib-endian.0.4
+ - install   cppo.1.1.2
+ - install   ocamlgraph.1.8.5
+ - install   easy-format.1.0.2
+ - install   lwt.2.4.5
+ - install   yojson.1.1.8
+ - install   biniou.1.0.9
+ - install   atd.1.1.2
+ - install   sexplib.112.01.00
+ - install   atdgen.1.4.1
+ - install   type_conv.112.01.00
+ - install   camomile.0.8.5
+ - install   react.1.2.0
+ - install   conduit.0.7.1
+ - install   menhir.20140422
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   ipaddr.2.5.0
+ - install   ssl.0.4.7
+ - install   ounit.2.0.0
+ - install   zed.1.3
+ - install   jsonm.0.9.1
+ - install   dose.3.2.2+opam
+ - install   stringext.1.1.0
+ - install   cudf.0.7
+ - install   lambda-term.1.7
+ - install   optcomp.1.6
+ - install   re.1.2.2
+ - install   extlib.1.6.1
+ - install   uri.1.7.2
+ - install   fieldslib.109.20.03
+The following failed
+ - install   cohttp.0.13.0
+ - install   opam-lib.1.2.0
+Due to the errors, the following have been cancelled
+ - install   github.0.9.3
+ - install   opam-publish.0.2.0
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108074105.export"
