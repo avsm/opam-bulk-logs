@@ -5,3 +5,59 @@
 + sudo apt-get install -qq -y build-essential m4
 Debian depexts: libgdbm-dev zlib1g-dev
 + sudo apt-get install -qq -y libgdbm-dev zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libgdbm-dev.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libgdbm-dev (from .../libgdbm-dev_1.8.3-11_amd64.deb) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Setting up libgdbm-dev (1.8.3-11) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
+++ opam install cryptodbm -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install cryptodbm
+Debian srcexts:
+The following actions will be performed:
+ - install   cryptokit.1.9                         [required by cryptodbm]
+ - install   dbm.1.0                               [required by cryptodbm]
+ - install   ounit.2.0.0                           [required by fileutils]
+ - install   exenum.0.6                            [required by cryptodbm]
+ - install   fileutils.0.4.4                       [required by cryptodbm]
+ - install   cryptodbm.0.8
+=== 6 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cryptodbm.0.8] Downloading http://forge.ocamlcore.org/frs/download.php/1349/cryptodbm-source-0.8.tgz
+[dbm.1.0] Downloading https://forge.ocamlcore.org/frs/download.php/728/camldbm-1.0.tgz
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[exenum.0.6] Downloading http://forge.ocamlcore.org/frs/download.php/1291/exenum-source-0.6.tgz
+[fileutils.0.4.4] Downloading http://forge.ocamlcore.org/frs/download.php/892/ocaml-fileutils-0.4.4.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cryptokit.1.9:
+  make
+  make install
+Installing cryptokit.1.9.
+Copying ~/.opam/repo/default/packages/dbm/dbm.1.0/files/include_fix.patch to ~/.opam/4.02.1/build/dbm.1.0/
+Copying ~/.opam/repo/default/packages/dbm/dbm.1.0/files/hasgotfix.patch to ~/.opam/4.02.1/build/dbm.1.0/
+Applying hasgotfix.patch.
+Applying include_fix.patch.
+Building dbm.1.0:
+  mkdir -p /home/opam/.opam/4.02.1/lib/dbm
+  ./configure
+  make all
+  make test
+  make install STUBLIBDIR=/home/opam/.opam/4.02.1/lib/stublibs LIBDIR=/home/opam/.opam/4.02.1/lib/dbm
+  cp META /home/opam/.opam/4.02.1/lib/dbm
+Installing dbm.1.0.
+Building exenum.0.6:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing exenum.0.6.
+Building ounit.2.0.0:
+  make build
+  make install
