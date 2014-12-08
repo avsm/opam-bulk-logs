@@ -1,9 +1,14 @@
-++ opam install core_kernel -e centos,centos-7
+++ opam install core_kernel -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
 + '[' '' '!=' '' ']'
+++ opam install core_kernel -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
+Debian srcexts:
 + opam install core_kernel
-CentOS 7 depexts:
 The following actions will be performed:
  - install   ounit.2.0.0                           [required by pa_ounit]
  - install   herelib.109.35.02                     [required by core_kernel]
