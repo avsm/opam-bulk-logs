@@ -1,1 +1,23 @@
 ++ opam install conf-pkg-config -e debian
++ depext=pkg-config
++ echo Debian depexts: pkg-config
++ '[' pkg-config '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: pkg-config
++ sudo apt-get install -qq -y pkg-config
+++ opam install conf-pkg-config -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install conf-pkg-config
+The following actions will be performed:
+ - install   conf-pkg-config.1.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building conf-pkg-config.1.0:
+  pkg-config --help
+Installing conf-pkg-config.1.0.
