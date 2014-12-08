@@ -175,3 +175,19 @@ Building core.112.01.01:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   make
   make install
+Installing core.112.01.01.
+Building async_kernel.112.01.00:
+  make
+  make install
+Installing async_kernel.112.01.00.
+Building re2.111.08.00:
+  make
+  make install
+Installing re2.111.08.00.
+Building textutils.112.01.00:
+  make
+  make install
+Installing textutils.112.01.00.
+Building async_unix.112.01.00:
+  make
+  make install
