@@ -88,3 +88,10 @@ Building omake.0.9.8.6-0.rc1:
   make all PREFIX=/home/opam/.opam/4.02.1
   make install PREFIX=/home/opam/.opam/4.02.1
 Installing omake.0.9.8.6-0.rc1.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building pipebang.110.01.00:
+  make
+  make install
