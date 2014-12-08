@@ -39,3 +39,35 @@ Building cmdliner.0.9.6:
 Installing cmdliner.0.9.6.
 Building extlib-compat.1.6.1:
   make build install
+Installing extlib-compat.1.6.1.
+Copying ~/.opam/repo/default/packages/ocamlgraph/ocamlgraph.1.8.5/files/ocamlgraph.install to ~/.opam/4.02.1/build/ocamlgraph.1.8.5/
+Building ocamlgraph.1.8.5:
+  ./configure
+  make
+  make install-findlib
+Installing ocamlgraph.1.8.5.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+Building cudf.0.7:
+  make all opt
+  make install DESTDIR=/home/opam/.opam/4.02.1 OCAMLLIBDIR=lib BINDIR=bin LIBDIR=lib INCDIR=include
+Installing cudf.0.7.
+Copying ~/.opam/repo/default/packages/jsonm/jsonm.0.9.1/files/jsonm.install to ~/.opam/4.02.1/build/jsonm.0.9.1/
+Building jsonm.0.9.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing jsonm.0.9.1.
+Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0005-Add-a-check_request-function-allowing-more-control-o.patch to ~/.opam/4.02.1/build/dose.3.2.2+opam/
+Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0004-Remove-broken-assert.patch to ~/.opam/4.02.1/build/dose.3.2.2+opam/
+Copying ~/.opam/repo/default/packages/dose/dose.3.2.2+opam/files/0003-Removed-hard-failure-cases-in-favor-of-finer-diagnos.patch to ~/.opam/4.02.1/build/dose.3.2.2+opam/
+Applying 0003-Removed-hard-failure-cases-in-favor-of-finer-diagnos.patch.
+Applying 0004-Remove-broken-assert.patch.
+Applying 0005-Add-a-check_request-function-allowing-more-control-o.patch.
