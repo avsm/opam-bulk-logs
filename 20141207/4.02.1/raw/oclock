@@ -1,0 +1,23 @@
+++ opam install oclock -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install oclock -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install oclock
+The following actions will be performed:
+ - install   oclock.0.4.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[oclock.0.4.0] Downloading https://github.com/polazarus/oclock/archive/v0.4.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building oclock.0.4.0:
+  make all
+  make install
+Installing oclock.0.4.0.
