@@ -1,0 +1,35 @@
+++ opam install mirari -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install mirari -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install mirari
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   cmdliner.0.9.6                        [required by mirari]
+ - install   obuild.0.1.1                          [required by mirari]
+ - install   mirari.0.9.0
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[obuild.0.1.1] Downloading https://github.com/ocaml-obuild/obuild/archive/obuild-v0.1.1.tar.gz
+[mirari.0.9.0] Downloading https://github.com/mirage/mirari/archive/mirari-0.9.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing cmdliner.0.9.6.
+Copying ~/.opam/repo/default/packages/obuild/obuild.0.1.1/files/obuild.install to ~/.opam/4.02.1/build/obuild.0.1.1/
+Building obuild.0.1.1:
+  ./bootstrap
+Installing obuild.0.1.1.
+Copying ~/.opam/repo/default/packages/mirari/mirari.0.9.0/files/mirari.install to ~/.opam/4.02.1/build/mirari.0.9.0/
+Building mirari.0.9.0:
+  make
+Installing mirari.0.9.0.
