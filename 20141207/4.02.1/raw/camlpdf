@@ -1,0 +1,23 @@
+++ opam install camlpdf -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install camlpdf -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install camlpdf
+The following actions will be performed:
+ - install   camlpdf.1.7.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camlpdf.1.7.1] Downloading https://github.com/johnwhitington/camlpdf/archive/v1.7.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building camlpdf.1.7.1:
+  make
+  make install
+Installing camlpdf.1.7.1.
