@@ -101,3 +101,52 @@ Installing conf-libpcre.1.
 Building cryptokit.1.9:
   make
   make install
+Installing cryptokit.1.9.
+Copying ~/.opam/repo/default/packages/dbm/dbm.1.0/files/include_fix.patch to ~/.opam/4.02.1/build/dbm.1.0/
+Copying ~/.opam/repo/default/packages/dbm/dbm.1.0/files/hasgotfix.patch to ~/.opam/4.02.1/build/dbm.1.0/
+Applying hasgotfix.patch.
+Applying include_fix.patch.
+Building dbm.1.0:
+  mkdir -p /home/opam/.opam/4.02.1/lib/dbm
+  ./configure
+  make all
+  make test
+  make install STUBLIBDIR=/home/opam/.opam/4.02.1/lib/stublibs LIBDIR=/home/opam/.opam/4.02.1/lib/dbm
+  cp META /home/opam/.opam/4.02.1/lib/dbm
+Installing dbm.1.0.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+Installing menhir.20140422.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building react.1.2.0:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing react.1.2.0.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.02.1/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing ssl.0.4.7.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+Building deriving.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1 --enable-tc
+  make
+  make install
