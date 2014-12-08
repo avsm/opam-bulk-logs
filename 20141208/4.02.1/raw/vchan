@@ -60,3 +60,7 @@ Installing optcomp.1.6.
 Building ounit.2.0.0:
   make build
   make install
+Installing ounit.2.0.0.
+Building ppx_tools.0.99.2:
+  make all
+  make install
