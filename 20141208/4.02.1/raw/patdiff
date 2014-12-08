@@ -169,3 +169,8 @@ Installing textutils.112.01.00.
 Building core_extended.112.01.00:
   make
   make install
+Installing core_extended.112.01.00.
+Building patdiff.111.28.00:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install

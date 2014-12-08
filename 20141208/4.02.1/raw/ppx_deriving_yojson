@@ -4,3 +4,53 @@ Debian depexts:
 + echo Debian depexts:
 + '[' '' '!=' '' ']'
 ++ opam install ppx_deriving_yojson -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install ppx_deriving_yojson
+Debian srcexts:
+The following actions will be performed:
+ - install   ppx_tools.0.99.2                      [required by ppx_deriving]
+ - install   easy-format.1.0.2                     [required by yojson]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   ppx_deriving.1.0                      [required by ppx_deriving_yojson]
+ - install   biniou.1.0.9                          [required by yojson]
+ - install   yojson.1.1.8                          [required by ppx_deriving_yojson]
+ - install   ppx_deriving_yojson.2.0
+=== 7 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[ppx_deriving.1.0] Downloading https://github.com/whitequark/ppx_deriving/archive/v1.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+[ppx_deriving_yojson.2.0] Downloading https://github.com/whitequark/ppx_deriving_yojson/archive/v2.0.tar.gz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.02.1/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.02.1/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Building ppx_deriving.1.0:
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing ppx_deriving.1.0.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.02.1/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
