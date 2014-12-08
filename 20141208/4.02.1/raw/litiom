@@ -193,3 +193,73 @@ Building ocamlnet.3.7.7:
   make all
   make opt
   make install
+Installing ocamlnet.3.7.7.
+Building ocsigenserver.2.5:
+  sh configure --prefix /home/opam/.opam/4.02.1 --ocsigen-user opam --ocsigen-group opam --commandpipe /home/opam/.opam/4.02.1/lib/ocsigenserver/var/run/ocsigenserver_command --logdir /home/opam/.opam/4.02.1/lib/ocsigenserver/var/log/ocsigenserver --mandir /home/opam/.opam/4.02.1/man/man1 --docdir /home/opam/.opam/4.02.1/lib/ocsigenserver/share/doc/ocsigenserver --commandpipe /home/opam/.opam/4.02.1/lib/ocsigenserver/var/run/ocsigenserver_command --staticpagesdir /home/opam/.opam/4.02.1/lib/ocsigenserver/var/www --datadir /home/opam/.opam/4.02.1/lib/ocsigenserver/var/lib/ocsigenserver --sysconfdir /home/opam/.opam/4.02.1/lib/ocsigenserver/etc/ocsigenserver
+  make
+  make install
+Installing ocsigenserver.2.5.
+
+
+#=== ERROR while installing js_of_ocaml.2.5 ===================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make build
+# path                 /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5/js_of_ocaml-9017-062a54.env
+# stdout-file          /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5/js_of_ocaml-9017-062a54.out
+# stderr-file          /home/opam/.opam/4.02.1/build/js_of_ocaml.2.5/js_of_ocaml-9017-062a54.err
+### stdout ###
+# ...[truncated]
+# ocamlfind ocamlopt -safe-string -package findlib,cmdliner -for-pack Compiler -g -c driver.ml
+# ocamlfind ocamlc -safe-string -package findlib,cmdliner -c pseudoFs.mli
+# ocamlfind ocamlopt -safe-string -package findlib,cmdliner -for-pack Compiler -g -c pseudoFs.ml
+# ocamlfind ocamlc -safe-string -package findlib,cmdliner -c commonArg.mli
+# ocamlfind ocamlopt -safe-string -package findlib,cmdliner -for-pack Compiler -g -c commonArg.ml
+# ocamlfind ocamlc -safe-string -package findlib,cmdliner -c compileArg.mli
+# ocamlfind ocamlopt -safe-string -package findlib,cmdliner -for-pack Compiler -g -c compileArg.ml
+# ocamlfind ocamlopt -safe-string -package findlib,cmdliner -for-pack Compiler -g -c compile.ml
+# ocamlfind ocamlopt -safe-string -package findlib,cmdliner -linkpkg -g -o compile.opt compiler_version.cmx util.cmx pretty_print.cmx option.cmx reserved.cmx varPrinter.cmx dgraph.cmx code.cmx javascript.cmx vlq64.cmx source_map.cmx js_output.cmx js_simpl.cmx parse_info.cmx js_token.cmx js_parser.cmx js_lexer.cmx parse_js.cmx primitive.cmx annot_parser.cmx annot_lexer.cmx instr.cmx subst.cmx pure_fun.cmx deadcode.cmx flow.cmx specialize.cmx specialize_js.cmx eval.cmx inline.cmx tailcall.cmx freevars.cmx phisimpl.cmx js_traverse.cmx js_assign.cmx js_tailcall.cmx linker.cmx parse_bytecode.cmx generate.cmx driver.cmx pseudoFs.cmx commonArg.cmx compileArg.cmx compile.cmx
+# make[1]: Leaving directory `/home/opam/.opam/4.02.1/build/js_of_ocaml.2.5/compiler'
+### stderr ###
+# Warning: 12 states have shift/reduce conflicts.
+# Warning: 47 shift/reduce conflicts were arbitrarily resolved.
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# make[1]: *** [compile.opt] Error 2
+# make: *** [compiler] Error 2
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.112.01.00
+ - install   ocsigenserver.2.5
+ - install   uutf.0.9.3
+ - install   type_conv.112.01.00
+ - install   react.1.2.0
+ - install   menhir.20140422
+ - install   cmdliner.0.9.6
+ - install   ipaddr.2.5.0
+ - install   ssl.0.4.7
+ - install   calendar.2.03.2
+ - install   lwt.2.4.6
+ - install   cryptokit.1.9
+ - install   ppx_tools.0.99.2
+ - install   deriving.0.7
+ - install   ocamlnet.3.7.7
+ - install   reactiveData.0.1
+ - install   conf-libpcre.1
+ - install   optcomp.1.6
+ - install   tyxml.3.3.0
+ - install   pcre.7.1.3
+ - install   dbm.1.0
+ - install   base-bytes.base
+The following failed
+ - install   js_of_ocaml.2.5
+Due to the errors, the following have been cancelled
+ - install   litiom.4.0
+ - install   eliom.4.1.0
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108121720.export"
