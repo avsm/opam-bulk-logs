@@ -1,0 +1,204 @@
+++ opam install ojs-base -e ubuntu
++ depext='libssl-dev zlib1g-dev'
+Ubuntu depexts: libssl-dev zlib1g-dev
++ echo Ubuntu depexts: libssl-dev zlib1g-dev
++ '[' 'libssl-dev zlib1g-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libssl-dev zlib1g-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../libssl-dev_1.0.1f-1ubuntu2.7_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.0.1f-1ubuntu2.7) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../libssl-doc_1.0.1f-1ubuntu2.7_all.deb ...
+Unpacking libssl-doc (1.0.1f-1ubuntu2.7) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up libssl-dev:amd64 (1.0.1f-1ubuntu2.7) ...
+Setting up libssl-doc (1.0.1f-1ubuntu2.7) ...
+++ opam install ojs-base -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ojs-base
+The following actions will be performed:
+ - install   base-bytes.base                       [required by ocplib-endian]
+ - install   re.1.2.2                              [required by cohttp]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   stringext.1.0.0                       [required by uri]
+ - install   ppx_tools.0.99.2                      [required by ppx_deriving, lwt]
+ - install   cryptokit.1.9                         [required by websocket]
+ - install   ounit.2.0.0                           [required by cohttp]
+ - install   ssl.0.4.7                             [required by websocket]
+ - install   easy-format.1.0.2                     [required by yojson]
+ - install   cmdliner.0.9.6                        [required by js_of_ocaml]
+ - install   menhir.20140422                       [required by js_of_ocaml]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   type_conv.112.01.00                   [required by uri, fieldslib, sexplib]
+ - install   ocplib-endian.0.7                     [required by websocket]
+ - install   ppx_deriving.1.0                      [required by ppx_deriving_yojson]
+ - install   lwt.2.4.6                             [required by ojs-base]
+ - install   biniou.1.0.9                          [required by yojson]
+ - install   sexplib.112.01.00                     [required by cohttp]
+ - install   fieldslib.109.20.03                   [required by cohttp]
+ - install   js_of_ocaml.2.5                       [required by ojs-base]
+ - install   yojson.1.1.8                          [required by ojs-base]
+ - install   uri.1.7.2                             [required by cohttp]
+ - install   ppx_deriving_yojson.2.0               [required by ojs-base]
+ - install   cohttp.0.10.1                         [required by websocket]
+ - install   websocket.0.8.1                       [required by ojs-base]
+ - install   ojs-base.0.2.0
+=== 26 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cohttp.0.10.1] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.10.1.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[js_of_ocaml.2.5] Downloading https://github.com/ocsigen/js_of_ocaml/archive/2.5.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[ojs-base.0.2.0] Downloading http://zoggy.github.com/ojs-base/ojs-base-0.2.0.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[ppx_deriving.1.0] Downloading https://github.com/whitequark/ppx_deriving/archive/v1.0.tar.gz
+[ppx_deriving_yojson.2.0] Downloading https://github.com/whitequark/ppx_deriving_yojson/archive/v2.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[stringext.1.0.0] Downloading https://github.com/rgrinberg/stringext/archive/v1.0.0.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[uri.1.7.2] Downloading https://github.com/mirage/ocaml-uri/archive/v1.7.2.tar.gz
+[websocket.0.8.1] Downloading https://github.com/vbmithr/ocaml-websocket/archive/0.8.1.tar.gz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing cmdliner.0.9.6.
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.02.1/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building cryptokit.1.9:
+  make
+  make install
+Installing cryptokit.1.9.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+Installing menhir.20140422.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.02.1/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing ssl.0.4.7.
+Building stringext.1.0.0:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing stringext.1.0.0.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.02.1/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building ocplib-endian.0.7:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.7.
+Building ppx_deriving.1.0:
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing ppx_deriving.1.0.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building js_of_ocaml.2.5:
+  make build
+  make install-lib BINDIR=/home/opam/.opam/4.02.1/bin
+Installing js_of_ocaml.2.5.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.02.1/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Building cohttp.0.10.1:
+  make PREFIX=/home/opam/.opam/4.02.1
+  make PREFIX=/home/opam/.opam/4.02.1 install
+Installing cohttp.0.10.1.
+Building ppx_deriving_yojson.2.0:
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing ppx_deriving_yojson.2.0.
+Copying ~/.opam/repo/default/packages/websocket/websocket.0.8.1/files/websocket.install to ~/.opam/4.02.1/build/websocket.0.8.1/
+Building websocket.0.8.1:
+  make
+  make install
+Installing websocket.0.8.1.
+Building ojs-base.0.2.0:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make all
+  make install
+Installing ojs-base.0.2.0.
