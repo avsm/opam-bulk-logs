@@ -1,25 +1,32 @@
-++ opam install mustache -e centos,centos-7
+++ opam install mustache -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install mustache -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install mustache
+Debian srcexts:
 The following actions will be performed:
+ - install   hex.0.1.0                             [required by ezjsonm]
  - install   re.1.2.2                              [required by mustache]
  - install   ocamlify.0.0.1                        [required by oasis]
- - install   type_conv.112.01.00                   [required by sexplib]
+ - install   type_conv.112.01.00                   [required by ocaml-data-notation, sexplib]
  - install   ocamlmod.0.0.7                        [required by oasis]
  - install   uutf.0.9.3                            [required by jsonm]
  - install   sexplib.112.01.00                     [required by mustache]
  - install   ocaml-data-notation.0.0.11            [required by oasis]
  - install   jsonm.0.9.1                           [required by ezjsonm]
  - install   oasis.0.4.5                           [required by mustache]
- - install   ezjsonm.0.2.0                         [required by mustache]
+ - install   ezjsonm.0.3.1                         [required by mustache]
  - install   mustache.1.0.0
-=== 11 to install ===
+=== 12 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[ezjsonm.0.2.0] Downloading https://github.com/mirage/ezjsonm/archive/0.2.0.tar.gz
+[ezjsonm.0.3.1] Downloading https://github.com/mirage/ezjsonm/archive/0.3.1.tar.gz
+[hex.0.1.0] Downloading https://github.com/mirage/ocaml-hex/archive/0.1.0.tar.gz
 [jsonm.0.9.1] Downloading http://erratique.ch/software/jsonm/releases/jsonm-0.9.1.tbz
 [mustache.1.0.0] Downloading https://github.com/rgrinberg/ocaml-mustache/archive/v1.0.0.tar.gz
 [oasis.0.4.5] Downloading https://forge.ocamlcore.org/frs/download.php/1475/oasis-0.4.5.tar.gz
@@ -32,6 +39,10 @@ The following actions will be performed:
 [uutf.0.9.3] Downloading http://erratique.ch/software/uutf/releases/uutf-0.9.3.tbz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building hex.0.1.0:
+  make
+  make install
+Installing hex.0.1.0.
 Copying ~/.opam/repo/default/packages/ocamlify/ocamlify.0.0.1/files/ocamlify.install to ~/.opam/4.02.1/build/ocamlify.0.0.1/
 Building ocamlify.0.0.1:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
@@ -48,43 +59,3 @@ Building re.1.2.2:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing re.1.2.2.
-Building type_conv.112.01.00:
-  make
-  make install
-Installing type_conv.112.01.00.
-Building uutf.0.9.3:
-  ./pkg/pkg-git
-  ./pkg/build true
-Installing uutf.0.9.3.
-Copying ~/.opam/repo/default/packages/jsonm/jsonm.0.9.1/files/jsonm.install to ~/.opam/4.02.1/build/jsonm.0.9.1/
-Building jsonm.0.9.1:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing jsonm.0.9.1.
-Building ocaml-data-notation.0.0.11:
-  make
-  make install
-Installing ocaml-data-notation.0.0.11.
-Building sexplib.112.01.00:
-  ./configure --enable-syntax
-  make
-  make install
-Installing sexplib.112.01.00.
-Building ezjsonm.0.2.0:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1 --disable-lwt
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing ezjsonm.0.2.0.
-Copying ~/.opam/repo/default/packages/oasis/oasis.0.4.5/files/oasis.install to ~/.opam/4.02.1/build/oasis.0.4.5/
-Building oasis.0.4.5:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing oasis.0.4.5.
-Building mustache.1.0.0:
-  make conf-no-tests
-  make build
-  make install
-Installing mustache.1.0.0.
