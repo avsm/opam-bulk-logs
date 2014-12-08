@@ -1,17 +1,22 @@
-++ opam install gpx -e centos,centos-7
+++ opam install gpx -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install gpx -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install gpx
+Debian srcexts:
 The following actions will be performed:
  - install   xml-light.2.4                         [required by gpx]
  - install   gpx.1.0
 === 2 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[gpx.1.0] Downloading https://github.com/rundat/ocaml-gpx/archive/v1.0.tar.gz
 [xml-light.2.4] Downloading https://github.com/ncannasse/xml-light/archive/2.4.tar.gz
+[gpx.1.0] Downloading https://github.com/rundat/ocaml-gpx/archive/v1.0.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Building xml-light.2.4:
