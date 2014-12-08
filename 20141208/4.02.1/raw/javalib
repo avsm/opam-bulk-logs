@@ -1,0 +1,66 @@
+++ opam install javalib -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install javalib
+The following actions will be performed:
+ - install   extlib.1.5.4                          [required by javalib]
+ - install   camlzip.1.05                          [required by javalib]
+ - install   javalib.2.3
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camlzip.1.05] Downloading http://forge.ocamlcore.org/frs/download.php/1037/camlzip-1.05.tar.gz
+[extlib.1.5.4] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.5.4.tar.gz
+[javalib.2.3] Downloading https://gforge.inria.fr/frs/download.php/33090/javalib-2.3.tar.bz2
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/camlzip/camlzip.1.05/files/fix-install.patch to ~/.opam/4.02.1/build/camlzip.1.05/
+Applying fix-install.patch.
+Building camlzip.1.05:
+  make all
+  make allopt
+  make install-findlib
+[ERROR] The compilation of camlzip.1.05 failed.
+Removing camlzip.1.05.
+  ocamlfind remove zip
+  ocamlfind remove camlzip
+Copying ~/.opam/repo/default/packages/extlib/extlib.1.5.4/files/extlib.install to ~/.opam/4.02.1/build/extlib.1.5.4/
+Building extlib.1.5.4:
+  make all
+  make opt
+  make cmxs
+  make install
+Installing extlib.1.5.4.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   extlib.1.5.4
+The following failed
+ - install   camlzip.1.05
+Due to the errors, the following have been cancelled
+ - install   javalib.2.3
+
+#=== ERROR while installing camlzip.1.05 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.1/build/camlzip.1.05
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/camlzip.1.05/camlzip-46-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.1/build/camlzip.1.05/camlzip-46-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.1/build/camlzip.1.05/camlzip-46-ad8886.err
+### stdout ###
+# ocamlc -g -c -ccopt -g -ccopt -I/usr/local/include zlibstubs.c
+### stderr ###
+# zlibstubs.c:18:18: fatal error: zlib.h: No such file or directory
+#  #include <zlib.h>
+#                   ^
+# compilation terminated.
+# make: *** [zlibstubs.o] Error 2
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108064547.export"
