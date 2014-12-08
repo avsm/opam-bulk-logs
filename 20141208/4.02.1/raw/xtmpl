@@ -1,0 +1,29 @@
+++ opam install xtmpl -e debian
++ depext=
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install xtmpl -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install xtmpl
+Debian srcexts:
+The following actions will be performed:
+ - install   xmlm.1.2.0                            [required by xtmpl]
+ - install   xtmpl.0.10
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+[xtmpl.0.10] Downloading http://zoggy.github.com/xtmpl/xtmpl-0.10.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Building xtmpl.0.10:
+  make all
+  make install
+Installing xtmpl.0.10.
