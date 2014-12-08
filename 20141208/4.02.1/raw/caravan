@@ -179,3 +179,7 @@ Installing async_unix.112.01.00.
 Building async_extra.112.01.00:
   make
   make install
+Installing async_extra.112.01.00.
+Building async.112.01.00:
+  make
+  make install
