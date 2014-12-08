@@ -38,3 +38,13 @@ Building camlzip.1.05:
   make all
   make allopt
   make install-findlib
+Installing camlzip.1.05.
+Building extlib-compat.1.6.1:
+  make build install
+Installing extlib-compat.1.6.1.
+Building javalib.2.3:
+  ./configure.sh
+  make ptrees
+  make installptrees
+  make
+  make install
