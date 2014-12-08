@@ -36,3 +36,4 @@ Building heptagon.1.00.06:
   ./configure --prefix /home/opam/.opam/4.02.1
   make
   make install
+Installing heptagon.1.00.06.
