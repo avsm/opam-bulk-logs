@@ -1,0 +1,25 @@
+++ opam install deriving-ocsigen -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install deriving-ocsigen
+The following actions will be performed:
+ - install   optcomp.1.6                           [required by deriving-ocsigen]
+ - install   deriving-ocsigen.0.5
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[deriving-ocsigen.0.5] Downloading http://ocsigen.org/download/deriving-ocsigen-0.5.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building deriving-ocsigen.0.5:
+  make
+  make install
+Installing deriving-ocsigen.0.5.
