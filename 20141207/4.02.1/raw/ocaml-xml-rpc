@@ -1,0 +1,89 @@
+++ opam install ocaml-xml-rpc -e ubuntu
++ depext=libpcre3-dev
++ echo Ubuntu depexts: libpcre3-dev
++ '[' libpcre3-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libpcre3-dev
++ sudo apt-get install -qq -y libpcre3-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libpcrecpp0_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Setting up libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Setting up libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.3) ...
+++ opam install ocaml-xml-rpc -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-xml-rpc
+The following actions will be performed:
+ - install   ulex.1.1                              [required by pxp]
+ - install   conf-libpcre.1                        [required by pcre]
+ - install   pcre.7.1.2                            [required by ocamlnet, annexlib]
+ - install   ocamlnet.3.7.7                        [required by ocaml-xml-rpc]
+ - install   annexlib.0.13.5                       [required by ocaml-xml-rpc]
+ - install   pxp.1.2.3                             [required by ocaml-xml-rpc]
+ - install   ocaml-xml-rpc.0.2.3
+=== 7 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[annexlib.0.13.5] Downloading http://godi-backup2.camlcity.org/godi-backup/annexlib-0.13.5.tar.gz
+[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
+[ocaml-xml-rpc.0.2.3] Downloading http://raevnos.pennmush.org/code/ocaml-xml-rpc/ocaml-xml-rpc-0.2.3.tar.gz
+[pcre.7.1.2] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.2/pcre-ocaml-7.1.2.tar.gz
+[pxp.1.2.3] Downloading http://download.camlcity.org/download/pxp-1.2.3.tar.gz
+[ulex.1.1] Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building conf-libpcre.1:
+  pkg-config libpcre
+Installing conf-libpcre.1.
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+Installing ulex.1.1.
+Building pcre.7.1.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing pcre.7.1.2.
+Building annexlib.0.13.5:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make all
+  make opt
+  make install
+Installing annexlib.0.13.5.
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.02.1/build/ocamlnet.3.7.7/
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/ocamlnet.install to ~/.opam/4.02.1/build/ocamlnet.3.7.7/
+Applying robust-host.patch.
+Building ocamlnet.3.7.7:
+  ./configure -bindir /home/opam/.opam/4.02.1/bin -enable-pcre -disable-gtk2 -disable-ssl -disable-zip -disable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Installing ocamlnet.3.7.7.
+Building pxp.1.2.3:
+  ./configure -without-wlex -without-wlex-compat -lexlist utf8,iso88591
+  make all
+  make opt
+  make install MANDIR=/home/opam/.opam/4.02.1/man
+Installing pxp.1.2.3.
+Copying ~/.opam/repo/default/packages/ocaml-xml-rpc/ocaml-xml-rpc.0.2.3/files/ocaml-xml-rpc.install to ~/.opam/4.02.1/build/ocaml-xml-rpc.0.2.3/
+Building ocaml-xml-rpc.0.2.3:
+  make
+  make opt
+  make install BIN_DIR=/home/opam/.opam/4.02.1/bin
+Installing ocaml-xml-rpc.0.2.3.
