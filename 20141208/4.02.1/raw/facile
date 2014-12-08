@@ -1,9 +1,14 @@
-++ opam install facile -e centos,centos-7
+++ opam install facile -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install facile -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install facile
+Debian srcexts:
 The following actions will be performed:
  - install   facile.1.1
 === 1 to install ===
