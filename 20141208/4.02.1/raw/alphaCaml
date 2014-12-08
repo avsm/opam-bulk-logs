@@ -1,9 +1,14 @@
-++ opam install alphaCaml -e centos,centos-7
+++ opam install alphaCaml -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install alphaCaml -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install alphaCaml
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   alphaCaml.20061214
 === 1 to install ===
