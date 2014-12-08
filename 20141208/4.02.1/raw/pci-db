@@ -1,7 +1,12 @@
-++ opam install pci-db -e centos,centos-7
+++ opam install pci-db -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install pci-db -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install pci-db
 The following actions will be performed:
