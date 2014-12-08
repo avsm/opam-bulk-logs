@@ -269,3 +269,7 @@ Installing uri.1.7.2.
 Building core_kernel.112.01.00:
   make
   make install
+Installing core_kernel.112.01.00.
+Building cow.1.0.0:
+  make all
+  make install
