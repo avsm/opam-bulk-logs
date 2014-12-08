@@ -91,3 +91,110 @@ Building sexplib.112.01.00:
   ./configure --enable-syntax
   make
   make install
+Installing sexplib.112.01.00.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.02.1 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Building ipaddr.2.5.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make build
+  make install
+Installing ipaddr.2.5.0.
+Building io-page.1.2.0:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing io-page.1.2.0.
+Building shared-memory-ring.1.1.0:
+  make all
+  make install
+Installing shared-memory-ring.1.1.0.
+Building tuntap.1.0.0:
+  make PREFIX=/home/opam/.opam/4.02.1
+  make PREFIX=/home/opam/.opam/4.02.1 install
+[ERROR] The compilation of tuntap.1.0.0 failed.
+Removing tuntap.1.0.0.
+  ocamlfind remove tuntap
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+Building mirage-clock-unix.1.0.0:
+  make unix-build
+  make unix-install
+Installing mirage-clock-unix.1.0.0.
+Installing mirage-types-lwt.2.0.1.
+Building mirage-unix.2.0.1:
+  make unix-build
+  make unix-install PREFIX=/home/opam/.opam/4.02.1
+Installing mirage-unix.2.0.1.
+Building mirage-console.2.0.0:
+  make
+  make install
+Installing mirage-console.2.0.0.
+
+
+#=== ERROR while installing tuntap.1.0.0 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make PREFIX=/home/opam/.opam/4.02.1
+# path                 /home/opam/.opam/4.02.1/build/tuntap.1.0.0
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/tuntap.1.0.0/tuntap-4876-736596.env
+# stdout-file          /home/opam/.opam/4.02.1/build/tuntap.1.0.0/tuntap-4876-736596.out
+# stderr-file          /home/opam/.opam/4.02.1/build/tuntap.1.0.0/tuntap-4876-736596.err
+### stdout ###
+# ...[truncated]
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -a -cclib -ltuntap_stubs -bin-annot lib/tuntap.cmx -o lib/tuntap.cmxa
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -shared -I lib lib/tuntap.cmxa lib/tuntap.cmx -o lib/tuntap.cmxs
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamldep -package cmdliner -package ipaddr -modules bin/otunctl.ml > bin/otunctl.ml.depends
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package cmdliner -package ipaddr -I bin -I lib -o bin/otunctl.cmo bin/otunctl.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -I lib -package cmdliner -package ipaddr -I bin -I lib -o bin/otunctl.cmx bin/otunctl.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package cmdliner -package ipaddr lib/tuntap.cmxa bin/otunctl.cmx -o bin/otunctl.native
+# + /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -I lib -linkpkg -package cmdliner -package ipaddr lib/tuntap.cmxa bin/otunctl.cmx -o bin/otunctl.native
+# File "_none_", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# Command exited with code 2.
+### stderr ###
+# ...[truncated]
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# File "setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "setup.ml", line 2412, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' lib/libtuntap_stubs.a lib/dlltuntap_stubs.so lib/tuntap.cma lib/tuntap.cmxa lib/tuntap.a lib/tuntap.cmxs bin/otunctl.native test/sendfd_test.native test/nonblock_test.native test/nonblock_read.native test/getifaddrs_test.native test/set_ipv4_test.native -tag debug' terminated with error code 10")
+# make: *** [build] Error 1
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.112.01.00
+ - install   type_conv.112.01.00
+ - install   shared-memory-ring.1.1.0
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   mirage-types-lwt.2.0.1
+ - install   ipaddr.2.5.0
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   mirage-console.2.0.0
+ - install   ppx_tools.0.99.2
+ - install   mirage-clock-unix.1.0.0
+ - install   mirage-unix.2.0.1
+ - install   optcomp.1.6
+ - install   ocplib-endian.0.7
+ - install   base-bytes.base
+ - install   mirage-types.2.0.1
+The following failed
+ - install   tuntap.1.0.0
+Due to the errors, the following have been cancelled
+ - install   tcpip.2.0.3
+ - install   mirage-net-unix.1.1.1
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108141901.export"

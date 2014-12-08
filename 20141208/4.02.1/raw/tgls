@@ -16,3 +16,23 @@ Setting up libffi-dev:amd64 (3.0.10-3) ...
 + '[' '' '!=' '' ']'
 + opam install tgls
 Debian srcexts:
+The following actions will be performed:
+ - install   base-bytes.base                       [required by ctypes]
+ - install   ctypes.0.3.3                          [required by tgls]
+ - install   tgls.0.8.2
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ctypes.0.3.3] Downloading https://github.com/ocamllabs/ocaml-ctypes/archive/0.3.3.tar.gz
+[tgls.0.8.2] Downloading http://erratique.ch/software/tgls/releases/tgls-0.8.2.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building ctypes.0.3.3:
+  make
+  make install
+Installing ctypes.0.3.3.
+Building tgls.0.8.2:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing tgls.0.8.2.
