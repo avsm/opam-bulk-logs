@@ -1,0 +1,24 @@
+++ opam install calendar -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install calendar -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install calendar
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   calendar.2.03.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[calendar.2.03.2] Downloading http://forge.ocamlcore.org/frs/download.php/915/calendar-2.03.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building calendar.2.03.2:
+  ./configure
+  make
+  make install
+Installing calendar.2.03.2.
