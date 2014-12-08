@@ -22,3 +22,8 @@ The following actions will be performed:
 Building camlpdf.2.1.1:
   make
   make install
+Installing camlpdf.2.1.1.
+Building cpdf.2.1.1:
+  make
+  make install
+Installing cpdf.2.1.1.
