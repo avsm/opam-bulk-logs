@@ -1,0 +1,19 @@
+++ opam install lpd -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
+CentOS 7 depexts:
++ opam install lpd
+The following actions will be performed:
+ - install   lpd.1.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[lpd.1.2] Downloading https://forge.ocamlcore.org/frs/download.php/1155/lpd-1.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building lpd.1.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing lpd.1.2.
