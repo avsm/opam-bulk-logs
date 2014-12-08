@@ -1,9 +1,14 @@
-++ opam install mm -e centos,centos-7
+++ opam install mm -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install mm -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install mm
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   mm.0.2.1
 === 1 to install ===
