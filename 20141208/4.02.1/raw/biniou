@@ -1,9 +1,14 @@
-++ opam install biniou -e centos,centos-7
+++ opam install biniou -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install biniou -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install biniou
-CentOS 7 depexts:
 The following actions will be performed:
  - install   easy-format.1.0.2                     [required by biniou]
  - install   biniou.1.0.9
