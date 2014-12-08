@@ -54,3 +54,7 @@ Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install t
 Building yojson.1.1.8:
   make
   make install
+Installing yojson.1.1.8.
+Building ppx_deriving_yojson.2.0:
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing ppx_deriving_yojson.2.0.
