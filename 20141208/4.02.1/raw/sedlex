@@ -17,3 +17,14 @@ The following actions will be performed:
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
 [sedlex.1.99.2] Downloading http://github.com/alainfrisch/sedlex/archive/sedlex-1.99.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building sedlex.1.99.2:
+  make all
+  make opt
+  make install
+Installing sedlex.1.99.2.

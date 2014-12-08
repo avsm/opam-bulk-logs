@@ -1,19 +1,11 @@
-++ opam install sequence -e centos,centos-7
+++ opam install sequence -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install sequence -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install sequence
-The following actions will be performed:
- - install   sequence.0.5.4
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[sequence.0.5.4] Downloading https://github.com/c-cube/sequence/archive/0.5.4.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building sequence.0.5.4:
-  ./configure --disable-docs --disable-invert --disable-bigarray
-  make all
-  make install
-Installing sequence.0.5.4.
+Debian srcexts:
