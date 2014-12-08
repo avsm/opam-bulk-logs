@@ -1,0 +1,31 @@
+++ opam install fileutils -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install fileutils -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install fileutils
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by fileutils]
+ - install   fileutils.0.4.4
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[fileutils.0.4.4] Downloading http://forge.ocamlcore.org/frs/download.php/892/ocaml-fileutils-0.4.4.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building fileutils.0.4.4:
+  ./configure
+  make
+  make install
+Installing fileutils.0.4.4.
+2014/12/08 00:56:29 Error: Cannot destroy container b2e1d1abacef6d3084df875f15934a28aaccfd3cb7637f7e42c6c25b1e5970d5: Driver aufs failed to remove root filesystem b2e1d1abacef6d3084df875f15934a28aaccfd3cb7637f7e42c6c25b1e5970d5: rename /var/lib/docker/aufs/mnt/b2e1d1abacef6d3084df875f15934a28aaccfd3cb7637f7e42c6c25b1e5970d5 /var/lib/docker/aufs/mnt/b2e1d1abacef6d3084df875f15934a28aaccfd3cb7637f7e42c6c25b1e5970d5-removing: device or resource busy
