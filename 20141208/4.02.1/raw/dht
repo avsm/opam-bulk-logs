@@ -1,0 +1,164 @@
+++ opam install dht -e centos,centos-7
++ depext='gmp gmp-devel'
++ echo CentOS 7 depexts: gmp gmp-devel
+CentOS 7 depexts: gmp gmp-devel
++ '[' 'gmp gmp-devel' '!=' '' ']'
++ sudo yum install -y gmp gmp-devel
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.sov.uk.goscomb.net
+ * extras: mirrors.coreix.net
+ * updates: mirrors.coreix.net
+Package 1:gmp-5.1.1-5.el7.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package gmp-devel.x86_64 1:5.1.1-5.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package            Arch            Version                 Repository     Size
+================================================================================
+Installing:
+ gmp-devel          x86_64          1:5.1.1-5.el7           base          175 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 175 k
+Installed size: 335 k
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : 1:gmp-devel-5.1.1-5.el7.x86_64                               1/1 
+  Verifying  : 1:gmp-devel-5.1.1-5.el7.x86_64                               1/1 
+
+Installed:
+  gmp-devel.x86_64 1:5.1.1-5.el7                                                
+
+Complete!
++ opam install dht
+The following actions will be performed:
+ - install   cryptokit.1.9                         [required by dht]
+ - install   conf-gmp.1                            [required by zarith]
+ - install   lwt.2.4.5                             [required by dht]
+ - install   bitstring.2.0.4                       [required by dht]
+ - install   zarith.1.3                            [required by dht]
+ - install   dht.0.1.3
+=== 6 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bitstring.2.0.4] Downloading http://bitstring.googlecode.com/files/ocaml-bitstring-2.0.4.tar.gz
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[dht.0.1.3] Downloading https://github.com/nojb/ocaml-dht/archive/v0.1.3.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[zarith.1.3] Downloading https://forge.ocamlcore.org/frs/download.php/1471/zarith-1.3.tgz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building bitstring.2.0.4:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make srcdir=./
+  make install
+[ERROR] The compilation of bitstring.2.0.4 failed.
+Removing bitstring.2.0.4.
+  ocamlfind remove bitstring
+Copying ~/.opam/repo/default/packages/conf-gmp/conf-gmp.1/files/test.c to ~/.opam/4.02.1/build/conf-gmp.1/
+Building conf-gmp.1:
+  sh -c cc -c $CFLAGS test.c
+Installing conf-gmp.1.
+Building cryptokit.1.9:
+  make
+  make install
+[ERROR] The compilation of cryptokit.1.9 failed.
+Removing cryptokit.1.9.
+  ocamlfind remove cryptokit
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+Installing lwt.2.4.5.
+Building zarith.1.3:
+  ./configure
+  make
+  make install
+Installing zarith.1.3.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   lwt.2.4.5
+ - install   conf-gmp.1
+ - install   zarith.1.3
+The following failed
+ - install   bitstring.2.0.4
+ - install   cryptokit.1.9
+Due to the errors, the following have been cancelled
+ - install   dht.0.1.3
+
+#=== ERROR while installing bitstring.2.0.4 ===================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure --prefix /home/opam/.opam/4.02.1
+# path                 /home/opam/.opam/4.02.1/build/bitstring.2.0.4
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/bitstring.2.0.4/bitstring-105-d2c37b.env
+# stdout-file          /home/opam/.opam/4.02.1/build/bitstring.2.0.4/bitstring-105-d2c37b.out
+# stderr-file          /home/opam/.opam/4.02.1/build/bitstring.2.0.4/bitstring-105-d2c37b.err
+### stdout ###
+# ...[truncated]
+# checking for ocamldep... ocamldep
+# checking for ocamlmktop... ocamlmktop
+# checking for ocamlmklib... ocamlmklib
+# checking for ocamldoc... ocamldoc
+# checking for ocamlbuild... ocamlbuild
+# checking for ocamlfind... ocamlfind
+# checking for camlp4of.opt... camlp4of.opt
+# checking for OCaml findlib package extlib... not found
+# checking for OCaml findlib package cil... not found
+# checking for time... no
+### stderr ###
+# configure: error: 'time' command not found
+
+
+#=== ERROR while installing cryptokit.1.9 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/cryptokit.1.9
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/cryptokit.1.9/cryptokit-609-d2d111.env
+# stdout-file          /home/opam/.opam/4.02.1/build/cryptokit.1.9/cryptokit-609-d2d111.out
+# stderr-file          /home/opam/.opam/4.02.1/build/cryptokit.1.9/cryptokit-609-d2d111.err
+### stdout ###
+# ...[truncated]
+# mv stubs-misc.o src/stubs-misc.o
+# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-rng.c
+# mv stubs-rng.o src/stubs-rng.o
+# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
+# + ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
+# src/stubs-zlib.c:19:18: fatal error: zlib.h: No such file or directory
+#  #include <zlib.h>
+#                   ^
+# compilation terminated.
+# Command exited with code 2.
+### stderr ###
+# ...[truncated]
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "/home/gildor/programmation/oasis/src/oasis/OASISFindlib.ml", line 256, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' src/libcryptokit_stubs.a src/dllcryptokit_stubs.so src/cryptokit.cma src/cryptokit.cmxa src/cryptokit.a src/cryptokit.cmxs -tag debug -classic-display' terminated with error code 10")
+# make: *** [build] Error 1
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108061122.export"
