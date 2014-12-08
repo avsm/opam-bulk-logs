@@ -1,0 +1,28 @@
+++ opam install deriving -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install deriving
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   base-bytes.base                       [required by deriving]
+ - install   optcomp.1.6                           [required by deriving]
+ - install   deriving.0.7
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[deriving.0.7] Downloading http://ocsigen.org/download/deriving-0.7.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building deriving.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1 --disable-tc
+  make
+  make install
+Installing deriving.0.7.
