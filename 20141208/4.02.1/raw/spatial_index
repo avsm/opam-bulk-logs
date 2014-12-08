@@ -128,3 +128,4 @@ Building spatial_index.0.0.2:
   ./configure --enable-tests --prefix=/home/opam/.opam/4.02.1
   make
   make install
+Installing spatial_index.0.0.2.
