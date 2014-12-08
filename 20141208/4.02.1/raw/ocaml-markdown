@@ -1,1 +1,54 @@
 ++ opam install ocaml-markdown -e debian
++ depext=
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install ocaml-markdown -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-markdown
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by ocaml-markdown]
+ - install   extlib.1.5.3                          [required by ocaml-markdown]
+ - install   type_conv.112.01.00                   [required by sexplib]
+ - install   uutf.0.9.3                            [required by tyxml]
+ - install   sexplib.112.01.00                     [required by ocaml-markdown]
+ - install   tyxml.3.3.0                           [required by ocaml-markdown]
+ - install   ocaml-markdown.0.1.1
+=== 7 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[extlib.1.5.3] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.5.3.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[ocaml-markdown.0.1.1] Downloading https://forge.ocamlcore.org/frs/download.php/1196/ocaml-markdown-0.1.1.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[tyxml.3.3.0] Downloading https://github.com/ocsigen/tyxml/archive/3.3.0.tar.gz
+[uutf.0.9.3] Downloading http://erratique.ch/software/uutf/releases/uutf-0.9.3.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/extlib/extlib.1.5.3/files/extlib.install to ~/.opam/4.02.1/build/extlib.1.5.3/
+Building extlib.1.5.3:
+  make all
+  make opt
+  make cmxs
+  make install
+Installing extlib.1.5.3.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install

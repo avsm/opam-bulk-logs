@@ -48,3 +48,9 @@ Building ocamlnet.3.7.7:
   make all
   make opt
   make install
+Installing ocamlnet.3.7.7.
+Building ocaml-http.0.1.5:
+  make all
+  make opt
+  make install
+Installing ocaml-http.0.1.5.
