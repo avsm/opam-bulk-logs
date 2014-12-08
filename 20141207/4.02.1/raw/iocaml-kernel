@@ -1,0 +1,149 @@
+++ opam install iocaml-kernel -e ubuntu
++ depext='libffi-dev libzmq3-dev'
++ echo Ubuntu depexts: libffi-dev libzmq3-dev
+Ubuntu depexts: libffi-dev libzmq3-dev
++ '[' 'libffi-dev libzmq3-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libffi-dev libzmq3-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libpgm-5.1-0:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libpgm-5.1-0_5.1.118-1~dfsg-0.1ubuntu3_amd64.deb ...
+Unpacking libpgm-5.1-0:amd64 (5.1.118-1~dfsg-0.1ubuntu3) ...
+Selecting previously unselected package libzmq3:amd64.
+Preparing to unpack .../libzmq3_4.0.4+dfsg-2_amd64.deb ...
+Unpacking libzmq3:amd64 (4.0.4+dfsg-2) ...
+Selecting previously unselected package libzmq3-dev:amd64.
+Preparing to unpack .../libzmq3-dev_4.0.4+dfsg-2_amd64.deb ...
+Unpacking libzmq3-dev:amd64 (4.0.4+dfsg-2) ...
+Selecting previously unselected package libffi-dev:amd64.
+Preparing to unpack .../libffi-dev_3.1~rc1+r3.0.13-12_amd64.deb ...
+Unpacking libffi-dev:amd64 (3.1~rc1+r3.0.13-12) ...
+Setting up libpgm-5.1-0:amd64 (5.1.118-1~dfsg-0.1ubuntu3) ...
+Setting up libzmq3:amd64 (4.0.4+dfsg-2) ...
+Setting up libzmq3-dev:amd64 (4.0.4+dfsg-2) ...
+Setting up libffi-dev:amd64 (3.1~rc1+r3.0.13-12) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.3) ...
+++ opam install iocaml-kernel -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install iocaml-kernel
+The following actions will be performed:
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   base-bytes.base                       [required by ctypes]
+ - install   ounit.2.0.0                           [required by iocaml-kernel]
+ - install   easy-format.1.0.2                     [required by yojson, atd, biniou]
+ - install   optcomp.1.6                           [required by iocaml-kernel]
+ - install   menhir.20140422                       [required by atd]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   uuidm.0.9.5                           [required by iocaml-kernel]
+ - install   uint.1.1.5                            [required by iocaml-kernel]
+ - install   lwt.2.4.6                             [required by iocaml-kernel]
+ - install   ctypes.0.3.3                          [required by iocaml-kernel]
+ - install   biniou.1.0.9                          [required by atdgen]
+ - install   atd.1.1.2                             [required by atdgen]
+ - install   yojson.1.1.8                          [required by iocaml-kernel]
+ - install   atdgen.1.4.1                          [required by iocaml-kernel]
+ - install   iocaml-kernel.0.4.6
+=== 16 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[atd.1.1.2] Downloading http://mjambon.com/releases/atd/atd-1.1.2.tar.gz
+[atdgen.1.4.1] Downloading http://mjambon.com/releases/atdgen/atdgen-1.4.1.tar.gz
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[ctypes.0.3.3] Downloading https://github.com/ocamllabs/ocaml-ctypes/archive/0.3.3.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[iocaml-kernel.0.4.6] Downloading https://github.com/andrewray/iocaml/archive/v0.4.6.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+[uint.1.1.5] Downloading https://forge.ocamlcore.org/frs/download.php/1487/ocaml-uint-1.1.5.tar.gz
+[uuidm.0.9.5] Downloading http://erratique.ch/software/uuidm/releases/uuidm-0.9.5.tbz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.02.1/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+Installing menhir.20140422.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building uint.1.1.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uint.1.1.5.
+Copying ~/.opam/repo/default/packages/uuidm/uuidm.0.9.5/files/uuidm.install to ~/.opam/4.02.1/build/uuidm.0.9.5/
+Building uuidm.0.9.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uuidm.0.9.5.
+Copying ~/.opam/repo/default/packages/atd/atd.1.1.2/files/atd.install to ~/.opam/4.02.1/build/atd.1.1.2/
+Building atd.1.1.2:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing atd.1.1.2.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.02.1/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Building ctypes.0.3.3:
+  make
+  make install
+Installing ctypes.0.3.3.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.02.1/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Copying ~/.opam/repo/default/packages/atdgen/atdgen.1.4.1/files/atdgen.install to ~/.opam/4.02.1/build/atdgen.1.4.1/
+Building atdgen.1.4.1:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing atdgen.1.4.1.
+Copying ~/.opam/repo/default/packages/iocaml-kernel/iocaml-kernel.0.4.6/files/4.00.1.patch to ~/.opam/4.02.1/build/iocaml-kernel.0.4.6/
+Applying 4.00.1.patch.
+Building iocaml-kernel.0.4.6:
+  make all
+  make install
+Installing iocaml-kernel.0.4.6.
