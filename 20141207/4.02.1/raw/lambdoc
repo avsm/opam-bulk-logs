@@ -1,0 +1,180 @@
+++ opam install lambdoc -e ubuntu
++ depext='libpcre3-dev libsource-highlight-dev'
+Ubuntu depexts: libpcre3-dev libsource-highlight-dev
++ echo Ubuntu depexts: libpcre3-dev libsource-highlight-dev
++ '[' 'libpcre3-dev libsource-highlight-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libpcre3-dev libsource-highlight-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libicu52:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libicu52_52.1-3_amd64.deb ...
+Unpacking libicu52:amd64 (52.1-3) ...
+Selecting previously unselected package libboost-regex1.54.0:amd64.
+Preparing to unpack .../libboost-regex1.54.0_1.54.0-4ubuntu3.1_amd64.deb ...
+Unpacking libboost-regex1.54.0:amd64 (1.54.0-4ubuntu3.1) ...
+Selecting previously unselected package libpcrecpp0:amd64.
+Preparing to unpack .../libpcrecpp0_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package libboost1.54-dev.
+Preparing to unpack .../libboost1.54-dev_1.54.0-4ubuntu3.1_amd64.deb ...
+Unpacking libboost1.54-dev (1.54.0-4ubuntu3.1) ...
+Selecting previously unselected package libboost-dev.
+Preparing to unpack .../libboost-dev_1.54.0.1ubuntu1_amd64.deb ...
+Unpacking libboost-dev (1.54.0.1ubuntu1) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package libsource-highlight-common.
+Preparing to unpack .../libsource-highlight-common_3.1.6-2ubuntu1_all.deb ...
+Unpacking libsource-highlight-common (3.1.6-2ubuntu1) ...
+Selecting previously unselected package libsource-highlight4.
+Preparing to unpack .../libsource-highlight4_3.1.6-2ubuntu1_amd64.deb ...
+Unpacking libsource-highlight4 (3.1.6-2ubuntu1) ...
+Selecting previously unselected package libsource-highlight-dev.
+Preparing to unpack .../libsource-highlight-dev_3.1.6-2ubuntu1_amd64.deb ...
+Unpacking libsource-highlight-dev (3.1.6-2ubuntu1) ...
+Setting up libicu52:amd64 (52.1-3) ...
+Setting up libboost-regex1.54.0:amd64 (1.54.0-4ubuntu3.1) ...
+Setting up libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Setting up libboost1.54-dev (1.54.0-4ubuntu3.1) ...
+Setting up libboost-dev (1.54.0.1ubuntu1) ...
+Setting up libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Setting up libsource-highlight-common (3.1.6-2ubuntu1) ...
+Setting up libsource-highlight4 (3.1.6-2ubuntu1) ...
+Setting up libsource-highlight-dev (3.1.6-2ubuntu1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.3) ...
+++ opam install lambdoc -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install lambdoc
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   batteries.2.3.1                       [required by lambdoc]
+ - install   ulex.1.1                              [required by lambdoc]
+ - install   menhir.20140422                       [required by lambdoc]
+ - install   xstrp4.1.8                            [required by lambdoc]
+ - install   conf-libpcre.1                        [required by pcre]
+ - install   omd.1.2.2                             [required by lambdoc]
+ - install   type_conv.112.01.00                   [required by sexplib]
+ - install   uutf.0.9.3                            [required by tyxml]
+ - install   pcre.7.1.2                            [required by lambdoc]
+ - install   sexplib.112.01.00                     [required by lambdoc]
+ - install   tyxml.3.3.0                           [required by lambdoc]
+ - install   ocamlnet.3.7.7                        [required by pxp]
+ - install   camlhighlight.3.0                     [required by lambdoc]
+ - install   pxp.1.2.3                             [required by lambdoc]
+ - install   blahcaml.2.1                          [required by lambdoc]
+ - install   lambdoc.1.0-beta2
+=== 16 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
+[blahcaml.2.1] Downloading http://forge.ocamlcore.org/frs/download.php/1219/blahcaml-2.1.tgz
+[camlhighlight.3.0] Downloading http://forge.ocamlcore.org/frs/download.php/1435/camlhighlight-3.0.tgz
+[lambdoc.1.0-beta2] Downloading https://forge.ocamlcore.org/frs/download.php/1459/lambdoc-1.0-beta2.tgz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
+[omd.1.2.2] Downloading http://pw374.github.io/distrib/omd/omd-1.2.2.tar.gz
+[pcre.7.1.2] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.2/pcre-ocaml-7.1.2.tar.gz
+[pxp.1.2.3] Downloading http://download.camlcity.org/download/pxp-1.2.3.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[tyxml.3.3.0] Downloading https://github.com/ocsigen/tyxml/archive/3.3.0.tar.gz
+[ulex.1.1] Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+[uutf.0.9.3] Downloading http://erratique.ch/software/uutf/releases/uutf-0.9.3.tbz
+[xstrp4.1.8] Downloading http://download.camlcity.org/download/xstrp4-1.8.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building batteries.2.3.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make all
+  make install
+Installing batteries.2.3.1.
+Building conf-libpcre.1:
+  pkg-config libpcre
+Installing conf-libpcre.1.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+Installing menhir.20140422.
+Copying ~/.opam/repo/default/packages/omd/omd.1.2.2/files/omd.install to ~/.opam/4.02.1/build/omd.1.2.2/
+Building omd.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing omd.1.2.2.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+Installing ulex.1.1.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+Building xstrp4.1.8:
+  ./configure
+  make all
+  make install
+Installing xstrp4.1.8.
+Building pcre.7.1.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing pcre.7.1.2.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building tyxml.3.3.0:
+  ./configure --enable-syntax --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing tyxml.3.3.0.
+Copying ~/.opam/repo/default/packages/camlhighlight/camlhighlight.3.0/files/sexp-dir.patch.in to ~/.opam/4.02.1/build/camlhighlight.3.0/
+Copying ~/.opam/repo/default/packages/camlhighlight/camlhighlight.3.0/files/camlhighlight.install to ~/.opam/4.02.1/build/camlhighlight.3.0/
+Applying sexp-dir.patch.
+Building camlhighlight.3.0:
+  ./configure --prefix /home/opam/.opam/4.02.1 --docdir /home/opam/.opam/4.02.1/doc/camlhighlight
+  make
+  make doc
+  make install
+Installing camlhighlight.3.0.
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.02.1/build/ocamlnet.3.7.7/
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/ocamlnet.install to ~/.opam/4.02.1/build/ocamlnet.3.7.7/
+Applying robust-host.patch.
+Building ocamlnet.3.7.7:
+  ./configure -bindir /home/opam/.opam/4.02.1/bin -enable-pcre -disable-gtk2 -disable-ssl -disable-zip -disable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Installing ocamlnet.3.7.7.
+Building pxp.1.2.3:
+  ./configure -without-wlex -without-wlex-compat -lexlist utf8,iso88591
+  make all
+  make opt
+  make install MANDIR=/home/opam/.opam/4.02.1/man
+Installing pxp.1.2.3.
+Building blahcaml.2.1:
+  make
+  make install
+Installing blahcaml.2.1.
+Copying ~/.opam/repo/default/packages/lambdoc/lambdoc.1.0-beta2/files/lambdoc.install to ~/.opam/4.02.1/build/lambdoc.1.0-beta2/
+Building lambdoc.1.0-beta2:
+  make
+  make install
+Installing lambdoc.1.0-beta2.
