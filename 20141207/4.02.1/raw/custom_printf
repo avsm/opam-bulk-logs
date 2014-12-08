@@ -1,0 +1,48 @@
+++ opam install custom_printf -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install custom_printf -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install custom_printf
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by pa_ounit]
+ - install   type_conv.112.01.00                   [required by custom_printf]
+ - install   sexplib.112.01.00                     [required by custom_printf]
+ - install   pa_ounit.111.28.00                    [required by custom_printf]
+ - install   custom_printf.112.01.00
+=== 5 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[custom_printf.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/custom_printf-112.01.00.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building pa_ounit.111.28.00:
+  make
+  make install
+Installing pa_ounit.111.28.00.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building custom_printf.112.01.00:
+  make
+  make install
+Installing custom_printf.112.01.00.
