@@ -77,3 +77,8 @@ Installing jsonm.0.9.1.
 Building ocaml-data-notation.0.0.11:
   make
   make install
+Installing ocaml-data-notation.0.0.11.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
