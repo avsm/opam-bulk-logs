@@ -21,3 +21,4 @@ Building gen.0.2.2:
   ./configure --disable-docs --disable-tests --disable-bench
   make all
   make install
+Installing gen.0.2.2.
