@@ -1,0 +1,70 @@
+++ opam install leveldb -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install leveldb
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   omake.0.9.8.6-0.rc1                   [required by leveldb]
+ - install   ounit.2.0.0                           [required by leveldb]
+ - install   conf-leveldb.1                        [required by leveldb]
+ - install   leveldb.1.0.3
+=== 4 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
+[leveldb.1.0.3] Downloading https://github.com/mfp/ocaml-leveldb/archive/ocaml-leveldb-1.0.3.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/conf-leveldb/conf-leveldb.1/files/test.cc to ~/.opam/4.02.1/build/conf-leveldb.1/
+Building conf-leveldb.1:
+  cc -c test.cc
+[ERROR] The compilation of conf-leveldb.1 failed.
+Removing conf-leveldb.1.
+  Nothing to do.
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/opam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/omake.install to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/fam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Applying opam.patch.
+Applying fam.patch.
+Applying readline.patch.
+Building omake.0.9.8.6-0.rc1:
+  make bootstrap PREFIX=/home/opam/.opam/4.02.1
+  make all PREFIX=/home/opam/.opam/4.02.1
+  make install PREFIX=/home/opam/.opam/4.02.1
+Installing omake.0.9.8.6-0.rc1.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   ounit.2.0.0
+ - install   omake.0.9.8.6-0.rc1
+The following failed
+ - install   conf-leveldb.1
+Due to the errors, the following have been cancelled
+ - install   leveldb.1.0.3
+
+#=== ERROR while installing conf-leveldb.1 ====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              cc -c test.cc
+# path                 /home/opam/.opam/4.02.1/build/conf-leveldb.1
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/conf-leveldb.1/conf-leveldb-48-5f1023.env
+# stdout-file          /home/opam/.opam/4.02.1/build/conf-leveldb.1/conf-leveldb-48-5f1023.out
+# stderr-file          /home/opam/.opam/4.02.1/build/conf-leveldb.1/conf-leveldb-48-5f1023.err
+### stderr ###
+# test.cc:1:24: fatal error: leveldb/db.h: No such file or directory
+#  #include <leveldb/db.h>
+#                         ^
+# compilation terminated.
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108065426.export"
