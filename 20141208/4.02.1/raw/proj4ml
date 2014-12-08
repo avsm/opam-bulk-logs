@@ -4,3 +4,34 @@ Debian depexts: libproj-dev
 + echo Debian depexts: libproj-dev
 + '[' libproj-dev '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libproj-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package proj-data.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking proj-data (from .../proj-data_4.7.0-2_amd64.deb) ...
+Selecting previously unselected package libproj0.
+Unpacking libproj0 (from .../libproj0_4.7.0-2_amd64.deb) ...
+Selecting previously unselected package libproj-dev.
+Unpacking libproj-dev (from .../libproj-dev_4.7.0-2_amd64.deb) ...
+Setting up proj-data (4.7.0-2) ...
+Setting up libproj0 (4.7.0-2) ...
+Setting up libproj-dev (4.7.0-2) ...
+++ opam install proj4ml -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install proj4ml
+Debian srcexts:
+The following actions will be performed:
+ - install   proj4ml.0.9.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[proj4ml.0.9.1] Downloading https://github.com/hcarty/proj4ml/archive/v0.9.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building proj4ml.0.9.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing proj4ml.0.9.1.

@@ -1,9 +1,14 @@
-++ opam install promela -e centos,centos-7
+++ opam install promela -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install promela -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install promela
-CentOS 7 depexts:
 The following actions will be performed:
  - install   ospec.0.3.2                           [required by promela]
  - install   promela.0.4.2
@@ -24,4 +29,3 @@ Building promela.0.4.2:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing promela.0.4.2.
