@@ -5,3 +5,36 @@
 + sudo apt-get install -qq -y build-essential m4
 Debian depexts: libpcre3-dev
 + sudo apt-get install -qq -y libpcre3-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libpcrecpp0:amd64 (from .../libpcrecpp0_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package libpcre3-dev.
+Unpacking libpcre3-dev (from .../libpcre3-dev_1%3a8.30-5_amd64.deb) ...
+Setting up libpcrecpp0:amd64 (1:8.30-5) ...
+Setting up libpcre3-dev (1:8.30-5) ...
+++ opam install pgocaml -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install pgocaml
+The following actions will be performed:
+ - install   csv.1.3.4                             [required by pgocaml]
+ - install   calendar.2.03.2                       [required by pgocaml]
+ - install   conf-libpcre.1                        [required by pcre]
+ - install   pcre.7.1.3                            [required by pgocaml]
+ - install   pgocaml.2.1
+=== 5 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[calendar.2.03.2] Downloading http://forge.ocamlcore.org/frs/download.php/915/calendar-2.03.2.tar.gz
+[csv.1.3.4] Downloading https://github.com/Chris00/ocaml-csv/releases/download/1.3.3/csv-1.3.4.tar.gz
+[pcre.7.1.3] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.3/pcre-ocaml-7.1.3.tar.gz
+[pgocaml.2.1] Downloading http://forge.ocamlcore.org/frs/download.php/1413/pgocaml-2.1.tgz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building calendar.2.03.2:
+  ./configure
+  make
+  make install
