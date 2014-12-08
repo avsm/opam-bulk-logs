@@ -1,0 +1,23 @@
+++ opam install higher -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install higher -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install higher
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   higher.0.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[higher.0.2] Downloading https://github.com/ocamllabs/higher/archive/0.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building higher.0.2:
+  make
+  make install
+Installing higher.0.2.
