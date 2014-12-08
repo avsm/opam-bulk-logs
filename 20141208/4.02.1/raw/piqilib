@@ -56,3 +56,4 @@ Building piqilib.0.6.9:
   make ocaml
   make install
   make ocaml-install
+Installing piqilib.0.6.9.
