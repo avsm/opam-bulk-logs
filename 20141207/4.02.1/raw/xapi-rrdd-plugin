@@ -1,0 +1,294 @@
+++ opam install xapi-rrdd-plugin -e ubuntu
++ depext='libssl-dev libxen-dev uuid-dev'
++ echo Ubuntu depexts: libssl-dev libxen-dev uuid-dev
+Ubuntu depexts: libssl-dev libxen-dev uuid-dev
++ '[' 'libssl-dev libxen-dev uuid-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libssl-dev libxen-dev uuid-dev
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xen/libxenstore3.0_4.4.1-0ubuntu0.14.04.1_amd64.deb  404  Not Found [IP: 91.189.91.15 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xen/libxen-4.4_4.4.1-0ubuntu0.14.04.1_amd64.deb  404  Not Found [IP: 91.189.91.15 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xen/libxen-dev_4.4.1-0ubuntu0.14.04.1_amd64.deb  404  Not Found [IP: 91.189.91.15 80]
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+++ opam install xapi-rrdd-plugin -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install xapi-rrdd-plugin
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   re.1.2.2                              [required by xapi-forkexecd]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   obuild.0.1.1                          [required by xapi-rrd]
+ - install   ocamlify.0.0.1                        [required by oasis]
+ - install   ounit.2.0.0                           [required by xen-gnt, xenstore, crc]
+ - install   ssl.0.4.7                             [required by lwt]
+ - install   cmdliner.0.9.6                        [required by xapi-rrd-transport]
+ - install   type_conv.112.01.00                   [required by rpc]
+ - install   base-bytes.base                       [required by ocplib-endian]
+ - install   stringext.1.0.0                       [required by uri]
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   fd-send-recv.1.0.1                    [required by xapi-forkexecd]
+ - install   xmlm.1.2.0                            [required by xapi-libs-transitional, rpc]
+ - install   syslog.1.4                            [required by xapi-forkexecd]
+ - install   uuidm.0.9.5                           [required by xapi-forkexecd]
+ - install   ocamlmod.0.0.7                        [required by oasis]
+ - install   sexplib.112.01.00                     [required by cstruct, cohttp]
+ - install   ocaml-data-notation.0.0.11            [required by oasis]
+ - install   fieldslib.109.20.03                   [required by cohttp]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   lwt.2.4.6                             [required by rpc]
+ - install   xapi-stdext.0.12.0                    [required by xapi-rrdd-plugin]
+ - install   uri.1.7.2                             [required by xapi-idl]
+ - install   oasis.0.4.5                           [required by xen-gnt]
+ - install   xenctrl.0.9.26                        [required by xapi-libs-transitional]
+ - install   rpc.1.5.1                             [required by xapi-rrdd-plugin]
+ - install   cstruct.1.5.0                         [required by xapi-rrd-transport]
+ - install   xapi-inventory.0.9.1                  [required by xapi-idl]
+ - install   cohttp.0.10.1                         [required by xapi-idl]
+ - install   xapi-rrd.0.9.1                        [required by xapi-rrd-transport]
+ - install   xenstore.1.2.5                        [required by xapi-libs-transitional]
+ - install   io-page.1.1.1                         [required by xen-gnt]
+ - install   crc.0.9.0                             [required by xapi-rrd-transport]
+ - install   message-switch.0.10.4                 [required by xapi-idl]
+ - install   xenstore_transport.0.9.4              [required by xapi-libs-transitional]
+ - install   xen-gnt.2.0.0                         [required by xapi-rrd-transport]
+ - install   xapi-idl.0.9.19                       [required by xapi-rrdd-plugin]
+ - install   xapi-rrd-transport.0.7.2              [required by xapi-rrdd-plugin]
+ - install   xapi-forkexecd.0.9.2                  [required by xapi-rrdd-plugin]
+ - install   xapi-libs-transitional.0.9.6          [required by xapi-rrdd-plugin]
+ - install   xapi-rrdd-plugin.0.6.0
+=== 41 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[crc.0.9.0] Downloading https://github.com/xapi-project/ocaml-crc/archive/0.9.0.tar.gz
+[cohttp.0.10.1] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.10.1.tar.gz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[fd-send-recv.1.0.1] Downloading https://github.com/xen-org/ocaml-fd-send-recv/archive/ocaml-fd-send-recv-1.0.1.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[io-page.1.1.1] Downloading https://github.com/mirage/io-page/archive/v1.1.1.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[message-switch.0.10.4] Downloading https://github.com/djs55/message-switch/archive/v0.10.4.tar.gz
+[oasis.0.4.5] Downloading https://forge.ocamlcore.org/frs/download.php/1475/oasis-0.4.5.tar.gz
+[obuild.0.1.1] Downloading https://github.com/ocaml-obuild/obuild/archive/obuild-v0.1.1.tar.gz
+[ocaml-data-notation.0.0.11] Downloading https://forge.ocamlcore.org/frs/download.php/1310/ocaml-data-notation-0.0.11.tar.gz
+[ocamlify.0.0.1] Downloading http://forge.ocamlcore.org/frs/download.php/379/ocamlify-0.0.1.tar.gz
+[ocamlmod.0.0.7] Downloading https://forge.ocamlcore.org/frs/download.php/1350/ocamlmod-0.0.7.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[rpc.1.5.1] Downloading https://github.com/mirage/ocaml-rpc/archive/1.5.1.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[stringext.1.0.0] Downloading https://github.com/rgrinberg/stringext/archive/v1.0.0.tar.gz
+[syslog.1.4] Downloading http://ftp.de.debian.org/debian/pool/main/s/syslog-ocaml/syslog-ocaml_1.4.orig.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[uri.1.7.2] Downloading https://github.com/mirage/ocaml-uri/archive/v1.7.2.tar.gz
+[uuidm.0.9.5] Downloading http://erratique.ch/software/uuidm/releases/uuidm-0.9.5.tbz
+[xapi-forkexecd.0.9.2] Downloading https://github.com/xapi-project/forkexecd/archive/0.9.2/forkexecd-0.9.2.tar.gz
+[xapi-idl.0.9.19] Downloading https://github.com/xapi-project/xcp-idl/archive/v0.9.19.tar.gz
+[xapi-inventory.0.9.1] Downloading https://github.com/xapi-project/xcp-inventory/archive/v0.9.1.tar.gz
+[xapi-libs-transitional.0.9.6] Downloading https://github.com/xapi-project/xen-api-libs-transitional/archive/v0.9.6.tar.gz
+[xapi-rrd.0.9.1] Downloading https://github.com/xapi-project/xcp-rrd/archive/v0.9.1.tar.gz
+[xapi-rrd-transport.0.7.2] Downloading https://github.com/xapi-project/rrd-transport/archive/0.7.2.tar.gz
+[xapi-rrdd-plugin.0.6.0] Downloading https://github.com/xapi-project/ocaml-rrdd-plugin/archive/0.6.0.tar.gz
+[xapi-stdext.0.12.0] Downloading http://github.com/xapi-project/stdext/archive/v0.12.0.tar.gz
+[xen-gnt.2.0.0] Downloading https://github.com/mirage/ocaml-gnt/archive/v2.0.0.tar.gz
+[xenctrl.0.9.26] Downloading https://github.com/xapi-project/ocaml-xen-lowlevel-libs/archive/0.9.26.tar.gz
+[xenstore.1.2.5] Downloading https://github.com/mirage/ocaml-xenstore/archive/1.2.5.tar.gz
+[xenstore_transport.0.9.4] Downloading https://github.com/djs55/ocaml-xenstore-clients/archive/0.9.4.tar.gz
+[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing cmdliner.0.9.6.
+Building fd-send-recv.1.0.1:
+  make
+  make install
+Installing fd-send-recv.1.0.1.
+Copying ~/.opam/repo/default/packages/obuild/obuild.0.1.1/files/obuild.install to ~/.opam/4.02.1/build/obuild.0.1.1/
+Building obuild.0.1.1:
+  ./bootstrap
+Installing obuild.0.1.1.
+Copying ~/.opam/repo/default/packages/ocamlify/ocamlify.0.0.1/files/ocamlify.install to ~/.opam/4.02.1/build/ocamlify.0.0.1/
+Building ocamlify.0.0.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlify.0.0.1.
+Copying ~/.opam/repo/default/packages/ocamlmod/ocamlmod.0.0.7/files/ocamlmod.install to ~/.opam/4.02.1/build/ocamlmod.0.0.7/
+Building ocamlmod.0.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlmod.0.0.7.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.02.1/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+[ERROR] The compilation of ssl.0.4.7 failed.
+Removing ssl.0.4.7.
+  ocamlfind remove ssl
+Building stringext.1.0.0:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing stringext.1.0.0.
+Building syslog.1.4:
+  make reallyall
+  make install
+Installing syslog.1.4.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Copying ~/.opam/repo/default/packages/uuidm/uuidm.0.9.5/files/uuidm.install to ~/.opam/4.02.1/build/uuidm.0.9.5/
+Building uuidm.0.9.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uuidm.0.9.5.
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building ocaml-data-notation.0.0.11:
+  make
+  make install
+Installing ocaml-data-notation.0.0.11.
+Building ocplib-endian.0.7:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.7.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building xapi-stdext.0.12.0:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing xapi-stdext.0.12.0.
+Copying ~/.opam/repo/default/packages/oasis/oasis.0.4.5/files/oasis.install to ~/.opam/4.02.1/build/oasis.0.4.5/
+Building oasis.0.4.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing oasis.0.4.5.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Building xapi-inventory.0.9.1:
+  ./configure --default_inventory=/home/opam/.opam/4.02.1/etc
+  make
+  make install
+Installing xapi-inventory.0.9.1.
+
+
+#=== ERROR while installing ssl.0.4.7 =========================================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              ./configure --prefix /home/opam/.opam/4.02.1
+# path                 /home/opam/.opam/4.02.1/build/ssl.0.4.7
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/ssl.0.4.7/ssl-2440-d682c6.env
+# stdout-file          /home/opam/.opam/4.02.1/build/ssl.0.4.7/ssl-2440-d682c6.out
+# stderr-file          /home/opam/.opam/4.02.1/build/ssl.0.4.7/ssl-2440-d682c6.err
+### stdout ###
+# ...[truncated]
+# checking for ocamldep... /home/opam/.opam/4.02.1/bin/ocamldep
+# checking for ocamllex... /home/opam/.opam/4.02.1/bin/ocamllex
+# checking for ocamlyacc... /home/opam/.opam/4.02.1/bin/ocamlyacc
+# checking for ocamldoc... /home/opam/.opam/4.02.1/bin/ocamldoc
+# checking for ocamlmktop... /home/opam/.opam/4.02.1/bin/ocamlmktop
+# checking for gcc... (cached) gcc
+# checking whether we are using the GNU C compiler... (cached) yes
+# checking whether gcc accepts -g... (cached) yes
+# checking for gcc option to accept ISO C89... (cached) none needed
+# checking for SSL_new in -lssl... no
+### stderr ###
+# configure: error: Cannot find libssl.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   ocamlmod.0.0.7
+ - install   uuidm.0.9.5
+ - install   syslog.1.4
+ - install   xmlm.1.2.0
+ - install   fd-send-recv.1.0.1
+ - install   ppx_tools.0.99.2
+ - install   stringext.1.0.0
+ - install   xapi-stdext.0.12.0
+ - install   base-bytes.base
+ - install   sexplib.112.01.00
+ - install   type_conv.112.01.00
+ - install   ocaml-data-notation.0.0.11
+ - install   xapi-inventory.0.9.1
+ - install   cmdliner.0.9.6
+ - install   ounit.2.0.0
+ - install   ocamlify.0.0.1
+ - install   oasis.0.4.5
+ - install   obuild.0.1.1
+ - install   optcomp.1.6
+ - install   re.1.2.2
+ - install   uri.1.7.2
+ - install   fieldslib.109.20.03
+ - install   ocplib-endian.0.7
+The following failed
+ - install   ssl.0.4.7
+Due to the errors, the following have been cancelled
+ - install   xapi-rrd-transport.0.7.2
+ - install   xapi-idl.0.9.19
+ - install   lwt.2.4.6
+ - install   rpc.1.5.1
+ - install   cstruct.1.5.0
+ - install   xapi-rrdd-plugin.0.6.0
+ - install   xenstore_transport.0.9.4
+ - install   xenstore.1.2.5
+ - install   xen-gnt.2.0.0
+ - install   io-page.1.1.1
+ - install   xapi-libs-transitional.0.9.6
+ - install   xapi-forkexecd.0.9.2
+ - install   xapi-rrd.0.9.1
+ - install   cohttp.0.10.1
+ - install   message-switch.0.10.4
+ - install   xenctrl.0.9.26
+ - install   crc.0.9.0
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108041949.export"
