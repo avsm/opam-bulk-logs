@@ -1,9 +1,14 @@
-++ opam install simple-bmc -e centos,centos-7
+++ opam install simple-bmc -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install simple-bmc -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install simple-bmc
-CentOS 7 depexts:
 The following actions will be performed:
  - install   batteries.2.3.1                       [required by simple-bmc]
  - install   simple-bmc.0.0.1
