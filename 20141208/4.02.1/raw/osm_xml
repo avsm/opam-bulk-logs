@@ -129,3 +129,9 @@ Building core.112.01.01:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   make
   make install
+Installing core.112.01.01.
+Building osm_xml.0.0.1:
+  ./configure --enable-tests --prefix=/home/opam/.opam/4.02.1
+  make
+  make install
+Installing osm_xml.0.0.1.
