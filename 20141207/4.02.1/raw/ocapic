@@ -1,0 +1,72 @@
+++ opam install ocapic -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install ocapic -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocapic
+The following actions will be performed:
+ - install   ocamlclean.2.0                        [required by ocapic]
+ - install   ocapic.3.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamlclean.2.0] Downloading http://www.algo-prog.info/ocapic/web/lib/exe/fetch.php?media=ocamlclean-2.0.tar.bz2
+[ocapic.3.0] Downloading http://www.algo-prog.info/ocapic/web/lib/exe/fetch.php?media=ocapic-3.0.tar.bz2
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/ocamlclean/ocamlclean.2.0/files/disable-warn-error.patch to ~/.opam/4.02.1/build/ocamlclean.2.0/
+Applying disable-warn-error.patch.
+Building ocamlclean.2.0:
+  ./configure -prefix /home/opam/.opam/4.02.1
+  make all
+  make install
+Installing ocamlclean.2.0.
+Building ocapic.3.0:
+  ./configure -prefix /home/opam/.opam/4.02.1
+  make all
+  make install
+[ERROR] The compilation of ocapic.3.0 failed.
+Removing ocapic.3.0.
+  ./configure -prefix /home/opam/.opam/4.02.1
+  make uninstall
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   ocamlclean.2.0
+The following failed
+ - install   ocapic.3.0
+
+#=== ERROR while installing ocapic.3.0 ========================================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.1/build/ocapic.3.0
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/ocapic.3.0/ocapic-351-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.1/build/ocapic.3.0/ocapic-351-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.1/build/ocapic.3.0/ocapic-351-ad8886.err
+### stdout ###
+# ...[truncated]
+# File "index.ml", line 22, characters 18-31:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "index.ml", line 23, characters 13-26:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "index.ml", line 1:
+# Error: Some fatal warnings were triggered (2 occurrences)
+# Command exited with code 2.
+# make[1]: Leaving directory `/home/opam/.opam/4.02.1/build/ocapic.3.0/src/bc2asm'
+### stderr ###
+# make[1]: *** [_build/main.native] Error 10
+# make: *** [all] Error 2
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108024048.export"
