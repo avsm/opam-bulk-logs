@@ -1,78 +1,88 @@
-++ opam install xen-disk -e centos,centos-7
-+ depext=xen-devel
-+ echo CentOS 7 depexts: xen-devel
-CentOS 7 depexts: xen-devel
-+ '[' xen-devel '!=' '' ']'
-+ sudo yum install -y xen-devel
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * base: anorien.csc.warwick.ac.uk
- * extras: anorien.csc.warwick.ac.uk
- * updates: mirrors.coreix.net
-No package xen-devel available.
-Error: Nothing to do
+++ opam install xen-disk -e debian
++ depext='libxen-dev uuid-dev'
++ echo Debian depexts: libxen-dev uuid-dev
+Debian depexts: libxen-dev uuid-dev
++ '[' 'libxen-dev uuid-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libxen-dev uuid-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libxen-4.1.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libxen-4.1 (from .../libxen-4.1_4.1.4-3+deb7u3_amd64.deb) ...
+Selecting previously unselected package libxenstore3.0.
+Unpacking libxenstore3.0 (from .../libxenstore3.0_4.1.4-3+deb7u3_amd64.deb) ...
+Selecting previously unselected package libxen-dev.
+Unpacking libxen-dev (from .../libxen-dev_4.1.4-3+deb7u3_amd64.deb) ...
+Selecting previously unselected package uuid-dev.
+Unpacking uuid-dev (from .../uuid-dev_2.20.1-5.3_amd64.deb) ...
+Setting up libxen-4.1 (4.1.4-3+deb7u3) ...
+Setting up libxenstore3.0 (4.1.4-3+deb7u3) ...
+Setting up libxen-dev (4.1.4-3+deb7u3) ...
+Setting up uuid-dev (2.20.1-5.3) ...
+++ opam install xen-disk -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install xen-disk
 The following actions will be performed:
- - install   re.1.2.2                              [required by mirage]
+ - install   base-bytes.base                       [required by ocplib-endian]
  - install   optcomp.1.6                           [required by ocplib-endian]
  - install   obuild.0.1.1                          [required by xen-disk]
- - install   lwt.2.4.5                             [required by xenstore_transport, xen-block-driver, mirage-unix, vhd-format, xenstore]
- - install   ounit.2.0.0                           [required by xenstore, vhd-format]
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   ounit.2.0.0                           [required by vhd-format]
  - install   cmdliner.0.9.6                        [required by xen-disk]
+ - install   uuidm.0.9.5                           [required by vhd-format]
  - install   type_conv.112.01.00                   [required by sexplib]
- - install   ocplib-endian.0.4                     [required by cstruct]
- - install   xenctrl.0.9.26                        [required by xen-disk]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   lwt.2.4.6                             [required by xen-block-driver, mirage-unix, vhd-format]
  - install   sexplib.112.01.00                     [required by cstruct]
- - install   ipaddr.2.5.0                          [required by mirage]
- - install   cstruct.1.5.0                         [required by xenstore, vhd-format, mirage-unix, xen-block-driver]
+ - install   xenctrl.0.9.26                        [required by xen-disk]
+ - install   ipaddr.2.5.0                          [required by vhd-format]
+ - install   cstruct.1.5.0                         [required by xen-block-driver, mirage-unix, vhd-format]
  - install   xenstore.1.2.5                        [required by xen-disk]
- - install   vhd-format.0.0.2                      [required by xen-disk]
  - install   shared-memory-ring.1.1.0              [required by xen-block-driver, mirage-unix]
- - install   io-page.1.2.0                         [required by mirage-unix]
+ - install   io-page.1.2.0                         [required by vhd-format, mirage-unix]
  - install   xenstore_transport.0.9.4              [required by xen-disk]
- - install   mirage-types.2.0.1                    [required by mirage, mirage-clock-unix]
+ - install   mirage-types.2.0.1                    [required by vhd-format]
+ - install   vhd-format.0.7.1                      [required by xen-disk]
  - install   mirage-clock-unix.1.0.0               [required by mirage-unix]
- - install   mirage.1.2.0                          [required by xen-block-driver]
  - install   mirage-unix.2.0.1                     [required by xen-disk]
- - install   xen-block-driver.0.2.2                [required by xen-disk]
+ - install   xen-block-driver.0.2.5                [required by xen-disk]
  - install   xen-disk.1.0.3
-=== 23 to install ===
+=== 24 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
 [cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
 [io-page.1.2.0] Downloading https://github.com/mirage/io-page/archive/v1.2.0.tar.gz
 [ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
-[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
-[mirage.1.2.0] Downloading https://github.com/mirage/mirage/archive/v1.2.0.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
 [mirage-clock-unix.1.0.0] Downloading https://github.com/mirage/mirage-clock/archive/v1.0.0.tar.gz
 [mirage-types.2.0.1] Downloading https://github.com/mirage/mirage/archive/v2.0.1.tar.gz
 [mirage-unix.2.0.1] Downloading https://github.com/mirage/mirage-platform/archive/v2.0.1.tar.gz
 [obuild.0.1.1] Downloading https://github.com/ocaml-obuild/obuild/archive/obuild-v0.1.1.tar.gz
-[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
 [optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
-[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
 [sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
 [shared-memory-ring.1.1.0] Downloading https://github.com/mirage/shared-memory-ring/archive/1.1.0.tar.gz
 [type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
-[vhd-format.0.0.2] Downloading https://github.com/djs55/ocaml-vhd/archive/0.0.2.tar.gz
-[xen-block-driver.0.2.2] Downloading https://github.com/mirage/ocaml-xen-block-driver/archive/0.2.2.tar.gz
+[uuidm.0.9.5] Downloading http://erratique.ch/software/uuidm/releases/uuidm-0.9.5.tbz
+[vhd-format.0.7.1] Downloading https://github.com/djs55/ocaml-vhd/archive/v0.7.1.tar.gz
+[xen-block-driver.0.2.5] Downloading https://github.com/mirage/ocaml-xen-block-driver/archive/0.2.5.tar.gz
 [xen-disk.1.0.3] Downloading https://github.com/mirage/xen-disk/archive/1.0.3.tar.gz
 [xenctrl.0.9.26] Downloading https://github.com/xapi-project/ocaml-xen-lowlevel-libs/archive/0.9.26.tar.gz
 [xenstore.1.2.5] Downloading https://github.com/mirage/ocaml-xenstore/archive/1.2.5.tar.gz
 [xenstore_transport.0.9.4] Downloading https://github.com/djs55/ocaml-xenstore-clients/archive/0.9.4.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
 Building cmdliner.0.9.6:
   ocaml pkg/git.ml
   ocaml pkg/build.ml native=false native-dynlink=false
 Installing cmdliner.0.9.6.
-Building lwt.2.4.5:
-  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
-  make build
-  make install
-Installing lwt.2.4.5.
 Copying ~/.opam/repo/default/packages/obuild/obuild.0.1.1/files/obuild.install to ~/.opam/4.02.1/build/obuild.0.1.1/
 Building obuild.0.1.1:
   ./bootstrap
@@ -86,162 +96,16 @@ Building ounit.2.0.0:
   make build
   make install
 Installing ounit.2.0.0.
-Building re.1.2.2:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing re.1.2.2.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
 Building type_conv.112.01.00:
   make
   make install
 Installing type_conv.112.01.00.
-Building ocplib-endian.0.4:
-  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
+Copying ~/.opam/repo/default/packages/uuidm/uuidm.0.9.5/files/uuidm.install to ~/.opam/4.02.1/build/uuidm.0.9.5/
+Building uuidm.0.9.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing ocplib-endian.0.4.
-Building sexplib.112.01.00:
-  ./configure --enable-syntax
-  make
-  make install
-Installing sexplib.112.01.00.
-Building xenctrl.0.9.26:
-  ./configure
-  make
-  make install BINDIR=/home/opam/.opam/4.02.1/bin
-[ERROR] The compilation of xenctrl.0.9.26 failed.
-Removing xenctrl.0.9.26.
-  make uninstall
-Building cstruct.1.5.0:
-  ./configure --prefix /home/opam/.opam/4.02.1 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
-  make
-  make install
-Installing cstruct.1.5.0.
-Building ipaddr.2.5.0:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  make build
-  make install
-Installing ipaddr.2.5.0.
-Building io-page.1.2.0:
-  ./configure --prefix /home/opam/.opam/4.02.1
-  make
-  make install
-Installing io-page.1.2.0.
-Building shared-memory-ring.1.1.0:
-  make all
-  make install
-Installing shared-memory-ring.1.1.0.
-Building vhd-format.0.0.2:
-  make
-  make install BINDIR=/home/opam/.opam/4.02.1/bin
-Installing vhd-format.0.0.2.
-Building xenstore.1.2.5:
-  make all
-  make install
-Installing xenstore.1.2.5.
-Building mirage-types.2.0.1:
-  make install-types
-Installing mirage-types.2.0.1.
-Building xenstore_transport.0.9.4:
-  make all
-  make install
-Installing xenstore_transport.0.9.4.
-Building mirage.1.2.0:
-  ./configure --bindir /home/opam/.opam/4.02.1/bin
-  make
-  make install
-[ERROR] The compilation of mirage.1.2.0 failed.
-Removing mirage.1.2.0.
-  rm -f /home/opam/.opam/4.02.1/bin/mirage
-  ocamlfind remove mirage
-Building mirage-clock-unix.1.0.0:
-  make unix-build
-  make unix-install
-Installing mirage-clock-unix.1.0.0.
-Building mirage-unix.2.0.1:
-  make unix-build
-  make unix-install PREFIX=/home/opam/.opam/4.02.1
-Installing mirage-unix.2.0.1.
-
-
-#=== ERROR while installing mirage.1.2.0 ======================================#
-# opam-version         1.2.0
-# os                   linux
-# command              make
-# path                 /home/opam/.opam/4.02.1/build/mirage.1.2.0
-# compiler             4.02.1
-# exit-code            2
-# env-file             /home/opam/.opam/4.02.1/build/mirage.1.2.0/mirage-5374-487c34.env
-# stdout-file          /home/opam/.opam/4.02.1/build/mirage.1.2.0/mirage-5374-487c34.out
-# stderr-file          /home/opam/.opam/4.02.1/build/mirage.1.2.0/mirage-5374-487c34.err
-### stdout ###
-# ...[truncated]
-# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -a lib/mirage_misc.cmx lib/mirage.cmx -o lib/mirage.cmxa
-# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -shared lib/mirage.cmxa lib/mirage_misc.cmx lib/mirage.cmx -o lib/mirage.cmxs
-# /home/opam/.opam/4.02.1/bin/ocamlfind ocamldep -package cmdliner -package dynlink -package ipaddr -package lwt -package mirage-types -package mirage-types.lwt -package unix -modules lib/main.ml > lib/main.ml.depends
-# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -I lib -package cmdliner -package dynlink -package ipaddr -package lwt -package mirage-types -package mirage-types.lwt -package unix -I lib -o lib/main.cmo lib/main.ml
-# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -principal -I lib -package cmdliner -package dynlink -package ipaddr -package lwt -package mirage-types -package mirage-types.lwt -package unix -I lib -o lib/main.cmx lib/main.ml
-# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package cmdliner -package dynlink -package ipaddr -package lwt -package mirage-types -package mirage-types.lwt -package unix lib/mirage.cmxa lib/main.cmx -o lib/main.native
-# + /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -g -linkpkg -package cmdliner -package dynlink -package ipaddr -package lwt -package mirage-types -package mirage-types.lwt -package unix lib/mirage.cmxa lib/main.cmx -o lib/main.native
-# File "_none_", line 1:
-# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
-# Command exited with code 2.
-### stderr ###
-# ...[truncated]
-# Warning 3: deprecated: Lazy.lazy_from_fun
-# Use Lazy.from_fun instead.
-# File "setup.ml", line 247, characters 8-26:
-# Warning 3: deprecated: String.set
-# Use Bytes.set instead.
-# File "setup.ml", line 2502, characters 6-24:
-# Warning 3: deprecated: Lazy.lazy_from_fun
-# Use Lazy.from_fun instead.
-# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' lib/mirage.cma lib/mirage.cmxa lib/mirage.a lib/mirage.cmxs lib/main.native -tag debug -classic-display' terminated with error code 10")
-# make: *** [build] Error 1
-
-
-#=== ERROR while installing xenctrl.0.9.26 ====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure
-# path                 /home/opam/.opam/4.02.1/build/xenctrl.0.9.26
-# compiler             4.02.1
-# exit-code            127
-# env-file             /home/opam/.opam/4.02.1/build/xenctrl.0.9.26/xenctrl-3310-03b1a4.env
-# stdout-file          /home/opam/.opam/4.02.1/build/xenctrl.0.9.26/xenctrl-3310-03b1a4.out
-# stderr-file          /home/opam/.opam/4.02.1/build/xenctrl.0.9.26/xenctrl-3310-03b1a4.err
-### stderr ###
-# File "configure.ml", line 1:
-# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
-# ./configure: line 12: /tmp/tmp.JfRgMDoZMr/configure: No such file or directory
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   sexplib.112.01.00
- - install   ocplib-endian.0.4
- - install   type_conv.112.01.00
- - install   shared-memory-ring.1.1.0
- - install   xenstore.1.2.5
- - install   xenstore_transport.0.9.4
- - install   cmdliner.0.9.6
- - install   cstruct.1.5.0
- - install   io-page.1.2.0
- - install   ipaddr.2.5.0
- - install   ounit.2.0.0
- - install   mirage-clock-unix.1.0.0
- - install   mirage-unix.2.0.1
- - install   lwt.2.4.5
- - install   obuild.0.1.1
- - install   optcomp.1.6
- - install   re.1.2.2
- - install   vhd-format.0.0.2
- - install   mirage-types.2.0.1
-The following failed
- - install   mirage.1.2.0
- - install   xenctrl.0.9.26
-Due to the errors, the following have been cancelled
- - install   xen-block-driver.0.2.2
- - install   xen-disk.1.0.3
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108091642.export"
