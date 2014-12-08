@@ -1,0 +1,19 @@
+++ opam install rml -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install rml
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   rml.1.09.03
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[rml.1.09.03] Downloading http://reactiveml.org/distrib/rml-1.09.03-2014-06-21.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building rml.1.09.03:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing rml.1.09.03.
