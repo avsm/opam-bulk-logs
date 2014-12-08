@@ -1,9 +1,14 @@
-++ opam install indexmap -e centos,centos-7
+++ opam install indexmap -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install indexmap -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install indexmap
-CentOS 7 depexts:
 The following actions will be performed:
  - install   indexmap.0.0.3
 === 1 to install ===
