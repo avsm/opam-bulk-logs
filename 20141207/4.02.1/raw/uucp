@@ -1,0 +1,25 @@
+++ opam install uucp -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install uucp -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install uucp
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   base-bytes.base                       [required by uucp]
+ - install   uucp.0.9.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[uucp.0.9.0] Downloading http://erratique.ch/software/uucp/releases/uucp-0.9.0.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building uucp.0.9.0:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing uucp.0.9.0.
