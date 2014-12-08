@@ -1,9 +1,14 @@
-++ opam install cconv -e centos,centos-7
+++ opam install cconv -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install cconv -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install cconv
+Debian srcexts:
 The following actions will be performed:
  - install   cconv.0.2
 === 1 to install ===
