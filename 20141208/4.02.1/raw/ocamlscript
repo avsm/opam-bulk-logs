@@ -1,0 +1,19 @@
+++ opam install ocamlscript -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install ocamlscript
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   ocamlscript.2.0.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamlscript.2.0.2] Downloading http://mjambon.com/ocamlscript-2.0.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/ocamlscript/ocamlscript.2.0.2/files/ocamlscript.install to ~/.opam/4.02.1/build/ocamlscript.2.0.2/
+Building ocamlscript.2.0.2:
+  make
+  make install
+Installing ocamlscript.2.0.2.
