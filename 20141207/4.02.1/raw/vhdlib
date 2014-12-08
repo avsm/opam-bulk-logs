@@ -1,0 +1,90 @@
+++ opam install vhdlib -e ubuntu
++ depext='blktap-dev uuid-dev'
++ echo Ubuntu depexts: blktap-dev uuid-dev
+Ubuntu depexts: blktap-dev uuid-dev
++ '[' 'blktap-dev uuid-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y blktap-dev uuid-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libuuid1_2.20.1-5.1ubuntu20.3_amd64.deb ...
+Unpacking libuuid1:amd64 (2.20.1-5.1ubuntu20.3) over (2.20.1-5.1ubuntu20.2) ...
+Setting up libuuid1:amd64 (2.20.1-5.1ubuntu20.3) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.3) ...
+Selecting previously unselected package libvhd0.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libvhd0_2.0.90-2ubuntu1_amd64.deb ...
+Unpacking libvhd0 (2.0.90-2ubuntu1) ...
+Selecting previously unselected package libvhdio-2.0.90.
+Preparing to unpack .../libvhdio-2.0.90_2.0.90-2ubuntu1_amd64.deb ...
+Unpacking libvhdio-2.0.90 (2.0.90-2ubuntu1) ...
+Selecting previously unselected package libblktapctl0.
+Preparing to unpack .../libblktapctl0_2.0.90-2ubuntu1_amd64.deb ...
+Unpacking libblktapctl0 (2.0.90-2ubuntu1) ...
+Selecting previously unselected package blktap-dev.
+Preparing to unpack .../blktap-dev_2.0.90-2ubuntu1_amd64.deb ...
+Unpacking blktap-dev (2.0.90-2ubuntu1) ...
+Selecting previously unselected package uuid-dev.
+Preparing to unpack .../uuid-dev_2.20.1-5.1ubuntu20.3_amd64.deb ...
+Unpacking uuid-dev (2.20.1-5.1ubuntu20.3) ...
+Setting up libvhd0 (2.0.90-2ubuntu1) ...
+Setting up libvhdio-2.0.90 (2.0.90-2ubuntu1) ...
+Setting up libblktapctl0 (2.0.90-2ubuntu1) ...
+Setting up blktap-dev (2.0.90-2ubuntu1) ...
+Setting up uuid-dev (2.20.1-5.1ubuntu20.3) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.3) ...
+++ opam install vhdlib -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install vhdlib
+The following actions will be performed:
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   xmlm.1.2.0                            [required by rpc]
+ - install   type_conv.112.01.00                   [required by rpc]
+ - install   lwt.2.4.6                             [required by rpc]
+ - install   rpc.1.5.1                             [required by vhdlib]
+ - install   vhdlib.0.9.1
+=== 6 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+[rpc.1.5.1] Downloading https://github.com/mirage/ocaml-rpc/archive/1.5.1.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[vhdlib.0.9.1] Downloading https://github.com/xapi-project/libvhd/archive/libvhd-0.9.1.tar.gz
+[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building rpc.1.5.1:
+  make
+  make install
+Installing rpc.1.5.1.
+Building vhdlib.0.9.1:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing vhdlib.0.9.1.
