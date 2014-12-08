@@ -1,7 +1,12 @@
-++ opam install bolt -e centos,centos-7
+++ opam install bolt -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install bolt -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install bolt
 The following actions will be performed:
