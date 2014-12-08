@@ -1,0 +1,83 @@
+++ opam install imap -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install imap
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   cryptokit.1.9                         [required by imap]
+ - install   uint.1.1.5                            [required by imap]
+ - install   uutf.0.9.3                            [required by imap]
+ - install   imap.0.20.0
+=== 4 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[imap.0.20.0] Downloading https://github.com/nojb/ocaml-imap/archive/v0.20.0.tar.gz
+[uint.1.1.5] Downloading https://forge.ocamlcore.org/frs/download.php/1487/ocaml-uint-1.1.5.tar.gz
+[uutf.0.9.3] Downloading http://erratique.ch/software/uutf/releases/uutf-0.9.3.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cryptokit.1.9:
+  make
+  make install
+[ERROR] The compilation of cryptokit.1.9 failed.
+Removing cryptokit.1.9.
+  ocamlfind remove cryptokit
+Building uint.1.1.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uint.1.1.5.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+
+
+#=== ERROR while installing cryptokit.1.9 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/cryptokit.1.9
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/cryptokit.1.9/cryptokit-60-05296d.env
+# stdout-file          /home/opam/.opam/4.02.1/build/cryptokit.1.9/cryptokit-60-05296d.out
+# stderr-file          /home/opam/.opam/4.02.1/build/cryptokit.1.9/cryptokit-60-05296d.err
+### stdout ###
+# ...[truncated]
+# mv stubs-misc.o src/stubs-misc.o
+# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-rng.c
+# mv stubs-rng.o src/stubs-rng.o
+# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
+# + ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
+# src/stubs-zlib.c:19:18: fatal error: zlib.h: No such file or directory
+#  #include <zlib.h>
+#                   ^
+# compilation terminated.
+# Command exited with code 2.
+### stderr ###
+# ...[truncated]
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "/home/gildor/programmation/oasis/src/oasis/OASISFindlib.ml", line 256, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' src/libcryptokit_stubs.a src/dllcryptokit_stubs.so src/cryptokit.cma src/cryptokit.cmxa src/cryptokit.a src/cryptokit.cmxs -tag debug -classic-display' terminated with error code 10")
+# make: *** [build] Error 1
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   uutf.0.9.3
+ - install   uint.1.1.5
+The following failed
+ - install   cryptokit.1.9
+Due to the errors, the following have been cancelled
+ - install   imap.0.20.0
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108063829.export"
