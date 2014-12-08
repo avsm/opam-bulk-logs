@@ -1,7 +1,12 @@
-++ opam install root1d -e centos,centos-7
+++ opam install root1d -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install root1d -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install root1d
 The following actions will be performed:
