@@ -1,0 +1,57 @@
+++ opam install flowtype -e centos,centos-7
++ depext=elfutils-libelf-devel
++ echo CentOS 7 depexts: elfutils-libelf-devel
++ '[' elfutils-libelf-devel '!=' '' ']'
++ sudo yum install -y elfutils-libelf-devel
+CentOS 7 depexts: elfutils-libelf-devel
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.sov.uk.goscomb.net
+ * extras: mirrors.coreix.net
+ * updates: mirrors.vooservers.com
+Resolving Dependencies
+--> Running transaction check
+---> Package elfutils-libelf-devel.x86_64 0:0.158-3.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                     Arch         Version              Repository  Size
+================================================================================
+Installing:
+ elfutils-libelf-devel       x86_64       0.158-3.el7          base        34 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 34 k
+Installed size: 26 k
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : elfutils-libelf-devel-0.158-3.el7.x86_64                     1/1 
+  Verifying  : elfutils-libelf-devel-0.158-3.el7.x86_64                     1/1 
+
+Installed:
+  elfutils-libelf-devel.x86_64 0:0.158-3.el7                                    
+
+Complete!
++ opam install flowtype
+The following actions will be performed:
+ - install   base-bytes.base                       [required by flowtype]
+ - install   flowtype.0.1.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[flowtype.0.1.0] Downloading https://github.com/facebook/flow/archive/v0.1.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Copying ~/.opam/repo/default/packages/flowtype/flowtype.0.1.0/files/flowtype.install to ~/.opam/4.02.1/build/flowtype.0.1.0/
+Building flowtype.0.1.0:
+  make
+Installing flowtype.0.1.0.
