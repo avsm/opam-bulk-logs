@@ -1,0 +1,19 @@
+++ opam install stringext -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install stringext
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   stringext.1.1.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[stringext.1.1.0] Downloading https://github.com/rgrinberg/stringext/archive/v1.1.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building stringext.1.1.0:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing stringext.1.1.0.
