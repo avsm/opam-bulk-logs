@@ -93,3 +93,9 @@ Building oasis.0.4.5:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing oasis.0.4.5.
+Building mustache.1.0.0:
+  make conf-no-tests
+  make build
+  make install
+Installing mustache.1.0.0.
