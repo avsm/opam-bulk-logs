@@ -1,7 +1,12 @@
-++ opam install otfm -e centos,centos-7
+++ opam install otfm -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install otfm -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install otfm
 The following actions will be performed:
