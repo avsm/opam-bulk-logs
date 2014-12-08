@@ -1,9 +1,24 @@
-++ opam install alsa -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install alsa -e debian
++ depext=libasound2-dev
+Debian depexts: libasound2-dev
++ echo Debian depexts: libasound2-dev
++ '[' libasound2-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libasound2-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libasound2:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libasound2:amd64 (from .../libasound2_1.0.25-4_amd64.deb) ...
+Selecting previously unselected package libasound2-dev:amd64.
+Unpacking libasound2-dev:amd64 (from .../libasound2-dev_1.0.25-4_amd64.deb) ...
+Setting up libasound2:amd64 (1.0.25-4) ...
+Setting up libasound2-dev:amd64 (1.0.25-4) ...
+++ opam install alsa -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install alsa
-CentOS 7 depexts:
 The following actions will be performed:
  - install   alsa.0.2.1
 === 1 to install ===
@@ -16,33 +31,4 @@ Building alsa.0.2.1:
   ./configure --prefix /home/opam/.opam/4.02.1
   make
   make install
-[ERROR] The compilation of alsa.0.2.1 failed.
-Removing alsa.0.2.1.
-  ocamlfind remove alsa
-
-
-#=== ERROR while installing alsa.0.2.1 ========================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --prefix /home/opam/.opam/4.02.1
-# path                 /home/opam/.opam/4.02.1/build/alsa.0.2.1
-# compiler             4.02.1
-# exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/alsa.0.2.1/alsa-28-5f1023.env
-# stdout-file          /home/opam/.opam/4.02.1/build/alsa.0.2.1/alsa-28-5f1023.out
-# stderr-file          /home/opam/.opam/4.02.1/build/alsa.0.2.1/alsa-28-5f1023.err
-### stdout ###
-# ...[truncated]
-# checking caml/threads.h usability... no
-# checking caml/threads.h presence... no
-# checking for caml/threads.h... no
-# checking for gcc... (cached) gcc
-# checking whether we are using the GNU C compiler... (cached) yes
-# checking whether gcc accepts -g... (cached) yes
-# checking for gcc option to accept ISO C89... (cached) none needed
-# checking for ar... ar
-# checking for pkg-config... /usr/bin/pkg-config
-# checking pkg-config is at least version 0.9.0... yes
-### stderr ###
-# configure: error: libasound2 not found
-
+Installing alsa.0.2.1.
