@@ -1,9 +1,14 @@
-++ opam install ocamlyices -e centos,centos-7
+++ opam install ocamlyices -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install ocamlyices -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ocamlyices
-CentOS 7 depexts:
 The following actions will be performed:
  - install   camlidl.1.05                          [required by ocamlyices]
  - install   ocamlyices.0.7.1
@@ -46,9 +51,9 @@ The following failed
 # path                 /home/opam/.opam/4.02.1/build/ocamlyices.0.7.1
 # compiler             4.02.1
 # exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/ocamlyices.0.7.1/ocamlyices-183-1872ec.env
-# stdout-file          /home/opam/.opam/4.02.1/build/ocamlyices.0.7.1/ocamlyices-183-1872ec.out
-# stderr-file          /home/opam/.opam/4.02.1/build/ocamlyices.0.7.1/ocamlyices-183-1872ec.err
+# env-file             /home/opam/.opam/4.02.1/build/ocamlyices.0.7.1/ocamlyices-317-ad8886.env
+# stdout-file          /home/opam/.opam/4.02.1/build/ocamlyices.0.7.1/ocamlyices-317-ad8886.out
+# stderr-file          /home/opam/.opam/4.02.1/build/ocamlyices.0.7.1/ocamlyices-317-ad8886.err
 ### stdout ###
 # ...[truncated]
 # checking for memory.h... yes
@@ -75,4 +80,4 @@ The following failed
 #   
 
 
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108073503.export"
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108130111.export"
