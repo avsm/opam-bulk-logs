@@ -1,7 +1,12 @@
-++ opam install headache -e centos,centos-7
+++ opam install headache -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install headache -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install headache
 The following actions will be performed:
@@ -18,4 +23,3 @@ Building headache.1.03:
   ./configure --bindir /home/opam/.opam/4.02.1/bin
   make
   make install
-Installing headache.1.03.
