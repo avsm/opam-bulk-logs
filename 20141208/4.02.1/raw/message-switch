@@ -71,3 +71,105 @@ Installing ounit.2.0.0.
 Building ppx_tools.0.99.2:
   make all
   make install
+Installing ppx_tools.0.99.2.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.02.1/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing ssl.0.4.7.
+Building stringext.1.1.0:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing stringext.1.1.0.
+Building syslog.1.4:
+  make reallyall
+  make install
+Installing syslog.1.4.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building rpc.1.5.1:
+  make
+  make install
+Installing rpc.1.5.1.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Building cohttp.0.10.1:
+  make PREFIX=/home/opam/.opam/4.02.1
+  make PREFIX=/home/opam/.opam/4.02.1 install
+Installing cohttp.0.10.1.
+Building message-switch.0.10.4:
+  ./configure --bindir /home/opam/.opam/4.02.1/bin
+  make
+  make install
+[ERROR] The compilation of message-switch.0.10.4 failed.
+Removing message-switch.0.10.4.
+  ocamlfind remove message_switch
+
+
+#=== ERROR while installing message-switch.0.10.4 =============================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure --bindir /home/opam/.opam/4.02.1/bin
+# path                 /home/opam/.opam/4.02.1/build/message-switch.0.10.4
+# compiler             4.02.1
+# exit-code            127
+# env-file             /home/opam/.opam/4.02.1/build/message-switch.0.10.4/message-switch-6519-d6d332.env
+# stdout-file          /home/opam/.opam/4.02.1/build/message-switch.0.10.4/message-switch-6519-d6d332.out
+# stderr-file          /home/opam/.opam/4.02.1/build/message-switch.0.10.4/message-switch-6519-d6d332.err
+### stderr ###
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# ./configure: line 12: /tmp/configure.43ejD/configure: No such file or directory
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.112.01.00
+ - install   cohttp.0.10.1
+ - install   type_conv.112.01.00
+ - install   stringext.1.1.0
+ - install   syslog.1.4
+ - install   cmdliner.0.9.6
+ - install   re.1.2.2
+ - install   xmlm.1.2.0
+ - install   ssl.0.4.7
+ - install   rpc.1.5.1
+ - install   uri.1.7.2
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   fieldslib.109.20.03
+ - install   ppx_tools.0.99.2
+The following failed
+ - install   message-switch.0.10.4
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108122525.export"

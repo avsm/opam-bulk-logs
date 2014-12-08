@@ -1,7 +1,12 @@
-++ opam install meta_conv -e centos,centos-7
+++ opam install meta_conv -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install meta_conv -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install meta_conv
 The following actions will be performed:
