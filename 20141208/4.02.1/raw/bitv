@@ -1,7 +1,12 @@
-++ opam install bitv -e centos,centos-7
+++ opam install bitv -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install bitv -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install bitv
 The following actions will be performed:
