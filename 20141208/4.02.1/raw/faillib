@@ -22,3 +22,8 @@ The following actions will be performed:
 Building herelib.109.35.02:
   make
   make install
+Installing herelib.109.35.02.
+Building faillib.111.17.00:
+  make
+  make install
+Installing faillib.111.17.00.
