@@ -1,0 +1,29 @@
+++ opam install dyntype -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install dyntype -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install dyntype
+The following actions will be performed:
+ - install   type_conv.112.01.00                   [required by dyntype]
+ - install   dyntype.0.9.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[dyntype.0.9.0] Downloading https://github.com/mirage/dyntype/archive/dyntype-0.9.0.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building dyntype.0.9.0:
+  make
+  make install
+Installing dyntype.0.9.0.
