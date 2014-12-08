@@ -1,0 +1,208 @@
+++ opam install xe-unikernel-upload -e ubuntu
++ depext=libssl-dev
++ echo Ubuntu depexts: libssl-dev
+Ubuntu depexts: libssl-dev
++ '[' libssl-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libssl-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../libssl-dev_1.0.1f-1ubuntu2.7_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.0.1f-1ubuntu2.7) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../libssl-doc_1.0.1f-1ubuntu2.7_all.deb ...
+Unpacking libssl-doc (1.0.1f-1ubuntu2.7) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up libssl-dev:amd64 (1.0.1f-1ubuntu2.7) ...
+Setting up libssl-doc (1.0.1f-1ubuntu2.7) ...
+++ opam install xe-unikernel-upload -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install xe-unikernel-upload
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   base-bytes.base                       [required by ocplib-endian]
+ - install   re.1.2.2                              [required by xen-api-client, fat-filesystem, mbr-format]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   stringext.1.0.0                       [required by cohttp]
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   ounit.2.0.0                           [required by xen-api-client, mbr-format]
+ - install   ssl.0.4.7                             [required by xen-api-client]
+ - install   xmlm.1.2.0                            [required by xen-api-client]
+ - install   cmdliner.0.9.6                        [required by xe-unikernel-upload]
+ - install   type_conv.112.01.00                   [required by rpc, sexplib]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   lwt.2.4.6                             [required by xe-unikernel-upload]
+ - install   sexplib.112.01.00                     [required by cstruct]
+ - install   fieldslib.109.20.03                   [required by cohttp]
+ - install   rpc.1.5.1                             [required by xen-api-client]
+ - install   uri.1.7.2                             [required by xen-api-client]
+ - install   ipaddr.2.5.0                          [required by mbr-format]
+ - install   cstruct.1.5.0                         [required by xe-unikernel-upload]
+ - install   io-page.1.1.1                         [required by xe-unikernel-upload]
+ - install   mirage-types.2.0.1                    [required by mbr-format, fat-filesystem]
+ - install   mirage-block-unix.1.2.1               [required by fat-filesystem]
+ - install   mbr-format.0.2                        [required by xe-unikernel-upload]
+ - install   conduit.0.6.1                         [required by cohttp]
+ - install   fat-filesystem.0.10.1                 [required by xe-unikernel-upload]
+ - install   cohttp.0.12.0                         [required by xen-api-client]
+ - install   xen-api-client.0.9.8                  [required by xe-unikernel-upload]
+ - install   xe-unikernel-upload.0.4
+=== 27 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cohttp.0.12.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.12.0.tar.gz
+[conduit.0.6.1] Downloading https://github.com/mirage/ocaml-conduit/archive/v0.6.1.tar.gz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[fat-filesystem.0.10.1] Downloading https://github.com/mirage/ocaml-fat/archive/0.10.1.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[io-page.1.1.1] Downloading https://github.com/mirage/io-page/archive/v1.1.1.tar.gz
+[ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[mbr-format.0.2] Downloading https://github.com/mirage/ocaml-mbr/archive/v0.2.tar.gz
+[mirage-block-unix.1.2.1] Downloading https://github.com/mirage/mirage-block-unix/archive/1.2.1.tar.gz
+[mirage-types.2.0.1] Downloading https://github.com/mirage/mirage/archive/v2.0.1.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[rpc.1.5.1] Downloading https://github.com/mirage/ocaml-rpc/archive/1.5.1.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[stringext.1.0.0] Downloading https://github.com/rgrinberg/stringext/archive/v1.0.0.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[uri.1.7.2] Downloading https://github.com/mirage/ocaml-uri/archive/v1.7.2.tar.gz
+[xe-unikernel-upload.0.4] Downloading https://github.com/djs55/xe-unikernel-upload/archive/v0.4.tar.gz
+[xen-api-client.0.9.8] Downloading https://github.com/xen-org/xen-api-client/archive/0.9.8.tar.gz
+[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing cmdliner.0.9.6.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.02.1/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing ssl.0.4.7.
+Building stringext.1.0.0:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing stringext.1.0.0.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building ocplib-endian.0.7:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.7.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.02.1 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Building ipaddr.2.5.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make build
+  make install
+Installing ipaddr.2.5.0.
+Building rpc.1.5.1:
+  make
+  make install
+Installing rpc.1.5.1.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Building io-page.1.1.1:
+  make
+  make install
+Installing io-page.1.1.1.
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+Building conduit.0.6.1:
+  make
+  make install
+Installing conduit.0.6.1.
+Building mbr-format.0.2:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing mbr-format.0.2.
+Building mirage-block-unix.1.2.1:
+  make
+  make install
+Installing mirage-block-unix.1.2.1.
+Building cohttp.0.12.0:
+  make PREFIX=/home/opam/.opam/4.02.1
+  make PREFIX=/home/opam/.opam/4.02.1 install
+Installing cohttp.0.12.0.
+Building fat-filesystem.0.10.1:
+  ./configure --bindir /home/opam/.opam/4.02.1/bin
+  make
+  make install
+Installing fat-filesystem.0.10.1.
+Building xen-api-client.0.9.8:
+  make
+  make install
+Installing xen-api-client.0.9.8.
+Building xe-unikernel-upload.0.4:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin MANDIR=/home/opam/.opam/4.02.1/man/man1
+Installing xe-unikernel-upload.0.4.
