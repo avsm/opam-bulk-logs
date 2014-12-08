@@ -140,3 +140,15 @@ Installing cppo.1.1.2.
 Building cryptokit.1.9:
   make
   make install
+Installing cryptokit.1.9.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Building extlib-compat.1.6.1:
+  make build install
+Installing extlib-compat.1.6.1.
+Building ocurl.0.7.2:
+  ./configure
+  make
+  make install
