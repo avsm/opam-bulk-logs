@@ -1,19 +1,6 @@
-++ opam install xstrp4 -e centos,centos-7
+++ opam install xstrp4 -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
-+ opam install xstrp4
-The following actions will be performed:
- - install   xstrp4.1.8
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[xstrp4.1.8] Downloading http://download.camlcity.org/download/xstrp4-1.8.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building xstrp4.1.8:
-  ./configure
-  make all
-  make install
-Installing xstrp4.1.8.
+++ opam install xstrp4 -e source,linux
