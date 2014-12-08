@@ -1,1 +1,19 @@
 ++ opam install odbc -e debian
++ depext=unixodbc-dev
++ echo Debian depexts: unixodbc-dev
+Debian depexts: unixodbc-dev
++ '[' unixodbc-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y unixodbc-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libltdl7:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libltdl7:amd64 (from .../libltdl7_2.4.2-1.1_amd64.deb) ...
+Selecting previously unselected package libodbc1:amd64.
+Unpacking libodbc1:amd64 (from .../libodbc1_2.2.14p2-5_amd64.deb) ...
+Selecting previously unselected package odbcinst.
+Unpacking odbcinst (from .../odbcinst_2.2.14p2-5_amd64.deb) ...
+Selecting previously unselected package odbcinst1debian2:amd64.
+Unpacking odbcinst1debian2:amd64 (from .../odbcinst1debian2_2.2.14p2-5_amd64.deb) ...
+Selecting previously unselected package autotools-dev.
+Unpacking autotools-dev (from .../autotools-dev_20120608.1_all.deb) ...
