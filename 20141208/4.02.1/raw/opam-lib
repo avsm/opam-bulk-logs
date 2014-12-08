@@ -4,3 +4,38 @@
 + '[' '' '!=' '' ']'
 ++ opam install opam-lib -e source,linux
 Debian depexts:
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install opam-lib
+Debian srcexts:
+The following actions will be performed:
+ - install   re.1.2.2                              [required by opam-lib]
+ - install   ocamlgraph.1.8.5                      [required by opam-lib]
+ - install   cmdliner.0.9.6                        [required by opam-lib]
+ - install   extlib-compat.1.6.1                   [required by dose, cudf]
+ - install   uutf.0.9.3                            [required by jsonm]
+ - install   cudf.0.7                              [required by opam-lib]
+ - install   jsonm.0.9.1                           [required by opam-lib]
+ - install   dose.3.2.2+opam                       [required by opam-lib]
+ - install   opam-lib.1.2.0
+=== 9 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cudf.0.7] Downloading https://gforge.inria.fr/frs/download.php/33593/cudf-0.7.tar.gz
+[dose.3.2.2+opam] Downloading https://gforge.inria.fr/frs/download.php/file/33677/dose3-3.2.2.tar.gz
+[extlib-compat.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+[jsonm.0.9.1] Downloading http://erratique.ch/software/jsonm/releases/jsonm-0.9.1.tbz
+[ocamlgraph.1.8.5] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.5.tar.gz
+[opam-lib.1.2.0] Downloading https://github.com/ocaml/opam/archive/1.2.0.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[uutf.0.9.3] Downloading http://erratique.ch/software/uutf/releases/uutf-0.9.3.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Building extlib-compat.1.6.1:
+  make build install
