@@ -1,0 +1,29 @@
+++ opam install irc-client -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install irc-client -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install irc-client
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by irc-client]
+ - install   irc-client.0.2.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[irc-client.0.2.0] Downloading https://github.com/johnelse/ocaml-irc-client/archive/0.2.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building irc-client.0.2.0:
+  make
+  make PREFIX=/home/opam/.opam/4.02.1 install
+Installing irc-client.0.2.0.
