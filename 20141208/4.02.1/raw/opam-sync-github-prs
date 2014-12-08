@@ -1,0 +1,179 @@
+++ opam install opam-sync-github-prs -e centos,centos-7
++ depext=openssl-devel
+CentOS 7 depexts: openssl-devel
++ echo CentOS 7 depexts: openssl-devel
++ '[' openssl-devel '!=' '' ']'
++ sudo yum install -y openssl-devel
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: anorien.csc.warwick.ac.uk
+ * extras: anorien.csc.warwick.ac.uk
+ * updates: mirrors.coreix.net
+Resolving Dependencies
+--> Running transaction check
+---> Package openssl-devel.x86_64 1:1.0.1e-34.el7_0.6 will be installed
+--> Processing Dependency: zlib-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Running transaction check
+---> Package krb5-devel.x86_64 0:1.11.3-49.el7 will be installed
+--> Processing Dependency: libverto-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libselinux-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libcom_err-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+---> Package zlib-devel.x86_64 0:1.2.7-13.el7 will be installed
+--> Running transaction check
+---> Package keyutils-libs-devel.x86_64 0:1.5.8-3.el7 will be installed
+---> Package libcom_err-devel.x86_64 0:1.42.9-4.el7 will be installed
+---> Package libselinux-devel.x86_64 0:2.2.2-6.el7 will be installed
+--> Processing Dependency: libsepol-devel >= 2.1.9-1 for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libpcre) for package: libselinux-devel-2.2.2-6.el7.x86_64
+---> Package libverto-devel.x86_64 0:0.2.5-4.el7 will be installed
+--> Running transaction check
+---> Package libsepol-devel.x86_64 0:2.1.9-3.el7 will be installed
+---> Package pcre-devel.x86_64 0:8.32-12.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                 Arch       Version                   Repository   Size
+================================================================================
+Installing:
+ openssl-devel           x86_64     1:1.0.1e-34.el7_0.6       updates     1.2 M
+Installing for dependencies:
+ keyutils-libs-devel     x86_64     1.5.8-3.el7               base         37 k
+ krb5-devel              x86_64     1.11.3-49.el7             base        611 k
+ libcom_err-devel        x86_64     1.42.9-4.el7              base         30 k
+ libselinux-devel        x86_64     2.2.2-6.el7               base        174 k
+ libsepol-devel          x86_64     2.1.9-3.el7               base         71 k
+ libverto-devel          x86_64     0.2.5-4.el7               base         12 k
+ pcre-devel              x86_64     8.32-12.el7               base        477 k
+ zlib-devel              x86_64     1.2.7-13.el7              base         49 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+8 Dependent packages)
+
+Total download size: 2.6 M
+Installed size: 5.7 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              1.8 MB/s | 2.6 MB  00:01     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : keyutils-libs-devel-1.5.8-3.el7.x86_64                       1/9 
+  Installing : pcre-devel-8.32-12.el7.x86_64                                2/9 
+  Installing : zlib-devel-1.2.7-13.el7.x86_64                               3/9 
+  Installing : libsepol-devel-2.1.9-3.el7.x86_64                            4/9 
+  Installing : libselinux-devel-2.2.2-6.el7.x86_64                          5/9 
+  Installing : libverto-devel-0.2.5-4.el7.x86_64                            6/9 
+  Installing : libcom_err-devel-1.42.9-4.el7.x86_64                         7/9 
+  Installing : krb5-devel-1.11.3-49.el7.x86_64                              8/9 
+  Installing : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     9/9 
+  Verifying  : libcom_err-devel-1.42.9-4.el7.x86_64                         1/9 
+  Verifying  : libselinux-devel-2.2.2-6.el7.x86_64                          2/9 
+  Verifying  : libverto-devel-0.2.5-4.el7.x86_64                            3/9 
+  Verifying  : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     4/9 
+  Verifying  : libsepol-devel-2.1.9-3.el7.x86_64                            5/9 
+  Verifying  : krb5-devel-1.11.3-49.el7.x86_64                              6/9 
+  Verifying  : zlib-devel-1.2.7-13.el7.x86_64                               7/9 
+  Verifying  : pcre-devel-8.32-12.el7.x86_64                                8/9 
+  Verifying  : keyutils-libs-devel-1.5.8-3.el7.x86_64                       9/9 
+
+Installed:
+  openssl-devel.x86_64 1:1.0.1e-34.el7_0.6                                      
+
+Dependency Installed:
+  keyutils-libs-devel.x86_64 0:1.5.8-3.el7                                      
+  krb5-devel.x86_64 0:1.11.3-49.el7                                             
+  libcom_err-devel.x86_64 0:1.42.9-4.el7                                        
+  libselinux-devel.x86_64 0:2.2.2-6.el7                                         
+  libsepol-devel.x86_64 0:2.1.9-3.el7                                           
+  libverto-devel.x86_64 0:0.2.5-4.el7                                           
+  pcre-devel.x86_64 0:8.32-12.el7                                               
+  zlib-devel.x86_64 0:1.2.7-13.el7                                              
+
+Complete!
++ opam install opam-sync-github-prs
+The following actions will be performed:
+ - install   herelib.109.35.02                     [required by core]
+ - install   re.1.2.2                              [required by cohttp]
+ - install   ounit.2.0.0                           [required by cohttp]
+ - install   ssl.0.4.7                             [required by github]
+ - install   cmdliner.0.9.6                        [required by github]
+ - install   menhir.20140422                       [required by atd]
+ - install   react.1.2.0                           [required by lambda-term]
+ - install   camomile.0.8.5                        [required by zed]
+ - install   type_conv.112.01.00                   [required by custom_printf, bin_prot, comparelib]
+ - install   pipebang.110.01.00                    [required by core]
+ - install   easy-format.1.0.2                     [required by yojson, atd, biniou]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   lwt.2.4.5                             [required by opam-sync-github-prs]
+ - install   zed.1.3                               [required by lambda-term]
+ - install   variantslib.109.15.03                 [required by core]
+ - install   sexplib.112.01.00                     [required by core]
+ - install   pa_ounit.111.28.00                    [required by core]
+ - install   fieldslib.109.20.03                   [required by core]
+ - install   enumerate.111.08.00                   [required by core]
+ - install   comparelib.109.60.00                  [required by core]
+ - install   bin_prot.112.01.00                    [required by core]
+ - install   biniou.1.0.9                          [required by atdgen]
+ - install   atd.1.1.2                             [required by atdgen]
+ - install   lambda-term.1.7                       [required by github]
+ - install   uri.1.4.0                             [required by github]
+ - install   pa_bench.111.28.00                    [required by core]
+ - install   custom_printf.112.01.00               [required by core]
+ - install   pa_test.111.08.00                     [required by core]
+ - install   typerep.111.17.00                     [required by core_kernel]
+ - install   yojson.1.1.8                          [required by github]
+ - install   cohttp.0.10.0                         [required by github]
+ - install   core_kernel.112.01.00                 [required by core]
+ - install   atdgen.1.4.1                          [required by github]
+ - install   core.112.01.01                        [required by opam-sync-github-prs]
+ - install   github.0.8.1                          [required by opam-sync-github-prs]
+ - install   opam-sync-github-prs.1.0.0
+=== 36 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[atd.1.1.2] Downloading http://mjambon.com/releases/atd/atd-1.1.2.tar.gz
+[atdgen.1.4.1] Downloading http://mjambon.com/releases/atdgen/atdgen-1.4.1.tar.gz
+[bin_prot.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/bin_prot-112.01.00.tar.gz
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[camomile.0.8.5] Downloading https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cohttp.0.10.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.10.0.tar.gz
+[comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
+[core.112.01.01] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core-112.01.01.tar.gz
+[core_kernel.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core_kernel-112.01.00.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[custom_printf.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/custom_printf-112.01.00.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
+[github.0.8.1] Downloading https://github.com/avsm/ocaml-github/archive/v0.8.1.tar.gz
+[lambda-term.1.7] Downloading https://github.com/diml/lambda-term/archive/1.7.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[opam-sync-github-prs.1.0.0] Downloading https://github.com/avsm/opam-sync-github-prs/archive/v1.0.0.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pa_bench.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_bench-111.28.00.tar.gz
+[pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
+[pa_test.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/pa_test-111.08.00.tar.gz
+[pipebang.110.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/110.01.00/individual/pipebang-110.01.00.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[react.1.2.0] Downloading http://erratique.ch/software/react/releases/react-1.2.0.tbz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
+[uri.1.4.0] Downloading https://github.com/mirage/ocaml-uri/archive/v1.4.0.tar.gz
+[variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+[zed.1.3] Downloading https://github.com/diml/zed/archive/1.3.tar.gz
+[ERROR] https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2 is not available
+[ERROR] Could not download archives of camomile.0.8.5
+
