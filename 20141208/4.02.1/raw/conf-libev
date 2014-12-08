@@ -14,3 +14,20 @@ Unpacking libev-dev (from .../libev-dev_1%3a4.11-1_amd64.deb) ...
 Setting up libev4 (1:4.11-1) ...
 Setting up libev-dev (1:4.11-1) ...
 ++ opam install conf-libev -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install conf-libev
+The following actions will be performed:
+ - install   conf-libev.4-11
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/conf-libev/conf-libev.4-11/files/discover.ml to ~/.opam/4.02.1/build/conf-libev.4-11/
+Copying ~/.opam/repo/default/packages/conf-libev/conf-libev.4-11/files/build.sh to ~/.opam/4.02.1/build/conf-libev.4-11/
+Building conf-libev.4-11:
+  ./build.sh
+Installing conf-libev.4-11.
