@@ -1,0 +1,23 @@
+++ opam install choice -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install choice -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install choice
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   choice.0.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[choice.0.1] Downloading https://github.com/c-cube/choice/archive/0.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building choice.0.1:
+  make
+  make install
+Installing choice.0.1.
