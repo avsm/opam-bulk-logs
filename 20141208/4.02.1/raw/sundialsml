@@ -79,3 +79,4 @@ The following actions will be performed:
 Building sundialsml.2.5.0p0:
   ./configure --prefix=/home/opam/.opam/4.02.1
   make install-findlib
+Installing sundialsml.2.5.0p0.

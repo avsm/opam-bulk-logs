@@ -1,59 +1,11 @@
-++ opam install syndic -e centos,centos-7
+++ opam install syndic -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install syndic -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install syndic
-CentOS 7 depexts:
-The following actions will be performed:
- - install   calendar.2.03.2                       [required by syndic]
- - install   xmlm.1.2.0                            [required by syndic]
- - install   re.1.2.2                              [required by uri]
- - install   type_conv.112.01.00                   [required by uri]
- - install   sexplib.112.01.00                     [required by uri]
- - install   uri.1.4.0                             [required by syndic]
- - install   syndic.1.1
-=== 7 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[calendar.2.03.2] Downloading http://forge.ocamlcore.org/frs/download.php/915/calendar-2.03.2.tar.gz
-[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
-[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
-[syndic.1.1] Downloading https://github.com/Cumulus/Syndic/releases/download/v1.1/syndic-1.1.tar.gz
-[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
-[uri.1.4.0] Downloading https://github.com/mirage/ocaml-uri/archive/v1.4.0.tar.gz
-[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building calendar.2.03.2:
-  ./configure
-  make
-  make install
-Installing calendar.2.03.2.
-Building re.1.2.2:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing re.1.2.2.
-Building type_conv.112.01.00:
-  make
-  make install
-Installing type_conv.112.01.00.
-Building xmlm.1.2.0:
-  ./pkg/pkg-git
-  ./pkg/build true
-Installing xmlm.1.2.0.
-Building sexplib.112.01.00:
-  ./configure --enable-syntax
-  make
-  make install
-Installing sexplib.112.01.00.
-Building uri.1.4.0:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing uri.1.4.0.
-Building syndic.1.1:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing syndic.1.1.
