@@ -1,9 +1,27 @@
-++ opam install conf-leveldb -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install conf-leveldb -e debian
++ depext=libleveldb-dev
++ echo Debian depexts: libleveldb-dev
++ '[' libleveldb-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: libleveldb-dev
++ sudo apt-get install -qq -y libleveldb-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libsnappy1.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libsnappy1 (from .../libsnappy1_1.0.5-2_amd64.deb) ...
+Selecting previously unselected package libleveldb1:amd64.
+Unpacking libleveldb1:amd64 (from .../libleveldb1_0+20120530.gitdd0d562-1_amd64.deb) ...
+Selecting previously unselected package libleveldb-dev:amd64.
+Unpacking libleveldb-dev:amd64 (from .../libleveldb-dev_0+20120530.gitdd0d562-1_amd64.deb) ...
+Setting up libsnappy1 (1.0.5-2) ...
+Setting up libleveldb1:amd64 (0+20120530.gitdd0d562-1) ...
+Setting up libleveldb-dev:amd64 (0+20120530.gitdd0d562-1) ...
+++ opam install conf-leveldb -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install conf-leveldb
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   conf-leveldb.1
 === 1 to install ===
@@ -14,24 +32,4 @@ The following actions will be performed:
 Copying ~/.opam/repo/default/packages/conf-leveldb/conf-leveldb.1/files/test.cc to ~/.opam/4.02.1/build/conf-leveldb.1/
 Building conf-leveldb.1:
   cc -c test.cc
-Removing conf-leveldb.1.
-[ERROR] The compilation of conf-leveldb.1 failed.
-  Nothing to do.
-
-
-#=== ERROR while installing conf-leveldb.1 ====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              cc -c test.cc
-# path                 /home/opam/.opam/4.02.1/build/conf-leveldb.1
-# compiler             4.02.1
-# exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/conf-leveldb.1/conf-leveldb-17-42bb52.env
-# stdout-file          /home/opam/.opam/4.02.1/build/conf-leveldb.1/conf-leveldb-17-42bb52.out
-# stderr-file          /home/opam/.opam/4.02.1/build/conf-leveldb.1/conf-leveldb-17-42bb52.err
-### stderr ###
-# test.cc:1:24: fatal error: leveldb/db.h: No such file or directory
-#  #include <leveldb/db.h>
-#                         ^
-# compilation terminated.
-
+Installing conf-leveldb.1.
