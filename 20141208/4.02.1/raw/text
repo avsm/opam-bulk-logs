@@ -1,0 +1,19 @@
+++ opam install text -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install text
+The following actions will be performed:
+ - install   text.0.7.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[text.0.7.1] Downloading https://github.com/vbmithr/ocaml-text/archive/0.7.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building text.0.7.1:
+  ./configure --disable-pcre
+  make
+  make install
+Installing text.0.7.1.
