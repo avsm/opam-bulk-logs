@@ -1,0 +1,21 @@
+++ opam install delimcc -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install delimcc
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   delimcc.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[delimcc.0] Downloading http://okmij.org/ftp/continuations/caml-shift.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/delimcc/delimcc.0/files/makefile_fix.patch to ~/.opam/4.02.1/build/delimcc.0/
+Applying makefile_fix.patch.
+Building delimcc.0:
+  make all
+  make opt
+  make findlib-install
+Installing delimcc.0.
