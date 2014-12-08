@@ -1,0 +1,33 @@
+++ opam install ocaml-posix-resource -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install ocaml-posix-resource -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-posix-resource
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by ocaml-posix-resource]
+ - install   ocamlify.0.0.1                        [required by oasis]
+ - install   type_conv.112.01.00                   [required by ocaml-data-notation]
+ - install   ocamlmod.0.0.7                        [required by oasis]
+ - install   ocaml-data-notation.0.0.11            [required by oasis]
+ - install   oasis.0.4.5                           [required by ocaml-posix-resource]
+ - install   ocaml-posix-resource.0.0.1
+=== 7 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[oasis.0.4.5] Downloading https://forge.ocamlcore.org/frs/download.php/1475/oasis-0.4.5.tar.gz
+[ocaml-data-notation.0.0.11] Downloading https://forge.ocamlcore.org/frs/download.php/1310/ocaml-data-notation-0.0.11.tar.gz
+[ocaml-posix-resource.0.0.1] Downloading http://oasis.ocamlcore.org/dev/dist/ocaml-posix-resource/0.0.1/ocaml-posix-resource-0.0.1.tar.gz
+[ocamlify.0.0.1] Downloading http://forge.ocamlcore.org/frs/download.php/379/ocamlify-0.0.1.tar.gz
+[ocamlmod.0.0.7] Downloading https://forge.ocamlcore.org/frs/download.php/1350/ocamlmod-0.0.7.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[ERROR] curl: code 503 while downloading http://oasis.ocamlcore.org/dev/dist/ocaml-posix-resource/0.0.1/ocaml-posix-resource-0.0.1.tar.gz
+[ERROR] http://oasis.ocamlcore.org/dev/dist/ocaml-posix-resource/0.0.1/ocaml-posix-resource-0.0.1.tar.gz is not available
+[ERROR] Could not download archives of ocaml-posix-resource.0.0.1
+
