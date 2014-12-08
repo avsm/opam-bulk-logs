@@ -1,0 +1,63 @@
+++ opam install libvirt -e ubuntu
++ depext=libvirt-dev
+Ubuntu depexts: libvirt-dev
++ echo Ubuntu depexts: libvirt-dev
++ '[' libvirt-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libvirt-dev
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xen/libxenstore3.0_4.4.1-0ubuntu0.14.04.1_amd64.deb  404  Not Found [IP: 91.189.88.149 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xen/libxen-4.4_4.4.1-0ubuntu0.14.04.1_amd64.deb  404  Not Found [IP: 91.189.88.149 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xen/libxen-dev_4.4.1-0ubuntu0.14.04.1_amd64.deb  404  Not Found [IP: 91.189.88.149 80]
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+++ opam install libvirt -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install libvirt
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   libvirt.0.6.1.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[libvirt.0.6.1.2] Downloading http://libvirt.org/sources/ocaml/ocaml-libvirt-0.6.1.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building libvirt.0.6.1.2:
+  ./configure
+  make all
+  make opt
+  make install-opt
+[ERROR] The compilation of libvirt.0.6.1.2 failed.
+Removing libvirt.0.6.1.2.
+  ocamlfind remove libvirt
+
+
+#=== ERROR while installing libvirt.0.6.1.2 ===================================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              ./configure
+# path                 /home/opam/.opam/4.02.1/build/libvirt.0.6.1.2
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/libvirt.0.6.1.2/libvirt-140-6d07ae.env
+# stdout-file          /home/opam/.opam/4.02.1/build/libvirt.0.6.1.2/libvirt-140-6d07ae.out
+# stderr-file          /home/opam/.opam/4.02.1/build/libvirt.0.6.1.2/libvirt-140-6d07ae.err
+### stdout ###
+# ...[truncated]
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# checking for a BSD-compatible install... /usr/bin/install -c
+# checking how to run the C preprocessor... gcc -E
+# checking for function prototypes... yes
+# checking whether gcc and cc understand -c and -o together... yes
+# checking build system type... x86_64-unknown-linux-gnu
+# checking host system type... x86_64-unknown-linux-gnu
+# checking for virConnectOpen in -lvirt... no
+### stderr ###
+# configure: error: You must install libvirt library
+
