@@ -49,3 +49,7 @@ Installing re.1.2.2.
 Building type_conv.112.01.00:
   make
   make install
+Installing type_conv.112.01.00.
+Building ocaml-data-notation.0.0.11:
+  make
+  make install
