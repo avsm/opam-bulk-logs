@@ -1,0 +1,81 @@
+++ opam install profound -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install profound
+The following actions will be performed:
+ - install   batteries.2.3.1                       [required by profound]
+ - install   menhir.20140422                       [required by profound]
+ - install   lablgtk.2.18.3                        [required by profound]
+ - install   profound.0.4.2
+=== 4 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
+[lablgtk.2.18.3] Downloading https://forge.ocamlcore.org/frs/download.php/1479/lablgtk-2.18.3.tar.gz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[profound.0.4.2] Downloading https://github.com/chaudhuri/profound/archive/v0.4.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building batteries.2.3.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make all
+  make install
+Installing batteries.2.3.1.
+Copying ~/.opam/repo/default/packages/lablgtk/lablgtk.2.18.3/files/lablgtk.install to ~/.opam/4.02.1/build/lablgtk.2.18.3/
+Copying ~/.opam/repo/default/packages/lablgtk/lablgtk.2.18.3/files/lablgldir.patch to ~/.opam/4.02.1/build/lablgtk.2.18.3/
+Applying lablgldir.patch.
+Building lablgtk.2.18.3:
+  ./configure --prefix /home/opam/.opam/4.02.1 LABLGLDIR=/home/opam/.opam/4.02.1/lib/lablgl
+  make world
+  make install
+[ERROR] The compilation of lablgtk.2.18.3 failed.
+Removing lablgtk.2.18.3.
+  ocamlfind remove lablgtk2
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+Installing menhir.20140422.
+
+
+#=== ERROR while installing lablgtk.2.18.3 ====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure --prefix /home/opam/.opam/4.02.1 LABLGLDIR=/home/opam/.opam/4.02.1/lib/lablgl
+# path                 /home/opam/.opam/4.02.1/build/lablgtk.2.18.3
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-1373-d0f245.env
+# stdout-file          /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-1373-d0f245.out
+# stderr-file          /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-1373-d0f245.err
+### stdout ###
+# ...[truncated]
+# checking for suffix of object files... o
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# checking platform... Unix
+# checking native dynlink... checking for pkg-config... /usr/bin/pkg-config
+# checking for GTK+ - version >= 2.0.0... no
+# *** Could not run GTK+ test program, checking why...
+# *** The test program failed to compile or link. See the file config.log for the
+# *** exact error that occured. This usually means GTK+ is incorrectly installed.
+### stderr ###
+# configure: error: GTK+ is required
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   menhir.20140422
+ - install   batteries.2.3.1
+The following failed
+ - install   lablgtk.2.18.3
+Due to the errors, the following have been cancelled
+ - install   profound.0.4.2
+
+=-=- lablgtk.2.18.3 troubleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package requires gtk+ 2.0 development packages installed on your system
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108081022.export"
