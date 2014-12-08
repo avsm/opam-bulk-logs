@@ -135,3 +135,16 @@ Building ssl.0.4.7:
   ./configure --prefix /home/opam/.opam/4.02.1
   make
   make install
+Installing ssl.0.4.7.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+Building deriving.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1 --enable-tc
+  make
+  make install

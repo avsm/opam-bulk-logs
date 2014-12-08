@@ -106,3 +106,15 @@ Building sexplib.112.01.00:
   ./configure --enable-syntax
   make
   make install
+Installing sexplib.112.01.00.
+Building variantslib.109.15.03:
+  make
+  make install
+Installing variantslib.109.15.03.
+Building custom_printf.112.01.00:
+  make
+  make install
+Installing custom_printf.112.01.00.
+Building pa_bench.111.28.00:
+  make
+  make install

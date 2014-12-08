@@ -1,18 +1,11 @@
-++ opam install exn-source -e centos,centos-7
+++ opam install exn-source -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install exn-source -e source,linux
+Debian srcexts:
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install exn-source
-CentOS 7 depexts:
-The following actions will be performed:
- - install   exn-source.0.1
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[exn-source.0.1] Downloading https://github.com/johnwhitington/exn-source/archive/v0.1.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building exn-source.0.1:
-  make
-  make install
-Installing exn-source.0.1.
