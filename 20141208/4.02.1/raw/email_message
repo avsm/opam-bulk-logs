@@ -80,3 +80,20 @@ Installing pipebang.110.01.00.
 Building type_conv.112.01.00:
   make
   make install
+Installing type_conv.112.01.00.
+Building bin_prot.112.01.00:
+  make
+  make install
+Installing bin_prot.112.01.00.
+Building comparelib.109.60.00:
+  make
+  make install
+Installing comparelib.109.60.00.
+Building enumerate.111.08.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing enumerate.111.08.00.
+Building fieldslib.109.20.03:
+  make
+  make install
