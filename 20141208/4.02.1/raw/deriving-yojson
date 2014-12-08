@@ -1,0 +1,62 @@
+++ opam install deriving-yojson -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install deriving-yojson
+The following actions will be performed:
+ - install   base-bytes.base                       [required by deriving]
+ - install   easy-format.1.0.2                     [required by yojson]
+ - install   optcomp.1.6                           [required by deriving]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   biniou.1.0.9                          [required by yojson]
+ - install   deriving.0.7                          [required by deriving-yojson]
+ - install   yojson.1.1.8                          [required by deriving-yojson]
+ - install   deriving-yojson.0.4
+=== 8 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[deriving.0.7] Downloading http://ocsigen.org/download/deriving-0.7.tar.gz
+[deriving-yojson.0.4] Downloading https://github.com/hhugo/deriving-yojson/archive/0.4.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.02.1/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.02.1/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Building deriving.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1 --disable-tc
+  make
+  make install
+Installing deriving.0.7.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.02.1/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Building deriving-yojson.0.4:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing deriving-yojson.0.4.
