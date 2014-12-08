@@ -119,3 +119,13 @@ Building uri.1.7.2:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing uri.1.7.2.
+Building cow.1.0.0:
+  make all
+  make install
+Installing cow.1.0.0.
+Building stone.0.3.2:
+  ./configure --bin-dir /home/opam/.opam/4.02.1/bin
+  make
+  make install
+Installing stone.0.3.2.
