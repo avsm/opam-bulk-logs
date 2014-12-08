@@ -1,0 +1,146 @@
+++ opam install plasma -e ubuntu
++ depext='libpcre3-dev zlib1g-dev'
++ echo Ubuntu depexts: libpcre3-dev zlib1g-dev
++ '[' 'libpcre3-dev zlib1g-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libpcre3-dev zlib1g-dev
++ sudo apt-get install -qq -y libpcre3-dev zlib1g-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libpcrecpp0_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Setting up libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.3) ...
+++ opam install plasma -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install plasma
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   cryptokit.1.9                         [required by plasma]
+ - install   omake.0.9.8.6-0.rc1                   [required by plasma]
+ - install   ocamlgraph.1.8.2                      [required by plasma]
+ - install   xstrp4.1.8                            [required by plasma]
+ - install   conf-libpcre.1                        [required by pcre]
+ - install   pcre.7.1.2                            [required by plasma]
+ - install   ocamlnet.3.7.7                        [required by plasma]
+ - install   plasma.0.6.2
+=== 8 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
+[ocamlgraph.1.8.2] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.2.tar.gz
+[omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
+[pcre.7.1.2] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.2/pcre-ocaml-7.1.2.tar.gz
+[plasma.0.6.2] Downloading http://download.camlcity.org/download/plasma-0.6.2.tar.gz
+[xstrp4.1.8] Downloading http://download.camlcity.org/download/xstrp4-1.8.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building conf-libpcre.1:
+  pkg-config libpcre
+Installing conf-libpcre.1.
+Building cryptokit.1.9:
+  make
+  make install
+Installing cryptokit.1.9.
+Copying ~/.opam/repo/default/packages/ocamlgraph/ocamlgraph.1.8.2/files/ocamlgraph.install to ~/.opam/4.02.1/build/ocamlgraph.1.8.2/
+Building ocamlgraph.1.8.2:
+  ./configure
+  make
+  make install-findlib
+Installing ocamlgraph.1.8.2.
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/opam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/omake.install to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/fam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Applying opam.patch.
+Applying fam.patch.
+Applying readline.patch.
+Building omake.0.9.8.6-0.rc1:
+  make bootstrap PREFIX=/home/opam/.opam/4.02.1
+  make all PREFIX=/home/opam/.opam/4.02.1
+  make install PREFIX=/home/opam/.opam/4.02.1
+Installing omake.0.9.8.6-0.rc1.
+Building xstrp4.1.8:
+  ./configure
+  make all
+  make install
+Installing xstrp4.1.8.
+Building pcre.7.1.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing pcre.7.1.2.
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.02.1/build/ocamlnet.3.7.7/
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/ocamlnet.install to ~/.opam/4.02.1/build/ocamlnet.3.7.7/
+Applying robust-host.patch.
+Building ocamlnet.3.7.7:
+  ./configure -bindir /home/opam/.opam/4.02.1/bin -enable-pcre -disable-gtk2 -disable-ssl -disable-zip -enable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Installing ocamlnet.3.7.7.
+Copying ~/.opam/repo/default/packages/plasma/plasma.0.6.2/files/plasma.install to ~/.opam/4.02.1/build/plasma.0.6.2/
+Building plasma.0.6.2:
+  ./configure -bindir /home/opam/.opam/4.02.1/bin -sharedir /home/opam/.opam/4.02.1/lib/plasma/share
+  omake
+  omake install
+[ERROR] The compilation of plasma.0.6.2 failed.
+Removing plasma.0.6.2.
+  Nothing to do.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   ocamlnet.3.7.7
+ - install   conf-libpcre.1
+ - install   xstrp4.1.8
+ - install   pcre.7.1.2
+ - install   ocamlgraph.1.8.2
+ - install   omake.0.9.8.6-0.rc1
+ - install   cryptokit.1.9
+The following failed
+ - install   plasma.0.6.2
+
+#=== ERROR while installing plasma.0.6.2 ======================================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              ./configure -bindir /home/opam/.opam/4.02.1/bin -sharedir /home/opam/.opam/4.02.1/lib/plasma/share
+# path                 /home/opam/.opam/4.02.1/build/plasma.0.6.2
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/plasma.0.6.2/plasma-9602-d474c2.env
+# stdout-file          /home/opam/.opam/4.02.1/build/plasma.0.6.2/plasma-9602-d474c2.out
+# stderr-file          /home/opam/.opam/4.02.1/build/plasma.0.6.2/plasma-9602-d474c2.err
+### stdout ###
+# Checking for Ocaml...found
+# Checking Ocaml setup...
+# Checking for findlib... found
+# Checking for Ocamlnet... found
+# Checking Ocamlnet version... ok
+# Checking for crypto support in Ocamlnet...found
+# Checking for omake... found
+# Checking for PostgreSQL client library (libpq)... pg_config not found
+# This may mean you forgot to install libpq or libpq-dev
+### stderr ###
+# Welcome to Plasma version 0.6.2
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108031406.export"
