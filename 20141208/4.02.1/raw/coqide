@@ -1,0 +1,84 @@
+++ opam install coqide -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install coqide
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   camlp5.6.12                           [required by coqide]
+ - install   lablgtk.2.18.3                        [required by coqide]
+ - install   coq.8.4.5                             [required by coqide]
+ - install   coqide.8.4.5
+=== 4 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camlp5.6.12] Downloading http://camlp5.gforge.inria.fr/distrib/src/camlp5-6.12.tgz
+[coq.8.4.5] Downloading http://coq.inria.fr/distrib/8.4pl5/files/coq-8.4pl5.tar.gz
+[coqide.8.4.5] Downloading http://coq.inria.fr/distrib/8.4pl5/files/coq-8.4pl5.tar.gz
+[lablgtk.2.18.3] Downloading https://forge.ocamlcore.org/frs/download.php/1479/lablgtk-2.18.3.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/camlp5/camlp5.6.12/files/camlp5.install to ~/.opam/4.02.1/build/camlp5.6.12/
+Building camlp5.6.12:
+  ./configure --prefix /home/opam/.opam/4.02.1 -libdir /home/opam/.opam/4.02.1/lib -mandir /home/opam/.opam/4.02.1/man
+  make world.opt
+  make install
+Installing camlp5.6.12.
+Copying ~/.opam/repo/default/packages/lablgtk/lablgtk.2.18.3/files/lablgtk.install to ~/.opam/4.02.1/build/lablgtk.2.18.3/
+Copying ~/.opam/repo/default/packages/lablgtk/lablgtk.2.18.3/files/lablgldir.patch to ~/.opam/4.02.1/build/lablgtk.2.18.3/
+Applying lablgldir.patch.
+Building lablgtk.2.18.3:
+  ./configure --prefix /home/opam/.opam/4.02.1 LABLGLDIR=/home/opam/.opam/4.02.1/lib/lablgl
+  make world
+  make install
+[ERROR] The compilation of lablgtk.2.18.3 failed.
+Removing lablgtk.2.18.3.
+  ocamlfind remove lablgtk2
+Copying ~/.opam/repo/default/packages/coq/coq.8.4.5/files/coq.install to ~/.opam/4.02.1/build/coq.8.4.5/
+Building coq.8.4.5:
+  ./configure -configdir /home/opam/.opam/4.02.1/lib/coq/config -mandir /home/opam/.opam/4.02.1/man -docdir /home/opam/.opam/4.02.1/doc --prefix /home/opam/.opam/4.02.1 --usecamlp5 --camlp5dir /home/opam/.opam/4.02.1/lib/camlp5 --coqide no
+  make -j1 world
+  make -j1 states
+  make install
+Installing coq.8.4.5.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   camlp5.6.12
+ - install   coq.8.4.5
+The following failed
+ - install   lablgtk.2.18.3
+Due to the errors, the following have been cancelled
+ - install   coqide.8.4.5
+
+#=== ERROR while installing lablgtk.2.18.3 ====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure --prefix /home/opam/.opam/4.02.1 LABLGLDIR=/home/opam/.opam/4.02.1/lib/lablgl
+# path                 /home/opam/.opam/4.02.1/build/lablgtk.2.18.3
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-4339-865888.env
+# stdout-file          /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-4339-865888.out
+# stderr-file          /home/opam/.opam/4.02.1/build/lablgtk.2.18.3/lablgtk-4339-865888.err
+### stdout ###
+# ...[truncated]
+# checking for suffix of object files... o
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# checking platform... Unix
+# checking native dynlink... checking for pkg-config... /usr/bin/pkg-config
+# checking for GTK+ - version >= 2.0.0... no
+# *** Could not run GTK+ test program, checking why...
+# *** The test program failed to compile or link. See the file config.log for the
+# *** exact error that occured. This usually means GTK+ is incorrectly installed.
+### stderr ###
+# configure: error: GTK+ is required
+
+
+=-=- lablgtk.2.18.3 troubleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package requires gtk+ 2.0 development packages installed on your system
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108054352.export"
