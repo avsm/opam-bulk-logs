@@ -1,0 +1,46 @@
+++ opam install acgtk -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install acgtk
+The following actions will be performed:
+ - install   dypgen.20120619-1                     [required by acgtk]
+ - install   ANSITerminal.0.6.5                    [required by acgtk]
+ - install   bolt.1.4                              [required by acgtk]
+ - install   acgtk.1.1
+=== 4 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bolt.1.4] Downloading https://forge.ocamlcore.org/frs/download.php/1043/bolt-1.4.tar.gz
+[ANSITerminal.0.6.5] Downloading https://forge.ocamlcore.org/frs/download.php/1206/ANSITerminal-0.6.5.tar.gz
+[acgtk.1.1] Downloading http://calligramme.loria.fr/acg/software/acg-1.1-20140905.tar.gz
+[dypgen.20120619-1] Downloading http://dypgen.free.fr/dypgen-20120619-1.tar.bz2
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ANSITerminal.0.6.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ANSITerminal.0.6.5.
+Copying ~/.opam/repo/default/packages/bolt/bolt.1.4/files/opam.patch to ~/.opam/4.02.1/build/bolt.1.4/
+Copying ~/.opam/repo/default/packages/bolt/bolt.1.4/files/opam.bolt.META.patch to ~/.opam/4.02.1/build/bolt.1.4/
+Applying opam.patch.
+Applying opam.bolt.META.patch.
+Building bolt.1.4:
+  ./configure -ocaml-prefix /home/opam/.opam/4.02.1 -ocamlfind /home/opam/.opam/4.02.1/bin/ocamlfind
+  make all
+  make install
+Installing bolt.1.4.
+Copying ~/.opam/repo/default/packages/dypgen/dypgen.20120619-1/files/install-bsd-compatible.patch to ~/.opam/4.02.1/build/dypgen.20120619-1/
+Copying ~/.opam/repo/default/packages/dypgen/dypgen.20120619-1/files/dypgen.install to ~/.opam/4.02.1/build/dypgen.20120619-1/
+Applying install-bsd-compatible.patch.
+Building dypgen.20120619-1:
+  make
+  make install DYPGENLIBDIR=/home/opam/.opam/4.02.1/lib BINDIR=/home/opam/.opam/4.02.1/bin MANDIR=/home/opam/.opam/4.02.1/man/man1
+Installing dypgen.20120619-1.
+Building acgtk.1.1:
+  ./configure --prefix=/home/opam/.opam/4.02.1
+  make all
+  make install-all
+Installing acgtk.1.1.
