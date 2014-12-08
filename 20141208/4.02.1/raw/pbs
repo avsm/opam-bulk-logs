@@ -1,7 +1,12 @@
-++ opam install pbs -e centos,centos-7
+++ opam install pbs -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install pbs -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install pbs
 The following actions will be performed:
@@ -35,16 +40,3 @@ Building omake.0.9.8.6-0.rc1:
   make bootstrap PREFIX=/home/opam/.opam/4.02.1
   make all PREFIX=/home/opam/.opam/4.02.1
   make install PREFIX=/home/opam/.opam/4.02.1
-Installing omake.0.9.8.6-0.rc1.
-Building pvem.0.0.1:
-  ocaml please.ml build
-  ocaml please.ml install
-Installing pvem.0.0.1.
-Building sosa.0.0.1:
-  ocaml please.ml build
-  ocaml please.ml install
-Installing sosa.0.0.1.
-Building pbs.0.2.0:
-  omake
-  omake install
-Installing pbs.0.2.0.
