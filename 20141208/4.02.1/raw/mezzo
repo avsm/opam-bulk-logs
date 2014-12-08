@@ -76,3 +76,11 @@ Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install t
 Building yojson.1.1.8:
   make
   make install
+Installing yojson.1.1.8.
+Copying ~/.opam/repo/default/packages/mezzo/mezzo.0.0.m8/files/no-deprecated-fatal-warning.patch to ~/.opam/4.02.1/build/mezzo.0.0.m8/
+Copying ~/.opam/repo/default/packages/mezzo/mezzo.0.0.m8/files/mezzo.install to ~/.opam/4.02.1/build/mezzo.0.0.m8/
+Applying no-deprecated-fatal-warning.patch.
+Building mezzo.0.0.m8:
+  ./configure
+  make
+  make install
