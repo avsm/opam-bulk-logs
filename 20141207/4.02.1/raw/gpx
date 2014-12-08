@@ -1,0 +1,28 @@
+++ opam install gpx -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install gpx -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install gpx
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   xml-light.2.4                         [required by gpx]
+ - install   gpx.1.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[xml-light.2.4] Downloading https://github.com/ncannasse/xml-light/archive/2.4.tar.gz
+[gpx.1.0] Downloading https://github.com/rundat/ocaml-gpx/archive/v1.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building xml-light.2.4:
+  make install_ocamlfind
+Installing xml-light.2.4.
+Building gpx.1.0:
+  make -C src build
+  make -C src install
+Installing gpx.1.0.
