@@ -234,3 +234,7 @@ Installing uri.1.7.2.
 Building cohttp.0.10.1:
   make PREFIX=/home/opam/.opam/4.02.1
   make PREFIX=/home/opam/.opam/4.02.1 install
+Installing cohttp.0.10.1.
+Building cow.1.0.0:
+  make all
+  make install
