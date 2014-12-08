@@ -139,3 +139,15 @@ Installing async_kernel.112.01.00.
 Building async_unix.112.01.00:
   make
   make install
+Installing async_unix.112.01.00.
+Building async_extra.112.01.00:
+  make
+  make install
+Installing async_extra.112.01.00.
+Building async.112.01.00:
+  make
+  make install
+Installing async.112.01.00.
+Building async_graphics.0.5.1:
+  ./install.sh
+Installing async_graphics.0.5.1.
