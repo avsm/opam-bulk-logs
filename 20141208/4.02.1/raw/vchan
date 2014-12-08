@@ -1,0 +1,144 @@
+++ opam install vchan -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install vchan
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by xenstore]
+ - install   cmdliner.0.9.6                        [required by vchan]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   lwt.2.4.5                             [required by vchan]
+ - install   type_conv.112.01.00                   [required by sexplib]
+ - install   ocplib-endian.0.4                     [required by cstruct]
+ - install   sexplib.112.01.00                     [required by vchan]
+ - install   ipaddr.2.5.0                          [required by mirage-types-lwt]
+ - install   cstruct.1.5.0                         [required by vchan]
+ - install   xenstore.1.2.5                        [required by vchan]
+ - install   io-page.1.2.0                         [required by vchan]
+ - install   xenstore_transport.0.9.4              [required by vchan]
+ - install   mirage-types.2.0.1                    [required by mirage-types-lwt]
+ - install   mirage-types-lwt.2.0.1                [required by vchan]
+ - install   vchan.2.0.0
+=== 15 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[io-page.1.2.0] Downloading https://github.com/mirage/io-page/archive/v1.2.0.tar.gz
+[ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[mirage-types.2.0.1] Downloading https://github.com/mirage/mirage/archive/v2.0.1.tar.gz
+[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[vchan.2.0.0] Downloading https://github.com/mirage/ocaml-vchan/archive/v2.0.0.tar.gz
+[xenstore.1.2.5] Downloading https://github.com/mirage/ocaml-xenstore/archive/1.2.5.tar.gz
+[xenstore_transport.0.9.4] Downloading https://github.com/djs55/ocaml-xenstore-clients/archive/0.9.4.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+Installing lwt.2.4.5.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building ocplib-endian.0.4:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.4.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.02.1 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Building ipaddr.2.5.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make build
+  make install
+Installing ipaddr.2.5.0.
+Building io-page.1.2.0:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing io-page.1.2.0.
+Building xenstore.1.2.5:
+  make all
+  make install
+Installing xenstore.1.2.5.
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
+Building xenstore_transport.0.9.4:
+  make all
+  make install
+Installing xenstore_transport.0.9.4.
+Installing mirage-types-lwt.2.0.1.
+Building vchan.2.0.0:
+  ./configure
+  make
+  make install
+[ERROR] The compilation of vchan.2.0.0 failed.
+Removing vchan.2.0.0.
+  ocamlfind remove vchan
+
+#=== ERROR while installing vchan.2.0.0 =======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure
+# path                 /home/opam/.opam/4.02.1/build/vchan.2.0.0
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/vchan.2.0.0/vchan-4049-d474c2.env
+# stdout-file          /home/opam/.opam/4.02.1/build/vchan.2.0.0/vchan-4049-d474c2.out
+# stderr-file          /home/opam/.opam/4.02.1/build/vchan.2.0.0/vchan-4049-d474c2.err
+### stderr ###
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.112.01.00
+ - install   ocplib-endian.0.4
+ - install   type_conv.112.01.00
+ - install   lwt.2.4.5
+ - install   xenstore.1.2.5
+ - install   optcomp.1.6
+ - install   xenstore_transport.0.9.4
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   mirage-types-lwt.2.0.1
+ - install   ipaddr.2.5.0
+ - install   ounit.2.0.0
+ - install   mirage-types.2.0.1
+The following failed
+ - install   vchan.2.0.0
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108085310.export"
