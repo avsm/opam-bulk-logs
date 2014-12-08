@@ -1,0 +1,50 @@
+++ opam install extprot -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install extprot
+The following actions will be performed:
+ - install   omake.0.9.8.6-0.rc1                   [required by extprot]
+ - install   extlib.1.6.1                          [required by extprot]
+ - install   type_conv.112.01.00                   [required by sexplib]
+ - install   sexplib.112.01.00                     [required by extprot]
+ - install   extprot.1.1.2
+=== 5 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[extlib.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+[extprot.1.1.2] Downloading https://github.com/mfp/extprot/archive/v1.1.2.tar.gz
+[omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building extlib.1.6.1:
+  make minimal=1 build install
+Installing extlib.1.6.1.
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/opam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/omake.install to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/fam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Applying opam.patch.
+Applying fam.patch.
+Applying readline.patch.
+Building omake.0.9.8.6-0.rc1:
+  make bootstrap PREFIX=/home/opam/.opam/4.02.1
+  make all PREFIX=/home/opam/.opam/4.02.1
+  make install PREFIX=/home/opam/.opam/4.02.1
+Installing omake.0.9.8.6-0.rc1.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building extprot.1.1.2:
+  omake
+  omake install prefix=/home/opam/.opam/4.02.1
+Installing extprot.1.1.2.
