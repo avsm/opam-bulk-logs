@@ -1,9 +1,14 @@
-++ opam install cry -e centos,centos-7
+++ opam install cry -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install cry -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install cry
-CentOS 7 depexts:
 The following actions will be performed:
  - install   cry.0.2.2
 === 1 to install ===
