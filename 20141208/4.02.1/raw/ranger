@@ -64,3 +64,4 @@ Building ranger.0.0.1:
   make configure-no-tests
   make build
   make install
+Installing ranger.0.0.1.
