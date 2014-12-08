@@ -1,8 +1,23 @@
-++ opam install faad -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install faad -e debian
++ depext=libfaad-dev
++ echo Debian depexts: libfaad-dev
++ '[' libfaad-dev '!=' '' ']'
+Debian depexts: libfaad-dev
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libfaad-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libfaad2:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libfaad2:amd64 (from .../libfaad2_2.7-8_amd64.deb) ...
+Selecting previously unselected package libfaad-dev:amd64.
+Unpacking libfaad-dev:amd64 (from .../libfaad-dev_2.7-8_amd64.deb) ...
+Setting up libfaad2:amd64 (2.7-8) ...
+Setting up libfaad-dev:amd64 (2.7-8) ...
+++ opam install faad -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
 + opam install faad
 The following actions will be performed:
  - install   faad.0.3.2
@@ -16,33 +31,4 @@ Building faad.0.3.2:
   ./configure --prefix /home/opam/.opam/4.02.1
   make
   make install
-[ERROR] The compilation of faad.0.3.2 failed.
-Removing faad.0.3.2.
-  ocamlfind remove faad
-
-
-#=== ERROR while installing faad.0.3.2 ========================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure --prefix /home/opam/.opam/4.02.1
-# path                 /home/opam/.opam/4.02.1/build/faad.0.3.2
-# compiler             4.02.1
-# exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/faad.0.3.2/faad-26-5f1023.env
-# stdout-file          /home/opam/.opam/4.02.1/build/faad.0.3.2/faad-26-5f1023.out
-# stderr-file          /home/opam/.opam/4.02.1/build/faad.0.3.2/faad-26-5f1023.err
-### stdout ###
-# ...[truncated]
-# checking for strings.h... yes
-# checking for inttypes.h... yes
-# checking for stdint.h... yes
-# checking for unistd.h... yes
-# checking errno.h usability... yes
-# checking errno.h presence... yes
-# checking for errno.h... yes
-# checking neaacdec.h usability... no
-# checking neaacdec.h presence... no
-# checking for neaacdec.h... no
-### stderr ###
-# configure: error: Cannot find libfaad.
-
+Installing faad.0.3.2.
