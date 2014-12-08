@@ -1,0 +1,50 @@
+++ opam install sqlite3EZ -e ubuntu
++ depext='libsqlite3-dev pkg-config'
++ echo Ubuntu depexts: libsqlite3-dev pkg-config
+Ubuntu depexts: libsqlite3-dev pkg-config
++ '[' 'libsqlite3-dev pkg-config' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libsqlite3-dev pkg-config
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libsqlite3-dev:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libsqlite3-dev_3.8.2-1ubuntu2_amd64.deb ...
+Unpacking libsqlite3-dev:amd64 (3.8.2-1ubuntu2) ...
+Setting up libsqlite3-dev:amd64 (3.8.2-1ubuntu2) ...
+++ opam install sqlite3EZ -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install sqlite3EZ
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   sqlite3.2.0.7                         [required by sqlite3EZ]
+ - install   ocaml+twt.0.93.2                      [required by sqlite3EZ]
+ - install   sqlite3EZ.0.1.0
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocaml+twt.0.93.2] Downloading https://github.com/mlin/twt/archive/v0.93.2.tar.gz
+[sqlite3.2.0.7] Downloading https://github.com/mmottl/sqlite3-ocaml/releases/download/v2.0.7/sqlite3-ocaml-2.0.7.tar.gz
+[sqlite3EZ.0.1.0] Downloading https://github.com/mlin/ocaml-sqlite3EZ/archive/v0.1.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ocaml+twt.0.93.2:
+  make install PREFIX=/home/opam/.opam/4.02.1
+Installing ocaml+twt.0.93.2.
+Building sqlite3.2.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing sqlite3.2.0.7.
+Building sqlite3EZ.0.1.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing sqlite3EZ.0.1.0.
