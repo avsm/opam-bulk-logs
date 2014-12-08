@@ -1,7 +1,12 @@
-++ opam install ollvm -e centos,centos-7
+++ opam install ollvm -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install ollvm -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install ollvm
 The following actions will be performed:
@@ -18,9 +23,3 @@ Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.instal
 Building menhir.20140422:
   make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
   make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
-Installing menhir.20140422.
-Building ollvm.0.99:
-  ./configure
-  make
-  make install
-Installing ollvm.0.99.
