@@ -1,7 +1,12 @@
-++ opam install uuidm -e centos,centos-7
-CentOS 7 depexts:
+++ opam install uuidm -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install uuidm -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install uuidm
 The following actions will be performed:
