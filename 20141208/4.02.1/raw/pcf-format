@@ -52,3 +52,7 @@ Building cstruct.1.5.0:
   ./configure --prefix /home/opam/.opam/4.02.1 --disable-lwt --enable-camlp4 --disable-async --enable-unix --disable-tests
   make
   make install
+Installing cstruct.1.5.0.
+Building pcf-format.0.0.1:
+  make
+  make install
