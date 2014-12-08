@@ -71,3 +71,7 @@ Building cstruct.1.5.0:
   ./configure --prefix /home/opam/.opam/4.02.1 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
   make
   make install
+Installing cstruct.1.5.0.
+Building xenstore.1.2.5:
+  make all
+  make install

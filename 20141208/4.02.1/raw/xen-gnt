@@ -127,3 +127,52 @@ Building io-page.1.2.0:
   ./configure --prefix /home/opam/.opam/4.02.1
   make
   make install
+Installing io-page.1.2.0.
+Building xen-gnt.2.0.0:
+  make
+  make PREFIX=/home/opam/.opam/4.02.1 install
+[ERROR] The compilation of xen-gnt.2.0.0 failed.
+Removing xen-gnt.2.0.0.
+  make PREFIX=/home/opam/.opam/4.02.1 uninstall
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.112.01.00
+ - install   ocamlmod.0.0.7
+ - install   type_conv.112.01.00
+ - install   ocaml-data-notation.0.0.11
+ - install   ocamlify.0.0.1
+ - install   oasis.0.4.5
+ - install   optcomp.1.6
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   ocplib-endian.0.7
+ - install   base-bytes.base
+ - install   ppx_tools.0.99.2
+The following failed
+ - install   xen-gnt.2.0.0
+
+#=== ERROR while installing xen-gnt.2.0.0 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/xen-gnt.2.0.0
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/xen-gnt.2.0.0/xen-gnt-6484-487c34.env
+# stdout-file          /home/opam/.opam/4.02.1/build/xen-gnt.2.0.0/xen-gnt-6484-487c34.out
+# stderr-file          /home/opam/.opam/4.02.1/build/xen-gnt.2.0.0/xen-gnt-6484-487c34.err
+### stdout ###
+# ocamlfind ocamlopt -package "cmdliner" -linkpkg configure.ml -o configure
+### stderr ###
+# Makefile:8: config.mk: No such file or directory
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# make: *** [configure] Error 2
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108145851.export"
