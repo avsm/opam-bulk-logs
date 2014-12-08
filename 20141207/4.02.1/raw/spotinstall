@@ -1,0 +1,89 @@
+++ opam install spotinstall -e ubuntu
++ depext=libpcre3-dev
++ echo Ubuntu depexts: libpcre3-dev
++ '[' libpcre3-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libpcre3-dev
++ sudo apt-get install -qq -y libpcre3-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libpcrecpp0_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Setting up libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Setting up libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.3) ...
+++ opam install spotinstall -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install spotinstall
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   omake.0.9.8.6-0.rc1                   [required by spotinstall]
+ - install   conf-libpcre.1                        [required by pcre]
+ - install   pcre.7.1.2                            [required by orakuda]
+ - install   ppx_test.1.0.1                        [required by spotlib]
+ - install   spotlib.2.5.0                         [required by spotinstall]
+ - install   orakuda.1.2.2                         [required by spotinstall]
+ - install   spotinstall.1.2.0
+=== 7 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
+[orakuda.1.2.2] Downloading https://bitbucket.org/camlspotter/orakuda/get/1.2.2.tar.gz
+[pcre.7.1.2] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.2/pcre-ocaml-7.1.2.tar.gz
+[ppx_test.1.0.1] Downloading https://bitbucket.org/camlspotter/ppx_test/get/1.0.1.tar.gz
+[spotinstall.1.2.0] Downloading https://bitbucket.org/camlspotter/spotinstall/get/1.2.0.tar.gz
+[spotlib.2.5.0] Downloading https://bitbucket.org/camlspotter/spotlib/get/2.5.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building conf-libpcre.1:
+  pkg-config libpcre
+Installing conf-libpcre.1.
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/opam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/omake.install to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/fam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Applying opam.patch.
+Applying fam.patch.
+Applying readline.patch.
+Building omake.0.9.8.6-0.rc1:
+  make bootstrap PREFIX=/home/opam/.opam/4.02.1
+  make all PREFIX=/home/opam/.opam/4.02.1
+  make install PREFIX=/home/opam/.opam/4.02.1
+Installing omake.0.9.8.6-0.rc1.
+Building pcre.7.1.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing pcre.7.1.2.
+Building ppx_test.1.0.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ppx_test.1.0.1.
+Building spotlib.2.5.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing spotlib.2.5.0.
+Building orakuda.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing orakuda.1.2.2.
+Building spotinstall.1.2.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing spotinstall.1.2.0.
