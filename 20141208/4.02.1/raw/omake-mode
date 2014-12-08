@@ -1,9 +1,24 @@
-++ opam install omake-mode -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install omake-mode -e debian
++ depext=libpcre3-dev
++ echo Debian depexts: libpcre3-dev
++ '[' libpcre3-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: libpcre3-dev
++ sudo apt-get install -qq -y libpcre3-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libpcrecpp0:amd64 (from .../libpcrecpp0_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package libpcre3-dev.
+Unpacking libpcre3-dev (from .../libpcre3-dev_1%3a8.30-5_amd64.deb) ...
+Setting up libpcrecpp0:amd64 (1:8.30-5) ...
+Setting up libpcre3-dev (1:8.30-5) ...
+++ opam install omake-mode -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install omake-mode
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   omake.0.9.8.6-0.rc1                   [required by omake-mode]
  - install   herelib.109.35.02                     [required by async_unix, async_kernel]
