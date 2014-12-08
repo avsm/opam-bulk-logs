@@ -29,3 +29,8 @@ Building ocamlnet.3.7.7:
   make all
   make opt
   make install
+Installing ocamlnet.3.7.7.
+Building ulex.1.1:
+  make
+  make all.opt
+  make install

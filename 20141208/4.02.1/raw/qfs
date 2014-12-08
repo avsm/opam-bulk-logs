@@ -9,3 +9,74 @@ debconf: delaying package configuration, since apt-utils is not installed
 Selecting previously unselected package libicu48:amd64.
 (Reading database ... 17996 files and directories currently installed.)
 Unpacking libicu48:amd64 (from .../libicu48_4.8.1.1-12+deb7u1_amd64.deb) ...
+Selecting previously unselected package libboost1.49-dev.
+Unpacking libboost1.49-dev (from .../libboost1.49-dev_1.49.0-3.2_amd64.deb) ...
+Selecting previously unselected package libboost-dev.
+Unpacking libboost-dev (from .../libboost-dev_1.49.0.1_amd64.deb) ...
+Setting up libicu48:amd64 (4.8.1.1-12+deb7u1) ...
+Setting up libboost1.49-dev (1.49.0-3.2) ...
+Setting up libboost-dev (1.49.0.1) ...
+++ opam install qfs -e source,linux
++ srcext=https://gist.githubusercontent.com/ygrek/7bb217d6ab7b25a765b7/raw
+Debian srcexts: https://gist.githubusercontent.com/ygrek/7bb217d6ab7b25a765b7/raw
++ echo Debian srcexts: https://gist.githubusercontent.com/ygrek/7bb217d6ab7b25a765b7/raw
++ '[' https://gist.githubusercontent.com/ygrek/7bb217d6ab7b25a765b7/raw '!=' '' ']'
+++ mktemp
++ t=/tmp/tmp.ySpRKYzcDV
++ curl -sL https://gist.githubusercontent.com/ygrek/7bb217d6ab7b25a765b7/raw
++ bash -ex /tmp/tmp.ySpRKYzcDV
++ git clone git://github.com/quantcast/qfs.git
+Cloning into 'qfs'...
++ sudo apt-get install xfslibs-dev libboost-regex-dev uuid-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libboost-regex1.49-dev libboost-regex1.49.0 libicu-dev libreadline5 xfsprogs
+Suggested packages:
+  icu-doc xfsdump acl attr quota
+The following NEW packages will be installed:
+  libboost-regex-dev libboost-regex1.49-dev libboost-regex1.49.0 libicu-dev
+  libreadline5 uuid-dev xfslibs-dev xfsprogs
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Need to get 8557 kB of archives.
+After this operation, 39.6 MB of additional disk space will be used.
+Do you want to continue [Y/n]? Abort.
++ opam install qfs
+The following actions will be performed:
+ - install   ocamlify.0.0.1                        [required by oasis]
+ - install   type_conv.112.01.00                   [required by ocaml-data-notation]
+ - install   ocamlmod.0.0.7                        [required by oasis]
+ - install   ocaml-data-notation.0.0.11            [required by oasis]
+ - install   oasis.0.4.5                           [required by qfs]
+ - install   qfs.0.1
+=== 6 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[oasis.0.4.5] Downloading https://forge.ocamlcore.org/frs/download.php/1475/oasis-0.4.5.tar.gz
+[ocaml-data-notation.0.0.11] Downloading https://forge.ocamlcore.org/frs/download.php/1310/ocaml-data-notation-0.0.11.tar.gz
+[ocamlify.0.0.1] Downloading http://forge.ocamlcore.org/frs/download.php/379/ocamlify-0.0.1.tar.gz
+[ocamlmod.0.0.7] Downloading https://forge.ocamlcore.org/frs/download.php/1350/ocamlmod-0.0.7.tar.gz
+[qfs.0.1] Downloading https://github.com/ahrefs/ocaml-qfs/archive/0.1.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/ocamlify/ocamlify.0.0.1/files/ocamlify.install to ~/.opam/4.02.1/build/ocamlify.0.0.1/
+Building ocamlify.0.0.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlify.0.0.1.
+Copying ~/.opam/repo/default/packages/ocamlmod/ocamlmod.0.0.7/files/ocamlmod.install to ~/.opam/4.02.1/build/ocamlmod.0.0.7/
+Building ocamlmod.0.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocamlmod.0.0.7.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building ocaml-data-notation.0.0.11:
+  make
+  make install

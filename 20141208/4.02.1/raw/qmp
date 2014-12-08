@@ -1,7 +1,12 @@
-++ opam install qmp -e centos,centos-7
+++ opam install qmp -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install qmp -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install qmp
 The following actions will be performed:
@@ -65,18 +70,6 @@ Removing qmp.0.9.1.
   make uninstall BINDIR=/home/opam/.opam/4.02.1/bin
 
 
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   cppo.1.1.2
- - install   yojson.1.1.8
- - install   obuild.0.1.1
- - install   cmdliner.0.9.6
- - install   easy-format.1.0.2
- - install   biniou.1.0.9
- - install   ounit.2.0.0
-The following failed
- - install   qmp.0.9.1
-
 #=== ERROR while installing qmp.0.9.1 =========================================#
 # opam-version         1.2.0
 # os                   linux
@@ -84,14 +77,14 @@ The following failed
 # path                 /home/opam/.opam/4.02.1/build/qmp.0.9.1
 # compiler             4.02.1
 # exit-code            2
-# env-file             /home/opam/.opam/4.02.1/build/qmp.0.9.1/qmp-1289-60459a.env
-# stdout-file          /home/opam/.opam/4.02.1/build/qmp.0.9.1/qmp-1289-60459a.out
-# stderr-file          /home/opam/.opam/4.02.1/build/qmp.0.9.1/qmp-1289-60459a.err
+# env-file             /home/opam/.opam/4.02.1/build/qmp.0.9.1/qmp-1656-d474c2.env
+# stdout-file          /home/opam/.opam/4.02.1/build/qmp.0.9.1/qmp-1656-d474c2.out
+# stderr-file          /home/opam/.opam/4.02.1/build/qmp.0.9.1/qmp-1656-d474c2.err
 ### stdout ###
 # ...[truncated]
-# package deps: [easy-format,biniou,yojson,qmp,unix,oUnit.advanced,oUnit]
-# [11 of 15] Linking executable dist/build/messages/messages
 #   [CMD]: /home/opam/.opam/4.02.1/bin/ocamlopt.opt -o dist/build/messages/messages -I dist/build/messages -I /home/opam/.opam/4.02.1/lib/easy-format -I /home/opam/.opam/4.02.1/lib/biniou -I /home/opam/.opam/4.02.1/lib/yojson -I dist/build/lib-qmp -I /home/opam/.opam/4.02.1/lib/ocaml -I /home/opam/.opam/4.02.1/lib/oUnit -I /home/opam/.opam/4.02.1/lib/oUnit easy_format.cmx biniou.cmxa yojson.cmx qmp.cmxa unix.cmxa oUnitAdvanced.cmxa oUnit.cmxa -cclib -Ldist/build/lib-qmp messages.cmx
+# [11 of 15] Compiling Client                        
+#   [CMD]: /home/opam/.opam/4.02.1/bin/ocamlopt.opt -I dist/build/cli -I dist/build/autogen -I cli -I dist/build/lib-qmp -I /home/opam/.opam/4.02.1/lib/cmdliner -I /home/opam/.opam/4.02.1/lib/ocaml -I /home/opam/.opam/4.02.1/lib/easy-format -I /home/opam/.opam/4.02.1/lib/biniou -I /home/opam/.opam/4.02.1/lib/yojson -bin-annot -o dist/build/cli/client.cmx -c cli/client.ml
 # [12 of 15] Compiling Cli                           
 #   [CMD]: /home/opam/.opam/4.02.1/bin/ocamlopt.opt -I dist/build/cli -I dist/build/autogen -I cli -I dist/build/lib-qmp -I /home/opam/.opam/4.02.1/lib/cmdliner -I /home/opam/.opam/4.02.1/lib/ocaml -I /home/opam/.opam/4.02.1/lib/easy-format -I /home/opam/.opam/4.02.1/lib/biniou -I /home/opam/.opam/4.02.1/lib/yojson -bin-annot -o dist/build/cli/cli.cmx -c cli/cli.ml
 #   compilation order: Common,Client,Cli
@@ -107,4 +100,16 @@ The following failed
 # make: *** [build] Error 6
 
 
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108081131.export"
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   cppo.1.1.2
+ - install   yojson.1.1.8
+ - install   obuild.0.1.1
+ - install   cmdliner.0.9.6
+ - install   easy-format.1.0.2
+ - install   biniou.1.0.9
+ - install   ounit.2.0.0
+The following failed
+ - install   qmp.0.9.1
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108134047.export"
