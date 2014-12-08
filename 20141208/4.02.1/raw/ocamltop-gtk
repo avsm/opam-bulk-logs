@@ -434,3 +434,57 @@ Building ocamltop-gtk.2.1.1:
   ./configure --prefix /home/opam/.opam/4.02.1
   make all
   make install-lib
+[ERROR] The compilation of ocamltop-gtk.2.1.1 failed.
+Removing ocamltop-gtk.2.1.1.
+  make uninstall-lib
+
+
+#=== ERROR while installing ocamltop-gtk.2.1.1 ================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.1/build/ocamltop-gtk.2.1.1
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/ocamltop-gtk.2.1.1/ocamltop-gtk-19142-2c871f.env
+# stdout-file          /home/opam/.opam/4.02.1/build/ocamltop-gtk.2.1.1/ocamltop-gtk-19142-2c871f.out
+# stderr-file          /home/opam/.opam/4.02.1/build/ocamltop-gtk.2.1.1/ocamltop-gtk-19142-2c871f.err
+### stdout ###
+# ...[truncated]
+# configure: creating ./config.status
+# config.status: creating master.Makefile
+# config.status: creating META
+# config.status: creating otop_messages.ml
+# config.status: creating mk-ocamltop-gtk
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -package compiler-libs.toplevel,gtktop,lablgtk2.auto-init  -annot  -c otop_messages.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -package compiler-libs.toplevel,gtktop,lablgtk2.auto-init  -annot  -c otop_outvalue.ml
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -a -o ocamltop.cma -package compiler-libs.toplevel,gtktop,lablgtk2.auto-init -annot  \
+# 	otop_messages.cmo otop_outvalue.cmo
+# /home/opam/.opam/4.02.1/bin/ocamlfind ocamlc -package compiler-libs.toplevel,gtktop,lablgtk2.auto-init  -annot  -c ocamltop.ml
+### stderr ###
+# ...[truncated]
+# Use (||) instead.
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.1/lib/ocaml, /home/opam/.opam/4.02.1/lib/ocaml/compiler-libs
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.1/lib/ocaml, /home/opam/.opam/4.02.1/lib/ocaml/compiler-libs
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.1/lib/ocaml, /home/opam/.opam/4.02.1/lib/ocaml/compiler-libs
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.02.1/lib/ocaml, /home/opam/.opam/4.02.1/lib/ocaml/compiler-libs
+# File "ocamltop.ml", line 93, characters 23-28:
+# Error: This pattern matches values of type 'a * 'b
+#        but a pattern was expected which matches values of type
+#          Parsetree.extension_constructor
+# make: *** [ocamltop.cmo] Error 2
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   lablgtk.2.18.3
+ - install   gtktop.2.0
+ - install   conf-gtksourceview.2
+ - install   xmlm.1.2.0
+ - install   lablgtk-extras.1.5
+ - install   conf-glade.2
+ - install   config-file.1.2
+The following failed
+ - install   ocamltop-gtk.2.1.1
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108130127.export"
