@@ -1,0 +1,19 @@
+++ opam install annot -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install annot
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   annot.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[annot.1.0.0] Downloading http://github.com/avsm/ocaml-annot/tarball/ocaml-annot-1.0.0
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building annot.1.0.0:
+  ./configure --prefix=/home/opam/.opam/4.02.1
+  make
+  make install
+Installing annot.1.0.0.
