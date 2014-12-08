@@ -1,0 +1,27 @@
+++ opam install curses -e ubuntu
++ depext=libncurses-dev
+Ubuntu depexts: libncurses-dev
++ echo Ubuntu depexts: libncurses-dev
++ '[' libncurses-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libncurses-dev
+++ opam install curses -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install curses
+The following actions will be performed:
+ - install   curses.1.0.3
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[curses.1.0.3] Downloading http://ocaml.phauna.org/distfiles/ocaml-curses-1.0.3.ogunden1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building curses.1.0.3:
+  ./configure --enable-widec
+  make byte
+  make opt
+  make install
+Installing curses.1.0.3.
