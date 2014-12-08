@@ -20,3 +20,4 @@ The following actions will be performed:
 Building procord.0.2.0:
   make
   make install
+Installing procord.0.2.0.
