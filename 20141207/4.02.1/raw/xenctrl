@@ -1,0 +1,85 @@
+++ opam install xenctrl -e ubuntu
++ depext='libxen-dev uuid-dev'
++ echo Ubuntu depexts: libxen-dev uuid-dev
+Ubuntu depexts: libxen-dev uuid-dev
++ '[' 'libxen-dev uuid-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libxen-dev uuid-dev
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xen/libxenstore3.0_4.4.1-0ubuntu0.14.04.1_amd64.deb  404  Not Found [IP: 91.189.92.201 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xen/libxen-4.4_4.4.1-0ubuntu0.14.04.1_amd64.deb  404  Not Found [IP: 91.189.92.201 80]
+
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xen/libxen-dev_4.4.1-0ubuntu0.14.04.1_amd64.deb  404  Not Found [IP: 91.189.92.201 80]
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+++ opam install xenctrl -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install xenctrl
+The following actions will be performed:
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   cmdliner.0.9.6                        [required by xenctrl]
+ - install   lwt.2.4.6                             [required by xenctrl]
+ - install   xenctrl.0.9.26
+=== 4 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+[xenctrl.0.9.26] Downloading https://github.com/xapi-project/ocaml-xen-lowlevel-libs/archive/0.9.26.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing cmdliner.0.9.6.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building xenctrl.0.9.26:
+  ./configure
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+[ERROR] The compilation of xenctrl.0.9.26 failed.
+Removing xenctrl.0.9.26.
+  make uninstall
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   cmdliner.0.9.6
+ - install   lwt.2.4.6
+ - install   ppx_tools.0.99.2
+The following failed
+ - install   xenctrl.0.9.26
+
+#=== ERROR while installing xenctrl.0.9.26 ====================================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              ./configure
+# path                 /home/opam/.opam/4.02.1/build/xenctrl.0.9.26
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/xenctrl.0.9.26/xenctrl-2011-a71bb4.env
+# stdout-file          /home/opam/.opam/4.02.1/build/xenctrl.0.9.26/xenctrl-2011-a71bb4.out
+# stderr-file          /home/opam/.opam/4.02.1/build/xenctrl.0.9.26/xenctrl-2011-a71bb4.err
+### stdout ###
+# Looking for xenctrl.h: missing
+# Looking for libxl_physinfo.outstanding_pages: missing
+# Looking for xen-4.5: missing
+# Looking for xc_domain_save generation_id: found
+# Looking for HVM_PARAM_VIRIDIAN: missing
+### stderr ###
+# Failure: we can't build anything without xenctrl.h
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108043042.export"
