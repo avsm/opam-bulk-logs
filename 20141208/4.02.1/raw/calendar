@@ -1,9 +1,14 @@
-++ opam install calendar -e centos,centos-7
+++ opam install calendar -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install calendar -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install calendar
-CentOS 7 depexts:
 The following actions will be performed:
  - install   calendar.2.03.2
 === 1 to install ===
