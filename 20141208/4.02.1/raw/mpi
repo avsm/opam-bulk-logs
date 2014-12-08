@@ -47,3 +47,10 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [mpi.1.01] Downloading https://github.com/HappyCrow/ocamlmpi/archive/opam_package_v00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building mpi.1.01:
+  make all
+  make opt
+  make install
+Installing mpi.1.01.
