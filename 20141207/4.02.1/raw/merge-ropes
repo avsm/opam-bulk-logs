@@ -1,0 +1,309 @@
+++ opam install merge-ropes -e ubuntu
++ depext='libssl-dev zlib1g-dev'
++ echo Ubuntu depexts: libssl-dev zlib1g-dev
++ '[' 'libssl-dev zlib1g-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libssl-dev zlib1g-dev
++ sudo apt-get install -qq -y libssl-dev zlib1g-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../libssl-dev_1.0.1f-1ubuntu2.7_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.0.1f-1ubuntu2.7) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../libssl-doc_1.0.1f-1ubuntu2.7_all.deb ...
+Unpacking libssl-doc (1.0.1f-1ubuntu2.7) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up libssl-dev:amd64 (1.0.1f-1ubuntu2.7) ...
+Setting up libssl-doc (1.0.1f-1ubuntu2.7) ...
+++ opam install merge-ropes -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install merge-ropes
+The following actions will be performed:
+ - install   hex.0.1.0                             [required by ezjsonm]
+ - install   herelib.109.35.02                     [required by core_kernel]
+ - install   re.1.2.2                              [required by irmin]
+ - install   sha.1.9                               [required by irmin]
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   ounit.2.0.0                           [required by cohttp]
+ - install   ssl.0.4.7                             [required by irmin]
+ - install   cmdliner.0.9.6                        [required by irmin]
+ - install   type_conv.112.01.00                   [required by comparelib]
+ - install   base-bytes.base                       [required by ocplib-endian]
+ - install   pipebang.110.01.00                    [required by core_kernel]
+ - install   stringext.1.0.0                       [required by uri]
+ - install   ppx_tools.0.99.2                      [required by lwt]
+ - install   camlzip.1.05                          [required by git]
+ - install   ocamlgraph.1.8.5                      [required by irmin]
+ - install   dolog.0.5                             [required by irmin]
+ - install   uutf.0.9.3                            [required by jsonm]
+ - install   crunch.1.3.0                          [required by irmin]
+ - install   variantslib.109.15.03                 [required by core_kernel]
+ - install   sexplib.112.01.00                     [required by merge-ropes]
+ - install   pa_ounit.111.28.00                    [required by core_kernel]
+ - install   fieldslib.109.20.03                   [required by core_kernel, cohttp]
+ - install   enumerate.111.08.00                   [required by core_kernel]
+ - install   comparelib.109.60.00                  [required by merge-ropes]
+ - install   bin_prot.112.01.00                    [required by core_kernel]
+ - install   ocplib-endian.0.7                     [required by cstruct]
+ - install   lwt.2.4.6                             [required by irmin]
+ - install   jsonm.0.9.1                           [required by ezjsonm]
+ - install   uri.1.7.2                             [required by irmin]
+ - install   pa_bench.111.28.00                    [required by core_kernel]
+ - install   pa_test.111.08.00                     [required by core_kernel]
+ - install   typerep.111.17.00                     [required by core_kernel]
+ - install   cstruct.1.5.0                         [required by mstruct]
+ - install   conduit.0.5.1                         [required by git]
+ - install   ezjsonm.0.3.0                         [required by irmin]
+ - install   cohttp.0.10.1                         [required by irmin]
+ - install   core_kernel.112.01.00                 [required by irmin]
+ - install   mstruct.1.3.1                         [required by irmin]
+ - install   git.1.2.0                             [required by irmin]
+ - install   irmin.0.8.3                           [required by merge-ropes]
+ - install   merge-ropes.0.1.0
+=== 41 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bin_prot.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/bin_prot-112.01.00.tar.gz
+[camlzip.1.05] Downloading http://forge.ocamlcore.org/frs/download.php/1037/camlzip-1.05.tar.gz
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cohttp.0.10.1] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.10.1.tar.gz
+[comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
+[conduit.0.5.1] Downloading https://github.com/mirage/ocaml-conduit/archive/v0.5.1.tar.gz
+[core_kernel.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core_kernel-112.01.00.tar.gz
+[crunch.1.3.0] Downloading https://github.com/mirage/ocaml-crunch/archive/v1.3.0.tar.gz
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[dolog.0.5] Downloading https://github.com/UnixJunkie/dolog/archive/v0.5.tar.gz
+[enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
+[ezjsonm.0.3.0] Downloading https://github.com/mirage/ezjsonm/archive/0.3.0.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[git.1.2.0] Downloading https://github.com/mirage/ocaml-git/archive/1.2.0.tar.gz
+[herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
+[hex.0.1.0] Downloading https://github.com/mirage/ocaml-hex/archive/0.1.0.tar.gz
+[irmin.0.8.3] Downloading https://github.com/mirage/irmin/archive/0.8.3.tar.gz
+[jsonm.0.9.1] Downloading http://erratique.ch/software/jsonm/releases/jsonm-0.9.1.tbz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[merge-ropes.0.1.0] Downloading https://github.com/mirage/merge-ropes/archive/0.1.0.tar.gz
+[mstruct.1.3.1] Downloading https://github.com/mirage/ocaml-mstruct/archive/1.3.1.tar.gz
+[ocamlgraph.1.8.5] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.5.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pa_bench.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_bench-111.28.00.tar.gz
+[pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
+[pa_test.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/pa_test-111.08.00.tar.gz
+[pipebang.110.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/110.01.00/individual/pipebang-110.01.00.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[sha.1.9] Downloading https://github.com/vincenthz/ocaml-sha/archive/ocaml-sha-v1.9.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[stringext.1.0.0] Downloading https://github.com/rgrinberg/stringext/archive/v1.0.0.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
+[uri.1.7.2] Downloading https://github.com/mirage/ocaml-uri/archive/v1.7.2.tar.gz
+[uutf.0.9.3] Downloading http://erratique.ch/software/uutf/releases/uutf-0.9.3.tbz
+[variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Copying ~/.opam/repo/default/packages/camlzip/camlzip.1.05/files/fix-install.patch to ~/.opam/4.02.1/build/camlzip.1.05/
+Applying fix-install.patch.
+Building camlzip.1.05:
+  make all
+  make allopt
+  make install-findlib
+Installing camlzip.1.05.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=true native-dynlink=true
+Installing cmdliner.0.9.6.
+Building dolog.0.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing dolog.0.5.
+Building herelib.109.35.02:
+  make
+  make install
+Installing herelib.109.35.02.
+Building hex.0.1.0:
+  make
+  make install
+Installing hex.0.1.0.
+Copying ~/.opam/repo/default/packages/ocamlgraph/ocamlgraph.1.8.5/files/ocamlgraph.install to ~/.opam/4.02.1/build/ocamlgraph.1.8.5/
+Building ocamlgraph.1.8.5:
+  ./configure
+  make
+  make install-findlib
+Installing ocamlgraph.1.8.5.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building pipebang.110.01.00:
+  make
+  make install
+Installing pipebang.110.01.00.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Copying ~/.opam/repo/default/packages/sha/sha.1.9/files/freebsd.patch to ~/.opam/4.02.1/build/sha.1.9/
+Applying freebsd.patch.
+Building sha.1.9:
+  make
+  make install
+Installing sha.1.9.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.02.1/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing ssl.0.4.7.
+Building stringext.1.0.0:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing stringext.1.0.0.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building uutf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing uutf.0.9.3.
+Building bin_prot.112.01.00:
+  make
+  make install
+Installing bin_prot.112.01.00.
+Building comparelib.109.60.00:
+  make
+  make install
+Installing comparelib.109.60.00.
+Building crunch.1.3.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing crunch.1.3.0.
+Building enumerate.111.08.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing enumerate.111.08.00.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Copying ~/.opam/repo/default/packages/jsonm/jsonm.0.9.1/files/jsonm.install to ~/.opam/4.02.1/build/jsonm.0.9.1/
+Building jsonm.0.9.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing jsonm.0.9.1.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building ocplib-endian.0.7:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.7.
+Building pa_ounit.111.28.00:
+  make
+  make install
+Installing pa_ounit.111.28.00.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building variantslib.109.15.03:
+  make
+  make install
+Installing variantslib.109.15.03.
+Building conduit.0.5.1:
+  make
+  make install
+Installing conduit.0.5.1.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.02.1 --enable-lwt --enable-camlp4 --disable-async --enable-unix --enable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
+Building ezjsonm.0.3.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1 --enable-lwt
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ezjsonm.0.3.0.
+Building pa_bench.111.28.00:
+  make
+  make install
+Installing pa_bench.111.28.00.
+Building pa_test.111.08.00:
+  make
+  make install
+Installing pa_test.111.08.00.
+Building typerep.111.17.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing typerep.111.17.00.
+Building uri.1.7.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.7.2.
+Building cohttp.0.10.1:
+  make PREFIX=/home/opam/.opam/4.02.1
+  make PREFIX=/home/opam/.opam/4.02.1 install
+Installing cohttp.0.10.1.
+Building core_kernel.112.01.00:
+  make
+  make install
+Installing core_kernel.112.01.00.
+Building mstruct.1.3.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing mstruct.1.3.1.
+Building git.1.2.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1 --disable-mirage
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing git.1.2.0.
+Building irmin.0.8.3:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing irmin.0.8.3.
+Building merge-ropes.0.1.0:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing merge-ropes.0.1.0.
