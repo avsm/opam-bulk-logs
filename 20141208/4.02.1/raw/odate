@@ -1,9 +1,14 @@
-++ opam install odate -e centos,centos-7
+++ opam install odate -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install odate -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install odate
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   menhir.20140422                       [required by odate]
  - install   ocamlify.0.0.1                        [required by oasis]
@@ -54,10 +59,3 @@ Building oasis.0.4.5:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing oasis.0.4.5.
-Building odate.0.5:
-  oasis setup
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing odate.0.5.
