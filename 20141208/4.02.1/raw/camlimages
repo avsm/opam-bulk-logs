@@ -30,3 +30,7 @@ Building omake.0.9.8.6-0.rc1:
   make bootstrap PREFIX=/home/opam/.opam/4.02.1
   make all PREFIX=/home/opam/.opam/4.02.1
   make install PREFIX=/home/opam/.opam/4.02.1
+Installing omake.0.9.8.6-0.rc1.
+Building camlimages.4.2.0:
+  omake --configure
+  omake install
