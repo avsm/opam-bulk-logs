@@ -19,3 +19,4 @@ The following actions will be performed:
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Building mirage-xen-minios.0.4.2:
   make build
+Installing mirage-xen-minios.0.4.2.

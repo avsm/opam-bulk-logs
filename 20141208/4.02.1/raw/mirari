@@ -4,3 +4,24 @@ Debian depexts:
 + echo Debian depexts:
 + '[' '' '!=' '' ']'
 ++ opam install mirari -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install mirari
+Debian srcexts:
+The following actions will be performed:
+ - install   cmdliner.0.9.6                        [required by mirari]
+ - install   obuild.0.1.1                          [required by mirari]
+ - install   mirari.0.9.0
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[mirari.0.9.0] Downloading https://github.com/mirage/mirari/archive/mirari-0.9.0.tar.gz
+[obuild.0.1.1] Downloading https://github.com/ocaml-obuild/obuild/archive/obuild-v0.1.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
