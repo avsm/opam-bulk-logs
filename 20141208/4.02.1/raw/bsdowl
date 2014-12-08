@@ -1,7 +1,15 @@
-++ opam install bsdowl -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+++ opam install bsdowl -e debian
++ depext=bmake
++ echo Debian depexts: bmake
+Debian depexts: bmake
++ '[' bmake '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y bmake
+E: Unable to locate package bmake
+++ opam install bsdowl -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install bsdowl
 The following actions will be performed:
@@ -21,7 +29,7 @@ Building bsdowl.2.2:
 Removing bsdowl.2.2.
   Nothing to do.
 
-
 #=== ERROR while installing bsdowl.2.2 ========================================#
 Internal error:
   "bmake": command not found.
+
