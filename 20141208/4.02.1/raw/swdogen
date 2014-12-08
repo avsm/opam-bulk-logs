@@ -50,3 +50,29 @@ Installing menhir.20140422.
 Building ounit.2.0.0:
   make build
   make install
+Installing ounit.2.0.0.
+Copying ~/.opam/repo/default/packages/atd/atd.1.1.2/files/atd.install to ~/.opam/4.02.1/build/atd.1.1.2/
+Building atd.1.1.2:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing atd.1.1.2.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.02.1/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.02.1/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Copying ~/.opam/repo/default/packages/atdgen/atdgen.1.4.1/files/atdgen.install to ~/.opam/4.02.1/build/atdgen.1.4.1/
+Building atdgen.1.4.1:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing atdgen.1.4.1.
+Copying ~/.opam/repo/default/packages/swdogen/swdogen.0.1.0/files/swdogen.install to ~/.opam/4.02.1/build/swdogen.0.1.0/
+Building swdogen.0.1.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
