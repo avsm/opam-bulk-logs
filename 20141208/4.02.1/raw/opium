@@ -1,24 +1,31 @@
-++ opam install opium -e centos,centos-7
+++ opam install opium -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+++ opam install opium -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install opium
 The following actions will be performed:
+ - install   hex.0.1.0                             [required by ezjsonm]
  - install   herelib.109.35.02                     [required by async_unix, async_kernel]
  - install   re.1.2.2                              [required by humane-re, cohttp, cow]
  - install   optcomp.1.6                           [required by ocplib-endian]
  - install   ocamlify.0.0.1                        [required by oasis]
  - install   stringext.1.1.0                       [required by cohttp]
  - install   ounit.2.0.0                           [required by cow, cohttp]
+ - install   cmdliner.0.9.6                        [required by cohttp]
  - install   ulex.1.1                              [required by cow]
  - install   omd.1.2.3                             [required by cow]
  - install   type_conv.112.01.00                   [required by cow]
+ - install   base-bytes.base                       [required by ocplib-endian]
  - install   pipebang.110.01.00                    [required by async_extra]
  - install   xmlm.1.2.0                            [required by cow]
  - install   ocamlmod.0.0.7                        [required by oasis]
  - install   uutf.0.9.3                            [required by jsonm]
- - install   ocplib-endian.0.4                     [required by cstruct]
  - install   variantslib.109.15.03                 [required by core]
  - install   sexplib.112.01.00                     [required by opium]
  - install   pa_ounit.111.28.00                    [required by async_extra]
@@ -28,6 +35,7 @@ The following actions will be performed:
  - install   dyntype.0.9.0                         [required by cow]
  - install   comparelib.109.60.00                  [required by async_unix]
  - install   bin_prot.112.01.00                    [required by async_extra]
+ - install   ocplib-endian.0.7                     [required by cstruct]
  - install   jsonm.0.9.1                           [required by ezjsonm]
  - install   uri.1.7.2                             [required by cow, cohttp]
  - install   ipaddr.2.5.0                          [required by conduit]
@@ -36,7 +44,7 @@ The following actions will be performed:
  - install   oasis.0.4.5                           [required by opium]
  - install   pa_test.111.08.00                     [required by async_unix, async_kernel]
  - install   typerep.111.17.00                     [required by core_kernel]
- - install   ezjsonm.0.2.0                         [required by cow]
+ - install   ezjsonm.0.3.1                         [required by cow]
  - install   humane-re.0.1.0                       [required by opium]
  - install   core_kernel.112.01.00                 [required by core]
  - install   cow.1.0.0                             [required by opium]
@@ -47,9 +55,9 @@ The following actions will be performed:
  - install   async.112.01.00                       [required by opium]
  - install   cstruct.1.5.0                         [required by conduit]
  - install   conduit.0.7.1                         [required by cohttp]
- - install   cohttp.0.12.0                         [required by opium]
+ - install   cohttp.0.13.0                         [required by opium]
  - install   opium.0.10.1
-=== 44 to install ===
+=== 47 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [async.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/async-112.01.00.tar.gz
@@ -57,7 +65,8 @@ The following actions will be performed:
 [async_kernel.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/async_kernel-112.01.00.tar.gz
 [async_unix.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/async_unix-112.01.00.tar.gz
 [bin_prot.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/bin_prot-112.01.00.tar.gz
-[cohttp.0.12.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.12.0.tar.gz
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cohttp.0.13.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.13.0.tar.gz
 [comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
 [conduit.0.7.1] Downloading https://github.com/mirage/ocaml-conduit/archive/v0.7.1.tar.gz
 [core.112.01.01] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core-112.01.01.tar.gz
@@ -67,9 +76,10 @@ The following actions will be performed:
 [custom_printf.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/custom_printf-112.01.00.tar.gz
 [dyntype.0.9.0] Downloading https://github.com/mirage/dyntype/archive/dyntype-0.9.0.tar.gz
 [enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
-[ezjsonm.0.2.0] Downloading https://github.com/mirage/ezjsonm/archive/0.2.0.tar.gz
+[ezjsonm.0.3.1] Downloading https://github.com/mirage/ezjsonm/archive/0.3.1.tar.gz
 [fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
 [herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
+[hex.0.1.0] Downloading https://github.com/mirage/ocaml-hex/archive/0.1.0.tar.gz
 [humane-re.0.1.0] Downloading https://github.com/rgrinberg/humane-re/archive/v0.1.0.tar.gz
 [ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
 [jsonm.0.9.1] Downloading http://erratique.ch/software/jsonm/releases/jsonm-0.9.1.tbz
@@ -77,7 +87,7 @@ The following actions will be performed:
 [ocaml-data-notation.0.0.11] Downloading https://forge.ocamlcore.org/frs/download.php/1310/ocaml-data-notation-0.0.11.tar.gz
 [ocamlify.0.0.1] Downloading http://forge.ocamlcore.org/frs/download.php/379/ocamlify-0.0.1.tar.gz
 [ocamlmod.0.0.7] Downloading https://forge.ocamlcore.org/frs/download.php/1350/ocamlmod-0.0.7.tar.gz
-[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
 [omd.1.2.3] Downloading http://pw374.github.io/distrib/omd/omd-1.2.3.tar.gz
 [opium.0.10.1] Downloading https://github.com/rgrinberg/opium/archive/v0.10.1.tar.gz
 [optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
@@ -98,10 +108,19 @@ The following actions will be performed:
 [xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
 Building herelib.109.35.02:
   make
   make install
 Installing herelib.109.35.02.
+Building hex.0.1.0:
+  make
+  make install
+Installing hex.0.1.0.
 Copying ~/.opam/repo/default/packages/ocamlify/ocamlify.0.0.1/files/ocamlify.install to ~/.opam/4.02.1/build/ocamlify.0.0.1/
 Building ocamlify.0.0.1:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
@@ -191,11 +210,11 @@ Building ocaml-data-notation.0.0.11:
   make
   make install
 Installing ocaml-data-notation.0.0.11.
-Building ocplib-endian.0.4:
+Building ocplib-endian.0.7:
   ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
   ocaml setup.ml -build
   ocaml setup.ml -install
-Installing ocplib-endian.0.4.
+Installing ocplib-endian.0.7.
 Building pa_ounit.111.28.00:
   make
   make install
@@ -213,11 +232,11 @@ Building custom_printf.112.01.00:
   make
   make install
 Installing custom_printf.112.01.00.
-Building ezjsonm.0.2.0:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1 --disable-lwt
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing ezjsonm.0.2.0.
+Building ezjsonm.0.3.1:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-lwt
+  make
+  make install
+Installing ezjsonm.0.3.1.
 Building ipaddr.2.5.0:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   make build
@@ -250,53 +269,3 @@ Installing uri.1.7.2.
 Building core_kernel.112.01.00:
   make
   make install
-Installing core_kernel.112.01.00.
-Building cow.1.0.0:
-  make all
-  make install
-Installing cow.1.0.0.
-Building humane-re.0.1.0:
-  make configure-no-tests
-  make build
-  make install
-Installing humane-re.0.1.0.
-Copying ~/.opam/repo/default/packages/core/core.112.01.01/files/core.install to ~/.opam/4.02.1/build/core.112.01.01/
-Building core.112.01.01:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  make
-  make install
-Installing core.112.01.01.
-Building async_kernel.112.01.00:
-  make
-  make install
-Installing async_kernel.112.01.00.
-Building async_unix.112.01.00:
-  make
-  make install
-Installing async_unix.112.01.00.
-Building async_extra.112.01.00:
-  make
-  make install
-Installing async_extra.112.01.00.
-Building async.112.01.00:
-  make
-  make install
-Installing async.112.01.00.
-Building cstruct.1.5.0:
-  ./configure --prefix /home/opam/.opam/4.02.1 --disable-lwt --enable-camlp4 --enable-async --enable-unix --enable-tests
-  make
-  make install
-Installing cstruct.1.5.0.
-Building conduit.0.7.1:
-  make
-  make install
-Installing conduit.0.7.1.
-Building cohttp.0.12.0:
-  make PREFIX=/home/opam/.opam/4.02.1
-  make PREFIX=/home/opam/.opam/4.02.1 install
-Installing cohttp.0.12.0.
-Building opium.0.10.1:
-  make configure-no-tests
-  make build
-  make install
-Installing opium.0.10.1.
