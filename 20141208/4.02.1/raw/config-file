@@ -21,3 +21,4 @@ Building config-file.1.2:
   ./configure --prefix /home/opam/.opam/4.02.1
   make all
   make install
+Installing config-file.1.2.
