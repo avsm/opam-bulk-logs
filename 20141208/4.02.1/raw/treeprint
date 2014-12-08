@@ -1,25 +1,48 @@
-++ opam install treeprint -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install treeprint -e debian
++ depext=libpcre3-dev
+Debian depexts: libpcre3-dev
++ echo Debian depexts: libpcre3-dev
++ '[' libpcre3-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libpcre3-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libpcrecpp0:amd64 (from .../libpcrecpp0_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package libpcre3-dev.
+Unpacking libpcre3-dev (from .../libpcre3-dev_1%3a8.30-5_amd64.deb) ...
+Setting up libpcrecpp0:amd64 (1:8.30-5) ...
+Setting up libpcre3-dev (1:8.30-5) ...
+++ opam install treeprint -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install treeprint
-CentOS 7 depexts:
 The following actions will be performed:
  - install   omake.0.9.8.6-0.rc1                   [required by treeprint]
+ - install   conf-libpcre.1                        [required by pcre]
  - install   type_conv.112.01.00                   [required by meta_conv]
- - install   spotlib.2.1.2                         [required by treeprint]
+ - install   pcre.7.1.3                            [required by ppx_test]
  - install   meta_conv.1.1.5                       [required by treeprint]
+ - install   ppx_test.1.0.1                        [required by spotlib]
+ - install   spotlib.2.5.0                         [required by treeprint]
  - install   treeprint.1.0.3
-=== 5 to install ===
+=== 8 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [meta_conv.1.1.5] Downloading https://bitbucket.org/camlspotter/meta_conv/get/1.1.5.tar.gz
 [omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
-[spotlib.2.1.2] Downloading https://bitbucket.org/camlspotter/spotlib/get/2.1.2.tar.gz
+[pcre.7.1.3] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.3/pcre-ocaml-7.1.3.tar.gz
+[ppx_test.1.0.1] Downloading https://bitbucket.org/camlspotter/ppx_test/get/1.0.1.tar.gz
+[spotlib.2.5.0] Downloading https://bitbucket.org/camlspotter/spotlib/get/2.5.0.tar.gz
 [treeprint.1.0.3] Downloading https://bitbucket.org/camlspotter/treeprint/get/1.0.3.tar.gz
 [type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
 
 =-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building conf-libpcre.1:
+  pkg-config libpcre
+Installing conf-libpcre.1.
 Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
 Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/opam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
 Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/omake.install to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
@@ -31,23 +54,3 @@ Building omake.0.9.8.6-0.rc1:
   make bootstrap PREFIX=/home/opam/.opam/4.02.1
   make all PREFIX=/home/opam/.opam/4.02.1
   make install PREFIX=/home/opam/.opam/4.02.1
-Installing omake.0.9.8.6-0.rc1.
-Building type_conv.112.01.00:
-  make
-  make install
-Installing type_conv.112.01.00.
-Building meta_conv.1.1.5:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing meta_conv.1.1.5.
-Building spotlib.2.1.2:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing spotlib.2.1.2.
-Building treeprint.1.0.3:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  ocaml setup.ml -build
-  ocaml setup.ml -install
-Installing treeprint.1.0.3.
