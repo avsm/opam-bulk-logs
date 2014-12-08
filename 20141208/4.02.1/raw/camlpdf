@@ -1,18 +1,1 @@
-++ opam install camlpdf -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
-+ '[' '' '!=' '' ']'
-+ opam install camlpdf
-The following actions will be performed:
- - install   camlpdf.2.1.1
-=== 1 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[camlpdf.2.1.1] Downloading https://github.com/johnwhitington/camlpdf/archive/v2.1.1.zip
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building camlpdf.2.1.1:
-  make
-  make install
-Installing camlpdf.2.1.1.
+++ opam install camlpdf -e debian

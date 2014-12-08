@@ -83,3 +83,4 @@ Building camlhighlight.3.0:
   make
   make doc
   make install
+Installing camlhighlight.3.0.
