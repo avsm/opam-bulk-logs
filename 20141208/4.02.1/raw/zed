@@ -1,1 +1,21 @@
 ++ opam install zed -e debian
++ depext=
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install zed -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install zed
+Debian srcexts:
+The following actions will be performed:
+ - install   react.1.2.0                           [required by zed]
+ - install   camomile.0.8.5                        [required by zed]
+ - install   zed.1.3
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camomile.0.8.5] Downloading https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
+[react.1.2.0] Downloading http://erratique.ch/software/react/releases/react-1.2.0.tbz
+[zed.1.3] Downloading https://github.com/diml/zed/archive/1.3.tar.gz

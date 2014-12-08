@@ -49,3 +49,8 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [yajl.0.7.3] Downloading https://raw.github.com/mlin/yajl-ocaml/tarball/yajl-ocaml-0.7.3.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building yajl.0.7.3:
+  make install
+Installing yajl.0.7.3.
