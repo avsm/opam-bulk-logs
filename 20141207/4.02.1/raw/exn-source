@@ -1,0 +1,23 @@
+++ opam install exn-source -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install exn-source -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install exn-source
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   exn-source.0.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[exn-source.0.1] Downloading https://github.com/johnwhitington/exn-source/archive/v0.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building exn-source.0.1:
+  make
+  make install
+Installing exn-source.0.1.
