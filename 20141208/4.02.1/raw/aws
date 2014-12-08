@@ -168,3 +168,7 @@ Building lwt.2.4.6:
   ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --enable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
   make build
   make install
+Installing lwt.2.4.6.
+Building ocaml-data-notation.0.0.11:
+  make
+  make install
