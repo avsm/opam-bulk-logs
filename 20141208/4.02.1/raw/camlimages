@@ -34,3 +34,4 @@ Installing omake.0.9.8.6-0.rc1.
 Building camlimages.4.2.0:
   omake --configure
   omake install
+Installing camlimages.4.2.0.
