@@ -1,0 +1,19 @@
+++ opam install diy -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install diy
+The following actions will be performed:
+ - install   diy.5.01
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[diy.5.01] Downloading http://diy.inria.fr/sources/diy-5.01.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building diy.5.01:
+  sed -i -e s#^PREFIX=.*$#PREFIX=/home/opam/.opam/4.02.1# Makefile
+  make -j 1
+  make install
+Installing diy.5.01.
