@@ -1,7 +1,12 @@
-++ opam install rpc_parallel -e centos,centos-7
+++ opam install rpc_parallel -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install rpc_parallel -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install rpc_parallel
 The following actions will be performed:
@@ -111,39 +116,3 @@ Installing pa_bench.111.28.00.
 Building pa_test.111.08.00:
   make
   make install
-Installing pa_test.111.08.00.
-Building typerep.111.17.00:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  make
-  make install
-Installing typerep.111.17.00.
-Building core_kernel.112.01.00:
-  make
-  make install
-Installing core_kernel.112.01.00.
-Copying ~/.opam/repo/default/packages/core/core.112.01.01/files/core.install to ~/.opam/4.02.1/build/core.112.01.01/
-Building core.112.01.01:
-  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
-  make
-  make install
-Installing core.112.01.01.
-Building async_kernel.112.01.00:
-  make
-  make install
-Installing async_kernel.112.01.00.
-Building async_unix.112.01.00:
-  make
-  make install
-Installing async_unix.112.01.00.
-Building async_extra.112.01.00:
-  make
-  make install
-Installing async_extra.112.01.00.
-Building async.112.01.00:
-  make
-  make install
-Installing async.112.01.00.
-Building rpc_parallel.112.01.00:
-  make
-  make install
-Installing rpc_parallel.112.01.00.
