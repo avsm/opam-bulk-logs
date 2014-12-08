@@ -1,0 +1,192 @@
+++ opam install gpr -e ubuntu
++ depext='libblas-dev libgsl0-dev liblapack-dev'
++ echo Ubuntu depexts: libblas-dev libgsl0-dev liblapack-dev
++ '[' 'libblas-dev libgsl0-dev liblapack-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libblas-dev libgsl0-dev liblapack-dev
++ sudo apt-get install -qq -y libblas-dev libgsl0-dev liblapack-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libgfortran3:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libgfortran3_4.8.2-19ubuntu1_amd64.deb ...
+Unpacking libgfortran3:amd64 (4.8.2-19ubuntu1) ...
+Selecting previously unselected package libblas3.
+Preparing to unpack .../libblas3_1.2.20110419-7_amd64.deb ...
+Unpacking libblas3 (1.2.20110419-7) ...
+Selecting previously unselected package libblas-dev.
+Preparing to unpack .../libblas-dev_1.2.20110419-7_amd64.deb ...
+Unpacking libblas-dev (1.2.20110419-7) ...
+Selecting previously unselected package libgsl0ldbl.
+Preparing to unpack .../libgsl0ldbl_1.16+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libgsl0ldbl (1.16+dfsg-1ubuntu1) ...
+Selecting previously unselected package libgsl0-dev.
+Preparing to unpack .../libgsl0-dev_1.16+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libgsl0-dev (1.16+dfsg-1ubuntu1) ...
+Selecting previously unselected package liblapack3.
+Preparing to unpack .../liblapack3_3.5.0-2ubuntu1_amd64.deb ...
+Unpacking liblapack3 (3.5.0-2ubuntu1) ...
+Selecting previously unselected package liblapack-dev.
+Preparing to unpack .../liblapack-dev_3.5.0-2ubuntu1_amd64.deb ...
+Unpacking liblapack-dev (3.5.0-2ubuntu1) ...
+Setting up libgfortran3:amd64 (4.8.2-19ubuntu1) ...
+Setting up libblas3 (1.2.20110419-7) ...
+update-alternatives: using /usr/lib/libblas/libblas.so.3 to provide /usr/lib/libblas.so.3 (libblas.so.3) in auto mode
+Setting up libblas-dev (1.2.20110419-7) ...
+update-alternatives: using /usr/lib/libblas/libblas.so to provide /usr/lib/libblas.so (libblas.so) in auto mode
+Setting up libgsl0ldbl (1.16+dfsg-1ubuntu1) ...
+Setting up libgsl0-dev (1.16+dfsg-1ubuntu1) ...
+Setting up liblapack3 (3.5.0-2ubuntu1) ...
+update-alternatives: using /usr/lib/lapack/liblapack.so.3 to provide /usr/lib/liblapack.so.3 (liblapack.so.3) in auto mode
+Setting up liblapack-dev (3.5.0-2ubuntu1) ...
+update-alternatives: using /usr/lib/lapack/liblapack.so to provide /usr/lib/liblapack.so (liblapack.so) in auto mode
+Processing triggers for libc-bin (2.19-0ubuntu6.3) ...
+++ opam install gpr -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install gpr
+The following actions will be performed:
+ - install   conf-gsl.1                            [required by gsl]
+ - install   herelib.109.35.02                     [required by core]
+ - install   pipebang.110.01.00                    [required by core]
+ - install   ounit.2.0.0                           [required by pa_ounit]
+ - install   type_conv.112.01.00                   [required by custom_printf, bin_prot, comparelib]
+ - install   lacaml.7.1.5                          [required by gpr]
+ - install   gsl.1.18.0                            [required by gpr]
+ - install   variantslib.109.15.03                 [required by core]
+ - install   sexplib.112.01.00                     [required by core]
+ - install   pa_ounit.111.28.00                    [required by core]
+ - install   fieldslib.109.20.03                   [required by core]
+ - install   enumerate.111.08.00                   [required by core]
+ - install   comparelib.109.60.00                  [required by core]
+ - install   bin_prot.112.01.00                    [required by core]
+ - install   pa_bench.111.28.00                    [required by core]
+ - install   custom_printf.112.01.00               [required by core]
+ - install   pa_test.111.08.00                     [required by core]
+ - install   typerep.111.17.00                     [required by core_kernel]
+ - install   core_kernel.112.01.00                 [required by core]
+ - install   core.112.01.01                        [required by gpr]
+ - install   gpr.1.2.0
+=== 21 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bin_prot.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/bin_prot-112.01.00.tar.gz
+[comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
+[core.112.01.01] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core-112.01.01.tar.gz
+[core_kernel.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core_kernel-112.01.00.tar.gz
+[custom_printf.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/custom_printf-112.01.00.tar.gz
+[enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[gpr.1.2.0] Downloading https://github.com/mmottl/gpr/releases/download/v1.2.0/gpr-1.2.0.tar.gz
+[gsl.1.18.0] Downloading https://github.com/mmottl/gsl-ocaml/releases/download/v1.18.0/gsl-ocaml-1.18.0.tar.gz
+[herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
+[lacaml.7.1.5] Downloading https://github.com/mmottl/lacaml/releases/download/v7.1.5/lacaml-7.1.5.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pa_bench.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_bench-111.28.00.tar.gz
+[pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
+[pa_test.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/pa_test-111.08.00.tar.gz
+[pipebang.110.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/110.01.00/individual/pipebang-110.01.00.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
+[variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building conf-gsl.1:
+  pkg-config gsl
+Installing conf-gsl.1.
+Building herelib.109.35.02:
+  make
+  make install
+Installing herelib.109.35.02.
+Building lacaml.7.1.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing lacaml.7.1.5.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building pipebang.110.01.00:
+  make
+  make install
+Installing pipebang.110.01.00.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building bin_prot.112.01.00:
+  make
+  make install
+Installing bin_prot.112.01.00.
+Building comparelib.109.60.00:
+  make
+  make install
+Installing comparelib.109.60.00.
+Building enumerate.111.08.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing enumerate.111.08.00.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building gsl.1.18.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing gsl.1.18.0.
+Building pa_ounit.111.28.00:
+  make
+  make install
+Installing pa_ounit.111.28.00.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building variantslib.109.15.03:
+  make
+  make install
+Installing variantslib.109.15.03.
+Building custom_printf.112.01.00:
+  make
+  make install
+Installing custom_printf.112.01.00.
+Building pa_bench.111.28.00:
+  make
+  make install
+Installing pa_bench.111.28.00.
+Building pa_test.111.08.00:
+  make
+  make install
+Installing pa_test.111.08.00.
+Building typerep.111.17.00:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing typerep.111.17.00.
+Building core_kernel.112.01.00:
+  make
+  make install
+Installing core_kernel.112.01.00.
+Copying ~/.opam/repo/default/packages/core/core.112.01.01/files/core.install to ~/.opam/4.02.1/build/core.112.01.01/
+Building core.112.01.01:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing core.112.01.01.
+Building gpr.1.2.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing gpr.1.2.0.
