@@ -1,0 +1,291 @@
+++ opam install xapi-netdev -e centos,centos-7
++ depext=openssl-devel
++ echo CentOS 7 depexts: openssl-devel
+CentOS 7 depexts: openssl-devel
++ '[' openssl-devel '!=' '' ']'
++ sudo yum install -y openssl-devel
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: anorien.csc.warwick.ac.uk
+ * extras: anorien.csc.warwick.ac.uk
+ * updates: mirror.sov.uk.goscomb.net
+Resolving Dependencies
+--> Running transaction check
+---> Package openssl-devel.x86_64 1:1.0.1e-34.el7_0.6 will be installed
+--> Processing Dependency: zlib-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64
+--> Running transaction check
+---> Package krb5-devel.x86_64 0:1.11.3-49.el7 will be installed
+--> Processing Dependency: libverto-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libselinux-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: libcom_err-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+--> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.11.3-49.el7.x86_64
+---> Package zlib-devel.x86_64 0:1.2.7-13.el7 will be installed
+--> Running transaction check
+---> Package keyutils-libs-devel.x86_64 0:1.5.8-3.el7 will be installed
+---> Package libcom_err-devel.x86_64 0:1.42.9-4.el7 will be installed
+---> Package libselinux-devel.x86_64 0:2.2.2-6.el7 will be installed
+--> Processing Dependency: libsepol-devel >= 2.1.9-1 for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.2.2-6.el7.x86_64
+--> Processing Dependency: pkgconfig(libpcre) for package: libselinux-devel-2.2.2-6.el7.x86_64
+---> Package libverto-devel.x86_64 0:0.2.5-4.el7 will be installed
+--> Running transaction check
+---> Package libsepol-devel.x86_64 0:2.1.9-3.el7 will be installed
+---> Package pcre-devel.x86_64 0:8.32-12.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                 Arch       Version                   Repository   Size
+================================================================================
+Installing:
+ openssl-devel           x86_64     1:1.0.1e-34.el7_0.6       updates     1.2 M
+Installing for dependencies:
+ keyutils-libs-devel     x86_64     1.5.8-3.el7               base         37 k
+ krb5-devel              x86_64     1.11.3-49.el7             base        611 k
+ libcom_err-devel        x86_64     1.42.9-4.el7              base         30 k
+ libselinux-devel        x86_64     2.2.2-6.el7               base        174 k
+ libsepol-devel          x86_64     2.1.9-3.el7               base         71 k
+ libverto-devel          x86_64     0.2.5-4.el7               base         12 k
+ pcre-devel              x86_64     8.32-12.el7               base        477 k
+ zlib-devel              x86_64     1.2.7-13.el7              base         49 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+8 Dependent packages)
+
+Total download size: 2.6 M
+Installed size: 5.7 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              2.2 MB/s | 2.6 MB  00:01     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : keyutils-libs-devel-1.5.8-3.el7.x86_64                       1/9 
+  Installing : pcre-devel-8.32-12.el7.x86_64                                2/9 
+  Installing : zlib-devel-1.2.7-13.el7.x86_64                               3/9 
+  Installing : libsepol-devel-2.1.9-3.el7.x86_64                            4/9 
+  Installing : libselinux-devel-2.2.2-6.el7.x86_64                          5/9 
+  Installing : libverto-devel-0.2.5-4.el7.x86_64                            6/9 
+  Installing : libcom_err-devel-1.42.9-4.el7.x86_64                         7/9 
+  Installing : krb5-devel-1.11.3-49.el7.x86_64                              8/9 
+  Installing : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     9/9 
+  Verifying  : libcom_err-devel-1.42.9-4.el7.x86_64                         1/9 
+  Verifying  : libselinux-devel-2.2.2-6.el7.x86_64                          2/9 
+  Verifying  : libverto-devel-0.2.5-4.el7.x86_64                            3/9 
+  Verifying  : 1:openssl-devel-1.0.1e-34.el7_0.6.x86_64                     4/9 
+  Verifying  : libsepol-devel-2.1.9-3.el7.x86_64                            5/9 
+  Verifying  : krb5-devel-1.11.3-49.el7.x86_64                              6/9 
+  Verifying  : zlib-devel-1.2.7-13.el7.x86_64                               7/9 
+  Verifying  : pcre-devel-8.32-12.el7.x86_64                                8/9 
+  Verifying  : keyutils-libs-devel-1.5.8-3.el7.x86_64                       9/9 
+
+Installed:
+  openssl-devel.x86_64 1:1.0.1e-34.el7_0.6                                      
+
+Dependency Installed:
+  keyutils-libs-devel.x86_64 0:1.5.8-3.el7                                      
+  krb5-devel.x86_64 0:1.11.3-49.el7                                             
+  libcom_err-devel.x86_64 0:1.42.9-4.el7                                        
+  libselinux-devel.x86_64 0:2.2.2-6.el7                                         
+  libsepol-devel.x86_64 0:2.1.9-3.el7                                           
+  libverto-devel.x86_64 0:0.2.5-4.el7                                           
+  pcre-devel.x86_64 0:8.32-12.el7                                               
+  zlib-devel.x86_64 0:1.2.7-13.el7                                              
+
+Complete!
++ opam install xapi-netdev
+The following actions will be performed:
+ - install   re.1.2.2                              [required by xapi-forkexecd]
+ - install   obuild.0.1.1                          [required by xapi-rrd]
+ - install   ounit.2.0.0                           [required by message-switch, cohttp]
+ - install   fd-send-recv.1.0.1                    [required by xapi-forkexecd]
+ - install   ssl.0.4.7                             [required by message-switch, lwt, cohttp]
+ - install   xmlm.1.2.0                            [required by xapi-idl, rpc]
+ - install   cmdliner.0.9.6                        [required by xapi-idl]
+ - install   syslog.1.4                            [required by xapi-forkexecd]
+ - install   uuidm.0.9.5                           [required by xapi-forkexecd]
+ - install   type_conv.112.01.00                   [required by rpc]
+ - install   lwt.2.4.5                             [required by rpc]
+ - install   xapi-stdext.0.12.0                    [required by xapi-netdev]
+ - install   sexplib.112.01.00                     [required by cohttp]
+ - install   fieldslib.109.20.03                   [required by cohttp]
+ - install   rpc.1.5.1                             [required by xapi-forkexecd]
+ - install   xapi-inventory.0.9.1                  [required by xapi-idl]
+ - install   uri.1.4.0                             [required by xapi-idl]
+ - install   xapi-rrd.0.9.1                        [required by xapi-idl]
+ - install   cohttp.0.10.0                         [required by xapi-idl]
+ - install   message-switch.0.10.4                 [required by xapi-idl]
+ - install   xapi-idl.0.9.19                       [required by xapi-forkexecd]
+ - install   xapi-forkexecd.0.9.2                  [required by xapi-netdev]
+ - install   xapi-netdev.0.9.1
+=== 23 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[cohttp.0.10.0] Downloading https://github.com/mirage/ocaml-cohttp/archive/v0.10.0.tar.gz
+[fd-send-recv.1.0.1] Downloading https://github.com/xen-org/ocaml-fd-send-recv/archive/ocaml-fd-send-recv-1.0.1.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[message-switch.0.10.4] Downloading https://github.com/djs55/message-switch/archive/v0.10.4.tar.gz
+[obuild.0.1.1] Downloading https://github.com/ocaml-obuild/obuild/archive/obuild-v0.1.1.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[rpc.1.5.1] Downloading https://github.com/mirage/ocaml-rpc/archive/1.5.1.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[syslog.1.4] Downloading http://ftp.de.debian.org/debian/pool/main/s/syslog-ocaml/syslog-ocaml_1.4.orig.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[uri.1.4.0] Downloading https://github.com/mirage/ocaml-uri/archive/v1.4.0.tar.gz
+[uuidm.0.9.5] Downloading http://erratique.ch/software/uuidm/releases/uuidm-0.9.5.tbz
+[xapi-forkexecd.0.9.2] Downloading https://github.com/xapi-project/forkexecd/archive/0.9.2/forkexecd-0.9.2.tar.gz
+[xapi-idl.0.9.19] Downloading https://github.com/xapi-project/xcp-idl/archive/v0.9.19.tar.gz
+[xapi-inventory.0.9.1] Downloading https://github.com/xapi-project/xcp-inventory/archive/v0.9.1.tar.gz
+[xapi-netdev.0.9.1] Downloading https://github.com/xapi-project/netdev/archive/v0.9.1/netdev-0.9.1.tar.gz
+[xapi-rrd.0.9.1] Downloading https://github.com/xapi-project/xcp-rrd/archive/v0.9.1.tar.gz
+[xapi-stdext.0.12.0] Downloading http://github.com/xapi-project/stdext/archive/v0.12.0.tar.gz
+[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Building fd-send-recv.1.0.1:
+  make
+  make install
+Installing fd-send-recv.1.0.1.
+Copying ~/.opam/repo/default/packages/obuild/obuild.0.1.1/files/obuild.install to ~/.opam/4.02.1/build/obuild.0.1.1/
+Building obuild.0.1.1:
+  ./bootstrap
+Installing obuild.0.1.1.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.02.1/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing ssl.0.4.7.
+Building syslog.1.4:
+  make reallyall
+  make install
+Installing syslog.1.4.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Copying ~/.opam/repo/default/packages/uuidm/uuidm.0.9.5/files/uuidm.install to ~/.opam/4.02.1/build/uuidm.0.9.5/
+Building uuidm.0.9.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uuidm.0.9.5.
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building lwt.2.4.5:
+  ./configure --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
+  make build
+  make install
+Installing lwt.2.4.5.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building xapi-stdext.0.12.0:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing xapi-stdext.0.12.0.
+Building rpc.1.5.1:
+  make
+  make install
+Installing rpc.1.5.1.
+Building uri.1.4.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uri.1.4.0.
+Building xapi-inventory.0.9.1:
+  ./configure --default_inventory=/home/opam/.opam/4.02.1/etc
+  make
+  make install
+Installing xapi-inventory.0.9.1.
+Building cohttp.0.10.0:
+  make PREFIX=/home/opam/.opam/4.02.1
+  make PREFIX=/home/opam/.opam/4.02.1 install
+Installing cohttp.0.10.0.
+Building xapi-rrd.0.9.1:
+  make
+  make PREFIX=/home/opam/.opam/4.02.1 install
+Installing xapi-rrd.0.9.1.
+Building message-switch.0.10.4:
+  ./configure --bindir /home/opam/.opam/4.02.1/bin
+  make
+  make install
+[ERROR] The compilation of message-switch.0.10.4 failed.
+Removing message-switch.0.10.4.
+  ocamlfind remove message_switch
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   sexplib.112.01.00
+ - install   type_conv.112.01.00
+ - install   uuidm.0.9.5
+ - install   syslog.1.4
+ - install   xapi-inventory.0.9.1
+ - install   cmdliner.0.9.6
+ - install   uri.1.4.0
+ - install   xmlm.1.2.0
+ - install   cohttp.0.10.0
+ - install   ssl.0.4.7
+ - install   fd-send-recv.1.0.1
+ - install   rpc.1.5.1
+ - install   ounit.2.0.0
+ - install   xapi-rrd.0.9.1
+ - install   lwt.2.4.5
+ - install   obuild.0.1.1
+ - install   re.1.2.2
+ - install   xapi-stdext.0.12.0
+ - install   fieldslib.109.20.03
+The following failed
+ - install   message-switch.0.10.4
+Due to the errors, the following have been cancelled
+ - install   xapi-netdev.0.9.1
+ - install   xapi-forkexecd.0.9.2
+ - install   xapi-idl.0.9.19
+
+#=== ERROR while installing message-switch.0.10.4 =============================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure --bindir /home/opam/.opam/4.02.1/bin
+# path                 /home/opam/.opam/4.02.1/build/message-switch.0.10.4
+# compiler             4.02.1
+# exit-code            127
+# env-file             /home/opam/.opam/4.02.1/build/message-switch.0.10.4/message-switch-6229-e0ba4f.env
+# stdout-file          /home/opam/.opam/4.02.1/build/message-switch.0.10.4/message-switch-6229-e0ba4f.out
+# stderr-file          /home/opam/.opam/4.02.1/build/message-switch.0.10.4/message-switch-6229-e0ba4f.err
+### stderr ###
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# ./configure: line 12: /tmp/configure.tK1kU/configure: No such file or directory
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108090106.export"
