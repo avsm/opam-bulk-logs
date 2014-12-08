@@ -1,9 +1,14 @@
-++ opam install gettext -e centos,centos-7
+++ opam install gettext -e debian
 + depext=
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+++ opam install gettext -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install gettext
+Debian srcexts:
 The following actions will be performed:
  - install   ounit.2.0.0                           [required by gettext]
  - install   camomile.0.8.5                        [required by gettext]
@@ -12,8 +17,8 @@ The following actions will be performed:
 === 4 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[camomile.0.8.5] Downloading https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
 [fileutils.0.4.4] Downloading http://forge.ocamlcore.org/frs/download.php/892/ocaml-fileutils-0.4.4.tar.gz
+[camomile.0.8.5] Downloading https://github.com/yoriyuki/Camomile/releases/download/rel-0.8.5/camomile-0.8.5.tar.bz2
 [gettext.0.3.5] Downloading https://forge.ocamlcore.org/frs/download.php/1433/ocaml-gettext-0.3.5.tar.gz
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
 
