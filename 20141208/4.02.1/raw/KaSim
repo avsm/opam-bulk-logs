@@ -4,3 +4,20 @@
 + '[' '' '!=' '' ']'
 Debian depexts:
 ++ opam install KaSim -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install KaSim
+Debian srcexts:
+The following actions will be performed:
+ - install   KaSim.3.5.141112
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[KaSim.3.5.141112] Downloading https://github.com/Kappa-Dev/KaSim/archive/v3.5-121114.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building KaSim.3.5.141112:
+  make
+  cp KaSim /home/opam/.opam/4.02.1/bin/
+Installing KaSim.3.5.141112.
