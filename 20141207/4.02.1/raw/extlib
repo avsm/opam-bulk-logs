@@ -1,0 +1,22 @@
+++ opam install extlib -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install extlib -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install extlib
+The following actions will be performed:
+ - install   extlib.1.6.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[extlib.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building extlib.1.6.1:
+  make minimal=1 build install
+Installing extlib.1.6.1.
