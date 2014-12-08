@@ -641,3 +641,23 @@ Setting up latex-xcolor (2.11-1.1) ...
 Setting up prosper (1.00.4+cvs.2007.05.01-4) ...
 Running mktexlsr. This may take some time... done.
 Setting up texlive (2012.20120611-5) ...
+Setting up texlive-latex-extra (2012.20120611-2) ...
+Processing triggers for tex-common ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+Running mktexlsr. This may take some time... done.
+Running updmap-sys. This may take some time... done.
+Running mktexlsr /var/lib/texmf ... done.
+Setting up pgf (2.10-1) ...
+Processing triggers for tex-common ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+Running mktexlsr. This may take some time... done.
