@@ -1,0 +1,24 @@
+++ opam install hevea -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install hevea -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install hevea
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   hevea.2.01
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[hevea.2.01] Downloading http://hevea.inria.fr/old/hevea-2.01.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/hevea/hevea.2.01/files/hevea.install to ~/.opam/4.02.1/build/hevea.2.01/
+Building hevea.2.01:
+  make PREFIX=/home/opam/.opam/4.02.1
+  make install
+Installing hevea.2.01.
