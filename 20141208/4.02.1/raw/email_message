@@ -1,1 +1,50 @@
 ++ opam install email_message -e debian
++ depext=
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install email_message -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install email_message
+Debian srcexts:
+The following actions will be performed:
+ - install   herelib.109.35.02                     [required by async_unix, async_kernel]
+ - install   pipebang.110.01.00                    [required by core_extended]
+ - install   ounit.2.0.0                           [required by pa_ounit]
+ - install   type_conv.112.01.00                   [required by bin_prot]
+ - install   variantslib.109.15.03                 [required by core]
+ - install   sexplib.112.01.00                     [required by email_message]
+ - install   pa_ounit.111.28.00                    [required by email_message]
+ - install   fieldslib.109.20.03                   [required by email_message]
+ - install   enumerate.111.08.00                   [required by core]
+ - install   comparelib.109.60.00                  [required by core_extended]
+ - install   bin_prot.112.01.00                    [required by core_extended]
+ - install   pa_bench.111.28.00                    [required by core]
+ - install   custom_printf.112.01.00               [required by core_extended]
+ - install   pa_test.111.08.00                     [required by core_extended]
+ - install   typerep.111.17.00                     [required by core_kernel]
+ - install   core_kernel.112.01.00                 [required by core]
+ - install   core.112.01.01                        [required by email_message]
+ - install   textutils.112.01.00                   [required by core_extended]
+ - install   re2.111.08.00                         [required by email_message]
+ - install   async_kernel.112.01.00                [required by async]
+ - install   core_extended.112.01.00               [required by email_message]
+ - install   async_unix.112.01.00                  [required by async]
+ - install   async_extra.112.01.00                 [required by async]
+ - install   async.112.01.00                       [required by email_message]
+ - install   email_message.109.42.alpha1
+=== 25 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[async.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/async-112.01.00.tar.gz
+[async_extra.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/async_extra-112.01.00.tar.gz
+[async_kernel.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/async_kernel-112.01.00.tar.gz
+[async_unix.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/async_unix-112.01.00.tar.gz
+[bin_prot.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/bin_prot-112.01.00.tar.gz
+[comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
+[core.112.01.01] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core-112.01.01.tar.gz
+[core_extended.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core_extended-112.01.00.tar.gz
+[core_kernel.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core_kernel-112.01.00.tar.gz
+[custom_printf.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/custom_printf-112.01.00.tar.gz
