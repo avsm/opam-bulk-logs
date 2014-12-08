@@ -56,3 +56,4 @@ Installing cstruct.1.5.0.
 Building pcf-format.0.0.1:
   make
   make install
+Installing pcf-format.0.0.1.
