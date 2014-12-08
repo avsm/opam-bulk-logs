@@ -1,0 +1,24 @@
+++ opam install acme -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install acme
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   ocaml9p.0.4                           [required by acme]
+ - install   acme.0.1
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[acme.0.1] Downloading https://github.com/raphael-proust/ocaml-acme/archive/0.1.tar.gz
+[ocaml9p.0.4] Downloading https://github.com/raphael-proust/ocaml9p/archive/0.4.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ocaml9p.0.4:
+  make
+  make install
+Installing ocaml9p.0.4.
+Building acme.0.1:
+  make
+  make install
+Installing acme.0.1.
