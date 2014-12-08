@@ -1,0 +1,39 @@
+++ opam install heptagon -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install heptagon -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
+Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install heptagon
+The following actions will be performed:
+ - install   ocamlgraph.1.8.5                      [required by heptagon]
+ - install   menhir.20140422                       [required by heptagon]
+ - install   heptagon.1.00.06
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[heptagon.1.00.06] Downloading https://gforge.inria.fr/frs/download.php/33440/heptagon-1.00.06.tar.gz
+[ocamlgraph.1.8.5] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.5.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+Installing menhir.20140422.
+Copying ~/.opam/repo/default/packages/ocamlgraph/ocamlgraph.1.8.5/files/ocamlgraph.install to ~/.opam/4.02.1/build/ocamlgraph.1.8.5/
+Building ocamlgraph.1.8.5:
+  ./configure
+  make
+  make install-findlib
+Installing ocamlgraph.1.8.5.
+Building heptagon.1.00.06:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing heptagon.1.00.06.
