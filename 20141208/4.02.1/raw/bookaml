@@ -1,0 +1,95 @@
+++ opam install bookaml -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install bookaml
+The following actions will be performed:
+ - install   cryptokit.1.9                         [required by bookaml]
+ - install   calendar.2.03.2                       [required by bookaml]
+ - install   batteries.2.3.1                       [required by bookaml]
+ - install   tyxml.3.2.1                           [required by bookaml]
+ - install   ocamlnet.3.7.7                        [required by bookaml]
+ - install   bookaml.1.0
+=== 6 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
+[calendar.2.03.2] Downloading http://forge.ocamlcore.org/frs/download.php/915/calendar-2.03.2.tar.gz
+[bookaml.1.0] Downloading http://forge.ocamlcore.org/frs/download.php/1434/bookaml-1.0.tgz
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
+[tyxml.3.2.1] Downloading https://github.com/ocsigen/tyxml/archive/3.2.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building batteries.2.3.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make all
+  make install
+Installing batteries.2.3.1.
+Building calendar.2.03.2:
+  ./configure
+  make
+  make install
+Installing calendar.2.03.2.
+Building cryptokit.1.9:
+  make
+  make install
+[ERROR] The compilation of cryptokit.1.9 failed.
+Removing cryptokit.1.9.
+  ocamlfind remove cryptokit
+Building tyxml.3.2.1:
+  ./configure --enable-syntax --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing tyxml.3.2.1.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   tyxml.3.2.1
+ - install   batteries.2.3.1
+ - install   calendar.2.03.2
+The following failed
+ - install   cryptokit.1.9
+Due to the errors, the following have been cancelled
+ - install   bookaml.1.0
+ - install   ocamlnet.3.7.7
+
+#=== ERROR while installing cryptokit.1.9 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/cryptokit.1.9
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/cryptokit.1.9/cryptokit-1750-e7966f.env
+# stdout-file          /home/opam/.opam/4.02.1/build/cryptokit.1.9/cryptokit-1750-e7966f.out
+# stderr-file          /home/opam/.opam/4.02.1/build/cryptokit.1.9/cryptokit-1750-e7966f.err
+### stdout ###
+# ...[truncated]
+# mv stubs-misc.o src/stubs-misc.o
+# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-rng.c
+# mv stubs-rng.o src/stubs-rng.o
+# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
+# + ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
+# src/stubs-zlib.c:19:18: fatal error: zlib.h: No such file or directory
+#  #include <zlib.h>
+#                   ^
+# compilation terminated.
+# Command exited with code 2.
+### stderr ###
+# ...[truncated]
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "/home/gildor/programmation/oasis/src/oasis/OASISFindlib.ml", line 256, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' src/libcryptokit_stubs.a src/dllcryptokit_stubs.so src/cryptokit.cma src/cryptokit.cmxa src/cryptokit.a src/cryptokit.cmxs -tag debug -classic-display' terminated with error code 10")
+# make: *** [build] Error 1
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108052416.export"
