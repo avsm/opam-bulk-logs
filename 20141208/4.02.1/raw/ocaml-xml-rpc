@@ -1,62 +1,11 @@
-++ opam install ocaml-xml-rpc -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-+ '[' '' '!=' '' ']'
-+ opam install ocaml-xml-rpc
-CentOS 7 depexts:
-The following actions will be performed:
- - install   ulex.1.1                              [required by pxp]
- - install   conf-libpcre.1                        [required by pcre]
- - install   pcre.7.1.3                            [required by ocamlnet, annexlib]
- - install   ocamlnet.3.7.7                        [required by ocaml-xml-rpc]
- - install   annexlib.0.13.5                       [required by ocaml-xml-rpc]
- - install   pxp.1.2.3                             [required by ocaml-xml-rpc]
- - install   ocaml-xml-rpc.0.2.3
-=== 7 to install ===
-
-=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[annexlib.0.13.5] Downloading http://godi-backup2.camlcity.org/godi-backup/annexlib-0.13.5.tar.gz
-[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
-[ocaml-xml-rpc.0.2.3] Downloading http://raevnos.pennmush.org/code/ocaml-xml-rpc/ocaml-xml-rpc-0.2.3.tar.gz
-[pcre.7.1.3] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.3/pcre-ocaml-7.1.3.tar.gz
-[pxp.1.2.3] Downloading http://download.camlcity.org/download/pxp-1.2.3.tar.gz
-[ulex.1.1] Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building conf-libpcre.1:
-  pkg-config libpcre
-Removing conf-libpcre.1.
-[ERROR] The compilation of conf-libpcre.1 failed.
-  Nothing to do.
-Building ulex.1.1:
-  make
-  make all.opt
-  make install
-Installing ulex.1.1.
-
-
-#=== ERROR while installing conf-libpcre.1 ====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              pkg-config libpcre
-# path                 /home/opam/.opam/4.02.1/build/conf-libpcre.1
-# compiler             4.02.1
-# exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/conf-libpcre.1/conf-libpcre-77-58c514.env
-# stdout-file          /home/opam/.opam/4.02.1/build/conf-libpcre.1/conf-libpcre-77-58c514.out
-# stderr-file          /home/opam/.opam/4.02.1/build/conf-libpcre.1/conf-libpcre-77-58c514.err
-
-
-=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-These actions have been completed successfully
- - install   ulex.1.1
-The following failed
- - install   conf-libpcre.1
-Due to the errors, the following have been cancelled
- - install   pxp.1.2.3
- - install   pcre.7.1.3
- - install   ocaml-xml-rpc.0.2.3
- - install   annexlib.0.13.5
- - install   ocamlnet.3.7.7
-
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108073044.export"
+++ opam install ocaml-xml-rpc -e debian
++ depext=libpcre3-dev
++ echo Debian depexts: libpcre3-dev
++ '[' libpcre3-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: libpcre3-dev
++ sudo apt-get install -qq -y libpcre3-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libpcrecpp0:amd64 (from .../libpcrecpp0_1%3a8.30-5_amd64.deb) ...
