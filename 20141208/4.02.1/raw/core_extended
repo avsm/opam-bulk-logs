@@ -139,3 +139,4 @@ Installing textutils.112.01.00.
 Building core_extended.112.01.00:
   make
   make install
+Installing core_extended.112.01.00.
