@@ -1,9 +1,27 @@
-++ opam install riak-pb -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
+++ opam install riak-pb -e debian
++ depext=protobuf-compiler
++ echo Debian depexts: protobuf-compiler
+Debian depexts: protobuf-compiler
++ '[' protobuf-compiler '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y protobuf-compiler
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libprotobuf7.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libprotobuf7 (from .../libprotobuf7_2.4.1-3_amd64.deb) ...
+Selecting previously unselected package libprotoc7.
+Unpacking libprotoc7 (from .../libprotoc7_2.4.1-3_amd64.deb) ...
+Selecting previously unselected package protobuf-compiler.
+Unpacking protobuf-compiler (from .../protobuf-compiler_2.4.1-3_amd64.deb) ...
+Setting up libprotobuf7 (2.4.1-3) ...
+Setting up libprotoc7 (2.4.1-3) ...
+Setting up protobuf-compiler (2.4.1-3) ...
+++ opam install riak-pb -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
 + opam install riak-pb
+Debian srcexts:
 The following actions will be performed:
  - install   xmlm.1.2.0                            [required by piqilib]
  - install   easy-format.1.0.2                     [required by piqilib]
@@ -16,8 +34,8 @@ The following actions will be performed:
 === 8 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[base64.1.0.0] Downloading https://github.com/mirage/ocaml-base64/archive/v1.0.0.tar.gz
 [easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[base64.1.0.0] Downloading https://github.com/mirage/ocaml-base64/archive/v1.0.0.tar.gz
 [optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
 [piqi.0.7.1] Downloading https://github.com/alavrik/piqi-ocaml/archive/v0.7.1.tar.gz
 [piqilib.0.6.9] Downloading https://github.com/alavrik/piqi/archive/v0.6.9.tar.gz
@@ -69,30 +87,6 @@ Removing riak-pb.1.0.0.
   ocamlfind remove riak-pb
 
 
-#=== ERROR while installing riak-pb.1.0.0 =====================================#
-# opam-version         1.2.0
-# os                   linux
-# command              ./configure
-# path                 /home/opam/.opam/4.02.1/build/riak-pb.1.0.0
-# compiler             4.02.1
-# exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/riak-pb.1.0.0/riak-pb-2093-d0f245.env
-# stdout-file          /home/opam/.opam/4.02.1/build/riak-pb.1.0.0/riak-pb-2093-d0f245.out
-# stderr-file          /home/opam/.opam/4.02.1/build/riak-pb.1.0.0/riak-pb-2093-d0f245.err
-### stderr ###
-# ...[truncated]
-# File "setup.ml", line 1793, characters 6-24:
-# Warning 3: deprecated: Lazy.lazy_from_fun
-# Use Lazy.from_fun instead.
-# ocamlfind: Package `piqi' not found
-# W: Field 'pkg_piqi' is not set: Command ''/home/opam/.opam/4.02.1/bin/ocamlfind' query -format %d piqi > '/tmp/oasis-27636d.txt'' terminated with error code 2
-# ocamlfind: Package `piqi.runtime' not found
-# W: Field 'pkg_piqi_runtime' is not set: Command ''/home/opam/.opam/4.02.1/bin/ocamlfind' query -format %d piqi.runtime > '/tmp/oasis-a326e5.txt'' terminated with error code 2
-# E: Cannot find findlib package piqi
-# E: Cannot find findlib package piqi.runtime
-# E: Failure("2 configuration errors")
-
-
 =-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 These actions have been completed successfully
  - install   piqi.0.7.1
@@ -105,4 +99,28 @@ These actions have been completed successfully
 The following failed
  - install   riak-pb.1.0.0
 
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108081536.export"
+#=== ERROR while installing riak-pb.1.0.0 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure
+# path                 /home/opam/.opam/4.02.1/build/riak-pb.1.0.0
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/riak-pb.1.0.0/riak-pb-2274-335865.env
+# stdout-file          /home/opam/.opam/4.02.1/build/riak-pb.1.0.0/riak-pb-2274-335865.out
+# stderr-file          /home/opam/.opam/4.02.1/build/riak-pb.1.0.0/riak-pb-2274-335865.err
+### stderr ###
+# ...[truncated]
+# File "setup.ml", line 1793, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# ocamlfind: Package `piqi' not found
+# W: Field 'pkg_piqi' is not set: Command ''/home/opam/.opam/4.02.1/bin/ocamlfind' query -format %d piqi > '/tmp/oasis-6bf5d4.txt'' terminated with error code 2
+# ocamlfind: Package `piqi.runtime' not found
+# W: Field 'pkg_piqi_runtime' is not set: Command ''/home/opam/.opam/4.02.1/bin/ocamlfind' query -format %d piqi.runtime > '/tmp/oasis-1664b4.txt'' terminated with error code 2
+# E: Cannot find findlib package piqi
+# E: Cannot find findlib package piqi.runtime
+# E: Failure("2 configuration errors")
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108134619.export"
