@@ -9,3 +9,15 @@ Debian srcexts:
 + echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install exn-source
+The following actions will be performed:
+ - install   exn-source.0.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[exn-source.0.1] Downloading https://github.com/johnwhitington/exn-source/archive/v0.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building exn-source.0.1:
+  make
+  make install
+Installing exn-source.0.1.
