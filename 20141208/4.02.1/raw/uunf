@@ -1,0 +1,18 @@
+++ opam install uunf -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install uunf
+CentOS 7 depexts:
+The following actions will be performed:
+ - install   uunf.0.9.3
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[uunf.0.9.3] Downloading http://erratique.ch/software/uunf/releases/uunf-0.9.3.tbz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building uunf.0.9.3:
+  ./pkg/pkg-git
+  ./pkg/build true false
+Installing uunf.0.9.3.
