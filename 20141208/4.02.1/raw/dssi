@@ -1,7 +1,28 @@
-++ opam install dssi -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+++ opam install dssi -e debian
++ depext='dssi-dev ladspa-sdk'
++ echo Debian depexts: dssi-dev ladspa-sdk
++ '[' 'dssi-dev ladspa-sdk' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: dssi-dev ladspa-sdk
++ sudo apt-get install -qq -y dssi-dev ladspa-sdk
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libasound2:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libasound2:amd64 (from .../libasound2_1.0.25-4_amd64.deb) ...
+Selecting previously unselected package ladspa-sdk.
+Unpacking ladspa-sdk (from .../ladspa-sdk_1.13-1_amd64.deb) ...
+Selecting previously unselected package libasound2-dev:amd64.
+Unpacking libasound2-dev:amd64 (from .../libasound2-dev_1.0.25-4_amd64.deb) ...
+Selecting previously unselected package dssi-dev.
+Unpacking dssi-dev (from .../dssi-dev_1.1.1~dfsg0-1_all.deb) ...
+Setting up libasound2:amd64 (1.0.25-4) ...
+Setting up ladspa-sdk (1.13-1) ...
+Setting up libasound2-dev:amd64 (1.0.25-4) ...
+Setting up dssi-dev (1.1.1~dfsg0-1) ...
+++ opam install dssi -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install dssi
 The following actions will be performed:
@@ -18,40 +39,46 @@ Building ladspa.0.1.4:
   ./configure --prefix /home/opam/.opam/4.02.1
   make
   make install
-[ERROR] The compilation of ladspa.0.1.4 failed.
-Removing ladspa.0.1.4.
-  ocamlfind remove ladspa
+Installing ladspa.0.1.4.
+Building dssi.0.1.1:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+[ERROR] The compilation of dssi.0.1.1 failed.
+Removing dssi.0.1.1.
+  ocamlfind remove dssi
 
 
 =-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-The following failed
+These actions have been completed successfully
  - install   ladspa.0.1.4
-Due to the errors, the following have been cancelled
+The following failed
  - install   dssi.0.1.1
 
-#=== ERROR while installing ladspa.0.1.4 ======================================#
+#=== ERROR while installing dssi.0.1.1 ========================================#
 # opam-version         1.2.0
 # os                   linux
 # command              ./configure --prefix /home/opam/.opam/4.02.1
-# path                 /home/opam/.opam/4.02.1/build/ladspa.0.1.4
+# path                 /home/opam/.opam/4.02.1/build/dssi.0.1.1
 # compiler             4.02.1
 # exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/ladspa.0.1.4/ladspa-37-58c514.env
-# stdout-file          /home/opam/.opam/4.02.1/build/ladspa.0.1.4/ladspa-37-58c514.out
-# stderr-file          /home/opam/.opam/4.02.1/build/ladspa.0.1.4/ladspa-37-58c514.err
+# env-file             /home/opam/.opam/4.02.1/build/dssi.0.1.1/dssi-974-c61e7b.env
+# stdout-file          /home/opam/.opam/4.02.1/build/dssi.0.1.1/dssi-974-c61e7b.out
+# stderr-file          /home/opam/.opam/4.02.1/build/dssi.0.1.1/dssi-974-c61e7b.err
 ### stdout ###
 # ...[truncated]
-# checking for stdlib.h... yes
-# checking for string.h... yes
 # checking for memory.h... yes
 # checking for strings.h... yes
 # checking for inttypes.h... yes
 # checking for stdint.h... yes
 # checking for unistd.h... yes
-# checking ladspa.h usability... no
-# checking ladspa.h presence... no
-# checking for ladspa.h... no
+# checking dssi.h usability... yes
+# checking dssi.h presence... yes
+# checking for dssi.h... yes
+# checking for ocaml-ladspa... ok
+# checking for ocaml_ladspa.h... no
 ### stderr ###
-# configure: error: Cannot find ladspa.h, please
-# install the LADSPA_SDK, or put ladspa.h somewhere it can be found
+# configure: error: ocaml-ladspa headers not found.
 
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108111910.export"
