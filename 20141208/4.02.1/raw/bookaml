@@ -62,3 +62,8 @@ Building ocamlnet.3.7.7:
   make all
   make opt
   make install
+Installing ocamlnet.3.7.7.
+Building tyxml.3.3.0:
+  ./configure --enable-syntax --prefix /home/opam/.opam/4.02.1
+  make
+  make install

@@ -134,3 +134,16 @@ Building stringext.1.1.0:
   ocaml setup.ml -configure
   ocaml setup.ml -build
   ocaml setup.ml -install
+Installing stringext.1.1.0.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
