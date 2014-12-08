@@ -1,0 +1,130 @@
+++ opam install rdf -e ubuntu
++ depext='libpcre3-dev zlib1g-dev'
++ echo Ubuntu depexts: libpcre3-dev zlib1g-dev
+Ubuntu depexts: libpcre3-dev zlib1g-dev
++ '[' 'libpcre3-dev zlib1g-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y libpcre3-dev zlib1g-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libpcrecpp0:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libpcrecpp0_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-2ubuntu2_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Setting up libpcrecpp0:amd64 (1:8.31-2ubuntu2) ...
+Setting up libpcre3-dev:amd64 (1:8.31-2ubuntu2) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1ubuntu1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.3) ...
+++ opam install rdf -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install rdf
+The following actions will be performed:
+ - install   cryptokit.1.9                         [required by rdf]
+ - install   xmlm.1.2.0                            [required by rdf]
+ - install   easy-format.1.0.2                     [required by yojson]
+ - install   ulex.1.1                              [required by rdf]
+ - install   menhir.20140422                       [required by rdf]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   conf-libpcre.1                        [required by pcre]
+ - install   uuidm.0.9.5                           [required by rdf]
+ - install   biniou.1.0.9                          [required by yojson]
+ - install   pcre.7.1.2                            [required by rdf]
+ - install   yojson.1.1.8                          [required by rdf]
+ - install   ocamlnet.3.7.7                        [required by rdf]
+ - install   rdf.0.9.0
+=== 13 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[menhir.20140422] Downloading http://cristal.inria.fr/~fpottier/menhir/menhir-20140422.tar.gz
+[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
+[pcre.7.1.2] Downloading https://github.com/mmottl/pcre-ocaml/releases/download/v7.1.2/pcre-ocaml-7.1.2.tar.gz
+[rdf.0.9.0] Downloading http://zoggy.github.io/ocaml-rdf/ocaml-rdf-0.9.0.tar.gz
+[ulex.1.1] Downloading http://ftp.de.debian.org/debian/pool/main/u/ulex/ulex_1.1.orig.tar.gz
+[uuidm.0.9.5] Downloading http://erratique.ch/software/uuidm/releases/uuidm-0.9.5.tbz
+[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building conf-libpcre.1:
+  pkg-config libpcre
+Installing conf-libpcre.1.
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.02.1/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building cryptokit.1.9:
+  make
+  make install
+Installing cryptokit.1.9.
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Copying ~/.opam/repo/default/packages/menhir/menhir.20140422/files/menhir.install to ~/.opam/4.02.1/build/menhir.20140422/
+Building menhir.20140422:
+  make PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+  make install PREFIX=/home/opam/.opam/4.02.1 docdir=/home/opam/.opam/4.02.1/doc/menhir libdir=/home/opam/.opam/4.02.1/lib/menhir mandir=/home/opam/.opam/4.02.1/man/man1
+Installing menhir.20140422.
+Building ulex.1.1:
+  make
+  make all.opt
+  make install
+Installing ulex.1.1.
+Copying ~/.opam/repo/default/packages/uuidm/uuidm.0.9.5/files/uuidm.install to ~/.opam/4.02.1/build/uuidm.0.9.5/
+Building uuidm.0.9.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uuidm.0.9.5.
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.02.1/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Building pcre.7.1.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing pcre.7.1.2.
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.02.1/build/ocamlnet.3.7.7/
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/ocamlnet.install to ~/.opam/4.02.1/build/ocamlnet.3.7.7/
+Applying robust-host.patch.
+Building ocamlnet.3.7.7:
+  ./configure -bindir /home/opam/.opam/4.02.1/bin -enable-pcre -disable-gtk2 -disable-ssl -disable-zip -enable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Installing ocamlnet.3.7.7.
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.02.1/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+Building rdf.0.9.0:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make all
+  make install
+Installing rdf.0.9.0.
