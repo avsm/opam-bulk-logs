@@ -57,3 +57,9 @@ Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install t
 Building yojson.1.1.8:
   make
   make install
+Installing yojson.1.1.8.
+Copying ~/.opam/repo/default/packages/atdgen/atdgen.1.4.1/files/atdgen.install to ~/.opam/4.02.1/build/atdgen.1.4.1/
+Building atdgen.1.4.1:
+  make
+  make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing atdgen.1.4.1.
