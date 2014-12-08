@@ -1,0 +1,23 @@
+++ opam install sonet -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install sonet -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install sonet
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   sonet.0.1.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sonet.0.1.2] Downloading https://github.com/pmundkur/sonet/archive/v0.1.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building sonet.0.1.2:
+  make
+  make install
+Installing sonet.0.1.2.
