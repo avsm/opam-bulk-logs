@@ -1,7 +1,12 @@
-++ opam install base64 -e centos,centos-7
+++ opam install base64 -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install base64 -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install base64
 The following actions will be performed:
