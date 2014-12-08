@@ -183,3 +183,8 @@ Installing async_extra.112.01.00.
 Building async.112.01.00:
   make
   make install
+Installing async.112.01.00.
+Building caravan.0.0.2:
+  make build
+  make install
+Installing caravan.0.0.2.
