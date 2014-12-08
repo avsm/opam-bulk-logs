@@ -29,3 +29,7 @@ Building sexplib.112.01.00:
   ./configure --enable-syntax
   make
   make install
+Installing sexplib.112.01.00.
+Building mirage-types.2.0.1:
+  make install-types
+Installing mirage-types.2.0.1.
