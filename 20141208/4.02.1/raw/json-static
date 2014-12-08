@@ -29,3 +29,12 @@ Building ocamlnet.3.7.7:
   make all
   make opt
   make install
+Installing ocamlnet.3.7.7.
+Building json-wheel.1.0.6:
+  make
+  make install PREFIX=/home/opam/.opam/4.02.1
+Installing json-wheel.1.0.6.
+Building json-static.0.9.8:
+  make
+  make install PREFIX=/home/opam/.opam/4.02.1
+Installing json-static.0.9.8.
