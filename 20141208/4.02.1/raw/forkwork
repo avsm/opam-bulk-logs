@@ -1,9 +1,14 @@
-++ opam install forkwork -e centos,centos-7
+++ opam install forkwork -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install forkwork -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install forkwork
-CentOS 7 depexts:
 The following actions will be performed:
  - install   forkwork.0.3.2
 === 1 to install ===
