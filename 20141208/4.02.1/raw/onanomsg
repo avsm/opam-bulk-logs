@@ -676,3 +676,18 @@ Building ocp-build.1.99.8-beta:
   ./configure --prefix /home/opam/.opam/4.02.1
   make
   make install
+[ERROR] The compilation of ocp-build.1.99.8-beta failed.
+Removing ocp-build.1.99.8-beta.
+  rm -f /home/opam/.opam/4.02.1/bin/ocp-build
+  rm -f /home/opam/.opam/4.02.1/bin/ocp-build.byte
+  rm -f /home/opam/.opam/4.02.1/lib/META.ocp-build-bundle
+  rm -rf /home/opam/.opam/4.02.1/lib/ocaml/typerex/ocp-build-bundle
+  rm -f /home/opam/.opam/4.02.1/lib/META.ocp-build-win32
+  rm -rf /home/opam/.opam/4.02.1/lib/ocaml/typerex/ocp-build-win32
+  rm -f /home/opam/.opam/4.02.1/lib/META.ocp-build-misc
+  rm -rf /home/opam/.opam/4.02.1/lib/ocaml/typerex/ocp-build-misc
+  rm -f /home/opam/.opam/4.02.1/lib/META.ocp-build
+  rm -rf /home/opam/.opam/4.02.1/lib/ocaml/typerex/ocp-build
+Building ctypes.0.3.3:
+  make
+  make install
