@@ -1,0 +1,24 @@
+++ opam install mikmatch -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install mikmatch
+The following actions will be performed:
+ - install   tophide.1.0.3                         [required by mikmatch]
+ - install   mikmatch.1.0.8
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mikmatch.1.0.8] Downloading https://github.com/mjambon/mikmatch/archive/v1.0.8.tar.gz
+[tophide.1.0.3] Downloading https://github.com/mjambon/tophide/archive/v1.0.3.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building tophide.1.0.3:
+  make
+  make install
+Installing tophide.1.0.3.
+Building mikmatch.1.0.8:
+  make str
+  make install-str
+Installing mikmatch.1.0.8.
