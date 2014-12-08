@@ -1,9 +1,14 @@
-++ opam install type_conv -e centos,centos-7
+++ opam install type_conv -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install type_conv -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install type_conv
+Debian srcexts:
 The following actions will be performed:
  - install   type_conv.112.01.00
 === 1 to install ===
