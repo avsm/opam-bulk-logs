@@ -1,9 +1,14 @@
-++ opam install xmldiff -e centos,centos-7
+++ opam install xmldiff -e debian
 + depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install xmldiff -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install xmldiff
+Debian srcexts:
 The following actions will be performed:
  - install   xmlm.1.2.0                            [required by xmldiff]
  - install   xmldiff.0.5.0
