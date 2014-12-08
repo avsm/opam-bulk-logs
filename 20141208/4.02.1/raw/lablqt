@@ -1,8 +1,19 @@
-++ opam install lablqt -e centos,centos-7
+++ opam install lablqt -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install lablqt -e source,linux
++ srcext=https://gist.githubusercontent.com/Kakadu/7dc6f7c9f8760f7fbace/raw/295dd3528cf9cf2be7a67a9752e530353bb6211b/get_qt.sh
++ echo Debian srcexts: https://gist.githubusercontent.com/Kakadu/7dc6f7c9f8760f7fbace/raw/295dd3528cf9cf2be7a67a9752e530353bb6211b/get_qt.sh
++ '[' https://gist.githubusercontent.com/Kakadu/7dc6f7c9f8760f7fbace/raw/295dd3528cf9cf2be7a67a9752e530353bb6211b/get_qt.sh '!=' '' ']'
+Debian srcexts: https://gist.githubusercontent.com/Kakadu/7dc6f7c9f8760f7fbace/raw/295dd3528cf9cf2be7a67a9752e530353bb6211b/get_qt.sh
+++ mktemp
++ t=/tmp/tmp.D8jUfJoKbZ
++ curl -sL https://gist.githubusercontent.com/Kakadu/7dc6f7c9f8760f7fbace/raw/295dd3528cf9cf2be7a67a9752e530353bb6211b/get_qt.sh
++ bash -ex /tmp/tmp.D8jUfJoKbZ
++ sudo add-apt-repository 'deb http://archive.ubuntu.com/ubuntu trusty universe'
+sudo: add-apt-repository: command not found
 + opam install lablqt
 The following actions will be performed:
  - install   conf-qt.5.2.1                         [required by lablqt]
@@ -16,8 +27,8 @@ The following actions will be performed:
 Building conf-qt.5.2.1:
   bash -c echo "Your Qt version is `qmake -query QT_VERSION`"
   bash -c min="5.2.1"; cur=`qmake -query QT_VERSION`; res=`echo -e "$min\n$cur" | sort | head -n 1`; [ "$res" = "$min" ]
-Removing conf-qt.5.2.1.
 [ERROR] The compilation of conf-qt.5.2.1 failed.
+Removing conf-qt.5.2.1.
   Nothing to do.
 
 
@@ -34,9 +45,9 @@ Due to the errors, the following have been cancelled
 # path                 /home/opam/.opam/4.02.1/build/conf-qt.5.2.1
 # compiler             4.02.1
 # exit-code            1
-# env-file             /home/opam/.opam/4.02.1/build/conf-qt.5.2.1/conf-qt-27-ccabea.env
-# stdout-file          /home/opam/.opam/4.02.1/build/conf-qt.5.2.1/conf-qt-27-ccabea.out
-# stderr-file          /home/opam/.opam/4.02.1/build/conf-qt.5.2.1/conf-qt-27-ccabea.err
+# env-file             /home/opam/.opam/4.02.1/build/conf-qt.5.2.1/conf-qt-155-ffb3fd.env
+# stdout-file          /home/opam/.opam/4.02.1/build/conf-qt.5.2.1/conf-qt-155-ffb3fd.out
+# stderr-file          /home/opam/.opam/4.02.1/build/conf-qt.5.2.1/conf-qt-155-ffb3fd.err
 ### stdout ###
 # Your Qt version is 
 ### stderr ###
