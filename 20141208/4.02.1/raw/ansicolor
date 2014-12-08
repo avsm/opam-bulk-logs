@@ -1,8 +1,13 @@
-++ opam install ansicolor -e centos,centos-7
+++ opam install ansicolor -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+++ opam install ansicolor -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install ansicolor
 The following actions will be performed:
  - install   ansicolor.0.5
