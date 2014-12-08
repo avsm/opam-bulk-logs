@@ -1,0 +1,104 @@
+++ opam install freetennis -e ubuntu
++ depext='freeglut3-dev libexpat1-dev libglu1-mesa-dev libgtk2.0-dev libsdl-gfx1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev mesa-common-dev'
+Ubuntu depexts: freeglut3-dev libexpat1-dev libglu1-mesa-dev libgtk2.0-dev libsdl-gfx1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev mesa-common-dev
++ echo Ubuntu depexts: freeglut3-dev libexpat1-dev libglu1-mesa-dev libgtk2.0-dev libsdl-gfx1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev mesa-common-dev
++ '[' 'freeglut3-dev libexpat1-dev libglu1-mesa-dev libgtk2.0-dev libsdl-gfx1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev mesa-common-dev' '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y freeglut3-dev libexpat1-dev libglu1-mesa-dev libgtk2.0-dev libsdl-gfx1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev mesa-common-dev
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/libdbus-1-dev_1.6.18-0ubuntu4.2_amd64.deb  404  Not Found [IP: 91.189.91.23 80]
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+++ opam install freetennis -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install freetennis
+The following actions will be performed:
+ - install   omake.0.9.8.6-0.rc1                   [required by camlimages]
+ - install   lablgl.1.05                           [required by freetennis]
+ - install   ocamlsdl.0.9.1                        [required by freetennis]
+ - install   lablgtk.2.18.3                        [required by freetennis]
+ - install   camlimages.4.2.0                      [required by freetennis]
+ - install   freetennis.0.4.8
+=== 6 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[camlimages.4.2.0] Downloading https://bitbucket.org/camlspotter/camlimages/get/4.2.0.tar.gz
+[freetennis.0.4.8] Downloading http://downloads.sourceforge.net/project/freetennis/freetennis/0.4.8/freetennis-0.4.8.tar.bz2
+[lablgl.1.05] Downloading https://forge.ocamlcore.org/frs/download.php/1254/lablgl-1.05.tar.gz
+[lablgtk.2.18.3] Downloading https://forge.ocamlcore.org/frs/download.php/1479/lablgtk-2.18.3.tar.gz
+[ocamlsdl.0.9.1] Downloading http://downloads.sourceforge.net/project/ocamlsdl/OCamlSDL/ocamlsdl-0.9.1/ocamlsdl-0.9.1.tar.gz
+[omake.0.9.8.6-0.rc1] Downloading http://omake.metaprl.org/downloads/omake-0.9.8.6-0.rc1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/lablgl/lablgl.1.05/files/lablgl.install to ~/.opam/4.02.1/build/lablgl.1.05/
+Copying ~/.opam/repo/default/packages/lablgl/lablgl.1.05/files/META over ~/.opam/4.02.1/build/lablgl.1.05/
+Building lablgl.1.05:
+  cp Makefile.config.ex Makefile.config
+  mkdir -p /home/opam/.opam/4.02.1/bin
+  make glut
+  make glutopt
+  make install -C src BINDIR=/home/opam/.opam/4.02.1/bin INSTALLDIR=/home/opam/.opam/4.02.1/lib/lablgl DLLDIR=/home/opam/.opam/4.02.1/lib/stublibs
+  make install -C LablGlut/src BINDIR=/home/opam/.opam/4.02.1/bin INSTALLDIR=/home/opam/.opam/4.02.1/lib/lablgl DLLDIR=/home/opam/.opam/4.02.1/lib/stublibs
+[ERROR] The compilation of lablgl.1.05 failed.
+Removing lablgl.1.05.
+  Nothing to do.
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/opam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/omake.install to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/fam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Applying opam.patch.
+Applying fam.patch.
+Applying readline.patch.
+Building omake.0.9.8.6-0.rc1:
+  make bootstrap PREFIX=/home/opam/.opam/4.02.1
+  make all PREFIX=/home/opam/.opam/4.02.1
+  make install PREFIX=/home/opam/.opam/4.02.1
+Installing omake.0.9.8.6-0.rc1.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   omake.0.9.8.6-0.rc1
+The following failed
+ - install   lablgl.1.05
+Due to the errors, the following have been cancelled
+ - install   camlimages.4.2.0
+ - install   ocamlsdl.0.9.1
+ - install   lablgtk.2.18.3
+ - install   freetennis.0.4.8
+
+#=== ERROR while installing lablgl.1.05 =======================================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              make glut
+# path                 /home/opam/.opam/4.02.1/build/lablgl.1.05
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/lablgl.1.05/lablgl-195-6cc03f.env
+# stdout-file          /home/opam/.opam/4.02.1/build/lablgl.1.05/lablgl-195-6cc03f.out
+# stderr-file          /home/opam/.opam/4.02.1/build/lablgl.1.05/lablgl-195-6cc03f.err
+### stdout ###
+# ...[truncated]
+# make[1]: Entering directory `/home/opam/.opam/4.02.1/build/lablgl.1.05/src'
+# ocamlc -pp camlp4o var2def.ml -o var2def
+# ocamlc -pp camlp4o var2switch.ml -o var2switch
+# make lablgl.cma
+# make[2]: Entering directory `/home/opam/.opam/4.02.1/build/lablgl.1.05/src'
+# ocamlrun ../src/var2def < gl_tags.var > gl_tags.h
+# ocamlrun ../src/var2switch -table GL_ < gl_tags.var > gl_tags.c
+# ocamlc -c -w s -ccopt "-c -O  -I/usr/X11R6/include" ml_gl.c
+# make[2]: Leaving directory `/home/opam/.opam/4.02.1/build/lablgl.1.05/src'
+# make[1]: Leaving directory `/home/opam/.opam/4.02.1/build/lablgl.1.05/src'
+### stderr ###
+# ml_gl.c:10:19: fatal error: GL/gl.h: No such file or directory
+#  #include <GL/gl.h>
+#                    ^
+# compilation terminated.
+# make[2]: *** [ml_gl.o] Error 2
+# make[1]: *** [all] Error 2
+# make: *** [lib] Error 2
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108005953.export"
