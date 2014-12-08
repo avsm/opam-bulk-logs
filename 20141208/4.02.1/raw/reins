@@ -30,3 +30,10 @@ Building omake.0.9.8.6-0.rc1:
   make bootstrap PREFIX=/home/opam/.opam/4.02.1
   make all PREFIX=/home/opam/.opam/4.02.1
   make install PREFIX=/home/opam/.opam/4.02.1
+Installing omake.0.9.8.6-0.rc1.
+Copying ~/.opam/repo/default/packages/reins/reins.0.1a/files/fix_build.patch to ~/.opam/4.02.1/build/reins.0.1a/
+Applying fix_build.patch.
+Building reins.0.1a:
+  omake
+  omake install
+Installing reins.0.1a.
