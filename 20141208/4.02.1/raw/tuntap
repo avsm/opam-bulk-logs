@@ -1,24 +1,31 @@
-++ opam install tuntap -e centos,centos-7
+++ opam install tuntap -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
 + '[' '' '!=' '' ']'
-CentOS 7 depexts:
+Debian depexts:
+++ opam install tuntap -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
 + opam install tuntap
+Debian srcexts:
 The following actions will be performed:
+ - install   ppx_tools.0.99.2                      [required by lwt]
  - install   ounit.2.0.0                           [required by tuntap]
  - install   cmdliner.0.9.6                        [required by tuntap]
- - install   lwt.2.4.5                             [required by tuntap]
  - install   type_conv.112.01.00                   [required by sexplib]
+ - install   lwt.2.4.6                             [required by tuntap]
  - install   sexplib.112.01.00                     [required by ipaddr]
  - install   ipaddr.2.5.0                          [required by tuntap]
  - install   tuntap.1.0.0
-=== 7 to install ===
+=== 8 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
 [ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
-[lwt.2.4.5] Downloading https://github.com/ocsigen/lwt/archive/2.4.5.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
 [ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
 [sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
 [tuntap.1.0.0] Downloading https://github.com/mirage/ocaml-tuntap/archive/v1.0.0.tar.gz
 [type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
@@ -28,19 +35,23 @@ Building cmdliner.0.9.6:
   ocaml pkg/git.ml
   ocaml pkg/build.ml native=false native-dynlink=false
 Installing cmdliner.0.9.6.
-Building lwt.2.4.5:
-  ./configure --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib
-  make build
-  make install
-Installing lwt.2.4.5.
 Building ounit.2.0.0:
   make build
   make install
 Installing ounit.2.0.0.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
 Building type_conv.112.01.00:
   make
   make install
 Installing type_conv.112.01.00.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
 Building sexplib.112.01.00:
   ./configure --enable-syntax
   make
@@ -63,10 +74,11 @@ Removing tuntap.1.0.0.
 These actions have been completed successfully
  - install   sexplib.112.01.00
  - install   type_conv.112.01.00
- - install   lwt.2.4.5
  - install   cmdliner.0.9.6
  - install   ipaddr.2.5.0
+ - install   lwt.2.4.6
  - install   ounit.2.0.0
+ - install   ppx_tools.0.99.2
 The following failed
  - install   tuntap.1.0.0
 
@@ -77,9 +89,9 @@ The following failed
 # path                 /home/opam/.opam/4.02.1/build/tuntap.1.0.0
 # compiler             4.02.1
 # exit-code            2
-# env-file             /home/opam/.opam/4.02.1/build/tuntap.1.0.0/tuntap-2429-a71bb4.env
-# stdout-file          /home/opam/.opam/4.02.1/build/tuntap.1.0.0/tuntap-2429-a71bb4.out
-# stderr-file          /home/opam/.opam/4.02.1/build/tuntap.1.0.0/tuntap-2429-a71bb4.err
+# env-file             /home/opam/.opam/4.02.1/build/tuntap.1.0.0/tuntap-3387-335865.env
+# stdout-file          /home/opam/.opam/4.02.1/build/tuntap.1.0.0/tuntap-3387-335865.out
+# stderr-file          /home/opam/.opam/4.02.1/build/tuntap.1.0.0/tuntap-3387-335865.err
 ### stdout ###
 # ...[truncated]
 # /home/opam/.opam/4.02.1/bin/ocamlfind ocamlopt -a -cclib -ltuntap_stubs -bin-annot lib/tuntap.cmx -o lib/tuntap.cmxa
@@ -106,4 +118,4 @@ The following failed
 # make: *** [build] Error 1
 
 
-The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108084959.export"
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108142515.export"
