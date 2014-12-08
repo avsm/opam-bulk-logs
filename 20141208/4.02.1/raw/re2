@@ -62,3 +62,11 @@ Installing ounit.2.0.0.
 Building pipebang.110.01.00:
   make
   make install
+Installing pipebang.110.01.00.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building bin_prot.112.01.00:
+  make
+  make install
