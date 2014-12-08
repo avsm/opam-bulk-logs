@@ -1,0 +1,24 @@
+++ opam install pci-db -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install pci-db
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by pci-db]
+ - install   pci-db.0.3.0
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pci-db.0.3.0] Downloading https://github.com/simonjbeaumont/ocaml-pci-db/archive/0.3.0.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building pci-db.0.3.0:
+  make
+  make PREFIX=/home/opam/.opam/4.02.1 install
+Installing pci-db.0.3.0.
