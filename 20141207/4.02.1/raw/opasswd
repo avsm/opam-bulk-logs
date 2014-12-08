@@ -1,0 +1,46 @@
+++ opam install opasswd -e ubuntu
++ depext=libffi-dev
++ echo Ubuntu depexts: libffi-dev
++ '[' libffi-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Ubuntu depexts: libffi-dev
++ sudo apt-get install -qq -y libffi-dev
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Selecting previously unselected package libffi-dev:amd64.
+(Reading database ... 23151 files and directories currently installed.)
+Preparing to unpack .../libffi-dev_3.1~rc1+r3.0.13-12_amd64.deb ...
+Unpacking libffi-dev:amd64 (3.1~rc1+r3.0.13-12) ...
+Setting up libffi-dev:amd64 (3.1~rc1+r3.0.13-12) ...
+++ opam install opasswd -e source,linux
++ srcext=
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install opasswd
+Ubuntu srcexts:
+The following actions will be performed:
+ - install   base-bytes.base                       [required by ctypes]
+ - install   ctypes.0.3.3                          [required by opasswd]
+ - install   opasswd.0.9.3
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ctypes.0.3.3] Downloading https://github.com/ocamllabs/ocaml-ctypes/archive/0.3.3.tar.gz
+[opasswd.0.9.3] Downloading https://github.com/mcclurmc/ocaml-opasswd/archive/0.9.3.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building ctypes.0.3.3:
+  make
+  make install
+Installing ctypes.0.3.3.
+Building opasswd.0.9.3:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing opasswd.0.9.3.
