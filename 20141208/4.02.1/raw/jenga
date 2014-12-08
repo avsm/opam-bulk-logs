@@ -230,3 +230,4 @@ Building jenga.112.01.00:
   ./configure --prefix /home/opam/.opam/4.02.1
   make
   make install
+Installing jenga.112.01.00.
