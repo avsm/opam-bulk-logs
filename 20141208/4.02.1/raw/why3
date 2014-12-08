@@ -1,0 +1,139 @@
+++ opam install why3 -e centos,centos-7
++ depext='gmp gmp-devel'
++ echo CentOS 7 depexts: gmp gmp-devel
++ '[' 'gmp gmp-devel' '!=' '' ']'
++ sudo yum install -y gmp gmp-devel
+CentOS 7 depexts: gmp gmp-devel
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: anorien.csc.warwick.ac.uk
+ * extras: anorien.csc.warwick.ac.uk
+ * updates: mirror.sov.uk.goscomb.net
+Package 1:gmp-5.1.1-5.el7.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package gmp-devel.x86_64 1:5.1.1-5.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package            Arch            Version                 Repository     Size
+================================================================================
+Installing:
+ gmp-devel          x86_64          1:5.1.1-5.el7           base          175 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 175 k
+Installed size: 335 k
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : 1:gmp-devel-5.1.1-5.el7.x86_64                               1/1 
+  Verifying  : 1:gmp-devel-5.1.1-5.el7.x86_64                               1/1 
+
+Installed:
+  gmp-devel.x86_64 1:5.1.1-5.el7                                                
+
+Complete!
++ opam install why3
+The following actions will be performed:
+ - install   camlzip.1.05                          [required by why3]
+ - install   conf-gmp.1                            [required by zarith]
+ - install   conf-gtksourceview.2                  [required by why3]
+ - install   zarith.1.3                            [required by why3]
+ - install   lablgtk.2.18.3                        [required by why3]
+ - install   ocamlgraph.1.8.5                      [required by why3]
+ - install   alt-ergo.0.95.2                       [required by why3]
+ - install   why3.0.85
+=== 8 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[alt-ergo.0.95.2] Downloading http://alt-ergo.ocamlpro.com/http/alt-ergo-0.95.2/alt-ergo-0.95.2.tar.gz
+[camlzip.1.05] Downloading http://forge.ocamlcore.org/frs/download.php/1037/camlzip-1.05.tar.gz
+[lablgtk.2.18.3] Downloading https://forge.ocamlcore.org/frs/download.php/1479/lablgtk-2.18.3.tar.gz
+[ocamlgraph.1.8.5] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.5.tar.gz
+[why3.0.85] Downloading https://gforge.inria.fr/frs/download.php/file/34074/why3-0.85.tar.gz
+[zarith.1.3] Downloading https://forge.ocamlcore.org/frs/download.php/1471/zarith-1.3.tgz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/camlzip/camlzip.1.05/files/fix-install.patch to ~/.opam/4.02.1/build/camlzip.1.05/
+Applying fix-install.patch.
+Building camlzip.1.05:
+  make all
+  make allopt
+  make install-findlib
+[ERROR] The compilation of camlzip.1.05 failed.
+Removing camlzip.1.05.
+  ocamlfind remove zip
+  ocamlfind remove camlzip
+Copying ~/.opam/repo/default/packages/conf-gmp/conf-gmp.1/files/test.c to ~/.opam/4.02.1/build/conf-gmp.1/
+Building conf-gmp.1:
+  sh -c cc -c $CFLAGS test.c
+Installing conf-gmp.1.
+Building conf-gtksourceview.2:
+  pkg-config gtksourceview-2.0
+[ERROR] The compilation of conf-gtksourceview.2 failed.
+Removing conf-gtksourceview.2.
+  Nothing to do.
+Building zarith.1.3:
+  ./configure
+  make
+  make install
+Installing zarith.1.3.
+
+
+#=== ERROR while installing camlzip.1.05 ======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make all
+# path                 /home/opam/.opam/4.02.1/build/camlzip.1.05
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/camlzip.1.05/camlzip-109-6cc03f.env
+# stdout-file          /home/opam/.opam/4.02.1/build/camlzip.1.05/camlzip-109-6cc03f.out
+# stderr-file          /home/opam/.opam/4.02.1/build/camlzip.1.05/camlzip-109-6cc03f.err
+### stdout ###
+# ocamlc -g -c -ccopt -g -ccopt -I/usr/local/include zlibstubs.c
+### stderr ###
+# zlibstubs.c:18:18: fatal error: zlib.h: No such file or directory
+#  #include <zlib.h>
+#                   ^
+# compilation terminated.
+# make: *** [zlibstubs.o] Error 2
+
+
+#=== ERROR while installing conf-gtksourceview.2 ==============================#
+# opam-version         1.2.0
+# os                   linux
+# command              pkg-config gtksourceview-2.0
+# path                 /home/opam/.opam/4.02.1/build/conf-gtksourceview.2
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/conf-gtksourceview.2/conf-gtksourceview-149-6d07ae.env
+# stdout-file          /home/opam/.opam/4.02.1/build/conf-gtksourceview.2/conf-gtksourceview-149-6d07ae.out
+# stderr-file          /home/opam/.opam/4.02.1/build/conf-gtksourceview.2/conf-gtksourceview-149-6d07ae.err
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   conf-gmp.1
+ - install   zarith.1.3
+The following failed
+ - install   camlzip.1.05
+ - install   conf-gtksourceview.2
+Due to the errors, the following have been cancelled
+ - install   alt-ergo.0.95.2
+ - install   ocamlgraph.1.8.5
+ - install   lablgtk.2.18.3
+ - install   why3.0.85
+
+=-=- conf-gtksourceview.2 troubleshooting -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> This package requires gtksourceview 2.0 development packages installed on your system
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108085607.export"
