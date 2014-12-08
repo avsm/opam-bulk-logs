@@ -1,0 +1,58 @@
+++ opam install llvm -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install llvm -e source,linux
++ srcext=https://gist.githubusercontent.com/jpdeplaix/58db9c49a79813fc1dda/raw
++ echo Ubuntu srcexts: https://gist.githubusercontent.com/jpdeplaix/58db9c49a79813fc1dda/raw
++ '[' https://gist.githubusercontent.com/jpdeplaix/58db9c49a79813fc1dda/raw '!=' '' ']'
+Ubuntu srcexts: https://gist.githubusercontent.com/jpdeplaix/58db9c49a79813fc1dda/raw
+++ mktemp
++ t=/tmp/tmp.evVUx9B3tN
++ curl -sL https://gist.githubusercontent.com/jpdeplaix/58db9c49a79813fc1dda/raw
++ bash -ex /tmp/tmp.evVUx9B3tN
++ sudo add-apt-repository 'deb http://llvm.org/apt/precise/ llvm-toolchain-precise-3.5 main'
++ wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key
++ sudo apt-key add -
+/tmp/tmp.evVUx9B3tN: line 4: wget: command not found
+gpg: no valid OpenPGP data found.
++ opam install llvm
+The following actions will be performed:
+ - install   llvm.3.5
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[llvm.3.5] Downloading http://llvm.org/releases/3.5.0/llvm-3.5.0.src.tar.xz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/llvm/llvm.3.5/files/makefile+system.patch to ~/.opam/4.02.1/build/llvm.3.5/
+Copying ~/.opam/repo/default/packages/llvm/llvm.3.5/files/makefile+build.patch to ~/.opam/4.02.1/build/llvm.3.5/
+Copying ~/.opam/repo/default/packages/llvm/llvm.3.5/files/compile.sh to ~/.opam/4.02.1/build/llvm.3.5/
+Applying makefile+build.patch.
+Applying makefile+system.patch.
+Building llvm.3.5:
+  ./compile.sh install 3.5 make /home/opam/.opam/4.02.1 /home/opam/.opam/4.02.1/lib
+[ERROR] The compilation of llvm.3.5 failed.
+Removing llvm.3.5.
+  ./compile.sh uninstall 3.5 make /home/opam/.opam/4.02.1 /home/opam/.opam/4.02.1/lib
+
+
+#=== ERROR while installing llvm.3.5 ==========================================#
+# opam-version         1.2.0 (cbe460bcb01aef4150084e627701bd16681bf7cb)
+# os                   linux
+# command              ./compile.sh install 3.5 make /home/opam/.opam/4.02.1 /home/opam/.opam/4.02.1/lib
+# path                 /home/opam/.opam/4.02.1/build/llvm.3.5
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/llvm.3.5/llvm-164-2c871f.env
+# stdout-file          /home/opam/.opam/4.02.1/build/llvm.3.5/llvm-164-2c871f.out
+# stderr-file          /home/opam/.opam/4.02.1/build/llvm.3.5/llvm-164-2c871f.err
+### stdout ###
+# Error: LLVM is not installed.
+### stderr ###
+# stat: cannot stat '/usr/local/Cellar/llvm/3.5*/bin/llvm-config': No such file or directory
+# ./compile.sh: 1: ./compile.sh: llvm-config-3.5: not found
+# ./compile.sh: 1: ./compile.sh: llvm-config-mp-3.5: not found
+# ./compile.sh: 1: ./compile.sh: llvm-config: not found
+
