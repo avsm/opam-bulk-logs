@@ -1,0 +1,23 @@
+++ opam install sosa -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install sosa -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install sosa
+The following actions will be performed:
+ - install   sosa.0.0.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sosa.0.0.1] Downloading https://bitbucket.org/smondet/sosa/get/sosa.0.0.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building sosa.0.0.1:
+  ocaml please.ml build
+  ocaml please.ml install
+Installing sosa.0.0.1.
