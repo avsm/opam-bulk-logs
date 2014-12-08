@@ -9,3 +9,16 @@ Debian depexts:
 + '[' '' '!=' '' ']'
 + opam install sequence
 Debian srcexts:
+The following actions will be performed:
+ - install   sequence.0.5.4
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[sequence.0.5.4] Downloading https://github.com/c-cube/sequence/archive/0.5.4.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building sequence.0.5.4:
+  ./configure --disable-docs --disable-invert --disable-bigarray
+  make all
+  make install
+Installing sequence.0.5.4.
