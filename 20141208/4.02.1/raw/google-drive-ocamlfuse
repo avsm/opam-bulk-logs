@@ -1,0 +1,259 @@
+++ opam install google-drive-ocamlfuse -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install google-drive-ocamlfuse
+The following actions will be performed:
+ - install   cryptokit.1.9                         [required by gapi-ocaml]
+ - install   extlib.1.6.1                          [required by gapi-ocaml]
+ - install   ocurl.0.7.2                           [required by gapi-ocaml]
+ - install   camlidl.1.05                          [required by google-drive-ocamlfuse]
+ - install   xmlm.1.2.0                            [required by gapi-ocaml]
+ - install   easy-format.1.0.2                     [required by yojson]
+ - install   sqlite3.2.0.7                         [required by google-drive-ocamlfuse]
+ - install   cppo.1.1.2                            [required by yojson]
+ - install   ocamlnet.3.7.7                        [required by gapi-ocaml]
+ - install   ocamlfuse.2.7.1-cvs2                  [required by google-drive-ocamlfuse]
+ - install   biniou.1.0.9                          [required by yojson]
+ - install   yojson.1.1.8                          [required by gapi-ocaml]
+ - install   gapi-ocaml.0.2.6                      [required by google-drive-ocamlfuse]
+ - install   google-drive-ocamlfuse.0.5.12
+=== 14 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
+[camlidl.1.05] Downloading http://caml.inria.fr/pub/old_caml_site/distrib/bazar-ocaml/camlidl-1.05.tar.gz
+[cryptokit.1.9] Downloading https://forge.ocamlcore.org/frs/download.php/1229/cryptokit-1.9.tar.gz
+[easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
+[extlib.1.6.1] Downloading http://ocaml-extlib.googlecode.com/files/extlib-1.6.1.tar.gz
+[gapi-ocaml.0.2.6] Downloading https://forge.ocamlcore.org/frs/download.php/1468/gapi-ocaml-0.2.6.tar.gz
+[google-drive-ocamlfuse.0.5.12] Downloading https://forge.ocamlcore.org/frs/download.php/1489/google-drive-ocamlfuse-0.5.12.tar.gz
+[ocamlfuse.2.7.1-cvs2] Downloading https://forge.ocamlcore.org/frs/download.php/1369/ocamlfuse-2.7.1_cvs2.tar.gz
+[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
+[ocurl.0.7.2] Downloading http://ygrek.org.ua/p/release/ocurl/ocurl-0.7.2.tar.gz
+[sqlite3.2.0.7] Downloading https://github.com/mmottl/sqlite3-ocaml/releases/download/v2.0.7/sqlite3-ocaml-2.0.7.tar.gz
+[xmlm.1.2.0] Downloading http://erratique.ch/software/xmlm/releases/xmlm-1.2.0.tbz
+[yojson.1.1.8] Downloading http://mjambon.com/releases/yojson/yojson-1.1.8.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/camlidl/camlidl.1.05/files/cpp-location.diff to ~/.opam/4.02.1/build/camlidl.1.05/
+Copying ~/.opam/repo/default/packages/camlidl/camlidl.1.05/files/camlidl.install to ~/.opam/4.02.1/build/camlidl.1.05/
+Copying ~/.opam/repo/default/packages/camlidl/camlidl.1.05/files/META to ~/.opam/4.02.1/build/camlidl.1.05/
+Applying cpp-location.diff.
+Building camlidl.1.05:
+  mv config/Makefile.unix config/Makefile
+  mkdir -p /home/opam/.opam/4.02.1/bin /home/opam/.opam/4.02.1/lib/camlidl /home/opam/.opam/4.02.1/lib/camlidl/caml
+  make all
+  make install BINDIR=/home/opam/.opam/4.02.1/bin OCAMLLIB=/home/opam/.opam/4.02.1/lib/camlidl
+Installing camlidl.1.05.
+Copying ~/.opam/repo/default/packages/cppo/cppo.1.1.2/files/cppo.install to ~/.opam/4.02.1/build/cppo.1.1.2/
+Building cppo.1.1.2:
+  make
+  make install-lib
+Installing cppo.1.1.2.
+Building cryptokit.1.9:
+  make
+  make install
+[ERROR] The compilation of cryptokit.1.9 failed.
+Removing cryptokit.1.9.
+  ocamlfind remove cryptokit
+Building easy-format.1.0.2:
+  make
+  make install
+Installing easy-format.1.0.2.
+Building extlib.1.6.1:
+  make minimal=1 build install
+Installing extlib.1.6.1.
+Building ocurl.0.7.2:
+  ./configure
+  make
+  make install
+[ERROR] The compilation of ocurl.0.7.2 failed.
+Removing ocurl.0.7.2.
+  ocamlfind remove curl
+Building sqlite3.2.0.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+[ERROR] The compilation of sqlite3.2.0.7 failed.
+Removing sqlite3.2.0.7.
+  ocamlfind remove sqlite3
+Building xmlm.1.2.0:
+  ./pkg/pkg-git
+  ./pkg/build true
+Installing xmlm.1.2.0.
+Copying ~/.opam/repo/default/packages/biniou/biniou.1.0.9/files/biniou.install to ~/.opam/4.02.1/build/biniou.1.0.9/
+Building biniou.1.0.9:
+  make
+  make install
+Installing biniou.1.0.9.
+Building ocamlfuse.2.7.1-cvs2:
+  make -C lib INCDIRS=/home/opam/.opam/4.02.1/lib/camlidl
+  make -C lib install
+[ERROR] The compilation of ocamlfuse.2.7.1-cvs2 failed.
+Removing ocamlfuse.2.7.1-cvs2.
+  ocamlfind remove Fuse
+Copying ~/.opam/repo/default/packages/yojson/yojson.1.1.8/files/yojson.install to ~/.opam/4.02.1/build/yojson.1.1.8/
+Building yojson.1.1.8:
+  make
+  make install
+Installing yojson.1.1.8.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   cppo.1.1.2
+ - install   yojson.1.1.8
+ - install   easy-format.1.0.2
+ - install   xmlm.1.2.0
+ - install   camlidl.1.05
+ - install   biniou.1.0.9
+ - install   extlib.1.6.1
+The following failed
+ - install   cryptokit.1.9
+ - install   ocamlfuse.2.7.1-cvs2
+ - install   ocurl.0.7.2
+ - install   sqlite3.2.0.7
+Due to the errors, the following have been cancelled
+ - install   google-drive-ocamlfuse.0.5.12
+ - install   gapi-ocaml.0.2.6
+ - install   ocamlnet.3.7.7
+
+#=== ERROR while installing cryptokit.1.9 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/cryptokit.1.9
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/cryptokit.1.9/cryptokit-382-c743ac.env
+# stdout-file          /home/opam/.opam/4.02.1/build/cryptokit.1.9/cryptokit-382-c743ac.out
+# stderr-file          /home/opam/.opam/4.02.1/build/cryptokit.1.9/cryptokit-382-c743ac.err
+### stdout ###
+# ...[truncated]
+# mv stubs-misc.o src/stubs-misc.o
+# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-rng.c
+# mv stubs-rng.o src/stubs-rng.o
+# ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
+# + ocamlfind ocamlc -ccopt -O -ccopt -DHAVE_ZLIB -c src/stubs-zlib.c
+# src/stubs-zlib.c:19:18: fatal error: zlib.h: No such file or directory
+#  #include <zlib.h>
+#                   ^
+# compilation terminated.
+# Command exited with code 2.
+### stderr ###
+# ...[truncated]
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# File "/home/gildor/programmation/oasis/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "/home/gildor/programmation/oasis/src/oasis/OASISFindlib.ml", line 256, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' src/libcryptokit_stubs.a src/dllcryptokit_stubs.so src/cryptokit.cma src/cryptokit.cmxa src/cryptokit.a src/cryptokit.cmxs -tag debug -classic-display' terminated with error code 10")
+# make: *** [build] Error 1
+
+
+#=== ERROR while installing ocamlfuse.2.7.1-cvs2 ==============================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -C lib INCDIRS=/home/opam/.opam/4.02.1/lib/camlidl
+# path                 /home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2/ocamlfuse-1141-d474c2.env
+# stdout-file          /home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2/ocamlfuse-1141-d474c2.out
+# stderr-file          /home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2/ocamlfuse-1141-d474c2.err
+### stdout ###
+# ...[truncated]
+# making ._d/Fuse_lib.d from Fuse_lib.ml
+# making ._d/Unix_util.d from Unix_util.ml
+# making ._d/Result.d from Result.ml
+# make[1]: Leaving directory `/home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2/lib'
+# make[1]: Entering directory `/home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2/lib'
+# ocamlc -c -cc "cc" -ccopt "-fPIC -D_FILE_OFFSET_BITS=64 -I. -pthread \
+# 			-DPIC -DNATIVE_CODE   \
+# 			  -I/home/opam/.opam/4.02.1/lib/camlidl  -o Fuse_bindings_stubs.o " Fuse_bindings_stubs.c 
+# make[1]: Leaving directory `/home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2/lib'
+# make: Leaving directory `/home/opam/.opam/4.02.1/build/ocamlfuse.2.7.1-cvs2/lib'
+### stderr ###
+# In file included from Fuse_bindings_stubs.c:17:0:
+# Fuse_bindings.h:16:18: fatal error: fuse.h: No such file or directory
+#  #include <fuse.h>
+#                   ^
+# compilation terminated.
+# make[1]: *** [Fuse_bindings_stubs.o] Error 2
+# make: *** [native-code-library] Error 2
+
+
+#=== ERROR while installing ocurl.0.7.2 =======================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure
+# path                 /home/opam/.opam/4.02.1/build/ocurl.0.7.2
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/ocurl.0.7.2/ocurl-644-60459a.env
+# stdout-file          /home/opam/.opam/4.02.1/build/ocurl.0.7.2/ocurl-644-60459a.out
+# stderr-file          /home/opam/.opam/4.02.1/build/ocurl.0.7.2/ocurl-644-60459a.err
+### stdout ###
+# ...[truncated]
+# checking for gcc... gcc
+# checking whether the C compiler works... yes
+# checking for C compiler default output file name... a.out
+# checking for suffix of executables... 
+# checking whether we are cross compiling... no
+# checking for suffix of object files... o
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# checking for libcurl cflags... 
+### stderr ###
+# Package libcurl was not found in the pkg-config search path.
+# Perhaps you should add the directory containing `libcurl.pc'
+# to the PKG_CONFIG_PATH environment variable
+# No package 'libcurl' found
+# ./configure: line 2825: curl-config: command not found
+# configure: error: libcurl was not found
+
+
+#=== ERROR while installing sqlite3.2.0.7 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ocaml setup.ml -build
+# path                 /home/opam/.opam/4.02.1/build/sqlite3.2.0.7
+# compiler             4.02.1
+# exit-code            1
+# env-file             /home/opam/.opam/4.02.1/build/sqlite3.2.0.7/sqlite3-840-b76d46.env
+# stdout-file          /home/opam/.opam/4.02.1/build/sqlite3.2.0.7/sqlite3-840-b76d46.out
+# stderr-file          /home/opam/.opam/4.02.1/build/sqlite3.2.0.7/sqlite3-840-b76d46.err
+### stdout ###
+# ...[truncated]
+# Turn ocaml profile flag on: .......................... false
+# Compiler support generation of .cmxs.: ............... true
+# OCamlbuild additional flags: ......................... 
+# Strict compile-time checks: .......................... true
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... false
+# ocamldoc: ............................................ /home/opam/.opam/4.02.1/bin/ocamldoc
+# 
+# /home/opam/.opam/4.02.1/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.02.1/lib/ocaml/ocamlbuild /home/opam/.opam/4.02.1/lib/ocaml/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.02.1/lib/ocaml/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# Failure: pkg-config failed for cflags.
+### stderr ###
+# ...[truncated]
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "setup.ml", line 2502, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# Package sqlite3 was not found in the pkg-config search path.
+# Perhaps you should add the directory containing `sqlite3.pc'
+# to the PKG_CONFIG_PATH environment variable
+# No package 'sqlite3' found
+# E: Failure("Command ''/home/opam/.opam/4.02.1/bin/ocamlbuild' lib/libsqlite3_stubs.a lib/dllsqlite3_stubs.so lib/sqlite3.cma lib/sqlite3.cmxa lib/sqlite3.a lib/sqlite3.cmxs -tag debug' terminated with error code 2")
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108063123.export"
