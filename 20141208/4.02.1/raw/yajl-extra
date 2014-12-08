@@ -62,3 +62,7 @@ Building batteries.2.3.1:
 Installing batteries.2.3.1.
 Building yajl.0.7.3:
   make install
+Installing yajl.0.7.3.
+Building yajl-extra.0.7.3:
+  make install-extra
+Installing yajl-extra.0.7.3.
