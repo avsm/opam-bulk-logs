@@ -1,0 +1,88 @@
+++ opam install acpc -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
+CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install acpc
+The following actions will be performed:
+ - install   batteries.2.3.1                       [required by acpc]
+ - install   vector3.0.2                           [required by acpc]
+ - install   itv-tree.2.0                          [required by acpc]
+ - install   ocamlgraph.1.8.5                      [required by acpc]
+ - install   dolog.0.5                             [required by acpc]
+ - install   obuild.0.1.1                          [required by acpc]
+ - install   lacc.0.2                              [required by acpc]
+ - install   parmap.1.0-rc5                        [required by acpc]
+ - install   acpc.1.2
+=== 9 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[acpc.1.2] Downloading https://github.com/UnixJunkie/ACPC/archive/v1.2.tar.gz
+[batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
+[dolog.0.5] Downloading https://github.com/UnixJunkie/dolog/archive/v0.5.tar.gz
+[itv-tree.2.0] Downloading https://github.com/UnixJunkie/interval-tree/archive/v2.0.tar.gz
+[lacc.0.2] Downloading https://github.com/UnixJunkie/lacc/archive/v0.2.tar.gz
+[obuild.0.1.1] Downloading https://github.com/ocaml-obuild/obuild/archive/obuild-v0.1.1.tar.gz
+[ocamlgraph.1.8.5] Downloading http://ocamlgraph.lri.fr/download/ocamlgraph-1.8.5.tar.gz
+[parmap.1.0-rc5] Downloading https://github.com/rdicosmo/parmap/archive/1.0-rc5.tar.gz
+[vector3.0.2] Downloading https://github.com/HappyCrow/vector3/archive/v0.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building batteries.2.3.1:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  make all
+  make install
+Installing batteries.2.3.1.
+Building dolog.0.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing dolog.0.5.
+Building itv-tree.2.0:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing itv-tree.2.0.
+Building lacc.0.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing lacc.0.2.
+Copying ~/.opam/repo/default/packages/obuild/obuild.0.1.1/files/obuild.install to ~/.opam/4.02.1/build/obuild.0.1.1/
+Building obuild.0.1.1:
+  ./bootstrap
+Installing obuild.0.1.1.
+Copying ~/.opam/repo/default/packages/ocamlgraph/ocamlgraph.1.8.5/files/ocamlgraph.install to ~/.opam/4.02.1/build/ocamlgraph.1.8.5/
+Building ocamlgraph.1.8.5:
+  ./configure
+  make
+  make install-findlib
+Installing ocamlgraph.1.8.5.
+Building parmap.1.0-rc5:
+  aclocal -I m4
+  autoconf
+  autoheader
+  ./configure
+  make DESTDIR=/home/opam/.opam/4.02.1 OCAMLLIBDIR=lib
+  make install DESTDIR=/home/opam/.opam/4.02.1 OCAMLLIBDIR=lib
+Installing parmap.1.0-rc5.
+Building vector3.0.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing vector3.0.2.
+Building acpc.1.2:
+  obuild configure
+  obuild build
+  cp dist/build/acpc/acpc /home/opam/.opam/4.02.1/bin
+  cp dist/build/acpc_par/acpc_par /home/opam/.opam/4.02.1/bin
+  cp dist/build/acpc_consrank/acpc_consrank /home/opam/.opam/4.02.1/bin
+  cp dist/build/acpc_scorer/acpc_scorer /home/opam/.opam/4.02.1/bin
+  cp dist/build/acpc_ertool/acpc_ertool /home/opam/.opam/4.02.1/bin
+  cp dist/build/acpc_auctool/acpc_auctool /home/opam/.opam/4.02.1/bin
+  cp dist/build/acpc_mol2reader/acpc_mol2reader /home/opam/.opam/4.02.1/bin
+  cp dist/build/acpc_codec/acpc_codec /home/opam/.opam/4.02.1/bin
+  cp dist/build/acpc_mol2tool/acpc_mol2tool /home/opam/.opam/4.02.1/bin
+  cp dist/build/acpc_pqrtool/acpc_pqrtool /home/opam/.opam/4.02.1/bin
+  cp dist/build/acpc_pltool/acpc_pltool /home/opam/.opam/4.02.1/bin
+Installing acpc.1.2.
