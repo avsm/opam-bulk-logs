@@ -41,3 +41,8 @@ Building llvm.3.5:
 [ERROR] The compilation of llvm.3.5 failed.
 Removing llvm.3.5.
   ./compile.sh uninstall 3.5 make /home/opam/.opam/4.02.1 /home/opam/.opam/4.02.1/lib
+Copying ~/.opam/repo/default/packages/ocamlgraph/ocamlgraph.1.8.5/files/ocamlgraph.install to ~/.opam/4.02.1/build/ocamlgraph.1.8.5/
+Building ocamlgraph.1.8.5:
+  ./configure
+  make
+  make install-findlib
