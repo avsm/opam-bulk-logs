@@ -168,3 +168,20 @@ Installing io-page-unix.0.9.9.
 Building shared-memory-ring.1.1.0:
   make all
   make install
+Installing shared-memory-ring.1.1.0.
+Building mirage-net-unix.1.0.0:
+  make
+  make install
+Installing mirage-net-unix.1.0.0.
+Building mirage-unix.1.0.0:
+  make unix-build
+  make unix-install PREFIX=/home/opam/.opam/4.02.1
+Installing mirage-unix.1.0.0.
+Building mirage-tcpip-unix.0.9.5:
+  make OS=unix
+  make OS=unix install
+Installing mirage-tcpip-unix.0.9.5.
+Building mirage-http-unix.1.0.0:
+  make
+  make install
+Installing mirage-http-unix.1.0.0.
