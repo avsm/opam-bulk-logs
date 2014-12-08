@@ -1,0 +1,29 @@
+++ opam install faillib -e ubuntu
++ depext=
+Ubuntu depexts:
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install faillib -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install faillib
+The following actions will be performed:
+ - install   herelib.109.35.02                     [required by faillib]
+ - install   faillib.111.17.00
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
+[faillib.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/faillib-111.17.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building herelib.109.35.02:
+  make
+  make install
+Installing herelib.109.35.02.
+Building faillib.111.17.00:
+  make
+  make install
+Installing faillib.111.17.00.
