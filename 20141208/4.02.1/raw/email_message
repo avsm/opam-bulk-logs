@@ -48,3 +48,27 @@ The following actions will be performed:
 [core_extended.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core_extended-112.01.00.tar.gz
 [core_kernel.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core_kernel-112.01.00.tar.gz
 [custom_printf.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/custom_printf-112.01.00.tar.gz
+[email_message.109.42.alpha1] Downloading https://github.com/janestreet-alpha/email_message/archive/109.42.alpha1.tar.gz
+[enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pa_bench.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_bench-111.28.00.tar.gz
+[pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
+[pa_test.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/pa_test-111.08.00.tar.gz
+[pipebang.110.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/110.01.00/individual/pipebang-110.01.00.tar.gz
+[re2.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/re2-111.08.00.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[textutils.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/textutils-112.01.00.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
+[variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building herelib.109.35.02:
+  make
+  make install
+Installing herelib.109.35.02.
+Building ounit.2.0.0:
+  make build
+  make install
