@@ -60,3 +60,4 @@ Building bitcoin.1.1.1:
   make
   make doc
   make install
+Installing bitcoin.1.1.1.
