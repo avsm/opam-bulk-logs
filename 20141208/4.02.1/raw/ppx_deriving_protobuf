@@ -1,0 +1,28 @@
+++ opam install ppx_deriving_protobuf -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install ppx_deriving_protobuf
+The following actions will be performed:
+ - install   ppx_tools.0.99.2                      [required by ppx_deriving]
+ - install   ppx_deriving.1.0                      [required by ppx_deriving_protobuf]
+ - install   ppx_deriving_protobuf.2.0
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ppx_deriving.1.0] Downloading https://github.com/whitequark/ppx_deriving/archive/v1.0.tar.gz
+[ppx_deriving_protobuf.2.0] Downloading https://github.com/whitequark/ppx_deriving_protobuf/archive/v2.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building ppx_deriving.1.0:
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing ppx_deriving.1.0.
+Building ppx_deriving_protobuf.2.0:
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing ppx_deriving_protobuf.2.0.
