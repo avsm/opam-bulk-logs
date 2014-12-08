@@ -1,7 +1,26 @@
-++ opam install acpc -e centos,centos-7
-+ depext=
-+ echo CentOS 7 depexts:
-CentOS 7 depexts:
+++ opam install acpc -e debian
++ depext=autoconf
++ echo Debian depexts: autoconf
+Debian depexts: autoconf
++ '[' autoconf '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
++ sudo apt-get install -qq -y autoconf
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package autoconf.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking autoconf (from .../autoconf_2.69-1_all.deb) ...
+Selecting previously unselected package autotools-dev.
+Unpacking autotools-dev (from .../autotools-dev_20120608.1_all.deb) ...
+Selecting previously unselected package automake.
+Unpacking automake (from .../automake_1%3a1.11.6-1_all.deb) ...
+Setting up autoconf (2.69-1) ...
+Setting up autotools-dev (20120608.1) ...
+Setting up automake (1:1.11.6-1) ...
+update-alternatives: using /usr/bin/automake-1.11 to provide /usr/bin/automake (automake) in auto mode
+++ opam install acpc -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install acpc
 The following actions will be performed:
@@ -18,8 +37,8 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [acpc.1.2] Downloading https://github.com/UnixJunkie/ACPC/archive/v1.2.tar.gz
-[batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
 [dolog.0.5] Downloading https://github.com/UnixJunkie/dolog/archive/v0.5.tar.gz
+[batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
 [itv-tree.2.0] Downloading https://github.com/UnixJunkie/interval-tree/archive/v2.0.tar.gz
 [lacc.0.2] Downloading https://github.com/UnixJunkie/lacc/archive/v0.2.tar.gz
 [obuild.0.1.1] Downloading https://github.com/ocaml-obuild/obuild/archive/obuild-v0.1.1.tar.gz
