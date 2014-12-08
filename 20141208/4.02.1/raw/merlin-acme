@@ -1,9 +1,14 @@
-++ opam install merlin-acme -e centos,centos-7
+++ opam install merlin-acme -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install merlin-acme -e source,linux
++ srcext=
+Debian srcexts:
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install merlin-acme
-CentOS 7 depexts:
 The following actions will be performed:
  - install   ocaml9p.0.4                           [required by merlin-acme]
  - install   batteries.2.3.1                       [required by merlin-acme]
@@ -16,9 +21,9 @@ The following actions will be performed:
 === 8 to install ===
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-[acme.0.1] Downloading https://github.com/raphael-proust/ocaml-acme/archive/0.1.tar.gz
 [batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
 [biniou.1.0.9] Downloading http://mjambon.com/releases/biniou/biniou-1.0.9.tar.gz
+[acme.0.1] Downloading https://github.com/raphael-proust/ocaml-acme/archive/0.1.tar.gz
 [cppo.1.1.2] Downloading http://mjambon.com/releases/cppo/cppo-1.1.2.tar.gz
 [easy-format.1.0.2] Downloading http://mjambon.com/releases/easy-format/easy-format-1.0.2.tar.gz
 [merlin-acme.0.1] Downloading https://github.com/raphael-proust/merlin-acme/archive/0.1.tar.gz
