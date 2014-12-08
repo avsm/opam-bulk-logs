@@ -1,0 +1,19 @@
+++ opam install mlorg -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
+CentOS 7 depexts:
++ opam install mlorg
+The following actions will be performed:
+ - install   batteries.2.3.1                       [required by mlorg]
+ - install   cmdliner.0.9.6                        [required by mlorg]
+ - install   mlorg.0.1.2
+=== 3 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[batteries.2.3.1] Downloading https://github.com/ocaml-batteries-team/batteries-included/archive/v2.3.1.tar.gz
+[cmdliner.0.9.6] Downloading http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.6.tbz
+[mlorg.0.1.2] Downloading http://iuwt.fr/~asmanur/mlorg-0.1.2.tar.gz
+[ERROR] http://iuwt.fr/~asmanur/mlorg-0.1.2.tar.gz is not available
+[ERROR] Could not download archives of mlorg.0.1.2
+
