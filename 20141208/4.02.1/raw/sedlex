@@ -1,7 +1,12 @@
-++ opam install sedlex -e centos,centos-7
+++ opam install sedlex -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
+Debian depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install sedlex -e source,linux
++ srcext=
++ echo Debian srcexts:
+Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install sedlex
 The following actions will be performed:
@@ -12,14 +17,3 @@ The following actions will be performed:
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
 [sedlex.1.99.2] Downloading http://github.com/alainfrisch/sedlex/archive/sedlex-1.99.2.tar.gz
-
-=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Building ppx_tools.0.99.2:
-  make all
-  make install
-Installing ppx_tools.0.99.2.
-Building sedlex.1.99.2:
-  make all
-  make opt
-  make install
-Installing sedlex.1.99.2.

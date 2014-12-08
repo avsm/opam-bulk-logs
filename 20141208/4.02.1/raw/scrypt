@@ -22,3 +22,15 @@ Setting up libssl-doc (1.0.1e-2+deb7u13) ...
 Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install scrypt
+The following actions will be performed:
+ - install   scrypt.0.2.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[scrypt.0.2.1] Downloading https://github.com/pacemkr/ocaml-scrypt/tarball/v0.2.1
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building scrypt.0.2.1:
+  make
+  make install
+Installing scrypt.0.2.1.
