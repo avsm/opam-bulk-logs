@@ -1,0 +1,18 @@
+++ opam install ott -e centos,centos-7
++ depext=
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
+CentOS 7 depexts:
++ opam install ott
+The following actions will be performed:
+ - install   ott.0.25
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ott.0.25] Downloading http://www.cl.cam.ac.uk/~pes20/ott/ott_distro_0.25.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/ott/ott.0.25/files/ott.install to ~/.opam/4.02.1/build/ott.0.25/
+Building ott.0.25:
+  make world
+Installing ott.0.25.
