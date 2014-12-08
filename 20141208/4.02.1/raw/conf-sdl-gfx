@@ -1,1 +1,7 @@
 ++ opam install conf-sdl-gfx -e debian
++ depext=libsdl-gfx1.2-dev
++ echo Debian depexts: libsdl-gfx1.2-dev
++ '[' libsdl-gfx1.2-dev '!=' '' ']'
++ sudo apt-get install -qq -y build-essential m4
+Debian depexts: libsdl-gfx1.2-dev
++ sudo apt-get install -qq -y libsdl-gfx1.2-dev
