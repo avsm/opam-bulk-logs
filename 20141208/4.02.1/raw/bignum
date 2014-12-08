@@ -5,3 +5,69 @@
 + sudo apt-get install -qq -y build-essential m4
 Debian depexts: libgmp-dev
 + sudo apt-get install -qq -y libgmp-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libgmpxx4ldbl:amd64 (from .../libgmpxx4ldbl_2%3a5.0.5+dfsg-2_amd64.deb) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Unpacking libgmp-dev:amd64 (from .../libgmp-dev_2%3a5.0.5+dfsg-2_amd64.deb) ...
+Setting up libgmpxx4ldbl:amd64 (2:5.0.5+dfsg-2) ...
+Setting up libgmp-dev:amd64 (2:5.0.5+dfsg-2) ...
+++ opam install bignum -e source,linux
+Debian srcexts:
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install bignum
+The following actions will be performed:
+ - install   herelib.109.35.02                     [required by core_kernel]
+ - install   conf-gmp.1                            [required by zarith]
+ - install   pipebang.110.01.00                    [required by core_kernel]
+ - install   ounit.2.0.0                           [required by pa_ounit]
+ - install   type_conv.112.01.00                   [required by variantslib, pa_test, fieldslib, comparelib, bin_prot, enumerate, pa_bench, typerep]
+ - install   zarith.1.2                            [required by bignum]
+ - install   variantslib.109.15.03                 [required by core_kernel]
+ - install   sexplib.112.01.00                     [required by core_kernel]
+ - install   pa_ounit.111.28.00                    [required by core_kernel]
+ - install   fieldslib.109.20.03                   [required by core_kernel]
+ - install   enumerate.111.08.00                   [required by core_kernel]
+ - install   comparelib.109.60.00                  [required by core_kernel]
+ - install   bin_prot.112.01.00                    [required by core_kernel]
+ - install   pa_bench.111.28.00                    [required by core_kernel]
+ - install   pa_test.111.08.00                     [required by core_kernel]
+ - install   typerep.111.17.00                     [required by bignum]
+ - install   core_kernel.112.01.00                 [required by bignum]
+ - install   bignum.112.01.00
+=== 18 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[bin_prot.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/bin_prot-112.01.00.tar.gz
+[bignum.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/bignum-112.01.00.tar.gz
+[comparelib.109.60.00] Downloading https://ocaml.janestreet.com/ocaml-core/109.60.00/individual/comparelib-109.60.00.tar.gz
+[core_kernel.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/core_kernel-112.01.00.tar.gz
+[enumerate.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/enumerate-111.08.00.tar.gz
+[fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
+[herelib.109.35.02] Downloading https://ocaml.janestreet.com/ocaml-core/109.35.00/individual/herelib-109.35.02.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[pa_bench.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_bench-111.28.00.tar.gz
+[pa_ounit.111.28.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.28.00/individual/pa_ounit-111.28.00.tar.gz
+[pa_test.111.08.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.08.00/individual/pa_test-111.08.00.tar.gz
+[pipebang.110.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/110.01.00/individual/pipebang-110.01.00.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[typerep.111.17.00] Downloading https://ocaml.janestreet.com/ocaml-core/111.17.00/individual/typerep-111.17.00.tar.gz
+[variantslib.109.15.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.15.00/individual/variantslib-109.15.03.tar.gz
+[zarith.1.2] Downloading http://forge.ocamlcore.org/frs/download.php/1187/zarith-1.2.tgz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/conf-gmp/conf-gmp.1/files/test.c to ~/.opam/4.02.1/build/conf-gmp.1/
+Building conf-gmp.1:
+  sh -c cc -c $CFLAGS test.c
+Installing conf-gmp.1.
+Building herelib.109.35.02:
+  make
+  make install
+Installing herelib.109.35.02.
+Building ounit.2.0.0:
+  make build
+  make install
