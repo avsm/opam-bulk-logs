@@ -1,0 +1,25 @@
+++ opam install mpp -e ubuntu
++ depext=
++ echo Ubuntu depexts:
+Ubuntu depexts:
++ '[' '' '!=' '' ']'
+++ opam install mpp -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install mpp
+The following actions will be performed:
+ - install   mpp.0.1.5
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[mpp.0.1.5] Downloading http://pw374.github.io/distrib/mpp/mpp-0.1.5.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/mpp/mpp.0.1.5/files/mpp.install to ~/.opam/4.02.1/build/mpp.0.1.5/
+Building mpp.0.1.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing mpp.0.1.5.
