@@ -216,3 +216,17 @@ Building async_shell.109.28.03:
   make
   make install
 Installing async_shell.109.28.03.
+Building ocaml_plugin.112.01.00:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing ocaml_plugin.112.01.00.
+Building async_inotify.111.28.00:
+  make
+  make install
+Installing async_inotify.111.28.00.
+Copying ~/.opam/repo/default/packages/jenga/jenga.112.01.00/files/jenga.install to ~/.opam/4.02.1/build/jenga.112.01.00/
+Building jenga.112.01.00:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
