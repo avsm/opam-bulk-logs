@@ -59,3 +59,87 @@ The following actions will be performed:
 [cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
 [fieldslib.109.20.03] Downloading https://ocaml.janestreet.com/ocaml-core/109.20.00/individual/fieldslib-109.20.03.tar.gz
 [io-page.1.2.0] Downloading https://github.com/mirage/io-page/archive/v1.2.0.tar.gz
+[ipaddr.2.5.0] Downloading https://github.com/mirage/ocaml-ipaddr/archive/2.5.0.tar.gz
+[lwt.2.4.6] Downloading https://github.com/ocsigen/lwt/archive/2.4.6.tar.gz
+[mirage-types.2.0.1] Downloading https://github.com/mirage/mirage/archive/v2.0.1.tar.gz
+[nbd.1.0.2] Downloading https://github.com/xapi-project/nbd/archive/v1.0.2/nbd-1.0.2.tar.gz
+[obuild.0.1.1] Downloading https://github.com/ocaml-obuild/obuild/archive/obuild-v0.1.1.tar.gz
+[ocplib-endian.0.7] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.7.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[ppx_tools.0.99.2] Downloading http://github.com/alainfrisch/ppx_tools/archive/ppx_tools_0.99.2.tar.gz
+[re.1.2.2] Downloading https://github.com/ocaml/ocaml-re/archive/ocaml-re-1.2.2.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[sha.1.9] Downloading https://github.com/vincenthz/ocaml-sha/archive/ocaml-sha-v1.9.tar.gz
+[ssl.0.4.7] Downloading http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
+[stringext.1.1.0] Downloading https://github.com/rgrinberg/stringext/archive/v1.1.0.tar.gz
+[tar-format.0.2.1] Downloading https://github.com/djs55/ocaml-tar/archive/0.2.1.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+[uri.1.7.2] Downloading https://github.com/mirage/ocaml-uri/archive/v1.7.2.tar.gz
+[uuidm.0.9.5] Downloading http://erratique.ch/software/uuidm/releases/uuidm-0.9.5.tbz
+[vhd-format.0.7.1] Downloading https://github.com/djs55/ocaml-vhd/archive/v0.7.1.tar.gz
+[vhd-tool.0.7.6] Downloading https://github.com/djs55/vhd-tool/archive/v0.7.6.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Installing base-bytes.base.
+Building cmdliner.0.9.6:
+  ocaml pkg/git.ml
+  ocaml pkg/build.ml native=false native-dynlink=false
+Installing cmdliner.0.9.6.
+Copying ~/.opam/repo/default/packages/obuild/obuild.0.1.1/files/obuild.install to ~/.opam/4.02.1/build/obuild.0.1.1/
+Building obuild.0.1.1:
+  ./bootstrap
+Installing obuild.0.1.1.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building re.1.2.2:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing re.1.2.2.
+Copying ~/.opam/repo/default/packages/sha/sha.1.9/files/freebsd.patch to ~/.opam/4.02.1/build/sha.1.9/
+Applying freebsd.patch.
+Building sha.1.9:
+  make
+  make install
+Installing sha.1.9.
+Copying ~/.opam/repo/default/packages/ssl/ssl.0.4.7/files/pkgconfigure to ~/.opam/4.02.1/build/ssl.0.4.7/
+Building ssl.0.4.7:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing ssl.0.4.7.
+Building stringext.1.1.0:
+  ocaml setup.ml -configure
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing stringext.1.1.0.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Copying ~/.opam/repo/default/packages/uuidm/uuidm.0.9.5/files/uuidm.install to ~/.opam/4.02.1/build/uuidm.0.9.5/
+Building uuidm.0.9.5:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing uuidm.0.9.5.
+Building fieldslib.109.20.03:
+  make
+  make install
+Installing fieldslib.109.20.03.
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --enable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
