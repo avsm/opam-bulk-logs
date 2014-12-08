@@ -161,3 +161,11 @@ Installing patience_diff.111.28.00.
 Building re2.111.08.00:
   make
   make install
+Installing re2.111.08.00.
+Building textutils.112.01.00:
+  make
+  make install
+Installing textutils.112.01.00.
+Building core_extended.112.01.00:
+  make
+  make install
