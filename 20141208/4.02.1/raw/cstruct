@@ -1,0 +1,46 @@
+++ opam install cstruct -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install cstruct
+The following actions will be performed:
+ - install   optcomp.1.6                           [required by ocplib-endian]
+ - install   type_conv.112.01.00                   [required by sexplib]
+ - install   ocplib-endian.0.4                     [required by cstruct]
+ - install   sexplib.112.01.00                     [required by cstruct]
+ - install   cstruct.1.5.0
+=== 5 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cstruct.1.5.0] Downloading https://github.com/mirage/ocaml-cstruct/archive/v1.5.0.tar.gz
+[ocplib-endian.0.4] Downloading https://github.com/OCamlPro/ocplib-endian/archive/0.4.tar.gz
+[optcomp.1.6] Downloading https://github.com/diml/optcomp/archive/1.6.tar.gz
+[sexplib.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/sexplib-112.01.00.tar.gz
+[type_conv.112.01.00] Downloading https://ocaml.janestreet.com/ocaml-core/112.01.00/individual/type_conv-112.01.00.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Building ocplib-endian.0.4:
+  ocaml setup.ml -configure --disable-debug --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing ocplib-endian.0.4.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
+Installing sexplib.112.01.00.
+Building cstruct.1.5.0:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-lwt --enable-camlp4 --disable-async --enable-unix --disable-tests
+  make
+  make install
+Installing cstruct.1.5.0.
