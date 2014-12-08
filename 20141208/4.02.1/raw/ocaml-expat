@@ -4,3 +4,28 @@
 + '[' libexpat1-dev '!=' '' ']'
 + sudo apt-get install -qq -y build-essential m4
 Debian depexts: libexpat1-dev
++ sudo apt-get install -qq -y libexpat1-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libexpat1-dev.
+(Reading database ... 17996 files and directories currently installed.)
+Unpacking libexpat1-dev (from .../libexpat1-dev_2.1.0-1+deb7u1_amd64.deb) ...
+Setting up libexpat1-dev (2.1.0-1+deb7u1) ...
+++ opam install ocaml-expat -e source,linux
++ srcext=
++ echo Debian srcexts:
++ '[' '' '!=' '' ']'
++ opam install ocaml-expat
+Debian srcexts:
+The following actions will be performed:
+ - install   ocaml-expat.0.9.1
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocaml-expat.0.9.1] Downloading http://mmzeeman.home.xs4all.nl/ocaml/ocaml-expat-0.9.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ocaml-expat.0.9.1:
+  make all
+  make allopt
+  make install
+Installing ocaml-expat.0.9.1.
