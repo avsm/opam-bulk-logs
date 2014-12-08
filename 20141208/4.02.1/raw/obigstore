@@ -63,3 +63,56 @@ Building batteries.2.3.1:
   ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
   make all
   make install
+Installing batteries.2.3.1.
+Copying ~/.opam/repo/default/packages/conf-leveldb/conf-leveldb.1/files/test.cc to ~/.opam/4.02.1/build/conf-leveldb.1/
+Building conf-leveldb.1:
+  cc -c test.cc
+Installing conf-leveldb.1.
+Building cryptokit.1.9:
+  make
+  make install
+Installing cryptokit.1.9.
+Building extlib-compat.1.6.1:
+  make build install
+Installing extlib-compat.1.6.1.
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/readline.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/opam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/omake.install to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Copying ~/.opam/repo/default/packages/omake/omake.0.9.8.6-0.rc1/files/fam.patch to ~/.opam/4.02.1/build/omake.0.9.8.6-0.rc1/
+Applying opam.patch.
+Applying fam.patch.
+Applying readline.patch.
+Building omake.0.9.8.6-0.rc1:
+  make bootstrap PREFIX=/home/opam/.opam/4.02.1
+  make all PREFIX=/home/opam/.opam/4.02.1
+  make install PREFIX=/home/opam/.opam/4.02.1
+Installing omake.0.9.8.6-0.rc1.
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Building ppx_tools.0.99.2:
+  make all
+  make install
+Installing ppx_tools.0.99.2.
+Building type_conv.112.01.00:
+  make
+  make install
+Installing type_conv.112.01.00.
+Copying ~/.opam/repo/default/packages/leveldb/leveldb.1.0.3/files/fix_snappy_link_issue.patch to ~/.opam/4.02.1/build/leveldb.1.0.3/
+Applying fix_snappy_link_issue.patch.
+Building leveldb.1.0.3:
+  omake -j9
+  omake install prefix=/home/opam/.opam/4.02.1
+[ERROR] The compilation of leveldb.1.0.3 failed.
+Removing leveldb.1.0.3.
+  ocamlfind remove leveldb
+Building lwt.2.4.6:
+  ./configure --prefix /home/opam/.opam/4.02.1 --disable-libev --disable-react --disable-ssl --enable-unix --enable-extra --enable-preemptive --disable-glib --enable-ppx
+  make build
+  make install
+Installing lwt.2.4.6.
+Building sexplib.112.01.00:
+  ./configure --enable-syntax
+  make
+  make install
