@@ -1,9 +1,14 @@
-++ opam install xapi-stdext -e centos,centos-7
+++ opam install xapi-stdext -e debian
 + depext=
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install xapi-stdext -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install xapi-stdext
-CentOS 7 depexts:
+Debian srcexts:
 The following actions will be performed:
  - install   fd-send-recv.1.0.1                    [required by xapi-stdext]
  - install   uuidm.0.9.5                           [required by xapi-stdext]

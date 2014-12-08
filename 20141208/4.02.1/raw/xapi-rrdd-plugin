@@ -264,3 +264,129 @@ Building io-page.1.2.0:
   ./configure --prefix /home/opam/.opam/4.02.1
   make
   make install
+Installing io-page.1.2.0.
+Building xapi-rrd.0.9.1:
+  make
+  make PREFIX=/home/opam/.opam/4.02.1 install
+Installing xapi-rrd.0.9.1.
+Building xenstore.1.2.5:
+  make all
+  make install
+Installing xenstore.1.2.5.
+Building message-switch.0.10.4:
+  ./configure --bindir /home/opam/.opam/4.02.1/bin
+  make
+  make install
+[ERROR] The compilation of message-switch.0.10.4 failed.
+Removing message-switch.0.10.4.
+  ocamlfind remove message_switch
+Building xen-gnt.2.0.0:
+  make
+  make PREFIX=/home/opam/.opam/4.02.1 install
+[ERROR] The compilation of xen-gnt.2.0.0 failed.
+Removing xen-gnt.2.0.0.
+  make PREFIX=/home/opam/.opam/4.02.1 uninstall
+Building xenstore_transport.0.9.4:
+  make all
+  make install
+Installing xenstore_transport.0.9.4.
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   crc.0.9.0
+ - install   ocamlmod.0.0.7
+ - install   uuidm.0.9.5
+ - install   syslog.1.4
+ - install   xmlm.1.2.0
+ - install   fd-send-recv.1.0.1
+ - install   ppx_tools.0.99.2
+ - install   cohttp.0.10.1
+ - install   xapi-rrd.0.9.1
+ - install   xapi-stdext.0.12.0
+ - install   base-bytes.base
+ - install   sexplib.112.01.00
+ - install   type_conv.112.01.00
+ - install   ocaml-data-notation.0.0.11
+ - install   xapi-inventory.0.9.1
+ - install   xenstore.1.2.5
+ - install   xenstore_transport.0.9.4
+ - install   cmdliner.0.9.6
+ - install   cstruct.1.5.0
+ - install   io-page.1.2.0
+ - install   ssl.0.4.7
+ - install   rpc.1.5.1
+ - install   lwt.2.4.6
+ - install   ounit.2.0.0
+ - install   stringext.1.1.0
+ - install   ocamlify.0.0.1
+ - install   oasis.0.4.5
+ - install   obuild.0.1.1
+ - install   optcomp.1.6
+ - install   re.1.2.2
+ - install   uri.1.7.2
+ - install   fieldslib.109.20.03
+ - install   ocplib-endian.0.7
+The following failed
+ - install   message-switch.0.10.4
+ - install   xen-gnt.2.0.0
+ - install   xenctrl.0.9.26
+Due to the errors, the following have been cancelled
+ - install   xapi-rrd-transport.0.7.2
+ - install   xapi-idl.0.9.19
+ - install   xapi-rrdd-plugin.0.6.0
+ - install   xapi-libs-transitional.0.9.6
+ - install   xapi-forkexecd.0.9.2
+
+#=== ERROR while installing message-switch.0.10.4 =============================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure --bindir /home/opam/.opam/4.02.1/bin
+# path                 /home/opam/.opam/4.02.1/build/message-switch.0.10.4
+# compiler             4.02.1
+# exit-code            127
+# env-file             /home/opam/.opam/4.02.1/build/message-switch.0.10.4/message-switch-12418-bb845d.env
+# stdout-file          /home/opam/.opam/4.02.1/build/message-switch.0.10.4/message-switch-12418-bb845d.out
+# stderr-file          /home/opam/.opam/4.02.1/build/message-switch.0.10.4/message-switch-12418-bb845d.err
+### stderr ###
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# ./configure: line 12: /tmp/configure.m7mVn/configure: No such file or directory
+
+
+#=== ERROR while installing xen-gnt.2.0.0 =====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make
+# path                 /home/opam/.opam/4.02.1/build/xen-gnt.2.0.0
+# compiler             4.02.1
+# exit-code            2
+# env-file             /home/opam/.opam/4.02.1/build/xen-gnt.2.0.0/xen-gnt-12439-f33fa5.env
+# stdout-file          /home/opam/.opam/4.02.1/build/xen-gnt.2.0.0/xen-gnt-12439-f33fa5.out
+# stderr-file          /home/opam/.opam/4.02.1/build/xen-gnt.2.0.0/xen-gnt-12439-f33fa5.err
+### stdout ###
+# ocamlfind ocamlopt -package "cmdliner" -linkpkg configure.ml -o configure
+### stderr ###
+# Makefile:8: config.mk: No such file or directory
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# make: *** [configure] Error 2
+
+
+#=== ERROR while installing xenctrl.0.9.26 ====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./configure
+# path                 /home/opam/.opam/4.02.1/build/xenctrl.0.9.26
+# compiler             4.02.1
+# exit-code            127
+# env-file             /home/opam/.opam/4.02.1/build/xenctrl.0.9.26/xenctrl-10144-06fa5f.env
+# stdout-file          /home/opam/.opam/4.02.1/build/xenctrl.0.9.26/xenctrl-10144-06fa5f.out
+# stderr-file          /home/opam/.opam/4.02.1/build/xenctrl.0.9.26/xenctrl-10144-06fa5f.err
+### stderr ###
+# File "configure.ml", line 1:
+# Error: Cannot find file /home/opam/.opam/4.02.1/lib/cmdliner/cmdliner.cmxa
+# ./configure: line 12: /tmp/tmp.LGjL85BBrI/configure: No such file or directory
+
+
+The former state can be restored with opam switch import "/home/opam/.opam/4.02.1/backup/state-20141108144540.export"
