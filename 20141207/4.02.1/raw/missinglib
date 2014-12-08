@@ -1,0 +1,31 @@
+++ opam install missinglib -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install missinglib -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install missinglib
+The following actions will be performed:
+ - install   ounit.2.0.0                           [required by missinglib]
+ - install   missinglib.0.4.1
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ounit.2.0.0] Downloading http://forge.ocamlcore.org/frs/download.php/1258/ounit-2.0.0.tar.gz
+[missinglib.0.4.1] Downloading http://godi-backup2.camlcity.org/godi-backup/missinglib_0.4.1.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ounit.2.0.0:
+  make build
+  make install
+Installing ounit.2.0.0.
+Copying ~/.opam/repo/default/packages/missinglib/missinglib.0.4.1/files/opam.patch to ~/.opam/4.02.1/build/missinglib.0.4.1/
+Applying opam.patch.
+Building missinglib.0.4.1:
+  make
+  make install
+Installing missinglib.0.4.1.
