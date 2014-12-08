@@ -1,0 +1,19 @@
+++ opam install cconv -e centos,centos-7
++ depext=
+CentOS 7 depexts:
++ echo CentOS 7 depexts:
++ '[' '' '!=' '' ']'
++ opam install cconv
+The following actions will be performed:
+ - install   cconv.0.2
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[cconv.0.2] Downloading https://github.com/c-cube/cconv/archive/0.2.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building cconv.0.2:
+  ./configure --disable-yojson --disable-bencode --disable-sexp
+  make build
+  make install
+Installing cconv.0.2.
