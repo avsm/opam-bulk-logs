@@ -1,9 +1,14 @@
-++ opam install extunix -e centos,centos-7
+++ opam install extunix -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
++ '[' '' '!=' '' ']'
+Debian depexts:
+++ opam install extunix -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install extunix
+Debian srcexts:
 The following actions will be performed:
  - install   extunix.0.1.1
 === 1 to install ===
