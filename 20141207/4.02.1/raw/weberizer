@@ -1,0 +1,36 @@
+++ opam install weberizer -e ubuntu
++ depext=
++ echo Ubuntu depexts:
++ '[' '' '!=' '' ']'
+Ubuntu depexts:
+++ opam install weberizer -e source,linux
++ srcext=
+Ubuntu srcexts:
++ echo Ubuntu srcexts:
++ '[' '' '!=' '' ']'
++ opam install weberizer
+The following actions will be performed:
+ - install   ocamlnet.3.7.7                        [required by weberizer]
+ - install   weberizer.0.7.7
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[ocamlnet.3.7.7] Downloading http://download.camlcity.org/download/ocamlnet-3.7.7.tar.gz
+[weberizer.0.7.7] Downloading https://github.com/Chris00/weberizer/releases/download/0.7.7/weberizer-0.7.7.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/robust-host.patch to ~/.opam/4.02.1/build/ocamlnet.3.7.7/
+Copying ~/.opam/repo/default/packages/ocamlnet/ocamlnet.3.7.7/files/ocamlnet.install to ~/.opam/4.02.1/build/ocamlnet.3.7.7/
+Applying robust-host.patch.
+Building ocamlnet.3.7.7:
+  ./configure -bindir /home/opam/.opam/4.02.1/bin -disable-pcre -disable-gtk2 -disable-ssl -disable-zip -disable-crypto -with-nethttpd
+  make all
+  make opt
+  make install
+Installing ocamlnet.3.7.7.
+Copying ~/.opam/repo/default/packages/weberizer/weberizer.0.7.7/files/weberizer.install to ~/.opam/4.02.1/build/weberizer.0.7.7/
+Building weberizer.0.7.7:
+  ocaml setup.ml -configure --prefix /home/opam/.opam/4.02.1
+  ocaml setup.ml -build
+  ocaml setup.ml -install
+Installing weberizer.0.7.7.
