@@ -82,3 +82,4 @@ Building nbd.1.0.2:
   ./configure --prefix /home/opam/.opam/4.02.1
   make
   make install BINDIR=/home/opam/.opam/4.02.1/bin
+Installing nbd.1.0.2.

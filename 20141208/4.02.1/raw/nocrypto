@@ -51,3 +51,11 @@ Copying ~/.opam/repo/default/packages/conf-gmp/conf-gmp.1/files/test.c to ~/.opa
 Building conf-gmp.1:
   sh -c cc -c $CFLAGS test.c
 Installing conf-gmp.1.
+Building optcomp.1.6:
+  ./configure --prefix /home/opam/.opam/4.02.1
+  make
+  make install
+Installing optcomp.1.6.
+Building type_conv.112.01.00:
+  make
+  make install
