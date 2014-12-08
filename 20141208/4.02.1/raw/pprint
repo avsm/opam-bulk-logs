@@ -15,3 +15,9 @@ The following actions will be performed:
 
 =-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [pprint.20140424] Downloading http://gallium.inria.fr/~fpottier/pprint/pprint-20140424.tar.gz
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building pprint.20140424:
+  make -C src
+  make -C src install
+Installing pprint.20140424.
