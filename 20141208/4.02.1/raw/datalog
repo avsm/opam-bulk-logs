@@ -1,9 +1,14 @@
-++ opam install datalog -e centos,centos-7
+++ opam install datalog -e debian
 + depext=
-CentOS 7 depexts:
-+ echo CentOS 7 depexts:
++ echo Debian depexts:
+Debian depexts:
++ '[' '' '!=' '' ']'
+++ opam install datalog -e source,linux
++ srcext=
++ echo Debian srcexts:
 + '[' '' '!=' '' ']'
 + opam install datalog
+Debian srcexts:
 The following actions will be performed:
  - install   datalog.0.5.1
 === 1 to install ===
